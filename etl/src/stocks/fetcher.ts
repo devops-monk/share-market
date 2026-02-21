@@ -43,6 +43,7 @@ interface ChartData {
   price: number;
   previousClose: number;
   volume: number;
+  marketCap: number;
   fiftyTwoWeekHigh: number;
   fiftyTwoWeekLow: number;
   closes: number[];
@@ -74,6 +75,7 @@ async function fetchChart(ticker: string): Promise<ChartData | null> {
         price: m.regularMarketPrice,
         previousClose: m.chartPreviousClose ?? m.regularMarketPrice,
         volume: m.regularMarketVolume ?? (volumes.length > 0 ? volumes[volumes.length - 1] : 0),
+        marketCap: 0, // filled by quoteSummary or FinViz later
         fiftyTwoWeekHigh: m.fiftyTwoWeekHigh ?? Math.max(...closes, m.regularMarketPrice),
         fiftyTwoWeekLow: m.fiftyTwoWeekLow ?? Math.min(...closes, m.regularMarketPrice),
         closes,
@@ -81,6 +83,56 @@ async function fetchChart(ticker: string): Promise<ChartData | null> {
       };
     } catch {
       if (attempt < 2) await delay(1000);
+    }
+  }
+  return null;
+}
+
+// ---------- Yahoo quoteSummary (fundamentals for all stocks, especially UK) ----------
+
+interface YahooFundamentals {
+  marketCap: number;
+  pe: number | null;
+  forwardPe: number | null;
+  beta: number | null;
+  earningsGrowth: number | null;
+  revenueGrowth: number | null;
+  avgVolume: number;
+}
+
+async function fetchYahooFundamentals(ticker: string): Promise<YahooFundamentals | null> {
+  const encoded = encodeURIComponent(ticker);
+  const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${encoded}?modules=defaultKeyStatistics,financialData,summaryDetail,price`;
+
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const res = await fetch(url, { headers: { 'User-Agent': UA } });
+      if (res.status === 429) {
+        await delay((attempt + 1) * 2000);
+        continue;
+      }
+      if (!res.ok) return null;
+
+      const data = await res.json() as any;
+      const result = data?.quoteSummary?.result?.[0];
+      if (!result) return null;
+
+      const stats = result.defaultKeyStatistics ?? {};
+      const fin = result.financialData ?? {};
+      const summary = result.summaryDetail ?? {};
+      const price = result.price ?? {};
+
+      return {
+        marketCap: price.marketCap?.raw ?? summary.marketCap?.raw ?? 0,
+        pe: summary.trailingPE?.raw ?? null,
+        forwardPe: summary.forwardPE?.raw ?? stats.forwardPE?.raw ?? null,
+        beta: stats.beta?.raw ?? null,
+        earningsGrowth: fin.earningsGrowth?.raw ?? stats.earningsQuarterlyGrowth?.raw ?? null,
+        revenueGrowth: fin.revenueGrowth?.raw ?? null,
+        avgVolume: summary.averageVolume?.raw ?? price.averageDailyVolume3Month?.raw ?? 0,
+      };
+    } catch {
+      if (attempt < 1) await delay(1000);
     }
   }
   return null;
@@ -182,26 +234,43 @@ export async function fetchAllStocks(stocks: StockMeta[]): Promise<QuoteData[]> 
   const chartElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`  Phase 1 done: ${validCharts.length}/${stocks.length} charts in ${chartElapsed}s`);
 
-  // Phase 2: Fetch FinViz fundamentals for US stocks (moderate concurrency)
+  // Phase 2: Fetch fundamentals — FinViz for US, Yahoo quoteSummary for UK (in parallel)
   const usStocks = validCharts.filter(r => r.meta.market === 'US');
   const ukStocks = validCharts.filter(r => r.meta.market === 'UK');
-  console.log(`  Phase 2: Fetching FinViz fundamentals for ${usStocks.length} US stocks (concurrency ${CONFIG.finvizConcurrency})...`);
+  console.log(`  Phase 2: Fetching fundamentals — ${usStocks.length} US (FinViz) + ${ukStocks.length} UK (Yahoo)...`);
 
   const finvizLimit = pLimit(CONFIG.finvizConcurrency);
-  const fundamentalsMap = new Map<string, Fundamentals | null>();
+  const yahooFundLimit = pLimit(CONFIG.concurrency);
+  const fundamentalsMap = new Map<string, Fundamentals | YahooFundamentals | null>();
 
-  await Promise.all(
-    usStocks.map((r, idx) =>
-      finvizLimit(async () => {
-        await delay(300); // Small delay per request to avoid rate limits
-        const f = await fetchFinvizFundamentals(r.meta.ticker);
-        fundamentalsMap.set(r.meta.ticker, f);
-        if ((idx + 1) % 50 === 0) {
-          console.log(`    FinViz: ${idx + 1}/${usStocks.length}`);
-        }
-      })
-    )
-  );
+  // Fetch US (FinViz) and UK (Yahoo) fundamentals in parallel
+  await Promise.all([
+    // US stocks via FinViz
+    Promise.all(
+      usStocks.map((r, idx) =>
+        finvizLimit(async () => {
+          await delay(300);
+          const f = await fetchFinvizFundamentals(r.meta.ticker);
+          fundamentalsMap.set(r.meta.ticker, f);
+          if ((idx + 1) % 50 === 0) {
+            console.log(`    FinViz: ${idx + 1}/${usStocks.length}`);
+          }
+        })
+      )
+    ),
+    // UK stocks via Yahoo quoteSummary
+    Promise.all(
+      ukStocks.map((r, idx) =>
+        yahooFundLimit(async () => {
+          const f = await fetchYahooFundamentals(r.meta.ticker);
+          fundamentalsMap.set(r.meta.ticker, f);
+          if ((idx + 1) % 50 === 0) {
+            console.log(`    Yahoo fundamentals: ${idx + 1}/${ukStocks.length}`);
+          }
+        })
+      )
+    ),
+  ]);
 
   const finvizElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`  Phase 2 done: ${fundamentalsMap.size} fundamentals in ${finvizElapsed}s total`);
