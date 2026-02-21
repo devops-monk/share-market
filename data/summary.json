@@ -1,10 +1,311 @@
 {
-  "topOverall": [],
-  "bottomOverall": [],
-  "topLargeCap": [],
-  "topMidCap": [],
-  "topSmallCap": [],
-  "totalStocks": 0,
-  "avgScore": null,
-  "bearishAlertCount": 0
+  "topOverall": [
+    {
+      "ticker": "GSK.L",
+      "name": "GSK",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 68,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "score": 68,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices",
+      "score": 65,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AZN.L",
+      "name": "AstraZeneca",
+      "score": 65,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "ANTO.L",
+      "name": "Antofagasta",
+      "score": 65,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen",
+      "score": 64,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RTX",
+      "name": "RTX Corp",
+      "score": 64,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 64,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "score": 63,
+      "market": "US",
+      "capCategory": "Large"
+    }
+  ],
+  "bottomOverall": [
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 29,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "PINS",
+      "name": "Pinterest",
+      "score": 30,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 30,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 31,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "TEAM",
+      "name": "Atlassian",
+      "score": 32,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SOFI",
+      "name": "SoFi Technologies",
+      "score": 32,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday",
+      "score": 33,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 33,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "OKTA",
+      "name": "Okta",
+      "score": 34,
+      "market": "US",
+      "capCategory": "Large"
+    }
+  ],
+  "topLargeCap": [
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "RTX",
+      "name": "RTX Corp",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "score": 63,
+      "market": "US"
+    },
+    {
+      "ticker": "GEV",
+      "name": "GE Vernova",
+      "score": 63,
+      "market": "US"
+    },
+    {
+      "ticker": "MDB",
+      "name": "MongoDB",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 62,
+      "market": "US"
+    }
+  ],
+  "topMidCap": [
+    {
+      "ticker": "BILL",
+      "name": "Bill Holdings",
+      "score": 50,
+      "market": "US"
+    },
+    {
+      "ticker": "PATH",
+      "name": "UiPath",
+      "score": 43,
+      "market": "US"
+    },
+    {
+      "ticker": "MARA",
+      "name": "Marathon Digital",
+      "score": 41,
+      "market": "US"
+    },
+    {
+      "ticker": "SNAP",
+      "name": "Snap",
+      "score": 37,
+      "market": "US"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 31,
+      "market": "US"
+    },
+    {
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 29,
+      "market": "US"
+    }
+  ],
+  "topSmallCap": [
+    {
+      "ticker": "GSK.L",
+      "name": "GSK",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "AZN.L",
+      "name": "AstraZeneca",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "ANTO.L",
+      "name": "Antofagasta",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "RR.L",
+      "name": "Rolls-Royce",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "VOD.L",
+      "name": "Vodafone",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "PSN.L",
+      "name": "Persimmon",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "SGRO.L",
+      "name": "Segro",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "AAL.L",
+      "name": "Anglo American",
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "LGEN.L",
+      "name": "Legal & General",
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "PHNX.L",
+      "name": "Phoenix Group",
+      "score": 60,
+      "market": "UK"
+    }
+  ],
+  "totalStocks": 214,
+  "avgScore": 50,
+  "bearishAlertCount": 9
 }

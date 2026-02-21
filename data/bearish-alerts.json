@@ -1,1 +1,584 @@
-[]
+[
+  {
+    "ticker": "OKTA",
+    "name": "Okta",
+    "market": "US",
+    "sector": "Technology",
+    "trading212": true,
+    "price": 74.29,
+    "changePercent": -18.38954190926068,
+    "marketCap": 13170000000,
+    "capCategory": "Large",
+    "pe": 68.21,
+    "forwardPe": 20.31,
+    "earningsGrowth": null,
+    "revenueGrowth": 0.1158,
+    "beta": 0.77,
+    "volume": 6014714,
+    "avgVolume": 2790000,
+    "fiftyTwoWeekHigh": 127.567,
+    "fiftyTwoWeekLow": 73.74,
+    "rsi": 31.16,
+    "macdHistogram": -0.9723144043878809,
+    "sma50": 88.25919998168945,
+    "sma200": null,
+    "volumeRatio": 2.154606743183023,
+    "priceReturn3m": -0.07241847530987212,
+    "priceReturn6m": -0.1725328366493752,
+    "volatility": 0.49094742965977306,
+    "signals": [
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-0.972)"
+      },
+      {
+        "type": "Volume Spike Decline",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "Volume 2.2x average with -18.4% decline"
+      },
+      {
+        "type": "Near 52W Low",
+        "direction": "bearish",
+        "severity": 1,
+        "description": "Price near 52-week low of 73.74"
+      }
+    ],
+    "bearishScore": 5,
+    "bullishScore": 0,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 38,
+      "technicalSignals": 19,
+      "newsSentiment": 50,
+      "fundamentals": 0,
+      "volumeTrend": 69,
+      "riskInverse": 56,
+      "composite": 34
+    }
+  },
+  {
+    "ticker": "INTU",
+    "name": "Intuit",
+    "market": "US",
+    "sector": "Technology",
+    "trading212": true,
+    "price": 380.55,
+    "changePercent": -45.56962025316456,
+    "marketCap": 105900000000,
+    "capCategory": "Large",
+    "pe": 26.06,
+    "forwardPe": 14.43,
+    "earningsGrowth": 1.2801,
+    "revenueGrowth": 0.1834,
+    "beta": 1.28,
+    "volume": 4057765,
+    "avgVolume": 2860000,
+    "fiftyTwoWeekHigh": 813.7,
+    "fiftyTwoWeekLow": 378.903,
+    "rsi": 20.93,
+    "macdHistogram": -1.4020204165712045,
+    "sma50": 562.2260040283203,
+    "sma200": null,
+    "volumeRatio": 0.9275866719700814,
+    "priceReturn3m": -0.415096383989205,
+    "priceReturn6m": -0.4546119260678266,
+    "volatility": 0.5008258132547987,
+    "signals": [
+      {
+        "type": "RSI Oversold",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "RSI at 20.9 (below 30)"
+      },
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-1.402)"
+      },
+      {
+        "type": "Weak Momentum",
+        "direction": "bearish",
+        "severity": 1,
+        "description": "3-month return -41.5%"
+      },
+      {
+        "type": "Near 52W Low",
+        "direction": "bearish",
+        "severity": 1,
+        "description": "Price near 52-week low of 378.90"
+      }
+    ],
+    "bearishScore": 4,
+    "bullishScore": 2,
+    "sentimentAvg": 0.079,
+    "score": {
+      "priceMomentum": 7,
+      "technicalSignals": 38,
+      "newsSentiment": 54,
+      "fundamentals": 81,
+      "volumeTrend": 23,
+      "riskInverse": 43,
+      "composite": 38
+    }
+  },
+  {
+    "ticker": "PANW",
+    "name": "Palo Alto Networks",
+    "market": "US",
+    "sector": "Technology",
+    "trading212": true,
+    "price": 148.7,
+    "changePercent": -19.373203925608642,
+    "marketCap": 121340000000,
+    "capCategory": "Large",
+    "pe": 82.28,
+    "forwardPe": 36.73,
+    "earningsGrowth": 0.6117,
+    "revenueGrowth": 0.1491,
+    "beta": 0.78,
+    "volume": 25213637,
+    "avgVolume": 8770000,
+    "fiftyTwoWeekHigh": 223.61,
+    "fiftyTwoWeekLow": 144.15,
+    "rsi": 27.68,
+    "macdHistogram": -1.34218477279226,
+    "sma50": 179.49340087890624,
+    "sma200": null,
+    "volumeRatio": 1.685645234560704,
+    "priceReturn3m": -0.25612805658591187,
+    "priceReturn6m": -0.18885014724414562,
+    "volatility": 0.39274024131468216,
+    "signals": [
+      {
+        "type": "RSI Oversold",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "RSI at 27.7 (below 30)"
+      },
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-1.342)"
+      },
+      {
+        "type": "Weak Momentum",
+        "direction": "bearish",
+        "severity": 1,
+        "description": "3-month return -25.6%"
+      },
+      {
+        "type": "Near 52W Low",
+        "direction": "bearish",
+        "severity": 1,
+        "description": "Price near 52-week low of 144.15"
+      }
+    ],
+    "bearishScore": 4,
+    "bullishScore": 2,
+    "sentimentAvg": 0.0839,
+    "score": {
+      "priceMomentum": 28,
+      "technicalSignals": 38,
+      "newsSentiment": 54,
+      "fundamentals": 50,
+      "volumeTrend": 51,
+      "riskInverse": 61,
+      "composite": 43
+    }
+  },
+  {
+    "ticker": "HON",
+    "name": "Honeywell",
+    "market": "US",
+    "sector": "Industrials",
+    "trading212": true,
+    "price": 243.97,
+    "changePercent": 19.286734075218558,
+    "marketCap": 155090000000,
+    "capCategory": "Large",
+    "pe": 30.53,
+    "forwardPe": 21.18,
+    "earningsGrowth": -0.7646,
+    "revenueGrowth": -0.032799999999999996,
+    "beta": 0.92,
+    "volume": 2680158,
+    "avgVolume": 4300000,
+    "fiftyTwoWeekHigh": 245.63,
+    "fiftyTwoWeekLow": 169.048,
+    "rsi": 73.15,
+    "macdHistogram": -0.29045994186226487,
+    "sma50": 215.01160064697265,
+    "sma200": null,
+    "volumeRatio": 0.6067288602545847,
+    "priceReturn3m": 0.2802119527950398,
+    "priceReturn6m": 0.19056280776164347,
+    "volatility": 0.22030747922580213,
+    "signals": [
+      {
+        "type": "RSI Overbought",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "RSI at 73.2 (above 70)"
+      },
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-0.290)"
+      },
+      {
+        "type": "Strong Momentum",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "3-month return +28.0%"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 245.63"
+      }
+    ],
+    "bearishScore": 4,
+    "bullishScore": 2,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 74,
+      "technicalSignals": 38,
+      "newsSentiment": 50,
+      "fundamentals": 27,
+      "volumeTrend": 11,
+      "riskInverse": 66,
+      "composite": 47
+    }
+  },
+  {
+    "ticker": "LCID",
+    "name": "Lucid Group",
+    "market": "US",
+    "sector": "Consumer Cyclical",
+    "trading212": true,
+    "price": 9.55,
+    "changePercent": -54.30622009569377,
+    "marketCap": 3100000000,
+    "capCategory": "Mid",
+    "pe": null,
+    "forwardPe": null,
+    "earningsGrowth": 0.18899999999999997,
+    "revenueGrowth": 0.6826000000000001,
+    "beta": 1.13,
+    "volume": 6781971,
+    "avgVolume": 7540000,
+    "fiftyTwoWeekHigh": 35.9,
+    "fiftyTwoWeekLow": 9.5,
+    "rsi": 39.72,
+    "macdHistogram": -0.046237191487225826,
+    "sma50": 11.019999980926514,
+    "sma200": null,
+    "volumeRatio": 0.9717474190983143,
+    "priceReturn3m": -0.23416198987698061,
+    "priceReturn6m": -0.5430621834907747,
+    "volatility": 0.85945497930545,
+    "signals": [
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-0.046)"
+      },
+      {
+        "type": "Weak Momentum",
+        "direction": "bearish",
+        "severity": 1,
+        "description": "3-month return -23.4%"
+      },
+      {
+        "type": "Near 52W Low",
+        "direction": "bearish",
+        "severity": 1,
+        "description": "Price near 52-week low of 9.50"
+      }
+    ],
+    "bearishScore": 4,
+    "bullishScore": 0,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 11,
+      "technicalSignals": 25,
+      "newsSentiment": 50,
+      "fundamentals": 59,
+      "volumeTrend": 25,
+      "riskInverse": 29,
+      "composite": 31
+    }
+  },
+  {
+    "ticker": "TTD",
+    "name": "Trade Desk",
+    "market": "US",
+    "sector": "Technology",
+    "trading212": true,
+    "price": 25.1,
+    "changePercent": -52.2177803160099,
+    "marketCap": 12140000000,
+    "capCategory": "Large",
+    "pe": 28.64,
+    "forwardPe": 22.95,
+    "earningsGrowth": 0.25079999999999997,
+    "revenueGrowth": 0.17739999999999997,
+    "beta": 1.12,
+    "volume": 15320551,
+    "avgVolume": 13600000,
+    "fiftyTwoWeekHigh": 91.45,
+    "fiftyTwoWeekLow": 24.91,
+    "rsi": 24.54,
+    "macdHistogram": -0.01256762407750145,
+    "sma50": 33.82700012207031,
+    "sma200": null,
+    "volumeRatio": 0.9725290113633261,
+    "priceReturn3m": -0.37546650313172514,
+    "priceReturn6m": -0.5200764675406822,
+    "volatility": 0.46379863512857117,
+    "signals": [
+      {
+        "type": "RSI Oversold",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "RSI at 24.5 (below 30)"
+      },
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-0.013)"
+      },
+      {
+        "type": "Weak Momentum",
+        "direction": "bearish",
+        "severity": 1,
+        "description": "3-month return -37.5%"
+      },
+      {
+        "type": "Near 52W Low",
+        "direction": "bearish",
+        "severity": 1,
+        "description": "Price near 52-week low of 24.91"
+      }
+    ],
+    "bearishScore": 4,
+    "bullishScore": 2,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 5,
+      "technicalSignals": 38,
+      "newsSentiment": 50,
+      "fundamentals": 66,
+      "volumeTrend": 25,
+      "riskInverse": 49,
+      "composite": 35
+    }
+  },
+  {
+    "ticker": "ZS",
+    "name": "Zscaler",
+    "market": "US",
+    "sector": "Technology",
+    "trading212": true,
+    "price": 159.75,
+    "changePercent": -41.65555778747649,
+    "marketCap": 25480000000,
+    "capCategory": "Large",
+    "pe": null,
+    "forwardPe": 35.77,
+    "earningsGrowth": 0.07339999999999999,
+    "revenueGrowth": 0.255,
+    "beta": 1.05,
+    "volume": 3255242,
+    "avgVolume": 2150000,
+    "fiftyTwoWeekHigh": 336.99,
+    "fiftyTwoWeekLow": 159.66,
+    "rsi": 24.84,
+    "macdHistogram": -0.2613941241608764,
+    "sma50": 209.12070007324218,
+    "sma200": null,
+    "volumeRatio": 1.2771765315170396,
+    "priceReturn3m": -0.45255473994538814,
+    "priceReturn6m": -0.409099329042247,
+    "volatility": 0.4595495919387612,
+    "signals": [
+      {
+        "type": "RSI Oversold",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "RSI at 24.8 (below 30)"
+      },
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-0.261)"
+      },
+      {
+        "type": "Weak Momentum",
+        "direction": "bearish",
+        "severity": 1,
+        "description": "3-month return -45.3%"
+      },
+      {
+        "type": "Near 52W Low",
+        "direction": "bearish",
+        "severity": 1,
+        "description": "Price near 52-week low of 159.66"
+      }
+    ],
+    "bearishScore": 4,
+    "bullishScore": 2,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 7,
+      "technicalSignals": 38,
+      "newsSentiment": 50,
+      "fundamentals": 54,
+      "volumeTrend": 36,
+      "riskInverse": 51,
+      "composite": 35
+    }
+  },
+  {
+    "ticker": "WDAY",
+    "name": "Workday",
+    "market": "US",
+    "sector": "Technology",
+    "trading212": true,
+    "price": 137.81,
+    "changePercent": -39.42151303353994,
+    "marketCap": 36240000000,
+    "capCategory": "Large",
+    "pe": 57.86,
+    "forwardPe": 12.86,
+    "earningsGrowth": 0.3053,
+    "revenueGrowth": 0.1282,
+    "beta": 1.16,
+    "volume": 4017586,
+    "avgVolume": 3800000,
+    "fiftyTwoWeekHigh": 281,
+    "fiftyTwoWeekLow": 136.64,
+    "rsi": 20.42,
+    "macdHistogram": -0.967000849614255,
+    "sma50": 190.5301998901367,
+    "sma200": null,
+    "volumeRatio": 0.7885327128575677,
+    "priceReturn3m": -0.384392043317893,
+    "priceReturn6m": -0.3944547128490763,
+    "volatility": 0.4600091262180785,
+    "signals": [
+      {
+        "type": "RSI Oversold",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "RSI at 20.4 (below 30)"
+      },
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-0.967)"
+      },
+      {
+        "type": "Weak Momentum",
+        "direction": "bearish",
+        "severity": 1,
+        "description": "3-month return -38.4%"
+      },
+      {
+        "type": "Near 52W Low",
+        "direction": "bearish",
+        "severity": 1,
+        "description": "Price near 52-week low of 136.64"
+      }
+    ],
+    "bearishScore": 4,
+    "bullishScore": 2,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 11,
+      "technicalSignals": 38,
+      "newsSentiment": 50,
+      "fundamentals": 42,
+      "volumeTrend": 18,
+      "riskInverse": 48,
+      "composite": 33
+    }
+  },
+  {
+    "ticker": "TEAM",
+    "name": "Atlassian",
+    "market": "US",
+    "sector": "Technology",
+    "trading212": true,
+    "price": 75.98,
+    "changePercent": -54.380066046232365,
+    "marketCap": 20110000000,
+    "capCategory": "Large",
+    "pe": null,
+    "forwardPe": 13.85,
+    "earningsGrowth": -0.10460000000000001,
+    "revenueGrowth": 0.23309999999999997,
+    "beta": 0.94,
+    "volume": 9483649,
+    "avgVolume": 4260000,
+    "fiftyTwoWeekHigh": 316.99,
+    "fiftyTwoWeekLow": 75.01,
+    "rsi": 18.15,
+    "macdHistogram": -1.0467496146819162,
+    "sma50": 132.1906996154785,
+    "sma200": null,
+    "volumeRatio": 1.2974912507764167,
+    "priceReturn3m": -0.48140054463391246,
+    "priceReturn6m": -0.5383680354366588,
+    "volatility": 0.6124732297203721,
+    "signals": [
+      {
+        "type": "RSI Oversold",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "RSI at 18.1 (below 30)"
+      },
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-1.047)"
+      },
+      {
+        "type": "Weak Momentum",
+        "direction": "bearish",
+        "severity": 1,
+        "description": "3-month return -48.1%"
+      },
+      {
+        "type": "Near 52W Low",
+        "direction": "bearish",
+        "severity": 1,
+        "description": "Price near 52-week low of 75.01"
+      }
+    ],
+    "bearishScore": 4,
+    "bullishScore": 2,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 0,
+      "technicalSignals": 38,
+      "newsSentiment": 50,
+      "fundamentals": 45,
+      "volumeTrend": 37,
+      "riskInverse": 46,
+      "composite": 32
+    }
+  }
+]
