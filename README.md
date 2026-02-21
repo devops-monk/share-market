@@ -1,0 +1,144 @@
+# Stock Market Analysis Dashboard
+
+**Live:** [share.devops-monk.com](https://share.devops-monk.com)
+
+A zero-cost stock market intelligence platform that automatically analyzes ~220 UK & US stocks every hour, scores them using technical/fundamental/sentiment analysis, detects bearish signals, and presents everything in a React dashboard deployed to GitHub Pages.
+
+---
+
+## How to Find the Best Stocks Using This Dashboard
+
+### 1. Start with the Overview Page
+
+The **Overview** page gives you the big picture at a glance:
+
+- **Avg Score** — If the overall average is above 50, the market sentiment is generally bullish. Below 50 suggests caution.
+- **Bearish Alerts** — Check this number first. If it's high, the market may be in a downturn — be selective.
+- **Top Performers** — These are stocks with the highest composite scores (0-100). Use the tabs to filter by market cap:
+  - **Large Cap** — Safer, established companies (Apple, Microsoft, Shell)
+  - **Mid Cap** — Growth potential with moderate risk
+  - **Small Cap** — Highest growth potential but also highest risk
+- **Bottom Performers** — Stocks to avoid or potentially short-sell
+
+### 2. Use the Screener to Find Your Picks
+
+The **Screener** is your main stock-picking tool:
+
+1. **Sort by Score (descending)** — The composite score (0-100) ranks stocks by combining 6 factors:
+   - Price Momentum (25%) — Are prices trending up?
+   - Technical Signals (25%) — Are indicators aligned bullish?
+   - News Sentiment (15%) — Is media coverage positive?
+   - Fundamentals (15%) — Is the stock fairly valued?
+   - Volume Trend (10%) — Is trading volume confirming the trend?
+   - Risk (10%) — Lower volatility and beta = safer
+
+2. **Filter for your strategy:**
+   - **Trading212 only** — If you trade on Trading212, toggle this to see available stocks
+   - **Market: US or UK** — Focus on your preferred market
+   - **Cap: Large/Mid/Small** — Match your risk tolerance
+
+3. **Look for stocks with:**
+   - Score **65+** = Strong buy candidates
+   - Score **40-65** = Hold or watch
+   - Score **below 40** = Avoid or consider selling
+   - RSI **30-70** = Healthy range (not overbought or oversold)
+   - Positive sentiment = Market confidence
+
+### 3. Check Bearish Alerts Before Buying
+
+**Always check the Bearish Alerts page** before investing. Stocks appear here when multiple warning signals fire simultaneously:
+
+| Signal | What It Means |
+|--------|---------------|
+| **Death Cross** | 50-day SMA crossed below 200-day SMA — long-term downtrend |
+| **RSI Overbought** | RSI > 70 — stock may be overvalued, correction likely |
+| **MACD Bearish** | MACD crossed below signal line — momentum turning negative |
+| **Volume Spike Decline** | High volume + price drop — institutions may be selling |
+| **Weak Momentum** | 3-month return < -15% — sustained downward trend |
+| **Near 52W Low** | Price near yearly low — could mean more pain or value opportunity |
+
+**Bearish Score >= 4** means multiple signals are firing — exercise strong caution.
+
+### 4. Read News Sentiment
+
+The **News & Sentiment** page shows recent headlines scored by sentiment:
+
+- **Green** (positive) — Good news coverage, market confidence
+- **Red** (negative) — Bad press, potential risk
+- **Amber** (neutral) — Informational, no strong signal
+
+Filter by sentiment to quickly find stocks with improving or deteriorating news flow.
+
+### 5. Deep Dive on Individual Stocks
+
+Click any stock to see its **Stock Detail** page:
+
+- **Score Gauge** — Visual 0-100 score with color coding
+- **Score Breakdown** — See which factors are strong/weak
+- **Price Levels** — Current price relative to SMA 50, SMA 200, and 52-week range
+- **Key Metrics** — P/E, beta, returns, volume
+- **Signals** — All bullish and bearish signals explained
+- **Recent News** — Headlines with sentiment scores
+
+### Quick Decision Framework
+
+```
+Score 70+  + No bearish signals  + Positive sentiment  → STRONG BUY
+Score 55-70 + Few signals        + Neutral sentiment   → BUY / ACCUMULATE
+Score 40-55 + Mixed signals      + Mixed sentiment     → HOLD / WATCH
+Score 25-40 + Bearish signals    + Negative sentiment  → SELL / AVOID
+Score <25   + Multiple bearish   + Negative sentiment  → STRONG SELL
+```
+
+---
+
+## Project Structure
+
+```
+ShareMarket/
+├── .github/workflows/     # GitHub Actions (ETL + Deploy)
+├── etl/                   # Node.js ETL pipeline
+│   └── src/
+│       ├── stocks/        # Stock universe + data fetching
+│       ├── indicators/    # Technical indicators + signal detection
+│       ├── news/          # News fetching + sentiment analysis
+│       ├── scoring/       # Composite scoring algorithm
+│       └── output/        # JSON/CSV writer
+├── dashboard/             # React + Vite + TailwindCSS
+│   └── src/
+│       ├── pages/         # Overview, Screener, Bearish, News, StockDetail
+│       ├── components/    # Charts, tables, layout, common
+│       └── hooks/         # Data fetching hooks
+├── data/                  # Generated by ETL (JSON + CSV)
+└── RESEARCH_STOCK_DASHBOARD.md  # Research on prediction techniques
+```
+
+## Running Locally
+
+```bash
+# Install all dependencies
+npm install
+
+# Run ETL (fetches live data, writes to /data)
+npm run etl
+
+# Start dashboard dev server
+npm run dev
+```
+
+## Data Sources
+
+- **Yahoo Finance v8 Chart API** — Price, historical data, 52W range, volume (no auth required)
+- **FinViz** — P/E, market cap, beta, earnings/revenue growth (US stocks)
+- **Google News RSS** — Headlines for sentiment analysis
+- **FinViz News** — Additional headlines (US stocks)
+
+## Automation
+
+The ETL pipeline runs via GitHub Actions every hour on weekdays (7am-9pm UTC), covering both UK and US market hours. After data is committed, the dashboard automatically rebuilds and deploys.
+
+---
+
+## Disclaimer
+
+This dashboard is for **educational and informational purposes only**. It is not financial advice. Always do your own research and consult a qualified financial advisor before making investment decisions. Past performance does not guarantee future results.

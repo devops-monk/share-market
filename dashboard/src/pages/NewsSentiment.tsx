@@ -22,62 +22,87 @@ export default function NewsSentiment({ news }: { news: NewsItem[] }) {
   const neutCount = news.filter(n => n.sentimentLabel === 'neutral').length;
 
   return (
-    <div className="space-y-4">
-      <h1 className="text-xl font-bold">News & Sentiment</h1>
+    <div className="space-y-5">
+      <div>
+        <h1 className="text-xl font-bold text-white">News & Sentiment</h1>
+        <p className="text-sm text-gray-500 mt-1">Latest headlines with AFINN sentiment scoring</p>
+      </div>
 
-      {/* Summary */}
-      <div className="flex gap-4 text-sm">
-        <span className="text-gray-400">{news.length} articles</span>
-        <span className="text-bullish">{posCount} positive</span>
-        <span className="text-bearish">{negCount} negative</span>
-        <span className="text-neutral">{neutCount} neutral</span>
+      {/* Summary cards */}
+      <div className="grid grid-cols-4 gap-3">
+        <div className="card-flat p-3 text-center">
+          <div className="text-lg font-bold font-mono text-white">{news.length}</div>
+          <div className="text-xs text-gray-500">Total</div>
+        </div>
+        <div className="card-flat p-3 text-center">
+          <div className="text-lg font-bold font-mono text-bullish">{posCount}</div>
+          <div className="text-xs text-gray-500">Positive</div>
+        </div>
+        <div className="card-flat p-3 text-center">
+          <div className="text-lg font-bold font-mono text-bearish">{negCount}</div>
+          <div className="text-xs text-gray-500">Negative</div>
+        </div>
+        <div className="card-flat p-3 text-center">
+          <div className="text-lg font-bold font-mono text-neutral">{neutCount}</div>
+          <div className="text-xs text-gray-500">Neutral</div>
+        </div>
       </div>
 
       {/* Filters */}
-      <div className="flex flex-wrap gap-3 items-center">
-        <input
-          type="text"
-          placeholder="Search headline or ticker..."
-          value={search}
-          onChange={e => setSearch(e.target.value)}
-          className="bg-surface-secondary border border-gray-700 rounded-lg px-3 py-2 text-sm text-white placeholder-gray-500 w-56"
-        />
-        {(['all', 'positive', 'negative', 'neutral'] as const).map(f => (
-          <button
-            key={f}
-            onClick={() => setFilter(f)}
-            className={`px-3 py-1.5 rounded text-sm ${
-              filter === f ? 'bg-surface-tertiary text-white' : 'text-gray-400 hover:text-white'
-            }`}
-          >
-            {f.charAt(0).toUpperCase() + f.slice(1)}
-          </button>
-        ))}
+      <div className="card p-4">
+        <div className="flex flex-wrap gap-3 items-center">
+          <input
+            type="text"
+            placeholder="Search headline or ticker..."
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            className="input-field w-56"
+          />
+          <div className="flex gap-1 bg-surface-tertiary rounded-lg p-1">
+            {(['all', 'positive', 'negative', 'neutral'] as const).map(f => (
+              <button
+                key={f}
+                onClick={() => setFilter(f)}
+                className={`px-3 py-1 rounded-md text-xs font-medium transition-all ${
+                  filter === f ? 'bg-accent/20 text-accent-light' : 'text-gray-500 hover:text-gray-300'
+                }`}
+              >
+                {f.charAt(0).toUpperCase() + f.slice(1)}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* News list */}
       <div className="space-y-2">
         {filtered.length === 0 && (
-          <p className="text-gray-400 text-center py-8">No news articles found.</p>
+          <div className="card p-12 text-center">
+            <p className="text-gray-500">No news articles found.</p>
+          </div>
         )}
         {filtered.map((item, i) => (
-          <div key={i} className="bg-surface-secondary rounded-lg p-3 flex items-start gap-3">
+          <div key={i} className="card-flat px-4 py-3 flex items-start gap-4 hover:bg-surface-hover/30 transition-colors">
+            <div className={`w-1 self-stretch rounded-full flex-shrink-0 ${
+              item.sentimentLabel === 'positive' ? 'bg-bullish' :
+              item.sentimentLabel === 'negative' ? 'bg-bearish' : 'bg-neutral'
+            }`} />
             <div className="flex-1 min-w-0">
               <a
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-blue-400 hover:text-blue-300 line-clamp-2"
+                className="text-sm text-gray-200 hover:text-accent-light transition-colors line-clamp-2 leading-relaxed"
               >
                 {item.title}
               </a>
-              <div className="flex items-center gap-3 mt-1 text-xs text-gray-500">
-                <span className="font-medium text-gray-300">{item.ticker}</span>
+              <div className="flex items-center gap-3 mt-1.5 text-xs text-gray-500">
+                <span className="font-semibold text-accent-light font-mono">{item.ticker}</span>
                 <span>{item.source}</span>
                 <span>{new Date(item.pubDate).toLocaleDateString()}</span>
               </div>
             </div>
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 pt-1">
               <SentimentBar score={item.sentimentScore} />
             </div>
           </div>

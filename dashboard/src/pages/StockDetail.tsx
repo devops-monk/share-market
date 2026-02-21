@@ -3,7 +3,7 @@ import type { StockRecord, NewsItem } from '../types';
 import ScoreGauge from '../components/charts/ScoreGauge';
 import PriceChart from '../components/charts/PriceChart';
 import SentimentBar from '../components/charts/SentimentBar';
-import { MarketTag, CapTag, Trading212Badge, SignalBadge } from '../components/common/Tags';
+import { MarketTag, CapTag, Trading212Badge, SignalBadge, ChangePercent, PriceDisplay } from '../components/common/Tags';
 
 interface Props {
   stocks: StockRecord[];
@@ -16,9 +16,10 @@ export default function StockDetail({ stocks, news }: Props) {
 
   if (!stock) {
     return (
-      <div className="text-center py-16">
-        <p className="text-gray-400 mb-4">Stock not found: {ticker}</p>
-        <Link to="/" className="text-blue-400 hover:text-blue-300">Back to Overview</Link>
+      <div className="text-center py-20">
+        <div className="text-4xl mb-4">🔍</div>
+        <p className="text-gray-400 mb-4">Stock not found: <span className="font-mono text-white">{ticker}</span></p>
+        <Link to="/" className="text-accent-light hover:text-white transition-colors">Back to Overview</Link>
       </div>
     );
   }
@@ -26,12 +27,12 @@ export default function StockDetail({ stocks, news }: Props) {
   const stockNews = news.filter(n => n.ticker === stock.ticker);
 
   const scoreItems = [
-    { label: 'Price Momentum', value: stock.score.priceMomentum },
-    { label: 'Technical', value: stock.score.technicalSignals },
-    { label: 'Sentiment', value: stock.score.newsSentiment },
-    { label: 'Fundamentals', value: stock.score.fundamentals },
-    { label: 'Volume', value: stock.score.volumeTrend },
-    { label: 'Risk (inv.)', value: stock.score.riskInverse },
+    { label: 'Momentum', value: stock.score.priceMomentum, icon: '📈' },
+    { label: 'Technical', value: stock.score.technicalSignals, icon: '📊' },
+    { label: 'Sentiment', value: stock.score.newsSentiment, icon: '📰' },
+    { label: 'Fundamentals', value: stock.score.fundamentals, icon: '💰' },
+    { label: 'Volume', value: stock.score.volumeTrend, icon: '📶' },
+    { label: 'Risk (inv.)', value: stock.score.riskInverse, icon: '🛡️' },
   ];
 
   const formatMcap = (v: number) => {
@@ -43,104 +44,106 @@ export default function StockDetail({ stocks, news }: Props) {
 
   return (
     <div className="space-y-6">
+      {/* Back button */}
+      <Link to="/" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-accent-light transition-colors">
+        ← Back
+      </Link>
+
       {/* Header */}
-      <div className="flex items-start justify-between">
-        <div>
+      <div className="flex items-start justify-between gap-6">
+        <div className="flex-1">
           <div className="flex items-center gap-3 mb-2">
-            <h1 className="text-2xl font-bold">{stock.ticker}</h1>
+            <h1 className="text-2xl font-bold text-white">{stock.ticker}</h1>
             <MarketTag market={stock.market} />
             <CapTag cap={stock.capCategory} />
             {stock.trading212 && <Trading212Badge />}
           </div>
-          <p className="text-gray-400">{stock.name} — {stock.sector}</p>
-          <div className="flex items-center gap-4 mt-2">
-            <span className="text-3xl font-bold">${stock.price.toFixed(2)}</span>
-            <span className={`text-lg font-medium ${stock.changePercent >= 0 ? 'text-bullish' : 'text-bearish'}`}>
-              {stock.changePercent >= 0 ? '+' : ''}{stock.changePercent.toFixed(2)}%
-            </span>
+          <p className="text-gray-400 mb-3">{stock.name} — {stock.sector}</p>
+          <div className="flex items-baseline gap-4">
+            <span className="text-4xl font-bold text-white font-mono tabular-nums">${stock.price.toFixed(2)}</span>
+            <ChangePercent value={stock.changePercent} />
           </div>
         </div>
         <ScoreGauge score={stock.score.composite} size={140} />
       </div>
 
       {/* Price levels chart */}
-      <section className="bg-surface-secondary rounded-lg p-4">
-        <h2 className="text-sm font-medium text-gray-400 mb-3">Price Levels</h2>
+      <div className="card p-5">
+        <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Price Levels</h2>
         <PriceChart stock={stock} />
-      </section>
+      </div>
 
       {/* Score breakdown */}
-      <section className="bg-surface-secondary rounded-lg p-4">
-        <h2 className="text-sm font-medium text-gray-400 mb-3">Score Breakdown</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+      <div className="card p-5">
+        <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Score Breakdown</h2>
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
           {scoreItems.map(item => (
-            <div key={item.label} className="flex items-center justify-between">
+            <div key={item.label} className="flex items-center justify-between gap-2">
               <span className="text-sm text-gray-400">{item.label}</span>
               <div className="flex items-center gap-2">
-                <div className="w-16 h-2 bg-gray-700 rounded-full overflow-hidden">
+                <div className="w-20 h-2 bg-surface-tertiary rounded-full overflow-hidden">
                   <div
-                    className="h-full rounded-full"
+                    className="h-full rounded-full transition-all duration-500"
                     style={{
                       width: `${item.value}%`,
-                      backgroundColor: item.value >= 65 ? '#22c55e' : item.value >= 40 ? '#f59e0b' : '#ef4444',
+                      backgroundColor: item.value >= 65 ? '#10b981' : item.value >= 40 ? '#f59e0b' : '#ef4444',
                     }}
                   />
                 </div>
-                <span className="text-sm font-medium w-8 text-right">{item.value}</span>
+                <span className="text-sm font-bold font-mono tabular-nums w-8 text-right text-white">{item.value}</span>
               </div>
             </div>
           ))}
         </div>
-      </section>
+      </div>
 
       {/* Key metrics */}
-      <section className="bg-surface-secondary rounded-lg p-4">
-        <h2 className="text-sm font-medium text-gray-400 mb-3">Key Metrics</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+      <div className="card p-5">
+        <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Key Metrics</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           <Metric label="Market Cap" value={formatMcap(stock.marketCap)} />
           <Metric label="P/E" value={stock.pe?.toFixed(1) ?? 'N/A'} />
           <Metric label="Forward P/E" value={stock.forwardPe?.toFixed(1) ?? 'N/A'} />
           <Metric label="Beta" value={stock.beta?.toFixed(2) ?? 'N/A'} />
-          <Metric label="RSI" value={stock.rsi?.toFixed(1) ?? 'N/A'} />
+          <Metric label="RSI" value={stock.rsi?.toFixed(1) ?? 'N/A'} highlight={stock.rsi != null && (stock.rsi > 70 || stock.rsi < 30)} />
           <Metric label="SMA 50" value={stock.sma50?.toFixed(2) ?? 'N/A'} />
           <Metric label="SMA 200" value={stock.sma200?.toFixed(2) ?? 'N/A'} />
-          <Metric label="Volume Ratio" value={stock.volumeRatio.toFixed(2) + 'x'} />
+          <Metric label="Vol Ratio" value={stock.volumeRatio.toFixed(2) + 'x'} />
           <Metric label="52W High" value={`$${stock.fiftyTwoWeekHigh.toFixed(2)}`} />
           <Metric label="52W Low" value={`$${stock.fiftyTwoWeekLow.toFixed(2)}`} />
-          <Metric label="3M Return" value={`${(stock.priceReturn3m * 100).toFixed(1)}%`} />
-          <Metric label="6M Return" value={`${(stock.priceReturn6m * 100).toFixed(1)}%`} />
+          <Metric label="3M Return" value={`${(stock.priceReturn3m * 100).toFixed(1)}%`} positive={stock.priceReturn3m >= 0} />
+          <Metric label="6M Return" value={`${(stock.priceReturn6m * 100).toFixed(1)}%`} positive={stock.priceReturn6m >= 0} />
         </div>
-      </section>
+      </div>
 
       {/* Signals */}
-      <section className="bg-surface-secondary rounded-lg p-4">
-        <h2 className="text-sm font-medium text-gray-400 mb-3">Signals</h2>
+      <div className="card p-5">
+        <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Active Signals</h2>
         {stock.signals.length === 0 ? (
           <p className="text-gray-500 text-sm">No signals detected</p>
         ) : (
           <div className="flex flex-wrap gap-2">
             {stock.signals.map((s, i) => (
-              <div key={i} className="flex items-center gap-1">
+              <div key={i} className="flex items-center gap-1.5">
                 <SignalBadge direction={s.direction} type={s.type} />
-                <span className="text-xs text-gray-500">{s.description}</span>
               </div>
             ))}
           </div>
         )}
-      </section>
+      </div>
 
       {/* News */}
       {stockNews.length > 0 && (
-        <section className="bg-surface-secondary rounded-lg p-4">
-          <h2 className="text-sm font-medium text-gray-400 mb-3">Recent News</h2>
-          <div className="space-y-2">
+        <div className="card p-5">
+          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Recent News</h2>
+          <div className="space-y-3">
             {stockNews.map((item, i) => (
-              <div key={i} className="flex items-start justify-between gap-3">
+              <div key={i} className="flex items-start justify-between gap-4">
                 <a
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-blue-400 hover:text-blue-300 line-clamp-1"
+                  className="text-sm text-gray-300 hover:text-accent-light transition-colors line-clamp-1 leading-relaxed"
                 >
                   {item.title}
                 </a>
@@ -148,21 +151,23 @@ export default function StockDetail({ stocks, news }: Props) {
               </div>
             ))}
           </div>
-        </section>
+        </div>
       )}
-
-      <Link to="/" className="inline-block text-sm text-gray-400 hover:text-white">
-        ← Back to Overview
-      </Link>
     </div>
   );
 }
 
-function Metric({ label, value }: { label: string; value: string }) {
+function Metric({ label, value, highlight, positive }: {
+  label: string; value: string; highlight?: boolean; positive?: boolean;
+}) {
+  let valueColor = 'text-white';
+  if (highlight) valueColor = 'text-neutral';
+  if (positive !== undefined) valueColor = positive ? 'text-bullish' : 'text-bearish';
+
   return (
     <div>
-      <p className="text-gray-500 text-xs">{label}</p>
-      <p className="font-medium">{value}</p>
+      <p className="text-xs text-gray-500 mb-1">{label}</p>
+      <p className={`font-semibold font-mono tabular-nums ${valueColor}`}>{value}</p>
     </div>
   );
 }

@@ -12,19 +12,22 @@ export default function App() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center bg-surface">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-bullish mx-auto mb-4" />
-          <p className="text-gray-400">Loading market data...</p>
+          <div className="relative w-16 h-16 mx-auto mb-6">
+            <div className="absolute inset-0 rounded-full border-2 border-surface-border" />
+            <div className="absolute inset-0 rounded-full border-2 border-transparent border-t-accent animate-spin" />
+          </div>
+          <p className="text-gray-400 text-sm font-medium">Loading market data...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-surface">
       <Header lastUpdated={metadata?.lastUpdated} />
-      <main className="max-w-7xl mx-auto px-4 py-6">
+      <main className="max-w-[1400px] mx-auto px-4 lg:px-6 py-6">
         <Routes>
           <Route
             path="/"
@@ -43,6 +46,12 @@ export default function App() {
           <Route path="/stock/:ticker" element={<StockDetail stocks={stocks} news={news} />} />
         </Routes>
       </main>
+      <footer className="border-t border-surface-border py-6 mt-12">
+        <div className="max-w-[1400px] mx-auto px-4 lg:px-6 flex items-center justify-between text-xs text-gray-600">
+          <span>StockMarket Dashboard — Educational purposes only</span>
+          <span>Data updates hourly on weekdays</span>
+        </div>
+      </footer>
     </div>
   );
 }

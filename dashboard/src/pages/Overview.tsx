@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { StockRecord, SummaryData, Metadata } from '../types';
-import { MarketTag, CapTag, ScoreBadge } from '../components/common/Tags';
+import { MarketTag, ScoreBadge, ChangePercent } from '../components/common/Tags';
 
 interface Props {
   stocks: StockRecord[];
@@ -13,10 +13,19 @@ interface Props {
 export default function Overview({ stocks, summary, metadata, bearishCount }: Props) {
   const [capTab, setCapTab] = useState<'all' | 'Large' | 'Mid' | 'Small'>('all');
 
-  if (!summary) {
+  if (!summary || summary.totalStocks === 0) {
     return (
-      <div className="flex items-center justify-center h-64">
-        <p className="text-gray-400">No data available. Run the ETL pipeline first.</p>
+      <div className="flex flex-col items-center justify-center h-[60vh] gap-4">
+        <div className="w-16 h-16 rounded-2xl bg-accent/10 flex items-center justify-center text-2xl">
+          📊
+        </div>
+        <h2 className="text-xl font-semibold text-white">No Data Yet</h2>
+        <p className="text-gray-400 text-center max-w-md">
+          Run the ETL pipeline to fetch market data. The dashboard will populate automatically once data is available.
+        </p>
+        <code className="text-sm text-accent bg-accent/10 px-3 py-1.5 rounded-lg font-mono">
+          cd etl && npm start
+        </code>
       </div>
     );
   }
@@ -32,62 +41,87 @@ export default function Overview({ stocks, summary, metadata, bearishCount }: Pr
   const usCount = stocks.filter(s => s.market === 'US').length;
   const ukCount = stocks.filter(s => s.market === 'UK').length;
   const avgChange = stocks.length
-    ? (stocks.reduce((a, s) => a + s.changePercent, 0) / stocks.length).toFixed(2)
-    : '0';
+    ? stocks.reduce((a, s) => a + s.changePercent, 0) / stocks.length
+    : 0;
+  const bullishCount = stocks.filter(s => s.score.composite >= 60).length;
 
   return (
-    <div className="space-y-6">
-      {/* Summary Cards */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <Card label="Total Stocks" value={summary.totalStocks.toString()} />
-        <Card label="Avg Score" value={summary.avgScore.toString()} color={summary.avgScore >= 50 ? 'text-bullish' : 'text-bearish'} />
-        <Card label="Avg Change" value={`${avgChange}%`} color={Number(avgChange) >= 0 ? 'text-bullish' : 'text-bearish'} />
-        <Card label="Bearish Alerts" value={bearishCount.toString()} color="text-bearish" link="/bearish" />
-      </div>
-
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <Card label="US Stocks" value={usCount.toString()} />
-        <Card label="UK Stocks" value={ukCount.toString()} />
-        <Card label="Large Cap" value={stocks.filter(s => s.capCategory === 'Large').length.toString()} />
-        <Card label="Small/Mid Cap" value={stocks.filter(s => s.capCategory !== 'Large').length.toString()} />
+    <div className="space-y-8">
+      {/* Hero stats */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <StatCard
+          label="Total Stocks"
+          value={summary.totalStocks.toString()}
+          sub={`${usCount} US / ${ukCount} UK`}
+          gradient="from-accent/20 to-transparent"
+          borderColor="border-t-accent"
+        />
+        <StatCard
+          label="Avg Score"
+          value={summary.avgScore.toString()}
+          sub={`${bullishCount} bullish (60+)`}
+          gradient={summary.avgScore >= 50 ? 'from-bullish/20 to-transparent' : 'from-bearish/20 to-transparent'}
+          borderColor={summary.avgScore >= 50 ? 'border-t-bullish' : 'border-t-bearish'}
+        />
+        <StatCard
+          label="Avg Change"
+          value={`${avgChange >= 0 ? '+' : ''}${avgChange.toFixed(2)}%`}
+          sub="Today's average"
+          gradient={avgChange >= 0 ? 'from-bullish/20 to-transparent' : 'from-bearish/20 to-transparent'}
+          borderColor={avgChange >= 0 ? 'border-t-bullish' : 'border-t-bearish'}
+        />
+        <Link to="/bearish">
+          <StatCard
+            label="Bearish Alerts"
+            value={bearishCount.toString()}
+            sub="Stocks with strong warnings"
+            gradient="from-bearish/20 to-transparent"
+            borderColor="border-t-bearish"
+          />
+        </Link>
       </div>
 
       {/* Top Performers */}
       <section>
-        <div className="flex items-center gap-4 mb-4">
-          <h2 className="text-lg font-semibold">Top Performers</h2>
-          <div className="flex gap-1">
+        <div className="flex items-center justify-between mb-4">
+          <div>
+            <h2 className="text-lg font-semibold text-white">Top Performers</h2>
+            <p className="text-sm text-gray-500 mt-0.5">Highest composite scores</p>
+          </div>
+          <div className="flex gap-1 bg-surface-tertiary rounded-lg p-1">
             {(['all', 'Large', 'Mid', 'Small'] as const).map(tab => (
               <button
                 key={tab}
                 onClick={() => setCapTab(tab)}
-                className={`px-3 py-1 rounded text-sm ${
-                  capTab === tab ? 'bg-surface-tertiary text-white' : 'text-gray-400 hover:text-white'
+                className={`px-3 py-1 rounded-md text-xs font-medium transition-all ${
+                  capTab === tab ? 'bg-accent/20 text-accent-light' : 'text-gray-500 hover:text-gray-300'
                 }`}
               >
-                {tab === 'all' ? 'All' : tab + ' Cap'}
+                {tab === 'all' ? 'All' : tab}
               </button>
             ))}
           </div>
         </div>
-        <div className="grid gap-2">
+        <div className="card-flat overflow-hidden">
           {topByTab.map((s, i) => (
             <Link
               key={s.ticker}
               to={`/stock/${s.ticker}`}
-              className="flex items-center justify-between bg-surface-secondary p-3 rounded-lg hover:bg-surface-tertiary transition-colors"
+              className="flex items-center justify-between px-4 py-3 hover:bg-surface-hover transition-colors border-b border-surface-border last:border-b-0"
             >
-              <div className="flex items-center gap-3">
-                <span className="text-gray-500 text-sm w-6">{i + 1}</span>
+              <div className="flex items-center gap-4">
+                <span className="w-7 h-7 rounded-full bg-surface-tertiary flex items-center justify-center text-xs font-bold text-gray-400">
+                  {i + 1}
+                </span>
                 <div>
-                  <span className="font-medium">{s.ticker}</span>
-                  <span className="text-gray-400 text-sm ml-2">{s.name}</span>
+                  <div className="flex items-center gap-2">
+                    <span className="font-semibold text-white">{s.ticker}</span>
+                    <MarketTag market={s.market} />
+                  </div>
+                  <span className="text-xs text-gray-500">{s.name}</span>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
-                <MarketTag market={s.market} />
-                <ScoreBadge score={s.score} />
-              </div>
+              <ScoreBadge score={s.score} />
             </Link>
           ))}
         </div>
@@ -95,41 +129,85 @@ export default function Overview({ stocks, summary, metadata, bearishCount }: Pr
 
       {/* Bottom Performers */}
       <section>
-        <h2 className="text-lg font-semibold mb-4">Bottom Performers</h2>
-        <div className="grid gap-2">
+        <div className="mb-4">
+          <h2 className="text-lg font-semibold text-white">Bottom Performers</h2>
+          <p className="text-sm text-gray-500 mt-0.5">Lowest composite scores — exercise caution</p>
+        </div>
+        <div className="card-flat overflow-hidden">
           {summary.bottomOverall.map((s, i) => (
             <Link
               key={s.ticker}
               to={`/stock/${s.ticker}`}
-              className="flex items-center justify-between bg-surface-secondary p-3 rounded-lg hover:bg-surface-tertiary transition-colors"
+              className="flex items-center justify-between px-4 py-3 hover:bg-surface-hover transition-colors border-b border-surface-border last:border-b-0"
             >
-              <div className="flex items-center gap-3">
-                <span className="text-gray-500 text-sm w-6">{i + 1}</span>
+              <div className="flex items-center gap-4">
+                <span className="w-7 h-7 rounded-full bg-bearish/10 flex items-center justify-center text-xs font-bold text-bearish">
+                  {i + 1}
+                </span>
                 <div>
-                  <span className="font-medium">{s.ticker}</span>
-                  <span className="text-gray-400 text-sm ml-2">{s.name}</span>
+                  <div className="flex items-center gap-2">
+                    <span className="font-semibold text-white">{s.ticker}</span>
+                    <MarketTag market={s.market} />
+                  </div>
+                  <span className="text-xs text-gray-500">{s.name}</span>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
-                <MarketTag market={s.market} />
-                <ScoreBadge score={s.score} />
-              </div>
+              <ScoreBadge score={s.score} />
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* Market breakdown */}
+      <section className="grid md:grid-cols-2 gap-4">
+        <div className="card p-5">
+          <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">By Market</h3>
+          <div className="space-y-3">
+            <BarStat label="US Stocks" value={usCount} total={summary.totalStocks} color="bg-blue-500" />
+            <BarStat label="UK Stocks" value={ukCount} total={summary.totalStocks} color="bg-violet-500" />
+          </div>
+        </div>
+        <div className="card p-5">
+          <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">By Cap Size</h3>
+          <div className="space-y-3">
+            <BarStat label="Large Cap" value={stocks.filter(s => s.capCategory === 'Large').length} total={summary.totalStocks} color="bg-emerald-500" />
+            <BarStat label="Mid Cap" value={stocks.filter(s => s.capCategory === 'Mid').length} total={summary.totalStocks} color="bg-amber-500" />
+            <BarStat label="Small Cap" value={stocks.filter(s => s.capCategory === 'Small').length} total={summary.totalStocks} color="bg-rose-500" />
+          </div>
         </div>
       </section>
     </div>
   );
 }
 
-function Card({ label, value, color = 'text-white', link }: {
-  label: string; value: string; color?: string; link?: string;
+function StatCard({ label, value, sub, gradient, borderColor }: {
+  label: string; value: string; sub: string; gradient: string; borderColor: string;
 }) {
-  const content = (
-    <div className="bg-surface-secondary rounded-lg p-4">
-      <p className="text-xs text-gray-400 mb-1">{label}</p>
-      <p className={`text-2xl font-bold ${color}`}>{value}</p>
+  return (
+    <div className={`stat-card border-t-2 ${borderColor}`}>
+      <div className={`absolute inset-0 bg-gradient-to-b ${gradient} pointer-events-none`} />
+      <div className="relative">
+        <p className="text-xs font-medium text-gray-400 uppercase tracking-wider">{label}</p>
+        <p className="text-2xl font-bold text-white mt-1 font-mono tabular-nums">{value}</p>
+        <p className="text-xs text-gray-500 mt-1">{sub}</p>
+      </div>
     </div>
   );
-  return link ? <Link to={link}>{content}</Link> : content;
+}
+
+function BarStat({ label, value, total, color }: {
+  label: string; value: number; total: number; color: string;
+}) {
+  const pct = total > 0 ? (value / total) * 100 : 0;
+  return (
+    <div>
+      <div className="flex justify-between text-sm mb-1">
+        <span className="text-gray-300">{label}</span>
+        <span className="font-mono tabular-nums text-white">{value}</span>
+      </div>
+      <div className="h-1.5 bg-surface-tertiary rounded-full overflow-hidden">
+        <div className={`h-full rounded-full ${color} transition-all duration-500`} style={{ width: `${pct}%` }} />
+      </div>
+    </div>
+  );
 }
