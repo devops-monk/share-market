@@ -111,6 +111,9 @@ async function main() {
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`ETL completed in ${elapsed}s`);
+
+  // Force exit — open HTTP keep-alive sockets prevent clean shutdown
+  process.exit(0);
 }
 
 main().catch(err => {
