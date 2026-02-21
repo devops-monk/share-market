@@ -1,74 +1,74 @@
 ticker,name,market,sector,price,changePercent,marketCap,capCategory,pe,rsi,sma50,sma200,bearishScore,bullishScore,sentimentAvg,compositeScore
-SHEL.L,Shell,UK,Energy,2940.5,10.30,0,Small,,65.9,2751.04,,0,3,0.000,55
-AZN.L,AstraZeneca,UK,Healthcare,15270,27.51,0,Small,,67.1,14009.20,,0,3,0.000,65
-HSBA.L,HSBC,UK,Financials,1290,33.80,0,Small,,56.7,1223.60,,2,2,0.000,56
-ULVR.L,Unilever,UK,Consumer Defensive,5380,7.22,0,Small,,69.2,4951.64,,0,3,0.000,55
-BP.L,BP,UK,Energy,467.6,11.63,0,Small,,53.9,445.41,,2,1,0.000,48
-GSK.L,GSK,UK,Healthcare,2213,49.27,0,Small,,69.5,1929.42,,0,4,0.000,71
-RIO.L,Rio Tinto,UK,Materials,7122,58.58,0,Small,,59.7,6441.24,,2,2,0.000,59
-LSEG.L,London Stock Exchange,UK,Financials,7904,-17.24,0,Small,,48.0,8417.76,,0,2,0.000,46
+SHEL.L,Shell,UK,Energy,2940.5,10.30,0,Small,,65.9,2751.04,,2,4,0.000,53
+AZN.L,AstraZeneca,UK,Healthcare,15270,27.51,0,Small,,67.1,14009.20,,2,5,0.000,65
+HSBA.L,HSBC,UK,Financials,1290,33.80,0,Small,,56.7,1223.60,,2,5,0.000,60
+ULVR.L,Unilever,UK,Consumer Defensive,5380,7.22,0,Small,,69.2,4951.64,,0,4,0.000,57
+BP.L,BP,UK,Energy,467.6,11.63,0,Small,,53.9,445.41,,2,2,0.000,49
+GSK.L,GSK,UK,Healthcare,2213,49.27,0,Small,,69.5,1929.42,,2,6,0.000,71
+RIO.L,Rio Tinto,UK,Materials,7122,58.58,0,Small,,59.7,6441.24,,2,3,0.000,60
+LSEG.L,London Stock Exchange,UK,Financials,7904,-17.24,0,Small,,48.0,8417.76,,0,5,0.000,51
 DGE.L,Diageo,UK,Consumer Defensive,1851,-12.65,0,Small,,64.6,1683.91,,0,2,0.000,53
-REL.L,RELX,UK,Industrials,2322,-35.94,0,Small,,42.0,2764.58,,1,2,0.000,40
-BATS.L,BAT,UK,Consumer Defensive,4569,5.01,0,Small,,63.2,4300.18,,2,0,0.000,48
-NG.L,National Grid,UK,Utilities,1346,26.92,0,Small,,72.8,1212.23,,2,4,0.000,59
-VOD.L,Vodafone,UK,Communication,115.5,30.63,0,Small,,68.4,103.97,,0,4,0.000,61
-LLOY.L,Lloyds Banking,UK,Financials,104.15,24.79,0,Small,,52.0,101.39,,2,1,0.000,52
+REL.L,RELX,UK,Industrials,2322,-35.94,0,Small,,42.0,2764.58,,1,5,0.000,45
+BATS.L,BAT,UK,Consumer Defensive,4569,5.01,0,Small,,63.2,4300.18,,2,1,0.000,50
+NG.L,National Grid,UK,Utilities,1346,26.92,0,Small,,72.8,1212.23,,2,5,0.000,61
+VOD.L,Vodafone,UK,Communication,115.5,30.63,0,Small,,68.4,103.97,,2,5,0.000,60
+LLOY.L,Lloyds Banking,UK,Financials,104.15,24.79,0,Small,,52.0,101.39,,2,2,0.000,53
 BARC.L,Barclays,UK,Financials,473.8,27.13,0,Small,,49.6,474.72,,2,1,0.000,53
 NWG.L,NatWest,UK,Financials,615.6,11.16,0,Small,,45.0,640.82,,2,0,0.000,46
 STAN.L,Standard Chartered,UK,Financials,1802,32.65,0,Small,,49.2,1813.56,,2,1,0.000,54
-RKT.L,Reckitt Benckiser,UK,Consumer Defensive,6416,10.07,0,Small,,54.7,6317.18,,0,3,0.000,56
+RKT.L,Reckitt Benckiser,UK,Consumer Defensive,6416,10.07,0,Small,,54.7,6317.18,,2,3,0.000,53
 CRH.L,CRH,UK,Materials,9178,11.14,0,Small,,50.7,9228.08,,0,2,0.000,54
 EXPN.L,Experian,UK,Industrials,2592,-33.47,0,Small,,40.5,3037.02,,1,2,0.000,41
-III.L,3i Group,UK,Financials,3399,-16.92,0,Small,,54.5,3258.88,,0,2,0.000,47
+III.L,3i Group,UK,Financials,3399,-16.92,0,Small,,54.5,3258.88,,3,2,0.000,43
 CPG.L,Compass Group,UK,Consumer Cyclical,2213,-15.73,0,Small,,53.8,2257.50,,0,2,0.000,50
-AAL.L,Anglo American,UK,Materials,3617,68.15,0,Small,,58.3,3273.58,,2,2,0.000,60
-BKG.L,Berkeley Group,UK,Consumer Cyclical,4354,16.42,0,Small,,61.1,4045.20,,2,1,0.000,50
+AAL.L,Anglo American,UK,Materials,3617,68.15,0,Small,,58.3,3273.58,,2,3,0.000,61
+BKG.L,Berkeley Group,UK,Consumer Cyclical,4354,16.42,0,Small,,61.1,4045.20,,2,2,0.000,52
 AHT.L,Ashtead Group,UK,Industrials,5190,-2.66,0,Small,,54.6,5154.44,,0,2,0.000,51
-SMT.L,Scottish Mortgage,UK,Financials,1258,18.01,0,Small,,61.8,1203.75,,0,4,0.000,59
-GLEN.L,Glencore,UK,Materials,507,73.81,0,Small,,60.1,453.80,,2,1,0.000,58
-RR.L,Rolls-Royce,UK,Industrials,1336,30.21,0,Small,,67.1,1222.34,,0,4,0.000,63
-BA.L,BAE Systems,UK,Industrials,2165,25.36,0,Small,,72.2,1909.24,,2,4,0.000,59
-TSCO.L,Tesco,UK,Consumer Defensive,494.6,15.78,0,Small,,80.0,443.09,,2,3,0.000,53
-SBRY.L,Sainsbury,UK,Consumer Defensive,355.2,16.38,0,Small,,78.9,327.22,,2,3,0.000,53
+SMT.L,Scottish Mortgage,UK,Financials,1258,18.01,0,Small,,61.8,1203.75,,0,5,0.000,60
+GLEN.L,Glencore,UK,Materials,507,73.81,0,Small,,60.1,453.80,,2,4,0.000,62
+RR.L,Rolls-Royce,UK,Industrials,1336,30.21,0,Small,,67.1,1222.34,,0,5,0.000,64
+BA.L,BAE Systems,UK,Industrials,2165,25.36,0,Small,,72.2,1909.24,,7,5,0.000,53
+TSCO.L,Tesco,UK,Consumer Defensive,494.6,15.78,0,Small,,80.0,443.09,,7,4,0.000,46
+SBRY.L,Sainsbury,UK,Consumer Defensive,355.2,16.38,0,Small,,78.9,327.22,,7,4,0.000,47
 ABF.L,Associated British Foods,UK,Consumer Defensive,1953.5,-16.41,0,Small,,50.6,1983.61,,0,2,0.000,51
 SGE.L,Sage Group,UK,Technology,819.2,-26.43,0,Small,,32.6,990.73,,2,2,0.000,41
 AUTO.L,Auto Trader,UK,Technology,481,-41.82,0,Small,,35.9,549.74,,1,2,0.000,41
 WISE.L,Wise,UK,Fintech,862.5,-19.77,0,Small,,42.8,888.76,,2,0,0.000,40
-PRU.L,Prudential,UK,Financials,1133,14.21,0,Small,,46.9,1153.34,,2,0,0.000,48
-LGEN.L,Legal & General,UK,Financials,274.8,5.45,0,Small,,63.3,262.49,,0,4,0.000,60
-IHG.L,InterContinental Hotels,UK,Consumer Cyclical,142.1,18.57,0,Small,,51.9,139.30,,2,1,0.000,51
-WTB.L,Whitbread,UK,Consumer Cyclical,2730,-12.13,0,Small,,52.7,2644.52,,2,0,0.000,42
+PRU.L,Prudential,UK,Financials,1133,14.21,0,Small,,46.9,1153.34,,2,1,0.000,50
+LGEN.L,Legal & General,UK,Financials,274.8,5.45,0,Small,,63.3,262.49,,0,6,0.000,63
+IHG.L,InterContinental Hotels,UK,Consumer Cyclical,142.1,18.57,0,Small,,51.9,139.30,,5,1,0.000,46
+WTB.L,Whitbread,UK,Consumer Cyclical,2730,-12.13,0,Small,,52.7,2644.52,,2,2,0.000,46
 JET2.L,Jet2,UK,Consumer Cyclical,1308,-19.41,0,Small,,56.1,1321.62,,0,2,0.000,50
-FOUR.L,4imprint,UK,Industrials,4030,18.88,0,Small,,53.2,4006.30,,2,0,0.000,48
-GAW.L,Games Workshop,UK,Consumer Cyclical,17350,9.33,0,Small,,50.7,18117.60,,0,2,0.000,56
+FOUR.L,4imprint,UK,Industrials,4030,18.88,0,Small,,53.2,4006.30,,2,3,0.000,53
+GAW.L,Games Workshop,UK,Consumer Cyclical,17350,9.33,0,Small,,50.7,18117.60,,0,6,0.000,63
 WIZZ.L,Wizz Air,UK,Industrials,1320,-5.31,0,Small,,45.7,1313.10,,2,1,0.000,46
-FRAS.L,Frasers Group,UK,Consumer Cyclical,706,0.71,0,Small,,52.5,687.89,,2,0,0.000,46
-BME.L,B&M European,UK,Consumer Cyclical,186.05,-20.83,0,Small,,60.1,170.77,,0,2,0.000,49
-PSN.L,Persimmon,UK,Consumer Cyclical,1536.5,36.76,0,Small,,65.9,1403.56,,0,4,0.000,61
-TW.L,Taylor Wimpey,UK,Consumer Cyclical,114.95,14.72,0,Small,,61.9,107.61,,0,2,0.000,54
-BWY.L,Bellway,UK,Consumer Cyclical,2848,16.15,0,Small,,58.6,2720.12,,0,2,0.000,54
+FRAS.L,Frasers Group,UK,Consumer Cyclical,706,0.71,0,Small,,52.5,687.89,,2,3,0.000,50
+BME.L,B&M European,UK,Consumer Cyclical,186.05,-20.83,0,Small,,60.1,170.77,,2,2,0.000,46
+PSN.L,Persimmon,UK,Consumer Cyclical,1536.5,36.76,0,Small,,65.9,1403.56,,2,5,0.000,59
+TW.L,Taylor Wimpey,UK,Consumer Cyclical,114.95,14.72,0,Small,,61.9,107.61,,2,3,0.000,53
+BWY.L,Bellway,UK,Consumer Cyclical,2848,16.15,0,Small,,58.6,2720.12,,3,2,0.000,50
 FDEV.L,Frontier Developments,UK,Technology,407,9.41,0,Small,,30.0,460.81,,3,0,0.000,39
-FEVR.L,Fevertree,UK,Consumer Defensive,952,12.00,0,Small,,64.7,869.98,,0,3,0.000,56
+FEVR.L,Fevertree,UK,Consumer Defensive,952,12.00,0,Small,,64.7,869.98,,0,4,0.000,58
 JTC.L,JTC,UK,Financials,1300,39.78,0,Small,,63.7,1289.64,,0,2,0.000,56
-GYM.L,Gym Group,UK,Consumer Cyclical,176,22.22,0,Small,,57.3,163.14,,2,1,0.000,55
+GYM.L,Gym Group,UK,Consumer Cyclical,176,22.22,0,Small,,57.3,163.14,,2,3,0.000,59
 CBG.L,Close Brothers,UK,Financials,491.2,0.49,0,Small,,44.8,503.99,,2,1,0.000,48
-ENOG.L,Energean,UK,Energy,907.5,-2.10,0,Small,,60.7,884.57,,0,2,0.000,53
-HBR.L,Harbour Energy,UK,Energy,226.2,0.44,0,Small,,56.3,211.24,,2,0,0.000,45
+ENOG.L,Energean,UK,Energy,907.5,-2.10,0,Small,,60.7,884.57,,0,4,0.000,56
+HBR.L,Harbour Energy,UK,Energy,226.2,0.44,0,Small,,56.3,211.24,,2,1,0.000,46
 ITM.L,ITM Power,UK,Industrials,64.5,-3.73,0,Small,,51.0,64.23,,0,2,0.000,47
 MNDI.L,Mondi,UK,Materials,926.4,-13.90,0,Small,,55.5,897.14,,0,2,0.000,50
-ANTO.L,Antofagasta,UK,Materials,3992,88.66,0,Small,,59.6,3495.36,,0,4,0.000,65
+ANTO.L,Antofagasta,UK,Materials,3992,88.66,0,Small,,59.6,3495.36,,3,4,0.000,61
 PHNX.L,Phoenix Group,UK,Financials,767.5,11.15,0,Small,,66.3,734.24,,0,4,0.000,60
-SPX.L,Spirax-Sarco,UK,Industrials,7895,9.35,0,Small,,65.3,7179.00,,0,4,0.000,58
-SMIN.L,Smiths Group,UK,Industrials,2704,14.58,0,Small,,70.0,2502.08,,0,3,0.000,57
-IAG.L,IAG,UK,Industrials,437.7,12.87,0,Small,,55.2,421.81,,0,4,0.000,57
-EZJ.L,easyJet,UK,Industrials,473.9,-6.79,0,Small,,41.7,492.46,,2,0,0.000,44
-SSE.L,SSE,UK,Utilities,2593,45.23,0,Small,,62.8,2342.44,,2,2,0.000,56
-CNA.L,Centrica,UK,Utilities,188.25,14.33,0,Small,,50.3,180.77,,2,2,0.000,53
-SVT.L,Severn Trent,UK,Utilities,3142,19.42,0,Small,,65.4,2888.80,,0,3,0.000,58
-UU.L,United Utilities,UK,Utilities,1341,15.65,0,Small,,65.2,1236.93,,0,3,0.000,58
-OCDO.L,Ocado,UK,Technology,235,-34.30,0,Small,,50.9,243.42,,0,3,0.000,49
-LAND.L,Land Securities,UK,Real Estate,668.5,16.06,0,Small,,58.7,634.55,,2,1,0.000,51
-BLND.L,British Land,UK,Real Estate,419,20.82,0,Small,,57.7,404.21,,2,1,0.000,51
-SGRO.L,Segro,UK,Real Estate,814,26.87,0,Small,,70.9,739.78,,2,4,0.000,61
-BRBY.L,Burberry,UK,Consumer Cyclical,1213.5,0.17,0,Small,,54.2,1232.68,,0,2,0.000,52
+SPX.L,Spirax-Sarco,UK,Industrials,7895,9.35,0,Small,,65.3,7179.00,,0,5,0.000,59
+SMIN.L,Smiths Group,UK,Industrials,2704,14.58,0,Small,,70.0,2502.08,,0,4,0.000,58
+IAG.L,IAG,UK,Industrials,437.7,12.87,0,Small,,55.2,421.81,,0,5,0.000,59
+EZJ.L,easyJet,UK,Industrials,473.9,-6.79,0,Small,,41.7,492.46,,2,2,0.000,47
+SSE.L,SSE,UK,Utilities,2593,45.23,0,Small,,62.8,2342.44,,2,3,0.000,58
+CNA.L,Centrica,UK,Utilities,188.25,14.33,0,Small,,50.3,180.77,,2,3,0.000,55
+SVT.L,Severn Trent,UK,Utilities,3142,19.42,0,Small,,65.4,2888.80,,0,4,0.000,59
+UU.L,United Utilities,UK,Utilities,1341,15.65,0,Small,,65.2,1236.93,,0,4,0.000,60
+OCDO.L,Ocado,UK,Technology,235,-34.30,0,Small,,50.9,243.42,,0,5,0.000,52
+LAND.L,Land Securities,UK,Real Estate,668.5,16.06,0,Small,,58.7,634.55,,2,4,0.000,56
+BLND.L,British Land,UK,Real Estate,419,20.82,0,Small,,57.7,404.21,,2,4,0.000,56
+SGRO.L,Segro,UK,Real Estate,814,26.87,0,Small,,70.9,739.78,,7,6,0.000,56
+BRBY.L,Burberry,UK,Consumer Cyclical,1213.5,0.17,0,Small,,54.2,1232.68,,3,2,0.000,47
 JMAT.L,Johnson Matthey,UK,Materials,2304,22.49,0,Small,,49.4,2266.80,,2,1,0.000,51

@@ -1,5 +1,1261 @@
 [
   {
+    "ticker": "MRK",
+    "name": "Merck",
+    "market": "US",
+    "sector": "Healthcare",
+    "trading212": true,
+    "price": 122.26,
+    "changePercent": 44.41294590125208,
+    "marketCap": 303450000000,
+    "capCategory": "Large",
+    "pe": 16.81,
+    "forwardPe": 12.54,
+    "earningsGrowth": -0.1928,
+    "revenueGrowth": 0.0724,
+    "beta": 0.28,
+    "volume": 9425606,
+    "avgVolume": 14070000,
+    "fiftyTwoWeekHigh": 123.33,
+    "fiftyTwoWeekLow": 73.31,
+    "rsi": 70.81,
+    "macdHistogram": 0.23531182052225308,
+    "sma50": 109.70920028686524,
+    "sma200": null,
+    "sma20": 116.01700019836426,
+    "bollingerUpper": 127.2211509848838,
+    "bollingerLower": 104.81284941184471,
+    "bollingerBandwidth": 0.19314670724743524,
+    "bollingerPercentB": 0.7786020966955886,
+    "bollingerSqueeze": false,
+    "stochasticK": 93.92837764378712,
+    "stochasticD": 94.22003636090157,
+    "obvTrend": "rising",
+    "obvDivergence": null,
+    "volumeRatio": 0.698723031395666,
+    "priceReturn3m": 0.28627036518511134,
+    "priceReturn6m": 0.4203066860544988,
+    "volatility": 0.23711477917127555,
+    "signals": [
+      {
+        "type": "RSI Overbought",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "RSI at 70.8 (above 70)"
+      },
+      {
+        "type": "MACD Bullish",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "MACD histogram positive (0.235)"
+      },
+      {
+        "type": "Stochastic Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "Stochastic %K (93.9) crossed below %D (94.2) in overbought zone"
+      },
+      {
+        "type": "RSI + Stochastic Overbought",
+        "direction": "bearish",
+        "severity": 3,
+        "description": "Both RSI (70.8) and Stochastic (93.9) confirm overbought"
+      },
+      {
+        "type": "Volume Confirms Uptrend",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "OBV trend rising with price — volume confirms the move"
+      },
+      {
+        "type": "Strong Momentum",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "3-month return +28.6%"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 123.33"
+      }
+    ],
+    "bearishScore": 7,
+    "bullishScore": 5,
+    "sentimentAvg": -0.0849,
+    "score": {
+      "priceMomentum": 85,
+      "technicalSignals": 38,
+      "newsSentiment": 46,
+      "fundamentals": 55,
+      "volumeTrend": 15,
+      "riskInverse": 81,
+      "composite": 55
+    }
+  },
+  {
+    "ticker": "SLB",
+    "name": "Schlumberger",
+    "market": "US",
+    "sector": "Energy",
+    "trading212": true,
+    "price": 50.85,
+    "changePercent": 52.42805755395684,
+    "marketCap": 76040000000,
+    "capCategory": "Large",
+    "pe": 21.53,
+    "forwardPe": 15.28,
+    "earningsGrowth": -0.2928,
+    "revenueGrowth": 0.0482,
+    "beta": 0.69,
+    "volume": 12710867,
+    "avgVolume": 18470000,
+    "fiftyTwoWeekHigh": 52.4,
+    "fiftyTwoWeekLow": 31.11,
+    "rsi": 60.17,
+    "macdHistogram": -0.25059328731485975,
+    "sma50": 45.06960029602051,
+    "sma200": null,
+    "sma20": 50.09249992370606,
+    "bollingerUpper": 52.229346922186295,
+    "bollingerLower": 47.95565292522582,
+    "bollingerBandwidth": 0.0853160453854284,
+    "bollingerPercentB": 0.6772471489144265,
+    "bollingerSqueeze": false,
+    "stochasticK": 75.28722069903293,
+    "stochasticD": 87.09119108805112,
+    "obvTrend": "falling",
+    "obvDivergence": "bearish",
+    "volumeRatio": 0.5917111622351098,
+    "priceReturn3m": 0.41801443415041184,
+    "priceReturn6m": 0.5039927952884147,
+    "volatility": 0.333069754068122,
+    "signals": [
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-0.251)"
+      },
+      {
+        "type": "Stochastic Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "Stochastic %K (75.3) crossed below %D (87.1) in overbought zone"
+      },
+      {
+        "type": "OBV Bearish Divergence",
+        "direction": "bearish",
+        "severity": 3,
+        "description": "Price rising but OBV falling — distribution detected (smart money selling)"
+      },
+      {
+        "type": "Strong Momentum",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "3-month return +41.8%"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 52.40"
+      }
+    ],
+    "bearishScore": 7,
+    "bullishScore": 2,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 96,
+      "technicalSignals": 19,
+      "newsSentiment": 50,
+      "fundamentals": 45,
+      "volumeTrend": 11,
+      "riskInverse": 66,
+      "composite": 51
+    }
+  },
+  {
+    "ticker": "HON",
+    "name": "Honeywell",
+    "market": "US",
+    "sector": "Industrials",
+    "trading212": true,
+    "price": 243.97,
+    "changePercent": 19.286734075218558,
+    "marketCap": 155090000000,
+    "capCategory": "Large",
+    "pe": 30.53,
+    "forwardPe": 21.18,
+    "earningsGrowth": -0.7646,
+    "revenueGrowth": -0.032799999999999996,
+    "beta": 0.92,
+    "volume": 2680158,
+    "avgVolume": 4300000,
+    "fiftyTwoWeekHigh": 245.63,
+    "fiftyTwoWeekLow": 169.048,
+    "rsi": 73.15,
+    "macdHistogram": -0.29045994186226487,
+    "sma50": 215.01160064697265,
+    "sma200": null,
+    "sma20": 233.8300018310547,
+    "bollingerUpper": 251.21111749697357,
+    "bollingerLower": 216.4488861651358,
+    "bollingerBandwidth": 0.14866454714803426,
+    "bollingerPercentB": 0.7916958371328243,
+    "bollingerSqueeze": false,
+    "stochasticK": 93.50025299665991,
+    "stochasticD": 84.71634693719848,
+    "obvTrend": "rising",
+    "obvDivergence": null,
+    "volumeRatio": 0.6067288602545847,
+    "priceReturn3m": 0.2802119527950398,
+    "priceReturn6m": 0.19056280776164347,
+    "volatility": 0.22030747922580213,
+    "signals": [
+      {
+        "type": "RSI Overbought",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "RSI at 73.2 (above 70)"
+      },
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-0.290)"
+      },
+      {
+        "type": "RSI + Stochastic Overbought",
+        "direction": "bearish",
+        "severity": 3,
+        "description": "Both RSI (73.2) and Stochastic (93.5) confirm overbought"
+      },
+      {
+        "type": "Volume Confirms Uptrend",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "OBV trend rising with price — volume confirms the move"
+      },
+      {
+        "type": "Strong Momentum",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "3-month return +28.0%"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 245.63"
+      }
+    ],
+    "bearishScore": 7,
+    "bullishScore": 3,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 74,
+      "technicalSignals": 25,
+      "newsSentiment": 50,
+      "fundamentals": 27,
+      "volumeTrend": 11,
+      "riskInverse": 66,
+      "composite": 44
+    }
+  },
+  {
+    "ticker": "DE",
+    "name": "Deere & Co",
+    "market": "US",
+    "sector": "Industrials",
+    "trading212": true,
+    "price": 662.49,
+    "changePercent": 34.45567462250364,
+    "marketCap": 179580000000,
+    "capCategory": "Large",
+    "pe": 37.35,
+    "forwardPe": 28.98,
+    "earningsGrowth": -0.24170000000000003,
+    "revenueGrowth": 0.12869999999999998,
+    "beta": 0.95,
+    "volume": 2989207,
+    "avgVolume": 1670000,
+    "fiftyTwoWeekHigh": 666.92,
+    "fiftyTwoWeekLow": 404.42,
+    "rsi": 81.52,
+    "macdHistogram": 7.010676235543858,
+    "sma50": 519.6597967529297,
+    "sma200": null,
+    "sma20": 571.8994964599609,
+    "bollingerUpper": 660.3150828353495,
+    "bollingerLower": 483.48391008457236,
+    "bollingerBandwidth": 0.3091997349977684,
+    "bollingerPercentB": 1.0122993990868105,
+    "bollingerSqueeze": false,
+    "stochasticK": 97.56819601123814,
+    "stochasticD": 90.11006999449766,
+    "obvTrend": "rising",
+    "obvDivergence": null,
+    "volumeRatio": 1.4885636529780415,
+    "priceReturn3m": 0.39539146442404427,
+    "priceReturn6m": 0.3610197570530989,
+    "volatility": 0.42821270111670523,
+    "signals": [
+      {
+        "type": "RSI Overbought",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "RSI at 81.5 (above 70)"
+      },
+      {
+        "type": "MACD Bullish",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "MACD histogram positive (7.011)"
+      },
+      {
+        "type": "BB Upper + RSI High",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "Price at upper Bollinger Band with RSI 81.5 — overextended"
+      },
+      {
+        "type": "RSI + Stochastic Overbought",
+        "direction": "bearish",
+        "severity": 3,
+        "description": "Both RSI (81.5) and Stochastic (97.6) confirm overbought"
+      },
+      {
+        "type": "Volume Confirms Uptrend",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "OBV trend rising with price — volume confirms the move"
+      },
+      {
+        "type": "Accumulation Day",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price up 34.5% on 1.5x volume — institutional buying"
+      },
+      {
+        "type": "Strong Momentum",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "3-month return +39.5%"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 666.92"
+      }
+    ],
+    "bearishScore": 7,
+    "bullishScore": 6,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 88,
+      "technicalSignals": 44,
+      "newsSentiment": 50,
+      "fundamentals": 34,
+      "volumeTrend": 44,
+      "riskInverse": 55,
+      "composite": 55
+    }
+  },
+  {
+    "ticker": "GE",
+    "name": "GE Aerospace",
+    "market": "US",
+    "sector": "Industrials",
+    "trading212": true,
+    "price": 343.22,
+    "changePercent": 28.8169944452785,
+    "marketCap": 359970000000,
+    "capCategory": "Large",
+    "pe": 42.17,
+    "forwardPe": 40.25,
+    "earningsGrowth": 0.365,
+    "revenueGrowth": 0.17620000000000002,
+    "beta": 1.38,
+    "volume": 5026097,
+    "avgVolume": 5330000,
+    "fiftyTwoWeekHigh": 344.2,
+    "fiftyTwoWeekLow": 159.36,
+    "rsi": 70.4,
+    "macdHistogram": 3.3317795463600284,
+    "sma50": 311.47080078125,
+    "sma200": null,
+    "sma20": 312.429997253418,
+    "bollingerUpper": 339.3744079616408,
+    "bollingerLower": 285.48558654519513,
+    "bollingerBandwidth": 0.1724828662106201,
+    "bollingerPercentB": 1.0713615910921668,
+    "bollingerSqueeze": false,
+    "stochasticK": 95.72023072084545,
+    "stochasticD": 95.18437394731787,
+    "obvTrend": "rising",
+    "obvDivergence": null,
+    "volumeRatio": 0.8604555053280958,
+    "priceReturn3m": 0.14094805153962506,
+    "priceReturn6m": 0.27728782752792164,
+    "volatility": 0.3691658537830046,
+    "signals": [
+      {
+        "type": "RSI Overbought",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "RSI at 70.4 (above 70)"
+      },
+      {
+        "type": "MACD Bullish",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "MACD histogram positive (3.332)"
+      },
+      {
+        "type": "BB Upper + RSI High",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "Price at upper Bollinger Band with RSI 70.4 — overextended"
+      },
+      {
+        "type": "RSI + Stochastic Overbought",
+        "direction": "bearish",
+        "severity": 3,
+        "description": "Both RSI (70.4) and Stochastic (95.7) confirm overbought"
+      },
+      {
+        "type": "Volume Confirms Uptrend",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "OBV trend rising with price — volume confirms the move"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 344.20"
+      }
+    ],
+    "bearishScore": 7,
+    "bullishScore": 4,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 71,
+      "technicalSignals": 31,
+      "newsSentiment": 50,
+      "fundamentals": 59,
+      "volumeTrend": 21,
+      "riskInverse": 47,
+      "composite": 49
+    }
+  },
+  {
+    "ticker": "LIN",
+    "name": "Linde",
+    "market": "US",
+    "sector": "Materials",
+    "trading212": true,
+    "price": 496.51,
+    "changePercent": 2.9334936561903926,
+    "marketCap": 231840000000,
+    "capCategory": "Large",
+    "pe": 34.02,
+    "forwardPe": 25.48,
+    "earningsGrowth": -0.095,
+    "revenueGrowth": 0.0582,
+    "beta": 0.83,
+    "volume": 3197542,
+    "avgVolume": 2820000,
+    "fiftyTwoWeekHigh": 498.34,
+    "fiftyTwoWeekLow": 387.78,
+    "rsi": 75.91,
+    "macdHistogram": 2.5840294441651643,
+    "sma50": 442.93579956054685,
+    "sma200": null,
+    "sma20": 466.02149963378906,
+    "bollingerUpper": 493.96177663780713,
+    "bollingerLower": 438.081222629771,
+    "bollingerBandwidth": 0.11990981972279911,
+    "bollingerPercentB": 1.045601254451171,
+    "bollingerSqueeze": false,
+    "stochasticK": 95.31539260032426,
+    "stochasticD": 94.74491256571737,
+    "obvTrend": "rising",
+    "obvDivergence": null,
+    "volumeRatio": 1.138806895077997,
+    "priceReturn3m": 0.20162147893851418,
+    "priceReturn6m": 0.032868088018560296,
+    "volatility": 0.18347765767883842,
+    "signals": [
+      {
+        "type": "RSI Overbought",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "RSI at 75.9 (above 70)"
+      },
+      {
+        "type": "MACD Bullish",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "MACD histogram positive (2.584)"
+      },
+      {
+        "type": "BB Upper + RSI High",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "Price at upper Bollinger Band with RSI 75.9 — overextended"
+      },
+      {
+        "type": "RSI + Stochastic Overbought",
+        "direction": "bearish",
+        "severity": 3,
+        "description": "Both RSI (75.9) and Stochastic (95.3) confirm overbought"
+      },
+      {
+        "type": "Volume Confirms Uptrend",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "OBV trend rising with price — volume confirms the move"
+      },
+      {
+        "type": "Strong Momentum",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "3-month return +20.2%"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 498.34"
+      }
+    ],
+    "bearishScore": 7,
+    "bullishScore": 5,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 62,
+      "technicalSignals": 38,
+      "newsSentiment": 50,
+      "fundamentals": 44,
+      "volumeTrend": 31,
+      "riskInverse": 70,
+      "composite": 49
+    }
+  },
+  {
+    "ticker": "ADI",
+    "name": "Analog Devices",
+    "market": "US",
+    "sector": "Technology",
+    "trading212": true,
+    "price": 355.03,
+    "changePercent": 44.98713603136357,
+    "marketCap": 173330000000,
+    "capCategory": "Large",
+    "pe": 64.85,
+    "forwardPe": 27.71,
+    "earningsGrowth": 1.1534,
+    "revenueGrowth": 0.3042,
+    "beta": 1.01,
+    "volume": 5339103,
+    "avgVolume": 4080000,
+    "fiftyTwoWeekHigh": 355.45,
+    "fiftyTwoWeekLow": 158.65,
+    "rsi": 77.1,
+    "macdHistogram": 1.8952536950004735,
+    "sma50": 301.08980163574216,
+    "sma200": null,
+    "sma20": 324.48050079345705,
+    "bollingerUpper": 353.18304351300435,
+    "bollingerLower": 295.77795807390976,
+    "bollingerBandwidth": 0.17691382162786692,
+    "bollingerPercentB": 1.0321740917702351,
+    "bollingerSqueeze": false,
+    "stochasticK": 96.22882935614302,
+    "stochasticD": 94.84561901166028,
+    "obvTrend": "rising",
+    "obvDivergence": null,
+    "volumeRatio": 1.1857677303724137,
+    "priceReturn3m": 0.5289836496355929,
+    "priceReturn6m": 0.4376594580550126,
+    "volatility": 0.2799087864539089,
+    "signals": [
+      {
+        "type": "RSI Overbought",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "RSI at 77.1 (above 70)"
+      },
+      {
+        "type": "MACD Bullish",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "MACD histogram positive (1.895)"
+      },
+      {
+        "type": "BB Upper + RSI High",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "Price at upper Bollinger Band with RSI 77.1 — overextended"
+      },
+      {
+        "type": "RSI + Stochastic Overbought",
+        "direction": "bearish",
+        "severity": 3,
+        "description": "Both RSI (77.1) and Stochastic (96.2) confirm overbought"
+      },
+      {
+        "type": "Volume Confirms Uptrend",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "OBV trend rising with price — volume confirms the move"
+      },
+      {
+        "type": "Strong Momentum",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "3-month return +52.9%"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 355.45"
+      }
+    ],
+    "bearishScore": 7,
+    "bullishScore": 5,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 98,
+      "technicalSignals": 38,
+      "newsSentiment": 50,
+      "fundamentals": 50,
+      "volumeTrend": 33,
+      "riskInverse": 61,
+      "composite": 58
+    }
+  },
+  {
+    "ticker": "BA.L",
+    "name": "BAE Systems",
+    "market": "UK",
+    "sector": "Industrials",
+    "trading212": true,
+    "price": 2165,
+    "changePercent": 25.361899247249564,
+    "marketCap": 0,
+    "capCategory": "Small",
+    "pe": null,
+    "forwardPe": null,
+    "earningsGrowth": null,
+    "revenueGrowth": null,
+    "beta": null,
+    "volume": 8950608,
+    "avgVolume": 0,
+    "fiftyTwoWeekHigh": 2178,
+    "fiftyTwoWeekLow": 1253.5,
+    "rsi": 72.18,
+    "macdHistogram": 22.16942019338972,
+    "sma50": 1909.24,
+    "sma200": null,
+    "sma20": 1978.675,
+    "bollingerUpper": 2148.191746960293,
+    "bollingerLower": 1809.158253039707,
+    "bollingerBandwidth": 0.17134369915250666,
+    "bollingerPercentB": 1.0495769690638412,
+    "bollingerSqueeze": false,
+    "stochasticK": 96.70579642887036,
+    "stochasticD": 96.51153771215952,
+    "obvTrend": "falling",
+    "obvDivergence": null,
+    "volumeRatio": 1.4486524453781224,
+    "priceReturn3m": 0.2638645650904845,
+    "priceReturn6m": 0.22212813999435507,
+    "volatility": 0.30656312524752694,
+    "signals": [
+      {
+        "type": "RSI Overbought",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "RSI at 72.2 (above 70)"
+      },
+      {
+        "type": "MACD Bullish",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "MACD histogram positive (22.169)"
+      },
+      {
+        "type": "BB Upper + RSI High",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "Price at upper Bollinger Band with RSI 72.2 — overextended"
+      },
+      {
+        "type": "RSI + Stochastic Overbought",
+        "direction": "bearish",
+        "severity": 3,
+        "description": "Both RSI (72.2) and Stochastic (96.7) confirm overbought"
+      },
+      {
+        "type": "Accumulation Day",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price up 25.4% on 1.4x volume — institutional buying"
+      },
+      {
+        "type": "Strong Momentum",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "3-month return +26.4%"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 2178.00"
+      }
+    ],
+    "bearishScore": 7,
+    "bullishScore": 5,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 74,
+      "technicalSignals": 38,
+      "newsSentiment": 50,
+      "fundamentals": 50,
+      "volumeTrend": 43,
+      "riskInverse": 60,
+      "composite": 53
+    }
+  },
+  {
+    "ticker": "TSCO.L",
+    "name": "Tesco",
+    "market": "UK",
+    "sector": "Consumer Defensive",
+    "trading212": true,
+    "price": 494.6,
+    "changePercent": 15.777153558052442,
+    "marketCap": 0,
+    "capCategory": "Small",
+    "pe": null,
+    "forwardPe": null,
+    "earningsGrowth": null,
+    "revenueGrowth": null,
+    "beta": null,
+    "volume": 10106206,
+    "avgVolume": 0,
+    "fiftyTwoWeekHigh": 499.7,
+    "fiftyTwoWeekLow": 75.2,
+    "rsi": 79.96,
+    "macdHistogram": 4.854996001911866,
+    "sma50": 443.08599975585935,
+    "sma200": null,
+    "sma20": 456.7800003051758,
+    "bollingerUpper": 514.005820519221,
+    "bollingerLower": 399.5541800911307,
+    "bollingerBandwidth": 0.2505618467350252,
+    "bollingerPercentB": 0.8304452391714423,
+    "bollingerSqueeze": false,
+    "stochasticK": 92.90961071180817,
+    "stochasticD": 95.20378818793218,
+    "obvTrend": "rising",
+    "obvDivergence": null,
+    "volumeRatio": 0.6665483093761609,
+    "priceReturn3m": 0.0930386875215815,
+    "priceReturn6m": 0.1449074215359158,
+    "volatility": 0.1752951403805953,
+    "signals": [
+      {
+        "type": "RSI Overbought",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "RSI at 80.0 (above 70)"
+      },
+      {
+        "type": "MACD Bullish",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "MACD histogram positive (4.855)"
+      },
+      {
+        "type": "Stochastic Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "Stochastic %K (92.9) crossed below %D (95.2) in overbought zone"
+      },
+      {
+        "type": "RSI + Stochastic Overbought",
+        "direction": "bearish",
+        "severity": 3,
+        "description": "Both RSI (80.0) and Stochastic (92.9) confirm overbought"
+      },
+      {
+        "type": "Volume Confirms Uptrend",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "OBV trend rising with price — volume confirms the move"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 499.70"
+      }
+    ],
+    "bearishScore": 7,
+    "bullishScore": 4,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 62,
+      "technicalSignals": 31,
+      "newsSentiment": 50,
+      "fundamentals": 50,
+      "volumeTrend": 14,
+      "riskInverse": 66,
+      "composite": 46
+    }
+  },
+  {
+    "ticker": "SBRY.L",
+    "name": "Sainsbury",
+    "market": "UK",
+    "sector": "Consumer Defensive",
+    "trading212": true,
+    "price": 355.2,
+    "changePercent": 16.382699868938403,
+    "marketCap": 0,
+    "capCategory": "Small",
+    "pe": null,
+    "forwardPe": null,
+    "earningsGrowth": null,
+    "revenueGrowth": null,
+    "beta": null,
+    "volume": 4270048,
+    "avgVolume": 0,
+    "fiftyTwoWeekHigh": 370.728,
+    "fiftyTwoWeekLow": 223.4,
+    "rsi": 78.88,
+    "macdHistogram": 1.9763200513190853,
+    "sma50": 327.22400146484375,
+    "sma200": null,
+    "sma20": 336.770002746582,
+    "bollingerUpper": 365.9862408868623,
+    "bollingerLower": 307.55376460630174,
+    "bollingerBandwidth": 0.17350855421802733,
+    "bollingerPercentB": 0.8154067468393311,
+    "bollingerSqueeze": false,
+    "stochasticK": 94.55315158924081,
+    "stochasticD": 94.92237975672141,
+    "obvTrend": "rising",
+    "obvDivergence": null,
+    "volumeRatio": 0.6571409437827552,
+    "priceReturn3m": 0.10105395377164055,
+    "priceReturn6m": 0.1615435787639961,
+    "volatility": 0.14311066207914033,
+    "signals": [
+      {
+        "type": "RSI Overbought",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "RSI at 78.9 (above 70)"
+      },
+      {
+        "type": "MACD Bullish",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "MACD histogram positive (1.976)"
+      },
+      {
+        "type": "Stochastic Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "Stochastic %K (94.6) crossed below %D (94.9) in overbought zone"
+      },
+      {
+        "type": "RSI + Stochastic Overbought",
+        "direction": "bearish",
+        "severity": 3,
+        "description": "Both RSI (78.9) and Stochastic (94.6) confirm overbought"
+      },
+      {
+        "type": "Volume Confirms Uptrend",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "OBV trend rising with price — volume confirms the move"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 370.73"
+      }
+    ],
+    "bearishScore": 7,
+    "bullishScore": 4,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 63,
+      "technicalSignals": 31,
+      "newsSentiment": 50,
+      "fundamentals": 50,
+      "volumeTrend": 13,
+      "riskInverse": 68,
+      "composite": 47
+    }
+  },
+  {
+    "ticker": "SGRO.L",
+    "name": "Segro",
+    "market": "UK",
+    "sector": "Real Estate",
+    "trading212": true,
+    "price": 814,
+    "changePercent": 26.87032418952618,
+    "marketCap": 0,
+    "capCategory": "Small",
+    "pe": null,
+    "forwardPe": null,
+    "earningsGrowth": null,
+    "revenueGrowth": null,
+    "beta": null,
+    "volume": 5616821,
+    "avgVolume": 0,
+    "fiftyTwoWeekHigh": 814.252,
+    "fiftyTwoWeekLow": 586.852,
+    "rsi": 70.89,
+    "macdHistogram": 2.8637956003749814,
+    "sma50": 739.7840014648438,
+    "sma200": null,
+    "sma20": 773.0000061035156,
+    "bollingerUpper": 811.5289587291767,
+    "bollingerLower": 734.4710534778545,
+    "bollingerBandwidth": 0.09968681066349566,
+    "bollingerPercentB": 1.0320673299224017,
+    "bollingerSqueeze": false,
+    "stochasticK": 94.2209643974004,
+    "stochasticD": 90.24354672171762,
+    "obvTrend": "rising",
+    "obvDivergence": null,
+    "volumeRatio": 1.7832845573430456,
+    "priceReturn3m": 0.17562098685487543,
+    "priceReturn6m": 0.2863464217801374,
+    "volatility": 0.21700624138688984,
+    "signals": [
+      {
+        "type": "RSI Overbought",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "RSI at 70.9 (above 70)"
+      },
+      {
+        "type": "MACD Bullish",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "MACD histogram positive (2.864)"
+      },
+      {
+        "type": "BB Upper + RSI High",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "Price at upper Bollinger Band with RSI 70.9 — overextended"
+      },
+      {
+        "type": "RSI + Stochastic Overbought",
+        "direction": "bearish",
+        "severity": 3,
+        "description": "Both RSI (70.9) and Stochastic (94.2) confirm overbought"
+      },
+      {
+        "type": "Volume Confirms Uptrend",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "OBV trend rising with price — volume confirms the move"
+      },
+      {
+        "type": "Accumulation Day",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price up 26.9% on 1.8x volume — institutional buying"
+      },
+      {
+        "type": "Strong Momentum",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "3-month return +17.6%"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 814.25"
+      }
+    ],
+    "bearishScore": 7,
+    "bullishScore": 6,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 73,
+      "technicalSignals": 44,
+      "newsSentiment": 50,
+      "fundamentals": 50,
+      "volumeTrend": 55,
+      "riskInverse": 64,
+      "composite": 56
+    }
+  },
+  {
+    "ticker": "WMT",
+    "name": "Walmart",
+    "market": "US",
+    "sector": "Consumer Defensive",
+    "trading212": true,
+    "price": 122.99,
+    "changePercent": 19.908355269572002,
+    "marketCap": 980250000000,
+    "capCategory": "Large",
+    "pe": 45.04,
+    "forwardPe": 37.4,
+    "earningsGrowth": -0.18510000000000001,
+    "revenueGrowth": 0.055999999999999994,
+    "beta": 0.66,
+    "volume": 34853514,
+    "avgVolume": 31610000,
+    "fiftyTwoWeekHigh": 134.65,
+    "fiftyTwoWeekLow": 79.81,
+    "rsi": 48.5,
+    "macdHistogram": -0.7332382073610559,
+    "sma50": 119.04400009155273,
+    "sma200": null,
+    "sma20": 124.93350067138672,
+    "bollingerUpper": 135.9111393195251,
+    "bollingerLower": 113.95586202324837,
+    "bollingerBandwidth": 0.17573570882341483,
+    "bollingerPercentB": 0.41147911068669013,
+    "bollingerSqueeze": false,
+    "stochasticK": 5.047026632418785,
+    "stochasticD": 33.26064659146339,
+    "obvTrend": "rising",
+    "obvDivergence": "bearish",
+    "volumeRatio": 1.273568284513875,
+    "priceReturn3m": 0.2224430684588957,
+    "priceReturn6m": 0.2555124439896438,
+    "volatility": 0.2905042616392677,
+    "signals": [
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-0.733)"
+      },
+      {
+        "type": "OBV Bearish Divergence",
+        "direction": "bearish",
+        "severity": 3,
+        "description": "Price rising but OBV falling — distribution detected (smart money selling)"
+      },
+      {
+        "type": "Volume Confirms Uptrend",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "OBV trend rising with price — volume confirms the move"
+      },
+      {
+        "type": "Strong Momentum",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "3-month return +22.2%"
+      }
+    ],
+    "bearishScore": 5,
+    "bullishScore": 2,
+    "sentimentAvg": -0.023100000000000002,
+    "score": {
+      "priceMomentum": 74,
+      "technicalSignals": 31,
+      "newsSentiment": 49,
+      "fundamentals": 29,
+      "volumeTrend": 36,
+      "riskInverse": 69,
+      "composite": 49
+    }
+  },
+  {
+    "ticker": "KO",
+    "name": "Coca-Cola",
+    "market": "US",
+    "sector": "Consumer Defensive",
+    "trading212": true,
+    "price": 79.84,
+    "changePercent": 12.92786421499293,
+    "marketCap": 343440000000,
+    "capCategory": "Large",
+    "pe": 26.28,
+    "forwardPe": 23.06,
+    "earningsGrowth": 0.0358,
+    "revenueGrowth": 0.056600000000000004,
+    "beta": 0.35,
+    "volume": 17072141,
+    "avgVolume": 18270000,
+    "fiftyTwoWeekHigh": 80.41,
+    "fiftyTwoWeekLow": 65.35,
+    "rsi": 70.14,
+    "macdHistogram": 0.084314644339615,
+    "sma50": 72.81740020751953,
+    "sma200": null,
+    "sma20": 76.81299934387206,
+    "bollingerUpper": 81.8151394865241,
+    "bollingerLower": 71.81085920122003,
+    "bollingerBandwidth": 0.13024202115214228,
+    "bollingerPercentB": 0.8025705567820298,
+    "bollingerSqueeze": false,
+    "stochasticK": 92.44775396127125,
+    "stochasticD": 88.89588875805403,
+    "obvTrend": "rising",
+    "obvDivergence": null,
+    "volumeRatio": 0.8433504328730067,
+    "priceReturn3m": 0.12276748210670423,
+    "priceReturn6m": 0.12991780639694359,
+    "volatility": 0.1743783999505017,
+    "signals": [
+      {
+        "type": "RSI Overbought",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "RSI at 70.1 (above 70)"
+      },
+      {
+        "type": "MACD Bullish",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "MACD histogram positive (0.084)"
+      },
+      {
+        "type": "RSI + Stochastic Overbought",
+        "direction": "bearish",
+        "severity": 3,
+        "description": "Both RSI (70.1) and Stochastic (92.4) confirm overbought"
+      },
+      {
+        "type": "Volume Confirms Uptrend",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "OBV trend rising with price — volume confirms the move"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 80.41"
+      }
+    ],
+    "bearishScore": 5,
+    "bullishScore": 4,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 63,
+      "technicalSignals": 44,
+      "newsSentiment": 50,
+      "fundamentals": 57,
+      "volumeTrend": 20,
+      "riskInverse": 83,
+      "composite": 53
+    }
+  },
+  {
+    "ticker": "VZ",
+    "name": "Verizon",
+    "market": "US",
+    "sector": "Communication",
+    "trading212": true,
+    "price": 49.25,
+    "changePercent": 9.298712827341317,
+    "marketCap": 207720000000,
+    "capCategory": "Large",
+    "pe": 12.13,
+    "forwardPe": 9.45,
+    "earningsGrowth": -0.5329999999999999,
+    "revenueGrowth": 0.0196,
+    "beta": 0.3,
+    "volume": 25437535,
+    "avgVolume": 30970000,
+    "fiftyTwoWeekHigh": 50.24,
+    "fiftyTwoWeekLow": 38.39,
+    "rsi": 74.48,
+    "macdHistogram": 0.19732580539242228,
+    "sma50": 42.27199989318848,
+    "sma200": null,
+    "sma20": 45.50999984741211,
+    "bollingerUpper": 52.911556039603425,
+    "bollingerLower": 38.108443655220796,
+    "bollingerBandwidth": 0.32527164214491633,
+    "bollingerPercentB": 0.7526495817550917,
+    "bollingerSqueeze": false,
+    "stochasticK": 91.4047156450271,
+    "stochasticD": 85.08707519149577,
+    "obvTrend": "rising",
+    "obvDivergence": null,
+    "volumeRatio": 0.6256247938669056,
+    "priceReturn3m": 0.1956786026223521,
+    "priceReturn6m": 0.09371533055966515,
+    "volatility": 0.39270464729458976,
+    "signals": [
+      {
+        "type": "RSI Overbought",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "RSI at 74.5 (above 70)"
+      },
+      {
+        "type": "MACD Bullish",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "MACD histogram positive (0.197)"
+      },
+      {
+        "type": "RSI + Stochastic Overbought",
+        "direction": "bearish",
+        "severity": 3,
+        "description": "Both RSI (74.5) and Stochastic (91.4) confirm overbought"
+      },
+      {
+        "type": "Volume Confirms Uptrend",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "OBV trend rising with price — volume confirms the move"
+      },
+      {
+        "type": "Strong Momentum",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "3-month return +19.6%"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 50.24"
+      }
+    ],
+    "bearishScore": 5,
+    "bullishScore": 5,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 64,
+      "technicalSignals": 50,
+      "newsSentiment": 50,
+      "fundamentals": 44,
+      "volumeTrend": 12,
+      "riskInverse": 73,
+      "composite": 51
+    }
+  },
+  {
     "ticker": "OKTA",
     "name": "Okta",
     "market": "US",
@@ -22,6 +1278,16 @@
     "macdHistogram": -0.9723144043878809,
     "sma50": 88.25919998168945,
     "sma200": null,
+    "sma20": 85.78150024414063,
+    "bollingerUpper": 94.02232045432542,
+    "bollingerLower": 77.54068003395584,
+    "bollingerBandwidth": 0.19213513838603422,
+    "bollingerPercentB": -0.19723036973542574,
+    "bollingerSqueeze": false,
+    "stochasticK": 2.4806834867694203,
+    "stochasticD": 8.193322630469995,
+    "obvTrend": "flat",
+    "obvDivergence": null,
     "volumeRatio": 2.154606743183023,
     "priceReturn3m": -0.07241847530987212,
     "priceReturn6m": -0.1725328366493752,
@@ -60,6 +1326,76 @@
     }
   },
   {
+    "ticker": "IHG.L",
+    "name": "InterContinental Hotels",
+    "market": "UK",
+    "sector": "Consumer Cyclical",
+    "trading212": true,
+    "price": 142.1,
+    "changePercent": 18.566851345037044,
+    "marketCap": 0,
+    "capCategory": "Small",
+    "pe": null,
+    "forwardPe": null,
+    "earningsGrowth": null,
+    "revenueGrowth": null,
+    "beta": null,
+    "volume": 456246,
+    "avgVolume": 0,
+    "fiftyTwoWeekHigh": 149.5,
+    "fiftyTwoWeekLow": 97.612,
+    "rsi": 51.89,
+    "macdHistogram": -0.09316896859028989,
+    "sma50": 139.29514739990233,
+    "sma200": null,
+    "sma20": 141.24749908447265,
+    "bollingerUpper": 150.01337035615325,
+    "bollingerLower": 132.48162781279206,
+    "bollingerBandwidth": 0.1241207289119957,
+    "bollingerPercentB": 0.5486261370436428,
+    "bollingerSqueeze": false,
+    "stochasticK": 53.18756354066131,
+    "stochasticD": 62.360501521606345,
+    "obvTrend": "falling",
+    "obvDivergence": "bearish",
+    "volumeRatio": 1.0554852342393852,
+    "priceReturn3m": 0.08479314280841851,
+    "priceReturn6m": 0.1915583514116436,
+    "volatility": 0.26505207915232976,
+    "signals": [
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-0.093)"
+      },
+      {
+        "type": "OBV Bearish Divergence",
+        "direction": "bearish",
+        "severity": 3,
+        "description": "Price rising but OBV falling — distribution detected (smart money selling)"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 149.50"
+      }
+    ],
+    "bearishScore": 5,
+    "bullishScore": 1,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 64,
+      "technicalSignals": 25,
+      "newsSentiment": 50,
+      "fundamentals": 50,
+      "volumeTrend": 28,
+      "riskInverse": 62,
+      "composite": 46
+    }
+  },
+  {
     "ticker": "INTU",
     "name": "Intuit",
     "market": "US",
@@ -82,6 +1418,16 @@
     "macdHistogram": -1.4020204165712045,
     "sma50": 562.2260040283203,
     "sma200": null,
+    "sma20": 452.2020034790039,
+    "bollingerUpper": 575.8331644517395,
+    "bollingerLower": 328.57084250626826,
+    "bollingerBandwidth": 0.5467961664105097,
+    "bollingerPercentB": 0.21021867417873194,
+    "bollingerSqueeze": false,
+    "stochasticK": 2.917512167271603,
+    "stochasticD": 5.314469232044256,
+    "obvTrend": "falling",
+    "obvDivergence": null,
     "volumeRatio": 0.9275866719700814,
     "priceReturn3m": -0.415096383989205,
     "priceReturn6m": -0.4546119260678266,
@@ -100,6 +1446,12 @@
         "description": "MACD histogram negative (-1.402)"
       },
       {
+        "type": "RSI + Stochastic Oversold",
+        "direction": "bullish",
+        "severity": 3,
+        "description": "Both RSI (20.9) and Stochastic (2.9) confirm oversold"
+      },
+      {
         "type": "Weak Momentum",
         "direction": "bearish",
         "severity": 1,
@@ -113,16 +1465,16 @@
       }
     ],
     "bearishScore": 4,
-    "bullishScore": 2,
+    "bullishScore": 5,
     "sentimentAvg": 0.0713,
     "score": {
       "priceMomentum": 7,
-      "technicalSignals": 38,
+      "technicalSignals": 56,
       "newsSentiment": 54,
       "fundamentals": 81,
       "volumeTrend": 23,
       "riskInverse": 43,
-      "composite": 38
+      "composite": 42
     }
   },
   {
@@ -148,6 +1500,16 @@
     "macdHistogram": -1.34218477279226,
     "sma50": 179.49340087890624,
     "sma200": null,
+    "sma20": 167.46950073242186,
+    "bollingerUpper": 189.02969186875055,
+    "bollingerLower": 145.90930959609318,
+    "bollingerBandwidth": 0.25748200170223184,
+    "bollingerPercentB": 0.0647185914600851,
+    "bollingerSqueeze": false,
+    "stochasticK": 2.6234446460457406,
+    "stochasticD": 2.752293941043424,
+    "obvTrend": "falling",
+    "obvDivergence": null,
     "volumeRatio": 1.685645234560704,
     "priceReturn3m": -0.25612805658591187,
     "priceReturn6m": -0.18885014724414562,
@@ -166,6 +1528,12 @@
         "description": "MACD histogram negative (-1.342)"
       },
       {
+        "type": "RSI + Stochastic Oversold",
+        "direction": "bullish",
+        "severity": 3,
+        "description": "Both RSI (27.7) and Stochastic (2.6) confirm oversold"
+      },
+      {
         "type": "Weak Momentum",
         "direction": "bearish",
         "severity": 1,
@@ -179,82 +1547,250 @@
       }
     ],
     "bearishScore": 4,
-    "bullishScore": 2,
-    "sentimentAvg": 0.1125,
+    "bullishScore": 5,
+    "sentimentAvg": 0.028599999999999997,
     "score": {
       "priceMomentum": 28,
-      "technicalSignals": 38,
-      "newsSentiment": 56,
+      "technicalSignals": 56,
+      "newsSentiment": 51,
       "fundamentals": 50,
       "volumeTrend": 51,
       "riskInverse": 61,
-      "composite": 43
+      "composite": 47
     }
   },
   {
-    "ticker": "HON",
-    "name": "Honeywell",
+    "ticker": "NKE",
+    "name": "Nike",
     "market": "US",
-    "sector": "Industrials",
+    "sector": "Consumer Cyclical",
     "trading212": true,
-    "price": 243.97,
-    "changePercent": 19.286734075218558,
-    "marketCap": 155090000000,
+    "price": 65.4,
+    "changePercent": -14.240755310778914,
+    "marketCap": 96820000000,
     "capCategory": "Large",
-    "pe": 30.53,
-    "forwardPe": 21.18,
-    "earningsGrowth": -0.7646,
-    "revenueGrowth": -0.032799999999999996,
-    "beta": 0.92,
-    "volume": 2680158,
-    "avgVolume": 4300000,
-    "fiftyTwoWeekHigh": 245.63,
-    "fiftyTwoWeekLow": 169.048,
-    "rsi": 73.15,
-    "macdHistogram": -0.29045994186226487,
-    "sma50": 215.01160064697265,
+    "pe": 38.35,
+    "forwardPe": 28.02,
+    "earningsGrowth": -0.3148,
+    "revenueGrowth": 0.0037,
+    "beta": 1.26,
+    "volume": 33305963,
+    "avgVolume": 17780000,
+    "fiftyTwoWeekHigh": 82.44,
+    "fiftyTwoWeekLow": 52.28,
+    "rsi": 56.18,
+    "macdHistogram": 0.36575101579981195,
+    "sma50": 63.73060005187988,
     "sma200": null,
-    "volumeRatio": 0.6067288602545847,
-    "priceReturn3m": 0.2802119527950398,
-    "priceReturn6m": 0.19056280776164347,
-    "volatility": 0.22030747922580213,
+    "sma20": 63.356500244140626,
+    "bollingerUpper": 66.25166424102487,
+    "bollingerLower": 60.46133624725638,
+    "bollingerBandwidth": 0.09139280060381803,
+    "bollingerPercentB": 0.8529160624507941,
+    "bollingerSqueeze": false,
+    "stochasticK": 89.87239904090532,
+    "stochasticD": 92.48585713570391,
+    "obvTrend": "falling",
+    "obvDivergence": null,
+    "volumeRatio": 2.2680422978850037,
+    "priceReturn3m": 0.044061337214613264,
+    "priceReturn6m": -0.1415069406158097,
+    "volatility": 0.3065871768246752,
     "signals": [
       {
-        "type": "RSI Overbought",
+        "type": "MACD Bullish",
+        "direction": "bullish",
+        "severity": 2,
+        "description": "MACD histogram positive (0.366)"
+      },
+      {
+        "type": "Stochastic Bearish",
         "direction": "bearish",
         "severity": 2,
-        "description": "RSI at 73.2 (above 70)"
+        "description": "Stochastic %K (89.9) crossed below %D (92.5) in overbought zone"
       },
       {
-        "type": "MACD Bearish",
+        "type": "Volume Spike Decline",
         "direction": "bearish",
         "severity": 2,
-        "description": "MACD histogram negative (-0.290)"
-      },
-      {
-        "type": "Strong Momentum",
-        "direction": "bullish",
-        "severity": 1,
-        "description": "3-month return +28.0%"
-      },
-      {
-        "type": "Near 52W High",
-        "direction": "bullish",
-        "severity": 1,
-        "description": "Price near 52-week high of 245.63"
+        "description": "Volume 2.3x average with -14.2% decline"
       }
     ],
     "bearishScore": 4,
     "bullishScore": 2,
     "sentimentAvg": 0,
     "score": {
-      "priceMomentum": 74,
+      "priceMomentum": 45,
       "technicalSignals": 38,
       "newsSentiment": 50,
-      "fundamentals": 27,
-      "volumeTrend": 11,
-      "riskInverse": 66,
-      "composite": 47
+      "fundamentals": 29,
+      "volumeTrend": 73,
+      "riskInverse": 53,
+      "composite": 45
+    }
+  },
+  {
+    "ticker": "CVX",
+    "name": "Chevron",
+    "market": "US",
+    "sector": "Energy",
+    "trading212": true,
+    "price": 183.93,
+    "changePercent": 20.043075316538317,
+    "marketCap": 370350000000,
+    "capCategory": "Large",
+    "pe": 27.65,
+    "forwardPe": 20.29,
+    "earningsGrowth": -0.2373,
+    "revenueGrowth": -0.0542,
+    "beta": 0.66,
+    "volume": 9530823,
+    "avgVolume": 10620000,
+    "fiftyTwoWeekHigh": 186.52,
+    "fiftyTwoWeekLow": 132.04,
+    "rsi": 65.72,
+    "macdHistogram": -0.2670054775377766,
+    "sma50": 164.81399993896486,
+    "sma200": null,
+    "sma20": 178.23149871826172,
+    "bollingerUpper": 190.39684495831867,
+    "bollingerLower": 166.06615247820477,
+    "bollingerBandwidth": 0.1365117426217376,
+    "bollingerPercentB": 0.7342104026178383,
+    "bollingerSqueeze": false,
+    "stochasticK": 79.25483079589274,
+    "stochasticD": 82.40839506723331,
+    "obvTrend": "rising",
+    "obvDivergence": null,
+    "volumeRatio": 0.8132243780714594,
+    "priceReturn3m": 0.21245877637384175,
+    "priceReturn6m": 0.18244930290731182,
+    "volatility": 0.2018521958021286,
+    "signals": [
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-0.267)"
+      },
+      {
+        "type": "Stochastic Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "Stochastic %K (79.3) crossed below %D (82.4) in overbought zone"
+      },
+      {
+        "type": "Volume Confirms Uptrend",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "OBV trend rising with price — volume confirms the move"
+      },
+      {
+        "type": "Strong Momentum",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "3-month return +21.2%"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 186.52"
+      }
+    ],
+    "bearishScore": 4,
+    "bullishScore": 3,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 70,
+      "technicalSignals": 44,
+      "newsSentiment": 50,
+      "fundamentals": 43,
+      "volumeTrend": 19,
+      "riskInverse": 73,
+      "composite": 51
+    }
+  },
+  {
+    "ticker": "LMT",
+    "name": "Lockheed Martin",
+    "market": "US",
+    "sector": "Industrials",
+    "trading212": true,
+    "price": 658.26,
+    "changePercent": 47.591928251121075,
+    "marketCap": 151450000000,
+    "capCategory": "Large",
+    "pe": 30.64,
+    "forwardPe": 20.65,
+    "earningsGrowth": 1.6063999999999998,
+    "revenueGrowth": 0.09119999999999999,
+    "beta": 0.22,
+    "volume": 1166528,
+    "avgVolume": 1680000,
+    "fiftyTwoWeekHigh": 668.25,
+    "fiftyTwoWeekLow": 410.11,
+    "rsi": 69.44,
+    "macdHistogram": -0.3675797367716669,
+    "sma50": 557.71080078125,
+    "sma200": null,
+    "sma20": 626.5965026855469,
+    "bollingerUpper": 673.0994925709623,
+    "bollingerLower": 580.0935128001314,
+    "bollingerBandwidth": 0.14843041634004348,
+    "bollingerPercentB": 0.8404458228650761,
+    "bollingerSqueeze": false,
+    "stochasticK": 83.47624372354402,
+    "stochasticD": 89.32250107444257,
+    "obvTrend": "rising",
+    "obvDivergence": null,
+    "volumeRatio": 0.688213048890567,
+    "priceReturn3m": 0.40082144375659945,
+    "priceReturn6m": 0.4719588367562108,
+    "volatility": 0.30283762144818244,
+    "signals": [
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-0.368)"
+      },
+      {
+        "type": "Stochastic Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "Stochastic %K (83.5) crossed below %D (89.3) in overbought zone"
+      },
+      {
+        "type": "Volume Confirms Uptrend",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "OBV trend rising with price — volume confirms the move"
+      },
+      {
+        "type": "Strong Momentum",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "3-month return +40.1%"
+      },
+      {
+        "type": "Near 52W High",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "Price near 52-week high of 668.25"
+      }
+    ],
+    "bearishScore": 4,
+    "bullishScore": 3,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 94,
+      "technicalSignals": 44,
+      "newsSentiment": 50,
+      "fundamentals": 77,
+      "volumeTrend": 14,
+      "riskInverse": 79,
+      "composite": 63
     }
   },
   {
@@ -280,6 +1816,16 @@
     "macdHistogram": -0.046237191487225826,
     "sma50": 11.019999980926514,
     "sma200": null,
+    "sma20": 10.442500019073487,
+    "bollingerUpper": 11.558848947791104,
+    "bollingerLower": 9.32615109035587,
+    "bollingerBandwidth": 0.21380874822668475,
+    "bollingerPercentB": 0.10025938301444551,
+    "bollingerSqueeze": false,
+    "stochasticK": 4.067731307974467,
+    "stochasticD": 12.2806251884654,
+    "obvTrend": "falling",
+    "obvDivergence": null,
     "volumeRatio": 0.9717474190983143,
     "priceReturn3m": -0.23416198987698061,
     "priceReturn6m": -0.5430621834907747,
@@ -340,6 +1886,16 @@
     "macdHistogram": -0.01256762407750145,
     "sma50": 33.82700012207031,
     "sma200": null,
+    "sma20": 28.44650001525879,
+    "bollingerUpper": 34.75926567359118,
+    "bollingerLower": 22.133734356926396,
+    "bollingerBandwidth": 0.4438342611531264,
+    "bollingerPercentB": 0.23494184669744156,
+    "bollingerSqueeze": false,
+    "stochasticK": 2.5486116988560505,
+    "stochasticD": 3.57979094839693,
+    "obvTrend": "falling",
+    "obvDivergence": null,
     "volumeRatio": 0.9725290113633261,
     "priceReturn3m": -0.37546650313172514,
     "priceReturn6m": -0.5200764675406822,
@@ -358,6 +1914,12 @@
         "description": "MACD histogram negative (-0.013)"
       },
       {
+        "type": "RSI + Stochastic Oversold",
+        "direction": "bullish",
+        "severity": 3,
+        "description": "Both RSI (24.5) and Stochastic (2.5) confirm oversold"
+      },
+      {
         "type": "Weak Momentum",
         "direction": "bearish",
         "severity": 1,
@@ -371,16 +1933,16 @@
       }
     ],
     "bearishScore": 4,
-    "bullishScore": 2,
+    "bullishScore": 5,
     "sentimentAvg": 0,
     "score": {
       "priceMomentum": 5,
-      "technicalSignals": 38,
+      "technicalSignals": 56,
       "newsSentiment": 50,
       "fundamentals": 66,
       "volumeTrend": 25,
       "riskInverse": 49,
-      "composite": 35
+      "composite": 40
     }
   },
   {
@@ -406,6 +1968,16 @@
     "macdHistogram": -0.2613941241608764,
     "sma50": 209.12070007324218,
     "sma200": null,
+    "sma20": 185.35999908447266,
+    "bollingerUpper": 222.21258883722192,
+    "bollingerLower": 148.5074093317234,
+    "bollingerBandwidth": 0.39763260611535406,
+    "bollingerPercentB": 0.15253460806560926,
+    "bollingerSqueeze": false,
+    "stochasticK": 1.8722838429587163,
+    "stochasticD": 8.340639414338971,
+    "obvTrend": "falling",
+    "obvDivergence": null,
     "volumeRatio": 1.2771765315170396,
     "priceReturn3m": -0.45255473994538814,
     "priceReturn6m": -0.409099329042247,
@@ -424,6 +1996,12 @@
         "description": "MACD histogram negative (-0.261)"
       },
       {
+        "type": "RSI + Stochastic Oversold",
+        "direction": "bullish",
+        "severity": 3,
+        "description": "Both RSI (24.8) and Stochastic (1.9) confirm oversold"
+      },
+      {
         "type": "Weak Momentum",
         "direction": "bearish",
         "severity": 1,
@@ -437,16 +2015,92 @@
       }
     ],
     "bearishScore": 4,
-    "bullishScore": 2,
+    "bullishScore": 5,
     "sentimentAvg": 0,
     "score": {
       "priceMomentum": 7,
-      "technicalSignals": 38,
+      "technicalSignals": 56,
       "newsSentiment": 50,
       "fundamentals": 54,
       "volumeTrend": 36,
       "riskInverse": 51,
-      "composite": 35
+      "composite": 40
+    }
+  },
+  {
+    "ticker": "NEM",
+    "name": "Newmont",
+    "market": "US",
+    "sector": "Materials",
+    "trading212": true,
+    "price": 122.13,
+    "changePercent": 76.99999999999999,
+    "marketCap": 132860000000.00002,
+    "capCategory": "Large",
+    "pe": 19.12,
+    "forwardPe": 11.27,
+    "earningsGrowth": -0.0379,
+    "revenueGrowth": 0.14800000000000002,
+    "beta": 0.42,
+    "volume": 12504926,
+    "avgVolume": 9540000,
+    "fiftyTwoWeekHigh": 134.88,
+    "fiftyTwoWeekLow": 41.23,
+    "rsi": 54.17,
+    "macdHistogram": -0.1784292144669939,
+    "sma50": 111.95839965820312,
+    "sma200": null,
+    "sma20": 121.2229995727539,
+    "bollingerUpper": 132.7727445673396,
+    "bollingerLower": 109.67325457816823,
+    "bollingerBandwidth": 0.19055369088856647,
+    "bollingerPercentB": 0.5392649546665865,
+    "bollingerSqueeze": false,
+    "stochasticK": 76.68861075069528,
+    "stochasticD": 85.47508902660748,
+    "obvTrend": "rising",
+    "obvDivergence": null,
+    "volumeRatio": 1.1681884657404868,
+    "priceReturn3m": 0.3956118646105517,
+    "priceReturn6m": 0.742474013904243,
+    "volatility": 0.5987812870189089,
+    "signals": [
+      {
+        "type": "MACD Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "MACD histogram negative (-0.178)"
+      },
+      {
+        "type": "Stochastic Bearish",
+        "direction": "bearish",
+        "severity": 2,
+        "description": "Stochastic %K (76.7) crossed below %D (85.5) in overbought zone"
+      },
+      {
+        "type": "Volume Confirms Uptrend",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "OBV trend rising with price — volume confirms the move"
+      },
+      {
+        "type": "Strong Momentum",
+        "direction": "bullish",
+        "severity": 1,
+        "description": "3-month return +39.6%"
+      }
+    ],
+    "bearishScore": 4,
+    "bullishScore": 2,
+    "sentimentAvg": 0,
+    "score": {
+      "priceMomentum": 100,
+      "technicalSignals": 38,
+      "newsSentiment": 50,
+      "fundamentals": 60,
+      "volumeTrend": 32,
+      "riskInverse": 60,
+      "composite": 60
     }
   },
   {
@@ -472,6 +2126,16 @@
     "macdHistogram": -0.967000849614255,
     "sma50": 190.5301998901367,
     "sma200": null,
+    "sma20": 161.94299926757813,
+    "bollingerUpper": 197.83083400880554,
+    "bollingerLower": 126.05516452635072,
+    "bollingerBandwidth": 0.443215636409574,
+    "bollingerPercentB": 0.16377186807742264,
+    "bollingerSqueeze": false,
+    "stochasticK": 1.8559790433118755,
+    "stochasticD": 1.9334028580486906,
+    "obvTrend": "falling",
+    "obvDivergence": null,
     "volumeRatio": 0.7885327128575677,
     "priceReturn3m": -0.384392043317893,
     "priceReturn6m": -0.3944547128490763,
@@ -490,6 +2154,12 @@
         "description": "MACD histogram negative (-0.967)"
       },
       {
+        "type": "RSI + Stochastic Oversold",
+        "direction": "bullish",
+        "severity": 3,
+        "description": "Both RSI (20.4) and Stochastic (1.9) confirm oversold"
+      },
+      {
         "type": "Weak Momentum",
         "direction": "bearish",
         "severity": 1,
@@ -503,16 +2173,16 @@
       }
     ],
     "bearishScore": 4,
-    "bullishScore": 2,
+    "bullishScore": 5,
     "sentimentAvg": 0,
     "score": {
       "priceMomentum": 11,
-      "technicalSignals": 38,
+      "technicalSignals": 56,
       "newsSentiment": 50,
       "fundamentals": 42,
       "volumeTrend": 18,
       "riskInverse": 48,
-      "composite": 33
+      "composite": 37
     }
   },
   {
@@ -538,6 +2208,16 @@
     "macdHistogram": -1.0467496146819162,
     "sma50": 132.1906996154785,
     "sma200": null,
+    "sma20": 102.91100044250489,
+    "bollingerUpper": 142.81790858136924,
+    "bollingerLower": 63.00409230364052,
+    "bollingerBandwidth": 0.7755615622677745,
+    "bollingerPercentB": 0.16257721158460992,
+    "bollingerSqueeze": false,
+    "stochasticK": 0.982456165065705,
+    "stochasticD": 2.2602950938750737,
+    "obvTrend": "falling",
+    "obvDivergence": null,
     "volumeRatio": 1.2974912507764167,
     "priceReturn3m": -0.48140054463391246,
     "priceReturn6m": -0.5383680354366588,
@@ -556,6 +2236,12 @@
         "description": "MACD histogram negative (-1.047)"
       },
       {
+        "type": "RSI + Stochastic Oversold",
+        "direction": "bullish",
+        "severity": 3,
+        "description": "Both RSI (18.1) and Stochastic (1.0) confirm oversold"
+      },
+      {
         "type": "Weak Momentum",
         "direction": "bearish",
         "severity": 1,
@@ -569,16 +2255,16 @@
       }
     ],
     "bearishScore": 4,
-    "bullishScore": 2,
+    "bullishScore": 5,
     "sentimentAvg": 0,
     "score": {
       "priceMomentum": 0,
-      "technicalSignals": 38,
+      "technicalSignals": 56,
       "newsSentiment": 50,
       "fundamentals": 45,
       "volumeTrend": 37,
       "riskInverse": 46,
-      "composite": 32
+      "composite": 37
     }
   }
 ]

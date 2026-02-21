@@ -10,20 +10,20 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 69,
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "JNJ",
       "name": "Johnson & Johnson",
-      "score": 67,
+      "score": 69,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ADI",
-      "name": "Analog Devices",
+      "ticker": "MRNA",
+      "name": "Moderna",
       "score": 65,
       "market": "US",
       "capCategory": "Large"
@@ -36,13 +36,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "ANTO.L",
-      "name": "Antofagasta",
-      "score": 65,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "RTX",
       "name": "RTX Corp",
       "score": 64,
@@ -50,22 +43,29 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "RR.L",
+      "name": "Rolls-Royce",
       "score": 64,
-      "market": "US",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
-      "ticker": "AMGN",
-      "name": "Amgen",
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
       "score": 63,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna",
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan",
+      "score": 63,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
       "score": 63,
       "market": "US",
       "capCategory": "Large"
@@ -78,13 +78,6 @@
       "score": 27,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 29,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "PINS",
@@ -108,27 +101,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TEAM",
-      "name": "Atlassian",
-      "score": 32,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SOFI",
-      "name": "SoFi Technologies",
-      "score": 32,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday",
-      "score": 33,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "AI",
       "name": "C3.ai",
       "score": 33,
@@ -141,24 +113,52 @@
       "score": 34,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 34,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 34,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 34,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 36,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 69,
+      "score": 70,
       "market": "US"
     },
     {
       "ticker": "JNJ",
       "name": "Johnson & Johnson",
-      "score": 67,
+      "score": 69,
       "market": "US"
     },
     {
-      "ticker": "ADI",
-      "name": "Analog Devices",
+      "ticker": "MRNA",
+      "name": "Moderna",
       "score": 65,
       "market": "US"
     },
@@ -171,24 +171,18 @@
     {
       "ticker": "LMT",
       "name": "Lockheed Martin",
-      "score": 64,
-      "market": "US"
-    },
-    {
-      "ticker": "AMGN",
-      "name": "Amgen",
       "score": 63,
       "market": "US"
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna",
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan",
       "score": 63,
       "market": "US"
     },
     {
-      "ticker": "GEV",
-      "name": "GE Vernova",
+      "ticker": "MU",
+      "name": "Micron",
       "score": 63,
       "market": "US"
     },
@@ -199,8 +193,14 @@
       "market": "US"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "AMGN",
+      "name": "Amgen",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "NEE",
+      "name": "NextEra Energy",
       "score": 62,
       "market": "US"
     }
@@ -219,27 +219,27 @@
       "market": "US"
     },
     {
+      "ticker": "SNAP",
+      "name": "Snap",
+      "score": 41,
+      "market": "US"
+    },
+    {
       "ticker": "MARA",
       "name": "Marathon Digital",
       "score": 41,
       "market": "US"
     },
     {
-      "ticker": "SNAP",
-      "name": "Snap",
-      "score": 37,
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 34,
       "market": "US"
     },
     {
       "ticker": "LCID",
       "name": "Lucid Group",
       "score": 31,
-      "market": "US"
-    },
-    {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 29,
       "market": "US"
     }
   ],
@@ -257,55 +257,55 @@
       "market": "UK"
     },
     {
-      "ticker": "ANTO.L",
-      "name": "Antofagasta",
-      "score": 65,
+      "ticker": "RR.L",
+      "name": "Rolls-Royce",
+      "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "RR.L",
-      "name": "Rolls-Royce",
+      "ticker": "LGEN.L",
+      "name": "Legal & General",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "VOD.L",
-      "name": "Vodafone",
-      "score": 61,
+      "ticker": "GAW.L",
+      "name": "Games Workshop",
+      "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 61,
+      "ticker": "GLEN.L",
+      "name": "Glencore",
+      "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "SGRO.L",
-      "name": "Segro",
+      "ticker": "NG.L",
+      "name": "National Grid",
       "score": 61,
       "market": "UK"
     },
     {
       "ticker": "AAL.L",
       "name": "Anglo American",
-      "score": 60,
+      "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "LGEN.L",
-      "name": "Legal & General",
-      "score": 60,
+      "ticker": "ANTO.L",
+      "name": "Antofagasta",
+      "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "PHNX.L",
-      "name": "Phoenix Group",
+      "ticker": "HSBA.L",
+      "name": "HSBC",
       "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 214,
   "avgScore": 50,
-  "bearishAlertCount": 9
+  "bearishAlertCount": 27
 }
