@@ -10,14 +10,14 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 68,
+      "score": 69,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "JNJ",
       "name": "Johnson & Johnson",
-      "score": 68,
+      "score": 67,
       "market": "US",
       "capCategory": "Large"
     },
@@ -43,13 +43,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "AMGN",
-      "name": "Amgen",
-      "score": 64,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RTX",
       "name": "RTX Corp",
       "score": 64,
@@ -60,6 +53,13 @@
       "ticker": "LMT",
       "name": "Lockheed Martin",
       "score": 64,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen",
+      "score": 63,
       "market": "US",
       "capCategory": "Large"
     },
@@ -147,25 +147,19 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 68,
+      "score": 69,
       "market": "US"
     },
     {
       "ticker": "JNJ",
       "name": "Johnson & Johnson",
-      "score": 68,
+      "score": 67,
       "market": "US"
     },
     {
       "ticker": "ADI",
       "name": "Analog Devices",
       "score": 65,
-      "market": "US"
-    },
-    {
-      "ticker": "AMGN",
-      "name": "Amgen",
-      "score": 64,
       "market": "US"
     },
     {
@@ -178,6 +172,12 @@
       "ticker": "LMT",
       "name": "Lockheed Martin",
       "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen",
+      "score": 63,
       "market": "US"
     },
     {
