@@ -159,13 +159,19 @@
     {
       "ticker": "INTC",
       "name": "Intel",
-      "score": 55,
+      "score": 56,
+      "market": "US"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "score": 53,
       "market": "US"
     },
     {
       "ticker": "TSLA",
       "name": "Tesla",
-      "score": 54,
+      "score": 53,
       "market": "US"
     },
     {
@@ -178,12 +184,6 @@
       "ticker": "QCOM",
       "name": "Qualcomm",
       "score": 53,
-      "market": "US"
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA",
-      "score": 52,
       "market": "US"
     },
     {
