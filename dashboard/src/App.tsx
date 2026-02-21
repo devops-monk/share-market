@@ -6,6 +6,7 @@ import Screener from './pages/Screener';
 import BearishAlerts from './pages/BearishAlerts';
 import NewsSentiment from './pages/NewsSentiment';
 import StockDetail from './pages/StockDetail';
+import Guide from './pages/Guide';
 
 export default function App() {
   const { stocks, summary, bearishAlerts, news, metadata, loading } = useStockData();
@@ -44,6 +45,7 @@ export default function App() {
           <Route path="/bearish" element={<BearishAlerts alerts={bearishAlerts} />} />
           <Route path="/news" element={<NewsSentiment news={news} />} />
           <Route path="/stock/:ticker" element={<StockDetail stocks={stocks} news={news} />} />
+          <Route path="/guide" element={<Guide />} />
         </Routes>
       </main>
       <footer className="border-t border-surface-border py-6 mt-12">

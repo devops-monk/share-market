@@ -21,6 +21,16 @@ export interface StockRecord {
   macdHistogram: number | null;
   sma50: number | null;
   sma200: number | null;
+  sma20: number | null;
+  bollingerUpper: number | null;
+  bollingerLower: number | null;
+  bollingerBandwidth: number | null;
+  bollingerPercentB: number | null;
+  bollingerSqueeze: boolean;
+  stochasticK: number | null;
+  stochasticD: number | null;
+  obvTrend: string | null;
+  obvDivergence: string | null;
   volumeRatio: number;
   priceReturn3m: number;
   priceReturn6m: number;

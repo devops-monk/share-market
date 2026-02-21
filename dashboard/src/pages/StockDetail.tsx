@@ -108,11 +108,30 @@ export default function StockDetail({ stocks, news }: Props) {
           <Metric label="RSI" value={stock.rsi?.toFixed(1) ?? 'N/A'} highlight={stock.rsi != null && (stock.rsi > 70 || stock.rsi < 30)} />
           <Metric label="SMA 50" value={stock.sma50?.toFixed(2) ?? 'N/A'} />
           <Metric label="SMA 200" value={stock.sma200?.toFixed(2) ?? 'N/A'} />
+          <Metric label="SMA 20" value={stock.sma20?.toFixed(2) ?? 'N/A'} />
           <Metric label="Vol Ratio" value={stock.volumeRatio.toFixed(2) + 'x'} />
           <Metric label="52W High" value={`$${stock.fiftyTwoWeekHigh.toFixed(2)}`} />
           <Metric label="52W Low" value={`$${stock.fiftyTwoWeekLow.toFixed(2)}`} />
           <Metric label="3M Return" value={`${(stock.priceReturn3m * 100).toFixed(1)}%`} positive={stock.priceReturn3m >= 0} />
           <Metric label="6M Return" value={`${(stock.priceReturn6m * 100).toFixed(1)}%`} positive={stock.priceReturn6m >= 0} />
+        </div>
+      </div>
+
+      {/* Bollinger Bands & Stochastic */}
+      <div className="card p-5">
+        <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Advanced Indicators</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <Metric label="Bollinger Upper" value={stock.bollingerUpper?.toFixed(2) ?? 'N/A'} />
+          <Metric label="Bollinger Lower" value={stock.bollingerLower?.toFixed(2) ?? 'N/A'} />
+          <Metric label="BB Bandwidth" value={stock.bollingerBandwidth != null ? `${(stock.bollingerBandwidth * 100).toFixed(1)}%` : 'N/A'} />
+          <Metric label="BB %B" value={stock.bollingerPercentB?.toFixed(2) ?? 'N/A'} highlight={stock.bollingerPercentB != null && (stock.bollingerPercentB > 0.95 || stock.bollingerPercentB < 0.05)} />
+          <Metric label="BB Squeeze" value={stock.bollingerSqueeze ? 'YES' : 'No'} highlight={stock.bollingerSqueeze} />
+          <Metric label="Stochastic %K" value={stock.stochasticK?.toFixed(1) ?? 'N/A'} highlight={stock.stochasticK != null && (stock.stochasticK > 80 || stock.stochasticK < 20)} />
+          <Metric label="Stochastic %D" value={stock.stochasticD?.toFixed(1) ?? 'N/A'} />
+          <Metric label="OBV Trend" value={stock.obvTrend ?? 'N/A'} positive={stock.obvTrend === 'rising' ? true : stock.obvTrend === 'falling' ? false : undefined} />
+          {stock.obvDivergence && (
+            <Metric label="OBV Divergence" value={stock.obvDivergence} positive={stock.obvDivergence === 'bullish'} />
+          )}
         </div>
       </div>
 

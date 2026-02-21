@@ -5,6 +5,7 @@ const navItems = [
   { path: '/screener', label: 'Screener', icon: '⊞' },
   { path: '/bearish', label: 'Bearish Alerts', icon: '▼' },
   { path: '/news', label: 'News', icon: '◉' },
+  { path: '/guide', label: 'Guide', icon: '?' },
 ];
 
 export default function Header({ lastUpdated }: { lastUpdated?: string }) {
