@@ -2,75 +2,69 @@ export default function ScoreGauge({ score, size = 120 }: { score: number; size?
   const color = score >= 65 ? '#10b981' : score >= 40 ? '#f59e0b' : '#ef4444';
   const label = score >= 65 ? 'Bullish' : score >= 40 ? 'Neutral' : 'Bearish';
 
-  // SVG arc geometry
-  const strokeWidth = size * 0.1;
-  const radius = (size - strokeWidth) / 2;
-  const cx = size / 2;
-  const cy = size / 2 + radius * 0.1; // shift center down slightly
+  // Use a fixed viewBox for clean math, scale via width/height
+  const vw = 200;
+  const vh = 130;
+  const cx = 100;
+  const cy = 105;       // arc center near bottom
+  const r = 80;          // radius
+  const sw = 14;         // stroke width
 
-  // Arc from 180deg (left) to 0deg (right) — a semicircle
-  const startAngle = 180;
-  const endAngle = 0;
-  const scoreAngle = startAngle - (score / 100) * (startAngle - endAngle);
+  // Arc endpoints (180° = left, 0° = right)
+  const x1 = cx - r;    // 20
+  const x2 = cx + r;    // 180
+  const y1 = cy;        // both endpoints at cy
+  // Arc peak is at (cx, cy - r) = (100, 25)
 
-  const toXY = (angleDeg: number) => {
-    const rad = (angleDeg * Math.PI) / 180;
-    return {
-      x: cx + radius * Math.cos(rad),
-      y: cy - radius * Math.sin(rad),
-    };
-  };
+  // Background arc (full semicircle from left to right)
+  const bgArc = `M ${x1} ${y1} A ${r} ${r} 0 1 1 ${x2} ${y1}`;
 
-  const start = toXY(startAngle);
-  const end = toXY(endAngle);
-  const scoreEnd = toXY(scoreAngle);
-
-  // Background arc (full semicircle)
-  const bgPath = `M ${start.x} ${start.y} A ${radius} ${radius} 0 1 1 ${end.x} ${end.y}`;
-
-  // Score arc
-  const sweep = score > 50 ? 1 : 0;
-  const scorePath = score > 0
-    ? `M ${start.x} ${start.y} A ${radius} ${radius} 0 ${sweep} 1 ${scoreEnd.x} ${scoreEnd.y}`
+  // Score arc — sweep from left
+  const scoreAngle = Math.PI - (score / 100) * Math.PI; // π (left) to 0 (right)
+  const sx = cx + r * Math.cos(scoreAngle);
+  const sy = cy - r * Math.sin(scoreAngle);
+  const largeArc = score > 50 ? 1 : 0;
+  const scoreArc = score > 0
+    ? `M ${x1} ${y1} A ${r} ${r} 0 ${largeArc} 1 ${sx.toFixed(1)} ${sy.toFixed(1)}`
     : '';
 
-  const viewHeight = size * 0.62;
-  const fontSize = size * 0.22;
-  const labelSize = size * 0.075;
-  const textY = cy + size * 0.02;
+  // Text positioning — centered inside the semicircle
+  const numberY = cy - 24;
+  const labelY = cy - 4;
+
+  // Scale to requested size
+  const displayH = (vh / vw) * size;
 
   return (
     <div className="inline-flex flex-col items-center">
-      <svg width={size} height={viewHeight} viewBox={`0 0 ${size} ${viewHeight}`}>
+      <svg width={size} height={displayH} viewBox={`0 0 ${vw} ${vh}`}>
         {/* Background track */}
         <path
-          d={bgPath}
+          d={bgArc}
           fill="none"
           stroke="#1c2333"
-          strokeWidth={strokeWidth}
+          strokeWidth={sw}
           strokeLinecap="round"
         />
         {/* Score fill */}
-        {scorePath && (
+        {scoreArc && (
           <path
-            d={scorePath}
+            d={scoreArc}
             fill="none"
             stroke={color}
-            strokeWidth={strokeWidth}
+            strokeWidth={sw}
             strokeLinecap="round"
-            style={{
-              filter: `drop-shadow(0 0 ${size * 0.04}px ${color}40)`,
-            }}
+            style={{ filter: `drop-shadow(0 0 6px ${color}40)` }}
           />
         )}
         {/* Score number */}
         <text
           x={cx}
-          y={textY - fontSize * 0.3}
+          y={numberY}
           textAnchor="middle"
           dominantBaseline="middle"
           fill={color}
-          fontSize={fontSize}
+          fontSize="38"
           fontWeight="bold"
           fontFamily="ui-monospace, SFMono-Regular, monospace"
         >
@@ -79,13 +73,13 @@ export default function ScoreGauge({ score, size = 120 }: { score: number; size?
         {/* Label */}
         <text
           x={cx}
-          y={textY + fontSize * 0.45}
+          y={labelY}
           textAnchor="middle"
           dominantBaseline="middle"
           fill={color}
-          fontSize={labelSize}
+          fontSize="12"
           fontWeight="600"
-          letterSpacing="0.08em"
+          letterSpacing="0.1em"
         >
           {label.toUpperCase()}
         </text>
