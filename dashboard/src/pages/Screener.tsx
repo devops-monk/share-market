@@ -44,7 +44,7 @@ const columns = [
     cell: info => <ChangePercent value={info.getValue()} />,
   }),
   col.accessor('score.composite', {
-    header: 'Score',
+    header: 'Composite Score',
     cell: info => <ScoreBadge score={info.getValue()} />,
   }),
   col.accessor('rsi', {
