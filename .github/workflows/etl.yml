@@ -19,13 +19,13 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: etl/package-lock.json
+          cache-dependency-path: package-lock.json
 
-      - name: Install ETL dependencies
-        run: cd etl && npm ci
+      - name: Install dependencies
+        run: npm ci
 
       - name: Run ETL pipeline
-        run: cd etl && npm start
+        run: npm run etl
 
       - name: Commit and push data
         run: |
