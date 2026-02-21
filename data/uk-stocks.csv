@@ -36,7 +36,7 @@ AUTO.L,Auto Trader,UK,Technology,481,-41.82,0,Small,,35.9,549.74,,1,2,0.000,41
 WISE.L,Wise,UK,Fintech,862.5,-19.77,0,Small,,42.8,888.76,,2,0,0.000,40
 PRU.L,Prudential,UK,Financials,1133,14.21,0,Small,,46.9,1153.34,,2,1,0.000,50
 LGEN.L,Legal & General,UK,Financials,274.8,5.45,0,Small,,63.3,262.49,,0,6,0.000,63
-IHG.L,InterContinental Hotels,UK,Consumer Cyclical,142.1,18.57,0,Small,,51.9,139.30,,5,1,0.000,46
+IHG.L,InterContinental Hotels,UK,Consumer Cyclical,142.1,18.57,0,Small,,51.9,139.30,,5,0,0.000,45
 WTB.L,Whitbread,UK,Consumer Cyclical,2730,-12.13,0,Small,,52.7,2644.52,,2,2,0.000,46
 JET2.L,Jet2,UK,Consumer Cyclical,1308,-19.41,0,Small,,56.1,1321.62,,0,2,0.000,50
 FOUR.L,4imprint,UK,Industrials,4030,18.88,0,Small,,53.2,4006.30,,2,3,0.000,53
@@ -63,7 +63,7 @@ SMIN.L,Smiths Group,UK,Industrials,2704,14.58,0,Small,,70.0,2502.08,,0,4,0.000,5
 IAG.L,IAG,UK,Industrials,437.7,12.87,0,Small,,55.2,421.81,,0,5,0.000,59
 EZJ.L,easyJet,UK,Industrials,473.9,-6.79,0,Small,,41.7,492.46,,2,2,0.000,47
 SSE.L,SSE,UK,Utilities,2593,45.23,0,Small,,62.8,2342.44,,2,3,0.000,58
-CNA.L,Centrica,UK,Utilities,188.25,14.33,0,Small,,50.3,180.77,,2,3,0.000,55
+CNA.L,Centrica,UK,Utilities,188.25,14.33,0,Small,,50.3,180.77,,2,2,0.000,53
 SVT.L,Severn Trent,UK,Utilities,3142,19.42,0,Small,,65.4,2888.80,,0,4,0.000,59
 UU.L,United Utilities,UK,Utilities,1341,15.65,0,Small,,65.2,1236.93,,0,4,0.000,60
 OCDO.L,Ocado,UK,Technology,235,-34.30,0,Small,,50.9,243.42,,0,5,0.000,52
@@ -72,3 +72,56 @@ BLND.L,British Land,UK,Real Estate,419,20.82,0,Small,,57.7,404.21,,2,4,0.000,56
 SGRO.L,Segro,UK,Real Estate,814,26.87,0,Small,,70.9,739.78,,7,6,0.000,56
 BRBY.L,Burberry,UK,Consumer Cyclical,1213.5,0.17,0,Small,,54.2,1232.68,,3,2,0.000,47
 JMAT.L,Johnson Matthey,UK,Materials,2304,22.49,0,Small,,49.4,2266.80,,2,1,0.000,51
+HLN.L,Haleon,UK,Consumer Defensive,409.5,10.92,0,Small,,68.5,379.42,,0,5,0.000,62
+NXT.L,Next,UK,Consumer Cyclical,12980,5.92,0,Small,,43.3,13459.40,,0,6,0.000,60
+MKS.L,Marks & Spencer,UK,Consumer Cyclical,397.1,11.51,0,Small,,65.9,356.06,,2,5,0.000,57
+WPP.L,WPP,UK,Communication,277.5,-29.59,0,Small,,45.4,309.87,,0,5,0.000,52
+IMB.L,Imperial Brands,UK,Consumer Defensive,3230,2.83,0,Small,,55.0,3137.58,,2,2,0.000,55
+AV.L,Aviva,UK,Financials,655.4,-2.47,0,Small,,56.5,658.24,,0,2,0.000,51
+HLMA.L,Halma,UK,Technology,3934,20.45,0,Small,,71.4,3629.36,,7,4,0.000,47
+HIK.L,Hikma Pharmaceuticals,UK,Healthcare,1633,-9.83,0,Small,,62.0,1551.10,,2,2,0.000,47
+INF.L,Informa,UK,Communication,831.8,-6.79,0,Small,,40.5,874.56,,2,0,0.000,42
+JD.L,JD Sports Fashion,UK,Consumer Cyclical,78.18,-16.22,0,Small,,41.0,82.41,,2,0,0.000,42
+KGF.L,Kingfisher,UK,Consumer Cyclical,354.9,27.85,0,Small,,62.2,327.71,,0,5,0.000,62
+MRO.L,Melrose Industries,UK,Industrials,673,15.36,0,Small,,64.3,616.91,,2,6,0.000,60
+MNG.L,M&G,UK,Financials,322.4,20.30,0,Small,,80.4,298.65,,7,7,0.000,55
+PSON.L,Pearson,UK,Communication,928,-15.41,0,Small,,46.8,983.54,,0,2,0.000,48
+RTO.L,Rentokil Initial,UK,Industrials,462,26.23,0,Small,,52.8,455.06,,2,2,0.000,53
+RMV.L,Rightmove,UK,Technology,432.9,-43.94,0,Small,,29.7,492.39,,4,4,0.000,42
+SDR.L,Schroders,UK,Financials,586,47.24,0,Small,,84.6,450.58,,5,5,0.000,58
+SN.L,Smith & Nephew,UK,Healthcare,1336.5,-3.92,0,Small,,65.3,1249.28,,0,2,0.000,51
+WEIR.L,Weir Group,UK,Industrials,3468,40.40,0,Small,,68.9,3126.24,,2,3,0.000,58
+BNZL.L,Bunzl,UK,Industrials,2134,-9.65,0,Small,,54.4,2095.54,,0,2,0.000,50
+CRDA.L,Croda International,UK,Materials,3000,17.28,0,Small,,57.9,2808.26,,5,1,0.000,47
+ENT.L,Entain,UK,Consumer Cyclical,581.4,-34.48,0,Small,,36.7,684.91,,1,2,0.000,41
+FRES.L,Fresnillo,UK,Materials,3854,134.00,0,Small,,52.7,3610.16,,4,3,0.000,58
+ADM.L,Admiral Group,UK,Financials,2880,-21.35,0,Small,,53.0,2955.04,,0,2,0.000,47
+BEZ.L,Beazley,UK,Financials,1219,52.95,0,Small,,70.6,1004.17,,7,4,0.000,56
+DPLM.L,Diploma,UK,Industrials,5635,4.74,0,Small,,60.9,5453.80,,0,4,0.000,56
+EDV.L,Endeavour Mining,UK,Materials,4710,89.00,0,Small,,61.6,4130.96,,2,4,0.000,63
+ITRK.L,Intertek Group,UK,Industrials,4546,-4.78,0,Small,,54.3,4538.24,,0,4,0.000,53
+IMI.L,IMI,UK,Industrials,2904,25.50,0,Small,,68.2,2660.72,,2,3,0.000,56
+AJB.L,AJ Bell,UK,Fintech,426.6,-16.68,0,Small,,35.9,448.92,,3,2,0.000,41
+AML.L,Aston Martin,UK,Consumer Cyclical,58.75,-22.70,0,Small,,36.9,62.31,,3,0,0.000,44
+GRG.L,Greggs,UK,Consumer Cyclical,1594,-1.06,0,Small,,44.8,1654.90,,2,2,0.000,49
+ITV.L,ITV,UK,Communication,80.65,-2.48,0,Small,,47.7,81.36,,2,0,0.000,46
+DOM.L,Domino's Pizza Group,UK,Consumer Cyclical,202.2,-2.13,0,Small,,68.8,182.71,,0,3,0.000,54
+IGG.L,IG Group,UK,Fintech,1362,18.95,0,Small,,55.3,1321.34,,2,5,0.000,58
+DOCS.L,Dr. Martens,UK,Consumer Cyclical,68.1,-22.35,0,Small,,43.2,73.08,,0,2,0.000,46
+SCT.L,Softcat,UK,Technology,1133,-27.56,0,Small,,25.8,1355.82,,4,7,0.000,44
+BYIT.L,Bytes Technology,UK,Technology,296.8,-23.07,0,Small,,37.9,336.24,,1,5,0.000,47
+KNOS.L,Kainos Group,UK,Technology,716.5,0.99,0,Small,,28.1,925.93,,3,7,0.000,50
+TRN.L,Trainline,UK,Technology,204.6,-24.39,0,Small,,49.8,211.25,,1,2,0.000,47
+DNLM.L,Dunelm,UK,Consumer Cyclical,976,-19.47,0,Small,,48.8,1031.38,,0,2,0.000,47
+WOSG.L,Watches of Switzerland,UK,Consumer Cyclical,506,52.87,0,Small,,56.7,491.19,,2,2,0.000,55
+CURY.L,Currys,UK,Consumer Cyclical,156,41.82,0,Small,,71.8,137.40,,7,5,0.000,51
+DRX.L,Drax Group,UK,Utilities,867,24.48,0,Small,,47.2,864.87,,2,3,0.000,60
+PNN.L,Pennon Group,UK,Utilities,583.5,19.13,0,Small,,64.1,545.57,,3,5,0.000,55
+ONT.L,Oxford Nanopore,UK,Healthcare,136,-35.48,0,Small,,42.7,142.02,,2,0,0.000,40
+RPI.L,Raspberry Pi,UK,Technology,382.6,-4.73,0,Small,,70.1,297.68,,7,3,0.000,41
+PLUS.L,Plus500,UK,Fintech,4348,39.00,0,Small,,50.0,4018.16,,5,2,0.000,51
+TATE.L,Tate & Lyle,UK,Consumer Defensive,400.8,-26.93,0,Small,,62.4,379.47,,0,2,0.000,49
+VTY.L,Vistry Group,UK,Consumer Cyclical,716,11.53,0,Small,,60.7,662.88,,0,5,0.000,58
+BBY.L,Balfour Beatty,UK,Industrials,775.5,35.10,0,Small,,66.5,728.03,,0,5,0.000,62
+QQ.L,QinetiQ,UK,Industrials,516,10.12,0,Small,,60.8,482.03,,2,4,0.000,54
+BAB.L,Babcock International,UK,Industrials,1420,44.97,0,Small,,55.4,1369.78,,2,1,0.000,53

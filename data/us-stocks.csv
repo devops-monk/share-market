@@ -1,142 +1,331 @@
 ticker,name,market,sector,price,changePercent,marketCap,capCategory,pe,rsi,sma50,sma200,bearishScore,bullishScore,sentimentAvg,compositeScore
-AAPL,Apple,US,Technology,264.58,17.07,3884340000000,Large,33.48,49.6,266.11,,2,1,0.124,50
-MSFT,Microsoft,US,Technology,397.23,-21.45,2949680000000,Large,24.85,32.0,454.13,,3,0,0.046,42
-GOOGL,Alphabet,US,Technology,314.98,58.03,3809880000000,Large,29.15,46.2,320.24,,2,0,-0.010,57
-AMZN,Amazon,US,Technology,210.11,-6.12,2255510000000,Large,29.3,39.3,228.52,,2,0,0.042,44
-NVDA,NVIDIA,US,Technology,189.82,8.22,4612630000000,Large,47.02,54.9,184.80,,0,2,-0.086,51
-META,Meta Platforms,US,Technology,655.66,-12.31,1658530000000,Large,27.91,48.8,657.02,,2,0,0.303,47
-TSLA,Tesla,US,Consumer Cyclical,411.82,27.14,1545330000000,Large,382.73,42.9,440.94,,0,7,-0.015,53
-AVGO,Broadcom,US,Technology,332.65,14.25,1577180000000,Large,69.87,48.9,341.55,,0,2,-0.000,50
-ORCL,Oracle,US,Technology,148.08,-37.00,425600000000,Large,27.83,36.3,179.95,,1,2,-0.019,42
-CRM,Salesforce,US,Technology,185.16,-24.87,173490000000,Large,24.7,28.4,232.80,,2,7,-0.035,53
-AMD,AMD,US,Technology,200.15,21.16,326330000000,Large,75.68,39.4,219.82,,2,1,0.027,44
-INTC,Intel,US,Technology,44.11,87.38,220330000000,Large,,44.5,43.59,,2,4,-0.138,55
-NFLX,Netflix,US,Communication,78.67,-35.19,332160000000,Large,31.13,37.4,87.45,,2,2,0.129,41
-ADBE,Adobe,US,Technology,258.61,-26.83,106160000000,Large,15.48,29.1,311.95,,2,7,0.014,53
-CSCO,Cisco,US,Technology,79.2,18.02,312830000000,Large,27.86,50.5,77.90,,2,1,0.159,53
-QCOM,Qualcomm,US,Technology,142.88,-8.08,152450000000,Large,29.52,38.8,161.66,,0,5,-0.047,52
-INTU,Intuit,US,Technology,380.55,-45.57,105900000000,Large,26.06,20.9,562.23,,4,5,0.071,42
-AMAT,Applied Materials,US,Technology,375.38,133.21,297910000000,Large,38.45,69.8,302.42,,0,5,0.185,70
-PANW,Palo Alto Networks,US,Technology,148.7,-19.37,121340000000,Large,82.28,27.7,179.49,,4,5,0.029,47
-SNPS,Synopsys,US,Technology,439.94,-26.81,84170000000,Large,54.83,44.4,473.53,,0,2,0.118,42
-NOW,ServiceNow,US,Technology,104.27,-41.44,109070000000,Large,62.46,33.8,134.63,,1,2,-0.026,34
-UBER,Uber,US,Technology,73.86,-21.20,152010000000,Large,15.64,40.6,80.34,,1,2,0.082,43
-SHOP,Shopify,US,Technology,126.2,-8.08,164580000000,Large,134.74,46.5,147.13,,0,5,0.188,43
-SNOW,Snowflake,US,Technology,172.5,-11.45,59030000000,Large,,38.7,205.18,,1,2,0.081,44
-PLTR,Palantir,US,Technology,135.24,-13.31,323450000000,Large,213.72,37.5,166.22,,1,4,-0.064,45
-NET,Cloudflare,US,Technology,177.14,-8.31,61970000000,Large,,45.1,189.55,,0,2,0.008,45
-CRWD,CrowdStrike,US,Technology,388.6,-7.29,97970000000,Large,,35.7,455.09,,3,2,-0.110,42
-DDOG,Datadog,US,Technology,115.66,-9.96,40790000000,Large,390.48,40.2,130.90,,1,2,0.163,38
-MDB,MongoDB,US,Technology,344.56,61.99,28040000000,Large,,41.0,396.83,,0,2,0.233,62
-JPM,JPMorgan Chase,US,Financials,310.79,6.35,838210000000,Large,15.53,49.9,314.65,,2,0,0.023,48
-BAC,Bank of America,US,Financials,53.06,9.74,382690000000,Large,13.84,45.8,54.31,,2,0,0.219,51
-WFC,Wells Fargo,US,Financials,88.7,13.49,274310000000,Large,14.16,46.2,91.51,,2,0,0.078,52
-GS,Goldman Sachs,US,Financials,922.24,27.97,276610000000,Large,17.98,49.5,920.77,,2,3,0.003,57
-MS,Morgan Stanley,US,Financials,175.41,21.71,278780000000,Large,17.19,46.3,180.31,,2,0,0.120,51
-V,Visa,US,Financials,320.95,-6.68,611730000000,Large,30.41,42.8,336.33,,2,0,0.117,47
-MA,Mastercard,US,Financials,526.41,-11.18,469460000000,Large,31.86,43.1,551.21,,2,0,0.083,45
-AXP,American Express,US,Financials,346.18,12.25,237690000000,Large,22.5,42.9,365.07,,2,3,-0.014,52
-BLK,BlackRock,US,Financials,1093.64,-3.09,178420000000,Large,31.24,51.3,1092.69,,0,5,-0.025,52
-SCHW,Charles Schwab,US,Financials,94.03,-1.55,167090000000,Large,20.19,37.6,100.26,,2,0,0.188,50
-JNJ,Johnson & Johnson,US,Healthcare,242.49,35.59,584380000000,Large,21.95,70.3,220.07,,2,5,0.073,69
-UNH,UnitedHealth,US,Healthcare,290,-3.28,262690000000,Large,21.98,43.7,317.82,,0,2,-0.064,45
-PFE,Pfizer,US,Healthcare,26.65,5.00,151520000000,Large,19.67,50.6,25.94,,2,2,-0.074,48
-ABBV,AbbVie,US,Healthcare,224.81,7.49,397330000000,Large,95.2,50.9,223.85,,0,3,0.139,56
-MRK,Merck,US,Healthcare,122.26,44.41,303450000000,Large,16.81,70.8,109.71,,7,5,-0.085,55
-LLY,Eli Lilly,US,Healthcare,1009.52,43.11,952340000000,Large,44.69,44.2,1050.52,,2,0,0.106,53
-TMO,Thermo Fisher,US,Healthcare,510.93,3.26,191960000000,Large,28.8,28.3,579.34,,2,5,0.064,53
-ABT,Abbott Labs,US,Healthcare,112.21,-15.27,195120000000,Large,30.19,44.7,118.62,,0,2,0.082,44
-AMGN,Amgen,US,Healthcare,374.75,26.41,202020000000,Large,26.33,62.7,341.34,,2,4,0.016,62
-GILD,Gilead Sciences,US,Healthcare,151.4,27.52,187840000000,Large,22.33,62.9,132.58,,2,3,0.116,61
-WMT,Walmart,US,Consumer Defensive,122.99,19.91,980250000000,Large,45.04,48.5,119.04,,5,2,-0.023,49
-PG,Procter & Gamble,US,Consumer Defensive,160.78,0.80,373650000000,Large,23.82,66.3,148.43,,2,1,0.000,51
-KO,Coca-Cola,US,Consumer Defensive,79.84,12.93,343440000000,Large,26.28,70.1,72.82,,5,4,0.000,53
-PEP,PepsiCo,US,Consumer Defensive,164.94,9.43,225420000000,Large,27.48,62.9,151.14,,2,2,0.000,56
-COST,Costco,US,Consumer Defensive,985.27,-0.94,437330000000,Large,52.78,54.9,930.84,,2,0,0.000,44
-MCD,McDonald's,US,Consumer Cyclical,329.23,5.16,234460000000,Large,27.54,64.8,314.56,,0,4,0.000,58
-NKE,Nike,US,Consumer Cyclical,65.4,-14.24,96820000000,Large,38.35,56.2,63.73,,4,2,0.000,45
-SBUX,Starbucks,US,Consumer Cyclical,97.49,8.92,111070000000,Large,81.22,57.8,91.01,,2,1,0.000,43
-HD,Home Depot,US,Consumer Cyclical,382.25,-4.85,380530000000,Large,26.06,52.9,368.32,,2,0,0.000,47
-LOW,Lowe's,US,Consumer Cyclical,280.36,9.03,157270000000,Large,23.24,57.5,263.35,,2,3,0.000,56
-XOM,ExxonMobil,US,Energy,147.28,35.70,613680000000,Large,22,58.7,131.45,,2,2,0.000,58
-CVX,Chevron,US,Energy,183.93,20.04,370350000000,Large,27.65,65.7,164.81,,4,3,0.000,51
-COP,ConocoPhillips,US,Energy,110.53,16.48,135110000000.00002,Large,17.46,62.5,99.63,,2,5,0.000,58
-SLB,Schlumberger,US,Energy,50.85,52.43,76040000000,Large,21.53,60.2,45.07,,7,2,0.000,51
-EOG,EOG Resources,US,Energy,123.08,3.99,66780000000,Large,12.26,68.8,109.34,,2,3,0.000,55
-CAT,Caterpillar,US,Industrials,759.74,80.64,353500000000,Large,40.35,66.9,646.89,,2,5,0.000,61
-BA,Boeing,US,Industrials,232.03,2.84,182220000000,Large,122.39,43.9,230.12,,2,4,0.000,54
-HON,Honeywell,US,Industrials,243.97,19.29,155090000000,Large,30.53,73.2,215.01,,7,3,0.000,44
-UPS,UPS,US,Industrials,116.73,34.27,99120000000,Large,17.8,61.5,107.26,,2,2,0.000,57
-RTX,RTX Corp,US,Industrials,204.92,30.86,275060000000,Large,41.29,63.3,191.97,,2,6,0.000,64
-DE,Deere & Co,US,Industrials,662.49,34.46,179580000000,Large,37.35,81.5,519.66,,7,6,0.000,55
-GE,GE Aerospace,US,Industrials,343.22,28.82,359970000000,Large,42.17,70.4,311.47,,7,4,0.000,49
-LMT,Lockheed Martin,US,Industrials,658.26,47.59,151450000000,Large,30.64,69.4,557.71,,4,3,0.000,63
-DIS,Disney,US,Communication,105.58,-9.79,187040000000,Large,15.56,44.7,110.57,,2,0,0.000,43
-CMCSA,Comcast,US,Communication,31.34,0.45,112760000000,Large,5.83,62.3,28.89,,2,2,0.000,51
-T,AT&T,US,Communication,27.98,-4.44,195880000000,Large,9.18,67.5,25.17,,0,2,0.000,55
-VZ,Verizon,US,Communication,49.25,9.30,207720000000,Large,12.13,74.5,42.27,,5,5,0.000,51
-TMUS,T-Mobile,US,Communication,215.46,-16.81,237410000000,Large,22.19,65.4,198.28,,0,2,0.000,49
-AMT,American Tower,US,Real Estate,187.31,-10.59,87690000000,Large,29.87,58.5,177.93,,0,2,0.000,54
-PLD,Prologis,US,Real Estate,141.51,28.44,134620000000,Large,39.79,64.7,131.39,,0,5,0.000,59
-NEE,NextEra Energy,US,Utilities,92.18,21.00,192060000000,Large,27.93,66.6,84.47,,0,4,0.000,62
-DUK,Duke Energy,US,Utilities,126.78,1.85,98590000000,Large,20.08,64.7,119.39,,0,4,0.000,58
-SOFI,SoFi Technologies,US,Fintech,19.02,-15.54,24260000000,Large,50.05,27.8,24.75,,3,5,0.000,37
-RIVN,Rivian,US,Consumer Cyclical,15.27,26.51,18950000000,Large,,45.9,17.43,,0,4,0.000,53
-LCID,Lucid Group,US,Consumer Cyclical,9.55,-54.31,3100000000,Mid,,39.7,11.02,,4,0,0.000,31
-COIN,Coinbase,US,Fintech,171.35,-43.71,45250000000,Large,39.03,41.6,218.21,,1,2,0.000,30
-RBLX,Roblox,US,Technology,62,-47.67,43940000000,Large,,37.4,76.68,,1,2,0.000,34
-U,Unity Software,US,Technology,18.25,-49.08,7900000000,Mid,,23.8,38.07,,3,5,0.000,34
-AFRM,Affirm,US,Fintech,51.09,-29.99,17020000000,Large,62.85,28.7,68.43,,3,5,0.000,40
-HOOD,Robinhood,US,Fintech,76.11,-27.75,68580000000,Large,36.96,33.3,105.37,,3,0,0.000,27
-PATH,UiPath,US,Technology,10.8,-1.46,5780000000,Mid,25.47,30.3,14.84,,3,0,0.000,43
-PINS,Pinterest,US,Communication,17.77,-49.92,11820000000,Large,29.1,34.0,23.91,,3,0,0.000,30
-SNAP,Snap,US,Communication,5.14,-28.21,8680000000,Mid,,30.1,7.08,,3,2,0.000,41
-TTD,Trade Desk,US,Technology,25.1,-52.22,12140000000,Large,28.64,24.5,33.83,,4,5,0.000,40
-ROKU,Roku,US,Communication,89.06,0.67,13130000000,Large,154.97,40.4,102.61,,0,2,0.000,46
-ZS,Zscaler,US,Technology,159.75,-41.66,25480000000,Large,,24.8,209.12,,4,5,0.000,40
-BILL,Bill Holdings,US,Technology,46.2,10.92,4570000000,Mid,,48.9,49.86,,0,2,0.000,50
-HUBS,HubSpot,US,Technology,233.5,-48.53,12310000000,Large,268.39,34.2,327.48,,1,2,0.000,36
-SMCI,Super Micro,US,Technology,32.42,-23.91,19420000000,Large,24.08,53.5,31.10,,0,2,0.000,46
-ARM,Arm Holdings,US,Technology,125.58,-4.25,133370000000,Large,167.33,60.5,116.57,,2,2,0.000,37
-AI,C3.ai,US,Technology,10.38,-38.72,1460000000,Small,,37.7,12.97,,2,2,0.000,33
-CELH,Celsius Holdings,US,Consumer Defensive,48.32,-22.00,12460000000,Large,531.57,50.3,48.46,,2,1,0.000,42
-MARA,Marathon Digital,US,Fintech,7.97,-48.41,3010000000,Mid,4.41,42.5,9.70,,1,2,0.000,41
-LIN,Linde,US,Materials,496.51,2.93,231840000000,Large,34.02,75.9,442.94,,7,5,0.000,49
-APD,Air Products,US,Materials,281.18,-3.83,62610000000,Large,,56.9,262.00,,2,0,0.000,48
-FCX,Freeport-McMoRan,US,Materials,64.34,55.75,92470000000,Large,42.5,58.6,56.83,,2,4,0.000,63
-NEM,Newmont,US,Materials,122.13,77.00,132860000000.00002,Large,19.12,54.2,111.96,,4,2,0.000,60
-MRNA,Moderna,US,Healthcare,49.87,85.46,19490000000,Large,,68.7,38.42,,0,4,0.000,65
-REGN,Regeneron,US,Healthcare,779.67,31.92,82410000000,Large,18.76,53.0,765.44,,3,4,0.000,58
-VRTX,Vertex Pharma,US,Healthcare,476.9,20.93,121150000000,Large,31.1,54.6,461.84,,2,3,0.000,57
-ISRG,Intuitive Surgical,US,Healthcare,504.05,4.91,179000000000,Large,64,46.5,536.63,,0,2,0.000,46
-DXCM,DexCom,US,Healthcare,73.08,-10.52,28130000000,Large,34.92,58.6,69.43,,0,3,0.000,55
-BRK-B,Berkshire Hathaway,US,Financials,498.2,1.95,1074369999999.9999,Large,15.93,52.7,495.35,,0,2,0.000,56
-SPGI,S&P Global,US,Financials,417.48,-25.05,124740000000,Large,28.48,30.6,499.03,,2,0,0.000,40
-MMM,3M,US,Industrials,167.06,7.95,87990000000,Large,27.86,52.4,163.91,,0,2,0.000,50
-IBM,IBM,US,Technology,257.16,6.02,240380000000,Large,23.07,32.9,295.58,,2,0,0.000,49
-GEV,GE Vernova,US,Industrials,830.34,37.34,223800000000,Large,46.68,68.3,703.50,,2,5,0.000,62
-ABNB,Airbnb,US,Consumer Cyclical,127.89,2.34,77850000000,Large,31.64,52.7,130.79,,0,5,0.000,56
-GM,General Motors,US,Consumer Cyclical,81.51,43.58,73680000000,Large,27.07,48.8,82.10,,2,1,0.000,49
-F,Ford Motor,US,Consumer Cyclical,14.01,21.93,55890000000,Large,,55.4,13.67,,0,5,0.000,54
-PYPL,PayPal,US,Fintech,41.65,-38.82,38350000000,Large,7.7,29.4,53.60,,1,6,0.000,50
-BKNG,Booking Holdings,US,Consumer Cyclical,4076.79,-27.71,129130000000,Large,24.54,28.8,5028.20,,3,5,0.000,52
-TXN,Texas Instruments,US,Technology,219.73,9.44,199420000000,Large,40.35,59.2,196.79,,2,2,0.000,52
-MU,Micron,US,Technology,428.17,265.30,481910000000,Large,40.7,61.8,344.63,,2,4,0.000,63
-LRCX,Lam Research,US,Technology,244.92,147.02,305850000000,Large,50.2,62.7,206.24,,2,5,0.000,62
-KLAC,KLA Corp,US,Technology,1496,70.30,196090000000,Large,43.46,55.8,1385.48,,2,2,0.000,58
-ADI,Analog Devices,US,Technology,355.03,44.99,173330000000,Large,64.85,77.1,301.09,,7,5,0.000,58
-MRVL,Marvell Technology,US,Technology,79.48,11.60,69240000000,Large,27.83,47.0,82.80,,0,2,0.000,53
-ON,ON Semiconductor,US,Technology,69.11,39.70,27230000000,Large,207.04,60.5,60.73,,0,4,0.000,55
-FTNT,Fortinet,US,Technology,80,0.49,59490000000,Large,32.97,46.2,80.64,,2,1,0.000,46
-WDAY,Workday,US,Technology,137.81,-39.42,36240000000,Large,57.86,20.4,190.53,,4,5,0.000,37
-TEAM,Atlassian,US,Technology,75.98,-54.38,20110000000,Large,,18.1,132.19,,4,5,0.000,37
-VEEV,Veeva Systems,US,Healthcare,180.31,-36.52,29640000000,Large,35.04,32.8,212.47,,1,2,0.000,41
-ZM,Zoom Video,US,Technology,90.29,25.12,26730000000,Large,17.54,50.4,88.48,,2,1,0.000,55
-OKTA,Okta,US,Technology,74.29,-18.39,13170000000,Large,68.21,31.2,88.26,,5,0,0.000,34
-DASH,DoorDash,US,Technology,176.29,-27.70,76610000000,Large,82.9,37.0,209.23,,2,3,0.000,43
-SPOT,Spotify,US,Communication,490.6,-30.29,100980000000,Large,50.85,50.4,527.20,,1,2,0.000,40
-SE,Sea Limited,US,Technology,115,-35.66,62850000000,Large,49.18,47.3,122.26,,1,2,0.000,41
-MELI,MercadoLibre,US,Consumer Cyclical,1996.87,-14.52,101240000000,Large,48.74,42.4,2062.30,,2,2,0.000,42
-NU,Nu Holdings,US,Fintech,17.53,28.71,84940000000,Large,33.97,52.6,17.19,,2,1,0.000,53
-GRAB,Grab Holdings,US,Technology,4.38,-12.92,17890000000,Large,150,47.0,4.70,,1,2,0.000,44
-CPNG,Coupang,US,Consumer Cyclical,18.75,-34.99,34250000000,Large,88.74,45.0,21.31,,1,5,0.000,42
+AAPL,Apple,US,Technology,264.58,17.07,3884340000000,Large,33.48,49.6,266.11,,2,1,-0.061,48
+MSFT,Microsoft,US,Technology,397.23,-21.45,2949680000000,Large,24.85,32.0,454.13,,3,0,-0.024,42
+GOOGL,Alphabet,US,Technology,314.98,58.03,3809880000000,Large,29.15,46.2,320.24,,2,0,0.124,58
+AMZN,Amazon,US,Technology,210.11,-6.12,2255510000000,Large,29.3,39.3,228.52,,2,0,0.070,44
+NVDA,NVIDIA,US,Technology,189.82,8.22,4612630000000,Large,47.02,54.9,184.80,,0,2,-0.053,52
+META,Meta Platforms,US,Technology,655.66,-12.31,1658530000000,Large,27.91,48.8,657.02,,2,0,0.281,47
+TSLA,Tesla,US,Consumer Cyclical,411.82,27.14,1545330000000,Large,382.73,42.9,440.94,,0,7,0.047,54
+AVGO,Broadcom,US,Technology,332.65,14.25,1577180000000,Large,69.87,48.9,341.55,,0,2,-0.087,50
+ORCL,Oracle,US,Technology,148.08,-37.00,425600000000,Large,27.83,36.3,179.95,,1,2,-0.042,42
+CRM,Salesforce,US,Technology,185.16,-24.87,173490000000,Large,24.7,28.4,232.80,,2,7,0.073,53
+AMD,AMD,US,Technology,200.15,21.16,326330000000,Large,75.68,39.4,219.82,,2,1,0.000,44
+INTC,Intel,US,Technology,44.11,87.38,220330000000,Large,,44.5,43.59,,2,4,0.053,56
+NFLX,Netflix,US,Communication,78.67,-35.19,332160000000,Large,31.13,37.4,87.45,,2,2,0.037,41
+ADBE,Adobe,US,Technology,258.61,-26.83,106160000000,Large,15.48,29.1,311.95,,2,7,-0.044,52
+CSCO,Cisco,US,Technology,79.2,18.02,312830000000,Large,27.86,50.5,77.90,,2,1,0.036,52
+QCOM,Qualcomm,US,Technology,142.88,-8.08,152450000000,Large,29.52,38.8,161.66,,0,5,0.021,53
+INTU,Intuit,US,Technology,380.55,-45.57,105900000000,Large,26.06,20.9,562.23,,4,5,-0.053,42
+AMAT,Applied Materials,US,Technology,375.38,133.21,297910000000,Large,38.45,69.8,302.42,,0,5,0.056,69
+PANW,Palo Alto Networks,US,Technology,148.7,-19.37,121340000000,Large,82.28,27.7,179.49,,4,5,0.152,48
+SNPS,Synopsys,US,Technology,439.94,-26.81,84170000000,Large,54.83,44.4,473.53,,0,2,0.253,43
+NOW,ServiceNow,US,Technology,104.27,-41.44,0,Small,,33.8,134.63,,1,2,-0.057,37
+UBER,Uber,US,Technology,73.86,-21.20,0,Small,,40.6,80.34,,1,2,0.010,45
+SHOP,Shopify,US,Technology,126.2,-8.08,0,Small,,46.5,147.13,,0,5,0.089,52
+SNOW,Snowflake,US,Technology,172.5,-11.45,0,Small,,38.7,205.18,,1,2,0.162,44
+PLTR,Palantir,US,Technology,135.24,-13.31,0,Small,,37.5,166.22,,1,4,-0.070,47
+NET,Cloudflare,US,Technology,177.14,-8.31,0,Small,,45.1,189.55,,0,2,0.143,48
+CRWD,CrowdStrike,US,Technology,388.6,-7.29,0,Small,,35.7,455.09,,3,2,-0.091,46
+DDOG,Datadog,US,Technology,115.66,-9.96,0,Small,,40.2,130.90,,1,2,0.173,42
+MDB,MongoDB,US,Technology,344.56,61.99,0,Small,,41.0,396.83,,0,2,0.165,59
+JPM,JPMorgan Chase,US,Financials,310.79,6.35,0,Small,,49.9,314.65,,2,0,0.026,46
+BAC,Bank of America,US,Financials,53.06,9.74,0,Small,,45.8,54.31,,2,0,0.150,47
+WFC,Wells Fargo,US,Financials,88.7,13.49,0,Small,,46.2,91.51,,2,0,0.114,49
+GS,Goldman Sachs,US,Financials,922.24,27.97,0,Small,,49.5,920.77,,2,3,0.124,55
+MS,Morgan Stanley,US,Financials,175.41,21.71,0,Small,,46.3,180.31,,2,0,0.112,48
+V,Visa,US,Financials,320.95,-6.68,0,Small,,42.8,336.33,,2,0,-0.114,43
+MA,Mastercard,US,Financials,526.41,-11.18,0,Small,,43.1,551.21,,2,0,0.066,43
+AXP,American Express,US,Financials,346.18,12.25,0,Small,,42.9,365.07,,2,3,-0.088,50
+BLK,BlackRock,US,Financials,1093.64,-3.09,0,Small,,51.3,1092.69,,0,5,0.000,56
+SCHW,Charles Schwab,US,Financials,94.03,-1.55,0,Small,,37.6,100.26,,2,0,0.059,44
+JNJ,Johnson & Johnson,US,Healthcare,242.49,35.59,0,Small,,70.3,220.07,,2,5,0.000,62
+UNH,UnitedHealth,US,Healthcare,290,-3.28,0,Small,,43.7,317.82,,0,2,-0.153,46
+PFE,Pfizer,US,Healthcare,26.65,5.00,0,Small,,50.6,25.94,,2,2,-0.255,47
+ABBV,AbbVie,US,Healthcare,224.81,7.49,0,Small,,50.9,223.85,,0,3,-0.019,54
+MRK,Merck,US,Healthcare,122.26,44.41,0,Small,,70.8,109.71,,7,5,0.033,54
+LLY,Eli Lilly,US,Healthcare,1009.52,43.11,0,Small,,44.2,1050.52,,2,0,-0.091,48
+TMO,Thermo Fisher,US,Healthcare,510.93,3.26,0,Small,,28.3,579.34,,2,5,0.042,51
+ABT,Abbott Labs,US,Healthcare,112.21,-15.27,0,Small,,44.7,118.62,,0,2,-0.054,46
+AMGN,Amgen,US,Healthcare,374.75,26.41,0,Small,,62.7,341.34,,2,4,0.000,56
+GILD,Gilead Sciences,US,Healthcare,151.4,27.52,0,Small,,62.9,132.58,,2,3,0.079,56
+WMT,Walmart,US,Consumer Defensive,122.99,19.91,0,Small,,48.5,119.04,,5,2,0.006,51
+PG,Procter & Gamble,US,Consumer Defensive,160.78,0.80,0,Small,,66.3,148.43,,2,1,0.000,49
+KO,Coca-Cola,US,Consumer Defensive,79.84,12.93,0,Small,,70.1,72.82,,5,4,0.000,50
+PEP,PepsiCo,US,Consumer Defensive,164.94,9.43,0,Small,,62.9,151.14,,2,2,0.000,50
+COST,Costco,US,Consumer Defensive,985.27,-0.94,0,Small,,54.9,930.84,,2,0,0.000,46
+MCD,McDonald's,US,Consumer Cyclical,329.23,5.16,0,Small,,64.8,314.56,,0,4,0.000,56
+NKE,Nike,US,Consumer Cyclical,65.4,-14.24,0,Small,,56.2,63.73,,4,2,0.000,49
+SBUX,Starbucks,US,Consumer Cyclical,97.49,8.92,0,Small,,57.8,91.01,,2,1,0.000,50
+HD,Home Depot,US,Consumer Cyclical,382.25,-4.85,0,Small,,52.9,368.32,,2,0,0.000,46
+LOW,Lowe's,US,Consumer Cyclical,280.36,9.03,0,Small,,57.5,263.35,,2,3,0.000,55
+XOM,ExxonMobil,US,Energy,147.28,35.70,0,Small,,58.7,131.45,,2,2,0.000,56
+CVX,Chevron,US,Energy,183.93,20.04,0,Small,,65.7,164.81,,4,3,0.000,52
+COP,ConocoPhillips,US,Energy,110.53,16.48,0,Small,,62.5,99.63,,2,5,0.000,57
+SLB,Schlumberger,US,Energy,50.85,52.43,0,Small,,60.2,45.07,,7,2,0.000,51
+EOG,EOG Resources,US,Energy,123.08,3.99,0,Small,,68.8,109.34,,2,3,0.000,52
+CAT,Caterpillar,US,Industrials,759.74,80.64,0,Small,,66.9,646.89,,2,5,0.000,64
+BA,Boeing,US,Industrials,232.03,2.84,0,Small,,43.9,230.12,,2,4,0.000,55
+HON,Honeywell,US,Industrials,243.97,19.29,0,Small,,73.2,215.01,,7,3,0.000,47
+UPS,UPS,US,Industrials,116.73,34.27,0,Small,,61.5,107.26,,2,2,0.000,55
+RTX,RTX Corp,US,Industrials,204.92,30.86,0,Small,,63.3,191.97,,2,6,0.000,63
+DE,Deere & Co,US,Industrials,662.49,34.46,0,Small,,81.5,519.66,,7,6,0.000,58
+GE,GE Aerospace,US,Industrials,343.22,28.82,0,Small,,70.4,311.47,,7,4,0.000,48
+LMT,Lockheed Martin,US,Industrials,658.26,47.59,0,Small,,69.4,557.71,,4,3,0.000,57
+DIS,Disney,US,Communication,105.58,-9.79,0,Small,,44.7,110.57,,2,0,0.000,42
+CMCSA,Comcast,US,Communication,31.34,0.45,0,Small,,62.3,28.89,,2,2,0.000,51
+T,AT&T,US,Communication,27.98,-4.44,0,Small,,67.5,25.17,,0,2,0.000,50
+VZ,Verizon,US,Communication,49.25,9.30,0,Small,,74.5,42.27,,5,5,0.000,50
+TMUS,T-Mobile,US,Communication,215.46,-16.81,0,Small,,65.4,198.28,,0,2,0.000,49
+AMT,American Tower,US,Real Estate,187.31,-10.59,0,Small,,58.5,177.93,,0,2,0.000,50
+PLD,Prologis,US,Real Estate,141.51,28.44,0,Small,,64.7,131.39,,0,5,0.000,61
+NEE,NextEra Energy,US,Utilities,92.18,21.00,0,Small,,66.6,84.47,,0,4,0.000,58
+DUK,Duke Energy,US,Utilities,126.78,1.85,0,Small,,64.7,119.39,,0,4,0.000,56
+SOFI,SoFi Technologies,US,Fintech,19.02,-15.54,0,Small,,27.8,24.75,,3,5,0.000,45
+RIVN,Rivian,US,Consumer Cyclical,15.27,26.51,0,Small,,45.9,17.43,,0,4,0.000,54
+LCID,Lucid Group,US,Consumer Cyclical,9.55,-54.31,0,Small,,39.7,11.02,,4,0,0.000,30
+COIN,Coinbase,US,Fintech,171.35,-43.71,0,Small,,41.6,218.21,,1,2,0.000,37
+RBLX,Roblox,US,Technology,62,-47.67,0,Small,,37.4,76.68,,1,2,0.000,38
+U,Unity Software,US,Technology,18.25,-49.08,0,Small,,23.8,38.07,,3,5,0.000,34
+AFRM,Affirm,US,Fintech,51.09,-29.99,0,Small,,28.7,68.43,,3,5,0.000,42
+HOOD,Robinhood,US,Fintech,76.11,-27.75,0,Small,,33.3,105.37,,3,0,0.000,33
+PATH,UiPath,US,Technology,10.8,-1.46,0,Small,,30.3,14.84,,3,0,0.000,38
+PINS,Pinterest,US,Communication,17.77,-49.92,0,Small,,34.0,23.91,,3,0,0.000,33
+SNAP,Snap,US,Communication,5.14,-28.21,0,Small,,30.1,7.08,,3,2,0.000,36
+TTD,Trade Desk,US,Technology,25.1,-52.22,0,Small,,24.5,33.83,,4,5,0.000,38
+ROKU,Roku,US,Communication,89.06,0.67,0,Small,,40.4,102.61,,0,2,0.000,49
+ZS,Zscaler,US,Technology,159.75,-41.66,0,Small,,24.8,209.12,,4,5,0.000,40
+BILL,Bill Holdings,US,Technology,46.2,10.92,0,Small,,48.9,49.86,,0,2,0.000,47
+HUBS,HubSpot,US,Technology,233.5,-48.53,0,Small,,34.2,327.48,,1,2,0.000,37
+SMCI,Super Micro,US,Technology,32.42,-23.91,0,Small,,53.5,31.10,,0,2,0.000,45
+ARM,Arm Holdings,US,Technology,125.58,-4.25,0,Small,,60.5,116.57,,2,2,0.000,44
+AI,C3.ai,US,Technology,10.38,-38.72,0,Small,,37.7,12.97,,2,2,0.000,39
+CELH,Celsius Holdings,US,Consumer Defensive,48.32,-22.00,0,Small,,50.3,48.46,,2,1,0.000,49
+MARA,Marathon Digital,US,Fintech,7.97,-48.41,0,Small,,42.5,9.70,,1,2,0.000,36
+APLD,Applied Digital,US,Technology,29.04,84.73,0,Small,,40.9,32.00,,2,1,0.000,55
+HIMS,Hims & Hers Health,US,Healthcare,15.63,-63.97,0,Small,,16.6,29.39,,4,5,0.000,35
+LIN,Linde,US,Materials,496.51,2.93,0,Small,,75.9,442.94,,7,5,0.000,49
+APD,Air Products,US,Materials,281.18,-3.83,0,Small,,56.9,262.00,,2,0,0.000,47
+FCX,Freeport-McMoRan,US,Materials,64.34,55.75,0,Small,,58.6,56.83,,2,4,0.000,62
+NEM,Newmont,US,Materials,122.13,77.00,0,Small,,54.2,111.96,,4,2,0.000,57
+MRNA,Moderna,US,Healthcare,49.87,85.46,0,Small,,68.7,38.42,,0,4,0.000,64
+REGN,Regeneron,US,Healthcare,779.67,31.92,0,Small,,53.0,765.44,,3,4,0.000,54
+VRTX,Vertex Pharma,US,Healthcare,476.9,20.93,0,Small,,54.6,461.84,,2,3,0.000,53
+ISRG,Intuitive Surgical,US,Healthcare,504.05,4.91,0,Small,,46.5,536.63,,0,2,0.000,50
+DXCM,DexCom,US,Healthcare,73.08,-10.52,0,Small,,58.6,69.43,,0,3,0.000,53
+BRK-B,Berkshire Hathaway,US,Financials,498.2,1.95,0,Small,,52.7,495.35,,0,2,0.000,52
+SPGI,S&P Global,US,Financials,417.48,-25.05,0,Small,,30.6,499.03,,2,0,0.000,38
+MMM,3M,US,Industrials,167.06,7.95,0,Small,,52.4,163.91,,0,2,0.000,51
+IBM,IBM,US,Technology,257.16,6.02,0,Small,,32.9,295.58,,2,0,0.000,43
+GEV,GE Vernova,US,Industrials,830.34,37.34,0,Small,,68.3,703.50,,2,5,0.000,61
+ABNB,Airbnb,US,Consumer Cyclical,127.89,2.34,0,Small,,52.7,130.79,,0,5,0.000,59
+GM,General Motors,US,Consumer Cyclical,81.51,43.58,0,Small,,48.8,82.10,,2,1,0.000,53
+F,Ford Motor,US,Consumer Cyclical,14.01,21.93,0,Small,,55.4,13.67,,0,5,0.000,60
+PYPL,PayPal,US,Fintech,41.65,-38.82,0,Small,,29.4,53.60,,1,6,0.000,45
+BKNG,Booking Holdings,US,Consumer Cyclical,4076.79,-27.71,0,Small,,28.8,5028.20,,2,5,0.000,50
+TXN,Texas Instruments,US,Technology,219.73,9.44,0,Small,,59.2,196.79,,2,2,0.000,53
+MU,Micron,US,Technology,428.17,265.30,0,Small,,61.8,344.63,,2,4,0.000,62
+LRCX,Lam Research,US,Technology,244.92,147.02,0,Small,,62.7,206.24,,2,5,0.000,63
+KLAC,KLA Corp,US,Technology,1496,70.30,0,Small,,55.8,1385.48,,2,2,0.000,57
+ADI,Analog Devices,US,Technology,355.03,44.99,0,Small,,77.1,301.09,,7,5,0.000,58
+MRVL,Marvell Technology,US,Technology,79.48,11.60,0,Small,,47.0,82.80,,0,2,0.000,51
+ON,ON Semiconductor,US,Technology,69.11,39.70,0,Small,,60.5,60.73,,0,4,0.000,64
+FTNT,Fortinet,US,Technology,80,0.49,0,Small,,46.2,80.64,,2,1,0.000,47
+WDAY,Workday,US,Technology,137.81,-39.42,0,Small,,20.4,190.53,,4,5,0.000,39
+TEAM,Atlassian,US,Technology,75.98,-54.38,0,Small,,18.1,132.19,,4,5,0.000,37
+VEEV,Veeva Systems,US,Healthcare,180.31,-36.52,0,Small,,32.8,212.47,,1,2,0.000,40
+ZM,Zoom Video,US,Technology,90.29,25.12,0,Small,,50.4,88.48,,2,1,0.000,49
+OKTA,Okta,US,Technology,74.29,-18.39,0,Small,,31.2,88.26,,5,0,0.000,41
+DASH,DoorDash,US,Technology,176.29,-27.70,0,Small,,37.0,209.23,,2,3,0.000,45
+SPOT,Spotify,US,Communication,490.6,-30.29,0,Small,,50.4,527.20,,1,2,0.000,40
+SE,Sea Limited,US,Technology,115,-35.66,0,Small,,47.3,122.26,,1,2,0.000,41
+MELI,MercadoLibre,US,Consumer Cyclical,1996.87,-14.52,0,Small,,42.4,2062.30,,2,2,0.000,45
+NU,Nu Holdings,US,Fintech,17.53,28.71,0,Small,,52.6,17.19,,2,1,0.000,51
+GRAB,Grab Holdings,US,Technology,4.38,-12.92,0,Small,,47.0,4.70,,1,2,0.000,44
+CPNG,Coupang,US,Consumer Cyclical,18.75,-34.99,0,Small,,45.0,21.31,,1,5,0.000,44
+C,Citigroup,US,Financials,116,24.50,0,Small,,50.0,116.32,,2,1,0.000,51
+COF,Capital One,US,Financials,208.42,-2.93,0,Small,,38.2,231.73,,2,2,0.000,47
+PNC,PNC Financial,US,Financials,232.97,19.47,0,Small,,57.5,220.53,,2,3,0.000,55
+USB,U.S. Bancorp,US,Financials,58.66,26.40,0,Small,,57.3,55.80,,2,3,0.000,56
+TFC,Truist Financial,US,Financials,52.32,17.86,0,Small,,51.2,51.08,,2,2,0.000,52
+STT,State Street,US,Financials,127.94,14.34,0,Small,,46.6,130.04,,2,3,0.000,51
+BK,Bank of New York Mellon,US,Financials,118.19,16.73,0,Small,,46.6,119.30,,2,0,0.000,48
+ICE,Intercontinental Exchange,US,Financials,154.01,-15.05,0,Small,,37.1,164.48,,2,0,0.000,42
+CME,CME Group,US,Financials,308.09,12.19,0,Small,,74.3,282.20,,5,4,0.000,52
+MCO,Moody's,US,Financials,447.82,-13.04,0,Small,,39.6,496.11,,2,0,0.000,41
+MSCI,MSCI,US,Financials,544.11,-5.25,0,Small,,44.2,570.58,,2,0,0.000,42
+FISV,Fiserv,US,Fintech,61.47,-56.08,0,Small,,45.2,65.44,,0,2,0.000,43
+BX,Blackstone,US,Financials,121.27,-26.27,0,Small,,27.1,147.84,,3,5,0.000,50
+KKR,KKR & Co,US,Financials,101.18,-26.73,0,Small,,32.5,122.30,,0,2,0.000,45
+APO,Apollo Global Management,US,Financials,119.72,-11.54,0,Small,,32.7,139.31,,2,2,0.000,46
+PGR,Progressive,US,Financials,204.08,-19.23,0,Small,,45.7,213.74,,1,2,0.000,45
+CB,Chubb,US,Financials,331.62,18.57,0,Small,,65.0,312.76,,0,4,0.000,59
+MET,MetLife,US,Financials,79.1,0.09,0,Small,,53.9,78.92,,0,2,0.000,51
+AFL,Aflac,US,Financials,114.03,5.68,0,Small,,54.1,111.08,,2,1,0.000,47
+TRV,Travelers,US,Financials,304.93,11.13,0,Small,,67.1,287.37,,0,4,0.000,56
+ALL,Allstate,US,Financials,206.37,-3.39,0,Small,,52.6,204.01,,0,3,0.000,52
+AON,Aon,US,Financials,325.07,-13.08,0,Small,,44.0,342.28,,2,3,0.000,46
+FICO,Fair Isaac (FICO),US,Technology,1350.45,0.47,0,Small,,34.0,1576.01,,1,2,0.000,45
+ACN,Accenture,US,Technology,215.35,-15.57,0,Small,,29.1,262.37,,3,5,0.000,48
+CDNS,Cadence Design Systems,US,Technology,296.28,-14.23,0,Small,,48.4,309.60,,0,2,0.000,48
+ANET,Arista Networks,US,Technology,132.79,1.00,0,Small,,45.7,133.64,,2,0,0.000,44
+DELL,Dell Technologies,US,Technology,122.27,-4.83,0,Small,,53.0,122.48,,0,4,0.000,53
+HPE,Hewlett Packard Enterprise,US,Technology,21.37,1.57,0,Small,,41.4,22.93,,2,0,0.000,44
+HPQ,HP Inc,US,Technology,18.59,-29.77,0,Small,,38.1,21.19,,2,6,0.000,49
+APH,Amphenol,US,Technology,151.04,39.02,0,Small,,56.4,142.33,,0,2,0.000,54
+MSI,Motorola Solutions,US,Technology,462.76,0.14,0,Small,,78.9,397.91,,5,4,0.000,50
+ADSK,Autodesk,US,Technology,226.98,-21.36,0,Small,,32.8,269.95,,3,0,0.000,37
+CTSH,Cognizant,US,Technology,65.03,-7.75,0,Small,,25.9,80.60,,3,5,0.000,49
+NXPI,NXP Semiconductors,US,Technology,232.27,1.53,0,Small,,48.9,231.67,,2,1,0.000,48
+MCHP,Microchip Technology,US,Technology,77.73,16.43,0,Small,,54.6,72.55,,5,3,0.000,53
+MPWR,Monolithic Power Systems,US,Technology,1204.1,45.73,0,Small,,61.1,1044.10,,2,3,0.000,58
+ADP,Automatic Data Processing,US,Technology,214.47,-30.60,0,Small,,25.2,249.09,,3,5,0.000,45
+ASML,ASML Holding,US,Technology,1469.59,96.08,0,Small,,64.0,1269.91,,2,5,0.000,64
+TSM,Taiwan Semiconductor,US,Technology,370.54,62.09,0,Small,,65.8,326.01,,0,5,0.000,67
+APP,AppLovin,US,Communication,418.68,1.53,0,Small,,41.1,575.57,,1,2,0.000,44
+AXON,Axon Enterprise,US,Technology,433.91,-42.97,0,Small,,33.3,545.34,,1,2,0.000,40
+EFX,Equifax,US,Technology,197.46,-20.49,0,Small,,47.2,209.65,,0,5,0.000,50
+MSTR,MicroStrategy,US,Technology,131.05,-61.95,0,Small,,43.9,154.17,,1,2,0.000,34
+DHR,Danaher,US,Healthcare,209.5,-0.90,0,Small,,36.3,226.93,,2,0,0.000,45
+SYK,Stryker,US,Healthcare,380.23,-2.97,0,Small,,65.2,359.54,,0,2,0.000,51
+BSX,Boston Scientific,US,Healthcare,74.58,-29.67,0,Small,,28.4,89.54,,4,5,0.000,41
+MDT,Medtronic,US,Healthcare,96.86,3.90,0,Small,,38.8,99.24,,2,1,0.000,47
+EW,Edwards Lifesciences,US,Healthcare,79.78,-1.98,0,Small,,47.6,82.87,,0,2,0.000,49
+IDXX,IDEXX Laboratories,US,Healthcare,635.66,-0.65,0,Small,,40.1,679.81,,2,0,0.000,43
+HCA,HCA Healthcare,US,Healthcare,532.3,29.77,0,Small,,63.6,487.66,,2,4,0.000,55
+ELV,Elevance Health,US,Healthcare,342.93,10.62,0,Small,,48.2,351.93,,0,3,0.000,53
+CI,Cigna Group,US,Healthcare,280.31,-7.97,0,Small,,48.0,278.10,,2,0,0.000,45
+CVS,CVS Health,US,Healthcare,76.69,8.29,0,Small,,46.7,78.57,,0,3,0.000,51
+MCK,McKesson,US,Healthcare,947.48,34.79,0,Small,,63.1,850.23,,0,4,0.000,57
+BMY,Bristol-Myers Squibb,US,Healthcare,60.66,25.69,0,Small,,64.5,55.84,,0,5,0.000,63
+BIIB,Biogen,US,Healthcare,192.03,38.16,0,Small,,58.1,179.75,,0,2,0.000,56
+GEHC,GE HealthCare,US,Healthcare,84.23,14.02,0,Small,,60.1,82.47,,0,4,0.000,60
+ZTS,Zoetis,US,Healthcare,128.78,-17.85,0,Small,,56.8,124.77,,0,2,0.000,52
+A,Agilent Technologies,US,Healthcare,122.9,3.18,0,Small,,32.0,136.71,,2,1,0.000,48
+BDX,Becton Dickinson,US,Healthcare,185.39,18.38,0,Small,,74.7,161.51,,7,4,0.000,49
+ALNY,Alnylam Pharmaceuticals,US,Healthcare,336.19,-26.65,0,Small,,44.2,369.68,,1,2,0.000,42
+ETN,Eaton,US,Industrials,373.38,7.84,0,Small,,56.6,343.92,,2,1,0.000,48
+EMR,Emerson Electric,US,Industrials,148.62,13.55,0,Small,,49.1,144.50,,2,2,0.000,50
+PH,Parker-Hannifin,US,Industrials,1022.23,37.59,0,Small,,70.7,929.76,,5,5,0.000,57
+ITW,Illinois Tool Works,US,Industrials,294.98,12.58,0,Small,,70.1,265.00,,7,5,0.000,49
+GD,General Dynamics,US,Industrials,351.42,10.69,0,Small,,49.3,350.73,,2,2,0.000,49
+NOC,Northrop Grumman,US,Industrials,723.56,22.11,0,Small,,64.5,637.11,,0,5,0.000,61
+TDG,TransDigm,US,Industrials,1338.98,-4.51,0,Small,,49.6,1347.22,,2,3,0.000,47
+WM,Waste Management,US,Industrials,230.31,0.12,0,Small,,54.5,223.17,,0,3,0.000,55
+CTAS,Cintas,US,Industrials,200.02,-7.71,0,Small,,62.4,191.74,,0,2,0.000,53
+URI,United Rentals,US,Industrials,909.11,0.80,0,Small,,58.8,862.61,,0,2,0.000,51
+UNP,Union Pacific,US,Industrials,266.1,17.91,0,Small,,74.8,238.95,,5,5,0.000,53
+NSC,Norfolk Southern,US,Industrials,316.23,10.77,0,Small,,68.5,295.74,,0,4,0.000,57
+FDX,FedEx,US,Industrials,388.48,70.98,0,Small,,86.3,318.82,,7,5,0.000,57
+DAL,Delta Air Lines,US,Industrials,69.44,17.60,0,Small,,48.9,70.03,,2,1,0.000,51
+UAL,United Airlines,US,Industrials,113.03,13.21,0,Small,,52.4,111.47,,0,3,0.000,56
+LUV,Southwest Airlines,US,Industrials,52.09,67.06,0,Small,,60.1,45.06,,2,2,0.000,58
+PCAR,PACCAR,US,Industrials,128.46,30.84,0,Small,,62.0,119.15,,2,5,0.000,62
+ODFL,Old Dominion Freight,US,Industrials,201.39,34.05,0,Small,,65.6,174.04,,2,3,0.000,60
+FAST,Fastenal,US,Industrials,46.22,-6.70,0,Small,,56.8,43.43,,2,1,0.000,49
+PWR,Quanta Services,US,Industrials,552.66,47.03,0,Small,,72.2,464.27,,7,5,0.000,53
+TT,Trane Technologies,US,Industrials,467.12,9.58,0,Small,,67.6,409.80,,0,4,0.000,56
+CARR,Carrier Global,US,Industrials,64.14,-4.04,0,Small,,59.8,57.43,,2,1,0.000,48
+CSX,CSX,US,Industrials,42.31,17.56,0,Small,,78.8,37.65,,5,5,0.000,54
+CPRT,Copart,US,Industrials,36.48,-23.38,0,Small,,32.8,39.41,,4,0,0.000,44
+RKLB,Rocket Lab,US,Industrials,70.86,74.15,0,Small,,46.0,75.50,,2,1,0.000,56
+TJX,TJX Companies,US,Consumer Cyclical,158.23,14.44,0,Small,,60.6,154.67,,0,3,0.000,57
+CMG,Chipotle Mexican Grill,US,Consumer Cyclical,37.54,-12.84,0,Small,,46.0,38.22,,2,1,0.000,47
+LULU,Lululemon,US,Consumer Cyclical,187.3,-5.46,0,Small,,53.1,194.62,,0,2,0.000,54
+ORLY,O'Reilly Automotive,US,Consumer Cyclical,93.5,-10.10,0,Small,,45.0,94.39,,2,2,0.000,47
+DHI,D.R. Horton,US,Consumer Cyclical,164.12,0.46,0,Small,,59.3,153.76,,2,3,0.000,51
+LEN,Lennar,US,Consumer Cyclical,116.46,-10.64,0,Small,,50.5,113.59,,0,2,0.000,49
+HLT,Hilton,US,Consumer Cyclical,315.96,17.07,0,Small,,59.9,298.43,,2,2,0.000,52
+MAR,Marriott,US,Consumer Cyclical,347.93,32.03,0,Small,,60.5,321.77,,3,3,0.000,56
+YUM,Yum! Brands,US,Consumer Cyclical,163.33,9.37,0,Small,,62.8,155.30,,2,4,0.000,54
+ROST,Ross Stores,US,Consumer Cyclical,201.45,37.65,0,Small,,73.4,188.14,,9,5,0.000,50
+DECK,Deckers Outdoor,US,Consumer Cyclical,118.69,14.07,0,Small,,65.0,106.35,,0,3,0.000,58
+CCL,Carnival,US,Consumer Cyclical,31.99,9.33,0,Small,,53.2,30.52,,2,2,0.000,51
+RCL,Royal Caribbean,US,Consumer Cyclical,315.09,-4.26,0,Small,,50.1,300.02,,2,3,0.000,49
+CVNA,Carvana,US,Consumer Cyclical,336.62,-0.59,0,Small,,34.5,427.01,,2,0,0.000,45
+EBAY,eBay,US,Consumer Cyclical,88.07,-11.17,0,Small,,51.6,88.09,,2,3,0.000,51
+EXPE,Expedia,US,Consumer Cyclical,203.48,-1.07,0,Small,,29.1,267.17,,3,7,0.000,51
+APTV,Aptiv,US,Consumer Cyclical,79.57,5.88,0,Small,,46.6,80.03,,2,0,0.000,46
+PM,Philip Morris,US,Consumer Defensive,183.4,6.10,0,Small,,61.4,169.12,,2,3,0.000,51
+MO,Altria Group,US,Consumer Defensive,67.57,-0.01,0,Small,,67.7,61.05,,2,4,0.000,52
+CL,Colgate-Palmolive,US,Consumer Defensive,95.09,10.51,0,Small,,67.7,85.01,,2,2,0.000,51
+MDLZ,Mondelez,US,Consumer Defensive,58.8,-6.92,0,Small,,49.4,56.74,,2,0,0.000,45
+TGT,Target,US,Consumer Defensive,116.69,18.24,0,Small,,63.7,105.35,,0,4,0.000,61
+KR,Kroger,US,Consumer Defensive,66.36,-7.62,0,Small,,50.8,63.86,,2,0,0.000,44
+SYY,Sysco,US,Consumer Defensive,90.13,11.30,0,Small,,75.2,79.13,,5,5,0.000,50
+MNST,Monster Beverage,US,Consumer Defensive,83.76,30.08,0,Small,,64.4,78.69,,0,7,0.000,66
+KDP,Keurig Dr Pepper,US,Consumer Defensive,29.54,-16.03,0,Small,,62.6,28.22,,0,2,0.000,50
+GIS,General Mills,US,Consumer Defensive,44.62,-10.11,0,Small,,40.7,46.03,,3,0,0.000,40
+KHC,Kraft Heinz,US,Consumer Defensive,24.4,-11.01,0,Small,,53.3,24.00,,2,0,0.000,43
+HSY,Hershey,US,Consumer Defensive,221.77,22.13,0,Small,,63.6,196.98,,2,2,0.000,53
+ADM,Archer-Daniels-Midland,US,Consumer Defensive,67.88,11.77,0,Small,,55.6,63.48,,2,5,0.000,56
+STZ,Constellation Brands,US,Consumer Defensive,156.41,-5.95,0,Small,,49.9,151.58,,2,1,0.000,46
+DG,Dollar General,US,Consumer Defensive,150.64,31.16,0,Small,,57.4,142.85,,2,3,0.000,61
+DLTR,Dollar Tree,US,Consumer Defensive,134.51,18.67,0,Small,,63.3,127.39,,0,3,0.000,61
+KMB,Kimberly-Clark,US,Consumer Defensive,109.02,-18.19,0,Small,,65.3,102.10,,2,2,0.000,47
+PSX,Phillips 66,US,Energy,155.75,26.04,0,Small,,60.3,142.22,,5,3,0.000,51
+VLO,Valero Energy,US,Energy,200.76,42.88,0,Small,,61.0,181.74,,5,1,0.000,47
+MPC,Marathon Petroleum,US,Energy,196.76,18.66,0,Small,,57.8,180.87,,2,1,0.000,48
+OXY,Occidental Petroleum,US,Energy,51.84,17.10,0,Small,,72.5,43.38,,7,5,0.000,51
+DVN,Devon Energy,US,Energy,44.39,31.41,0,Small,,67.6,38.86,,2,5,0.000,59
+FANG,Diamondback Energy,US,Energy,176.01,27.66,0,Small,,69.5,156.36,,0,6,0.000,66
+HAL,Halliburton,US,Energy,35.11,66.40,0,Small,,60.6,31.69,,4,5,0.000,61
+BKR,Baker Hughes,US,Energy,62.21,45.18,0,Small,,70.2,52.28,,7,5,0.000,52
+KMI,Kinder Morgan,US,Energy,32.73,23.18,0,Small,,77.8,28.71,,5,5,0.000,53
+WMB,Williams Companies,US,Energy,72.98,27.54,0,Small,,75.7,63.61,,5,5,0.000,54
+OKE,ONEOK,US,Energy,87.33,18.53,0,Small,,73.5,76.77,,5,4,0.000,52
+FSLR,First Solar,US,Energy,241.88,17.17,0,Small,,53.6,246.83,,0,2,0.000,54
+SO,Southern Co,US,Utilities,94.3,-0.66,0,Small,,61.9,88.37,,0,2,0.000,54
+D,Dominion Energy,US,Utilities,65.96,7.22,0,Small,,68.7,60.59,,0,4,0.000,58
+EXC,Exelon,US,Utilities,47.79,6.48,0,Small,,65.7,44.39,,0,4,0.000,57
+SRE,Sempra Energy,US,Utilities,93.55,13.53,0,Small,,63.6,88.75,,0,4,0.000,56
+AEP,American Electric Power,US,Utilities,129.37,13.93,0,Small,,71.1,118.56,,5,4,0.000,50
+PCG,PG&E,US,Utilities,18.36,19.53,0,Small,,76.6,15.95,,5,4,0.000,51
+CEG,Constellation Energy,US,Utilities,294.84,-6.16,0,Small,,50.7,318.70,,1,2,0.000,45
+VST,Vistra,US,Utilities,171.4,-11.15,0,Small,,58.1,163.04,,2,2,0.000,44
+AWK,American Water Works,US,Utilities,129.37,-11.16,0,Small,,50.8,129.74,,0,2,0.000,52
+ED,Consolidated Edison,US,Utilities,109.81,7.91,0,Small,,57.9,103.17,,0,5,0.000,62
+SHW,Sherwin-Williams,US,Materials,360.63,-1.77,0,Small,,53.3,345.34,,2,0,0.000,45
+ECL,Ecolab,US,Materials,304.16,6.55,0,Small,,70.5,277.00,,5,5,0.000,51
+DOW,Dow Inc,US,Materials,30.52,26.74,0,Small,,53.5,27.15,,2,2,0.000,57
+DD,DuPont,US,Materials,50.41,61.76,0,Small,,64.9,44.07,,2,5,0.000,65
+NUE,Nucor,US,Materials,180.01,25.47,0,Small,,48.7,173.69,,2,2,0.000,54
+VMC,Vulcan Materials,US,Materials,305.29,6.64,0,Small,,47.9,301.84,,2,3,0.000,52
+ALB,Albemarle,US,Materials,168.42,115.59,0,Small,,51.1,160.18,,2,2,0.000,58
+CTVA,Corteva,US,Materials,76.31,4.59,0,Small,,64.4,70.40,,2,5,0.000,56
+BALL,Ball Corp,US,Materials,66.53,25.22,0,Small,,74.1,57.08,,7,3,0.000,49
+EQIX,Equinix,US,Real Estate,928.11,19.56,0,Small,,70.4,805.85,,2,4,0.000,57
+DLR,Digital Realty,US,Real Estate,175.68,6.26,0,Small,,62.6,161.68,,0,4,0.000,56
+SPG,Simon Property Group,US,Real Estate,201.7,15.83,0,Small,,65.5,188.25,,0,3,0.000,57
+CCI,Crown Castle,US,Real Estate,88.01,-14.44,0,Small,,52.7,87.16,,0,2,0.000,48
+PSA,Public Storage,US,Real Estate,305,6.29,0,Small,,67.6,277.59,,0,3,0.000,55
+O,Realty Income,US,Real Estate,66.14,10.42,0,Small,,71.0,60.05,,5,5,0.000,52
+WELL,Welltower,US,Real Estate,208.19,25.42,0,Small,,66.8,191.00,,0,4,0.000,57
+VICI,VICI Properties,US,Real Estate,30.09,-8.74,0,Small,,70.0,28.42,,0,2,0.000,50
+IRM,Iron Mountain,US,Real Estate,110.29,20.81,0,Small,,73.2,90.60,,5,5,0.000,53
+CBRE,CBRE Group,US,Real Estate,147.01,-8.60,0,Small,,39.1,162.56,,2,0,0.000,41
+CHTR,Charter Communications,US,Communication,230.16,-13.67,0,Small,,57.5,210.84,,0,3,0.000,52
+EA,Electronic Arts,US,Communication,200.4,16.97,0,Small,,43.7,203.12,,2,1,0.000,49
+TTWO,Take-Two Interactive,US,Communication,199.72,-12.66,0,Small,,36.6,234.16,,1,2,0.000,44
+LYV,Live Nation,US,Communication,162.67,0.48,0,Small,,70.6,145.50,,7,3,0.000,50
+WBD,Warner Bros Discovery,US,Communication,28.75,149.13,0,Small,,60.3,28.38,,0,4,0.000,67
+GME,GameStop,US,Consumer Cyclical,23.43,3.54,0,Small,,49.8,22.54,,2,3,0.000,49
+AMC,AMC Entertainment,US,Communication,1.2,-57.75,0,Small,,31.6,1.58,,4,0,0.000,27
+BABA,Alibaba,US,Consumer Cyclical,154.45,29.26,0,Small,,40.6,159.14,,2,3,0.000,52
+PDD,PDD Holdings (Temu),US,Consumer Cyclical,104.94,-11.07,0,Small,,48.7,109.00,,0,4,0.000,55
+NIO,NIO,US,Consumer Cyclical,5.07,0.00,0,Small,,57.5,4.86,,0,2,0.000,48
+XPEV,XPeng,US,Consumer Cyclical,17.62,-13.50,0,Small,,42.0,19.13,,1,4,0.000,45
+LI,Li Auto,US,Consumer Cyclical,18.28,-22.21,0,Small,,56.0,17.19,,0,2,0.000,48
+BIDU,Baidu,US,Communication,135.86,56.59,0,Small,,39.4,140.37,,2,2,0.000,57
+RIOT,Riot Platforms,US,Technology,15.68,25.24,0,Small,,51.5,15.22,,0,3,0.000,55
+IONQ,IonQ,US,Technology,31.9,-13.29,0,Small,,35.1,44.40,,3,0,0.000,34
+RGTI,Rigetti Computing,US,Technology,15.92,7.86,0,Small,,37.8,21.96,,1,2,0.000,43
+SOUN,SoundHound AI,US,Technology,7.82,-37.14,0,Small,,38.0,10.01,,1,2,0.000,38
+UPST,Upstart,US,Fintech,29.29,-54.15,0,Small,,28.6,43.38,,4,5,0.000,39
+LYFT,Lyft,US,Technology,13.95,-10.40,0,Small,,32.0,18.00,,3,2,0.000,39
+JOBY,Joby Aviation,US,Industrials,9.87,-32.95,0,Small,,33.3,13.17,,1,2,0.000,39
+LUNR,Intuitive Machines,US,Industrials,17.55,102.89,0,Small,,49.5,17.10,,2,1,0.000,55
+ASTS,AST SpaceMobile,US,Communication,80.2,77.91,0,Small,,40.5,91.46,,2,2,0.000,57
+WOLF,Wolfspeed,US,Technology,18.66,3.67,0,Small,,53.3,18.23,,2,2,0.000,42
+QS,QuantumScape,US,Technology,6.88,-13.02,0,Small,,28.1,10.09,,3,5,0.000,42
+DJT,Trump Media,US,Communication,10.11,-40.74,0,Small,,33.1,12.75,,3,0,0.000,36
+GPN,Global Payments,US,Fintech,82.47,-3.85,0,Small,,64.5,76.43,,0,2,0.000,51

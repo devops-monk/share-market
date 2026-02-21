@@ -10,23 +10,44 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
       "score": 69,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna",
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
+      "score": 67,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "WBD",
+      "name": "Warner Bros Discovery",
+      "score": 67,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage",
+      "score": 66,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "FANG",
+      "name": "Diamondback Energy",
+      "score": 66,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "DD",
+      "name": "DuPont",
       "score": 65,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
       "ticker": "AZN.L",
@@ -36,213 +57,155 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "RTX",
-      "name": "RTX Corp",
+      "ticker": "CAT",
+      "name": "Caterpillar",
       "score": 64,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RR.L",
-      "name": "Rolls-Royce",
-      "score": 64,
-      "market": "UK",
       "capCategory": "Small"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 63,
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "score": 64,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan",
-      "score": 63,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 63,
-      "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "HOOD",
-      "name": "Robinhood",
+      "ticker": "AMC",
+      "name": "AMC Entertainment",
       "score": 27,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PINS",
-      "name": "Pinterest",
-      "score": 30,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 30,
-      "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
       "ticker": "LCID",
       "name": "Lucid Group",
-      "score": 31,
+      "score": 30,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Small"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
+      "ticker": "PINS",
+      "name": "Pinterest",
       "score": 33,
       "market": "US",
       "capCategory": "Small"
     },
     {
-      "ticker": "OKTA",
-      "name": "Okta",
+      "ticker": "HOOD",
+      "name": "Robinhood",
+      "score": 33,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IonQ",
       "score": 34,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "MSTR",
+      "name": "MicroStrategy",
+      "score": 34,
+      "market": "US",
+      "capCategory": "Small"
     },
     {
       "ticker": "U",
       "name": "Unity Software",
       "score": 34,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Small"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 34,
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 35,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 34,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "DJT",
+      "name": "Trump Media",
       "score": 36,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "MARA",
+      "name": "Marathon Digital",
+      "score": 36,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
       "score": 69,
       "market": "US"
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna",
-      "score": 65,
+      "ticker": "GOOGL",
+      "name": "Alphabet",
+      "score": 58,
       "market": "US"
     },
     {
-      "ticker": "RTX",
-      "name": "RTX Corp",
-      "score": 64,
+      "ticker": "INTC",
+      "name": "Intel",
+      "score": 56,
       "market": "US"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 63,
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "score": 54,
       "market": "US"
     },
     {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan",
-      "score": 63,
+      "ticker": "CRM",
+      "name": "Salesforce",
+      "score": 53,
       "market": "US"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 63,
+      "ticker": "QCOM",
+      "name": "Qualcomm",
+      "score": 53,
       "market": "US"
     },
     {
-      "ticker": "MDB",
-      "name": "MongoDB",
-      "score": 62,
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "score": 52,
       "market": "US"
     },
     {
-      "ticker": "AMGN",
-      "name": "Amgen",
-      "score": 62,
+      "ticker": "ADBE",
+      "name": "Adobe",
+      "score": 52,
       "market": "US"
     },
     {
-      "ticker": "NEE",
-      "name": "NextEra Energy",
-      "score": 62,
+      "ticker": "CSCO",
+      "name": "Cisco",
+      "score": 52,
       "market": "US"
-    }
-  ],
-  "topMidCap": [
+    },
     {
-      "ticker": "BILL",
-      "name": "Bill Holdings",
+      "ticker": "AVGO",
+      "name": "Broadcom",
       "score": 50,
       "market": "US"
-    },
-    {
-      "ticker": "PATH",
-      "name": "UiPath",
-      "score": 43,
-      "market": "US"
-    },
-    {
-      "ticker": "SNAP",
-      "name": "Snap",
-      "score": 41,
-      "market": "US"
-    },
-    {
-      "ticker": "MARA",
-      "name": "Marathon Digital",
-      "score": 41,
-      "market": "US"
-    },
-    {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 34,
-      "market": "US"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 31,
-      "market": "US"
     }
   ],
+  "topMidCap": [],
   "topSmallCap": [
     {
       "ticker": "GSK.L",
@@ -251,61 +214,61 @@
       "market": "UK"
     },
     {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
+      "score": 67,
+      "market": "US"
+    },
+    {
+      "ticker": "WBD",
+      "name": "Warner Bros Discovery",
+      "score": 67,
+      "market": "US"
+    },
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage",
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "FANG",
+      "name": "Diamondback Energy",
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "DD",
+      "name": "DuPont",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "AZN.L",
       "name": "AstraZeneca",
       "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "RR.L",
-      "name": "Rolls-Royce",
+      "ticker": "CAT",
+      "name": "Caterpillar",
       "score": 64,
-      "market": "UK"
+      "market": "US"
     },
     {
-      "ticker": "LGEN.L",
-      "name": "Legal & General",
-      "score": 63,
-      "market": "UK"
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "score": 64,
+      "market": "US"
     },
     {
-      "ticker": "GAW.L",
-      "name": "Games Workshop",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "NG.L",
-      "name": "National Grid",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "AAL.L",
-      "name": "Anglo American",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "ANTO.L",
-      "name": "Antofagasta",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
-      "score": 60,
-      "market": "UK"
+      "ticker": "ON",
+      "name": "ON Semiconductor",
+      "score": 64,
+      "market": "US"
     }
   ],
-  "totalStocks": 214,
-  "avgScore": 50,
-  "bearishAlertCount": 27
+  "totalStocks": 456,
+  "avgScore": 51,
+  "bearishAlertCount": 70
 }
