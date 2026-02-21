@@ -4,7 +4,6 @@ import {
   useReactTable,
   getCoreRowModel,
   getSortedRowModel,
-  getFilteredRowModel,
   getPaginationRowModel,
   flexRender,
   createColumnHelper,
@@ -39,7 +38,7 @@ const columns = [
   }),
   col.accessor('price', {
     header: 'Price',
-    cell: info => <PriceDisplay value={info.getValue()} />,
+    cell: info => <PriceDisplay value={info.getValue()} market={info.row.original.market} />,
   }),
   col.accessor('changePercent', {
     header: 'Change',
@@ -62,6 +61,7 @@ const columns = [
     header: 'Sentiment',
     cell: info => {
       const v = info.getValue();
+      if (v == null) return <span className="t-faint">--</span>;
       const color = v > 0.1 ? 'text-bullish' : v < -0.1 ? 'text-bearish' : 'text-neutral';
       return <span className={`font-mono tabular-nums ${color}`}>{v.toFixed(2)}</span>;
     },
@@ -99,7 +99,6 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
     onPaginationChange: setPagination,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
-    getFilteredRowModel: getFilteredRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
   });
 
@@ -281,7 +280,7 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
           </div>
 
           <span className="text-sm t-muted">
-            {pagination.pageIndex * pagination.pageSize + 1}–{Math.min((pagination.pageIndex + 1) * pagination.pageSize, filtered.length)} of {filtered.length}
+            {filtered.length === 0 ? 0 : pagination.pageIndex * pagination.pageSize + 1}–{Math.min((pagination.pageIndex + 1) * pagination.pageSize, filtered.length)} of {filtered.length}
           </span>
         </div>
       </div>

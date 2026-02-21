@@ -29,7 +29,7 @@ export default function NewsSentiment({ news }: { news: NewsItem[] }) {
       </div>
 
       {/* Summary cards */}
-      <div className="grid grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         <div className="card-flat p-3 text-center">
           <div className="text-lg font-bold font-mono t-primary">{news.length}</div>
           <div className="text-xs t-muted">Total</div>
@@ -81,8 +81,8 @@ export default function NewsSentiment({ news }: { news: NewsItem[] }) {
             <p className="t-muted">No news articles found.</p>
           </div>
         )}
-        {filtered.map((item, i) => (
-          <div key={i} className="card-flat px-4 py-3 flex items-start gap-4 hover:bg-surface-hover/30 transition-colors">
+        {filtered.map((item) => (
+          <div key={`${item.ticker}-${item.title}`} className="card-flat px-4 py-3 flex items-start gap-4 hover:bg-surface-hover/30 transition-colors">
             <div className={`w-1 self-stretch rounded-full flex-shrink-0 ${
               item.sentimentLabel === 'positive' ? 'bg-bullish' :
               item.sentimentLabel === 'negative' ? 'bg-bearish' : 'bg-neutral'

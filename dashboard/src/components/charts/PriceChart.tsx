@@ -1,4 +1,4 @@
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import type { StockRecord } from '../../types';
 
 export default function PriceChart({ stock }: { stock: StockRecord }) {
@@ -20,15 +20,15 @@ export default function PriceChart({ stock }: { stock: StockRecord }) {
     <div className="w-full h-48">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data}>
-          <XAxis dataKey="name" tick={{ fill: '#9ca3af', fontSize: 11 }} />
+          <XAxis dataKey="name" tick={{ fill: 'var(--text-muted)', fontSize: 11 }} />
           <YAxis
             domain={['auto', 'auto']}
-            tick={{ fill: '#9ca3af', fontSize: 11 }}
+            tick={{ fill: 'var(--text-muted)', fontSize: 11 }}
             width={60}
           />
           <Tooltip
-            contentStyle={{ background: '#1f2937', border: '1px solid #374151', borderRadius: 8 }}
-            labelStyle={{ color: '#fff' }}
+            contentStyle={{ background: 'var(--surface-tertiary)', border: '1px solid var(--surface-border)', borderRadius: 8, color: 'var(--text-primary)' }}
+            labelStyle={{ color: 'var(--text-secondary)' }}
           />
           <Line type="monotone" dataKey="price" stroke="#60a5fa" strokeWidth={2} dot={{ fill: '#60a5fa' }} />
         </LineChart>

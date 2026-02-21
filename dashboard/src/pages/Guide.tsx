@@ -27,7 +27,7 @@ export default function Guide() {
       </div>
 
       {/* Tab Content */}
-      {activeTab === 'basics' && <BasicsTab />}
+      {activeTab === 'basics' && <BasicsTab onNext={() => setActiveTab('dashboard')} />}
       {activeTab === 'dashboard' && <DashboardTab />}
       {activeTab === 'indicators' && <IndicatorsTab />}
       {activeTab === 'strategies' && <StrategiesTab />}
@@ -66,7 +66,7 @@ function TabBtn({ active, onClick, label, emoji }: { active: boolean; onClick: (
 }
 
 /* ─── TAB 1: STOCK MARKET BASICS ─── */
-function BasicsTab() {
+function BasicsTab({ onNext }: { onNext: () => void }) {
   return (
     <div className="space-y-6">
       <Section title="What is a Stock?" icon="S">
@@ -166,7 +166,7 @@ function BasicsTab() {
       </Section>
 
       <div className="flex justify-end">
-        <NextTabBtn label="Using This Dashboard" onClick={() => document.querySelector<HTMLButtonElement>('[data-tab="dashboard"]')?.click()} />
+        <NextTabBtn label="Using This Dashboard" onClick={onNext} />
       </div>
     </div>
   );

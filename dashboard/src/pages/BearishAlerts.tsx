@@ -47,7 +47,7 @@ export default function BearishAlerts({ alerts }: { alerts: StockRecord[] }) {
                   <CapTag cap={stock.capCategory} />
                 </div>
                 <div className="flex items-center gap-4 text-sm">
-                  <PriceDisplay value={stock.price} />
+                  <PriceDisplay value={stock.price} market={stock.market} />
                   <ChangePercent value={stock.changePercent} />
                   {stock.rsi != null && (
                     <span className="t-muted">

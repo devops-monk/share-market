@@ -69,11 +69,15 @@ export default function StockDetail({ stocks, news }: Props) {
     { label: 'Risk (inv.)', value: stock.score.riskInverse },
   ];
 
+  const cur = stock.market === 'UK' ? '£' : '$';
+
   const formatMcap = (v: number) => {
-    if (v >= 1e12) return `$${(v / 1e12).toFixed(1)}T`;
-    if (v >= 1e9) return `$${(v / 1e9).toFixed(1)}B`;
-    if (v >= 1e6) return `$${(v / 1e6).toFixed(0)}M`;
-    return `$${v.toLocaleString()}`;
+    if (v === 0) return 'N/A';
+    const sym = stock.market === 'UK' ? '£' : '$';
+    if (v >= 1e12) return `${sym}${(v / 1e12).toFixed(1)}T`;
+    if (v >= 1e9) return `${sym}${(v / 1e9).toFixed(1)}B`;
+    if (v >= 1e6) return `${sym}${(v / 1e6).toFixed(0)}M`;
+    return `${sym}${v.toLocaleString()}`;
   };
 
   // Generate recommendation
@@ -97,7 +101,7 @@ export default function StockDetail({ stocks, news }: Props) {
           </div>
           <p className="t-tertiary mb-3">{stock.name} — {stock.sector}</p>
           <div className="flex items-baseline gap-4">
-            <span className="text-4xl font-bold t-primary font-mono tabular-nums">${stock.price.toFixed(2)}</span>
+            <span className="text-4xl font-bold t-primary font-mono tabular-nums">{cur}{stock.price.toFixed(2)}</span>
             <ChangePercent value={stock.changePercent} />
           </div>
         </div>
@@ -152,11 +156,11 @@ export default function StockDetail({ stocks, news }: Props) {
           <Metric label="SMA 50" value={stock.sma50?.toFixed(2) ?? 'N/A'} />
           <Metric label="SMA 200" value={stock.sma200?.toFixed(2) ?? 'N/A'} />
           <Metric label="SMA 20" value={stock.sma20?.toFixed(2) ?? 'N/A'} />
-          <Metric label="Vol Ratio" value={stock.volumeRatio.toFixed(2) + 'x'} />
-          <Metric label="52W High" value={`$${stock.fiftyTwoWeekHigh.toFixed(2)}`} />
-          <Metric label="52W Low" value={`$${stock.fiftyTwoWeekLow.toFixed(2)}`} />
-          <Metric label="3M Return" value={`${(stock.priceReturn3m * 100).toFixed(1)}%`} positive={stock.priceReturn3m >= 0} />
-          <Metric label="6M Return" value={`${(stock.priceReturn6m * 100).toFixed(1)}%`} positive={stock.priceReturn6m >= 0} />
+          <Metric label="Vol Ratio" value={stock.volumeRatio != null ? stock.volumeRatio.toFixed(2) + 'x' : 'N/A'} />
+          <Metric label="52W High" value={stock.fiftyTwoWeekHigh ? `${cur}${stock.fiftyTwoWeekHigh.toFixed(2)}` : 'N/A'} />
+          <Metric label="52W Low" value={stock.fiftyTwoWeekLow ? `${cur}${stock.fiftyTwoWeekLow.toFixed(2)}` : 'N/A'} />
+          <Metric label="3M Return" value={stock.priceReturn3m != null ? `${(stock.priceReturn3m * 100).toFixed(1)}%` : 'N/A'} positive={stock.priceReturn3m != null ? stock.priceReturn3m >= 0 : undefined} />
+          <Metric label="6M Return" value={stock.priceReturn6m != null ? `${(stock.priceReturn6m * 100).toFixed(1)}%` : 'N/A'} positive={stock.priceReturn6m != null ? stock.priceReturn6m >= 0 : undefined} />
         </div>
       </div>
 
