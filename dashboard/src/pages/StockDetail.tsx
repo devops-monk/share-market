@@ -52,8 +52,8 @@ export default function StockDetail({ stocks, news }: Props) {
   if (!stock) {
     return (
       <div className="text-center py-20">
-        <p className="text-gray-400 mb-4">Stock not found: <span className="font-mono text-white">{ticker}</span></p>
-        <Link to="/" className="text-accent-light hover:text-white transition-colors">Back to Overview</Link>
+        <p className="t-tertiary mb-4">Stock not found: <span className="font-mono t-primary">{ticker}</span></p>
+        <Link to="/" className="text-accent-light hover:t-primary transition-colors">Back to Overview</Link>
       </div>
     );
   }
@@ -82,7 +82,7 @@ export default function StockDetail({ stocks, news }: Props) {
   return (
     <div className="space-y-6">
       {/* Back button */}
-      <Link to="/" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-accent-light transition-colors">
+      <Link to="/" className="inline-flex items-center gap-1 text-sm t-muted hover:text-accent-light transition-colors">
         ← Back
       </Link>
 
@@ -90,14 +90,14 @@ export default function StockDetail({ stocks, news }: Props) {
       <div className="flex items-start justify-between gap-6">
         <div className="flex-1">
           <div className="flex items-center gap-3 mb-2">
-            <h1 className="text-2xl font-bold text-white">{stock.ticker}</h1>
+            <h1 className="text-2xl font-bold t-primary">{stock.ticker}</h1>
             <MarketTag market={stock.market} />
             <CapTag cap={stock.capCategory} />
             {stock.trading212 && <Trading212Badge />}
           </div>
-          <p className="text-gray-400 mb-3">{stock.name} — {stock.sector}</p>
+          <p className="t-tertiary mb-3">{stock.name} — {stock.sector}</p>
           <div className="flex items-baseline gap-4">
-            <span className="text-4xl font-bold text-white font-mono tabular-nums">${stock.price.toFixed(2)}</span>
+            <span className="text-4xl font-bold t-primary font-mono tabular-nums">${stock.price.toFixed(2)}</span>
             <ChangePercent value={stock.changePercent} />
           </div>
         </div>
@@ -109,17 +109,17 @@ export default function StockDetail({ stocks, news }: Props) {
 
       {/* Price levels chart */}
       <div className="card p-5">
-        <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Price Levels</h2>
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Price Levels</h2>
         <PriceChart stock={stock} />
       </div>
 
       {/* Score breakdown */}
       <div className="card p-5">
-        <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Score Breakdown</h2>
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Score Breakdown</h2>
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
           {scoreItems.map(item => (
             <div key={item.label} className="group relative flex items-center justify-between gap-2">
-              <span className="text-sm text-gray-400 cursor-help border-b border-dashed border-gray-700">
+              <span className="text-sm t-tertiary cursor-help border-b border-dashed border-surface-border">
                 {item.label}
               </span>
               <Tooltip text={TOOLTIPS[item.label] ?? ''} />
@@ -133,7 +133,7 @@ export default function StockDetail({ stocks, news }: Props) {
                     }}
                   />
                 </div>
-                <span className="text-sm font-bold font-mono tabular-nums w-8 text-right text-white">{item.value}</span>
+                <span className="text-sm font-bold font-mono tabular-nums w-8 text-right t-primary">{item.value}</span>
               </div>
             </div>
           ))}
@@ -142,7 +142,7 @@ export default function StockDetail({ stocks, news }: Props) {
 
       {/* Key metrics */}
       <div className="card p-5">
-        <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Key Metrics</h2>
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           <Metric label="Market Cap" value={formatMcap(stock.marketCap)} />
           <Metric label="P/E" value={stock.pe?.toFixed(1) ?? 'N/A'} />
@@ -162,7 +162,7 @@ export default function StockDetail({ stocks, news }: Props) {
 
       {/* Advanced Indicators */}
       <div className="card p-5">
-        <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Advanced Indicators</h2>
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Advanced Indicators</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           <Metric label="Bollinger Upper" value={stock.bollingerUpper?.toFixed(2) ?? 'N/A'} />
           <Metric label="Bollinger Lower" value={stock.bollingerLower?.toFixed(2) ?? 'N/A'} />
@@ -180,18 +180,18 @@ export default function StockDetail({ stocks, news }: Props) {
 
       {/* Signals */}
       <div className="card p-5">
-        <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Active Signals</h2>
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Active Signals</h2>
         {stock.signals.length === 0 ? (
-          <p className="text-gray-500 text-sm">No signals detected</p>
+          <p className="t-muted text-sm">No signals detected</p>
         ) : (
           <div className="space-y-2">
             {stock.signals.map((s, i) => (
               <div key={i} className="flex items-start gap-3 p-2 rounded-lg hover:bg-surface-hover transition-colors">
                 <SignalBadge direction={s.direction} type={s.type} />
                 <div className="flex-1 min-w-0">
-                  <p className="text-xs text-gray-400">{s.description}</p>
+                  <p className="text-xs t-tertiary">{s.description}</p>
                 </div>
-                <span className={`text-xs font-mono ${s.severity >= 3 ? 'text-white font-bold' : 'text-gray-500'}`}>
+                <span className={`text-xs font-mono ${s.severity >= 3 ? 't-primary font-bold' : 't-muted'}`}>
                   Sev {s.severity}
                 </span>
               </div>
@@ -203,7 +203,7 @@ export default function StockDetail({ stocks, news }: Props) {
       {/* News */}
       {stockNews.length > 0 && (
         <div className="card p-5">
-          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Recent News</h2>
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Recent News</h2>
           <div className="space-y-3">
             {stockNews.map((item, i) => (
               <div key={i} className="flex items-start justify-between gap-4">
@@ -211,7 +211,7 @@ export default function StockDetail({ stocks, news }: Props) {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-gray-300 hover:text-accent-light transition-colors line-clamp-1 leading-relaxed"
+                  className="text-sm t-secondary hover:text-accent-light transition-colors line-clamp-1 leading-relaxed"
                 >
                   {item.title}
                 </a>
@@ -230,7 +230,7 @@ function Tooltip({ text }: { text: string }) {
   if (!text) return null;
   return (
     <div className="absolute bottom-full left-0 mb-2 hidden group-hover:block z-50 pointer-events-none">
-      <div className="bg-gray-900 border border-surface-border text-xs text-gray-300 px-3 py-2 rounded-lg shadow-xl max-w-[250px] leading-relaxed">
+      <div className="bg-surface-tertiary border border-surface-border text-xs t-secondary px-3 py-2 rounded-lg shadow-xl max-w-[250px] leading-relaxed">
         {text}
       </div>
     </div>
@@ -241,7 +241,7 @@ function Tooltip({ text }: { text: string }) {
 function Metric({ label, value, highlight, positive }: {
   label: string; value: string; highlight?: boolean; positive?: boolean;
 }) {
-  let valueColor = 'text-white';
+  let valueColor = 't-primary';
   if (highlight) valueColor = 'text-neutral';
   if (positive !== undefined) valueColor = positive ? 'text-bullish' : 'text-bearish';
 
@@ -249,7 +249,7 @@ function Metric({ label, value, highlight, positive }: {
 
   return (
     <div className="group relative">
-      <p className={`text-xs text-gray-500 mb-1 ${tip ? 'cursor-help border-b border-dashed border-gray-700 inline-block' : ''}`}>
+      <p className={`text-xs t-muted mb-1 ${tip ? 'cursor-help border-b border-dashed border-surface-border inline-block' : ''}`}>
         {label}
       </p>
       {tip && <Tooltip text={tip} />}
@@ -363,17 +363,17 @@ function RecommendationCard({ rec, stock }: { rec: Recommendation; stock: StockR
     <div className={`card p-5 ${rec.bgColor} border ${rec.borderColor}`}>
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-3">
-          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Analysis Summary</h2>
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider">Analysis Summary</h2>
           <span className={`text-sm font-bold ${rec.color}`}>{rec.label}</span>
         </div>
-        <div className="flex items-center gap-2 text-xs text-gray-500">
+        <div className="flex items-center gap-2 text-xs t-muted">
           <span>Bullish: <strong className="text-bullish">{stock.bullishScore}</strong></span>
-          <span className="text-gray-700">|</span>
+          <span className="t-faint">|</span>
           <span>Bearish: <strong className="text-bearish">{stock.bearishScore}</strong></span>
         </div>
       </div>
 
-      <p className="text-sm text-gray-300 leading-relaxed mb-4">{rec.summary}</p>
+      <p className="text-sm t-secondary leading-relaxed mb-4">{rec.summary}</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Strengths */}
@@ -382,7 +382,7 @@ function RecommendationCard({ rec, stock }: { rec: Recommendation; stock: StockR
             <p className="text-xs font-semibold text-bullish mb-2">Strengths</p>
             <ul className="space-y-1.5">
               {rec.strengths.map((s, i) => (
-                <li key={i} className="flex items-start gap-2 text-xs text-gray-400">
+                <li key={i} className="flex items-start gap-2 text-xs t-tertiary">
                   <span className="text-bullish mt-0.5 flex-shrink-0">+</span>
                   <span>{s}</span>
                 </li>
@@ -397,7 +397,7 @@ function RecommendationCard({ rec, stock }: { rec: Recommendation; stock: StockR
             <p className="text-xs font-semibold text-bearish mb-2">Risks</p>
             <ul className="space-y-1.5">
               {rec.risks.map((r, i) => (
-                <li key={i} className="flex items-start gap-2 text-xs text-gray-400">
+                <li key={i} className="flex items-start gap-2 text-xs t-tertiary">
                   <span className="text-bearish mt-0.5 flex-shrink-0">-</span>
                   <span>{r}</span>
                 </li>
@@ -407,7 +407,7 @@ function RecommendationCard({ rec, stock }: { rec: Recommendation; stock: StockR
         )}
       </div>
 
-      <p className="text-xs text-gray-600 mt-4 italic">
+      <p className="text-xs t-faint mt-4 italic">
         This is an automated analysis based on technical indicators and scores. Always do your own research before investing.
       </p>
     </div>

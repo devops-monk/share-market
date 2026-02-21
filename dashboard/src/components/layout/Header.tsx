@@ -8,7 +8,13 @@ const navItems = [
   { path: '/guide', label: 'Guide', icon: '?' },
 ];
 
-export default function Header({ lastUpdated }: { lastUpdated?: string }) {
+interface HeaderProps {
+  lastUpdated?: string;
+  theme: 'light' | 'dark';
+  onToggleTheme: () => void;
+}
+
+export default function Header({ lastUpdated, theme, onToggleTheme }: HeaderProps) {
   const { pathname } = useLocation();
 
   return (
@@ -20,11 +26,9 @@ export default function Header({ lastUpdated }: { lastUpdated?: string }) {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-bullish flex items-center justify-center text-white text-sm font-bold">
               SM
             </div>
-            <div>
-              <span className="text-base font-bold text-white group-hover:text-accent-light transition-colors">
-                StockMarket
-              </span>
-            </div>
+            <span className="text-base font-bold t-primary group-hover:text-accent-light transition-colors">
+              StockMarket
+            </span>
           </Link>
 
           {/* Navigation */}
@@ -38,7 +42,7 @@ export default function Header({ lastUpdated }: { lastUpdated?: string }) {
                   className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 ${
                     isActive
                       ? 'bg-accent/15 text-accent-light border border-accent/20'
-                      : 'text-gray-400 hover:text-white hover:bg-surface-hover'
+                      : 't-tertiary hover:t-primary hover:bg-surface-hover'
                   }`}
                 >
                   <span className="text-xs opacity-60">{item.icon}</span>
@@ -48,10 +52,27 @@ export default function Header({ lastUpdated }: { lastUpdated?: string }) {
             })}
           </nav>
 
-          {/* Status */}
+          {/* Right side: theme toggle + status */}
           <div className="flex items-center gap-3">
+            {/* Theme toggle */}
+            <button
+              onClick={onToggleTheme}
+              className="w-9 h-9 rounded-lg flex items-center justify-center bg-surface-tertiary border border-surface-border hover:border-accent/30 transition-all"
+              title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            >
+              {theme === 'dark' ? (
+                <svg className="w-4 h-4 t-tertiary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              ) : (
+                <svg className="w-4 h-4 t-tertiary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+              )}
+            </button>
+
             {lastUpdated && (
-              <div className="hidden sm:flex items-center gap-2 text-xs text-gray-500">
+              <div className="hidden sm:flex items-center gap-2 text-xs t-muted">
                 <span className="w-1.5 h-1.5 rounded-full bg-bullish animate-pulse" />
                 {new Date(lastUpdated).toLocaleString(undefined, {
                   month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
@@ -72,7 +93,7 @@ export default function Header({ lastUpdated }: { lastUpdated?: string }) {
                 className={`flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-all ${
                   isActive
                     ? 'bg-accent/15 text-accent-light'
-                    : 'text-gray-500'
+                    : 't-muted'
                 }`}
               >
                 {item.label}

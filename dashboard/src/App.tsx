@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import { useStockData } from './hooks/useStockData';
+import { useTheme } from './hooks/useTheme';
 import Overview from './pages/Overview';
 import Screener from './pages/Screener';
 import BearishAlerts from './pages/BearishAlerts';
@@ -10,6 +11,7 @@ import Guide from './pages/Guide';
 
 export default function App() {
   const { stocks, summary, bearishAlerts, news, metadata, loading } = useStockData();
+  const { theme, toggle } = useTheme();
 
   if (loading) {
     return (
@@ -19,7 +21,7 @@ export default function App() {
             <div className="absolute inset-0 rounded-full border-2 border-surface-border" />
             <div className="absolute inset-0 rounded-full border-2 border-transparent border-t-accent animate-spin" />
           </div>
-          <p className="text-gray-400 text-sm font-medium">Loading market data...</p>
+          <p className="t-tertiary text-sm font-medium">Loading market data...</p>
         </div>
       </div>
     );
@@ -27,7 +29,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-surface">
-      <Header lastUpdated={metadata?.lastUpdated} />
+      <Header lastUpdated={metadata?.lastUpdated} theme={theme} onToggleTheme={toggle} />
       <main className="max-w-[1400px] mx-auto px-4 lg:px-6 py-6">
         <Routes>
           <Route
@@ -49,7 +51,7 @@ export default function App() {
         </Routes>
       </main>
       <footer className="border-t border-surface-border py-6 mt-12">
-        <div className="max-w-[1400px] mx-auto px-4 lg:px-6 flex items-center justify-between text-xs text-gray-600">
+        <div className="max-w-[1400px] mx-auto px-4 lg:px-6 flex items-center justify-between text-xs t-muted">
           <span>StockMarket Dashboard — Educational purposes only</span>
           <span>Data updates hourly on weekdays</span>
         </div>

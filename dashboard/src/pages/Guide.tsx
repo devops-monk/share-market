@@ -10,8 +10,8 @@ export default function Guide() {
     <div className="space-y-6 max-w-4xl mx-auto">
       {/* Hero */}
       <div className="card p-6 bg-gradient-to-br from-accent/10 via-surface-secondary to-bullish/5 border-accent/20">
-        <h1 className="text-2xl font-bold text-white mb-2">Learn to Analyze Stocks</h1>
-        <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">
+        <h1 className="text-2xl font-bold t-primary mb-2">Learn to Analyze Stocks</h1>
+        <p className="t-tertiary text-sm leading-relaxed max-w-2xl">
           New to investing? This guide will teach you everything you need to know — from basic stock market
           concepts to advanced technical analysis. Follow along step-by-step and use this dashboard to
           make informed decisions.
@@ -35,7 +35,7 @@ export default function Guide() {
       {/* Disclaimer */}
       <div className="card p-5 border-amber-500/20 bg-amber-500/5">
         <h3 className="text-sm font-semibold text-amber-400 mb-2">Important Disclaimer</h3>
-        <p className="text-xs text-gray-400 leading-relaxed">
+        <p className="text-xs t-tertiary leading-relaxed">
           This dashboard is for educational and informational purposes only. It does not constitute financial advice.
           Stock market investments carry risk — you can lose money. Past performance does not guarantee future results.
           Always do your own research (DYOR) and consider consulting a qualified financial advisor before making investment decisions.
@@ -54,11 +54,11 @@ function TabBtn({ active, onClick, label, emoji }: { active: boolean; onClick: (
       className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
         active
           ? 'bg-accent/15 text-accent-light border border-accent/20 shadow-sm'
-          : 'text-gray-500 hover:text-gray-300 hover:bg-surface-hover'
+          : 't-muted hover:t-secondary hover:bg-surface-hover'
       }`}
     >
       <span className={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold ${
-        active ? 'bg-accent text-white' : 'bg-surface-tertiary text-gray-500'
+        active ? 'bg-accent text-white' : 'bg-surface-tertiary t-muted'
       }`}>{emoji}</span>
       {label}
     </button>
@@ -70,8 +70,8 @@ function BasicsTab() {
   return (
     <div className="space-y-6">
       <Section title="What is a Stock?" icon="S">
-        <p className="text-gray-300 text-sm leading-relaxed mb-4">
-          A <strong className="text-white">stock</strong> (or share) represents a small piece of ownership in a company.
+        <p className="t-secondary text-sm leading-relaxed mb-4">
+          A <strong className="t-primary">stock</strong> (or share) represents a small piece of ownership in a company.
           When you buy a stock, you become a partial owner. If the company does well, the stock price typically
           goes up and you can sell it for a profit. If it does poorly, the price drops.
         </p>
@@ -139,9 +139,9 @@ function BasicsTab() {
           <div className="p-4 rounded-lg bg-blue-500/5 border border-blue-500/20">
             <div className="flex items-center gap-2 mb-2">
               <span className="badge bg-blue-500/20 text-blue-400 ring-1 ring-blue-500/30 text-xs">US</span>
-              <span className="text-sm font-semibold text-white">United States</span>
+              <span className="text-sm font-semibold t-primary">United States</span>
             </div>
-            <ul className="space-y-1 text-xs text-gray-400">
+            <ul className="space-y-1 text-xs t-tertiary">
               <li>- NYSE & NASDAQ exchanges</li>
               <li>- Includes S&P 500, tech giants, growth stocks</li>
               <li>- Prices in USD ($)</li>
@@ -152,9 +152,9 @@ function BasicsTab() {
           <div className="p-4 rounded-lg bg-emerald-500/5 border border-emerald-500/20">
             <div className="flex items-center gap-2 mb-2">
               <span className="badge bg-emerald-500/20 text-emerald-400 ring-1 ring-emerald-500/30 text-xs">UK</span>
-              <span className="text-sm font-semibold text-white">United Kingdom</span>
+              <span className="text-sm font-semibold t-primary">United Kingdom</span>
             </div>
-            <ul className="space-y-1 text-xs text-gray-400">
+            <ul className="space-y-1 text-xs t-tertiary">
               <li>- London Stock Exchange (LSE)</li>
               <li>- FTSE 100, FTSE 250, AIM stocks</li>
               <li>- Prices in GBP (p = pence)</li>
@@ -179,39 +179,39 @@ function DashboardTab() {
       <Section title="Step-by-Step: Find Your First Stock" icon="F">
         <div className="space-y-3">
           <Step num={1} title="Start with the Screener" page="/screener">
-            Go to the <strong className="text-white">Screener</strong> page. You'll see all stocks in a sortable table.
-            Click the <strong className="text-white">Composite Score</strong> column header to sort from highest to lowest.
+            Go to the <strong className="t-primary">Screener</strong> page. You'll see all stocks in a sortable table.
+            Click the <strong className="t-primary">Composite Score</strong> column header to sort from highest to lowest.
             Stocks with higher scores have better overall indicators.
           </Step>
           <Step num={2} title="Filter to narrow down">
             Use the filters at the top:
             <ul className="mt-1 ml-4 space-y-0.5">
-              <li>- <strong className="text-white">Market:</strong> Choose US or UK based on where you invest</li>
-              <li>- <strong className="text-white">Cap Size:</strong> Large = safer, Small = more growth potential but riskier</li>
-              <li>- <strong className="text-white">Trading212:</strong> Check this if you use Trading212 to only see available stocks</li>
+              <li>- <strong className="t-primary">Market:</strong> Choose US or UK based on where you invest</li>
+              <li>- <strong className="t-primary">Cap Size:</strong> Large = safer, Small = more growth potential but riskier</li>
+              <li>- <strong className="t-primary">Trading212:</strong> Check this if you use Trading212 to only see available stocks</li>
             </ul>
           </Step>
           <Step num={3} title="Look at the numbers">
             For each stock, quickly check:
             <ul className="mt-1 ml-4 space-y-0.5">
               <li>- <strong className="text-bullish">Composite Score 65+</strong> = Strong overall signal</li>
-              <li>- <strong className="text-white">RSI 30-70</strong> = Healthy range (not overbought or oversold)</li>
+              <li>- <strong className="t-primary">RSI 30-70</strong> = Healthy range (not overbought or oversold)</li>
               <li>- <strong className="text-bullish">Positive Change %</strong> = Price going up today</li>
               <li>- <strong className="text-bullish">Positive Sentiment</strong> = Good news coverage</li>
             </ul>
           </Step>
           <Step num={4} title="Dive deeper" page="/stock/AAPL">
-            Click any ticker name to open its <strong className="text-white">detail page</strong>.
+            Click any ticker name to open its <strong className="t-primary">detail page</strong>.
             Here you'll see the full score breakdown, all technical indicators, active signals, and recent news.
             Make sure the score is strong across <em>multiple</em> components, not just one.
           </Step>
           <Step num={5} title="Check for danger signs" page="/bearish">
-            Before buying, always visit <strong className="text-white">Bearish Alerts</strong>.
+            Before buying, always visit <strong className="t-primary">Bearish Alerts</strong>.
             If your stock appears here, it means multiple warning signals are active. Proceed with caution or wait
             for signals to clear.
           </Step>
           <Step num={6} title="Read the news" page="/news">
-            Check <strong className="text-white">News Sentiment</strong> for recent headlines.
+            Check <strong className="t-primary">News Sentiment</strong> for recent headlines.
             A stock with strong numbers but very negative recent news might be about to drop.
             Look for a consistent positive sentiment trend.
           </Step>
@@ -219,7 +219,7 @@ function DashboardTab() {
       </Section>
 
       <Section title="Understanding the Composite Score (0-100)" icon="C">
-        <p className="text-gray-400 text-sm mb-4">
+        <p className="t-tertiary text-sm mb-4">
           Every stock gets a single score from 0 to 100. This combines 6 different factors so you can
           quickly compare stocks. Here's what makes up the score:
         </p>
@@ -238,7 +238,7 @@ function DashboardTab() {
         </div>
         <Tip>
           A stock scoring 75 with balanced components (Momentum: 70, Technical: 80, Sentiment: 65) is a
-          <strong className="text-white"> much better pick</strong> than one scoring 80 with one extreme
+          <strong className="t-primary"> much better pick</strong> than one scoring 80 with one extreme
           component (Momentum: 95) and weak others (Sentiment: 20).
         </Tip>
       </Section>
@@ -280,16 +280,16 @@ function IndicatorsTab() {
   return (
     <div className="space-y-6">
       <div className="card p-4 bg-accent/5 border-accent/20">
-        <p className="text-sm text-gray-300 leading-relaxed">
+        <p className="text-sm t-secondary leading-relaxed">
           Technical indicators are mathematical calculations based on price, volume, and time.
-          They help predict where a stock price might go next. Think of them as <strong className="text-white">health vitals</strong> for a stock —
+          They help predict where a stock price might go next. Think of them as <strong className="t-primary">health vitals</strong> for a stock —
           just like a doctor checks your heart rate and blood pressure, these indicators check a stock's "health."
         </p>
       </div>
 
       <Section title="RSI — Is the Stock Overbought or Oversold?" icon="R">
-        <p className="text-gray-400 text-sm mb-3">
-          The <strong className="text-white">Relative Strength Index (RSI)</strong> measures buying and selling pressure
+        <p className="t-tertiary text-sm mb-3">
+          The <strong className="t-primary">Relative Strength Index (RSI)</strong> measures buying and selling pressure
           on a scale of 0-100. Think of it like a thermometer for stock demand.
         </p>
         <div className="flex gap-2 mb-3">
@@ -304,8 +304,8 @@ function IndicatorsTab() {
       </Section>
 
       <Section title="MACD — Momentum Direction" icon="M">
-        <p className="text-gray-400 text-sm mb-3">
-          <strong className="text-white">MACD</strong> shows whether upward or downward momentum is getting stronger or weaker.
+        <p className="t-tertiary text-sm mb-3">
+          <strong className="t-primary">MACD</strong> shows whether upward or downward momentum is getting stronger or weaker.
           It compares a fast moving average (12-day) to a slow one (26-day).
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -318,8 +318,8 @@ function IndicatorsTab() {
       </Section>
 
       <Section title="Moving Averages (SMA 50 & SMA 200)" icon="A">
-        <p className="text-gray-400 text-sm mb-3">
-          A <strong className="text-white">Simple Moving Average (SMA)</strong> smooths out price data over a period.
+        <p className="t-tertiary text-sm mb-3">
+          A <strong className="t-primary">Simple Moving Average (SMA)</strong> smooths out price data over a period.
           SMA50 = average price over last 50 days. SMA200 = average over last 200 days. These act like support and resistance levels.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -327,23 +327,23 @@ function IndicatorsTab() {
           <SignalExample direction="bearish" title="Death Cross" desc="SMA50 crosses BELOW SMA200. A strong warning signal. Many institutional investors sell when this occurs." />
         </div>
         <div className="mt-3 p-3 rounded-lg bg-surface-hover border border-surface-border">
-          <p className="text-xs text-gray-400 mb-2"><strong className="text-gray-300">Price Alignment (strongest signal):</strong></p>
+          <p className="text-xs t-tertiary mb-2"><strong className="t-secondary">Price Alignment (strongest signal):</strong></p>
           <div className="flex items-center gap-2 text-xs">
             <span className="text-bullish font-mono">Price {'>'} SMA50 {'>'} SMA200</span>
-            <span className="text-gray-600">=</span>
-            <span className="text-gray-300">Strong uptrend. All averages confirm the move.</span>
+            <span className="t-faint">=</span>
+            <span className="t-secondary">Strong uptrend. All averages confirm the move.</span>
           </div>
           <div className="flex items-center gap-2 text-xs mt-1">
             <span className="text-bearish font-mono">Price {'<'} SMA50 {'<'} SMA200</span>
-            <span className="text-gray-600">=</span>
-            <span className="text-gray-300">Strong downtrend. Avoid or sell.</span>
+            <span className="t-faint">=</span>
+            <span className="t-secondary">Strong downtrend. Avoid or sell.</span>
           </div>
         </div>
       </Section>
 
       <Section title="Bollinger Bands — Volatility Channels" icon="B">
-        <p className="text-gray-400 text-sm mb-3">
-          <strong className="text-white">Bollinger Bands</strong> create a price channel around the 20-day average.
+        <p className="t-tertiary text-sm mb-3">
+          <strong className="t-primary">Bollinger Bands</strong> create a price channel around the 20-day average.
           The bands widen when a stock is volatile and narrow when it's calm.
           Think of them like guardrails — price usually stays inside.
         </p>
@@ -365,14 +365,14 @@ function IndicatorsTab() {
           />
         </div>
         <Tip>
-          <strong className="text-white">%B</strong> on the detail page shows where the price sits within the bands.
+          <strong className="t-primary">%B</strong> on the detail page shows where the price sits within the bands.
           Above 1.0 = above upper band (extreme). Below 0.0 = below lower band (extreme). 0.5 = right at the middle.
         </Tip>
       </Section>
 
       <Section title="Stochastic Oscillator — Precision Timing" icon="S">
-        <p className="text-gray-400 text-sm mb-3">
-          The <strong className="text-white">Stochastic</strong> compares where the price closed relative to its
+        <p className="t-tertiary text-sm mb-3">
+          The <strong className="t-primary">Stochastic</strong> compares where the price closed relative to its
           range over 14 days. It has two lines: %K (fast) and %D (slow signal line).
           Great for timing entries and exits.
         </p>
@@ -382,42 +382,42 @@ function IndicatorsTab() {
         </div>
         <div className="mt-3 p-3 rounded-lg bg-amber-500/5 border border-amber-500/20">
           <p className="text-xs text-amber-300 font-semibold mb-1">Double Confirmation (Strongest Signal)</p>
-          <p className="text-xs text-gray-400">
+          <p className="text-xs t-tertiary">
             When both RSI and Stochastic agree (both overbought or both oversold), the signal
-            is rated <strong className="text-white">severity 3</strong> — the highest level.
+            is rated <strong className="t-primary">severity 3</strong> — the highest level.
             These are the most reliable signals on the dashboard.
           </p>
         </div>
       </Section>
 
       <Section title="OBV — Follow the Smart Money" icon="O">
-        <p className="text-gray-400 text-sm mb-3">
-          <strong className="text-white">On-Balance Volume (OBV)</strong> tracks cumulative buying and selling pressure.
+        <p className="t-tertiary text-sm mb-3">
+          <strong className="t-primary">On-Balance Volume (OBV)</strong> tracks cumulative buying and selling pressure.
           The idea: volume precedes price. If big institutions are quietly buying (accumulating), OBV rises
           even before the price does.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div className="p-4 rounded-lg bg-bullish/5 border border-bullish/20">
             <p className="text-xs font-bold text-bullish mb-2">Bullish Divergence</p>
-            <div className="space-y-1 text-xs text-gray-400">
+            <div className="space-y-1 text-xs t-tertiary">
               <p>Price: <span className="text-bearish">falling</span></p>
               <p>OBV: <span className="text-bullish">rising</span></p>
-              <p className="mt-2 text-gray-300">Smart money is <strong>accumulating</strong> (buying) while the price drops.
+              <p className="mt-2 t-secondary">Smart money is <strong>accumulating</strong> (buying) while the price drops.
               A reversal up is likely coming.</p>
             </div>
           </div>
           <div className="p-4 rounded-lg bg-bearish/5 border border-bearish/20">
             <p className="text-xs font-bold text-bearish mb-2">Bearish Divergence</p>
-            <div className="space-y-1 text-xs text-gray-400">
+            <div className="space-y-1 text-xs t-tertiary">
               <p>Price: <span className="text-bullish">rising</span></p>
               <p>OBV: <span className="text-bearish">falling</span></p>
-              <p className="mt-2 text-gray-300">Smart money is <strong>distributing</strong> (selling) while the price rises.
+              <p className="mt-2 t-secondary">Smart money is <strong>distributing</strong> (selling) while the price rises.
               A reversal down is likely coming.</p>
             </div>
           </div>
         </div>
         <Tip>
-          OBV divergences are rated <strong className="text-white">severity 3</strong> because they reveal institutional activity
+          OBV divergences are rated <strong className="t-primary">severity 3</strong> because they reveal institutional activity
           that retail investors often miss. Pay close attention when you see these signals.
         </Tip>
       </Section>
@@ -430,9 +430,9 @@ function StrategiesTab() {
   return (
     <div className="space-y-6">
       <div className="card p-4 bg-accent/5 border-accent/20">
-        <p className="text-sm text-gray-300 leading-relaxed">
+        <p className="text-sm t-secondary leading-relaxed">
           Below are four proven strategies you can use with this dashboard. Start with
-          <strong className="text-white"> Momentum</strong> (easiest) and progress to the others
+          <strong className="t-primary"> Momentum</strong> (easiest) and progress to the others
           as you get comfortable reading the indicators.
         </p>
       </div>
@@ -524,7 +524,7 @@ function Section({ title, icon, children }: { title: string; icon: string; child
         <div className="w-7 h-7 rounded-lg bg-accent/15 border border-accent/20 flex items-center justify-center text-accent-light text-xs font-bold">
           {icon}
         </div>
-        <h2 className="text-sm font-semibold text-white">{title}</h2>
+        <h2 className="text-sm font-semibold t-primary">{title}</h2>
       </div>
       {children}
     </div>
@@ -534,9 +534,9 @@ function Section({ title, icon, children }: { title: string; icon: string; child
 function ConceptCard({ term, definition, example }: { term: string; definition: string; example: string }) {
   return (
     <div className="p-3 rounded-lg bg-surface-hover border border-surface-border">
-      <h4 className="text-sm font-semibold text-white mb-1">{term}</h4>
-      <p className="text-xs text-gray-400 mb-2">{definition}</p>
-      <p className="text-xs text-gray-500 italic">{example}</p>
+      <h4 className="text-sm font-semibold t-primary mb-1">{term}</h4>
+      <p className="text-xs t-tertiary mb-2">{definition}</p>
+      <p className="text-xs t-muted italic">{example}</p>
     </div>
   );
 }
@@ -549,14 +549,14 @@ function Step({ num, title, page, children }: { num: number; title: string; page
       </div>
       <div className="flex-1 pt-1">
         <div className="flex items-center gap-2 mb-1">
-          <h4 className="text-sm font-semibold text-white">{title}</h4>
+          <h4 className="text-sm font-semibold t-primary">{title}</h4>
           {page && (
-            <Link to={page} className="text-xs text-accent-light hover:text-white transition-colors">
+            <Link to={page} className="text-xs text-accent-light hover:t-primary transition-colors">
               Go &rarr;
             </Link>
           )}
         </div>
-        <p className="text-xs text-gray-400 leading-relaxed">{children}</p>
+        <p className="text-xs t-tertiary leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -566,15 +566,15 @@ function ScoreBar({ label, weight, desc, color }: { label: string; weight: numbe
   return (
     <div className="flex items-center gap-3">
       <div className="min-w-[120px]">
-        <span className="text-xs font-medium text-white">{label}</span>
+        <span className="text-xs font-medium t-primary">{label}</span>
       </div>
       <div className="flex-1 flex items-center gap-2">
         <div className="flex-1 h-3 bg-surface-tertiary rounded-full overflow-hidden">
           <div className={`h-full rounded-full ${color}`} style={{ width: `${weight * 4}%` }} />
         </div>
-        <span className="text-xs font-mono text-gray-400 w-8 text-right">{weight}%</span>
+        <span className="text-xs font-mono t-tertiary w-8 text-right">{weight}%</span>
       </div>
-      <p className="hidden lg:block text-xs text-gray-500 min-w-[200px]">{desc}</p>
+      <p className="hidden lg:block text-xs t-muted min-w-[200px]">{desc}</p>
     </div>
   );
 }
@@ -583,7 +583,7 @@ function ScoreRange({ range, label, color, bg }: { range: string; label: string;
   return (
     <div className={`p-3 rounded-lg border text-center ${bg}`}>
       <p className={`text-lg font-bold font-mono ${color}`}>{range}</p>
-      <p className="text-xs text-gray-400 mt-1">{label}</p>
+      <p className="text-xs t-tertiary mt-1">{label}</p>
     </div>
   );
 }
@@ -591,8 +591,8 @@ function ScoreRange({ range, label, color, bg }: { range: string; label: string;
 function PageCard({ name, path, desc, when }: { name: string; path: string; desc: string; when: string }) {
   return (
     <Link to={path} className="block p-4 rounded-lg bg-surface-hover border border-surface-border hover:border-accent/30 transition-colors group">
-      <h4 className="text-sm font-semibold text-white group-hover:text-accent-light transition-colors mb-1">{name}</h4>
-      <p className="text-xs text-gray-400 mb-2">{desc}</p>
+      <h4 className="text-sm font-semibold t-primary group-hover:text-accent-light transition-colors mb-1">{name}</h4>
+      <p className="text-xs t-tertiary mb-2">{desc}</p>
       <p className="text-xs text-accent-light/70">{when}</p>
     </Link>
   );
@@ -604,7 +604,7 @@ function ZoneTag({ value, label, color, desc }: { value: string; label: string; 
     <div className={`flex-1 p-3 rounded-lg border ${colorMap[color as keyof typeof colorMap]}`}>
       <p className="text-sm font-bold font-mono">{value}</p>
       <p className="text-xs font-semibold mt-0.5">{label}</p>
-      <p className="text-xs text-gray-500 mt-1">{desc}</p>
+      <p className="text-xs t-muted mt-1">{desc}</p>
     </div>
   );
 }
@@ -614,7 +614,7 @@ function SignalExample({ direction, title, desc }: { direction: 'bullish' | 'bea
   return (
     <div className={`p-3 rounded-lg border ${isBull ? 'border-bullish/20 bg-bullish/5' : 'border-bearish/20 bg-bearish/5'}`}>
       <p className={`text-xs font-bold mb-1 ${isBull ? 'text-bullish' : 'text-bearish'}`}>{title}</p>
-      <p className="text-xs text-gray-400">{desc}</p>
+      <p className="text-xs t-tertiary">{desc}</p>
     </div>
   );
 }
@@ -625,7 +625,7 @@ function IndicatorCard({ title, desc, signal }: { title: string; desc: string; s
   return (
     <div className={`p-3 rounded-lg border ${colors[signal]}`}>
       <p className={`text-xs font-bold mb-1 ${textColors[signal]}`}>{title}</p>
-      <p className="text-xs text-gray-400">{desc}</p>
+      <p className="text-xs t-tertiary">{desc}</p>
     </div>
   );
 }
@@ -637,24 +637,24 @@ function StrategyCard({ name, difficulty, diffColor, goal, steps, when, risk }: 
   return (
     <div className="card p-5">
       <div className="flex items-center justify-between mb-3">
-        <h3 className="text-base font-bold text-white">{name}</h3>
+        <h3 className="text-base font-bold t-primary">{name}</h3>
         <span className={`text-xs font-semibold ${diffColor}`}>{difficulty}</span>
       </div>
-      <p className="text-sm text-gray-400 mb-4">{goal}</p>
+      <p className="text-sm t-tertiary mb-4">{goal}</p>
       <div className="space-y-3 mb-4">
         {steps.map((s, i) => (
           <div key={i} className="flex gap-3">
-            <div className="flex-shrink-0 w-6 h-6 rounded-full bg-surface-tertiary flex items-center justify-center text-xs font-bold text-gray-400">
+            <div className="flex-shrink-0 w-6 h-6 rounded-full bg-surface-tertiary flex items-center justify-center text-xs font-bold t-tertiary">
               {i + 1}
             </div>
             <div className="pt-0.5">
               <div className="flex items-center gap-2">
-                <span className="text-xs font-semibold text-white">{s.action}</span>
+                <span className="text-xs font-semibold t-primary">{s.action}</span>
                 {s.page && (
-                  <Link to={s.page} className="text-xs text-accent-light hover:text-white transition-colors">Go &rarr;</Link>
+                  <Link to={s.page} className="text-xs text-accent-light hover:t-primary transition-colors">Go &rarr;</Link>
                 )}
               </div>
-              <p className="text-xs text-gray-400 mt-0.5">{s.detail}</p>
+              <p className="text-xs t-tertiary mt-0.5">{s.detail}</p>
             </div>
           </div>
         ))}
@@ -662,11 +662,11 @@ function StrategyCard({ name, difficulty, diffColor, goal, steps, when, risk }: 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <div className="p-3 rounded-lg bg-bullish/5 border border-bullish/20">
           <p className="text-xs font-semibold text-bullish mb-1">Best When</p>
-          <p className="text-xs text-gray-400">{when}</p>
+          <p className="text-xs t-tertiary">{when}</p>
         </div>
         <div className="p-3 rounded-lg bg-bearish/5 border border-bearish/20">
           <p className="text-xs font-semibold text-bearish mb-1">Risk</p>
-          <p className="text-xs text-gray-400">{risk}</p>
+          <p className="text-xs t-tertiary">{risk}</p>
         </div>
       </div>
     </div>
@@ -680,8 +680,8 @@ function RuleCard({ num, title, desc }: { num: number; title: string; desc: stri
         {num}
       </div>
       <div>
-        <p className="text-xs font-semibold text-white mb-0.5">{title}</p>
-        <p className="text-xs text-gray-400">{desc}</p>
+        <p className="text-xs font-semibold t-primary mb-0.5">{title}</p>
+        <p className="text-xs t-tertiary">{desc}</p>
       </div>
     </div>
   );
@@ -690,14 +690,14 @@ function RuleCard({ num, title, desc }: { num: number; title: string; desc: stri
 function Tip({ children }: { children: React.ReactNode }) {
   return (
     <div className="mt-3 p-3 rounded-lg bg-accent/5 border border-accent/20">
-      <p className="text-xs text-gray-400"><strong className="text-accent-light">Tip:</strong> {children}</p>
+      <p className="text-xs t-tertiary"><strong className="text-accent-light">Tip:</strong> {children}</p>
     </div>
   );
 }
 
 function NextTabBtn({ label, onClick }: { label: string; onClick: () => void }) {
   return (
-    <button onClick={onClick} className="text-xs text-accent-light hover:text-white transition-colors flex items-center gap-1">
+    <button onClick={onClick} className="text-xs text-accent-light hover:t-primary transition-colors flex items-center gap-1">
       Next: {label} &rarr;
     </button>
   );

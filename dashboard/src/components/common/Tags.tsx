@@ -70,7 +70,7 @@ export function ChangePercent({ value }: { value: number }) {
 
 export function PriceDisplay({ value, currency = '$' }: { value: number; currency?: string }) {
   return (
-    <span className="font-mono tabular-nums font-medium text-white">
+    <span className="font-mono tabular-nums font-medium t-primary">
       {currency}{value.toFixed(2)}
     </span>
   );

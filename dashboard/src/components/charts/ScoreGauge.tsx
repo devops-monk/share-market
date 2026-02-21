@@ -42,7 +42,7 @@ export default function ScoreGauge({ score, size = 120 }: { score: number; size?
         <path
           d={bgArc}
           fill="none"
-          stroke="#1c2333"
+          stroke="var(--gauge-track)"
           strokeWidth={sw}
           strokeLinecap="round"
         />

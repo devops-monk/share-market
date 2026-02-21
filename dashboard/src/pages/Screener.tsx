@@ -18,14 +18,14 @@ const columns = [
   col.accessor('ticker', {
     header: 'Ticker',
     cell: info => (
-      <Link to={`/stock/${info.getValue()}`} className="font-semibold text-accent-light hover:text-white transition-colors">
+      <Link to={`/stock/${info.getValue()}`} className="font-semibold text-accent-light hover:t-primary transition-colors">
         {info.getValue()}
       </Link>
     ),
   }),
   col.accessor('name', {
     header: 'Name',
-    cell: info => <span className="text-gray-300 truncate max-w-[120px] block">{info.getValue()}</span>,
+    cell: info => <span className="t-secondary truncate max-w-[120px] block">{info.getValue()}</span>,
   }),
   col.accessor('market', {
     header: 'Market',
@@ -51,8 +51,8 @@ const columns = [
     header: 'RSI',
     cell: info => {
       const v = info.getValue();
-      if (v == null) return <span className="text-gray-600">--</span>;
-      const color = v > 70 ? 'text-bearish' : v < 30 ? 'text-bullish' : 'text-gray-300';
+      if (v == null) return <span className="t-faint">--</span>;
+      const color = v > 70 ? 'text-bearish' : v < 30 ? 'text-bullish' : 't-secondary';
       return <span className={`font-mono tabular-nums ${color}`}>{v.toFixed(1)}</span>;
     },
   }),
@@ -66,7 +66,7 @@ const columns = [
   }),
   col.accessor('trading212', {
     header: 'T212',
-    cell: info => info.getValue() ? <Trading212Badge /> : <span className="text-gray-700">--</span>,
+    cell: info => info.getValue() ? <Trading212Badge /> : <span className="t-faint">--</span>,
   }),
 ];
 
@@ -103,8 +103,8 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
   return (
     <div className="space-y-5">
       <div>
-        <h1 className="text-xl font-bold text-white">Stock Screener</h1>
-        <p className="text-sm text-gray-500 mt-1">Sort, filter, and find the best opportunities</p>
+        <h1 className="text-xl font-bold t-primary">Stock Screener</h1>
+        <p className="text-sm t-muted mt-1">Sort, filter, and find the best opportunities</p>
       </div>
 
       {/* Filters */}
@@ -136,7 +136,7 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
             <option value="Mid">Mid Cap</option>
             <option value="Small">Small Cap</option>
           </select>
-          <label className="flex items-center gap-2 text-sm text-gray-400 cursor-pointer select-none">
+          <label className="flex items-center gap-2 text-sm t-tertiary cursor-pointer select-none">
             <input
               type="checkbox"
               checked={t212Only}
@@ -146,7 +146,7 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
             Trading212 only
           </label>
           <div className="ml-auto">
-            <span className="badge bg-surface-tertiary text-gray-300 ring-1 ring-surface-border">
+            <span className="badge bg-surface-tertiary t-secondary ring-1 ring-surface-border">
               {filtered.length} stocks
             </span>
           </div>
@@ -164,7 +164,7 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
                     <th
                       key={header.id}
                       onClick={header.column.getToggleSortingHandler()}
-                      className="px-4 py-3 text-left table-header cursor-pointer hover:text-gray-200 select-none transition-colors"
+                      className="px-4 py-3 text-left table-header cursor-pointer hover:t-secondary select-none transition-colors"
                     >
                       <div className="flex items-center gap-1">
                         {flexRender(header.column.columnDef.header, header.getContext())}

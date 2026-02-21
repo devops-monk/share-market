@@ -19,8 +19,8 @@ export default function Overview({ stocks, summary, metadata, bearishCount }: Pr
         <div className="w-16 h-16 rounded-2xl bg-accent/10 flex items-center justify-center text-2xl">
           📊
         </div>
-        <h2 className="text-xl font-semibold text-white">No Data Yet</h2>
-        <p className="text-gray-400 text-center max-w-md">
+        <h2 className="text-xl font-semibold t-primary">No Data Yet</h2>
+        <p className="t-tertiary text-center max-w-md">
           Run the ETL pipeline to fetch market data. The dashboard will populate automatically once data is available.
         </p>
         <code className="text-sm text-accent bg-accent/10 px-3 py-1.5 rounded-lg font-mono">
@@ -85,8 +85,8 @@ export default function Overview({ stocks, summary, metadata, bearishCount }: Pr
       <section>
         <div className="flex items-center justify-between mb-4">
           <div>
-            <h2 className="text-lg font-semibold text-white">Top Performers</h2>
-            <p className="text-sm text-gray-500 mt-0.5">Highest composite scores</p>
+            <h2 className="text-lg font-semibold t-primary">Top Performers</h2>
+            <p className="text-sm t-muted mt-0.5">Highest composite scores</p>
           </div>
           <div className="flex gap-1 bg-surface-tertiary rounded-lg p-1">
             {(['all', 'Large', 'Mid', 'Small'] as const).map(tab => (
@@ -94,7 +94,7 @@ export default function Overview({ stocks, summary, metadata, bearishCount }: Pr
                 key={tab}
                 onClick={() => setCapTab(tab)}
                 className={`px-3 py-1 rounded-md text-xs font-medium transition-all ${
-                  capTab === tab ? 'bg-accent/20 text-accent-light' : 'text-gray-500 hover:text-gray-300'
+                  capTab === tab ? 'bg-accent/20 text-accent-light' : 't-muted hover:t-secondary'
                 }`}
               >
                 {tab === 'all' ? 'All' : tab}
@@ -110,15 +110,15 @@ export default function Overview({ stocks, summary, metadata, bearishCount }: Pr
               className="flex items-center justify-between px-4 py-3 hover:bg-surface-hover transition-colors border-b border-surface-border last:border-b-0"
             >
               <div className="flex items-center gap-4">
-                <span className="w-7 h-7 rounded-full bg-surface-tertiary flex items-center justify-center text-xs font-bold text-gray-400">
+                <span className="w-7 h-7 rounded-full bg-surface-tertiary flex items-center justify-center text-xs font-bold t-tertiary">
                   {i + 1}
                 </span>
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="font-semibold text-white">{s.ticker}</span>
+                    <span className="font-semibold t-primary">{s.ticker}</span>
                     <MarketTag market={s.market} />
                   </div>
-                  <span className="text-xs text-gray-500">{s.name}</span>
+                  <span className="text-xs t-muted">{s.name}</span>
                 </div>
               </div>
               <ScoreBadge score={s.score} />
@@ -130,8 +130,8 @@ export default function Overview({ stocks, summary, metadata, bearishCount }: Pr
       {/* Bottom Performers */}
       <section>
         <div className="mb-4">
-          <h2 className="text-lg font-semibold text-white">Bottom Performers</h2>
-          <p className="text-sm text-gray-500 mt-0.5">Lowest composite scores — exercise caution</p>
+          <h2 className="text-lg font-semibold t-primary">Bottom Performers</h2>
+          <p className="text-sm t-muted mt-0.5">Lowest composite scores — exercise caution</p>
         </div>
         <div className="card-flat overflow-hidden">
           {summary.bottomOverall.map((s, i) => (
@@ -146,10 +146,10 @@ export default function Overview({ stocks, summary, metadata, bearishCount }: Pr
                 </span>
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="font-semibold text-white">{s.ticker}</span>
+                    <span className="font-semibold t-primary">{s.ticker}</span>
                     <MarketTag market={s.market} />
                   </div>
-                  <span className="text-xs text-gray-500">{s.name}</span>
+                  <span className="text-xs t-muted">{s.name}</span>
                 </div>
               </div>
               <ScoreBadge score={s.score} />
@@ -161,14 +161,14 @@ export default function Overview({ stocks, summary, metadata, bearishCount }: Pr
       {/* Market breakdown */}
       <section className="grid md:grid-cols-2 gap-4">
         <div className="card p-5">
-          <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">By Market</h3>
+          <h3 className="text-sm font-semibold t-tertiary uppercase tracking-wider mb-3">By Market</h3>
           <div className="space-y-3">
             <BarStat label="US Stocks" value={usCount} total={summary.totalStocks} color="bg-blue-500" />
             <BarStat label="UK Stocks" value={ukCount} total={summary.totalStocks} color="bg-violet-500" />
           </div>
         </div>
         <div className="card p-5">
-          <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">By Cap Size</h3>
+          <h3 className="text-sm font-semibold t-tertiary uppercase tracking-wider mb-3">By Cap Size</h3>
           <div className="space-y-3">
             <BarStat label="Large Cap" value={stocks.filter(s => s.capCategory === 'Large').length} total={summary.totalStocks} color="bg-emerald-500" />
             <BarStat label="Mid Cap" value={stocks.filter(s => s.capCategory === 'Mid').length} total={summary.totalStocks} color="bg-amber-500" />
@@ -187,9 +187,9 @@ function StatCard({ label, value, sub, gradient, borderColor }: {
     <div className={`stat-card border-t-2 ${borderColor}`}>
       <div className={`absolute inset-0 bg-gradient-to-b ${gradient} pointer-events-none`} />
       <div className="relative">
-        <p className="text-xs font-medium text-gray-400 uppercase tracking-wider">{label}</p>
-        <p className="text-2xl font-bold text-white mt-1 font-mono tabular-nums">{value}</p>
-        <p className="text-xs text-gray-500 mt-1">{sub}</p>
+        <p className="text-xs font-medium t-tertiary uppercase tracking-wider">{label}</p>
+        <p className="text-2xl font-bold t-primary mt-1 font-mono tabular-nums">{value}</p>
+        <p className="text-xs t-muted mt-1">{sub}</p>
       </div>
     </div>
   );
@@ -202,8 +202,8 @@ function BarStat({ label, value, total, color }: {
   return (
     <div>
       <div className="flex justify-between text-sm mb-1">
-        <span className="text-gray-300">{label}</span>
-        <span className="font-mono tabular-nums text-white">{value}</span>
+        <span className="t-secondary">{label}</span>
+        <span className="font-mono tabular-nums t-primary">{value}</span>
       </div>
       <div className="h-1.5 bg-surface-tertiary rounded-full overflow-hidden">
         <div className={`h-full rounded-full ${color} transition-all duration-500`} style={{ width: `${pct}%` }} />
