@@ -1,0 +1,10 @@
+{
+  "name": "sharemarket",
+  "private": true,
+  "workspaces": ["etl", "dashboard"],
+  "scripts": {
+    "etl": "npm run start --workspace=etl",
+    "dev": "npm run dev --workspace=dashboard",
+    "build": "npm run build --workspace=dashboard"
+  }
+}

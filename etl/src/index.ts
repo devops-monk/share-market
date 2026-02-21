@@ -1,0 +1,110 @@
+import { ALL_STOCKS } from './stocks/universe.js';
+import { fetchAllStocks } from './stocks/fetcher.js';
+import { computeTechnicals } from './indicators/technical.js';
+import { detectSignals, computeBearishScore, computeBullishScore } from './indicators/signals.js';
+import { computeScore } from './scoring/scorer.js';
+import { fetchGoogleNews } from './news/google-news.js';
+import { fetchFinvizNews } from './news/finviz-scraper.js';
+import { scoreNewsItems, averageSentiment } from './news/sentiment.js';
+import { writeOutputs, type StockRecord } from './output/writer.js';
+import { CONFIG } from './config.js';
+import pLimit from 'p-limit';
+
+async function main() {
+  console.log(`Starting ETL for ${ALL_STOCKS.length} stocks...`);
+  const startTime = Date.now();
+
+  // Step 1: Fetch all stock data
+  console.log('Fetching stock data...');
+  const quotes = await fetchAllStocks(ALL_STOCKS);
+  console.log(`Fetched ${quotes.length}/${ALL_STOCKS.length} stocks`);
+
+  // Step 2: Fetch news (sample top stocks to stay within rate limits)
+  console.log('Fetching news...');
+  const newsLimit = pLimit(2);
+  const allNews: any[] = [];
+  const topTickers = quotes.slice(0, 50); // News for top 50 stocks
+
+  await Promise.all(
+    topTickers.map(q =>
+      newsLimit(async () => {
+        const [googleNews, finvizNews] = await Promise.all([
+          fetchGoogleNews(q.ticker, q.name),
+          q.market === 'US' ? fetchFinvizNews(q.ticker) : Promise.resolve([]),
+        ]);
+        const scored = scoreNewsItems([...googleNews, ...finvizNews]);
+        allNews.push(...scored);
+      })
+    )
+  );
+  console.log(`Collected ${allNews.length} news items`);
+
+  // Step 3: Process each stock
+  console.log('Computing indicators and scores...');
+  const stockRecords: StockRecord[] = [];
+
+  for (const quote of quotes) {
+    const tech = computeTechnicals(quote);
+    const signals = detectSignals(tech, quote);
+    const bearishScore = computeBearishScore(signals);
+    const bullishScore = computeBullishScore(signals);
+
+    // Get sentiment for this stock
+    const stockNews = allNews.filter(n => n.ticker === quote.ticker);
+    const sentimentAvg = averageSentiment(stockNews);
+
+    const score = computeScore(quote, tech, signals, sentimentAvg);
+
+    stockRecords.push({
+      ticker: quote.ticker,
+      name: quote.name,
+      market: quote.market,
+      sector: quote.sector,
+      trading212: quote.trading212,
+      price: quote.price,
+      changePercent: quote.changePercent,
+      marketCap: quote.marketCap,
+      capCategory: quote.capCategory,
+      pe: quote.pe,
+      forwardPe: quote.forwardPe,
+      earningsGrowth: quote.earningsGrowth,
+      revenueGrowth: quote.revenueGrowth,
+      beta: quote.beta,
+      volume: quote.volume,
+      avgVolume: quote.avgVolume,
+      fiftyTwoWeekHigh: quote.fiftyTwoWeekHigh,
+      fiftyTwoWeekLow: quote.fiftyTwoWeekLow,
+      rsi: tech.rsi,
+      macdHistogram: tech.macd?.histogram ?? null,
+      sma50: tech.sma50,
+      sma200: tech.sma200,
+      volumeRatio: tech.volumeRatio,
+      priceReturn3m: tech.priceReturn3m,
+      priceReturn6m: tech.priceReturn6m,
+      volatility: tech.volatility,
+      signals,
+      bearishScore,
+      bullishScore,
+      sentimentAvg,
+      score,
+    });
+  }
+
+  // Step 4: Identify bearish alerts
+  const bearishAlerts = stockRecords
+    .filter(s => s.bearishScore >= CONFIG.bearishScoreThreshold)
+    .sort((a, b) => b.bearishScore - a.bearishScore);
+
+  console.log(`Found ${bearishAlerts.length} bearish alerts`);
+
+  // Step 5: Write outputs
+  writeOutputs(stockRecords, allNews, bearishAlerts);
+
+  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+  console.log(`ETL completed in ${elapsed}s`);
+}
+
+main().catch(err => {
+  console.error('ETL failed:', err);
+  process.exit(1);
+});
