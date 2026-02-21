@@ -92,6 +92,17 @@
     @apply text-xs font-semibold uppercase tracking-wider;
     color: var(--text-tertiary);
   }
+  .pagination-btn {
+    @apply min-w-[32px] h-8 rounded-md text-sm font-medium transition-colors;
+    color: var(--text-tertiary);
+  }
+  .pagination-btn:hover:not(:disabled) {
+    @apply bg-surface-hover;
+    color: var(--text-primary);
+  }
+  .pagination-btn:disabled {
+    @apply opacity-30 cursor-not-allowed;
+  }
 
   /* Theme-aware text utilities */
   .t-primary { color: var(--text-primary); }

@@ -5,12 +5,14 @@ import {
   getCoreRowModel,
   getSortedRowModel,
   getFilteredRowModel,
+  getPaginationRowModel,
   flexRender,
   createColumnHelper,
   type SortingState,
+  type PaginationState,
 } from '@tanstack/react-table';
 import type { StockRecord } from '../types';
-import { MarketTag, CapTag, Trading212Badge, ScoreBadge, ChangePercent, PriceDisplay } from '../components/common/Tags';
+import { MarketTag, CapTag, ScoreBadge, ChangePercent, PriceDisplay } from '../components/common/Tags';
 
 const col = createColumnHelper<StockRecord>();
 
@@ -64,40 +66,41 @@ const columns = [
       return <span className={`font-mono tabular-nums ${color}`}>{v.toFixed(2)}</span>;
     },
   }),
-  col.accessor('trading212', {
-    header: 'T212',
-    cell: info => info.getValue() ? <Trading212Badge /> : <span className="t-faint">--</span>,
-  }),
 ];
 
 export default function Screener({ stocks }: { stocks: StockRecord[] }) {
   const [sorting, setSorting] = useState<SortingState>([{ id: 'score_composite', desc: true }]);
+  const [pagination, setPagination] = useState<PaginationState>({ pageIndex: 0, pageSize: 25 });
   const [marketFilter, setMarketFilter] = useState<string>('all');
   const [capFilter, setCapFilter] = useState<string>('all');
-  const [t212Only, setT212Only] = useState(false);
+
   const [search, setSearch] = useState('');
 
   const filtered = useMemo(() => {
     return stocks.filter(s => {
       if (marketFilter !== 'all' && s.market !== marketFilter) return false;
       if (capFilter !== 'all' && s.capCategory !== capFilter) return false;
-      if (t212Only && !s.trading212) return false;
       if (search) {
         const q = search.toLowerCase();
         if (!s.ticker.toLowerCase().includes(q) && !s.name.toLowerCase().includes(q)) return false;
       }
       return true;
     });
-  }, [stocks, marketFilter, capFilter, t212Only, search]);
+  }, [stocks, marketFilter, capFilter, search]);
+
+  // Reset to first page when filters change
+  const resetPage = () => setPagination(p => ({ ...p, pageIndex: 0 }));
 
   const table = useReactTable({
     data: filtered,
     columns,
-    state: { sorting },
+    state: { sorting, pagination },
     onSortingChange: setSorting,
+    onPaginationChange: setPagination,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
+    getPaginationRowModel: getPaginationRowModel(),
   });
 
   return (
@@ -114,12 +117,12 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
             type="text"
             placeholder="Search ticker or name..."
             value={search}
-            onChange={e => setSearch(e.target.value)}
+            onChange={e => { setSearch(e.target.value); resetPage(); }}
             className="input-field w-52"
           />
           <select
             value={marketFilter}
-            onChange={e => setMarketFilter(e.target.value)}
+            onChange={e => { setMarketFilter(e.target.value); resetPage(); }}
             className="input-field"
           >
             <option value="all">All Markets</option>
@@ -128,7 +131,7 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
           </select>
           <select
             value={capFilter}
-            onChange={e => setCapFilter(e.target.value)}
+            onChange={e => { setCapFilter(e.target.value); resetPage(); }}
             className="input-field"
           >
             <option value="all">All Caps</option>
@@ -136,15 +139,6 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
             <option value="Mid">Mid Cap</option>
             <option value="Small">Small Cap</option>
           </select>
-          <label className="flex items-center gap-2 text-sm t-tertiary cursor-pointer select-none">
-            <input
-              type="checkbox"
-              checked={t212Only}
-              onChange={e => setT212Only(e.target.checked)}
-              className="w-4 h-4 rounded border-surface-border bg-surface-tertiary accent-accent"
-            />
-            Trading212 only
-          </label>
           <div className="ml-auto">
             <span className="badge bg-surface-tertiary t-secondary ring-1 ring-surface-border">
               {filtered.length} stocks
@@ -192,6 +186,103 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
               ))}
             </tbody>
           </table>
+        </div>
+      </div>
+
+      {/* Pagination */}
+      <div className="card p-3">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="flex items-center gap-2">
+            <span className="text-sm t-muted">Rows per page</span>
+            <select
+              value={pagination.pageSize}
+              onChange={e => {
+                setPagination({ pageIndex: 0, pageSize: Number(e.target.value) });
+              }}
+              className="input-field text-sm py-1 px-2"
+            >
+              {[10, 25, 50, 100].map(size => (
+                <option key={size} value={size}>{size}</option>
+              ))}
+            </select>
+          </div>
+
+          <div className="flex items-center gap-1.5">
+            <button
+              onClick={() => table.setPageIndex(0)}
+              disabled={!table.getCanPreviousPage()}
+              className="pagination-btn"
+              title="First page"
+            >
+              ««
+            </button>
+            <button
+              onClick={() => table.previousPage()}
+              disabled={!table.getCanPreviousPage()}
+              className="pagination-btn"
+              title="Previous page"
+            >
+              «
+            </button>
+
+            {/* Page numbers */}
+            {(() => {
+              const current = pagination.pageIndex;
+              const total = table.getPageCount();
+              const pages: (number | 'ellipsis')[] = [];
+
+              if (total <= 7) {
+                for (let i = 0; i < total; i++) pages.push(i);
+              } else {
+                pages.push(0);
+                if (current > 2) pages.push('ellipsis');
+                for (let i = Math.max(1, current - 1); i <= Math.min(total - 2, current + 1); i++) {
+                  pages.push(i);
+                }
+                if (current < total - 3) pages.push('ellipsis');
+                pages.push(total - 1);
+              }
+
+              return pages.map((p, i) =>
+                p === 'ellipsis' ? (
+                  <span key={`e${i}`} className="px-1 t-faint text-sm">...</span>
+                ) : (
+                  <button
+                    key={p}
+                    onClick={() => table.setPageIndex(p)}
+                    className={`min-w-[32px] h-8 rounded-md text-sm font-medium transition-colors ${
+                      p === current
+                        ? 'bg-accent/15 text-accent-light border border-accent/20'
+                        : 't-tertiary hover:t-primary hover:bg-surface-hover'
+                    }`}
+                  >
+                    {p + 1}
+                  </button>
+                )
+              );
+            })()}
+
+            <button
+              onClick={() => table.nextPage()}
+              disabled={!table.getCanNextPage()}
+              className="pagination-btn"
+              title="Next page"
+            >
+              »
+            </button>
+            <button
+              onClick={() => table.setPageIndex(table.getPageCount() - 1)}
+              disabled={!table.getCanNextPage()}
+              className="pagination-btn"
+              title="Last page"
+            >
+              »»
+            </button>
+          </div>
+
+          <span className="text-sm t-muted">
+            {pagination.pageIndex * pagination.pageSize + 1}–{Math.min((pagination.pageIndex + 1) * pagination.pageSize, filtered.length)} of {filtered.length}
+          </span>
         </div>
       </div>
     </div>
