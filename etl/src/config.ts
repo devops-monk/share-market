@@ -1,6 +1,8 @@
 export const CONFIG = {
-  concurrency: 3,
-  requestDelayMs: 500,
+  concurrency: 10,          // Yahoo chart API (tolerant)
+  finvizConcurrency: 5,     // FinViz scraping (more sensitive)
+  newsConcurrency: 4,       // News fetching
+  requestDelayMs: 200,
   historicalPeriod: '6mo',
   historicalInterval: '1d' as const,
 

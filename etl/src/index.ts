@@ -14,16 +14,17 @@ async function main() {
   console.log(`Starting ETL for ${ALL_STOCKS.length} stocks...`);
   const startTime = Date.now();
 
-  // Step 1: Fetch all stock data
+  // Step 1: Fetch all stock data (charts + fundamentals in parallel phases)
   console.log('Fetching stock data...');
   const quotes = await fetchAllStocks(ALL_STOCKS);
-  console.log(`Fetched ${quotes.length}/${ALL_STOCKS.length} stocks`);
+  console.log(`Fetched ${quotes.length}/${ALL_STOCKS.length} stocks in ${((Date.now() - startTime) / 1000).toFixed(1)}s`);
 
-  // Step 2: Fetch news (sample top stocks to stay within rate limits)
+  // Step 2: Fetch news (top 50 stocks, higher concurrency)
   console.log('Fetching news...');
-  const newsLimit = pLimit(2);
+  const newsStart = Date.now();
+  const newsLimit = pLimit(CONFIG.newsConcurrency);
   const allNews: any[] = [];
-  const topTickers = quotes.slice(0, 50); // News for top 50 stocks
+  const topTickers = quotes.slice(0, 50);
 
   await Promise.all(
     topTickers.map(q =>
@@ -37,9 +38,9 @@ async function main() {
       })
     )
   );
-  console.log(`Collected ${allNews.length} news items`);
+  console.log(`Collected ${allNews.length} news items in ${((Date.now() - newsStart) / 1000).toFixed(1)}s`);
 
-  // Step 3: Process each stock
+  // Step 3: Process each stock (CPU-only, fast)
   console.log('Computing indicators and scores...');
   const stockRecords: StockRecord[] = [];
 
@@ -49,10 +50,8 @@ async function main() {
     const bearishScore = computeBearishScore(signals);
     const bullishScore = computeBullishScore(signals);
 
-    // Get sentiment for this stock
     const stockNews = allNews.filter(n => n.ticker === quote.ticker);
     const sentimentAvg = averageSentiment(stockNews);
-
     const score = computeScore(quote, tech, signals, sentimentAvg);
 
     stockRecords.push({

@@ -17,7 +17,7 @@ export async function fetchGoogleNews(ticker: string, companyName: string): Prom
     const query = encodeURIComponent(`${companyName} stock`);
     const url = `https://news.google.com/rss/search?q=${query}&hl=en&gl=US&ceid=US:en`;
     const feed = await parser.parseURL(url);
-    await delay(1000);
+    await delay(300);
 
     return (feed.items || []).slice(0, 5).map(item => ({
       title: item.title || '',

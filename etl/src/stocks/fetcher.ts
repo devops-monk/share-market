@@ -57,7 +57,7 @@ async function fetchChart(ticker: string): Promise<ChartData | null> {
     try {
       const res = await fetch(url, { headers: { 'User-Agent': UA } });
       if (res.status === 429) {
-        await delay((attempt + 1) * 3000);
+        await delay((attempt + 1) * 2000);
         continue;
       }
       if (!res.ok) return null;
@@ -80,7 +80,7 @@ async function fetchChart(ticker: string): Promise<ChartData | null> {
         volumes,
       };
     } catch {
-      if (attempt < 2) await delay(2000);
+      if (attempt < 2) await delay(1000);
     }
   }
   return null;
@@ -160,29 +160,63 @@ async function fetchFinvizFundamentals(ticker: string): Promise<Fundamentals | n
 
 // ---------- Main fetch ----------
 
-export async function fetchStock(meta: StockMeta): Promise<QuoteData | null> {
-  try {
-    // Step 1: Yahoo chart (works for all stocks)
-    const chart = await fetchChart(meta.ticker);
-    if (!chart) {
-      console.warn(`  Chart failed for ${meta.ticker}`);
-      return null;
-    }
+export async function fetchAllStocks(stocks: StockMeta[]): Promise<QuoteData[]> {
+  const startTime = Date.now();
 
-    // Step 2: FinViz fundamentals (US stocks only)
-    let fundamentals: Fundamentals | null = null;
-    if (meta.market === 'US') {
-      await delay(1500); // Respect FinViz rate limits
-      fundamentals = await fetchFinvizFundamentals(meta.ticker);
-    }
+  // Phase 1: Fetch all Yahoo charts in parallel (high concurrency)
+  console.log(`  Phase 1: Fetching ${stocks.length} charts (concurrency ${CONFIG.concurrency})...`);
+  const chartLimit = pLimit(CONFIG.concurrency);
+  const chartResults = await Promise.all(
+    stocks.map((meta, idx) =>
+      chartLimit(async () => {
+        const chart = await fetchChart(meta.ticker);
+        if ((idx + 1) % 50 === 0) {
+          console.log(`    Charts: ${idx + 1}/${stocks.length}`);
+        }
+        return { meta, chart };
+      })
+    )
+  );
 
+  const validCharts = chartResults.filter(r => r.chart !== null) as { meta: StockMeta; chart: ChartData }[];
+  const chartElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+  console.log(`  Phase 1 done: ${validCharts.length}/${stocks.length} charts in ${chartElapsed}s`);
+
+  // Phase 2: Fetch FinViz fundamentals for US stocks (moderate concurrency)
+  const usStocks = validCharts.filter(r => r.meta.market === 'US');
+  const ukStocks = validCharts.filter(r => r.meta.market === 'UK');
+  console.log(`  Phase 2: Fetching FinViz fundamentals for ${usStocks.length} US stocks (concurrency ${CONFIG.finvizConcurrency})...`);
+
+  const finvizLimit = pLimit(CONFIG.finvizConcurrency);
+  const fundamentalsMap = new Map<string, Fundamentals | null>();
+
+  await Promise.all(
+    usStocks.map((r, idx) =>
+      finvizLimit(async () => {
+        await delay(300); // Small delay per request to avoid rate limits
+        const f = await fetchFinvizFundamentals(r.meta.ticker);
+        fundamentalsMap.set(r.meta.ticker, f);
+        if ((idx + 1) % 50 === 0) {
+          console.log(`    FinViz: ${idx + 1}/${usStocks.length}`);
+        }
+      })
+    )
+  );
+
+  const finvizElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+  console.log(`  Phase 2 done: ${fundamentalsMap.size} fundamentals in ${finvizElapsed}s total`);
+
+  // Phase 3: Assemble results
+  const results: QuoteData[] = [];
+
+  for (const { meta, chart } of validCharts) {
+    const fundamentals = fundamentalsMap.get(meta.ticker) ?? null;
     const changePercent = chart.previousClose
       ? ((chart.price - chart.previousClose) / chart.previousClose) * 100
       : 0;
-
     const marketCap = fundamentals?.marketCap ?? 0;
 
-    return {
+    results.push({
       ticker: meta.ticker,
       name: meta.name,
       market: meta.market,
@@ -204,33 +238,7 @@ export async function fetchStock(meta: StockMeta): Promise<QuoteData | null> {
       fiftyTwoWeekLow: chart.fiftyTwoWeekLow,
       historicalClose: chart.closes,
       historicalVolume: chart.volumes,
-    };
-  } catch (err) {
-    console.warn(`  Failed ${meta.ticker}:`, (err as Error).message);
-    return null;
-  }
-}
-
-export async function fetchAllStocks(stocks: StockMeta[]): Promise<QuoteData[]> {
-  // Process in small batches to avoid rate limits
-  const batchSize = CONFIG.concurrency;
-  const results: QuoteData[] = [];
-
-  for (let i = 0; i < stocks.length; i += batchSize) {
-    const batch = stocks.slice(i, i + batchSize);
-    const batchNum = Math.floor(i / batchSize) + 1;
-    const totalBatches = Math.ceil(stocks.length / batchSize);
-    console.log(`  Batch ${batchNum}/${totalBatches} (${batch.map(s => s.ticker).join(', ')})`);
-
-    const batchResults = await Promise.all(batch.map(stock => fetchStock(stock)));
-    for (const r of batchResults) {
-      if (r) results.push(r);
-    }
-
-    // Pause between batches
-    if (i + batchSize < stocks.length) {
-      await delay(1000);
-    }
+    });
   }
 
   console.log(`Successfully fetched ${results.length}/${stocks.length} stocks`);

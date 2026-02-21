@@ -46,7 +46,7 @@ export async function fetchFinvizNews(ticker: string): Promise<FinvizNews[]> {
       }
     });
 
-    await delay(2000); // Respect rate limits
+    await delay(500); // Respect rate limits
     return news.slice(0, 5);
   } catch (err) {
     console.warn(`FinViz failed for ${ticker}:`, (err as Error).message);
