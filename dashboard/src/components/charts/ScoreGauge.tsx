@@ -4,9 +4,9 @@ export default function ScoreGauge({ score, size = 120 }: { score: number; size?
 
   // Use a fixed viewBox for clean math, scale via width/height
   const vw = 200;
-  const vh = 130;
+  const vh = 150;
   const cx = 100;
-  const cy = 105;       // arc center near bottom
+  const cy = 110;       // arc center
   const r = 80;          // radius
   const sw = 14;         // stroke width
 
@@ -14,7 +14,6 @@ export default function ScoreGauge({ score, size = 120 }: { score: number; size?
   const x1 = cx - r;    // 20
   const x2 = cx + r;    // 180
   const y1 = cy;        // both endpoints at cy
-  // Arc peak is at (cx, cy - r) = (100, 25)
 
   // Background arc (full semicircle from left to right)
   const bgArc = `M ${x1} ${y1} A ${r} ${r} 0 1 1 ${x2} ${y1}`;
@@ -28,9 +27,9 @@ export default function ScoreGauge({ score, size = 120 }: { score: number; size?
     ? `M ${x1} ${y1} A ${r} ${r} 0 ${largeArc} 1 ${sx.toFixed(1)} ${sy.toFixed(1)}`
     : '';
 
-  // Text positioning — centered inside the semicircle
-  const numberY = cy - 34;
-  const labelY = cy - 2;
+  // Text positioning — number centered in arc, label below with clear gap
+  const numberY = cy - 30;
+  const labelY = cy + 8;
 
   // Scale to requested size
   const displayH = (vh / vw) * size;
@@ -62,7 +61,7 @@ export default function ScoreGauge({ score, size = 120 }: { score: number; size?
           x={cx}
           y={numberY}
           textAnchor="middle"
-          dominantBaseline="middle"
+          dominantBaseline="central"
           fill={color}
           fontSize="36"
           fontWeight="bold"
@@ -75,11 +74,12 @@ export default function ScoreGauge({ score, size = 120 }: { score: number; size?
           x={cx}
           y={labelY}
           textAnchor="middle"
-          dominantBaseline="middle"
+          dominantBaseline="central"
           fill={color}
-          fontSize="12"
+          fontSize="11"
           fontWeight="600"
-          letterSpacing="0.1em"
+          letterSpacing="0.15em"
+          opacity="0.8"
         >
           {label.toUpperCase()}
         </text>
