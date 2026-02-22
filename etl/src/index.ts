@@ -24,7 +24,7 @@ async function main() {
   const newsStart = Date.now();
   const newsLimit = pLimit(CONFIG.newsConcurrency);
   const allNews: any[] = [];
-  const topTickers = quotes.slice(0, 50);
+  const topTickers = quotes.slice(0, 100);
 
   await Promise.all(
     topTickers.map(q =>
