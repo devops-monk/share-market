@@ -31,6 +31,27 @@ export default function BearishAlerts({ alerts }: { alerts: StockRecord[] }) {
         </span>
       </div>
 
+      <div className="card p-4 bg-bearish/5 border-bearish/15">
+        <details className="group">
+          <summary className="flex items-center gap-2 cursor-pointer text-sm font-medium t-secondary select-none">
+            <span className="text-xs t-muted group-open:rotate-90 transition-transform">&#9654;</span>
+            How does this work?
+          </summary>
+          <div className="mt-3 text-sm t-muted space-y-2">
+            <p>
+              Each stock is checked for bearish technical signals — things like RSI overbought (&gt;70),
+              bearish MACD crossovers, death crosses (SMA50 below SMA200), and declining OBV.
+              Each signal adds to a cumulative <strong className="t-secondary">Bearish Score</strong>.
+            </p>
+            <p>
+              Stocks appear here when their bearish score reaches <strong className="t-secondary">4 or higher</strong>,
+              meaning multiple danger signals are firing at the same time. A higher score means more reasons for caution.
+              The red badges show exactly which signals triggered.
+            </p>
+          </div>
+        </details>
+      </div>
+
       <div className="space-y-3">
         {alerts.map(stock => (
           <Link

@@ -59,6 +59,32 @@ export default function BuyTheDip({ stocks }: { stocks: StockRecord[] }) {
         </span>
       </div>
 
+      <div className="card p-4 bg-bullish/5 border-bullish/15">
+        <details className="group">
+          <summary className="flex items-center gap-2 cursor-pointer text-sm font-medium t-secondary select-none">
+            <span className="text-xs t-muted group-open:rotate-90 transition-transform">&#9654;</span>
+            How does this work?
+          </summary>
+          <div className="mt-3 text-sm t-muted space-y-2">
+            <p>
+              This page finds quality stocks that may have dropped too far and could be due for a bounce.
+              Each stock is checked against 5 value + reversal conditions:
+            </p>
+            <ul className="list-disc list-inside space-y-1 ml-1">
+              <li><strong className="t-secondary">RSI Oversold</strong> — RSI below 35, meaning selling pressure may be exhausted</li>
+              <li><strong className="t-secondary">Stochastic Oversold</strong> — Stochastic %K below 20, another oversold indicator</li>
+              <li><strong className="t-secondary">OBV Bullish Divergence</strong> — Volume trending up even as price drops, suggesting accumulation</li>
+              <li><strong className="t-secondary">Reasonable Fundamentals</strong> — P/E under 50 or positive earnings growth, so it's not a junk stock</li>
+              <li><strong className="t-secondary">Near Bollinger Lower</strong> — Price near the lower Bollinger Band (%B &lt; 0.1), statistically likely to bounce</li>
+            </ul>
+            <p>
+              The <strong className="t-secondary">Dip Score</strong> (1-5) counts how many conditions match.
+              Stocks need at least 2 to appear here. Higher score = stronger dip signal. Sorted by score, then lowest RSI first.
+            </p>
+          </div>
+        </details>
+      </div>
+
       <div className="space-y-3">
         {dipStocks.map(({ stock, matched, dipScore }) => (
           <Link

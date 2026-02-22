@@ -57,6 +57,32 @@ export default function BreakoutDetection({ stocks }: { stocks: StockRecord[] })
         </span>
       </div>
 
+      <div className="card p-4 bg-accent/5 border-accent/15">
+        <details className="group">
+          <summary className="flex items-center gap-2 cursor-pointer text-sm font-medium t-secondary select-none">
+            <span className="text-xs t-muted group-open:rotate-90 transition-transform">&#9654;</span>
+            How does this work?
+          </summary>
+          <div className="mt-3 text-sm t-muted space-y-2">
+            <p>
+              This page catches stocks about to make a big move after a quiet period.
+              Each stock is checked against 4 breakout conditions:
+            </p>
+            <ul className="list-disc list-inside space-y-1 ml-1">
+              <li><strong className="t-secondary">Bollinger Squeeze</strong> — Volatility is extremely low (bands tightening), often a calm before the storm</li>
+              <li><strong className="t-secondary">Above Upper Band</strong> — Price has broken above the upper Bollinger Band, the squeeze is resolving upward</li>
+              <li><strong className="t-secondary">Strong Volume</strong> — Volume ratio above 1.5x average, confirming the breakout is real</li>
+              <li><strong className="t-secondary">OBV Rising</strong> — On-Balance Volume is trending up, meaning money is flowing in</li>
+            </ul>
+            <p>
+              The <strong className="t-secondary">Breakout Score</strong> (1-4) counts how many conditions match.
+              Stocks need at least 2 to appear here. Higher score = stronger breakout setup.
+              Sorted by score, then highest volume ratio first.
+            </p>
+          </div>
+        </details>
+      </div>
+
       <div className="space-y-3">
         {breakouts.map(({ stock, matched, breakoutScore }) => (
           <Link
