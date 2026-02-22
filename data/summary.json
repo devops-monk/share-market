@@ -101,11 +101,25 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "HOOD",
+      "name": "Robinhood",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "LCID",
       "name": "Lucid Group",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "BROS",
@@ -122,22 +136,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "PINS",
+      "name": "Pinterest",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
