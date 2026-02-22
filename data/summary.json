@@ -108,13 +108,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BROS",
       "name": "Dutch Bros",
       "score": 25,
@@ -136,9 +129,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 26,
+      "ticker": "HOOD",
+      "name": "Robinhood",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     }
