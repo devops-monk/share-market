@@ -9,6 +9,7 @@ import NewsSentiment from './pages/NewsSentiment';
 import StockDetail from './pages/StockDetail';
 import Guide from './pages/Guide';
 import BuyTheDip from './pages/BuyTheDip';
+import BreakoutDetection from './pages/BreakoutDetection';
 
 export default function App() {
   const { stocks, summary, bearishAlerts, news, metadata, loading } = useStockData();
@@ -49,6 +50,7 @@ export default function App() {
           <Route path="/news" element={<NewsSentiment news={news} />} />
           <Route path="/stock/:ticker" element={<StockDetail stocks={stocks} news={news} />} />
           <Route path="/dip" element={<BuyTheDip stocks={stocks} />} />
+          <Route path="/breakout" element={<BreakoutDetection stocks={stocks} />} />
           <Route path="/guide" element={<Guide />} />
         </Routes>
       </main>
