@@ -1,6 +1,8 @@
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import type { StockRecord } from '../types';
+import { HelpLabel } from '../components/common/InfoTooltip';
+import { TIPS } from '../lib/tooltips';
 
 interface SectorData {
   name: string;
@@ -101,13 +103,17 @@ export default function SectorPerformance({ stocks }: { stocks: StockRecord[] })
               {/* Stats grid */}
               <div className="grid grid-cols-3 gap-3 mb-4">
                 <div>
-                  <div className="text-[10px] uppercase tracking-wider t-faint mb-0.5">Avg Change</div>
+                  <div className="text-[10px] uppercase tracking-wider t-faint mb-0.5">
+                    <HelpLabel label="Avg Change" tip={TIPS['Avg Change']} />
+                  </div>
                   <div className={`text-sm font-mono tabular-nums font-medium ${changeColor}`}>
                     {sector.avgChange >= 0 ? '+' : ''}{sector.avgChange.toFixed(2)}%
                   </div>
                 </div>
                 <div>
-                  <div className="text-[10px] uppercase tracking-wider t-faint mb-0.5">Avg RSI</div>
+                  <div className="text-[10px] uppercase tracking-wider t-faint mb-0.5">
+                    <HelpLabel label="Avg RSI" tip={TIPS['RSI']} />
+                  </div>
                   <div className={`text-sm font-mono tabular-nums font-medium ${
                     sector.avgRsi > 70 ? 'text-bearish' : sector.avgRsi < 30 ? 'text-bullish' : 't-secondary'
                   }`}>
@@ -115,7 +121,9 @@ export default function SectorPerformance({ stocks }: { stocks: StockRecord[] })
                   </div>
                 </div>
                 <div>
-                  <div className="text-[10px] uppercase tracking-wider t-faint mb-0.5">Avg RS</div>
+                  <div className="text-[10px] uppercase tracking-wider t-faint mb-0.5">
+                    <HelpLabel label="Avg RS" tip={TIPS['RS']} />
+                  </div>
                   <div className={`text-sm font-mono tabular-nums font-medium ${
                     sector.avgRsPercentile >= 70 ? 'text-bullish' : sector.avgRsPercentile >= 40 ? 'text-neutral' : 'text-bearish'
                   }`}>

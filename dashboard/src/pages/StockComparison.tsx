@@ -2,6 +2,8 @@ import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import type { StockRecord } from '../types';
 import ScoreGauge from '../components/charts/ScoreGauge';
+import InfoTooltip from '../components/common/InfoTooltip';
+import { TIPS } from '../lib/tooltips';
 
 /* ─── METRIC DEFINITIONS ─── */
 interface MetricDef {
@@ -267,7 +269,7 @@ export default function StockComparison({ stocks }: { stocks: StockRecord[] }) {
                     >
                       {/* Label cell */}
                       <div className="px-4 py-2.5 border-b border-r border-surface-border text-sm t-tertiary flex items-center">
-                        {metric.label}
+                        <InfoTooltip text={TIPS[metric.label] ?? ''}>{metric.label}</InfoTooltip>
                       </div>
 
                       {/* Value cells */}

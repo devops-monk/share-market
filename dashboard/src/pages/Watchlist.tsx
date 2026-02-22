@@ -2,6 +2,8 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import type { StockRecord } from '../types';
 import { ScoreBadge, ChangePercent, MarketTag, CapTag } from '../components/common/Tags';
+import InfoTooltip from '../components/common/InfoTooltip';
+import { TIPS } from '../lib/tooltips';
 
 /* ─── WATCHLIST HOOK ─── */
 const STORAGE_KEY = 'sm-watchlist';
@@ -135,13 +137,13 @@ export default function Watchlist({ stocks }: { stocks: StockRecord[] }) {
                 <tr className="border-b border-surface-border">
                   <th className="px-4 py-3 text-left table-header">Ticker</th>
                   <th className="px-4 py-3 text-left table-header">Name</th>
-                  <th className="px-4 py-3 text-left table-header">Market</th>
-                  <th className="px-4 py-3 text-right table-header">Price</th>
-                  <th className="px-4 py-3 text-right table-header">Change</th>
-                  <th className="px-4 py-3 text-center table-header">Score</th>
-                  <th className="px-4 py-3 text-right table-header">RS %ile</th>
-                  <th className="px-4 py-3 text-left table-header">Style</th>
-                  <th className="px-4 py-3 text-right table-header">Data</th>
+                  <th className="px-4 py-3 text-left table-header"><InfoTooltip text={TIPS['Market']}>Market</InfoTooltip></th>
+                  <th className="px-4 py-3 text-right table-header"><InfoTooltip text={TIPS['Price']}>Price</InfoTooltip></th>
+                  <th className="px-4 py-3 text-right table-header"><InfoTooltip text={TIPS['Change']}>Change</InfoTooltip></th>
+                  <th className="px-4 py-3 text-center table-header"><InfoTooltip text={TIPS['Score']}>Score</InfoTooltip></th>
+                  <th className="px-4 py-3 text-right table-header"><InfoTooltip text={TIPS['RS %ile']}>RS %ile</InfoTooltip></th>
+                  <th className="px-4 py-3 text-left table-header"><InfoTooltip text={TIPS['Style']}>Style</InfoTooltip></th>
+                  <th className="px-4 py-3 text-right table-header"><InfoTooltip text={TIPS['Data %']}>Data</InfoTooltip></th>
                   <th className="px-4 py-3 text-center table-header w-10"></th>
                 </tr>
               </thead>

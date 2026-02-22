@@ -12,8 +12,14 @@ import {
 } from '@tanstack/react-table';
 import type { StockRecord } from '../types';
 import { MarketTag, CapTag, ScoreBadge, ChangePercent, PriceDisplay } from '../components/common/Tags';
+import InfoTooltip from '../components/common/InfoTooltip';
+import { TIPS } from '../lib/tooltips';
 
 const col = createColumnHelper<StockRecord>();
+
+const TH = ({ label, tipKey }: { label: string; tipKey?: string }) => (
+  <InfoTooltip text={TIPS[tipKey ?? label] ?? ''}>{label}</InfoTooltip>
+);
 
 const columns = [
   col.accessor('ticker', {
@@ -29,27 +35,27 @@ const columns = [
     cell: info => <span className="t-secondary truncate max-w-[120px] block">{info.getValue()}</span>,
   }),
   col.accessor('market', {
-    header: 'Market',
+    header: () => <TH label="Market" />,
     cell: info => <MarketTag market={info.getValue()} />,
   }),
   col.accessor('capCategory', {
-    header: 'Cap',
+    header: () => <TH label="Cap" />,
     cell: info => <CapTag cap={info.getValue()} />,
   }),
   col.accessor('price', {
-    header: 'Price',
+    header: () => <TH label="Price" />,
     cell: info => <PriceDisplay value={info.getValue()} market={info.row.original.market} />,
   }),
   col.accessor('changePercent', {
-    header: 'Change',
+    header: () => <TH label="Change" />,
     cell: info => <ChangePercent value={info.getValue()} />,
   }),
   col.accessor('score.composite', {
-    header: 'Composite Score',
+    header: () => <TH label="Score" tipKey="Composite Score" />,
     cell: info => <ScoreBadge score={info.getValue()} />,
   }),
   col.accessor('rsi', {
-    header: 'RSI',
+    header: () => <TH label="RSI" />,
     cell: info => {
       const v = info.getValue();
       if (v == null) return <span className="t-faint">--</span>;
@@ -58,7 +64,7 @@ const columns = [
     },
   }),
   col.accessor('rsPercentile', {
-    header: 'RS',
+    header: () => <TH label="RS" />,
     cell: info => {
       const v = info.getValue();
       const color = v >= 80 ? 'text-bullish' : v >= 50 ? 't-secondary' : 'text-bearish';
@@ -66,7 +72,7 @@ const columns = [
     },
   }),
   col.accessor('styleClassification', {
-    header: 'Style',
+    header: () => <TH label="Style" />,
     cell: info => {
       const v = info.getValue();
       const color = v === 'Growth' ? 'text-accent-light' : v === 'Value' ? 'text-bullish' : 'text-neutral';
@@ -74,7 +80,7 @@ const columns = [
     },
   }),
   col.accessor('sentimentAvg', {
-    header: 'Sentiment',
+    header: () => <TH label="Sentiment" />,
     cell: info => {
       const v = info.getValue();
       if (v == null) return <span className="t-faint">--</span>;
@@ -83,7 +89,7 @@ const columns = [
     },
   }),
   col.accessor('dataCompleteness', {
-    header: 'Data %',
+    header: () => <TH label="Data %" tipKey="Data %" />,
     cell: info => {
       const v = info.getValue();
       const color = v >= 80 ? 'text-bullish' : v >= 50 ? 'text-neutral' : 'text-bearish';

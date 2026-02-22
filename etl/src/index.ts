@@ -237,7 +237,10 @@ async function main() {
       // Expert screens (Piotroski, Graham, Buffett)
       piotroskiScore: financialsMap.get(quote.ticker)?.ppiScore ?? null,
       piotroskiDetails: financialsMap.get(quote.ticker)?.ppiDetails ?? [],
-      grahamNumber: financialsMap.get(quote.ticker)?.grahamNumber ?? null,
+      // Graham Number uses quote-level EPS & bookValue (financial statements lack sharesOutstanding)
+      grahamNumber: (quote.trailingEps != null && quote.bookValue != null && quote.trailingEps > 0 && quote.bookValue > 0)
+        ? +Math.sqrt(22.5 * quote.trailingEps * quote.bookValue).toFixed(2)
+        : null,
       buffettScore: financialsMap.get(quote.ticker)?.buffettScore ?? null,
       buffettDetails: financialsMap.get(quote.ticker)?.buffettDetails ?? [],
     });

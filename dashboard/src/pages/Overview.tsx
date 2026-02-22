@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { StockRecord, SummaryData, Metadata, MarketRegime, RegimeData } from '../types';
 import { MarketTag, ScoreBadge, ChangePercent } from '../components/common/Tags';
+import { HelpLabel } from '../components/common/InfoTooltip';
+import { TIPS } from '../lib/tooltips';
 
 interface Props {
   stocks: StockRecord[];
@@ -197,7 +199,9 @@ function StatCard({ label, value, sub, gradient, borderColor }: {
     <div className={`stat-card border-t-2 ${borderColor}`}>
       <div className={`absolute inset-0 bg-gradient-to-b ${gradient} pointer-events-none`} />
       <div className="relative">
-        <p className="text-xs font-medium t-tertiary uppercase tracking-wider">{label}</p>
+        <p className="text-xs font-medium t-tertiary uppercase tracking-wider">
+          {TIPS[label] ? <HelpLabel label={label} tip={TIPS[label]} /> : label}
+        </p>
         <p className="text-2xl font-bold t-primary mt-1 font-mono tabular-nums">{value}</p>
         <p className="text-xs t-muted mt-1">{sub}</p>
       </div>
@@ -267,21 +271,21 @@ function RegimeIndexRow({ data }: { data: RegimeData }) {
       </div>
       <div className="text-xs t-muted space-y-1">
         <div className="flex justify-between">
-          <span>SMA 50</span>
+          <HelpLabel label="SMA 50" tip={TIPS['SMA 50']} />
           <span className="font-mono tabular-nums t-secondary">{data.sma50 > 0 ? data.sma50.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : 'N/A'}</span>
         </div>
         <div className="flex justify-between">
-          <span>SMA 200</span>
+          <HelpLabel label="SMA 200" tip={TIPS['SMA 200']} />
           <span className="font-mono tabular-nums t-secondary">{data.sma200 > 0 ? data.sma200.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : 'N/A'}</span>
         </div>
         <div className="flex justify-between">
-          <span>From 52W High</span>
+          <HelpLabel label="From 52W High" tip={TIPS['From 52W High']} />
           <span className={`font-mono tabular-nums ${data.changeFromHigh >= -5 ? 'text-emerald-400' : data.changeFromHigh >= -15 ? 'text-amber-400' : 'text-red-400'}`}>
             {data.changeFromHigh.toFixed(2)}%
           </span>
         </div>
         <div className="flex justify-between">
-          <span>Distribution Days</span>
+          <HelpLabel label="Distribution Days" tip={TIPS['Distribution Days']} />
           <span className={`font-mono tabular-nums ${data.distributionDays >= 6 ? 'text-red-400' : data.distributionDays >= 4 ? 'text-amber-400' : 't-secondary'}`}>
             {data.distributionDays}/25
           </span>
