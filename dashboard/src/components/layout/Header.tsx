@@ -4,6 +4,7 @@ const navItems = [
   { path: '/', label: 'Overview', icon: '◎' },
   { path: '/screener', label: 'Screener', icon: '⊞' },
   { path: '/bearish', label: 'Bearish Alerts', icon: '▼' },
+  { path: '/dip', label: 'Buy the Dip', icon: '▲' },
   { path: '/news', label: 'News', icon: '◉' },
   { path: '/guide', label: 'Guide', icon: '?' },
 ];
