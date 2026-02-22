@@ -98,6 +98,45 @@ const columns = [
   }),
 ];
 
+/* ─── RANGE FILTER DEFINITIONS ─── */
+interface RangeFilterDef {
+  key: string;
+  label: string;
+  min: number;
+  max: number;
+  step: number;
+  getValue: (s: StockRecord) => number | null | undefined;
+  format?: (v: number) => string;
+  tip: string;
+}
+
+const RANGE_FILTERS: RangeFilterDef[] = [
+  { key: 'score', label: 'Score', min: 0, max: 100, step: 1, getValue: s => s.score.composite, tip: TIPS['Composite Score'] ?? '' },
+  { key: 'rsi', label: 'RSI', min: 0, max: 100, step: 1, getValue: s => s.rsi, tip: TIPS['RSI'] ?? '' },
+  { key: 'rs', label: 'RS Percentile', min: 0, max: 99, step: 1, getValue: s => s.rsPercentile, tip: TIPS['RS'] ?? '' },
+  { key: 'pe', label: 'P/E', min: 0, max: 200, step: 1, getValue: s => s.pe, tip: TIPS['P/E'] ?? '' },
+  { key: 'piotroski', label: 'Piotroski', min: 0, max: 9, step: 1, getValue: s => s.piotroskiScore, tip: TIPS['Piotroski'] ?? '' },
+  { key: 'buffett', label: 'Buffett', min: 0, max: 5, step: 1, getValue: s => s.buffettScore, tip: TIPS['Buffett'] ?? '' },
+  { key: 'bearish', label: 'Bearish', min: 0, max: 15, step: 1, getValue: s => s.bearishScore, tip: TIPS['Bearish'] ?? '' },
+  { key: 'minervini', label: 'Minervini', min: 0, max: 8, step: 1, getValue: s => s.minerviniChecks.passed, tip: TIPS['Minervini Checks'] ?? '' },
+  { key: 'change', label: 'Change %', min: -30, max: 30, step: 0.5, getValue: s => s.changePercent, format: v => `${v > 0 ? '+' : ''}${v}%`, tip: TIPS['Change %'] ?? '' },
+  { key: 'beta', label: 'Beta', min: 0, max: 4, step: 0.1, getValue: s => s.beta, format: v => v.toFixed(1), tip: TIPS['Beta'] ?? '' },
+];
+
+type RangeState = Record<string, [number, number]>;
+
+function parseRangesFromUrl(params: URLSearchParams): RangeState {
+  const ranges: RangeState = {};
+  for (const f of RANGE_FILTERS) {
+    const val = params.get(f.key);
+    if (val) {
+      const [lo, hi] = val.split(',').map(Number);
+      if (!isNaN(lo) && !isNaN(hi)) ranges[f.key] = [lo, hi];
+    }
+  }
+  return ranges;
+}
+
 export default function Screener({ stocks }: { stocks: StockRecord[] }) {
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -116,6 +155,32 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
   const [capFilter, setCapFilter] = useState<string>(searchParams.get('cap') ?? 'all');
   const [search, setSearch] = useState(searchParams.get('q') ?? '');
   const [styleFilter, setStyleFilter] = useState<string>(searchParams.get('style') ?? 'all');
+  const [showAdvanced, setShowAdvanced] = useState(() => {
+    // Auto-open if URL has any range filters
+    return RANGE_FILTERS.some(f => searchParams.has(f.key));
+  });
+  const [ranges, setRanges] = useState<RangeState>(() => parseRangesFromUrl(searchParams));
+
+  const activeRangeCount = Object.keys(ranges).length;
+
+  const setRange = useCallback((key: string, val: [number, number]) => {
+    setRanges(prev => {
+      const def = RANGE_FILTERS.find(f => f.key === key)!;
+      // If range covers the full extent, remove it
+      if (val[0] <= def.min && val[1] >= def.max) {
+        const next = { ...prev };
+        delete next[key];
+        return next;
+      }
+      return { ...prev, [key]: val };
+    });
+    resetPage();
+  }, []);
+
+  const clearRanges = useCallback(() => {
+    setRanges({});
+    resetPage();
+  }, []);
 
   // Sync state to URL params
   const syncUrl = useCallback(() => {
@@ -134,8 +199,12 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
     }
     if (pagination.pageIndex > 0) params.set('page', String(pagination.pageIndex + 1));
     if (pagination.pageSize !== 25) params.set('size', String(pagination.pageSize));
+    // Range filters
+    for (const [key, [lo, hi]] of Object.entries(ranges)) {
+      params.set(key, `${lo},${hi}`);
+    }
     setSearchParams(params, { replace: true });
-  }, [search, marketFilter, capFilter, styleFilter, sorting, pagination, setSearchParams]);
+  }, [search, marketFilter, capFilter, styleFilter, sorting, pagination, ranges, setSearchParams]);
 
   useEffect(() => { syncUrl(); }, [syncUrl]);
 
@@ -148,9 +217,17 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
         const q = search.toLowerCase();
         if (!s.ticker.toLowerCase().includes(q) && !s.name.toLowerCase().includes(q)) return false;
       }
+      // Range filters
+      for (const f of RANGE_FILTERS) {
+        const range = ranges[f.key];
+        if (!range) continue;
+        const val = f.getValue(s);
+        if (val == null) return false; // exclude stocks missing the metric
+        if (val < range[0] || val > range[1]) return false;
+      }
       return true;
     });
-  }, [stocks, marketFilter, capFilter, styleFilter, search]);
+  }, [stocks, marketFilter, capFilter, styleFilter, search, ranges]);
 
   const exportCsv = () => {
     const headers = ['Ticker','Name','Market','Cap','Style','Price','Change%','Score','RS','RSI','P/E','ROE','Sentiment'];
@@ -192,7 +269,7 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
         <p className="text-sm t-muted mt-1">Sort, filter, and find the best opportunities</p>
       </div>
 
-      {/* Filters */}
+      {/* Basic Filters */}
       <div className="card p-4">
         <div className="flex flex-wrap gap-3 items-center">
           <input
@@ -231,6 +308,18 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
             <option value="Blend">Blend</option>
             <option value="Growth">Growth</option>
           </select>
+
+          <button
+            onClick={() => setShowAdvanced(v => !v)}
+            className={`badge text-xs px-3 py-1.5 cursor-pointer transition-colors ${
+              showAdvanced || activeRangeCount > 0
+                ? 'bg-accent/20 text-accent-light ring-1 ring-accent/30'
+                : 'bg-surface-tertiary t-secondary ring-1 ring-surface-border hover:bg-surface-hover'
+            }`}
+          >
+            Filters {activeRangeCount > 0 && <span className="ml-1 bg-accent/30 rounded-full px-1.5">{activeRangeCount}</span>}
+          </button>
+
           <div className="ml-auto flex items-center gap-2">
             <button
               onClick={exportCsv}
@@ -244,6 +333,37 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
           </div>
         </div>
       </div>
+
+      {/* Advanced Range Filters */}
+      {showAdvanced && (
+        <div className="card p-4">
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-xs font-semibold t-tertiary uppercase tracking-wider">Advanced Filters</h3>
+            {activeRangeCount > 0 && (
+              <button
+                onClick={clearRanges}
+                className="text-xs text-accent-light hover:t-primary transition-colors"
+              >
+                Clear all
+              </button>
+            )}
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+            {RANGE_FILTERS.map(f => (
+              <RangeSlider
+                key={f.key}
+                def={f}
+                value={ranges[f.key] ?? [f.min, f.max]}
+                onChange={val => setRange(f.key, val)}
+                active={f.key in ranges}
+              />
+            ))}
+          </div>
+          <p className="text-[10px] t-faint mt-3">
+            Drag the sliders to filter. Stocks missing a metric value are excluded when that filter is active.
+          </p>
+        </div>
+      )}
 
       {/* Table */}
       <div className="card-flat overflow-hidden">
@@ -382,6 +502,57 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
             {filtered.length === 0 ? 0 : pagination.pageIndex * pagination.pageSize + 1}–{Math.min((pagination.pageIndex + 1) * pagination.pageSize, filtered.length)} of {filtered.length}
           </span>
         </div>
+      </div>
+    </div>
+  );
+}
+
+/* ─── RANGE SLIDER COMPONENT ─── */
+function RangeSlider({ def, value, onChange, active }: {
+  def: RangeFilterDef;
+  value: [number, number];
+  onChange: (val: [number, number]) => void;
+  active: boolean;
+}) {
+  const fmt = def.format ?? ((v: number) => String(v));
+
+  return (
+    <div className={`p-3 rounded-lg border transition-colors ${
+      active ? 'border-accent/30 bg-accent/5' : 'border-surface-border bg-surface-tertiary/30'
+    }`}>
+      <div className="flex items-center justify-between mb-2">
+        <InfoTooltip text={def.tip}>
+          <span className="text-xs font-medium t-secondary">{def.label}</span>
+        </InfoTooltip>
+        <span className="text-[10px] font-mono t-muted tabular-nums">
+          {fmt(value[0])} — {fmt(value[1])}
+        </span>
+      </div>
+      <div className="flex items-center gap-2">
+        <input
+          type="range"
+          min={def.min}
+          max={def.max}
+          step={def.step}
+          value={value[0]}
+          onChange={e => {
+            const v = Number(e.target.value);
+            onChange([Math.min(v, value[1]), value[1]]);
+          }}
+          className="range-slider flex-1"
+        />
+        <input
+          type="range"
+          min={def.min}
+          max={def.max}
+          step={def.step}
+          value={value[1]}
+          onChange={e => {
+            const v = Number(e.target.value);
+            onChange([value[0], Math.max(v, value[0])]);
+          }}
+          className="range-slider flex-1"
+        />
       </div>
     </div>
   );

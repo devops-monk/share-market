@@ -16,6 +16,7 @@ import MinerviniScreen from './pages/MinerviniScreen';
 import StockComparison from './pages/StockComparison';
 import Watchlist from './pages/Watchlist';
 import AlertSettings from './pages/AlertSettings';
+import InstallPrompt from './components/common/InstallPrompt';
 
 export default function App() {
   const { stocks, summary, bearishAlerts, news, metadata, loading } = useStockData();
@@ -81,6 +82,7 @@ export default function App() {
           </div>
         </div>
       </footer>
+      <InstallPrompt />
     </div>
   );
 }

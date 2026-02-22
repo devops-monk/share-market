@@ -575,16 +575,26 @@ Q12 CSV Export                      M15 Score History                   L11 Back
 | **Alerts** Telegram Notifications | **DONE** | Edge-triggered alerts via Telegram Bot + ntfy.sh fallback. 8 default rules for all stocks |
 | **Guide** Updated | **DONE** | All new features documented with explanations and strategy guides |
 
+### Recently Shipped (February 2026 — Batch 4)
+
+| Feature | Status | Notes |
+|---------|--------|-------|
+| **Q1** Advanced Screener Filters | **DONE** | Collapsible "Filters" panel with 10 range sliders: Score, RSI, RS Percentile, P/E, Piotroski, Buffett, Bearish, Minervini, Change %, Beta. All synced to URL for sharing. Active filter count badge. |
+| **Q10** PWA Support | **DONE** | manifest.json, service worker (cache-first for app shell, network-first for data), Apple meta tags, SVG icons, install prompt banner with dismiss. Enables "Add to Home Screen" and offline viewing. |
+| **UX** Tooltips Everywhere | **DONE** | InfoTooltip component + central TIPS definitions (~80 entries). Added to Overview, Screener, SectorPerformance, StockComparison, Watchlist, and StockDetail. |
+| **UX** Section Descriptions | **DONE** | Added "how to use" descriptions to Score Breakdown, Support & Resistance, and Expert Screens sections on StockDetail. |
+| **Fix** Graham Number | **DONE** | Was always N/A — financial statements API lacked sharesOutstanding. Fixed to use quote-level trailingEps + bookValue instead. |
+
 ### Remaining Next Priorities
 
-1. **Q1 — Advanced Screener Filters** — Add range sliders for RSI, P/E, score, Piotroski, etc. to the Screener. Currently only market/cap/style dropdowns.
-2. **Q10 — PWA Support** — Add service worker, manifest.json, and offline capability. Enable "Add to Home Screen" on mobile.
-3. **Q11 — Portfolio Tracker** — Let users input their holdings (ticker + shares + buy price). Show portfolio performance, P&L, allocation pie chart.
-4. **M5 — CAN SLIM Composite** — Implement William O'Neil's CAN SLIM screen (Current earnings, Annual earnings, New product/price, Supply/demand, Leader/laggard, Institutional sponsorship, Market direction).
-5. **M14 — Earnings Calendar** — Fetch upcoming earnings dates. Show countdown on StockDetail, highlight stocks reporting this week.
-6. **L2 — Multi-Year Revenue/Earnings Charts** — Use the financial statements data to chart revenue and EPS trends over 4 years. Visual growth trajectory.
-7. **L3 — Relative Valuation (DCF Lite)** — Simple discounted cash flow model using operating cash flow + growth rate. Show intrinsic value estimate alongside Graham Number.
-8. **L4 — Custom Screening Builder** — Let users create custom screens by combining any metrics with AND/OR logic. Save and name custom screens.
+1. **Q11 — Portfolio Tracker** — Let users input their holdings (ticker + shares + buy price). Show portfolio performance, P&L, allocation pie chart.
+2. **M5 — CAN SLIM Composite** — Implement William O'Neil's CAN SLIM screen (Current earnings, Annual earnings, New product/price, Supply/demand, Leader/laggard, Institutional sponsorship, Market direction).
+3. **M14 — Earnings Calendar** — Fetch upcoming earnings dates. Show countdown on StockDetail, highlight stocks reporting this week.
+4. **L2 — Multi-Year Revenue/Earnings Charts** — Use the financial statements data to chart revenue and EPS trends over 4 years. Visual growth trajectory.
+5. **L3 — Relative Valuation (DCF Lite)** — Simple discounted cash flow model using operating cash flow + growth rate. Show intrinsic value estimate alongside Graham Number.
+6. **L4 — Custom Screening Builder** — Let users create custom screens by combining any metrics with AND/OR logic. Save and name custom screens.
+7. **L5 — AI-Enhanced Sentiment** — Replace AFINN with FinBERT or LLM-based analysis for more accurate news sentiment scoring.
+8. **L6 — Backtest Engine** — Archive daily snapshots and backtest scoring strategies against historical performance.
 
 ---
 
