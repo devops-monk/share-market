@@ -171,7 +171,14 @@ export default function StockDetail({ stocks, news }: Props) {
 
       {/* Score breakdown */}
       <div className="card p-5">
-        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Score Breakdown</h2>
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Score Breakdown</h2>
+        <p className="text-xs t-muted mb-4 leading-relaxed">
+          The composite score (0-100) is built from 6 sub-scores shown below. Each bar represents how strong that dimension is.
+          <strong className="t-secondary"> Green (65+)</strong> = strong,
+          <strong className="text-neutral"> Amber (40-64)</strong> = average,
+          <strong className="text-bearish"> Red (&lt;40)</strong> = weak.
+          The radar chart shows the same data visually — a bigger shape means a healthier stock. Look for lopsided shapes to spot weaknesses quickly.
+        </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Radar Chart */}
           <div className="flex items-center justify-center">
@@ -271,7 +278,13 @@ export default function StockDetail({ stocks, news }: Props) {
 
       {/* Piotroski & Graham */}
       <div className="card p-5">
-        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Expert Screens</h2>
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Expert Screens</h2>
+        <p className="text-xs t-muted mb-4 leading-relaxed">
+          Three classic investing frameworks applied to this stock.
+          <strong className="t-secondary"> Piotroski F-Score</strong> (0-9) checks 9 financial health criteria — 7+ means strong fundamentals, under 4 is a red flag.
+          <strong className="t-secondary"> Graham Number</strong> estimates fair value using Benjamin Graham's formula (sqrt of 22.5 x EPS x Book Value) — if the current price is <em>below</em> the Graham Number, the stock may be undervalued.
+          <strong className="t-secondary"> Buffett Quality</strong> (0-5) checks for consistent profits, high ROE, low debt, revenue growth, and positive free cash flow — 4+ is Buffett-grade quality.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {/* Piotroski F-Score */}
           <div className="p-4 rounded-lg bg-surface-hover border border-surface-border">
@@ -734,7 +747,13 @@ function SupportResistanceCard({ levels, currentPrice, currency }: {
 
   return (
     <div className="card p-5">
-      <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Support & Resistance</h2>
+      <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Support & Resistance</h2>
+      <p className="text-xs t-muted mb-4 leading-relaxed">
+        <strong className="text-bullish">Support (S1, S2, S3)</strong> = price levels where the stock has historically bounced up. If the price drops to a support level, it may bounce again.
+        <strong className="text-bearish"> Resistance (R1, R2, R3)</strong> = price levels where the stock has historically stalled or reversed down.
+        More <strong className="t-secondary">touches</strong> = stronger level. The % shows how far each level is from the current price.
+        Use support levels as potential buy zones and resistance levels as potential sell/take-profit targets.
+      </p>
 
       {/* Visual bar chart */}
       <div className="relative mb-6 py-2">
