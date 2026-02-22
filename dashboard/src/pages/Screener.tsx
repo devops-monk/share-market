@@ -1,5 +1,5 @@
-import { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useMemo, useCallback, useEffect } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import {
   useReactTable,
   getCoreRowModel,
@@ -93,13 +93,45 @@ const columns = [
 ];
 
 export default function Screener({ stocks }: { stocks: StockRecord[] }) {
-  const [sorting, setSorting] = useState<SortingState>([{ id: 'score_composite', desc: true }]);
-  const [pagination, setPagination] = useState<PaginationState>({ pageIndex: 0, pageSize: 25 });
-  const [marketFilter, setMarketFilter] = useState<string>('all');
-  const [capFilter, setCapFilter] = useState<string>('all');
+  const [searchParams, setSearchParams] = useSearchParams();
 
-  const [search, setSearch] = useState('');
-  const [styleFilter, setStyleFilter] = useState<string>('all');
+  // Initialize state from URL params (or defaults)
+  const [sorting, setSorting] = useState<SortingState>(() => {
+    const sortId = searchParams.get('sort');
+    const sortDir = searchParams.get('dir');
+    if (sortId) return [{ id: sortId, desc: sortDir !== 'asc' }];
+    return [{ id: 'score_composite', desc: true }];
+  });
+  const [pagination, setPagination] = useState<PaginationState>(() => ({
+    pageIndex: Math.max(0, Number(searchParams.get('page') ?? 1) - 1),
+    pageSize: [10, 25, 50, 100].includes(Number(searchParams.get('size'))) ? Number(searchParams.get('size')) : 25,
+  }));
+  const [marketFilter, setMarketFilter] = useState<string>(searchParams.get('market') ?? 'all');
+  const [capFilter, setCapFilter] = useState<string>(searchParams.get('cap') ?? 'all');
+  const [search, setSearch] = useState(searchParams.get('q') ?? '');
+  const [styleFilter, setStyleFilter] = useState<string>(searchParams.get('style') ?? 'all');
+
+  // Sync state to URL params
+  const syncUrl = useCallback(() => {
+    const params = new URLSearchParams();
+    if (search) params.set('q', search);
+    if (marketFilter !== 'all') params.set('market', marketFilter);
+    if (capFilter !== 'all') params.set('cap', capFilter);
+    if (styleFilter !== 'all') params.set('style', styleFilter);
+    if (sorting.length > 0 && sorting[0].id !== 'score_composite') {
+      params.set('sort', sorting[0].id);
+      if (!sorting[0].desc) params.set('dir', 'asc');
+    }
+    if (sorting.length > 0 && sorting[0].id === 'score_composite' && !sorting[0].desc) {
+      params.set('sort', sorting[0].id);
+      params.set('dir', 'asc');
+    }
+    if (pagination.pageIndex > 0) params.set('page', String(pagination.pageIndex + 1));
+    if (pagination.pageSize !== 25) params.set('size', String(pagination.pageSize));
+    setSearchParams(params, { replace: true });
+  }, [search, marketFilter, capFilter, styleFilter, sorting, pagination, setSearchParams]);
+
+  useEffect(() => { syncUrl(); }, [syncUrl]);
 
   const filtered = useMemo(() => {
     return stocks.filter(s => {

@@ -561,15 +561,30 @@ Q12 CSV Export                      M15 Score History                   L11 Back
 | **M11** Consolidation Detection | **DONE** | 30-day high-low range % |
 | **M13** Interactive Candlestick Chart | **DONE** | lightweight-charts v5 + OHLCV pipeline |
 
+### Recently Shipped (February 2026 — Batch 3)
+
+| Feature | Status | Notes |
+|---------|--------|-------|
+| **Q3** Score Radar Chart | **DONE** | 6-axis Recharts RadarChart on StockDetail (Momentum, Technical, Sentiment, Fundamentals, Volume, Risk) |
+| **Q7** URL State for Screener | **DONE** | Filters, sort, pagination synced with URL search params. Bookmarkable/shareable |
+| **M7** Sector-Relative Scoring | **DONE** | Z-score within sector + rank. `sectorZScore`, `sectorRank`, `sectorCount` fields |
+| **M8** Market Regime Indicator | **DONE** | S&P 500 + FTSE 100 regime detection (bull/correction/bear). SMA analysis + distribution day counting. Shown on Overview |
+| **M12** Support & Resistance Levels | **DONE** | Swing-point algorithm on OHLCV data. Top 3 support + 3 resistance levels per stock on StockDetail |
+| **M15** Score History | **DONE** | Daily composite scores stored in `score-history.json`. 30/90-day SVG trend chart on StockDetail |
+| **L1** Financial Statements API | **DONE** | Yahoo quoteSummary incomeStatement/balanceSheet/cashflow. Piotroski F-Score (0-9), Graham Number, Buffett Quality Score (0-5) |
+| **Alerts** Telegram Notifications | **DONE** | Edge-triggered alerts via Telegram Bot + ntfy.sh fallback. 8 default rules for all stocks |
+| **Guide** Updated | **DONE** | All new features documented with explanations and strategy guides |
+
 ### Remaining Next Priorities
 
-1. **Q3 — Score Radar Chart** — 6-axis radar showing each score dimension (Recharts RadarChart).
-2. **Q7 — URL State for Screener** — Sync filters/sort/pagination with URL search params.
-3. **M7 — Sector-Relative Scoring** — Z-score within sector instead of absolute ranges.
-4. **M8 — Market Regime Indicator** — SPY/FTSE trend + distribution day counting.
-5. **M12 — Support & Resistance Levels** — Swing-point algo on OHLCV data.
-6. **M15 — Score History** — Store daily composite scores, chart 30/90-day trend.
-7. **L1 — Financial Statements API** — Multi-year income statement/balance sheet for Piotroski, Graham, Buffett screens.
+1. **Q1 — Advanced Screener Filters** — Add range sliders for RSI, P/E, score, Piotroski, etc. to the Screener. Currently only market/cap/style dropdowns.
+2. **Q10 — PWA Support** — Add service worker, manifest.json, and offline capability. Enable "Add to Home Screen" on mobile.
+3. **Q11 — Portfolio Tracker** — Let users input their holdings (ticker + shares + buy price). Show portfolio performance, P&L, allocation pie chart.
+4. **M5 — CAN SLIM Composite** — Implement William O'Neil's CAN SLIM screen (Current earnings, Annual earnings, New product/price, Supply/demand, Leader/laggard, Institutional sponsorship, Market direction).
+5. **M14 — Earnings Calendar** — Fetch upcoming earnings dates. Show countdown on StockDetail, highlight stocks reporting this week.
+6. **L2 — Multi-Year Revenue/Earnings Charts** — Use the financial statements data to chart revenue and EPS trends over 4 years. Visual growth trajectory.
+7. **L3 — Relative Valuation (DCF Lite)** — Simple discounted cash flow model using operating cash flow + growth rate. Show intrinsic value estimate alongside Graham Number.
+8. **L4 — Custom Screening Builder** — Let users create custom screens by combining any metrics with AND/OR logic. Save and name custom screens.
 
 ---
 

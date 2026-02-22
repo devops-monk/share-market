@@ -2,9 +2,11 @@ import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import type { StockRecord, NewsItem } from '../types';
 import ScoreGauge from '../components/charts/ScoreGauge';
+import ScoreRadarChart from '../components/charts/ScoreRadarChart';
 import PriceChart from '../components/charts/PriceChart';
 import CandlestickChart from '../components/charts/CandlestickChart';
 import SentimentBar from '../components/charts/SentimentBar';
+import ScoreHistoryChart from '../components/charts/ScoreHistoryChart';
 import { MarketTag, CapTag, Trading212Badge, SignalBadge, ChangePercent } from '../components/common/Tags';
 
 interface Props {
@@ -156,6 +158,11 @@ export default function StockDetail({ stocks, news }: Props) {
         />
       </div>
 
+      {/* Support & Resistance Levels */}
+      {stock.supportResistance && stock.supportResistance.length > 0 && (
+        <SupportResistanceCard levels={stock.supportResistance} currentPrice={stock.price} currency={cur} />
+      )}
+
       {/* Price levels (static fallback) */}
       <div className="card p-5">
         <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Price Levels</h2>
@@ -165,28 +172,41 @@ export default function StockDetail({ stocks, news }: Props) {
       {/* Score breakdown */}
       <div className="card p-5">
         <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Score Breakdown</h2>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-          {scoreItems.map(item => (
-            <div key={item.label} className="group relative flex items-center justify-between gap-2">
-              <span className="text-sm t-tertiary cursor-help border-b border-dashed border-surface-border">
-                {item.label}
-              </span>
-              <Tooltip text={TOOLTIPS[item.label] ?? ''} />
-              <div className="flex items-center gap-2">
-                <div className="w-20 h-2 bg-surface-tertiary rounded-full overflow-hidden">
-                  <div
-                    className="h-full rounded-full transition-all duration-500"
-                    style={{
-                      width: `${item.value}%`,
-                      backgroundColor: item.value >= 65 ? '#10b981' : item.value >= 40 ? '#f59e0b' : '#ef4444',
-                    }}
-                  />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {/* Radar Chart */}
+          <div className="flex items-center justify-center">
+            <ScoreRadarChart score={stock.score} />
+          </div>
+          {/* Bar breakdown */}
+          <div className="space-y-4 flex flex-col justify-center">
+            {scoreItems.map(item => (
+              <div key={item.label} className="group relative flex items-center justify-between gap-2">
+                <span className="text-sm t-tertiary cursor-help border-b border-dashed border-surface-border">
+                  {item.label}
+                </span>
+                <Tooltip text={TOOLTIPS[item.label] ?? ''} />
+                <div className="flex items-center gap-2">
+                  <div className="w-20 h-2 bg-surface-tertiary rounded-full overflow-hidden">
+                    <div
+                      className="h-full rounded-full transition-all duration-500"
+                      style={{
+                        width: `${item.value}%`,
+                        backgroundColor: item.value >= 65 ? '#10b981' : item.value >= 40 ? '#f59e0b' : '#ef4444',
+                      }}
+                    />
+                  </div>
+                  <span className="text-sm font-bold font-mono tabular-nums w-8 text-right t-primary">{item.value}</span>
                 </div>
-                <span className="text-sm font-bold font-mono tabular-nums w-8 text-right t-primary">{item.value}</span>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+      </div>
+
+      {/* Score History */}
+      <div className="card p-5">
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Score History</h2>
+        <ScoreHistoryChart ticker={stock.ticker} />
       </div>
 
       {/* Key metrics */}
@@ -246,6 +266,76 @@ export default function StockDetail({ stocks, news }: Props) {
           <Metric label="Insider Own." value={stock.heldPercentInsiders != null ? `${(stock.heldPercentInsiders * 100).toFixed(1)}%` : 'N/A'} />
           <Metric label="Inst. Own." value={stock.heldPercentInstitutions != null ? `${(stock.heldPercentInstitutions * 100).toFixed(1)}%` : 'N/A'} />
           <Metric label="Short Float" value={stock.shortPercentOfFloat != null ? `${(stock.shortPercentOfFloat * 100).toFixed(1)}%` : 'N/A'} positive={stock.shortPercentOfFloat != null ? stock.shortPercentOfFloat < 0.05 : undefined} />
+        </div>
+      </div>
+
+      {/* Piotroski & Graham */}
+      <div className="card p-5">
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Expert Screens</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {/* Piotroski F-Score */}
+          <div className="p-4 rounded-lg bg-surface-hover border border-surface-border">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-sm font-semibold t-primary">Piotroski F-Score</span>
+              <span className={`text-lg font-bold font-mono ${
+                (stock.piotroskiScore ?? 0) >= 7 ? 'text-bullish' :
+                (stock.piotroskiScore ?? 0) >= 4 ? 'text-neutral' : 'text-bearish'
+              }`}>{stock.piotroskiScore ?? 'N/A'}/9</span>
+            </div>
+            <p className="text-xs t-muted mb-2">
+              {(stock.piotroskiScore ?? 0) >= 7 ? 'Strong financials' :
+               (stock.piotroskiScore ?? 0) >= 4 ? 'Average financials' : 'Weak financials'}
+            </p>
+            {stock.piotroskiDetails && stock.piotroskiDetails.length > 0 && (
+              <ul className="space-y-1">
+                {stock.piotroskiDetails.map((d: string, i: number) => (
+                  <li key={i} className="text-xs t-tertiary flex items-center gap-1.5">
+                    <span className="text-bullish">+</span> {d}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          {/* Graham Number */}
+          <div className="p-4 rounded-lg bg-surface-hover border border-surface-border">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-sm font-semibold t-primary">Graham Number</span>
+              <span className="text-lg font-bold font-mono t-primary">
+                {stock.grahamNumber != null ? `$${stock.grahamNumber.toFixed(2)}` : 'N/A'}
+              </span>
+            </div>
+            {stock.grahamNumber != null && (
+              <>
+                <p className="text-xs t-muted mb-1">Fair value estimate (Benjamin Graham formula)</p>
+                <p className={`text-xs font-medium ${stock.price < stock.grahamNumber ? 'text-bullish' : 'text-bearish'}`}>
+                  {stock.price < stock.grahamNumber
+                    ? `Undervalued by ${((1 - stock.price / stock.grahamNumber) * 100).toFixed(1)}%`
+                    : `Overvalued by ${((stock.price / stock.grahamNumber - 1) * 100).toFixed(1)}%`}
+                </p>
+              </>
+            )}
+          </div>
+
+          {/* Buffett Score */}
+          <div className="p-4 rounded-lg bg-surface-hover border border-surface-border">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-sm font-semibold t-primary">Buffett Quality</span>
+              <span className={`text-lg font-bold font-mono ${
+                (stock.buffettScore ?? 0) >= 4 ? 'text-bullish' :
+                (stock.buffettScore ?? 0) >= 2 ? 'text-neutral' : 'text-bearish'
+              }`}>{stock.buffettScore ?? 'N/A'}/5</span>
+            </div>
+            {stock.buffettDetails && stock.buffettDetails.length > 0 && (
+              <ul className="space-y-1">
+                {stock.buffettDetails.map((d: string, i: number) => (
+                  <li key={i} className="text-xs t-tertiary flex items-center gap-1.5">
+                    <span className="text-bullish">+</span> {d}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
         </div>
       </div>
 
@@ -619,6 +709,114 @@ function SellTag({ reasons }: { reasons: string[] }) {
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+/* ─── SUPPORT & RESISTANCE CARD ─── */
+function SupportResistanceCard({ levels, currentPrice, currency }: {
+  levels: { price: number; strength: number; type: 'support' | 'resistance' }[];
+  currentPrice: number;
+  currency: string;
+}) {
+  const resistances = levels.filter(l => l.type === 'resistance').sort((a, b) => a.price - b.price);
+  const supports = levels.filter(l => l.type === 'support').sort((a, b) => b.price - a.price);
+
+  // Determine the range for the bar chart
+  const allPrices = [...levels.map(l => l.price), currentPrice];
+  const minPrice = Math.min(...allPrices);
+  const maxPrice = Math.max(...allPrices);
+  const range = maxPrice - minPrice || 1;
+  const maxStrength = Math.max(...levels.map(l => l.strength), 1);
+
+  const positionPercent = (price: number) =>
+    ((price - minPrice) / range) * 100;
+
+  return (
+    <div className="card p-5">
+      <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Support & Resistance</h2>
+
+      {/* Visual bar chart */}
+      <div className="relative mb-6 py-2">
+        {/* Track line */}
+        <div className="absolute left-12 right-4 top-1/2 h-px bg-surface-border -translate-y-1/2" />
+
+        {/* Current price marker */}
+        <div
+          className="absolute top-1/2 -translate-y-1/2 z-10"
+          style={{ left: `calc(${positionPercent(currentPrice)}% * 0.85 + 3rem)` }}
+        >
+          <div className="w-0.5 h-8 bg-accent-light -mt-4" />
+          <div className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-[10px] font-bold text-accent-light">
+            {currency}{currentPrice.toFixed(2)}
+          </div>
+        </div>
+      </div>
+
+      {/* Level rows */}
+      <div className="space-y-2">
+        {/* Resistance levels (highest first) */}
+        {[...resistances].reverse().map((level, i) => {
+          const pctFromPrice = ((level.price - currentPrice) / currentPrice * 100).toFixed(1);
+          const barWidth = Math.max((level.strength / maxStrength) * 100, 12);
+          return (
+            <div key={`r-${i}`} className="flex items-center gap-3">
+              <span className="text-[10px] font-semibold text-bearish uppercase w-6 flex-shrink-0">R{resistances.length - i}</span>
+              <span className="text-sm font-mono tabular-nums t-primary w-20 text-right flex-shrink-0">
+                {currency}{level.price.toFixed(2)}
+              </span>
+              <div className="flex-1 h-5 bg-surface-tertiary rounded-full overflow-hidden relative">
+                <div
+                  className="h-full rounded-full bg-bearish/30 border border-bearish/50 transition-all duration-500"
+                  style={{ width: `${barWidth}%` }}
+                />
+                <span className="absolute inset-0 flex items-center justify-center text-[10px] font-bold t-secondary">
+                  {level.strength} touches
+                </span>
+              </div>
+              <span className="text-xs font-mono t-muted w-14 text-right flex-shrink-0">+{pctFromPrice}%</span>
+            </div>
+          );
+        })}
+
+        {/* Current price row */}
+        <div className="flex items-center gap-3 py-1">
+          <span className="text-[10px] font-bold text-accent-light uppercase w-6 flex-shrink-0">NOW</span>
+          <span className="text-sm font-mono tabular-nums font-bold text-accent-light w-20 text-right flex-shrink-0">
+            {currency}{currentPrice.toFixed(2)}
+          </span>
+          <div className="flex-1 h-px bg-accent-light/40 border-t border-dashed border-accent-light/60" />
+          <span className="text-xs font-mono text-accent-light w-14 text-right flex-shrink-0">0.0%</span>
+        </div>
+
+        {/* Support levels (highest first, nearest to price at top) */}
+        {supports.map((level, i) => {
+          const pctFromPrice = ((level.price - currentPrice) / currentPrice * 100).toFixed(1);
+          const barWidth = Math.max((level.strength / maxStrength) * 100, 12);
+          return (
+            <div key={`s-${i}`} className="flex items-center gap-3">
+              <span className="text-[10px] font-semibold text-bullish uppercase w-6 flex-shrink-0">S{i + 1}</span>
+              <span className="text-sm font-mono tabular-nums t-primary w-20 text-right flex-shrink-0">
+                {currency}{level.price.toFixed(2)}
+              </span>
+              <div className="flex-1 h-5 bg-surface-tertiary rounded-full overflow-hidden relative">
+                <div
+                  className="h-full rounded-full bg-bullish/30 border border-bullish/50 transition-all duration-500"
+                  style={{ width: `${barWidth}%` }}
+                />
+                <span className="absolute inset-0 flex items-center justify-center text-[10px] font-bold t-secondary">
+                  {level.strength} touches
+                </span>
+              </div>
+              <span className="text-xs font-mono t-muted w-14 text-right flex-shrink-0">{pctFromPrice}%</span>
+            </div>
+          );
+        })}
+      </div>
+
+      <p className="text-[10px] t-faint mt-3 italic">
+        Levels identified via swing-point clustering on historical OHLCV data. Strength = number of price touches at that level.
+      </p>
     </div>
   );
 }

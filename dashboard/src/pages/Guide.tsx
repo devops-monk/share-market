@@ -341,7 +341,57 @@ function DashboardTab() {
             desc="Save stocks you're monitoring. Persisted in your browser so it survives page refreshes. Add/remove stocks with one click."
             when="Use to track stocks you're interested in without cluttering your portfolio."
           />
+          <PageCard
+            name="Alerts"
+            path="/alerts"
+            desc="Configure price, score, RSI, and Minervini alerts. Get Telegram notifications when conditions are met. Edge-triggered so you won't get spammed."
+            when="Set up once, get notified automatically when stocks hit your targets."
+          />
         </div>
+      </Section>
+
+      <Section title="New Features on Stock Detail Page" icon="N">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <ConceptCard
+            term="Score Radar Chart"
+            definition="A 6-axis radar showing each score dimension (Momentum, Technical, Sentiment, Fundamentals, Volume, Risk) so you can visually spot strengths and weaknesses at a glance."
+            example="A balanced hexagon = well-rounded stock. A spike in one direction = strength (or weakness) in that area."
+          />
+          <ConceptCard
+            term="Score History Chart"
+            definition="Tracks how a stock's composite score has changed over time (30 or 90 day view). Shows trend direction and score stability."
+            example="Score rising from 40 to 65 over 30 days = improving momentum. Score dropping = deteriorating setup."
+          />
+          <ConceptCard
+            term="Support & Resistance Levels"
+            definition="Algorithmically detected price levels where the stock has historically bounced (support) or stalled (resistance). Computed from OHLCV swing points."
+            example="Support at $150 with 4 touches = strong floor. Resistance at $180 = price ceiling to watch for breakout."
+          />
+          <ConceptCard
+            term="Expert Screens (Piotroski, Graham, Buffett)"
+            definition="Three classic investment analysis scores computed from multi-year financial statements. Piotroski F-Score (0-9), Graham Number (fair value), and Buffett Quality Score (0-5)."
+            example="Piotroski 8/9 + Graham Number above price = strong value pick. Buffett 5/5 = high quality moat business."
+          />
+          <ConceptCard
+            term="Sector-Relative Scoring"
+            definition="Z-score and rank within the stock's sector. Shows how a stock compares to its peers, not just the whole universe."
+            example="Sector Rank 3/45 = 3rd best in its sector. Z-Score +1.5 = 1.5 standard deviations above sector average."
+          />
+          <ConceptCard
+            term="Market Regime Indicator"
+            definition="Shown on the Overview page. Tracks S&P 500 and FTSE 100 to determine if we're in a bull market, correction, or bear market using SMA analysis and distribution day counting."
+            example="Bull = favor long positions. Correction = be selective, tighten stops. Bear = prioritize capital preservation."
+          />
+        </div>
+      </Section>
+
+      <Section title="URL Sharing for Screener" icon="U">
+        <p className="t-tertiary text-sm">
+          The Screener now saves your filters, sort order, and page number in the URL.
+          This means you can <strong className="t-primary">bookmark</strong> a specific filtered view or
+          <strong className="t-primary"> share a link</strong> with someone and they'll see the exact same view.
+          Try filtering by market and style, then copy the URL from your browser.
+        </p>
       </Section>
     </div>
   );
@@ -633,6 +683,36 @@ function StrategiesTab() {
         ]}
         when="Works in all market conditions. Quality companies with strong fundamentals tend to outperform over the long term."
         risk="Even great companies can be overvalued. Always check P/E and PEG to ensure you're not overpaying."
+      />
+
+      <StrategyCard
+        name="Piotroski F-Score (Value Investing)"
+        difficulty="Intermediate"
+        diffColor="text-neutral"
+        goal="Identify financially strong value stocks using Joseph Piotroski's 9-point fundamental checklist — proven to beat the market."
+        steps={[
+          { action: 'Check F-Score on detail page', detail: 'Each stock now shows a Piotroski F-Score (0-9) in the Expert Screens section. Look for scores of 7-9.' },
+          { action: 'Understand the 9 criteria', detail: 'Positive net income, positive ROA, positive operating cash flow, cash flow > net income, declining debt ratio, improving current ratio, no dilution, improving margins, improving asset turnover.' },
+          { action: 'Combine with valuation', detail: 'F-Score works best with low P/E or low P/B stocks. A high F-Score on a cheap stock = classic value buy.' },
+          { action: 'Check Graham Number', detail: 'Also shown on the detail page. If stock price < Graham Number, it may be undervalued by Benjamin Graham\'s formula (sqrt of 22.5 x EPS x Book Value).' },
+        ]}
+        when="Best for patient investors looking for undervalued, fundamentally improving companies."
+        risk="Value stocks can stay cheap for a long time. Combine with technical signals for better timing."
+      />
+
+      <StrategyCard
+        name="Buffett Quality + Moat Screen"
+        difficulty="Intermediate"
+        diffColor="text-neutral"
+        goal="Find companies with durable competitive advantages — consistent profits, low debt, and high returns on equity."
+        steps={[
+          { action: 'Check Buffett Score', detail: 'Found in Expert Screens on the detail page. Score of 4-5/5 = high quality business.' },
+          { action: 'Look for the 5 criteria', detail: 'Consistently profitable (all years), ROE > 15%, low debt-to-equity, growing revenue, positive free cash flow.' },
+          { action: 'Verify with margins', detail: 'Gross Margin > 40% = durable competitive advantage (Buffett\'s favorite metric). Check in the Fundamentals section.' },
+          { action: 'Compare to Graham Number', detail: 'Buffett evolved Graham\'s approach: "Buy a wonderful company at a fair price." Piotroski 7+ AND Buffett 4+ = premium quality.' },
+        ]}
+        when="Works in all markets. Quality companies recover faster from downturns."
+        risk="Quality comes at a premium. These stocks may seem expensive on P/E — use PEG ratio to adjust for growth."
       />
 
       <StrategyCard

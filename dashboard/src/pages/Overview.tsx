@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import type { StockRecord, SummaryData, Metadata } from '../types';
+import type { StockRecord, SummaryData, Metadata, MarketRegime, RegimeData } from '../types';
 import { MarketTag, ScoreBadge, ChangePercent } from '../components/common/Tags';
 
 interface Props {
@@ -44,6 +44,7 @@ export default function Overview({ stocks, summary, metadata, bearishCount }: Pr
     ? stocks.reduce((a, s) => a + s.changePercent, 0) / stocks.length
     : 0;
   const bullishCount = stocks.filter(s => s.score.composite >= 60).length;
+  const regime = metadata?.marketRegime ?? null;
 
   return (
     <div className="space-y-8">
@@ -52,6 +53,9 @@ export default function Overview({ stocks, summary, metadata, bearishCount }: Pr
         <h1 className="text-xl font-bold t-primary">Market Overview</h1>
         <p className="text-sm t-muted mt-1">Daily snapshot of {summary.totalStocks} tracked stocks</p>
       </div>
+
+      {/* Market Regime Indicator */}
+      {regime && <MarketRegimeCard regime={regime} />}
 
       {/* Hero stats */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -214,6 +218,76 @@ function BarStat({ label, value, total, color }: {
       <div className="h-1.5 bg-surface-tertiary rounded-full overflow-hidden">
         <div className={`h-full rounded-full ${color} transition-all duration-500`} style={{ width: `${pct}%` }} />
       </div>
+    </div>
+  );
+}
+
+const regimeColors = {
+  bull: { banner: 'from-emerald-500/20 to-emerald-500/5', border: 'border-emerald-500', text: 'text-emerald-400', badge: 'bg-emerald-500/20 text-emerald-400', label: 'BULL' },
+  correction: { banner: 'from-amber-500/20 to-amber-500/5', border: 'border-amber-500', text: 'text-amber-400', badge: 'bg-amber-500/20 text-amber-400', label: 'CORRECTION' },
+  bear: { banner: 'from-red-500/20 to-red-500/5', border: 'border-red-500', text: 'text-red-400', badge: 'bg-red-500/20 text-red-400', label: 'BEAR' },
+};
+
+function MarketRegimeCard({ regime }: { regime: MarketRegime }) {
+  const overall = regimeColors[regime.overall];
+
+  return (
+    <div className={`card overflow-hidden border-l-4 ${overall.border}`}>
+      <div className={`bg-gradient-to-r ${overall.banner} px-5 py-4`}>
+        <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center gap-3">
+            <h2 className="text-sm font-semibold t-tertiary uppercase tracking-wider">Market Regime</h2>
+            <span className={`px-2.5 py-0.5 rounded-full text-xs font-bold ${overall.badge}`}>
+              {overall.label}
+            </span>
+          </div>
+        </div>
+        <p className="text-sm t-secondary">{regime.summary}</p>
+      </div>
+      <div className="grid md:grid-cols-2 divide-x divide-surface-border">
+        <RegimeIndexRow data={regime.us} />
+        <RegimeIndexRow data={regime.uk} />
+      </div>
+    </div>
+  );
+}
+
+function RegimeIndexRow({ data }: { data: RegimeData }) {
+  const colors = regimeColors[data.regime];
+  return (
+    <div className="px-5 py-4 space-y-2">
+      <div className="flex items-center justify-between">
+        <span className="font-semibold t-primary text-sm">{data.index}</span>
+        <span className={`px-2 py-0.5 rounded text-xs font-semibold ${colors.badge}`}>
+          {colors.label}
+        </span>
+      </div>
+      <div className="font-mono text-lg font-bold t-primary tabular-nums">
+        {data.price > 0 ? data.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : 'N/A'}
+      </div>
+      <div className="text-xs t-muted space-y-1">
+        <div className="flex justify-between">
+          <span>SMA 50</span>
+          <span className="font-mono tabular-nums t-secondary">{data.sma50 > 0 ? data.sma50.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : 'N/A'}</span>
+        </div>
+        <div className="flex justify-between">
+          <span>SMA 200</span>
+          <span className="font-mono tabular-nums t-secondary">{data.sma200 > 0 ? data.sma200.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : 'N/A'}</span>
+        </div>
+        <div className="flex justify-between">
+          <span>From 52W High</span>
+          <span className={`font-mono tabular-nums ${data.changeFromHigh >= -5 ? 'text-emerald-400' : data.changeFromHigh >= -15 ? 'text-amber-400' : 'text-red-400'}`}>
+            {data.changeFromHigh.toFixed(2)}%
+          </span>
+        </div>
+        <div className="flex justify-between">
+          <span>Distribution Days</span>
+          <span className={`font-mono tabular-nums ${data.distributionDays >= 6 ? 'text-red-400' : data.distributionDays >= 4 ? 'text-amber-400' : 't-secondary'}`}>
+            {data.distributionDays}/25
+          </span>
+        </div>
+      </div>
+      <p className="text-xs t-muted pt-1 border-t border-surface-border">{data.signal}</p>
     </div>
   );
 }

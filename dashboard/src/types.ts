@@ -88,6 +88,18 @@ export interface StockRecord {
     rsAbove70: boolean;
     passed: number;
   };
+  // Sector-relative scoring
+  sectorZScore: number | null;  // z-score within sector
+  sectorRank: number;           // rank within sector (1=best)
+  sectorCount: number;          // total in sector
+  // Support & resistance levels
+  supportResistance?: { price: number; strength: number; type: 'support' | 'resistance' }[];
+  // Expert screens (Piotroski, Graham, Buffett)
+  piotroskiScore: number | null;
+  piotroskiDetails: string[];
+  grahamNumber: number | null;
+  buffettScore: number | null;
+  buffettDetails: string[];
 }
 
 export interface Signal {
@@ -136,9 +148,28 @@ export interface NewsItem {
   sentimentLabel: 'positive' | 'negative' | 'neutral';
 }
 
+export interface RegimeData {
+  index: string;
+  price: number;
+  sma50: number;
+  sma200: number;
+  changeFromHigh: number;
+  distributionDays: number;
+  regime: 'bull' | 'correction' | 'bear';
+  signal: string;
+}
+
+export interface MarketRegime {
+  us: RegimeData;
+  uk: RegimeData;
+  overall: 'bull' | 'correction' | 'bear';
+  summary: string;
+}
+
 export interface Metadata {
   lastUpdated: string;
   stockCount: number;
   bearishAlerts: number;
   newsCount: number;
+  marketRegime: MarketRegime | null;
 }

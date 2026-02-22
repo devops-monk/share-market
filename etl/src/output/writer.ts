@@ -1,6 +1,7 @@
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync, readFileSync, mkdirSync } from 'fs';
 import { stringify } from 'csv-stringify/sync';
 import { CONFIG } from '../config.js';
+import type { MarketRegime } from '../indicators/regime.js';
 import path from 'path';
 
 export interface StockRecord {
@@ -102,6 +103,18 @@ export interface StockRecord {
     rsAbove70: boolean;
     passed: number; // count of checks passed
   };
+  // Sector-relative scoring
+  sectorZScore: number | null;  // z-score within sector
+  sectorRank: number;           // rank within sector (1=best)
+  sectorCount: number;          // total in sector
+  // Support & resistance levels
+  supportResistance: { price: number; strength: number; type: 'support' | 'resistance' }[];
+  // Expert screens (Piotroski, Graham, Buffett)
+  piotroskiScore: number | null;
+  piotroskiDetails: string[];
+  grahamNumber: number | null;
+  buffettScore: number | null;
+  buffettDetails: string[];
 }
 
 export interface OhlcvData {
@@ -119,6 +132,7 @@ export function writeOutputs(
   newsItems: any[],
   bearishAlerts: StockRecord[],
   ohlcvData?: OhlcvData[],
+  marketRegime?: MarketRegime | null,
 ) {
   const dataDir = CONFIG.dataDir;
   mkdirSync(dataDir, { recursive: true });
@@ -166,6 +180,7 @@ export function writeOutputs(
       stockCount: stocks.length,
       bearishAlerts: bearishAlerts.length,
       newsCount: newsItems.length,
+      marketRegime: marketRegime ?? null,
     }, null, 2)
   );
 
@@ -230,6 +245,30 @@ export function writeOutputs(
     }
     console.log(`Wrote ${ohlcvData.length} chart files to ${chartsDir}`);
   }
+
+  // Score history — daily composite scores per ticker (last 90 days)
+  const historyPath = path.join(dataDir, 'score-history.json');
+  let history: Record<string, Record<string, number>> = {};
+  try {
+    const existing = readFileSync(historyPath, 'utf-8');
+    history = JSON.parse(existing);
+  } catch { /* first run */ }
+
+  const today = new Date().toISOString().slice(0, 10);
+  const cutoff = new Date();
+  cutoff.setDate(cutoff.getDate() - 90);
+  const cutoffStr = cutoff.toISOString().slice(0, 10);
+
+  for (const s of stocks) {
+    if (!history[s.ticker]) history[s.ticker] = {};
+    history[s.ticker][today] = s.score.composite;
+    // Prune old entries
+    for (const date of Object.keys(history[s.ticker])) {
+      if (date < cutoffStr) delete history[s.ticker][date];
+    }
+  }
+
+  writeFileSync(historyPath, JSON.stringify(history));
 
   console.log(`Wrote ${stocks.length} stocks to ${dataDir}`);
 }

@@ -188,7 +188,7 @@ interface QuoteSummaryData {
 let yahooCrumb: string | null = null;
 let yahooCookie: string | null = null;
 
-async function getYahooCrumb(): Promise<{ crumb: string; cookie: string } | null> {
+export async function getYahooCrumb(): Promise<{ crumb: string; cookie: string } | null> {
   if (yahooCrumb && yahooCookie) return { crumb: yahooCrumb, cookie: yahooCookie };
 
   try {

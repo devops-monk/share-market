@@ -2,11 +2,14 @@ import { ALL_STOCKS } from './stocks/universe.js';
 import { fetchAllStocks } from './stocks/fetcher.js';
 import { computeTechnicals } from './indicators/technical.js';
 import { detectSignals, computeBearishScore, computeBullishScore } from './indicators/signals.js';
+import { computeSupportResistance } from './indicators/support-resistance.js';
 import { computeScore } from './scoring/scorer.js';
 import { fetchGoogleNews } from './news/google-news.js';
 import { fetchFinvizNews } from './news/finviz-scraper.js';
 import { scoreNewsItems, averageSentiment } from './news/sentiment.js';
+import { computeMarketRegime } from './indicators/regime.js';
 import { writeOutputs, type StockRecord, type OhlcvData } from './output/writer.js';
+import { fetchFinancials } from './fundamentals/financials.js';
 import { CONFIG } from './config.js';
 import pLimit from 'p-limit';
 
@@ -19,26 +22,39 @@ async function main() {
   const quotes = await fetchAllStocks(ALL_STOCKS);
   console.log(`Fetched ${quotes.length}/${ALL_STOCKS.length} stocks in ${((Date.now() - startTime) / 1000).toFixed(1)}s`);
 
-  // Step 2: Fetch news (top 50 stocks, higher concurrency)
-  console.log('Fetching news...');
+  // Step 2: Fetch news + market regime in parallel
+  console.log('Fetching news and market regime...');
   const newsStart = Date.now();
   const newsLimit = pLimit(CONFIG.newsConcurrency);
   const allNews: any[] = [];
   const topTickers = quotes.slice(0, 100);
 
-  await Promise.all(
-    topTickers.map(q =>
-      newsLimit(async () => {
-        const [googleNews, finvizNews] = await Promise.all([
-          fetchGoogleNews(q.ticker, q.name),
-          q.market === 'US' ? fetchFinvizNews(q.ticker) : Promise.resolve([]),
-        ]);
-        const scored = scoreNewsItems([...googleNews, ...finvizNews]);
-        allNews.push(...scored);
-      })
-    )
-  );
+  const [, marketRegime] = await Promise.all([
+    // News fetching
+    Promise.all(
+      topTickers.map(q =>
+        newsLimit(async () => {
+          const [googleNews, finvizNews] = await Promise.all([
+            fetchGoogleNews(q.ticker, q.name),
+            q.market === 'US' ? fetchFinvizNews(q.ticker) : Promise.resolve([]),
+          ]);
+          const scored = scoreNewsItems([...googleNews, ...finvizNews]);
+          allNews.push(...scored);
+        })
+      )
+    ),
+    // Market regime (runs in parallel with news)
+    computeMarketRegime(),
+  ]);
   console.log(`Collected ${allNews.length} news items in ${((Date.now() - newsStart) / 1000).toFixed(1)}s`);
+  if (marketRegime) {
+    console.log(`Market regime: ${marketRegime.overall} (US: ${marketRegime.us.regime}, UK: ${marketRegime.uk.regime})`);
+  }
+
+  // Step 2b: Fetch financial statements (Piotroski, Graham, Buffett)
+  console.log('Fetching financial statements...');
+  const allTickers = quotes.map(q => q.ticker);
+  const financialsMap = await fetchFinancials(allTickers);
 
   // Step 3: Process each stock (CPU-only, fast)
   console.log('Computing indicators and scores...');
@@ -210,6 +226,20 @@ async function main() {
       styleClassification,
       dataCompleteness,
       minerviniChecks,
+      // Sector-relative scoring (populated in post-processing below)
+      sectorZScore: null,
+      sectorRank: 1,
+      sectorCount: 1,
+      // Support & resistance levels
+      supportResistance: quote.ohlcvHigh.length >= 5
+        ? computeSupportResistance(quote.ohlcvHigh, quote.ohlcvLow, quote.historicalClose, quote.price)
+        : [],
+      // Expert screens (Piotroski, Graham, Buffett)
+      piotroskiScore: financialsMap.get(quote.ticker)?.ppiScore ?? null,
+      piotroskiDetails: financialsMap.get(quote.ticker)?.ppiDetails ?? [],
+      grahamNumber: financialsMap.get(quote.ticker)?.grahamNumber ?? null,
+      buffettScore: financialsMap.get(quote.ticker)?.buffettScore ?? null,
+      buffettDetails: financialsMap.get(quote.ticker)?.buffettDetails ?? [],
     });
 
     // Collect OHLCV for candlestick charts
@@ -226,6 +256,42 @@ async function main() {
     }
   }
 
+  // Sector-relative scoring
+  const sectorGroups = new Map<string, number[]>();
+  for (const s of stockRecords) {
+    if (!sectorGroups.has(s.sector)) sectorGroups.set(s.sector, []);
+    sectorGroups.get(s.sector)!.push(s.score.composite);
+  }
+
+  const sectorStats = new Map<string, { mean: number; std: number }>();
+  for (const [sector, scores] of sectorGroups) {
+    const mean = scores.reduce((a, b) => a + b, 0) / scores.length;
+    const variance = scores.reduce((a, b) => a + (b - mean) ** 2, 0) / scores.length;
+    sectorStats.set(sector, { mean, std: Math.sqrt(variance) });
+  }
+
+  // Sort within sectors for rank
+  const sectorRankMap = new Map<string, Map<string, number>>();
+  const sectorGrouped = new Map<string, StockRecord[]>();
+  for (const s of stockRecords) {
+    if (!sectorGrouped.has(s.sector)) sectorGrouped.set(s.sector, []);
+    sectorGrouped.get(s.sector)!.push(s);
+  }
+  for (const [sector, stocks] of sectorGrouped) {
+    const sorted = [...stocks].sort((a, b) => b.score.composite - a.score.composite);
+    const rankMap = new Map<string, number>();
+    sorted.forEach((s, i) => rankMap.set(s.ticker, i + 1));
+    sectorRankMap.set(sector, rankMap);
+  }
+
+  for (const s of stockRecords) {
+    const stats = sectorStats.get(s.sector);
+    const sectorStocks = sectorGrouped.get(s.sector);
+    s.sectorZScore = stats && stats.std > 0 ? +((s.score.composite - stats.mean) / stats.std).toFixed(2) : null;
+    s.sectorRank = sectorRankMap.get(s.sector)?.get(s.ticker) ?? 1;
+    s.sectorCount = sectorStocks?.length ?? 1;
+  }
+
   // Step 4: Identify bearish alerts
   const bearishAlerts = stockRecords
     .filter(s => s.bearishScore >= CONFIG.bearishScoreThreshold)
@@ -234,7 +300,7 @@ async function main() {
   console.log(`Found ${bearishAlerts.length} bearish alerts`);
 
   // Step 5: Write outputs
-  writeOutputs(stockRecords, allNews, bearishAlerts, ohlcvRecords);
+  writeOutputs(stockRecords, allNews, bearishAlerts, ohlcvRecords, marketRegime);
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`ETL completed in ${elapsed}s`);
