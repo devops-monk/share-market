@@ -114,27 +114,32 @@ async function fetchChart(ticker: string): Promise<ChartData | null> {
       const rawCloses = (q.close || []) as (number | null)[];
       const rawVolumes = (q.volume || []) as (number | null)[];
 
+      // Yahoo returns UK stocks in GBp (pence) — convert to GBP (pounds)
+      const currency: string = m.currency ?? '';
+      const isGBp = currency === 'GBp' || currency === 'GBX';
+      const fx = isGBp ? 0.01 : 1;
+
       // Filter out null entries (keeping indices aligned)
       const validIndices = timestamps.map((_, i) => i).filter(i =>
         rawCloses[i] != null && opens[i] != null && highs[i] != null && lows[i] != null
       );
 
-      const closes = validIndices.map(i => rawCloses[i]!) ;
+      const closes = validIndices.map(i => rawCloses[i]! * fx);
       const volumes = validIndices.map(i => rawVolumes[i] ?? 0);
 
       return {
-        price: m.regularMarketPrice,
-        previousClose: m.chartPreviousClose ?? m.regularMarketPrice,
+        price: m.regularMarketPrice * fx,
+        previousClose: (m.chartPreviousClose ?? m.regularMarketPrice) * fx,
         volume: m.regularMarketVolume ?? (volumes.length > 0 ? volumes[volumes.length - 1] : 0),
         marketCap: 0, // filled by quoteSummary or FinViz later
-        fiftyTwoWeekHigh: m.fiftyTwoWeekHigh ?? Math.max(...closes, m.regularMarketPrice),
-        fiftyTwoWeekLow: m.fiftyTwoWeekLow ?? Math.min(...closes, m.regularMarketPrice),
+        fiftyTwoWeekHigh: m.fiftyTwoWeekHigh != null ? m.fiftyTwoWeekHigh * fx : Math.max(...closes, m.regularMarketPrice * fx),
+        fiftyTwoWeekLow: m.fiftyTwoWeekLow != null ? m.fiftyTwoWeekLow * fx : Math.min(...closes, m.regularMarketPrice * fx),
         closes,
         volumes,
         timestamps: validIndices.map(i => timestamps[i]),
-        opens: validIndices.map(i => opens[i]!),
-        highs: validIndices.map(i => highs[i]!),
-        lows: validIndices.map(i => lows[i]!),
+        opens: validIndices.map(i => opens[i]! * fx),
+        highs: validIndices.map(i => highs[i]! * fx),
+        lows: validIndices.map(i => lows[i]! * fx),
       };
     } catch {
       if (attempt < 2) await delay(1000);
@@ -255,6 +260,11 @@ async function fetchYahooFundamentalsBatch(tickers: string[]): Promise<Map<strin
         const quotes = data?.quoteResponse?.result ?? [];
 
         for (const q of quotes) {
+          // Yahoo returns UK stock prices in GBp (pence) — convert to GBP (pounds)
+          const cur: string = q.currency ?? '';
+          const isPence = cur === 'GBp' || cur === 'GBX';
+          const pxFx = isPence ? 0.01 : 1;
+
           result.set(q.symbol, {
             marketCap: q.marketCap ?? 0,
             pe: q.trailingPE ?? null,
@@ -264,9 +274,9 @@ async function fetchYahooFundamentalsBatch(tickers: string[]): Promise<Map<strin
             revenueGrowth: q.revenueGrowth?.raw ?? null,
             avgVolume: q.averageDailyVolume3Month ?? 0,
             priceToBook: q.priceToBook ?? null,
-            trailingEps: q.epsTrailingTwelveMonths ?? null,
-            forwardEps: q.epsForward ?? null,
-            bookValue: q.bookValue ?? null,
+            trailingEps: q.epsTrailingTwelveMonths != null ? q.epsTrailingTwelveMonths * pxFx : null,
+            forwardEps: q.epsForward != null ? q.epsForward * pxFx : null,
+            bookValue: q.bookValue != null ? q.bookValue * pxFx : null,
             sharesOutstanding: q.sharesOutstanding ?? null,
             dividendYield: q.dividendYield != null ? q.dividendYield / 100 : null,
             averageAnalystRating: q.averageAnalystRating ?? null,
@@ -319,6 +329,10 @@ async function fetchQuoteSummaryBatch(tickers: string[]): Promise<Map<string, Qu
             const ks = r.defaultKeyStatistics ?? {};
             const fd = r.financialData ?? {};
 
+            // targetMeanPrice is in trading currency (GBp for .L stocks)
+            const cur: string = fd.financialCurrency ?? fd.currency ?? '';
+            const targetPxFx = (cur === 'GBp' || cur === 'GBX' || (ticker.endsWith('.L') && fd.targetMeanPrice?.raw > 100)) ? 0.01 : 1;
+
             result.set(ticker, {
               enterpriseValue: ks.enterpriseValue?.raw ?? null,
               profitMargins: ks.profitMargins?.raw ?? fd.profitMargins?.raw ?? null,
@@ -337,7 +351,7 @@ async function fetchQuoteSummaryBatch(tickers: string[]): Promise<Map<string, Qu
               heldPercentInsiders: ks.heldPercentInsiders?.raw ?? null,
               heldPercentInstitutions: ks.heldPercentInstitutions?.raw ?? null,
               shortPercentOfFloat: ks.shortPercentOfFloat?.raw ?? null,
-              targetMeanPrice: fd.targetMeanPrice?.raw ?? null,
+              targetMeanPrice: fd.targetMeanPrice?.raw != null ? fd.targetMeanPrice.raw * targetPxFx : null,
               pegRatio: ks.pegRatio?.raw ?? null,
             });
             break;
