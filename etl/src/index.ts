@@ -243,6 +243,27 @@ async function main() {
         : null,
       buffettScore: financialsMap.get(quote.ticker)?.buffettScore ?? null,
       buffettDetails: financialsMap.get(quote.ticker)?.buffettDetails ?? [],
+      // Earnings date
+      earningsDate: quote.earningsDate,
+      // DCF Lite: simple intrinsic value = OCF × (1 + growth) / discount_rate
+      dcfValue: (() => {
+        const ocf = quote.operatingCashflow;
+        const shares = quote.sharesOutstanding;
+        if (ocf == null || shares == null || shares <= 0 || ocf <= 0) return null;
+        const growth = quote.revenueGrowth ?? quote.earningsGrowth ?? 0.05;
+        const g = Math.max(0, Math.min(growth, 0.3)); // cap growth at 30%
+        const discountRate = 0.10; // 10% required return
+        const terminalMultiple = 15;
+        // 5-year DCF: sum of discounted FCF + terminal value
+        let dcfSum = 0;
+        let currentCF = ocf;
+        for (let yr = 1; yr <= 5; yr++) {
+          currentCF *= (1 + g);
+          dcfSum += currentCF / Math.pow(1 + discountRate, yr);
+        }
+        dcfSum += (currentCF * terminalMultiple) / Math.pow(1 + discountRate, 5);
+        return +(dcfSum / shares).toFixed(2);
+      })(),
     });
 
     // Collect OHLCV for candlestick charts

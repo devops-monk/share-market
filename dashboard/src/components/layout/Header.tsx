@@ -17,6 +17,7 @@ const primaryNav: NavItem[] = [
   { path: '/', label: 'Overview' },
   { path: '/screener', label: 'Screener' },
   { path: '/watchlist', label: 'Watchlist' },
+  { path: '/portfolio', label: 'Portfolio' },
 ];
 
 const navGroups: NavGroup[] = [
@@ -26,12 +27,21 @@ const navGroups: NavGroup[] = [
       { path: '/heatmap', label: 'Heat Map', desc: 'Market treemap by sector' },
       { path: '/sectors', label: 'Sectors', desc: 'Sector performance breakdown' },
       { path: '/compare', label: 'Compare', desc: 'Side-by-side stock comparison' },
+      { path: '/backtest', label: 'Backtest', desc: 'Test stock-picking strategies' },
+    ],
+  },
+  {
+    label: 'Screens',
+    items: [
+      { path: '/minervini', label: 'Minervini', desc: 'SEPA trend template screen' },
+      { path: '/canslim', label: 'CAN SLIM', desc: "O'Neil's 7-point growth screen" },
+      { path: '/custom-screen', label: 'Custom Screen', desc: 'Build your own screening rules' },
+      { path: '/earnings', label: 'Earnings', desc: 'Upcoming earnings calendar' },
     ],
   },
   {
     label: 'Signals',
     items: [
-      { path: '/minervini', label: 'Minervini', desc: 'SEPA trend template screen' },
       { path: '/bearish', label: 'Bearish', desc: 'Stocks with warning signals' },
       { path: '/dip', label: 'Buy the Dip', desc: 'Oversold bounce candidates' },
       { path: '/breakout', label: 'Breakouts', desc: 'Squeeze & volume breakouts' },

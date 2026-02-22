@@ -270,6 +270,7 @@ export default function StockDetail({ stocks, news }: Props) {
           <Metric label="EV" value={stock.enterpriseValue != null ? formatLargeNum(stock.enterpriseValue) : 'N/A'} />
           <Metric label="EBITDA" value={stock.ebitda != null ? formatLargeNum(stock.ebitda) : 'N/A'} positive={stock.ebitda != null ? stock.ebitda > 0 : undefined} />
           <Metric label="Analyst Target" value={stock.targetMeanPrice != null ? `${cur}${stock.targetMeanPrice.toFixed(2)}` : 'N/A'} positive={stock.targetMeanPrice != null ? stock.targetMeanPrice > stock.price : undefined} />
+          <Metric label="Earnings Date" value={stock.earningsDate ?? 'N/A'} />
           <Metric label="Insider Own." value={stock.heldPercentInsiders != null ? `${(stock.heldPercentInsiders * 100).toFixed(1)}%` : 'N/A'} />
           <Metric label="Inst. Own." value={stock.heldPercentInstitutions != null ? `${(stock.heldPercentInstitutions * 100).toFixed(1)}%` : 'N/A'} />
           <Metric label="Short Float" value={stock.shortPercentOfFloat != null ? `${(stock.shortPercentOfFloat * 100).toFixed(1)}%` : 'N/A'} positive={stock.shortPercentOfFloat != null ? stock.shortPercentOfFloat < 0.05 : undefined} />
@@ -325,6 +326,26 @@ export default function StockDetail({ stocks, news }: Props) {
                   {stock.price < stock.grahamNumber
                     ? `Undervalued by ${((1 - stock.price / stock.grahamNumber) * 100).toFixed(1)}%`
                     : `Overvalued by ${((stock.price / stock.grahamNumber - 1) * 100).toFixed(1)}%`}
+                </p>
+              </>
+            )}
+          </div>
+
+          {/* DCF Lite */}
+          <div className="p-4 rounded-lg bg-surface-hover border border-surface-border">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-sm font-semibold t-primary">DCF Value</span>
+              <span className="text-lg font-bold font-mono t-primary">
+                {stock.dcfValue != null ? `${stock.market === 'UK' ? '\u00a3' : '$'}${stock.dcfValue.toFixed(2)}` : 'N/A'}
+              </span>
+            </div>
+            {stock.dcfValue != null && (
+              <>
+                <p className="text-xs t-muted mb-1">Intrinsic value (5-year DCF model)</p>
+                <p className={`text-xs font-medium ${stock.price < stock.dcfValue ? 'text-bullish' : 'text-bearish'}`}>
+                  {stock.price < stock.dcfValue
+                    ? `Undervalued by ${((1 - stock.price / stock.dcfValue) * 100).toFixed(1)}%`
+                    : `Overvalued by ${((stock.price / stock.dcfValue - 1) * 100).toFixed(1)}%`}
                 </p>
               </>
             )}

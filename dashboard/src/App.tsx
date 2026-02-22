@@ -16,10 +16,15 @@ import MinerviniScreen from './pages/MinerviniScreen';
 import StockComparison from './pages/StockComparison';
 import Watchlist from './pages/Watchlist';
 import AlertSettings from './pages/AlertSettings';
+import Portfolio from './pages/Portfolio';
+import CanSlim from './pages/CanSlim';
+import CustomScreen from './pages/CustomScreen';
+import Backtest from './pages/Backtest';
+import EarningsCalendar from './pages/EarningsCalendar';
 import InstallPrompt from './components/common/InstallPrompt';
 
 export default function App() {
-  const { stocks, summary, bearishAlerts, news, metadata, loading } = useStockData();
+  const { stocks, summary, bearishAlerts, news, metadata, scoreHistory, loading } = useStockData();
   const { theme, toggle } = useTheme();
 
   if (loading) {
@@ -63,6 +68,11 @@ export default function App() {
           <Route path="/minervini" element={<MinerviniScreen stocks={stocks} />} />
           <Route path="/compare" element={<StockComparison stocks={stocks} />} />
           <Route path="/watchlist" element={<Watchlist stocks={stocks} />} />
+          <Route path="/portfolio" element={<Portfolio stocks={stocks} />} />
+          <Route path="/canslim" element={<CanSlim stocks={stocks} metadata={metadata} />} />
+          <Route path="/custom-screen" element={<CustomScreen stocks={stocks} />} />
+          <Route path="/backtest" element={<Backtest stocks={stocks} scoreHistory={scoreHistory} />} />
+          <Route path="/earnings" element={<EarningsCalendar stocks={stocks} />} />
           <Route path="/guide" element={<Guide />} />
           <Route path="/alerts" element={<AlertSettings />} />
         </Routes>

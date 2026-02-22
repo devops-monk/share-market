@@ -585,16 +585,30 @@ Q12 CSV Export                      M15 Score History                   L11 Back
 | **UX** Section Descriptions | **DONE** | Added "how to use" descriptions to Score Breakdown, Support & Resistance, and Expert Screens sections on StockDetail. |
 | **Fix** Graham Number | **DONE** | Was always N/A — financial statements API lacked sharesOutstanding. Fixed to use quote-level trailingEps + bookValue instead. |
 
+### Recently Shipped (February 2026 — Batch 5)
+
+| Feature | Status | Notes |
+|---------|--------|-------|
+| **Q11** Portfolio Tracker | **DONE** | Full portfolio management with localStorage persistence. Add/remove holdings with ticker search autocomplete. P&L calculation per position and total. SVG pie chart for allocation. Summary cards (Total Value, P&L, Cost, Avg Score). |
+| **M5** CAN SLIM Screen | **DONE** | William O'Neil's 7-point growth methodology. Evaluates C-A-N-S-L-I-M criteria per stock using available data proxies. Minimum passing filter (4-7). Per-stock expandable cards with pass/fail details. Market regime integration for "M" criterion. |
+| **M14** Earnings Calendar | **DONE** | Calendar view grouped by date with upcoming/recent/all views. Highlights today and this week. Sort by date, score, or ticker. ETL now fetches earningsDate from Yahoo v7. |
+| **L4** Custom Screening Builder | **DONE** | 25 metric definitions with dynamic AND/OR filter rules. Operators: >, >=, <, <=, =. Save/load named screens to localStorage. Results table with dynamic columns based on active rules. |
+| **L6** Strategy Backtest | **DONE** | 8 built-in strategies (High Score, Momentum, Minervini, Value+Growth, Piotroski, Buffett, Oversold, Breakout). Aggregate stats (avg return, win rate, median, best/worst). Score history integration. Sortable results table. |
+| **Nav** Reorganised Navigation | **DONE** | Added Portfolio to primary nav. New "Screens" dropdown (Minervini, CAN SLIM, Custom Screen, Earnings). Backtest added to Analysis group. |
+| **L3** DCF Lite Valuation | **DONE** | 5-year DCF model using operating cash flow, growth rate (capped 30%), 10% discount, 15x terminal. Per-share intrinsic value on StockDetail alongside Graham Number with under/overvalued indicator. |
+| **L5** Finance-Specific Sentiment | **DONE** | Replaced generic AFINN with ~200-word finance lexicon (unigrams + 100+ bigram phrases). Negation handling ("not good" flips score). Positional weighting (headline start matters more). Covers beat/miss estimates, guidance raised/lowered, SEC investigation, dividend changes, etc. |
+| **M14b** Earnings Date ETL | **DONE** | Added `earningsDate` field from Yahoo v7 `earningsTimestamp`. Flows through to frontend Earnings Calendar and StockDetail fundamentals grid. |
+
 ### Remaining Next Priorities
 
-1. **Q11 — Portfolio Tracker** — Let users input their holdings (ticker + shares + buy price). Show portfolio performance, P&L, allocation pie chart.
-2. **M5 — CAN SLIM Composite** — Implement William O'Neil's CAN SLIM screen (Current earnings, Annual earnings, New product/price, Supply/demand, Leader/laggard, Institutional sponsorship, Market direction).
-3. **M14 — Earnings Calendar** — Fetch upcoming earnings dates. Show countdown on StockDetail, highlight stocks reporting this week.
-4. **L2 — Multi-Year Revenue/Earnings Charts** — Use the financial statements data to chart revenue and EPS trends over 4 years. Visual growth trajectory.
-5. **L3 — Relative Valuation (DCF Lite)** — Simple discounted cash flow model using operating cash flow + growth rate. Show intrinsic value estimate alongside Graham Number.
-6. **L4 — Custom Screening Builder** — Let users create custom screens by combining any metrics with AND/OR logic. Save and name custom screens.
-7. **L5 — AI-Enhanced Sentiment** — Replace AFINN with FinBERT or LLM-based analysis for more accurate news sentiment scoring.
-8. **L6 — Backtest Engine** — Archive daily snapshots and backtest scoring strategies against historical performance.
+1. **L2 — Multi-Year Revenue/Earnings Charts** — Use financial statements data to chart revenue and EPS trends over 4 years. Requires ETL to output `data/financials.json` with annual income statement data.
+2. **Q12 — Stock Comparison Charts** — Add mini sparkline charts to the Compare page showing price trends side-by-side.
+3. **Q13 — Export to CSV** — Allow users to export screener/custom screen results as CSV files.
+4. **M16 — Sector Rotation Model** — Identify sectors in rotation (improving RS) vs falling out of favour. Visual sector momentum chart.
+5. **L7 — Options Flow Integration** — Surface unusual options activity data to identify institutional positioning ahead of moves.
+6. **Q14 — Dark/Light Chart Themes** — Ensure all SVG charts (pie, gauge, radar) properly theme with dark/light mode.
+7. **M17 — Correlation Matrix** — Show cross-correlation of returns between portfolio holdings or watchlist stocks.
+8. **L8 — AI Stock Summaries** — Use LLM to generate natural-language stock summaries combining score, signals, and fundamentals.
 
 ---
 

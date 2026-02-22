@@ -115,6 +115,9 @@ export interface StockRecord {
   grahamNumber: number | null;
   buffettScore: number | null;
   buffettDetails: string[];
+  // Earnings & valuation
+  earningsDate: string | null;
+  dcfValue: number | null;
 }
 
 export interface OhlcvData {

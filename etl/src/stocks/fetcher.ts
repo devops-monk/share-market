@@ -57,6 +57,7 @@ export interface QuoteData {
   totalCash: number | null;
   operatingCashflow: number | null;
   averageAnalystRating: string | null;
+  earningsDate: string | null;
 }
 
 function classifyCap(marketCap: number): 'Small' | 'Mid' | 'Large' {
@@ -160,6 +161,7 @@ interface YahooFundamentals {
   sharesOutstanding: number | null;
   dividendYield: number | null;
   averageAnalystRating: string | null;
+  earningsTimestamp: number | null;
 }
 
 interface QuoteSummaryData {
@@ -268,6 +270,7 @@ async function fetchYahooFundamentalsBatch(tickers: string[]): Promise<Map<strin
             sharesOutstanding: q.sharesOutstanding ?? null,
             dividendYield: q.dividendYield != null ? q.dividendYield / 100 : null,
             averageAnalystRating: q.averageAnalystRating ?? null,
+            earningsTimestamp: q.earningsTimestamp?.[0] ?? q.earningsTimestampStart ?? null,
           });
         }
         break; // success
@@ -367,6 +370,7 @@ interface Fundamentals {
   sharesOutstanding: number | null;
   dividendYield: number | null;
   averageAnalystRating: string | null;
+  earningsTimestamp: number | null;
 }
 
 function parseFinvizNumber(val: string): number | null {
@@ -430,6 +434,7 @@ async function fetchFinvizFundamentals(ticker: string): Promise<Fundamentals | n
       sharesOutstanding: null,
       dividendYield: null,
       averageAnalystRating: null,
+      earningsTimestamp: null,
     };
   } catch {
     return null;
@@ -508,6 +513,7 @@ export async function fetchAllStocks(stocks: StockMeta[]): Promise<QuoteData[]> 
             sharesOutstanding: existing?.sharesOutstanding ?? null,
             dividendYield: existing?.dividendYield ?? null,
             averageAnalystRating: existing?.averageAnalystRating ?? null,
+            earningsTimestamp: existing?.earningsTimestamp ?? null,
           });
         }
         if ((idx + 1) % 50 === 0) {
@@ -590,6 +596,12 @@ export async function fetchAllStocks(stocks: StockMeta[]): Promise<QuoteData[]> 
       heldPercentInstitutions: summary?.heldPercentInstitutions ?? null,
       shortPercentOfFloat: summary?.shortPercentOfFloat ?? null,
       targetMeanPrice: summary?.targetMeanPrice ?? null,
+      earningsDate: (() => {
+        const ts = fundamentals?.earningsTimestamp;
+        if (ts == null) return null;
+        const d = new Date(ts * 1000);
+        return d.toISOString().slice(0, 10);
+      })(),
     });
   }
 
