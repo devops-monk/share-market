@@ -32,6 +32,14 @@ jobs:
         timeout-minutes: 10
         run: npm run etl
 
+      - name: Check and send alerts
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: npm run alerts
+        continue-on-error: true
+
       - name: Archive daily snapshot
         run: |
           mkdir -p data/archive

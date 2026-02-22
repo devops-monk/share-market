@@ -4,6 +4,7 @@
   "workspaces": ["etl", "dashboard"],
   "scripts": {
     "etl": "npm run start --workspace=etl",
+    "alerts": "npm run alerts --workspace=etl",
     "dev": "npm run dev --workspace=dashboard",
     "build": "npm run build --workspace=dashboard"
   }

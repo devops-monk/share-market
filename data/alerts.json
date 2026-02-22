@@ -1,0 +1,20 @@
+{
+  "rules": [
+    {
+      "id": "example-1",
+      "type": "price_above",
+      "ticker": "AAPL",
+      "threshold": 250,
+      "enabled": false,
+      "note": "Example: alert when AAPL goes above $250"
+    },
+    {
+      "id": "example-2",
+      "type": "score_below",
+      "ticker": "*",
+      "threshold": 25,
+      "enabled": false,
+      "note": "Example: alert when ANY stock score drops below 25"
+    }
+  ]
+}

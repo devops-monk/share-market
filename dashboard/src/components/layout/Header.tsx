@@ -41,6 +41,7 @@ const navGroups: NavGroup[] = [
     label: 'More',
     items: [
       { path: '/news', label: 'News', desc: 'Headlines with sentiment scores' },
+      { path: '/alerts', label: 'Alerts', desc: 'Configure Telegram price alerts' },
       { path: '/guide', label: 'Guide', desc: 'Learn stock analysis basics' },
     ],
   },
