@@ -42,10 +42,29 @@ async function main() {
 
   // Step 3: Process each stock (CPU-only, fast)
   console.log('Computing indicators and scores...');
-  const stockRecords: StockRecord[] = [];
 
+  // First pass: compute technicals and collect returns for RS percentile
+  const stockTechData: { quote: typeof quotes[0]; tech: ReturnType<typeof computeTechnicals> }[] = [];
   for (const quote of quotes) {
     const tech = computeTechnicals(quote);
+    stockTechData.push({ quote, tech });
+  }
+
+  // Compute RS percentile: weighted 1-year return (40% latest quarter, 20% each prior)
+  const rsReturns = stockTechData.map(({ tech }, i) => ({
+    idx: i,
+    rs: tech.priceReturn3m * 0.4 + tech.priceReturn6m * 0.3 + tech.priceReturn1y * 0.3,
+  }));
+  const sortedRs = [...rsReturns].sort((a, b) => a.rs - b.rs);
+  const rsPercentiles = new Map<number, number>();
+  sortedRs.forEach((item, rank) => {
+    rsPercentiles.set(item.idx, Math.round(((rank + 1) / sortedRs.length) * 99));
+  });
+
+  const stockRecords: StockRecord[] = [];
+
+  for (let i = 0; i < stockTechData.length; i++) {
+    const { quote, tech } = stockTechData[i];
     const signals = detectSignals(tech, quote);
     const bearishScore = computeBearishScore(signals);
     const bullishScore = computeBullishScore(signals);
@@ -53,6 +72,62 @@ async function main() {
     const stockNews = allNews.filter(n => n.ticker === quote.ticker);
     const sentimentAvg = averageSentiment(stockNews);
     const score = computeScore(quote, tech, signals, sentimentAvg);
+
+    // 52W range position (0-100)
+    const range = quote.fiftyTwoWeekHigh - quote.fiftyTwoWeekLow;
+    const fiftyTwoWeekRangePercent = range > 0
+      ? Math.round(((quote.price - quote.fiftyTwoWeekLow) / range) * 100)
+      : 50;
+
+    // Accumulation/Distribution rating (A-E)
+    const ad = tech.accumulationDistribution;
+    const accDistRating = ad == null ? 'C'
+      : ad > 0.3 ? 'A' : ad > 0.1 ? 'B' : ad > -0.1 ? 'C' : ad > -0.3 ? 'D' : 'E';
+
+    // Style classification
+    const pe = quote.pe;
+    const eg = quote.earningsGrowth;
+    let styleClassification = 'Blend';
+    if (pe != null && pe > 0 && pe < 15 && (eg == null || eg < 0.15)) {
+      styleClassification = 'Value';
+    } else if ((eg != null && eg > 0.2) || (pe != null && pe > 30)) {
+      styleClassification = 'Growth';
+    }
+
+    // Data completeness
+    const fundamentalFields = [
+      quote.pe, quote.forwardPe, quote.earningsGrowth, quote.revenueGrowth,
+      quote.beta, quote.priceToBook, quote.returnOnEquity, quote.grossMargins,
+      quote.debtToEquity, quote.freeCashflow, quote.enterpriseValue, quote.ebitda,
+      quote.dividendYield, quote.trailingEps, quote.operatingMargins,
+    ];
+    const filledCount = fundamentalFields.filter(v => v != null).length;
+    const dataCompleteness = Math.round((filledCount / fundamentalFields.length) * 100);
+
+    // Minervini trend template checks
+    const rsP = rsPercentiles.get(i) ?? 50;
+    const priceAbove150and200 = (tech.sma150 != null && tech.sma200 != null)
+      ? quote.price > tech.sma150 && quote.price > tech.sma200 : false;
+    const sma150Above200 = (tech.sma150 != null && tech.sma200 != null)
+      ? tech.sma150 > tech.sma200 : false;
+    const sma200Trending = tech.sma200Slope != null ? tech.sma200Slope > 0 : false;
+    const sma50Above150and200 = (tech.sma50 != null && tech.sma150 != null && tech.sma200 != null)
+      ? tech.sma50 > tech.sma150 && tech.sma50 > tech.sma200 : false;
+    const priceAbove50 = tech.sma50 != null ? quote.price > tech.sma50 : false;
+    const price30PctAboveLow = quote.fiftyTwoWeekLow > 0
+      ? quote.price >= quote.fiftyTwoWeekLow * 1.3 : false;
+    const priceWithin25PctOfHigh = quote.fiftyTwoWeekHigh > 0
+      ? quote.price >= quote.fiftyTwoWeekHigh * 0.75 : false;
+    const rsAbove70 = rsP >= 70;
+
+    const minerviniChecks = {
+      priceAbove150and200, sma150Above200, sma200Trending,
+      sma50Above150and200, priceAbove50, price30PctAboveLow,
+      priceWithin25PctOfHigh, rsAbove70,
+      passed: [priceAbove150and200, sma150Above200, sma200Trending,
+        sma50Above150and200, priceAbove50, price30PctAboveLow,
+        priceWithin25PctOfHigh, rsAbove70].filter(Boolean).length,
+    };
 
     stockRecords.push({
       ticker: quote.ticker,
@@ -76,8 +151,10 @@ async function main() {
       rsi: tech.rsi,
       macdHistogram: tech.macd?.histogram ?? null,
       sma50: tech.sma50,
+      sma150: tech.sma150,
       sma200: tech.sma200,
       sma20: tech.sma20,
+      sma200Slope: tech.sma200Slope,
       bollingerUpper: tech.bollinger?.upper ?? null,
       bollingerLower: tech.bollinger?.lower ?? null,
       bollingerBandwidth: tech.bollinger?.bandwidth ?? null,
@@ -90,12 +167,48 @@ async function main() {
       volumeRatio: tech.volumeRatio,
       priceReturn3m: tech.priceReturn3m,
       priceReturn6m: tech.priceReturn6m,
+      priceReturn1y: tech.priceReturn1y,
       volatility: tech.volatility,
       signals,
       bearishScore,
       bullishScore,
       sentimentAvg,
       score,
+      // Expanded fundamentals
+      priceToBook: quote.priceToBook,
+      pegRatio: quote.pegRatio,
+      enterpriseValue: quote.enterpriseValue,
+      profitMargins: quote.profitMargins,
+      grossMargins: quote.grossMargins,
+      operatingMargins: quote.operatingMargins,
+      returnOnEquity: quote.returnOnEquity,
+      returnOnAssets: quote.returnOnAssets,
+      debtToEquity: quote.debtToEquity,
+      currentRatio: quote.currentRatio,
+      dividendYield: quote.dividendYield,
+      trailingEps: quote.trailingEps,
+      forwardEps: quote.forwardEps,
+      bookValue: quote.bookValue,
+      sharesOutstanding: quote.sharesOutstanding,
+      heldPercentInsiders: quote.heldPercentInsiders,
+      heldPercentInstitutions: quote.heldPercentInstitutions,
+      shortPercentOfFloat: quote.shortPercentOfFloat,
+      targetMeanPrice: quote.targetMeanPrice,
+      freeCashflow: quote.freeCashflow,
+      totalRevenue: quote.totalRevenue,
+      totalDebt: quote.totalDebt,
+      ebitda: quote.ebitda,
+      totalCash: quote.totalCash,
+      operatingCashflow: quote.operatingCashflow,
+      averageAnalystRating: quote.averageAnalystRating,
+      // Computed metrics
+      rsPercentile: rsP,
+      fiftyTwoWeekRangePercent,
+      weeklyHighLowRange: tech.weeklyHighLowRange,
+      accDistRating,
+      styleClassification,
+      dataCompleteness,
+      minerviniChecks,
     });
   }
 

@@ -131,6 +131,36 @@ function BasicsTab({ onNext }: { onNext: () => void }) {
             definition="The overall mood around a stock based on news headlines. Positive sentiment = good news coverage."
             example="Score from -1 (very negative) to +1 (very positive). 0 = neutral."
           />
+          <ConceptCard
+            term="RS Percentile (Relative Strength)"
+            definition="Ranks a stock's price performance against all other stocks. 99 = top performer, 1 = worst. Weighted: 40% 3-month, 30% 6-month, 30% 1-year returns."
+            example="RS 90 = this stock outperformed 90% of all stocks tracked."
+          />
+          <ConceptCard
+            term="ROE (Return on Equity)"
+            definition="How much profit a company generates per dollar of shareholder equity. Higher = more efficient use of capital."
+            example="ROE of 20% means the company earns $0.20 for every $1 of equity."
+          />
+          <ConceptCard
+            term="PEG Ratio"
+            definition="P/E ratio divided by earnings growth rate. Adjusts valuation for growth. PEG < 1 = potentially undervalued given its growth."
+            example="P/E of 30 with 30% growth = PEG of 1.0 (fairly valued for growth)."
+          />
+          <ConceptCard
+            term="Profit Margins"
+            definition="How much of each dollar of revenue a company keeps as profit. Gross, operating, and net margins each show different layers."
+            example="Gross Margin 60% = company keeps 60 cents of every dollar after cost of goods."
+          />
+          <ConceptCard
+            term="Style Classification"
+            definition="Categorises stocks as Value (low P/E, underpriced), Growth (high earnings growth, higher P/E), or Blend (mix of both)."
+            example="A stock with P/E < 15 and low growth = Value. High earnings growth + high P/E = Growth."
+          />
+          <ConceptCard
+            term="Accumulation / Distribution"
+            definition="Rated A to E based on 13-week volume patterns. A/B = institutions buying (bullish). D/E = institutions selling (bearish)."
+            example="Rating A = strong institutional buying over the past quarter."
+          />
         </div>
       </Section>
 
@@ -269,6 +299,48 @@ function DashboardTab() {
             desc="Recent headlines with AI-scored sentiment. See what the news is saying about each stock."
             when="Use this to validate your picks and spot breaking developments."
           />
+          <PageCard
+            name="Heat Map"
+            path="/heatmap"
+            desc="Visual overview of all stocks grouped by sector. Rectangle size shows market cap, colour shows daily change. Spot sector trends at a glance."
+            when="Use for a quick visual pulse on which sectors are hot or cold."
+          />
+          <PageCard
+            name="Sectors"
+            path="/sectors"
+            desc="Sector-level analysis with average scores, change %, and top stocks per sector. Compare sector performance side by side."
+            when="Use to identify strong sectors before drilling into individual stocks."
+          />
+          <PageCard
+            name="Minervini Screen"
+            path="/minervini"
+            desc="Filters stocks using Mark Minervini's 8-criteria SEPA trend template. Only stocks in a confirmed Stage 2 uptrend pass all checks."
+            when="Use to find stocks with the strongest technical setups for momentum breakouts."
+          />
+          <PageCard
+            name="Buy the Dip"
+            path="/dip"
+            desc="Identifies oversold stocks with low RSI and price near Bollinger lower band. Ranks dip candidates by combined oversold signals."
+            when="Use during market pullbacks to find quality stocks at temporarily low prices."
+          />
+          <PageCard
+            name="Breakout Detection"
+            path="/breakout"
+            desc="Finds stocks with Bollinger Band squeezes and volume surges. Detects stocks about to make a big move after a quiet period."
+            when="Use to catch stocks at the start of a new price move."
+          />
+          <PageCard
+            name="Compare"
+            path="/compare"
+            desc="Side-by-side comparison of 2-4 stocks. Highlights the best value for each metric across price, fundamentals, technicals, and momentum."
+            when="Use to choose between similar stocks or compare peers in the same sector."
+          />
+          <PageCard
+            name="Watchlist"
+            path="/watchlist"
+            desc="Save stocks you're monitoring. Persisted in your browser so it survives page refreshes. Add/remove stocks with one click."
+            when="Use to track stocks you're interested in without cluttering your portfolio."
+          />
         </div>
       </Section>
     </div>
@@ -317,10 +389,11 @@ function IndicatorsTab() {
         </Tip>
       </Section>
 
-      <Section title="Moving Averages (SMA 50 & SMA 200)" icon="A">
+      <Section title="Moving Averages (SMA 20, 50, 150 & 200)" icon="A">
         <p className="t-tertiary text-sm mb-3">
           A <strong className="t-primary">Simple Moving Average (SMA)</strong> smooths out price data over a period.
-          SMA50 = average price over last 50 days. SMA200 = average over last 200 days. These act like support and resistance levels.
+          We track four: SMA20 (short-term), SMA50 (medium), SMA150 (intermediate), and SMA200 (long-term).
+          These act like support and resistance levels.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <SignalExample direction="bullish" title="Golden Cross" desc="SMA50 crosses ABOVE SMA200. This is one of the most widely watched bullish signals in investing. Often marks the start of a major uptrend." />
@@ -329,16 +402,20 @@ function IndicatorsTab() {
         <div className="mt-3 p-3 rounded-lg bg-surface-hover border border-surface-border">
           <p className="text-xs t-tertiary mb-2"><strong className="t-secondary">Price Alignment (strongest signal):</strong></p>
           <div className="flex items-center gap-2 text-xs">
-            <span className="text-bullish font-mono">Price {'>'} SMA50 {'>'} SMA200</span>
+            <span className="text-bullish font-mono">Price {'>'} SMA50 {'>'} SMA150 {'>'} SMA200</span>
             <span className="t-faint">=</span>
-            <span className="t-secondary">Strong uptrend. All averages confirm the move.</span>
+            <span className="t-secondary">Strong uptrend (Minervini Stage 2). All averages confirm the move.</span>
           </div>
           <div className="flex items-center gap-2 text-xs mt-1">
-            <span className="text-bearish font-mono">Price {'<'} SMA50 {'<'} SMA200</span>
+            <span className="text-bearish font-mono">Price {'<'} SMA50 {'<'} SMA150 {'<'} SMA200</span>
             <span className="t-faint">=</span>
             <span className="t-secondary">Strong downtrend. Avoid or sell.</span>
           </div>
         </div>
+        <Tip>
+          The <strong className="t-primary">SMA 150</strong> is key to Mark Minervini's trend template.
+          When Price {'>'} SMA50 {'>'} SMA150 {'>'} SMA200 and SMA200 is trending up, the stock is in a Stage 2 uptrend — the best phase for buying.
+        </Tip>
       </Section>
 
       <Section title="Bollinger Bands — Volatility Channels" icon="B">
@@ -421,6 +498,47 @@ function IndicatorsTab() {
           that retail investors often miss. Pay close attention when you see these signals.
         </Tip>
       </Section>
+
+      <Section title="Accumulation / Distribution Rating" icon="D">
+        <p className="t-tertiary text-sm mb-3">
+          The <strong className="t-primary">Acc/Dist Rating</strong> (A through E) measures institutional buying vs selling
+          over the past 13 weeks by comparing up-volume days to down-volume days.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <IndicatorCard title="Rating A / B" desc="Heavy institutional buying (accumulation). Up-volume significantly outweighs down-volume. Very bullish for the stock." signal="bullish" />
+          <IndicatorCard title="Rating C" desc="Balanced buying and selling. Institutions are neutral — no strong conviction either way." signal="neutral" />
+          <IndicatorCard title="Rating D / E" desc="Heavy institutional selling (distribution). Down-volume outweighs up-volume. Bearish — smart money is exiting." signal="bearish" />
+        </div>
+      </Section>
+
+      <Section title="Fundamental Metrics" icon="F">
+        <p className="t-tertiary text-sm mb-3">
+          Beyond technical indicators, the dashboard now tracks <strong className="t-primary">expanded fundamentals</strong> for each stock.
+          These help you understand the company's financial health, not just its price action.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <ConceptCard
+            term="ROE & ROA"
+            definition="Return on Equity and Return on Assets measure how efficiently the company uses capital. Higher is better."
+            example="ROE > 15% is generally considered good. ROA > 5% shows efficient asset use."
+          />
+          <ConceptCard
+            term="Debt-to-Equity"
+            definition="Total debt divided by shareholder equity. Shows how leveraged the company is. Lower = less risk."
+            example="D/E of 0.5 = moderate debt. D/E > 2.0 = heavily leveraged."
+          />
+          <ConceptCard
+            term="Profit Margins (Gross / Operating / Net)"
+            definition="How much of revenue the company keeps as profit at each stage. Gross > Operating > Net."
+            example="Gross 60%, Operating 25%, Net 18% = healthy and profitable."
+          />
+          <ConceptCard
+            term="Free Cash Flow"
+            definition="Cash generated after all expenses and investments. Positive FCF = the company generates real cash, not just accounting profits."
+            example="Companies with strong FCF can fund growth, pay dividends, and buy back shares."
+          />
+        </div>
+      </Section>
     </div>
   );
 }
@@ -431,7 +549,7 @@ function StrategiesTab() {
     <div className="space-y-6">
       <div className="card p-4 bg-accent/5 border-accent/20">
         <p className="text-sm t-secondary leading-relaxed">
-          Below are four proven strategies you can use with this dashboard. Start with
+          Below are six proven strategies you can use with this dashboard. Start with
           <strong className="t-primary"> Momentum</strong> (easiest) and progress to the others
           as you get comfortable reading the indicators.
         </p>
@@ -483,6 +601,38 @@ function StrategiesTab() {
         ]}
         when="Works in any market condition. Squeezes happen regularly across all stocks."
         risk="Not all breakouts succeed. About 40% are 'false breakouts' that reverse — hence the stop-loss."
+      />
+
+      <StrategyCard
+        name="Minervini SEPA Trend Template"
+        difficulty="Advanced"
+        diffColor="text-accent-light"
+        goal="Find stocks in a confirmed Stage 2 uptrend using Mark Minervini's 8-point checklist — the setup used by US Investing Champion winners."
+        steps={[
+          { action: 'Go to Minervini Screen', detail: 'This page pre-filters stocks through all 8 criteria. Stocks passing 7-8 checks are prime candidates.', page: '/minervini' },
+          { action: 'Check the 8 criteria', detail: 'Price > 150 & 200 SMA, SMA150 > SMA200, SMA200 trending up, SMA50 > SMA150 & SMA200, Price > SMA50, Price 30%+ above 52W low, Price within 25% of 52W high, RS Percentile > 70.' },
+          { action: 'Confirm volume', detail: 'Look for Acc/Dist rating of A or B — institutional accumulation supporting the trend.' },
+          { action: 'Look for a base pattern', detail: 'On the stock detail page, check the weekly high-low range (consolidation %). Tight consolidation (< 15%) near highs = building a launchpad.' },
+          { action: 'Enter on breakout', detail: 'Buy when the stock breaks out of the consolidation with volume > 1.5x average. Set stop-loss at the base low.' },
+        ]}
+        when="Best during bull markets and sector rotations. Minervini stocks are leaders — they outperform in strong markets."
+        risk="These high-RS stocks can drop sharply when the broad market turns. Always use a stop-loss (typically 7-8% below entry)."
+      />
+
+      <StrategyCard
+        name="Fundamental Quality Screen"
+        difficulty="Intermediate"
+        diffColor="text-neutral"
+        goal="Find financially healthy companies using key fundamental metrics — ROE, margins, cash flow, and reasonable valuation."
+        steps={[
+          { action: 'Start with Screener', detail: 'Sort by Composite Score. Then click into each candidate to check the Fundamentals section on the detail page.', page: '/screener' },
+          { action: 'Check profitability', detail: 'ROE > 15%, Profit Margin > 10%, Positive Free Cash Flow. These show a company that consistently generates real profits.' },
+          { action: 'Assess valuation', detail: 'P/E reasonable for the sector (< 25 for value, or PEG < 1.5 for growth). Compare to sector average on the Sectors page.', page: '/sectors' },
+          { action: 'Check financial health', detail: 'Debt-to-Equity < 1.5, Current Ratio > 1.0. Low debt and enough cash to cover short-term obligations.' },
+          { action: 'Compare peers', detail: 'Use the Compare page to put 2-3 similar stocks side by side. The best metrics are highlighted green.', page: '/compare' },
+        ]}
+        when="Works in all market conditions. Quality companies with strong fundamentals tend to outperform over the long term."
+        risk="Even great companies can be overvalued. Always check P/E and PEG to ensure you're not overpaying."
       />
 
       <StrategyCard

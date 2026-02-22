@@ -10,6 +10,11 @@ import StockDetail from './pages/StockDetail';
 import Guide from './pages/Guide';
 import BuyTheDip from './pages/BuyTheDip';
 import BreakoutDetection from './pages/BreakoutDetection';
+import HeatMap from './pages/HeatMap';
+import SectorPerformance from './pages/SectorPerformance';
+import MinerviniScreen from './pages/MinerviniScreen';
+import StockComparison from './pages/StockComparison';
+import Watchlist from './pages/Watchlist';
 
 export default function App() {
   const { stocks, summary, bearishAlerts, news, metadata, loading } = useStockData();
@@ -51,6 +56,11 @@ export default function App() {
           <Route path="/stock/:ticker" element={<StockDetail stocks={stocks} news={news} />} />
           <Route path="/dip" element={<BuyTheDip stocks={stocks} />} />
           <Route path="/breakout" element={<BreakoutDetection stocks={stocks} />} />
+          <Route path="/heatmap" element={<HeatMap stocks={stocks} />} />
+          <Route path="/sectors" element={<SectorPerformance stocks={stocks} />} />
+          <Route path="/minervini" element={<MinerviniScreen stocks={stocks} />} />
+          <Route path="/compare" element={<StockComparison stocks={stocks} />} />
+          <Route path="/watchlist" element={<Watchlist stocks={stocks} />} />
           <Route path="/guide" element={<Guide />} />
         </Routes>
       </main>

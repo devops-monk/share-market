@@ -57,6 +57,22 @@ const columns = [
       return <span className={`font-mono tabular-nums ${color}`}>{v.toFixed(1)}</span>;
     },
   }),
+  col.accessor('rsPercentile', {
+    header: 'RS',
+    cell: info => {
+      const v = info.getValue();
+      const color = v >= 80 ? 'text-bullish' : v >= 50 ? 't-secondary' : 'text-bearish';
+      return <span className={`font-mono tabular-nums ${color}`}>{v}</span>;
+    },
+  }),
+  col.accessor('styleClassification', {
+    header: 'Style',
+    cell: info => {
+      const v = info.getValue();
+      const color = v === 'Growth' ? 'text-accent-light' : v === 'Value' ? 'text-bullish' : 'text-neutral';
+      return <span className={`text-xs font-medium ${color}`}>{v}</span>;
+    },
+  }),
   col.accessor('sentimentAvg', {
     header: 'Sentiment',
     cell: info => {
@@ -64,6 +80,14 @@ const columns = [
       if (v == null) return <span className="t-faint">--</span>;
       const color = v > 0.1 ? 'text-bullish' : v < -0.1 ? 'text-bearish' : 'text-neutral';
       return <span className={`font-mono tabular-nums ${color}`}>{v.toFixed(2)}</span>;
+    },
+  }),
+  col.accessor('dataCompleteness', {
+    header: 'Data %',
+    cell: info => {
+      const v = info.getValue();
+      const color = v >= 80 ? 'text-bullish' : v >= 50 ? 'text-neutral' : 'text-bearish';
+      return <span className={`font-mono tabular-nums text-xs ${color}`}>{v}%</span>;
     },
   }),
 ];
@@ -75,18 +99,39 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
   const [capFilter, setCapFilter] = useState<string>('all');
 
   const [search, setSearch] = useState('');
+  const [styleFilter, setStyleFilter] = useState<string>('all');
 
   const filtered = useMemo(() => {
     return stocks.filter(s => {
       if (marketFilter !== 'all' && s.market !== marketFilter) return false;
       if (capFilter !== 'all' && s.capCategory !== capFilter) return false;
+      if (styleFilter !== 'all' && s.styleClassification !== styleFilter) return false;
       if (search) {
         const q = search.toLowerCase();
         if (!s.ticker.toLowerCase().includes(q) && !s.name.toLowerCase().includes(q)) return false;
       }
       return true;
     });
-  }, [stocks, marketFilter, capFilter, search]);
+  }, [stocks, marketFilter, capFilter, styleFilter, search]);
+
+  const exportCsv = () => {
+    const headers = ['Ticker','Name','Market','Cap','Style','Price','Change%','Score','RS','RSI','P/E','ROE','Sentiment'];
+    const rows = filtered.map(s => [
+      s.ticker, s.name, s.market, s.capCategory, s.styleClassification,
+      s.price.toFixed(2), s.changePercent.toFixed(2), s.score.composite,
+      s.rsPercentile, s.rsi?.toFixed(1) ?? '', s.pe?.toFixed(1) ?? '',
+      s.returnOnEquity != null ? (s.returnOnEquity * 100).toFixed(1) : '',
+      s.sentimentAvg.toFixed(3),
+    ]);
+    const csv = [headers, ...rows].map(r => r.join(',')).join('\n');
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `screener-${new Date().toISOString().slice(0,10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
 
   // Reset to first page when filters change
   const resetPage = () => setPagination(p => ({ ...p, pageIndex: 0 }));
@@ -138,7 +183,23 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
             <option value="Mid">Mid Cap</option>
             <option value="Small">Small Cap</option>
           </select>
-          <div className="ml-auto">
+          <select
+            value={styleFilter}
+            onChange={e => { setStyleFilter(e.target.value); resetPage(); }}
+            className="input-field"
+          >
+            <option value="all">All Styles</option>
+            <option value="Value">Value</option>
+            <option value="Blend">Blend</option>
+            <option value="Growth">Growth</option>
+          </select>
+          <div className="ml-auto flex items-center gap-2">
+            <button
+              onClick={exportCsv}
+              className="badge bg-accent/15 text-accent-light ring-1 ring-accent/20 hover:bg-accent/25 transition-colors cursor-pointer text-xs px-3 py-1.5"
+            >
+              Export CSV
+            </button>
             <span className="badge bg-surface-tertiary t-secondary ring-1 ring-surface-border">
               {filtered.length} stocks
             </span>

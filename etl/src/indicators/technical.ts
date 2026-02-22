@@ -19,17 +19,22 @@ export interface TechnicalData {
   rsi: number | null;
   macd: { MACD: number; signal: number; histogram: number } | null;
   sma50: number | null;
+  sma150: number | null;
   sma200: number | null;
   sma20: number | null;
+  sma200Slope: number | null;  // slope of SMA200 over last 20 days
   volumeRatio: number;
   priceReturn3m: number;
   priceReturn6m: number;
+  priceReturn1y: number;
   volatility: number;
   bollinger: BollingerData | null;
   stochastic: StochasticData | null;
   obv: number | null;
-  obvTrend: 'rising' | 'falling' | 'flat' | null;  // 20-day OBV trend
-  obvDivergence: 'bullish' | 'bearish' | null;      // price vs OBV divergence
+  obvTrend: 'rising' | 'falling' | 'flat' | null;
+  obvDivergence: 'bullish' | 'bearish' | null;
+  weeklyHighLowRange: number | null;  // consolidation detection: 6-week range %
+  accumulationDistribution: number | null; // 13-week up-volume vs down-volume ratio
 }
 
 export function computeTechnicals(quote: QuoteData): TechnicalData {
@@ -62,10 +67,12 @@ export function computeTechnicals(quote: QuoteData): TechnicalData {
     }
   }
 
-  // SMA 20, 50, 200
+  // SMA 20, 50, 150, 200
   let sma20: number | null = null;
   let sma50: number | null = null;
+  let sma150: number | null = null;
   let sma200: number | null = null;
+  let sma200Slope: number | null = null;
   if (closes.length >= 20) {
     const sma20Values = SMA.calculate({ values: closes, period: 20 });
     sma20 = sma20Values[sma20Values.length - 1] ?? null;
@@ -74,9 +81,19 @@ export function computeTechnicals(quote: QuoteData): TechnicalData {
     const sma50Values = SMA.calculate({ values: closes, period: 50 });
     sma50 = sma50Values[sma50Values.length - 1] ?? null;
   }
+  if (closes.length >= 150) {
+    const sma150Values = SMA.calculate({ values: closes, period: 150 });
+    sma150 = sma150Values[sma150Values.length - 1] ?? null;
+  }
   if (closes.length >= 200) {
     const sma200Values = SMA.calculate({ values: closes, period: 200 });
     sma200 = sma200Values[sma200Values.length - 1] ?? null;
+    // SMA200 slope: compare current SMA200 vs 20 days ago
+    if (sma200Values.length >= 21) {
+      const current = sma200Values[sma200Values.length - 1];
+      const past = sma200Values[sma200Values.length - 21];
+      sma200Slope = (current - past) / past;
+    }
   }
 
   // Bollinger Bands (20-period, 2 std dev)
@@ -177,6 +194,9 @@ export function computeTechnicals(quote: QuoteData): TechnicalData {
     : closes.length >= 2
       ? (closes[closes.length - 1] - closes[0]) / closes[0]
       : 0;
+  const priceReturn1y = closes.length >= 252
+    ? (closes[closes.length - 1] - closes[closes.length - 252]) / closes[closes.length - 252]
+    : priceReturn6m;
 
   // Volatility (std dev of daily returns over last 30 days)
   let volatility = 0;
@@ -191,9 +211,33 @@ export function computeTechnicals(quote: QuoteData): TechnicalData {
     volatility = Math.sqrt(variance) * Math.sqrt(252);
   }
 
+  // Consolidation detection: 6-week (30 trading day) high-low range as %
+  let weeklyHighLowRange: number | null = null;
+  if (closes.length >= 30) {
+    const recent30 = closes.slice(-30);
+    const high30 = Math.max(...recent30);
+    const low30 = Math.min(...recent30);
+    weeklyHighLowRange = low30 > 0 ? (high30 - low30) / low30 : null;
+  }
+
+  // Accumulation/Distribution: 13-week (65 trading day) up-volume vs down-volume
+  let accumulationDistribution: number | null = null;
+  if (closes.length >= 66 && volumes.length >= 66) {
+    const len = Math.min(closes.length, volumes.length);
+    let upVol = 0, downVol = 0;
+    const start = Math.max(1, len - 65);
+    for (let i = start; i < len; i++) {
+      if (closes[i] > closes[i - 1]) upVol += volumes[i];
+      else if (closes[i] < closes[i - 1]) downVol += volumes[i];
+    }
+    const totalVol = upVol + downVol;
+    accumulationDistribution = totalVol > 0 ? (upVol - downVol) / totalVol : 0;
+  }
+
   return {
-    rsi, macd, sma20, sma50, sma200, volumeRatio,
-    priceReturn3m, priceReturn6m, volatility,
+    rsi, macd, sma20, sma50, sma150, sma200, sma200Slope, volumeRatio,
+    priceReturn3m, priceReturn6m, priceReturn1y, volatility,
     bollinger, stochastic, obv, obvTrend, obvDivergence,
+    weeklyHighLowRange, accumulationDistribution,
   };
 }

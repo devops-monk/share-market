@@ -1,629 +1,545 @@
-# Stock Dashboard Research: Platforms, Prediction Techniques & Improvements
+# Research & Feature Roadmap — StockMarket Dashboard
 
-**Research Date:** February 21, 2026
-
----
-
-## TABLE OF CONTENTS
-
-1. [Similar Free Stock Analysis Dashboards & Tools](#1-similar-free-stock-analysis-dashboards--tools)
-2. [Stock Prediction Techniques Used by Professionals](#2-stock-prediction-techniques-used-by-professionals)
-3. [Specific Improvements for the Current Dashboard](#3-specific-improvements-for-the-current-dashboard)
+> **Date**: 2026-02-22 | **Live**: [share.devops-monk.com](https://share.devops-monk.com)
 
 ---
 
-## 1. SIMILAR FREE STOCK ANALYSIS DASHBOARDS & TOOLS
+## Table of Contents
 
-### 1.1 TradingView
-- **URL:** https://www.tradingview.com
-- **Type:** Commercial (Free tier + Paid)
-- **Key Features:**
-  - Advanced charting with 100+ technical indicators
-  - Dedicated screeners for stocks, forex, bonds, ETFs, crypto
-  - Pattern recognition features (auto-detect chart patterns)
-  - Community-driven ideas and strategies (social trading)
-  - Pine Script for custom indicator creation
-  - Real-time data and alerts
-- **What Makes It Good:** Best-in-class charting, massive community of traders sharing ideas, beginner-friendly UI, cross-asset coverage
-- **Pricing:** Free basic plan | Pro $14.95/mo | Pro+ $29.95/mo | Premium $59.95/mo
-
-### 1.2 Finviz (Financial Visualizations)
-- **URL:** https://finviz.com
-- **Type:** Commercial (Free tier + Paid)
-- **Key Features:**
-  - Lightning-fast stock screener with 60+ filters
-  - Heat maps for market overview (sector, S&P 500, world)
-  - Technical chart patterns detection
-  - Insider trading data
-  - IPO date and outstanding shares filtering (rare feature)
-  - News aggregation per stock
-  - Futures and forex data
-- **What Makes It Good:** Extremely fast screening, powerful visual heat maps, comprehensive filter set including fundamentals + technicals + chart patterns
-- **Pricing:** Free (data delayed 3-5 min) | Finviz Elite $39.50/mo or $299.50/yr (real-time data, backtesting, alerts)
-
-### 1.3 OpenBB
-- **URL:** https://openbb.co
-- **Type:** Open Source (Free)
-- **Key Features:**
-  - Most popular open-source finance project on GitHub
-  - Python-based terminal for financial research
-  - Integrates internal and third-party data sources
-  - Custom stock screener (uses Finviz under the hood)
-  - Can be deployed on-premises or in private cloud
-  - Web-based UI to manage configuration and API keys
-  - Extensible with custom Python scripts and models
-- **What Makes It Good:** Fully open source, incredibly extensible, Python-native (great for quant research), self-hostable for privacy, integrates with dozens of data providers
-- **Pricing:** Free and open source
-
-### 1.4 Yahoo Finance
-- **URL:** https://finance.yahoo.com
-- **Type:** Commercial (Free tier + Paid)
-- **Key Features:**
-  - Stock screener with fundamental and technical filters
-  - ESG/sustainable stock screening (rare free feature)
-  - Portfolio tracking
-  - Real-time quotes and news
-  - Interactive charts with basic technical indicators
-  - Earnings calendar, analyst recommendations
-- **What Makes It Good:** Clean interface, massive data coverage, ESG screening, widely trusted, good for beginners
-- **Pricing:** Free | Yahoo Finance Plus $24.99/mo (enhanced data, advanced charts)
-
-### 1.5 Barchart
-- **URL:** https://www.barchart.com
-- **Type:** Commercial (Free tier + Paid)
-- **Key Features:**
-  - Stock screener by sector, fundamentals, technicals, opinions
-  - Pre-built screens: "100% Buy Signals" (13 technical indicators) and "100% Sell Signals"
-  - Options screener and unusual activity
-  - Signal-based ranking system
-  - Futures and commodities data
-- **What Makes It Good:** Signal aggregation across 13 indicators for bullish/bearish classification, options data included free, comprehensive commodity/futures coverage
-- **Pricing:** Free basic | Barchart Premier (paid, advanced features)
-
-### 1.6 Stock Analysis
-- **URL:** https://stockanalysis.com
-- **Type:** Commercial (Free tier + Paid)
-- **Key Features:**
-  - Clean, uncluttered stock screener
-  - Tooltips explaining complex financial terms
-  - Financial statements (income, balance sheet, cash flow)
-  - IPO calendar
-  - Analyst estimates and ratings
-  - ETF screener
-- **What Makes It Good:** User-friendly, less cluttered than competitors, great for learning (tooltips), solid fundamental data
-- **Pricing:** Free | Pro tier available
-
-### 1.7 Zacks Investment Research
-- **URL:** https://www.zacks.com
-- **Type:** Commercial (Free tier + Paid)
-- **Key Features:**
-  - 130+ data points for screening
-  - Proprietary Zacks Rank (1-5 scale based on earnings revisions)
-  - Earnings estimates, revisions, and surprises data
-  - Style scores (Value, Growth, Momentum, VGM)
-  - Pre-built screens by strategy
-- **What Makes It Good:** Zacks Rank is a proven system focused on earnings revisions (historically one of the strongest predictors of stock performance), deep earnings data
-- **Pricing:** Free basic | Zacks Premium $249/yr
-
-### 1.8 SwingTradeBot
-- **URL:** https://swingtradebot.com
-- **Type:** Commercial (Free tier)
-- **Key Features:**
-  - Bullish and bearish stock screens
-  - Japanese Candlestick pattern detection
-  - Moving average cross signals
-  - Price breakout detection
-  - Consolidation and squeeze detection
-  - Alert system for pattern triggers
-- **What Makes It Good:** Specifically designed for swing traders, focuses on actionable pattern-based signals rather than raw data, clear bullish/bearish categorization
-- **Pricing:** Free basic | Premium available
-
-### 1.9 Intellectia AI
-- **URL:** https://intellectia.ai
-- **Type:** Commercial (Free tier)
-- **Key Features:**
-  - AI-driven stock screener
-  - Natural language query interface (ask questions in plain English)
-  - Real-time market scanning
-  - Bullish/bearish predictions for tomorrow, 1 week, 1 month
-  - Sentiment analysis integration
-- **What Makes It Good:** Natural language interface is revolutionary for non-technical users, AI-driven predictions with time horizons, real-time scanning
-- **Pricing:** Free tier available | Premium for advanced features
-
-### 1.10 WallStreetZen
-- **URL:** https://www.wallstreetzen.com
-- **Type:** Commercial (Free tier + Paid)
-- **Key Features:**
-  - Stock screener with Pass/Fail criteria system
-  - High/Medium/Low qualitative filtering
-  - Pre-built "Stock Ideas" library
-  - AI stock analysis feature
-  - Quantitative and qualitative criteria combined
-  - Zen Score (proprietary overall rating)
-- **What Makes It Good:** Unique Pass/Fail approach simplifies complex analysis, combines quantitative data with qualitative assessment, clean modern UI
-- **Pricing:** Free basic | Premium available
-
-### Notable Open-Source Projects (GitHub)
-
-| Project | Description | Stars |
-|---------|-------------|-------|
-| **Stocksight** (github.com/shirosaidev/stocksight) | Elasticsearch + Twitter + News sentiment analysis | Popular |
-| **Ghostfolio** (github.com/ghostfolio/ghostfolio) | Wealth management (Angular + NestJS + Prisma) | 4k+ |
-| **Wealthfolio** (wealthfolio.app) | Private, offline portfolio tracker with built-in AI | Growing |
+1. [What We Have Today](#1-what-we-have-today)
+2. [Competitive Analysis](#2-competitive-analysis)
+3. [Expert Techniques Gap Analysis](#3-expert-techniques-gap-analysis)
+4. [Current Weaknesses & Improvements](#4-current-weaknesses--improvements)
+5. [Prioritised Feature Roadmap](#5-prioritised-feature-roadmap)
 
 ---
 
-## 2. STOCK PREDICTION TECHNIQUES USED BY PROFESSIONALS
+## 1. What We Have Today
 
-### 2.1 Technical Analysis Methods (Beyond Basic RSI/MACD/SMA)
+### Pages
+| Page | Purpose |
+|------|---------|
+| Overview | Market snapshot — top/bottom performers, avg score, bearish count |
+| Screener | Sortable/filterable table (TanStack React Table) of all 689 stocks |
+| Bearish Alerts | Stocks with bearish score >= 4 |
+| Buy the Dip | Value reversals (RSI < 35, OBV bullish divergence) |
+| Breakout Detection | Bollinger squeeze + volume spike candidates |
+| News & Sentiment | Google News + FinViz headlines with AFINN sentiment |
+| Stock Detail | Per-stock deep dive — gauge, score breakdown, signals, news |
+| Guide | Educational content (4 tabs) |
 
-#### A. Advanced Oscillators & Momentum Indicators
+### Composite Score (0–100)
+| Factor | Weight | Inputs |
+|--------|--------|--------|
+| Momentum | 25% | 3-month + 6-month price returns |
+| Technical Signals | 25% | Net bullish − bearish signal count |
+| Sentiment | 15% | Average AFINN headline score |
+| Fundamentals | 15% | Inverted P/E + earnings growth |
+| Volume Trend | 10% | Current volume / 20-day average |
+| Risk (inverse) | 10% | 1 − (Beta × 0.5 + Volatility × 0.5) |
 
-| Indicator | Description | Use Case |
-|-----------|-------------|----------|
-| **Stochastic Oscillator** | Compares recent close to range of prices over a period; assumes uptrends close near highs, downtrends near lows | Overbought/oversold detection, divergence signals |
-| **Commodity Channel Index (CCI)** | Shows stock's variation from its "typical" price | Trend strength and reversal detection |
-| **ConnorsRSI** | Composite of RSI + Rate of Change + Up/Down Length | Short-term trade signals (more responsive than standard RSI) |
-| **Coppock Curve** | Uses rate-of-change + weighted moving average | Long-term momentum, bottom identification |
-| **Price Momentum Oscillator (PMO)** | Tracks rate of change with smoothing | Advanced momentum measurement |
-| **True Strength Index (TSI)** | Measures trend direction + overbought/oversold | Trend confirmation with fewer false signals |
-| **Vortex Indicator** | Identifies start of new trends | Trend initiation signals |
-| **Williams %R** | Similar to stochastic but inverted scale | Fast overbought/oversold readings |
+### Technical Indicators
+RSI (14), MACD (12/26/9), SMA 20/50/200, Bollinger Bands (20, 2σ), Stochastic (14), OBV, Volatility (30-day annualised), Volume Ratio.
 
-#### B. Volatility & Channel Indicators
+### Signal Types (24 total)
+MA crosses (death/golden cross, MA alignment), RSI overbought/oversold, MACD bullish/bearish, Bollinger squeeze/upper+RSI/lower+RSI, Stochastic bullish/bearish/combo, OBV divergence (bull/bear)/uptrend confirm, volume spike decline/accumulation day, strong/weak momentum, near 52W high/low.
 
-| Indicator | Description | Use Case |
-|-----------|-------------|----------|
-| **Bollinger Bands** | Moving average +/- 2 standard deviations | Volatility measurement, squeeze detection, mean reversion |
-| **Keltner Channels** | ATR-based channels around EMA | Volatility breakouts (especially combined with Bollinger) |
-| **Average True Range (ATR)** | Measures security volatility | Position sizing, stop-loss placement (2x ATR rule) |
-| **Bollinger Band Width** | Measures distance between bands | Squeeze detection (low volatility before breakouts) |
-| **Donchian Channels** | Highest high and lowest low over N periods | Breakout trading (used by Turtle Traders) |
+### Fundamental Metrics
+P/E, Forward P/E, Earnings Growth (EPS Q/Q), Revenue Growth (Sales Q/Q), Beta, Market Cap, Avg Volume.
 
-#### C. Comprehensive/Multi-Component Indicators
-
-| Indicator | Description | Use Case |
-|-----------|-------------|----------|
-| **Ichimoku Cloud** | 5 lines defining support/resistance, trend, momentum + future projections | All-in-one: trend, momentum, support/resistance, AND forward-looking levels (unique) |
-| **Elder Ray Index** | Combines EMA with Bull/Bear Power | Measures buying/selling pressure relative to trend |
-| **TRIX** | Triple-smoothed exponential moving average | Eliminates noise, shows underlying trend momentum |
-
-#### D. Volume-Based Indicators
-
-| Indicator | Description | Use Case |
-|-----------|-------------|----------|
-| **On-Balance Volume (OBV)** | Cumulative volume flow (up days add, down days subtract) | Confirms price trends with volume; divergences signal reversals |
-| **Volume-Weighted Average Price (VWAP)** | Average price weighted by volume | Institutional benchmark, intraday support/resistance |
-| **Accumulation/Distribution Line** | Combines price position within range with volume | Detects institutional buying/selling |
-| **Chaikin Money Flow (CMF)** | Measures accumulation/distribution over a period | Money flow into/out of a security |
-| **Money Flow Index (MFI)** | Volume-weighted RSI | "Volume RSI" - more reliable overbought/oversold signals |
-| **Volume Profile** | Volume distribution at each price level | Identifies high-volume nodes (support/resistance) |
-
-#### E. Chart Pattern Recognition (Automated)
-
-- **Head and Shoulders / Inverse H&S** -- Reversal patterns
-- **Double Top / Double Bottom** -- Reversal patterns
-- **Cup and Handle** -- Continuation pattern
-- **Ascending/Descending Triangles** -- Breakout patterns
-- **Bull/Bear Flags** -- Continuation patterns
-- **Wedges (Rising/Falling)** -- Reversal/continuation patterns
-- **Japanese Candlestick Patterns:** Doji, Engulfing, Hammer, Shooting Star, Morning/Evening Star, Three White Soldiers, Three Black Crows
-
-### 2.2 Fundamental Analysis Approaches
-
-#### A. Core Valuation Metrics
-
-| Metric | Formula | Why It Matters |
-|--------|---------|----------------|
-| **P/E Ratio (Trailing & Forward)** | Price / EPS | Basic valuation; compare against sector peers |
-| **PEG Ratio** | P/E / Expected Growth Rate | Peter Lynch's favorite; accounts for growth (PEG < 1 = undervalued) |
-| **P/FCF (Price to Free Cash Flow)** | Price / FCF per share | Superior to P/E; professionals prefer it because cash flow can't be easily manipulated like earnings |
-| **FCF Yield** | Free Cash Flow / Enterprise Value | Higher = more attractive; best holistic measure of financial health |
-| **EV/EBITDA** | Enterprise Value / EBITDA | Better than P/E for comparing companies with different capital structures |
-| **P/B (Price to Book)** | Price / Book Value per Share | Value investing staple; P/B < 1 may indicate undervaluation |
-| **P/S (Price to Sales)** | Price / Revenue per Share | Useful for unprofitable growth companies |
-| **Dividend Yield** | Annual Dividend / Price | Income investing metric |
-
-#### B. Earnings Quality & Growth Metrics
-
-- **Earnings Revisions** -- Zacks' core insight: stocks with upward earnings revisions tend to outperform. Track analyst estimate changes over 30/60/90 days
-- **Earnings Surprise History** -- Consistent beats suggest management under-promises and over-delivers
-- **Revenue Growth Rate** (YoY, QoQ)
-- **EPS Growth Rate** (YoY, QoQ)
-- **Operating Margin Trend** -- Expanding margins = improving efficiency
-- **Return on Equity (ROE)** -- Measures profitability relative to shareholder equity
-- **Return on Invested Capital (ROIC)** -- Measures how well a company generates cash flow relative to all capital invested
-- **Debt-to-Equity Ratio** -- Financial health/leverage indicator
-
-#### C. Institutional & Insider Activity
-
-- **Institutional Ownership %** -- High ownership = "smart money" confidence
-- **Institutional Buying/Selling** (13F filings) -- Track hedge fund moves quarterly
-- **Insider Buying/Selling** (SEC Form 4) -- Insiders buying is a strong bullish signal (they know the company best)
-- **Short Interest / Short Float %** -- High short interest = bearish sentiment or potential short squeeze
-
-### 2.3 Quantitative/Algorithmic Strategies
-
-#### A. Core Strategy Categories
-
-**1. Momentum Strategy**
-- Buy securities showing upward price trends, sell those in downtrends
-- **Time-Series Momentum:** Is the asset doing better than its own past?
-- **Cross-Sectional Momentum:** Is the asset outperforming its peer group?
-- Works best in 3-12 month timeframes
-- Risk: Prone to severe crashes during market reversals
-
-**2. Mean Reversion Strategy**
-- Identify assets that deviated significantly from historical average
-- Bet on return to the mean
-- Works best in short-term (< 3 months)
-- Opposite of momentum; the two strategies are often mutually exclusive
-
-**3. Factor Investing**
-- Invest based on specific "factors" that drive returns:
-  - **Value Factor:** Low P/E, P/B stocks outperform
-  - **Size Factor:** Small caps outperform large caps long-term
-  - **Quality Factor:** High ROE, low debt companies outperform
-  - **Low Volatility Factor:** Less volatile stocks offer better risk-adjusted returns
-  - **Momentum Factor:** Recent winners continue winning
-
-**4. Statistical Arbitrage (Pairs Trading)**
-- Find two correlated stocks
-- When correlation breaks, go long the underperformer, short the outperformer
-- Profit from mean reversion of the pair's spread
-
-**5. Event-Driven Strategies**
-- Trade around earnings announcements
-- Trade around M&A activity
-- Insider buying triggers
-- FDA approvals (biotech)
-- Index rebalancing (forced buying/selling)
-
-#### B. Alternative Data Sources (Quant Edge)
-
-- **Options Flow:** Unusual options activity indicates smart money positioning
-- **Dark Pool Prints:** Large block trades in dark pools signal institutional moves; blocks >= 30% of daily average volume are especially significant
-- **Social Media Sentiment:** Reddit (WallStreetBets), Twitter/X, StockTwits
-- **Satellite Imagery:** Parking lot counts, shipping activity
-- **Web Traffic Data:** Website visits as proxy for revenue
-- **Credit Card Transaction Data:** Real-time spending trends
-- **SEC Filing NLP:** Analyze 10-K, 10-Q filings for tone changes
-- **Earnings Call Transcripts:** NLP analysis of management tone and word choice
-
-### 2.4 Sentiment Analysis Approaches
-
-#### A. Lexicon/Dictionary-Based (Simple)
-
-| Method | Description | Limitation |
-|--------|-------------|------------|
-| **AFINN** | Word-level sentiment scores (-5 to +5) | No financial context; "bull" and "bear" not understood financially |
-| **VADER** | Valence Aware Dictionary, handles social media text | Better with slang/emoji but still not finance-specific |
-| **Loughran-McDonald Dictionary** | Finance-specific word lists (positive, negative, uncertainty, litigious, constraining) | Designed for SEC filings; much better for financial text than general dictionaries |
-
-#### B. Machine Learning / Deep Learning (Advanced)
-
-| Method | Description | Advantage |
-|--------|-------------|-----------|
-| **FinBERT** | BERT model fine-tuned on financial corpus (ProsusAI/finbert on HuggingFace) | Understands financial context; outputs positive/negative/neutral probabilities. Domain-specific and far superior to AFINN |
-| **GPT-4 / LLM-based** | Use large language models to classify sentiment | Highest contextual understanding; can handle nuance, sarcasm, complex sentences |
-| **RoBERTa (Fine-tuned)** | RoBERTa variant trained on financial text | Strong alternative to FinBERT |
-| **Graph Neural Networks (GNN)** | Model relationships between entities, sentiments, and stocks | Captures complex interconnections in market data |
-
-#### C. Multi-Source Sentiment Aggregation
-
-- **News Headlines** -- Financial news sentiment (Reuters, Bloomberg, Yahoo Finance)
-- **Social Media** -- Twitter/X, Reddit, StockTwits
-- **Earnings Call Transcripts** -- Management tone analysis
-- **SEC Filings** -- 10-K/10-Q language analysis for risk indicators
-- **Analyst Reports** -- Consensus sentiment from Wall Street
-- **Google Trends** -- Search interest as proxy for retail sentiment
-- **Fear & Greed Index** -- CNN's market-wide sentiment gauge
-
-### 2.5 Machine Learning Approaches for Stock Prediction
-
-#### A. Traditional ML Models
-
-| Model | Use Case | Notes |
-|-------|----------|-------|
-| **Random Forest** | Classification (up/down) + feature importance | Good baseline; handles non-linear relationships; provides feature importance ranking |
-| **Gradient Boosted Trees (XGBoost, LightGBM, CatBoost)** | Classification and regression | Often best-performing traditional ML model for tabular financial data |
-| **Support Vector Machines (SVM)** | Classification | Research shows 60.52% excess return in backtesting |
-| **Logistic Regression** | Classification | Simple baseline; surprisingly competitive |
-| **Naive Bayes** | Sentiment classification | Fast, works well with text data |
-
-#### B. Deep Learning Models
-
-| Model | Use Case | Notes |
-|-------|----------|-------|
-| **LSTM (Long Short-Term Memory)** | Time-series price prediction | Learns order dependence in sequences; most popular for stock prediction |
-| **Attention-LSTM** | Time-series with feature weighting | Superior to standard LSTM; assigns different weights to input features |
-| **CNN (1D-Convolutional)** | Pattern recognition in price data | Detects local patterns (similar to chart pattern recognition) |
-| **Hybrid CNN-LSTM** | Combined pattern + temporal learning | CNN extracts features, LSTM models temporal dependencies |
-| **Transformer Models** | Sequence modeling with self-attention | Can model long-range dependencies better than LSTM |
-| **GAN (Generative Adversarial Networks)** | Synthetic data generation + prediction | Can generate realistic market scenarios for training |
-
-#### C. Ensemble & Hybrid Approaches
-
-- **Stacked Models:** Train multiple models, use a meta-learner to combine predictions
-- **Anomaly Detection + Prediction:** Detect unusual market behavior, then apply prediction models
-- **Multi-Modal Fusion:** Combine price data + sentiment + fundamentals + alternative data in a single model
-- **Reinforcement Learning:** Train agents to make buy/sell/hold decisions by maximizing portfolio returns
-
-#### D. Key Research Findings (2025)
-
-- **Advanced deep learning methods did NOT consistently outperform traditional approaches** in comprehensive benchmark studies
-- **Momentum-based indicators are the most influential predictors** for stock price movements
-- **Hybrid architectures** combining anomaly detection, sentiment analysis, and macroeconomic trends perform best
-- **Data quality and model interpretability** remain persistent challenges
-- **Overfitting** is the #1 risk -- models that look great on historical data often fail in live trading
+### Data Sources
+Yahoo Finance v8 (OHLCV, 6-month daily), Yahoo Finance v7 (fundamentals — batch), FinViz scraper (EPS Q/Q, Sales Q/Q for US stocks), Google News RSS + FinViz News (sentiment via AFINN). ETL runs hourly via GitHub Actions (weekdays 7am–9pm UTC).
 
 ---
 
-## 3. SPECIFIC IMPROVEMENTS FOR THE CURRENT DASHBOARD
+## 2. Competitive Analysis
 
-The current dashboard has: RSI, MACD, SMA 50/200, volume ratio, AFINN sentiment, composite scoring, and basic bearish signals. Here are prioritized improvements:
+### 2.1 TradingView
 
-### 3.1 HIGH-PRIORITY ADDITIONS (Biggest Impact)
+**Key Features**: 400+ built-in indicators, Pine Script custom indicator language, 21 chart types (Renko, Kagi, Point & Figure, Heikin Ashi), multi-chart layouts (up to 16 synced), social community (trade ideas, scripts, live streams), server-side alerts on any condition, broker integration for live trading, replay mode for backtesting, stock screener + sector heat maps, fundamental data overlay on price charts.
 
-#### A. Upgrade Sentiment Analysis from AFINN to FinBERT
+| Gap | Severity |
+|-----|----------|
+| No interactive charting (we show static price levels only) | **Critical** |
+| No custom indicator builder / formula engine | High |
+| No chart pattern recognition (cup-with-handle, H&S, etc.) | High |
+| No heat map visualisation (sector/market-cap treemap) | Medium |
+| No alert system (price, indicator, or score-based) | Medium |
+| No multiple chart types (candlestick, Heikin Ashi) | Medium |
+| No replay / backtest mode | Low |
+| No social features / idea sharing | Low |
 
-**Why:** AFINN is a generic word-sentiment dictionary with no understanding of financial language. "Bear market" scores negatively on "bear" even when just describing conditions. FinBERT (ProsusAI/finbert) is a BERT model fine-tuned on financial text and dramatically outperforms dictionary-based approaches.
+---
 
-**Implementation:**
-```python
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
-import torch
+### 2.2 Finviz
 
-tokenizer = AutoTokenizer.from_pretrained("ProsusAI/finbert")
-model = AutoModelForSequenceClassification.from_pretrained("ProsusAI/finbert")
+**Key Features**: S&P 500 treemap heat map (by sector, cap, performance), market themes heatmap (AI, clean energy), insider trading map, 52W highs/lows map, 60+ screener filters, snapshot ticker pages, backtesting (Elite), futures heat map.
 
-def get_finbert_sentiment(text):
-    inputs = tokenizer(text, return_tensors="pt", truncation=True, max_length=512)
-    outputs = model(**inputs)
-    probs = torch.nn.functional.softmax(outputs.logits, dim=-1)
-    # Returns: [positive, negative, neutral] probabilities
-    return probs.detach().numpy()[0]
+| Gap | Severity |
+|-----|----------|
+| No market heat map / treemap visualisation | **High** |
+| No insider trading data | High |
+| No short interest / short float data | Medium |
+| No analyst recommendations aggregate | Medium |
+| No sector/industry drill-down navigation | Medium |
+| No screener export / share URL | Low |
+
+---
+
+### 2.3 Stock Rover
+
+**Key Features**: 700+ screening criteria with 10 years historical data, weighted ranked screener (user-defined weights), custom freeform equation filters, built-in Piotroski F-Score / Altman Z-Score / Beneish M-Score, 150+ pre-built screeners (Buffett, Graham, etc.), 10-year backtesting, portfolio analytics (correlation, diversification), fair value / DCF estimates, auto-generated research reports.
+
+| Gap | Severity |
+|-----|----------|
+| No historical fundamental data (current quarter only) | **Critical** |
+| No Piotroski F-Score, Altman Z-Score, Beneish M-Score | High |
+| No DCF / intrinsic value calculation | High |
+| No weighted multi-factor screener (user-defined weights) | High |
+| No portfolio tracking and analytics | Medium |
+| No backtest capability for scoring model | Medium |
+| No pre-built strategy screeners (Buffett, Graham templates) | Medium |
+
+---
+
+### 2.4 Seeking Alpha
+
+**Key Features**: Quant Ratings (1.0–5.0: Strong Buy → Strong Sell) based on 100+ metrics per stock, Factor Grades (A+ to F) across Value/Growth/Profitability/Momentum/EPS Revisions, three rating systems side-by-side, EPS revision tracking, dividend grades, earnings call transcripts, stock comparison tool.
+
+| Gap | Severity |
+|-----|----------|
+| No factor-grade system (letter grades per dimension) | **High** |
+| No EPS revision tracking (estimate changes over time) | High |
+| No peer/sector-relative scoring (our scores are absolute) | High |
+| No dividend analysis (yield, growth, payout ratio, safety) | Medium |
+| No stock comparison view (side-by-side) | Medium |
+| No profitability metrics (ROE, ROA, ROIC, margins) | Medium |
+
+---
+
+### 2.5 Simply Wall St
+
+**Key Features**: Snowflake model (5-axis visual: Value, Future Growth, Past Performance, Health, Dividends), 30 binary checks (6 per axis), infographic-based reports, DCF-based intrinsic value with visual discount display, portfolio Snowflake, ownership breakdown, global 100K+ stock coverage, peer comparison with Snowflake overlays.
+
+| Gap | Severity |
+|-----|----------|
+| No multi-axis visual scoring model (radar/snowflake chart) | **High** |
+| No DCF / fair value estimate with visual discount display | High |
+| No ownership breakdown data | Medium |
+| No infographic-style stock reports | Medium |
+| No portfolio-level aggregated scoring | Medium |
+
+---
+
+### 2.6 Morningstar
+
+**Key Features**: Economic Moat rating (Wide/Narrow/None) based on 5 competitive advantage sources, analyst-driven Fair Value (3-stage DCF), Star Rating (1–5: price vs. fair value with uncertainty adjustment), Uncertainty Rating, Style Box (3×3 Value/Blend/Growth × Large/Mid/Small), Stewardship & Capital Allocation ratings, fund/ETF medalist system.
+
+| Gap | Severity |
+|-----|----------|
+| No fair value / intrinsic value estimate | **High** |
+| No qualitative moat assessment (heuristic proxy needed) | Medium |
+| No style box classification (Value/Blend/Growth) | Medium |
+| No uncertainty/confidence rating for our scores | Medium |
+| No management quality indicators | Low |
+
+---
+
+### 2.7 Zacks
+
+**Key Features**: Zacks Rank (1–5) based purely on earnings estimate revision trends, Style Scores (A–F) across Value/Growth/Momentum/VGM composite, Earnings ESP (Expected Surprise Prediction), Industry Rank (265 industries), Rank + Style Combo strategy.
+
+| Gap | Severity |
+|-----|----------|
+| No earnings estimate revision tracking | **High** |
+| No industry/sector ranking system | High |
+| No earnings surprise prediction | Medium |
+| No style scores (letter grade system) | Medium |
+
+---
+
+### 2.8 IBD (Investor's Business Daily)
+
+**Key Features**: Composite Rating (1–99: EPS + RS + Industry + SMR + Acc/Dist), EPS Rating (1–99: 3-year earnings growth + stability), Relative Strength Rating (1–99: 12-month price performance vs. all stocks), Accumulation/Distribution Rating (A–E: institutional buying/selling 13 weeks), SMR Rating (A–E: Sales/Margins/ROE), Industry Group Ranking (197 groups), MarketSmith chart pattern recognition, Market Pulse market direction assessment.
+
+| Gap | Severity |
+|-----|----------|
+| No relative strength ranking (vs. all stocks, percentile) | **High** |
+| No market direction / regime indicator | **High** |
+| No accumulation/distribution rating (inst. buying/selling) | High |
+| No chart pattern recognition (cup-with-handle, bases) | High |
+| No industry group strength ranking | Medium |
+| No SMR composite (Sales, Margins, ROE) | Medium |
+
+---
+
+### 2.9 Barchart
+
+**Key Features**: Barchart Opinion (13 indicators across 3 timeframes → aggregate signal), Weighted Alpha (recent-biased 1-year momentum), options analytics suite (IV Rank, Greeks, unusual activity), Van Meerten proprietary indicators, futures & commodities depth, Barchart for Excel.
+
+| Gap | Severity |
+|-----|----------|
+| No multi-timeframe signal aggregation (short/medium/long) | **High** |
+| No weighted alpha (decay-weighted momentum) | Medium |
+| No options data integration | Low (different audience) |
+
+---
+
+### 2.10 Yahoo Finance Premium
+
+**Key Features**: Peter Lynch PEG-based fair value estimate, Morningstar research reports & star ratings, Argus Research reports, portfolio tracking with risk metrics, company outlook (bull/bear case), enhanced charting.
+
+| Gap | Severity |
+|-----|----------|
+| No PEG-based fair value calculation | **High** |
+| No bull/bear case narrative generation | Medium |
+| No portfolio tracking | Medium |
+
+---
+
+## 3. Expert Techniques Gap Analysis
+
+### 3.1 CAN SLIM (William O'Neil)
+
+| Criterion | Rule | Can We Compute? | Gap |
+|-----------|------|----------------|-----|
+| **C** — Current Quarterly EPS | >= 25% YoY | **Partial** — have EPS Q/Q from FinViz | Need YoY quarterly comparison, not just sequential |
+| **A** — Annual Earnings Growth | >= 25% for 3–5 years | **No** | Need multi-year annual EPS history |
+| **N** — New High | Near 52W high + catalyst | **Yes** — near 52W high signal exists | Add new product/IPO flags (qualitative) |
+| **S** — Supply & Demand | Low float, volume on up days | **Partial** — volume ratio exists | Need shares outstanding, float, up-volume vs down-volume |
+| **L** — Leader (Relative Strength) | RS >= 80 percentile | **No** | Need percentile ranking of 12-month price perf across all stocks |
+| **I** — Institutional Sponsorship | 3–10 quality institutions, increasing | **No** | Need institutional ownership data |
+| **M** — Market Direction | Confirmed uptrend | **No** | Need market regime detection (index trend, distribution days) |
+
+**Data Requirements**: Multi-year EPS history, float/shares outstanding, institutional ownership, market-wide breadth indicators.
+
+---
+
+### 3.2 Piotroski F-Score (0–9)
+
+| # | Criterion | Can We Compute? | Gap |
+|---|-----------|----------------|-----|
+| 1 | Net Income > 0 (ROA positive) | **No** | Need net income and total assets |
+| 2 | Operating Cash Flow > 0 | **No** | Need cash flow from operations |
+| 3 | ROA improving YoY | **No** | Need prior year ROA |
+| 4 | Cash Flow > Net Income (quality of earnings) | **No** | Need both CFO and net income |
+| 5 | Long-term debt ratio decreased | **No** | Need current + prior year LT debt / total assets |
+| 6 | Current ratio increased | **No** | Need current assets and liabilities (2 years) |
+| 7 | No new shares issued (no dilution) | **No** | Need shares outstanding history |
+| 8 | Gross margin increased | **No** | Need gross margin (2 years) |
+| 9 | Asset turnover increased | **No** | Need revenue and total assets (2 years) |
+
+**Score**: 0/9 criteria computable today. **Requires**: Full income statement, balance sheet, cash flow — at least 2 years.
+
+---
+
+### 3.3 Benjamin Graham — Defensive Investor (7 Criteria)
+
+| # | Criterion | Rule | Can Compute? | Gap |
+|---|-----------|------|-------------|-----|
+| 1 | Adequate Size | Revenue >= $500M | **No** | Need annual revenue |
+| 2 | Strong Financial Condition | Current Ratio >= 2.0; LT debt <= net current assets | **No** | Need balance sheet |
+| 3 | Earnings Stability | Positive earnings each of past 10 years | **No** | Need 10-year EPS history |
+| 4 | Dividend Record | Uninterrupted dividends 20 years | **No** | Need dividend history |
+| 5 | Earnings Growth | >= 33% increase over 10 years | **No** | Need 10-year EPS |
+| 6 | Moderate P/E | P/E <= 15 × 3-year avg earnings | **Partial** | Have trailing P/E; need 3-year avg |
+| 7 | Moderate P/B | P/B <= 1.5 or P/E × P/B <= 22.5 | **No** | Need Price-to-Book |
+
+**Graham Intrinsic Value Formula**: `V = EPS × (8.5 + 2g) × 4.4 / Y` where g = expected growth, Y = AAA bond yield.
+
+---
+
+### 3.4 Warren Buffett Approach
+
+| Criterion | Rule | Can Compute? | Gap |
+|-----------|------|-------------|-----|
+| ROE >= 20% (10-year avg) | | **No** | Need net income + shareholders' equity |
+| ROIC >= 15% | | **No** | Need NOPAT + invested capital |
+| Gross Margin > 40% | | **No** | Need gross profit + revenue |
+| Net Margin > 20% | | **No** | Need net income + revenue |
+| Debt payoff < 5 years | | **No** | Need total debt + net income |
+| Earnings consistency 10yr | | **No** | Need EPS history |
+| P/E < 15 | | **Yes** | Already available |
+
+---
+
+### 3.5 Peter Lynch — PEG Ratio
+
+| Criterion | Rule | Can Compute? | Gap |
+|-----------|------|-------------|-----|
+| PEG Ratio | P/E / EPS Growth | **Partial** | Have P/E and EPS Q/Q; need annualised forward growth |
+| Stock Classification | Slow/Stalwart/Fast/Cyclical/Turnaround/Asset | **No** | Need multi-year growth rate history |
+| Debt-to-Equity < 33% | | **No** | Need D/E ratio |
+| Inventory vs Sales growth | | **No** | Need inventory data |
+| Free Cash Flow positive | | **No** | Need FCF |
+
+**Lynch Rules**: PEG < 1.0 = buy, PEG < 0.5 = strong buy, PEG > 2.0 = overpriced.
+
+---
+
+### 3.6 Joel Greenblatt — Magic Formula
+
+| Criterion | Formula | Can Compute? | Gap |
+|-----------|---------|-------------|-----|
+| Earnings Yield | EBIT / Enterprise Value | **No** | Need EBIT and EV |
+| Return on Capital | EBIT / (NWC + Net Fixed Assets) | **No** | Need balance sheet items |
+| Combined Rank | Sum of EY rank + ROC rank | **No** | Depends on above |
+
+**Rules**: Market cap > $100M, exclude financials/utilities, buy top 20–30, hold 1 year, rebalance annually.
+
+---
+
+### 3.7 Mark Minervini — SEPA Trend Template (8 Criteria)
+
+| # | Criterion | Can Compute? | Gap |
+|---|-----------|-------------|-----|
+| 1 | Price > 150-day & 200-day SMA | **Partial** | Need SMA 150 |
+| 2 | SMA 150 > SMA 200 | **No** | Need SMA 150 |
+| 3 | SMA 200 trending up 1+ month | **Partial** | Need SMA 200 slope over time |
+| 4 | SMA 50 > SMA 150 & SMA 200 | **Partial** | Need SMA 150 |
+| 5 | Price > SMA 50 | **Yes** | Computable now |
+| 6 | Price >= 30% above 52W low | **Yes** | Have 52W low |
+| 7 | Price within 25% of 52W high | **Yes** | Have 52W high |
+| 8 | RS Rating >= 70 | **No** | Need RS percentile |
+
+**Additional**: EPS growth >= 20% YoY, Volatility Contraction Pattern (VCP), volume dry-up during contractions.
+
+---
+
+### 3.8 Martin Zweig (Growth at Reasonable Price)
+
+| Criterion | Rule | Can Compute? | Gap |
+|-----------|------|-------------|-----|
+| Annual EPS Growth >= 20% (4–5yr) | | **No** | Need multi-year EPS |
+| Quarterly EPS Growth YoY | | **Partial** | Have Q/Q not YoY |
+| Revenue confirms earnings | | **Partial** | Have Sales Q/Q |
+| P/E < 2× market avg | | **Partial** | Have P/E; need market avg P/E |
+| Debt/Equity below industry avg | | **No** | Need D/E + industry avgs |
+| Relative price strength | | **No** | Need RS percentile |
+| Insider activity | | **No** | Need insider transaction data |
+
+---
+
+### 3.9 Jesse Livermore (Quantifiable Principles)
+
+| Principle | Rule | Can Compute? | Gap |
+|-----------|------|-------------|-----|
+| Trade with trend | New 52W highs | **Yes** | Have 52W signals |
+| Breakout from consolidation | Break > 6-week range on 2× volume | **Partial** | Have volume spike; need range detection |
+| Volume confirmation | Breakout on high volume | **Yes** | Have volume ratio |
+| Normal reaction (pullback) | Pullback on declining volume | **No** | Need multi-day volume trend |
+| Pivotal points | Key support/resistance levels | **No** | Need S/R calculation |
+
+---
+
+### Gap Summary Matrix
+
+| Methodology | Criteria | Computable | Partial | Missing | Readiness |
+|-------------|----------|------------|---------|---------|-----------|
+| **Minervini SEPA** | 8 | 3 | 2 | 3 | **50%** |
+| **Livermore** | 5 | 2 | 1 | 2 | **50%** |
+| **Zweig** | 7 | 0 | 3 | 4 | 21% |
+| **CAN SLIM** | 7 | 1 | 2 | 4 | 14% |
+| **Buffett** | 7 | 1 | 0 | 6 | 14% |
+| **Lynch PEG** | 5 | 0 | 1 | 4 | 10% |
+| **Graham** | 7 | 0 | 1 | 6 | 7% |
+| **Piotroski** | 9 | 0 | 0 | 9 | 0% |
+| **Magic Formula** | 2 | 0 | 0 | 2 | 0% |
+
+**Minervini SEPA and Livermore are closest to implementation** — both rely heavily on technical/price data we already have.
+
+---
+
+## 4. Current Weaknesses & Improvements
+
+### 4.1 UI/UX Gaps
+
+| Issue | Description | Impact |
+|-------|-------------|--------|
+| **No interactive charts** | Stock Detail shows price levels as text — no candlestick or line chart | Critical |
+| **No stock comparison** | Can't compare two stocks side-by-side | Medium |
+| **No watchlist / favourites** | No way to save or track a personal list | Medium |
+| **No URL state for filters** | Screener filters lost on refresh; not shareable | Medium |
+| **Mobile table overflow** | Screener tables may overflow on narrow screens | Medium |
+| **No loading skeletons** | Single spinner; no progressive content loading | Low |
+| **No export** | Can't export screener results to CSV from UI | Low |
+| **No multi-column sort** | Can't do composite sort (score DESC then P/E ASC) | Low |
+
+### 4.2 Scoring System Improvements
+
+| Issue | Recommendation |
+|-------|---------------|
+| **Absolute not relative** | Scores normalised to fixed ranges (P/E 5–60). Should score relative to sector peers like Seeking Alpha. |
+| **Style-blind** | A utility and a growth stock scored identically. Need style-aware scoring (value vs growth vs income). |
+| **No confidence indicator** | Score of 72 with full data ≠ 72 with missing fundamentals. Add data completeness %. |
+| **Shallow sentiment** | AFINN on headlines is low-fidelity. Weight by source credibility and recency. |
+| **No score history** | Can't see if a stock's score is improving or declining over time. |
+| **Risk too simple** | Beta + Volatility misses drawdown, correlation, and tail risk. |
+| **No sector rotation** | No indication of which sectors are strengthening/weakening. |
+| **Fundamentals underweighted** | At 15%, fundamentals barely move the needle. Consider rebalancing for different horizons. |
+
+### 4.3 Missing Fundamental Metrics
+
+| Metric | Why It Matters | Used By |
+|--------|---------------|---------|
+| **P/B (Price-to-Book)** | Core value metric | Graham, Buffett |
+| **P/S (Price-to-Sales)** | Valuation for unprofitable companies | Lynch |
+| **P/FCF (Price-to-FCF)** | Cash-flow-based valuation | Buffett |
+| **ROE** | Profitability / moat indicator | Buffett, CAN SLIM, Piotroski |
+| **ROA** | Asset efficiency | Piotroski |
+| **ROIC** | Capital allocation quality | Buffett, Greenblatt |
+| **Debt-to-Equity** | Financial health | Graham, Lynch, Zweig |
+| **Current Ratio** | Liquidity | Graham, Piotroski |
+| **Gross Margin** | Competitive advantage | Buffett |
+| **Net Margin** | Profitability | Buffett |
+| **Operating Margin** | Operational efficiency | Greenblatt |
+| **Free Cash Flow** | Cash generation | Buffett, Lynch |
+| **Dividend Yield** | Income potential | Graham, Lynch |
+| **Payout Ratio** | Dividend sustainability | Graham |
+| **EPS (TTM)** | Earnings per share | All methodologies |
+| **Book Value per Share** | Tangible net worth | Graham |
+| **Enterprise Value** | Debt-adjusted market value | Greenblatt |
+| **Shares Outstanding** | Dilution tracking | CAN SLIM, Piotroski |
+| **Insider Ownership %** | Skin in the game | Zweig, Lynch |
+| **Institutional Ownership %** | Smart money presence | CAN SLIM |
+| **Short Float %** | Crowded shorts / squeeze risk | Finviz |
+| **Analyst Target Price** | Consensus expectations | Multiple |
+
+---
+
+## 5. Prioritised Feature Roadmap
+
+### Priority 1 — Quick Wins (Client-Side Only, No New Data)
+
+Frontend changes only, using data already in `latest.json`.
+
+| # | Feature | Description | Enables | Implementation |
+|---|---------|-------------|---------|----------------|
+| **Q1** | **Relative Strength Percentile** | Rank all stocks by `priceReturn3m` (40%) + `priceReturn6m` (60%), assign percentile 1–99 | CAN SLIM (L), Minervini (RS), Zweig | Sort all stocks in `computeScore()`, assign rank |
+| **Q2** | **Minervini Trend Template Screen** | New page filtering stocks passing SEPA criteria (price > SMA50/200, 52W position, RS rank) | Minervini SEPA | Filter in frontend; display pass/fail per criterion |
+| **Q3** | **Score Radar Chart** | 6-axis radar chart showing each score dimension | Simply Wall St snowflake | Recharts `RadarChart` — data already exists |
+| **Q4** | **Market Heat Map** | Treemap of all stocks, sized by market cap, coloured by daily change or score | Finviz overview | `recharts` Treemap or `d3-treemap` |
+| **Q5** | **Sector Performance View** | Aggregate scores and returns by sector, show rotation | Zweig, sector analysis | Group by `sector`, compute averages |
+| **Q6** | **Watchlist (Local Storage)** | Star stocks, view filtered watchlist | UX essential | `localStorage` array of tickers |
+| **Q7** | **URL State for Screener** | Persist sort/filters/pagination in URL search params | UX — shareable views | Sync TanStack state with `URLSearchParams` |
+| **Q8** | **Data Completeness Badge** | Show % of metrics available per stock, flag low-confidence scores | Scoring transparency | Count non-null fields / expected fields |
+| **Q9** | **Stock Comparison View** | Side-by-side comparison of 2–4 stocks | Seeking Alpha comparison | New page with multi-select |
+| **Q10** | **Multi-Timeframe Signal Labels** | Label existing signals as short/medium/long-term; show aggregate per timeframe | Barchart Opinion concept | Tag 24 signal types with timeframe |
+| **Q11** | **Score Trend Sparkline** | Store last 7 daily composite scores, show sparkline | Score trajectory | Add `scoreHistory: number[]` to ETL output |
+| **Q12** | **Screener CSV Export** | Download filtered/sorted screener results as CSV | Data portability | Generate CSV blob from table state |
+
+---
+
+### Priority 2 — Medium Effort (New ETL Calculations from Existing Yahoo Finance Data)
+
+ETL changes to fetch additional data from Yahoo Finance endpoints we already call, or trivial new endpoints.
+
+| # | Feature | Description | Enables | Implementation |
+|---|---------|-------------|---------|----------------|
+| **M1** | **SMA 150** | Add 150-day Simple Moving Average | Minervini SEPA (criteria 1–4) | Add to `computeTechnicals()`; extend chart fetch to `period=1y` |
+| **M2** | **Expanded Fundamentals from Yahoo v7** | Fetch: P/B, P/S, ROE, profit margins, dividend yield, payout ratio, D/E, book value, EPS TTM | Graham, Buffett, Lynch, Piotroski (partial) | Yahoo v7 `quote` already returns many — add fields to `QuoteData` |
+| **M3** | **PEG Ratio** | P/E / forward earnings growth rate | Lynch PEG system | Yahoo v7 provides `pegRatio` or compute from Forward P/E + growth |
+| **M4** | **Enterprise Value** | Market Cap + Total Debt − Cash | Greenblatt Magic Formula | Yahoo v7 provides `enterpriseValue` directly |
+| **M5** | **Earnings Yield & Return on Capital** | EBIT / EV and EBIT / (NWC + Fixed Assets) | Greenblatt Magic Formula | Need EBIT from financials endpoint; EV from M4 |
+| **M6** | **Style Classification** | Value / Blend / Growth based on P/E, P/B, growth rates | Morningstar Style Box | Rule-based classifier using M2 metrics |
+| **M7** | **Sector-Relative Scoring** | Score each stock vs. sector peers (z-scores) instead of absolute ranges | Seeking Alpha approach | Group by sector → z-scores within sector → normalise |
+| **M8** | **Market Regime Indicator** | Track S&P 500/FTSE 100 trend (SMA, distribution days) → "Uptrend" vs "Correction" | CAN SLIM (M), Zweig | Fetch SPY data; count distribution days; display status |
+| **M9** | **Accumulation/Distribution Rating** | 13-week ratio of up-volume to down-volume days | CAN SLIM, IBD | Compute from existing 6-month OHLCV; sum (volume × direction) over 65 days |
+| **M10** | **52-Week Range Metrics** | Price as % of 52W range; distance from high/low as % | Minervini (criteria 6–7) | `(price − low) / (high − low)` from existing data |
+| **M11** | **Consolidation/Base Detection** | Detect stocks in tight ranges (< 15% range over 6+ weeks) | Livermore breakout, Minervini VCP | 30-day range narrowing from OHLCV |
+| **M12** | **Support & Resistance Levels** | Key S/R from recent swing highs/lows | Livermore pivotal points | Swing-point algo on OHLCV; identify local min/max |
+| **M13** | **Interactive Candlestick Chart** | TradingView Lightweight Charts on Stock Detail page | Core UX | `lightweight-charts` (TradingView OSS, 40KB); pass OHLCV |
+| **M14** | **Weighted Alpha** | 1-year return weighted towards recent price (exponential decay) | Barchart momentum | 0.5 decay factor over 252 days |
+| **M15** | **Score History** | Store daily composite scores in time-series file; chart 30/90-day trend | Score trajectory | Append to `score-history.json` each ETL run; line chart on Detail |
+
+---
+
+### Priority 3 — Large Effort (New Data Sources or Major Systems)
+
+New API integrations, significant backend work, or new infrastructure.
+
+| # | Feature | Description | Enables | Implementation |
+|---|---------|-------------|---------|----------------|
+| **L1** | **Financial Statements API** | Fetch income statement, balance sheet, cash flow (3–5 years) | Piotroski (9/9), Graham (7/7), Buffett, Greenblatt | **A**: Yahoo Finance `financials` endpoint (free, unreliable). **B**: [Financial Modeling Prep](https://financialmodelingprep.com/) free tier (250 req/day). **C**: SEC EDGAR XBRL. |
+| **L2** | **Piotroski F-Score** | Implement all 9 criteria scoring | Piotroski | Depends on L1. Compare current vs prior year across 9 metrics. |
+| **L3** | **Graham Number & Intrinsic Value** | `V = EPS × (8.5 + 2g) × 4.4/Y` + 7 criteria screen | Graham Defensive | Depends on L1 (book value, 10-year EPS). Bond yield from FRED API. |
+| **L4** | **DCF Fair Value Calculator** | 5-year projected FCF + terminal value | Morningstar/Simply Wall St valuation | Depends on L1 (FCF history). Need growth assumptions. |
+| **L5** | **Insider Trading Data** | Recent insider buys/sells with amounts | Zweig, Finviz feature | SEC EDGAR Form 4 (free, XML) or OpenInsider scraping. |
+| **L6** | **Institutional Ownership** | % of institutional holders; QoQ change | CAN SLIM (I) | SEC 13F filings (quarterly) or Yahoo `holders` endpoint. |
+| **L7** | **Analyst Estimates & Revisions** | Consensus EPS estimates, revision trends (30/60/90 day) | Zacks-style rank, Seeking Alpha, CAN SLIM | Yahoo `earnings` endpoint or Estimize. Track changes across ETL runs. |
+| **L8** | **Dividend History** | 10+ year payment history, growth rate, CAGR | Graham (criterion 4), income investing | Yahoo `dividends` endpoint or EOD Historical Data. |
+| **L9** | **Alert System** | User-configurable alerts: score threshold, signal trigger, price level | TradingView-style alerts | User accounts or email-only; background checker; notification service. Cloudflare Workers + D1. |
+| **L10** | **Portfolio Tracker** | Input holdings (ticker + shares + cost); portfolio score, allocation, P&L | Simply Wall St portfolio, Stock Rover | `localStorage` for MVP → backend. Portfolio score = weighted avg. |
+| **L11** | **Backtest Engine** | Test scoring strategies against historical performance | Stock Rover backtesting, validation | Archive daily `latest.json` snapshots. Compare top-N scored stocks vs benchmark. |
+| **L12** | **Pre-Built Strategy Screens** | One-click: "CAN SLIM", "Graham Value", "Minervini Trend", "Magic Formula Top 30", "Piotroski 8-9" | Multiple methodologies | Depends on M1–M7, L1–L3. Each = predefined filter combo. |
+| **L13** | **AI-Enhanced Sentiment** | Replace AFINN with LLM-based (GPT/Claude API) or FinBERT for nuanced analysis | Better sentiment | LLM per headline batch or FinBERT (HuggingFace, free). ~$0.01/100 headlines for LLM. |
+| **L14** | **Short Interest Data** | Short float %, days to cover | Squeeze detection, contrarian | FINRA (delayed), Ortex (paid), or FinViz Elite scrape. |
+
+---
+
+### Implementation Priority Map
+
+```
+NOW (Sprint 1–2)                    NEXT (Sprint 3–5)                   LATER (Sprint 6+)
+─────────────────                   ──────────────────                   ─────────────────
+Q1  RS Percentile Rank              M1  SMA 150                         L1  Financial Statements API
+Q2  Minervini Screen (partial)      M2  Expanded Fundamentals           L2  Piotroski F-Score
+Q3  Radar Chart                     M3  PEG Ratio                       L3  Graham Intrinsic Value
+Q4  Market Heat Map                 M4  Enterprise Value                L4  DCF Fair Value
+Q5  Sector Performance              M7  Sector-Relative Scoring         L5  Insider Trading Data
+Q6  Watchlist                       M8  Market Regime Indicator         L7  Analyst Estimates
+Q7  URL State                       M9  Acc/Dist Rating                 L9  Alert System
+Q8  Data Completeness Badge         M13 Interactive Candlestick Chart   L10 Portfolio Tracker
+Q12 CSV Export                      M15 Score History                   L11 Backtest Engine
+                                    M11 Consolidation Detection         L12 Strategy Screens
+                                    M12 Support/Resistance              L13 AI Sentiment
 ```
 
-#### B. Add Bollinger Bands + Squeeze Detection
+---
 
-**Why:** Bollinger Band squeeze (bands narrowing) is one of the most reliable predictors of upcoming large price moves. Combined with volume, it signals when a stock is about to break out.
+### Impact vs Effort Matrix
 
-**Signals to detect:**
-- Bollinger Band Squeeze (bandwidth < threshold) -> volatility expansion coming
-- Price touching lower band + RSI oversold -> potential bounce
-- Price touching upper band + RSI overbought -> potential reversal
-
-#### C. Add On-Balance Volume (OBV) & Volume Divergence
-
-**Why:** Your current volume ratio only looks at relative volume. OBV tracks cumulative volume flow and is one of the most powerful confirmation indicators. Price going up but OBV going down = bearish divergence (distribution).
-
-**Signals:**
-- OBV trending up while price flat -> accumulation (bullish)
-- OBV trending down while price flat -> distribution (bearish)
-- OBV divergence from price -> early warning of reversal
-
-#### D. Add Earnings-Based Scoring
-
-**Why:** Earnings revisions are historically one of the strongest predictors of stock performance (Zacks' entire business is built on this insight).
-
-**Metrics to add:**
-- Earnings surprise history (last 4 quarters)
-- Analyst estimate revision trend (30/60/90 day)
-- Forward P/E vs. sector average
-- Revenue growth rate (YoY)
-
-#### E. Add Insider & Institutional Activity Signals
-
-**Why:** Insider buying is among the strongest bullish signals. Insiders know their company better than anyone -- when they buy with their own money, it is very informative.
-
-**Signals:**
-- Insider buying cluster (multiple insiders buying in short period) -> strong bullish
-- Insider selling (less reliable, could be diversification) -> mild bearish
-- Institutional ownership increase -> bullish
-- Short interest > 20% -> potential squeeze or strong bearish sentiment
-
-### 3.2 MEDIUM-PRIORITY ADDITIONS (Solid Improvement)
-
-#### F. Add Ichimoku Cloud
-
-**Why:** One of the few indicators that projects future support/resistance levels (forward-looking). It is a complete trading system in one indicator: trend, momentum, support, resistance.
-
-**Signals:**
-- Price above cloud -> bullish
-- Price below cloud -> bearish
-- Cloud twist (Senkou Span A crosses B) -> trend change signal
-- Tenkan-Kijun cross -> buy/sell signal
-
-#### G. Add Mean Reversion Scoring
-
-**Why:** Your current system is momentum-heavy. Adding mean reversion metrics captures the other major strategy that works in different market conditions (< 3 months).
-
-**Implementation:**
-- Distance from 20-day mean (z-score)
-- Bollinger Band %B position
-- RSI extreme + reversion probability
-- Combine with momentum for adaptive scoring
-
-#### H. Add Multi-Timeframe Analysis
-
-**Why:** A stock might be bullish on the daily chart but bearish on the weekly. Professional traders always confirm across timeframes.
-
-**Implementation:**
-- Compute indicators on daily, weekly, and monthly timeframes
-- Agreement across timeframes = higher conviction signal
-- Divergence across timeframes = caution flag
-
-#### I. Add Stochastic Oscillator
-
-**Why:** Complements RSI with a different calculation method. When RSI and Stochastic both signal overbought/oversold, the signal is much more reliable.
-
-**Signals:**
-- Stochastic %K crosses above %D below 20 -> bullish
-- Stochastic %K crosses below %D above 80 -> bearish
-- RSI + Stochastic agreement -> high-confidence signal
-
-#### J. Improve Composite Score Weights
-
-**Current weights:** Momentum 25%, Technical 25%, Sentiment 15%, Fundamentals 15%, Volume 10%, Risk 10%
-
-**Recommended improved weights:**
 ```
-Momentum:       20%  (slight reduction)
-Technical:      20%  (slight reduction)
-Sentiment:      15%  (keep, but upgrade to FinBERT)
-Fundamentals:   20%  (increase -- earnings revisions are very predictive)
-Volume:         10%  (keep)
-Risk:           10%  (keep)
-Insider/Inst:    5%  (NEW -- insider buying signal)
+                        LOW EFFORT ◄──────────────────────► HIGH EFFORT
+                        │                                          │
+  HIGH IMPACT           │  Q1 RS Percentile ★                     │  L1 Financials API ★
+                        │  Q4 Heat Map                             │  L2 Piotroski
+                        │  Q6 Watchlist                            │  L7 Analyst Estimates
+                        │  M8 Market Regime ★                     │  L4 DCF Fair Value
+                        │  M13 Candlestick Chart ★                │  L12 Strategy Screens
+                        │  M2 Expanded Fundamentals ★             │
+                        │  M7 Sector-Relative Scoring              │
+                        │                                          │
+  MEDIUM IMPACT         │  Q3 Radar Chart                          │  L5 Insider Trading
+                        │  Q5 Sector View                          │  L6 Institutional Ownership
+                        │  Q7 URL State                            │  L10 Portfolio Tracker
+                        │  Q8 Data Completeness                    │  L9 Alert System
+                        │  M1 SMA 150                              │  L11 Backtest Engine
+                        │  M3 PEG Ratio                            │
+                        │  M9 Acc/Dist Rating                      │
+                        │                                          │
+  LOW IMPACT            │  Q12 CSV Export                           │  L14 Short Interest
+                        │  Q10 Multi-Timeframe Labels              │  L8 Dividend History
+                        │  M14 Weighted Alpha                      │  L13 AI Sentiment
+                        │                                          │
+
+★ = Recommended first priorities (highest impact-to-effort ratio)
 ```
-
-**Consider adaptive weighting:** In trending markets, weight momentum higher. In range-bound markets, weight mean reversion higher. Use ATR or market regime detection to adjust dynamically.
-
-### 3.3 ADVANCED ADDITIONS (Significant Effort, High Value)
-
-#### K. Add Machine Learning Price Direction Prediction
-
-**Why:** An ensemble of XGBoost/LightGBM models trained on your existing indicators can learn non-linear relationships that simple composite scoring misses.
-
-**Approach:**
-1. Features: All current indicators + new ones above
-2. Label: 5-day forward return (positive/negative)
-3. Model: XGBoost or LightGBM (best for tabular data)
-4. Train on 2+ years of historical data
-5. Walk-forward validation (never peek at future data)
-6. Output: Probability of positive 5-day return
-
-#### L. Add Chart Pattern Recognition
-
-**Why:** Automated detection of patterns like Head & Shoulders, Double Top/Bottom, Flag patterns adds a dimension that pure indicator analysis misses.
-
-**Implementation options:**
-- Rule-based (identify local min/max, match templates)
-- CNN-based (train on labeled chart images)
-- Libraries: TA-Lib has some built-in pattern recognition
-
-#### M. Add Options Flow / Unusual Activity (If Data Available)
-
-**Why:** Unusual options activity (large out-of-the-money calls/puts) is one of the strongest signals of informed trading.
-
-**Signals:**
-- Unusual call volume -> smart money bullish bet
-- Unusual put volume -> smart money bearish bet
-- Put/Call ratio extremes -> contrarian signal
-
-#### N. Add Backtesting Framework
-
-**Why:** You need to validate that your signals actually predict stock movements. Without backtesting, you are guessing.
-
-**Implementation:**
-- Historical signal generation
-- Forward return measurement
-- Win rate, profit factor, Sharpe ratio calculation
-- Per-signal performance breakdown (which signals work best?)
-
-### 3.4 ADDITIONAL BEARISH SIGNALS TO DETECT
-
-Your current bearish signals: Death Cross, Overbought RSI, MACD Bearish Crossover. Add these:
-
-| Signal | Description | Reliability |
-|--------|-------------|-------------|
-| **Bearish OBV Divergence** | Price making new highs but OBV declining | High |
-| **Bollinger Band Upper Touch + Reversal** | Price hits upper band then reverses with volume | Medium-High |
-| **Stochastic Bearish Crossover > 80** | %K crosses below %D above 80 level | Medium |
-| **Ichimoku Cloud Breakdown** | Price drops below Ichimoku cloud | High |
-| **Volume Climax** | Extreme volume spike on up day (exhaustion) | Medium |
-| **Insider Selling Cluster** | Multiple insiders selling within 2 weeks | Medium-High |
-| **Earnings Miss + Downward Revision** | Company misses estimates and analysts lower targets | High |
-| **Rising Wedge Pattern** | Higher highs and higher lows converging (bearish continuation) | Medium |
-| **Bearish Engulfing Candle** | Large red candle engulfs previous green candle | Medium |
-| **High Short Interest + Price Drop** | Short interest > 15% and price breaking support | High |
-| **VWAP Rejection** | Price fails to hold above VWAP repeatedly | Medium |
-
-### 3.5 ADDITIONAL BULLISH SIGNALS TO DETECT
-
-| Signal | Description | Reliability |
-|--------|-------------|-------------|
-| **Golden Cross** (already have Death Cross) | SMA 50 crosses above SMA 200 | High |
-| **Bullish OBV Divergence** | Price making new lows but OBV rising | High |
-| **Bollinger Band Squeeze Breakout Up** | Squeeze resolves with upward price break + volume | High |
-| **Ichimoku Cloud Breakout** | Price rises above cloud | High |
-| **Insider Buying Cluster** | Multiple insiders buying within 2 weeks | Very High |
-| **Earnings Beat + Upward Revision** | Company beats estimates and analysts raise targets | High |
-| **Bullish Engulfing Candle** | Large green candle engulfs previous red candle | Medium |
-| **Accumulation Day** | Price up > 1% on above-average volume | Medium |
-| **Cup and Handle Breakout** | Classic continuation pattern resolving upward | Medium-High |
 
 ---
 
-## 4. PRIORITY IMPLEMENTATION ROADMAP
+### Recommended Immediate Actions
 
-### Phase 1: Quick Wins (1-2 weeks)
-1. Replace AFINN with FinBERT for sentiment analysis
-2. Add Bollinger Bands + squeeze detection
-3. Add OBV + divergence detection
-4. Add Stochastic Oscillator
-5. Expand bearish/bullish signal list
+1. **Start archiving daily `latest.json`** — even before building L11 Backtest, historical snapshots are invaluable and cost nothing. Add a simple copy step to the GitHub Actions workflow.
 
-### Phase 2: Fundamental Upgrades (2-4 weeks)
-6. Add earnings-based scoring (surprise history, revisions)
-7. Add insider/institutional activity signals
-8. Add Ichimoku Cloud
-9. Implement multi-timeframe analysis
-10. Adjust composite score weights
+2. **Extend Yahoo v7 fetch** to pull P/B, ROE, profit margins, D/E, dividend yield, EPS TTM, enterprise value — these fields are already in the API response, just not being extracted (**M2, M3, M4**).
 
-### Phase 3: Advanced Features (1-2 months)
-11. Add ML prediction model (XGBoost/LightGBM)
-12. Add chart pattern recognition
-13. Build backtesting framework
-14. Implement adaptive weight system (market regime detection)
-15. Add alternative data sources (options flow, social media)
+3. **Add RS Percentile** (**Q1**) — trivial to compute from existing data, unlocks CAN SLIM (L), Minervini (RS), and Zweig criteria.
+
+4. **Add SMA 150** (**M1**) — extend chart period to 1 year, then Minervini Trend Template is nearly complete.
+
+5. **Add candlestick chart** (**M13**) — `lightweight-charts` by TradingView is open source, tiny (40KB), and transforms the Stock Detail page from text to a real trading tool.
 
 ---
 
-## 5. SOURCES & REFERENCES
-
-### Platforms & Tools
-- [NerdWallet - Best Stock Screeners](https://www.nerdwallet.com/investing/learn/best-stock-screeners)
-- [StockBrokers.com - Best Free Stock Screeners](https://www.stockbrokers.com/guides/best-free-stock-screeners)
-- [OpenBB](https://openbb.co/)
-- [Finviz](https://finviz.com/)
-- [TradingView](https://www.tradingview.com)
-- [Yahoo Finance Screeners](https://finance.yahoo.com/research-hub/screener/)
-- [Barchart Screeners](https://www.barchart.com/investing-ideas/barchart-screeners)
-- [StockAnalysis](https://stockanalysis.com/stocks/screener/)
-- [WallStreetZen](https://www.wallstreetzen.com/stock-screener)
-- [Intellectia AI](https://intellectia.ai/blog/best-free-stock-screener)
-- [SwingTradeBot](https://swingtradebot.com/stock-screens/Bullish)
-- [Zacks Stock Screener](https://www.zacks.com/screening/)
-- [Stocksight - GitHub](https://github.com/shirosaidev/stocksight)
-- [Ghostfolio - GitHub](https://github.com/ghostfolio/ghostfolio)
-- [Wealthfolio](https://wealthfolio.app/)
-
-### Technical Analysis
-- [StockCharts - Technical Indicators Reference](https://chartschool.stockcharts.com/table-of-contents/technical-indicators-and-overlays)
-- [Ichimoku Cloud - StockCharts](https://chartschool.stockcharts.com/table-of-contents/technical-indicators-and-overlays/technical-overlays/ichimoku-cloud)
-- [FTMO Academy - Technical Indicators](https://academy.ftmo.com/lesson/technical-indicators/)
-
-### Machine Learning & Quantitative
-- [MDPI - Stock Market Prediction Using ML and Deep Learning](https://www.mdpi.com/2673-9909/5/3/76)
-- [Frontiers - AI in Financial Market Prediction](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1696423/full)
-- [Stanford CS230 - LSTM in Stock Prediction](https://cs230.stanford.edu/projects_winter_2020/reports/32066186.pdf)
-- [ScienceDirect - Deep Learning for Algorithmic Trading](https://www.sciencedirect.com/science/article/pii/S2590005625000177)
-- [MDPI - Hybrid ML Models for Stock Forecasting](https://www.mdpi.com/1911-8074/18/4/201)
-
-### Sentiment Analysis
-- [FinBERT - HuggingFace](https://huggingface.co/ProsusAI/finbert)
-- [FinBERT - GitHub](https://github.com/ProsusAI/finBERT)
-- [MDPI - FinBERT, GPT-4 and Logistic Regression](https://www.mdpi.com/2504-2289/8/11/143)
-- [ScienceDirect - Loughran-McDonald Dictionary with BERT](https://www.sciencedirect.com/science/article/pii/S1877050925015807)
-- [IEEE - Sentiment Analysis in Financial Markets](https://ieeexplore.ieee.org/document/10961060/)
-
-### Quantitative Strategies
-- [QuantInsti - Types of Trading Strategies](https://www.quantinsti.com/articles/types-trading-strategies/)
-- [QuantifiedStrategies - Mean Reversion](https://www.quantifiedstrategies.com/mean-reversion-trading-strategy/)
-- [Hudson & Thames - Combining Mean Reversion and Momentum](https://hudsonthames.org/dynamically-combining-mean-reversion-and-momentum-investment-strategies/)
-
-### Alternative Data
-- [InsiderFinance - Options Flow & Dark Pool](https://www.insiderfinance.io/)
-- [FlowAlgo - Options Flow](https://www.flowalgo.com/)
+*This document should be reviewed and updated quarterly as features are shipped and new competitive features emerge.*

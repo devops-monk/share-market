@@ -3,9 +3,14 @@ import { Link, useLocation } from 'react-router-dom';
 const navItems = [
   { path: '/', label: 'Overview', icon: '◎' },
   { path: '/screener', label: 'Screener', icon: '⊞' },
-  { path: '/bearish', label: 'Bearish Alerts', icon: '▼' },
-  { path: '/dip', label: 'Buy the Dip', icon: '▲' },
+  { path: '/heatmap', label: 'Heat Map', icon: '▦' },
+  { path: '/sectors', label: 'Sectors', icon: '◈' },
+  { path: '/minervini', label: 'Minervini', icon: '▴' },
+  { path: '/bearish', label: 'Bearish', icon: '▼' },
+  { path: '/dip', label: 'Dip', icon: '▲' },
   { path: '/breakout', label: 'Breakouts', icon: '⚡' },
+  { path: '/compare', label: 'Compare', icon: '⇔' },
+  { path: '/watchlist', label: 'Watchlist', icon: '★' },
   { path: '/news', label: 'News', icon: '◉' },
   { path: '/guide', label: 'Guide', icon: '?' },
 ];

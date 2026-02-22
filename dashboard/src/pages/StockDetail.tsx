@@ -24,16 +24,22 @@ const TOOLTIPS: Record<string, string> = {
   'Market Cap': 'Total company value. Small <$2B, Mid $2B-$10B, Large >$10B.',
   'P/E': 'Price-to-Earnings ratio. Lower = cheaper relative to profits. <15 is value, >30 is growth.',
   'Forward P/E': 'P/E based on estimated future earnings. Lower than P/E = analysts expect growth.',
+  'PEG Ratio': 'P/E divided by growth rate. <1 = undervalued, <0.5 = strong buy, >2 = overpriced (Peter Lynch).',
+  'P/B': 'Price-to-Book ratio. <1.5 preferred by Graham. <1 may indicate deep value.',
   'Beta': 'Volatility vs market. 1.0 = moves with market. >1.5 = very volatile. <0.5 = defensive.',
   'RSI': 'Relative Strength Index (0-100). >70 = overbought (may drop). <30 = oversold (may bounce).',
+  'RS Percentile': 'Relative Strength ranking vs all stocks (1-99). >80 = top performer. Used by CAN SLIM & Minervini.',
   'SMA 50': '50-day Simple Moving Average. Price above SMA50 = short-term uptrend.',
+  'SMA 150': '150-day SMA. Key level in Minervini trend template.',
   'SMA 200': '200-day Simple Moving Average. Price above SMA200 = long-term uptrend.',
   'SMA 20': '20-day Simple Moving Average. Used for Bollinger Bands middle line.',
   'Vol Ratio': 'Today\'s volume / 20-day average. >1.5x = unusual activity. >2x = major event.',
   '52W High': 'Highest price in 52 weeks. Near it = strong performance.',
   '52W Low': 'Lowest price in 52 weeks. Near it = struggling or undervalued.',
+  '52W Range': 'Position in 52-week range (0-100%). Higher = closer to 52W high.',
   '3M Return': 'Price change over last 3 months. Shows medium-term momentum.',
   '6M Return': 'Price change over last 6 months. Shows longer-term momentum.',
+  '1Y Return': 'Price change over last 12 months. Shows long-term momentum.',
   // Advanced indicators
   'Bollinger Upper': 'Upper Bollinger Band. Price above = potentially overextended.',
   'Bollinger Lower': 'Lower Bollinger Band. Price below = potentially oversold.',
@@ -44,6 +50,26 @@ const TOOLTIPS: Record<string, string> = {
   'Stochastic %D': 'Slow signal line. When %K crosses %D = buy/sell signal.',
   'OBV Trend': 'On-Balance Volume trend. Rising = buying pressure. Falling = selling pressure.',
   'OBV Divergence': 'Price and volume moving opposite directions. Bullish = smart money buying. Bearish = smart money selling.',
+  'Acc/Dist': 'Accumulation/Distribution rating (A-E). A/B = institutional buying. D/E = institutional selling.',
+  // Fundamentals
+  'ROE': 'Return on Equity. >20% = excellent (Buffett). Measures profitability vs shareholders\' equity.',
+  'ROA': 'Return on Assets. Measures how efficiently assets generate profit.',
+  'Gross Margin': 'Revenue minus cost of goods. >40% suggests durable competitive advantage (Buffett).',
+  'Op. Margin': 'Operating profit margin. Higher = more efficient operations.',
+  'Profit Margin': 'Net profit margin. >20% = highly profitable company.',
+  'D/E Ratio': 'Debt-to-Equity ratio. <33% preferred (Lynch). <100% is healthy.',
+  'Current Ratio': 'Current assets / liabilities. >2 preferred (Graham). >1 = can pay short-term debts.',
+  'Div. Yield': 'Annual dividend as % of price. Higher = more income.',
+  'EPS (TTM)': 'Earnings per share, trailing 12 months.',
+  'Free Cash Flow': 'Cash generated after capital expenditures. Positive = healthy business.',
+  'EV': 'Enterprise Value = Market Cap + Debt - Cash. Debt-adjusted valuation.',
+  'EBITDA': 'Earnings Before Interest, Taxes, Depreciation & Amortization.',
+  'Analyst Target': 'Average analyst price target. Compare to current price for upside/downside.',
+  'Insider Own.': 'Percentage owned by company insiders. Higher = aligned interests.',
+  'Inst. Own.': 'Percentage owned by institutions. 3-10 quality institutions preferred (CAN SLIM).',
+  'Short Float': 'Percentage of float sold short. >20% = high bearish bets or potential squeeze.',
+  'Style': 'Value (low P/E, slow growth), Growth (high P/E, fast growth), or Blend.',
+  'Data Quality': 'Percentage of fundamental metrics available. Higher = more reliable analysis.',
 };
 
 export default function StockDetail({ stocks, news }: Props) {
@@ -147,21 +173,81 @@ export default function StockDetail({ stocks, news }: Props) {
 
       {/* Key metrics */}
       <div className="card p-5">
-        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Key Metrics</h2>
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider">Key Metrics</h2>
+          <div className="flex items-center gap-2">
+            <span className={`badge text-xs ${stock.styleClassification === 'Growth' ? 'bg-accent/15 text-accent-light' : stock.styleClassification === 'Value' ? 'bg-bullish/15 text-bullish' : 'bg-neutral/15 text-neutral'}`}>
+              {stock.styleClassification}
+            </span>
+            <span className={`badge text-xs ${stock.dataCompleteness >= 80 ? 'bg-bullish/15 text-bullish' : stock.dataCompleteness >= 50 ? 'bg-neutral/15 text-neutral' : 'bg-bearish/15 text-bearish'}`}>
+              {stock.dataCompleteness}% data
+            </span>
+          </div>
+        </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           <Metric label="Market Cap" value={formatMcap(stock.marketCap)} />
           <Metric label="P/E" value={stock.pe?.toFixed(1) ?? 'N/A'} />
           <Metric label="Forward P/E" value={stock.forwardPe?.toFixed(1) ?? 'N/A'} />
+          <Metric label="PEG Ratio" value={stock.pegRatio?.toFixed(2) ?? 'N/A'} positive={stock.pegRatio != null ? stock.pegRatio < 1 : undefined} />
+          <Metric label="P/B" value={stock.priceToBook?.toFixed(2) ?? 'N/A'} />
           <Metric label="Beta" value={stock.beta?.toFixed(2) ?? 'N/A'} />
           <Metric label="RSI" value={stock.rsi?.toFixed(1) ?? 'N/A'} highlight={stock.rsi != null && (stock.rsi > 70 || stock.rsi < 30)} />
+          <Metric label="RS Percentile" value={`${stock.rsPercentile}`} positive={stock.rsPercentile >= 70 ? true : stock.rsPercentile < 30 ? false : undefined} />
           <Metric label="SMA 50" value={stock.sma50?.toFixed(2) ?? 'N/A'} />
+          <Metric label="SMA 150" value={stock.sma150?.toFixed(2) ?? 'N/A'} />
           <Metric label="SMA 200" value={stock.sma200?.toFixed(2) ?? 'N/A'} />
           <Metric label="SMA 20" value={stock.sma20?.toFixed(2) ?? 'N/A'} />
           <Metric label="Vol Ratio" value={stock.volumeRatio != null ? stock.volumeRatio.toFixed(2) + 'x' : 'N/A'} />
+          <Metric label="Acc/Dist" value={stock.accDistRating} positive={stock.accDistRating <= 'B' ? true : stock.accDistRating >= 'D' ? false : undefined} />
           <Metric label="52W High" value={stock.fiftyTwoWeekHigh ? `${cur}${stock.fiftyTwoWeekHigh.toFixed(2)}` : 'N/A'} />
           <Metric label="52W Low" value={stock.fiftyTwoWeekLow ? `${cur}${stock.fiftyTwoWeekLow.toFixed(2)}` : 'N/A'} />
-          <Metric label="3M Return" value={stock.priceReturn3m != null ? `${(stock.priceReturn3m * 100).toFixed(1)}%` : 'N/A'} positive={stock.priceReturn3m != null ? stock.priceReturn3m >= 0 : undefined} />
-          <Metric label="6M Return" value={stock.priceReturn6m != null ? `${(stock.priceReturn6m * 100).toFixed(1)}%` : 'N/A'} positive={stock.priceReturn6m != null ? stock.priceReturn6m >= 0 : undefined} />
+          <Metric label="52W Range" value={`${stock.fiftyTwoWeekRangePercent}%`} positive={stock.fiftyTwoWeekRangePercent >= 70 ? true : stock.fiftyTwoWeekRangePercent < 30 ? false : undefined} />
+          <Metric label="3M Return" value={`${(stock.priceReturn3m * 100).toFixed(1)}%`} positive={stock.priceReturn3m >= 0} />
+          <Metric label="6M Return" value={`${(stock.priceReturn6m * 100).toFixed(1)}%`} positive={stock.priceReturn6m >= 0} />
+          <Metric label="1Y Return" value={`${(stock.priceReturn1y * 100).toFixed(1)}%`} positive={stock.priceReturn1y >= 0} />
+        </div>
+      </div>
+
+      {/* Fundamentals */}
+      <div className="card p-5">
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Fundamentals</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <Metric label="ROE" value={stock.returnOnEquity != null ? `${(stock.returnOnEquity * 100).toFixed(1)}%` : 'N/A'} positive={stock.returnOnEquity != null ? stock.returnOnEquity > 0.15 : undefined} />
+          <Metric label="ROA" value={stock.returnOnAssets != null ? `${(stock.returnOnAssets * 100).toFixed(1)}%` : 'N/A'} positive={stock.returnOnAssets != null ? stock.returnOnAssets > 0.05 : undefined} />
+          <Metric label="Gross Margin" value={stock.grossMargins != null ? `${(stock.grossMargins * 100).toFixed(1)}%` : 'N/A'} positive={stock.grossMargins != null ? stock.grossMargins > 0.4 : undefined} />
+          <Metric label="Op. Margin" value={stock.operatingMargins != null ? `${(stock.operatingMargins * 100).toFixed(1)}%` : 'N/A'} positive={stock.operatingMargins != null ? stock.operatingMargins > 0.15 : undefined} />
+          <Metric label="Profit Margin" value={stock.profitMargins != null ? `${(stock.profitMargins * 100).toFixed(1)}%` : 'N/A'} positive={stock.profitMargins != null ? stock.profitMargins > 0.1 : undefined} />
+          <Metric label="D/E Ratio" value={stock.debtToEquity?.toFixed(1) ?? 'N/A'} positive={stock.debtToEquity != null ? stock.debtToEquity < 100 : undefined} />
+          <Metric label="Current Ratio" value={stock.currentRatio?.toFixed(2) ?? 'N/A'} positive={stock.currentRatio != null ? stock.currentRatio > 1.5 : undefined} />
+          <Metric label="EPS (TTM)" value={stock.trailingEps?.toFixed(2) ?? 'N/A'} positive={stock.trailingEps != null ? stock.trailingEps > 0 : undefined} />
+          <Metric label="Div. Yield" value={stock.dividendYield != null ? `${(stock.dividendYield * 100).toFixed(2)}%` : 'N/A'} />
+          <Metric label="Free Cash Flow" value={stock.freeCashflow != null ? formatLargeNum(stock.freeCashflow) : 'N/A'} positive={stock.freeCashflow != null ? stock.freeCashflow > 0 : undefined} />
+          <Metric label="EV" value={stock.enterpriseValue != null ? formatLargeNum(stock.enterpriseValue) : 'N/A'} />
+          <Metric label="EBITDA" value={stock.ebitda != null ? formatLargeNum(stock.ebitda) : 'N/A'} positive={stock.ebitda != null ? stock.ebitda > 0 : undefined} />
+          <Metric label="Analyst Target" value={stock.targetMeanPrice != null ? `${cur}${stock.targetMeanPrice.toFixed(2)}` : 'N/A'} positive={stock.targetMeanPrice != null ? stock.targetMeanPrice > stock.price : undefined} />
+          <Metric label="Insider Own." value={stock.heldPercentInsiders != null ? `${(stock.heldPercentInsiders * 100).toFixed(1)}%` : 'N/A'} />
+          <Metric label="Inst. Own." value={stock.heldPercentInstitutions != null ? `${(stock.heldPercentInstitutions * 100).toFixed(1)}%` : 'N/A'} />
+          <Metric label="Short Float" value={stock.shortPercentOfFloat != null ? `${(stock.shortPercentOfFloat * 100).toFixed(1)}%` : 'N/A'} positive={stock.shortPercentOfFloat != null ? stock.shortPercentOfFloat < 0.05 : undefined} />
+        </div>
+      </div>
+
+      {/* Minervini Trend Template */}
+      <div className="card p-5">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider">Minervini Trend Template</h2>
+          <span className={`text-sm font-bold ${stock.minerviniChecks.passed >= 7 ? 'text-bullish' : stock.minerviniChecks.passed >= 5 ? 'text-neutral' : 'text-bearish'}`}>
+            {stock.minerviniChecks.passed}/8 passed
+          </span>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <CheckItem pass={stock.minerviniChecks.priceAbove150and200} label="Price above 150-day & 200-day SMA" />
+          <CheckItem pass={stock.minerviniChecks.sma150Above200} label="150-day SMA above 200-day SMA" />
+          <CheckItem pass={stock.minerviniChecks.sma200Trending} label="200-day SMA trending up" />
+          <CheckItem pass={stock.minerviniChecks.sma50Above150and200} label="50-day SMA above 150 & 200-day" />
+          <CheckItem pass={stock.minerviniChecks.priceAbove50} label="Price above 50-day SMA" />
+          <CheckItem pass={stock.minerviniChecks.price30PctAboveLow} label="Price 30%+ above 52-week low" />
+          <CheckItem pass={stock.minerviniChecks.priceWithin25PctOfHigh} label="Price within 25% of 52-week high" />
+          <CheckItem pass={stock.minerviniChecks.rsAbove70} label={`RS Percentile >= 70 (current: ${stock.rsPercentile})`} />
         </div>
       </div>
 
@@ -226,6 +312,27 @@ export default function StockDetail({ stocks, news }: Props) {
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+/* ─── HELPER FUNCTIONS ─── */
+function formatLargeNum(v: number): string {
+  const abs = Math.abs(v);
+  const sign = v < 0 ? '-' : '';
+  if (abs >= 1e12) return `${sign}$${(abs / 1e12).toFixed(1)}T`;
+  if (abs >= 1e9) return `${sign}$${(abs / 1e9).toFixed(1)}B`;
+  if (abs >= 1e6) return `${sign}$${(abs / 1e6).toFixed(0)}M`;
+  return `${sign}$${abs.toLocaleString()}`;
+}
+
+function CheckItem({ pass, label }: { pass: boolean; label: string }) {
+  return (
+    <div className="flex items-center gap-2 py-1.5 px-2 rounded-lg hover:bg-surface-hover transition-colors">
+      <span className={`text-sm flex-shrink-0 ${pass ? 'text-bullish' : 'text-bearish'}`}>
+        {pass ? '+' : 'x'}
+      </span>
+      <span className={`text-sm ${pass ? 't-secondary' : 't-muted'}`}>{label}</span>
     </div>
   );
 }

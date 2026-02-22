@@ -25,6 +25,33 @@ export interface QuoteData {
   fiftyTwoWeekLow: number;
   historicalClose: number[];
   historicalVolume: number[];
+  // Expanded fundamentals (from quoteSummary)
+  priceToBook: number | null;
+  pegRatio: number | null;
+  enterpriseValue: number | null;
+  profitMargins: number | null;
+  grossMargins: number | null;
+  operatingMargins: number | null;
+  returnOnEquity: number | null;
+  returnOnAssets: number | null;
+  debtToEquity: number | null;
+  currentRatio: number | null;
+  dividendYield: number | null;
+  trailingEps: number | null;
+  forwardEps: number | null;
+  bookValue: number | null;
+  sharesOutstanding: number | null;
+  heldPercentInsiders: number | null;
+  heldPercentInstitutions: number | null;
+  shortPercentOfFloat: number | null;
+  targetMeanPrice: number | null;
+  freeCashflow: number | null;
+  totalRevenue: number | null;
+  totalDebt: number | null;
+  ebitda: number | null;
+  totalCash: number | null;
+  operatingCashflow: number | null;
+  averageAnalystRating: string | null;
 }
 
 function classifyCap(marketCap: number): 'Small' | 'Mid' | 'Large' {
@@ -52,7 +79,7 @@ interface ChartData {
 
 async function fetchChart(ticker: string): Promise<ChartData | null> {
   const encoded = encodeURIComponent(ticker);
-  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encoded}?interval=1d&range=6mo&includePrePost=false`;
+  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encoded}?interval=1d&range=${CONFIG.historicalPeriod}&includePrePost=false`;
 
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
@@ -98,6 +125,36 @@ interface YahooFundamentals {
   earningsGrowth: number | null;
   revenueGrowth: number | null;
   avgVolume: number;
+  // Expanded fields from v7 quote
+  priceToBook: number | null;
+  trailingEps: number | null;
+  forwardEps: number | null;
+  bookValue: number | null;
+  sharesOutstanding: number | null;
+  dividendYield: number | null;
+  averageAnalystRating: string | null;
+}
+
+interface QuoteSummaryData {
+  enterpriseValue: number | null;
+  profitMargins: number | null;
+  grossMargins: number | null;
+  operatingMargins: number | null;
+  returnOnEquity: number | null;
+  returnOnAssets: number | null;
+  debtToEquity: number | null;
+  currentRatio: number | null;
+  freeCashflow: number | null;
+  totalRevenue: number | null;
+  totalDebt: number | null;
+  ebitda: number | null;
+  totalCash: number | null;
+  operatingCashflow: number | null;
+  heldPercentInsiders: number | null;
+  heldPercentInstitutions: number | null;
+  shortPercentOfFloat: number | null;
+  targetMeanPrice: number | null;
+  pegRatio: number | null;
 }
 
 // Yahoo v7 quote API requires a crumb + cookie pair. Get it once per run.
@@ -177,6 +234,13 @@ async function fetchYahooFundamentalsBatch(tickers: string[]): Promise<Map<strin
             earningsGrowth: q.earningsQuarterlyGrowth?.raw ?? null,
             revenueGrowth: q.revenueGrowth?.raw ?? null,
             avgVolume: q.averageDailyVolume3Month ?? 0,
+            priceToBook: q.priceToBook ?? null,
+            trailingEps: q.epsTrailingTwelveMonths ?? null,
+            forwardEps: q.epsForward ?? null,
+            bookValue: q.bookValue ?? null,
+            sharesOutstanding: q.sharesOutstanding ?? null,
+            dividendYield: q.dividendYield != null ? q.dividendYield / 100 : null,
+            averageAnalystRating: q.averageAnalystRating ?? null,
           });
         }
         break; // success
@@ -192,6 +256,73 @@ async function fetchYahooFundamentalsBatch(tickers: string[]): Promise<Map<strin
   return result;
 }
 
+// ---------- Yahoo quoteSummary (detailed fundamentals per stock) ----------
+
+async function fetchQuoteSummaryBatch(tickers: string[]): Promise<Map<string, QuoteSummaryData>> {
+  const result = new Map<string, QuoteSummaryData>();
+  const auth = await getYahooCrumb();
+  if (!auth) return result;
+
+  const limit = pLimit(5);
+
+  await Promise.all(
+    tickers.map(ticker =>
+      limit(async () => {
+        const encoded = encodeURIComponent(ticker);
+        const url = `https://query2.finance.yahoo.com/v10/finance/quoteSummary/${encoded}?modules=defaultKeyStatistics,financialData&crumb=${encodeURIComponent(auth.crumb)}`;
+
+        for (let attempt = 0; attempt < 2; attempt++) {
+          try {
+            const res = await fetch(url, {
+              headers: { 'User-Agent': UA, 'Cookie': auth.cookie },
+            });
+            if (res.status === 429) {
+              await delay((attempt + 1) * 2000);
+              continue;
+            }
+            if (!res.ok) break;
+
+            const data = await res.json() as any;
+            const r = data?.quoteSummary?.result?.[0];
+            if (!r) break;
+
+            const ks = r.defaultKeyStatistics ?? {};
+            const fd = r.financialData ?? {};
+
+            result.set(ticker, {
+              enterpriseValue: ks.enterpriseValue?.raw ?? null,
+              profitMargins: ks.profitMargins?.raw ?? fd.profitMargins?.raw ?? null,
+              grossMargins: fd.grossMargins?.raw ?? null,
+              operatingMargins: fd.operatingMargins?.raw ?? null,
+              returnOnEquity: fd.returnOnEquity?.raw ?? null,
+              returnOnAssets: fd.returnOnAssets?.raw ?? null,
+              debtToEquity: fd.debtToEquity?.raw ?? null,
+              currentRatio: fd.currentRatio?.raw ?? null,
+              freeCashflow: fd.freeCashflow?.raw ?? null,
+              totalRevenue: fd.totalRevenue?.raw ?? null,
+              totalDebt: fd.totalDebt?.raw ?? null,
+              ebitda: fd.ebitda?.raw ?? null,
+              totalCash: fd.totalCash?.raw ?? null,
+              operatingCashflow: fd.operatingCashflow?.raw ?? null,
+              heldPercentInsiders: ks.heldPercentInsiders?.raw ?? null,
+              heldPercentInstitutions: ks.heldPercentInstitutions?.raw ?? null,
+              shortPercentOfFloat: ks.shortPercentOfFloat?.raw ?? null,
+              targetMeanPrice: fd.targetMeanPrice?.raw ?? null,
+              pegRatio: ks.pegRatio?.raw ?? null,
+            });
+            break;
+          } catch {
+            if (attempt < 1) await delay(500);
+          }
+        }
+        await delay(150); // rate limiting
+      })
+    )
+  );
+
+  return result;
+}
+
 // ---------- FinViz Scraper (US stocks fundamentals) ----------
 
 interface Fundamentals {
@@ -202,6 +333,13 @@ interface Fundamentals {
   earningsGrowth: number | null;
   revenueGrowth: number | null;
   avgVolume: number;
+  priceToBook: number | null;
+  trailingEps: number | null;
+  forwardEps: number | null;
+  bookValue: number | null;
+  sharesOutstanding: number | null;
+  dividendYield: number | null;
+  averageAnalystRating: string | null;
 }
 
 function parseFinvizNumber(val: string): number | null {
@@ -258,6 +396,13 @@ async function fetchFinvizFundamentals(ticker: string): Promise<Fundamentals | n
       earningsGrowth: (() => { const v = parseFinvizNumber(data['EPS Q/Q'] || ''); return v != null ? v / 100 : null; })(),
       revenueGrowth: (() => { const v = parseFinvizNumber(data['Sales Q/Q'] || ''); return v != null ? v / 100 : null; })(),
       avgVolume: parseVolume(data['Avg Volume'] || ''),
+      priceToBook: null,
+      trailingEps: null,
+      forwardEps: null,
+      bookValue: null,
+      sharesOutstanding: null,
+      dividendYield: null,
+      averageAnalystRating: null,
     };
   } catch {
     return null;
@@ -329,6 +474,13 @@ export async function fetchAllStocks(stocks: StockMeta[]): Promise<QuoteData[]> 
             earningsGrowth: f.earningsGrowth ?? existing?.earningsGrowth ?? null,
             revenueGrowth: f.revenueGrowth ?? existing?.revenueGrowth ?? null,
             avgVolume: existing?.avgVolume || f.avgVolume,
+            priceToBook: existing?.priceToBook ?? null,
+            trailingEps: existing?.trailingEps ?? null,
+            forwardEps: existing?.forwardEps ?? null,
+            bookValue: existing?.bookValue ?? null,
+            sharesOutstanding: existing?.sharesOutstanding ?? null,
+            dividendYield: existing?.dividendYield ?? null,
+            averageAnalystRating: existing?.averageAnalystRating ?? null,
           });
         }
         if ((idx + 1) % 50 === 0) {
@@ -341,11 +493,17 @@ export async function fetchAllStocks(stocks: StockMeta[]): Promise<QuoteData[]> 
   const finvizElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`  Phase 2 done: ${fundamentalsMap.size} fundamentals in ${finvizElapsed}s total`);
 
+  // Phase 2c: Fetch detailed fundamentals via quoteSummary (ROE, margins, etc.)
+  console.log(`  Phase 2c: Fetching quoteSummary for ${allTickers.length} stocks...`);
+  const quoteSummaryMap = await fetchQuoteSummaryBatch(allTickers);
+  console.log(`    quoteSummary: ${quoteSummaryMap.size}/${allTickers.length} stocks`);
+
   // Phase 3: Assemble results
   const results: QuoteData[] = [];
 
   for (const { meta, chart } of validCharts) {
     const fundamentals = fundamentalsMap.get(meta.ticker) ?? null;
+    const summary = quoteSummaryMap.get(meta.ticker) ?? null;
     const changePercent = chart.previousClose
       ? ((chart.price - chart.previousClose) / chart.previousClose) * 100
       : 0;
@@ -373,6 +531,34 @@ export async function fetchAllStocks(stocks: StockMeta[]): Promise<QuoteData[]> 
       fiftyTwoWeekLow: chart.fiftyTwoWeekLow,
       historicalClose: chart.closes,
       historicalVolume: chart.volumes,
+      // Expanded from v7 quote
+      priceToBook: fundamentals?.priceToBook ?? null,
+      trailingEps: fundamentals?.trailingEps ?? null,
+      forwardEps: fundamentals?.forwardEps ?? null,
+      bookValue: fundamentals?.bookValue ?? null,
+      sharesOutstanding: fundamentals?.sharesOutstanding ?? null,
+      dividendYield: fundamentals?.dividendYield ?? null,
+      averageAnalystRating: fundamentals?.averageAnalystRating ?? null,
+      // From quoteSummary
+      pegRatio: summary?.pegRatio ?? null,
+      enterpriseValue: summary?.enterpriseValue ?? null,
+      profitMargins: summary?.profitMargins ?? null,
+      grossMargins: summary?.grossMargins ?? null,
+      operatingMargins: summary?.operatingMargins ?? null,
+      returnOnEquity: summary?.returnOnEquity ?? null,
+      returnOnAssets: summary?.returnOnAssets ?? null,
+      debtToEquity: summary?.debtToEquity ?? null,
+      currentRatio: summary?.currentRatio ?? null,
+      freeCashflow: summary?.freeCashflow ?? null,
+      totalRevenue: summary?.totalRevenue ?? null,
+      totalDebt: summary?.totalDebt ?? null,
+      ebitda: summary?.ebitda ?? null,
+      totalCash: summary?.totalCash ?? null,
+      operatingCashflow: summary?.operatingCashflow ?? null,
+      heldPercentInsiders: summary?.heldPercentInsiders ?? null,
+      heldPercentInstitutions: summary?.heldPercentInstitutions ?? null,
+      shortPercentOfFloat: summary?.shortPercentOfFloat ?? null,
+      targetMeanPrice: summary?.targetMeanPrice ?? null,
     });
   }
 
