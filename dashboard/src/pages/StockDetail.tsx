@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import type { StockRecord, NewsItem } from '../types';
 import ScoreGauge from '../components/charts/ScoreGauge';
@@ -263,6 +264,11 @@ function Metric({ label, value, highlight, positive }: {
 }
 
 /* ─── RECOMMENDATION ENGINE ─── */
+interface SellSignal {
+  triggered: boolean;
+  reasons: string[];
+}
+
 interface Recommendation {
   verdict: 'strong-buy' | 'buy' | 'hold' | 'caution' | 'avoid';
   label: string;
@@ -272,6 +278,7 @@ interface Recommendation {
   summary: string;
   strengths: string[];
   risks: string[];
+  sell: SellSignal;
 }
 
 function generateRecommendation(stock: StockRecord): Recommendation {
@@ -359,7 +366,42 @@ function generateRecommendation(stock: StockRecord): Recommendation {
     summary = 'Most indicators are negative. This stock has significant risk factors. Avoid new positions and consider exiting existing ones.';
   }
 
-  return { verdict, label, color, bgColor, borderColor, summary, strengths: strengths.slice(0, 5), risks: risks.slice(0, 5) };
+  // Sell signal — based on Risk Avoidance strategy
+  const sellReasons: string[] = [];
+
+  // 1. Bearish score severity
+  if (stock.bearishScore >= 6) {
+    sellReasons.push(`Bearish score is ${stock.bearishScore} (6+ = serious warning, consider selling)`);
+  } else if (stock.bearishScore >= 4) {
+    sellReasons.push(`Bearish score is ${stock.bearishScore} (4-5 = caution zone)`);
+  }
+
+  // 2. OBV Bearish Divergence — smart money exiting
+  if (stock.obvDivergence === 'bearish') {
+    sellReasons.push('OBV Bearish Divergence — smart money may be exiting while price rises');
+  }
+
+  // 3. Death Cross + negative MACD = strong sell
+  const hasDeathCross = stock.sma50 != null && stock.sma200 != null && stock.sma50 < stock.sma200;
+  const hasNegativeMacd = stock.macdHistogram != null && stock.macdHistogram < 0;
+  if (hasDeathCross && hasNegativeMacd) {
+    sellReasons.push('Death Cross (SMA50 < SMA200) + negative MACD — strong sell signal');
+  } else if (hasDeathCross) {
+    sellReasons.push('Death Cross detected (SMA50 < SMA200) — long-term trend is bearish');
+  }
+
+  // 4. Multiple converging bearish signals (3+)
+  const bearishSignalCount = stock.signals.filter(s => s.direction === 'bearish').length;
+  if (bearishSignalCount >= 3) {
+    sellReasons.push(`${bearishSignalCount} converging bearish signals active — multiple warnings aligned`);
+  }
+
+  const sell: SellSignal = {
+    triggered: sellReasons.length >= 2, // Need at least 2 reasons to trigger sell
+    reasons: sellReasons,
+  };
+
+  return { verdict, label, color, bgColor, borderColor, summary, strengths: strengths.slice(0, 5), risks: risks.slice(0, 5), sell };
 }
 
 function RecommendationCard({ rec, stock }: { rec: Recommendation; stock: StockRecord }) {
@@ -369,6 +411,7 @@ function RecommendationCard({ rec, stock }: { rec: Recommendation; stock: StockR
         <div className="flex items-center gap-3">
           <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider">Analysis Summary</h2>
           <span className={`text-sm font-bold ${rec.color}`}>{rec.label}</span>
+          {rec.sell.triggered && <SellTag reasons={rec.sell.reasons} />}
         </div>
         <div className="flex items-center gap-2 text-xs t-muted">
           <span>Bullish: <strong className="text-bullish">{stock.bullishScore}</strong></span>
@@ -414,6 +457,43 @@ function RecommendationCard({ rec, stock }: { rec: Recommendation; stock: StockR
       <p className="text-xs t-faint mt-4 italic">
         This is an automated analysis based on technical indicators and scores. Always do your own research before investing.
       </p>
+    </div>
+  );
+}
+
+/* ─── SELL TAG WITH TOOLTIP ─── */
+function SellTag({ reasons }: { reasons: string[] }) {
+  const [showTooltip, setShowTooltip] = useState(false);
+
+  return (
+    <div className="relative">
+      <button
+        onMouseEnter={() => setShowTooltip(true)}
+        onMouseLeave={() => setShowTooltip(false)}
+        onClick={() => setShowTooltip(v => !v)}
+        className="badge bg-red-500/20 text-red-400 ring-1 ring-red-500/30 text-xs font-bold cursor-help px-2.5 py-1"
+      >
+        SELL
+      </button>
+      {showTooltip && (
+        <div className="absolute top-full left-0 mt-2 z-50 w-80">
+          <div className="bg-surface-secondary border border-red-500/30 rounded-xl shadow-xl p-4">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="w-5 h-5 rounded-full bg-red-500/20 flex items-center justify-center text-red-400 text-xs font-bold">!</span>
+              <p className="text-xs font-semibold text-red-400">Sell Signal — Risk Avoidance</p>
+            </div>
+            <p className="text-xs t-muted mb-3">Multiple risk conditions are met. If you own this stock, consider reducing or exiting your position.</p>
+            <ul className="space-y-2">
+              {reasons.map((r, i) => (
+                <li key={i} className="flex items-start gap-2 text-xs t-tertiary">
+                  <span className="text-red-400 mt-0.5 flex-shrink-0">x</span>
+                  <span>{r}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
