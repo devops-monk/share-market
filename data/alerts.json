@@ -1,20 +1,68 @@
 {
   "rules": [
     {
-      "id": "example-1",
-      "type": "price_above",
-      "ticker": "AAPL",
-      "threshold": 250,
-      "enabled": false,
-      "note": "Example: alert when AAPL goes above $250"
+      "id": "daily-summary",
+      "type": "daily_summary",
+      "ticker": "*",
+      "threshold": 0,
+      "enabled": true,
+      "note": "Morning summary with top/bottom 5, market stats, Minervini count"
     },
     {
-      "id": "example-2",
+      "id": "score-drop-critical",
       "type": "score_below",
       "ticker": "*",
-      "threshold": 25,
-      "enabled": false,
-      "note": "Example: alert when ANY stock score drops below 25"
+      "threshold": 20,
+      "enabled": true,
+      "note": "Composite score collapsed below 20 — potential capitulation or serious fundamental issue"
+    },
+    {
+      "id": "score-surge-strong",
+      "type": "score_above",
+      "ticker": "*",
+      "threshold": 75,
+      "enabled": true,
+      "note": "Composite score above 75 — strong momentum + fundamentals alignment, research further"
+    },
+    {
+      "id": "rsi-oversold",
+      "type": "rsi_below",
+      "ticker": "*",
+      "threshold": 30,
+      "enabled": true,
+      "note": "RSI below 30 — oversold, potential bounce candidate (buy the dip signal)"
+    },
+    {
+      "id": "rsi-overbought",
+      "type": "rsi_above",
+      "ticker": "*",
+      "threshold": 70,
+      "enabled": true,
+      "note": "RSI above 70 — overbought, consider taking profits or tightening stops"
+    },
+    {
+      "id": "bearish-warning",
+      "type": "bearish_score_above",
+      "ticker": "*",
+      "threshold": 5,
+      "enabled": true,
+      "note": "5+ bearish signals firing — multiple red flags, review immediately"
+    },
+    {
+      "id": "minervini-perfect",
+      "type": "minervini_pass",
+      "ticker": "*",
+      "threshold": 8,
+      "enabled": true,
+      "note": "Perfect 8/8 Minervini SEPA template — stock in ideal uptrend stage 2 setup"
+    },
+    {
+      "id": "minervini-strong",
+      "type": "minervini_pass",
+      "ticker": "*",
+      "threshold": 7,
+      "enabled": true,
+      "note": "7/8 Minervini checks — near-perfect trend template, watch for full confirmation"
     }
   ]
 }
