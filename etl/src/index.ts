@@ -6,7 +6,7 @@ import { computeScore } from './scoring/scorer.js';
 import { fetchGoogleNews } from './news/google-news.js';
 import { fetchFinvizNews } from './news/finviz-scraper.js';
 import { scoreNewsItems, averageSentiment } from './news/sentiment.js';
-import { writeOutputs, type StockRecord } from './output/writer.js';
+import { writeOutputs, type StockRecord, type OhlcvData } from './output/writer.js';
 import { CONFIG } from './config.js';
 import pLimit from 'p-limit';
 
@@ -62,6 +62,7 @@ async function main() {
   });
 
   const stockRecords: StockRecord[] = [];
+  const ohlcvRecords: OhlcvData[] = [];
 
   for (let i = 0; i < stockTechData.length; i++) {
     const { quote, tech } = stockTechData[i];
@@ -210,6 +211,19 @@ async function main() {
       dataCompleteness,
       minerviniChecks,
     });
+
+    // Collect OHLCV for candlestick charts
+    if (quote.ohlcvTimestamps.length > 0) {
+      ohlcvRecords.push({
+        ticker: quote.ticker,
+        timestamps: quote.ohlcvTimestamps,
+        open: quote.ohlcvOpen,
+        high: quote.ohlcvHigh,
+        low: quote.ohlcvLow,
+        close: quote.historicalClose,
+        volume: quote.historicalVolume,
+      });
+    }
   }
 
   // Step 4: Identify bearish alerts
@@ -220,7 +234,7 @@ async function main() {
   console.log(`Found ${bearishAlerts.length} bearish alerts`);
 
   // Step 5: Write outputs
-  writeOutputs(stockRecords, allNews, bearishAlerts);
+  writeOutputs(stockRecords, allNews, bearishAlerts, ohlcvRecords);
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`ETL completed in ${elapsed}s`);

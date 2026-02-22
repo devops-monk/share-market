@@ -530,15 +530,46 @@ Q12 CSV Export                      M15 Score History                   L11 Back
 
 ### Recommended Immediate Actions
 
-1. **Start archiving daily `latest.json`** — even before building L11 Backtest, historical snapshots are invaluable and cost nothing. Add a simple copy step to the GitHub Actions workflow.
+1. ~~**Start archiving daily `latest.json`**~~ — **DONE**. ETL workflow now copies `data/latest.json` to `data/archive/YYYY-MM-DD.json` each run (90-day retention).
 
-2. **Extend Yahoo v7 fetch** to pull P/B, ROE, profit margins, D/E, dividend yield, EPS TTM, enterprise value — these fields are already in the API response, just not being extracted (**M2, M3, M4**).
+2. ~~**Extend Yahoo v7 fetch**~~ — **DONE**. Added ~25 fields from v7 quote + v10 quoteSummary: P/B, ROE, ROA, margins (gross/operating/profit), D/E, current ratio, dividend yield, EPS, book value, enterprise value, EBITDA, FCF, insider/institutional ownership, short float, analyst target, PEG ratio.
 
-3. **Add RS Percentile** (**Q1**) — trivial to compute from existing data, unlocks CAN SLIM (L), Minervini (RS), and Zweig criteria.
+3. ~~**Add RS Percentile**~~ — **DONE**. Computed in ETL (40% 3M + 30% 6M + 30% 1Y returns, ranked 1-99). Displayed in Screener, StockDetail, and Minervini Screen.
 
-4. **Add SMA 150** (**M1**) — extend chart period to 1 year, then Minervini Trend Template is nearly complete.
+4. ~~**Add SMA 150**~~ — **DONE**. Chart period extended to 1 year. SMA 150, SMA200 slope, and full Minervini 8-criteria trend template implemented.
 
-5. **Add candlestick chart** (**M13**) — `lightweight-charts` by TradingView is open source, tiny (40KB), and transforms the Stock Detail page from text to a real trading tool.
+5. ~~**Add candlestick chart**~~ — **DONE**. Using `lightweight-charts` v5 (TradingView OSS). Per-stock OHLCV data written to `data/charts/`, loaded lazily on StockDetail page. Includes volume histogram and SMA 50/150/200 overlays.
+
+### Additional Features Shipped
+
+| Feature | Status | Notes |
+|---------|--------|-------|
+| **Q2** Minervini Trend Template Screen | **DONE** | New `/minervini` page with 8-criteria filter |
+| **Q4** Market Heat Map | **DONE** | New `/heatmap` page, 3 color modes (change/score/RS) |
+| **Q5** Sector Performance View | **DONE** | New `/sectors` page with per-sector aggregates |
+| **Q6** Watchlist (localStorage) | **DONE** | New `/watchlist` page, persisted in browser |
+| **Q8** Data Completeness Badge | **DONE** | Shown on StockDetail and Screener |
+| **Q9** Stock Comparison View | **DONE** | New `/compare` page, side-by-side 2-4 stocks |
+| **Q12** Screener CSV Export | **DONE** | Export button on Screener page |
+| **M1** SMA 150 | **DONE** | Added to technicals, powers Minervini |
+| **M2** Expanded Fundamentals | **DONE** | 25+ fields from Yahoo quoteSummary |
+| **M3** PEG Ratio | **DONE** | From Yahoo API |
+| **M4** Enterprise Value | **DONE** | From Yahoo API |
+| **M6** Style Classification | **DONE** | Value/Blend/Growth rule-based |
+| **M9** Acc/Dist Rating | **DONE** | A-E rating from 13-week volume |
+| **M10** 52-Week Range Metrics | **DONE** | Price as % of 52W range |
+| **M11** Consolidation Detection | **DONE** | 30-day high-low range % |
+| **M13** Interactive Candlestick Chart | **DONE** | lightweight-charts v5 + OHLCV pipeline |
+
+### Remaining Next Priorities
+
+1. **Q3 — Score Radar Chart** — 6-axis radar showing each score dimension (Recharts RadarChart).
+2. **Q7 — URL State for Screener** — Sync filters/sort/pagination with URL search params.
+3. **M7 — Sector-Relative Scoring** — Z-score within sector instead of absolute ranges.
+4. **M8 — Market Regime Indicator** — SPY/FTSE trend + distribution day counting.
+5. **M12 — Support & Resistance Levels** — Swing-point algo on OHLCV data.
+6. **M15 — Score History** — Store daily composite scores, chart 30/90-day trend.
+7. **L1 — Financial Statements API** — Multi-year income statement/balance sheet for Piotroski, Graham, Buffett screens.
 
 ---
 

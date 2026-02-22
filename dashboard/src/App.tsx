@@ -64,10 +64,19 @@ export default function App() {
           <Route path="/guide" element={<Guide />} />
         </Routes>
       </main>
-      <footer className="border-t border-surface-border py-6 mt-12">
-        <div className="max-w-[1400px] mx-auto px-4 lg:px-6 flex items-center justify-between text-xs t-muted">
-          <span>StockMarket Dashboard — Educational purposes only</span>
-          <span>Data updates hourly on weekdays</span>
+      <footer className="border-t border-surface-border py-8 mt-16">
+        <div className="max-w-[1400px] mx-auto px-4 lg:px-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs t-muted">
+            <div className="flex items-center gap-2">
+              <div className="w-5 h-5 rounded bg-gradient-to-br from-accent to-bullish flex items-center justify-center text-white text-[8px] font-bold">
+                SM
+              </div>
+              <span>StockMarket Dashboard</span>
+              <span className="t-faint">|</span>
+              <span>Educational purposes only</span>
+            </div>
+            <span>Data updates hourly on weekdays</span>
+          </div>
         </div>
       </footer>
     </div>

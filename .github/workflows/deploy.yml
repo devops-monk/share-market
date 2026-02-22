@@ -34,6 +34,7 @@ jobs:
           mkdir -p dashboard/public/data
           cp data/*.json dashboard/public/data/ 2>/dev/null || echo "No JSON data files yet"
           cp data/*.csv dashboard/public/data/ 2>/dev/null || echo "No CSV data files yet"
+          cp -r data/charts dashboard/public/data/charts 2>/dev/null || echo "No chart data yet"
 
       - name: Create CNAME for custom domain
         run: echo "share.devops-monk.com" > dashboard/public/CNAME

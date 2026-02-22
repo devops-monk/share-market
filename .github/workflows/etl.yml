@@ -32,11 +32,19 @@ jobs:
         timeout-minutes: 10
         run: npm run etl
 
+      - name: Archive daily snapshot
+        run: |
+          mkdir -p data/archive
+          DATE=$(date -u +'%Y-%m-%d')
+          cp data/latest.json "data/archive/${DATE}.json"
+          # Keep only the last 90 days of archives
+          find data/archive -name "*.json" -mtime +90 -delete 2>/dev/null || true
+
       - name: Commit and push data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add data/ data/archive/
           git diff --staged --quiet || git commit -m "Update market data [$(date -u +'%Y-%m-%d %H:%M UTC')]"
           git push
 
@@ -63,6 +71,7 @@ jobs:
           mkdir -p dashboard/public/data
           cp data/*.json dashboard/public/data/ 2>/dev/null || echo "No JSON data files yet"
           cp data/*.csv dashboard/public/data/ 2>/dev/null || echo "No CSV data files yet"
+          cp -r data/charts dashboard/public/data/charts 2>/dev/null || echo "No chart data yet"
 
       - name: Create CNAME for custom domain
         run: echo "share.devops-monk.com" > dashboard/public/CNAME

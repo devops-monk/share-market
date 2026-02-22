@@ -104,10 +104,21 @@ export interface StockRecord {
   };
 }
 
+export interface OhlcvData {
+  ticker: string;
+  timestamps: number[];
+  open: number[];
+  high: number[];
+  low: number[];
+  close: number[];
+  volume: number[];
+}
+
 export function writeOutputs(
   stocks: StockRecord[],
   newsItems: any[],
   bearishAlerts: StockRecord[],
+  ohlcvData?: OhlcvData[],
 ) {
   const dataDir = CONFIG.dataDir;
   mkdirSync(dataDir, { recursive: true });
@@ -196,6 +207,29 @@ export function writeOutputs(
     path.join(dataDir, 'uk-stocks.csv'),
     stringify(ukStocks.map(toCsvRow), { header: true, columns: csvColumns })
   );
+
+  // OHLCV chart data — per-stock files for lightweight-charts
+  if (ohlcvData && ohlcvData.length > 0) {
+    const chartsDir = path.join(dataDir, 'charts');
+    mkdirSync(chartsDir, { recursive: true });
+
+    for (const chart of ohlcvData) {
+      // Compact format: array of [time, open, high, low, close, volume]
+      const candles = chart.timestamps.map((t, i) => ([
+        t,
+        +chart.open[i].toFixed(2),
+        +chart.high[i].toFixed(2),
+        +chart.low[i].toFixed(2),
+        +chart.close[i].toFixed(2),
+        chart.volume[i],
+      ]));
+      writeFileSync(
+        path.join(chartsDir, `${chart.ticker.replace(/[^a-zA-Z0-9.-]/g, '_')}.json`),
+        JSON.stringify(candles)
+      );
+    }
+    console.log(`Wrote ${ohlcvData.length} chart files to ${chartsDir}`);
+  }
 
   console.log(`Wrote ${stocks.length} stocks to ${dataDir}`);
 }

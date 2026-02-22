@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import type { StockRecord, NewsItem } from '../types';
 import ScoreGauge from '../components/charts/ScoreGauge';
 import PriceChart from '../components/charts/PriceChart';
+import CandlestickChart from '../components/charts/CandlestickChart';
 import SentimentBar from '../components/charts/SentimentBar';
 import { MarketTag, CapTag, Trading212Badge, SignalBadge, ChangePercent } from '../components/common/Tags';
 
@@ -112,33 +113,50 @@ export default function StockDetail({ stocks, news }: Props) {
 
   return (
     <div className="space-y-6">
-      {/* Back button */}
-      <Link to="/" className="inline-flex items-center gap-1 text-sm t-muted hover:text-accent-light transition-colors">
-        ← Back
-      </Link>
+      {/* Breadcrumb */}
+      <div className="flex items-center gap-2 text-sm">
+        <Link to="/" className="t-muted hover:text-accent-light transition-colors">Home</Link>
+        <span className="t-faint">/</span>
+        <Link to="/screener" className="t-muted hover:text-accent-light transition-colors">Screener</Link>
+        <span className="t-faint">/</span>
+        <span className="t-primary font-medium">{stock.ticker}</span>
+      </div>
 
       {/* Header */}
-      <div className="flex items-start justify-between gap-6">
-        <div className="flex-1">
-          <div className="flex items-center gap-3 mb-2">
-            <h1 className="text-2xl font-bold t-primary">{stock.ticker}</h1>
-            <MarketTag market={stock.market} />
-            <CapTag cap={stock.capCategory} />
-            {stock.trading212 && <Trading212Badge />}
+      <div className="card p-6">
+        <div className="flex items-start justify-between gap-6">
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-3 mb-1">
+              <h1 className="text-2xl font-bold t-primary">{stock.ticker}</h1>
+              <MarketTag market={stock.market} />
+              <CapTag cap={stock.capCategory} />
+              {stock.trading212 && <Trading212Badge />}
+            </div>
+            <p className="t-tertiary text-sm mb-4">{stock.name} — {stock.sector}</p>
+            <div className="flex items-baseline gap-4">
+              <span className="text-3xl font-bold t-primary font-mono tabular-nums">{cur}{stock.price.toFixed(2)}</span>
+              <ChangePercent value={stock.changePercent} />
+            </div>
           </div>
-          <p className="t-tertiary mb-3">{stock.name} — {stock.sector}</p>
-          <div className="flex items-baseline gap-4">
-            <span className="text-4xl font-bold t-primary font-mono tabular-nums">{cur}{stock.price.toFixed(2)}</span>
-            <ChangePercent value={stock.changePercent} />
-          </div>
+          <ScoreGauge score={stock.score.composite} size={120} />
         </div>
-        <ScoreGauge score={stock.score.composite} size={140} />
       </div>
 
       {/* Recommendation */}
       <RecommendationCard rec={recommendation} stock={stock} />
 
-      {/* Price levels chart */}
+      {/* Candlestick Chart */}
+      <div className="card p-5">
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Price Chart</h2>
+        <CandlestickChart
+          ticker={stock.ticker}
+          sma50={stock.sma50}
+          sma150={stock.sma150}
+          sma200={stock.sma200}
+        />
+      </div>
+
+      {/* Price levels (static fallback) */}
       <div className="card p-5">
         <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Price Levels</h2>
         <PriceChart stock={stock} />

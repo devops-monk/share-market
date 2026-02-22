@@ -25,6 +25,11 @@ export interface QuoteData {
   fiftyTwoWeekLow: number;
   historicalClose: number[];
   historicalVolume: number[];
+  // OHLCV for candlestick charts
+  ohlcvTimestamps: number[];
+  ohlcvOpen: number[];
+  ohlcvHigh: number[];
+  ohlcvLow: number[];
   // Expanded fundamentals (from quoteSummary)
   priceToBook: number | null;
   pegRatio: number | null;
@@ -75,6 +80,11 @@ interface ChartData {
   fiftyTwoWeekLow: number;
   closes: number[];
   volumes: number[];
+  // Full OHLCV for candlestick charts
+  timestamps: number[];
+  opens: number[];
+  highs: number[];
+  lows: number[];
 }
 
 async function fetchChart(ticker: string): Promise<ChartData | null> {
@@ -95,8 +105,21 @@ async function fetchChart(ticker: string): Promise<ChartData | null> {
       if (!result?.meta?.regularMarketPrice) return null;
 
       const m = result.meta;
-      const closes = (result.indicators?.quote?.[0]?.close || []).filter((v: any) => v != null) as number[];
-      const volumes = (result.indicators?.quote?.[0]?.volume || []).filter((v: any) => v != null) as number[];
+      const q = result.indicators?.quote?.[0] || {};
+      const timestamps = (result.timestamp || []) as number[];
+      const opens = (q.open || []) as (number | null)[];
+      const highs = (q.high || []) as (number | null)[];
+      const lows = (q.low || []) as (number | null)[];
+      const rawCloses = (q.close || []) as (number | null)[];
+      const rawVolumes = (q.volume || []) as (number | null)[];
+
+      // Filter out null entries (keeping indices aligned)
+      const validIndices = timestamps.map((_, i) => i).filter(i =>
+        rawCloses[i] != null && opens[i] != null && highs[i] != null && lows[i] != null
+      );
+
+      const closes = validIndices.map(i => rawCloses[i]!) ;
+      const volumes = validIndices.map(i => rawVolumes[i] ?? 0);
 
       return {
         price: m.regularMarketPrice,
@@ -107,6 +130,10 @@ async function fetchChart(ticker: string): Promise<ChartData | null> {
         fiftyTwoWeekLow: m.fiftyTwoWeekLow ?? Math.min(...closes, m.regularMarketPrice),
         closes,
         volumes,
+        timestamps: validIndices.map(i => timestamps[i]),
+        opens: validIndices.map(i => opens[i]!),
+        highs: validIndices.map(i => highs[i]!),
+        lows: validIndices.map(i => lows[i]!),
       };
     } catch {
       if (attempt < 2) await delay(1000);
@@ -531,6 +558,10 @@ export async function fetchAllStocks(stocks: StockMeta[]): Promise<QuoteData[]> 
       fiftyTwoWeekLow: chart.fiftyTwoWeekLow,
       historicalClose: chart.closes,
       historicalVolume: chart.volumes,
+      ohlcvTimestamps: chart.timestamps,
+      ohlcvOpen: chart.opens,
+      ohlcvHigh: chart.highs,
+      ohlcvLow: chart.lows,
       // Expanded from v7 quote
       priceToBook: fundamentals?.priceToBook ?? null,
       trailingEps: fundamentals?.trailingEps ?? null,

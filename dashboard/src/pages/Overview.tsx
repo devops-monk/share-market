@@ -47,6 +47,12 @@ export default function Overview({ stocks, summary, metadata, bearishCount }: Pr
 
   return (
     <div className="space-y-8">
+      {/* Page header */}
+      <div>
+        <h1 className="text-xl font-bold t-primary">Market Overview</h1>
+        <p className="text-sm t-muted mt-1">Daily snapshot of {summary.totalStocks} tracked stocks</p>
+      </div>
+
       {/* Hero stats */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard
