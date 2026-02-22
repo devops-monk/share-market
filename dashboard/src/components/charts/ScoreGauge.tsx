@@ -29,8 +29,8 @@ export default function ScoreGauge({ score, size = 120 }: { score: number; size?
     : '';
 
   // Text positioning — centered inside the semicircle
-  const numberY = cy - 24;
-  const labelY = cy - 4;
+  const numberY = cy - 34;
+  const labelY = cy - 2;
 
   // Scale to requested size
   const displayH = (vh / vw) * size;
@@ -64,7 +64,7 @@ export default function ScoreGauge({ score, size = 120 }: { score: number; size?
           textAnchor="middle"
           dominantBaseline="middle"
           fill={color}
-          fontSize="38"
+          fontSize="36"
           fontWeight="bold"
           fontFamily="ui-monospace, SFMono-Regular, monospace"
         >
