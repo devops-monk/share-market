@@ -30,6 +30,7 @@ const STORAGE_KEY = 'sm-alert-rules';
 export default function AlertSettings() {
   const [rules, setRules] = useState<AlertRule[]>([]);
   const [showAdd, setShowAdd] = useState(false);
+  const [loadingRules, setLoadingRules] = useState(true);
   const [newRule, setNewRule] = useState<Omit<AlertRule, 'id'>>({
     type: 'price_above',
     ticker: '',
@@ -39,18 +40,36 @@ export default function AlertSettings() {
   });
   const [copied, setCopied] = useState(false);
 
-  // Load from localStorage
+  // Load rules: try repo's data/alerts.json first, fallback to localStorage
   useEffect(() => {
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved) setRules(JSON.parse(saved));
-    } catch { /* ignore */ }
+    (async () => {
+      try {
+        const res = await fetch(`${import.meta.env.BASE_URL}data/alerts.json`);
+        if (res.ok) {
+          const config: AlertConfig = await res.json();
+          if (config.rules?.length) {
+            setRules(config.rules);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(config.rules));
+            setLoadingRules(false);
+            return;
+          }
+        }
+      } catch { /* fall through */ }
+      // Fallback to localStorage
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) setRules(JSON.parse(saved));
+      } catch { /* ignore */ }
+      setLoadingRules(false);
+    })();
   }, []);
 
-  // Save to localStorage
+  // Save to localStorage on changes (after initial load)
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(rules));
-  }, [rules]);
+    if (!loadingRules) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(rules));
+    }
+  }, [rules, loadingRules]);
 
   const addRule = () => {
     if (!newRule.ticker && newRule.type !== 'daily_summary') return;
