@@ -45,6 +45,7 @@ const navGroups: NavGroup[] = [
       { path: '/bearish', label: 'Bearish', desc: 'Stocks with warning signals' },
       { path: '/dip', label: 'Buy the Dip', desc: 'Oversold bounce candidates' },
       { path: '/breakout', label: 'Breakouts', desc: 'Squeeze & volume breakouts' },
+      { path: '/support-bounce', label: 'Support Bounce', desc: 'Pullback to support buy setups' },
     ],
   },
   {

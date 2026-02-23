@@ -21,6 +21,7 @@ import CanSlim from './pages/CanSlim';
 import CustomScreen from './pages/CustomScreen';
 import Backtest from './pages/Backtest';
 import EarningsCalendar from './pages/EarningsCalendar';
+import SupportBounce from './pages/SupportBounce';
 import InstallPrompt from './components/common/InstallPrompt';
 
 export default function App() {
@@ -73,6 +74,7 @@ export default function App() {
           <Route path="/custom-screen" element={<CustomScreen stocks={stocks} />} />
           <Route path="/backtest" element={<Backtest stocks={stocks} scoreHistory={scoreHistory} />} />
           <Route path="/earnings" element={<EarningsCalendar stocks={stocks} />} />
+          <Route path="/support-bounce" element={<SupportBounce stocks={stocks} />} />
           <Route path="/guide" element={<Guide />} />
           <Route path="/alerts" element={<AlertSettings />} />
         </Routes>
