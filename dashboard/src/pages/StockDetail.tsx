@@ -161,6 +161,43 @@ export default function StockDetail({ stocks, news }: Props) {
           sma150={stock.sma150}
           sma200={stock.sma200}
         />
+        <details className="mt-4 group">
+          <summary className="flex items-center gap-2 cursor-pointer text-xs font-medium t-muted select-none">
+            <span className="text-[10px] group-open:rotate-90 transition-transform">&#9654;</span>
+            How to read this chart
+          </summary>
+          <div className="mt-3 text-xs t-muted space-y-2 leading-relaxed">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="p-2.5 rounded-lg bg-surface-tertiary/50 border border-surface-border">
+                <p className="font-semibold t-secondary mb-1">Candlestick Basics</p>
+                <p>Each candle = one trading day. <span className="text-bullish font-medium">Green</span> = closed higher than open (bullish). <span className="text-bearish font-medium">Red</span> = closed lower (bearish). Thin wicks show the day's high and low.</p>
+              </div>
+              <div className="p-2.5 rounded-lg bg-surface-tertiary/50 border border-surface-border">
+                <p className="font-semibold t-secondary mb-1">Volume Bars</p>
+                <p>Bars at the bottom = trading volume. High volume on green candles = strong buying conviction. High volume on red candles = heavy selling pressure. Price rising on low volume = weak move, be cautious.</p>
+              </div>
+              <div className="p-2.5 rounded-lg bg-surface-tertiary/50 border border-surface-border">
+                <p className="font-semibold t-secondary mb-1">Moving Averages (SMA)</p>
+                <p><span className="text-blue-400 font-medium">SMA 50</span> (short-term), <span className="text-purple-400 font-medium">SMA 150</span> (medium), <span className="text-amber-400 font-medium">SMA 200</span> (long-term). Price above all three = strong uptrend. SMA 50 crossing above SMA 200 = "Golden Cross" (bullish signal).</p>
+              </div>
+              <div className="p-2.5 rounded-lg bg-surface-tertiary/50 border border-surface-border">
+                <p className="font-semibold t-secondary mb-1">Key Patterns</p>
+                <p><strong>Hammer</strong> (long lower wick) at support = potential bounce. <strong>Engulfing</strong> (big candle swallowing previous) = momentum shift. <strong>Doji</strong> (tiny body) = indecision, wait for next candle.</p>
+              </div>
+            </div>
+            <div className="mt-3 p-3 rounded-lg bg-bullish/5 border border-bullish/15">
+              <p className="font-semibold t-secondary mb-1.5">How to Use This Chart for Buy/Sell Decisions</p>
+              <ul className="list-disc list-inside space-y-1 ml-0.5">
+                <li><strong className="t-secondary">Before buying:</strong> Switch to 3Y view to check the long-term trend. Is the stock making higher highs and higher lows? If yes, the trend is your friend.</li>
+                <li><strong className="t-secondary">Finding entry points:</strong> Look for price pulling back to the SMA 50 (blue line) or SMA 200 (amber line) on the 1Y view. A bounce off these levels with a green candle + above-average volume = good entry.</li>
+                <li><strong className="t-secondary">Confirm with Support/Resistance:</strong> Check the Support &amp; Resistance section below. If price is near a strong support level AND showing a green candle, that's a higher-confidence buy.</li>
+                <li><strong className="t-secondary">When to be cautious:</strong> Multiple large red candles with high volume = selling pressure. Price dropping below SMA 200 = long-term trend may be breaking. Avoid catching falling knives.</li>
+                <li><strong className="t-secondary">Setting stops:</strong> Place your stop-loss just below the nearest support level or below the SMA 200. This limits your downside if the trade goes wrong.</li>
+                <li><strong className="t-secondary">Taking profits:</strong> Consider selling portions near resistance levels shown below. If price hits resistance and forms red candles with high volume, the rally may be stalling.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
       </div>
 
       {/* Support & Resistance Levels */}
