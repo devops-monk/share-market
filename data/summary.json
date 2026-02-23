@@ -15,29 +15,8 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "DG",
-      "name": "Dollar General",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BMY",
-      "name": "Bristol-Myers Squibb",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "JTC.L",
       "name": "JTC",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "LAND.L",
-      "name": "Land Securities",
       "score": 71,
       "market": "UK",
       "capCategory": "Mid"
@@ -64,8 +43,29 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SMT.L",
       "name": "Scottish Mortgage",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GLEN.L",
+      "name": "Glencore",
       "score": 70,
       "market": "UK",
       "capCategory": "Large"
@@ -115,6 +115,20 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PINS",
+      "name": "Pinterest",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "LCID",
       "name": "Lucid Group",
       "score": 23,
@@ -127,20 +141,6 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -151,18 +151,6 @@
       "market": "UK"
     },
     {
-      "ticker": "DG",
-      "name": "Dollar General",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "BMY",
-      "name": "Bristol-Myers Squibb",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 70,
@@ -171,6 +159,18 @@
     {
       "ticker": "TSM",
       "name": "Taiwan Semiconductor",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General",
       "score": 70,
       "market": "US"
     },
@@ -193,16 +193,16 @@
       "market": "UK"
     },
     {
+      "ticker": "KEYS",
+      "name": "Keysight Technologies",
+      "score": 69,
+      "market": "US"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 69,
       "market": "UK"
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna",
-      "score": 68,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -213,16 +213,16 @@
       "market": "UK"
     },
     {
-      "ticker": "LAND.L",
-      "name": "Land Securities",
-      "score": 71,
-      "market": "UK"
-    },
-    {
       "ticker": "BLND.L",
       "name": "British Land",
       "score": 70,
       "market": "UK"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 69,
+      "market": "US"
     },
     {
       "ticker": "INVP.L",
@@ -237,20 +237,8 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 67,
-      "market": "US"
-    },
-    {
       "ticker": "PSN.L",
       "name": "Persimmon",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "JMAT.L",
-      "name": "Johnson Matthey",
       "score": 67,
       "market": "UK"
     },
@@ -261,9 +249,21 @@
       "market": "UK"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
+      "ticker": "DRX.L",
+      "name": "Drax Group",
       "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "LAND.L",
+      "name": "Land Securities",
+      "score": 66,
       "market": "UK"
     }
   ],
@@ -283,7 +283,7 @@
     {
       "ticker": "SUPR.L",
       "name": "Supermarket Income REIT",
-      "score": 68,
+      "score": 67,
       "market": "UK"
     },
     {
@@ -311,12 +311,6 @@
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "SNR.L",
       "name": "Senior plc",
       "score": 65,
@@ -326,6 +320,12 @@
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 63,
       "market": "UK"
     }
   ],
