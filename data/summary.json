@@ -15,6 +15,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "JTC.L",
       "name": "JTC",
       "score": 71,
@@ -29,13 +36,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TSM",
       "name": "Taiwan Semiconductor",
       "score": 70,
@@ -45,13 +45,6 @@
     {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DG",
-      "name": "Dollar General",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -69,6 +62,13 @@
       "score": 70,
       "market": "UK",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "BLND.L",
+      "name": "British Land",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
@@ -80,6 +80,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CHWY",
       "name": "Chewy",
       "score": 22,
@@ -87,15 +94,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog",
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -115,15 +115,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 23,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "PINS",
-      "name": "Pinterest",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -153,7 +153,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 70,
+      "score": 71,
       "market": "US"
     },
     {
@@ -165,12 +165,6 @@
     {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "DG",
-      "name": "Dollar General",
       "score": 70,
       "market": "US"
     },
@@ -191,6 +185,12 @@
       "name": "Endeavour Mining",
       "score": 70,
       "market": "UK"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 69,
+      "market": "US"
     },
     {
       "ticker": "KEYS",
@@ -237,6 +237,12 @@
       "market": "UK"
     },
     {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "PSN.L",
       "name": "Persimmon",
       "score": 67,
@@ -253,12 +259,6 @@
       "name": "Drax Group",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 66,
-      "market": "US"
     },
     {
       "ticker": "LAND.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 673,
   "avgScore": 50,
-  "bearishAlertCount": 304
+  "bearishAlertCount": 303
 }
