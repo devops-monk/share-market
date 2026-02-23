@@ -101,6 +101,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "PINS",
+      "name": "Pinterest",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
       "score": 25,
@@ -124,13 +131,6 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PINS",
-      "name": "Pinterest",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -219,18 +219,6 @@
       "market": "UK"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 70,
-      "market": "UK"
-    },
-    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
       "score": 69,
@@ -255,6 +243,12 @@
       "market": "UK"
     },
     {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 67,
+      "market": "UK"
+    },
+    {
       "ticker": "HSIC",
       "name": "Henry Schein",
       "score": 66,
@@ -263,6 +257,12 @@
     {
       "ticker": "PSN.L",
       "name": "Persimmon",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "JMAT.L",
+      "name": "Johnson Matthey",
       "score": 66,
       "market": "UK"
     }
@@ -275,26 +275,20 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 67,
-      "market": "UK"
-    },
-    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
       "market": "US"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 65,
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
+      "ticker": "FOUR.L",
+      "name": "4imprint",
       "score": 65,
       "market": "UK"
     },
@@ -317,8 +311,8 @@
       "market": "UK"
     },
     {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 64,
       "market": "UK"
     },
@@ -327,9 +321,15 @@
       "name": "Hammerson",
       "score": 62,
       "market": "UK"
+    },
+    {
+      "ticker": "JDW.L",
+      "name": "J D Wetherspoon",
+      "score": 61,
+      "market": "UK"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 299
+  "bearishAlertCount": 304
 }
