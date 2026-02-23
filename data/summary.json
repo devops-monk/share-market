@@ -15,6 +15,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "DG",
+      "name": "Dollar General",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
       "score": 71,
@@ -22,11 +29,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DG",
-      "name": "Dollar General",
+      "ticker": "JTC.L",
+      "name": "JTC",
       "score": 71,
-      "market": "US",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "LAND.L",
+      "name": "Land Securities",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "AMAT",
@@ -36,8 +57,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -48,54 +69,12 @@
       "score": 70,
       "market": "UK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BLND.L",
-      "name": "British Land",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "EDV.L",
-      "name": "Endeavour Mining",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "AMC",
-      "name": "AMC Entertainment",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "CHWY",
-      "name": "Chewy",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "GWRE",
       "name": "Guidewire Software",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -115,6 +94,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "CHWY",
+      "name": "Chewy",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 22,
@@ -122,23 +108,37 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "AMC",
+      "name": "AMC Entertainment",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "PINS",
       "name": "Pinterest",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "LCID",
       "name": "Lucid Group",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "MANH",
       "name": "Manhattan Associates",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Mid"
     }
@@ -151,14 +151,14 @@
       "market": "UK"
     },
     {
-      "ticker": "BMY",
-      "name": "Bristol-Myers Squibb",
-      "score": 71,
+      "ticker": "DG",
+      "name": "Dollar General",
+      "score": 72,
       "market": "US"
     },
     {
-      "ticker": "DG",
-      "name": "Dollar General",
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb",
       "score": 71,
       "market": "US"
     },
@@ -169,8 +169,8 @@
       "market": "US"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
       "score": 70,
       "market": "US"
     },
@@ -193,19 +193,31 @@
       "market": "UK"
     },
     {
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 69,
       "market": "UK"
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "score": 68,
+      "market": "US"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "JTC.L",
+      "name": "JTC",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "LAND.L",
+      "name": "Land Securities",
+      "score": 71,
+      "market": "UK"
+    },
     {
       "ticker": "BLND.L",
       "name": "British Land",
@@ -253,18 +265,6 @@
       "name": "IG Group",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "JTC.L",
-      "name": "JTC",
-      "score": 66,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -272,6 +272,12 @@
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
       "score": 73,
+      "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 71,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "Hammerson",
       "score": 65,
       "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 64,
-      "market": "UK"
     }
   ],
   "totalStocks": 673,
   "avgScore": 50,
-  "bearishAlertCount": 298
+  "bearishAlertCount": 302
 }
