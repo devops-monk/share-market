@@ -75,6 +75,7 @@ export default function SupportBounce({ stocks }: { stocks: StockRecord[] }) {
   const [minScore, setMinScore] = useState(3);
   const [sortBy, setSortBy] = useState<SortKey>('bounceScore');
   const [marketFilter, setMarketFilter] = useState<'all' | 'US' | 'UK'>('all');
+  const [capFilter, setCapFilter] = useState<'all' | 'Large' | 'Mid' | 'Small'>('all');
 
   const bounceStocks: BounceStock[] = stocks
     .map(stock => {
@@ -83,6 +84,7 @@ export default function SupportBounce({ stocks }: { stocks: StockRecord[] }) {
     })
     .filter(d => d.bounceScore >= minScore)
     .filter(d => marketFilter === 'all' || d.stock.market === marketFilter)
+    .filter(d => capFilter === 'all' || d.stock.capCategory === capFilter)
     .sort((a, b) => {
       switch (sortBy) {
         case 'bounceScore':
@@ -184,6 +186,27 @@ export default function SupportBounce({ stocks }: { stocks: StockRecord[] }) {
                 }`}
               >
                 {m === 'all' ? 'All' : m}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="w-px h-5 bg-surface-border" />
+
+        <div className="flex items-center gap-2">
+          <label className="text-xs font-medium t-muted">Cap:</label>
+          <div className="flex gap-1">
+            {(['all', 'Large', 'Mid', 'Small'] as const).map(c => (
+              <button
+                key={c}
+                onClick={() => setCapFilter(c)}
+                className={`px-2.5 py-1 rounded-md text-xs font-medium transition-all ${
+                  capFilter === c
+                    ? 'bg-accent/15 text-accent-light ring-1 ring-accent/30'
+                    : 'bg-surface-tertiary t-tertiary hover:t-secondary'
+                }`}
+              >
+                {c === 'all' ? 'All' : c}
               </button>
             ))}
           </div>

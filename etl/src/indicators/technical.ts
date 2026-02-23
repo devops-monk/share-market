@@ -35,6 +35,11 @@ export interface TechnicalData {
   obvDivergence: 'bullish' | 'bearish' | null;
   weeklyHighLowRange: number | null;  // consolidation detection: 6-week range %
   accumulationDistribution: number | null; // 13-week up-volume vs down-volume ratio
+  priceReturn2y: number;
+  priceReturn3y: number;
+  // Year-over-year returns for each of the last 3 years (most recent first)
+  yearlyReturns: number[];  // e.g. [+0.15, +0.10, +0.20] = up 15% this year, 10% last year, 20% before that
+  yearlyUptrendYears: number;  // count of consecutive years with positive return (0-3)
 }
 
 export function computeTechnicals(quote: QuoteData): TechnicalData {
@@ -234,10 +239,47 @@ export function computeTechnicals(quote: QuoteData): TechnicalData {
     accumulationDistribution = totalVol > 0 ? (upVol - downVol) / totalVol : 0;
   }
 
+  // Multi-year price returns (2y = ~504 trading days, 3y = ~756)
+  const priceReturn2y = closes.length >= 504
+    ? (closes[closes.length - 1] - closes[closes.length - 504]) / closes[closes.length - 504]
+    : priceReturn1y;
+  const priceReturn3y = closes.length >= 756
+    ? (closes[closes.length - 1] - closes[closes.length - 756]) / closes[closes.length - 756]
+    : priceReturn2y;
+
+  // Year-over-year returns for each of the last 3 years
+  // Year 1: most recent 252 days, Year 2: 252-504 days ago, Year 3: 504-756 days ago
+  const yearlyReturns: number[] = [];
+  if (closes.length >= 252) {
+    yearlyReturns.push(
+      (closes[closes.length - 1] - closes[closes.length - 252]) / closes[closes.length - 252]
+    );
+  }
+  if (closes.length >= 504) {
+    yearlyReturns.push(
+      (closes[closes.length - 252] - closes[closes.length - 504]) / closes[closes.length - 504]
+    );
+  }
+  if (closes.length >= 756) {
+    yearlyReturns.push(
+      (closes[closes.length - 504] - closes[closes.length - 756]) / closes[closes.length - 756]
+    );
+  }
+
+  // Count consecutive years of positive returns (starting from oldest)
+  let yearlyUptrendYears = 0;
+  // Check from oldest to newest — all must be positive for a consistent uptrend
+  const reversed = [...yearlyReturns].reverse(); // oldest first
+  for (const r of reversed) {
+    if (r > 0) yearlyUptrendYears++;
+    else break; // stop counting at first negative year
+  }
+
   return {
     rsi, macd, sma20, sma50, sma150, sma200, sma200Slope, volumeRatio,
     priceReturn3m, priceReturn6m, priceReturn1y, volatility,
     bollinger, stochastic, obv, obvTrend, obvDivergence,
     weeklyHighLowRange, accumulationDistribution,
+    priceReturn2y, priceReturn3y, yearlyReturns, yearlyUptrendYears,
   };
 }

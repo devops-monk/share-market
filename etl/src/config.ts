@@ -3,7 +3,7 @@ export const CONFIG = {
   finvizConcurrency: 5,     // FinViz scraping (more sensitive)
   newsConcurrency: 4,       // News fetching
   requestDelayMs: 200,
-  historicalPeriod: '1y',
+  historicalPeriod: '3y',
   historicalInterval: '1d' as const,
 
   // Scoring weights (must sum to 1.0)

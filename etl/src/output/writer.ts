@@ -43,6 +43,11 @@ export interface StockRecord {
   priceReturn3m: number;
   priceReturn6m: number;
   priceReturn1y: number;
+  priceReturn2y: number;
+  priceReturn3y: number;
+  yearlyReturns: number[];       // per-year returns [year1, year2, year3] most recent first
+  yearlyUptrendYears: number;    // consecutive years of positive returns (0-3)
+  pctBelowResistance: number | null;  // how far below nearest resistance (%)
   volatility: number;
   signals: { type: string; direction: string; severity: number; description: string }[];
   bearishScore: number;

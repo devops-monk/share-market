@@ -185,6 +185,11 @@ async function main() {
       priceReturn3m: tech.priceReturn3m,
       priceReturn6m: tech.priceReturn6m,
       priceReturn1y: tech.priceReturn1y,
+      priceReturn2y: tech.priceReturn2y,
+      priceReturn3y: tech.priceReturn3y,
+      yearlyReturns: tech.yearlyReturns,
+      yearlyUptrendYears: tech.yearlyUptrendYears,
+      pctBelowResistance: null, // computed after supportResistance below
       volatility: tech.volatility,
       signals,
       bearishScore,
@@ -265,6 +270,17 @@ async function main() {
         return +(dcfSum / shares).toFixed(2);
       })(),
     });
+
+    // Compute pctBelowResistance from the supportResistance data
+    const lastRecord = stockRecords[stockRecords.length - 1];
+    const nearestResistance = lastRecord.supportResistance
+      .filter(l => l.type === 'resistance')
+      .sort((a, b) => a.price - b.price)[0];
+    if (nearestResistance) {
+      lastRecord.pctBelowResistance = +((
+        (nearestResistance.price - lastRecord.price) / nearestResistance.price
+      ) * 100).toFixed(2);
+    }
 
     // Collect OHLCV for candlestick charts
     if (quote.ohlcvTimestamps.length > 0) {

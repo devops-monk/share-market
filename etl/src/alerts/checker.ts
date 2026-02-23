@@ -74,6 +74,11 @@ function evaluateCondition(rule: AlertRule, stock: StockRecord): boolean {
       return stock.rsi != null && stock.rsi <= rule.threshold;
     case 'minervini_pass':
       return stock.minerviniChecks.passed >= rule.threshold;
+    case 'uptrend_below_resistance':
+      // Fires when stock has N+ years of uptrend AND is below resistance by at least threshold %
+      return stock.yearlyUptrendYears >= 2
+        && stock.pctBelowResistance != null
+        && stock.pctBelowResistance >= rule.threshold;
     default:
       return false;
   }
@@ -94,6 +99,8 @@ function getRelevantValue(rule: AlertRule, stock: StockRecord): number {
       return stock.rsi ?? 0;
     case 'minervini_pass':
       return stock.minerviniChecks.passed;
+    case 'uptrend_below_resistance':
+      return stock.pctBelowResistance ?? 0;
     default:
       return 0;
   }
@@ -122,6 +129,8 @@ function formatAlertMessage(rule: AlertRule, stock: StockRecord): string {
       return `${stock.ticker} RSI is ${stock.rsi?.toFixed(1)} — Oversold (threshold: ${rule.threshold})\nPrice: ${price} (${change})`;
     case 'minervini_pass':
       return `${stock.ticker} passes ${stock.minerviniChecks.passed}/8 Minervini checks (threshold: ${rule.threshold})\nPrice: ${price} | RS: ${stock.rsPercentile} | Score: ${score}/100`;
+    case 'uptrend_below_resistance':
+      return `${stock.ticker} — ${stock.yearlyUptrendYears}yr uptrend, ${stock.pctBelowResistance?.toFixed(1)}% below resistance (threshold: ${rule.threshold}%)\nPrice: ${price} (${change}) | Score: ${score}/100`;
     default:
       return `Alert for ${stock.ticker}: ${rule.type}`;
   }

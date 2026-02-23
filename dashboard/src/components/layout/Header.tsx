@@ -46,6 +46,7 @@ const navGroups: NavGroup[] = [
       { path: '/dip', label: 'Buy the Dip', desc: 'Oversold bounce candidates' },
       { path: '/breakout', label: 'Breakouts', desc: 'Squeeze & volume breakouts' },
       { path: '/support-bounce', label: 'Support Bounce', desc: 'Pullback to support buy setups' },
+      { path: '/yearly-uptrend', label: 'Yearly Uptrend', desc: 'Multi-year uptrend below resistance' },
     ],
   },
   {

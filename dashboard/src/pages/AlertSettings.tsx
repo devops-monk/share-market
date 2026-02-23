@@ -22,6 +22,7 @@ const ALERT_TYPES = [
   { value: 'rsi_above', label: 'RSI Above', desc: 'Alert when RSI goes above threshold (overbought)' },
   { value: 'rsi_below', label: 'RSI Below', desc: 'Alert when RSI goes below threshold (oversold)' },
   { value: 'minervini_pass', label: 'Minervini Checks >=', desc: 'Alert when stock passes N+ Minervini criteria' },
+  { value: 'uptrend_below_resistance', label: 'Uptrend Below Resistance %', desc: 'Alert when multi-year uptrend stock is N% below resistance' },
   { value: 'daily_summary', label: 'Daily Summary', desc: 'Send a daily market summary at first ETL run' },
 ];
 

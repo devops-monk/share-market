@@ -63,6 +63,30 @@
       "threshold": 7,
       "enabled": true,
       "note": "7/8 Minervini checks — near-perfect trend template, watch for full confirmation"
+    },
+    {
+      "id": "uptrend-discount-10pct",
+      "type": "uptrend_below_resistance",
+      "ticker": "*",
+      "threshold": 10,
+      "enabled": true,
+      "note": "Multi-year uptrend stock 10%+ below resistance — potential buy opportunity on pullback"
+    },
+    {
+      "id": "uptrend-discount-15pct",
+      "type": "uptrend_below_resistance",
+      "ticker": "*",
+      "threshold": 15,
+      "enabled": true,
+      "note": "Multi-year uptrend stock 15%+ below resistance — significant discount on proven performer"
+    },
+    {
+      "id": "uptrend-discount-20pct",
+      "type": "uptrend_below_resistance",
+      "ticker": "*",
+      "threshold": 20,
+      "enabled": true,
+      "note": "Multi-year uptrend stock 20%+ below resistance — deep pullback, high conviction buy zone"
     }
   ]
 }
