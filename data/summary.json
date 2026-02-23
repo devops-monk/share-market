@@ -213,6 +213,12 @@
       "market": "US"
     },
     {
+      "ticker": "PSN.L",
+      "name": "Persimmon",
+      "score": 70,
+      "market": "UK"
+    },
+    {
       "ticker": "BLND.L",
       "name": "British Land",
       "score": 70,
@@ -240,12 +246,6 @@
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
       "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 67,
       "market": "UK"
     },
     {
@@ -287,12 +287,6 @@
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 66,
-      "market": "UK"
-    },
-    {
       "ticker": "FOUR.L",
       "name": "4imprint",
       "score": 65,
@@ -325,11 +319,17 @@
     {
       "ticker": "HMSO.L",
       "name": "Hammerson",
-      "score": 62,
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 61,
       "market": "UK"
     }
   ],
   "totalStocks": 673,
   "avgScore": 52,
-  "bearishAlertCount": 304
+  "bearishAlertCount": 300
 }
