@@ -22,6 +22,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
       "score": 72,
@@ -62,13 +69,6 @@
       "score": 72,
       "market": "UK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -87,13 +87,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "RPI.L",
-      "name": "Raspberry Pi",
-      "score": 24,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "CHWY",
       "name": "Chewy",
       "score": 24,
@@ -106,6 +99,13 @@
       "score": 24,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "RPI.L",
+      "name": "Raspberry Pi",
+      "score": 25,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "BROS",
@@ -122,13 +122,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "PINS",
       "name": "Pinterest",
       "score": 25,
@@ -141,6 +134,13 @@
       "score": 25,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -163,6 +163,12 @@
       "market": "US"
     },
     {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
       "score": 72,
@@ -193,12 +199,6 @@
       "market": "UK"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "TSM",
       "name": "Taiwan Semiconductor",
       "score": 71,
@@ -213,12 +213,6 @@
       "market": "US"
     },
     {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 71,
-      "market": "UK"
-    },
-    {
       "ticker": "PSN.L",
       "name": "Persimmon",
       "score": 70,
@@ -231,8 +225,8 @@
       "market": "UK"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
       "score": 70,
       "market": "UK"
     },
@@ -265,19 +259,19 @@
       "name": "Henry Schein",
       "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 65,
+      "market": "US"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
-      "score": 71,
-      "market": "UK"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 69,
+      "score": 68,
       "market": "UK"
     },
     {
@@ -293,20 +287,14 @@
       "market": "US"
     },
     {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
-      "score": 66,
-      "market": "UK"
-    },
-    {
       "ticker": "FOUR.L",
       "name": "4imprint",
       "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
       "score": 65,
       "market": "UK"
     },
@@ -317,8 +305,8 @@
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 64,
       "market": "UK"
     },
@@ -327,9 +315,21 @@
       "name": "Hammerson",
       "score": 62,
       "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "JDW.L",
+      "name": "J D Wetherspoon",
+      "score": 61,
+      "market": "UK"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 304
+  "bearishAlertCount": 300
 }
