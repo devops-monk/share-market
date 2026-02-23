@@ -22,13 +22,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
       "score": 72,
@@ -68,6 +61,13 @@
       "name": "GSK",
       "score": 72,
       "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -122,6 +122,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "PINS",
       "name": "Pinterest",
       "score": 25,
@@ -134,13 +141,6 @@
       "score": 25,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -160,12 +160,6 @@
       "ticker": "HST",
       "name": "Host Hotels & Resorts",
       "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 72,
       "market": "US"
     },
     {
@@ -203,6 +197,12 @@
       "name": "Taiwan Semiconductor",
       "score": 71,
       "market": "US"
+    },
+    {
+      "ticker": "SWK",
+      "name": "Stanley Black & Decker",
+      "score": 71,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -213,14 +213,14 @@
       "market": "US"
     },
     {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
+      "ticker": "BLND.L",
+      "name": "British Land",
       "score": 70,
       "market": "UK"
     },
     {
-      "ticker": "BLND.L",
-      "name": "British Land",
+      "ticker": "INVP.L",
+      "name": "Investec",
       "score": 70,
       "market": "UK"
     },
@@ -243,15 +243,15 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
       "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 68,
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 67,
       "market": "UK"
     },
     {
@@ -261,10 +261,10 @@
       "market": "US"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 65,
-      "market": "US"
+      "ticker": "PSN.L",
+      "name": "Persimmon",
+      "score": 66,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -293,6 +293,12 @@
       "market": "UK"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 65,
@@ -305,8 +311,14 @@
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "JDW.L",
+      "name": "J D Wetherspoon",
       "score": 64,
       "market": "UK"
     },
@@ -315,21 +327,9 @@
       "name": "Hammerson",
       "score": 62,
       "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
-      "score": 61,
-      "market": "UK"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 300
+  "bearishAlertCount": 299
 }
