@@ -79,6 +79,15 @@ function evaluateCondition(rule: AlertRule, stock: StockRecord): boolean {
       return stock.yearlyUptrendYears >= 2
         && stock.pctBelowResistance != null
         && stock.pctBelowResistance >= rule.threshold;
+    case 'top_owned_drop': {
+      // Fires when a top-institutionally-owned stock has dropped >= threshold % from 52-week high
+      const instOwn = stock.heldPercentInstitutions;
+      if (instOwn == null || instOwn < 0.5) return false; // at least 50% institutional ownership
+      const dropPct = stock.fiftyTwoWeekHigh > 0
+        ? ((stock.fiftyTwoWeekHigh - stock.price) / stock.fiftyTwoWeekHigh) * 100
+        : 0;
+      return dropPct >= rule.threshold;
+    }
     default:
       return false;
   }
@@ -101,6 +110,10 @@ function getRelevantValue(rule: AlertRule, stock: StockRecord): number {
       return stock.minerviniChecks.passed;
     case 'uptrend_below_resistance':
       return stock.pctBelowResistance ?? 0;
+    case 'top_owned_drop':
+      return stock.fiftyTwoWeekHigh > 0
+        ? ((stock.fiftyTwoWeekHigh - stock.price) / stock.fiftyTwoWeekHigh) * 100
+        : 0;
     default:
       return 0;
   }
@@ -131,6 +144,13 @@ function formatAlertMessage(rule: AlertRule, stock: StockRecord): string {
       return `${stock.ticker} passes ${stock.minerviniChecks.passed}/8 Minervini checks (threshold: ${rule.threshold})\nPrice: ${price} | RS: ${stock.rsPercentile} | Score: ${score}/100`;
     case 'uptrend_below_resistance':
       return `${stock.ticker} — ${stock.yearlyUptrendYears}yr uptrend, ${stock.pctBelowResistance?.toFixed(1)}% below resistance (threshold: ${rule.threshold}%)\nPrice: ${price} (${change}) | Score: ${score}/100`;
+    case 'top_owned_drop': {
+      const dropPct = stock.fiftyTwoWeekHigh > 0
+        ? ((stock.fiftyTwoWeekHigh - stock.price) / stock.fiftyTwoWeekHigh) * 100
+        : 0;
+      const instPct = ((stock.heldPercentInstitutions ?? 0) * 100).toFixed(1);
+      return `${stock.ticker} — ${instPct}% institutional, ${dropPct.toFixed(1)}% off 52W high (threshold: ${rule.threshold}%)\nPrice: ${price} (${change}) | 52W High: ${cur}${stock.fiftyTwoWeekHigh.toFixed(2)} | Score: ${score}/100`;
+    }
     default:
       return `Alert for ${stock.ticker}: ${rule.type}`;
   }

@@ -8,6 +8,7 @@ export type AlertType =
   | 'rsi_below'
   | 'minervini_pass'
   | 'uptrend_below_resistance'
+  | 'top_owned_drop'
   | 'daily_summary';
 
 export interface AlertRule {

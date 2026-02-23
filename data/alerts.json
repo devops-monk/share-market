@@ -95,6 +95,54 @@
       "threshold": 20,
       "enabled": true,
       "note": "Multi-year uptrend stock 20%+ below resistance — deep pullback, high conviction buy zone"
+    },
+    {
+      "id": "top-owned-drop-5pct",
+      "type": "top_owned_drop",
+      "ticker": "*",
+      "threshold": 5,
+      "enabled": true,
+      "note": "Top institutional stock 5%+ off 52W high — early pullback in widely held name"
+    },
+    {
+      "id": "top-owned-drop-10pct",
+      "type": "top_owned_drop",
+      "ticker": "*",
+      "threshold": 10,
+      "enabled": true,
+      "note": "Top institutional stock 10%+ off 52W high — notable correction in institutional favorite"
+    },
+    {
+      "id": "top-owned-drop-15pct",
+      "type": "top_owned_drop",
+      "ticker": "*",
+      "threshold": 15,
+      "enabled": true,
+      "note": "Top institutional stock 15%+ off 52W high — significant discount on blue-chip holding"
+    },
+    {
+      "id": "top-owned-drop-20pct",
+      "type": "top_owned_drop",
+      "ticker": "*",
+      "threshold": 20,
+      "enabled": true,
+      "note": "Top institutional stock 20%+ off 52W high — deep value territory for institutional favorite"
+    },
+    {
+      "id": "top-owned-drop-25pct",
+      "type": "top_owned_drop",
+      "ticker": "*",
+      "threshold": 25,
+      "enabled": true,
+      "note": "Top institutional stock 25%+ off 52W high — severe discount, potential capitulation buy"
+    },
+    {
+      "id": "top-owned-drop-30pct",
+      "type": "top_owned_drop",
+      "ticker": "*",
+      "threshold": 30,
+      "enabled": true,
+      "note": "Top institutional stock 30%+ off 52W high — extreme selloff in widely held stock, high conviction buy zone"
     }
   ]
 }
