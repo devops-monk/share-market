@@ -37,9 +37,10 @@ export interface TechnicalData {
   accumulationDistribution: number | null; // 13-week up-volume vs down-volume ratio
   priceReturn2y: number;
   priceReturn3y: number;
-  // Year-over-year returns for each of the last 3 years (most recent first)
-  yearlyReturns: number[];  // e.g. [+0.15, +0.10, +0.20] = up 15% this year, 10% last year, 20% before that
-  yearlyUptrendYears: number;  // count of consecutive years with positive return (0-3)
+  priceReturn4y: number;
+  // Year-over-year returns for each of the last 4 years (most recent first)
+  yearlyReturns: number[];  // e.g. [+0.15, +0.10, -0.05, +0.20] = Year1 +15%, Year2 +10%, Year3 -5%, Year4 +20%
+  yearlyUptrendYears: number;  // total number of positive-return years (0-4), NOT consecutive
 }
 
 export function computeTechnicals(quote: QuoteData): TechnicalData {
@@ -239,47 +240,40 @@ export function computeTechnicals(quote: QuoteData): TechnicalData {
     accumulationDistribution = totalVol > 0 ? (upVol - downVol) / totalVol : 0;
   }
 
-  // Multi-year price returns (2y = ~504 trading days, 3y = ~756)
+  // Multi-year price returns (2y = ~504, 3y = ~756, 4y = ~1008 trading days)
   const priceReturn2y = closes.length >= 504
     ? (closes[closes.length - 1] - closes[closes.length - 504]) / closes[closes.length - 504]
     : priceReturn1y;
   const priceReturn3y = closes.length >= 756
     ? (closes[closes.length - 1] - closes[closes.length - 756]) / closes[closes.length - 756]
     : priceReturn2y;
+  const priceReturn4y = closes.length >= 1008
+    ? (closes[closes.length - 1] - closes[closes.length - 1008]) / closes[closes.length - 1008]
+    : priceReturn3y;
 
-  // Year-over-year returns for each of the last 3 years
-  // Year 1: most recent 252 days, Year 2: 252-504 days ago, Year 3: 504-756 days ago
+  // Year-over-year returns for each of the last 4 years (most recent first)
+  // Year 1: last 252 days, Year 2: 252-504, Year 3: 504-756, Year 4: 756-1008
   const yearlyReturns: number[] = [];
-  if (closes.length >= 252) {
-    yearlyReturns.push(
-      (closes[closes.length - 1] - closes[closes.length - 252]) / closes[closes.length - 252]
-    );
-  }
-  if (closes.length >= 504) {
-    yearlyReturns.push(
-      (closes[closes.length - 252] - closes[closes.length - 504]) / closes[closes.length - 504]
-    );
-  }
-  if (closes.length >= 756) {
-    yearlyReturns.push(
-      (closes[closes.length - 504] - closes[closes.length - 756]) / closes[closes.length - 756]
-    );
+  const yearBoundaries = [0, 252, 504, 756, 1008];
+  for (let y = 0; y < 4; y++) {
+    const endIdx = closes.length - yearBoundaries[y];
+    const startIdx = closes.length - yearBoundaries[y + 1];
+    if (startIdx >= 0 && endIdx > 0) {
+      yearlyReturns.push(
+        (closes[endIdx - 1] - closes[startIdx]) / closes[startIdx]
+      );
+    }
   }
 
-  // Count consecutive years of positive returns (starting from oldest)
-  let yearlyUptrendYears = 0;
-  // Check from oldest to newest — all must be positive for a consistent uptrend
-  const reversed = [...yearlyReturns].reverse(); // oldest first
-  for (const r of reversed) {
-    if (r > 0) yearlyUptrendYears++;
-    else break; // stop counting at first negative year
-  }
+  // Count total positive-return years (NOT consecutive)
+  // e.g. [+15%, -5%, +10%, +20%] = 3 positive years out of 4
+  const yearlyUptrendYears = yearlyReturns.filter(r => r > 0).length;
 
   return {
     rsi, macd, sma20, sma50, sma150, sma200, sma200Slope, volumeRatio,
     priceReturn3m, priceReturn6m, priceReturn1y, volatility,
     bollinger, stochastic, obv, obvTrend, obvDivergence,
     weeklyHighLowRange, accumulationDistribution,
-    priceReturn2y, priceReturn3y, yearlyReturns, yearlyUptrendYears,
+    priceReturn2y, priceReturn3y, priceReturn4y, yearlyReturns, yearlyUptrendYears,
   };
 }

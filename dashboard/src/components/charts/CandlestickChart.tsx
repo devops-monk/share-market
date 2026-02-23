@@ -8,7 +8,7 @@ interface Props {
   sma200?: number | null;
 }
 
-type TimeRange = '3M' | '6M' | '1Y' | '2Y' | '3Y';
+type TimeRange = '3M' | '6M' | '1Y' | '2Y' | '3Y' | '4Y' | '5Y';
 
 const RANGE_DAYS: Record<TimeRange, number> = {
   '3M': 63,
@@ -16,6 +16,8 @@ const RANGE_DAYS: Record<TimeRange, number> = {
   '1Y': 252,
   '2Y': 504,
   '3Y': 756,
+  '4Y': 1008,
+  '5Y': 1260,
 };
 
 const BASE = import.meta.env.BASE_URL;
@@ -165,7 +167,9 @@ export default function CandlestickChart({ ticker, sma50, sma150, sma200 }: Prop
 
         // Determine max available range
         const days = raw.length;
-        if (days >= 756) setMaxRange('3Y');
+        if (days >= 1260) setMaxRange('5Y');
+        else if (days >= 1008) setMaxRange('4Y');
+        else if (days >= 756) setMaxRange('3Y');
         else if (days >= 504) setMaxRange('2Y');
         else if (days >= 252) setMaxRange('1Y');
         else if (days >= 126) setMaxRange('6M');
@@ -218,7 +222,7 @@ export default function CandlestickChart({ ticker, sma50, sma150, sma200 }: Prop
     );
   }
 
-  const ranges: TimeRange[] = ['3M', '6M', '1Y', '2Y', '3Y'];
+  const ranges: TimeRange[] = ['3M', '6M', '1Y', '2Y', '3Y', '4Y', '5Y'];
   const availableRanges = ranges.filter(r => RANGE_DAYS[r] <= RANGE_DAYS[maxRange]);
 
   return (

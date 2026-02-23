@@ -187,6 +187,7 @@ async function main() {
       priceReturn1y: tech.priceReturn1y,
       priceReturn2y: tech.priceReturn2y,
       priceReturn3y: tech.priceReturn3y,
+      priceReturn4y: tech.priceReturn4y,
       yearlyReturns: tech.yearlyReturns,
       yearlyUptrendYears: tech.yearlyUptrendYears,
       pctBelowResistance: null, // computed after supportResistance below

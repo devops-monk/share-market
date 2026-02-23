@@ -5,14 +5,17 @@ import { MarketTag, CapTag, ScoreBadge, ChangePercent, PriceDisplay } from '../c
 
 type SortKey = 'pctBelow' | 'uptrendYears' | 'score' | 'return1y' | 'strength';
 type BucketFilter = 'all' | '5' | '10' | '15' | '20' | '25';
+type UptrendMode = 'any1' | 'any2' | 'any3' | 'any4' | 'consec2' | 'consec3' | 'consec4';
 
 interface UptrendStock {
   stock: StockRecord;
   pctBelow: number;
   nearestResistance: { price: number; strength: number };
   nearestSupport: { price: number; strength: number } | null;
-  bucket: string; // "5-10%", "10-15%", etc.
+  bucket: string;
   qualitySignals: string[];
+  positiveYears: number;
+  totalYears: number;
 }
 
 function getBucket(pct: number): string {
@@ -24,53 +27,65 @@ function getBucket(pct: number): string {
   return '25%+';
 }
 
+function matchesUptrendMode(yearlyReturns: number[], mode: UptrendMode): boolean {
+  const positiveYears = yearlyReturns.filter(r => r > 0).length;
+  const totalYears = yearlyReturns.length;
+
+  switch (mode) {
+    case 'any1': return positiveYears >= 1;
+    case 'any2': return positiveYears >= 2;
+    case 'any3': return positiveYears >= 3;
+    case 'any4': return positiveYears >= 4;
+    case 'consec2': {
+      // Most recent 2 years must all be positive
+      if (totalYears < 2) return false;
+      return yearlyReturns[0] > 0 && yearlyReturns[1] > 0;
+    }
+    case 'consec3': {
+      if (totalYears < 3) return false;
+      return yearlyReturns[0] > 0 && yearlyReturns[1] > 0 && yearlyReturns[2] > 0;
+    }
+    case 'consec4': {
+      if (totalYears < 4) return false;
+      return yearlyReturns[0] > 0 && yearlyReturns[1] > 0 && yearlyReturns[2] > 0 && yearlyReturns[3] > 0;
+    }
+    default: return false;
+  }
+}
+
 function getQualitySignals(stock: StockRecord): string[] {
   const signals: string[] = [];
-
-  // SMA alignment (trend health)
-  if (stock.sma50 != null && stock.sma200 != null && stock.sma50 > stock.sma200) {
+  if (stock.sma50 != null && stock.sma200 != null && stock.sma50 > stock.sma200)
     signals.push('Golden Cross (SMA50 > SMA200)');
-  }
-
-  // SMA200 trending up
-  if (stock.sma200Slope != null && stock.sma200Slope > 0) {
+  if (stock.sma200Slope != null && stock.sma200Slope > 0)
     signals.push('SMA200 Trending Up');
-  }
-
-  // RSI in healthy zone (not overbought, not deeply oversold)
-  if (stock.rsi != null && stock.rsi >= 30 && stock.rsi <= 55) {
+  if (stock.rsi != null && stock.rsi >= 30 && stock.rsi <= 55)
     signals.push(`Healthy RSI (${stock.rsi.toFixed(0)})`);
-  }
-
-  // Volume not indicating panic
-  if (stock.obvTrend === 'rising' || stock.obvTrend === 'flat') {
+  if (stock.obvTrend === 'rising' || stock.obvTrend === 'flat')
     signals.push('Volume Healthy (OBV OK)');
-  }
-
-  // Good fundamentals
-  if (stock.returnOnEquity != null && stock.returnOnEquity > 0.12) {
+  if (stock.returnOnEquity != null && stock.returnOnEquity > 0.12)
     signals.push(`Strong ROE (${(stock.returnOnEquity * 100).toFixed(0)}%)`);
-  }
-
-  if (stock.earningsGrowth != null && stock.earningsGrowth > 0) {
+  if (stock.earningsGrowth != null && stock.earningsGrowth > 0)
     signals.push('Positive Earnings Growth');
-  }
-
-  // Piotroski quality
-  if (stock.piotroskiScore != null && stock.piotroskiScore >= 6) {
+  if (stock.piotroskiScore != null && stock.piotroskiScore >= 6)
     signals.push(`Piotroski ${stock.piotroskiScore}/9`);
-  }
-
-  // Accumulation
-  if (stock.accDistRating === 'A' || stock.accDistRating === 'B') {
+  if (stock.accDistRating === 'A' || stock.accDistRating === 'B')
     signals.push(`Accumulation (${stock.accDistRating})`);
-  }
-
   return signals;
 }
 
+const UPTREND_OPTIONS: { value: UptrendMode; label: string; desc: string }[] = [
+  { value: 'any1', label: '1yr+', desc: 'At least 1 positive year' },
+  { value: 'any2', label: '2yr+', desc: 'At least 2 positive years (any)' },
+  { value: 'any3', label: '3yr+', desc: 'At least 3 positive years (any)' },
+  { value: 'any4', label: '4yr+', desc: 'All 4 years positive' },
+  { value: 'consec2', label: '2yr strict', desc: 'Last 2 years both positive' },
+  { value: 'consec3', label: '3yr strict', desc: 'Last 3 years all positive' },
+  { value: 'consec4', label: '4yr strict', desc: 'Last 4 years all positive' },
+];
+
 export default function YearlyUptrend({ stocks }: { stocks: StockRecord[] }) {
-  const [minYears, setMinYears] = useState(2);
+  const [uptrendMode, setUptrendMode] = useState<UptrendMode>('any2');
   const [sortBy, setSortBy] = useState<SortKey>('pctBelow');
   const [marketFilter, setMarketFilter] = useState<'all' | 'US' | 'UK'>('all');
   const [capFilter, setCapFilter] = useState<'all' | 'Large' | 'Mid' | 'Small'>('all');
@@ -80,30 +95,25 @@ export default function YearlyUptrend({ stocks }: { stocks: StockRecord[] }) {
     const results: UptrendStock[] = [];
 
     for (const stock of stocks) {
-      // Must have multi-year uptrend
-      if (stock.yearlyUptrendYears < minYears) continue;
-      // Must have resistance data
+      if (!matchesUptrendMode(stock.yearlyReturns, uptrendMode)) continue;
       if (stock.pctBelowResistance == null || stock.pctBelowResistance <= 0) continue;
-
-      // Market filter
       if (marketFilter !== 'all' && stock.market !== marketFilter) continue;
-      // Cap filter
       if (capFilter !== 'all' && stock.capCategory !== capFilter) continue;
 
       const sr = stock.supportResistance ?? [];
       const resistances = sr.filter(l => l.type === 'resistance').sort((a, b) => a.price - b.price);
       const supports = sr.filter(l => l.type === 'support').sort((a, b) => b.price - a.price);
-
       if (resistances.length === 0) continue;
 
       const pctBelow = stock.pctBelowResistance;
       const bucket = getBucket(pctBelow);
 
-      // Bucket filter
       if (bucketFilter !== 'all') {
         const minBucket = parseInt(bucketFilter);
         if (pctBelow < minBucket) continue;
       }
+
+      const positiveYears = stock.yearlyReturns.filter(r => r > 0).length;
 
       results.push({
         stock,
@@ -112,15 +122,17 @@ export default function YearlyUptrend({ stocks }: { stocks: StockRecord[] }) {
         nearestSupport: supports[0] ?? null,
         bucket,
         qualitySignals: getQualitySignals(stock),
+        positiveYears,
+        totalYears: stock.yearlyReturns.length,
       });
     }
 
     results.sort((a, b) => {
       switch (sortBy) {
         case 'pctBelow':
-          return b.pctBelow - a.pctBelow; // highest discount first
+          return b.pctBelow - a.pctBelow;
         case 'uptrendYears':
-          return b.stock.yearlyUptrendYears - a.stock.yearlyUptrendYears || b.pctBelow - a.pctBelow;
+          return b.positiveYears - a.positiveYears || b.pctBelow - a.pctBelow;
         case 'score':
           return b.stock.score.composite - a.stock.score.composite;
         case 'return1y':
@@ -133,13 +145,13 @@ export default function YearlyUptrend({ stocks }: { stocks: StockRecord[] }) {
     });
 
     return results;
-  }, [stocks, minYears, sortBy, marketFilter, capFilter, bucketFilter]);
+  }, [stocks, uptrendMode, sortBy, marketFilter, capFilter, bucketFilter]);
 
   // Bucket summary counts
   const bucketCounts = useMemo(() => {
     const counts: Record<string, number> = { '0-5%': 0, '5-10%': 0, '10-15%': 0, '15-20%': 0, '20-25%': 0, '25%+': 0 };
     for (const stock of stocks) {
-      if (stock.yearlyUptrendYears < minYears) continue;
+      if (!matchesUptrendMode(stock.yearlyReturns, uptrendMode)) continue;
       if (stock.pctBelowResistance == null || stock.pctBelowResistance <= 0) continue;
       if (marketFilter !== 'all' && stock.market !== marketFilter) continue;
       if (capFilter !== 'all' && stock.capCategory !== capFilter) continue;
@@ -147,7 +159,9 @@ export default function YearlyUptrend({ stocks }: { stocks: StockRecord[] }) {
       counts[bucket] = (counts[bucket] || 0) + 1;
     }
     return counts;
-  }, [stocks, minYears, marketFilter, capFilter]);
+  }, [stocks, uptrendMode, marketFilter, capFilter]);
+
+  const selectedOption = UPTREND_OPTIONS.find(o => o.value === uptrendMode)!;
 
   return (
     <div className="space-y-5">
@@ -171,25 +185,23 @@ export default function YearlyUptrend({ stocks }: { stocks: StockRecord[] }) {
           </summary>
           <div className="mt-3 text-sm t-muted space-y-2">
             <p>
-              This screen finds stocks with a <strong className="t-secondary">proven multi-year uptrend</strong> that
-              are currently trading <strong className="t-secondary">below their resistance level</strong>. The idea is
-              simple: if a stock has been going up consistently for 2-3 years, a pullback to below resistance is a
-              potential buying opportunity — you're getting a "discount" on a strong stock.
+              This screen finds stocks with a <strong className="t-secondary">proven upward trend over multiple years</strong> that
+              are currently trading <strong className="t-secondary">below their resistance level</strong>. You're getting a "discount"
+              on a stock that has a strong long-term track record.
             </p>
+            <p className="font-medium t-secondary">Two types of uptrend filters:</p>
             <ul className="list-disc list-inside space-y-1 ml-1">
-              <li><strong className="t-secondary">Yearly Uptrend</strong> — Stock must have positive returns in each of the last 2-3 years consecutively</li>
-              <li><strong className="t-secondary">Below Resistance</strong> — Current price is below the nearest resistance level (a price ceiling where selling pressure historically appears)</li>
-              <li><strong className="t-secondary">% Below Resistance</strong> — How much discount you're getting from resistance. Higher % = bigger pullback = potentially better entry</li>
-              <li><strong className="t-secondary">Bucket Filters</strong> — Filter by discount range: 5%, 10%, 15%, 20%, 25%+ below resistance</li>
+              <li><strong className="t-secondary">Flexible (1yr+ / 2yr+ / 3yr+ / 4yr+)</strong> — Counts total positive years out of available data. A stock with +20%, -5%, +15%, +30% has <strong>3 positive years</strong>. This catches great stocks that had one bad year but are overall strong performers.</li>
+              <li><strong className="t-secondary">Strict (2yr / 3yr / 4yr strict)</strong> — Requires the most recent N years to ALL be positive, with no down year. Use this for the most consistent uptrenders only.</li>
             </ul>
-            <p className="mt-2">
-              <strong className="t-secondary">Quality signals</strong> are extra confirmation: golden cross, healthy RSI,
-              volume trends, and fundamental quality (ROE, Piotroski, earnings growth). More signals = higher confidence.
-            </p>
+            <ul className="list-disc list-inside space-y-1 ml-1 mt-2">
+              <li><strong className="t-secondary">Below Resistance</strong> — Current price is below the nearest resistance level</li>
+              <li><strong className="t-secondary">% Below Resistance</strong> — Higher % = bigger pullback = potentially better entry point</li>
+            </ul>
             <p className="text-xs mt-2 pt-2 border-t border-surface-border">
-              <strong>Strategy tip:</strong> Look for stocks 10-20% below resistance with 3-year uptrend and multiple quality signals.
-              Set up an <strong>Uptrend Below Resistance</strong> alert in Alert Settings to get notified via Telegram when new candidates appear.
-              Always check the Stock Detail page for candlestick confirmation before buying.
+              <strong>Strategy tip:</strong> Start with "2yr+" to find the widest pool of quality stocks with discounts. If too many results,
+              narrow to "3yr+" or "3yr strict". Stocks that are 10-20% below resistance with multiple quality signals are the best candidates.
+              Set up an <strong>Uptrend Below Resistance</strong> alert in Alert Settings to get Telegram notifications.
             </p>
           </div>
         </details>
@@ -223,20 +235,22 @@ export default function YearlyUptrend({ stocks }: { stocks: StockRecord[] }) {
 
       {/* Filters */}
       <div className="flex flex-wrap gap-3 items-center">
+        {/* Uptrend mode - primary filter */}
         <div className="flex items-center gap-2">
-          <label className="text-xs font-medium t-muted">Min Uptrend:</label>
-          <div className="flex gap-1">
-            {[1, 2, 3].map(n => (
+          <label className="text-xs font-medium t-muted">Uptrend:</label>
+          <div className="flex gap-1 flex-wrap">
+            {UPTREND_OPTIONS.map(opt => (
               <button
-                key={n}
-                onClick={() => setMinYears(n)}
+                key={opt.value}
+                onClick={() => setUptrendMode(opt.value)}
+                title={opt.desc}
                 className={`px-2.5 py-1 rounded-md text-xs font-medium transition-all ${
-                  minYears === n
+                  uptrendMode === opt.value
                     ? 'bg-bullish/15 text-bullish ring-1 ring-bullish/30'
                     : 'bg-surface-tertiary t-tertiary hover:t-secondary'
                 }`}
               >
-                {n}yr{n > 1 ? 's' : ''}
+                {opt.label}
               </button>
             ))}
           </div>
@@ -315,12 +329,20 @@ export default function YearlyUptrend({ stocks }: { stocks: StockRecord[] }) {
             className="text-xs bg-surface-tertiary border border-surface-border rounded-md px-2 py-1 t-secondary"
           >
             <option value="pctBelow">Biggest Discount</option>
-            <option value="uptrendYears">Uptrend Years</option>
+            <option value="uptrendYears">Most Positive Years</option>
             <option value="score">Composite Score</option>
             <option value="return1y">1Y Return</option>
             <option value="strength">Resistance Strength</option>
           </select>
         </div>
+      </div>
+
+      {/* Active filter description */}
+      <div className="text-xs t-muted px-1">
+        Showing: <span className="font-medium t-secondary">{selectedOption.desc}</span>
+        {bucketFilter !== 'all' && <span> &middot; {bucketFilter}%+ below resistance</span>}
+        {marketFilter !== 'all' && <span> &middot; {marketFilter} only</span>}
+        {capFilter !== 'all' && <span> &middot; {capFilter} cap</span>}
       </div>
 
       {/* Results */}
@@ -329,13 +351,13 @@ export default function YearlyUptrend({ stocks }: { stocks: StockRecord[] }) {
           <div className="text-4xl mb-3">&#128200;</div>
           <h3 className="text-lg font-semibold t-secondary mb-1">No uptrend discount candidates found</h3>
           <p className="t-muted text-sm">
-            Stocks qualify when they have {minYears}+ years of consecutive positive returns and are currently below resistance.
-            Try lowering the minimum uptrend years or discount threshold.
+            No stocks match "{selectedOption.desc}" and are currently below resistance.
+            Try a less strict uptrend filter or lower the discount threshold.
           </p>
         </div>
       ) : (
         <div className="space-y-3">
-          {uptrendStocks.map(({ stock, pctBelow, nearestResistance, nearestSupport, bucket, qualitySignals }) => (
+          {uptrendStocks.map(({ stock, pctBelow, nearestResistance, nearestSupport, bucket, qualitySignals, positiveYears, totalYears }) => (
             <Link
               key={stock.ticker}
               to={`/stock/${stock.ticker}`}
@@ -344,14 +366,13 @@ export default function YearlyUptrend({ stocks }: { stocks: StockRecord[] }) {
               {/* Header row */}
               <div className="flex items-start justify-between mb-3">
                 <div>
-                  <div className="flex items-center gap-2.5 mb-1.5">
+                  <div className="flex items-center gap-2.5 mb-1.5 flex-wrap">
                     <span className="text-lg font-bold t-primary">{stock.ticker}</span>
                     <span className="t-tertiary text-sm">{stock.name}</span>
                     <MarketTag market={stock.market} />
                     <CapTag cap={stock.capCategory} />
-                    {/* Uptrend badge */}
                     <span className="px-2 py-0.5 rounded-full text-xs font-bold bg-bullish/15 text-bullish ring-1 ring-bullish/30">
-                      {stock.yearlyUptrendYears}yr uptrend
+                      {positiveYears}/{totalYears} yrs up
                     </span>
                   </div>
                   <div className="flex items-center gap-4 text-sm">
@@ -400,22 +421,29 @@ export default function YearlyUptrend({ stocks }: { stocks: StockRecord[] }) {
                 )}
               </div>
 
-              {/* Yearly returns */}
-              <div className="flex flex-wrap gap-3 mb-3">
+              {/* Yearly returns - visual bar for each year */}
+              <div className="flex flex-wrap gap-2 mb-3">
                 {stock.yearlyReturns.map((ret, i) => (
-                  <div key={i} className="flex items-center gap-1.5 text-xs">
-                    <span className="t-muted">Year {i + 1}:</span>
-                    <span className={`font-mono font-medium ${ret > 0 ? 'text-bullish' : 'text-bearish'}`}>
-                      {ret >= 0 ? '+' : ''}{(ret * 100).toFixed(1)}%
-                    </span>
+                  <div
+                    key={i}
+                    className={`flex items-center gap-1.5 px-2 py-1 rounded-md text-xs font-mono ${
+                      ret > 0
+                        ? 'bg-bullish/10 text-bullish ring-1 ring-bullish/20'
+                        : 'bg-bearish/10 text-bearish ring-1 ring-bearish/20'
+                    }`}
+                  >
+                    <span className="font-medium opacity-60">Y{i + 1}</span>
+                    <span className="font-bold">{ret >= 0 ? '+' : ''}{(ret * 100).toFixed(1)}%</span>
                   </div>
                 ))}
-                <div className="flex items-center gap-1.5 text-xs">
-                  <span className="t-muted">3Y Total:</span>
-                  <span className={`font-mono font-medium ${stock.priceReturn3y > 0 ? 'text-bullish' : 'text-bearish'}`}>
-                    {stock.priceReturn3y >= 0 ? '+' : ''}{(stock.priceReturn3y * 100).toFixed(1)}%
-                  </span>
-                </div>
+                {stock.yearlyReturns.length >= 2 && (
+                  <div className="flex items-center gap-1.5 px-2 py-1 rounded-md text-xs font-mono bg-surface-tertiary t-secondary ring-1 ring-surface-border">
+                    <span className="font-medium opacity-60">Total</span>
+                    <span className={`font-bold ${stock.priceReturn3y > 0 ? 'text-bullish' : 'text-bearish'}`}>
+                      {stock.priceReturn3y >= 0 ? '+' : ''}{(stock.priceReturn3y * 100).toFixed(1)}%
+                    </span>
+                  </div>
+                )}
               </div>
 
               {/* Quality signals */}

@@ -39,8 +39,9 @@ export interface StockRecord {
   priceReturn1y: number;
   priceReturn2y: number;
   priceReturn3y: number;
-  yearlyReturns: number[];       // per-year returns [year1, year2, year3] most recent first
-  yearlyUptrendYears: number;    // consecutive years of positive returns (0-3)
+  priceReturn4y: number;
+  yearlyReturns: number[];       // per-year returns [year1, year2, year3, year4] most recent first
+  yearlyUptrendYears: number;    // total positive-return years (0-4)
   pctBelowResistance: number | null;  // how far below nearest resistance (%)
   volatility: number;
   signals: Signal[];
