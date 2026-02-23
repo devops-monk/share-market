@@ -73,25 +73,11 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 21,
+      "ticker": "AMC",
+      "name": "AMC Entertainment",
+      "score": 19,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Small"
     },
     {
       "ticker": "CHWY",
@@ -108,13 +94,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AMC",
-      "name": "AMC Entertainment",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "DDOG",
       "name": "Datadog",
       "score": 22,
@@ -122,11 +101,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PINS",
-      "name": "Pinterest",
+      "ticker": "ZG",
+      "name": "Zillow Group",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "BROS",
+      "name": "Dutch Bros",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "LCID",
@@ -141,6 +127,20 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 673,
   "avgScore": 50,
-  "bearishAlertCount": 302
+  "bearishAlertCount": 304
 }
