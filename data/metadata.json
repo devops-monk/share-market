@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-02-23T07:30:43.469Z",
+  "lastUpdated": "2026-02-23T08:21:19.439Z",
   "stockCount": 673,
-  "bearishAlerts": 302,
+  "bearishAlerts": 304,
   "newsCount": 600,
   "marketRegime": {
     "us": {
@@ -16,13 +16,13 @@
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10686.89,
-      "sma50": 10140.78,
-      "sma200": 9437.79,
-      "changeFromHigh": 0,
-      "distributionDays": 6,
+      "price": 10674.89,
+      "sma50": 10161.17,
+      "sma200": 9448.14,
+      "changeFromHigh": -0.11,
+      "distributionDays": 7,
       "regime": "correction",
-      "signal": "6 distribution days in 25 sessions — selling pressure"
+      "signal": "7 distribution days in 25 sessions — selling pressure"
     },
     "overall": "correction",
     "summary": "Markets showing weakness. Be selective, reduce position sizes, and tighten stops."
