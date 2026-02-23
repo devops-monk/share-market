@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import type { StockRecord, NewsItem } from '../types';
 import ScoreGauge from '../components/charts/ScoreGauge';
@@ -8,6 +8,7 @@ import CandlestickChart from '../components/charts/CandlestickChart';
 import SentimentBar from '../components/charts/SentimentBar';
 import ScoreHistoryChart from '../components/charts/ScoreHistoryChart';
 import { MarketTag, CapTag, Trading212Badge, SignalBadge, ChangePercent } from '../components/common/Tags';
+import { generateStockSummary } from '../lib/stock-summary';
 
 interface Props {
   stocks: StockRecord[];
@@ -112,6 +113,7 @@ export default function StockDetail({ stocks, news }: Props) {
 
   // Generate recommendation
   const recommendation = generateRecommendation(stock);
+  const aiSummary = useMemo(() => generateStockSummary(stock), [stock]);
 
   return (
     <div className="space-y-6">
@@ -146,6 +148,9 @@ export default function StockDetail({ stocks, news }: Props) {
 
       {/* Recommendation */}
       <RecommendationCard rec={recommendation} stock={stock} />
+
+      {/* AI Stock Summary */}
+      <AiSummaryCard paragraphs={aiSummary} />
 
       {/* Candlestick Chart */}
       <div className="card p-5">
@@ -706,6 +711,36 @@ function RecommendationCard({ rec, stock }: { rec: Recommendation; stock: StockR
       <p className="text-xs t-faint mt-4 italic">
         This is an automated analysis based on technical indicators and scores. Always do your own research before investing.
       </p>
+    </div>
+  );
+}
+
+/* ─── AI SUMMARY CARD ─── */
+function AiSummaryCard({ paragraphs }: { paragraphs: string[] }) {
+  const [expanded, setExpanded] = useState(false);
+  if (paragraphs.length === 0) return null;
+
+  const visible = expanded ? paragraphs : paragraphs.slice(0, 2);
+
+  return (
+    <div className="card p-5">
+      <div className="flex items-center justify-between mb-3">
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider">AI Research Note</h2>
+        <span className="text-[10px] t-faint bg-surface-secondary px-2 py-0.5 rounded-full">Auto-generated</span>
+      </div>
+      <div className="space-y-3">
+        {visible.map((p, i) => (
+          <p key={i} className="text-sm t-secondary leading-relaxed">{p}</p>
+        ))}
+      </div>
+      {paragraphs.length > 2 && (
+        <button
+          onClick={() => setExpanded(v => !v)}
+          className="mt-3 text-xs text-accent hover:underline"
+        >
+          {expanded ? 'Show less' : `Read full analysis (${paragraphs.length - 2} more)`}
+        </button>
+      )}
     </div>
   );
 }

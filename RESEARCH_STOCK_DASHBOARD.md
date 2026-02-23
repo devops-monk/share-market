@@ -598,6 +598,7 @@ Q12 CSV Export                      M15 Score History                   L11 Back
 | **L3** DCF Lite Valuation | **DONE** | 5-year DCF model using operating cash flow, growth rate (capped 30%), 10% discount, 15x terminal. Per-share intrinsic value on StockDetail alongside Graham Number with under/overvalued indicator. |
 | **L5** Finance-Specific Sentiment | **DONE** | Replaced generic AFINN with ~200-word finance lexicon (unigrams + 100+ bigram phrases). Negation handling ("not good" flips score). Positional weighting (headline start matters more). Covers beat/miss estimates, guidance raised/lowered, SEC investigation, dividend changes, etc. |
 | **M14b** Earnings Date ETL | **DONE** | Added `earningsDate` field from Yahoo v7 `earningsTimestamp`. Flows through to frontend Earnings Calendar and StockDetail fundamentals grid. |
+| **L8** AI Stock Summaries | **DONE** | Rule-based NLG generating analyst-style research notes per stock. 5 sections: opening assessment, technical setup, fundamentals & valuation, signals & catalysts, closing verdict. Expandable card on StockDetail page. Uses all available data (scores, RSI, MAs, Bollinger, volume, P/E, ROE, debt, Graham, DCF, Piotroski, Buffett, signals, OBV, Minervini, RS). |
 
 ### Remaining Next Priorities
 
@@ -608,7 +609,6 @@ Q12 CSV Export                      M15 Score History                   L11 Back
 5. **L7 — Options Flow Integration** — Surface unusual options activity data to identify institutional positioning ahead of moves.
 6. **Q14 — Dark/Light Chart Themes** — Ensure all SVG charts (pie, gauge, radar) properly theme with dark/light mode.
 7. **M17 — Correlation Matrix** — Show cross-correlation of returns between portfolio holdings or watchlist stocks.
-8. **L8 — AI Stock Summaries** — Use LLM to generate natural-language stock summaries combining score, signals, and fundamentals.
 
 ---
 
