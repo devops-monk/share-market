@@ -8,6 +8,27 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FANG",
+      "name": "Diamondback Energy",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HSIC",
+      "name": "Henry Schein",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 71,
@@ -36,22 +57,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ALB",
       "name": "Albemarle",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HSIC",
-      "name": "Henry Schein",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -62,27 +69,13 @@
       "score": 70,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "FANG",
-      "name": "Diamondback Energy",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 22,
+      "ticker": "PINS",
+      "name": "Pinterest",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,32 +94,11 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PINS",
-      "name": "Pinterest",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BROS",
       "name": "Dutch Bros",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "MANH",
@@ -141,9 +113,55 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "FANG",
+      "name": "Diamondback Energy",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "HSIC",
+      "name": "Henry Schein",
+      "score": 71,
+      "market": "US"
+    },
     {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
@@ -163,27 +181,9 @@
       "market": "US"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "ALB",
       "name": "Albemarle",
       "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "HSIC",
-      "name": "Henry Schein",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "FANG",
-      "name": "Diamondback Energy",
-      "score": 69,
       "market": "US"
     },
     {
