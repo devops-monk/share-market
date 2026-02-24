@@ -8,10 +8,10 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "FANG",
-      "name": "Diamondback Energy",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
       "score": 71,
-      "market": "US",
+      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -24,6 +24,13 @@
     {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -43,52 +50,38 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HSIC",
       "name": "Henry Schein",
-      "score": 69,
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
-      "score": 69,
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 70,
       "market": "UK",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
+      "ticker": "FANG",
+      "name": "Diamondback Energy",
       "score": 69,
-      "market": "UK",
-      "capCategory": "Small"
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PINS",
-      "name": "Pinterest",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -108,11 +101,18 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 23,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PINS",
+      "name": "Pinterest",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "BROS",
@@ -145,14 +145,20 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "FANG",
-      "name": "Diamondback Energy",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
       "score": 71,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General",
       "score": 70,
       "market": "US"
     },
@@ -169,39 +175,33 @@
       "market": "US"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 70,
-      "market": "UK"
-    },
-    {
       "ticker": "HSIC",
       "name": "Henry Schein",
-      "score": 69,
+      "score": 70,
       "market": "US"
     },
     {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
+      "ticker": "FANG",
+      "name": "Diamondback Energy",
       "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "NOC",
-      "name": "Northrop Grumman",
-      "score": 68,
       "market": "US"
     },
     {
       "ticker": "RVMD",
       "name": "Revolution Medicines",
-      "score": 68,
+      "score": 69,
       "market": "US"
     },
     {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
-      "score": 68,
+      "ticker": "SHEL.L",
+      "name": "Shell",
+      "score": 69,
+      "market": "UK"
+    },
+    {
+      "ticker": "AZN.L",
+      "name": "AstraZeneca",
+      "score": 69,
       "market": "UK"
     }
   ],
@@ -213,8 +213,20 @@
       "market": "UK"
     },
     {
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 70,
+      "market": "UK"
+    },
+    {
       "ticker": "KGF.L",
       "name": "Kingfisher",
+      "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "WEIR.L",
+      "name": "Weir Group",
       "score": 68,
       "market": "UK"
     },
@@ -252,18 +264,6 @@
       "ticker": "BAB.L",
       "name": "Babcock International",
       "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "CRDA.L",
-      "name": "Croda International",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "UU.L",
-      "name": "United Utilities",
-      "score": 64,
       "market": "UK"
     }
   ],
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 673,
   "avgScore": 50,
-  "bearishAlertCount": 310
+  "bearishAlertCount": 311
 }
