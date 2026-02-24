@@ -1,15 +1,36 @@
 {
   "topOverall": [
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 74,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "FANG",
       "name": "Diamondback Energy",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -22,53 +43,32 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BMY",
-      "name": "Bristol-Myers Squibb",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DG",
-      "name": "Dollar General",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
-      "score": 69,
+      "score": 70,
       "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 68,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines",
-      "score": 68,
-      "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HSIC",
       "name": "Henry Schein",
-      "score": 68,
+      "score": 69,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "GLEN.L",
       "name": "Glencore",
-      "score": 68,
+      "score": 69,
       "market": "UK",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 69,
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
@@ -87,32 +87,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DDOG",
-      "name": "Datadog",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AI",
-      "name": "C3.ai",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 22,
       "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 23,
-      "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "MANH",
-      "name": "Manhattan Associates",
-      "score": 23,
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "score": 22,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "AMC",
@@ -122,15 +108,29 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "DASH",
-      "name": "DoorDash",
+      "ticker": "AI",
+      "name": "C3.ai",
       "score": 23,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
       "ticker": "BROS",
       "name": "Dutch Bros",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MANH",
+      "name": "Manhattan Associates",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
@@ -145,14 +145,20 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
+      "ticker": "FANG",
+      "name": "Diamondback Energy",
+      "score": 71,
       "market": "US"
     },
     {
-      "ticker": "FANG",
-      "name": "Diamondback Energy",
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
       "score": 70,
       "market": "US"
     },
@@ -163,22 +169,28 @@
       "market": "US"
     },
     {
-      "ticker": "BMY",
-      "name": "Bristol-Myers Squibb",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "DG",
-      "name": "Dollar General",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "HSIC",
+      "name": "Henry Schein",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "GLEN.L",
+      "name": "Glencore",
       "score": 69,
       "market": "UK"
+    },
+    {
+      "ticker": "NOC",
+      "name": "Northrop Grumman",
+      "score": 68,
+      "market": "US"
     },
     {
       "ticker": "RVMD",
@@ -187,91 +199,91 @@
       "market": "US"
     },
     {
-      "ticker": "HSIC",
-      "name": "Henry Schein",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
-      "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "EDV.L",
-      "name": "Endeavour Mining",
+      "ticker": "HSBA.L",
+      "name": "HSBC",
       "score": 68,
       "market": "UK"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 68,
-      "market": "US"
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
+      "score": 71,
+      "market": "UK"
     },
     {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
+      "ticker": "KGF.L",
+      "name": "Kingfisher",
       "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
+      "ticker": "DRX.L",
+      "name": "Drax Group",
       "score": 68,
       "market": "UK"
     },
     {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "DRX.L",
-      "name": "Drax Group",
-      "score": 66,
+      "score": 68,
       "market": "UK"
     },
     {
       "ticker": "INVP.L",
       "name": "Investec",
+      "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "PSN.L",
+      "name": "Persimmon",
       "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
+      "ticker": "IGG.L",
+      "name": "IG Group",
       "score": 66,
       "market": "UK"
     },
     {
       "ticker": "BAB.L",
       "name": "Babcock International",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "CRDA.L",
+      "name": "Croda International",
       "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "SVT.L",
-      "name": "Severn Trent",
-      "score": 63,
+      "ticker": "UU.L",
+      "name": "United Utilities",
+      "score": 64,
       "market": "UK"
     }
   ],
   "topSmallCap": [
     {
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 74,
+      "market": "UK"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 68,
+      "score": 69,
+      "market": "UK"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 67,
       "market": "UK"
     },
     {
@@ -281,33 +293,33 @@
       "market": "US"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "CURY.L",
       "name": "Currys",
-      "score": 63,
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "JDW.L",
       "name": "J D Wetherspoon",
-      "score": 61,
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 63,
       "market": "UK"
     },
     {
@@ -315,21 +327,9 @@
       "name": "Synovus Financial",
       "score": 60,
       "market": "US"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 60,
-      "market": "UK"
     }
   ],
   "totalStocks": 673,
-  "avgScore": 49,
-  "bearishAlertCount": 307
+  "avgScore": 50,
+  "bearishAlertCount": 310
 }
