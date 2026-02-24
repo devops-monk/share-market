@@ -36,13 +36,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "CB",
       "name": "Chubb",
       "score": 70,
@@ -68,6 +61,13 @@
       "name": "Henry Schein",
       "score": 70,
       "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BLND.L",
+      "name": "British Land",
+      "score": 70,
+      "market": "UK",
       "capCategory": "Mid"
     }
   ],
@@ -131,16 +131,16 @@
     {
       "ticker": "AI",
       "name": "C3.ai",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Small"
     },
     {
-      "ticker": "RPI.L",
-      "name": "Raspberry Pi",
+      "ticker": "LCID",
+      "name": "Lucid Group",
       "score": 25,
-      "market": "UK",
-      "capCategory": "Small"
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -231,14 +231,14 @@
       "market": "UK"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 66,
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 69,
       "market": "UK"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
+      "ticker": "DRX.L",
+      "name": "Drax Group",
       "score": 66,
       "market": "UK"
     },
@@ -249,14 +249,14 @@
       "market": "UK"
     },
     {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 66,
+      "ticker": "PSN.L",
+      "name": "Persimmon",
+      "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
       "score": 65,
       "market": "UK"
     },
@@ -269,44 +269,44 @@
   ],
   "topSmallCap": [
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 71,
-      "market": "UK"
-    },
-    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 64,
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 63,
+      "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 62,
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "JDW.L",
       "name": "J D Wetherspoon",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 61,
       "market": "UK"
     },
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
       "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 309
+  "bearishAlertCount": 308
 }
