@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "FANG",
+      "name": "Diamondback Energy",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 71,
@@ -59,13 +66,6 @@
     {
       "ticker": "CNA.L",
       "name": "Centrica",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
       "score": 70,
       "market": "UK",
       "capCategory": "Mid"
@@ -122,22 +122,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
+      "ticker": "ADSK",
+      "name": "Autodesk",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -148,6 +148,12 @@
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "FANG",
+      "name": "Diamondback Energy",
+      "score": 72,
       "market": "US"
     },
     {
@@ -184,12 +190,6 @@
       "ticker": "HSIC",
       "name": "Henry Schein",
       "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "FANG",
-      "name": "Diamondback Energy",
-      "score": 69,
       "market": "US"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 673,
   "avgScore": 50,
-  "bearishAlertCount": 309
+  "bearishAlertCount": 310
 }
