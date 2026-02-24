@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-02-24T13:36:24.070Z",
+  "lastUpdated": "2026-02-24T14:28:18.524Z",
   "stockCount": 673,
-  "bearishAlerts": 310,
+  "bearishAlerts": 306,
   "newsCount": 600,
   "marketRegime": {
     "us": {
@@ -16,10 +16,10 @@
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10684.05,
-      "sma50": 10180.98,
-      "sma200": 9458.6,
-      "changeFromHigh": -0.03,
+      "price": 10704.94,
+      "sma50": 10181.4,
+      "sma200": 9458.7,
+      "changeFromHigh": 0,
       "distributionDays": 6,
       "regime": "correction",
       "signal": "6 distribution days in 25 sessions — selling pressure"
