@@ -81,6 +81,7 @@ export interface StockRecord {
   sharesOutstanding: number | null;
   heldPercentInsiders: number | null;
   heldPercentInstitutions: number | null;
+  institutionsCount: number | null;
   shortPercentOfFloat: number | null;
   targetMeanPrice: number | null;
   freeCashflow: number | null;

@@ -215,6 +215,7 @@ async function main() {
       sharesOutstanding: quote.sharesOutstanding,
       heldPercentInsiders: quote.heldPercentInsiders,
       heldPercentInstitutions: quote.heldPercentInstitutions,
+      institutionsCount: quote.institutionsCount,
       shortPercentOfFloat: quote.shortPercentOfFloat,
       targetMeanPrice: quote.targetMeanPrice,
       freeCashflow: quote.freeCashflow,

@@ -71,7 +71,7 @@ function PieChart({ slices }: { slices: { label: string; value: number; color: s
   );
 }
 
-const COLORS = ['#6366f1','#10b981','#f59e0b','#ef4444','#8b5cf6','#06b6d4','#f97316','#ec4899','#14b8a6','#a855f7'];
+const COLORS = ['#3b82f6','#16a34a','#d97706','#dc2626','#0284c7','#0d9488','#c2410c','#9333ea','#0891b2','#7c3aed'];
 
 /* ─── COMPONENT ─── */
 export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {

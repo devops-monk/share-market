@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import type { StockRecord } from '../types';
 import { MarketTag, CapTag, ScoreBadge, ChangePercent, PriceDisplay } from '../components/common/Tags';
 
-type SortKey = 'dropPct' | 'ownership' | 'score' | 'dividendYield' | 'rsi';
+type SortKey = 'dropPct' | 'ownership' | 'marketCap' | 'institutionsCount' | 'score' | 'dividendYield' | 'rsi';
 type DropBucket = 'all' | '5' | '10' | '15' | '20' | '25' | '30';
 
 interface OwnedStock {
@@ -11,6 +11,13 @@ interface OwnedStock {
   ownershipPct: number;
   dropFromHigh: number; // % drop from 52-week high
   bucket: string;
+}
+
+function formatMarketCap(mc: number): string {
+  if (mc >= 1e12) return `$${(mc / 1e12).toFixed(1)}T`;
+  if (mc >= 1e9) return `$${(mc / 1e9).toFixed(1)}B`;
+  if (mc >= 1e6) return `$${(mc / 1e6).toFixed(0)}M`;
+  return `$${mc.toLocaleString()}`;
 }
 
 function getDropBucket(pct: number): string {
@@ -41,11 +48,11 @@ export default function MostOwned({ stocks }: { stocks: StockRecord[] }) {
 
   const sectors = useMemo(() => getSectors(stocks), [stocks]);
 
-  // Get top 200 by institutional ownership
+  // Get top 200 by market cap (largest companies)
   const top200 = useMemo(() => {
     return [...stocks]
-      .filter(s => s.heldPercentInstitutions != null && s.heldPercentInstitutions > 0)
-      .sort((a, b) => (b.heldPercentInstitutions ?? 0) - (a.heldPercentInstitutions ?? 0))
+      .filter(s => s.marketCap > 0)
+      .sort((a, b) => b.marketCap - a.marketCap)
       .slice(0, 200);
   }, [stocks]);
 
@@ -94,6 +101,10 @@ export default function MostOwned({ stocks }: { stocks: StockRecord[] }) {
           return b.dropFromHigh - a.dropFromHigh;
         case 'ownership':
           return b.ownershipPct - a.ownershipPct;
+        case 'marketCap':
+          return b.stock.marketCap - a.stock.marketCap;
+        case 'institutionsCount':
+          return (b.stock.institutionsCount ?? 0) - (a.stock.institutionsCount ?? 0);
         case 'score':
           return b.stock.score.composite - a.stock.score.composite;
         case 'dividendYield':
@@ -132,7 +143,7 @@ export default function MostOwned({ stocks }: { stocks: StockRecord[] }) {
       <div className="flex items-center gap-3 flex-wrap">
         <div>
           <h1 className="text-xl font-bold t-primary">Most Owned Stocks</h1>
-          <p className="text-sm t-muted mt-1">Top 200 institutionally-owned stocks — find quality names on sale</p>
+          <p className="text-sm t-muted mt-1">Top 200 largest companies by market cap — find quality names on sale</p>
         </div>
         <span className="badge bg-accent/15 text-accent-light ring-1 ring-accent/30 text-sm">
           {filteredStocks.length} of {top200.length}
@@ -148,9 +159,9 @@ export default function MostOwned({ stocks }: { stocks: StockRecord[] }) {
           </summary>
           <div className="mt-3 text-sm t-muted space-y-2">
             <p>
-              This page shows the <strong className="t-secondary">top 200 stocks by institutional ownership</strong> —
-              these are the companies most heavily held by pension funds, mutual funds, ETFs, and hedge funds.
-              High institutional ownership means <strong className="t-secondary">smart money believes in the company</strong>.
+              This page shows the <strong className="t-secondary">top 200 largest companies by market cap</strong> —
+              these are the biggest, most established companies in the market.
+              The <strong className="t-secondary">institutional holder count</strong> shows how many funds, pensions, and hedge funds own each stock.
             </p>
             <p>
               When one of these quality stocks <strong className="t-secondary">drops significantly from its 52-week high</strong>,
@@ -337,7 +348,9 @@ export default function MostOwned({ stocks }: { stocks: StockRecord[] }) {
             className="text-xs bg-surface-tertiary border border-surface-border rounded-md px-2 py-1 t-secondary"
           >
             <option value="dropPct">Biggest Drop</option>
-            <option value="ownership">Highest Ownership</option>
+            <option value="marketCap">Market Cap</option>
+            <option value="institutionsCount">Most Institutions</option>
+            <option value="ownership">Highest Ownership %</option>
             <option value="score">Composite Score</option>
             <option value="dividendYield">Dividend Yield</option>
             <option value="rsi">Lowest RSI</option>
@@ -382,9 +395,17 @@ export default function MostOwned({ stocks }: { stocks: StockRecord[] }) {
                     <span className="t-tertiary text-sm">{stock.name}</span>
                     <MarketTag market={stock.market} />
                     <CapTag cap={stock.capCategory} />
+                    <span className="px-2 py-0.5 rounded-full text-xs font-medium bg-surface-tertiary t-secondary ring-1 ring-surface-border">
+                      {formatMarketCap(stock.marketCap)}
+                    </span>
                     <span className="px-2 py-0.5 rounded-full text-xs font-bold bg-accent/15 text-accent-light ring-1 ring-accent/30">
                       {ownershipPct.toFixed(0)}% inst. owned
                     </span>
+                    {stock.institutionsCount != null && stock.institutionsCount > 0 && (
+                      <span className="px-2 py-0.5 rounded-full text-xs font-medium bg-sky-600/12 text-sky-600 dark:text-sky-400 ring-1 ring-sky-600/20">
+                        {stock.institutionsCount.toLocaleString()} holders
+                      </span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4 text-sm">
                     <PriceDisplay value={stock.price} market={stock.market} />
@@ -402,7 +423,7 @@ export default function MostOwned({ stocks }: { stocks: StockRecord[] }) {
                 <div className="text-right">
                   <div className="text-xs font-medium t-muted uppercase tracking-wider mb-1">From 52W High</div>
                   <div className={`text-3xl font-bold font-mono ${
-                    dropFromHigh >= 20 ? 'text-bearish' : dropFromHigh >= 10 ? 'text-amber-400' : 't-secondary'
+                    dropFromHigh >= 20 ? 'text-bearish' : dropFromHigh >= 10 ? 'text-neutral' : 't-secondary'
                   }`}>
                     -{dropFromHigh.toFixed(1)}%
                   </div>

@@ -3,8 +3,8 @@ export function MarketTag({ market }: { market: string }) {
     <span
       className={`badge ${
         market === 'US'
-          ? 'bg-blue-500/15 text-blue-400 ring-1 ring-blue-500/20'
-          : 'bg-violet-500/15 text-violet-400 ring-1 ring-violet-500/20'
+          ? 'bg-sky-600/12 text-sky-500 dark:text-sky-400 ring-1 ring-sky-600/20'
+          : 'bg-slate-500/12 text-slate-500 dark:text-slate-400 ring-1 ring-slate-500/20'
       }`}
     >
       {market}
@@ -14,12 +14,12 @@ export function MarketTag({ market }: { market: string }) {
 
 export function CapTag({ cap }: { cap: string }) {
   const styles: Record<string, string> = {
-    Large: 'bg-emerald-500/15 text-emerald-400 ring-1 ring-emerald-500/20',
-    Mid: 'bg-amber-500/15 text-amber-400 ring-1 ring-amber-500/20',
-    Small: 'bg-rose-500/15 text-rose-400 ring-1 ring-rose-500/20',
+    Large: 'bg-teal-600/12 text-teal-600 dark:text-teal-400 ring-1 ring-teal-600/20',
+    Mid: 'bg-amber-600/12 text-amber-600 dark:text-amber-400 ring-1 ring-amber-600/20',
+    Small: 'bg-rose-600/12 text-rose-600 dark:text-rose-400 ring-1 ring-rose-600/20',
   };
   return (
-    <span className={`badge ${styles[cap] || 'bg-gray-500/15 text-gray-400'}`}>
+    <span className={`badge ${styles[cap] || 'bg-gray-500/12 text-gray-500 dark:text-gray-400'}`}>
       {cap}
     </span>
   );
@@ -27,7 +27,7 @@ export function CapTag({ cap }: { cap: string }) {
 
 export function Trading212Badge() {
   return (
-    <span className="badge bg-cyan-500/15 text-cyan-400 ring-1 ring-cyan-500/20">
+    <span className="badge bg-cyan-600/12 text-cyan-600 dark:text-cyan-400 ring-1 ring-cyan-600/20">
       T212
     </span>
   );
@@ -38,11 +38,11 @@ export function SignalBadge({ direction, type }: { direction: string; type: stri
     <span
       className={`badge ${
         direction === 'bearish'
-          ? 'bg-red-500/15 text-red-400 ring-1 ring-red-500/20'
-          : 'bg-emerald-500/15 text-emerald-400 ring-1 ring-emerald-500/20'
+          ? 'bg-red-600/12 text-red-600 dark:text-red-400 ring-1 ring-red-600/20'
+          : 'bg-green-600/12 text-green-600 dark:text-green-400 ring-1 ring-green-600/20'
       }`}
     >
-      {direction === 'bearish' ? '↓' : '↑'} {type}
+      {direction === 'bearish' ? '\u2193' : '\u2191'} {type}
     </span>
   );
 }
@@ -69,7 +69,7 @@ export function ChangePercent({ value }: { value: number }) {
 }
 
 export function PriceDisplay({ value, market }: { value: number; market?: 'US' | 'UK' | string }) {
-  const currency = market === 'UK' ? '£' : '$';
+  const currency = market === 'UK' ? '\u00a3' : '$';
   return (
     <span className="font-mono tabular-nums font-medium t-primary">
       {currency}{value.toFixed(2)}

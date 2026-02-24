@@ -78,12 +78,12 @@ export default function CandlestickChart({ ticker, sma50, sma150, sma200 }: Prop
 
     // Candlestick series
     const candleSeries = chart.addSeries(CandlestickSeries, {
-      upColor: '#10b981',
-      downColor: '#ef4444',
-      borderUpColor: '#10b981',
-      borderDownColor: '#ef4444',
-      wickUpColor: '#10b981',
-      wickDownColor: '#ef4444',
+      upColor: '#16a34a',
+      downColor: '#dc2626',
+      borderUpColor: '#16a34a',
+      borderDownColor: '#dc2626',
+      wickUpColor: '#16a34a',
+      wickDownColor: '#dc2626',
     });
 
     const candles: CandlestickData<Time>[] = sliced.map(d => ({
@@ -135,8 +135,8 @@ export default function CandlestickChart({ ticker, sma50, sma150, sma200 }: Prop
       };
 
       addSmaLine(sma50, '#60a5fa');
-      addSmaLine(sma150, '#a78bfa');
-      addSmaLine(sma200, '#f59e0b');
+      addSmaLine(sma150, '#38bdf8');
+      addSmaLine(sma200, '#d97706');
     }
 
     chart.timeScale().fitContent();
@@ -246,9 +246,9 @@ export default function CandlestickChart({ ticker, sma50, sma150, sma200 }: Prop
             ))}
           </div>
           <div className="flex items-center gap-4 text-xs t-muted">
-            {sma50 != null && <span><span className="inline-block w-3 h-0.5 bg-blue-400 mr-1 align-middle" />SMA 50</span>}
-            {sma150 != null && <span><span className="inline-block w-3 h-0.5 bg-purple-400 mr-1 align-middle" />SMA 150</span>}
-            {sma200 != null && <span><span className="inline-block w-3 h-0.5 bg-amber-400 mr-1 align-middle" />SMA 200</span>}
+            {sma50 != null && <span><span className="inline-block w-3 h-0.5 bg-accent-light mr-1 align-middle" />SMA 50</span>}
+            {sma150 != null && <span><span className="inline-block w-3 h-0.5 bg-sky-400 mr-1 align-middle" />SMA 150</span>}
+            {sma200 != null && <span><span className="inline-block w-3 h-0.5 bg-neutral-light mr-1 align-middle" />SMA 200</span>}
           </div>
         </div>
       )}

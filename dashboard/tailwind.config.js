@@ -5,10 +5,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        bullish: { DEFAULT: '#10b981', light: '#34d399', dark: '#059669' },
-        bearish: { DEFAULT: '#ef4444', light: '#f87171', dark: '#dc2626' },
-        neutral: { DEFAULT: '#f59e0b', light: '#fbbf24', dark: '#d97706' },
-        accent: { DEFAULT: '#6366f1', light: '#818cf8', dark: '#4f46e5' },
+        bullish: { DEFAULT: '#16a34a', light: '#22c55e', dark: '#15803d' },
+        bearish: { DEFAULT: '#dc2626', light: '#ef4444', dark: '#b91c1c' },
+        neutral: { DEFAULT: '#d97706', light: '#f59e0b', dark: '#b45309' },
+        accent: { DEFAULT: '#3b82f6', light: '#60a5fa', dark: '#2563eb' },
         surface: {
           DEFAULT: 'var(--surface)',
           secondary: 'var(--surface-secondary)',
@@ -22,9 +22,10 @@ export default {
         mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
       },
       boxShadow: {
-        glow: '0 0 20px rgba(99, 102, 241, 0.15)',
-        'glow-green': '0 0 20px rgba(16, 185, 129, 0.15)',
-        'glow-red': '0 0 20px rgba(239, 68, 68, 0.15)',
+        glow: '0 0 15px rgba(59, 130, 246, 0.1)',
+        'glow-green': '0 0 15px rgba(22, 163, 74, 0.1)',
+        'glow-red': '0 0 15px rgba(220, 38, 38, 0.1)',
+        'glow-blue': '0 0 15px rgba(59, 130, 246, 0.12)',
         card: 'var(--shadow-card)',
       },
     },

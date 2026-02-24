@@ -178,7 +178,7 @@ export default function StockDetail({ stocks, news }: Props) {
               </div>
               <div className="p-2.5 rounded-lg bg-surface-tertiary/50 border border-surface-border">
                 <p className="font-semibold t-secondary mb-1">Moving Averages (SMA)</p>
-                <p><span className="text-blue-400 font-medium">SMA 50</span> (short-term), <span className="text-purple-400 font-medium">SMA 150</span> (medium), <span className="text-amber-400 font-medium">SMA 200</span> (long-term). Price above all three = strong uptrend. SMA 50 crossing above SMA 200 = "Golden Cross" (bullish signal).</p>
+                <p><span className="text-accent-light font-medium">SMA 50</span> (short-term), <span className="text-sky-400 font-medium">SMA 150</span> (medium), <span className="text-neutral-light font-medium">SMA 200</span> (long-term). Price above all three = strong uptrend. SMA 50 crossing above SMA 200 = "Golden Cross" (bullish signal).</p>
               </div>
               <div className="p-2.5 rounded-lg bg-surface-tertiary/50 border border-surface-border">
                 <p className="font-semibold t-secondary mb-1">Key Patterns</p>
@@ -240,7 +240,7 @@ export default function StockDetail({ stocks, news }: Props) {
                       className="h-full rounded-full transition-all duration-500"
                       style={{
                         width: `${item.value}%`,
-                        backgroundColor: item.value >= 65 ? '#10b981' : item.value >= 40 ? '#f59e0b' : '#ef4444',
+                        backgroundColor: item.value >= 65 ? '#16a34a' : item.value >= 40 ? '#d97706' : '#dc2626',
                       }}
                     />
                   </div>
@@ -630,9 +630,9 @@ function generateRecommendation(stock: StockRecord): Recommendation {
   } else if (composite >= 55 && stock.bearishScore < 5) {
     verdict = 'buy';
     label = 'Looks Promising';
-    color = 'text-emerald-400';
-    bgColor = 'bg-emerald-500/5';
-    borderColor = 'border-emerald-500/20';
+    color = 'text-bullish-light';
+    bgColor = 'bg-bullish/5';
+    borderColor = 'border-bullish/20';
     summary = 'Overall indicators are positive with some areas to watch. Do additional research on the weaker areas before committing.';
   } else if (composite >= 40 && stock.bearishScore < 6) {
     verdict = 'hold';
@@ -644,9 +644,9 @@ function generateRecommendation(stock: StockRecord): Recommendation {
   } else if (composite >= 25 || stock.bearishScore >= 5) {
     verdict = 'caution';
     label = 'Caution — Risky Area';
-    color = 'text-amber-400';
-    bgColor = 'bg-amber-500/5';
-    borderColor = 'border-amber-500/20';
+    color = 'text-neutral-light';
+    bgColor = 'bg-neutral/5';
+    borderColor = 'border-neutral/20';
     summary = 'Several indicators are negative. This stock is showing signs of weakness. If you own it, consider reducing your position. Not recommended for new entries.';
   } else {
     verdict = 'avoid';

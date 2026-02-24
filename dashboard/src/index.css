@@ -6,13 +6,13 @@
 
 /* ─── THEME VARIABLES ─── */
 :root {
-  /* Light mode (default) */
-  --surface: #f8f9fb;
+  /* Light mode — crisp, professional */
+  --surface: #f9fafb;
   --surface-secondary: #ffffff;
-  --surface-tertiary: #f0f1f5;
-  --surface-hover: #e8eaef;
-  --surface-border: #dde0e7;
-  --shadow-card: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.08);
+  --surface-tertiary: #f3f4f6;
+  --surface-hover: #e5e7eb;
+  --surface-border: #d1d5db;
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.06);
   --text-primary: #111827;
   --text-secondary: #374151;
   --text-tertiary: #6b7280;
@@ -22,18 +22,19 @@
 }
 
 .dark {
-  --surface: #0f1117;
-  --surface-secondary: #161b22;
-  --surface-tertiary: #1c2333;
-  --surface-hover: #242d3d;
-  --surface-border: #2d3748;
-  --shadow-card: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.4);
-  --text-primary: #f9fafb;
-  --text-secondary: #e5e7eb;
-  --text-tertiary: #9ca3af;
-  --text-muted: #6b7280;
-  --text-faint: #374151;
-  --gauge-track: #1c2333;
+  /* Dark mode — deep, refined terminal feel */
+  --surface: #0b0f19;
+  --surface-secondary: #111827;
+  --surface-tertiary: #1f2937;
+  --surface-hover: #283347;
+  --surface-border: #334155;
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.5);
+  --text-primary: #f1f5f9;
+  --text-secondary: #e2e8f0;
+  --text-tertiary: #94a3b8;
+  --text-muted: #64748b;
+  --text-faint: #334155;
+  --gauge-track: #1e293b;
 }
 
 @layer base {
@@ -49,7 +50,7 @@
     @apply bg-surface-secondary border border-surface-border rounded-xl shadow-card transition-all duration-200;
   }
   .card:hover {
-    @apply border-accent/30 shadow-glow;
+    @apply border-accent/25 shadow-glow;
   }
   .card-flat {
     @apply bg-surface-secondary border border-surface-border rounded-xl;
@@ -148,7 +149,7 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #6366f1;
+  background: #3b82f6;
   cursor: pointer;
   border: 2px solid var(--surface-secondary);
   box-shadow: 0 1px 3px rgba(0,0,0,0.3);
@@ -161,7 +162,7 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #6366f1;
+  background: #3b82f6;
   cursor: pointer;
   border: 2px solid var(--surface-secondary);
   box-shadow: 0 1px 3px rgba(0,0,0,0.3);

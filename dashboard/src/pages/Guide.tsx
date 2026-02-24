@@ -33,8 +33,8 @@ export default function Guide() {
       {activeTab === 'strategies' && <StrategiesTab />}
 
       {/* Disclaimer */}
-      <div className="card p-5 border-amber-500/20 bg-amber-500/5">
-        <h3 className="text-sm font-semibold text-amber-400 mb-2">Important Disclaimer</h3>
+      <div className="card p-5 border-amber-600/20 bg-amber-600/5">
+        <h3 className="text-sm font-semibold text-neutral-light mb-2">Important Disclaimer</h3>
         <p className="text-xs t-tertiary leading-relaxed">
           This dashboard is for educational and informational purposes only. It does not constitute financial advice.
           Stock market investments carry risk — you can lose money. Past performance does not guarantee future results.
@@ -166,9 +166,9 @@ function BasicsTab({ onNext }: { onNext: () => void }) {
 
       <Section title="US vs UK Markets" icon="M">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <div className="p-4 rounded-lg bg-blue-500/5 border border-blue-500/20">
+          <div className="p-4 rounded-lg bg-sky-600/5 border border-sky-600/20">
             <div className="flex items-center gap-2 mb-2">
-              <span className="badge bg-blue-500/20 text-blue-400 ring-1 ring-blue-500/30 text-xs">US</span>
+              <span className="badge bg-sky-600/15 text-sky-600 dark:text-sky-400 ring-1 ring-sky-600/20 text-xs">US</span>
               <span className="text-sm font-semibold t-primary">United States</span>
             </div>
             <ul className="space-y-1 text-xs t-tertiary">
@@ -179,9 +179,9 @@ function BasicsTab({ onNext }: { onNext: () => void }) {
               <li>- More data available (FinViz fundamentals)</li>
             </ul>
           </div>
-          <div className="p-4 rounded-lg bg-emerald-500/5 border border-emerald-500/20">
+          <div className="p-4 rounded-lg bg-slate-500/5 border border-slate-500/20">
             <div className="flex items-center gap-2 mb-2">
-              <span className="badge bg-emerald-500/20 text-emerald-400 ring-1 ring-emerald-500/30 text-xs">UK</span>
+              <span className="badge bg-slate-500/15 text-slate-500 dark:text-slate-400 ring-1 ring-slate-500/20 text-xs">UK</span>
               <span className="text-sm font-semibold t-primary">United Kingdom</span>
             </div>
             <ul className="space-y-1 text-xs t-tertiary">
@@ -254,12 +254,12 @@ function DashboardTab() {
           quickly compare stocks. Here's what makes up the score:
         </p>
         <div className="space-y-2">
-          <ScoreBar label="Price Momentum" weight={25} desc="Is the price trending up over 3 and 6 months?" color="bg-blue-500" />
-          <ScoreBar label="Technical Signals" weight={25} desc="Are technical indicators (RSI, MACD, etc.) pointing up?" color="bg-purple-500" />
-          <ScoreBar label="News Sentiment" weight={15} desc="Are recent news headlines positive?" color="bg-cyan-500" />
-          <ScoreBar label="Fundamentals" weight={15} desc="Is the company profitable with good growth?" color="bg-amber-500" />
-          <ScoreBar label="Volume Trend" weight={10} desc="Is trading activity supporting the price move?" color="bg-pink-500" />
-          <ScoreBar label="Risk (Inverse)" weight={10} desc="Is the stock stable (low beta, low volatility)?" color="bg-emerald-500" />
+          <ScoreBar label="Price Momentum" weight={25} desc="Is the price trending up over 3 and 6 months?" color="bg-accent" />
+          <ScoreBar label="Technical Signals" weight={25} desc="Are technical indicators (RSI, MACD, etc.) pointing up?" color="bg-sky-700" />
+          <ScoreBar label="News Sentiment" weight={15} desc="Are recent news headlines positive?" color="bg-teal-600" />
+          <ScoreBar label="Fundamentals" weight={15} desc="Is the company profitable with good growth?" color="bg-amber-600" />
+          <ScoreBar label="Volume Trend" weight={10} desc="Is trading activity supporting the price move?" color="bg-rose-600" />
+          <ScoreBar label="Risk (Inverse)" weight={10} desc="Is the stock stable (low beta, low volatility)?" color="bg-green-700" />
         </div>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-3">
           <ScoreRange range="70-100" label="Strong Buy Signal" color="text-bullish" bg="bg-bullish/10 border-bullish/20" />
@@ -507,7 +507,7 @@ function IndicatorsTab() {
           <SignalExample direction="bullish" title="%K crosses above %D below 20" desc="Buy signal! The stock was oversold and momentum is now turning upward. Even stronger when RSI also confirms oversold." />
           <SignalExample direction="bearish" title="%K crosses below %D above 80" desc="Sell signal! The stock was overbought and momentum is turning downward. Even stronger when RSI also confirms overbought." />
         </div>
-        <div className="mt-3 p-3 rounded-lg bg-amber-500/5 border border-amber-500/20">
+        <div className="mt-3 p-3 rounded-lg bg-amber-600/5 border border-amber-600/20">
           <p className="text-xs text-amber-300 font-semibold mb-1">Double Confirmation (Strongest Signal)</p>
           <p className="text-xs t-tertiary">
             When both RSI and Stochastic agree (both overbought or both oversold), the signal

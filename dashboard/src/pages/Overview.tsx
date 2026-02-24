@@ -175,16 +175,16 @@ export default function Overview({ stocks, summary, metadata, bearishCount }: Pr
         <div className="card p-5">
           <h3 className="text-sm font-semibold t-tertiary uppercase tracking-wider mb-3">By Market</h3>
           <div className="space-y-3">
-            <BarStat label="US Stocks" value={usCount} total={summary.totalStocks} color="bg-blue-500" />
-            <BarStat label="UK Stocks" value={ukCount} total={summary.totalStocks} color="bg-violet-500" />
+            <BarStat label="US Stocks" value={usCount} total={summary.totalStocks} color="bg-sky-600" />
+            <BarStat label="UK Stocks" value={ukCount} total={summary.totalStocks} color="bg-slate-500" />
           </div>
         </div>
         <div className="card p-5">
           <h3 className="text-sm font-semibold t-tertiary uppercase tracking-wider mb-3">By Cap Size</h3>
           <div className="space-y-3">
-            <BarStat label="Large Cap" value={stocks.filter(s => s.capCategory === 'Large').length} total={summary.totalStocks} color="bg-emerald-500" />
-            <BarStat label="Mid Cap" value={stocks.filter(s => s.capCategory === 'Mid').length} total={summary.totalStocks} color="bg-amber-500" />
-            <BarStat label="Small Cap" value={stocks.filter(s => s.capCategory === 'Small').length} total={summary.totalStocks} color="bg-rose-500" />
+            <BarStat label="Large Cap" value={stocks.filter(s => s.capCategory === 'Large').length} total={summary.totalStocks} color="bg-teal-600" />
+            <BarStat label="Mid Cap" value={stocks.filter(s => s.capCategory === 'Mid').length} total={summary.totalStocks} color="bg-amber-600" />
+            <BarStat label="Small Cap" value={stocks.filter(s => s.capCategory === 'Small').length} total={summary.totalStocks} color="bg-rose-600" />
           </div>
         </div>
       </section>
@@ -227,9 +227,9 @@ function BarStat({ label, value, total, color }: {
 }
 
 const regimeColors = {
-  bull: { banner: 'from-emerald-500/20 to-emerald-500/5', border: 'border-emerald-500', text: 'text-emerald-400', badge: 'bg-emerald-500/20 text-emerald-400', label: 'BULL' },
-  correction: { banner: 'from-amber-500/20 to-amber-500/5', border: 'border-amber-500', text: 'text-amber-400', badge: 'bg-amber-500/20 text-amber-400', label: 'CORRECTION' },
-  bear: { banner: 'from-red-500/20 to-red-500/5', border: 'border-red-500', text: 'text-red-400', badge: 'bg-red-500/20 text-red-400', label: 'BEAR' },
+  bull: { banner: 'from-green-700/15 to-green-700/5', border: 'border-green-700', text: 'text-bullish-light', badge: 'bg-green-700/15 text-bullish-light', label: 'BULL' },
+  correction: { banner: 'from-amber-600/15 to-amber-600/5', border: 'border-amber-600', text: 'text-neutral-light', badge: 'bg-amber-600/15 text-neutral-light', label: 'CORRECTION' },
+  bear: { banner: 'from-red-700/15 to-red-700/5', border: 'border-red-700', text: 'text-bearish-light', badge: 'bg-red-700/15 text-bearish-light', label: 'BEAR' },
 };
 
 function MarketRegimeCard({ regime }: { regime: MarketRegime }) {
@@ -280,13 +280,13 @@ function RegimeIndexRow({ data }: { data: RegimeData }) {
         </div>
         <div className="flex justify-between">
           <HelpLabel label="From 52W High" tip={TIPS['From 52W High']} />
-          <span className={`font-mono tabular-nums ${data.changeFromHigh >= -5 ? 'text-emerald-400' : data.changeFromHigh >= -15 ? 'text-amber-400' : 'text-red-400'}`}>
+          <span className={`font-mono tabular-nums ${data.changeFromHigh >= -5 ? 'text-bullish-light' : data.changeFromHigh >= -15 ? 'text-neutral-light' : 'text-bearish-light'}`}>
             {data.changeFromHigh.toFixed(2)}%
           </span>
         </div>
         <div className="flex justify-between">
           <HelpLabel label="Distribution Days" tip={TIPS['Distribution Days']} />
-          <span className={`font-mono tabular-nums ${data.distributionDays >= 6 ? 'text-red-400' : data.distributionDays >= 4 ? 'text-amber-400' : 't-secondary'}`}>
+          <span className={`font-mono tabular-nums ${data.distributionDays >= 6 ? 'text-bearish-light' : data.distributionDays >= 4 ? 'text-neutral-light' : 't-secondary'}`}>
             {data.distributionDays}/25
           </span>
         </div>

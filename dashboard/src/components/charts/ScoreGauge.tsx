@@ -1,5 +1,5 @@
 export default function ScoreGauge({ score, size = 120 }: { score: number; size?: number }) {
-  const color = score >= 65 ? '#10b981' : score >= 40 ? '#f59e0b' : '#ef4444';
+  const color = score >= 65 ? '#16a34a' : score >= 40 ? '#d97706' : '#dc2626';
   const label = score >= 65 ? 'Bullish' : score >= 40 ? 'Neutral' : 'Bearish';
 
   // Use a fixed viewBox for clean math, scale via width/height

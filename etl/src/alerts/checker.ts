@@ -14,6 +14,15 @@ export function checkAlerts(
   const newState: AlertState = {};
   const stockMap = new Map(stocks.map(s => [s.ticker, s]));
 
+  // Pre-compute top 200 by market cap for top_owned_drop alerts
+  const top200ByMarketCap = new Set(
+    [...stocks]
+      .filter(s => s.marketCap > 0)
+      .sort((a, b) => b.marketCap - a.marketCap)
+      .slice(0, 200)
+      .map(s => s.ticker)
+  );
+
   for (const rule of rules) {
     if (!rule.enabled) continue;
 
@@ -30,7 +39,7 @@ export function checkAlerts(
       if (!stock) continue;
 
       const stateKey = `${rule.id}:${ticker}`;
-      const conditionMet = evaluateCondition(rule, stock);
+      const conditionMet = evaluateCondition(rule, stock, top200ByMarketCap);
 
       if (conditionMet) {
         newState[stateKey] = new Date().toISOString();
@@ -56,7 +65,7 @@ export function checkAlerts(
   return { triggered, newState };
 }
 
-function evaluateCondition(rule: AlertRule, stock: StockRecord): boolean {
+function evaluateCondition(rule: AlertRule, stock: StockRecord, top200ByMarketCap: Set<string>): boolean {
   switch (rule.type) {
     case 'price_above':
       return stock.price >= rule.threshold;
@@ -80,9 +89,8 @@ function evaluateCondition(rule: AlertRule, stock: StockRecord): boolean {
         && stock.pctBelowResistance != null
         && stock.pctBelowResistance >= rule.threshold;
     case 'top_owned_drop': {
-      // Fires when a top-institutionally-owned stock has dropped >= threshold % from 52-week high
-      const instOwn = stock.heldPercentInstitutions;
-      if (instOwn == null || instOwn < 0.5) return false; // at least 50% institutional ownership
+      // Fires when a top-200-by-market-cap stock has dropped >= threshold % from 52-week high
+      if (!top200ByMarketCap.has(stock.ticker)) return false;
       const dropPct = stock.fiftyTwoWeekHigh > 0
         ? ((stock.fiftyTwoWeekHigh - stock.price) / stock.fiftyTwoWeekHigh) * 100
         : 0;

@@ -48,6 +48,7 @@ export interface QuoteData {
   sharesOutstanding: number | null;
   heldPercentInsiders: number | null;
   heldPercentInstitutions: number | null;
+  institutionsCount: number | null;
   shortPercentOfFloat: number | null;
   targetMeanPrice: number | null;
   freeCashflow: number | null;
@@ -186,6 +187,7 @@ interface QuoteSummaryData {
   operatingCashflow: number | null;
   heldPercentInsiders: number | null;
   heldPercentInstitutions: number | null;
+  institutionsCount: number | null;
   shortPercentOfFloat: number | null;
   targetMeanPrice: number | null;
   pegRatio: number | null;
@@ -309,7 +311,7 @@ async function fetchQuoteSummaryBatch(tickers: string[]): Promise<Map<string, Qu
     tickers.map(ticker =>
       limit(async () => {
         const encoded = encodeURIComponent(ticker);
-        const url = `https://query2.finance.yahoo.com/v10/finance/quoteSummary/${encoded}?modules=defaultKeyStatistics,financialData&crumb=${encodeURIComponent(auth.crumb)}`;
+        const url = `https://query2.finance.yahoo.com/v10/finance/quoteSummary/${encoded}?modules=defaultKeyStatistics,financialData,majorHoldersBreakdown&crumb=${encodeURIComponent(auth.crumb)}`;
 
         for (let attempt = 0; attempt < 2; attempt++) {
           try {
@@ -328,6 +330,7 @@ async function fetchQuoteSummaryBatch(tickers: string[]): Promise<Map<string, Qu
 
             const ks = r.defaultKeyStatistics ?? {};
             const fd = r.financialData ?? {};
+            const mh = r.majorHoldersBreakdown ?? {};
 
             // targetMeanPrice is in trading currency (GBp for .L stocks)
             const cur: string = fd.financialCurrency ?? fd.currency ?? '';
@@ -350,6 +353,7 @@ async function fetchQuoteSummaryBatch(tickers: string[]): Promise<Map<string, Qu
               operatingCashflow: fd.operatingCashflow?.raw ?? null,
               heldPercentInsiders: ks.heldPercentInsiders?.raw ?? null,
               heldPercentInstitutions: ks.heldPercentInstitutions?.raw ?? null,
+              institutionsCount: mh.institutionsCount?.raw ?? null,
               shortPercentOfFloat: ks.shortPercentOfFloat?.raw ?? null,
               targetMeanPrice: fd.targetMeanPrice?.raw != null ? fd.targetMeanPrice.raw * targetPxFx : null,
               pegRatio: ks.pegRatio?.raw ?? null,
@@ -608,6 +612,7 @@ export async function fetchAllStocks(stocks: StockMeta[]): Promise<QuoteData[]> 
       operatingCashflow: summary?.operatingCashflow ?? null,
       heldPercentInsiders: summary?.heldPercentInsiders ?? null,
       heldPercentInstitutions: summary?.heldPercentInstitutions ?? null,
+      institutionsCount: summary?.institutionsCount ?? null,
       shortPercentOfFloat: summary?.shortPercentOfFloat ?? null,
       targetMeanPrice: summary?.targetMeanPrice ?? null,
       earningsDate: (() => {
