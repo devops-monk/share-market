@@ -22,6 +22,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "DG",
+      "name": "Dollar General",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "LAND.L",
       "name": "Land Securities",
       "score": 72,
@@ -31,13 +38,6 @@
     {
       "ticker": "TSM",
       "name": "Taiwan Semiconductor",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DG",
-      "name": "Dollar General",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -73,13 +73,6 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CHWY",
       "name": "Chewy",
       "score": 23,
@@ -87,11 +80,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
       "score": 23,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PINS",
+      "name": "Pinterest",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "ZG",
@@ -108,22 +108,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PINS",
-      "name": "Pinterest",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
@@ -131,9 +117,23 @@
     {
       "ticker": "AI",
       "name": "C3.ai",
-      "score": 25,
+      "score": 24,
       "market": "US",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "DDOG",
@@ -157,14 +157,14 @@
       "market": "US"
     },
     {
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor",
-      "score": 71,
+      "ticker": "DG",
+      "name": "Dollar General",
+      "score": 72,
       "market": "US"
     },
     {
-      "ticker": "DG",
-      "name": "Dollar General",
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
       "score": 71,
       "market": "US"
     },
