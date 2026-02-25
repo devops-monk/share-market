@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-02-25T07:28:10.999Z",
+  "lastUpdated": "2026-02-25T08:21:25.452Z",
   "stockCount": 673,
-  "bearishAlerts": 306,
+  "bearishAlerts": 302,
   "newsCount": 600,
   "marketRegime": {
     "us": {
@@ -16,13 +16,13 @@
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10680.59,
-      "sma50": 10180.91,
-      "sma200": 9458.58,
-      "changeFromHigh": -0.06,
-      "distributionDays": 5,
-      "regime": "bull",
-      "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
+      "price": 10755.67,
+      "sma50": 10203.05,
+      "sma200": 9469.43,
+      "changeFromHigh": 0,
+      "distributionDays": 6,
+      "regime": "correction",
+      "signal": "6 distribution days in 25 sessions — selling pressure"
     },
     "overall": "correction",
     "summary": "Markets showing weakness. Be selective, reduce position sizes, and tighten stops."
