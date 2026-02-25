@@ -15,6 +15,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "DG",
       "name": "Dollar General",
       "score": 72,
@@ -43,10 +50,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "HSBA.L",
+      "name": "HSBC",
       "score": 71,
-      "market": "US",
+      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -62,48 +69,34 @@
       "score": 71,
       "market": "UK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 16,
+      "score": 17,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "VRNS",
-      "name": "Varonis Systems",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 22,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 23,
+      "ticker": "VRNS",
+      "name": "Varonis Systems",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "ZS",
+      "name": "Zscaler",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
@@ -122,6 +115,20 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "NOW",
       "name": "ServiceNow",
       "score": 24,
@@ -129,18 +136,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FICO",
-      "name": "Fair Isaac (FICO)",
+      "ticker": "MANH",
+      "name": "Manhattan Associates",
       "score": 25,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -149,6 +149,12 @@
       "name": "Anglo American",
       "score": 78,
       "market": "UK"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 72,
+      "market": "US"
     },
     {
       "ticker": "DG",
@@ -175,10 +181,10 @@
       "market": "UK"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "HSBA.L",
+      "name": "HSBC",
       "score": 71,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "RIO.L",
@@ -190,12 +196,6 @@
       "ticker": "BATS.L",
       "name": "BAT",
       "score": 71,
-      "market": "UK"
-    },
-    {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
-      "score": 70,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 673,
   "avgScore": 50,
-  "bearishAlertCount": 302
+  "bearishAlertCount": 295
 }
