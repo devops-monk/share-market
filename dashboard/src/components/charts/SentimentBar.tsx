@@ -1,6 +1,10 @@
 export default function SentimentBar({ score }: { score: number }) {
   const pct = ((score + 1) / 2) * 100;
-  const color = score > 0.1 ? '#16a34a' : score < -0.1 ? '#dc2626' : '#d97706';
+  const color = score > 0.1
+    ? 'var(--chart-bullish, #16a34a)'
+    : score < -0.1
+    ? 'var(--chart-bearish, #dc2626)'
+    : 'var(--chart-neutral, #d97706)';
 
   return (
     <div className="flex items-center gap-2">

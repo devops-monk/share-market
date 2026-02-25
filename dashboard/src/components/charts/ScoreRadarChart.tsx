@@ -49,8 +49,8 @@ export default function ScoreRadarChart({ score }: Props) {
         <Radar
           name="Score"
           dataKey="value"
-          stroke="#3b82f6"
-          fill="#3b82f6"
+          stroke="var(--chart-accent, #3b82f6)"
+          fill="var(--chart-accent, #3b82f6)"
           fillOpacity={0.2}
           strokeWidth={2}
         />

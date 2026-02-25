@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import type { StockRecord } from '../types';
 import { ScoreBadge, ChangePercent, MarketTag } from '../components/common/Tags';
 import InfoTooltip from '../components/common/InfoTooltip';
+import CorrelationHeatmap from '../components/charts/CorrelationHeatmap';
+import { useOhlcvData } from '../hooks/useOhlcvData';
+import { computeCorrelationMatrix } from '../lib/correlation';
 
 /* ─── TYPES ─── */
 interface Holding {
@@ -149,6 +152,17 @@ export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
   const avgScore = portfolio.length > 0
     ? Math.round(portfolio.filter(p => p.stock).reduce((a, p) => a + (p.stock?.score.composite ?? 0), 0) / portfolio.filter(p => p.stock).length)
     : 0;
+
+  const portfolioTickers = useMemo(() => portfolio.map(p => p.ticker), [portfolio]);
+  const { data: ohlcvData, loading: ohlcvLoading } = useOhlcvData(portfolioTickers);
+
+  const correlationData = useMemo(() => {
+    if (portfolioTickers.length < 2 || ohlcvData.size < 2) return null;
+    const availableTickers = portfolioTickers.filter(t => ohlcvData.has(t));
+    if (availableTickers.length < 2) return null;
+    const matrix = computeCorrelationMatrix(ohlcvData, availableTickers);
+    return { tickers: availableTickers, matrix };
+  }, [portfolioTickers, ohlcvData]);
 
   const pieSlices = portfolio.map((p, i) => ({
     label: p.ticker,
@@ -319,6 +333,17 @@ export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
               </div>
             </div>
           </div>
+
+          {/* Correlation Matrix */}
+          {correlationData && (
+            <div className="card p-5">
+              <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Correlation Matrix</h2>
+              <p className="text-xs t-muted mb-4">
+                Shows how your holdings move together. Values near +1 mean stocks move in sync (less diversification), near 0 means independent, near -1 means inverse (good hedge).
+              </p>
+              <CorrelationHeatmap tickers={correlationData.tickers} matrix={correlationData.matrix} />
+            </div>
+          )}
         </>
       )}
     </div>

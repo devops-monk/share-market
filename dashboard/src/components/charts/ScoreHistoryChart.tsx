@@ -76,7 +76,7 @@ export default function ScoreHistoryChart({ ticker }: Props) {
   const latest = scores[scores.length - 1];
   const first = scores[0];
   const trend = latest - first;
-  const trendColor = trend >= 0 ? '#16a34a' : '#dc2626';
+  const trendColor = trend >= 0 ? 'var(--chart-bullish, #16a34a)' : 'var(--chart-bearish, #dc2626)';
 
   return (
     <div>

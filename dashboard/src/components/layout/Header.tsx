@@ -28,6 +28,7 @@ const navGroups: NavGroup[] = [
       { path: '/sectors', label: 'Sectors', desc: 'Sector performance breakdown' },
       { path: '/compare', label: 'Compare', desc: 'Side-by-side stock comparison' },
       { path: '/backtest', label: 'Backtest', desc: 'Test stock-picking strategies' },
+      { path: '/sector-rotation', label: 'Rotation', desc: 'Sector rotation momentum model' },
     ],
   },
   {

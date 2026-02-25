@@ -8,11 +8,14 @@ import CandlestickChart from '../components/charts/CandlestickChart';
 import SentimentBar from '../components/charts/SentimentBar';
 import ScoreHistoryChart from '../components/charts/ScoreHistoryChart';
 import { MarketTag, CapTag, Trading212Badge, SignalBadge, ChangePercent } from '../components/common/Tags';
+import FinancialsBarChart from '../components/charts/FinancialsBarChart';
 import { generateStockSummary } from '../lib/stock-summary';
+import type { FinancialsMap } from '../hooks/useStockData';
 
 interface Props {
   stocks: StockRecord[];
   news: NewsItem[];
+  financials?: FinancialsMap | null;
 }
 
 /* ─── TOOLTIP DESCRIPTIONS ─── */
@@ -76,7 +79,7 @@ const TOOLTIPS: Record<string, string> = {
   'Data Quality': 'Percentage of fundamental metrics available. Higher = more reliable analysis.',
 };
 
-export default function StockDetail({ stocks, news }: Props) {
+export default function StockDetail({ stocks, news, financials }: Props) {
   const { ticker } = useParams<{ ticker: string }>();
   const stock = stocks.find(s => s.ticker === ticker);
 
@@ -240,7 +243,7 @@ export default function StockDetail({ stocks, news }: Props) {
                       className="h-full rounded-full transition-all duration-500"
                       style={{
                         width: `${item.value}%`,
-                        backgroundColor: item.value >= 65 ? '#16a34a' : item.value >= 40 ? '#d97706' : '#dc2626',
+                        backgroundColor: item.value >= 65 ? 'var(--chart-bullish, #16a34a)' : item.value >= 40 ? 'var(--chart-neutral, #d97706)' : 'var(--chart-bearish, #dc2626)',
                       }}
                     />
                   </div>
@@ -318,6 +321,14 @@ export default function StockDetail({ stocks, news }: Props) {
           <Metric label="Short Float" value={stock.shortPercentOfFloat != null ? `${(stock.shortPercentOfFloat * 100).toFixed(1)}%` : 'N/A'} positive={stock.shortPercentOfFloat != null ? stock.shortPercentOfFloat < 0.05 : undefined} />
         </div>
       </div>
+
+      {/* Multi-Year Financials */}
+      {financials && financials[stock.ticker] && financials[stock.ticker].length > 0 && (
+        <div className="card p-5">
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Multi-Year Financials</h2>
+          <FinancialsBarChart data={financials[stock.ticker]} />
+        </div>
+      )}
 
       {/* Piotroski & Graham */}
       <div className="card p-5">

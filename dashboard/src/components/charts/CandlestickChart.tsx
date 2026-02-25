@@ -46,44 +46,41 @@ export default function CandlestickChart({ ticker, sma50, sma150, sma200 }: Prop
     const daysToShow = RANGE_DAYS[selectedRange];
     const sliced = raw.length > daysToShow ? raw.slice(-daysToShow) : raw;
 
-    // Detect dark mode
-    const isDark = getComputedStyle(document.documentElement)
-      .getPropertyValue('--surface-primary').trim().startsWith('#1') ||
-      getComputedStyle(document.documentElement)
-      .getPropertyValue('--surface-primary').trim().startsWith('#0');
+    // Read resolved CSS chart vars (lightweight-charts needs hex values)
+    const cs = getComputedStyle(document.documentElement);
+    const chartBullish = cs.getPropertyValue('--chart-bullish').trim() || '#16a34a';
+    const chartBearish = cs.getPropertyValue('--chart-bearish').trim() || '#dc2626';
+    const chartGrid = cs.getPropertyValue('--chart-grid').trim() || 'rgba(100,116,139,0.08)';
+    const textColor = cs.getPropertyValue('--text-tertiary').trim() || '#6b7280';
+    const borderColor = cs.getPropertyValue('--surface-border').trim() || '#d1d5db';
 
     const chart = createChart(container, {
       width: container.clientWidth,
       height: 350,
       layout: {
         background: { type: ColorType.Solid, color: 'transparent' },
-        textColor: isDark ? '#94a3b8' : '#64748b',
+        textColor,
         fontSize: 11,
       },
       grid: {
-        vertLines: { color: isDark ? 'rgba(148,163,184,0.06)' : 'rgba(100,116,139,0.08)' },
-        horzLines: { color: isDark ? 'rgba(148,163,184,0.06)' : 'rgba(100,116,139,0.08)' },
+        vertLines: { color: chartGrid },
+        horzLines: { color: chartGrid },
       },
       crosshair: { mode: 0 },
-      rightPriceScale: {
-        borderColor: isDark ? 'rgba(148,163,184,0.1)' : 'rgba(100,116,139,0.15)',
-      },
-      timeScale: {
-        borderColor: isDark ? 'rgba(148,163,184,0.1)' : 'rgba(100,116,139,0.15)',
-        timeVisible: false,
-      },
+      rightPriceScale: { borderColor },
+      timeScale: { borderColor, timeVisible: false },
     });
 
     chartRef.current = chart;
 
     // Candlestick series
     const candleSeries = chart.addSeries(CandlestickSeries, {
-      upColor: '#16a34a',
-      downColor: '#dc2626',
-      borderUpColor: '#16a34a',
-      borderDownColor: '#dc2626',
-      wickUpColor: '#16a34a',
-      wickDownColor: '#dc2626',
+      upColor: chartBullish,
+      downColor: chartBearish,
+      borderUpColor: chartBullish,
+      borderDownColor: chartBearish,
+      wickUpColor: chartBullish,
+      wickDownColor: chartBearish,
     });
 
     const candles: CandlestickData<Time>[] = sliced.map(d => ({
@@ -134,9 +131,11 @@ export default function CandlestickChart({ ticker, sma50, sma150, sma200 }: Prop
         if (points.length > 0) lineSeries.setData(points);
       };
 
-      addSmaLine(sma50, '#60a5fa');
+      const chartAccentLight = cs.getPropertyValue('--chart-accent-light').trim() || '#60a5fa';
+      const chartNeutral = cs.getPropertyValue('--chart-neutral').trim() || '#d97706';
+      addSmaLine(sma50, chartAccentLight);
       addSmaLine(sma150, '#38bdf8');
-      addSmaLine(sma200, '#d97706');
+      addSmaLine(sma200, chartNeutral);
     }
 
     chart.timeScale().fitContent();

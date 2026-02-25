@@ -1,5 +1,9 @@
 export default function ScoreGauge({ score, size = 120 }: { score: number; size?: number }) {
-  const color = score >= 65 ? '#16a34a' : score >= 40 ? '#d97706' : '#dc2626';
+  const color = score >= 65
+    ? 'var(--chart-bullish, #16a34a)'
+    : score >= 40
+    ? 'var(--chart-neutral, #d97706)'
+    : 'var(--chart-bearish, #dc2626)';
   const label = score >= 65 ? 'Bullish' : score >= 40 ? 'Neutral' : 'Bearish';
 
   // Use a fixed viewBox for clean math, scale via width/height

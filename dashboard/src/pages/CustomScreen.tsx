@@ -112,6 +112,25 @@ export default function CustomScreen({ stocks }: { stocks: StockRecord[] }) {
     saveScreens(updated);
   }, [savedScreens]);
 
+  const exportCsv = () => {
+    if (filtered.length === 0) return;
+    const activeMetrics = rules.map(r => METRICS.find(m => m.key === r.metricKey)).filter(Boolean) as MetricDef[];
+    const headers = ['Ticker', 'Name', 'Market', 'Price', 'Change%', 'Score', ...activeMetrics.map(m => m.label)];
+    const rows = filtered.map(s => [
+      s.ticker, s.name, s.market,
+      s.price.toFixed(2), s.changePercent.toFixed(2), s.score.composite,
+      ...activeMetrics.map(m => { const v = m.getValue(s); return v != null ? (typeof v === 'number' ? v.toFixed(2) : v) : ''; }),
+    ]);
+    const csv = [headers, ...rows].map(r => r.join(',')).join('\n');
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `custom-screen-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
   const filtered = useMemo(() => {
     if (rules.length === 0) return [];
 
@@ -267,6 +286,14 @@ export default function CustomScreen({ stocks }: { stocks: StockRecord[] }) {
         <>
           <div className="flex items-center gap-2">
             <span className="badge bg-surface-tertiary t-secondary ring-1 ring-surface-border">{filtered.length} matches</span>
+            {filtered.length > 0 && (
+              <button
+                onClick={exportCsv}
+                className="badge bg-accent/15 text-accent-light ring-1 ring-accent/20 hover:bg-accent/25 transition-colors cursor-pointer text-xs px-3 py-1.5"
+              >
+                Export CSV
+              </button>
+            )}
           </div>
 
           {filtered.length > 0 ? (

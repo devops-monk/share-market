@@ -600,15 +600,26 @@ Q12 CSV Export                      M15 Score History                   L11 Back
 | **M14b** Earnings Date ETL | **DONE** | Added `earningsDate` field from Yahoo v7 `earningsTimestamp`. Flows through to frontend Earnings Calendar and StockDetail fundamentals grid. |
 | **L8** AI Stock Summaries | **DONE** | Rule-based NLG generating analyst-style research notes per stock. 5 sections: opening assessment, technical setup, fundamentals & valuation, signals & catalysts, closing verdict. Expandable card on StockDetail page. Uses all available data (scores, RSI, MAs, Bollinger, volume, P/E, ROE, debt, Graham, DCF, Piotroski, Buffett, signals, OBV, Minervini, RS). |
 
+### Recently Shipped (February 2026 — Batch 6)
+
+| Feature | Status | Notes |
+|---------|--------|-------|
+| **Q13** Custom Screen CSV Export | **DONE** | Export button on Custom Screen Builder. Headers include Ticker, Name, Market, Price, Change%, Score + dynamic columns for each active filter rule metric. |
+| **L2** Multi-Year Revenue/Earnings Charts | **DONE** | ETL writes `data/financials.json` with annual Revenue, Net Income, Gross Profit, Operating Income per stock. Recharts grouped BarChart on StockDetail with large-number formatting ($383B). |
+| **Q12** Stock Comparison Sparklines | **DONE** | Shared `useOhlcvData` hook (module-level cache). `MiniSparkline` component (200x60 Recharts AreaChart, 6-month close prices). Auto-colored by trend (green up, red down). Shown below each stock's ScoreGauge on Compare page. |
+| **M16** Sector Rotation Model | **DONE** | New `/sector-rotation` page. Groups stocks by sector, computes avg RS percentile and momentum acceleration (3M−6M return delta). RRG-style Recharts ScatterChart with 4 quadrants (Leading/Weakening/Lagging/Improving). Sortable sector table below. Added to Analysis nav group. |
+| **M17** Correlation Matrix | **DONE** | `computeCorrelationMatrix()` using daily log returns with Pearson correlation. SVG heatmap with diverging color scale (red↔white↔green). Shown on Portfolio page when 2+ holdings exist. Uses shared `useOhlcvData` hook. |
+| **Q14** Dark/Light Chart Themes | **DONE** | 6 CSS variables (`--chart-bullish/bearish/neutral/accent/accent-light/grid`) in both `:root` and `.dark`. Updated ScoreGauge, ScoreRadarChart, SentimentBar, ScoreHistoryChart, CandlestickChart (via `getComputedStyle`), and new FinancialsBarChart. Brighter variants for dark mode. |
+
 ### Remaining Next Priorities
 
-1. **L2 — Multi-Year Revenue/Earnings Charts** — Use financial statements data to chart revenue and EPS trends over 4 years. Requires ETL to output `data/financials.json` with annual income statement data.
-2. **Q12 — Stock Comparison Charts** — Add mini sparkline charts to the Compare page showing price trends side-by-side.
-3. **Q13 — Export to CSV** — Allow users to export screener/custom screen results as CSV files.
-4. **M16 — Sector Rotation Model** — Identify sectors in rotation (improving RS) vs falling out of favour. Visual sector momentum chart.
-5. **L7 — Options Flow Integration** — Surface unusual options activity data to identify institutional positioning ahead of moves.
-6. **Q14 — Dark/Light Chart Themes** — Ensure all SVG charts (pie, gauge, radar) properly theme with dark/light mode.
-7. **M17 — Correlation Matrix** — Show cross-correlation of returns between portfolio holdings or watchlist stocks.
+1. **L7 — Options Flow Integration** — Surface unusual options activity data to identify institutional positioning ahead of moves. (Skipped in Batch 6 — no free data source available.)
+2. **L5 — Insider Trading Data** — Recent insider buys/sells with amounts from SEC EDGAR Form 4.
+3. **L8 — Dividend History** — 10+ year payment history, growth rate, CAGR for income investing analysis.
+4. **L13 — AI-Enhanced Sentiment** — Replace rule-based sentiment with FinBERT or LLM-based analysis for nuanced headline scoring.
+5. **Q10 — Multi-Timeframe Signal Labels** — Tag existing 24 signal types with short/medium/long-term timeframe; show aggregate per timeframe (Barchart Opinion style).
+6. **M14 — Weighted Alpha** — 1-year return with exponential decay weighting towards recent prices (Barchart-style momentum metric).
+7. **UX — Performance Optimisation** — Code-split large pages (SectorRotation, Backtest) with `React.lazy()`. Consider manual chunks in Vite config to reduce main bundle below 500KB.
 
 ---
 

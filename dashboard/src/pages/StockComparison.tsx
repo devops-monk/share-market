@@ -2,6 +2,8 @@ import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import type { StockRecord } from '../types';
 import ScoreGauge from '../components/charts/ScoreGauge';
+import MiniSparkline from '../components/charts/MiniSparkline';
+import { useOhlcvData } from '../hooks/useOhlcvData';
 import InfoTooltip from '../components/common/InfoTooltip';
 import { TIPS } from '../lib/tooltips';
 
@@ -115,6 +117,8 @@ export default function StockComparison({ stocks }: { stocks: StockRecord[] }) {
   const [selectedTickers, setSelectedTickers] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
+
+  const { data: ohlcvData } = useOhlcvData(selectedTickers);
 
   const selectedStocks = useMemo(
     () => selectedTickers.map(t => stocks.find(s => s.ticker === t)).filter(Boolean) as StockRecord[],
@@ -231,6 +235,11 @@ export default function StockComparison({ stocks }: { stocks: StockRecord[] }) {
                   <div className="flex justify-center mt-2">
                     <ScoreGauge score={stock.score.composite} size={90} />
                   </div>
+                  {ohlcvData.has(stock.ticker) && (
+                    <div className="flex justify-center mt-2">
+                      <MiniSparkline data={ohlcvData.get(stock.ticker)!} color="auto" />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

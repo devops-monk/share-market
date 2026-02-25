@@ -5,6 +5,16 @@ const BASE = import.meta.env.BASE_URL;
 
 export type ScoreHistory = Record<string, Record<string, number>>;
 
+export interface FinancialYear {
+  y: string;
+  rev: number | null;
+  ni: number | null;
+  gp: number | null;
+  oi: number | null;
+}
+
+export type FinancialsMap = Record<string, FinancialYear[]>;
+
 async function fetchJson<T>(path: string): Promise<T | null> {
   try {
     const res = await fetch(`${BASE}data/${path}`);
@@ -22,6 +32,7 @@ export function useStockData() {
   const [news, setNews] = useState<NewsItem[]>([]);
   const [metadata, setMetadata] = useState<Metadata | null>(null);
   const [scoreHistory, setScoreHistory] = useState<ScoreHistory | null>(null);
+  const [financials, setFinancials] = useState<FinancialsMap | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -32,16 +43,18 @@ export function useStockData() {
       fetchJson<NewsItem[]>('news-sentiment.json'),
       fetchJson<Metadata>('metadata.json'),
       fetchJson<ScoreHistory>('score-history.json'),
-    ]).then(([s, sum, ba, n, m, sh]) => {
+      fetchJson<FinancialsMap>('financials.json'),
+    ]).then(([s, sum, ba, n, m, sh, fin]) => {
       setStocks(s || []);
       setSummary(sum || null);
       setBearishAlerts(ba || []);
       setNews(n || []);
       setMetadata(m || null);
       setScoreHistory(sh || null);
+      setFinancials(fin || null);
       setLoading(false);
     });
   }, []);
 
-  return { stocks, summary, bearishAlerts, news, metadata, scoreHistory, loading };
+  return { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, loading };
 }

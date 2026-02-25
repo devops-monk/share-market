@@ -2,6 +2,7 @@ import { writeFileSync, readFileSync, mkdirSync } from 'fs';
 import { stringify } from 'csv-stringify/sync';
 import { CONFIG } from '../config.js';
 import type { MarketRegime } from '../indicators/regime.js';
+import type { FinancialData } from '../fundamentals/financials.js';
 import path from 'path';
 
 export interface StockRecord {
@@ -143,6 +144,7 @@ export function writeOutputs(
   bearishAlerts: StockRecord[],
   ohlcvData?: OhlcvData[],
   marketRegime?: MarketRegime | null,
+  financialsMap?: Map<string, FinancialData>,
 ) {
   const dataDir = CONFIG.dataDir;
   mkdirSync(dataDir, { recursive: true });
@@ -193,6 +195,26 @@ export function writeOutputs(
       marketRegime: marketRegime ?? null,
     }, null, 2)
   );
+
+  // financials.json — multi-year revenue/earnings for charts
+  if (financialsMap && financialsMap.size > 0) {
+    const financialsOut: Record<string, { y: string; rev: number | null; ni: number | null; gp: number | null; oi: number | null }[]> = {};
+    for (const [ticker, fd] of financialsMap) {
+      if (fd.annuals.length === 0) continue;
+      financialsOut[ticker] = fd.annuals.map(a => ({
+        y: a.year,
+        rev: a.totalRevenue,
+        ni: a.netIncome,
+        gp: a.grossProfit,
+        oi: a.operatingIncome,
+      }));
+    }
+    writeFileSync(
+      path.join(dataDir, 'financials.json'),
+      JSON.stringify(financialsOut)
+    );
+    console.log(`Wrote financials.json for ${Object.keys(financialsOut).length} stocks`);
+  }
 
   // CSV files
   const csvColumns = [
