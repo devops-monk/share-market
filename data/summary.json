@@ -36,17 +36,24 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ALB",
       "name": "Albemarle",
       "score": 71,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HSBA.L",
+      "name": "HSBC",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AAL.L",
+      "name": "Anglo American",
+      "score": 71,
+      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -61,13 +68,6 @@
       "name": "Revolution Medicines",
       "score": 70,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AAL.L",
-      "name": "Anglo American",
-      "score": 70,
-      "market": "UK",
       "capCategory": "Large"
     }
   ],
@@ -85,13 +85,6 @@
       "score": 23,
       "market": "US",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "PINS",
-      "name": "Pinterest",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "MANH",
@@ -115,6 +108,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PINS",
+      "name": "Pinterest",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 26,
@@ -129,18 +136,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
+      "ticker": "INF.L",
+      "name": "Informa",
       "score": 27,
-      "market": "US",
-      "capCategory": "Mid"
+      "market": "UK",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -175,16 +175,22 @@
       "market": "US"
     },
     {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
-      "score": 72,
-      "market": "UK"
-    },
-    {
       "ticker": "ALB",
       "name": "Albemarle",
       "score": 71,
       "market": "US"
+    },
+    {
+      "ticker": "HSBA.L",
+      "name": "HSBC",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "AAL.L",
+      "name": "Anglo American",
+      "score": 71,
+      "market": "UK"
     },
     {
       "ticker": "GLEN.L",
@@ -197,12 +203,6 @@
       "name": "Revolution Medicines",
       "score": 70,
       "market": "US"
-    },
-    {
-      "ticker": "AAL.L",
-      "name": "Anglo American",
-      "score": 70,
-      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -275,6 +275,12 @@
       "market": "US"
     },
     {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "FOUR.L",
       "name": "4imprint",
       "score": 65,
@@ -305,12 +311,6 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 63,
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 303
+  "bearishAlertCount": 305
 }
