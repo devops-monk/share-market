@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-02-25T13:36:34.452Z",
+  "lastUpdated": "2026-02-25T14:28:07.043Z",
   "stockCount": 673,
-  "bearishAlerts": 305,
-  "newsCount": 695,
+  "bearishAlerts": 303,
+  "newsCount": 930,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
@@ -16,9 +16,9 @@
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10783.58,
-      "sma50": 10203.6,
-      "sma200": 9469.57,
+      "price": 10785.92,
+      "sma50": 10203.65,
+      "sma200": 9469.59,
       "changeFromHigh": 0,
       "distributionDays": 6,
       "regime": "correction",
