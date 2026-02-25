@@ -15,6 +15,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "MRK",
       "name": "Merck",
       "score": 72,
@@ -24,13 +31,6 @@
     {
       "ticker": "DG",
       "name": "Dollar General",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -89,13 +89,13 @@
     {
       "ticker": "VRNS",
       "name": "Varonis Systems",
-      "score": 22,
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
+      "ticker": "DDOG",
+      "name": "Datadog",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -122,15 +122,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DDOG",
-      "name": "Datadog",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -141,6 +134,13 @@
       "score": 25,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -151,6 +151,12 @@
       "market": "UK"
     },
     {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "MRK",
       "name": "Merck",
       "score": 72,
@@ -159,12 +165,6 @@
     {
       "ticker": "DG",
       "name": "Dollar General",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
       "score": 72,
       "market": "US"
     },
@@ -201,7 +201,7 @@
     {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
-      "score": 69,
+      "score": 70,
       "market": "US"
     }
   ],
@@ -237,16 +237,16 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 67,
-      "market": "US"
-    },
-    {
       "ticker": "OSB.L",
       "name": "OSB Group",
       "score": 67,
       "market": "UK"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 66,
+      "market": "US"
     },
     {
       "ticker": "PSN.L",
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 673,
-  "avgScore": 50,
-  "bearishAlertCount": 295
+  "avgScore": 51,
+  "bearishAlertCount": 294
 }
