@@ -36,24 +36,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ALB",
       "name": "Albemarle",
       "score": 71,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AAL.L",
-      "name": "Anglo American",
-      "score": 71,
-      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -68,6 +54,20 @@
       "name": "Revolution Medicines",
       "score": 70,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HSBA.L",
+      "name": "HSBC",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AAL.L",
+      "name": "Anglo American",
+      "score": 70,
+      "market": "UK",
       "capCategory": "Large"
     }
   ],
@@ -136,9 +136,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
-      "score": 27,
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 26,
       "market": "US",
       "capCategory": "Mid"
     }
@@ -175,22 +175,10 @@
       "market": "US"
     },
     {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
-      "score": 72,
-      "market": "UK"
-    },
-    {
       "ticker": "ALB",
       "name": "Albemarle",
       "score": 71,
       "market": "US"
-    },
-    {
-      "ticker": "AAL.L",
-      "name": "Anglo American",
-      "score": 71,
-      "market": "UK"
     },
     {
       "ticker": "GLEN.L",
@@ -203,6 +191,18 @@
       "name": "Revolution Medicines",
       "score": 70,
       "market": "US"
+    },
+    {
+      "ticker": "HSBA.L",
+      "name": "HSBC",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "AAL.L",
+      "name": "Anglo American",
+      "score": 70,
+      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -222,12 +222,6 @@
       "ticker": "KGF.L",
       "name": "Kingfisher",
       "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "DRX.L",
-      "name": "Drax Group",
-      "score": 66,
       "market": "UK"
     },
     {
@@ -251,7 +245,7 @@
     {
       "ticker": "PHP.L",
       "name": "Primary Health Properties",
-      "score": 65,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -261,9 +255,15 @@
       "market": "UK"
     },
     {
-      "ticker": "BLND.L",
-      "name": "British Land",
+      "ticker": "DRX.L",
+      "name": "Drax Group",
       "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 62,
       "market": "UK"
     }
   ],
@@ -275,27 +275,15 @@
       "market": "US"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 66,
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "FOUR.L",
       "name": "4imprint",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 65,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -307,19 +295,19 @@
     {
       "ticker": "CURY.L",
       "name": "Currys",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
       "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 62,
       "market": "UK"
     },
     {
@@ -327,9 +315,21 @@
       "name": "J D Wetherspoon",
       "score": 61,
       "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 61,
+      "market": "UK"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 300
+  "bearishAlertCount": 301
 }
