@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "HSBA.L",
+      "name": "HSBC",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ALB",
       "name": "Albemarle",
       "score": 71,
@@ -54,13 +61,6 @@
       "name": "Revolution Medicines",
       "score": 70,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
-      "score": 70,
-      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -136,9 +136,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 26,
+      "ticker": "BROS",
+      "name": "Dutch Bros",
+      "score": 27,
       "market": "US",
       "capCategory": "Mid"
     }
@@ -175,6 +175,12 @@
       "market": "US"
     },
     {
+      "ticker": "HSBA.L",
+      "name": "HSBC",
+      "score": 72,
+      "market": "UK"
+    },
+    {
       "ticker": "ALB",
       "name": "Albemarle",
       "score": 71,
@@ -191,12 +197,6 @@
       "name": "Revolution Medicines",
       "score": 70,
       "market": "US"
-    },
-    {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
-      "score": 70,
-      "market": "UK"
     },
     {
       "ticker": "AAL.L",
@@ -219,9 +219,9 @@
       "market": "UK"
     },
     {
-      "ticker": "KGF.L",
-      "name": "Kingfisher",
-      "score": 67,
+      "ticker": "DRX.L",
+      "name": "Drax Group",
+      "score": 66,
       "market": "UK"
     },
     {
@@ -237,6 +237,12 @@
       "market": "UK"
     },
     {
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "OSB.L",
       "name": "OSB Group",
       "score": 65,
@@ -245,7 +251,7 @@
     {
       "ticker": "PHP.L",
       "name": "Primary Health Properties",
-      "score": 64,
+      "score": 65,
       "market": "UK"
     },
     {
@@ -255,15 +261,9 @@
       "market": "UK"
     },
     {
-      "ticker": "DRX.L",
-      "name": "Drax Group",
+      "ticker": "SDR.L",
+      "name": "Schroders",
       "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 62,
       "market": "UK"
     }
   ],
@@ -275,15 +275,15 @@
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
+      "ticker": "FOUR.L",
+      "name": "4imprint",
       "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 64,
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 65,
       "market": "UK"
     },
     {
@@ -295,6 +295,12 @@
     {
       "ticker": "CURY.L",
       "name": "Currys",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
       "score": 64,
       "market": "UK"
     },
@@ -311,25 +317,19 @@
       "market": "UK"
     },
     {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "JDW.L",
       "name": "J D Wetherspoon",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
       "score": 61,
       "market": "UK"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 301
+  "bearishAlertCount": 303
 }
