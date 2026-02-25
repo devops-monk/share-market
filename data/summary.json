@@ -43,8 +43,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
+      "ticker": "GLEN.L",
+      "name": "Glencore",
       "score": 71,
       "market": "UK",
       "capCategory": "Large"
@@ -57,17 +57,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
+      "ticker": "HSBA.L",
+      "name": "HSBC",
       "score": 70,
       "market": "UK",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan",
-      "score": 69,
-      "market": "US",
+      "ticker": "AAL.L",
+      "name": "Anglo American",
+      "score": 70,
+      "market": "UK",
       "capCategory": "Large"
     }
   ],
@@ -129,18 +129,18 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BROS",
       "name": "Dutch Bros",
       "score": 27,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -181,8 +181,8 @@
       "market": "US"
     },
     {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
+      "ticker": "GLEN.L",
+      "name": "Glencore",
       "score": 71,
       "market": "UK"
     },
@@ -193,35 +193,35 @@
       "market": "US"
     },
     {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 69,
-      "market": "US"
-    }
-  ],
-  "topMidCap": [
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
+      "ticker": "HSBA.L",
+      "name": "HSBC",
       "score": 70,
       "market": "UK"
     },
     {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 68,
+      "ticker": "AAL.L",
+      "name": "Anglo American",
+      "score": 70,
+      "market": "UK"
+    }
+  ],
+  "topMidCap": [
+    {
+      "ticker": "PSN.L",
+      "name": "Persimmon",
+      "score": 69,
       "market": "UK"
     },
     {
-      "ticker": "DRX.L",
-      "name": "Drax Group",
-      "score": 66,
+      "ticker": "KGF.L",
+      "name": "Kingfisher",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 67,
       "market": "UK"
     },
     {
@@ -229,12 +229,6 @@
       "name": "DigitalOcean",
       "score": 65,
       "market": "US"
-    },
-    {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 65,
-      "market": "UK"
     },
     {
       "ticker": "PLUS.L",
@@ -255,6 +249,12 @@
       "market": "UK"
     },
     {
+      "ticker": "PHP.L",
+      "name": "Primary Health Properties",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "BKG.L",
       "name": "Berkeley Group",
       "score": 63,
@@ -263,7 +263,7 @@
     {
       "ticker": "SVT.L",
       "name": "Severn Trent",
-      "score": 62,
+      "score": 63,
       "market": "UK"
     }
   ],
@@ -281,9 +281,15 @@
       "market": "US"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 65,
       "market": "UK"
     },
     {
@@ -293,43 +299,37 @@
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
+      "ticker": "FOUR.L",
+      "name": "4imprint",
       "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
       "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 62,
       "market": "UK"
     },
     {
       "ticker": "JDW.L",
       "name": "J D Wetherspoon",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "SNV",
-      "name": "Synovus Financial",
-      "score": 60,
-      "market": "US"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 60,
+      "score": 61,
       "market": "UK"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 302
+  "bearishAlertCount": 300
 }
