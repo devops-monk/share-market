@@ -3,7 +3,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 74,
+      "score": 75,
       "market": "US",
       "capCategory": "Large"
     },
@@ -31,14 +31,14 @@
     {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
-      "score": 71,
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "DG",
       "name": "Dollar General",
-      "score": 71,
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -73,13 +73,6 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "PINS",
-      "name": "Pinterest",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "DDOG",
       "name": "Datadog",
       "score": 22,
@@ -92,6 +85,13 @@
       "score": 23,
       "market": "US",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "PINS",
+      "name": "Pinterest",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "MANH",
@@ -129,25 +129,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 26,
+      "ticker": "BROS",
+      "name": "Dutch Bros",
+      "score": 27,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 74,
+      "score": 75,
       "market": "US"
     },
     {
@@ -165,13 +165,13 @@
     {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "DG",
       "name": "Dollar General",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 305
+  "bearishAlertCount": 306
 }
