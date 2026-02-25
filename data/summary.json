@@ -1,25 +1,18 @@
 {
   "topOverall": [
     {
+      "ticker": "AAL.L",
+      "name": "Anglo American",
+      "score": 78,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 75,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AAL.L",
-      "name": "Anglo American",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Large"
     },
     {
       "ticker": "DG",
@@ -43,6 +36,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RR.L",
+      "name": "Rolls-Royce",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 71,
@@ -50,23 +57,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "RR.L",
-      "name": "Rolls-Royce",
-      "score": 70,
+      "ticker": "BATS.L",
+      "name": "BAT",
+      "score": 71,
       "market": "UK",
       "capCategory": "Large"
     },
     {
       "ticker": "HSBA.L",
       "name": "HSBC",
-      "score": 69,
+      "score": 70,
       "market": "UK",
       "capCategory": "Large"
     }
@@ -87,6 +87,20 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "GWRE",
       "name": "Guidewire Software",
       "score": 23,
@@ -99,13 +113,6 @@
       "score": 23,
       "market": "US",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "BROS",
@@ -122,38 +129,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TOST",
-      "name": "Toast",
+      "ticker": "FICO",
+      "name": "Fair Isaac (FICO)",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "KKR",
-      "name": "KKR & Co",
-      "score": 26,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 74,
-      "market": "US"
-    },
-    {
       "ticker": "AAL.L",
       "name": "Anglo American",
-      "score": 74,
+      "score": 78,
       "market": "UK"
     },
     {
@@ -175,33 +169,39 @@
       "market": "UK"
     },
     {
+      "ticker": "RR.L",
+      "name": "Rolls-Royce",
+      "score": 72,
+      "market": "UK"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 71,
       "market": "UK"
     },
     {
-      "ticker": "RR.L",
-      "name": "Rolls-Royce",
-      "score": 70,
+      "ticker": "BATS.L",
+      "name": "BAT",
+      "score": 71,
       "market": "UK"
     },
     {
       "ticker": "HSBA.L",
       "name": "HSBC",
-      "score": 69,
+      "score": 70,
       "market": "UK"
     },
     {
-      "ticker": "EDV.L",
-      "name": "Endeavour Mining",
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb",
       "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan",
-      "score": 67,
       "market": "US"
     }
   ],
@@ -219,22 +219,34 @@
       "market": "UK"
     },
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 68,
+      "market": "UK"
+    },
+    {
       "ticker": "DRX.L",
       "name": "Drax Group",
       "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
-      "score": 67,
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 68,
       "market": "UK"
     },
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 66,
+      "score": 67,
       "market": "US"
+    },
+    {
+      "ticker": "OSB.L",
+      "name": "OSB Group",
+      "score": 67,
+      "market": "UK"
     },
     {
       "ticker": "PSN.L",
@@ -253,18 +265,6 @@
       "name": "M&G",
       "score": 66,
       "market": "UK"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 65,
-      "market": "US"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 64,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 673,
   "avgScore": 50,
-  "bearishAlertCount": 299
+  "bearishAlertCount": 302
 }
