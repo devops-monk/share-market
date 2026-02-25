@@ -22,6 +22,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "DG",
       "name": "Dollar General",
       "score": 73,
@@ -29,9 +36,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 73,
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb",
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -62,13 +69,6 @@
       "score": 71,
       "market": "UK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "BATS.L",
-      "name": "BAT",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -96,7 +96,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
@@ -136,8 +136,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -157,15 +157,21 @@
       "market": "US"
     },
     {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 74,
+      "market": "US"
+    },
+    {
       "ticker": "DG",
       "name": "Dollar General",
       "score": 73,
       "market": "US"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 73,
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb",
+      "score": 72,
       "market": "US"
     },
     {
@@ -197,12 +203,6 @@
       "name": "BAT",
       "score": 71,
       "market": "UK"
-    },
-    {
-      "ticker": "BMY",
-      "name": "Bristol-Myers Squibb",
-      "score": 70,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -215,7 +215,7 @@
     {
       "ticker": "HSIC",
       "name": "Henry Schein",
-      "score": 68,
+      "score": 69,
       "market": "US"
     },
     {
@@ -243,16 +243,16 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "OSB.L",
       "name": "OSB Group",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 66,
-      "market": "US"
     },
     {
       "ticker": "DOCN",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 296
+  "bearishAlertCount": 295
 }
