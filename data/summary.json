@@ -22,9 +22,9 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -36,8 +36,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -103,7 +103,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
@@ -151,9 +151,9 @@
       "market": "UK"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
+      "score": 72,
       "market": "US"
     },
     {
@@ -163,8 +163,8 @@
       "market": "US"
     },
     {
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 71,
       "market": "US"
     },
@@ -193,15 +193,15 @@
       "market": "UK"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 70,
-      "market": "UK"
-    },
-    {
       "ticker": "CB",
       "name": "Chubb",
-      "score": 69,
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 70,
       "market": "US"
     }
   ],
@@ -243,28 +243,28 @@
       "market": "US"
     },
     {
-      "ticker": "HSIC",
-      "name": "Henry Schein",
-      "score": 67,
-      "market": "US"
-    },
-    {
       "ticker": "SBRY.L",
       "name": "Sainsbury",
       "score": 67,
       "market": "UK"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
+      "ticker": "HSIC",
+      "name": "Henry Schein",
       "score": 66,
-      "market": "UK"
+      "market": "US"
     },
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 65,
+      "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 66,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 287
+  "bearishAlertCount": 286
 }
