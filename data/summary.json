@@ -50,6 +50,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "CB",
       "name": "Chubb",
       "score": 69,
@@ -62,20 +69,13 @@
       "score": 69,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "IAG.L",
-      "name": "IAG",
-      "score": 69,
-      "market": "UK",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 19,
+      "score": 17,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -193,16 +193,16 @@
       "market": "US"
     },
     {
-      "ticker": "IAG.L",
-      "name": "IAG",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
       "score": 69,
       "market": "UK"
     },
     {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan",
-      "score": 68,
-      "market": "US"
+      "ticker": "RR.L",
+      "name": "Rolls-Royce",
+      "score": 69,
+      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -211,6 +211,18 @@
       "name": "Drax Group",
       "score": 74,
       "market": "UK"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "HSIC",
+      "name": "Henry Schein",
+      "score": 68,
+      "market": "US"
     },
     {
       "ticker": "HWDN.L",
@@ -225,22 +237,16 @@
       "market": "US"
     },
     {
-      "ticker": "HSIC",
-      "name": "Henry Schein",
-      "score": 67,
-      "market": "US"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 67,
-      "market": "UK"
-    },
-    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
       "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "SBRY.L",
+      "name": "Sainsbury",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "PHP.L",
@@ -255,16 +261,10 @@
       "market": "US"
     },
     {
-      "ticker": "SBRY.L",
-      "name": "Sainsbury",
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 62,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -275,8 +275,14 @@
       "market": "US"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
       "score": 66,
       "market": "UK"
     },
@@ -284,18 +290,6 @@
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 64,
       "market": "UK"
     },
     {
@@ -311,8 +305,8 @@
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 63,
       "market": "UK"
     },
@@ -327,9 +321,15 @@
       "name": "Synovus Financial",
       "score": 60,
       "market": "US"
+    },
+    {
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 60,
+      "market": "UK"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 296
+  "bearishAlertCount": 290
 }
