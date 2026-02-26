@@ -15,16 +15,23 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BIDU",
-      "name": "Baidu",
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 74,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
+      "ticker": "BIDU",
+      "name": "Baidu",
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -62,20 +69,13 @@
       "score": 70,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 16,
+      "score": 18,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -101,11 +101,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
+      "ticker": "BROS",
+      "name": "Dutch Bros",
       "score": 23,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "AFRM",
@@ -122,23 +122,23 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "OKTA",
-      "name": "Okta",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "WDAY",
       "name": "Workday",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AMC",
-      "name": "AMC Entertainment",
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FMC",
+      "name": "FMC Corp",
+      "score": 27,
       "market": "US",
       "capCategory": "Small"
     }
@@ -151,15 +151,15 @@
       "market": "UK"
     },
     {
-      "ticker": "BIDU",
-      "name": "Baidu",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
+      "ticker": "BIDU",
+      "name": "Baidu",
+      "score": 72,
       "market": "US"
     },
     {
@@ -213,6 +213,12 @@
       "market": "UK"
     },
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 74,
+      "market": "UK"
+    },
+    {
       "ticker": "INVP.L",
       "name": "Investec",
       "score": 71,
@@ -243,6 +249,12 @@
       "market": "UK"
     },
     {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "BBOX.L",
       "name": "Tritax Big Box REIT",
       "score": 64,
@@ -251,18 +263,6 @@
     {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "BLND.L",
-      "name": "British Land",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
       "score": 63,
       "market": "UK"
     }
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 673,
   "avgScore": 50,
-  "bearishAlertCount": 273
+  "bearishAlertCount": 285
 }
