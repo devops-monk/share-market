@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-02-25T22:17:34.800Z",
+  "lastUpdated": "2026-02-26T07:28:23.094Z",
   "stockCount": 673,
-  "bearishAlerts": 295,
-  "newsCount": 665,
+  "bearishAlerts": 296,
+  "newsCount": 600,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
@@ -20,9 +20,9 @@
       "sma50": 10204.06,
       "sma200": 9469.69,
       "changeFromHigh": 0,
-      "distributionDays": 6,
-      "regime": "correction",
-      "signal": "6 distribution days in 25 sessions — selling pressure"
+      "distributionDays": 5,
+      "regime": "bull",
+      "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
     },
     "overall": "correction",
     "summary": "Markets showing weakness. Be selective, reduce position sizes, and tighten stops."
