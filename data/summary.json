@@ -50,6 +50,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "CB",
       "name": "Chubb",
       "score": 69,
@@ -60,13 +67,6 @@
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 69,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan",
-      "score": 68,
       "market": "US",
       "capCategory": "Large"
     }
@@ -115,8 +115,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -136,8 +136,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -207,6 +207,12 @@
   ],
   "topMidCap": [
     {
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 70,
+      "market": "UK"
+    },
+    {
       "ticker": "HSIC",
       "name": "Henry Schein",
       "score": 68,
@@ -219,22 +225,22 @@
       "market": "US"
     },
     {
-      "ticker": "DRX.L",
-      "name": "Drax Group",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 67,
-      "market": "UK"
-    },
-    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
       "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "DRX.L",
+      "name": "Drax Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "SBRY.L",
+      "name": "Sainsbury",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "PHP.L",
@@ -255,19 +261,19 @@
       "market": "UK"
     },
     {
-      "ticker": "SBRY.L",
-      "name": "Sainsbury",
+      "ticker": "SDR.L",
+      "name": "Schroders",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 62,
-      "market": "US"
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 67,
+      "market": "UK"
+    },
     {
       "ticker": "CMA",
       "name": "Comerica",
@@ -281,21 +287,9 @@
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 66,
-      "market": "UK"
-    },
-    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 64,
       "market": "UK"
     },
     {
@@ -323,13 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
+      "ticker": "GYM.L",
+      "name": "Gym Group",
       "score": 61,
       "market": "UK"
+    },
+    {
+      "ticker": "SNV",
+      "name": "Synovus Financial",
+      "score": 60,
+      "market": "US"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 293
+  "bearishAlertCount": 294
 }
