@@ -15,18 +15,18 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "DRX.L",
+      "name": "Drax Group",
+      "score": 74,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "DG",
       "name": "Dollar General",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "DRX.L",
-      "name": "Drax Group",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Mid"
     },
     {
       "ticker": "BMY",
@@ -64,10 +64,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan",
-      "score": 68,
-      "market": "US",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 69,
+      "market": "UK",
       "capCategory": "Large"
     }
   ],
@@ -193,14 +193,14 @@
       "market": "US"
     },
     {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan",
-      "score": 68,
-      "market": "US"
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 69,
+      "market": "UK"
     },
     {
-      "ticker": "CME",
-      "name": "CME Group",
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan",
       "score": 68,
       "market": "US"
     }
@@ -209,7 +209,7 @@
     {
       "ticker": "DRX.L",
       "name": "Drax Group",
-      "score": 73,
+      "score": 74,
       "market": "UK"
     },
     {
@@ -231,22 +231,10 @@
       "market": "UK"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 67,
-      "market": "UK"
-    },
-    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
       "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 65,
-      "market": "UK"
     },
     {
       "ticker": "PHP.L",
@@ -265,6 +253,18 @@
       "name": "Berkeley Group",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 63,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -273,6 +273,12 @@
       "name": "Comerica",
       "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 66,
+      "market": "UK"
     },
     {
       "ticker": "CMCX.L",
@@ -311,25 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
       "score": 61,
       "market": "UK"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 295
+  "bearishAlertCount": 298
 }
