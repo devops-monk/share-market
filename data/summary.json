@@ -1,30 +1,37 @@
 {
   "topOverall": [
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 75,
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 74,
-      "market": "US",
+      "ticker": "GLEN.L",
+      "name": "Glencore",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "IAG.L",
+      "name": "IAG",
+      "score": 71,
+      "market": "UK",
       "capCategory": "Large"
     },
     {
       "ticker": "DG",
       "name": "Dollar General",
-      "score": 73,
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "BMY",
-      "name": "Bristol-Myers Squibb",
-      "score": 72,
+      "ticker": "BIDU",
+      "name": "Baidu",
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
@@ -36,15 +43,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AAL.L",
-      "name": "Anglo American",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "IAG.L",
-      "name": "IAG",
+      "ticker": "RR.L",
+      "name": "Rolls-Royce",
       "score": 70,
       "market": "UK",
       "capCategory": "Large"
@@ -57,17 +57,17 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "CB",
-      "name": "Chubb",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 69,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
+      "ticker": "AAL.L",
+      "name": "Anglo American",
       "score": 69,
-      "market": "US",
+      "market": "UK",
       "capCategory": "Large"
     }
   ],
@@ -75,14 +75,14 @@
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 17,
+      "score": 16,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 20,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
@@ -94,78 +94,84 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "DDOG",
-      "name": "Datadog",
-      "score": 23,
+      "ticker": "WDAY",
+      "name": "Workday",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AMC",
-      "name": "AMC Entertainment",
-      "score": 24,
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 22,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "BROS",
       "name": "Dutch Bros",
-      "score": 25,
+      "score": 23,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 25,
+      "ticker": "OKTA",
+      "name": "Okta",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "GWRE",
       "name": "Guidewire Software",
-      "score": 26,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "MANH",
-      "name": "Manhattan Associates",
-      "score": 26,
+      "ticker": "GTLB",
+      "name": "GitLab",
+      "score": 24,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 75,
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
       "market": "US"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 74,
-      "market": "US"
+      "ticker": "GLEN.L",
+      "name": "Glencore",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "IAG.L",
+      "name": "IAG",
+      "score": 71,
+      "market": "UK"
     },
     {
       "ticker": "DG",
       "name": "Dollar General",
-      "score": 73,
+      "score": 70,
       "market": "US"
     },
     {
-      "ticker": "BMY",
-      "name": "Bristol-Myers Squibb",
-      "score": 72,
+      "ticker": "BIDU",
+      "name": "Baidu",
+      "score": 70,
       "market": "US"
     },
     {
@@ -175,32 +181,26 @@
       "market": "UK"
     },
     {
+      "ticker": "RR.L",
+      "name": "Rolls-Royce",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 69,
+      "market": "US"
+    },
+    {
       "ticker": "AAL.L",
       "name": "Anglo American",
-      "score": 70,
+      "score": 69,
       "market": "UK"
     },
     {
-      "ticker": "IAG.L",
-      "name": "IAG",
-      "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan",
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
       "score": 68,
       "market": "US"
     }
@@ -213,33 +213,15 @@
       "market": "UK"
     },
     {
-      "ticker": "HSIC",
-      "name": "Henry Schein",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 67,
-      "market": "US"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 66,
       "market": "US"
     },
     {
       "ticker": "DRX.L",
       "name": "Drax Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "SBRY.L",
-      "name": "Sainsbury",
-      "score": 64,
+      "score": 66,
       "market": "UK"
     },
     {
@@ -249,25 +231,49 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
+      "ticker": "SBRY.L",
+      "name": "Sainsbury",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "IGG.L",
+      "name": "IG Group",
       "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "HSIC",
+      "name": "Henry Schein",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "LEA",
+      "name": "Lear Corp",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "MNG.L",
+      "name": "M&G",
+      "score": 62,
       "market": "UK"
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 67,
+      "market": "UK"
+    },
     {
       "ticker": "HMSO.L",
       "name": "Hammerson",
@@ -299,12 +305,6 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 64,
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 673,
-  "avgScore": 51,
-  "bearishAlertCount": 294
+  "avgScore": 49,
+  "bearishAlertCount": 268
 }
