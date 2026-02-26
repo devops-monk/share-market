@@ -82,7 +82,7 @@
     {
       "ticker": "AFRM",
       "name": "Affirm",
-      "score": 21,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -94,16 +94,16 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 23,
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "DDOG",
-      "name": "Datadog",
-      "score": 25,
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
@@ -122,6 +122,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "PINS",
+      "name": "Pinterest",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "FMC",
       "name": "FMC Corp",
       "score": 28,
@@ -131,13 +138,6 @@
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
-      "score": 28,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "OKTA",
-      "name": "Okta",
       "score": 28,
       "market": "US",
       "capCategory": "Large"
