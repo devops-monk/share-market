@@ -58,42 +58,4 @@ jobs:
           git diff --staged --quiet || git commit -m "Update market data [$(date -u +'%Y-%m-%d %H:%M UTC')]"
           git push
 
-  deploy:
-    needs: etl
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Copy data to public
-        run: |
-          mkdir -p dashboard/public/data
-          cp data/*.json dashboard/public/data/ 2>/dev/null || echo "No JSON data files yet"
-          cp data/*.csv dashboard/public/data/ 2>/dev/null || echo "No CSV data files yet"
-          cp -r data/charts dashboard/public/data/charts 2>/dev/null || echo "No chart data yet"
-
-      - name: Create CNAME for custom domain
-        run: echo "share.devops-monk.com" > dashboard/public/CNAME
-
-      - name: Build dashboard
-        run: npm run build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dashboard/dist
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+  # Deploy is handled by deploy.yml (triggered by data/** push)
