@@ -42,9 +42,11 @@ export interface StockRecord {
   priceReturn4y: number;
   yearlyReturns: number[];       // per-year returns [year1, year2, year3, year4] most recent first
   yearlyUptrendYears: number;    // total positive-return years (0-4)
+  weightedAlpha: number | null;       // exponentially-weighted 1-year return %
   pctBelowResistance: number | null;  // how far below nearest resistance (%)
   volatility: number;
   signals: Signal[];
+  timeframeSentiment?: TimeframeSentiment;
   bearishScore: number;
   bullishScore: number;
   sentimentAvg: number;
@@ -110,6 +112,37 @@ export interface StockRecord {
   // Earnings & valuation
   earningsDate: string | null;
   dcfValue: number | null;
+  dividendMetrics?: DividendMetrics | null;
+}
+
+export interface InsiderTrade {
+  ticker: string;
+  filingDate: string;
+  insiderName: string;
+  insiderTitle: string;
+  transactionType: string;
+  transactionDate: string;
+  shares: number;
+  pricePerShare: number | null;
+  totalValue: number | null;
+}
+
+export interface InsiderSummary {
+  trades: InsiderTrade[];
+  netShares90d: number;
+  buyCount90d: number;
+  sellCount90d: number;
+  sentiment: 'bullish' | 'bearish' | 'neutral';
+}
+
+export type InsiderTradesMap = Record<string, InsiderSummary>;
+
+export interface DividendMetrics {
+  annualDividends: { year: number; totalDPS: number }[];
+  currentAnnualDPS: number | null;
+  fiveYearCAGR: number | null;
+  growthStreak: number;
+  payoutConsistency: number;
 }
 
 export interface Signal {
@@ -117,6 +150,13 @@ export interface Signal {
   direction: 'bullish' | 'bearish';
   severity: number;
   description: string;
+  timeframe?: 'short' | 'medium' | 'long';
+}
+
+export interface TimeframeSentiment {
+  short: { opinion: 'Buy' | 'Hold' | 'Sell'; signalCount: number };
+  medium: { opinion: 'Buy' | 'Hold' | 'Sell'; signalCount: number };
+  long: { opinion: 'Buy' | 'Hold' | 'Sell'; signalCount: number };
 }
 
 export interface ScoreBreakdown {
@@ -156,6 +196,7 @@ export interface NewsItem {
   ticker: string;
   sentimentScore: number;
   sentimentLabel: 'positive' | 'negative' | 'neutral';
+  finbertScore?: number | null;
 }
 
 export interface RegimeData {

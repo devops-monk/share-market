@@ -611,15 +611,25 @@ Q12 CSV Export                      M15 Score History                   L11 Back
 | **M17** Correlation Matrix | **DONE** | `computeCorrelationMatrix()` using daily log returns with Pearson correlation. SVG heatmap with diverging color scale (red↔white↔green). Shown on Portfolio page when 2+ holdings exist. Uses shared `useOhlcvData` hook. |
 | **Q14** Dark/Light Chart Themes | **DONE** | 6 CSS variables (`--chart-bullish/bearish/neutral/accent/accent-light/grid`) in both `:root` and `.dark`. Updated ScoreGauge, ScoreRadarChart, SentimentBar, ScoreHistoryChart, CandlestickChart (via `getComputedStyle`), and new FinancialsBarChart. Brighter variants for dark mode. |
 
+### Recently Shipped (February 2026 — Batch 7)
+
+| Feature | Status | Notes |
+|---------|--------|-------|
+| **UX — Performance Optimisation** | **DONE** | All 22 page imports converted to `React.lazy()` with `<Suspense>` fallback spinner. Vite manual chunks: `vendor-react` (163KB), `vendor-recharts` (434KB), `vendor-charts` (165KB), `vendor-table` (52KB). Each page loads on-demand. |
+| **Q10** Multi-Timeframe Signal Labels | **DONE** | Added `timeframe: 'short' | 'medium' | 'long'` to all 24 signal types. `computeTimeframeSentiment()` computes Buy/Hold/Sell per timeframe. Multi-Timeframe Opinion card on StockDetail with colored boxes. Timeframe badges `[S]`/`[M]`/`[L]` on each signal. |
+| **M14** Weighted Alpha | **DONE** | Exponentially-weighted 1-year return (decay 0.985), annualized as percentage. Shown in StockDetail Key Metrics and as sortable Screener column. |
+| **L8** Dividend History | **DONE** | Yahoo chart API `&events=div` parameter fetches 5-year dividend events. `computeDividendMetrics()` computes annual DPS, 5-year CAGR, growth streak, payout consistency. Recharts BarChart of annual dividends on StockDetail (dividend-paying stocks only). |
+| **L13** AI-Enhanced Sentiment | **DONE** | HuggingFace FinBERT Inference API integration. Batch 10 headlines per request. Falls back to lexicon scoring if no API key or on error. "AI" badge on FinBERT-scored news items. 503/429 retry logic. |
+| **L5** Insider Trading Data | **DONE** | SEC EDGAR Form 4 filings via company_tickers.json CIK map + submissions endpoint. Top 200 US stocks by market cap. `insider-trades.json` with 90-day buy/sell summary. StockDetail shows insider trading table with Net Insider Buying/Selling badge. |
+| **ETL Speed Optimisation** | **DONE** | Concurrency: chart 10→15, FinViz 5→8, news 4→6, financials 3→5, quoteSummary 5→8. Delays: request 200→100ms, batch 300→150ms, quoteSummary 150→80ms. Yahoo v7 batch 40→50. |
+
 ### Remaining Next Priorities
 
-1. **L7 — Options Flow Integration** — Surface unusual options activity data to identify institutional positioning ahead of moves. (Skipped in Batch 6 — no free data source available.)
-2. **L5 — Insider Trading Data** — Recent insider buys/sells with amounts from SEC EDGAR Form 4.
-3. **L8 — Dividend History** — 10+ year payment history, growth rate, CAGR for income investing analysis.
-4. **L13 — AI-Enhanced Sentiment** — Replace rule-based sentiment with FinBERT or LLM-based analysis for nuanced headline scoring.
-5. **Q10 — Multi-Timeframe Signal Labels** — Tag existing 24 signal types with short/medium/long-term timeframe; show aggregate per timeframe (Barchart Opinion style).
-6. **M14 — Weighted Alpha** — 1-year return with exponential decay weighting towards recent prices (Barchart-style momentum metric).
-7. **UX — Performance Optimisation** — Code-split large pages (SectorRotation, Backtest) with `React.lazy()`. Consider manual chunks in Vite config to reduce main bundle below 500KB.
+1. **L7 — Options Flow Integration** — Surface unusual options activity data to identify institutional positioning ahead of moves. (Skipped — no free data source available.)
+2. **Q15 — Watchlist Alerts** — Push notifications / email when watchlist stocks hit score thresholds or trigger signals.
+3. **M18 — Risk-Adjusted Returns** — Sharpe ratio, Sortino ratio, and max drawdown calculations per stock.
+4. **L14 — Economic Calendar** — FOMC dates, CPI/NFP releases, GDP reports with market impact indicators.
+5. **Q16 — Portfolio Rebalancing** — Suggest trades to rebalance portfolio towards target allocations.
 
 ---
 

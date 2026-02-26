@@ -3,6 +3,7 @@ import { stringify } from 'csv-stringify/sync';
 import { CONFIG } from '../config.js';
 import type { MarketRegime } from '../indicators/regime.js';
 import type { FinancialData } from '../fundamentals/financials.js';
+import type { InsiderSummary } from '../insider/edgar.js';
 import path from 'path';
 
 export interface StockRecord {
@@ -49,9 +50,15 @@ export interface StockRecord {
   priceReturn4y: number;
   yearlyReturns: number[];       // per-year returns [year1, year2, year3, year4] most recent first
   yearlyUptrendYears: number;    // total positive-return years (0-4)
+  weightedAlpha: number | null;       // exponentially-weighted 1-year return %
   pctBelowResistance: number | null;  // how far below nearest resistance (%)
   volatility: number;
-  signals: { type: string; direction: string; severity: number; description: string }[];
+  signals: { type: string; direction: string; severity: number; description: string; timeframe: string }[];
+  timeframeSentiment: {
+    short: { opinion: string; signalCount: number };
+    medium: { opinion: string; signalCount: number };
+    long: { opinion: string; signalCount: number };
+  };
   bearishScore: number;
   bullishScore: number;
   sentimentAvg: number;
@@ -126,6 +133,13 @@ export interface StockRecord {
   // Earnings & valuation
   earningsDate: string | null;
   dcfValue: number | null;
+  dividendMetrics: {
+    annualDividends: { year: number; totalDPS: number }[];
+    currentAnnualDPS: number | null;
+    fiveYearCAGR: number | null;
+    growthStreak: number;
+    payoutConsistency: number;
+  } | null;
 }
 
 export interface OhlcvData {
@@ -145,6 +159,7 @@ export function writeOutputs(
   ohlcvData?: OhlcvData[],
   marketRegime?: MarketRegime | null,
   financialsMap?: Map<string, FinancialData>,
+  insiderTradesMap?: Map<string, InsiderSummary>,
 ) {
   const dataDir = CONFIG.dataDir;
   mkdirSync(dataDir, { recursive: true });
@@ -214,6 +229,25 @@ export function writeOutputs(
       JSON.stringify(financialsOut)
     );
     console.log(`Wrote financials.json for ${Object.keys(financialsOut).length} stocks`);
+  }
+
+  // insider-trades.json — insider trading data (separate file)
+  if (insiderTradesMap && insiderTradesMap.size > 0) {
+    const insiderOut: Record<string, any> = {};
+    for (const [ticker, summary] of insiderTradesMap) {
+      insiderOut[ticker] = {
+        trades: summary.trades,
+        netShares90d: summary.netShares90d,
+        buyCount90d: summary.buyCount90d,
+        sellCount90d: summary.sellCount90d,
+        sentiment: summary.sentiment,
+      };
+    }
+    writeFileSync(
+      path.join(dataDir, 'insider-trades.json'),
+      JSON.stringify(insiderOut)
+    );
+    console.log(`Wrote insider-trades.json for ${insiderTradesMap.size} stocks`);
   }
 
   // CSV files

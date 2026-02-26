@@ -1,15 +1,17 @@
 import { ALL_STOCKS } from './stocks/universe.js';
 import { fetchAllStocks } from './stocks/fetcher.js';
 import { computeTechnicals } from './indicators/technical.js';
-import { detectSignals, computeBearishScore, computeBullishScore } from './indicators/signals.js';
+import { detectSignals, computeBearishScore, computeBullishScore, computeTimeframeSentiment } from './indicators/signals.js';
 import { computeSupportResistance } from './indicators/support-resistance.js';
 import { computeScore } from './scoring/scorer.js';
+import { computeDividendMetrics } from './indicators/dividends.js';
 import { fetchGoogleNews } from './news/google-news.js';
 import { fetchFinvizNews } from './news/finviz-scraper.js';
-import { scoreNewsItems, averageSentiment } from './news/sentiment.js';
+import { scoreNewsItemsWithFinBERT, averageSentiment } from './news/sentiment.js';
 import { computeMarketRegime } from './indicators/regime.js';
 import { writeOutputs, type StockRecord, type OhlcvData } from './output/writer.js';
 import { fetchFinancials } from './fundamentals/financials.js';
+import { fetchInsiderTrades } from './insider/edgar.js';
 import { CONFIG } from './config.js';
 import pLimit from 'p-limit';
 
@@ -29,6 +31,8 @@ async function main() {
   const allNews: any[] = [];
   const topTickers = quotes.slice(0, 100);
 
+  const huggingFaceApiKey = process.env.HUGGINGFACE_API_KEY;
+
   const [, marketRegime] = await Promise.all([
     // News fetching
     Promise.all(
@@ -38,7 +42,7 @@ async function main() {
             fetchGoogleNews(q.ticker, q.name),
             q.market === 'US' ? fetchFinvizNews(q.ticker) : Promise.resolve([]),
           ]);
-          const scored = scoreNewsItems([...googleNews, ...finvizNews]);
+          const scored = await scoreNewsItemsWithFinBERT([...googleNews, ...finvizNews], huggingFaceApiKey);
           allNews.push(...scored);
         })
       )
@@ -51,7 +55,15 @@ async function main() {
     console.log(`Market regime: ${marketRegime.overall} (US: ${marketRegime.us.regime}, UK: ${marketRegime.uk.regime})`);
   }
 
-  // Step 2b: Fetch financial statements (Piotroski, Graham, Buffett)
+  // Step 2b: Fetch insider trading data (SEC EDGAR Form 4)
+  console.log('Fetching insider trading data...');
+  const marketCapMap = new Map(quotes.map(q => [q.ticker, q.marketCap]));
+  const insiderTradesMap = await fetchInsiderTrades(
+    quotes.filter(q => q.market === 'US').map(q => q.ticker),
+    marketCapMap,
+  );
+
+  // Step 2c: Fetch financial statements (Piotroski, Graham, Buffett)
   console.log('Fetching financial statements...');
   const allTickers = quotes.map(q => q.ticker);
   const financialsMap = await fetchFinancials(allTickers);
@@ -85,6 +97,8 @@ async function main() {
     const signals = detectSignals(tech, quote);
     const bearishScore = computeBearishScore(signals);
     const bullishScore = computeBullishScore(signals);
+    const timeframeSentiment = computeTimeframeSentiment(signals);
+    const dividendMetrics = computeDividendMetrics(quote.dividendHistory);
 
     const stockNews = allNews.filter(n => n.ticker === quote.ticker);
     const sentimentAvg = averageSentiment(stockNews);
@@ -190,9 +204,11 @@ async function main() {
       priceReturn4y: tech.priceReturn4y,
       yearlyReturns: tech.yearlyReturns,
       yearlyUptrendYears: tech.yearlyUptrendYears,
+      weightedAlpha: tech.weightedAlpha,
       pctBelowResistance: null, // computed after supportResistance below
       volatility: tech.volatility,
       signals,
+      timeframeSentiment,
       bearishScore,
       bullishScore,
       sentimentAvg,
@@ -252,6 +268,7 @@ async function main() {
       buffettDetails: financialsMap.get(quote.ticker)?.buffettDetails ?? [],
       // Earnings date
       earningsDate: quote.earningsDate,
+      dividendMetrics,
       // DCF Lite: simple intrinsic value = OCF × (1 + growth) / discount_rate
       dcfValue: (() => {
         const ocf = quote.operatingCashflow;
@@ -342,7 +359,7 @@ async function main() {
   console.log(`Found ${bearishAlerts.length} bearish alerts`);
 
   // Step 5: Write outputs
-  writeOutputs(stockRecords, allNews, bearishAlerts, ohlcvRecords, marketRegime, financialsMap);
+  writeOutputs(stockRecords, allNews, bearishAlerts, ohlcvRecords, marketRegime, financialsMap, insiderTradesMap);
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`ETL completed in ${elapsed}s`);

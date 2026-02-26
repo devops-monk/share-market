@@ -91,4 +91,5 @@ export const TIPS: Record<string, string> = {
   'SMA 200 vs Price': 'Price distance from 200-day moving average. Positive = above SMA 200 (long-term bullish).',
   'Data Completeness': 'Percentage of fundamental data fields available. Higher = more reliable analysis.',
   'Bullish': 'Count of active positive signals. Higher = more bullish indicators aligned.',
+  'Wtd Alpha': 'Exponentially-weighted 1-year return (%). Recent price action weighted more heavily. Positive = trending up.',
 };

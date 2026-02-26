@@ -1,8 +1,8 @@
 export const CONFIG = {
-  concurrency: 10,          // Yahoo chart API (tolerant)
-  finvizConcurrency: 5,     // FinViz scraping (more sensitive)
-  newsConcurrency: 4,       // News fetching
-  requestDelayMs: 200,
+  concurrency: 15,          // Yahoo chart API (tolerant)
+  finvizConcurrency: 8,     // FinViz scraping (more sensitive)
+  newsConcurrency: 6,       // News fetching
+  requestDelayMs: 100,
   historicalPeriod: '5y',
   historicalInterval: '1d' as const,
 
@@ -26,6 +26,15 @@ export const CONFIG = {
     small: 2_000_000_000,
     mid: 10_000_000_000,
   },
+
+  // FinBERT (HuggingFace)
+  finbertBatchSize: 10,
+  finbertRateDelayMs: 200,
+
+  // SEC EDGAR (insider trading)
+  edgarConcurrency: 8,
+  edgarUserAgent: 'StockDashboard/1.0 (stock-dashboard@example.com)',
+  insiderLookbackDays: 180,
 
   // Output paths
   dataDir: new URL('../../data', import.meta.url).pathname,

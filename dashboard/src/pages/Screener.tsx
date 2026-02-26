@@ -96,6 +96,15 @@ const columns = [
       return <span className={`font-mono tabular-nums text-xs ${color}`}>{v}%</span>;
     },
   }),
+  col.accessor('weightedAlpha', {
+    header: () => <TH label="Wtd Alpha" tipKey="Wtd Alpha" />,
+    cell: info => {
+      const v = info.getValue();
+      if (v == null) return <span className="t-faint">--</span>;
+      const color = v > 0 ? 'text-bullish' : v < 0 ? 'text-bearish' : 't-secondary';
+      return <span className={`font-mono tabular-nums ${color}`}>{v > 0 ? '+' : ''}{v.toFixed(1)}%</span>;
+    },
+  }),
 ];
 
 /* ─── RANGE FILTER DEFINITIONS ─── */

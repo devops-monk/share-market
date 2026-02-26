@@ -59,6 +59,7 @@ export interface QuoteData {
   operatingCashflow: number | null;
   averageAnalystRating: string | null;
   earningsDate: string | null;
+  dividendHistory: { date: number; amount: number }[];
 }
 
 function classifyCap(marketCap: number): 'Small' | 'Mid' | 'Large' {
@@ -87,11 +88,13 @@ interface ChartData {
   opens: number[];
   highs: number[];
   lows: number[];
+  // Dividend events
+  dividends: { date: number; amount: number }[];
 }
 
 async function fetchChart(ticker: string): Promise<ChartData | null> {
   const encoded = encodeURIComponent(ticker);
-  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encoded}?interval=1d&range=${CONFIG.historicalPeriod}&includePrePost=false`;
+  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encoded}?interval=1d&range=${CONFIG.historicalPeriod}&includePrePost=false&events=div`;
 
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
@@ -128,6 +131,13 @@ async function fetchChart(ticker: string): Promise<ChartData | null> {
       const closes = validIndices.map(i => rawCloses[i]! * fx);
       const volumes = validIndices.map(i => rawVolumes[i] ?? 0);
 
+      // Parse dividend events
+      const divEvents = result.events?.dividends ?? {};
+      const dividends = Object.values(divEvents).map((d: any) => ({
+        date: d.date as number,
+        amount: (d.amount as number) * fx,
+      })).sort((a, b) => a.date - b.date);
+
       return {
         price: m.regularMarketPrice * fx,
         previousClose: (m.chartPreviousClose ?? m.regularMarketPrice) * fx,
@@ -141,6 +151,7 @@ async function fetchChart(ticker: string): Promise<ChartData | null> {
         opens: validIndices.map(i => opens[i]! * fx),
         highs: validIndices.map(i => highs[i]! * fx),
         lows: validIndices.map(i => lows[i]! * fx),
+        dividends,
       };
     } catch {
       if (attempt < 2) await delay(1000);
@@ -241,7 +252,7 @@ async function fetchYahooFundamentalsBatch(tickers: string[]): Promise<Map<strin
   }
 
   // Yahoo v7 supports batching up to ~50 symbols per request
-  const batchSize = 40;
+  const batchSize = 50;
   for (let i = 0; i < tickers.length; i += batchSize) {
     const batch = tickers.slice(i, i + batchSize);
     const symbols = batch.map(t => encodeURIComponent(t)).join(',');
@@ -292,7 +303,7 @@ async function fetchYahooFundamentalsBatch(tickers: string[]): Promise<Map<strin
     }
 
     // Small delay between batches
-    if (i + batchSize < tickers.length) await delay(300);
+    if (i + batchSize < tickers.length) await delay(150);
   }
 
   return result;
@@ -305,7 +316,7 @@ async function fetchQuoteSummaryBatch(tickers: string[]): Promise<Map<string, Qu
   const auth = await getYahooCrumb();
   if (!auth) return result;
 
-  const limit = pLimit(5);
+  const limit = pLimit(8);
 
   await Promise.all(
     tickers.map(ticker =>
@@ -363,7 +374,7 @@ async function fetchQuoteSummaryBatch(tickers: string[]): Promise<Map<string, Qu
             if (attempt < 1) await delay(500);
           }
         }
-        await delay(150); // rate limiting
+        await delay(80); // rate limiting
       })
     )
   );
@@ -621,6 +632,7 @@ export async function fetchAllStocks(stocks: StockMeta[]): Promise<QuoteData[]> 
         const d = new Date(ts * 1000);
         return d.toISOString().slice(0, 10);
       })(),
+      dividendHistory: chart.dividends,
     });
   }
 

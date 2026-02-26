@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
+import { BarChart, Bar, XAxis, YAxis, Tooltip as RechartsTooltip, ResponsiveContainer } from 'recharts';
 import { useParams, Link } from 'react-router-dom';
-import type { StockRecord, NewsItem } from '../types';
+import type { StockRecord, NewsItem, InsiderTradesMap } from '../types';
 import ScoreGauge from '../components/charts/ScoreGauge';
 import ScoreRadarChart from '../components/charts/ScoreRadarChart';
 import PriceChart from '../components/charts/PriceChart';
@@ -16,6 +17,7 @@ interface Props {
   stocks: StockRecord[];
   news: NewsItem[];
   financials?: FinancialsMap | null;
+  insiderTrades?: InsiderTradesMap | null;
 }
 
 /* ─── TOOLTIP DESCRIPTIONS ─── */
@@ -47,6 +49,7 @@ const TOOLTIPS: Record<string, string> = {
   '3M Return': 'Price change over last 3 months. Shows medium-term momentum.',
   '6M Return': 'Price change over last 6 months. Shows longer-term momentum.',
   '1Y Return': 'Price change over last 12 months. Shows long-term momentum.',
+  'Wtd Alpha': 'Exponentially-weighted 1-year return. Recent price action weighted more heavily than older data.',
   // Advanced indicators
   'Bollinger Upper': 'Upper Bollinger Band. Price above = potentially overextended.',
   'Bollinger Lower': 'Lower Bollinger Band. Price below = potentially oversold.',
@@ -79,7 +82,7 @@ const TOOLTIPS: Record<string, string> = {
   'Data Quality': 'Percentage of fundamental metrics available. Higher = more reliable analysis.',
 };
 
-export default function StockDetail({ stocks, news, financials }: Props) {
+export default function StockDetail({ stocks, news, financials, insiderTrades }: Props) {
   const { ticker } = useParams<{ ticker: string }>();
   const stock = stocks.find(s => s.ticker === ticker);
 
@@ -295,6 +298,9 @@ export default function StockDetail({ stocks, news, financials }: Props) {
           <Metric label="3M Return" value={`${(stock.priceReturn3m * 100).toFixed(1)}%`} positive={stock.priceReturn3m >= 0} />
           <Metric label="6M Return" value={`${(stock.priceReturn6m * 100).toFixed(1)}%`} positive={stock.priceReturn6m >= 0} />
           <Metric label="1Y Return" value={`${(stock.priceReturn1y * 100).toFixed(1)}%`} positive={stock.priceReturn1y >= 0} />
+          {stock.weightedAlpha != null && (
+            <Metric label="Wtd Alpha" value={`${stock.weightedAlpha > 0 ? '+' : ''}${stock.weightedAlpha.toFixed(1)}%`} positive={stock.weightedAlpha >= 0} />
+          )}
         </div>
       </div>
 
@@ -464,6 +470,30 @@ export default function StockDetail({ stocks, news, financials }: Props) {
         </div>
       </div>
 
+      {/* Multi-Timeframe Opinion */}
+      {stock.timeframeSentiment && (
+        <div className="card p-5">
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Multi-Timeframe Opinion</h2>
+          <div className="grid grid-cols-3 gap-3">
+            {(['short', 'medium', 'long'] as const).map(tf => {
+              const data = stock.timeframeSentiment![tf];
+              const label = tf === 'short' ? 'Short-Term' : tf === 'medium' ? 'Medium-Term' : 'Long-Term';
+              const sub = tf === 'short' ? 'Days — 2 weeks' : tf === 'medium' ? '2 weeks — 3 months' : '3+ months';
+              const bg = data.opinion === 'Buy' ? 'bg-bullish/10 border-bullish/30' : data.opinion === 'Sell' ? 'bg-bearish/10 border-bearish/30' : 'bg-neutral/10 border-neutral/30';
+              const textColor = data.opinion === 'Buy' ? 'text-bullish' : data.opinion === 'Sell' ? 'text-bearish' : 'text-neutral';
+              return (
+                <div key={tf} className={`rounded-lg border p-3 text-center ${bg}`}>
+                  <p className="text-xs t-muted mb-1">{label}</p>
+                  <p className={`text-lg font-bold ${textColor}`}>{data.opinion}</p>
+                  <p className="text-[10px] t-faint mt-1">{sub}</p>
+                  <p className="text-[10px] t-muted">{data.signalCount} signal{data.signalCount !== 1 ? 's' : ''}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
       {/* Signals */}
       <div className="card p-5">
         <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Active Signals</h2>
@@ -471,20 +501,138 @@ export default function StockDetail({ stocks, news, financials }: Props) {
           <p className="t-muted text-sm">No signals detected</p>
         ) : (
           <div className="space-y-2">
-            {stock.signals.map((s, i) => (
-              <div key={i} className="flex items-start gap-3 p-2 rounded-lg hover:bg-surface-hover transition-colors">
-                <SignalBadge direction={s.direction} type={s.type} />
-                <div className="flex-1 min-w-0">
-                  <p className="text-xs t-tertiary">{s.description}</p>
+            {stock.signals.map((s, i) => {
+              const tfBadge = s.timeframe === 'short' ? 'S' : s.timeframe === 'medium' ? 'M' : s.timeframe === 'long' ? 'L' : null;
+              const tfColor = s.timeframe === 'short' ? 'bg-accent/20 text-accent-light' : s.timeframe === 'medium' ? 'bg-neutral/20 text-neutral' : 'bg-bullish/20 text-bullish';
+              return (
+                <div key={i} className="flex items-start gap-3 p-2 rounded-lg hover:bg-surface-hover transition-colors">
+                  <SignalBadge direction={s.direction} type={s.type} />
+                  {tfBadge && (
+                    <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${tfColor} flex-shrink-0`}>{tfBadge}</span>
+                  )}
+                  <div className="flex-1 min-w-0">
+                    <p className="text-xs t-tertiary">{s.description}</p>
+                  </div>
+                  <span className={`text-xs font-mono ${s.severity >= 3 ? 't-primary font-bold' : 't-muted'}`}>
+                    Sev {s.severity}
+                  </span>
                 </div>
-                <span className={`text-xs font-mono ${s.severity >= 3 ? 't-primary font-bold' : 't-muted'}`}>
-                  Sev {s.severity}
-                </span>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </div>
+
+      {/* Dividend History */}
+      {stock.dividendMetrics && stock.dividendMetrics.annualDividends.length > 0 && (
+        <div className="card p-5">
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Dividend History</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
+            {stock.dividendMetrics.currentAnnualDPS != null && (
+              <div>
+                <p className="text-xs t-muted mb-1">Annual DPS</p>
+                <p className="font-semibold font-mono t-primary">{cur}{stock.dividendMetrics.currentAnnualDPS.toFixed(2)}</p>
+              </div>
+            )}
+            {stock.dividendYield != null && (
+              <div>
+                <p className="text-xs t-muted mb-1">Yield</p>
+                <p className="font-semibold font-mono text-bullish">{(stock.dividendYield * 100).toFixed(2)}%</p>
+              </div>
+            )}
+            {stock.dividendMetrics.fiveYearCAGR != null && (
+              <div>
+                <p className="text-xs t-muted mb-1">5Y CAGR</p>
+                <p className={`font-semibold font-mono ${stock.dividendMetrics.fiveYearCAGR >= 0 ? 'text-bullish' : 'text-bearish'}`}>
+                  {stock.dividendMetrics.fiveYearCAGR > 0 ? '+' : ''}{stock.dividendMetrics.fiveYearCAGR.toFixed(1)}%
+                </p>
+              </div>
+            )}
+            {stock.dividendMetrics.growthStreak > 0 && (
+              <div>
+                <p className="text-xs t-muted mb-1">Growth Streak</p>
+                <p className="font-semibold font-mono text-bullish">{stock.dividendMetrics.growthStreak} yr{stock.dividendMetrics.growthStreak > 1 ? 's' : ''}</p>
+              </div>
+            )}
+          </div>
+          <div className="h-40">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={stock.dividendMetrics.annualDividends}>
+                <XAxis dataKey="year" tick={{ fontSize: 11 }} stroke="var(--color-text-muted, #888)" />
+                <YAxis tick={{ fontSize: 11 }} stroke="var(--color-text-muted, #888)" />
+                <RechartsTooltip
+                  contentStyle={{ backgroundColor: 'var(--color-surface, #1a1a2e)', border: '1px solid var(--color-border, #333)', borderRadius: 8 }}
+                  labelStyle={{ color: 'var(--color-text-secondary, #ccc)' }}
+                  formatter={(value: number) => [`${cur}${value.toFixed(4)}`, 'DPS']}
+                />
+                <Bar dataKey="totalDPS" fill="var(--color-accent, #6366f1)" radius={[4, 4, 0, 0]} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+      )}
+
+      {/* Insider Trading */}
+      {insiderTrades && insiderTrades[stock.ticker] && insiderTrades[stock.ticker].trades.length > 0 && (() => {
+        const insider = insiderTrades[stock.ticker];
+        const sentimentColor = insider.sentiment === 'bullish' ? 'text-bullish' : insider.sentiment === 'bearish' ? 'text-bearish' : 'text-neutral';
+        const sentimentBg = insider.sentiment === 'bullish' ? 'bg-bullish/10' : insider.sentiment === 'bearish' ? 'bg-bearish/10' : 'bg-neutral/10';
+        const sentimentLabel = insider.sentiment === 'bullish' ? 'Net Insider Buying' : insider.sentiment === 'bearish' ? 'Net Insider Selling' : 'Neutral Insider Activity';
+        return (
+          <div className="card p-5">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider">Insider Trading</h2>
+              <span className={`text-xs font-bold px-2 py-1 rounded ${sentimentBg} ${sentimentColor}`}>{sentimentLabel}</span>
+            </div>
+            <div className="grid grid-cols-3 gap-3 mb-4 text-center">
+              <div>
+                <p className="text-xs t-muted">Buys (90d)</p>
+                <p className="font-semibold font-mono text-bullish">{insider.buyCount90d}</p>
+              </div>
+              <div>
+                <p className="text-xs t-muted">Sells (90d)</p>
+                <p className="font-semibold font-mono text-bearish">{insider.sellCount90d}</p>
+              </div>
+              <div>
+                <p className="text-xs t-muted">Net Shares</p>
+                <p className={`font-semibold font-mono ${insider.netShares90d >= 0 ? 'text-bullish' : 'text-bearish'}`}>
+                  {insider.netShares90d >= 0 ? '+' : ''}{insider.netShares90d.toLocaleString()}
+                </p>
+              </div>
+            </div>
+            {insider.trades.length > 0 && (
+              <div className="overflow-x-auto">
+                <table className="w-full text-xs">
+                  <thead>
+                    <tr className="t-muted border-b border-surface-border">
+                      <th className="text-left py-2 pr-3">Date</th>
+                      <th className="text-left py-2 pr-3">Insider</th>
+                      <th className="text-left py-2 pr-3">Type</th>
+                      <th className="text-right py-2 pr-3">Shares</th>
+                      <th className="text-right py-2">Value</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {insider.trades.slice(0, 10).map((t, i) => {
+                      const typeLabel = t.transactionType === 'P' ? 'Buy' : t.transactionType === 'S' ? 'Sell' : t.transactionType === 'A' ? 'Award' : t.transactionType;
+                      const typeColor = t.transactionType === 'P' ? 'text-bullish' : t.transactionType === 'S' ? 'text-bearish' : 'text-neutral';
+                      return (
+                        <tr key={i} className="border-b border-surface-border/50 hover:bg-surface-hover transition-colors">
+                          <td className="py-1.5 pr-3 t-muted">{t.filingDate}</td>
+                          <td className="py-1.5 pr-3 t-secondary truncate max-w-[120px]">{t.insiderName}</td>
+                          <td className={`py-1.5 pr-3 font-medium ${typeColor}`}>{typeLabel}</td>
+                          <td className="py-1.5 pr-3 text-right font-mono t-secondary">{Math.abs(t.shares).toLocaleString()}</td>
+                          <td className="py-1.5 text-right font-mono t-secondary">{t.totalValue != null ? `$${t.totalValue.toLocaleString()}` : '--'}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            )}
+          </div>
+        );
+      })()}
 
       {/* News */}
       {stockNews.length > 0 && (
@@ -493,14 +641,19 @@ export default function StockDetail({ stocks, news, financials }: Props) {
           <div className="space-y-3">
             {stockNews.map((item, i) => (
               <div key={i} className="flex items-start justify-between gap-4">
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm t-secondary hover:text-accent-light transition-colors line-clamp-1 leading-relaxed"
-                >
-                  {item.title}
-                </a>
+                <div className="flex items-center gap-2 min-w-0 flex-1">
+                  {item.finbertScore != null && (
+                    <span className="text-[9px] font-bold px-1 py-0.5 rounded bg-accent/20 text-accent-light flex-shrink-0">AI</span>
+                  )}
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm t-secondary hover:text-accent-light transition-colors line-clamp-1 leading-relaxed"
+                  >
+                    {item.title}
+                  </a>
+                </div>
                 <SentimentBar score={item.sentimentScore} />
               </div>
             ))}

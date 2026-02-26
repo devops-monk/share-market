@@ -210,7 +210,7 @@ export async function fetchFinancials(tickers: string[]): Promise<Map<string, Fi
     return result;
   }
 
-  const limit = pLimit(3);
+  const limit = pLimit(5);
   console.log(`  Fetching financial statements for ${tickers.length} stocks...`);
 
   await Promise.all(

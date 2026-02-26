@@ -1,5 +1,6 @@
 import type { NewsItem } from './google-news.js';
 import type { FinvizNews } from './finviz-scraper.js';
+import { classifyHeadlines } from './finbert.js';
 
 // ---------------------------------------------------------------------------
 // Finance-specific sentiment analyzer
@@ -18,6 +19,7 @@ export interface ScoredNews {
   ticker: string;
   sentimentScore: number; // -1 to 1
   sentimentLabel: 'positive' | 'negative' | 'neutral';
+  finbertScore?: number | null;
 }
 
 /* ── Unigram lexicon (word → score, range roughly -5 … +5) ──────────────── */
@@ -446,6 +448,41 @@ export function scoreNewsItems(items: (NewsItem | FinvizNews)[]): ScoredNews[] {
       sentimentLabel: label,
     };
   });
+}
+
+export async function scoreNewsItemsWithFinBERT(
+  items: (NewsItem | FinvizNews)[],
+  apiKey?: string,
+): Promise<ScoredNews[]> {
+  // First, score everything with the lexicon
+  const scored = scoreNewsItems(items);
+
+  if (!apiKey) {
+    console.log('  No HUGGINGFACE_API_KEY — using lexicon scoring only');
+    return scored;
+  }
+
+  console.log(`  Running FinBERT on ${scored.length} headlines...`);
+  try {
+    const headlines = scored.map(s => s.title);
+    const finbertScores = await classifyHeadlines(headlines, apiKey);
+
+    let finbertCount = 0;
+    for (let i = 0; i < scored.length; i++) {
+      const fb = finbertScores[i];
+      if (fb != null) {
+        scored[i].finbertScore = fb;
+        scored[i].sentimentScore = fb; // FinBERT takes priority
+        scored[i].sentimentLabel = fb > 0.1 ? 'positive' : fb < -0.1 ? 'negative' : 'neutral';
+        finbertCount++;
+      }
+    }
+    console.log(`  FinBERT scored ${finbertCount}/${scored.length} headlines`);
+  } catch (err) {
+    console.warn('  FinBERT failed, falling back to lexicon:', err);
+  }
+
+  return scored;
 }
 
 export function averageSentiment(scored: ScoredNews[]): number {

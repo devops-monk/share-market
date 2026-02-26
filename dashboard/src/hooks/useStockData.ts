@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import type { StockRecord, SummaryData, NewsItem, Metadata } from '../types';
+import type { StockRecord, SummaryData, NewsItem, Metadata, InsiderTradesMap } from '../types';
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -33,6 +33,7 @@ export function useStockData() {
   const [metadata, setMetadata] = useState<Metadata | null>(null);
   const [scoreHistory, setScoreHistory] = useState<ScoreHistory | null>(null);
   const [financials, setFinancials] = useState<FinancialsMap | null>(null);
+  const [insiderTrades, setInsiderTrades] = useState<InsiderTradesMap | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -44,7 +45,8 @@ export function useStockData() {
       fetchJson<Metadata>('metadata.json'),
       fetchJson<ScoreHistory>('score-history.json'),
       fetchJson<FinancialsMap>('financials.json'),
-    ]).then(([s, sum, ba, n, m, sh, fin]) => {
+      fetchJson<InsiderTradesMap>('insider-trades.json'),
+    ]).then(([s, sum, ba, n, m, sh, fin, insider]) => {
       setStocks(s || []);
       setSummary(sum || null);
       setBearishAlerts(ba || []);
@@ -52,9 +54,10 @@ export function useStockData() {
       setMetadata(m || null);
       setScoreHistory(sh || null);
       setFinancials(fin || null);
+      setInsiderTrades(insider || null);
       setLoading(false);
     });
   }, []);
 
-  return { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, loading };
+  return { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, loading };
 }

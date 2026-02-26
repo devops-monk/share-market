@@ -1,34 +1,46 @@
+import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import { useStockData } from './hooks/useStockData';
 import { useTheme } from './hooks/useTheme';
 import Overview from './pages/Overview';
-import Screener from './pages/Screener';
-import BearishAlerts from './pages/BearishAlerts';
-import NewsSentiment from './pages/NewsSentiment';
-import StockDetail from './pages/StockDetail';
-import Guide from './pages/Guide';
-import BuyTheDip from './pages/BuyTheDip';
-import BreakoutDetection from './pages/BreakoutDetection';
-import HeatMap from './pages/HeatMap';
-import SectorPerformance from './pages/SectorPerformance';
-import MinerviniScreen from './pages/MinerviniScreen';
-import StockComparison from './pages/StockComparison';
-import Watchlist from './pages/Watchlist';
-import AlertSettings from './pages/AlertSettings';
-import Portfolio from './pages/Portfolio';
-import CanSlim from './pages/CanSlim';
-import CustomScreen from './pages/CustomScreen';
-import Backtest from './pages/Backtest';
-import EarningsCalendar from './pages/EarningsCalendar';
-import SupportBounce from './pages/SupportBounce';
-import YearlyUptrend from './pages/YearlyUptrend';
-import MostOwned from './pages/MostOwned';
-import SectorRotation from './pages/SectorRotation';
 import InstallPrompt from './components/common/InstallPrompt';
 
+// Lazy-loaded pages
+const Screener = lazy(() => import('./pages/Screener'));
+const BearishAlerts = lazy(() => import('./pages/BearishAlerts'));
+const NewsSentiment = lazy(() => import('./pages/NewsSentiment'));
+const StockDetail = lazy(() => import('./pages/StockDetail'));
+const Guide = lazy(() => import('./pages/Guide'));
+const BuyTheDip = lazy(() => import('./pages/BuyTheDip'));
+const BreakoutDetection = lazy(() => import('./pages/BreakoutDetection'));
+const HeatMap = lazy(() => import('./pages/HeatMap'));
+const SectorPerformance = lazy(() => import('./pages/SectorPerformance'));
+const MinerviniScreen = lazy(() => import('./pages/MinerviniScreen'));
+const StockComparison = lazy(() => import('./pages/StockComparison'));
+const Watchlist = lazy(() => import('./pages/Watchlist'));
+const AlertSettings = lazy(() => import('./pages/AlertSettings'));
+const Portfolio = lazy(() => import('./pages/Portfolio'));
+const CanSlim = lazy(() => import('./pages/CanSlim'));
+const CustomScreen = lazy(() => import('./pages/CustomScreen'));
+const Backtest = lazy(() => import('./pages/Backtest'));
+const EarningsCalendar = lazy(() => import('./pages/EarningsCalendar'));
+const SupportBounce = lazy(() => import('./pages/SupportBounce'));
+const YearlyUptrend = lazy(() => import('./pages/YearlyUptrend'));
+const MostOwned = lazy(() => import('./pages/MostOwned'));
+const SectorRotation = lazy(() => import('./pages/SectorRotation'));
+
+const PageSpinner = () => (
+  <div className="flex items-center justify-center py-20">
+    <div className="relative w-10 h-10">
+      <div className="absolute inset-0 rounded-full border-2 border-surface-border" />
+      <div className="absolute inset-0 rounded-full border-2 border-transparent border-t-accent animate-spin" />
+    </div>
+  </div>
+);
+
 export default function App() {
-  const { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, loading } = useStockData();
+  const { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, loading } = useStockData();
   const { theme, toggle } = useTheme();
 
   if (loading) {
@@ -49,41 +61,43 @@ export default function App() {
     <div className="min-h-screen bg-surface">
       <Header lastUpdated={metadata?.lastUpdated} theme={theme} onToggleTheme={toggle} />
       <main className="max-w-[1400px] mx-auto px-4 lg:px-6 py-6">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Overview
-                stocks={stocks}
-                summary={summary}
-                metadata={metadata}
-                bearishCount={bearishAlerts.length}
-              />
-            }
-          />
-          <Route path="/screener" element={<Screener stocks={stocks} />} />
-          <Route path="/bearish" element={<BearishAlerts alerts={bearishAlerts} />} />
-          <Route path="/news" element={<NewsSentiment news={news} />} />
-          <Route path="/stock/:ticker" element={<StockDetail stocks={stocks} news={news} financials={financials} />} />
-          <Route path="/dip" element={<BuyTheDip stocks={stocks} />} />
-          <Route path="/breakout" element={<BreakoutDetection stocks={stocks} />} />
-          <Route path="/heatmap" element={<HeatMap stocks={stocks} />} />
-          <Route path="/sectors" element={<SectorPerformance stocks={stocks} />} />
-          <Route path="/minervini" element={<MinerviniScreen stocks={stocks} />} />
-          <Route path="/compare" element={<StockComparison stocks={stocks} />} />
-          <Route path="/watchlist" element={<Watchlist stocks={stocks} />} />
-          <Route path="/portfolio" element={<Portfolio stocks={stocks} />} />
-          <Route path="/canslim" element={<CanSlim stocks={stocks} metadata={metadata} />} />
-          <Route path="/custom-screen" element={<CustomScreen stocks={stocks} />} />
-          <Route path="/backtest" element={<Backtest stocks={stocks} scoreHistory={scoreHistory} />} />
-          <Route path="/earnings" element={<EarningsCalendar stocks={stocks} />} />
-          <Route path="/support-bounce" element={<SupportBounce stocks={stocks} />} />
-          <Route path="/yearly-uptrend" element={<YearlyUptrend stocks={stocks} />} />
-          <Route path="/most-owned" element={<MostOwned stocks={stocks} />} />
-          <Route path="/sector-rotation" element={<SectorRotation stocks={stocks} />} />
-          <Route path="/guide" element={<Guide />} />
-          <Route path="/alerts" element={<AlertSettings />} />
-        </Routes>
+        <Suspense fallback={<PageSpinner />}>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Overview
+                  stocks={stocks}
+                  summary={summary}
+                  metadata={metadata}
+                  bearishCount={bearishAlerts.length}
+                />
+              }
+            />
+            <Route path="/screener" element={<Screener stocks={stocks} />} />
+            <Route path="/bearish" element={<BearishAlerts alerts={bearishAlerts} />} />
+            <Route path="/news" element={<NewsSentiment news={news} />} />
+            <Route path="/stock/:ticker" element={<StockDetail stocks={stocks} news={news} financials={financials} insiderTrades={insiderTrades} />} />
+            <Route path="/dip" element={<BuyTheDip stocks={stocks} />} />
+            <Route path="/breakout" element={<BreakoutDetection stocks={stocks} />} />
+            <Route path="/heatmap" element={<HeatMap stocks={stocks} />} />
+            <Route path="/sectors" element={<SectorPerformance stocks={stocks} />} />
+            <Route path="/minervini" element={<MinerviniScreen stocks={stocks} />} />
+            <Route path="/compare" element={<StockComparison stocks={stocks} />} />
+            <Route path="/watchlist" element={<Watchlist stocks={stocks} />} />
+            <Route path="/portfolio" element={<Portfolio stocks={stocks} />} />
+            <Route path="/canslim" element={<CanSlim stocks={stocks} metadata={metadata} />} />
+            <Route path="/custom-screen" element={<CustomScreen stocks={stocks} />} />
+            <Route path="/backtest" element={<Backtest stocks={stocks} scoreHistory={scoreHistory} />} />
+            <Route path="/earnings" element={<EarningsCalendar stocks={stocks} />} />
+            <Route path="/support-bounce" element={<SupportBounce stocks={stocks} />} />
+            <Route path="/yearly-uptrend" element={<YearlyUptrend stocks={stocks} />} />
+            <Route path="/most-owned" element={<MostOwned stocks={stocks} />} />
+            <Route path="/sector-rotation" element={<SectorRotation stocks={stocks} />} />
+            <Route path="/guide" element={<Guide />} />
+            <Route path="/alerts" element={<AlertSettings />} />
+          </Routes>
+        </Suspense>
       </main>
       <footer className="border-t border-surface-border py-8 mt-16">
         <div className="max-w-[1400px] mx-auto px-4 lg:px-6">

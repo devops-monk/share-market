@@ -41,6 +41,7 @@ export interface TechnicalData {
   // Year-over-year returns for each of the last 4 years (most recent first)
   yearlyReturns: number[];  // e.g. [+0.15, +0.10, -0.05, +0.20] = Year1 +15%, Year2 +10%, Year3 -5%, Year4 +20%
   yearlyUptrendYears: number;  // total number of positive-return years (0-4), NOT consecutive
+  weightedAlpha: number | null;  // exponentially-weighted 1-year return, annualized %
 }
 
 export function computeTechnicals(quote: QuoteData): TechnicalData {
@@ -269,11 +270,30 @@ export function computeTechnicals(quote: QuoteData): TechnicalData {
   // e.g. [+15%, -5%, +10%, +20%] = 3 positive years out of 4
   const yearlyUptrendYears = yearlyReturns.filter(r => r > 0).length;
 
+  // Weighted Alpha: exponentially-weighted 1-year return (annualized %)
+  // Uses decay factor 0.985 so recent days matter more
+  let weightedAlpha: number | null = null;
+  if (closes.length >= 252) {
+    const recentCloses = closes.slice(-252);
+    let weightedSum = 0;
+    let weightSum = 0;
+    const decay = 0.985;
+    for (let i = 1; i < recentCloses.length; i++) {
+      const dailyReturn = (recentCloses[i] - recentCloses[i - 1]) / recentCloses[i - 1];
+      const weight = Math.pow(decay, recentCloses.length - 1 - i); // more recent = higher weight
+      weightedSum += dailyReturn * weight;
+      weightSum += weight;
+    }
+    const avgWeightedDailyReturn = weightedSum / weightSum;
+    weightedAlpha = +(avgWeightedDailyReturn * 252 * 100).toFixed(2); // annualized %
+  }
+
   return {
     rsi, macd, sma20, sma50, sma150, sma200, sma200Slope, volumeRatio,
     priceReturn3m, priceReturn6m, priceReturn1y, volatility,
     bollinger, stochastic, obv, obvTrend, obvDivergence,
     weeklyHighLowRange, accumulationDistribution,
     priceReturn2y, priceReturn3y, priceReturn4y, yearlyReturns, yearlyUptrendYears,
+    weightedAlpha,
   };
 }
