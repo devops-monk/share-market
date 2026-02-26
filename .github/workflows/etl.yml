@@ -58,4 +58,10 @@ jobs:
           git diff --staged --quiet || git commit -m "Update market data [$(date -u +'%Y-%m-%d %H:%M UTC')]"
           git push
 
-  # Deploy is handled by deploy.yml (triggered by data/** push)
+  deploy:
+    needs: etl
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
