@@ -5,7 +5,7 @@ interface FinBERTResult {
   score: number;   // 0-1 confidence
 }
 
-const FINBERT_URL = 'https://api-inference.huggingface.co/models/ProsusAI/finbert';
+const FINBERT_URL = 'https://router.huggingface.co/hf-inference/models/ProsusAI/finbert';
 
 const delay = (ms: number) => new Promise(r => setTimeout(r, ms));
 
