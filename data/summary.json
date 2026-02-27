@@ -219,6 +219,12 @@
       "market": "UK"
     },
     {
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 70,
+      "market": "UK"
+    },
+    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 67,
@@ -237,9 +243,15 @@
       "market": "US"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 66,
+      "ticker": "SBRY.L",
+      "name": "Sainsbury",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "OSB.L",
+      "name": "OSB Group",
+      "score": 64,
       "market": "UK"
     },
     {
@@ -249,34 +261,22 @@
       "market": "UK"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
+      "ticker": "BLND.L",
+      "name": "British Land",
       "score": 63,
       "market": "UK"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 67,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 70,
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
       "score": 67,
       "market": "UK"
     },
@@ -305,6 +305,12 @@
       "market": "UK"
     },
     {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "FOUR.L",
       "name": "4imprint",
       "score": 62,
@@ -317,19 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "SNV",
-      "name": "Synovus Financial",
-      "score": 60,
-      "market": "US"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 60,
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 62,
       "market": "UK"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 280
+  "bearishAlertCount": 285
 }
