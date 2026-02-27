@@ -103,7 +103,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 24,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
@@ -243,14 +243,8 @@
       "market": "US"
     },
     {
-      "ticker": "SBRY.L",
-      "name": "Sainsbury",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
       "score": 64,
       "market": "UK"
     },
@@ -265,6 +259,12 @@
       "name": "British Land",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 63,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -277,6 +277,12 @@
     {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 67,
       "market": "UK"
     },
@@ -321,15 +327,9 @@
       "name": "Currys",
       "score": 62,
       "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 62,
-      "market": "UK"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 285
+  "bearishAlertCount": 286
 }
