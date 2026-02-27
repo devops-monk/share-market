@@ -115,18 +115,18 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "FMC",
       "name": "FMC Corp",
       "score": 27,
       "market": "US",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "VRNS",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 314
+  "bearishAlertCount": 315
 }
