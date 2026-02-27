@@ -127,40 +127,132 @@ function getRelevantValue(rule: AlertRule, stock: StockRecord): number {
   }
 }
 
+const DASHBOARD_URL = 'https://share.devops-monk.com';
+
+function fmtChange(pct: number): string {
+  return `${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%`;
+}
+
+function scoreBar(score: number): string {
+  const filled = Math.round(score / 10);
+  return '▓'.repeat(filled) + '░'.repeat(10 - filled);
+}
+
 function formatAlertMessage(rule: AlertRule, stock: StockRecord): string {
   const cur = stock.market === 'UK' ? '£' : '$';
   const price = `${cur}${stock.price.toFixed(2)}`;
-  const change = `${stock.changePercent >= 0 ? '+' : ''}${stock.changePercent.toFixed(2)}%`;
+  const change = fmtChange(stock.changePercent);
   const score = stock.score.composite;
+  const link = `<a href="${DASHBOARD_URL}/stock/${stock.ticker}">${stock.ticker}</a>`;
+  const header = `<b>${link}</b>  <i>${stock.name}</i>`;
+  const scoreLine = `Score  ${scoreBar(score)}  <b>${score}</b>/100`;
+  const priceLine = `Price  <code>${price}</code>  ${stock.changePercent >= 0 ? '🟢' : '🔴'} ${change}`;
+  const sectorCap = `${stock.sector}  ·  ${stock.capCategory} Cap  ·  ${stock.market}`;
 
   switch (rule.type) {
     case 'price_above':
-      return `${stock.ticker} crossed above ${cur}${rule.threshold}\nPrice: ${price} (${change})\nScore: ${score}/100`;
+      return [
+        header,
+        `Crossed above <b>${cur}${rule.threshold}</b>`,
+        ``,
+        priceLine,
+        scoreLine,
+        `<i>${sectorCap}</i>`,
+      ].join('\n');
     case 'price_below':
-      return `${stock.ticker} dropped below ${cur}${rule.threshold}\nPrice: ${price} (${change})\nScore: ${score}/100`;
+      return [
+        header,
+        `Dropped below <b>${cur}${rule.threshold}</b>`,
+        ``,
+        priceLine,
+        scoreLine,
+        `<i>${sectorCap}</i>`,
+      ].join('\n');
     case 'score_above':
-      return `${stock.ticker} score rose to ${score}/100 (threshold: ${rule.threshold})\nPrice: ${price} (${change})`;
+      return [
+        header,
+        `Score rose above threshold <b>${rule.threshold}</b>`,
+        ``,
+        scoreLine,
+        priceLine,
+        `<i>${sectorCap}</i>`,
+      ].join('\n');
     case 'score_below':
-      return `${stock.ticker} score dropped to ${score}/100 (threshold: ${rule.threshold})\nPrice: ${price} (${change})`;
+      return [
+        header,
+        `Score dropped below threshold <b>${rule.threshold}</b>`,
+        ``,
+        scoreLine,
+        priceLine,
+        `<i>${sectorCap}</i>`,
+      ].join('\n');
     case 'bearish_score_above':
-      return `${stock.ticker} bearish score is ${stock.bearishScore} (threshold: ${rule.threshold})\nPrice: ${price} (${change})\nScore: ${score}/100`;
+      return [
+        header,
+        `Bearish score hit <b>${stock.bearishScore}</b>  (threshold: ${rule.threshold})`,
+        ``,
+        priceLine,
+        scoreLine,
+        `RSI  <code>${stock.rsi?.toFixed(1) ?? 'N/A'}</code>  ·  Beta  <code>${stock.beta?.toFixed(2) ?? 'N/A'}</code>`,
+        `<i>${sectorCap}</i>`,
+      ].join('\n');
     case 'rsi_above':
-      return `${stock.ticker} RSI is ${stock.rsi?.toFixed(1)} — Overbought (threshold: ${rule.threshold})\nPrice: ${price} (${change})`;
+      return [
+        header,
+        `RSI <b>${stock.rsi?.toFixed(1)}</b> — Overbought  (threshold: ${rule.threshold})`,
+        ``,
+        priceLine,
+        `52W Range  <code>${stock.fiftyTwoWeekRangePercent}%</code>  ·  Vol Ratio  <code>${stock.volumeRatio.toFixed(1)}x</code>`,
+        scoreLine,
+        `<i>${sectorCap}</i>`,
+      ].join('\n');
     case 'rsi_below':
-      return `${stock.ticker} RSI is ${stock.rsi?.toFixed(1)} — Oversold (threshold: ${rule.threshold})\nPrice: ${price} (${change})`;
+      return [
+        header,
+        `RSI <b>${stock.rsi?.toFixed(1)}</b> — Oversold  (threshold: ${rule.threshold})`,
+        ``,
+        priceLine,
+        `52W Range  <code>${stock.fiftyTwoWeekRangePercent}%</code>  ·  Vol Ratio  <code>${stock.volumeRatio.toFixed(1)}x</code>`,
+        scoreLine,
+        `<i>${sectorCap}</i>`,
+      ].join('\n');
     case 'minervini_pass':
-      return `${stock.ticker} passes ${stock.minerviniChecks.passed}/8 Minervini checks (threshold: ${rule.threshold})\nPrice: ${price} | RS: ${stock.rsPercentile} | Score: ${score}/100`;
+      return [
+        header,
+        `Minervini  <b>${stock.minerviniChecks.passed}/8</b> checks passed  (threshold: ${rule.threshold})`,
+        ``,
+        priceLine,
+        `RS Percentile  <code>${stock.rsPercentile}</code>  ·  SMA50  <code>${stock.sma50?.toFixed(2) ?? 'N/A'}</code>`,
+        scoreLine,
+        `<i>${sectorCap}</i>`,
+      ].join('\n');
     case 'uptrend_below_resistance':
-      return `${stock.ticker} — ${stock.yearlyUptrendYears}yr uptrend, ${stock.pctBelowResistance?.toFixed(1)}% below resistance (threshold: ${rule.threshold}%)\nPrice: ${price} (${change}) | Score: ${score}/100`;
+      return [
+        header,
+        `<b>${stock.yearlyUptrendYears}yr</b> uptrend  ·  <b>${stock.pctBelowResistance?.toFixed(1)}%</b> below resistance`,
+        ``,
+        priceLine,
+        `52W High  <code>${cur}${stock.fiftyTwoWeekHigh.toFixed(2)}</code>  ·  52W Low  <code>${cur}${stock.fiftyTwoWeekLow.toFixed(2)}</code>`,
+        scoreLine,
+        `<i>${sectorCap}</i>`,
+      ].join('\n');
     case 'top_owned_drop': {
       const dropPct = stock.fiftyTwoWeekHigh > 0
         ? ((stock.fiftyTwoWeekHigh - stock.price) / stock.fiftyTwoWeekHigh) * 100
         : 0;
       const instPct = ((stock.heldPercentInstitutions ?? 0) * 100).toFixed(1);
-      return `${stock.ticker} — ${instPct}% institutional, ${dropPct.toFixed(1)}% off 52W high (threshold: ${rule.threshold}%)\nPrice: ${price} (${change}) | 52W High: ${cur}${stock.fiftyTwoWeekHigh.toFixed(2)} | Score: ${score}/100`;
+      return [
+        header,
+        `<b>${dropPct.toFixed(1)}%</b> off 52W high  ·  <b>${instPct}%</b> institutional`,
+        ``,
+        priceLine,
+        `52W High  <code>${cur}${stock.fiftyTwoWeekHigh.toFixed(2)}</code>  ·  Mkt Cap  <code>${(stock.marketCap / 1e9).toFixed(1)}B</code>`,
+        scoreLine,
+        `<i>${sectorCap}</i>`,
+      ].join('\n');
     }
     default:
-      return `Alert for ${stock.ticker}: ${rule.type}`;
+      return `${header}\nAlert: ${rule.type}`;
   }
 }
 
@@ -176,18 +268,42 @@ export function generateDailySummary(stocks: StockRecord[]): string {
   const bullish = stocks.filter(s => s.score.composite >= 60).length;
   const bearish = stocks.filter(s => s.bearishScore >= 4).length;
   const minervini8 = stocks.filter(s => s.minerviniChecks.passed === 8).length;
+  const usStocks = stocks.filter(s => s.market === 'US');
+  const ukStocks = stocks.filter(s => s.market === 'UK');
+  const usAvgChange = usStocks.length > 0 ? usStocks.reduce((a, s) => a + s.changePercent, 0) / usStocks.length : 0;
+  const ukAvgChange = ukStocks.length > 0 ? ukStocks.reduce((a, s) => a + s.changePercent, 0) / ukStocks.length : 0;
+
+  const date = new Date().toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
+
+  const fmtRow = (s: StockRecord, i: number) => {
+    const cur = s.market === 'UK' ? '£' : '$';
+    const chg = fmtChange(s.changePercent);
+    const link = `<a href="${DASHBOARD_URL}/stock/${s.ticker}">${s.ticker}</a>`;
+    return `  ${i + 1}.  ${link}  <i>${s.name}</i>\n      ${cur}${s.price.toFixed(2)}  ${s.changePercent >= 0 ? '🟢' : '🔴'} ${chg}   Score <b>${s.score.composite}</b>`;
+  };
 
   const lines = [
-    `📊 Daily Market Summary`,
+    `<b>📊  Daily Market Summary</b>`,
+    `<i>${date}</i>`,
     ``,
-    `Stocks: ${stocks.length} | Avg Score: ${avgScore} | Avg Change: ${avgChange >= 0 ? '+' : ''}${avgChange.toFixed(2)}%`,
-    `Bullish (60+): ${bullish} | Bearish Alerts: ${bearish} | Minervini 8/8: ${minervini8}`,
+    `┌─────────────────────────────`,
+    `│  Stocks  <b>${stocks.length}</b>  ·  Avg Score  <b>${avgScore}</b>/100`,
+    `│  Avg Change  ${avgChange >= 0 ? '🟢' : '🔴'} <b>${fmtChange(avgChange)}</b>`,
+    `│`,
+    `│  🇺🇸 US ${fmtChange(usAvgChange)}   🇬🇧 UK ${fmtChange(ukAvgChange)}`,
+    `│`,
+    `│  Bullish (60+)  <code>${bullish}</code>`,
+    `│  Bearish Alerts  <code>${bearish}</code>`,
+    `│  Minervini 8/8  <code>${minervini8}</code>`,
+    `└─────────────────────────────`,
     ``,
-    `🏆 Top 5:`,
-    ...top5.map((s, i) => `${i + 1}. ${s.ticker} — Score ${s.score.composite} (${s.changePercent >= 0 ? '+' : ''}${s.changePercent.toFixed(2)}%)`),
+    `<b>🏆  Top 5</b>`,
+    ...top5.map((s, i) => fmtRow(s, i)),
     ``,
-    `⚠️ Bottom 5:`,
-    ...bottom5.map((s, i) => `${i + 1}. ${s.ticker} — Score ${s.score.composite} (${s.changePercent >= 0 ? '+' : ''}${s.changePercent.toFixed(2)}%)`),
+    `<b>📉  Bottom 5</b>`,
+    ...bottom5.map((s, i) => fmtRow(s, i)),
+    ``,
+    `<a href="${DASHBOARD_URL}">Open Dashboard</a>`,
   ];
 
   return lines.join('\n');

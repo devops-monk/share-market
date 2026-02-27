@@ -9,7 +9,22 @@ const ALERT_TYPE_EMOJI: Record<string, string> = {
   rsi_above: '🔥',
   rsi_below: '💎',
   minervini_pass: '🎯',
+  uptrend_below_resistance: '📐',
+  top_owned_drop: '🏦',
   daily_summary: '📊',
+};
+
+const ALERT_TYPE_LABEL: Record<string, string> = {
+  price_above: 'Price Breakout',
+  price_below: 'Price Drop',
+  score_above: 'Score Up',
+  score_below: 'Score Down',
+  bearish_score_above: 'Bearish Warning',
+  rsi_above: 'Overbought',
+  rsi_below: 'Oversold',
+  minervini_pass: 'Minervini Setup',
+  uptrend_below_resistance: 'Uptrend Pullback',
+  top_owned_drop: 'Institutional Drop',
 };
 
 /**
@@ -80,20 +95,24 @@ export async function sendNtfy(message: string, title: string): Promise<boolean>
 export function formatAlertsMessage(alerts: TriggeredAlert[]): string {
   if (alerts.length === 0) return '';
 
+  const time = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' });
+
   const lines = [
-    `<b>🔔 ${alerts.length} Alert${alerts.length > 1 ? 's' : ''} Triggered</b>`,
-    '',
+    `<b>🔔  ${alerts.length} Alert${alerts.length > 1 ? 's' : ''} Triggered</b>  ·  <i>${time} UTC</i>`,
+    ``,
   ];
 
-  for (const alert of alerts) {
+  for (let i = 0; i < alerts.length; i++) {
+    const alert = alerts[i];
     const emoji = ALERT_TYPE_EMOJI[alert.type] ?? '🔔';
-    const typeLabel = alert.type.replace(/_/g, ' ').toUpperCase();
-    lines.push(`${emoji} <b>${typeLabel}</b>`);
+    const label = ALERT_TYPE_LABEL[alert.type] ?? alert.type.replace(/_/g, ' ');
+    lines.push(`${emoji}  <b>${label}</b>`);
     lines.push(alert.message);
+    if (i < alerts.length - 1) lines.push(`─────────────────────`);
     lines.push('');
   }
 
-  lines.push(`<i>via StockMarket Dashboard</i>`);
+  lines.push(`<a href="https://share.devops-monk.com">Open Dashboard</a>`);
   return lines.join('\n');
 }
 
