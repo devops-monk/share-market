@@ -144,6 +144,23 @@ export interface StockRecord {
   earningsDate: string | null;
   dcfValue: number | null;
   dividendMetrics?: DividendMetrics | null;
+  // N17: Beneish M-Score
+  beneishMScore: number | null;
+  beneishZone: 'unlikely' | 'possible' | 'likely' | null;
+  // N14: Ichimoku Cloud
+  ichimoku: {
+    tenkan: number;
+    kijun: number;
+    senkouA: number;
+    senkouB: number;
+    signal: 'bullish' | 'bearish' | 'neutral';
+  } | null;
+  // N10: Candlestick Patterns
+  candlestickPatterns?: { name: string; direction: 'bullish' | 'bearish' | 'neutral'; }[];
+  // N9: Chart Patterns
+  chartPatterns?: { name: string; direction: 'bullish' | 'bearish' | 'neutral'; confidence: number; }[];
+  // N13: Theme/Sector Tags
+  themes?: string[];
 }
 
 export interface InsiderTrade {

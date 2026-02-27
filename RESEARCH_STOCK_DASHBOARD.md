@@ -18,7 +18,7 @@
 
 ## 1. What We Have Today
 
-### Pages (24 total)
+### Pages (25 total)
 | Page | Purpose |
 |------|---------|
 | Overview | Market snapshot — top/bottom performers, avg score, bearish count, market regime |
@@ -46,6 +46,7 @@
 | Guide | 4-tab educational resource (Basics, Dashboard Tour, Indicators, Strategies) |
 | Alert Settings | 11 rule types, edge-triggered, JSON export/import |
 | NL Query | Natural language stock search — parse plain English queries into filters |
+| Economic Calendar | FOMC, CPI, NFP, GDP, earnings seasons, quad-witching dates with impact ratings |
 
 ### Composite Score (0–100)
 | Factor | Weight | Inputs |
@@ -486,7 +487,7 @@ Based on competitive analysis and expert technique research conducted February 2
 | **N2** | ~~Factor Grades (A+ to F)~~ | **DONE** — Percentile-based A+ to F across 5 factors + overall. Displayed as grade card on StockDetail. | Seeking Alpha's most-loved feature. | ~~Low~~ |
 | **N3** | ~~Altman Z-Score~~ | **DONE** — Computed from financial statements. Safe/grey/distress zones in Expert Screens. | Stock Rover has it. | ~~Low~~ |
 | **N4** | ~~Risk-Adjusted Returns~~ | **DONE** — Sharpe ratio, Sortino ratio, max drawdown (1Y) from daily OHLCV. New section on StockDetail. | Every serious platform offers this. | ~~Low~~ |
-| **N5** | **Position Sizing Calculator** | Kelly criterion and fixed-% calculators on Portfolio page | TradingView has this. Common retail request. | Low |
+| **N5** | ~~Position Sizing Calculator~~ | **DONE** — Fixed-% and Half-Kelly criterion calculators on Portfolio page. Input: capital, risk %, entry/stop or win rate/avg win/loss. | TradingView has this. Common retail request. | ~~Low~~ |
 | **N6** | ~~Additional Technical Indicators~~ | **DONE** — ADX/DI+/DI- (14), Williams %R (14), Chaikin Money Flow (20). Uses real OHLCV highs/lows. Shown in Advanced Indicators. | IBD uses ADX heavily. | ~~Medium~~ |
 | **N7** | ~~Earnings Post-Drift Analysis~~ | **DONE** — 1/5/20-day returns after last earnings date. Separate card on StockDetail. | Earnings Whispers charges for this. | ~~Medium~~ |
 | **N8** | ~~SMR Rating (IBD-style)~~ | **DONE** — Sales growth + Operating Margin + ROE → A–E rating. Shown in Expert Screens. | IBD feature. | ~~Low~~ |
@@ -495,15 +496,15 @@ Based on competitive analysis and expert technique research conducted February 2
 
 | # | Feature | Description | Why | Effort |
 |---|---------|-------------|-----|--------|
-| **N9** | **Chart Pattern Recognition** | Detect: double top/bottom, head & shoulders, cup-and-handle, triangles, flags | TrendSpider has 28 patterns. ChartPatterns.ai has 16. Key gap vs TradingView/IBD. Use OHLCV swing-point algorithm (extend S/R code). | High |
-| **N10** | **Candlestick Pattern Detection** | Detect: doji, engulfing, hammer, shooting star, morning/evening star, etc. | TrendSpider has 123 patterns. Standard technical analysis feature. Library: `technicalindicators` npm has this built in. | Medium |
+| **N9** | ~~Chart Pattern Recognition~~ | **DONE** — Swing-point analysis on 60-day data. Detects double top/bottom, ascending/descending triangles, bull/bear flags with confidence scores. | TrendSpider has 28 patterns. ChartPatterns.ai has 16. | ~~High~~ |
+| **N10** | ~~Candlestick Pattern Detection~~ | **DONE** — 13 candlestick patterns via `technicalindicators` library: engulfing, doji, hammer, shooting star, morning/evening star, harami, marubozu. Shown as badges on StockDetail. | TrendSpider has 123 patterns. | ~~Medium~~ |
 | **N11** | **AI Copilot Chat** | Chat interface on Stock Detail: "What are the risks for this stock?" "Compare to MSFT" | OpenBB Copilot, Seeking Alpha Ask AI, StockyPie. Growing expectation in 2026. | High |
 | **N12** | **Predictive Scoring** | ML-based forward-looking score: probability of outperforming market in 3 months | Danelfin's core feature. Train on historical score → return relationship from our score-history data. | High |
-| **N13** | **Theme/Sector Tagging** | Tag stocks with themes: AI, Clean Energy, Cybersecurity, GLP-1, EV | Finviz 2026 feature. Manual tagging initially, then automated via sector + description. | Medium |
-| **N14** | **Ichimoku Cloud** | Full Ichimoku system: Tenkan, Kijun, Senkou A/B, Chikou | Standalone trading system. Uses only OHLCV. Popular in Asian markets. | Medium |
+| **N13** | ~~Theme/Sector Tagging~~ | **DONE** — Static ticker-to-theme mapping: AI, Cloud, Cybersecurity, Clean Energy, EV, Semiconductors, Fintech, Biotech, etc. + sector fallback. Theme badges shown in stock header. | Finviz 2026 feature. | ~~Medium~~ |
+| **N14** | ~~Ichimoku Cloud~~ | **DONE** — Full Ichimoku system (Tenkan-sen 9, Kijun-sen 26, Senkou A/B, displacement 26) with signal detection (above/below/in cloud). Displayed as 5-column card on StockDetail. | Standalone trading system. | ~~Medium~~ |
 | **N15** | **Multi-Widget Dashboard** | Customisable dashboard layout: drag-and-drop cards for score, chart, news, signals | Koyfin's signature feature. Bloomberg-style. | High |
 | **N16** | **Volume Profile** | VPOC (Volume Point of Control), Value Area High/Low from OHLCV | Used by professional traders. Shows where most volume traded. Extends S/R analysis. | Medium |
-| **N17** | **Beneish M-Score** | Earnings manipulation probability. M > -1.78 = likely manipulator. | Stock Rover feature. Uses financial statement data we have. 8-variable formula. | Low |
+| **N17** | ~~Beneish M-Score~~ | **DONE** — 8-variable M-Score (DSRI, GMI, AQI, SGI, DEPI, SGAI, TATA, LVGI) from financial statements. Zones: unlikely/possible/likely manipulator. In Expert Screens. | Stock Rover feature. | ~~Low~~ |
 
 ### Tier 3 — Lower Priority / High Effort (Future)
 
@@ -512,7 +513,7 @@ Based on competitive analysis and expert technique research conducted February 2
 | **N18** | **Social Sentiment (Reddit/X)** | Aggregate social buzz: r/wallstreetbets, r/stocks, X FinTwit, StockTwits | Unusual Whales, BlackBox Stocks. Free APIs: Reddit JSON, Snoowrap. StockTwits API deprecated. | High |
 | **N19** | **Macro Overlay** | Yield curve, VIX level, Fed funds rate shown on Overview. Sector rotation tied to economic cycle. | Professional feature. FRED API (free) for macro data. | Medium |
 | **N20** | **Options Sentiment Proxy** | Put/Call ratio per stock from available sources. Max pain calculations. | No free real-time source. Could scrape Yahoo Options chain periodically. | High |
-| **N21** | **Economic Calendar** | FOMC dates, CPI, NFP, GDP releases with market impact rating | Free from FRED API / Investing.com. Useful for earnings calendar synergy. | Medium |
+| **N21** | ~~Economic Calendar~~ | **DONE** — Hardcoded FOMC, CPI, NFP, GDP, earnings season, quad-witching dates for 2025-2026. Color-coded by category with impact indicators. New `/economic-calendar` page. | Free standalone page. | ~~Medium~~ |
 | **N22** | **Global Coverage Expansion** | European markets (DAX, CAC 40), Asian markets (Nikkei, HSI) | Simply Wall St covers 100K+ securities globally. Expand stock universe. | High |
 | **N23** | **Paper Trading Mode** | Simulated portfolio with virtual money. Track hypothetical trades. | TradingView has this. Educational value. Build on Portfolio page. | Medium |
 | **N24** | **Weighted Screener** | User-defined weights for multi-factor screening (like Stock Rover) | Stock Rover's #1 feature for power users. | Medium |
@@ -525,13 +526,13 @@ Based on competitive analysis and expert technique research conducted February 2
 ```
 DONE (Shipped Feb 2026)             NOW (Next Sprint)                    LATER (Future)
 ───────────────────                 ─────────────────                    ──────────────
-✅ N1  NL Stock Query               N17 Beneish M-Score ★                N11 AI Copilot Chat
-✅ N2  Factor Grades                N5  Position Sizing Calculator ★     N12 Predictive Scoring
-✅ N3  Altman Z-Score               N10 Candlestick Patterns             N15 Multi-Widget Dashboard
-✅ N4  Risk-Adjusted Returns        N14 Ichimoku Cloud                   N16 Volume Profile
-✅ N6  ADX/Williams/CMF             N21 Economic Calendar                N18 Social Sentiment
-✅ N7  Earnings Post-Drift          N9  Chart Pattern Recognition        N19 Macro Overlay
-✅ N8  SMR Rating                   N13 Theme Tagging                    N20 Options Sentiment
+✅ N1  NL Stock Query             ✅ N17 Beneish M-Score               N11 AI Copilot Chat
+✅ N2  Factor Grades              ✅ N5  Position Sizing Calculator     N12 Predictive Scoring
+✅ N3  Altman Z-Score             ✅ N10 Candlestick Patterns           N15 Multi-Widget Dashboard
+✅ N4  Risk-Adjusted Returns      ✅ N14 Ichimoku Cloud                 N16 Volume Profile
+✅ N6  ADX/Williams/CMF           ✅ N21 Economic Calendar              N18 Social Sentiment
+✅ N7  Earnings Post-Drift        ✅ N9  Chart Pattern Recognition      N19 Macro Overlay
+✅ N8  SMR Rating                 ✅ N13 Theme Tagging                  N20 Options Sentiment
                                                                         N22 Global Expansion
                                     ★ = Quick wins (low effort)          N23 Paper Trading
                                                                         N24 Weighted Screener
@@ -545,17 +546,18 @@ DONE (Shipped Feb 2026)             NOW (Next Sprint)                    LATER (
 ```
                         LOW EFFORT ◄──────────────────────► HIGH EFFORT
                         │                                          │
-  HIGH IMPACT           │  N17 Beneish M-Score ★                   │  N9  Chart Patterns ★
+  HIGH IMPACT           │  N11 AI Copilot Chat ★                   │  N9  Chart Patterns ✅
                         │                                          │  N11 AI Copilot Chat
                         │                                          │  N12 Predictive Scoring
                         │                                          │  N15 Multi-Widget Dashboard
                         │                                          │
-  MEDIUM IMPACT         │  N5  Position Sizing ★                   │  N10 Candlestick Patterns
-                        │                                          │  N13 Theme Tagging
-                        │                                          │  N14 Ichimoku Cloud
+  MEDIUM IMPACT         │  N5  Position Sizing ✅                  │  N10 Candlestick Patterns ✅
+                        │                                          │  N13 Theme Tagging ✅
+                        │                                          │  N14 Ichimoku Cloud ✅
                         │                                          │  N16 Volume Profile
+                        │                                          │  N17 Beneish M-Score ✅
                         │                                          │  N18 Social Sentiment
-                        │                                          │  N21 Economic Calendar
+                        │                                          │  N21 Economic Calendar ✅
                         │                                          │  N24 Weighted Screener
                         │                                          │
   LOW IMPACT            │                                          │  N19 Macro Overlay
@@ -572,21 +574,21 @@ DONE (Shipped Feb 2026)             NOW (Next Sprint)                    LATER (
 
 ### Recommended Next Actions
 
-> **Previous batch (N1–N8) shipped Feb 2026.** Below is the next prioritised batch.
+> **Batches 1–2 (N1–N8, N5/N9/N10/N13/N14/N17/N21) shipped Feb 2026.** Below is the next prioritised batch.
 
-1. **N17 — Beneish M-Score** — Earnings manipulation detection. 8-variable formula using financial statement data we already fetch. Flag stocks with M > -1.78 as potential manipulators. Add to Expert Screens alongside Piotroski/Buffett/Altman. **Low effort, high value for risk screening.**
+1. **N11 — AI Copilot Chat** — Natural language Q&A about portfolio and stocks using LLM API. "Why is NVDA dropping?" or "Which of my holdings has the best risk/reward?" Context-aware using existing stock data. **High effort, high impact.**
 
-2. **N5 — Position Sizing Calculator** — Kelly criterion and fixed-% risk calculators on the Portfolio page. Input: account size, risk %, stop-loss distance. Output: shares to buy. Common retail trader request. **Low effort.**
+2. **N12 — Predictive Scoring** — ML-based 30-day forward return prediction using gradient boosting on technical + fundamental features. Train on historical score-history data. Show predicted direction alongside composite score. **High effort, high impact.**
 
-3. **N10 — Candlestick Pattern Detection** — Detect doji, engulfing, hammer, shooting star, morning/evening star from OHLCV. The `technicalindicators` npm library has these built in. Show detected patterns on StockDetail chart and as signal badges. **Medium effort.**
+3. **N16 — Volume Profile** — VPVR (Volume Profile Visible Range) showing price levels with highest traded volume. Identifies value areas (HVN/LVN) and point of control. Uses existing OHLCV data. **Medium effort.**
 
-4. **N14 — Ichimoku Cloud** — Full Ichimoku system (Tenkan, Kijun, Senkou A/B, Chikou Span) computed from OHLCV. Overlay on candlestick chart + standalone signal detection (TK cross, cloud breakout, Chikou confirmation). **Medium effort.**
+4. **N15 — Multi-Widget Dashboard** — Customisable dashboard with drag-and-drop widgets: watchlist, score gauge, sector heat, news feed, chart. User saves layout to localStorage. **High effort, medium impact.**
 
-5. **N21 — Economic Calendar** — FOMC dates, CPI, NFP, GDP releases with market impact ratings. Free data from FRED API. Show alongside Earnings Calendar. Helps traders anticipate volatility. **Medium effort.**
+5. **N18 — Social Sentiment** — Reddit/Twitter/StockTwits sentiment analysis. Fetch recent posts mentioning tickers, score with FinBERT. Add social sentiment component to composite score. **Medium effort, requires API access.**
 
-6. **N9 — Chart Pattern Recognition** — Detect double top/bottom, head & shoulders, cup-and-handle, triangles, flags from OHLCV swing points. Extend existing S/R code. Key differentiator vs free tools. **High effort, high impact.**
+6. **N24 — Weighted Screener** — User-adjustable weights for each score dimension (momentum, technical, fundamentals, etc.). Dynamically re-rank stocks based on custom weighting. **Medium effort.**
 
-7. **N13 — Theme/Sector Tagging** — Tag stocks with investment themes: AI, Clean Energy, Cybersecurity, GLP-1, EV, Defence. Enables theme-based screening. Start with manual tags, later automate via sector + description matching. **Medium effort.**
+7. **N19 — Macro Overlay** — Display macro indicators (VIX, 10Y yield, DXY, oil price) alongside stock data. Correlate market regime with individual stock performance. **Medium effort.**
 
 ---
 
@@ -598,8 +600,8 @@ DONE (Shipped Feb 2026)             NOW (Next Sprint)                    LATER (
 | Medium Effort (M-series) | 17 | 17 | **100%** |
 | Large Effort (L-series) | 12 | 14 | **86%** |
 | Expert Methodologies | 5 of 9 | 9 | **56%** |
-| New Features (N-series) | 7 of 25 | 25 | **28%** |
-| **Total features shipped** | **57+** | — | — |
+| New Features (N-series) | 14 of 25 | 25 | **56%** |
+| **Total features shipped** | **64+** | — | — |
 
 ---
 

@@ -16,6 +16,47 @@ import { fetchInsiderTrades } from './insider/edgar.js';
 import { CONFIG } from './config.js';
 import pLimit from 'p-limit';
 
+// N13: Theme/Sector Tagging
+const THEME_TICKERS: Record<string, string[]> = {
+  'AI & Machine Learning': ['NVDA','MSFT','GOOGL','GOOG','META','AMD','PLTR','CRM','SNOW','AI','PATH','BBAI','SOUN','IBM','INTC','AMZN','TSM','AVGO','ARM','SMCI'],
+  'Cloud Computing': ['MSFT','AMZN','GOOGL','GOOG','CRM','SNOW','NET','DDOG','MDB','TEAM','ZS','CRWD','NOW','WDAY','VEEV','TWLO'],
+  'Cybersecurity': ['CRWD','ZS','PANW','FTNT','S','OKTA','CYBR','NET','QLYS','TENB','VRNS','RPD'],
+  'Clean Energy': ['ENPH','SEDG','FSLR','RUN','PLUG','BE','NEE','AES','CSIQ','JKS','DQ','NOVA','ARRY'],
+  'Electric Vehicles': ['TSLA','RIVN','LCID','NIO','LI','XPEV','FSR','QS','CHPT','BLNK','NKLA','F','GM'],
+  'Semiconductors': ['NVDA','AMD','INTC','TSM','AVGO','QCOM','TXN','ASML','LRCX','AMAT','KLAC','MU','MRVL','ON','ADI','NXPI','ARM','SMCI'],
+  'Fintech': ['SQ','PYPL','COIN','SOFI','AFRM','UPST','MELI','NU','MA','V','GS','HOOD'],
+  'Biotech & Pharma': ['MRNA','BNTX','PFE','LLY','ABBV','JNJ','BMY','MRK','AMGN','GILD','BIIB','REGN','VRTX','ISRG'],
+  'E-Commerce': ['AMZN','SHOP','MELI','SE','ETSY','W','BABA','JD','PDD','EBAY','CPNG'],
+  'Streaming & Digital Media': ['NFLX','DIS','WBD','PARA','SPOT','ROKU','RBLX'],
+  'Defence & Aerospace': ['LMT','RTX','NOC','BA','GD','HII','LHX','TDG','HWM','LDOS','BAE.L'],
+  'Dividend Aristocrats': ['KO','PG','JNJ','MMM','CL','ABT','T','VZ','PEP','MDT','EMR','SWK','ED','XOM','CVX'],
+};
+
+const SECTOR_THEMES: Record<string, string> = {
+  'Technology': 'Tech',
+  'Healthcare': 'Healthcare',
+  'Financial Services': 'Financial Services',
+  'Energy': 'Energy',
+  'Consumer Cyclical': 'Consumer',
+  'Consumer Defensive': 'Consumer Staples',
+  'Industrials': 'Industrials',
+  'Basic Materials': 'Materials',
+  'Real Estate': 'Real Estate',
+  'Utilities': 'Utilities',
+  'Communication Services': 'Communication',
+};
+
+function assignThemes(ticker: string, name: string, sector: string): string[] {
+  const themes: string[] = [];
+  for (const [theme, tickers] of Object.entries(THEME_TICKERS)) {
+    if (tickers.includes(ticker)) themes.push(theme);
+  }
+  // Add sector-based theme if no specific themes found
+  const sectorTheme = SECTOR_THEMES[sector];
+  if (sectorTheme && themes.length === 0) themes.push(sectorTheme);
+  return themes;
+}
+
 async function main() {
   console.log(`Starting ETL for ${ALL_STOCKS.length} stocks...`);
   const startTime = Date.now();
@@ -243,6 +284,14 @@ async function main() {
       }
     }
 
+    // N17: Beneish M-Score
+    const beneish = fd;
+    const beneishMScore = beneish?.beneishMScore ?? null;
+    const beneishZone = beneish?.beneishZone ?? null;
+
+    // N13: Theme/Sector Tagging
+    const themes = assignThemes(quote.ticker, quote.name, quote.sector);
+
     stockRecords.push({
       ticker: quote.ticker,
       name: quote.name,
@@ -371,6 +420,17 @@ async function main() {
       // Earnings date
       earningsDate: quote.earningsDate,
       dividendMetrics,
+      // N17: Beneish M-Score
+      beneishMScore,
+      beneishZone,
+      // N14: Ichimoku Cloud
+      ichimoku: tech.ichimoku,
+      // N10: Candlestick Patterns
+      candlestickPatterns: tech.candlestickPatterns,
+      // N9: Chart Patterns
+      chartPatterns: tech.chartPatterns,
+      // N13: Theme/Sector Tags
+      themes,
       // DCF Lite: simple intrinsic value = OCF × (1 + growth) / discount_rate
       dcfValue: (() => {
         const ocf = quote.operatingCashflow;

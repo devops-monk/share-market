@@ -1,4 +1,12 @@
-import { RSI, MACD, SMA, BollingerBands, Stochastic, OBV, ADX, WilliamsR } from 'technicalindicators';
+import { RSI, MACD, SMA, BollingerBands, Stochastic, OBV, ADX, WilliamsR, IchimokuCloud } from 'technicalindicators';
+import {
+  bullishengulfingpattern, bearishengulfingpattern,
+  doji, hammerpattern, shootingstar,
+  morningstar, eveningstar,
+  bullishharami, bearishharami,
+  bullishhammerstick, bearishhammerstick,
+  bullishmarubozu, bearishmarubozu,
+} from 'technicalindicators';
 import type { QuoteData } from '../stocks/fetcher.js';
 
 export interface BollingerData {
@@ -52,6 +60,18 @@ export interface TechnicalData {
   sharpeRatio: number | null;   // annualized Sharpe ratio (risk-free = 4.5%)
   sortinoRatio: number | null;  // annualized Sortino ratio
   maxDrawdown: number | null;   // maximum drawdown (negative %)
+  // N14: Ichimoku Cloud
+  ichimoku: {
+    tenkan: number;      // conversion line (9-period)
+    kijun: number;       // base line (26-period)
+    senkouA: number;     // leading span A
+    senkouB: number;     // leading span B
+    signal: 'bullish' | 'bearish' | 'neutral';
+  } | null;
+  // N10: Candlestick Patterns
+  candlestickPatterns: { name: string; direction: 'bullish' | 'bearish' | 'neutral'; }[];
+  // N9: Chart Patterns
+  chartPatterns: { name: string; direction: 'bullish' | 'bearish' | 'neutral'; confidence: number; }[];
 }
 
 export function computeTechnicals(quote: QuoteData): TechnicalData {
@@ -396,6 +416,135 @@ export function computeTechnicals(quote: QuoteData): TechnicalData {
     maxDrawdown = +(worstDrawdown * 100).toFixed(2);
   }
 
+  // N14: Ichimoku Cloud
+  let ichimoku: TechnicalData['ichimoku'] = null;
+  if (closes.length >= 52 && realHighs.length >= 52 && realLows.length >= 52) {
+    const minLen = Math.min(closes.length, realHighs.length, realLows.length);
+    const ichResult = IchimokuCloud.calculate({
+      high: realHighs.slice(-minLen),
+      low: realLows.slice(-minLen),
+      conversionPeriod: 9,
+      basePeriod: 26,
+      spanPeriod: 52,
+      displacement: 26,
+    });
+    const last = ichResult[ichResult.length - 1];
+    if (last) {
+      const price = closes[closes.length - 1];
+      const aboveCloud = price > Math.max(last.spanA, last.spanB);
+      const belowCloud = price < Math.min(last.spanA, last.spanB);
+      ichimoku = {
+        tenkan: +last.conversion.toFixed(2),
+        kijun: +last.base.toFixed(2),
+        senkouA: +last.spanA.toFixed(2),
+        senkouB: +last.spanB.toFixed(2),
+        signal: aboveCloud ? 'bullish' : belowCloud ? 'bearish' : 'neutral',
+      };
+    }
+  }
+
+  // N10: Candlestick Pattern Detection (last 5 candles)
+  const candlestickPatterns: TechnicalData['candlestickPatterns'] = [];
+  if (realHighs.length >= 5 && realLows.length >= 5 && closes.length >= 5) {
+    const n = 5;
+    const ohlc = {
+      open: quote.ohlcvOpen?.slice(-n) ?? closes.slice(-(n + 1), -1),
+      high: realHighs.slice(-n),
+      low: realLows.slice(-n),
+      close: closes.slice(-n),
+    };
+    const patternChecks: [string, (d: any) => boolean, 'bullish' | 'bearish' | 'neutral'][] = [
+      ['Bullish Engulfing', bullishengulfingpattern, 'bullish'],
+      ['Bearish Engulfing', bearishengulfingpattern, 'bearish'],
+      ['Doji', doji, 'neutral'],
+      ['Hammer', hammerpattern, 'bullish'],
+      ['Shooting Star', shootingstar, 'bearish'],
+      ['Morning Star', morningstar, 'bullish'],
+      ['Evening Star', eveningstar, 'bearish'],
+      ['Bullish Harami', bullishharami, 'bullish'],
+      ['Bearish Harami', bearishharami, 'bearish'],
+      ['Bullish Hammer', bullishhammerstick, 'bullish'],
+      ['Bearish Hammer', bearishhammerstick, 'bearish'],
+      ['Bullish Marubozu', bullishmarubozu, 'bullish'],
+      ['Bearish Marubozu', bearishmarubozu, 'bearish'],
+    ];
+    for (const [name, fn, direction] of patternChecks) {
+      try {
+        if (fn(ohlc)) {
+          candlestickPatterns.push({ name, direction });
+        }
+      } catch { /* skip on error */ }
+    }
+  }
+
+  // N9: Chart Pattern Recognition (swing-point analysis on last 60 candles)
+  const chartPatterns: TechnicalData['chartPatterns'] = [];
+  if (closes.length >= 60) {
+    const window = closes.slice(-60);
+    const swingHighs: number[] = [];
+    const swingLows: number[] = [];
+    // Find swing points (local max/min over 5-bar window)
+    for (let j = 2; j < window.length - 2; j++) {
+      if (window[j] > window[j - 1] && window[j] > window[j - 2] &&
+          window[j] > window[j + 1] && window[j] > window[j + 2]) {
+        swingHighs.push(window[j]);
+      }
+      if (window[j] < window[j - 1] && window[j] < window[j - 2] &&
+          window[j] < window[j + 1] && window[j] < window[j + 2]) {
+        swingLows.push(window[j]);
+      }
+    }
+    const tolerance = 0.02; // 2% tolerance for pattern matching
+    // Double Top: two swing highs within tolerance, price below them
+    if (swingHighs.length >= 2) {
+      const last2 = swingHighs.slice(-2);
+      const diff = Math.abs(last2[0] - last2[1]) / last2[0];
+      if (diff < tolerance && window[window.length - 1] < last2[0] * 0.97) {
+        chartPatterns.push({ name: 'Double Top', direction: 'bearish', confidence: +(1 - diff / tolerance).toFixed(2) });
+      }
+    }
+    // Double Bottom: two swing lows within tolerance, price above them
+    if (swingLows.length >= 2) {
+      const last2 = swingLows.slice(-2);
+      const diff = Math.abs(last2[0] - last2[1]) / last2[0];
+      if (diff < tolerance && window[window.length - 1] > last2[0] * 1.03) {
+        chartPatterns.push({ name: 'Double Bottom', direction: 'bullish', confidence: +(1 - diff / tolerance).toFixed(2) });
+      }
+    }
+    // Ascending Triangle: flat highs + rising lows
+    if (swingHighs.length >= 3 && swingLows.length >= 3) {
+      const hDiff = Math.abs(swingHighs[swingHighs.length - 1] - swingHighs[swingHighs.length - 3]) / swingHighs[swingHighs.length - 3];
+      const risingLows = swingLows[swingLows.length - 1] > swingLows[swingLows.length - 3];
+      if (hDiff < tolerance && risingLows) {
+        chartPatterns.push({ name: 'Ascending Triangle', direction: 'bullish', confidence: 0.7 });
+      }
+    }
+    // Descending Triangle: flat lows + falling highs
+    if (swingHighs.length >= 3 && swingLows.length >= 3) {
+      const lDiff = Math.abs(swingLows[swingLows.length - 1] - swingLows[swingLows.length - 3]) / swingLows[swingLows.length - 3];
+      const fallingHighs = swingHighs[swingHighs.length - 1] < swingHighs[swingHighs.length - 3];
+      if (lDiff < tolerance && fallingHighs) {
+        chartPatterns.push({ name: 'Descending Triangle', direction: 'bearish', confidence: 0.7 });
+      }
+    }
+    // Bull Flag: sharp rise followed by consolidation (low range)
+    if (window.length >= 40) {
+      const rise = (window[39] - window[19]) / window[19];
+      const flagRange = (Math.max(...window.slice(40)) - Math.min(...window.slice(40))) / window[39];
+      if (rise > 0.10 && flagRange < 0.05) {
+        chartPatterns.push({ name: 'Bull Flag', direction: 'bullish', confidence: 0.65 });
+      }
+    }
+    // Bear Flag: sharp drop followed by consolidation
+    if (window.length >= 40) {
+      const drop = (window[39] - window[19]) / window[19];
+      const flagRange = (Math.max(...window.slice(40)) - Math.min(...window.slice(40))) / window[39];
+      if (drop < -0.10 && flagRange < 0.05) {
+        chartPatterns.push({ name: 'Bear Flag', direction: 'bearish', confidence: 0.65 });
+      }
+    }
+  }
+
   return {
     rsi, macd, sma20, sma50, sma150, sma200, sma200Slope, volumeRatio,
     priceReturn3m, priceReturn6m, priceReturn1y, volatility,
@@ -405,5 +554,6 @@ export function computeTechnicals(quote: QuoteData): TechnicalData {
     weightedAlpha,
     adx: adxVal, plusDI, minusDI, williamsR: williamsRVal, chaikinMoneyFlow,
     sharpeRatio, sortinoRatio, maxDrawdown,
+    ichimoku, candlestickPatterns, chartPatterns,
   };
 }

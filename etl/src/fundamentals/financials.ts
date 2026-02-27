@@ -30,6 +30,8 @@ export interface FinancialData {
   grahamNumber: number | null;  // sqrt(22.5 * EPS * BookValue)
   buffettScore: number;       // 0-5 custom Buffett quality score
   buffettDetails: string[];
+  beneishMScore: number | null;  // Beneish M-Score (earnings manipulation)
+  beneishZone: 'unlikely' | 'possible' | 'likely' | null;
 }
 
 async function fetchFinancialStatements(ticker: string, auth: { cookie: string; crumb: string }): Promise<AnnualFinancial[]> {
@@ -202,6 +204,87 @@ function computeBuffettScore(annuals: AnnualFinancial[]): { score: number; detai
   return { score, details };
 }
 
+/**
+ * Beneish M-Score: 8-variable model to detect earnings manipulation.
+ * M-Score > -1.78 suggests possible manipulation.
+ */
+function computeBeneishMScore(annuals: AnnualFinancial[]): { mScore: number | null; zone: 'unlikely' | 'possible' | 'likely' | null } {
+  if (annuals.length < 2) return { mScore: null, zone: null };
+  const curr = annuals[0];
+  const prev = annuals[1];
+
+  // Need revenue, receivables proxy, gross profit, total assets, depreciation proxy, SGA proxy, net income, cash flow
+  const revC = curr.totalRevenue;
+  const revP = prev.totalRevenue;
+  const gpC = curr.grossProfit;
+  const gpP = prev.grossProfit;
+  const taC = curr.totalAssets;
+  const taP = prev.totalAssets;
+  const niC = curr.netIncome;
+  const caC = curr.currentAssets;
+  const caP = prev.currentAssets;
+  const clC = curr.currentLiabilities;
+  const clP = prev.currentLiabilities;
+  const ltdC = curr.longTermDebt ?? 0;
+  const ltdP = prev.longTermDebt ?? 0;
+  const oiC = curr.operatingIncome;
+  const oiP = prev.operatingIncome;
+  const ocfC = curr.operatingCashflow;
+
+  if (revC == null || revP == null || revP === 0 || taC == null || taP == null || taP === 0 ||
+      gpC == null || gpP == null) return { mScore: null, zone: null };
+
+  // DSRI: Days Sales in Receivables Index (proxy: current assets - cash proxy)
+  const recC = (caC ?? 0) * 0.3; // rough receivables proxy
+  const recP = (caP ?? 0) * 0.3;
+  const dsri = recP > 0 && revP > 0 ? (recC / revC!) / (recP / revP) : 1;
+
+  // GMI: Gross Margin Index
+  const gmC = revC > 0 ? gpC / revC : 0;
+  const gmP = revP > 0 ? gpP / revP : 0;
+  const gmi = gmC > 0 ? gmP / gmC : 1; // inverted: higher = margin declining
+
+  // AQI: Asset Quality Index
+  const ppC = taC - (caC ?? 0);
+  const ppP = taP - (caP ?? 0);
+  const aqiC = taC > 0 ? 1 - (ppC / taC) : 0;
+  const aqiP = taP > 0 ? 1 - (ppP / taP) : 0;
+  const aqi = aqiP > 0 ? aqiC / aqiP : 1;
+
+  // SGI: Sales Growth Index
+  const sgi = revP > 0 ? revC / revP : 1;
+
+  // DEPI: Depreciation Index (proxy from operating income vs gross profit)
+  const depC = gpC - (oiC ?? gpC);
+  const depP = gpP - (oiP ?? gpP);
+  const depRateC = (ppC + depC) > 0 ? depC / (ppC + depC) : 0;
+  const depRateP = (ppP + depP) > 0 ? depP / (ppP + depP) : 0;
+  const depi = depRateC > 0 ? depRateP / depRateC : 1;
+
+  // SGAI: SGA Expense Index (proxy: revenue - gross profit - operating income approximation)
+  const sgaC = revC > 0 ? ((revC - gpC) / revC) : 0;
+  const sgaP = revP > 0 ? ((revP - gpP) / revP) : 0;
+  const sgai = sgaP > 0 ? sgaC / sgaP : 1;
+
+  // LVGI: Leverage Index
+  const leverageC = taC > 0 ? (clC ?? 0 + ltdC) / taC : 0;
+  const leverageP = taP > 0 ? (clP ?? 0 + ltdP) / taP : 0;
+  const lvgi = leverageP > 0 ? leverageC / leverageP : 1;
+
+  // TATA: Total Accruals to Total Assets
+  const tata = taC > 0 && niC != null && ocfC != null ? (niC - ocfC) / taC : 0;
+
+  // M-Score = -4.84 + 0.92*DSRI + 0.528*GMI + 0.404*AQI + 0.892*SGI + 0.115*DEPI - 0.172*SGAI + 4.679*TATA - 0.327*LVGI
+  const mScore = +(-4.84 + 0.92 * dsri + 0.528 * gmi + 0.404 * aqi + 0.892 * sgi +
+    0.115 * depi - 0.172 * sgai + 4.679 * tata - 0.327 * lvgi).toFixed(2);
+
+  const zone: 'unlikely' | 'possible' | 'likely' =
+    mScore < -2.22 ? 'unlikely' :
+    mScore < -1.78 ? 'possible' : 'likely';
+
+  return { mScore, zone };
+}
+
 export async function fetchFinancials(tickers: string[]): Promise<Map<string, FinancialData>> {
   const result = new Map<string, FinancialData>();
   const auth = await getYahooCrumb();
@@ -221,6 +304,7 @@ export async function fetchFinancials(tickers: string[]): Promise<Map<string, Fi
 
         const ppi = computePiotroski(annuals);
         const buffett = computeBuffettScore(annuals);
+        const beneish = computeBeneishMScore(annuals);
 
         // For Graham number, we need EPS and book value -- get from the latest annual
         const latestEquity = annuals[0]?.totalStockholderEquity;
@@ -239,6 +323,8 @@ export async function fetchFinancials(tickers: string[]): Promise<Map<string, Fi
           grahamNumber: computeGrahamNumber(eps, bookValue),
           buffettScore: buffett.score,
           buffettDetails: buffett.details,
+          beneishMScore: beneish.mScore,
+          beneishZone: beneish.zone,
         });
 
         if ((idx + 1) % 25 === 0) console.log(`    Financials: ${idx + 1}/${tickers.length}`);

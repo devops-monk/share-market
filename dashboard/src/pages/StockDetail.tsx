@@ -145,7 +145,14 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
               <CapTag cap={stock.capCategory} />
               {stock.trading212 && <Trading212Badge />}
             </div>
-            <p className="t-tertiary text-sm mb-4">{stock.name} — {stock.sector}</p>
+            <p className="t-tertiary text-sm mb-2">{stock.name} — {stock.sector}</p>
+            {stock.themes && stock.themes.length > 0 && (
+              <div className="flex flex-wrap gap-1.5 mb-3">
+                {stock.themes.map(t => (
+                  <span key={t} className="badge text-[10px] bg-accent/10 text-accent-light ring-1 ring-accent/20 px-2 py-0.5">{t}</span>
+                ))}
+              </div>
+            )}
             <div className="flex items-baseline gap-4">
               <span className="text-3xl font-bold t-primary font-mono tabular-nums">{cur}{stock.price.toFixed(2)}</span>
               <ChangePercent value={stock.changePercent} />
@@ -464,6 +471,24 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
               Sales growth + Operating margin + ROE composite (IBD-style). A/B = strong fundamentals.
             </p>
           </div>
+
+          {/* Beneish M-Score */}
+          <div className="p-4 rounded-lg bg-surface-hover border border-surface-border">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-sm font-semibold t-primary">Beneish M-Score</span>
+              <span className={`text-lg font-bold font-mono ${
+                stock.beneishZone === 'unlikely' ? 'text-bullish' :
+                stock.beneishZone === 'possible' ? 'text-neutral' :
+                stock.beneishZone === 'likely' ? 'text-bearish' : 't-muted'
+              }`}>{stock.beneishMScore?.toFixed(2) ?? 'N/A'}</span>
+            </div>
+            <p className="text-xs t-muted">
+              {stock.beneishZone === 'unlikely' ? 'Unlikely manipulator (<-2.22) — Earnings appear genuine' :
+               stock.beneishZone === 'possible' ? 'Possible manipulator (-2.22 to -1.78) — Review with caution' :
+               stock.beneishZone === 'likely' ? 'Likely manipulator (>-1.78) — High risk of earnings manipulation' :
+               'Insufficient financial data for M-Score calculation'}
+            </p>
+          </div>
         </div>
       </div>
 
@@ -557,6 +582,100 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
           <Metric label="Chaikin MF" value={stock.chaikinMoneyFlow?.toFixed(3) ?? 'N/A'} positive={stock.chaikinMoneyFlow != null ? stock.chaikinMoneyFlow > 0 : undefined} />
         </div>
       </div>
+
+      {/* Ichimoku Cloud */}
+      {stock.ichimoku && (
+        <div className="card p-5">
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Ichimoku Cloud</h2>
+          <p className="text-xs t-muted mb-4 leading-relaxed">
+            Japanese charting system showing support, resistance, trend direction, and momentum at a glance.
+            <strong className="t-secondary"> Price above cloud = bullish.</strong>
+            <strong className="t-secondary"> Price below cloud = bearish.</strong>
+            Cloud thickness indicates support/resistance strength.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+            <div className="rounded-lg border border-surface-border bg-surface-hover p-3 text-center">
+              <p className="text-xs t-muted mb-1">Tenkan-sen (9)</p>
+              <p className="font-semibold font-mono t-primary">{cur}{stock.ichimoku.tenkan.toFixed(2)}</p>
+            </div>
+            <div className="rounded-lg border border-surface-border bg-surface-hover p-3 text-center">
+              <p className="text-xs t-muted mb-1">Kijun-sen (26)</p>
+              <p className="font-semibold font-mono t-primary">{cur}{stock.ichimoku.kijun.toFixed(2)}</p>
+            </div>
+            <div className="rounded-lg border border-surface-border bg-surface-hover p-3 text-center">
+              <p className="text-xs t-muted mb-1">Senkou A</p>
+              <p className="font-semibold font-mono t-primary">{cur}{stock.ichimoku.senkouA.toFixed(2)}</p>
+            </div>
+            <div className="rounded-lg border border-surface-border bg-surface-hover p-3 text-center">
+              <p className="text-xs t-muted mb-1">Senkou B</p>
+              <p className="font-semibold font-mono t-primary">{cur}{stock.ichimoku.senkouB.toFixed(2)}</p>
+            </div>
+            <div className={`rounded-lg border p-3 text-center ${
+              stock.ichimoku.signal === 'bullish' ? 'border-bullish/30 bg-bullish/10' :
+              stock.ichimoku.signal === 'bearish' ? 'border-bearish/30 bg-bearish/10' :
+              'border-neutral/30 bg-neutral/10'
+            }`}>
+              <p className="text-xs t-muted mb-1">Signal</p>
+              <p className={`font-bold text-sm ${
+                stock.ichimoku.signal === 'bullish' ? 'text-bullish' :
+                stock.ichimoku.signal === 'bearish' ? 'text-bearish' : 'text-neutral'
+              }`}>{stock.ichimoku.signal === 'bullish' ? 'Above Cloud' :
+                   stock.ichimoku.signal === 'bearish' ? 'Below Cloud' : 'In Cloud'}</p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Candlestick Patterns */}
+      {stock.candlestickPatterns && stock.candlestickPatterns.length > 0 && (
+        <div className="card p-5">
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Candlestick Patterns</h2>
+          <p className="text-xs t-muted mb-4">Recently detected candlestick patterns on the last 5 trading days.</p>
+          <div className="flex flex-wrap gap-2">
+            {stock.candlestickPatterns.map((p, i) => (
+              <span key={i} className={`badge text-xs px-3 py-1.5 font-medium ${
+                p.direction === 'bullish' ? 'bg-bullish/15 text-bullish ring-1 ring-bullish/20' :
+                p.direction === 'bearish' ? 'bg-bearish/15 text-bearish ring-1 ring-bearish/20' :
+                'bg-neutral/15 text-neutral ring-1 ring-neutral/20'
+              }`}>
+                {p.direction === 'bullish' ? '+' : p.direction === 'bearish' ? 'x' : 'o'} {p.name}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Chart Patterns */}
+      {stock.chartPatterns && stock.chartPatterns.length > 0 && (
+        <div className="card p-5">
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Chart Patterns</h2>
+          <p className="text-xs t-muted mb-4">Swing-point analysis detecting classic chart formations over the last 60 trading days.</p>
+          <div className="space-y-2">
+            {stock.chartPatterns.map((p, i) => (
+              <div key={i} className="flex items-center justify-between p-3 rounded-lg bg-surface-hover border border-surface-border">
+                <div className="flex items-center gap-3">
+                  <span className={`text-sm font-bold ${
+                    p.direction === 'bullish' ? 'text-bullish' :
+                    p.direction === 'bearish' ? 'text-bearish' : 'text-neutral'
+                  }`}>{p.direction === 'bullish' ? '+' : p.direction === 'bearish' ? 'x' : 'o'}</span>
+                  <span className="text-sm font-semibold t-primary">{p.name}</span>
+                  <span className={`badge text-[10px] ${
+                    p.direction === 'bullish' ? 'bg-bullish/15 text-bullish' :
+                    p.direction === 'bearish' ? 'bg-bearish/15 text-bearish' : 'bg-neutral/15 text-neutral'
+                  }`}>{p.direction}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xs t-muted">Confidence</span>
+                  <div className="w-16 h-2 bg-surface-tertiary rounded-full overflow-hidden">
+                    <div className="h-full rounded-full bg-accent" style={{ width: `${p.confidence * 100}%` }} />
+                  </div>
+                  <span className="text-xs font-mono t-secondary">{(p.confidence * 100).toFixed(0)}%</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Risk-Adjusted Returns */}
       {(stock.sharpeRatio != null || stock.sortinoRatio != null || stock.maxDrawdown != null) && (

@@ -164,6 +164,44 @@ export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
     return { tickers: availableTickers, matrix };
   }, [portfolioTickers, ohlcvData]);
 
+  // N5: Position Sizing Calculator state
+  const [psCapital, setPsCapital] = useState('10000');
+  const [psRiskPct, setPsRiskPct] = useState('2');
+  const [psEntryPrice, setPsEntryPrice] = useState('');
+  const [psStopLoss, setPsStopLoss] = useState('');
+  const [psMethod, setPsMethod] = useState<'fixed' | 'kelly'>('fixed');
+  const [psWinRate, setPsWinRate] = useState('55');
+  const [psAvgWin, setPsAvgWin] = useState('3');
+  const [psAvgLoss, setPsAvgLoss] = useState('2');
+
+  const positionSize = useMemo(() => {
+    const capital = parseFloat(psCapital);
+    const riskPct = parseFloat(psRiskPct) / 100;
+    const entry = parseFloat(psEntryPrice);
+    const stop = parseFloat(psStopLoss);
+    if (isNaN(capital) || capital <= 0) return null;
+
+    if (psMethod === 'kelly') {
+      const winRate = parseFloat(psWinRate) / 100;
+      const avgWin = parseFloat(psAvgWin);
+      const avgLoss = parseFloat(psAvgLoss);
+      if (isNaN(winRate) || isNaN(avgWin) || isNaN(avgLoss) || avgLoss <= 0) return null;
+      const kelly = (winRate * avgWin - (1 - winRate) * avgLoss) / avgWin;
+      const halfKelly = Math.max(0, Math.min(kelly / 2, 0.25)); // half-Kelly, capped at 25%
+      const posValue = capital * halfKelly;
+      const shares = entry > 0 ? Math.floor(posValue / entry) : null;
+      return { method: 'Half-Kelly', riskAmount: posValue, shares, kellyFull: kelly * 100, kellyHalf: halfKelly * 100 };
+    }
+
+    // Fixed percentage
+    const riskAmount = capital * riskPct;
+    if (isNaN(entry) || isNaN(stop) || entry <= 0 || stop <= 0 || stop >= entry) return null;
+    const riskPerShare = entry - stop;
+    const shares = Math.floor(riskAmount / riskPerShare);
+    const posValue = shares * entry;
+    return { method: 'Fixed %', riskAmount, shares, posValue, riskPerShare, pctOfCapital: (posValue / capital * 100) };
+  }, [psCapital, psRiskPct, psEntryPrice, psStopLoss, psMethod, psWinRate, psAvgWin, psAvgLoss]);
+
   const pieSlices = portfolio.map((p, i) => ({
     label: p.ticker,
     value: p.currentValue,
@@ -175,7 +213,7 @@ export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-xl font-bold t-primary">Portfolio Tracker</h1>
-          <p className="text-sm t-muted mt-1">Track your holdings, P&L, and allocation</p>
+          <p className="text-sm t-muted mt-1">Track your holdings, P&L, allocation, and position sizing</p>
         </div>
         <button
           onClick={() => setShowAdd(v => !v)}
@@ -346,6 +384,98 @@ export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
           )}
         </>
       )}
+
+      {/* Position Sizing Calculator */}
+      <div className="card p-5">
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Position Sizing Calculator</h2>
+        <p className="text-xs t-muted mb-4">
+          Calculate optimal position size using fixed-% risk or Kelly Criterion. Never risk more than you can afford to lose.
+        </p>
+
+        <div className="flex gap-2 mb-4">
+          <button
+            onClick={() => setPsMethod('fixed')}
+            className={`text-xs px-3 py-1.5 rounded transition-colors ${
+              psMethod === 'fixed' ? 'bg-accent/20 text-accent-light ring-1 ring-accent/30' : 'bg-surface-hover t-muted hover:t-secondary'
+            }`}
+          >Fixed % Risk</button>
+          <button
+            onClick={() => setPsMethod('kelly')}
+            className={`text-xs px-3 py-1.5 rounded transition-colors ${
+              psMethod === 'kelly' ? 'bg-accent/20 text-accent-light ring-1 ring-accent/30' : 'bg-surface-hover t-muted hover:t-secondary'
+            }`}
+          >Kelly Criterion</button>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+          <div>
+            <label className="text-xs t-muted block mb-1">Account Capital ($)</label>
+            <input type="number" value={psCapital} onChange={e => setPsCapital(e.target.value)} className="input-field w-full" min="0" step="100" />
+          </div>
+          {psMethod === 'fixed' ? (
+            <>
+              <div>
+                <label className="text-xs t-muted block mb-1">Risk per Trade (%)</label>
+                <input type="number" value={psRiskPct} onChange={e => setPsRiskPct(e.target.value)} className="input-field w-full" min="0.1" max="10" step="0.5" />
+              </div>
+              <div>
+                <label className="text-xs t-muted block mb-1">Entry Price ($)</label>
+                <input type="number" value={psEntryPrice} onChange={e => setPsEntryPrice(e.target.value)} className="input-field w-full" min="0" step="0.01" />
+              </div>
+              <div>
+                <label className="text-xs t-muted block mb-1">Stop Loss ($)</label>
+                <input type="number" value={psStopLoss} onChange={e => setPsStopLoss(e.target.value)} className="input-field w-full" min="0" step="0.01" />
+              </div>
+            </>
+          ) : (
+            <>
+              <div>
+                <label className="text-xs t-muted block mb-1">Win Rate (%)</label>
+                <input type="number" value={psWinRate} onChange={e => setPsWinRate(e.target.value)} className="input-field w-full" min="1" max="99" step="1" />
+              </div>
+              <div>
+                <label className="text-xs t-muted block mb-1">Avg Win ($)</label>
+                <input type="number" value={psAvgWin} onChange={e => setPsAvgWin(e.target.value)} className="input-field w-full" min="0" step="0.1" />
+              </div>
+              <div>
+                <label className="text-xs t-muted block mb-1">Avg Loss ($)</label>
+                <input type="number" value={psAvgLoss} onChange={e => setPsAvgLoss(e.target.value)} className="input-field w-full" min="0" step="0.1" />
+              </div>
+            </>
+          )}
+        </div>
+
+        {positionSize && (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 p-4 rounded-lg bg-surface-hover border border-surface-border">
+            <div className="text-center">
+              <p className="text-xs t-muted mb-1">Method</p>
+              <p className="font-semibold text-accent-light">{positionSize.method}</p>
+            </div>
+            <div className="text-center">
+              <p className="text-xs t-muted mb-1">Risk Amount</p>
+              <p className="font-semibold font-mono text-bearish">${positionSize.riskAmount.toFixed(2)}</p>
+            </div>
+            {positionSize.shares != null && (
+              <div className="text-center">
+                <p className="text-xs t-muted mb-1">Shares to Buy</p>
+                <p className="font-semibold font-mono text-bullish">{positionSize.shares}</p>
+              </div>
+            )}
+            {'posValue' in positionSize && positionSize.posValue != null && (
+              <div className="text-center">
+                <p className="text-xs t-muted mb-1">Position Value</p>
+                <p className="font-semibold font-mono t-primary">${(positionSize.posValue as number).toFixed(2)}</p>
+              </div>
+            )}
+            {'kellyHalf' in positionSize && (
+              <div className="text-center">
+                <p className="text-xs t-muted mb-1">Half-Kelly %</p>
+                <p className="font-semibold font-mono text-accent-light">{(positionSize.kellyHalf as number).toFixed(1)}%</p>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
     </div>
   );
 }

@@ -39,6 +39,7 @@ const navGroups: NavGroup[] = [
       { path: '/custom-screen', label: 'Custom Screen', desc: 'Build your own screening rules' },
       { path: '/earnings', label: 'Earnings', desc: 'Upcoming earnings calendar' },
       { path: '/query', label: 'NL Query', desc: 'Search stocks in plain English' },
+      { path: '/economic-calendar', label: 'Econ Calendar', desc: 'FOMC, CPI, NFP, GDP dates' },
     ],
   },
   {
