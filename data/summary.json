@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TSM",
       "name": "Taiwan Semiconductor",
       "score": 72,
@@ -25,6 +18,13 @@
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
@@ -82,7 +82,7 @@
     {
       "ticker": "AFRM",
       "name": "Affirm",
-      "score": 21,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -103,7 +103,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
@@ -145,12 +145,6 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "TSM",
       "name": "Taiwan Semiconductor",
       "score": 72,
@@ -166,6 +160,12 @@
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
       "market": "US"
     },
     {
@@ -219,12 +219,6 @@
       "market": "UK"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 70,
-      "market": "UK"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 67,
@@ -243,8 +237,14 @@
       "market": "US"
     },
     {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
+      "ticker": "MRO.L",
+      "name": "Melrose Industries",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
       "score": 64,
       "market": "UK"
     },
@@ -261,8 +261,8 @@
       "market": "UK"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "KGF.L",
+      "name": "Kingfisher",
       "score": 63,
       "market": "UK"
     }
@@ -305,21 +305,15 @@
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 62,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 63,
       "market": "UK"
     },
     {
@@ -327,9 +321,15 @@
       "name": "Currys",
       "score": 62,
       "market": "UK"
+    },
+    {
+      "ticker": "SNV",
+      "name": "Synovus Financial",
+      "score": 60,
+      "market": "US"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 286
+  "bearishAlertCount": 284
 }
