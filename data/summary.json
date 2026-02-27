@@ -22,6 +22,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "IAG.L",
+      "name": "IAG",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 71,
@@ -61,13 +68,6 @@
       "name": "Albemarle",
       "score": 70,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AAL.L",
-      "name": "Anglo American",
-      "score": 70,
-      "market": "UK",
       "capCategory": "Large"
     }
   ],
@@ -163,6 +163,12 @@
       "market": "US"
     },
     {
+      "ticker": "IAG.L",
+      "name": "IAG",
+      "score": 72,
+      "market": "UK"
+    },
+    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 71,
@@ -197,12 +203,6 @@
       "name": "Anglo American",
       "score": 70,
       "market": "UK"
-    },
-    {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -215,6 +215,12 @@
     {
       "ticker": "DRX.L",
       "name": "Drax Group",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
       "score": 70,
       "market": "UK"
     },
@@ -237,32 +243,26 @@
       "market": "US"
     },
     {
-      "ticker": "MRO.L",
-      "name": "Melrose Industries",
-      "score": 65,
+      "ticker": "BLND.L",
+      "name": "British Land",
+      "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "OSB.L",
+      "name": "OSB Group",
       "score": 64,
       "market": "UK"
     },
     {
       "ticker": "BKG.L",
       "name": "Berkeley Group",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "BLND.L",
-      "name": "British Land",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "KGF.L",
-      "name": "Kingfisher",
       "score": 63,
       "market": "UK"
     }
@@ -305,15 +305,21 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 64,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "Currys",
       "score": 62,
       "market": "UK"
-    },
-    {
-      "ticker": "SNV",
-      "name": "Synovus Financial",
-      "score": 60,
-      "market": "US"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 284
+  "bearishAlertCount": 285
 }
