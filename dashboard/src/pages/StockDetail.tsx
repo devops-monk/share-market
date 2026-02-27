@@ -21,66 +21,75 @@ interface Props {
   aiResearchNotes?: Record<string, string[]> | null;
 }
 
-/* ─── TOOLTIP DESCRIPTIONS ─── */
+/* ─── TOOLTIP DESCRIPTIONS (Simple, kid-friendly) ─── */
 const TOOLTIPS: Record<string, string> = {
   // Score breakdown
-  'Momentum': '3-month & 6-month price returns. Higher = price trending up strongly.',
-  'Technical': 'RSI, MACD, moving averages, Bollinger & Stochastic readings combined.',
-  'Sentiment': 'Average sentiment of recent news headlines. Positive news = higher score.',
-  'Fundamentals': 'P/E ratio, earnings growth, revenue growth. Good value = higher score.',
-  'Volume': 'Trading volume vs 20-day average. Above-average buying = higher score.',
-  'Risk (inv.)': 'Lower beta & volatility = higher score. Penalizes erratic stocks.',
+  'Momentum': 'Is the price going up or down lately? Think of it like a ball rolling — higher score means the price has been going up over the past few months.',
+  'Technical': 'A mix of math-based signals that look at price patterns, trends, and speed. Like checking multiple weather instruments before deciding if it\'ll rain.',
+  'Sentiment': 'What are people saying about this stock in the news? Positive news = higher score, negative news = lower score. Think of it as the stock\'s "mood rating."',
+  'Fundamentals': 'Is the company actually making money and growing? This checks things like profits, sales growth, and whether the stock price is a fair deal.',
+  'Volume': 'How many people are buying and selling? If way more people are trading than usual, something big might be happening — like a crowded store on a sale day.',
+  'Risk (inv.)': 'How wild does the price swing? A calm, steady stock gets a high score. A stock that jumps up and down like a rollercoaster gets a low score.',
   // Key metrics
-  'Market Cap': 'Total company value. Small <$2B, Mid $2B-$10B, Large >$10B.',
-  'P/E': 'Price-to-Earnings ratio. Lower = cheaper relative to profits. <15 is value, >30 is growth.',
-  'Forward P/E': 'P/E based on estimated future earnings. Lower than P/E = analysts expect growth.',
-  'PEG Ratio': 'P/E divided by growth rate. <1 = undervalued, <0.5 = strong buy, >2 = overpriced (Peter Lynch).',
-  'P/B': 'Price-to-Book ratio. <1.5 preferred by Graham. <1 may indicate deep value.',
-  'Beta': 'Volatility vs market. 1.0 = moves with market. >1.5 = very volatile. <0.5 = defensive.',
-  'RSI': 'Relative Strength Index (0-100). >70 = overbought (may drop). <30 = oversold (may bounce).',
-  'RS Percentile': 'Relative Strength ranking vs all stocks (1-99). >80 = top performer. Used by CAN SLIM & Minervini.',
-  'SMA 50': '50-day Simple Moving Average. Price above SMA50 = short-term uptrend.',
-  'SMA 150': '150-day SMA. Key level in Minervini trend template.',
-  'SMA 200': '200-day Simple Moving Average. Price above SMA200 = long-term uptrend.',
-  'SMA 20': '20-day Simple Moving Average. Used for Bollinger Bands middle line.',
-  'Vol Ratio': 'Today\'s volume / 20-day average. >1.5x = unusual activity. >2x = major event.',
-  '52W High': 'Highest price in 52 weeks. Near it = strong performance.',
-  '52W Low': 'Lowest price in 52 weeks. Near it = struggling or undervalued.',
-  '52W Range': 'Position in 52-week range (0-100%). Higher = closer to 52W high.',
-  '3M Return': 'Price change over last 3 months. Shows medium-term momentum.',
-  '6M Return': 'Price change over last 6 months. Shows longer-term momentum.',
-  '1Y Return': 'Price change over last 12 months. Shows long-term momentum.',
-  'Wtd Alpha': 'Exponentially-weighted 1-year return. Recent price action weighted more heavily than older data.',
+  'Market Cap': 'The total value of the company if you bought every single share. Small = under $2 billion, Mid = $2-10 billion, Large = over $10 billion. Think of it as the price tag for the whole company.',
+  'P/E': 'Price-to-Earnings: how many years of profits you\'re paying for. If P/E = 20, you\'re paying 20x what the company earns per year. Lower = cheaper, like getting a better deal. Under 15 = bargain, over 30 = expensive.',
+  'Forward P/E': 'Same as P/E but using next year\'s expected profits instead of last year\'s. If this is lower than P/E, experts think the company will make more money next year — that\'s a good sign!',
+  'PEG Ratio': 'P/E divided by how fast the company is growing. Under 1 = the stock is cheap for how fast it\'s growing (great deal!). Over 2 = you\'re overpaying. Think of it like price per speed.',
+  'P/B': 'Price-to-Book: the stock price compared to what the company actually owns (buildings, equipment, cash). Under 1 means you\'re paying less than the company is worth on paper — like buying a $100 gift card for $80.',
+  'Beta': 'How much the stock moves compared to the whole market. 1.0 = moves the same as the market. Over 1.5 = super jumpy. Under 0.5 = very calm and steady, like a slow-moving boat.',
+  'RSI': 'Relative Strength Index — measures if a stock has been bought too much or sold too much recently. Over 70 = everyone\'s been buying (might drop soon). Under 30 = everyone\'s been selling (might bounce back). Think of it like a "tired or rested" meter.',
+  'RS Percentile': 'How this stock performs compared to ALL other stocks. 90 means it\'s beating 90% of all stocks. Like a class rank — higher is better!',
+  'SMA 50': '50-day average price. If today\'s price is above this line, the stock has been going up recently — like checking if your test score is above your average.',
+  'SMA 150': '150-day average price. A medium-term trend line. Price above this = the stock has been doing well for several months.',
+  'SMA 200': '200-day average price. The big, important trend line. If the price is above this, the stock is in a long-term uptrend — like a student who\'s been doing well all year.',
+  'SMA 20': '20-day average price. Very short-term trend. Helpful for seeing what\'s happened in the last few weeks.',
+  'Vol Ratio': 'Today\'s trading activity compared to the average. Over 1.5x = unusually busy (something\'s happening!). Over 2x = major event. Like seeing a store that\'s suddenly way more crowded than usual.',
+  '52W High': 'The highest price in the last year. If the stock is near this, it\'s been performing well — like being near a personal best in a race.',
+  '52W Low': 'The lowest price in the last year. If the stock is near this, it might be struggling — or it might be a bargain waiting to bounce back.',
+  '52W Range': 'Where the current price sits between its yearly low (0%) and yearly high (100%). Higher = closer to its best price this year.',
+  '3M Return': 'How much the price changed in the last 3 months. Positive = went up, negative = went down.',
+  '6M Return': 'How much the price changed in the last 6 months. Shows the bigger picture trend.',
+  '1Y Return': 'How much the price changed in the last 12 months. Shows the full-year performance.',
+  'Wtd Alpha': 'A special 1-year return that cares more about recent months than older ones. If the stock did great last month but badly 10 months ago, this still looks good.',
   // Advanced indicators
-  'Bollinger Upper': 'Upper Bollinger Band. Price above = potentially overextended.',
-  'Bollinger Lower': 'Lower Bollinger Band. Price below = potentially oversold.',
-  'BB Bandwidth': 'Band width as % of middle. Low = squeeze (breakout imminent). High = volatile.',
-  'BB %B': 'Price position in bands. >0.95 = near upper (bearish). <0.05 = near lower (bullish). 0.5 = middle.',
-  'BB Squeeze': 'YES = bands are very narrow, low volatility. A big price move is likely coming soon.',
-  'Stochastic %K': 'Fast stochastic line (0-100). >80 = overbought. <20 = oversold.',
-  'Stochastic %D': 'Slow signal line. When %K crosses %D = buy/sell signal.',
-  'OBV Trend': 'On-Balance Volume trend. Rising = buying pressure. Falling = selling pressure.',
-  'OBV Divergence': 'Price and volume moving opposite directions. Bullish = smart money buying. Bearish = smart money selling.',
-  'Acc/Dist': 'Accumulation/Distribution rating (A-E). A/B = institutional buying. D/E = institutional selling.',
+  'Bollinger Upper': 'The upper boundary of a price channel. If the price goes above this line, it might be too high and could come back down — like stretching a rubber band too far.',
+  'Bollinger Lower': 'The lower boundary of a price channel. If the price drops below this, it might be too low and could bounce back up.',
+  'BB Bandwidth': 'How wide the price channel is. Very narrow = the stock has been super calm, and a big move is probably coming soon (like the calm before a storm).',
+  'BB %B': 'Where the price is inside the channel. Near 1 = at the top (might drop). Near 0 = at the bottom (might rise). 0.5 = right in the middle.',
+  'BB Squeeze': 'YES means the price channel is very narrow right now. The stock has been quiet, and a big price move (up or down) is likely coming soon!',
+  'Stochastic %K': 'Shows if the stock is near the top or bottom of its recent price range. Over 80 = near the top (might come down). Under 20 = near the bottom (might go up). Like a thermometer for price.',
+  'Stochastic %D': 'A smoother version of %K. When the fast line (%K) crosses over this slow line, it can signal a buy or sell moment.',
+  'OBV Trend': 'Tracks whether more money is flowing IN (people buying) or OUT (people selling). Rising = more buyers. Falling = more sellers. Like checking if more people are entering or leaving a concert.',
+  'OBV Divergence': 'When the price goes one way but the money flow goes the other way. Bullish divergence = price is dropping but big buyers are secretly loading up (sneaky buying!). Bearish = price rising but big sellers are sneaking out.',
+  'Acc/Dist': 'Are big institutions (like mutual funds) buying or selling? A/B = they\'re buying (good sign). D/E = they\'re selling (warning sign). Like following what the "smart kids" in class are doing.',
   // Fundamentals
-  'ROE': 'Return on Equity. >20% = excellent (Buffett). Measures profitability vs shareholders\' equity.',
-  'ROA': 'Return on Assets. Measures how efficiently assets generate profit.',
-  'Gross Margin': 'Revenue minus cost of goods. >40% suggests durable competitive advantage (Buffett).',
-  'Op. Margin': 'Operating profit margin. Higher = more efficient operations.',
-  'Profit Margin': 'Net profit margin. >20% = highly profitable company.',
-  'D/E Ratio': 'Debt-to-Equity ratio. <33% preferred (Lynch). <100% is healthy.',
-  'Current Ratio': 'Current assets / liabilities. >2 preferred (Graham). >1 = can pay short-term debts.',
-  'Div. Yield': 'Annual dividend as % of price. Higher = more income.',
-  'EPS (TTM)': 'Earnings per share, trailing 12 months.',
-  'Free Cash Flow': 'Cash generated after capital expenditures. Positive = healthy business.',
-  'EV': 'Enterprise Value = Market Cap + Debt - Cash. Debt-adjusted valuation.',
-  'EBITDA': 'Earnings Before Interest, Taxes, Depreciation & Amortization.',
-  'Analyst Target': 'Average analyst price target. Compare to current price for upside/downside.',
-  'Insider Own.': 'Percentage owned by company insiders. Higher = aligned interests.',
-  'Inst. Own.': 'Percentage owned by institutions. 3-10 quality institutions preferred (CAN SLIM).',
-  'Short Float': 'Percentage of float sold short. >20% = high bearish bets or potential squeeze.',
-  'Style': 'Value (low P/E, slow growth), Growth (high P/E, fast growth), or Blend.',
-  'Data Quality': 'Percentage of fundamental metrics available. Higher = more reliable analysis.',
+  'ROE': 'Return on Equity — how good is the company at turning your investment into profit? Over 20% = excellent (like a business that turns $1 into $1.20). The higher, the better.',
+  'ROA': 'Return on Assets — how well does the company use everything it owns to make money? Higher = more efficient, like a bakery that makes lots of bread with few ovens.',
+  'Gross Margin': 'After paying for materials, how much money is left? Over 40% is great — it means for every $1 of sales, they keep 40 cents before other costs. Like a lemonade stand that makes lemonade really cheaply.',
+  'Op. Margin': 'After paying for everything (salaries, rent, materials), how much profit is left? Higher = the company runs lean and efficient.',
+  'Profit Margin': 'The final bottom line — after ALL costs, taxes, and expenses, what percentage is actual profit? Over 20% = very profitable company.',
+  'D/E Ratio': 'How much the company borrowed compared to what it owns. Under 100 = healthy. Over 200 = lots of debt (risky). Like checking if someone owes more than they earn.',
+  'Current Ratio': 'Can the company pay its bills right now? Over 2 = plenty of cash on hand. Under 1 = might struggle to pay short-term bills. Like checking if you have enough allowance for the week.',
+  'Div. Yield': 'How much cash the company pays you each year just for owning the stock, shown as a percentage. 3% means you get $3 back for every $100 invested. Like earning interest on a savings account.',
+  'EPS (TTM)': 'Earnings Per Share — how much profit the company made for each share over the last 12 months. Higher = the company is making more money per share you own.',
+  'Free Cash Flow': 'Real cash left over after the company pays for everything it needs. Positive = healthy (the company has money to spare). Negative = spending more than it makes.',
+  'EV': 'Enterprise Value — the true "takeover price" of the whole company, including its debt minus its cash. Like the real cost of buying a house (price + mortgage - cash in the bank).',
+  'EBITDA': 'Earnings before subtracting interest, taxes, and equipment costs. Shows how much money the core business makes before accounting tricks. Think of it as "raw profit power."',
+  'Analyst Target': 'The average price that Wall Street experts think this stock should be worth. If it\'s higher than the current price, they think it\'ll go up!',
+  'Insider Own.': 'How much of the company is owned by its own bosses and employees. Higher = they believe in their own company (they\'re "eating their own cooking").',
+  'Inst. Own.': 'How much is owned by big professional investors like mutual funds and banks. They do a lot of research, so if they own it, that\'s a vote of confidence.',
+  'Short Float': 'The percentage of shares that people are betting AGAINST (expecting the price to drop). Over 20% = a lot of people think it\'ll go down. But if the price goes up instead, shorts scramble to buy back — causing a "short squeeze" pop.',
+  'Style': 'Value = cheap stock with slow growth (like a sale item). Growth = expensive but fast-growing (like a hot new product). Blend = somewhere in between.',
+  'Data Quality': 'How much financial data we have for this stock. Higher % = more complete picture. Low % means some numbers are missing and the analysis might be less reliable.',
+  // Advanced indicators (additional)
+  'ADX': 'Average Directional Index — tells you HOW STRONG the current trend is (not the direction). Over 25 = strong trend. Under 20 = no clear trend, the stock is just wandering. Like measuring the strength of the wind, not which way it blows.',
+  '+DI / -DI': '+DI measures upward pressure, -DI measures downward pressure. When +DI is above -DI, buyers are winning. When -DI is above +DI, sellers are winning. Like a tug-of-war scoreboard.',
+  'Williams %R': 'Similar to RSI — shows if the stock is near its recent high or low. Above -20 = near the top (might come down). Below -80 = near the bottom (might bounce up).',
+  'Chaikin MF': 'Chaikin Money Flow — tracks if money is flowing into or out of the stock. Positive = more money coming in (bullish). Negative = money leaving (bearish). Like checking if a pool is filling up or draining.',
+  // Risk-adjusted
+  'Sharpe Ratio': 'How much return you get for the risk you take. Higher = better reward for the risk. Over 1 = good, over 2 = great. Like measuring how many points a player scores per minute of play time.',
+  'Sortino Ratio': 'Like Sharpe Ratio but only counts the BAD kind of risk (drops). Higher = the stock gives you good returns without scary drops.',
+  'Max Drawdown': 'The biggest peak-to-bottom drop in the last year. -10% means the stock fell 10% from its high before recovering. Smaller drops = safer ride.',
 };
 
 export default function StockDetail({ stocks, news, financials, insiderTrades, aiResearchNotes }: Props) {
@@ -223,7 +232,8 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
 
       {/* Price levels (static fallback) */}
       <div className="card p-5">
-        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Price Levels</h2>
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Price Levels</h2>
+        <p className="text-xs t-muted mb-4 leading-relaxed">A visual map of where the stock price sits compared to key levels like the yearly high, yearly low, and moving averages. This helps you see at a glance whether the stock is near the top of its range (expensive) or near the bottom (cheaper).</p>
         <PriceChart stock={stock} />
       </div>
 
@@ -231,11 +241,11 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       <div className="card p-5">
         <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Score Breakdown</h2>
         <p className="text-xs t-muted mb-4 leading-relaxed">
-          The composite score (0-100) is built from 6 sub-scores shown below. Each bar represents how strong that dimension is.
-          <strong className="t-secondary"> Green (65+)</strong> = strong,
-          <strong className="text-neutral"> Amber (40-64)</strong> = average,
-          <strong className="text-bearish"> Red (&lt;40)</strong> = weak.
-          The radar chart shows the same data visually — a bigger shape means a healthier stock. Look for lopsided shapes to spot weaknesses quickly.
+          Think of this as a report card for the stock! The overall score (0-100) is made up of 6 categories, like subjects in school.
+          <strong className="t-secondary"> Green (65+)</strong> = doing great,
+          <strong className="text-neutral"> Amber (40-64)</strong> = okay, could be better,
+          <strong className="text-bearish"> Red (&lt;40)</strong> = needs improvement.
+          The spider web chart shows the same thing visually — a bigger, rounder shape means the stock is strong in all areas. A lopsided shape means some areas are weak.
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Radar Chart */}
@@ -270,7 +280,8 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
 
       {/* Score History */}
       <div className="card p-5">
-        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Score History</h2>
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Score History</h2>
+        <p className="text-xs t-muted mb-4 leading-relaxed">How the stock's overall score has changed over time. An upward trend means the stock is getting better across multiple measures. A downward trend means things are getting worse. Flat = stable.</p>
         <ScoreHistoryChart ticker={stock.ticker} />
       </div>
 
@@ -287,6 +298,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
             </span>
           </div>
         </div>
+        <p className="text-xs t-muted mb-4 leading-relaxed">The most important numbers about this stock at a glance. Hover over any label to see what it means in simple words. Green values = good, red = not so good.</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           <Metric label="Market Cap" value={formatMcap(stock.marketCap)} />
           <Metric label="P/E" value={stock.pe?.toFixed(1) ?? 'N/A'} />
@@ -316,7 +328,8 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
 
       {/* Fundamentals */}
       <div className="card p-5">
-        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Fundamentals</h2>
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Fundamentals</h2>
+        <p className="text-xs t-muted mb-4 leading-relaxed">This is the company's financial health check — like a doctor's report but for businesses. It shows how profitable the company is, how much debt it has, and whether experts think the stock price will go up. Hover over any label for a simple explanation.</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           <Metric label="ROE" value={stock.returnOnEquity != null ? `${(stock.returnOnEquity * 100).toFixed(1)}%` : 'N/A'} positive={stock.returnOnEquity != null ? stock.returnOnEquity > 0.15 : undefined} />
           <Metric label="ROA" value={stock.returnOnAssets != null ? `${(stock.returnOnAssets * 100).toFixed(1)}%` : 'N/A'} positive={stock.returnOnAssets != null ? stock.returnOnAssets > 0.05 : undefined} />
@@ -341,7 +354,8 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       {/* Multi-Year Financials */}
       {financials && financials[stock.ticker] && financials[stock.ticker].length > 0 && (
         <div className="card p-5">
-          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Multi-Year Financials</h2>
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Multi-Year Financials</h2>
+          <p className="text-xs t-muted mb-4 leading-relaxed">How the company's sales, profits, and other financial numbers have changed year by year. Growing bars = the company is getting bigger and stronger. Shrinking bars = things might be slowing down.</p>
           <FinancialsBarChart data={financials[stock.ticker]} />
         </div>
       )}
@@ -350,10 +364,12 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       <div className="card p-5">
         <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Expert Screens</h2>
         <p className="text-xs t-muted mb-4 leading-relaxed">
-          Three classic investing frameworks applied to this stock.
-          <strong className="t-secondary"> Piotroski F-Score</strong> (0-9) checks 9 financial health criteria — 7+ means strong fundamentals, under 4 is a red flag.
-          <strong className="t-secondary"> Graham Number</strong> estimates fair value using Benjamin Graham's formula (sqrt of 22.5 x EPS x Book Value) — if the current price is <em>below</em> the Graham Number, the stock may be undervalued.
-          <strong className="t-secondary"> Buffett Quality</strong> (0-5) checks for consistent profits, high ROE, low debt, revenue growth, and positive free cash flow — 4+ is Buffett-grade quality.
+          These are tests invented by famous investors to check if a stock is worth buying.
+          <strong className="t-secondary"> Piotroski F-Score</strong> (0-9) is like a 9-question quiz about the company's finances — scoring 7+ means it passes with flying colors, under 4 means it's failing.
+          <strong className="t-secondary"> Graham Number</strong> calculates what the stock should be worth based on its earnings and assets — if today's price is below this number, you might be getting a bargain!
+          <strong className="t-secondary"> Buffett Quality</strong> (0-5) checks 5 things Warren Buffett looks for: steady profits, smart use of money, low debt, growing sales, and real cash. 4+ = Buffett would approve!
+          <strong className="t-secondary"> Altman Z-Score</strong> predicts if a company might go bankrupt — higher is safer.
+          <strong className="t-secondary"> Beneish M-Score</strong> checks if the company might be faking its numbers — "unlikely manipulator" is what you want to see.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {/* Piotroski F-Score */}
@@ -366,8 +382,8 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
               }`}>{stock.piotroskiScore ?? 'N/A'}/9</span>
             </div>
             <p className="text-xs t-muted mb-2">
-              {(stock.piotroskiScore ?? 0) >= 7 ? 'Strong financials' :
-               (stock.piotroskiScore ?? 0) >= 4 ? 'Average financials' : 'Weak financials'}
+              {(stock.piotroskiScore ?? 0) >= 7 ? 'Acing the test! Strong financial health.' :
+               (stock.piotroskiScore ?? 0) >= 4 ? 'Passing, but not great. Average financial health.' : 'Failing the test. Weak financial health — be careful.'}
             </p>
             {stock.piotroskiDetails && stock.piotroskiDetails.length > 0 && (
               <ul className="space-y-1">
@@ -390,7 +406,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
             </div>
             {stock.grahamNumber != null && (
               <>
-                <p className="text-xs t-muted mb-1">Fair value estimate (Benjamin Graham formula)</p>
+                <p className="text-xs t-muted mb-1">What this stock SHOULD be worth, according to a famous formula</p>
                 <p className={`text-xs font-medium ${stock.price < stock.grahamNumber ? 'text-bullish' : 'text-bearish'}`}>
                   {stock.price < stock.grahamNumber
                     ? `Undervalued by ${((1 - stock.price / stock.grahamNumber) * 100).toFixed(1)}%`
@@ -410,7 +426,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
             </div>
             {stock.dcfValue != null && (
               <>
-                <p className="text-xs t-muted mb-1">Intrinsic value (5-year DCF model)</p>
+                <p className="text-xs t-muted mb-1">What the stock should be worth based on future cash flow predictions (5-year estimate)</p>
                 <p className={`text-xs font-medium ${stock.price < stock.dcfValue ? 'text-bullish' : 'text-bearish'}`}>
                   {stock.price < stock.dcfValue
                     ? `Undervalued by ${((1 - stock.price / stock.dcfValue) * 100).toFixed(1)}%`
@@ -450,10 +466,10 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
               }`}>{stock.altmanZScore?.toFixed(2) ?? 'N/A'}</span>
             </div>
             <p className="text-xs t-muted">
-              {stock.altmanZone === 'safe' ? 'Safe zone (>2.99) — Low bankruptcy risk' :
-               stock.altmanZone === 'grey' ? 'Grey zone (1.81-2.99) — Moderate risk' :
-               stock.altmanZone === 'distress' ? 'Distress zone (<1.81) — High bankruptcy risk' :
-               'Insufficient data'}
+              {stock.altmanZone === 'safe' ? 'Safe zone — This company is financially healthy and very unlikely to go bankrupt.' :
+               stock.altmanZone === 'grey' ? 'Grey zone — Not clearly safe or risky. Keep an eye on it.' :
+               stock.altmanZone === 'distress' ? 'Danger zone — This company could be in serious financial trouble. High risk!' :
+               'Not enough data to calculate'}
             </p>
           </div>
 
@@ -468,7 +484,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
               }`}>{stock.smrRating ?? 'N/A'}</span>
             </div>
             <p className="text-xs t-muted">
-              Sales growth + Operating margin + ROE composite (IBD-style). A/B = strong fundamentals.
+              A letter grade combining sales growth, profit margins, and how well the company uses your money. A/B = top of the class. D/E = bottom of the class.
             </p>
           </div>
 
@@ -483,10 +499,10 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
               }`}>{stock.beneishMScore?.toFixed(2) ?? 'N/A'}</span>
             </div>
             <p className="text-xs t-muted">
-              {stock.beneishZone === 'unlikely' ? 'Unlikely manipulator (<-2.22) — Earnings appear genuine' :
-               stock.beneishZone === 'possible' ? 'Possible manipulator (-2.22 to -1.78) — Review with caution' :
-               stock.beneishZone === 'likely' ? 'Likely manipulator (>-1.78) — High risk of earnings manipulation' :
-               'Insufficient financial data for M-Score calculation'}
+              {stock.beneishZone === 'unlikely' ? 'Looks honest! The company\'s financial numbers appear genuine and trustworthy.' :
+               stock.beneishZone === 'possible' ? 'Hmm, some numbers look a bit suspicious. Worth double-checking before investing.' :
+               stock.beneishZone === 'likely' ? 'Red flag! The numbers might be too good to be true. This company could be manipulating its earnings.' :
+               'Not enough financial data to check if the numbers are trustworthy'}
             </p>
           </div>
         </div>
@@ -497,7 +513,8 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
         <div className="card p-5">
           <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Factor Grades</h2>
           <p className="text-xs t-muted mb-4 leading-relaxed">
-            Percentile-based grades across five investment factors. <strong className="t-secondary">A+</strong> = top 5%, <strong className="t-secondary">F</strong> = bottom 8%.
+            Report card grades compared to all other stocks! <strong className="t-secondary">A+</strong> = top 5% (like being the best in class). <strong className="t-secondary">F</strong> = bottom 8% (failing).
+            Value = is it cheap? Growth = is it growing fast? Profitability = does it make good money? Momentum = is the price going up? Safety = is it a calm, stable stock?
           </p>
           <div className="grid grid-cols-2 md:grid-cols-6 gap-3">
             {(['overall', 'value', 'growth', 'profitability', 'momentum', 'safety'] as const).map(factor => {
@@ -523,7 +540,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       {stock.earningsDrift && (
         <div className="card p-5">
           <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Post-Earnings Drift</h2>
-          <p className="text-xs t-muted mb-4">Price returns after last earnings ({stock.earningsDrift.lastEarningsDate})</p>
+          <p className="text-xs t-muted mb-4">What happened to the stock price after the company announced its earnings on {stock.earningsDrift.lastEarningsDate}? Green = price went up after the announcement, Red = price went down. This shows how the market reacted to the company's results.</p>
           <div className="grid grid-cols-3 gap-3">
             {[
               { label: '1-Day', val: stock.earningsDrift.return1d },
@@ -549,6 +566,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
             {stock.minerviniChecks.passed}/8 passed
           </span>
         </div>
+        <p className="text-xs t-muted mb-4 leading-relaxed">Mark Minervini is a famous stock trader who only buys stocks that pass 8 specific checks. It's like a checklist — the stock must be in a strong uptrend and near its highs. Passing 7-8 = the stock is in great shape. Under 5 = the trend is broken.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           <CheckItem pass={stock.minerviniChecks.priceAbove150and200} label="Price above 150-day & 200-day SMA" />
           <CheckItem pass={stock.minerviniChecks.sma150Above200} label="150-day SMA above 200-day SMA" />
@@ -563,7 +581,8 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
 
       {/* Advanced Indicators */}
       <div className="card p-5">
-        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Advanced Indicators</h2>
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Advanced Indicators</h2>
+        <p className="text-xs t-muted mb-4 leading-relaxed">These are technical tools that traders use to predict where the price might go next. Think of them as different types of weather instruments — each one measures something slightly different. Hover over any label for a simple explanation.</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           <Metric label="Bollinger Upper" value={stock.bollingerUpper?.toFixed(2) ?? 'N/A'} />
           <Metric label="Bollinger Lower" value={stock.bollingerLower?.toFixed(2) ?? 'N/A'} />
@@ -588,27 +607,32 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
         <div className="card p-5">
           <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Ichimoku Cloud</h2>
           <p className="text-xs t-muted mb-4 leading-relaxed">
-            Japanese charting system showing support, resistance, trend direction, and momentum at a glance.
-            <strong className="t-secondary"> Price above cloud = bullish.</strong>
-            <strong className="t-secondary"> Price below cloud = bearish.</strong>
-            Cloud thickness indicates support/resistance strength.
+            A Japanese charting tool that creates a "cloud" on the price chart. Imagine a cloud floating on the chart:
+            <strong className="t-secondary"> If the price is ABOVE the cloud = sunshine (bullish, price is strong).</strong>
+            <strong className="t-secondary"> If the price is BELOW the cloud = stormy (bearish, price is weak).</strong>
+            <strong className="t-secondary"> Inside the cloud = foggy (uncertain, could go either way).</strong>
+            A thicker cloud = stronger support/resistance, like a thicker wall that's harder to break through.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
             <div className="rounded-lg border border-surface-border bg-surface-hover p-3 text-center">
-              <p className="text-xs t-muted mb-1">Tenkan-sen (9)</p>
+              <p className="text-xs t-muted mb-1">Tenkan (Fast Line)</p>
               <p className="font-semibold font-mono t-primary">{cur}{stock.ichimoku.tenkan.toFixed(2)}</p>
+              <p className="text-[10px] t-faint mt-0.5">9-day avg — shows short-term trend</p>
             </div>
             <div className="rounded-lg border border-surface-border bg-surface-hover p-3 text-center">
-              <p className="text-xs t-muted mb-1">Kijun-sen (26)</p>
+              <p className="text-xs t-muted mb-1">Kijun (Slow Line)</p>
               <p className="font-semibold font-mono t-primary">{cur}{stock.ichimoku.kijun.toFixed(2)}</p>
+              <p className="text-[10px] t-faint mt-0.5">26-day avg — shows medium trend</p>
             </div>
             <div className="rounded-lg border border-surface-border bg-surface-hover p-3 text-center">
-              <p className="text-xs t-muted mb-1">Senkou A</p>
+              <p className="text-xs t-muted mb-1">Cloud Top</p>
               <p className="font-semibold font-mono t-primary">{cur}{stock.ichimoku.senkouA.toFixed(2)}</p>
+              <p className="text-[10px] t-faint mt-0.5">Upper edge of the cloud</p>
             </div>
             <div className="rounded-lg border border-surface-border bg-surface-hover p-3 text-center">
-              <p className="text-xs t-muted mb-1">Senkou B</p>
+              <p className="text-xs t-muted mb-1">Cloud Bottom</p>
               <p className="font-semibold font-mono t-primary">{cur}{stock.ichimoku.senkouB.toFixed(2)}</p>
+              <p className="text-[10px] t-faint mt-0.5">Lower edge of the cloud</p>
             </div>
             <div className={`rounded-lg border p-3 text-center ${
               stock.ichimoku.signal === 'bullish' ? 'border-bullish/30 bg-bullish/10' :
@@ -630,7 +654,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       {stock.candlestickPatterns && stock.candlestickPatterns.length > 0 && (
         <div className="card p-5">
           <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Candlestick Patterns</h2>
-          <p className="text-xs t-muted mb-4">Recently detected candlestick patterns on the last 5 trading days.</p>
+          <p className="text-xs t-muted mb-4">These are shapes formed by recent price bars (called "candles"). Traders have given them fun names like "Hammer" or "Morning Star." Green badges = the pattern suggests the price might go UP. Red badges = the pattern suggests the price might go DOWN. They're like clues about what might happen next!</p>
           <div className="flex flex-wrap gap-2">
             {stock.candlestickPatterns.map((p, i) => (
               <span key={i} className={`badge text-xs px-3 py-1.5 font-medium ${
@@ -649,7 +673,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       {stock.chartPatterns && stock.chartPatterns.length > 0 && (
         <div className="card p-5">
           <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Chart Patterns</h2>
-          <p className="text-xs t-muted mb-4">Swing-point analysis detecting classic chart formations over the last 60 trading days.</p>
+          <p className="text-xs t-muted mb-4">Bigger shapes found in the price chart over the last 60 trading days. These are like recognizing shapes in the clouds — "Double Top" looks like the letter M (price might drop), "Double Bottom" looks like the letter W (price might rise). The confidence bar shows how clear the pattern is — higher = more reliable.</p>
           <div className="space-y-2">
             {stock.chartPatterns.map((p, i) => (
               <div key={i} className="flex items-center justify-between p-3 rounded-lg bg-surface-hover border border-surface-border">
@@ -680,7 +704,8 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       {/* Risk-Adjusted Returns */}
       {(stock.sharpeRatio != null || stock.sortinoRatio != null || stock.maxDrawdown != null) && (
         <div className="card p-5">
-          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Risk-Adjusted Returns (1Y)</h2>
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Risk-Adjusted Returns (1Y)</h2>
+          <p className="text-xs t-muted mb-4 leading-relaxed">Is this stock worth the risk? These numbers tell you if the rewards are good compared to how scary the ride is. Higher Sharpe/Sortino = better reward for the risk. A smaller drawdown means the stock didn't crash as badly.</p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
             <Metric label="Sharpe Ratio" value={stock.sharpeRatio?.toFixed(2) ?? 'N/A'} positive={stock.sharpeRatio != null ? stock.sharpeRatio > 0.5 : undefined} />
             <Metric label="Sortino Ratio" value={stock.sortinoRatio?.toFixed(2) ?? 'N/A'} positive={stock.sortinoRatio != null ? stock.sortinoRatio > 0.5 : undefined} />
@@ -692,7 +717,8 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       {/* Multi-Timeframe Opinion */}
       {stock.timeframeSentiment && (
         <div className="card p-5">
-          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Multi-Timeframe Opinion</h2>
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Multi-Timeframe Opinion</h2>
+          <p className="text-xs t-muted mb-4 leading-relaxed">What do the signals say for different time periods? Short-term = the next few days to 2 weeks. Medium-term = 2 weeks to 3 months. Long-term = 3+ months. "Buy" means signals are mostly positive. "Sell" means mostly negative. "Hold" means mixed — no clear direction yet.</p>
           <div className="grid grid-cols-3 gap-3">
             {(['short', 'medium', 'long'] as const).map(tf => {
               const data = stock.timeframeSentiment![tf];
@@ -715,7 +741,8 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
 
       {/* Signals */}
       <div className="card p-5">
-        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Active Signals</h2>
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Active Signals</h2>
+        <p className="text-xs t-muted mb-4 leading-relaxed">These are all the buy/sell alerts currently firing for this stock. Green = bullish (suggests price may go up). Red = bearish (suggests price may go down). "Sev" = severity/importance — higher number = stronger signal. S = short-term, M = medium-term, L = long-term.</p>
         {stock.signals.length === 0 ? (
           <p className="t-muted text-sm">No signals detected</p>
         ) : (
@@ -745,7 +772,8 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       {/* Dividend History */}
       {stock.dividendMetrics && stock.dividendMetrics.annualDividends.length > 0 && (
         <div className="card p-5">
-          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Dividend History</h2>
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Dividend History</h2>
+          <p className="text-xs t-muted mb-4 leading-relaxed">Dividends are like pocket money the company pays you for owning their stock. This chart shows how much they've paid each year. Growing bars = the company is paying you more each year (great!). DPS = Dividend Per Share, CAGR = how fast the dividend has grown over 5 years.</p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
             {stock.dividendMetrics.currentAnnualDPS != null && (
               <div>
@@ -803,6 +831,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
               <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider">Insider Trading</h2>
               <span className={`text-xs font-bold px-2 py-1 rounded ${sentimentBg} ${sentimentColor}`}>{sentimentLabel}</span>
             </div>
+            <p className="text-xs t-muted mb-4 leading-relaxed">Are the company's own bosses and employees buying or selling the stock? If they're buying with their own money, they probably believe the stock will go up (that's a good sign!). If they're selling a lot, they might know something we don't.</p>
             <div className="grid grid-cols-3 gap-3 mb-4 text-center">
               <div>
                 <p className="text-xs t-muted">Buys (90d)</p>
@@ -856,7 +885,8 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       {/* News */}
       {stockNews.length > 0 && (
         <div className="card p-5">
-          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Recent News</h2>
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Recent News</h2>
+          <p className="text-xs t-muted mb-4 leading-relaxed">Latest news articles about this stock. The colored bar shows the sentiment — green = positive news (good for the stock), red = negative news (bad for the stock). "AI" badge means the sentiment was analyzed by artificial intelligence.</p>
           <div className="space-y-3">
             {stockNews.map((item, i) => (
               <div key={i} className="flex items-start justify-between gap-4">
