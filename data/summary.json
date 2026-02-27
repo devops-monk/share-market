@@ -29,6 +29,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "GLEN.L",
+      "name": "Glencore",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
       "score": 71,
@@ -38,13 +45,6 @@
     {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
       "score": 71,
       "market": "UK",
       "capCategory": "Large"
@@ -80,9 +80,16 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,16 +115,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 25,
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
@@ -134,13 +141,6 @@
       "score": 27,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -157,6 +157,12 @@
       "market": "US"
     },
     {
+      "ticker": "GLEN.L",
+      "name": "Glencore",
+      "score": 73,
+      "market": "UK"
+    },
+    {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
       "score": 71,
@@ -165,12 +171,6 @@
     {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
-      "score": 71,
-      "market": "UK"
-    },
-    {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
       "score": 71,
       "market": "UK"
     },
@@ -193,15 +193,15 @@
       "market": "US"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor",
-      "score": 69,
+      "ticker": "RVMD",
+      "name": "Revolution Medicines",
+      "score": 70,
       "market": "US"
     }
   ],
@@ -243,26 +243,26 @@
       "market": "UK"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 66,
+      "market": "US"
+    },
+    {
       "ticker": "LAND.L",
       "name": "Land Securities",
       "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 65,
       "market": "US"
     },
     {
       "ticker": "BKG.L",
       "name": "Berkeley Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "MNG.L",
-      "name": "M&G",
       "score": 65,
       "market": "UK"
     }
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 673,
   "avgScore": 50,
-  "bearishAlertCount": 297
+  "bearishAlertCount": 301
 }
