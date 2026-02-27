@@ -523,19 +523,19 @@ Based on competitive analysis and expert technique research conducted February 2
 ### Updated Implementation Priority Map
 
 ```
-NOW (Next Sprint)                   NEXT (Backlog)                       LATER (Future)
-─────────────────                   ──────────────                       ──────────────
-✅ N1  NL Stock Query (DONE)           N9  Chart Pattern Recognition        N18 Social Sentiment
-✅ N2  Factor Grades (DONE)            N10 Candlestick Patterns             N19 Macro Overlay
-✅ N3  Altman Z-Score (DONE)           N11 AI Copilot Chat                  N20 Options Sentiment
-✅ N4  Risk-Adjusted Returns (DONE)    N12 Predictive Scoring               N22 Global Expansion
-N5  Position Sizing Calculator      N13 Theme Tagging                    N23 Paper Trading
-✅ N6  ADX/Williams/CMF (DONE)         N14 Ichimoku Cloud                   N25 ESG Scores
-✅ N7  Earnings Post-Drift (DONE)      N15 Multi-Widget Dashboard
-✅ N8  SMR Rating (DONE)               N16 Volume Profile
-                                    N17 Beneish M-Score
-                                    N21 Economic Calendar
-                                    N24 Weighted Screener
+DONE (Shipped Feb 2026)             NOW (Next Sprint)                    LATER (Future)
+───────────────────                 ─────────────────                    ──────────────
+✅ N1  NL Stock Query               N17 Beneish M-Score ★                N11 AI Copilot Chat
+✅ N2  Factor Grades                N5  Position Sizing Calculator ★     N12 Predictive Scoring
+✅ N3  Altman Z-Score               N10 Candlestick Patterns             N15 Multi-Widget Dashboard
+✅ N4  Risk-Adjusted Returns        N14 Ichimoku Cloud                   N16 Volume Profile
+✅ N6  ADX/Williams/CMF             N21 Economic Calendar                N18 Social Sentiment
+✅ N7  Earnings Post-Drift          N9  Chart Pattern Recognition        N19 Macro Overlay
+✅ N8  SMR Rating                   N13 Theme Tagging                    N20 Options Sentiment
+                                                                        N22 Global Expansion
+                                    ★ = Quick wins (low effort)          N23 Paper Trading
+                                                                        N24 Weighted Screener
+                                                                        N25 ESG Scores
 ```
 
 ---
@@ -545,15 +545,14 @@ N5  Position Sizing Calculator      N13 Theme Tagging                    N23 Pap
 ```
                         LOW EFFORT ◄──────────────────────► HIGH EFFORT
                         │                                          │
-  HIGH IMPACT           │  ✅ N2 Factor Grades (DONE)              │  N9  Chart Patterns ★
-                        │  ✅ N3 Altman Z-Score (DONE)             │  N11 AI Copilot Chat
-                        │  ✅ N4 Risk-Adjusted Returns (DONE)      │  N12 Predictive Scoring
-                        │  ✅ N8 SMR Rating (DONE)                 │  N15 Multi-Widget Dashboard
-                        │  ✅ N6 ADX/Williams/CMF (DONE)           │  ✅ N1  NL Stock Query (DONE)
+  HIGH IMPACT           │  N17 Beneish M-Score ★                   │  N9  Chart Patterns ★
+                        │                                          │  N11 AI Copilot Chat
+                        │                                          │  N12 Predictive Scoring
+                        │                                          │  N15 Multi-Widget Dashboard
                         │                                          │
-  MEDIUM IMPACT         │  N5 Position Sizing                      │  N10 Candlestick Patterns
-                        │  ✅ N7 Earnings Post-Drift (DONE)        │  N13 Theme Tagging
-                        │  N17 Beneish M-Score                    │  N14 Ichimoku Cloud
+  MEDIUM IMPACT         │  N5  Position Sizing ★                   │  N10 Candlestick Patterns
+                        │                                          │  N13 Theme Tagging
+                        │                                          │  N14 Ichimoku Cloud
                         │                                          │  N16 Volume Profile
                         │                                          │  N18 Social Sentiment
                         │                                          │  N21 Economic Calendar
@@ -573,21 +572,21 @@ N5  Position Sizing Calculator      N13 Theme Tagging                    N23 Pap
 
 ### Recommended Next Actions
 
-> **Status update (Feb 2026):** All 7 features below have been implemented.
+> **Previous batch (N1–N8) shipped Feb 2026.** Below is the next prioritised batch.
 
-1. ~~**N2 — Factor Grades**~~ **DONE** — Percentile-based A+ to F grades across Value, Growth, Profitability, Momentum, Safety. Computed in ETL, displayed as a 6-column grade card on StockDetail.
+1. **N17 — Beneish M-Score** — Earnings manipulation detection. 8-variable formula using financial statement data we already fetch. Flag stocks with M > -1.78 as potential manipulators. Add to Expert Screens alongside Piotroski/Buffett/Altman. **Low effort, high value for risk screening.**
 
-2. ~~**N3 — Altman Z-Score**~~ **DONE** — Computed from financial statements (WC/TA, RE/TA, EBIT/TA, MV/TL, Sales/TA). Shown in Expert Screens with safe/grey/distress zone indicators.
+2. **N5 — Position Sizing Calculator** — Kelly criterion and fixed-% risk calculators on the Portfolio page. Input: account size, risk %, stop-loss distance. Output: shares to buy. Common retail trader request. **Low effort.**
 
-3. ~~**N4 — Risk-Adjusted Returns**~~ **DONE** — 1-year Sharpe ratio, Sortino ratio, and max drawdown computed from daily OHLCV. New "Risk-Adjusted Returns" card on StockDetail.
+3. **N10 — Candlestick Pattern Detection** — Detect doji, engulfing, hammer, shooting star, morning/evening star from OHLCV. The `technicalindicators` npm library has these built in. Show detected patterns on StockDetail chart and as signal badges. **Medium effort.**
 
-4. ~~**N8 — SMR Rating**~~ **DONE** — Sales growth + Operating Margin + ROE composite rated A–E (IBD-style). Shown in Expert Screens section.
+4. **N14 — Ichimoku Cloud** — Full Ichimoku system (Tenkan, Kijun, Senkou A/B, Chikou Span) computed from OHLCV. Overlay on candlestick chart + standalone signal detection (TK cross, cloud breakout, Chikou confirmation). **Medium effort.**
 
-5. ~~**N6 — Additional Technical Indicators**~~ **DONE** — ADX/DI+/DI- (14-period, uses real OHLCV highs/lows), Williams %R (14), Chaikin Money Flow (20). All shown in Advanced Indicators section.
+5. **N21 — Economic Calendar** — FOMC dates, CPI, NFP, GDP releases with market impact ratings. Free data from FRED API. Show alongside Earnings Calendar. Helps traders anticipate volatility. **Medium effort.**
 
-6. ~~**N7 — Earnings Post-Drift**~~ **DONE** — 1/5/20-day price returns after last earnings date. Separate card on StockDetail with bullish/bearish coloring.
+6. **N9 — Chart Pattern Recognition** — Detect double top/bottom, head & shoulders, cup-and-handle, triangles, flags from OHLCV swing points. Extend existing S/R code. Key differentiator vs free tools. **High effort, high impact.**
 
-7. ~~**N1 — Natural Language Query**~~ **DONE** — Client-side keyword parser (no LLM needed). New `/query` page with 10 example queries. Parses cap size, sectors, fundamentals, technicals, expert screens, factor grades into stock filters. Added to navigation under Screens.
+7. **N13 — Theme/Sector Tagging** — Tag stocks with investment themes: AI, Clean Energy, Cybersecurity, GLP-1, EV, Defence. Enables theme-based screening. Start with manual tags, later automate via sector + description matching. **Medium effort.**
 
 ---
 
@@ -599,7 +598,8 @@ N5  Position Sizing Calculator      N13 Theme Tagging                    N23 Pap
 | Medium Effort (M-series) | 17 | 17 | **100%** |
 | Large Effort (L-series) | 12 | 14 | **86%** |
 | Expert Methodologies | 5 of 9 | 9 | **56%** |
-| **Total features shipped** | **50+** | — | — |
+| New Features (N-series) | 7 of 25 | 25 | **28%** |
+| **Total features shipped** | **57+** | — | — |
 
 ---
 
