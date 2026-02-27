@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "STAN.L",
       "name": "Standard Chartered",
       "score": 75,
@@ -15,13 +22,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "DRX.L",
       "name": "Drax Group",
       "score": 74,
@@ -29,10 +29,17 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
+      "ticker": "RVMD",
+      "name": "Revolution Medicines",
       "score": 73,
-      "market": "UK",
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -43,31 +50,24 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "DG",
+      "name": "Dollar General",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 71,
       "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SSE.L",
-      "name": "SSE",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DG",
-      "name": "Dollar General",
-      "score": 70,
-      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -75,44 +75,30 @@
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 12,
+      "score": 13,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "GTLB",
       "name": "GitLab",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "OKTA",
-      "name": "Okta",
       "score": 24,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "NOW",
@@ -122,8 +108,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -136,14 +122,34 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "VRNS",
-      "name": "Varonis Systems",
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 27,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "VRNS",
+      "name": "Varonis Systems",
+      "score": 28,
+      "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "MSTR",
+      "name": "MicroStrategy",
+      "score": 28,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 75,
+      "market": "US"
+    },
     {
       "ticker": "STAN.L",
       "name": "Standard Chartered",
@@ -151,20 +157,32 @@
       "market": "UK"
     },
     {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 74,
+      "ticker": "RVMD",
+      "name": "Revolution Medicines",
+      "score": 73,
       "market": "US"
     },
     {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
-      "score": 73,
-      "market": "UK"
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US"
     },
     {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 71,
       "market": "US"
     },
@@ -175,34 +193,16 @@
       "market": "UK"
     },
     {
-      "ticker": "SSE.L",
-      "name": "SSE",
+      "ticker": "GLEN.L",
+      "name": "Glencore",
       "score": 71,
       "market": "UK"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "DG",
-      "name": "Dollar General",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines",
-      "score": 70,
-      "market": "US"
+      "ticker": "SSE.L",
+      "name": "SSE",
+      "score": 71,
+      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -211,6 +211,12 @@
       "name": "Drax Group",
       "score": 74,
       "market": "UK"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 70,
+      "market": "US"
     },
     {
       "ticker": "BBOX.L",
@@ -243,8 +249,8 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 66,
       "market": "US"
     },
@@ -255,16 +261,10 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
       "score": 65,
       "market": "US"
-    },
-    {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 65,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 673,
-  "avgScore": 50,
-  "bearishAlertCount": 301
+  "avgScore": 51,
+  "bearishAlertCount": 314
 }
