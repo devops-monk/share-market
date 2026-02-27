@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TSM",
       "name": "Taiwan Semiconductor",
       "score": 72,
@@ -22,20 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "IAG.L",
-      "name": "IAG",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 71,
@@ -47,13 +40,6 @@
       "name": "Revolution Medicines",
       "score": 71,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
-      "score": 71,
-      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -69,6 +55,20 @@
       "score": 70,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "AAL.L",
+      "name": "Anglo American",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DRX.L",
+      "name": "Drax Group",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
@@ -145,6 +145,12 @@
   ],
   "topLargeCap": [
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "TSM",
       "name": "Taiwan Semiconductor",
       "score": 72,
@@ -163,28 +169,10 @@
       "market": "US"
     },
     {
-      "ticker": "IAG.L",
-      "name": "IAG",
-      "score": 72,
-      "market": "UK"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "RVMD",
       "name": "Revolution Medicines",
       "score": 71,
       "market": "US"
-    },
-    {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
-      "score": 71,
-      "market": "UK"
     },
     {
       "ticker": "CB",
@@ -203,6 +191,18 @@
       "name": "Anglo American",
       "score": 70,
       "market": "UK"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 69,
+      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -219,16 +219,16 @@
       "market": "UK"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 70,
-      "market": "UK"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 67,
       "market": "US"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 67,
+      "market": "UK"
     },
     {
       "ticker": "HSIC",
@@ -249,14 +249,14 @@
       "market": "UK"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
+      "ticker": "KGF.L",
+      "name": "Kingfisher",
       "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
       "score": 64,
       "market": "UK"
     },
@@ -281,16 +281,16 @@
       "market": "UK"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 67,
-      "market": "UK"
-    },
-    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 66,
+      "market": "UK"
     },
     {
       "ticker": "CMCX.L",
@@ -301,12 +301,6 @@
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
       "score": 65,
       "market": "UK"
     },
@@ -323,13 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 62,
+      "ticker": "CBG.L",
+      "name": "Close Brothers",
+      "score": 61,
       "market": "UK"
+    },
+    {
+      "ticker": "SNV",
+      "name": "Synovus Financial",
+      "score": 60,
+      "market": "US"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 285
+  "bearishAlertCount": 284
 }
