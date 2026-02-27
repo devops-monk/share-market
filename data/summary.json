@@ -199,8 +199,8 @@
       "market": "US"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
+      "ticker": "GLEN.L",
+      "name": "Glencore",
       "score": 69,
       "market": "UK"
     }
@@ -216,6 +216,12 @@
       "ticker": "DRX.L",
       "name": "Drax Group",
       "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "MRO.L",
+      "name": "Melrose Industries",
+      "score": 69,
       "market": "UK"
     },
     {
@@ -243,27 +249,21 @@
       "market": "US"
     },
     {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "BLND.L",
       "name": "British Land",
       "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "KGF.L",
-      "name": "Kingfisher",
+      "ticker": "WEIR.L",
+      "name": "Weir Group",
       "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 63,
       "market": "UK"
     }
   ],
@@ -277,6 +277,12 @@
     {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
+      "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 67,
       "market": "UK"
     },
@@ -285,12 +291,6 @@
       "name": "Comerica",
       "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 66,
-      "market": "UK"
     },
     {
       "ticker": "CMCX.L",
@@ -311,12 +311,6 @@
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 62,
-      "market": "UK"
-    },
-    {
       "ticker": "CBG.L",
       "name": "Close Brothers",
       "score": 61,
@@ -327,9 +321,15 @@
       "name": "Synovus Financial",
       "score": 60,
       "market": "US"
+    },
+    {
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 60,
+      "market": "UK"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 284
+  "bearishAlertCount": 281
 }
