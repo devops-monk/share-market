@@ -38,6 +38,7 @@ const navGroups: NavGroup[] = [
       { path: '/canslim', label: 'CAN SLIM', desc: "O'Neil's 7-point growth screen" },
       { path: '/custom-screen', label: 'Custom Screen', desc: 'Build your own screening rules' },
       { path: '/earnings', label: 'Earnings', desc: 'Upcoming earnings calendar' },
+      { path: '/query', label: 'NL Query', desc: 'Search stocks in plain English' },
     ],
   },
   {

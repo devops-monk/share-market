@@ -29,6 +29,7 @@ const SupportBounce = lazy(() => import('./pages/SupportBounce'));
 const YearlyUptrend = lazy(() => import('./pages/YearlyUptrend'));
 const MostOwned = lazy(() => import('./pages/MostOwned'));
 const SectorRotation = lazy(() => import('./pages/SectorRotation'));
+const NLQuery = lazy(() => import('./pages/NLQuery'));
 
 const PageSpinner = () => (
   <div className="flex items-center justify-center py-20">
@@ -94,6 +95,7 @@ export default function App() {
             <Route path="/yearly-uptrend" element={<YearlyUptrend stocks={stocks} />} />
             <Route path="/most-owned" element={<MostOwned stocks={stocks} />} />
             <Route path="/sector-rotation" element={<SectorRotation stocks={stocks} />} />
+            <Route path="/query" element={<NLQuery stocks={stocks} />} />
             <Route path="/guide" element={<Guide />} />
             <Route path="/alerts" element={<AlertSettings />} />
           </Routes>

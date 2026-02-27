@@ -1,4 +1,4 @@
-import { RSI, MACD, SMA, BollingerBands, Stochastic, OBV } from 'technicalindicators';
+import { RSI, MACD, SMA, BollingerBands, Stochastic, OBV, ADX, WilliamsR } from 'technicalindicators';
 import type { QuoteData } from '../stocks/fetcher.js';
 
 export interface BollingerData {
@@ -42,6 +42,16 @@ export interface TechnicalData {
   yearlyReturns: number[];  // e.g. [+0.15, +0.10, -0.05, +0.20] = Year1 +15%, Year2 +10%, Year3 -5%, Year4 +20%
   yearlyUptrendYears: number;  // total number of positive-return years (0-4), NOT consecutive
   weightedAlpha: number | null;  // exponentially-weighted 1-year return, annualized %
+  // N6: Additional Technical Indicators
+  adx: number | null;           // Average Directional Index (trend strength)
+  plusDI: number | null;        // +DI (bullish directional indicator)
+  minusDI: number | null;       // -DI (bearish directional indicator)
+  williamsR: number | null;     // Williams %R (-100 to 0)
+  chaikinMoneyFlow: number | null; // CMF (-1 to 1)
+  // N4: Risk-Adjusted Returns
+  sharpeRatio: number | null;   // annualized Sharpe ratio (risk-free = 4.5%)
+  sortinoRatio: number | null;  // annualized Sortino ratio
+  maxDrawdown: number | null;   // maximum drawdown (negative %)
 }
 
 export function computeTechnicals(quote: QuoteData): TechnicalData {
@@ -288,6 +298,104 @@ export function computeTechnicals(quote: QuoteData): TechnicalData {
     weightedAlpha = +(avgWeightedDailyReturn * 252 * 100).toFixed(2); // annualized %
   }
 
+  // N6: ADX (Average Directional Index) — use real OHLCV if available
+  const realHighs = quote.ohlcvHigh?.length >= 20 ? quote.ohlcvHigh : highs;
+  const realLows = quote.ohlcvLow?.length >= 20 ? quote.ohlcvLow : lows;
+  let adxVal: number | null = null;
+  let plusDI: number | null = null;
+  let minusDI: number | null = null;
+  if (closes.length >= 28 && realHighs.length >= 28 && realLows.length >= 28) {
+    const minLen = Math.min(closes.length, realHighs.length, realLows.length);
+    const adxResult = ADX.calculate({
+      high: realHighs.slice(-minLen),
+      low: realLows.slice(-minLen),
+      close: closes.slice(-minLen),
+      period: 14,
+    });
+    const lastAdx = adxResult[adxResult.length - 1];
+    if (lastAdx) {
+      adxVal = +lastAdx.adx.toFixed(2);
+      plusDI = +lastAdx.pdi.toFixed(2);
+      minusDI = +lastAdx.mdi.toFixed(2);
+    }
+  }
+
+  // N6: Williams %R
+  let williamsRVal: number | null = null;
+  if (closes.length >= 14 && realHighs.length >= 14 && realLows.length >= 14) {
+    const minLen = Math.min(closes.length, realHighs.length, realLows.length);
+    const wrResult = WilliamsR.calculate({
+      high: realHighs.slice(-minLen),
+      low: realLows.slice(-minLen),
+      close: closes.slice(-minLen),
+      period: 14,
+    });
+    if (wrResult.length > 0) {
+      williamsRVal = +wrResult[wrResult.length - 1].toFixed(2);
+    }
+  }
+
+  // N6: Chaikin Money Flow (20-period)
+  let chaikinMoneyFlow: number | null = null;
+  if (closes.length >= 20 && realHighs.length >= 20 && realLows.length >= 20 && volumes.length >= 20) {
+    const period = 20;
+    const minLen = Math.min(closes.length, realHighs.length, realLows.length, volumes.length);
+    const c = closes.slice(-minLen);
+    const h = realHighs.slice(-minLen);
+    const l = realLows.slice(-minLen);
+    const v = volumes.slice(-minLen);
+    let mfvSum = 0;
+    let volSum = 0;
+    for (let j = c.length - period; j < c.length; j++) {
+      const hl = h[j] - l[j];
+      const mfm = hl > 0 ? ((c[j] - l[j]) - (h[j] - c[j])) / hl : 0;
+      mfvSum += mfm * v[j];
+      volSum += v[j];
+    }
+    chaikinMoneyFlow = volSum > 0 ? +(mfvSum / volSum).toFixed(4) : null;
+  }
+
+  // N4: Risk-Adjusted Returns (Sharpe, Sortino, Max Drawdown) — 1-year data
+  let sharpeRatio: number | null = null;
+  let sortinoRatio: number | null = null;
+  let maxDrawdown: number | null = null;
+  if (closes.length >= 252) {
+    const yearCloses = closes.slice(-252);
+    const dailyReturns: number[] = [];
+    for (let j = 1; j < yearCloses.length; j++) {
+      dailyReturns.push((yearCloses[j] - yearCloses[j - 1]) / yearCloses[j - 1]);
+    }
+    const riskFreeDaily = 0.045 / 252; // 4.5% annual risk-free rate
+    const meanReturn = dailyReturns.reduce((a, b) => a + b, 0) / dailyReturns.length;
+    const excessReturns = dailyReturns.map(r => r - riskFreeDaily);
+    const excessMean = excessReturns.reduce((a, b) => a + b, 0) / excessReturns.length;
+
+    // Sharpe: annualized
+    const stdDev = Math.sqrt(excessReturns.reduce((s, r) => s + (r - excessMean) ** 2, 0) / excessReturns.length);
+    if (stdDev > 0) {
+      sharpeRatio = +((excessMean / stdDev) * Math.sqrt(252)).toFixed(2);
+    }
+
+    // Sortino: only downside deviation
+    const negativeReturns = excessReturns.filter(r => r < 0);
+    if (negativeReturns.length > 0) {
+      const downsideDev = Math.sqrt(negativeReturns.reduce((s, r) => s + r ** 2, 0) / excessReturns.length);
+      if (downsideDev > 0) {
+        sortinoRatio = +((excessMean / downsideDev) * Math.sqrt(252)).toFixed(2);
+      }
+    }
+
+    // Max Drawdown
+    let peak = yearCloses[0];
+    let worstDrawdown = 0;
+    for (const p of yearCloses) {
+      if (p > peak) peak = p;
+      const dd = (p - peak) / peak;
+      if (dd < worstDrawdown) worstDrawdown = dd;
+    }
+    maxDrawdown = +(worstDrawdown * 100).toFixed(2);
+  }
+
   return {
     rsi, macd, sma20, sma50, sma150, sma200, sma200Slope, volumeRatio,
     priceReturn3m, priceReturn6m, priceReturn1y, volatility,
@@ -295,5 +403,7 @@ export function computeTechnicals(quote: QuoteData): TechnicalData {
     weeklyHighLowRange, accumulationDistribution,
     priceReturn2y, priceReturn3y, priceReturn4y, yearlyReturns, yearlyUptrendYears,
     weightedAlpha,
+    adx: adxVal, plusDI, minusDI, williamsR: williamsRVal, chaikinMoneyFlow,
+    sharpeRatio, sortinoRatio, maxDrawdown,
   };
 }

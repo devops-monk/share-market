@@ -1,6 +1,7 @@
 # Research & Feature Roadmap — StockMarket Dashboard
 
-> **Date**: 2026-02-22 | **Live**: [share.devops-monk.com](https://share.devops-monk.com)
+> **Date**: 2026-02-27 | **Live**: [share.devops-monk.com](https://share.devops-monk.com)
+> **Last research update**: February 2026
 
 ---
 
@@ -11,44 +12,65 @@
 3. [Expert Techniques Gap Analysis](#3-expert-techniques-gap-analysis)
 4. [Current Weaknesses & Improvements](#4-current-weaknesses--improvements)
 5. [Prioritised Feature Roadmap](#5-prioritised-feature-roadmap)
+6. [New Feature Ideas from 2026 Research](#6-new-feature-ideas-from-2026-research)
 
 ---
 
 ## 1. What We Have Today
 
-### Pages
+### Pages (24 total)
 | Page | Purpose |
 |------|---------|
-| Overview | Market snapshot — top/bottom performers, avg score, bearish count |
-| Screener | Sortable/filterable table (TanStack React Table) of all 689 stocks |
-| Bearish Alerts | Stocks with bearish score >= 4 |
-| Buy the Dip | Value reversals (RSI < 35, OBV bullish divergence) |
-| Breakout Detection | Bollinger squeeze + volume spike candidates |
-| News & Sentiment | Google News + FinViz headlines with AFINN sentiment |
-| Stock Detail | Per-stock deep dive — gauge, score breakdown, signals, news |
-| Guide | Educational content (4 tabs) |
+| Overview | Market snapshot — top/bottom performers, avg score, bearish count, market regime |
+| Screener | Sortable/filterable table (TanStack React Table) with 10 range sliders, URL state |
+| Bearish Alerts | Stocks with bearish score >= 4, signal severity badges |
+| Buy the Dip | Value reversals (RSI < 35, Stochastic oversold, OBV bullish divergence) |
+| Breakout Detection | Bollinger squeeze + volume spike candidates (4-signal scoring) |
+| News & Sentiment | Google News + FinViz headlines with FinBERT AI sentiment + lexicon fallback |
+| Stock Detail | Per-stock deep dive — gauge, radar, candlestick chart, AI research notes, signals, insider trades, dividends, financials, S/R levels |
+| Minervini Screen | 8-criteria SEPA trend template filter |
+| CAN SLIM Screen | William O'Neil 7-point methodology with market regime integration |
+| Sector Performance | Per-sector aggregates: avg score, returns, RSI, RS percentile |
+| Sector Rotation | RRG-style scatter plot (Leading/Weakening/Lagging/Improving quadrants) |
+| Heat Map | Treemap of all stocks (3 modes: change/score/RS) |
+| Watchlist | localStorage-persisted starred stocks |
+| Portfolio | Holdings tracker with P&L, allocation pie chart, correlation heatmap |
+| Stock Comparison | Side-by-side 2–8 stocks with sparklines, 5 metric groups |
+| Custom Screen | 25-metric rule builder with AND/OR logic, save/load, CSV export |
+| Earnings Calendar | Calendar view with upcoming/recent/all, highlights today |
+| Strategy Backtest | 8 built-in strategies with returns, win rate, score distribution |
+| Buy the Dip | Mean-reversion 5-criteria screening |
+| Support Bounce | Near-support with bullish signals (6-criteria) |
+| Yearly Uptrend | Multi-year positive return streaks + distance to resistance |
+| Most Owned | Top 200 institutional stocks with drop-from-high analysis |
+| Guide | 4-tab educational resource (Basics, Dashboard Tour, Indicators, Strategies) |
+| Alert Settings | 11 rule types, edge-triggered, JSON export/import |
+| NL Query | Natural language stock search — parse plain English queries into filters |
 
 ### Composite Score (0–100)
 | Factor | Weight | Inputs |
 |--------|--------|--------|
 | Momentum | 25% | 3-month + 6-month price returns |
-| Technical Signals | 25% | Net bullish − bearish signal count |
-| Sentiment | 15% | Average AFINN headline score |
+| Technical Signals | 25% | Net bullish − bearish signal severity |
+| Sentiment | 15% | FinBERT AI (fallback: finance lexicon) |
 | Fundamentals | 15% | Inverted P/E + earnings growth |
 | Volume Trend | 10% | Current volume / 20-day average |
 | Risk (inverse) | 10% | 1 − (Beta × 0.5 + Volatility × 0.5) |
 
 ### Technical Indicators
-RSI (14), MACD (12/26/9), SMA 20/50/200, Bollinger Bands (20, 2σ), Stochastic (14), OBV, Volatility (30-day annualised), Volume Ratio.
+RSI (14), MACD (12/26/9), SMA 20/50/150/200, SMA 200 slope, Bollinger Bands (20, 2σ) with squeeze/bandwidth/%B, Stochastic (14) K/D, OBV trend + divergence, Volatility (30-day annualised), Volume Ratio, Weighted Alpha (exponential decay), Accumulation/Distribution Rating (A–E), Support & Resistance levels (swing-point algo), **ADX/DI+/DI-** (trend strength), **Williams %R** (momentum), **Chaikin Money Flow** (volume-price), **Sharpe Ratio** (risk-adjusted return), **Sortino Ratio** (downside risk), **Max Drawdown** (1Y worst peak-to-trough).
 
 ### Signal Types (24 total)
-MA crosses (death/golden cross, MA alignment), RSI overbought/oversold, MACD bullish/bearish, Bollinger squeeze/upper+RSI/lower+RSI, Stochastic bullish/bearish/combo, OBV divergence (bull/bear)/uptrend confirm, volume spike decline/accumulation day, strong/weak momentum, near 52W high/low.
+MA crosses (death/golden cross, MA alignment), RSI overbought/oversold, MACD bullish/bearish, Bollinger squeeze/upper+RSI/lower+RSI, Stochastic bullish/bearish/combo, OBV divergence (bull/bear)/uptrend confirm, volume spike decline/accumulation day, strong/weak momentum, near 52W high/low. Each tagged with `timeframe: short|medium|long`.
 
-### Fundamental Metrics
-P/E, Forward P/E, Earnings Growth (EPS Q/Q), Revenue Growth (Sales Q/Q), Beta, Market Cap, Avg Volume.
+### Fundamental Metrics (35+)
+P/E, Forward P/E, PEG, P/B, EPS (trailing/forward), Earnings Growth, Revenue Growth, ROE, ROA, Gross/Operating/Profit margins, D/E, Current Ratio, Dividend Yield, Book Value, Enterprise Value, EBITDA, FCF, Operating Cash Flow, Shares Outstanding, Insider/Institutional Ownership %, Short Float %, Analyst Target Price, Analyst Rating.
+
+### Expert Screens
+Piotroski F-Score (0–9), Graham Number, Buffett Quality Score (0–5), DCF Lite Valuation, Minervini Trend Template (8 checks), CAN SLIM (7 criteria), Style Classification (Value/Blend/Growth), **Altman Z-Score** (bankruptcy prediction — safe/grey/distress zones), **Factor Grades** (A+ to F across Value/Growth/Profitability/Momentum/Safety), **SMR Rating** (IBD-style A–E: Sales growth + Margins + ROE), **Post-Earnings Drift** (1/5/20-day returns after last earnings).
 
 ### Data Sources
-Yahoo Finance v8 (OHLCV, 6-month daily), Yahoo Finance v7 (fundamentals — batch), FinViz scraper (EPS Q/Q, Sales Q/Q for US stocks), Google News RSS + FinViz News (sentiment via AFINN). ETL runs hourly via GitHub Actions (weekdays 7am–9pm UTC).
+Yahoo Finance v8 (5-year OHLCV daily + dividends), Yahoo Finance v7 (fundamentals — batch), Yahoo quoteSummary (financials, balance sheet, cash flow), FinViz scraper (EPS Q/Q, Sales Q/Q for US stocks), Google News RSS + FinViz News, HuggingFace FinBERT (sentiment), HuggingFace Qwen 2.5 7B (AI research notes), SEC EDGAR Form 4 (insider trades), S&P 500 + FTSE 100 (market regime). ETL runs hourly via GitHub Actions (weekdays 7am–9pm UTC).
 
 ---
 
@@ -58,16 +80,19 @@ Yahoo Finance v8 (OHLCV, 6-month daily), Yahoo Finance v7 (fundamentals — batc
 
 **Key Features**: 400+ built-in indicators, Pine Script custom indicator language, 21 chart types (Renko, Kagi, Point & Figure, Heikin Ashi), multi-chart layouts (up to 16 synced), social community (trade ideas, scripts, live streams), server-side alerts on any condition, broker integration for live trading, replay mode for backtesting, stock screener + sector heat maps, fundamental data overlay on price charts.
 
-| Gap | Severity |
-|-----|----------|
-| No interactive charting (we show static price levels only) | **Critical** |
-| No custom indicator builder / formula engine | High |
-| No chart pattern recognition (cup-with-handle, H&S, etc.) | High |
-| No heat map visualisation (sector/market-cap treemap) | Medium |
-| No alert system (price, indicator, or score-based) | Medium |
-| No multiple chart types (candlestick, Heikin Ashi) | Medium |
-| No replay / backtest mode | Low |
-| No social features / idea sharing | Low |
+**2025–2026 Updates**: Alerts on rectangle drawings for tracking price zones, cross-tab synchronization for watchlists/intervals. AI-powered Pine Script generation via OctoBot and Pineify. Community-built AI indicators (LuxAlgo suite: volume flow analysis, dynamic S/R, divergence spotting, predictive signals). AI-Signals script analyzing market structure, options flow, and insider volume.
+
+| Gap | Severity | Status |
+|-----|----------|--------|
+| ~~No interactive charting~~ | ~~Critical~~ | **DONE** — lightweight-charts v5 |
+| No custom indicator builder / formula engine | High | Open |
+| No chart pattern recognition (cup-with-handle, H&S, etc.) | High | Open |
+| ~~No heat map visualisation~~ | ~~Medium~~ | **DONE** |
+| ~~No alert system~~ | ~~Medium~~ | **DONE** — Telegram + ntfy.sh |
+| ~~No candlestick chart~~ | ~~Medium~~ | **DONE** |
+| No replay / backtest with historical charts | Medium | Open |
+| No social features / idea sharing | Low | Open |
+| No AI-powered Pine Script-style indicator builder | Medium | New gap |
 
 ---
 
@@ -75,14 +100,17 @@ Yahoo Finance v8 (OHLCV, 6-month daily), Yahoo Finance v7 (fundamentals — batc
 
 **Key Features**: S&P 500 treemap heat map (by sector, cap, performance), market themes heatmap (AI, clean energy), insider trading map, 52W highs/lows map, 60+ screener filters, snapshot ticker pages, backtesting (Elite), futures heat map.
 
-| Gap | Severity |
-|-----|----------|
-| No market heat map / treemap visualisation | **High** |
-| No insider trading data | High |
-| No short interest / short float data | Medium |
-| No analyst recommendations aggregate | Medium |
-| No sector/industry drill-down navigation | Medium |
-| No screener export / share URL | Low |
+**2025–2026 Updates**: New 52-Week Highs/Lows Maps showing stocks pulling back from highs with relative comparison. Theme-based screening for market-moving themes (AI, clean energy, etc.) via Theme/Sub-theme fields. Dedicated heatmap views added to Groups feature for aggregate sector/category performance tracking. Push alerts for news, ratings, insider trading, SEC filings, and price movements.
+
+| Gap | Severity | Status |
+|-----|----------|--------|
+| ~~No market heat map~~ | ~~High~~ | **DONE** |
+| ~~No insider trading data~~ | ~~High~~ | **DONE** — SEC EDGAR |
+| No short interest / short float data | Medium | Have `shortPercentOfFloat` from Yahoo |
+| ~~No analyst recommendations~~ | ~~Medium~~ | **DONE** — `averageAnalystRating` |
+| No theme-based screening (AI, clean energy, etc.) | Medium | New gap |
+| No 52W highs/lows map visualisation | Low | New gap |
+| ~~No screener export~~ | ~~Low~~ | **DONE** |
 
 ---
 
@@ -90,15 +118,20 @@ Yahoo Finance v8 (OHLCV, 6-month daily), Yahoo Finance v7 (fundamentals — batc
 
 **Key Features**: 700+ screening criteria with 10 years historical data, weighted ranked screener (user-defined weights), custom freeform equation filters, built-in Piotroski F-Score / Altman Z-Score / Beneish M-Score, 150+ pre-built screeners (Buffett, Graham, etc.), 10-year backtesting, portfolio analytics (correlation, diversification), fair value / DCF estimates, auto-generated research reports.
 
-| Gap | Severity |
-|-----|----------|
-| No historical fundamental data (current quarter only) | **Critical** |
-| No Piotroski F-Score, Altman Z-Score, Beneish M-Score | High |
-| No DCF / intrinsic value calculation | High |
-| No weighted multi-factor screener (user-defined weights) | High |
-| No portfolio tracking and analytics | Medium |
-| No backtest capability for scoring model | Medium |
-| No pre-built strategy screeners (Buffett, Graham templates) | Medium |
+**2025–2026 Updates**: Stock Rover V11 released May 2025 with improved UX and navigation. New beta feature for individual analyst ratings and price target history per stock. Research reports include margin of safety, fair value, and proprietary scoring (Growth, Quality, Sentiment, Piotroski, Altman Z-score). Rated 9/10 satisfaction by financial advisors in Kitces 2025 study.
+
+| Gap | Severity | Status |
+|-----|----------|--------|
+| ~~No historical fundamental data~~ | ~~Critical~~ | **DONE** — multi-year financials |
+| ~~No Piotroski F-Score~~ | ~~High~~ | **DONE** — 0–9 |
+| ~~No DCF / intrinsic value~~ | ~~High~~ | **DONE** — DCF Lite |
+| No weighted multi-factor screener (user-defined weights) | High | Open |
+| ~~No portfolio tracking~~ | ~~Medium~~ | **DONE** |
+| ~~No backtest capability~~ | ~~Medium~~ | **DONE** — 8 strategies |
+| ~~No pre-built strategy screeners~~ | ~~Medium~~ | **DONE** — Minervini, CAN SLIM |
+| No Altman Z-Score (bankruptcy prediction) | Medium | New gap |
+| No Beneish M-Score (earnings manipulation detection) | Medium | New gap |
+| No individual analyst tracking per stock | Low | New gap |
 
 ---
 
@@ -106,14 +139,18 @@ Yahoo Finance v8 (OHLCV, 6-month daily), Yahoo Finance v7 (fundamentals — batc
 
 **Key Features**: Quant Ratings (1.0–5.0: Strong Buy → Strong Sell) based on 100+ metrics per stock, Factor Grades (A+ to F) across Value/Growth/Profitability/Momentum/EPS Revisions, three rating systems side-by-side, EPS revision tracking, dividend grades, earnings call transcripts, stock comparison tool.
 
-| Gap | Severity |
-|-----|----------|
-| No factor-grade system (letter grades per dimension) | **High** |
-| No EPS revision tracking (estimate changes over time) | High |
-| No peer/sector-relative scoring (our scores are absolute) | High |
-| No dividend analysis (yield, growth, payout ratio, safety) | Medium |
-| No stock comparison view (side-by-side) | Medium |
-| No profitability metrics (ROE, ROA, ROIC, margins) | Medium |
+**2025–2026 Updates**: "Ask Seeking Alpha" AI tool for PRO subscribers (Nov 2025) — filter stocks by Quant grade duration (e.g. "Show me stocks that have been Quant Strong Buy for 150+ days"), find latest Top Analyst picks via natural language. Quant Ratings track duration a stock maintains each rating, adding persistence as a signal.
+
+| Gap | Severity | Status |
+|-----|----------|--------|
+| No factor-grade system (letter grades per dimension) | **High** | Open |
+| No EPS revision tracking (estimate changes over time) | High | Open |
+| ~~No peer/sector-relative scoring~~ | ~~High~~ | **DONE** — z-scores + rank |
+| ~~No dividend analysis~~ | ~~Medium~~ | **DONE** — 5yr CAGR, streak |
+| ~~No stock comparison view~~ | ~~Medium~~ | **DONE** |
+| ~~No profitability metrics~~ | ~~Medium~~ | **DONE** — ROE, ROA, margins |
+| No natural language stock querying (AI copilot) | High | New gap |
+| No rating duration tracking | Medium | New gap |
 
 ---
 
@@ -121,13 +158,17 @@ Yahoo Finance v8 (OHLCV, 6-month daily), Yahoo Finance v7 (fundamentals — batc
 
 **Key Features**: Snowflake model (5-axis visual: Value, Future Growth, Past Performance, Health, Dividends), 30 binary checks (6 per axis), infographic-based reports, DCF-based intrinsic value with visual discount display, portfolio Snowflake, ownership breakdown, global 100K+ stock coverage, peer comparison with Snowflake overlays.
 
-| Gap | Severity |
-|-----|----------|
-| No multi-axis visual scoring model (radar/snowflake chart) | **High** |
-| No DCF / fair value estimate with visual discount display | High |
-| No ownership breakdown data | Medium |
-| No infographic-style stock reports | Medium |
-| No portfolio-level aggregated scoring | Medium |
+**2025–2026 Updates**: Portfolio Snowflake upgraded to aggregate risks and rewards across all holdings. Transaction-based portfolios (Feb 2025) auto-factoring buys/sells/dividends/splits for true performance. AI-powered CSV portfolio import. New table views (Income, Growth, Value, Snowflake Scores, Fundamentals). Weekly Picks highlighting top narratives. Screener now filters by Snowflake score thresholds.
+
+| Gap | Severity | Status |
+|-----|----------|--------|
+| ~~No multi-axis visual scoring model~~ | ~~High~~ | **DONE** — 6-axis radar chart |
+| ~~No DCF / fair value estimate~~ | ~~High~~ | **DONE** — DCF Lite + Graham |
+| No ownership breakdown data (institutional vs insider pie chart) | Medium | Partial — have %, no visualization |
+| No infographic-style stock reports | Medium | Open |
+| ~~No portfolio-level scoring~~ | ~~Medium~~ | **DONE** — Portfolio avg score |
+| No portfolio-level Snowflake aggregation | Medium | New gap |
+| No AI-powered portfolio import | Low | New gap |
 
 ---
 
@@ -135,13 +176,13 @@ Yahoo Finance v8 (OHLCV, 6-month daily), Yahoo Finance v7 (fundamentals — batc
 
 **Key Features**: Economic Moat rating (Wide/Narrow/None) based on 5 competitive advantage sources, analyst-driven Fair Value (3-stage DCF), Star Rating (1–5: price vs. fair value with uncertainty adjustment), Uncertainty Rating, Style Box (3×3 Value/Blend/Growth × Large/Mid/Small), Stewardship & Capital Allocation ratings, fund/ETF medalist system.
 
-| Gap | Severity |
-|-----|----------|
-| No fair value / intrinsic value estimate | **High** |
-| No qualitative moat assessment (heuristic proxy needed) | Medium |
-| No style box classification (Value/Blend/Growth) | Medium |
-| No uncertainty/confidence rating for our scores | Medium |
-| No management quality indicators | Low |
+| Gap | Severity | Status |
+|-----|----------|--------|
+| ~~No fair value / intrinsic value estimate~~ | ~~High~~ | **DONE** — DCF + Graham |
+| No qualitative moat assessment (heuristic proxy needed) | Medium | Open |
+| ~~No style box classification~~ | ~~Medium~~ | **DONE** — Value/Blend/Growth |
+| No uncertainty/confidence rating for our scores | Medium | Open |
+| No management quality indicators | Low | Open |
 
 ---
 
@@ -149,12 +190,12 @@ Yahoo Finance v8 (OHLCV, 6-month daily), Yahoo Finance v7 (fundamentals — batc
 
 **Key Features**: Zacks Rank (1–5) based purely on earnings estimate revision trends, Style Scores (A–F) across Value/Growth/Momentum/VGM composite, Earnings ESP (Expected Surprise Prediction), Industry Rank (265 industries), Rank + Style Combo strategy.
 
-| Gap | Severity |
-|-----|----------|
-| No earnings estimate revision tracking | **High** |
-| No industry/sector ranking system | High |
-| No earnings surprise prediction | Medium |
-| No style scores (letter grade system) | Medium |
+| Gap | Severity | Status |
+|-----|----------|--------|
+| No earnings estimate revision tracking | **High** | Open |
+| No industry/sector ranking system | High | Partial — have sector performance |
+| No earnings surprise prediction (ESP) | Medium | Open |
+| No style scores (letter grade system) | Medium | Open |
 
 ---
 
@@ -162,14 +203,14 @@ Yahoo Finance v8 (OHLCV, 6-month daily), Yahoo Finance v7 (fundamentals — batc
 
 **Key Features**: Composite Rating (1–99: EPS + RS + Industry + SMR + Acc/Dist), EPS Rating (1–99: 3-year earnings growth + stability), Relative Strength Rating (1–99: 12-month price performance vs. all stocks), Accumulation/Distribution Rating (A–E: institutional buying/selling 13 weeks), SMR Rating (A–E: Sales/Margins/ROE), Industry Group Ranking (197 groups), MarketSmith chart pattern recognition, Market Pulse market direction assessment.
 
-| Gap | Severity |
-|-----|----------|
-| No relative strength ranking (vs. all stocks, percentile) | **High** |
-| No market direction / regime indicator | **High** |
-| No accumulation/distribution rating (inst. buying/selling) | High |
-| No chart pattern recognition (cup-with-handle, bases) | High |
-| No industry group strength ranking | Medium |
-| No SMR composite (Sales, Margins, ROE) | Medium |
+| Gap | Severity | Status |
+|-----|----------|--------|
+| ~~No relative strength ranking~~ | ~~High~~ | **DONE** — RS Percentile 1–99 |
+| ~~No market direction / regime indicator~~ | ~~High~~ | **DONE** |
+| ~~No accumulation/distribution rating~~ | ~~High~~ | **DONE** — A–E |
+| No chart pattern recognition (cup-with-handle, bases) | High | Open |
+| No industry group strength ranking | Medium | Partial — sector only |
+| No SMR composite (Sales, Margins, ROE) | Medium | Have individual metrics |
 
 ---
 
@@ -177,11 +218,11 @@ Yahoo Finance v8 (OHLCV, 6-month daily), Yahoo Finance v7 (fundamentals — batc
 
 **Key Features**: Barchart Opinion (13 indicators across 3 timeframes → aggregate signal), Weighted Alpha (recent-biased 1-year momentum), options analytics suite (IV Rank, Greeks, unusual activity), Van Meerten proprietary indicators, futures & commodities depth, Barchart for Excel.
 
-| Gap | Severity |
-|-----|----------|
-| No multi-timeframe signal aggregation (short/medium/long) | **High** |
-| No weighted alpha (decay-weighted momentum) | Medium |
-| No options data integration | Low (different audience) |
+| Gap | Severity | Status |
+|-----|----------|--------|
+| ~~No multi-timeframe signal aggregation~~ | ~~High~~ | **DONE** — short/medium/long |
+| ~~No weighted alpha~~ | ~~Medium~~ | **DONE** |
+| No options data integration | Low | Open (no free data source) |
 
 ---
 
@@ -189,11 +230,67 @@ Yahoo Finance v8 (OHLCV, 6-month daily), Yahoo Finance v7 (fundamentals — batc
 
 **Key Features**: Peter Lynch PEG-based fair value estimate, Morningstar research reports & star ratings, Argus Research reports, portfolio tracking with risk metrics, company outlook (bull/bear case), enhanced charting.
 
+| Gap | Severity | Status |
+|-----|----------|--------|
+| No PEG-based fair value calculation | Medium | Have PEG ratio, need fair value formula |
+| No bull/bear case narrative generation | Medium | AI research note covers this partially |
+| ~~No portfolio tracking~~ | ~~Medium~~ | **DONE** |
+
+---
+
+### 2.11 Koyfin (NEW)
+
+**Key Features**: Bloomberg-style experience for retail. 5,900+ screening criteria, 10-year financial statements, analyst estimates & earnings transcripts, customizable multi-widget dashboards, global coverage 100K+ securities, advanced charting with fundamentals overlay, spreadsheet-style data views. Ranked #1 Financial Analytics and Investment Portfolio Management on G2 Winter 2026. Rated 9/10 by financial advisors (Kitces 2025).
+
 | Gap | Severity |
 |-----|----------|
-| No PEG-based fair value calculation | **High** |
-| No bull/bear case narrative generation | Medium |
-| No portfolio tracking | Medium |
+| No customizable multi-widget dashboard layout | **High** |
+| No analyst estimates or earnings transcripts | High |
+| No 10-year historical financial statements | Medium (have 3–5 years) |
+| No spreadsheet-style data views (Excel-like) | Medium |
+| No fundamentals overlay on price charts | Medium |
+| No global coverage (we have US + UK only) | Low |
+
+---
+
+### 2.12 Danelfin (NEW — AI-Native)
+
+**Key Features**: AI Score (1–10) per stock analyzing 10,000 features daily across 600+ technical, 150+ fundamental, and 150+ sentiment indicators. Explainable AI — no black box. Rates probability of beating the market in next 3 months. Best Stocks strategy returned +376% (Jan 2017 – Jun 2025) vs +166% S&P 500. Stocks with AI Score 10/10 outperformed market by +21% (annualised alpha).
+
+| Gap | Severity |
+|-----|----------|
+| No predictive scoring (probability of beating market) | **High** |
+| No AI explainability layer (which features drive each score) | High |
+| No forward-looking scoring (our score is current state only) | Medium |
+| No 10,000-feature daily analysis | Low (compute budget) |
+
+---
+
+### 2.13 TrendSpider (NEW — Automation)
+
+**Key Features**: Auto-drawn trendlines, S/R zones, Fibonacci levels. 200+ indicators. Multi-timeframe analysis (overlay indicators from different timeframes). 123 candlestick patterns + 28 chart patterns auto-detected. No-code trading bots with broker integration. AI Strategy Lab for ML model training. "Sidekick" AI assistant for chart analysis. Market Scanner across all conditions. Backtesting across 123 candlestick + 28 chart patterns.
+
+| Gap | Severity |
+|-----|----------|
+| No automated trendline / Fibonacci detection | **High** |
+| No chart pattern recognition (28 patterns) | **High** |
+| No candlestick pattern detection (123 patterns) | High |
+| No multi-timeframe chart overlay | Medium |
+| No AI assistant for chart interpretation | Medium |
+| No no-code trading bot builder | Low |
+
+---
+
+### 2.14 OpenBB Platform (NEW — Open Source)
+
+**Key Features**: Open-source modular financial ecosystem. ~100 data source integrations. Python API + REST API + Web Workspace + Excel plugin. OpenBB Copilot AI agent for research. "Connect once, consume everywhere" architecture. SOC 2 Type II Enterprise certification (2025). MCP servers for AI agent integration. Standardized data model across providers.
+
+| Gap | Severity |
+|-----|----------|
+| No multi-data-source integration architecture | Medium |
+| No Python/API interface for programmatic access | Low |
+| No AI copilot for natural language research | High |
+| No Excel/spreadsheet export integration | Low |
 
 ---
 
@@ -201,435 +298,341 @@ Yahoo Finance v8 (OHLCV, 6-month daily), Yahoo Finance v7 (fundamentals — batc
 
 ### 3.1 CAN SLIM (William O'Neil)
 
-| Criterion | Rule | Can We Compute? | Gap |
-|-----------|------|----------------|-----|
-| **C** — Current Quarterly EPS | >= 25% YoY | **Partial** — have EPS Q/Q from FinViz | Need YoY quarterly comparison, not just sequential |
-| **A** — Annual Earnings Growth | >= 25% for 3–5 years | **No** | Need multi-year annual EPS history |
-| **N** — New High | Near 52W high + catalyst | **Yes** — near 52W high signal exists | Add new product/IPO flags (qualitative) |
-| **S** — Supply & Demand | Low float, volume on up days | **Partial** — volume ratio exists | Need shares outstanding, float, up-volume vs down-volume |
-| **L** — Leader (Relative Strength) | RS >= 80 percentile | **No** | Need percentile ranking of 12-month price perf across all stocks |
-| **I** — Institutional Sponsorship | 3–10 quality institutions, increasing | **No** | Need institutional ownership data |
-| **M** — Market Direction | Confirmed uptrend | **No** | Need market regime detection (index trend, distribution days) |
+| Criterion | Rule | Status | Notes |
+|-----------|------|--------|-------|
+| **C** — Current Quarterly EPS | >= 25% YoY | **Partial** | Have earningsGrowth from Yahoo |
+| **A** — Annual Earnings Growth | >= 25% for 3–5 years | **Partial** | Have multi-year financials |
+| **N** — New High | Near 52W high + catalyst | **YES** | 52W range % + signals |
+| **S** — Supply & Demand | Low float, volume on up days | **YES** | Volume ratio + sharesOutstanding |
+| **L** — Leader (Relative Strength) | RS >= 80 percentile | **YES** | RS Percentile 1–99 |
+| **I** — Institutional Sponsorship | 3–10 quality institutions | **Partial** | Have % owned, not # quality |
+| **M** — Market Direction | Confirmed uptrend | **YES** | Market regime detection |
 
-**Data Requirements**: Multi-year EPS history, float/shares outstanding, institutional ownership, market-wide breadth indicators.
-
----
-
-### 3.2 Piotroski F-Score (0–9)
-
-| # | Criterion | Can We Compute? | Gap |
-|---|-----------|----------------|-----|
-| 1 | Net Income > 0 (ROA positive) | **No** | Need net income and total assets |
-| 2 | Operating Cash Flow > 0 | **No** | Need cash flow from operations |
-| 3 | ROA improving YoY | **No** | Need prior year ROA |
-| 4 | Cash Flow > Net Income (quality of earnings) | **No** | Need both CFO and net income |
-| 5 | Long-term debt ratio decreased | **No** | Need current + prior year LT debt / total assets |
-| 6 | Current ratio increased | **No** | Need current assets and liabilities (2 years) |
-| 7 | No new shares issued (no dilution) | **No** | Need shares outstanding history |
-| 8 | Gross margin increased | **No** | Need gross margin (2 years) |
-| 9 | Asset turnover increased | **No** | Need revenue and total assets (2 years) |
-
-**Score**: 0/9 criteria computable today. **Requires**: Full income statement, balance sheet, cash flow — at least 2 years.
+**Status**: 4/7 fully computable, 3/7 partial. CAN SLIM screen implemented.
 
 ---
 
-### 3.3 Benjamin Graham — Defensive Investor (7 Criteria)
+### 3.2 Piotroski F-Score (0–9) — **IMPLEMENTED**
 
-| # | Criterion | Rule | Can Compute? | Gap |
-|---|-----------|------|-------------|-----|
-| 1 | Adequate Size | Revenue >= $500M | **No** | Need annual revenue |
-| 2 | Strong Financial Condition | Current Ratio >= 2.0; LT debt <= net current assets | **No** | Need balance sheet |
-| 3 | Earnings Stability | Positive earnings each of past 10 years | **No** | Need 10-year EPS history |
-| 4 | Dividend Record | Uninterrupted dividends 20 years | **No** | Need dividend history |
-| 5 | Earnings Growth | >= 33% increase over 10 years | **No** | Need 10-year EPS |
-| 6 | Moderate P/E | P/E <= 15 × 3-year avg earnings | **Partial** | Have trailing P/E; need 3-year avg |
-| 7 | Moderate P/B | P/B <= 1.5 or P/E × P/B <= 22.5 | **No** | Need Price-to-Book |
-
-**Graham Intrinsic Value Formula**: `V = EPS × (8.5 + 2g) × 4.4 / Y` where g = expected growth, Y = AAA bond yield.
+**Status**: All 9 criteria computed from Yahoo quoteSummary financial statements (2-year comparison). Scores 0–9 shown on StockDetail and used in Backtest.
 
 ---
 
-### 3.4 Warren Buffett Approach
+### 3.3 Benjamin Graham — **PARTIALLY IMPLEMENTED**
 
-| Criterion | Rule | Can Compute? | Gap |
-|-----------|------|-------------|-----|
-| ROE >= 20% (10-year avg) | | **No** | Need net income + shareholders' equity |
-| ROIC >= 15% | | **No** | Need NOPAT + invested capital |
-| Gross Margin > 40% | | **No** | Need gross profit + revenue |
-| Net Margin > 20% | | **No** | Need net income + revenue |
-| Debt payoff < 5 years | | **No** | Need total debt + net income |
-| Earnings consistency 10yr | | **No** | Need EPS history |
-| P/E < 15 | | **Yes** | Already available |
+**Status**: Graham Number computed from `√(22.5 × EPS × BookValue)`. Shown on StockDetail with over/undervalued indicator. Full 7-criteria defensive investor screen not yet built as a dedicated page.
 
 ---
 
-### 3.5 Peter Lynch — PEG Ratio
+### 3.4 Warren Buffett Approach — **IMPLEMENTED**
 
-| Criterion | Rule | Can Compute? | Gap |
-|-----------|------|-------------|-----|
-| PEG Ratio | P/E / EPS Growth | **Partial** | Have P/E and EPS Q/Q; need annualised forward growth |
-| Stock Classification | Slow/Stalwart/Fast/Cyclical/Turnaround/Asset | **No** | Need multi-year growth rate history |
-| Debt-to-Equity < 33% | | **No** | Need D/E ratio |
-| Inventory vs Sales growth | | **No** | Need inventory data |
-| Free Cash Flow positive | | **No** | Need FCF |
+**Status**: Buffett Quality Score (0–5) implemented using ROE, D/E, earnings consistency, margins, and valuation. Shown on StockDetail and used in Backtest.
 
-**Lynch Rules**: PEG < 1.0 = buy, PEG < 0.5 = strong buy, PEG > 2.0 = overpriced.
+---
+
+### 3.5 Peter Lynch — PEG Ratio — **PARTIALLY IMPLEMENTED**
+
+**Status**: PEG ratio available from Yahoo API. Shown in StockDetail fundamentals. Full Lynch classification (Slow/Stalwart/Fast/Cyclical/Turnaround/Asset) not implemented.
 
 ---
 
 ### 3.6 Joel Greenblatt — Magic Formula
 
-| Criterion | Formula | Can Compute? | Gap |
-|-----------|---------|-------------|-----|
-| Earnings Yield | EBIT / Enterprise Value | **No** | Need EBIT and EV |
-| Return on Capital | EBIT / (NWC + Net Fixed Assets) | **No** | Need balance sheet items |
+| Criterion | Formula | Status | Notes |
+|-----------|---------|--------|-------|
+| Earnings Yield | EBIT / Enterprise Value | **Partial** | Have EBITDA + EV; need EBIT specifically |
+| Return on Capital | EBIT / (NWC + Net Fixed Assets) | **No** | Need detailed balance sheet |
 | Combined Rank | Sum of EY rank + ROC rank | **No** | Depends on above |
 
-**Rules**: Market cap > $100M, exclude financials/utilities, buy top 20–30, hold 1 year, rebalance annually.
+---
+
+### 3.7 Mark Minervini — SEPA Trend Template — **FULLY IMPLEMENTED**
+
+**Status**: All 8 criteria computed. Dedicated `/minervini` page. Adjustable minimum checks. Integrated with RS Percentile.
 
 ---
 
-### 3.7 Mark Minervini — SEPA Trend Template (8 Criteria)
+### 3.8 Martin Zweig (GARP)
 
-| # | Criterion | Can Compute? | Gap |
-|---|-----------|-------------|-----|
-| 1 | Price > 150-day & 200-day SMA | **Partial** | Need SMA 150 |
-| 2 | SMA 150 > SMA 200 | **No** | Need SMA 150 |
-| 3 | SMA 200 trending up 1+ month | **Partial** | Need SMA 200 slope over time |
-| 4 | SMA 50 > SMA 150 & SMA 200 | **Partial** | Need SMA 150 |
-| 5 | Price > SMA 50 | **Yes** | Computable now |
-| 6 | Price >= 30% above 52W low | **Yes** | Have 52W low |
-| 7 | Price within 25% of 52W high | **Yes** | Have 52W high |
-| 8 | RS Rating >= 70 | **No** | Need RS percentile |
-
-**Additional**: EPS growth >= 20% YoY, Volatility Contraction Pattern (VCP), volume dry-up during contractions.
+| Criterion | Status | Notes |
+|-----------|--------|-------|
+| Annual EPS Growth >= 20% | **Partial** | Have multi-year financials |
+| Quarterly EPS Growth YoY | **Partial** | Have Q/Q |
+| Revenue confirms earnings | **Yes** | Have revenue growth |
+| P/E < 2× market avg | **Partial** | Have P/E; need market avg |
+| D/E below industry avg | **No** | Need industry averages |
+| Relative price strength | **Yes** | RS Percentile |
+| Insider activity | **Yes** | SEC EDGAR Form 4 |
 
 ---
 
-### 3.8 Martin Zweig (Growth at Reasonable Price)
+### 3.9 Jesse Livermore — **MOSTLY IMPLEMENTED**
 
-| Criterion | Rule | Can Compute? | Gap |
-|-----------|------|-------------|-----|
-| Annual EPS Growth >= 20% (4–5yr) | | **No** | Need multi-year EPS |
-| Quarterly EPS Growth YoY | | **Partial** | Have Q/Q not YoY |
-| Revenue confirms earnings | | **Partial** | Have Sales Q/Q |
-| P/E < 2× market avg | | **Partial** | Have P/E; need market avg P/E |
-| Debt/Equity below industry avg | | **No** | Need D/E + industry avgs |
-| Relative price strength | | **No** | Need RS percentile |
-| Insider activity | | **No** | Need insider transaction data |
+| Principle | Status | Notes |
+|-----------|--------|-------|
+| Trade with trend | **Yes** | 52W signals, MA alignment |
+| Breakout from consolidation | **Yes** | Bollinger squeeze + S/R |
+| Volume confirmation | **Yes** | Volume ratio + OBV |
+| Normal reaction (pullback) | **Yes** | Support Bounce page |
+| Pivotal points | **Yes** | Support & Resistance algo |
 
 ---
 
-### 3.9 Jesse Livermore (Quantifiable Principles)
+### Updated Gap Summary Matrix
 
-| Principle | Rule | Can Compute? | Gap |
-|-----------|------|-------------|-----|
-| Trade with trend | New 52W highs | **Yes** | Have 52W signals |
-| Breakout from consolidation | Break > 6-week range on 2× volume | **Partial** | Have volume spike; need range detection |
-| Volume confirmation | Breakout on high volume | **Yes** | Have volume ratio |
-| Normal reaction (pullback) | Pullback on declining volume | **No** | Need multi-day volume trend |
-| Pivotal points | Key support/resistance levels | **No** | Need S/R calculation |
-
----
-
-### Gap Summary Matrix
-
-| Methodology | Criteria | Computable | Partial | Missing | Readiness |
-|-------------|----------|------------|---------|---------|-----------|
-| **Minervini SEPA** | 8 | 3 | 2 | 3 | **50%** |
-| **Livermore** | 5 | 2 | 1 | 2 | **50%** |
-| **Zweig** | 7 | 0 | 3 | 4 | 21% |
-| **CAN SLIM** | 7 | 1 | 2 | 4 | 14% |
-| **Buffett** | 7 | 1 | 0 | 6 | 14% |
-| **Lynch PEG** | 5 | 0 | 1 | 4 | 10% |
-| **Graham** | 7 | 0 | 1 | 6 | 7% |
-| **Piotroski** | 9 | 0 | 0 | 9 | 0% |
-| **Magic Formula** | 2 | 0 | 0 | 2 | 0% |
-
-**Minervini SEPA and Livermore are closest to implementation** — both rely heavily on technical/price data we already have.
+| Methodology | Criteria | Fully | Partial | Missing | Readiness |
+|-------------|----------|-------|---------|---------|-----------|
+| **Minervini SEPA** | 8 | 8 | 0 | 0 | **100%** |
+| **Livermore** | 5 | 5 | 0 | 0 | **100%** |
+| **Piotroski** | 9 | 9 | 0 | 0 | **100%** |
+| **Buffett** | 5 | 5 | 0 | 0 | **100%** |
+| **CAN SLIM** | 7 | 4 | 3 | 0 | **79%** |
+| **Zweig** | 7 | 3 | 3 | 1 | **64%** |
+| **Lynch PEG** | 5 | 1 | 2 | 2 | **40%** |
+| **Graham** | 7 | 2 | 2 | 3 | **43%** |
+| **Magic Formula** | 3 | 0 | 1 | 2 | **17%** |
 
 ---
 
 ## 4. Current Weaknesses & Improvements
 
-### 4.1 UI/UX Gaps
+### 4.1 UI/UX Gaps (Updated)
 
-| Issue | Description | Impact |
-|-------|-------------|--------|
-| **No interactive charts** | Stock Detail shows price levels as text — no candlestick or line chart | Critical |
-| **No stock comparison** | Can't compare two stocks side-by-side | Medium |
-| **No watchlist / favourites** | No way to save or track a personal list | Medium |
-| **No URL state for filters** | Screener filters lost on refresh; not shareable | Medium |
-| **Mobile table overflow** | Screener tables may overflow on narrow screens | Medium |
-| **No loading skeletons** | Single spinner; no progressive content loading | Low |
-| **No export** | Can't export screener results to CSV from UI | Low |
-| **No multi-column sort** | Can't do composite sort (score DESC then P/E ASC) | Low |
+| Issue | Description | Impact | Status |
+|-------|-------------|--------|--------|
+| ~~No interactive charts~~ | ~~Static price levels~~ | ~~Critical~~ | **DONE** |
+| ~~No stock comparison~~ | ~~Can't compare stocks~~ | ~~Medium~~ | **DONE** |
+| ~~No watchlist~~ | ~~No saved list~~ | ~~Medium~~ | **DONE** |
+| ~~No URL state~~ | ~~Filters lost on refresh~~ | ~~Medium~~ | **DONE** |
+| **Mobile responsiveness** | Tables and charts need better mobile layouts | Medium | Open |
+| **No loading skeletons** | Single spinner; no progressive content loading | Low | Open |
+| **No keyboard shortcuts** | No k/j navigation, quick search, or shortcut overlay | Low | Open |
+| **No stock search on all pages** | Global search bar missing on non-screener pages | Medium | Open |
+| **No recently viewed** | No way to quickly return to previously viewed stocks | Low | Open |
 
-### 4.2 Scoring System Improvements
+### 4.2 Scoring System Improvements (Updated)
 
-| Issue | Recommendation |
-|-------|---------------|
-| **Absolute not relative** | Scores normalised to fixed ranges (P/E 5–60). Should score relative to sector peers like Seeking Alpha. |
-| **Style-blind** | A utility and a growth stock scored identically. Need style-aware scoring (value vs growth vs income). |
-| **No confidence indicator** | Score of 72 with full data ≠ 72 with missing fundamentals. Add data completeness %. |
-| **Shallow sentiment** | AFINN on headlines is low-fidelity. Weight by source credibility and recency. |
-| **No score history** | Can't see if a stock's score is improving or declining over time. |
-| **Risk too simple** | Beta + Volatility misses drawdown, correlation, and tail risk. |
-| **No sector rotation** | No indication of which sectors are strengthening/weakening. |
-| **Fundamentals underweighted** | At 15%, fundamentals barely move the needle. Consider rebalancing for different horizons. |
+| Issue | Status | Notes |
+|-------|--------|-------|
+| ~~Absolute not relative~~ | **DONE** | Sector z-scores + ranks |
+| ~~Style-blind~~ | **DONE** | Value/Blend/Growth classification |
+| ~~No confidence indicator~~ | **DONE** | Data completeness % |
+| ~~Shallow sentiment~~ | **DONE** | FinBERT AI + finance lexicon |
+| ~~No score history~~ | **DONE** | 90-day daily tracking |
+| **Risk too simple** | Open | Beta + Volatility misses drawdown, Sharpe, Sortino |
+| ~~No sector rotation~~ | **DONE** | RRG-style quadrant chart |
+| **No forward-looking component** | Open | Score is current state; need predictive element |
+| **No score confidence interval** | Open | No uncertainty band on composite score |
 
-### 4.3 Missing Fundamental Metrics
+### 4.3 Missing Fundamental Metrics (Updated)
 
-| Metric | Why It Matters | Used By |
-|--------|---------------|---------|
-| **P/B (Price-to-Book)** | Core value metric | Graham, Buffett |
-| **P/S (Price-to-Sales)** | Valuation for unprofitable companies | Lynch |
-| **P/FCF (Price-to-FCF)** | Cash-flow-based valuation | Buffett |
-| **ROE** | Profitability / moat indicator | Buffett, CAN SLIM, Piotroski |
-| **ROA** | Asset efficiency | Piotroski |
-| **ROIC** | Capital allocation quality | Buffett, Greenblatt |
-| **Debt-to-Equity** | Financial health | Graham, Lynch, Zweig |
-| **Current Ratio** | Liquidity | Graham, Piotroski |
-| **Gross Margin** | Competitive advantage | Buffett |
-| **Net Margin** | Profitability | Buffett |
-| **Operating Margin** | Operational efficiency | Greenblatt |
-| **Free Cash Flow** | Cash generation | Buffett, Lynch |
-| **Dividend Yield** | Income potential | Graham, Lynch |
-| **Payout Ratio** | Dividend sustainability | Graham |
-| **EPS (TTM)** | Earnings per share | All methodologies |
-| **Book Value per Share** | Tangible net worth | Graham |
-| **Enterprise Value** | Debt-adjusted market value | Greenblatt |
-| **Shares Outstanding** | Dilution tracking | CAN SLIM, Piotroski |
-| **Insider Ownership %** | Skin in the game | Zweig, Lynch |
-| **Institutional Ownership %** | Smart money presence | CAN SLIM |
-| **Short Float %** | Crowded shorts / squeeze risk | Finviz |
-| **Analyst Target Price** | Consensus expectations | Multiple |
+Most metrics from the original gap list are now **DONE**. Remaining gaps:
+
+| Metric | Why It Matters | Status |
+|--------|---------------|--------|
+| **ROIC** | Capital allocation quality (Buffett, Greenblatt) | Not computed |
+| **Altman Z-Score** | Bankruptcy prediction (Stock Rover feature) | Not computed |
+| **Beneish M-Score** | Earnings manipulation detection | Not computed |
+| **Earnings Quality Score** | Accruals ratio, cash vs reported earnings | Not computed |
+| **Industry-relative metrics** | Metrics relative to industry avg (not just sector) | Not computed |
 
 ---
 
 ## 5. Prioritised Feature Roadmap
 
-### Priority 1 — Quick Wins (Client-Side Only, No New Data)
+### All Previously Planned Items — Completion Status
 
-Frontend changes only, using data already in `latest.json`.
+#### Priority 1 (Quick Wins) — ALL DONE
+Q1 RS Percentile, Q2 Minervini Screen, Q3 Radar Chart, Q4 Heat Map, Q5 Sector Performance, Q6 Watchlist, Q7 URL State, Q8 Data Completeness, Q9 Stock Comparison, Q10 Multi-Timeframe Labels, Q11 Score Sparkline, Q12 CSV Export — **ALL SHIPPED**.
 
-| # | Feature | Description | Enables | Implementation |
-|---|---------|-------------|---------|----------------|
-| **Q1** | **Relative Strength Percentile** | Rank all stocks by `priceReturn3m` (40%) + `priceReturn6m` (60%), assign percentile 1–99 | CAN SLIM (L), Minervini (RS), Zweig | Sort all stocks in `computeScore()`, assign rank |
-| **Q2** | **Minervini Trend Template Screen** | New page filtering stocks passing SEPA criteria (price > SMA50/200, 52W position, RS rank) | Minervini SEPA | Filter in frontend; display pass/fail per criterion |
-| **Q3** | **Score Radar Chart** | 6-axis radar chart showing each score dimension | Simply Wall St snowflake | Recharts `RadarChart` — data already exists |
-| **Q4** | **Market Heat Map** | Treemap of all stocks, sized by market cap, coloured by daily change or score | Finviz overview | `recharts` Treemap or `d3-treemap` |
-| **Q5** | **Sector Performance View** | Aggregate scores and returns by sector, show rotation | Zweig, sector analysis | Group by `sector`, compute averages |
-| **Q6** | **Watchlist (Local Storage)** | Star stocks, view filtered watchlist | UX essential | `localStorage` array of tickers |
-| **Q7** | **URL State for Screener** | Persist sort/filters/pagination in URL search params | UX — shareable views | Sync TanStack state with `URLSearchParams` |
-| **Q8** | **Data Completeness Badge** | Show % of metrics available per stock, flag low-confidence scores | Scoring transparency | Count non-null fields / expected fields |
-| **Q9** | **Stock Comparison View** | Side-by-side comparison of 2–4 stocks | Seeking Alpha comparison | New page with multi-select |
-| **Q10** | **Multi-Timeframe Signal Labels** | Label existing signals as short/medium/long-term; show aggregate per timeframe | Barchart Opinion concept | Tag 24 signal types with timeframe |
-| **Q11** | **Score Trend Sparkline** | Store last 7 daily composite scores, show sparkline | Score trajectory | Add `scoreHistory: number[]` to ETL output |
-| **Q12** | **Screener CSV Export** | Download filtered/sorted screener results as CSV | Data portability | Generate CSV blob from table state |
+#### Priority 2 (Medium Effort) — ALL DONE
+M1 SMA 150, M2 Expanded Fundamentals, M3 PEG Ratio, M4 Enterprise Value, M5 CAN SLIM, M6 Style Classification, M7 Sector-Relative Scoring, M8 Market Regime, M9 Acc/Dist Rating, M10 52W Range, M11 Consolidation Detection, M12 S/R Levels, M13 Candlestick Chart, M14 Weighted Alpha, M15 Score History — **ALL SHIPPED**.
 
----
+#### Priority 3 (Large Effort) — Mostly Done
+| # | Feature | Status |
+|---|---------|--------|
+| L1 | Financial Statements API | **DONE** |
+| L2 | Piotroski F-Score | **DONE** |
+| L3 | Graham Number & DCF Lite | **DONE** |
+| L4 | Custom Screen Builder | **DONE** |
+| L5 | Insider Trading (SEC EDGAR) | **DONE** |
+| L6 | Strategy Backtest | **DONE** |
+| L7 | Options Flow | Skipped — no free data |
+| L8 | Dividend History + AI Summaries | **DONE** |
+| L9 | Alert System (Telegram) | **DONE** |
+| L10 | Portfolio Tracker | **DONE** |
+| L11 | Backtest Engine | **DONE** |
+| L12 | Pre-Built Screens | **DONE** (Minervini, CAN SLIM) |
+| L13 | AI-Enhanced Sentiment (FinBERT) | **DONE** |
+| L14 | Short Interest | Partial — have shortPercentOfFloat |
 
-### Priority 2 — Medium Effort (New ETL Calculations from Existing Yahoo Finance Data)
+### Recently Shipped (February 2026 — Batch 8)
 
-ETL changes to fetch additional data from Yahoo Finance endpoints we already call, or trivial new endpoints.
-
-| # | Feature | Description | Enables | Implementation |
-|---|---------|-------------|---------|----------------|
-| **M1** | **SMA 150** | Add 150-day Simple Moving Average | Minervini SEPA (criteria 1–4) | Add to `computeTechnicals()`; extend chart fetch to `period=1y` |
-| **M2** | **Expanded Fundamentals from Yahoo v7** | Fetch: P/B, P/S, ROE, profit margins, dividend yield, payout ratio, D/E, book value, EPS TTM | Graham, Buffett, Lynch, Piotroski (partial) | Yahoo v7 `quote` already returns many — add fields to `QuoteData` |
-| **M3** | **PEG Ratio** | P/E / forward earnings growth rate | Lynch PEG system | Yahoo v7 provides `pegRatio` or compute from Forward P/E + growth |
-| **M4** | **Enterprise Value** | Market Cap + Total Debt − Cash | Greenblatt Magic Formula | Yahoo v7 provides `enterpriseValue` directly |
-| **M5** | **Earnings Yield & Return on Capital** | EBIT / EV and EBIT / (NWC + Fixed Assets) | Greenblatt Magic Formula | Need EBIT from financials endpoint; EV from M4 |
-| **M6** | **Style Classification** | Value / Blend / Growth based on P/E, P/B, growth rates | Morningstar Style Box | Rule-based classifier using M2 metrics |
-| **M7** | **Sector-Relative Scoring** | Score each stock vs. sector peers (z-scores) instead of absolute ranges | Seeking Alpha approach | Group by sector → z-scores within sector → normalise |
-| **M8** | **Market Regime Indicator** | Track S&P 500/FTSE 100 trend (SMA, distribution days) → "Uptrend" vs "Correction" | CAN SLIM (M), Zweig | Fetch SPY data; count distribution days; display status |
-| **M9** | **Accumulation/Distribution Rating** | 13-week ratio of up-volume to down-volume days | CAN SLIM, IBD | Compute from existing 6-month OHLCV; sum (volume × direction) over 65 days |
-| **M10** | **52-Week Range Metrics** | Price as % of 52W range; distance from high/low as % | Minervini (criteria 6–7) | `(price − low) / (high − low)` from existing data |
-| **M11** | **Consolidation/Base Detection** | Detect stocks in tight ranges (< 15% range over 6+ weeks) | Livermore breakout, Minervini VCP | 30-day range narrowing from OHLCV |
-| **M12** | **Support & Resistance Levels** | Key S/R from recent swing highs/lows | Livermore pivotal points | Swing-point algo on OHLCV; identify local min/max |
-| **M13** | **Interactive Candlestick Chart** | TradingView Lightweight Charts on Stock Detail page | Core UX | `lightweight-charts` (TradingView OSS, 40KB); pass OHLCV |
-| **M14** | **Weighted Alpha** | 1-year return weighted towards recent price (exponential decay) | Barchart momentum | 0.5 decay factor over 252 days |
-| **M15** | **Score History** | Store daily composite scores in time-series file; chart 30/90-day trend | Score trajectory | Append to `score-history.json` each ETL run; line chart on Detail |
+| Feature | Status | Notes |
+|---------|--------|-------|
+| **AI Research Notes (HuggingFace)** | **DONE** | ETL generates AI research notes for top 100 stocks via Qwen 2.5 7B Instruct. Stored in `ai-research-notes.json`. Dashboard shows "AI-Generated" badge (accent) or "Rule-Based" badge (grey). Falls back to rule-based generator when unavailable. |
 
 ---
 
-### Priority 3 — Large Effort (New Data Sources or Major Systems)
+## 6. New Feature Ideas from 2026 Research
 
-New API integrations, significant backend work, or new infrastructure.
+Based on competitive analysis and expert technique research conducted February 2026.
 
-| # | Feature | Description | Enables | Implementation |
-|---|---------|-------------|---------|----------------|
-| **L1** | **Financial Statements API** | Fetch income statement, balance sheet, cash flow (3–5 years) | Piotroski (9/9), Graham (7/7), Buffett, Greenblatt | **A**: Yahoo Finance `financials` endpoint (free, unreliable). **B**: [Financial Modeling Prep](https://financialmodelingprep.com/) free tier (250 req/day). **C**: SEC EDGAR XBRL. |
-| **L2** | **Piotroski F-Score** | Implement all 9 criteria scoring | Piotroski | Depends on L1. Compare current vs prior year across 9 metrics. |
-| **L3** | **Graham Number & Intrinsic Value** | `V = EPS × (8.5 + 2g) × 4.4/Y` + 7 criteria screen | Graham Defensive | Depends on L1 (book value, 10-year EPS). Bond yield from FRED API. |
-| **L4** | **DCF Fair Value Calculator** | 5-year projected FCF + terminal value | Morningstar/Simply Wall St valuation | Depends on L1 (FCF history). Need growth assumptions. |
-| **L5** | **Insider Trading Data** | Recent insider buys/sells with amounts | Zweig, Finviz feature | SEC EDGAR Form 4 (free, XML) or OpenInsider scraping. |
-| **L6** | **Institutional Ownership** | % of institutional holders; QoQ change | CAN SLIM (I) | SEC 13F filings (quarterly) or Yahoo `holders` endpoint. |
-| **L7** | **Analyst Estimates & Revisions** | Consensus EPS estimates, revision trends (30/60/90 day) | Zacks-style rank, Seeking Alpha, CAN SLIM | Yahoo `earnings` endpoint or Estimize. Track changes across ETL runs. |
-| **L8** | **Dividend History** | 10+ year payment history, growth rate, CAGR | Graham (criterion 4), income investing | Yahoo `dividends` endpoint or EOD Historical Data. |
-| **L9** | **Alert System** | User-configurable alerts: score threshold, signal trigger, price level | TradingView-style alerts | User accounts or email-only; background checker; notification service. Cloudflare Workers + D1. |
-| **L10** | **Portfolio Tracker** | Input holdings (ticker + shares + cost); portfolio score, allocation, P&L | Simply Wall St portfolio, Stock Rover | `localStorage` for MVP → backend. Portfolio score = weighted avg. |
-| **L11** | **Backtest Engine** | Test scoring strategies against historical performance | Stock Rover backtesting, validation | Archive daily `latest.json` snapshots. Compare top-N scored stocks vs benchmark. |
-| **L12** | **Pre-Built Strategy Screens** | One-click: "CAN SLIM", "Graham Value", "Minervini Trend", "Magic Formula Top 30", "Piotroski 8-9" | Multiple methodologies | Depends on M1–M7, L1–L3. Each = predefined filter combo. |
-| **L13** | **AI-Enhanced Sentiment** | Replace AFINN with LLM-based (GPT/Claude API) or FinBERT for nuanced analysis | Better sentiment | LLM per headline batch or FinBERT (HuggingFace, free). ~$0.01/100 headlines for LLM. |
-| **L14** | **Short Interest Data** | Short float %, days to cover | Squeeze detection, contrarian | FINRA (delayed), Ortex (paid), or FinViz Elite scrape. |
+### Tier 1 — High Impact, Achievable (Next Sprint)
+
+| # | Feature | Description | Why | Effort |
+|---|---------|-------------|-----|--------|
+| **N1** | ~~Natural Language Stock Query~~ | **DONE** — Client-side keyword parser on `/query` page. 10 example queries, covers cap/sector/fundamentals/technicals/expert screens. | Seeking Alpha Ask AI, Koyfin, Intellectia.ai all offer this. | ~~Medium~~ |
+| **N2** | ~~Factor Grades (A+ to F)~~ | **DONE** — Percentile-based A+ to F across 5 factors + overall. Displayed as grade card on StockDetail. | Seeking Alpha's most-loved feature. | ~~Low~~ |
+| **N3** | ~~Altman Z-Score~~ | **DONE** — Computed from financial statements. Safe/grey/distress zones in Expert Screens. | Stock Rover has it. | ~~Low~~ |
+| **N4** | ~~Risk-Adjusted Returns~~ | **DONE** — Sharpe ratio, Sortino ratio, max drawdown (1Y) from daily OHLCV. New section on StockDetail. | Every serious platform offers this. | ~~Low~~ |
+| **N5** | **Position Sizing Calculator** | Kelly criterion and fixed-% calculators on Portfolio page | TradingView has this. Common retail request. | Low |
+| **N6** | ~~Additional Technical Indicators~~ | **DONE** — ADX/DI+/DI- (14), Williams %R (14), Chaikin Money Flow (20). Uses real OHLCV highs/lows. Shown in Advanced Indicators. | IBD uses ADX heavily. | ~~Medium~~ |
+| **N7** | ~~Earnings Post-Drift Analysis~~ | **DONE** — 1/5/20-day returns after last earnings date. Separate card on StockDetail. | Earnings Whispers charges for this. | ~~Medium~~ |
+| **N8** | ~~SMR Rating (IBD-style)~~ | **DONE** — Sales growth + Operating Margin + ROE → A–E rating. Shown in Expert Screens. | IBD feature. | ~~Low~~ |
+
+### Tier 2 — Medium Impact, Medium Effort (Backlog)
+
+| # | Feature | Description | Why | Effort |
+|---|---------|-------------|-----|--------|
+| **N9** | **Chart Pattern Recognition** | Detect: double top/bottom, head & shoulders, cup-and-handle, triangles, flags | TrendSpider has 28 patterns. ChartPatterns.ai has 16. Key gap vs TradingView/IBD. Use OHLCV swing-point algorithm (extend S/R code). | High |
+| **N10** | **Candlestick Pattern Detection** | Detect: doji, engulfing, hammer, shooting star, morning/evening star, etc. | TrendSpider has 123 patterns. Standard technical analysis feature. Library: `technicalindicators` npm has this built in. | Medium |
+| **N11** | **AI Copilot Chat** | Chat interface on Stock Detail: "What are the risks for this stock?" "Compare to MSFT" | OpenBB Copilot, Seeking Alpha Ask AI, StockyPie. Growing expectation in 2026. | High |
+| **N12** | **Predictive Scoring** | ML-based forward-looking score: probability of outperforming market in 3 months | Danelfin's core feature. Train on historical score → return relationship from our score-history data. | High |
+| **N13** | **Theme/Sector Tagging** | Tag stocks with themes: AI, Clean Energy, Cybersecurity, GLP-1, EV | Finviz 2026 feature. Manual tagging initially, then automated via sector + description. | Medium |
+| **N14** | **Ichimoku Cloud** | Full Ichimoku system: Tenkan, Kijun, Senkou A/B, Chikou | Standalone trading system. Uses only OHLCV. Popular in Asian markets. | Medium |
+| **N15** | **Multi-Widget Dashboard** | Customisable dashboard layout: drag-and-drop cards for score, chart, news, signals | Koyfin's signature feature. Bloomberg-style. | High |
+| **N16** | **Volume Profile** | VPOC (Volume Point of Control), Value Area High/Low from OHLCV | Used by professional traders. Shows where most volume traded. Extends S/R analysis. | Medium |
+| **N17** | **Beneish M-Score** | Earnings manipulation probability. M > -1.78 = likely manipulator. | Stock Rover feature. Uses financial statement data we have. 8-variable formula. | Low |
+
+### Tier 3 — Lower Priority / High Effort (Future)
+
+| # | Feature | Description | Why | Effort |
+|---|---------|-------------|-----|--------|
+| **N18** | **Social Sentiment (Reddit/X)** | Aggregate social buzz: r/wallstreetbets, r/stocks, X FinTwit, StockTwits | Unusual Whales, BlackBox Stocks. Free APIs: Reddit JSON, Snoowrap. StockTwits API deprecated. | High |
+| **N19** | **Macro Overlay** | Yield curve, VIX level, Fed funds rate shown on Overview. Sector rotation tied to economic cycle. | Professional feature. FRED API (free) for macro data. | Medium |
+| **N20** | **Options Sentiment Proxy** | Put/Call ratio per stock from available sources. Max pain calculations. | No free real-time source. Could scrape Yahoo Options chain periodically. | High |
+| **N21** | **Economic Calendar** | FOMC dates, CPI, NFP, GDP releases with market impact rating | Free from FRED API / Investing.com. Useful for earnings calendar synergy. | Medium |
+| **N22** | **Global Coverage Expansion** | European markets (DAX, CAC 40), Asian markets (Nikkei, HSI) | Simply Wall St covers 100K+ securities globally. Expand stock universe. | High |
+| **N23** | **Paper Trading Mode** | Simulated portfolio with virtual money. Track hypothetical trades. | TradingView has this. Educational value. Build on Portfolio page. | Medium |
+| **N24** | **Weighted Screener** | User-defined weights for multi-factor screening (like Stock Rover) | Stock Rover's #1 feature for power users. | Medium |
+| **N25** | **ESG Scores** | Environmental, Social, Governance scores per stock | Growing demand. Yahoo Finance provides some ESG data. | Medium |
 
 ---
 
-### Implementation Priority Map
+### Updated Implementation Priority Map
 
 ```
-NOW (Sprint 1–2)                    NEXT (Sprint 3–5)                   LATER (Sprint 6+)
-─────────────────                   ──────────────────                   ─────────────────
-Q1  RS Percentile Rank              M1  SMA 150                         L1  Financial Statements API
-Q2  Minervini Screen (partial)      M2  Expanded Fundamentals           L2  Piotroski F-Score
-Q3  Radar Chart                     M3  PEG Ratio                       L3  Graham Intrinsic Value
-Q4  Market Heat Map                 M4  Enterprise Value                L4  DCF Fair Value
-Q5  Sector Performance              M7  Sector-Relative Scoring         L5  Insider Trading Data
-Q6  Watchlist                       M8  Market Regime Indicator         L7  Analyst Estimates
-Q7  URL State                       M9  Acc/Dist Rating                 L9  Alert System
-Q8  Data Completeness Badge         M13 Interactive Candlestick Chart   L10 Portfolio Tracker
-Q12 CSV Export                      M15 Score History                   L11 Backtest Engine
-                                    M11 Consolidation Detection         L12 Strategy Screens
-                                    M12 Support/Resistance              L13 AI Sentiment
+NOW (Next Sprint)                   NEXT (Backlog)                       LATER (Future)
+─────────────────                   ──────────────                       ──────────────
+✅ N1  NL Stock Query (DONE)           N9  Chart Pattern Recognition        N18 Social Sentiment
+✅ N2  Factor Grades (DONE)            N10 Candlestick Patterns             N19 Macro Overlay
+✅ N3  Altman Z-Score (DONE)           N11 AI Copilot Chat                  N20 Options Sentiment
+✅ N4  Risk-Adjusted Returns (DONE)    N12 Predictive Scoring               N22 Global Expansion
+N5  Position Sizing Calculator      N13 Theme Tagging                    N23 Paper Trading
+✅ N6  ADX/Williams/CMF (DONE)         N14 Ichimoku Cloud                   N25 ESG Scores
+✅ N7  Earnings Post-Drift (DONE)      N15 Multi-Widget Dashboard
+✅ N8  SMR Rating (DONE)               N16 Volume Profile
+                                    N17 Beneish M-Score
+                                    N21 Economic Calendar
+                                    N24 Weighted Screener
 ```
 
 ---
 
-### Impact vs Effort Matrix
+### Updated Impact vs Effort Matrix
 
 ```
                         LOW EFFORT ◄──────────────────────► HIGH EFFORT
                         │                                          │
-  HIGH IMPACT           │  Q1 RS Percentile ★                     │  L1 Financials API ★
-                        │  Q4 Heat Map                             │  L2 Piotroski
-                        │  Q6 Watchlist                            │  L7 Analyst Estimates
-                        │  M8 Market Regime ★                     │  L4 DCF Fair Value
-                        │  M13 Candlestick Chart ★                │  L12 Strategy Screens
-                        │  M2 Expanded Fundamentals ★             │
-                        │  M7 Sector-Relative Scoring              │
+  HIGH IMPACT           │  ✅ N2 Factor Grades (DONE)              │  N9  Chart Patterns ★
+                        │  ✅ N3 Altman Z-Score (DONE)             │  N11 AI Copilot Chat
+                        │  ✅ N4 Risk-Adjusted Returns (DONE)      │  N12 Predictive Scoring
+                        │  ✅ N8 SMR Rating (DONE)                 │  N15 Multi-Widget Dashboard
+                        │  ✅ N6 ADX/Williams/CMF (DONE)           │  ✅ N1  NL Stock Query (DONE)
                         │                                          │
-  MEDIUM IMPACT         │  Q3 Radar Chart                          │  L5 Insider Trading
-                        │  Q5 Sector View                          │  L6 Institutional Ownership
-                        │  Q7 URL State                            │  L10 Portfolio Tracker
-                        │  Q8 Data Completeness                    │  L9 Alert System
-                        │  M1 SMA 150                              │  L11 Backtest Engine
-                        │  M3 PEG Ratio                            │
-                        │  M9 Acc/Dist Rating                      │
+  MEDIUM IMPACT         │  N5 Position Sizing                      │  N10 Candlestick Patterns
+                        │  ✅ N7 Earnings Post-Drift (DONE)        │  N13 Theme Tagging
+                        │  N17 Beneish M-Score                    │  N14 Ichimoku Cloud
+                        │                                          │  N16 Volume Profile
+                        │                                          │  N18 Social Sentiment
+                        │                                          │  N21 Economic Calendar
+                        │                                          │  N24 Weighted Screener
                         │                                          │
-  LOW IMPACT            │  Q12 CSV Export                           │  L14 Short Interest
-                        │  Q10 Multi-Timeframe Labels              │  L8 Dividend History
-                        │  M14 Weighted Alpha                      │  L13 AI Sentiment
+  LOW IMPACT            │                                          │  N19 Macro Overlay
+                        │                                          │  N20 Options Sentiment
+                        │                                          │  N22 Global Expansion
+                        │                                          │  N23 Paper Trading
+                        │                                          │  N25 ESG Scores
                         │                                          │
 
-★ = Recommended first priorities (highest impact-to-effort ratio)
+★ = Recommended next priorities (highest impact-to-effort ratio)
 ```
 
 ---
 
-### Recommended Immediate Actions
+### Recommended Next Actions
 
-1. ~~**Start archiving daily `latest.json`**~~ — **DONE**. ETL workflow now copies `data/latest.json` to `data/archive/YYYY-MM-DD.json` each run (90-day retention).
+> **Status update (Feb 2026):** All 7 features below have been implemented.
 
-2. ~~**Extend Yahoo v7 fetch**~~ — **DONE**. Added ~25 fields from v7 quote + v10 quoteSummary: P/B, ROE, ROA, margins (gross/operating/profit), D/E, current ratio, dividend yield, EPS, book value, enterprise value, EBITDA, FCF, insider/institutional ownership, short float, analyst target, PEG ratio.
+1. ~~**N2 — Factor Grades**~~ **DONE** — Percentile-based A+ to F grades across Value, Growth, Profitability, Momentum, Safety. Computed in ETL, displayed as a 6-column grade card on StockDetail.
 
-3. ~~**Add RS Percentile**~~ — **DONE**. Computed in ETL (40% 3M + 30% 6M + 30% 1Y returns, ranked 1-99). Displayed in Screener, StockDetail, and Minervini Screen.
+2. ~~**N3 — Altman Z-Score**~~ **DONE** — Computed from financial statements (WC/TA, RE/TA, EBIT/TA, MV/TL, Sales/TA). Shown in Expert Screens with safe/grey/distress zone indicators.
 
-4. ~~**Add SMA 150**~~ — **DONE**. Chart period extended to 1 year. SMA 150, SMA200 slope, and full Minervini 8-criteria trend template implemented.
+3. ~~**N4 — Risk-Adjusted Returns**~~ **DONE** — 1-year Sharpe ratio, Sortino ratio, and max drawdown computed from daily OHLCV. New "Risk-Adjusted Returns" card on StockDetail.
 
-5. ~~**Add candlestick chart**~~ — **DONE**. Using `lightweight-charts` v5 (TradingView OSS). Per-stock OHLCV data written to `data/charts/`, loaded lazily on StockDetail page. Includes volume histogram and SMA 50/150/200 overlays.
+4. ~~**N8 — SMR Rating**~~ **DONE** — Sales growth + Operating Margin + ROE composite rated A–E (IBD-style). Shown in Expert Screens section.
 
-### Additional Features Shipped
+5. ~~**N6 — Additional Technical Indicators**~~ **DONE** — ADX/DI+/DI- (14-period, uses real OHLCV highs/lows), Williams %R (14), Chaikin Money Flow (20). All shown in Advanced Indicators section.
 
-| Feature | Status | Notes |
-|---------|--------|-------|
-| **Q2** Minervini Trend Template Screen | **DONE** | New `/minervini` page with 8-criteria filter |
-| **Q4** Market Heat Map | **DONE** | New `/heatmap` page, 3 color modes (change/score/RS) |
-| **Q5** Sector Performance View | **DONE** | New `/sectors` page with per-sector aggregates |
-| **Q6** Watchlist (localStorage) | **DONE** | New `/watchlist` page, persisted in browser |
-| **Q8** Data Completeness Badge | **DONE** | Shown on StockDetail and Screener |
-| **Q9** Stock Comparison View | **DONE** | New `/compare` page, side-by-side 2-4 stocks |
-| **Q12** Screener CSV Export | **DONE** | Export button on Screener page |
-| **M1** SMA 150 | **DONE** | Added to technicals, powers Minervini |
-| **M2** Expanded Fundamentals | **DONE** | 25+ fields from Yahoo quoteSummary |
-| **M3** PEG Ratio | **DONE** | From Yahoo API |
-| **M4** Enterprise Value | **DONE** | From Yahoo API |
-| **M6** Style Classification | **DONE** | Value/Blend/Growth rule-based |
-| **M9** Acc/Dist Rating | **DONE** | A-E rating from 13-week volume |
-| **M10** 52-Week Range Metrics | **DONE** | Price as % of 52W range |
-| **M11** Consolidation Detection | **DONE** | 30-day high-low range % |
-| **M13** Interactive Candlestick Chart | **DONE** | lightweight-charts v5 + OHLCV pipeline |
+6. ~~**N7 — Earnings Post-Drift**~~ **DONE** — 1/5/20-day price returns after last earnings date. Separate card on StockDetail with bullish/bearish coloring.
 
-### Recently Shipped (February 2026 — Batch 3)
+7. ~~**N1 — Natural Language Query**~~ **DONE** — Client-side keyword parser (no LLM needed). New `/query` page with 10 example queries. Parses cap size, sectors, fundamentals, technicals, expert screens, factor grades into stock filters. Added to navigation under Screens.
 
-| Feature | Status | Notes |
-|---------|--------|-------|
-| **Q3** Score Radar Chart | **DONE** | 6-axis Recharts RadarChart on StockDetail (Momentum, Technical, Sentiment, Fundamentals, Volume, Risk) |
-| **Q7** URL State for Screener | **DONE** | Filters, sort, pagination synced with URL search params. Bookmarkable/shareable |
-| **M7** Sector-Relative Scoring | **DONE** | Z-score within sector + rank. `sectorZScore`, `sectorRank`, `sectorCount` fields |
-| **M8** Market Regime Indicator | **DONE** | S&P 500 + FTSE 100 regime detection (bull/correction/bear). SMA analysis + distribution day counting. Shown on Overview |
-| **M12** Support & Resistance Levels | **DONE** | Swing-point algorithm on OHLCV data. Top 3 support + 3 resistance levels per stock on StockDetail |
-| **M15** Score History | **DONE** | Daily composite scores stored in `score-history.json`. 30/90-day SVG trend chart on StockDetail |
-| **L1** Financial Statements API | **DONE** | Yahoo quoteSummary incomeStatement/balanceSheet/cashflow. Piotroski F-Score (0-9), Graham Number, Buffett Quality Score (0-5) |
-| **Alerts** Telegram Notifications | **DONE** | Edge-triggered alerts via Telegram Bot + ntfy.sh fallback. 8 default rules for all stocks |
-| **Guide** Updated | **DONE** | All new features documented with explanations and strategy guides |
+---
 
-### Recently Shipped (February 2026 — Batch 4)
+### Shipped Features Summary
 
-| Feature | Status | Notes |
-|---------|--------|-------|
-| **Q1** Advanced Screener Filters | **DONE** | Collapsible "Filters" panel with 10 range sliders: Score, RSI, RS Percentile, P/E, Piotroski, Buffett, Bearish, Minervini, Change %, Beta. All synced to URL for sharing. Active filter count badge. |
-| **Q10** PWA Support | **DONE** | manifest.json, service worker (cache-first for app shell, network-first for data), Apple meta tags, SVG icons, install prompt banner with dismiss. Enables "Add to Home Screen" and offline viewing. |
-| **UX** Tooltips Everywhere | **DONE** | InfoTooltip component + central TIPS definitions (~80 entries). Added to Overview, Screener, SectorPerformance, StockComparison, Watchlist, and StockDetail. |
-| **UX** Section Descriptions | **DONE** | Added "how to use" descriptions to Score Breakdown, Support & Resistance, and Expert Screens sections on StockDetail. |
-| **Fix** Graham Number | **DONE** | Was always N/A — financial statements API lacked sharesOutstanding. Fixed to use quote-level trailingEps + bookValue instead. |
+| Category | Shipped | Total Planned | Completion |
+|----------|---------|---------------|------------|
+| Quick Wins (Q-series) | 14 | 14 | **100%** |
+| Medium Effort (M-series) | 17 | 17 | **100%** |
+| Large Effort (L-series) | 12 | 14 | **86%** |
+| Expert Methodologies | 5 of 9 | 9 | **56%** |
+| **Total features shipped** | **50+** | — | — |
 
-### Recently Shipped (February 2026 — Batch 5)
+---
 
-| Feature | Status | Notes |
-|---------|--------|-------|
-| **Q11** Portfolio Tracker | **DONE** | Full portfolio management with localStorage persistence. Add/remove holdings with ticker search autocomplete. P&L calculation per position and total. SVG pie chart for allocation. Summary cards (Total Value, P&L, Cost, Avg Score). |
-| **M5** CAN SLIM Screen | **DONE** | William O'Neil's 7-point growth methodology. Evaluates C-A-N-S-L-I-M criteria per stock using available data proxies. Minimum passing filter (4-7). Per-stock expandable cards with pass/fail details. Market regime integration for "M" criterion. |
-| **M14** Earnings Calendar | **DONE** | Calendar view grouped by date with upcoming/recent/all views. Highlights today and this week. Sort by date, score, or ticker. ETL now fetches earningsDate from Yahoo v7. |
-| **L4** Custom Screening Builder | **DONE** | 25 metric definitions with dynamic AND/OR filter rules. Operators: >, >=, <, <=, =. Save/load named screens to localStorage. Results table with dynamic columns based on active rules. |
-| **L6** Strategy Backtest | **DONE** | 8 built-in strategies (High Score, Momentum, Minervini, Value+Growth, Piotroski, Buffett, Oversold, Breakout). Aggregate stats (avg return, win rate, median, best/worst). Score history integration. Sortable results table. |
-| **Nav** Reorganised Navigation | **DONE** | Added Portfolio to primary nav. New "Screens" dropdown (Minervini, CAN SLIM, Custom Screen, Earnings). Backtest added to Analysis group. |
-| **L3** DCF Lite Valuation | **DONE** | 5-year DCF model using operating cash flow, growth rate (capped 30%), 10% discount, 15x terminal. Per-share intrinsic value on StockDetail alongside Graham Number with under/overvalued indicator. |
-| **L5** Finance-Specific Sentiment | **DONE** | Replaced generic AFINN with ~200-word finance lexicon (unigrams + 100+ bigram phrases). Negation handling ("not good" flips score). Positional weighting (headline start matters more). Covers beat/miss estimates, guidance raised/lowered, SEC investigation, dividend changes, etc. |
-| **M14b** Earnings Date ETL | **DONE** | Added `earningsDate` field from Yahoo v7 `earningsTimestamp`. Flows through to frontend Earnings Calendar and StockDetail fundamentals grid. |
-| **L8** AI Stock Summaries | **DONE** | Rule-based NLG generating analyst-style research notes per stock. 5 sections: opening assessment, technical setup, fundamentals & valuation, signals & catalysts, closing verdict. Expandable card on StockDetail page. Uses all available data (scores, RSI, MAs, Bollinger, volume, P/E, ROE, debt, Graham, DCF, Piotroski, Buffett, signals, OBV, Minervini, RS). |
+### Research Sources
 
-### Recently Shipped (February 2026 — Batch 6)
-
-| Feature | Status | Notes |
-|---------|--------|-------|
-| **Q13** Custom Screen CSV Export | **DONE** | Export button on Custom Screen Builder. Headers include Ticker, Name, Market, Price, Change%, Score + dynamic columns for each active filter rule metric. |
-| **L2** Multi-Year Revenue/Earnings Charts | **DONE** | ETL writes `data/financials.json` with annual Revenue, Net Income, Gross Profit, Operating Income per stock. Recharts grouped BarChart on StockDetail with large-number formatting ($383B). |
-| **Q12** Stock Comparison Sparklines | **DONE** | Shared `useOhlcvData` hook (module-level cache). `MiniSparkline` component (200x60 Recharts AreaChart, 6-month close prices). Auto-colored by trend (green up, red down). Shown below each stock's ScoreGauge on Compare page. |
-| **M16** Sector Rotation Model | **DONE** | New `/sector-rotation` page. Groups stocks by sector, computes avg RS percentile and momentum acceleration (3M−6M return delta). RRG-style Recharts ScatterChart with 4 quadrants (Leading/Weakening/Lagging/Improving). Sortable sector table below. Added to Analysis nav group. |
-| **M17** Correlation Matrix | **DONE** | `computeCorrelationMatrix()` using daily log returns with Pearson correlation. SVG heatmap with diverging color scale (red↔white↔green). Shown on Portfolio page when 2+ holdings exist. Uses shared `useOhlcvData` hook. |
-| **Q14** Dark/Light Chart Themes | **DONE** | 6 CSS variables (`--chart-bullish/bearish/neutral/accent/accent-light/grid`) in both `:root` and `.dark`. Updated ScoreGauge, ScoreRadarChart, SentimentBar, ScoreHistoryChart, CandlestickChart (via `getComputedStyle`), and new FinancialsBarChart. Brighter variants for dark mode. |
-
-### Recently Shipped (February 2026 — Batch 7)
-
-| Feature | Status | Notes |
-|---------|--------|-------|
-| **UX — Performance Optimisation** | **DONE** | All 22 page imports converted to `React.lazy()` with `<Suspense>` fallback spinner. Vite manual chunks: `vendor-react` (163KB), `vendor-recharts` (434KB), `vendor-charts` (165KB), `vendor-table` (52KB). Each page loads on-demand. |
-| **Q10** Multi-Timeframe Signal Labels | **DONE** | Added `timeframe: 'short' | 'medium' | 'long'` to all 24 signal types. `computeTimeframeSentiment()` computes Buy/Hold/Sell per timeframe. Multi-Timeframe Opinion card on StockDetail with colored boxes. Timeframe badges `[S]`/`[M]`/`[L]` on each signal. |
-| **M14** Weighted Alpha | **DONE** | Exponentially-weighted 1-year return (decay 0.985), annualized as percentage. Shown in StockDetail Key Metrics and as sortable Screener column. |
-| **L8** Dividend History | **DONE** | Yahoo chart API `&events=div` parameter fetches 5-year dividend events. `computeDividendMetrics()` computes annual DPS, 5-year CAGR, growth streak, payout consistency. Recharts BarChart of annual dividends on StockDetail (dividend-paying stocks only). |
-| **L13** AI-Enhanced Sentiment | **DONE** | HuggingFace FinBERT Inference API integration. Batch 10 headlines per request. Falls back to lexicon scoring if no API key or on error. "AI" badge on FinBERT-scored news items. 503/429 retry logic. |
-| **L5** Insider Trading Data | **DONE** | SEC EDGAR Form 4 filings via company_tickers.json CIK map + submissions endpoint. Top 200 US stocks by market cap. `insider-trades.json` with 90-day buy/sell summary. StockDetail shows insider trading table with Net Insider Buying/Selling badge. |
-| **ETL Speed Optimisation** | **DONE** | Concurrency: chart 10→15, FinViz 5→8, news 4→6, financials 3→5, quoteSummary 5→8. Delays: request 200→100ms, batch 300→150ms, quoteSummary 150→80ms. Yahoo v7 batch 40→50. |
-
-### Remaining Next Priorities
-
-1. **L7 — Options Flow Integration** — Surface unusual options activity data to identify institutional positioning ahead of moves. (Skipped — no free data source available.)
-2. **Q15 — Watchlist Alerts** — Push notifications / email when watchlist stocks hit score thresholds or trigger signals.
-3. **M18 — Risk-Adjusted Returns** — Sharpe ratio, Sortino ratio, and max drawdown calculations per stock.
-4. **L14 — Economic Calendar** — FOMC dates, CPI/NFP releases, GDP reports with market impact indicators.
-5. **Q16 — Portfolio Rebalancing** — Suggest trades to rebalance portfolio towards target allocations.
+- [TradingView What's New](https://www.tradingview.com/support/whats-new/)
+- [Top AI Trading Tools 2026 — Pragmatic Coders](https://www.pragmaticcoders.com/blog/top-ai-tools-for-traders)
+- [Koyfin Best Stock Screeners 2026](https://www.koyfin.com/blog/best-stock-screeners/)
+- [Koyfin vs Finviz Elite 2026 — TraderHQ](https://traderhq.com/koyfin-vs-finviz/)
+- [Stock Rover Review 2026 — StockBrokers.com](https://www.stockbrokers.com/review/tools/stockrover)
+- [Seeking Alpha Quant Ratings FAQ](https://seekingalpha.com/article/4263303-quant-ratings-and-factor-grades-faq)
+- [Seeking Alpha Ask AI Updates Nov 2025](https://seekingalpha.com/article/4846603-new-updates-to-ask-seeking-alpha)
+- [Simply Wall St What's New](https://support.simplywall.st/hc/en-us/articles/7894830045199-What-s-New)
+- [Simply Wall St Review 2026 — The Stock Dork](https://www.thestockdork.com/simply-wall-st-review/)
+- [Finviz New Maps Feature](https://finviz.com/blog/new-stock-market-maps-for-market-cap-52-week-highs-lows-themes-and-insider-trading/)
+- [Danelfin How It Works](https://danelfin.com/how-it-works)
+- [Danelfin Review 2026 — WallStreetZen](https://www.wallstreetzen.com/blog/danelfin-review/)
+- [TrendSpider Automated Technical Analysis](https://trendspider.com/product/)
+- [TrendSpider Chart Pattern Recognition](https://help.trendspider.com/kb/automated-technical-analysis/automated-chart-pattern-recognition)
+- [OpenBB Platform — GitHub](https://github.com/OpenBB-finance/OpenBB)
+- [OpenBB Terminal Features](https://www.openbb.co/products/terminal)
+- [ChartPatterns.ai Pattern Recognition](https://chartpatterns.ai/)
+- [Top Chart Pattern Recognition Tools 2026 — Liberated Stock Trader](https://www.liberatedstocktrader.com/candlestick-pattern-analysis-recognition-software/)
+- [AI Stock Screeners 2026 — WallStreetZen](https://www.wallstreetzen.com/blog/best-ai-stock-screener/)
+- [Best AI Stock Research Tools 2026 — WallStreetZen](https://www.wallstreetzen.com/blog/best-ai-stock-research-tools/)
+- [Intellectia.ai AI Screener](https://intellectia.ai/features/ai-screener)
+- [Earnings Whispers — Post-Earnings Drift](https://www.earningswhispers.com/about-pead)
+- [Factor Investing — Alpha Architect](https://alphaarchitect.com/momentum-factor-investing/)
+- [Q3 2025 Factor Performance — Confluence](https://www.confluence.com/q3-2025-factor-performance-analysis/)
+- [Kelly Criterion for Trading — BacktestBase](https://www.backtestbase.com/education/how-much-risk-per-trade)
+- [UnusualWhales Scanner — LuxAlgo](https://www.luxalgo.com/blog/unusualwhales-scanner-sweeps-flow-and-edge/)
+- [BlackBox Stocks AI Features](https://www.pragmaticcoders.com/blog/top-ai-tools-for-traders)
+- [YOLOv8 Stock Pattern Detection — HuggingFace](https://huggingface.co/foduucom/stockmarket-pattern-detection-yolov8)
 
 ---
 

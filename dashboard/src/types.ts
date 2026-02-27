@@ -109,6 +109,37 @@ export interface StockRecord {
   grahamNumber: number | null;
   buffettScore: number | null;
   buffettDetails: string[];
+  // N6: Additional Technical Indicators
+  adx: number | null;
+  plusDI: number | null;
+  minusDI: number | null;
+  williamsR: number | null;
+  chaikinMoneyFlow: number | null;
+  // N4: Risk-Adjusted Returns
+  sharpeRatio: number | null;
+  sortinoRatio: number | null;
+  maxDrawdown: number | null;
+  // N3: Altman Z-Score
+  altmanZScore: number | null;
+  altmanZone: 'safe' | 'grey' | 'distress' | null;
+  // N2: Factor Grades
+  factorGrades: {
+    value: string;
+    growth: string;
+    profitability: string;
+    momentum: string;
+    safety: string;
+    overall: string;
+  } | null;
+  // N8: SMR Rating
+  smrRating: string | null;
+  // N7: Earnings Drift
+  earningsDrift: {
+    lastEarningsDate: string;
+    return1d: number | null;
+    return5d: number | null;
+    return20d: number | null;
+  } | null;
   // Earnings & valuation
   earningsDate: string | null;
   dcfValue: number | null;

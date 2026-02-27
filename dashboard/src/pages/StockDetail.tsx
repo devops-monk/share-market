@@ -432,8 +432,89 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
               </ul>
             )}
           </div>
+
+          {/* Altman Z-Score */}
+          <div className="p-4 rounded-lg bg-surface-hover border border-surface-border">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-sm font-semibold t-primary">Altman Z-Score</span>
+              <span className={`text-lg font-bold font-mono ${
+                stock.altmanZone === 'safe' ? 'text-bullish' :
+                stock.altmanZone === 'grey' ? 'text-neutral' : stock.altmanZone === 'distress' ? 'text-bearish' : 't-muted'
+              }`}>{stock.altmanZScore?.toFixed(2) ?? 'N/A'}</span>
+            </div>
+            <p className="text-xs t-muted">
+              {stock.altmanZone === 'safe' ? 'Safe zone (>2.99) — Low bankruptcy risk' :
+               stock.altmanZone === 'grey' ? 'Grey zone (1.81-2.99) — Moderate risk' :
+               stock.altmanZone === 'distress' ? 'Distress zone (<1.81) — High bankruptcy risk' :
+               'Insufficient data'}
+            </p>
+          </div>
+
+          {/* SMR Rating */}
+          <div className="p-4 rounded-lg bg-surface-hover border border-surface-border">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-sm font-semibold t-primary">SMR Rating</span>
+              <span className={`text-lg font-bold font-mono ${
+                stock.smrRating === 'A' ? 'text-bullish' :
+                stock.smrRating === 'B' ? 'text-bullish' :
+                stock.smrRating === 'C' ? 'text-neutral' : 'text-bearish'
+              }`}>{stock.smrRating ?? 'N/A'}</span>
+            </div>
+            <p className="text-xs t-muted">
+              Sales growth + Operating margin + ROE composite (IBD-style). A/B = strong fundamentals.
+            </p>
+          </div>
         </div>
       </div>
+
+      {/* Factor Grades */}
+      {stock.factorGrades && (
+        <div className="card p-5">
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Factor Grades</h2>
+          <p className="text-xs t-muted mb-4 leading-relaxed">
+            Percentile-based grades across five investment factors. <strong className="t-secondary">A+</strong> = top 5%, <strong className="t-secondary">F</strong> = bottom 8%.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-3">
+            {(['overall', 'value', 'growth', 'profitability', 'momentum', 'safety'] as const).map(factor => {
+              const grade = stock.factorGrades![factor];
+              const isGood = grade.startsWith('A') || grade.startsWith('B');
+              const isBad = grade === 'D' || grade === 'F';
+              return (
+                <div key={factor} className={`rounded-lg border p-3 text-center ${
+                  factor === 'overall' ? 'border-accent/30 bg-accent/5' : 'border-surface-border bg-surface-hover'
+                }`}>
+                  <p className="text-[10px] t-muted uppercase tracking-wider mb-1">{factor}</p>
+                  <p className={`text-xl font-bold font-mono ${
+                    isGood ? 'text-bullish' : isBad ? 'text-bearish' : 'text-neutral'
+                  }`}>{grade}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* Earnings Drift */}
+      {stock.earningsDrift && (
+        <div className="card p-5">
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Post-Earnings Drift</h2>
+          <p className="text-xs t-muted mb-4">Price returns after last earnings ({stock.earningsDrift.lastEarningsDate})</p>
+          <div className="grid grid-cols-3 gap-3">
+            {[
+              { label: '1-Day', val: stock.earningsDrift.return1d },
+              { label: '5-Day', val: stock.earningsDrift.return5d },
+              { label: '20-Day', val: stock.earningsDrift.return20d },
+            ].map(({ label, val }) => (
+              <div key={label} className="rounded-lg border border-surface-border bg-surface-hover p-3 text-center">
+                <p className="text-xs t-muted mb-1">{label}</p>
+                <p className={`text-lg font-bold font-mono ${
+                  val != null ? (val >= 0 ? 'text-bullish' : 'text-bearish') : 't-muted'
+                }`}>{val != null ? `${val >= 0 ? '+' : ''}${val.toFixed(1)}%` : 'N/A'}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Minervini Trend Template */}
       <div className="card p-5">
@@ -470,8 +551,24 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
           {stock.obvDivergence && (
             <Metric label="OBV Divergence" value={stock.obvDivergence} positive={stock.obvDivergence === 'bullish'} />
           )}
+          <Metric label="ADX" value={stock.adx?.toFixed(1) ?? 'N/A'} highlight={stock.adx != null && stock.adx > 25} />
+          <Metric label="+DI / -DI" value={stock.plusDI != null && stock.minusDI != null ? `${stock.plusDI.toFixed(1)} / ${stock.minusDI.toFixed(1)}` : 'N/A'} positive={stock.plusDI != null && stock.minusDI != null ? stock.plusDI > stock.minusDI : undefined} />
+          <Metric label="Williams %R" value={stock.williamsR?.toFixed(1) ?? 'N/A'} highlight={stock.williamsR != null && (stock.williamsR > -20 || stock.williamsR < -80)} />
+          <Metric label="Chaikin MF" value={stock.chaikinMoneyFlow?.toFixed(3) ?? 'N/A'} positive={stock.chaikinMoneyFlow != null ? stock.chaikinMoneyFlow > 0 : undefined} />
         </div>
       </div>
+
+      {/* Risk-Adjusted Returns */}
+      {(stock.sharpeRatio != null || stock.sortinoRatio != null || stock.maxDrawdown != null) && (
+        <div className="card p-5">
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Risk-Adjusted Returns (1Y)</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+            <Metric label="Sharpe Ratio" value={stock.sharpeRatio?.toFixed(2) ?? 'N/A'} positive={stock.sharpeRatio != null ? stock.sharpeRatio > 0.5 : undefined} />
+            <Metric label="Sortino Ratio" value={stock.sortinoRatio?.toFixed(2) ?? 'N/A'} positive={stock.sortinoRatio != null ? stock.sortinoRatio > 0.5 : undefined} />
+            <Metric label="Max Drawdown" value={stock.maxDrawdown != null ? `${stock.maxDrawdown.toFixed(1)}%` : 'N/A'} positive={stock.maxDrawdown != null ? stock.maxDrawdown > -15 : undefined} />
+          </div>
+        </div>
+      )}
 
       {/* Multi-Timeframe Opinion */}
       {stock.timeframeSentiment && (

@@ -161,6 +161,88 @@ async function main() {
         priceWithin25PctOfHigh, rsAbove70].filter(Boolean).length,
     };
 
+    // N3: Altman Z-Score (manufacturing-focused formula)
+    let altmanZScore: number | null = null;
+    let altmanZone: 'safe' | 'grey' | 'distress' | null = null;
+    const fd = financialsMap.get(quote.ticker);
+    if (fd && fd.annuals.length > 0) {
+      const a = fd.annuals[0]; // most recent year
+      const ta = a.totalAssets;
+      const tl = a.totalLiabilities;
+      const ca = a.currentAssets;
+      const cl = a.currentLiabilities;
+      const rev = a.totalRevenue;
+      const oi = a.operatingIncome; // proxy for EBIT
+      const re = a.totalStockholderEquity;
+      const mktCap = quote.marketCap;
+      if (ta != null && ta > 0 && tl != null && ca != null && cl != null && rev != null && oi != null && re != null) {
+        const wcTA = (ca - cl) / ta;     // Working Capital / Total Assets
+        const reTA = (a.netIncome ?? 0) > 0 ? ((re - (tl ?? 0)) > 0 ? (re / ta) * 0.5 : 0) : 0; // Retained Earnings proxy / TA
+        const ebitTA = oi / ta;           // EBIT / Total Assets
+        const mvBVDebt = mktCap / (tl > 0 ? tl : 1); // Market Cap / Total Liabilities
+        const salesTA = rev / ta;         // Sales / Total Assets
+        altmanZScore = +(1.2 * wcTA + 1.4 * reTA + 3.3 * ebitTA + 0.6 * mvBVDebt + 1.0 * salesTA).toFixed(2);
+        altmanZone = altmanZScore > 2.99 ? 'safe' : altmanZScore > 1.81 ? 'grey' : 'distress';
+      }
+    }
+
+    // N8: SMR Rating (Sales growth + Margins + ROE) — IBD-style A-E
+    let smrRating: string | null = null;
+    {
+      const rg = quote.revenueGrowth;
+      const om = quote.operatingMargins;
+      const roe = quote.returnOnEquity;
+      if (rg != null && om != null && roe != null) {
+        let smrScore = 0;
+        // Sales growth (0-33)
+        if (rg > 0.25) smrScore += 33;
+        else if (rg > 0.10) smrScore += 25;
+        else if (rg > 0) smrScore += 15;
+        else smrScore += 5;
+        // Operating margin (0-33)
+        if (om > 0.20) smrScore += 33;
+        else if (om > 0.10) smrScore += 25;
+        else if (om > 0) smrScore += 15;
+        else smrScore += 5;
+        // ROE (0-34)
+        if (roe > 0.20) smrScore += 34;
+        else if (roe > 0.10) smrScore += 25;
+        else if (roe > 0) smrScore += 15;
+        else smrScore += 5;
+        smrRating = smrScore >= 80 ? 'A' : smrScore >= 60 ? 'B' : smrScore >= 40 ? 'C' : smrScore >= 20 ? 'D' : 'E';
+      }
+    }
+
+    // N7: Earnings Drift (post-earnings price returns)
+    let earningsDrift: StockRecord['earningsDrift'] = null;
+    if (quote.earningsDate) {
+      const edDate = new Date(quote.earningsDate);
+      const now = new Date();
+      const hc = quote.historicalClose;
+      // Only compute for past earnings dates
+      if (edDate < now && hc.length >= 252) {
+        const timestamps = quote.ohlcvTimestamps;
+        if (timestamps.length > 0) {
+          // Find the index of earnings date in our OHLCV data
+          const edTime = edDate.getTime() / 1000;
+          let edIdx = -1;
+          for (let j = 0; j < timestamps.length; j++) {
+            if (timestamps[j] >= edTime) { edIdx = j; break; }
+          }
+          if (edIdx >= 0 && edIdx < hc.length - 1) {
+            const basePrice = hc[edIdx];
+            const return1d = edIdx + 1 < hc.length ? +((hc[edIdx + 1] - basePrice) / basePrice * 100).toFixed(2) : null;
+            const return5d = edIdx + 5 < hc.length ? +((hc[edIdx + 5] - basePrice) / basePrice * 100).toFixed(2) : null;
+            const return20d = edIdx + 20 < hc.length ? +((hc[edIdx + 20] - basePrice) / basePrice * 100).toFixed(2) : null;
+            earningsDrift = {
+              lastEarningsDate: quote.earningsDate,
+              return1d, return5d, return20d,
+            };
+          }
+        }
+      }
+    }
+
     stockRecords.push({
       ticker: quote.ticker,
       name: quote.name,
@@ -196,6 +278,25 @@ async function main() {
       stochasticD: tech.stochastic?.d ?? null,
       obvTrend: tech.obvTrend,
       obvDivergence: tech.obvDivergence,
+      // N6: Additional Technical Indicators
+      adx: tech.adx,
+      plusDI: tech.plusDI,
+      minusDI: tech.minusDI,
+      williamsR: tech.williamsR,
+      chaikinMoneyFlow: tech.chaikinMoneyFlow,
+      // N4: Risk-Adjusted Returns
+      sharpeRatio: tech.sharpeRatio,
+      sortinoRatio: tech.sortinoRatio,
+      maxDrawdown: tech.maxDrawdown,
+      // N3: Altman Z-Score
+      altmanZScore,
+      altmanZone,
+      // N2: Factor Grades (populated in post-processing below)
+      factorGrades: null,
+      // N8: SMR Rating
+      smrRating,
+      // N7: Earnings Drift
+      earningsDrift,
       volumeRatio: tech.volumeRatio,
       priceReturn3m: tech.priceReturn3m,
       priceReturn6m: tech.priceReturn6m,
@@ -350,6 +451,83 @@ async function main() {
     s.sectorZScore = stats && stats.std > 0 ? +((s.score.composite - stats.mean) / stats.std).toFixed(2) : null;
     s.sectorRank = sectorRankMap.get(s.sector)?.get(s.ticker) ?? 1;
     s.sectorCount = sectorStocks?.length ?? 1;
+  }
+
+  // N2: Factor Grades (A+ to F) — percentile-based across all stocks
+  {
+    const gradeFromPct = (pct: number): string => {
+      if (pct >= 95) return 'A+';
+      if (pct >= 85) return 'A';
+      if (pct >= 75) return 'A-';
+      if (pct >= 65) return 'B+';
+      if (pct >= 55) return 'B';
+      if (pct >= 45) return 'B-';
+      if (pct >= 35) return 'C+';
+      if (pct >= 25) return 'C';
+      if (pct >= 15) return 'C-';
+      if (pct >= 8) return 'D';
+      return 'F';
+    };
+
+    const rankArray = (vals: (number | null)[], higherIsBetter = true): Map<number, number> => {
+      const valid = vals.map((v, i) => ({ i, v })).filter(x => x.v != null) as { i: number; v: number }[];
+      valid.sort((a, b) => higherIsBetter ? a.v - b.v : b.v - a.v);
+      const pctMap = new Map<number, number>();
+      valid.forEach((item, rank) => {
+        pctMap.set(item.i, valid.length > 1 ? (rank / (valid.length - 1)) * 100 : 50);
+      });
+      return pctMap;
+    };
+
+    // Value: low P/E, low P/B, low PEG (lower is better)
+    const peRanks = rankArray(stockRecords.map(s => s.pe != null && s.pe > 0 ? s.pe : null), false);
+    const pbRanks = rankArray(stockRecords.map(s => s.priceToBook != null && s.priceToBook > 0 ? s.priceToBook : null), false);
+    const pegRanks = rankArray(stockRecords.map(s => s.pegRatio != null && s.pegRatio > 0 ? s.pegRatio : null), false);
+
+    // Growth: earnings growth, revenue growth (higher is better)
+    const egRanks = rankArray(stockRecords.map(s => s.earningsGrowth), true);
+    const rgRanks = rankArray(stockRecords.map(s => s.revenueGrowth), true);
+
+    // Profitability: ROE, profit margins, gross margins (higher is better)
+    const roeRanks = rankArray(stockRecords.map(s => s.returnOnEquity), true);
+    const pmRanks = rankArray(stockRecords.map(s => s.profitMargins), true);
+    const gmRanks = rankArray(stockRecords.map(s => s.grossMargins), true);
+
+    // Momentum: RS percentile, price returns (higher is better)
+    const rsRanks = rankArray(stockRecords.map(s => s.rsPercentile), true);
+    const retRanks = rankArray(stockRecords.map(s => s.priceReturn6m), true);
+
+    // Safety: low beta, low D/E, high current ratio
+    const betaRanks = rankArray(stockRecords.map(s => s.beta), false);
+    const deRanks = rankArray(stockRecords.map(s => s.debtToEquity != null && s.debtToEquity >= 0 ? s.debtToEquity : null), false);
+    const crRanks = rankArray(stockRecords.map(s => s.currentRatio), true);
+
+    for (let i = 0; i < stockRecords.length; i++) {
+      const avg = (...maps: Map<number, number>[]) => {
+        const vals = maps.map(m => m.get(i)).filter(v => v != null) as number[];
+        return vals.length > 0 ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
+      };
+
+      const valuePct = avg(peRanks, pbRanks, pegRanks);
+      const growthPct = avg(egRanks, rgRanks);
+      const profitPct = avg(roeRanks, pmRanks, gmRanks);
+      const momentumPct = avg(rsRanks, retRanks);
+      const safetyPct = avg(betaRanks, deRanks, crRanks);
+
+      const allPcts = [valuePct, growthPct, profitPct, momentumPct, safetyPct].filter(v => v != null) as number[];
+      const overallPct = allPcts.length > 0 ? allPcts.reduce((a, b) => a + b, 0) / allPcts.length : null;
+
+      if (overallPct != null) {
+        stockRecords[i].factorGrades = {
+          value: valuePct != null ? gradeFromPct(valuePct) : 'C',
+          growth: growthPct != null ? gradeFromPct(growthPct) : 'C',
+          profitability: profitPct != null ? gradeFromPct(profitPct) : 'C',
+          momentum: momentumPct != null ? gradeFromPct(momentumPct) : 'C',
+          safety: safetyPct != null ? gradeFromPct(safetyPct) : 'C',
+          overall: gradeFromPct(overallPct),
+        };
+      }
+    }
   }
 
   // Step 4: Identify bearish alerts
