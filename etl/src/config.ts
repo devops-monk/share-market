@@ -31,6 +31,12 @@ export const CONFIG = {
   finbertBatchSize: 10,
   finbertRateDelayMs: 200,
 
+  // AI Research Notes (HuggingFace chat completions)
+  aiResearchModel: 'Qwen/Qwen2.5-7B-Instruct-1M',
+  aiResearchConcurrency: 3,
+  aiResearchDelayMs: 500,
+  aiResearchMaxStocks: 100,
+
   // SEC EDGAR (insider trading)
   edgarConcurrency: 8,
   edgarUserAgent: 'StockDashboard/1.0 (stock-dashboard@example.com)',

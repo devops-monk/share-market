@@ -34,6 +34,7 @@ export function useStockData() {
   const [scoreHistory, setScoreHistory] = useState<ScoreHistory | null>(null);
   const [financials, setFinancials] = useState<FinancialsMap | null>(null);
   const [insiderTrades, setInsiderTrades] = useState<InsiderTradesMap | null>(null);
+  const [aiResearchNotes, setAiResearchNotes] = useState<Record<string, string[]> | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -46,7 +47,8 @@ export function useStockData() {
       fetchJson<ScoreHistory>('score-history.json'),
       fetchJson<FinancialsMap>('financials.json'),
       fetchJson<InsiderTradesMap>('insider-trades.json'),
-    ]).then(([s, sum, ba, n, m, sh, fin, insider]) => {
+      fetchJson<Record<string, string[]>>('ai-research-notes.json'),
+    ]).then(([s, sum, ba, n, m, sh, fin, insider, aiNotes]) => {
       setStocks(s || []);
       setSummary(sum || null);
       setBearishAlerts(ba || []);
@@ -55,9 +57,10 @@ export function useStockData() {
       setScoreHistory(sh || null);
       setFinancials(fin || null);
       setInsiderTrades(insider || null);
+      setAiResearchNotes(aiNotes || null);
       setLoading(false);
     });
   }, []);
 
-  return { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, loading };
+  return { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, aiResearchNotes, loading };
 }

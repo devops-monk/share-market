@@ -40,7 +40,7 @@ const PageSpinner = () => (
 );
 
 export default function App() {
-  const { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, loading } = useStockData();
+  const { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, aiResearchNotes, loading } = useStockData();
   const { theme, toggle } = useTheme();
 
   if (loading) {
@@ -77,7 +77,7 @@ export default function App() {
             <Route path="/screener" element={<Screener stocks={stocks} />} />
             <Route path="/bearish" element={<BearishAlerts alerts={bearishAlerts} />} />
             <Route path="/news" element={<NewsSentiment news={news} />} />
-            <Route path="/stock/:ticker" element={<StockDetail stocks={stocks} news={news} financials={financials} insiderTrades={insiderTrades} />} />
+            <Route path="/stock/:ticker" element={<StockDetail stocks={stocks} news={news} financials={financials} insiderTrades={insiderTrades} aiResearchNotes={aiResearchNotes} />} />
             <Route path="/dip" element={<BuyTheDip stocks={stocks} />} />
             <Route path="/breakout" element={<BreakoutDetection stocks={stocks} />} />
             <Route path="/heatmap" element={<HeatMap stocks={stocks} />} />

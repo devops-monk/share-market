@@ -160,6 +160,7 @@ export function writeOutputs(
   marketRegime?: MarketRegime | null,
   financialsMap?: Map<string, FinancialData>,
   insiderTradesMap?: Map<string, InsiderSummary>,
+  aiResearchNotes?: Map<string, string[]>,
 ) {
   const dataDir = CONFIG.dataDir;
   mkdirSync(dataDir, { recursive: true });
@@ -248,6 +249,19 @@ export function writeOutputs(
       JSON.stringify(insiderOut)
     );
     console.log(`Wrote insider-trades.json for ${insiderTradesMap.size} stocks`);
+  }
+
+  // ai-research-notes.json — AI-generated research notes per ticker
+  if (aiResearchNotes && aiResearchNotes.size > 0) {
+    const notesOut: Record<string, string[]> = {};
+    for (const [ticker, paragraphs] of aiResearchNotes) {
+      notesOut[ticker] = paragraphs;
+    }
+    writeFileSync(
+      path.join(dataDir, 'ai-research-notes.json'),
+      JSON.stringify(notesOut)
+    );
+    console.log(`Wrote ai-research-notes.json for ${aiResearchNotes.size} stocks`);
   }
 
   // CSV files

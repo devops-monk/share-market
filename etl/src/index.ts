@@ -10,6 +10,7 @@ import { fetchFinvizNews } from './news/finviz-scraper.js';
 import { scoreNewsItemsWithFinBERT, averageSentiment } from './news/sentiment.js';
 import { computeMarketRegime } from './indicators/regime.js';
 import { writeOutputs, type StockRecord, type OhlcvData } from './output/writer.js';
+import { generateAIResearchNotes } from './ai/research-notes.js';
 import { fetchFinancials } from './fundamentals/financials.js';
 import { fetchInsiderTrades } from './insider/edgar.js';
 import { CONFIG } from './config.js';
@@ -358,8 +359,20 @@ async function main() {
 
   console.log(`Found ${bearishAlerts.length} bearish alerts`);
 
+  // Step 4b: Generate AI research notes (requires HuggingFace API key)
+  let aiResearchNotes: Map<string, string[]> | undefined;
+  if (huggingFaceApiKey) {
+    try {
+      aiResearchNotes = await generateAIResearchNotes(stockRecords, huggingFaceApiKey);
+    } catch (err) {
+      console.warn('AI research notes generation failed:', (err as Error).message);
+    }
+  } else {
+    console.log('Skipping AI research notes (no HUGGINGFACE_API_KEY)');
+  }
+
   // Step 5: Write outputs
-  writeOutputs(stockRecords, allNews, bearishAlerts, ohlcvRecords, marketRegime, financialsMap, insiderTradesMap);
+  writeOutputs(stockRecords, allNews, bearishAlerts, ohlcvRecords, marketRegime, financialsMap, insiderTradesMap, aiResearchNotes);
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`ETL completed in ${elapsed}s`);

@@ -18,6 +18,7 @@ interface Props {
   news: NewsItem[];
   financials?: FinancialsMap | null;
   insiderTrades?: InsiderTradesMap | null;
+  aiResearchNotes?: Record<string, string[]> | null;
 }
 
 /* ─── TOOLTIP DESCRIPTIONS ─── */
@@ -82,7 +83,7 @@ const TOOLTIPS: Record<string, string> = {
   'Data Quality': 'Percentage of fundamental metrics available. Higher = more reliable analysis.',
 };
 
-export default function StockDetail({ stocks, news, financials, insiderTrades }: Props) {
+export default function StockDetail({ stocks, news, financials, insiderTrades, aiResearchNotes }: Props) {
   const { ticker } = useParams<{ ticker: string }>();
   const stock = stocks.find(s => s.ticker === ticker);
 
@@ -119,7 +120,9 @@ export default function StockDetail({ stocks, news, financials, insiderTrades }:
 
   // Generate recommendation
   const recommendation = generateRecommendation(stock);
-  const aiSummary = useMemo(() => generateStockSummary(stock), [stock]);
+  const aiNotes = aiResearchNotes?.[stock.ticker];
+  const aiSummary = useMemo(() => aiNotes ?? generateStockSummary(stock), [stock, aiNotes]);
+  const isAiGenerated = !!aiNotes;
 
   return (
     <div className="space-y-6">
@@ -156,7 +159,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades }:
       <RecommendationCard rec={recommendation} stock={stock} />
 
       {/* AI Stock Summary */}
-      <AiSummaryCard paragraphs={aiSummary} />
+      <AiSummaryCard paragraphs={aiSummary} isAiGenerated={isAiGenerated} />
 
       {/* Candlestick Chart */}
       <div className="card p-5">
@@ -917,7 +920,7 @@ function RecommendationCard({ rec, stock }: { rec: Recommendation; stock: StockR
 }
 
 /* ─── AI SUMMARY CARD ─── */
-function AiSummaryCard({ paragraphs }: { paragraphs: string[] }) {
+function AiSummaryCard({ paragraphs, isAiGenerated }: { paragraphs: string[]; isAiGenerated: boolean }) {
   const [expanded, setExpanded] = useState(false);
   if (paragraphs.length === 0) return null;
 
@@ -927,7 +930,11 @@ function AiSummaryCard({ paragraphs }: { paragraphs: string[] }) {
     <div className="card p-5">
       <div className="flex items-center justify-between mb-3">
         <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider">AI Research Note</h2>
-        <span className="text-[10px] t-faint bg-surface-secondary px-2 py-0.5 rounded-full">Auto-generated</span>
+        {isAiGenerated ? (
+          <span className="text-[10px] font-medium text-accent bg-accent/10 px-2 py-0.5 rounded-full">AI-Generated</span>
+        ) : (
+          <span className="text-[10px] t-faint bg-surface-secondary px-2 py-0.5 rounded-full">Rule-Based</span>
+        )}
       </div>
       <div className="space-y-3">
         {visible.map((p, i) => (
