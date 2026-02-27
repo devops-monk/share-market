@@ -89,35 +89,72 @@ export async function sendNtfy(message: string, title: string): Promise<boolean>
   }
 }
 
+const TELEGRAM_MAX_LENGTH = 4000; // Telegram limit is 4096, leave margin for safety
+
 /**
- * Format triggered alerts into a single Telegram message (HTML mode).
+ * Format a single alert into an HTML block.
  */
-export function formatAlertsMessage(alerts: TriggeredAlert[]): string {
-  if (alerts.length === 0) return '';
-
-  const time = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' });
-
-  const lines = [
-    `<b>🔔  ${alerts.length} Alert${alerts.length > 1 ? 's' : ''} Triggered</b>  ·  <i>${time} UTC</i>`,
-    ``,
-  ];
-
-  for (let i = 0; i < alerts.length; i++) {
-    const alert = alerts[i];
-    const emoji = ALERT_TYPE_EMOJI[alert.type] ?? '🔔';
-    const label = ALERT_TYPE_LABEL[alert.type] ?? alert.type.replace(/_/g, ' ');
-    lines.push(`${emoji}  <b>${label}</b>`);
-    lines.push(alert.message);
-    if (i < alerts.length - 1) lines.push(`─────────────────────`);
-    lines.push('');
-  }
-
-  lines.push(`<a href="https://share.devops-monk.com">Open Dashboard</a>`);
-  return lines.join('\n');
+function formatSingleAlert(alert: TriggeredAlert): string {
+  const emoji = ALERT_TYPE_EMOJI[alert.type] ?? '🔔';
+  const label = ALERT_TYPE_LABEL[alert.type] ?? alert.type.replace(/_/g, ' ');
+  return `${emoji}  <b>${label}</b>\n${alert.message}`;
 }
 
 /**
- * Send all triggered alerts as a single batch message.
+ * Split alerts into multiple messages that fit within Telegram's 4096 char limit.
+ */
+export function formatAlertsMessages(alerts: TriggeredAlert[]): string[] {
+  if (alerts.length === 0) return [];
+
+  const time = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' });
+  const footer = `\n<a href="https://share.devops-monk.com">Open Dashboard</a>`;
+  const separator = `\n─────────────────────\n`;
+
+  const messages: string[] = [];
+  let currentLines: string[] = [];
+  let currentLen = 0;
+  let pageNum = 1;
+
+  const makeHeader = (page: number, total?: number) => {
+    const pageStr = total != null ? ` (${page}/${total})` : '';
+    return `<b>🔔  ${alerts.length} Alert${alerts.length > 1 ? 's' : ''} Triggered${pageStr}</b>  ·  <i>${time} UTC</i>\n`;
+  };
+
+  // Estimate header size (use worst case with page numbers)
+  const headerSize = makeHeader(1, 99).length;
+
+  for (let i = 0; i < alerts.length; i++) {
+    const block = formatSingleAlert(alerts[i]);
+    const addLen = block.length + separator.length;
+
+    // Check if adding this alert would exceed the limit
+    if (currentLines.length > 0 && currentLen + addLen + headerSize + footer.length > TELEGRAM_MAX_LENGTH) {
+      // Flush current batch as a message
+      messages.push(currentLines.join(separator));
+      currentLines = [];
+      currentLen = 0;
+      pageNum++;
+    }
+
+    currentLines.push(block);
+    currentLen += block.length + separator.length;
+  }
+
+  // Flush remaining
+  if (currentLines.length > 0) {
+    messages.push(currentLines.join(separator));
+  }
+
+  // Build final messages with headers and footer
+  const totalPages = messages.length;
+  return messages.map((body, i) => {
+    const header = totalPages > 1 ? makeHeader(i + 1, totalPages) : makeHeader(1);
+    return header + '\n' + body + '\n' + footer;
+  });
+}
+
+/**
+ * Send all triggered alerts, splitting into multiple messages if needed.
  * Falls back to ntfy.sh if Telegram fails.
  */
 export async function sendAlerts(alerts: TriggeredAlert[]): Promise<void> {
@@ -126,22 +163,32 @@ export async function sendAlerts(alerts: TriggeredAlert[]): Promise<void> {
     return;
   }
 
-  const message = formatAlertsMessage(alerts);
-  console.log(`Sending ${alerts.length} alert(s)...`);
+  const messages = formatAlertsMessages(alerts);
+  console.log(`Sending ${alerts.length} alert(s) in ${messages.length} message(s)...`);
 
-  const telegramOk = await sendTelegram(message);
-  if (telegramOk) {
+  let allOk = true;
+  for (const msg of messages) {
+    const ok = await sendTelegram(msg);
+    if (!ok) { allOk = false; break; }
+    // Small delay between messages to avoid rate limiting
+    if (messages.length > 1) await new Promise(r => setTimeout(r, 500));
+  }
+
+  if (allOk) {
     console.log('Alerts sent via Telegram');
   } else {
-    // Fallback to ntfy
+    // Fallback to ntfy — send as plain text (ntfy has no length issue)
     const title = `${alerts.length} Stock Alert${alerts.length > 1 ? 's' : ''}`;
-    const plainMessage = alerts.map(a => `${a.type.replace(/_/g, ' ').toUpperCase()}: ${a.message}`).join('\n\n');
+    const plainMessage = alerts.map(a => {
+      const label = ALERT_TYPE_LABEL[a.type] ?? a.type.replace(/_/g, ' ');
+      return `${label}: ${a.message}`;
+    }).join('\n\n');
     const ntfyOk = await sendNtfy(plainMessage, title);
     if (ntfyOk) {
       console.log('Alerts sent via ntfy.sh');
     } else {
       console.log('No notification channel configured — alerts logged to console only');
-      console.log(message);
+      for (const msg of messages) console.log(msg);
     }
   }
 }
