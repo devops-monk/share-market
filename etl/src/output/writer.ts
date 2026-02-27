@@ -245,16 +245,30 @@ export function writeOutputs(
 
   // financials.json — multi-year revenue/earnings for charts
   if (financialsMap && financialsMap.size > 0) {
+    // Build a lookup of quote-level margins for fallback estimation
+    const marginLookup = new Map<string, { gm: number | null; om: number | null }>();
+    for (const s of stocks) {
+      marginLookup.set(s.ticker, { gm: s.grossMargins, om: s.operatingMargins });
+    }
+
     const financialsOut: Record<string, { y: string; rev: number | null; ni: number | null; gp: number | null; oi: number | null }[]> = {};
     for (const [ticker, fd] of financialsMap) {
       if (fd.annuals.length === 0) continue;
-      financialsOut[ticker] = fd.annuals.map(a => ({
-        y: a.year,
-        rev: a.totalRevenue,
-        ni: a.netIncome,
-        gp: a.grossProfit,
-        oi: a.operatingIncome,
-      }));
+      const margins = marginLookup.get(ticker);
+      financialsOut[ticker] = fd.annuals.map(a => {
+        const rev = a.totalRevenue;
+        // Yahoo incomeStatementHistory often returns 0/null for GP and OI.
+        // Fall back to estimating from revenue * quote-level margins.
+        let gp = a.grossProfit;
+        if ((gp == null || gp === 0) && rev != null && rev > 0 && margins?.gm != null) {
+          gp = Math.round(rev * margins.gm);
+        }
+        let oi = a.operatingIncome;
+        if ((oi == null || oi === 0) && rev != null && rev > 0 && margins?.om != null) {
+          oi = Math.round(rev * margins.om);
+        }
+        return { y: a.year, rev, ni: a.netIncome, gp, oi };
+      });
     }
     writeFileSync(
       path.join(dataDir, 'financials.json'),

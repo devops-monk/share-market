@@ -115,52 +115,49 @@ async function fetchForm4Filings(
   cik: string,
   cutoffDate: Date,
 ): Promise<InsiderTrade[]> {
-  const trades: InsiderTrade[] = [];
+  const allTrades: InsiderTrade[] = [];
 
   try {
     const url = `https://data.sec.gov/submissions/CIK${cik}.json`;
     const res = await fetch(url, { headers: EDGAR_HEADERS });
-    if (!res.ok) return trades;
+    if (!res.ok) return allTrades;
 
     const data = await res.json() as any;
     const recent = data.filings?.recent;
-    if (!recent) return trades;
+    if (!recent) return allTrades;
 
     const forms = recent.form as string[];
     const filingDates = recent.filingDate as string[];
     const accessionNumbers = recent.accessionNumber as string[];
     const primaryDocuments = recent.primaryDocument as string[];
 
-    for (let i = 0; i < forms.length; i++) {
+    // Collect Form 4 filing references (limit to 10 most recent for rate limiting)
+    const form4Refs: { accession: string; primaryDoc: string; filingDate: string }[] = [];
+    for (let i = 0; i < forms.length && form4Refs.length < 10; i++) {
       if (forms[i] !== '4' && forms[i] !== '4/A') continue;
 
       const filingDate = new Date(filingDates[i]);
       if (filingDate < cutoffDate) break; // filings are reverse chronological
 
-      // Parse basic info from the filing metadata
-      // For a simpler implementation, we extract what we can from the submissions endpoint
-      // Full XML parsing would require fetching each individual filing
-      const accession = accessionNumbers[i].replace(/-/g, '');
-      const reporterName = data.filings?.recent?.reportOwnerName?.[i] ??
-                          extractReporterName(data.name ?? '');
-
-      trades.push({
-        ticker,
+      form4Refs.push({
+        accession: accessionNumbers[i],
+        primaryDoc: primaryDocuments[i],
         filingDate: filingDates[i],
-        insiderName: reporterName,
-        insiderTitle: '',
-        transactionType: 'S', // Default; would need XML parsing for exact type
-        transactionDate: filingDates[i],
-        shares: 0,
-        pricePerShare: null,
-        totalValue: null,
       });
     }
 
-    // Limit to recent filings for manageable data
-    return trades.slice(0, 20);
+    // Fetch and parse each Form 4 XML for real transaction data
+    for (const ref of form4Refs) {
+      const trades = await parseForm4Xml(
+        ticker, cik, ref.accession, ref.primaryDoc, ref.filingDate,
+      );
+      allTrades.push(...trades);
+      await delay(120); // SEC rate limit: ~10 req/sec
+    }
+
+    return allTrades;
   } catch {
-    return trades;
+    return allTrades;
   }
 }
 
