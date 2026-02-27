@@ -1,34 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "DRX.L",
-      "name": "Drax Group",
-      "score": 75,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 75,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "RR.L",
-      "name": "Rolls-Royce",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 72,
@@ -68,6 +40,34 @@
       "name": "Revolution Medicines",
       "score": 71,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GLEN.L",
+      "name": "Glencore",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CB",
+      "name": "Chubb",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AAL.L",
+      "name": "Anglo American",
+      "score": 70,
+      "market": "UK",
       "capCategory": "Large"
     }
   ],
@@ -122,6 +122,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "TATE.L",
+      "name": "Tate & Lyle",
+      "score": 28,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "FMC",
       "name": "FMC Corp",
       "score": 28,
@@ -134,22 +141,9 @@
       "score": 28,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "OKTA",
-      "name": "Okta",
-      "score": 28,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "RR.L",
-      "name": "Rolls-Royce",
-      "score": 74,
-      "market": "UK"
-    },
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
@@ -181,20 +175,8 @@
       "market": "US"
     },
     {
-      "ticker": "AAL.L",
-      "name": "Anglo American",
-      "score": 71,
-      "market": "UK"
-    },
-    {
-      "ticker": "IAG.L",
-      "name": "IAG",
-      "score": 71,
-      "market": "UK"
-    },
-    {
-      "ticker": "SSE.L",
-      "name": "SSE",
+      "ticker": "GLEN.L",
+      "name": "Glencore",
       "score": 71,
       "market": "UK"
     },
@@ -203,21 +185,27 @@
       "name": "Chubb",
       "score": 70,
       "market": "US"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "AAL.L",
+      "name": "Anglo American",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "DRX.L",
-      "name": "Drax Group",
-      "score": 75,
-      "market": "UK"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 74,
-      "market": "UK"
-    },
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
@@ -225,15 +213,9 @@
       "market": "US"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 71,
-      "market": "UK"
-    },
-    {
-      "ticker": "MNG.L",
-      "name": "M&G",
-      "score": 68,
+      "ticker": "DRX.L",
+      "name": "Drax Group",
+      "score": 70,
       "market": "UK"
     },
     {
@@ -241,12 +223,6 @@
       "name": "Intuitive Machines",
       "score": 67,
       "market": "US"
-    },
-    {
-      "ticker": "SBRY.L",
-      "name": "Sainsbury",
-      "score": 67,
-      "market": "UK"
     },
     {
       "ticker": "HSIC",
@@ -261,22 +237,46 @@
       "market": "US"
     },
     {
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 66,
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 63,
       "market": "UK"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 75,
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 67,
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
       "score": 67,
       "market": "UK"
     },
@@ -285,18 +285,6 @@
       "name": "Comerica",
       "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 65,
-      "market": "UK"
     },
     {
       "ticker": "CMCX.L",
@@ -317,19 +305,31 @@
       "market": "UK"
     },
     {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 64,
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 63,
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNV",
+      "name": "Synovus Financial",
+      "score": 60,
+      "market": "US"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 673,
   "avgScore": 51,
-  "bearishAlertCount": 286
+  "bearishAlertCount": 280
 }
