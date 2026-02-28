@@ -37,6 +37,13 @@ export const CONFIG = {
   aiResearchDelayMs: 500,
   aiResearchMaxStocks: 100,
 
+  // FRED API (macro data)
+  fredRateDelayMs: 200,
+
+  // Reddit sentiment
+  redditConcurrency: 2,
+  redditDelayMs: 500,
+
   // SEC EDGAR (insider trading)
   edgarConcurrency: 8,
   edgarUserAgent: 'StockDashboard/1.0 (stock-dashboard@example.com)',

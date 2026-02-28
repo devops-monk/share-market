@@ -15,6 +15,7 @@ interface NavGroup {
 
 const primaryNav: NavItem[] = [
   { path: '/', label: 'Overview' },
+  { path: '/dashboard', label: 'Dashboard' },
   { path: '/screener', label: 'Screener' },
   { path: '/watchlist', label: 'Watchlist' },
   { path: '/portfolio', label: 'Portfolio' },
@@ -39,6 +40,7 @@ const navGroups: NavGroup[] = [
       { path: '/custom-screen', label: 'Custom Screen', desc: 'Build your own screening rules' },
       { path: '/earnings', label: 'Earnings', desc: 'Upcoming earnings calendar' },
       { path: '/query', label: 'NL Query', desc: 'Search stocks in plain English' },
+      { path: '/weighted-screener', label: 'Weighted', desc: 'Custom-weight stock ranking' },
       { path: '/economic-calendar', label: 'Econ Calendar', desc: 'FOMC, CPI, NFP, GDP dates' },
     ],
   },

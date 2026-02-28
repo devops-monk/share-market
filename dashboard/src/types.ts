@@ -161,7 +161,34 @@ export interface StockRecord {
   chartPatterns?: { name: string; direction: 'bullish' | 'bearish' | 'neutral'; confidence: number; }[];
   // N13: Theme/Sector Tags
   themes?: string[];
+  // N16: Volume Profile
+  volumeProfile?: {
+    bins: { price: number; volume: number }[];
+    vpoc: number;
+    valueAreaHigh: number;
+    valueAreaLow: number;
+  } | null;
 }
+
+// N19: Macro Overlay
+export interface MacroData {
+  vix: number | null;
+  treasury10y: number | null;
+  treasury2y: number | null;
+  yieldSpread: number | null;
+  dxy: number | null;
+  fedFundsRate: number | null;
+  lastUpdated: string;
+}
+
+// N18: Reddit/Social Sentiment
+export interface SocialSentiment {
+  mentions: number;
+  avgSentiment: number;
+  topPosts: { title: string; score: number; url: string }[];
+}
+
+export type SocialSentimentMap = Record<string, SocialSentiment>;
 
 export interface InsiderTrade {
   ticker: string;

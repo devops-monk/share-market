@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import type { StockRecord, SummaryData, NewsItem, Metadata, InsiderTradesMap } from '../types';
+import type { StockRecord, SummaryData, NewsItem, Metadata, InsiderTradesMap, MacroData, SocialSentimentMap } from '../types';
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -35,6 +35,8 @@ export function useStockData() {
   const [financials, setFinancials] = useState<FinancialsMap | null>(null);
   const [insiderTrades, setInsiderTrades] = useState<InsiderTradesMap | null>(null);
   const [aiResearchNotes, setAiResearchNotes] = useState<Record<string, string[]> | null>(null);
+  const [macroData, setMacroData] = useState<MacroData | null>(null);
+  const [socialSentiment, setSocialSentiment] = useState<SocialSentimentMap | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -48,7 +50,9 @@ export function useStockData() {
       fetchJson<FinancialsMap>('financials.json'),
       fetchJson<InsiderTradesMap>('insider-trades.json'),
       fetchJson<Record<string, string[]>>('ai-research-notes.json'),
-    ]).then(([s, sum, ba, n, m, sh, fin, insider, aiNotes]) => {
+      fetchJson<MacroData>('macro.json'),
+      fetchJson<SocialSentimentMap>('social-sentiment.json'),
+    ]).then(([s, sum, ba, n, m, sh, fin, insider, aiNotes, macro, social]) => {
       setStocks(s || []);
       setSummary(sum || null);
       setBearishAlerts(ba || []);
@@ -58,9 +62,11 @@ export function useStockData() {
       setFinancials(fin || null);
       setInsiderTrades(insider || null);
       setAiResearchNotes(aiNotes || null);
+      setMacroData(macro || null);
+      setSocialSentiment(social || null);
       setLoading(false);
     });
   }, []);
 
-  return { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, aiResearchNotes, loading };
+  return { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, aiResearchNotes, macroData, socialSentiment, loading };
 }

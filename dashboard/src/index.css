@@ -182,6 +182,23 @@
   box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
+/* react-grid-layout overrides */
+.react-grid-item {
+  @apply rounded-xl overflow-hidden;
+}
+.react-grid-placeholder {
+  @apply !bg-accent/20 rounded-xl;
+}
+.react-grid-item > .react-resizable-handle {
+  @apply opacity-0 transition-opacity;
+}
+.react-grid-item:hover > .react-resizable-handle {
+  @apply opacity-50;
+}
+.react-resizable-handle::after {
+  border-color: var(--text-muted) !important;
+}
+
 /* PWA install prompt animation */
 @keyframes slide-up {
   from { opacity: 0; transform: translateY(20px); }

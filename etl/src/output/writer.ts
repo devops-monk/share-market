@@ -4,6 +4,9 @@ import { CONFIG } from '../config.js';
 import type { MarketRegime } from '../indicators/regime.js';
 import type { FinancialData } from '../fundamentals/financials.js';
 import type { InsiderSummary } from '../insider/edgar.js';
+import type { VolumeProfileData } from '../indicators/technical.js';
+import type { MacroData } from '../indicators/macro.js';
+import type { SocialSentiment } from '../news/reddit.js';
 import path from 'path';
 
 export interface StockRecord {
@@ -188,6 +191,8 @@ export interface StockRecord {
   chartPatterns: { name: string; direction: 'bullish' | 'bearish' | 'neutral'; confidence: number; }[];
   // N13: Theme/Sector Tags
   themes: string[];
+  // N16: Volume Profile
+  volumeProfile: VolumeProfileData | null;
 }
 
 export interface OhlcvData {
@@ -209,6 +214,8 @@ export function writeOutputs(
   financialsMap?: Map<string, FinancialData>,
   insiderTradesMap?: Map<string, InsiderSummary>,
   aiResearchNotes?: Map<string, string[]>,
+  macroData?: MacroData | null,
+  redditSentimentMap?: Map<string, SocialSentiment>,
 ) {
   const dataDir = CONFIG.dataDir;
   mkdirSync(dataDir, { recursive: true });
@@ -324,6 +331,28 @@ export function writeOutputs(
       JSON.stringify(notesOut)
     );
     console.log(`Wrote ai-research-notes.json for ${aiResearchNotes.size} stocks`);
+  }
+
+  // macro.json — macro indicators from FRED
+  if (macroData) {
+    writeFileSync(
+      path.join(dataDir, 'macro.json'),
+      JSON.stringify(macroData, null, 2)
+    );
+    console.log('Wrote macro.json');
+  }
+
+  // social-sentiment.json — Reddit sentiment per ticker
+  if (redditSentimentMap && redditSentimentMap.size > 0) {
+    const socialOut: Record<string, SocialSentiment> = {};
+    for (const [ticker, sentiment] of redditSentimentMap) {
+      socialOut[ticker] = sentiment;
+    }
+    writeFileSync(
+      path.join(dataDir, 'social-sentiment.json'),
+      JSON.stringify(socialOut)
+    );
+    console.log(`Wrote social-sentiment.json for ${redditSentimentMap.size} tickers`);
   }
 
   // CSV files

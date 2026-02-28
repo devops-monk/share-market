@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip as RechartsTooltip, ResponsiveContainer } from 'recharts';
 import { useParams, Link } from 'react-router-dom';
-import type { StockRecord, NewsItem, InsiderTradesMap } from '../types';
+import type { StockRecord, NewsItem, InsiderTradesMap, SocialSentimentMap } from '../types';
 import ScoreGauge from '../components/charts/ScoreGauge';
 import ScoreRadarChart from '../components/charts/ScoreRadarChart';
 import PriceChart from '../components/charts/PriceChart';
@@ -11,6 +11,7 @@ import ScoreHistoryChart from '../components/charts/ScoreHistoryChart';
 import { MarketTag, CapTag, Trading212Badge, SignalBadge, ChangePercent } from '../components/common/Tags';
 import FinancialsBarChart from '../components/charts/FinancialsBarChart';
 import { generateStockSummary } from '../lib/stock-summary';
+import VolumeProfileChart from '../components/charts/VolumeProfileChart';
 import type { FinancialsMap } from '../hooks/useStockData';
 
 interface Props {
@@ -19,6 +20,7 @@ interface Props {
   financials?: FinancialsMap | null;
   insiderTrades?: InsiderTradesMap | null;
   aiResearchNotes?: Record<string, string[]> | null;
+  socialSentiment?: SocialSentimentMap | null;
 }
 
 /* ─── TOOLTIP DESCRIPTIONS (Simple, kid-friendly) ─── */
@@ -92,7 +94,7 @@ const TOOLTIPS: Record<string, string> = {
   'Max Drawdown': 'The biggest peak-to-bottom drop in the last year. -10% means the stock fell 10% from its high before recovering. Smaller drops = safer ride.',
 };
 
-export default function StockDetail({ stocks, news, financials, insiderTrades, aiResearchNotes }: Props) {
+export default function StockDetail({ stocks, news, financials, insiderTrades, aiResearchNotes, socialSentiment }: Props) {
   const { ticker } = useParams<{ ticker: string }>();
   const stock = stocks.find(s => s.ticker === ticker);
 
@@ -228,6 +230,83 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       {/* Support & Resistance Levels */}
       {stock.supportResistance && stock.supportResistance.length > 0 && (
         <SupportResistanceCard levels={stock.supportResistance} currentPrice={stock.price} currency={cur} />
+      )}
+
+      {/* Volume Profile (VPVR) */}
+      {stock.volumeProfile && stock.volumeProfile.bins.length > 0 && (
+        <div className="card p-5">
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-1">Volume Profile</h2>
+          <p className="text-xs t-muted mb-4 leading-relaxed">
+            Shows where most trading happened — the thickest bars are price levels where the most buying and selling occurred.
+          </p>
+          <div className="grid grid-cols-3 gap-3 mb-4">
+            <div className="p-2.5 rounded-lg bg-surface-tertiary/50 border border-surface-border text-center">
+              <p className="text-[10px] font-semibold t-muted uppercase">VPOC</p>
+              <p className="text-sm font-bold text-amber-400 tabular-nums">{cur}{stock.volumeProfile.vpoc.toFixed(2)}</p>
+            </div>
+            <div className="p-2.5 rounded-lg bg-surface-tertiary/50 border border-surface-border text-center">
+              <p className="text-[10px] font-semibold t-muted uppercase">Value Area High</p>
+              <p className="text-sm font-bold text-accent-light tabular-nums">{cur}{stock.volumeProfile.valueAreaHigh.toFixed(2)}</p>
+            </div>
+            <div className="p-2.5 rounded-lg bg-surface-tertiary/50 border border-surface-border text-center">
+              <p className="text-[10px] font-semibold t-muted uppercase">Value Area Low</p>
+              <p className="text-sm font-bold text-accent-light tabular-nums">{cur}{stock.volumeProfile.valueAreaLow.toFixed(2)}</p>
+            </div>
+          </div>
+          <VolumeProfileChart data={stock.volumeProfile} currentPrice={stock.price} currency={cur} />
+        </div>
+      )}
+
+      {/* Social Buzz (Reddit) */}
+      {socialSentiment?.[stock.ticker] && (
+        <div className="card p-5">
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-1">Social Buzz (Reddit)</h2>
+          <p className="text-xs t-muted mb-4 leading-relaxed">
+            What are people talking about on Reddit? More mentions = more buzz.
+          </p>
+          {(() => {
+            const ss = socialSentiment[stock.ticker];
+            return (
+              <>
+                <div className="grid grid-cols-2 gap-3 mb-4">
+                  <div className="p-3 rounded-lg bg-surface-tertiary/50 border border-surface-border text-center">
+                    <p className="text-[10px] font-semibold t-muted uppercase">Mentions</p>
+                    <p className="text-xl font-bold t-primary">{ss.mentions}</p>
+                  </div>
+                  <div className="p-3 rounded-lg bg-surface-tertiary/50 border border-surface-border text-center">
+                    <p className="text-[10px] font-semibold t-muted uppercase">Avg Sentiment</p>
+                    <p className={`text-xl font-bold ${ss.avgSentiment > 0.05 ? 'text-bullish' : ss.avgSentiment < -0.05 ? 'text-bearish' : 't-primary'}`}>
+                      {ss.avgSentiment > 0 ? '+' : ''}{ss.avgSentiment.toFixed(3)}
+                    </p>
+                    <div className="w-full h-1.5 bg-surface-border rounded-full mt-1.5 overflow-hidden">
+                      <div
+                        className={`h-full rounded-full ${ss.avgSentiment > 0.05 ? 'bg-bullish' : ss.avgSentiment < -0.05 ? 'bg-bearish' : 'bg-yellow-500'}`}
+                        style={{ width: `${Math.min(100, Math.max(5, (ss.avgSentiment + 1) * 50))}%` }}
+                      />
+                    </div>
+                  </div>
+                </div>
+                {ss.topPosts.length > 0 && (
+                  <div className="space-y-2">
+                    <p className="text-[10px] font-semibold t-muted uppercase">Top Posts</p>
+                    {ss.topPosts.map((p, i) => (
+                      <a
+                        key={i}
+                        href={p.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block p-2.5 rounded-lg bg-surface-tertiary/30 border border-surface-border hover:border-accent/30 transition-colors"
+                      >
+                        <p className="text-xs t-secondary line-clamp-2">{p.title}</p>
+                        <p className="text-[10px] t-muted mt-1">Score: {p.score}</p>
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </>
+            );
+          })()}
+        </div>
       )}
 
       {/* Price levels (static fallback) */}

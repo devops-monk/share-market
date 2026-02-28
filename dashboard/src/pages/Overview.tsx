@@ -1,18 +1,20 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import type { StockRecord, SummaryData, Metadata, MarketRegime, RegimeData } from '../types';
+import type { StockRecord, SummaryData, Metadata, MarketRegime, RegimeData, MacroData } from '../types';
 import { MarketTag, ScoreBadge, ChangePercent } from '../components/common/Tags';
 import { HelpLabel } from '../components/common/InfoTooltip';
 import { TIPS } from '../lib/tooltips';
+import MacroDashboard from '../components/common/MacroDashboard';
 
 interface Props {
   stocks: StockRecord[];
   summary: SummaryData | null;
   metadata: Metadata | null;
   bearishCount: number;
+  macroData?: MacroData | null;
 }
 
-export default function Overview({ stocks, summary, metadata, bearishCount }: Props) {
+export default function Overview({ stocks, summary, metadata, bearishCount, macroData }: Props) {
   const [capTab, setCapTab] = useState<'all' | 'Large' | 'Mid' | 'Small'>('all');
 
   if (!summary || summary.totalStocks === 0) {
@@ -58,6 +60,9 @@ export default function Overview({ stocks, summary, metadata, bearishCount }: Pr
 
       {/* Market Regime Indicator */}
       {regime && <MarketRegimeCard regime={regime} />}
+
+      {/* Macro Indicators */}
+      {macroData && <MacroDashboard data={macroData} />}
 
       {/* Hero stats */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">

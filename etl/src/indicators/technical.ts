@@ -9,6 +9,97 @@ import {
 } from 'technicalindicators';
 import type { QuoteData } from '../stocks/fetcher.js';
 
+export interface VolumeProfileData {
+  bins: { price: number; volume: number }[];
+  vpoc: number;         // Volume Point of Control — highest-volume price
+  valueAreaHigh: number;
+  valueAreaLow: number;
+}
+
+/**
+ * Compute Volume Profile (VPVR) — distributes volume across price bins.
+ * Uses real OHLCV highs/lows to spread each candle's volume across overlapping bins.
+ */
+export function computeVolumeProfile(
+  highs: number[],
+  lows: number[],
+  closes: number[],
+  volumes: number[],
+  numBins = 50,
+  lookback = 252,
+): VolumeProfileData | null {
+  const len = Math.min(highs.length, lows.length, closes.length, volumes.length);
+  if (len < 20) return null;
+
+  const start = Math.max(0, len - lookback);
+  const h = highs.slice(start, len);
+  const l = lows.slice(start, len);
+  const v = volumes.slice(start, len);
+
+  const rangeHigh = Math.max(...h);
+  const rangeLow = Math.min(...l);
+  if (rangeHigh <= rangeLow) return null;
+
+  const binSize = (rangeHigh - rangeLow) / numBins;
+  const bins: number[] = new Array(numBins).fill(0);
+
+  for (let i = 0; i < h.length; i++) {
+    const candleHigh = h[i];
+    const candleLow = l[i];
+    const candleRange = candleHigh - candleLow;
+    if (candleRange <= 0 || v[i] <= 0) continue;
+
+    // Determine which bins this candle overlaps
+    const lowBin = Math.max(0, Math.floor((candleLow - rangeLow) / binSize));
+    const highBin = Math.min(numBins - 1, Math.floor((candleHigh - rangeLow) / binSize));
+
+    const binsSpanned = highBin - lowBin + 1;
+    const volPerBin = v[i] / binsSpanned;
+    for (let b = lowBin; b <= highBin; b++) {
+      bins[b] += volPerBin;
+    }
+  }
+
+  // Find VPOC (highest volume bin)
+  let vpocIdx = 0;
+  for (let b = 1; b < numBins; b++) {
+    if (bins[b] > bins[vpocIdx]) vpocIdx = b;
+  }
+  const vpoc = +(rangeLow + (vpocIdx + 0.5) * binSize).toFixed(2);
+
+  // Value Area: expand from VPOC until 70% of total volume
+  const totalVolume = bins.reduce((a, b) => a + b, 0);
+  const targetVolume = totalVolume * 0.7;
+  let vaVolume = bins[vpocIdx];
+  let vaLow = vpocIdx;
+  let vaHigh = vpocIdx;
+
+  while (vaVolume < targetVolume && (vaLow > 0 || vaHigh < numBins - 1)) {
+    const below = vaLow > 0 ? bins[vaLow - 1] : 0;
+    const above = vaHigh < numBins - 1 ? bins[vaHigh + 1] : 0;
+    if (below >= above && vaLow > 0) {
+      vaLow--;
+      vaVolume += bins[vaLow];
+    } else if (vaHigh < numBins - 1) {
+      vaHigh++;
+      vaVolume += bins[vaHigh];
+    } else {
+      vaLow--;
+      vaVolume += bins[vaLow];
+    }
+  }
+
+  return {
+    bins: bins.map((vol, i) => ({
+      price: +(rangeLow + (i + 0.5) * binSize).toFixed(2),
+      volume: Math.round(vol),
+    })),
+    vpoc,
+    valueAreaHigh: +(rangeLow + (vaHigh + 1) * binSize).toFixed(2),
+    valueAreaLow: +(rangeLow + vaLow * binSize).toFixed(2),
+  };
+}
+
 export interface BollingerData {
   upper: number;
   middle: number;

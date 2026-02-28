@@ -1,6 +1,6 @@
 import { ALL_STOCKS } from './stocks/universe.js';
 import { fetchAllStocks } from './stocks/fetcher.js';
-import { computeTechnicals } from './indicators/technical.js';
+import { computeTechnicals, computeVolumeProfile } from './indicators/technical.js';
 import { detectSignals, computeBearishScore, computeBullishScore, computeTimeframeSentiment } from './indicators/signals.js';
 import { computeSupportResistance } from './indicators/support-resistance.js';
 import { computeScore } from './scoring/scorer.js';
@@ -9,6 +9,8 @@ import { fetchGoogleNews } from './news/google-news.js';
 import { fetchFinvizNews } from './news/finviz-scraper.js';
 import { scoreNewsItemsWithFinBERT, averageSentiment } from './news/sentiment.js';
 import { computeMarketRegime } from './indicators/regime.js';
+import { fetchMacroData } from './indicators/macro.js';
+import { fetchRedditSentiment } from './news/reddit.js';
 import { writeOutputs, type StockRecord, type OhlcvData } from './output/writer.js';
 import { generateAIResearchNotes } from './ai/research-notes.js';
 import { fetchFinancials } from './fundamentals/financials.js';
@@ -75,7 +77,7 @@ async function main() {
 
   const huggingFaceApiKey = process.env.HUGGINGFACE_API_KEY;
 
-  const [, marketRegime] = await Promise.all([
+  const [, marketRegime, macroData] = await Promise.all([
     // News fetching
     Promise.all(
       topTickers.map(q =>
@@ -91,11 +93,19 @@ async function main() {
     ),
     // Market regime (runs in parallel with news)
     computeMarketRegime(),
+    // Macro data from FRED (runs in parallel)
+    fetchMacroData(),
   ]);
   console.log(`Collected ${allNews.length} news items in ${((Date.now() - newsStart) / 1000).toFixed(1)}s`);
   if (marketRegime) {
     console.log(`Market regime: ${marketRegime.overall} (US: ${marketRegime.us.regime}, UK: ${marketRegime.uk.regime})`);
   }
+
+  // Step 2a: Fetch Reddit sentiment (best-effort, top 100 tickers)
+  const redditSentimentMap = await fetchRedditSentiment(
+    topTickers.map(q => q.ticker),
+    huggingFaceApiKey,
+  );
 
   // Step 2b: Fetch insider trading data (SEC EDGAR Form 4)
   console.log('Fetching insider trading data...');
@@ -114,10 +124,13 @@ async function main() {
   console.log('Computing indicators and scores...');
 
   // First pass: compute technicals and collect returns for RS percentile
-  const stockTechData: { quote: typeof quotes[0]; tech: ReturnType<typeof computeTechnicals> }[] = [];
+  const stockTechData: { quote: typeof quotes[0]; tech: ReturnType<typeof computeTechnicals>; volumeProfile: ReturnType<typeof computeVolumeProfile> }[] = [];
   for (const quote of quotes) {
     const tech = computeTechnicals(quote);
-    stockTechData.push({ quote, tech });
+    const volumeProfile = computeVolumeProfile(
+      quote.ohlcvHigh, quote.ohlcvLow, quote.historicalClose, quote.historicalVolume,
+    );
+    stockTechData.push({ quote, tech, volumeProfile });
   }
 
   // Compute RS percentile: weighted 1-year return (40% latest quarter, 20% each prior)
@@ -135,7 +148,7 @@ async function main() {
   const ohlcvRecords: OhlcvData[] = [];
 
   for (let i = 0; i < stockTechData.length; i++) {
-    const { quote, tech } = stockTechData[i];
+    const { quote, tech, volumeProfile } = stockTechData[i];
     const signals = detectSignals(tech, quote);
     const bearishScore = computeBearishScore(signals);
     const bullishScore = computeBullishScore(signals);
@@ -431,6 +444,8 @@ async function main() {
       chartPatterns: tech.chartPatterns,
       // N13: Theme/Sector Tags
       themes,
+      // N16: Volume Profile
+      volumeProfile,
       // DCF Lite: simple intrinsic value = OCF × (1 + growth) / discount_rate
       dcfValue: (() => {
         const ocf = quote.operatingCashflow;
@@ -610,7 +625,7 @@ async function main() {
   }
 
   // Step 5: Write outputs
-  writeOutputs(stockRecords, allNews, bearishAlerts, ohlcvRecords, marketRegime, financialsMap, insiderTradesMap, aiResearchNotes);
+  writeOutputs(stockRecords, allNews, bearishAlerts, ohlcvRecords, marketRegime, financialsMap, insiderTradesMap, aiResearchNotes, macroData, redditSentimentMap);
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`ETL completed in ${elapsed}s`);

@@ -31,6 +31,8 @@ const MostOwned = lazy(() => import('./pages/MostOwned'));
 const SectorRotation = lazy(() => import('./pages/SectorRotation'));
 const NLQuery = lazy(() => import('./pages/NLQuery'));
 const EconomicCalendar = lazy(() => import('./pages/EconomicCalendar'));
+const WeightedScreener = lazy(() => import('./pages/WeightedScreener'));
+const WidgetDashboard = lazy(() => import('./pages/WidgetDashboard'));
 
 const PageSpinner = () => (
   <div className="flex items-center justify-center py-20">
@@ -42,7 +44,7 @@ const PageSpinner = () => (
 );
 
 export default function App() {
-  const { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, aiResearchNotes, loading } = useStockData();
+  const { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, aiResearchNotes, macroData, socialSentiment, loading } = useStockData();
   const { theme, toggle } = useTheme();
 
   if (loading) {
@@ -73,13 +75,14 @@ export default function App() {
                   summary={summary}
                   metadata={metadata}
                   bearishCount={bearishAlerts.length}
+                  macroData={macroData}
                 />
               }
             />
             <Route path="/screener" element={<Screener stocks={stocks} />} />
             <Route path="/bearish" element={<BearishAlerts alerts={bearishAlerts} />} />
             <Route path="/news" element={<NewsSentiment news={news} />} />
-            <Route path="/stock/:ticker" element={<StockDetail stocks={stocks} news={news} financials={financials} insiderTrades={insiderTrades} aiResearchNotes={aiResearchNotes} />} />
+            <Route path="/stock/:ticker" element={<StockDetail stocks={stocks} news={news} financials={financials} insiderTrades={insiderTrades} aiResearchNotes={aiResearchNotes} socialSentiment={socialSentiment} />} />
             <Route path="/dip" element={<BuyTheDip stocks={stocks} />} />
             <Route path="/breakout" element={<BreakoutDetection stocks={stocks} />} />
             <Route path="/heatmap" element={<HeatMap stocks={stocks} />} />
@@ -98,6 +101,8 @@ export default function App() {
             <Route path="/sector-rotation" element={<SectorRotation stocks={stocks} />} />
             <Route path="/query" element={<NLQuery stocks={stocks} />} />
             <Route path="/economic-calendar" element={<EconomicCalendar />} />
+            <Route path="/weighted-screener" element={<WeightedScreener stocks={stocks} />} />
+            <Route path="/dashboard" element={<WidgetDashboard stocks={stocks} news={news} macroData={macroData} metadata={metadata} />} />
             <Route path="/guide" element={<Guide />} />
             <Route path="/alerts" element={<AlertSettings />} />
           </Routes>

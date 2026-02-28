@@ -502,21 +502,21 @@ Based on competitive analysis and expert technique research conducted February 2
 | **N12** | **Predictive Scoring** | ML-based forward-looking score: probability of outperforming market in 3 months | Danelfin's core feature. Train on historical score → return relationship from our score-history data. | High |
 | **N13** | ~~Theme/Sector Tagging~~ | **DONE** — Static ticker-to-theme mapping: AI, Cloud, Cybersecurity, Clean Energy, EV, Semiconductors, Fintech, Biotech, etc. + sector fallback. Theme badges shown in stock header. | Finviz 2026 feature. | ~~Medium~~ |
 | **N14** | ~~Ichimoku Cloud~~ | **DONE** — Full Ichimoku system (Tenkan-sen 9, Kijun-sen 26, Senkou A/B, displacement 26) with signal detection (above/below/in cloud). Displayed as 5-column card on StockDetail. | Standalone trading system. | ~~Medium~~ |
-| **N15** | **Multi-Widget Dashboard** | Customisable dashboard layout: drag-and-drop cards for score, chart, news, signals | Koyfin's signature feature. Bloomberg-style. | High |
-| **N16** | **Volume Profile** | VPOC (Volume Point of Control), Value Area High/Low from OHLCV | Used by professional traders. Shows where most volume traded. Extends S/R analysis. | Medium |
+| **N15** | **Multi-Widget Dashboard** ✅ | Customisable dashboard layout: drag-and-drop cards for score, chart, news, signals | Koyfin's signature feature. Bloomberg-style. | High |
+| **N16** | **Volume Profile** ✅ | VPOC (Volume Point of Control), Value Area High/Low from OHLCV | Used by professional traders. Shows where most volume traded. Extends S/R analysis. | Medium |
 | **N17** | ~~Beneish M-Score~~ | **DONE** — 8-variable M-Score (DSRI, GMI, AQI, SGI, DEPI, SGAI, TATA, LVGI) from financial statements. Zones: unlikely/possible/likely manipulator. In Expert Screens. | Stock Rover feature. | ~~Low~~ |
 
 ### Tier 3 — Lower Priority / High Effort (Future)
 
 | # | Feature | Description | Why | Effort |
 |---|---------|-------------|-----|--------|
-| **N18** | **Social Sentiment (Reddit/X)** | Aggregate social buzz: r/wallstreetbets, r/stocks, X FinTwit, StockTwits | Unusual Whales, BlackBox Stocks. Free APIs: Reddit JSON, Snoowrap. StockTwits API deprecated. | High |
-| **N19** | **Macro Overlay** | Yield curve, VIX level, Fed funds rate shown on Overview. Sector rotation tied to economic cycle. | Professional feature. FRED API (free) for macro data. | Medium |
+| **N18** | **Social Sentiment (Reddit)** ✅ | Aggregate social buzz: r/wallstreetbets, r/stocks, r/investing | Reddit JSON API. FinBERT sentiment scoring on post titles. | High |
+| **N19** | **Macro Overlay** ✅ | VIX, 10Y/2Y Treasury, yield spread, DXY, Fed Funds Rate on Overview. FRED API. | Professional feature. FRED API (free) for macro data. | Medium |
 | **N20** | **Options Sentiment Proxy** | Put/Call ratio per stock from available sources. Max pain calculations. | No free real-time source. Could scrape Yahoo Options chain periodically. | High |
 | **N21** | ~~Economic Calendar~~ | **DONE** — Hardcoded FOMC, CPI, NFP, GDP, earnings season, quad-witching dates for 2025-2026. Color-coded by category with impact indicators. New `/economic-calendar` page. | Free standalone page. | ~~Medium~~ |
 | **N22** | **Global Coverage Expansion** | European markets (DAX, CAC 40), Asian markets (Nikkei, HSI) | Simply Wall St covers 100K+ securities globally. Expand stock universe. | High |
 | **N23** | **Paper Trading Mode** | Simulated portfolio with virtual money. Track hypothetical trades. | TradingView has this. Educational value. Build on Portfolio page. | Medium |
-| **N24** | **Weighted Screener** | User-defined weights for multi-factor screening (like Stock Rover) | Stock Rover's #1 feature for power users. | Medium |
+| **N24** | **Weighted Screener** ✅ | User-defined weights for multi-factor screening with presets, URL state, CSV export | Stock Rover's #1 feature for power users. | Medium |
 | **N25** | **ESG Scores** | Environmental, Social, Governance scores per stock | Growing demand. Yahoo Finance provides some ESG data. | Medium |
 
 ---
@@ -528,15 +528,18 @@ DONE (Shipped Feb 2026)             NOW (Next Sprint)                    LATER (
 ───────────────────                 ─────────────────                    ──────────────
 ✅ N1  NL Stock Query             ✅ N17 Beneish M-Score               N11 AI Copilot Chat
 ✅ N2  Factor Grades              ✅ N5  Position Sizing Calculator     N12 Predictive Scoring
-✅ N3  Altman Z-Score             ✅ N10 Candlestick Patterns           N15 Multi-Widget Dashboard
-✅ N4  Risk-Adjusted Returns      ✅ N14 Ichimoku Cloud                 N16 Volume Profile
-✅ N6  ADX/Williams/CMF           ✅ N21 Economic Calendar              N18 Social Sentiment
-✅ N7  Earnings Post-Drift        ✅ N9  Chart Pattern Recognition      N19 Macro Overlay
+✅ N3  Altman Z-Score             ✅ N10 Candlestick Patterns          ✅ N15 Multi-Widget Dashboard
+✅ N4  Risk-Adjusted Returns      ✅ N14 Ichimoku Cloud                ✅ N16 Volume Profile
+✅ N6  ADX/Williams/CMF           ✅ N21 Economic Calendar             ✅ N18 Social Sentiment
+✅ N7  Earnings Post-Drift        ✅ N9  Chart Pattern Recognition     ✅ N19 Macro Overlay
 ✅ N8  SMR Rating                 ✅ N13 Theme Tagging                  N20 Options Sentiment
-                                                                        N22 Global Expansion
-                                    ★ = Quick wins (low effort)          N23 Paper Trading
-                                                                        N24 Weighted Screener
-                                                                        N25 ESG Scores
+                                  ✅ N15 Multi-Widget Dashboard         N22 Global Expansion
+                                  ✅ N16 Volume Profile                 N23 Paper Trading
+                                  ✅ N18 Social Sentiment               N25 ESG Scores
+                                  ✅ N19 Macro Overlay
+                                  ✅ N24 Weighted Screener
+                                    ★ = Quick wins (low effort)          N11 AI Copilot Chat
+                                                                        N12 Predictive Scoring
 ```
 
 ---
@@ -549,18 +552,18 @@ DONE (Shipped Feb 2026)             NOW (Next Sprint)                    LATER (
   HIGH IMPACT           │  N11 AI Copilot Chat ★                   │  N9  Chart Patterns ✅
                         │                                          │  N11 AI Copilot Chat
                         │                                          │  N12 Predictive Scoring
-                        │                                          │  N15 Multi-Widget Dashboard
+                        │                                          │  N15 Multi-Widget Dashboard ✅
                         │                                          │
   MEDIUM IMPACT         │  N5  Position Sizing ✅                  │  N10 Candlestick Patterns ✅
                         │                                          │  N13 Theme Tagging ✅
                         │                                          │  N14 Ichimoku Cloud ✅
-                        │                                          │  N16 Volume Profile
+                        │                                          │  N16 Volume Profile ✅
                         │                                          │  N17 Beneish M-Score ✅
-                        │                                          │  N18 Social Sentiment
+                        │                                          │  N18 Social Sentiment ✅
                         │                                          │  N21 Economic Calendar ✅
-                        │                                          │  N24 Weighted Screener
+                        │                                          │  N24 Weighted Screener ✅
                         │                                          │
-  LOW IMPACT            │                                          │  N19 Macro Overlay
+  LOW IMPACT            │                                          │  N19 Macro Overlay ✅
                         │                                          │  N20 Options Sentiment
                         │                                          │  N22 Global Expansion
                         │                                          │  N23 Paper Trading
@@ -574,21 +577,19 @@ DONE (Shipped Feb 2026)             NOW (Next Sprint)                    LATER (
 
 ### Recommended Next Actions
 
-> **Batches 1–2 (N1–N8, N5/N9/N10/N13/N14/N17/N21) shipped Feb 2026.** Below is the next prioritised batch.
+> **Batches 1–3 shipped Feb 2026.** Batch 3 added N15/N16/N18/N19/N24. Below is the next prioritised batch.
 
 1. **N11 — AI Copilot Chat** — Natural language Q&A about portfolio and stocks using LLM API. "Why is NVDA dropping?" or "Which of my holdings has the best risk/reward?" Context-aware using existing stock data. **High effort, high impact.**
 
 2. **N12 — Predictive Scoring** — ML-based 30-day forward return prediction using gradient boosting on technical + fundamental features. Train on historical score-history data. Show predicted direction alongside composite score. **High effort, high impact.**
 
-3. **N16 — Volume Profile** — VPVR (Volume Profile Visible Range) showing price levels with highest traded volume. Identifies value areas (HVN/LVN) and point of control. Uses existing OHLCV data. **Medium effort.**
+3. **N20 — Options Sentiment** — Put/call ratio, unusual options activity, max pain price from options chain data. **Medium effort, requires options data source.**
 
-4. **N15 — Multi-Widget Dashboard** — Customisable dashboard with drag-and-drop widgets: watchlist, score gauge, sector heat, news feed, chart. User saves layout to localStorage. **High effort, medium impact.**
+4. **N22 — Global Expansion** — Add international markets: EU (DAX, CAC40), Asia (Nikkei, Hang Seng), emerging markets. Multi-currency support. **High effort.**
 
-5. **N18 — Social Sentiment** — Reddit/Twitter/StockTwits sentiment analysis. Fetch recent posts mentioning tickers, score with FinBERT. Add social sentiment component to composite score. **Medium effort, requires API access.**
+5. **N23 — Paper Trading** — Virtual portfolio with simulated trades, P&L tracking, trade journaling. Practice without real money. **High effort, medium impact.**
 
-6. **N24 — Weighted Screener** — User-adjustable weights for each score dimension (momentum, technical, fundamentals, etc.). Dynamically re-rank stocks based on custom weighting. **Medium effort.**
-
-7. **N19 — Macro Overlay** — Display macro indicators (VIX, 10Y yield, DXY, oil price) alongside stock data. Correlate market regime with individual stock performance. **Medium effort.**
+6. **N25 — ESG Scores** — Environmental, Social, Governance scoring from ESG data providers. Filter/sort by ESG ratings. **Medium effort, requires data source.**
 
 ---
 
@@ -600,8 +601,8 @@ DONE (Shipped Feb 2026)             NOW (Next Sprint)                    LATER (
 | Medium Effort (M-series) | 17 | 17 | **100%** |
 | Large Effort (L-series) | 12 | 14 | **86%** |
 | Expert Methodologies | 5 of 9 | 9 | **56%** |
-| New Features (N-series) | 14 of 25 | 25 | **56%** |
-| **Total features shipped** | **64+** | — | — |
+| New Features (N-series) | 19 of 25 | 25 | **76%** |
+| **Total features shipped** | **69+** | — | — |
 
 ---
 
