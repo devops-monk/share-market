@@ -36,13 +36,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 72,
@@ -66,6 +59,13 @@
     {
       "ticker": "ALB",
       "name": "Albemarle",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -163,12 +163,6 @@
       "market": "US"
     },
     {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
-      "score": 73,
-      "market": "UK"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 72,
@@ -201,6 +195,12 @@
     {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "GLEN.L",
+      "name": "Glencore",
       "score": 71,
       "market": "UK"
     }
