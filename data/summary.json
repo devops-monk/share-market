@@ -82,7 +82,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,15 +108,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 25,
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -129,18 +129,18 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "PINS",
-      "name": "Pinterest",
+      "ticker": "OKTA",
+      "name": "Okta",
       "score": 27,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "VRNS",
-      "name": "Varonis Systems",
-      "score": 28,
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 27,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
