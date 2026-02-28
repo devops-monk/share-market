@@ -64,6 +64,9 @@ export function useStockData() {
       setAiResearchNotes(aiNotes || null);
       setMacroData(macro || null);
       setSocialSentiment(social || null);
+    }).catch(err => {
+      console.error('Failed to load stock data:', err);
+    }).finally(() => {
       setLoading(false);
     });
   }, []);
