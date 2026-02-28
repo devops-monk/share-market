@@ -1,9 +1,7 @@
-import { useState, useCallback, useMemo } from 'react';
-import ReactGridLayout from 'react-grid-layout';
+import { useState, useCallback, useMemo, useRef, useEffect } from 'react';
+import { ResponsiveGridLayout } from 'react-grid-layout';
 import 'react-grid-layout/css/styles.css';
 import 'react-resizable/css/styles.css';
-
-const { Responsive, WidthProvider } = ReactGridLayout as any;
 import type { StockRecord, NewsItem, MacroData, Metadata } from '../types';
 
 import WatchlistWidget from '../components/widgets/WatchlistWidget';
@@ -14,8 +12,6 @@ import NewsFeedWidget from '../components/widgets/NewsFeedWidget';
 import SignalsSummaryWidget from '../components/widgets/SignalsSummaryWidget';
 import MacroWidget from '../components/widgets/MacroWidget';
 import CustomChartWidget from '../components/widgets/CustomChartWidget';
-
-const ResponsiveGridLayout = WidthProvider ? WidthProvider(Responsive) : Responsive;
 
 interface Props {
   stocks: StockRecord[];
@@ -51,7 +47,6 @@ function loadWidgets(): WidgetConfig[] {
     const saved = localStorage.getItem(WIDGETS_KEY);
     if (saved) return JSON.parse(saved);
   } catch { /* ignore */ }
-  // Default widgets
   return [
     { id: 'w1', type: 'watchlist', title: 'Watchlist' },
     { id: 'w2', type: 'topMovers', title: 'Top Movers' },
@@ -71,7 +66,25 @@ function loadLayouts(): Record<string, any[]> | undefined {
 
 let nextId = 100;
 
+function useContainerWidth(ref: React.RefObject<HTMLDivElement | null>): number {
+  const [width, setWidth] = useState(1200);
+  useEffect(() => {
+    if (!ref.current) return;
+    const ro = new ResizeObserver(entries => {
+      for (const entry of entries) {
+        setWidth(entry.contentRect.width);
+      }
+    });
+    ro.observe(ref.current);
+    setWidth(ref.current.offsetWidth);
+    return () => ro.disconnect();
+  }, [ref]);
+  return width;
+}
+
 export default function WidgetDashboard({ stocks, news, macroData, metadata }: Props) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const containerWidth = useContainerWidth(containerRef);
   const [widgets, setWidgets] = useState<WidgetConfig[]>(loadWidgets);
   const [layouts, setLayouts] = useState<Record<string, any[]> | undefined>(loadLayouts);
   const [showAddMenu, setShowAddMenu] = useState(false);
@@ -81,7 +94,7 @@ export default function WidgetDashboard({ stocks, news, macroData, metadata }: P
     localStorage.setItem(WIDGETS_KEY, JSON.stringify(w));
   }, []);
 
-  const onLayoutChange = useCallback((_: any[], allLayouts: Record<string, any[]>) => {
+  const onLayoutChange = useCallback((_: any, allLayouts: any) => {
     setLayouts(allLayouts);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(allLayouts));
   }, []);
@@ -125,6 +138,7 @@ export default function WidgetDashboard({ stocks, news, macroData, metadata }: P
       case 'signals': return <SignalsSummaryWidget stocks={stocks} />;
       case 'macro': return <MacroWidget macroData={macroData} />;
       case 'customChart': return <CustomChartWidget stocks={stocks} />;
+      default: return null;
     }
   };
 
@@ -161,44 +175,47 @@ export default function WidgetDashboard({ stocks, news, macroData, metadata }: P
         </div>
       </div>
 
-      {widgets.length === 0 ? (
-        <div className="card p-12 text-center">
-          <p className="t-muted text-sm">No widgets added. Click "Add Widget" to get started.</p>
-        </div>
-      ) : (
-        <ResponsiveGridLayout
-          className="widget-grid"
-          layouts={defaultLayouts}
-          breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480 }}
-          cols={{ lg: 12, md: 10, sm: 6, xs: 4 }}
-          rowHeight={60}
-          onLayoutChange={onLayoutChange}
-          draggableHandle=".widget-drag-handle"
-          compactType="vertical"
-        >
-          {widgets.map(widget => (
-            <div key={widget.id} className="card overflow-hidden flex flex-col">
-              {/* Widget Header */}
-              <div className="widget-drag-handle flex items-center justify-between px-3 py-2 border-b border-surface-border bg-surface-tertiary/30 cursor-grab active:cursor-grabbing">
-                <span className="text-xs font-semibold t-secondary">{widget.title}</span>
-                <button
-                  onClick={() => removeWidget(widget.id)}
-                  className="w-5 h-5 rounded flex items-center justify-center hover:bg-bearish/20 transition-colors"
-                  title="Remove widget"
-                >
-                  <svg className="w-3 h-3 t-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
+      <div ref={containerRef}>
+        {widgets.length === 0 ? (
+          <div className="card p-12 text-center">
+            <p className="t-muted text-sm">No widgets added. Click "Add Widget" to get started.</p>
+          </div>
+        ) : (
+          <ResponsiveGridLayout
+            {...{
+              className: 'widget-grid',
+              layouts: defaultLayouts,
+              breakpoints: { lg: 1200, md: 996, sm: 768, xs: 480 },
+              cols: { lg: 12, md: 10, sm: 6, xs: 4 },
+              rowHeight: 60,
+              width: containerWidth,
+              onLayoutChange,
+              draggableHandle: '.widget-drag-handle',
+              compactType: 'vertical',
+            } as any}
+          >
+            {widgets.map(widget => (
+              <div key={widget.id} className="card overflow-hidden flex flex-col">
+                <div className="widget-drag-handle flex items-center justify-between px-3 py-2 border-b border-surface-border bg-surface-tertiary/30 cursor-grab active:cursor-grabbing">
+                  <span className="text-xs font-semibold t-secondary">{widget.title}</span>
+                  <button
+                    onClick={() => removeWidget(widget.id)}
+                    className="w-5 h-5 rounded flex items-center justify-center hover:bg-bearish/20 transition-colors"
+                    title="Remove widget"
+                  >
+                    <svg className="w-3 h-3 t-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                <div className="flex-1 overflow-hidden">
+                  {renderWidget(widget)}
+                </div>
               </div>
-              {/* Widget Content */}
-              <div className="flex-1 overflow-hidden">
-                {renderWidget(widget)}
-              </div>
-            </div>
-          ))}
-        </ResponsiveGridLayout>
-      )}
+            ))}
+          </ResponsiveGridLayout>
+        )}
+      </div>
     </div>
   );
 }

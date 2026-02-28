@@ -1,8 +1,8 @@
 export const CONFIG = {
-  concurrency: 15,          // Yahoo chart API (tolerant)
-  finvizConcurrency: 8,     // FinViz scraping (more sensitive)
-  newsConcurrency: 6,       // News fetching
-  requestDelayMs: 100,
+  concurrency: 25,          // Yahoo chart API (tolerant, handles high concurrency)
+  finvizConcurrency: 8,     // FinViz scraping (aggressive rate-limiting, keep low)
+  newsConcurrency: 10,      // News fetching
+  requestDelayMs: 50,
   historicalPeriod: '5y',
   historicalInterval: '1d' as const,
 
@@ -28,24 +28,24 @@ export const CONFIG = {
   },
 
   // FinBERT (HuggingFace)
-  finbertBatchSize: 10,
-  finbertRateDelayMs: 200,
+  finbertBatchSize: 20,
+  finbertRateDelayMs: 100,
 
   // AI Research Notes (HuggingFace chat completions)
-  aiResearchModel: 'Qwen/Qwen2.5-7B-Instruct-1M',
+  aiResearchModel: 'mistralai/Mistral-7B-Instruct-v0.3',
   aiResearchConcurrency: 3,
   aiResearchDelayMs: 500,
   aiResearchMaxStocks: 100,
 
   // FRED API (macro data)
-  fredRateDelayMs: 200,
+  fredRateDelayMs: 100,
 
   // Reddit sentiment
   redditConcurrency: 2,
   redditDelayMs: 500,
 
   // SEC EDGAR (insider trading)
-  edgarConcurrency: 8,
+  edgarConcurrency: 12,
   edgarUserAgent: 'StockDashboard/1.0 (stock-dashboard@example.com)',
   insiderLookbackDays: 180,
 
