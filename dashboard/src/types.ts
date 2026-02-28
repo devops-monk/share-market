@@ -181,11 +181,14 @@ export interface MacroData {
   lastUpdated: string;
 }
 
-// N18: Reddit/Social Sentiment
+// N18: Social Sentiment (ApeWisdom — aggregated Reddit mentions)
 export interface SocialSentiment {
   mentions: number;
-  avgSentiment: number;
+  upvotes: number;
+  rank: number | null;
+  mentionChange: number | null;
   topPosts: { title: string; score: number; url: string }[];
+  avgSentiment: number;
 }
 
 export type SocialSentimentMap = Record<string, SocialSentiment>;

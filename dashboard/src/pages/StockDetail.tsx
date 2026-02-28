@@ -257,53 +257,44 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
         </div>
       )}
 
-      {/* Social Buzz (Reddit) */}
+      {/* Social Buzz */}
       {socialSentiment?.[stock.ticker] && (
         <div className="card p-5">
-          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-1">Social Buzz (Reddit)</h2>
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-1">Social Buzz</h2>
           <p className="text-xs t-muted mb-4 leading-relaxed">
-            What are people talking about on Reddit? More mentions = more buzz.
+            How much are people talking about this stock online? More mentions and upvotes = more buzz. Data aggregated from Reddit communities like r/wallstreetbets, r/stocks, r/investing and more.
           </p>
           {(() => {
             const ss = socialSentiment[stock.ticker];
             return (
-              <>
-                <div className="grid grid-cols-2 gap-3 mb-4">
-                  <div className="p-3 rounded-lg bg-surface-tertiary/50 border border-surface-border text-center">
-                    <p className="text-[10px] font-semibold t-muted uppercase">Mentions</p>
-                    <p className="text-xl font-bold t-primary">{ss.mentions}</p>
-                  </div>
-                  <div className="p-3 rounded-lg bg-surface-tertiary/50 border border-surface-border text-center">
-                    <p className="text-[10px] font-semibold t-muted uppercase">Avg Sentiment</p>
-                    <p className={`text-xl font-bold ${ss.avgSentiment > 0.05 ? 'text-bullish' : ss.avgSentiment < -0.05 ? 'text-bearish' : 't-primary'}`}>
-                      {ss.avgSentiment > 0 ? '+' : ''}{ss.avgSentiment.toFixed(3)}
-                    </p>
-                    <div className="w-full h-1.5 bg-surface-border rounded-full mt-1.5 overflow-hidden">
-                      <div
-                        className={`h-full rounded-full ${ss.avgSentiment > 0.05 ? 'bg-bullish' : ss.avgSentiment < -0.05 ? 'bg-bearish' : 'bg-yellow-500'}`}
-                        style={{ width: `${Math.min(100, Math.max(5, (ss.avgSentiment + 1) * 50))}%` }}
-                      />
-                    </div>
-                  </div>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+                <div className="p-3 rounded-lg bg-surface-tertiary/50 border border-surface-border text-center">
+                  <p className="text-[10px] font-semibold t-muted uppercase">Mentions</p>
+                  <p className="text-xl font-bold t-primary">{ss.mentions}</p>
+                  <p className="text-[10px] t-muted">posts this week</p>
                 </div>
-                {ss.topPosts.length > 0 && (
-                  <div className="space-y-2">
-                    <p className="text-[10px] font-semibold t-muted uppercase">Top Posts</p>
-                    {ss.topPosts.map((p, i) => (
-                      <a
-                        key={i}
-                        href={p.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block p-2.5 rounded-lg bg-surface-tertiary/30 border border-surface-border hover:border-accent/30 transition-colors"
-                      >
-                        <p className="text-xs t-secondary line-clamp-2">{p.title}</p>
-                        <p className="text-[10px] t-muted mt-1">Score: {p.score}</p>
-                      </a>
-                    ))}
+                <div className="p-3 rounded-lg bg-surface-tertiary/50 border border-surface-border text-center">
+                  <p className="text-[10px] font-semibold t-muted uppercase">Upvotes</p>
+                  <p className="text-xl font-bold t-primary">{(ss.upvotes ?? 0).toLocaleString()}</p>
+                  <p className="text-[10px] t-muted">total engagement</p>
+                </div>
+                {ss.rank != null && (
+                  <div className="p-3 rounded-lg bg-surface-tertiary/50 border border-surface-border text-center">
+                    <p className="text-[10px] font-semibold t-muted uppercase">Trending Rank</p>
+                    <p className="text-xl font-bold text-accent-light">#{ss.rank}</p>
+                    <p className="text-[10px] t-muted">across social</p>
                   </div>
                 )}
-              </>
+                {ss.mentionChange != null && (
+                  <div className="p-3 rounded-lg bg-surface-tertiary/50 border border-surface-border text-center">
+                    <p className="text-[10px] font-semibold t-muted uppercase">24h Change</p>
+                    <p className={`text-xl font-bold ${ss.mentionChange > 1.2 ? 'text-bullish' : ss.mentionChange < 0.8 ? 'text-bearish' : 't-primary'}`}>
+                      {ss.mentionChange > 1 ? '+' : ''}{((ss.mentionChange - 1) * 100).toFixed(0)}%
+                    </p>
+                    <p className="text-[10px] t-muted">vs yesterday</p>
+                  </div>
+                )}
+              </div>
             );
           })()}
         </div>

@@ -10,7 +10,7 @@ import { fetchFinvizNews } from './news/finviz-scraper.js';
 import { scoreNewsItemsWithFinBERT, averageSentiment } from './news/sentiment.js';
 import { computeMarketRegime } from './indicators/regime.js';
 import { fetchMacroData } from './indicators/macro.js';
-import { fetchRedditSentiment } from './news/reddit.js';
+import { fetchSocialSentiment } from './news/social-sentiment.js';
 import { writeOutputs, type StockRecord, type OhlcvData } from './output/writer.js';
 import { generateAIResearchNotes } from './ai/research-notes.js';
 import { fetchFinancials } from './fundamentals/financials.js';
@@ -101,8 +101,8 @@ async function main() {
     console.log(`Market regime: ${marketRegime.overall} (US: ${marketRegime.us.regime}, UK: ${marketRegime.uk.regime})`);
   }
 
-  // Step 2a: Fetch Reddit sentiment (best-effort, top 100 tickers)
-  const redditSentimentMap = await fetchRedditSentiment(
+  // Step 2a: Fetch social sentiment (best-effort, top 100 tickers)
+  const redditSentimentMap = await fetchSocialSentiment(
     topTickers.map(q => q.ticker),
     huggingFaceApiKey,
   );

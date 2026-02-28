@@ -40,9 +40,8 @@ export const CONFIG = {
   // FRED API (macro data)
   fredRateDelayMs: 100,
 
-  // Reddit sentiment
-  redditConcurrency: 2,
-  redditDelayMs: 500,
+  // Social sentiment (ApeWisdom)
+  socialDelayMs: 500,
 
   // SEC EDGAR (insider trading)
   edgarConcurrency: 12,

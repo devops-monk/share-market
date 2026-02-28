@@ -6,7 +6,7 @@ import type { FinancialData } from '../fundamentals/financials.js';
 import type { InsiderSummary } from '../insider/edgar.js';
 import type { VolumeProfileData } from '../indicators/technical.js';
 import type { MacroData } from '../indicators/macro.js';
-import type { SocialSentiment } from '../news/reddit.js';
+import type { SocialSentiment } from '../news/social-sentiment.js';
 import path from 'path';
 
 export interface StockRecord {
