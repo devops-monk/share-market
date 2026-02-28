@@ -30,6 +30,9 @@ jobs:
 
       - name: Run ETL pipeline
         timeout-minutes: 10
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          HUGGINGFACE_API_KEY: ${{ secrets.HUGGINGFACE_API_KEY }}
         run: npm run etl
 
       - name: Check and send alerts
