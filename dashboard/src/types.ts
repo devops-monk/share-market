@@ -1,3 +1,35 @@
+// N23: Paper Trading
+export interface PaperTrade {
+  id: string;
+  ticker: string;
+  type: 'buy' | 'sell';
+  shares: number;
+  price: number;
+  date: string;
+  notes?: string;
+}
+
+export interface PaperPortfolio {
+  startingCapital: number;
+  cash: number;
+  trades: PaperTrade[];
+  createdAt: string;
+}
+
+// N12: Predictive Scoring
+export interface PredictiveScore {
+  predicted: number;
+  direction: 'improving' | 'stable' | 'declining';
+  confidence: 'low' | 'medium' | 'high';
+  slope: number;
+  r2: number;
+  factors: {
+    trendMomentum: number;
+    meanReversion: number;
+    technicalSupport: number;
+  };
+}
+
 export interface StockRecord {
   ticker: string;
   name: string;
@@ -161,6 +193,8 @@ export interface StockRecord {
   chartPatterns?: { name: string; direction: 'bullish' | 'bearish' | 'neutral'; confidence: number; }[];
   // N13: Theme/Sector Tags
   themes?: string[];
+  // N12: Predictive Score
+  predictiveScore?: PredictiveScore | null;
   // N16: Volume Profile
   volumeProfile?: {
     bins: { price: number; volume: number }[];

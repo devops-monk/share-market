@@ -12,6 +12,8 @@ import { MarketTag, CapTag, Trading212Badge, SignalBadge, ChangePercent } from '
 import FinancialsBarChart from '../components/charts/FinancialsBarChart';
 import { generateStockSummary } from '../lib/stock-summary';
 import VolumeProfileChart from '../components/charts/VolumeProfileChart';
+import PredictiveScoreCard from '../components/charts/PredictiveScoreCard';
+import AICopilotChat from '../components/common/AICopilotChat';
 import type { FinancialsMap } from '../hooks/useStockData';
 
 interface Props {
@@ -178,6 +180,9 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
 
       {/* AI Stock Summary */}
       <AiSummaryCard paragraphs={aiSummary} isAiGenerated={isAiGenerated} />
+
+      {/* AI Copilot Chat */}
+      <AICopilotChat stocks={stocks} contextStock={stock} />
 
       {/* Candlestick Chart */}
       <div className="card p-5">
@@ -354,6 +359,11 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
         <p className="text-xs t-muted mb-4 leading-relaxed">How the stock's overall score has changed over time. An upward trend means the stock is getting better across multiple measures. A downward trend means things are getting worse. Flat = stable.</p>
         <ScoreHistoryChart ticker={stock.ticker} />
       </div>
+
+      {/* Predictive Score */}
+      {stock.predictiveScore && (
+        <PredictiveScoreCard currentScore={stock.score.composite} predictiveScore={stock.predictiveScore} />
+      )}
 
       {/* Key metrics */}
       <div className="card p-5">

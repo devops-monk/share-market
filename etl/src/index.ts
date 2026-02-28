@@ -4,6 +4,7 @@ import { computeTechnicals, computeVolumeProfile } from './indicators/technical.
 import { detectSignals, computeBearishScore, computeBullishScore, computeTimeframeSentiment } from './indicators/signals.js';
 import { computeSupportResistance } from './indicators/support-resistance.js';
 import { computeScore } from './scoring/scorer.js';
+import { computePredictiveScore } from './scoring/predictive-score.js';
 import { computeDividendMetrics } from './indicators/dividends.js';
 import { fetchGoogleNews } from './news/google-news.js';
 import { fetchFinvizNews } from './news/finviz-scraper.js';
@@ -16,6 +17,8 @@ import { generateAIResearchNotes } from './ai/research-notes.js';
 import { fetchFinancials } from './fundamentals/financials.js';
 import { fetchInsiderTrades } from './insider/edgar.js';
 import { CONFIG } from './config.js';
+import { readFileSync } from 'fs';
+import path from 'path';
 import pLimit from 'p-limit';
 
 // N13: Theme/Sector Tagging
@@ -143,6 +146,13 @@ async function main() {
   sortedRs.forEach((item, rank) => {
     rsPercentiles.set(item.idx, Math.round(((rank + 1) / sortedRs.length) * 99));
   });
+
+  // Load existing score history for predictive scoring
+  let scoreHistoryData: Record<string, Record<string, number>> = {};
+  try {
+    const histPath = path.join(CONFIG.dataDir, 'score-history.json');
+    scoreHistoryData = JSON.parse(readFileSync(histPath, 'utf-8'));
+  } catch { /* first run or missing file */ }
 
   const stockRecords: StockRecord[] = [];
   const ohlcvRecords: OhlcvData[] = [];
@@ -444,6 +454,8 @@ async function main() {
       chartPatterns: tech.chartPatterns,
       // N13: Theme/Sector Tags
       themes,
+      // N12: Predictive Score
+      predictiveScore: null, // populated in post-processing after all scores are computed
       // N16: Volume Profile
       volumeProfile,
       // DCF Lite: simple intrinsic value = OCF × (1 + growth) / discount_rate
@@ -604,6 +616,18 @@ async function main() {
       }
     }
   }
+
+  // N12: Compute predictive scores using score history
+  let predictiveCount = 0;
+  for (const s of stockRecords) {
+    const history = scoreHistoryData[s.ticker];
+    const ps = computePredictiveScore(s, history);
+    if (ps) {
+      s.predictiveScore = ps;
+      predictiveCount++;
+    }
+  }
+  console.log(`Computed predictive scores for ${predictiveCount}/${stockRecords.length} stocks`);
 
   // Step 4: Identify bearish alerts
   const bearishAlerts = stockRecords

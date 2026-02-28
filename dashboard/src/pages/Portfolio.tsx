@@ -6,6 +6,7 @@ import InfoTooltip from '../components/common/InfoTooltip';
 import CorrelationHeatmap from '../components/charts/CorrelationHeatmap';
 import { useOhlcvData } from '../hooks/useOhlcvData';
 import { computeCorrelationMatrix } from '../lib/correlation';
+import PaperTradingTab from '../components/paper-trading/PaperTradingTab';
 
 /* ─── TYPES ─── */
 interface Holding {
@@ -78,6 +79,7 @@ const COLORS = ['#3b82f6','#16a34a','#d97706','#dc2626','#0284c7','#0d9488','#c2
 
 /* ─── COMPONENT ─── */
 export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
+  const [activeTab, setActiveTab] = useState<'holdings' | 'paper'>('holdings');
   const [holdings, setHoldings] = useState<Holding[]>(readHoldings);
   const [showAdd, setShowAdd] = useState(false);
   const [addTicker, setAddTicker] = useState('');
@@ -215,13 +217,40 @@ export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
           <h1 className="text-xl font-bold t-primary">Portfolio Tracker</h1>
           <p className="text-sm t-muted mt-1">Track your holdings, P&L, allocation, and position sizing</p>
         </div>
-        <button
-          onClick={() => setShowAdd(v => !v)}
-          className="badge bg-accent/15 text-accent-light ring-1 ring-accent/20 hover:bg-accent/25 transition-colors cursor-pointer text-xs px-3 py-1.5"
-        >
-          + Add Holding
-        </button>
+        {activeTab === 'holdings' && (
+          <button
+            onClick={() => setShowAdd(v => !v)}
+            className="badge bg-accent/15 text-accent-light ring-1 ring-accent/20 hover:bg-accent/25 transition-colors cursor-pointer text-xs px-3 py-1.5"
+          >
+            + Add Holding
+          </button>
+        )}
       </div>
+
+      {/* Tab Navigation */}
+      <div className="flex gap-1 border-b border-surface-border">
+        <button
+          onClick={() => setActiveTab('holdings')}
+          className={`px-4 py-2.5 text-sm font-medium transition-all border-b-2 -mb-px ${
+            activeTab === 'holdings'
+              ? 'border-accent text-accent-light'
+              : 'border-transparent t-muted hover:t-primary hover:border-surface-border'
+          }`}
+        >Holdings</button>
+        <button
+          onClick={() => setActiveTab('paper')}
+          className={`px-4 py-2.5 text-sm font-medium transition-all border-b-2 -mb-px ${
+            activeTab === 'paper'
+              ? 'border-accent text-accent-light'
+              : 'border-transparent t-muted hover:t-primary hover:border-surface-border'
+          }`}
+        >Paper Trading</button>
+      </div>
+
+      {activeTab === 'paper' && <PaperTradingTab stocks={stocks} />}
+
+      {activeTab === 'holdings' && (<>
+
 
       {/* Add form */}
       {showAdd && (
@@ -476,6 +505,7 @@ export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
           </div>
         )}
       </div>
+      </>)}
     </div>
   );
 }

@@ -191,6 +191,19 @@ export interface StockRecord {
   chartPatterns: { name: string; direction: 'bullish' | 'bearish' | 'neutral'; confidence: number; }[];
   // N13: Theme/Sector Tags
   themes: string[];
+  // N12: Predictive Score
+  predictiveScore: {
+    predicted: number;
+    direction: 'improving' | 'stable' | 'declining';
+    confidence: 'low' | 'medium' | 'high';
+    slope: number;
+    r2: number;
+    factors: {
+      trendMomentum: number;
+      meanReversion: number;
+      technicalSupport: number;
+    };
+  } | null;
   // N16: Volume Profile
   volumeProfile: VolumeProfileData | null;
 }

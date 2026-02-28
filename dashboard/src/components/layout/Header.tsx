@@ -19,6 +19,7 @@ const primaryNav: NavItem[] = [
   { path: '/screener', label: 'Screener' },
   { path: '/watchlist', label: 'Watchlist' },
   { path: '/portfolio', label: 'Portfolio' },
+  { path: '/copilot', label: 'Copilot' },
 ];
 
 const navGroups: NavGroup[] = [

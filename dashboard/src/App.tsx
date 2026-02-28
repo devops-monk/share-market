@@ -33,6 +33,7 @@ const NLQuery = lazy(() => import('./pages/NLQuery'));
 const EconomicCalendar = lazy(() => import('./pages/EconomicCalendar'));
 const WeightedScreener = lazy(() => import('./pages/WeightedScreener'));
 const WidgetDashboard = lazy(() => import('./pages/WidgetDashboard'));
+const AICopilot = lazy(() => import('./pages/AICopilot'));
 
 const PageSpinner = () => (
   <div className="flex items-center justify-center py-20">
@@ -103,6 +104,7 @@ export default function App() {
             <Route path="/economic-calendar" element={<EconomicCalendar />} />
             <Route path="/weighted-screener" element={<WeightedScreener stocks={stocks} />} />
             <Route path="/dashboard" element={<WidgetDashboard stocks={stocks} news={news} macroData={macroData} metadata={metadata} />} />
+            <Route path="/copilot" element={<AICopilot stocks={stocks} metadata={metadata} />} />
             <Route path="/guide" element={<Guide />} />
             <Route path="/alerts" element={<AlertSettings />} />
           </Routes>

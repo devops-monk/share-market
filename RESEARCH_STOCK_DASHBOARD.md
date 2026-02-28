@@ -18,7 +18,7 @@
 
 ## 1. What We Have Today
 
-### Pages (25 total)
+### Pages (26 total)
 | Page | Purpose |
 |------|---------|
 | Overview | Market snapshot — top/bottom performers, avg score, bearish count, market regime |
@@ -34,7 +34,8 @@
 | Sector Rotation | RRG-style scatter plot (Leading/Weakening/Lagging/Improving quadrants) |
 | Heat Map | Treemap of all stocks (3 modes: change/score/RS) |
 | Watchlist | localStorage-persisted starred stocks |
-| Portfolio | Holdings tracker with P&L, allocation pie chart, correlation heatmap |
+| Portfolio | Holdings tracker with P&L, allocation pie chart, correlation heatmap, paper trading |
+| AI Copilot | Chat interface for stock Q&A — client-side engine + HuggingFace LLM fallback |
 | Stock Comparison | Side-by-side 2–8 stocks with sparklines, 5 metric groups |
 | Custom Screen | 25-metric rule builder with AND/OR logic, save/load, CSV export |
 | Earnings Calendar | Calendar view with upcoming/recent/all, highlights today |
@@ -498,8 +499,8 @@ Based on competitive analysis and expert technique research conducted February 2
 |---|---------|-------------|-----|--------|
 | **N9** | ~~Chart Pattern Recognition~~ | **DONE** — Swing-point analysis on 60-day data. Detects double top/bottom, ascending/descending triangles, bull/bear flags with confidence scores. | TrendSpider has 28 patterns. ChartPatterns.ai has 16. | ~~High~~ |
 | **N10** | ~~Candlestick Pattern Detection~~ | **DONE** — 13 candlestick patterns via `technicalindicators` library: engulfing, doji, hammer, shooting star, morning/evening star, harami, marubozu. Shown as badges on StockDetail. | TrendSpider has 123 patterns. | ~~Medium~~ |
-| **N11** | **AI Copilot Chat** | Chat interface on Stock Detail: "What are the risks for this stock?" "Compare to MSFT" | OpenBB Copilot, Seeking Alpha Ask AI, StockyPie. Growing expectation in 2026. | High |
-| **N12** | **Predictive Scoring** | ML-based forward-looking score: probability of outperforming market in 3 months | Danelfin's core feature. Train on historical score → return relationship from our score-history data. | High |
+| **N11** | ~~AI Copilot Chat~~ | **DONE** — Hybrid chat on StockDetail + standalone `/copilot` page. Client-side Q&A engine (~20 query types: score, signals, compare, valuation, risk, technicals, fundamentals) with HuggingFace Mistral-7B LLM fallback for open-ended questions. API key stored in localStorage. | OpenBB Copilot, Seeking Alpha Ask AI, StockyPie. Growing expectation in 2026. | ~~High~~ |
+| **N12** | ~~Predictive Scoring~~ | **DONE** — ETL pipeline computes predicted score (0-100) using linear regression on score history, acceleration, mean reversion, and technical support factors (RSI, MACD, volume, SMA alignment). Direction (improving/stable/declining) + confidence (low/medium/high) with R² metric. PredictiveScoreCard on StockDetail. | Danelfin's core feature. | ~~High~~ |
 | **N13** | ~~Theme/Sector Tagging~~ | **DONE** — Static ticker-to-theme mapping: AI, Cloud, Cybersecurity, Clean Energy, EV, Semiconductors, Fintech, Biotech, etc. + sector fallback. Theme badges shown in stock header. | Finviz 2026 feature. | ~~Medium~~ |
 | **N14** | ~~Ichimoku Cloud~~ | **DONE** — Full Ichimoku system (Tenkan-sen 9, Kijun-sen 26, Senkou A/B, displacement 26) with signal detection (above/below/in cloud). Displayed as 5-column card on StockDetail. | Standalone trading system. | ~~Medium~~ |
 | **N15** | **Multi-Widget Dashboard** ✅ | Customisable dashboard layout: drag-and-drop cards for score, chart, news, signals | Koyfin's signature feature. Bloomberg-style. | High |
@@ -515,8 +516,8 @@ Based on competitive analysis and expert technique research conducted February 2
 | **N20** | **Options Sentiment Proxy** | Put/Call ratio per stock from available sources. Max pain calculations. | No free real-time source. Could scrape Yahoo Options chain periodically. | High |
 | **N21** | ~~Economic Calendar~~ | **DONE** — Hardcoded FOMC, CPI, NFP, GDP, earnings season, quad-witching dates for 2025-2026. Color-coded by category with impact indicators. New `/economic-calendar` page. | Free standalone page. | ~~Medium~~ |
 | **N22** | **Global Coverage Expansion** | European markets (DAX, CAC 40), Asian markets (Nikkei, HSI) | Simply Wall St covers 100K+ securities globally. Expand stock universe. | High |
-| **N23** | **Paper Trading Mode** | Simulated portfolio with virtual money. Track hypothetical trades. | TradingView has this. Educational value. Build on Portfolio page. | Medium |
-| **N24** | **Weighted Screener** ✅ | User-defined weights for multi-factor screening with presets, URL state, CSV export | Stock Rover's #1 feature for power users. | Medium |
+| **N23** | ~~Paper Trading Mode~~ | **DONE** — Tab on Portfolio page with $100K virtual cash. Buy/sell trades, open positions with close button, closed trades history, performance metrics (win rate, profit factor, avg win/loss, max drawdown). localStorage persistence, ticker search with auto-fill prices. | TradingView has this. Educational value. | ~~Medium~~ |
+| **N24** | **Weighted Screener** | User-defined weights for multi-factor screening (like Stock Rover) | Stock Rover's #1 feature for power users. | Medium |
 | **N25** | **ESG Scores** | Environmental, Social, Governance scores per stock | Growing demand. Yahoo Finance provides some ESG data. | Medium |
 
 ---
@@ -524,22 +525,27 @@ Based on competitive analysis and expert technique research conducted February 2
 ### Updated Implementation Priority Map
 
 ```
-DONE (Shipped Feb 2026)             NOW (Next Sprint)                    LATER (Future)
+DONE (Shipped Feb 2026)             DONE (Batch 4, Feb 28)               LATER (Future)
 ───────────────────                 ─────────────────                    ──────────────
-✅ N1  NL Stock Query             ✅ N17 Beneish M-Score               N11 AI Copilot Chat
-✅ N2  Factor Grades              ✅ N5  Position Sizing Calculator     N12 Predictive Scoring
-✅ N3  Altman Z-Score             ✅ N10 Candlestick Patterns          ✅ N15 Multi-Widget Dashboard
-✅ N4  Risk-Adjusted Returns      ✅ N14 Ichimoku Cloud                ✅ N16 Volume Profile
-✅ N6  ADX/Williams/CMF           ✅ N21 Economic Calendar             ✅ N18 Social Sentiment
-✅ N7  Earnings Post-Drift        ✅ N9  Chart Pattern Recognition     ✅ N19 Macro Overlay
-✅ N8  SMR Rating                 ✅ N13 Theme Tagging                  N20 Options Sentiment
-                                  ✅ N15 Multi-Widget Dashboard         N22 Global Expansion
-                                  ✅ N16 Volume Profile                 N23 Paper Trading
-                                  ✅ N18 Social Sentiment               N25 ESG Scores
-                                  ✅ N19 Macro Overlay
-                                  ✅ N24 Weighted Screener
-                                    ★ = Quick wins (low effort)          N11 AI Copilot Chat
-                                                                        N12 Predictive Scoring
+✅ N1  NL Stock Query             ✅ N11 AI Copilot Chat                N20 Options Sentiment
+✅ N2  Factor Grades              ✅ N12 Predictive Scoring             N22 Global Expansion
+✅ N3  Altman Z-Score             ✅ N23 Paper Trading                  N25 ESG Scores
+✅ N4  Risk-Adjusted Returns
+✅ N5  Position Sizing Calculator
+✅ N6  ADX/Williams/CMF
+✅ N7  Earnings Post-Drift
+✅ N8  SMR Rating
+✅ N9  Chart Pattern Recognition
+✅ N10 Candlestick Patterns
+✅ N13 Theme Tagging
+✅ N14 Ichimoku Cloud
+✅ N15 Multi-Widget Dashboard
+✅ N16 Volume Profile
+✅ N17 Beneish M-Score
+✅ N18 Social Sentiment
+✅ N19 Macro Overlay
+✅ N21 Economic Calendar
+✅ N24 Weighted Screener
 ```
 
 ---
@@ -549,47 +555,35 @@ DONE (Shipped Feb 2026)             NOW (Next Sprint)                    LATER (
 ```
                         LOW EFFORT ◄──────────────────────► HIGH EFFORT
                         │                                          │
-  HIGH IMPACT           │  N11 AI Copilot Chat ★                   │  N9  Chart Patterns ✅
-                        │                                          │  N11 AI Copilot Chat
-                        │                                          │  N12 Predictive Scoring
-                        │                                          │  N15 Multi-Widget Dashboard ✅
+  HIGH IMPACT           │                                          │  N22 Global Expansion ★
+                        │                                          │  N27 Real-Time Streaming
                         │                                          │
-  MEDIUM IMPACT         │  N5  Position Sizing ✅                  │  N10 Candlestick Patterns ✅
-                        │                                          │  N13 Theme Tagging ✅
-                        │                                          │  N14 Ichimoku Cloud ✅
-                        │                                          │  N16 Volume Profile ✅
-                        │                                          │  N17 Beneish M-Score ✅
-                        │                                          │  N18 Social Sentiment ✅
-                        │                                          │  N21 Economic Calendar ✅
-                        │                                          │  N24 Weighted Screener ✅
-                        │                                          │
-  LOW IMPACT            │                                          │  N19 Macro Overlay ✅
-                        │                                          │  N20 Options Sentiment
-                        │                                          │  N22 Global Expansion
-                        │                                          │  N23 Paper Trading
+  MEDIUM IMPACT         │  N28 PWA Mobile Enhancement ★            │  N20 Options Sentiment
                         │                                          │  N25 ESG Scores
+                        │                                          │  N26 Trade Journal
                         │                                          │
 
 ★ = Recommended next priorities (highest impact-to-effort ratio)
+All N-series through N24 are now DONE. Only N20, N22, N25 remain from original roadmap.
 ```
 
 ---
 
 ### Recommended Next Actions
 
-> **Batches 1–3 shipped Feb 2026.** Batch 3 added N15/N16/N18/N19/N24. Below is the next prioritised batch.
+> **Batches 1–4 shipped Feb 2026.** Batch 4 added N11 AI Copilot Chat, N12 Predictive Scoring, N23 Paper Trading. Below is the next prioritised batch.
 
-1. **N11 — AI Copilot Chat** — Natural language Q&A about portfolio and stocks using LLM API. "Why is NVDA dropping?" or "Which of my holdings has the best risk/reward?" Context-aware using existing stock data. **High effort, high impact.**
+1. **N20 — Options Sentiment** — Put/call ratio, unusual options activity, max pain price from options chain data. Scrape Yahoo Options chain or use CBOE data. **Medium effort, requires options data source.**
 
-2. **N12 — Predictive Scoring** — ML-based 30-day forward return prediction using gradient boosting on technical + fundamental features. Train on historical score-history data. Show predicted direction alongside composite score. **High effort, high impact.**
+2. **N22 — Global Coverage Expansion** — Add European markets (DAX, CAC40), Asian markets (Nikkei, Hang Seng), emerging markets. Multi-currency support and extended trading hours. **High effort, high impact.**
 
-3. **N20 — Options Sentiment** — Put/call ratio, unusual options activity, max pain price from options chain data. **Medium effort, requires options data source.**
+3. **N25 — ESG Scores** — Environmental, Social, Governance scoring from ESG data providers. Filter/sort by ESG ratings. Growing demand from retail investors. **Medium effort, requires data source.**
 
-4. **N22 — Global Expansion** — Add international markets: EU (DAX, CAC40), Asia (Nikkei, Hang Seng), emerging markets. Multi-currency support. **High effort.**
+4. **N26 — Trade Journal & Analytics** — Extend paper trading with detailed trade journaling: entry/exit reasoning, screenshots, strategy tags, emotional state tracking, and post-trade review analytics. **Medium effort, medium impact.**
 
-5. **N23 — Paper Trading** — Virtual portfolio with simulated trades, P&L tracking, trade journaling. Practice without real money. **High effort, medium impact.**
+5. **N27 — Real-Time Price Streaming** — WebSocket-based real-time price updates during market hours. Replace polling with push-based updates. **High effort, high impact.**
 
-6. **N25 — ESG Scores** — Environmental, Social, Governance scoring from ESG data providers. Filter/sort by ESG ratings. **Medium effort, requires data source.**
+6. **N28 — Mobile App (PWA Enhancement)** — Optimize responsive layout for mobile, add push notifications for alerts, offline caching of key data. **Medium effort, high impact.**
 
 ---
 
@@ -601,7 +595,7 @@ DONE (Shipped Feb 2026)             NOW (Next Sprint)                    LATER (
 | Medium Effort (M-series) | 17 | 17 | **100%** |
 | Large Effort (L-series) | 12 | 14 | **86%** |
 | Expert Methodologies | 5 of 9 | 9 | **56%** |
-| New Features (N-series) | 19 of 25 | 25 | **76%** |
+| New Features (N-series) | 22 of 25 | 25 | **88%** |
 | **Total features shipped** | **69+** | — | — |
 
 ---
