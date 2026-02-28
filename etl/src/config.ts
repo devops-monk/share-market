@@ -32,7 +32,7 @@ export const CONFIG = {
   finbertRateDelayMs: 100,
 
   // AI Research Notes (HuggingFace chat completions)
-  aiResearchModel: 'mistralai/Mistral-7B-Instruct-v0.3',
+  aiResearchModel: 'Qwen/Qwen2.5-7B-Instruct',
   aiResearchConcurrency: 3,
   aiResearchDelayMs: 500,
   aiResearchMaxStocks: 100,

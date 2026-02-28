@@ -1,7 +1,7 @@
 import type { StockRecord } from '../types';
 
 const API_URL = 'https://router.huggingface.co/v1/chat/completions';
-const MODEL = 'mistralai/Mistral-7B-Instruct-v0.3';
+const MODEL = 'Qwen/Qwen2.5-7B-Instruct';
 const API_KEY_STORAGE = 'sm-hf-api-key';
 
 export function getApiKey(): string | null {
