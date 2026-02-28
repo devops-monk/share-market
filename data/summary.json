@@ -50,13 +50,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
       "score": 71,
@@ -66,6 +59,13 @@
     {
       "ticker": "DG",
       "name": "Dollar General",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -82,7 +82,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 22,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -129,18 +129,18 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "VRNS",
       "name": "Varonis Systems",
       "score": 28,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "MSTR",
+      "name": "MicroStrategy",
+      "score": 28,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -175,12 +175,6 @@
       "market": "US"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
       "score": 71,
@@ -203,6 +197,12 @@
       "name": "Ovintiv",
       "score": 71,
       "market": "US"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 71,
+      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 673,
   "avgScore": 52,
-  "bearishAlertCount": 315
+  "bearishAlertCount": 316
 }
