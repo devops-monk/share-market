@@ -82,7 +82,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 20,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,15 +108,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 25,
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -329,7 +329,7 @@
       "market": "UK"
     }
   ],
-  "totalStocks": 864,
+  "totalStocks": 865,
   "avgScore": 52,
-  "bearishAlertCount": 390
+  "bearishAlertCount": 391
 }
