@@ -56,6 +56,7 @@ export type ProviderName = keyof typeof PROVIDERS;
 const API_KEY_STORAGE = 'sm-llm-api-key';
 const PROVIDER_STORAGE = 'sm-llm-provider';
 const MODE_STORAGE = 'sm-copilot-mode';
+const CRYPTO_KEY_STORAGE = 'sm-llm-ck';
 
 export type CopilotMode = 'hybrid' | 'ai-only';
 
@@ -66,6 +67,49 @@ export function getMode(): CopilotMode {
 export function setMode(mode: CopilotMode): void {
   localStorage.setItem(MODE_STORAGE, mode);
 }
+
+// ── AES-GCM encryption for API keys ──────────────────────────────────────
+
+/** Get or create a per-browser encryption key (stored in localStorage as JWK) */
+async function getCryptoKey(): Promise<CryptoKey> {
+  const stored = localStorage.getItem(CRYPTO_KEY_STORAGE);
+  if (stored) {
+    const jwk = JSON.parse(stored);
+    return crypto.subtle.importKey('jwk', jwk, { name: 'AES-GCM', length: 256 }, true, ['encrypt', 'decrypt']);
+  }
+  const key = await crypto.subtle.generateKey({ name: 'AES-GCM', length: 256 }, true, ['encrypt', 'decrypt']);
+  const jwk = await crypto.subtle.exportKey('jwk', key);
+  localStorage.setItem(CRYPTO_KEY_STORAGE, JSON.stringify(jwk));
+  return key;
+}
+
+async function encryptString(plaintext: string): Promise<string> {
+  const key = await getCryptoKey();
+  const iv = crypto.getRandomValues(new Uint8Array(12));
+  const encoded = new TextEncoder().encode(plaintext);
+  const ciphertext = await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, encoded);
+  // Store as base64: iv (12 bytes) + ciphertext
+  const combined = new Uint8Array(iv.length + ciphertext.byteLength);
+  combined.set(iv);
+  combined.set(new Uint8Array(ciphertext), iv.length);
+  return btoa(String.fromCharCode(...combined));
+}
+
+async function decryptString(encrypted: string): Promise<string | null> {
+  try {
+    const key = await getCryptoKey();
+    const combined = Uint8Array.from(atob(encrypted), c => c.charCodeAt(0));
+    const iv = combined.slice(0, 12);
+    const ciphertext = combined.slice(12);
+    const decrypted = await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ciphertext);
+    return new TextDecoder().decode(decrypted);
+  } catch {
+    // Decryption failed — key was likely stored in plaintext (legacy) or corrupted
+    return null;
+  }
+}
+
+// ── Public API ───────────────────────────────────────────────────────────
 
 export function getProviders() {
   return Object.entries(PROVIDERS).map(([key, val]) => ({
@@ -85,12 +129,33 @@ export function setProvider(provider: ProviderName): void {
   localStorage.setItem(PROVIDER_STORAGE, provider);
 }
 
-export function getApiKey(): string | null {
-  return localStorage.getItem(API_KEY_STORAGE);
+/** Check if an API key exists (sync — doesn't decrypt) */
+export function hasApiKey(): boolean {
+  return !!localStorage.getItem(API_KEY_STORAGE);
 }
 
-export function setApiKey(key: string): void {
-  localStorage.setItem(API_KEY_STORAGE, key);
+/** Decrypt and return the stored API key */
+export async function getApiKey(): Promise<string | null> {
+  const stored = localStorage.getItem(API_KEY_STORAGE);
+  if (!stored) return null;
+
+  // Try decrypting first
+  const decrypted = await decryptString(stored);
+  if (decrypted) return decrypted;
+
+  // Fallback: might be a legacy plaintext key — migrate it
+  if (stored.startsWith('gsk_') || stored.startsWith('sk-') || stored.startsWith('hf_') || stored.startsWith('AI')) {
+    await setApiKey(stored); // re-save encrypted
+    return stored;
+  }
+
+  return null;
+}
+
+/** Encrypt and store the API key */
+export async function setApiKey(key: string): Promise<void> {
+  const encrypted = await encryptString(key);
+  localStorage.setItem(API_KEY_STORAGE, encrypted);
 }
 
 export function clearApiKey(): void {
@@ -145,7 +210,7 @@ export async function queryLLM(
   apiKey?: string | null,
   history?: ChatMessage[],
 ): Promise<LLMResponse> {
-  const key = apiKey ?? getApiKey();
+  const key = apiKey ?? await getApiKey();
   if (!key) {
     return {
       text: 'Please set your API key to use AI-powered responses. Click the key icon above the chat. Groq offers a free API key at console.groq.com.',

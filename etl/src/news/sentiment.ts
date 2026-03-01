@@ -462,7 +462,6 @@ export async function scoreNewsItemsWithFinBERT(
     return scored;
   }
 
-  console.log(`  Running FinBERT on ${scored.length} headlines...`);
   try {
     const headlines = scored.map(s => s.title);
     const finbertScores = await classifyHeadlines(headlines, apiKey);
@@ -477,13 +476,8 @@ export async function scoreNewsItemsWithFinBERT(
         finbertCount++;
       }
     }
-    const pct = scored.length > 0 ? Math.round((finbertCount / scored.length) * 100) : 0;
-    console.log(`  FinBERT scored ${finbertCount}/${scored.length} headlines (${pct}%)`);
-    if (finbertCount === 0 && scored.length > 0) {
-      console.log('  FinBERT unavailable — using lexicon-only sentiment scores');
-    }
-  } catch (err) {
-    console.warn('  FinBERT failed, falling back to lexicon:', err);
+  } catch {
+    // FinBERT failed — lexicon scores already in place
   }
 
   return scored;

@@ -9,6 +9,7 @@ import { computeDividendMetrics } from './indicators/dividends.js';
 import { fetchGoogleNews } from './news/google-news.js';
 import { fetchFinvizNews } from './news/finviz-scraper.js';
 import { scoreNewsItemsWithFinBERT, averageSentiment } from './news/sentiment.js';
+import { probeFinBERT } from './news/finbert.js';
 import { computeMarketRegime } from './indicators/regime.js';
 import { fetchMacroData } from './indicators/macro.js';
 import { fetchSocialSentiment } from './news/social-sentiment.js';
@@ -89,18 +90,24 @@ async function main() {
   const quotes = await fetchAllStocks(ALL_STOCKS);
   console.log(`Fetched ${quotes.length}/${ALL_STOCKS.length} stocks in ${((Date.now() - startTime) / 1000).toFixed(1)}s`);
 
-  // Step 2: Fetch news + market regime in parallel
-  console.log('Fetching news and market regime...');
-  const newsStart = Date.now();
+  // Step 2: Fetch ALL enrichment data in parallel (news, regime, macro, social, insider, financials)
+  console.log('Fetching enrichment data (all in parallel)...');
+  const enrichStart = Date.now();
   const newsLimit = pLimit(CONFIG.newsConcurrency);
   const allNews: any[] = [];
   const topTickers = quotes.slice(0, 100);
-
+  const allTickers = quotes.map(q => q.ticker);
   const huggingFaceApiKey = process.env.HUGGINGFACE_API_KEY;
+  const marketCapMap = new Map(quotes.map(q => [q.ticker, q.marketCap]));
 
-  const [, marketRegime, macroData] = await Promise.all([
-    // News fetching — 3 minute timeout
-    withTimeout('News + FinBERT', () =>
+  // Probe FinBERT once before starting news — determines if we use it at all
+  if (huggingFaceApiKey) {
+    await probeFinBERT(huggingFaceApiKey);
+  }
+
+  const [, marketRegime, macroData, redditSentimentMap, insiderTradesMap, financialsMap] = await Promise.all([
+    // 1. News + FinBERT sentiment (120s timeout)
+    withTimeout('News + sentiment', () =>
       Promise.all(
         topTickers.map(q =>
           newsLimit(async () => {
@@ -113,46 +120,40 @@ async function main() {
           })
         )
       ),
-      180_000, // 3 minutes
+      120_000,
       [],
     ),
-    // Market regime (runs in parallel with news)
+    // 2. Market regime
     computeMarketRegime(),
-    // Macro data from FRED (runs in parallel)
+    // 3. Macro data from FRED
     fetchMacroData(),
+    // 4. Social sentiment (60s timeout)
+    withTimeout('Social sentiment', () =>
+      fetchSocialSentiment(topTickers.map(q => q.ticker), huggingFaceApiKey),
+      60_000,
+      new Map(),
+    ),
+    // 5. Insider trading — SEC EDGAR (120s timeout)
+    withTimeout('Insider trades', () =>
+      fetchInsiderTrades(
+        quotes.filter(q => q.market === 'US').map(q => q.ticker),
+        marketCapMap,
+      ),
+      120_000,
+      new Map(),
+    ),
+    // 6. Financial statements — Piotroski, Graham, Buffett (120s timeout)
+    withTimeout('Financial statements', () =>
+      fetchFinancials(allTickers),
+      120_000,
+      new Map(),
+    ),
   ]);
-  console.log(`Collected ${allNews.length} news items in ${((Date.now() - newsStart) / 1000).toFixed(1)}s`);
+
+  console.log(`Enrichment done in ${((Date.now() - enrichStart) / 1000).toFixed(1)}s — ${allNews.length} news items`);
   if (marketRegime) {
     console.log(`Market regime: ${marketRegime.overall} (US: ${marketRegime.us.regime}, UK: ${marketRegime.uk.regime})`);
   }
-
-  // Step 2a: Fetch social sentiment (best-effort, 60s timeout)
-  const redditSentimentMap = await withTimeout('Social sentiment', () =>
-    fetchSocialSentiment(topTickers.map(q => q.ticker), huggingFaceApiKey),
-    60_000,
-    new Map(),
-  );
-
-  // Step 2b: Fetch insider trading data (SEC EDGAR Form 4, 90s timeout)
-  console.log('Fetching insider trading data...');
-  const marketCapMap = new Map(quotes.map(q => [q.ticker, q.marketCap]));
-  const insiderTradesMap = await withTimeout('Insider trades', () =>
-    fetchInsiderTrades(
-      quotes.filter(q => q.market === 'US').map(q => q.ticker),
-      marketCapMap,
-    ),
-    90_000,
-    new Map(),
-  );
-
-  // Step 2c: Fetch financial statements (Piotroski, Graham, Buffett, 90s timeout)
-  console.log('Fetching financial statements...');
-  const allTickers = quotes.map(q => q.ticker);
-  const financialsMap = await withTimeout('Financial statements', () =>
-    fetchFinancials(allTickers),
-    90_000,
-    new Map(),
-  );
 
   // Step 3: Process each stock (CPU-only, fast)
   console.log('Computing indicators and scores...');

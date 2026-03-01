@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import type { StockRecord, Metadata } from '../../types';
 import { processQuery } from '../../lib/copilot-engine';
-import { queryLLM, getApiKey, setApiKey, clearApiKey, getProviders, getProvider, setProvider, getMode, setMode, type ProviderName, type ChatMessage, type CopilotMode } from '../../lib/copilot-llm';
+import { queryLLM, hasApiKey, setApiKey, clearApiKey, getProviders, getProvider, setProvider, getMode, setMode, type ProviderName, type ChatMessage, type CopilotMode } from '../../lib/copilot-llm';
 
 interface Message {
   id: string;
@@ -41,7 +41,7 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
   const [isExpanded, setIsExpanded] = useState(initialExpanded ?? false);
   const [showApiKeyInput, setShowApiKeyInput] = useState(false);
   const [apiKeyInput, setApiKeyInput] = useState('');
-  const [hasApiKey, setHasApiKey] = useState(!!getApiKey());
+  const [hasKey, setHasKey] = useState(hasApiKey());
   const [selectedProvider, setSelectedProvider] = useState<ProviderName>(getProvider());
   const [copilotMode, setCopilotMode] = useState<CopilotMode>(getMode());
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -109,17 +109,17 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
     }
   };
 
-  const handleSaveApiKey = () => {
+  const handleSaveApiKey = async () => {
     if (apiKeyInput.trim()) {
-      setApiKey(apiKeyInput.trim());
-      setHasApiKey(true);
+      await setApiKey(apiKeyInput.trim());
+      setHasKey(true);
       setApiKeyInput('');
     }
   };
 
   const handleClearApiKey = () => {
     clearApiKey();
-    setHasApiKey(false);
+    setHasKey(false);
   };
 
   const handleModeChange = (mode: CopilotMode) => {
@@ -189,9 +189,9 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
           <button
             onClick={() => setShowApiKeyInput(v => !v)}
             className={`w-6 h-6 rounded flex items-center justify-center transition-colors ${
-              hasApiKey ? 'bg-bullish/15 text-bullish' : 'bg-surface-hover t-muted hover:t-secondary'
+              hasKey ? 'bg-bullish/15 text-bullish' : 'bg-surface-hover t-muted hover:t-secondary'
             }`}
-            title={hasApiKey ? 'API key set' : 'Set API key for AI responses'}
+            title={hasKey ? 'API key set' : 'Set API key for AI responses'}
           >
             <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
@@ -245,13 +245,13 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
                   className="input-field flex-1 text-xs"
                 />
                 <button onClick={handleSaveApiKey} className="text-xs px-2 py-1 rounded bg-accent/15 text-accent-light hover:bg-accent/25 transition-colors">Save</button>
-                {hasApiKey && (
+                {hasKey && (
                   <button onClick={handleClearApiKey} className="text-xs px-2 py-1 rounded bg-bearish/15 text-bearish hover:bg-bearish/25 transition-colors">Clear</button>
                 )}
               </div>
             </div>
             <p className="text-[10px] t-faint leading-relaxed">
-              Your API key is stored locally in your browser (localStorage) and is never sent to our servers. It is only used for direct API calls from your browser to the LLM provider. You can clear it anytime.
+              Your API key is encrypted (AES-256-GCM) and stored locally in your browser. It is never sent to our servers — only used for direct API calls from your browser to the LLM provider. You can clear it anytime.
             </p>
           </div>
         );
