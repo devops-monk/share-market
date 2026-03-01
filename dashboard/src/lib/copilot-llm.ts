@@ -9,6 +9,7 @@ const PROVIDERS = {
     hint: 'gsk_...',
     site: 'console.groq.com',
     free: true,
+    browserCors: true,
     modelName: 'Llama 3.3 70B',
     steps: '1. Go to console.groq.com\n2. Sign up with Google/GitHub (free)\n3. Go to API Keys in the left sidebar\n4. Click "Create API Key"\n5. Copy the key (starts with gsk_)',
   },
@@ -19,6 +20,7 @@ const PROVIDERS = {
     hint: 'sk-or-...',
     site: 'openrouter.ai',
     free: true,
+    browserCors: true,
     modelName: 'Llama 3.3 70B',
     steps: '1. Go to openrouter.ai\n2. Sign up with Google/GitHub (free)\n3. Go to Keys page (openrouter.ai/keys)\n4. Click "Create Key"\n5. Copy the key (starts with sk-or-)',
   },
@@ -29,6 +31,7 @@ const PROVIDERS = {
     hint: 'sk-...',
     site: 'platform.openai.com',
     free: false,
+    browserCors: true,
     modelName: 'GPT-4o Mini',
     steps: '1. Go to platform.openai.com\n2. Sign up or log in\n3. Go to API Keys (platform.openai.com/api-keys)\n4. Click "Create new secret key"\n5. Copy the key (starts with sk-)\nNote: Requires adding credits ($5 min)',
   },
@@ -39,6 +42,7 @@ const PROVIDERS = {
     hint: 'AI...',
     site: 'aistudio.google.com',
     free: true,
+    browserCors: true,
     modelName: 'Gemini 2.0 Flash',
     steps: '1. Go to aistudio.google.com\n2. Sign in with Google account\n3. Click "Get API Key" in the top bar\n4. Click "Create API key"\n5. Select a Google Cloud project (or create one)\n6. Copy the key (starts with AI)',
   },
@@ -49,6 +53,7 @@ const PROVIDERS = {
     hint: 'sk-ant-...',
     site: 'console.anthropic.com',
     free: false,
+    browserCors: true,
     modelName: 'Claude Sonnet 4',
     steps: '1. Go to console.anthropic.com\n2. Sign up or log in\n3. Go to API Keys in Settings\n4. Click "Create Key"\n5. Copy the key (starts with sk-ant-)\nNote: Requires adding credits ($5 min)',
   },
@@ -59,6 +64,7 @@ const PROVIDERS = {
     hint: 'hf_...',
     site: 'huggingface.co',
     free: true,
+    browserCors: true,
     modelName: 'Qwen 2.5 7B',
     steps: '1. Go to huggingface.co\n2. Sign up (free)\n3. Click your avatar → Settings\n4. Go to "Access Tokens" in the sidebar\n5. Click "New token" → select "Read" role\n6. Copy the token (starts with hf_)',
   },
@@ -88,6 +94,7 @@ export function getProviders() {
     hint: val.hint,
     site: val.site,
     free: val.free,
+    browserCors: val.browserCors,
     modelName: val.modelName,
     steps: val.steps,
   }));
@@ -236,7 +243,15 @@ export async function queryLLM(
     });
   }
 
-  const res = await fetch(provider.url, { method: 'POST', headers, body });
+  let res: Response;
+  try {
+    res = await fetch(provider.url, { method: 'POST', headers, body });
+  } catch {
+    return {
+      text: `Network error calling ${provider.label}. Check your internet connection and try again. If using a VPN, try disabling it.`,
+      source: 'llm',
+    };
+  }
 
   if (!res.ok) {
     const errBody = await res.text().catch(() => '');
