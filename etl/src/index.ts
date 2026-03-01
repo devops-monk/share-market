@@ -62,6 +62,24 @@ function assignThemes(ticker: string, name: string, sector: string): string[] {
   return themes;
 }
 
+/** Run an async function with a timeout. Returns fallback on timeout. */
+async function withTimeout<T>(
+  label: string,
+  fn: () => Promise<T>,
+  timeoutMs: number,
+  fallback: T,
+): Promise<T> {
+  return Promise.race([
+    fn(),
+    new Promise<T>(resolve => {
+      setTimeout(() => {
+        console.warn(`⏱ ${label} timed out after ${(timeoutMs / 1000).toFixed(0)}s — using fallback`);
+        resolve(fallback);
+      }, timeoutMs);
+    }),
+  ]);
+}
+
 async function main() {
   console.log(`Starting ETL for ${ALL_STOCKS.length} stocks...`);
   const startTime = Date.now();
@@ -81,18 +99,22 @@ async function main() {
   const huggingFaceApiKey = process.env.HUGGINGFACE_API_KEY;
 
   const [, marketRegime, macroData] = await Promise.all([
-    // News fetching
-    Promise.all(
-      topTickers.map(q =>
-        newsLimit(async () => {
-          const [googleNews, finvizNews] = await Promise.all([
-            fetchGoogleNews(q.ticker, q.name),
-            q.market === 'US' ? fetchFinvizNews(q.ticker) : Promise.resolve([]),
-          ]);
-          const scored = await scoreNewsItemsWithFinBERT([...googleNews, ...finvizNews], huggingFaceApiKey);
-          allNews.push(...scored);
-        })
-      )
+    // News fetching — 3 minute timeout
+    withTimeout('News + FinBERT', () =>
+      Promise.all(
+        topTickers.map(q =>
+          newsLimit(async () => {
+            const [googleNews, finvizNews] = await Promise.all([
+              fetchGoogleNews(q.ticker, q.name),
+              q.market === 'US' ? fetchFinvizNews(q.ticker) : Promise.resolve([]),
+            ]);
+            const scored = await scoreNewsItemsWithFinBERT([...googleNews, ...finvizNews], huggingFaceApiKey);
+            allNews.push(...scored);
+          })
+        )
+      ),
+      180_000, // 3 minutes
+      [],
     ),
     // Market regime (runs in parallel with news)
     computeMarketRegime(),
@@ -104,24 +126,33 @@ async function main() {
     console.log(`Market regime: ${marketRegime.overall} (US: ${marketRegime.us.regime}, UK: ${marketRegime.uk.regime})`);
   }
 
-  // Step 2a: Fetch social sentiment (best-effort, top 100 tickers)
-  const redditSentimentMap = await fetchSocialSentiment(
-    topTickers.map(q => q.ticker),
-    huggingFaceApiKey,
+  // Step 2a: Fetch social sentiment (best-effort, 60s timeout)
+  const redditSentimentMap = await withTimeout('Social sentiment', () =>
+    fetchSocialSentiment(topTickers.map(q => q.ticker), huggingFaceApiKey),
+    60_000,
+    new Map(),
   );
 
-  // Step 2b: Fetch insider trading data (SEC EDGAR Form 4)
+  // Step 2b: Fetch insider trading data (SEC EDGAR Form 4, 90s timeout)
   console.log('Fetching insider trading data...');
   const marketCapMap = new Map(quotes.map(q => [q.ticker, q.marketCap]));
-  const insiderTradesMap = await fetchInsiderTrades(
-    quotes.filter(q => q.market === 'US').map(q => q.ticker),
-    marketCapMap,
+  const insiderTradesMap = await withTimeout('Insider trades', () =>
+    fetchInsiderTrades(
+      quotes.filter(q => q.market === 'US').map(q => q.ticker),
+      marketCapMap,
+    ),
+    90_000,
+    new Map(),
   );
 
-  // Step 2c: Fetch financial statements (Piotroski, Graham, Buffett)
+  // Step 2c: Fetch financial statements (Piotroski, Graham, Buffett, 90s timeout)
   console.log('Fetching financial statements...');
   const allTickers = quotes.map(q => q.ticker);
-  const financialsMap = await fetchFinancials(allTickers);
+  const financialsMap = await withTimeout('Financial statements', () =>
+    fetchFinancials(allTickers),
+    90_000,
+    new Map(),
+  );
 
   // Step 3: Process each stock (CPU-only, fast)
   console.log('Computing indicators and scores...');
@@ -636,12 +667,16 @@ async function main() {
 
   console.log(`Found ${bearishAlerts.length} bearish alerts`);
 
-  // Step 4b: Generate AI research notes (supports Groq, OpenRouter, or HuggingFace)
+  // Step 4b: Generate AI research notes (supports Groq, OpenRouter, or HuggingFace, 120s timeout)
   let aiResearchNotes: Map<string, string[]> | undefined;
   const llmProvider = resolveLLMProvider();
   if (llmProvider) {
     try {
-      aiResearchNotes = await generateAIResearchNotes(stockRecords, llmProvider);
+      aiResearchNotes = await withTimeout('AI research notes', () =>
+        generateAIResearchNotes(stockRecords, llmProvider),
+        120_000,
+        new Map(),
+      );
     } catch (err) {
       console.warn('AI research notes generation failed:', (err as Error).message);
     }

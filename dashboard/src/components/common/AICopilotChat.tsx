@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import type { StockRecord, Metadata } from '../../types';
 import { processQuery } from '../../lib/copilot-engine';
-import { queryLLM, getApiKey, setApiKey, clearApiKey, getProviders, getProvider, setProvider, type ProviderName } from '../../lib/copilot-llm';
+import { queryLLM, getApiKey, setApiKey, clearApiKey, getProviders, getProvider, setProvider, type ProviderName, type ChatMessage } from '../../lib/copilot-llm';
 
 interface Message {
   id: string;
@@ -73,10 +73,15 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
       return;
     }
 
+    // Build conversation history for LLM context
+    const history: ChatMessage[] = messages
+      .filter(m => m.source !== 'engine') // only include LLM conversations
+      .map(m => ({ role: m.role, text: m.text }));
+
     // Fall back to LLM
     setIsTyping(true);
     try {
-      const llmResponse = await queryLLM(query, contextStock);
+      const llmResponse = await queryLLM(query, contextStock, null, history);
       setMessages(prev => [...prev, {
         id: generateId(),
         role: 'assistant',
@@ -93,7 +98,7 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
     } finally {
       setIsTyping(false);
     }
-  }, [input, stocks, contextStock, metadata]);
+  }, [input, stocks, contextStock, metadata, messages]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
@@ -177,42 +182,49 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
       </div>
 
       {/* API Key + Provider input */}
-      {showApiKeyInput && (
-        <div className="px-4 py-3 border-b border-surface-border bg-surface-tertiary space-y-2">
-          <div>
-            <p className="text-xs t-muted mb-1.5">LLM Provider:</p>
-            <div className="flex gap-1.5">
-              {getProviders().map(p => (
-                <button
-                  key={p.key}
-                  onClick={() => { setSelectedProvider(p.key); setProvider(p.key); }}
-                  className={`text-xs px-2 py-1 rounded transition-colors ${
-                    selectedProvider === p.key
-                      ? 'bg-accent/20 text-accent-light ring-1 ring-accent/30'
-                      : 'bg-surface-hover t-muted hover:t-secondary'
-                  }`}
-                >{p.label}</button>
-              ))}
+      {showApiKeyInput && (() => {
+        const providers = getProviders();
+        const selected = providers.find(p => p.key === selectedProvider);
+        return (
+          <div className="px-4 py-3 border-b border-surface-border bg-surface-tertiary space-y-2">
+            <div>
+              <p className="text-xs t-muted mb-1.5">LLM Provider:</p>
+              <div className="flex flex-wrap gap-1.5">
+                {providers.map(p => (
+                  <button
+                    key={p.key}
+                    onClick={() => { setSelectedProvider(p.key); setProvider(p.key); }}
+                    className={`text-xs px-2 py-1 rounded transition-colors ${
+                      selectedProvider === p.key
+                        ? 'bg-accent/20 text-accent-light ring-1 ring-accent/30'
+                        : 'bg-surface-hover t-muted hover:t-secondary'
+                    }`}
+                  >
+                    {p.label}
+                    {p.free && <span className="ml-1 text-[9px] text-bullish">free</span>}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="text-xs t-muted mb-1.5">API key ({selected?.site ?? ''}):</p>
+              <div className="flex gap-2">
+                <input
+                  type="password"
+                  value={apiKeyInput}
+                  onChange={e => setApiKeyInput(e.target.value)}
+                  placeholder={selected?.hint ?? 'Enter API key...'}
+                  className="input-field flex-1 text-xs"
+                />
+                <button onClick={handleSaveApiKey} className="text-xs px-2 py-1 rounded bg-accent/15 text-accent-light hover:bg-accent/25 transition-colors">Save</button>
+                {hasApiKey && (
+                  <button onClick={handleClearApiKey} className="text-xs px-2 py-1 rounded bg-bearish/15 text-bearish hover:bg-bearish/25 transition-colors">Clear</button>
+                )}
+              </div>
             </div>
           </div>
-          <div>
-            <p className="text-xs t-muted mb-1.5">API key ({selectedProvider === 'groq' ? 'console.groq.com — free' : selectedProvider === 'openrouter' ? 'openrouter.ai — free tier' : 'huggingface.co'}):</p>
-            <div className="flex gap-2">
-              <input
-                type="password"
-                value={apiKeyInput}
-                onChange={e => setApiKeyInput(e.target.value)}
-                placeholder={selectedProvider === 'groq' ? 'gsk_...' : selectedProvider === 'openrouter' ? 'sk-or-...' : 'hf_...'}
-                className="input-field flex-1 text-xs"
-              />
-              <button onClick={handleSaveApiKey} className="text-xs px-2 py-1 rounded bg-accent/15 text-accent-light hover:bg-accent/25 transition-colors">Save</button>
-              {hasApiKey && (
-                <button onClick={handleClearApiKey} className="text-xs px-2 py-1 rounded bg-bearish/15 text-bearish hover:bg-bearish/25 transition-colors">Clear</button>
-              )}
-            </div>
-          </div>
-        </div>
-      )}
+        );
+      })()}
 
       {/* Messages */}
       <div className="h-72 overflow-y-auto px-4 py-3 space-y-3">
