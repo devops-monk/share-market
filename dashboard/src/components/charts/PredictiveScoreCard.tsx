@@ -26,7 +26,7 @@ export default function PredictiveScoreCard({ currentScore, predictiveScore: ps 
     <div className="card p-5">
       <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Predictive Score</h2>
       <p className="text-xs t-muted mb-4 leading-relaxed">
-        Forecasted score based on trend analysis, mean reversion signals, and technical indicators. Higher confidence means more consistent historical trend.
+        Where is this stock's score headed? This prediction uses recent trends, whether the stock is due for a bounce or pullback (mean reversion), and technical signals to forecast the next score. <strong className="t-secondary">Improving</strong> = the stock is getting better across multiple measures. <strong className="t-secondary">Declining</strong> = things are weakening. <strong className="t-secondary">Confidence</strong> tells you how reliable the prediction is — "High" means the trend has been very consistent, "Low" means it could go either way. R² near 1.0 = very predictable, near 0 = noisy.
       </p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">

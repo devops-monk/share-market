@@ -238,29 +238,75 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       )}
 
       {/* Volume Profile (VPVR) */}
-      {stock.volumeProfile && stock.volumeProfile.bins.length > 0 && (
+      {stock.volumeProfile && stock.volumeProfile.bins.length > 0 && (() => {
+        const vp = stock.volumeProfile!;
+        const priceVsVpoc = ((stock.price - vp.vpoc) / vp.vpoc * 100);
+        const isInValueArea = stock.price >= vp.valueAreaLow && stock.price <= vp.valueAreaHigh;
+        const isAboveValueArea = stock.price > vp.valueAreaHigh;
+        const isBelowValueArea = stock.price < vp.valueAreaLow;
+        return (
         <div className="card p-5">
           <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-1">Volume Profile</h2>
-          <p className="text-xs t-muted mb-4 leading-relaxed">
-            Shows where most trading happened — the thickest bars are price levels where the most buying and selling occurred.
+          <p className="text-xs t-muted mb-3 leading-relaxed">
+            Imagine stacking all trades from the past year sideways on a price chart. The longest bars show price levels where the most buying and selling happened — these are <strong className="t-secondary">"high-traffic" zones</strong> where lots of traders agreed on the price. These levels often act as magnets: prices tend to gravitate back to them, and they create strong support (floor) or resistance (ceiling).
           </p>
+
+          {/* Plain English interpretation */}
+          <div className={`p-3 rounded-lg border mb-4 text-xs leading-relaxed ${
+            isInValueArea ? 'bg-accent/5 border-accent/20' : isAboveValueArea ? 'bg-bullish/5 border-bullish/20' : 'bg-bearish/5 border-bearish/20'
+          }`}>
+            <p className="font-semibold t-secondary mb-1">What this means right now:</p>
+            {isInValueArea && (
+              <p className="t-tertiary">The stock is trading <strong className="text-accent-light">inside the Value Area</strong> ({cur}{vp.valueAreaLow.toFixed(2)} – {cur}{vp.valueAreaHigh.toFixed(2)}), where 70% of all trading happened. This is the "comfort zone" — the price is at a level most traders consider fair. Expect the price to bounce around in this range unless something big changes.</p>
+            )}
+            {isAboveValueArea && (
+              <p className="t-tertiary">The stock is trading <strong className="text-bullish">above the Value Area</strong> at {cur}{stock.price.toFixed(2)}, which is higher than where most trading took place. This could mean the stock is breaking out to new highs — bullish! But it also means there's less "support" up here, so if it falls back, it could drop quickly to the Value Area.</p>
+            )}
+            {isBelowValueArea && (
+              <p className="t-tertiary">The stock is trading <strong className="text-bearish">below the Value Area</strong> at {cur}{stock.price.toFixed(2)}, which is lower than where most trading took place. This could be a bargain if the stock bounces back, or a warning sign if it keeps falling. Watch for the price to reclaim {cur}{vp.valueAreaLow.toFixed(2)} — that would be a positive sign.</p>
+            )}
+          </div>
+
           <div className="grid grid-cols-3 gap-3 mb-4">
             <div className="p-2.5 rounded-lg bg-surface-tertiary/50 border border-surface-border text-center">
               <p className="text-[10px] font-semibold t-muted uppercase">VPOC</p>
-              <p className="text-sm font-bold text-amber-400 tabular-nums">{cur}{stock.volumeProfile.vpoc.toFixed(2)}</p>
+              <p className="text-sm font-bold text-amber-400 tabular-nums">{cur}{vp.vpoc.toFixed(2)}</p>
+              <p className="text-[10px] t-faint mt-0.5">Most traded price</p>
+              <p className="text-[10px] t-muted">{priceVsVpoc >= 0 ? '+' : ''}{priceVsVpoc.toFixed(1)}% from current</p>
             </div>
             <div className="p-2.5 rounded-lg bg-surface-tertiary/50 border border-surface-border text-center">
               <p className="text-[10px] font-semibold t-muted uppercase">Value Area High</p>
-              <p className="text-sm font-bold text-accent-light tabular-nums">{cur}{stock.volumeProfile.valueAreaHigh.toFixed(2)}</p>
+              <p className="text-sm font-bold text-accent-light tabular-nums">{cur}{vp.valueAreaHigh.toFixed(2)}</p>
+              <p className="text-[10px] t-faint mt-0.5">Upper "fair price" boundary</p>
+              <p className="text-[10px] t-muted">Acts as resistance</p>
             </div>
             <div className="p-2.5 rounded-lg bg-surface-tertiary/50 border border-surface-border text-center">
               <p className="text-[10px] font-semibold t-muted uppercase">Value Area Low</p>
-              <p className="text-sm font-bold text-accent-light tabular-nums">{cur}{stock.volumeProfile.valueAreaLow.toFixed(2)}</p>
+              <p className="text-sm font-bold text-accent-light tabular-nums">{cur}{vp.valueAreaLow.toFixed(2)}</p>
+              <p className="text-[10px] t-faint mt-0.5">Lower "fair price" boundary</p>
+              <p className="text-[10px] t-muted">Acts as support</p>
             </div>
           </div>
-          <VolumeProfileChart data={stock.volumeProfile} currentPrice={stock.price} currency={cur} />
+
+          {/* Key concepts for beginners */}
+          <details className="mb-4 group">
+            <summary className="text-xs t-muted cursor-pointer hover:t-secondary transition-colors flex items-center gap-1">
+              <svg className="w-3 h-3 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+              Learn: Key terms explained
+            </summary>
+            <div className="mt-2 p-3 rounded-lg bg-surface-tertiary/50 border border-surface-border text-xs t-tertiary space-y-2">
+              <p><strong className="text-amber-400">VPOC (Volume Point of Control)</strong> — The single price level with the most trading volume. Think of it as the stock's "center of gravity." Prices tend to get pulled back to this level. Professional traders often use it as a reference point for fair value.</p>
+              <p><strong className="text-accent-light">Value Area (VA)</strong> — The price range where 70% of all trading took place. It's like the "normal zone" for the stock. When the price is inside this range, it's trading at levels most people agreed were fair. The top of this zone (VAH) acts as a ceiling, and the bottom (VAL) acts as a floor.</p>
+              <p><strong className="t-secondary">How traders use this:</strong> If the price opens inside the Value Area, it tends to stay there (range-bound day). If it opens outside and re-enters, it often travels to the other side. If the price stays above VAH, that's bullish strength. If it stays below VAL, that's bearish pressure.</p>
+            </div>
+          </details>
+
+          <VolumeProfileChart data={vp} currentPrice={stock.price} currency={cur} />
         </div>
-      )}
+        );
+      })()}
 
       {/* Social Buzz */}
       {socialSentiment?.[stock.ticker] && (
@@ -378,7 +424,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
             </span>
           </div>
         </div>
-        <p className="text-xs t-muted mb-4 leading-relaxed">The most important numbers about this stock at a glance. Hover over any label to see what it means in simple words. Green values = good, red = not so good.</p>
+        <p className="text-xs t-muted mb-4 leading-relaxed">The most important numbers about this stock at a glance. Hover over any label to see what it means in simple words. Green values = good, red = not so good. <strong className="t-secondary">New to trading?</strong> Focus on P/E (is it cheap or expensive?), RSI (is it overbought or oversold?), and 52W Range (where is it compared to its yearly high/low?) — these three give you a quick gut-check on any stock.</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           <Metric label="Market Cap" value={formatMcap(stock.marketCap)} />
           <Metric label="P/E" value={stock.pe?.toFixed(1) ?? 'N/A'} />
@@ -409,7 +455,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       {/* Fundamentals */}
       <div className="card p-5">
         <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Fundamentals</h2>
-        <p className="text-xs t-muted mb-4 leading-relaxed">This is the company's financial health check — like a doctor's report but for businesses. It shows how profitable the company is, how much debt it has, and whether experts think the stock price will go up. Hover over any label for a simple explanation.</p>
+        <p className="text-xs t-muted mb-4 leading-relaxed">This is the company's financial health check — like a doctor's report but for businesses. It shows how profitable the company is, how much debt it has, and whether experts think the stock price will go up. Hover over any label for a simple explanation. <strong className="t-secondary">Quick guide:</strong> Look at ROE (is the company making good money? 15%+ is great), D/E Ratio (does it have too much debt? under 100 is safe), and Profit Margin (is it keeping enough of what it earns? 10%+ is solid).</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           <Metric label="ROE" value={stock.returnOnEquity != null ? `${(stock.returnOnEquity * 100).toFixed(1)}%` : 'N/A'} positive={stock.returnOnEquity != null ? stock.returnOnEquity > 0.15 : undefined} />
           <Metric label="ROA" value={stock.returnOnAssets != null ? `${(stock.returnOnAssets * 100).toFixed(1)}%` : 'N/A'} positive={stock.returnOnAssets != null ? stock.returnOnAssets > 0.05 : undefined} />
@@ -662,7 +708,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       {/* Advanced Indicators */}
       <div className="card p-5">
         <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Advanced Indicators</h2>
-        <p className="text-xs t-muted mb-4 leading-relaxed">These are technical tools that traders use to predict where the price might go next. Think of them as different types of weather instruments — each one measures something slightly different. Hover over any label for a simple explanation.</p>
+        <p className="text-xs t-muted mb-4 leading-relaxed">These are technical tools that traders use to predict where the price might go next. Think of them as different types of weather instruments — each one measures something slightly different. Hover over any label for a simple explanation. <strong className="t-secondary">Key things to watch:</strong> "BB Squeeze = YES" means a big move is coming. ADX over 25 means a strong trend is in place. When +DI {">"} -DI, buyers are winning. Highlighted values (yellow) mean extreme readings that often signal turning points.</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           <Metric label="Bollinger Upper" value={stock.bollingerUpper?.toFixed(2) ?? 'N/A'} />
           <Metric label="Bollinger Lower" value={stock.bollingerLower?.toFixed(2) ?? 'N/A'} />
@@ -785,7 +831,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       {(stock.sharpeRatio != null || stock.sortinoRatio != null || stock.maxDrawdown != null) && (
         <div className="card p-5">
           <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Risk-Adjusted Returns (1Y)</h2>
-          <p className="text-xs t-muted mb-4 leading-relaxed">Is this stock worth the risk? These numbers tell you if the rewards are good compared to how scary the ride is. Higher Sharpe/Sortino = better reward for the risk. A smaller drawdown means the stock didn't crash as badly.</p>
+          <p className="text-xs t-muted mb-4 leading-relaxed">Is this stock worth the risk? These numbers tell you if the rewards are good compared to how scary the ride is. <strong className="t-secondary">Sharpe Ratio:</strong> over 1.0 = good, over 2.0 = excellent — it means the stock gave you solid returns without too much turbulence. <strong className="t-secondary">Sortino Ratio:</strong> like Sharpe but only penalizes drops (ignores upside volatility) — higher is better. <strong className="t-secondary">Max Drawdown:</strong> the worst drop from peak to bottom in the last year — anything over -20% means it was a rough ride. Compare these to the S&P 500 (Sharpe ~1.0, Drawdown ~-10%) to see if this stock is riskier or calmer than the market.</p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
             <Metric label="Sharpe Ratio" value={stock.sharpeRatio?.toFixed(2) ?? 'N/A'} positive={stock.sharpeRatio != null ? stock.sharpeRatio > 0.5 : undefined} />
             <Metric label="Sortino Ratio" value={stock.sortinoRatio?.toFixed(2) ?? 'N/A'} positive={stock.sortinoRatio != null ? stock.sortinoRatio > 0.5 : undefined} />
@@ -822,7 +868,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
       {/* Signals */}
       <div className="card p-5">
         <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Active Signals</h2>
-        <p className="text-xs t-muted mb-4 leading-relaxed">These are all the buy/sell alerts currently firing for this stock. Green = bullish (suggests price may go up). Red = bearish (suggests price may go down). "Sev" = severity/importance — higher number = stronger signal. S = short-term, M = medium-term, L = long-term.</p>
+        <p className="text-xs t-muted mb-4 leading-relaxed">These are all the buy/sell alerts currently firing for this stock. <strong className="text-bullish">Green = bullish</strong> (suggests price may go up). <strong className="text-bearish">Red = bearish</strong> (suggests price may go down). "Sev" = severity/importance — <strong className="t-secondary">Sev 3+ means a strong signal worth paying attention to.</strong> Timeframes: S = days to 2 weeks, M = 2 weeks to 3 months, L = 3+ months. <strong className="t-secondary">Tip:</strong> No single signal is a buy/sell decision. Look for multiple signals pointing the same direction — that's called "confluence" and it's much more reliable.</p>
         {stock.signals.length === 0 ? (
           <p className="t-muted text-sm">No signals detected</p>
         ) : (
