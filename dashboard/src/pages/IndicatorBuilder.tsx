@@ -2,12 +2,12 @@
  * N30: AI-Powered Indicator Builder
  * Describe screening rules in plain English → AI generates filter → run against all stocks
  */
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import type { StockRecord } from '../types';
 import { ScoreBadge, ChangePercent } from '../components/common/Tags';
 import { generateIndicator, executeFilter, STOCK_FIELDS_REFERENCE } from '../lib/indicator-ai';
-import { hasApiKey } from '../lib/copilot-llm';
+import { hasApiKey, setApiKey, clearApiKey, getProviders, getProvider, setProvider, type ProviderName } from '../lib/copilot-llm';
 
 interface SavedIndicator {
   name: string;
@@ -46,8 +46,25 @@ export default function IndicatorBuilder({ stocks }: { stocks: StockRecord[] }) 
   const [savedIndicators, setSavedIndicators] = useState<SavedIndicator[]>(readSaved);
   const [showFieldRef, setShowFieldRef] = useState(false);
   const [saveName, setSaveName] = useState('');
+  const [showApiKeyInput, setShowApiKeyInput] = useState(false);
+  const [apiKeyInput, setApiKeyInput] = useState('');
+  const [hasKey, setHasKey] = useState(hasApiKey());
+  const [selectedProvider, setSelectedProvider] = useState<ProviderName>(getProvider());
 
   const activeCode = editMode ? editedCode : generatedCode;
+
+  const handleSaveApiKey = async () => {
+    if (apiKeyInput.trim()) {
+      await setApiKey(apiKeyInput.trim());
+      setHasKey(true);
+      setApiKeyInput('');
+    }
+  };
+
+  const handleClearApiKey = () => {
+    clearApiKey();
+    setHasKey(false);
+  };
 
   const handleGenerate = useCallback(async () => {
     if (!description.trim()) return;
@@ -110,20 +127,100 @@ export default function IndicatorBuilder({ stocks }: { stocks: StockRecord[] }) 
     writeSaved(updated);
   }, [savedIndicators]);
 
-  const noApiKey = !hasApiKey();
+  const noApiKey = !hasKey;
 
   return (
     <div className="space-y-5">
-      <div>
-        <h1 className="text-xl font-bold t-primary">AI Indicator Builder</h1>
-        <p className="text-sm t-muted mt-1">Describe stock screening rules in plain English. AI generates a filter and runs it against all {stocks.length} stocks.</p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-xl font-bold t-primary">AI Indicator Builder</h1>
+          <p className="text-sm t-muted mt-1">Describe stock screening rules in plain English. AI generates a filter and runs it against all {stocks.length} stocks.</p>
+        </div>
+        <button
+          onClick={() => setShowApiKeyInput(v => !v)}
+          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+            hasKey
+              ? 'bg-bullish/15 text-bullish ring-1 ring-bullish/30'
+              : 'bg-surface-hover t-muted ring-1 ring-surface-border hover:t-secondary'
+          }`}
+          title={hasKey ? 'API key set — click to change provider or key' : 'Set API key for AI generation'}
+        >
+          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+          </svg>
+          {hasKey ? 'API Key Set' : 'Set API Key'}
+        </button>
       </div>
 
-      {noApiKey && (
+      {/* Provider & API Key Panel */}
+      {showApiKeyInput && (() => {
+        const providers = getProviders();
+        const selected = providers.find(p => p.key === selectedProvider);
+        return (
+          <div className="card p-4 space-y-3 border-l-4 border-l-accent">
+            <div>
+              <p className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">LLM Provider</p>
+              <div className="flex flex-wrap gap-1.5">
+                {providers.map(p => (
+                  <button
+                    key={p.key}
+                    onClick={() => { setSelectedProvider(p.key); setProvider(p.key); }}
+                    title={`${p.modelName} — ${p.site}`}
+                    className={`text-xs px-2.5 py-1.5 rounded transition-colors ${
+                      selectedProvider === p.key
+                        ? 'bg-accent/20 text-accent-light ring-1 ring-accent/30'
+                        : 'bg-surface-hover t-muted hover:t-secondary'
+                    }`}
+                  >
+                    {p.label}
+                    {p.free && <span className="ml-1 text-[9px] text-bullish">free</span>}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {selected && (
+              <div className="rounded-lg bg-surface-hover/50 px-3 py-2.5 space-y-1">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-medium t-secondary">{selected.label} — {selected.modelName}</span>
+                  {selected.free
+                    ? <span className="text-[9px] px-1.5 py-0.5 rounded bg-bullish/15 text-bullish">Free</span>
+                    : <span className="text-[9px] px-1.5 py-0.5 rounded bg-yellow-500/15 text-yellow-500">Paid</span>
+                  }
+                </div>
+                <p className="text-[10px] t-muted font-mono leading-relaxed whitespace-pre-line">{selected.steps}</p>
+              </div>
+            )}
+
+            <div>
+              <p className="text-xs t-muted mb-1.5">API Key:</p>
+              <div className="flex gap-2">
+                <input
+                  type="password"
+                  value={apiKeyInput}
+                  onChange={e => setApiKeyInput(e.target.value)}
+                  onKeyDown={e => { if (e.key === 'Enter') handleSaveApiKey(); }}
+                  placeholder={selected?.hint ?? 'Enter API key...'}
+                  className="input-field flex-1 text-xs"
+                />
+                <button onClick={handleSaveApiKey} className="text-xs px-3 py-1.5 rounded bg-accent/15 text-accent-light hover:bg-accent/25 transition-colors">Save</button>
+                {hasKey && (
+                  <button onClick={handleClearApiKey} className="text-xs px-3 py-1.5 rounded bg-bearish/15 text-bearish hover:bg-bearish/25 transition-colors">Clear</button>
+                )}
+              </div>
+            </div>
+            <p className="text-[10px] t-faint leading-relaxed">
+              Your API key is encrypted (AES-256-GCM) and stored locally in your browser. It is never sent to our servers — only used for direct API calls from your browser to the LLM provider.
+            </p>
+          </div>
+        );
+      })()}
+
+      {noApiKey && !showApiKeyInput && (
         <div className="card p-4 border-l-4 border-l-amber-500">
           <p className="text-sm t-secondary">
-            <strong className="text-amber-400">API key required.</strong> This feature uses the same AI provider as the Copilot.
-            Go to <Link to="/copilot" className="text-accent-light hover:underline">Copilot</Link> to set up a free API key (Groq, Gemini, or OpenRouter).
+            <strong className="text-amber-400">API key required.</strong>{' '}
+            Click the "Set API Key" button above to configure a free LLM provider (Groq, Gemini, or OpenRouter).
           </p>
         </div>
       )}

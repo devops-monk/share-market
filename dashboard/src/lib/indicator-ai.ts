@@ -3,7 +3,7 @@
  * Generates JavaScript filter functions from natural language descriptions
  */
 import type { StockRecord } from '../types';
-import { getApiKey, getProvider } from './copilot-llm';
+import { queryLLM } from './copilot-llm';
 
 /** Reference of all StockRecord fields for the system prompt */
 export const STOCK_FIELDS_REFERENCE = `Available fields on each stock object "s" (StockRecord):
@@ -157,75 +157,26 @@ export function executeFilter(
   return { matches, error };
 }
 
-/** Call the LLM to generate a filter function */
+/** Call the LLM to generate a filter function — reuses queryLLM from copilot-llm.ts */
 export async function generateIndicator(
   description: string,
 ): Promise<{ code: string; error?: string }> {
-  const key = await getApiKey();
-  if (!key) {
-    return { code: '', error: 'No API key configured. Set one in the Copilot settings.' };
-  }
-
-  const providerName = getProvider();
-
-  // Provider config (inline to avoid importing PROVIDERS)
-  const providerConfig: Record<string, { url: string; model: string }> = {
-    groq: { url: 'https://api.groq.com/openai/v1/chat/completions', model: 'llama-3.3-70b-versatile' },
-    openrouter: { url: 'https://openrouter.ai/api/v1/chat/completions', model: 'meta-llama/llama-3.3-70b-instruct:free' },
-    openai: { url: 'https://api.openai.com/v1/chat/completions', model: 'gpt-4o-mini' },
-    gemini: { url: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', model: 'gemini-2.0-flash' },
-    anthropic: { url: 'https://api.anthropic.com/v1/messages', model: 'claude-sonnet-4-20250514' },
-    huggingface: { url: 'https://router.huggingface.co/v1/chat/completions', model: 'Qwen/Qwen2.5-7B-Instruct' },
-  };
-
-  const provider = providerConfig[providerName] ?? providerConfig.groq;
   const prompt = buildIndicatorPrompt(description);
-  const isAnthropic = providerName === 'anthropic';
-
-  const headers: Record<string, string> = { 'Content-Type': 'application/json' };
-  let body: string;
-
-  if (isAnthropic) {
-    headers['x-api-key'] = key;
-    headers['anthropic-version'] = '2023-06-01';
-    headers['anthropic-dangerous-direct-browser-access'] = 'true';
-    body = JSON.stringify({
-      model: provider.model,
-      system: 'You are a code generator. Output ONLY valid JavaScript code. No explanations.',
-      messages: [{ role: 'user', content: prompt }],
-      max_tokens: 300,
-      temperature: 0.2,
-    });
-  } else {
-    headers['Authorization'] = `Bearer ${key}`;
-    body = JSON.stringify({
-      model: provider.model,
-      messages: [
-        { role: 'system', content: 'You are a code generator. Output ONLY valid JavaScript code. No explanations.' },
-        { role: 'user', content: prompt },
-      ],
-      max_tokens: 300,
-      temperature: 0.2,
-    });
-  }
 
   try {
-    const res = await fetch(provider.url, { method: 'POST', headers, body });
-    if (!res.ok) {
-      const errText = await res.text().catch(() => '');
-      return { code: '', error: `API error (${res.status}): ${errText.slice(0, 200)}` };
+    // queryLLM handles provider selection, API key, CORS, Anthropic vs OpenAI format
+    // Pass null for stock context so it uses the prompt as-is
+    const response = await queryLLM(prompt, null);
+
+    if (!response.text || response.text.includes('Please set your API key')) {
+      return { code: '', error: response.text || 'No API key configured. Set one in the Copilot settings.' };
     }
 
-    const data = await res.json();
-    const content = isAnthropic
-      ? data.content?.[0]?.text
-      : data.choices?.[0]?.message?.content;
-
-    if (!content) {
-      return { code: '', error: 'No response from AI model.' };
+    if (response.text.startsWith('Invalid API key') || response.text.startsWith('API error')) {
+      return { code: '', error: response.text };
     }
 
-    return { code: parseGeneratedCode(content) };
+    return { code: parseGeneratedCode(response.text) };
   } catch (e: any) {
     return { code: '', error: `Network error: ${e.message}` };
   }
