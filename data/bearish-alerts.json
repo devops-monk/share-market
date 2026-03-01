@@ -15,7 +15,7 @@
     "revenueGrowth": 0.191,
     "beta": 1.71,
     "volume": 190805735,
-    "avgVolume": 50959757,
+    "avgVolume": 51394530,
     "fiftyTwoWeekHigh": 134.115,
     "fiftyTwoWeekLow": 75.01,
     "rsi": 71.6,
@@ -131,15 +131,15 @@
     },
     "bearishScore": 10,
     "bullishScore": 3,
-    "sentimentAvg": 0.035100000000000006,
+    "sentimentAvg": 0.27999999999999997,
     "score": {
       "priceMomentum": 34,
       "technicalSignals": 6,
-      "newsSentiment": 52,
+      "newsSentiment": 64,
       "fundamentals": 61,
       "volumeTrend": 100,
       "riskInverse": 31,
-      "composite": 40
+      "composite": 42
     },
     "priceToBook": 15.266498,
     "pegRatio": null,
@@ -185,7 +185,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -0.61,
+    "sectorZScore": -0.44,
     "sectorRank": 23,
     "sectorCount": 32,
     "supportResistance": [
@@ -253,14 +253,14 @@
       "Streaming & Digital Media"
     ],
     "predictiveScore": {
-      "predicted": 49,
+      "predicted": 50,
       "direction": "stable",
       "confidence": "low",
-      "slope": 1.393,
-      "r2": 0.632,
+      "slope": 1.286,
+      "r2": 0.559,
       "factors": {
         "trendMomentum": 1,
-        "meanReversion": 0.1,
+        "meanReversion": 0.08,
         "technicalSupport": 0.025
       }
     },
@@ -489,7 +489,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 14778402,
-    "avgVolume": 11448070,
+    "avgVolume": 11501526,
     "fiftyTwoWeekHigh": 179.99,
     "fiftyTwoWeekLow": 137.62,
     "rsi": 71.98,
@@ -605,15 +605,15 @@
     },
     "bearishScore": 10,
     "bullishScore": 3,
-    "sentimentAvg": 0.040600000000000004,
+    "sentimentAvg": 0.128,
     "score": {
       "priceMomentum": 60,
       "technicalSignals": 6,
-      "newsSentiment": 52,
+      "newsSentiment": 56,
       "fundamentals": 64,
       "volumeTrend": 36,
       "riskInverse": 66,
-      "composite": 44
+      "composite": 45
     },
     "priceToBook": 7.4334235,
     "pegRatio": null,
@@ -659,8 +659,8 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -0.95,
-    "sectorRank": 36,
+    "sectorZScore": -0.84,
+    "sectorRank": 35,
     "sectorCount": 45,
     "supportResistance": [
       {
@@ -752,14 +752,14 @@
       "Dividend Aristocrats"
     ],
     "predictiveScore": {
-      "predicted": 36,
+      "predicted": 37,
       "direction": "stable",
       "confidence": "low",
       "slope": -0.107,
       "r2": 0.005,
       "factors": {
         "trendMomentum": -1,
-        "meanReversion": 0.06,
+        "meanReversion": 0.05,
         "technicalSupport": -0.067
       }
     },
@@ -988,7 +988,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 7895522,
-    "avgVolume": 2367822,
+    "avgVolume": 2347536,
     "fiftyTwoWeekHigh": 336.99,
     "fiftyTwoWeekLow": 140.56,
     "rsi": 32.82,
@@ -1109,11 +1109,11 @@
     },
     "bearishScore": 10,
     "bullishScore": 0,
-    "sentimentAvg": -0.10840000000000001,
+    "sentimentAvg": 0.0026999999999999967,
     "score": {
       "priceMomentum": 5,
       "technicalSignals": 0,
-      "newsSentiment": 45,
+      "newsSentiment": 50,
       "fundamentals": 50,
       "volumeTrend": 71,
       "riskInverse": 40,
@@ -1138,7 +1138,7 @@
     "heldPercentInstitutions": 0.57979,
     "institutionsCount": 1328,
     "shortPercentOfFloat": 0.069,
-    "targetMeanPrice": 249.77841,
+    "targetMeanPrice": 241.82385,
     "freeCashflow": 942347136,
     "totalRevenue": 3001123072,
     "totalDebt": 1864387968,
@@ -1164,7 +1164,7 @@
       "passed": 0
     },
     "sectorZScore": -1.46,
-    "sectorRank": 121,
+    "sectorRank": 123,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -1232,8 +1232,8 @@
       "predicted": 19,
       "direction": "declining",
       "confidence": "low",
-      "slope": -0.429,
-      "r2": 0.056,
+      "slope": -0.75,
+      "r2": 0.144,
       "factors": {
         "trendMomentum": -1,
         "meanReversion": 0.23,
@@ -1465,7 +1465,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 31164973,
-    "avgVolume": 7247368,
+    "avgVolume": 7256156,
     "fiftyTwoWeekHigh": 168.08,
     "fiftyTwoWeekLow": 66.25,
     "rsi": 71.32,
@@ -1605,7 +1605,7 @@
     },
     "priceToBook": -39.989197,
     "pegRatio": null,
-    "enterpriseValue": null,
+    "enterpriseValue": 118106079232,
     "profitMargins": 0.05228,
     "grossMargins": 0.19999,
     "operatingMargins": 0.07918,
@@ -1622,11 +1622,11 @@
     "heldPercentInstitutions": 0.81294,
     "institutionsCount": 2018,
     "shortPercentOfFloat": 0.0933,
-    "targetMeanPrice": 162.56522,
-    "freeCashflow": -2026875008,
+    "targetMeanPrice": 163.13043,
+    "freeCashflow": -1360625024,
     "totalRevenue": 113537998848,
     "totalDebt": 31502999552,
-    "ebitda": 11156999168,
+    "ebitda": 8645999616,
     "totalCash": 11527999488,
     "operatingCashflow": 11185000448,
     "averageAnalystRating": "1.8 - Buy",
@@ -1635,7 +1635,7 @@
     "weeklyHighLowRange": 0.3332133090656262,
     "accDistRating": "C",
     "styleClassification": "Blend",
-    "dataCompleteness": 60,
+    "dataCompleteness": 67,
     "minerviniChecks": {
       "priceAbove150and200": true,
       "sma150Above200": true,
@@ -1647,7 +1647,7 @@
       "rsAbove70": true,
       "passed": 7
     },
-    "sectorZScore": 0.65,
+    "sectorZScore": 0.64,
     "sectorRank": 35,
     "sectorCount": 128,
     "supportResistance": [
@@ -1972,7 +1972,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 9648813,
-    "avgVolume": 5469521,
+    "avgVolume": 5490485,
     "fiftyTwoWeekHigh": 23.91,
     "fiftyTwoWeekLow": 17.93,
     "rsi": 70.98,
@@ -2156,7 +2156,7 @@
       "rsAbove70": false,
       "passed": 6
     },
-    "sectorZScore": -0.61,
+    "sectorZScore": -0.6,
     "sectorRank": 26,
     "sectorCount": 39,
     "supportResistance": [
@@ -2486,7 +2486,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 6595040,
-    "avgVolume": 1866508,
+    "avgVolume": 1865781,
     "fiftyTwoWeekHigh": 116,
     "fiftyTwoWeekLow": 49.9,
     "rsi": 35.05,
@@ -2636,14 +2636,14 @@
     "heldPercentInstitutions": 0.88574,
     "institutionsCount": 619,
     "shortPercentOfFloat": 0.0481,
-    "targetMeanPrice": 85.04167,
+    "targetMeanPrice": 82.79167,
     "freeCashflow": 387170752,
     "totalRevenue": 1677081984,
     "totalDebt": 591676032,
     "ebitda": -16481000,
     "totalCash": 1248045952,
     "operatingCashflow": 261163008,
-    "averageAnalystRating": "1.9 - Buy",
+    "averageAnalystRating": "1.8 - Buy",
     "rsPercentile": 4,
     "fiftyTwoWeekRangePercent": 3,
     "weeklyHighLowRange": 0.4434415998197195,
@@ -2662,7 +2662,7 @@
       "passed": 0
     },
     "sectorZScore": -1.09,
-    "sectorRank": 113,
+    "sectorRank": 111,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -2965,7 +2965,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 526201,
-    "avgVolume": 1054316,
+    "avgVolume": 1053935,
     "fiftyTwoWeekHigh": 261.69,
     "fiftyTwoWeekLow": 169.26,
     "rsi": 76.55,
@@ -3475,7 +3475,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 886788,
-    "avgVolume": 2263814,
+    "avgVolume": 2268511,
     "fiftyTwoWeekHigh": 158.91,
     "fiftyTwoWeekLow": 96.66,
     "rsi": 71.59,
@@ -3638,7 +3638,7 @@
       "rsAbove70": false,
       "passed": 4
     },
-    "sectorZScore": -1.25,
+    "sectorZScore": -1.24,
     "sectorRank": 39,
     "sectorCount": 45,
     "supportResistance": [
@@ -3976,7 +3976,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 12808500,
-    "avgVolume": 992608,
+    "avgVolume": 1001185,
     "fiftyTwoWeekHigh": 21.98,
     "fiftyTwoWeekLow": 13.14,
     "rsi": 26.02,
@@ -4147,7 +4147,7 @@
     "heldPercentInstitutions": 0.46974,
     "institutionsCount": 289,
     "shortPercentOfFloat": null,
-    "targetMeanPrice": 21.307053,
+    "targetMeanPrice": 21.307341,
     "freeCashflow": -119625000,
     "totalRevenue": 3348999936,
     "totalDebt": 1604000000,
@@ -4172,7 +4172,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -0.09,
+    "sectorZScore": -0.1,
     "sectorRank": 37,
     "sectorCount": 63,
     "supportResistance": [
@@ -4508,7 +4508,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 8577718,
-    "avgVolume": 1685862,
+    "avgVolume": 1692694,
     "fiftyTwoWeekHigh": 0.89,
     "fiftyTwoWeekLow": 0.4446,
     "rsi": 14.92,
@@ -4977,7 +4977,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 15674,
-    "avgVolume": 7803,
+    "avgVolume": 7871,
     "fiftyTwoWeekHigh": 30.2,
     "fiftyTwoWeekLow": 15.5,
     "rsi": 30.24,
@@ -5461,7 +5461,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3829226,
-    "avgVolume": 6733434,
+    "avgVolume": 6736023,
     "fiftyTwoWeekHigh": 100.18,
     "fiftyTwoWeekLow": 74.55,
     "rsi": 72.24,
@@ -5627,7 +5627,7 @@
     "heldPercentInstitutions": 0.86257005,
     "institutionsCount": 2533,
     "shortPercentOfFloat": 0.0229,
-    "targetMeanPrice": 96.68421,
+    "targetMeanPrice": 97.21053,
     "freeCashflow": 3075875072,
     "totalRevenue": 20381999104,
     "totalDebt": 8553999872,
@@ -5652,7 +5652,7 @@
       "rsAbove70": true,
       "passed": 7
     },
-    "sectorZScore": -0.75,
+    "sectorZScore": -0.74,
     "sectorRank": 34,
     "sectorCount": 45,
     "supportResistance": [
@@ -5986,7 +5986,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2997536,
-    "avgVolume": 1294001,
+    "avgVolume": 1299240,
     "fiftyTwoWeekHigh": 311.81,
     "fiftyTwoWeekLow": 121.43,
     "rsi": 88.27,
@@ -6166,14 +6166,14 @@
     "heldPercentInstitutions": 0.93947,
     "institutionsCount": 1380,
     "shortPercentOfFloat": 0.0176,
-    "targetMeanPrice": 294.76923,
+    "targetMeanPrice": 298.6154,
     "freeCashflow": 1075374976,
     "totalRevenue": 5677000192,
     "totalDebt": 2772000000,
     "ebitda": 1283000064,
     "totalCash": 2177999872,
     "operatingCashflow": 1472000000,
-    "averageAnalystRating": "1.7 - Buy",
+    "averageAnalystRating": "1.8 - Buy",
     "rsPercentile": 96,
     "fiftyTwoWeekRangePercent": 98,
     "weeklyHighLowRange": 0.44994327626693265,
@@ -6191,7 +6191,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 1.2,
+    "sectorZScore": 1.19,
     "sectorRank": 20,
     "sectorCount": 128,
     "supportResistance": [
@@ -6474,7 +6474,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 28615920,
-    "avgVolume": 20017105,
+    "avgVolume": 20093371,
     "fiftyTwoWeekHigh": 14.106,
     "fiftyTwoWeekLow": 6.987000000000001,
     "rsi": 71.45,
@@ -6647,14 +6647,14 @@
     "heldPercentInstitutions": 0.51091,
     "institutionsCount": 693,
     "shortPercentOfFloat": null,
-    "targetMeanPrice": 12.373611,
+    "targetMeanPrice": 12.371144999999999,
     "freeCashflow": null,
     "totalRevenue": 63224000512,
     "totalDebt": 699905998848,
     "ebitda": null,
     "totalCash": 1161117040640,
     "operatingCashflow": -139141005312,
-    "averageAnalystRating": "2.3 - Buy",
+    "averageAnalystRating": "2.4 - Buy",
     "rsPercentile": 90,
     "fiftyTwoWeekRangePercent": 98,
     "weeklyHighLowRange": 0.13751017087062647,
@@ -6991,7 +6991,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 9569338,
-    "avgVolume": 3495220,
+    "avgVolume": 3515188,
     "fiftyTwoWeekHigh": 2.5340000000000003,
     "fiftyTwoWeekLow": 1.4640000000000002,
     "rsi": 72.97,
@@ -7157,7 +7157,7 @@
     "heldPercentInstitutions": 0.17334,
     "institutionsCount": 109,
     "shortPercentOfFloat": null,
-    "targetMeanPrice": 2.7924686000000003,
+    "targetMeanPrice": 2.7925063999999997,
     "freeCashflow": 3931375104,
     "totalRevenue": 9580999680,
     "totalDebt": 7013000192,
@@ -7182,7 +7182,7 @@
       "rsAbove70": false,
       "passed": 6
     },
-    "sectorZScore": -0.59,
+    "sectorZScore": -0.58,
     "sectorRank": 24,
     "sectorCount": 30,
     "supportResistance": [
@@ -7511,7 +7511,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 7464796,
-    "avgVolume": 2704247,
+    "avgVolume": 2720354,
     "fiftyTwoWeekHigh": 8.446,
     "fiftyTwoWeekLow": 5.86852,
     "rsi": 75.7,
@@ -8031,7 +8031,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3098501,
-    "avgVolume": 4022840,
+    "avgVolume": 4022378,
     "fiftyTwoWeekHigh": 131.57,
     "fiftyTwoWeekLow": 111.22,
     "rsi": 73.71,
@@ -8147,15 +8147,15 @@
     },
     "bearishScore": 8,
     "bullishScore": 4,
-    "sentimentAvg": 0.194,
+    "sentimentAvg": 0.1049,
     "score": {
       "priceMomentum": 56,
       "technicalSignals": 25,
-      "newsSentiment": 60,
+      "newsSentiment": 55,
       "fundamentals": 71,
       "volumeTrend": 12,
       "riskInverse": 68,
-      "composite": 48
+      "composite": 47
     },
     "priceToBook": 2.001254,
     "pegRatio": null,
@@ -8201,7 +8201,7 @@
       "rsAbove70": false,
       "passed": 5
     },
-    "sectorZScore": -1.01,
+    "sectorZScore": -1.11,
     "sectorRank": 22,
     "sectorCount": 24,
     "supportResistance": [
@@ -8279,14 +8279,14 @@
       "Utilities"
     ],
     "predictiveScore": {
-      "predicted": 40,
+      "predicted": 39,
       "direction": "declining",
       "confidence": "low",
-      "slope": -1.75,
-      "r2": 0.665,
+      "slope": -1.643,
+      "r2": 0.63,
       "factors": {
         "trendMomentum": -1,
-        "meanReversion": 0.02,
+        "meanReversion": 0.03,
         "technicalSupport": -0.067
       }
     },
@@ -8515,7 +8515,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 11277358,
-    "avgVolume": 6968093,
+    "avgVolume": 7018061,
     "fiftyTwoWeekHigh": 30.24,
     "fiftyTwoWeekLow": 7.73,
     "rsi": 27.19,
@@ -8650,15 +8650,15 @@
     },
     "bearishScore": 8,
     "bullishScore": 7,
-    "sentimentAvg": -0.7836,
+    "sentimentAvg": -0.39919999999999994,
     "score": {
       "priceMomentum": 1,
       "technicalSignals": 44,
-      "newsSentiment": 11,
+      "newsSentiment": 30,
       "fundamentals": 50,
       "volumeTrend": 37,
       "riskInverse": 30,
-      "composite": 27
+      "composite": 30
     },
     "priceToBook": 1.5686661,
     "pegRatio": null,
@@ -8704,8 +8704,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.46,
-    "sectorRank": 123,
+    "sectorZScore": -1.18,
+    "sectorRank": 117,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -8753,14 +8753,14 @@
       "AI & Machine Learning"
     ],
     "predictiveScore": {
-      "predicted": 35,
+      "predicted": 22,
       "direction": "stable",
       "confidence": "low",
-      "slope": 0.179,
-      "r2": 0.019,
+      "slope": -0.036,
+      "r2": 0.001,
       "factors": {
-        "trendMomentum": 0.893,
-        "meanReversion": 0.23,
+        "trendMomentum": -1,
+        "meanReversion": 0.2,
         "technicalSupport": -0.067
       }
     },
@@ -8989,7 +8989,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3201819,
-    "avgVolume": 2816319,
+    "avgVolume": 2828678,
     "fiftyTwoWeekHigh": 510.65,
     "fiftyTwoWeekLow": 387.78,
     "rsi": 72.97,
@@ -9485,7 +9485,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 10182364,
-    "avgVolume": 5616706,
+    "avgVolume": 5658183,
     "fiftyTwoWeekHigh": 190.09,
     "fiftyTwoWeekLow": 111.04,
     "rsi": 26.78,
@@ -9662,7 +9662,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -2.31,
+    "sectorZScore": -2.33,
     "sectorRank": 82,
     "sectorCount": 83,
     "supportResistance": [
@@ -9989,7 +9989,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 15556974,
-    "avgVolume": 6226129,
+    "avgVolume": 6286643,
     "fiftyTwoWeekHigh": 153.87,
     "fiftyTwoWeekLow": 86.15,
     "rsi": 26.1,
@@ -10180,7 +10180,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -2.07,
+    "sectorZScore": -2.08,
     "sectorRank": 81,
     "sectorCount": 83,
     "supportResistance": [
@@ -10506,7 +10506,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 13297611,
-    "avgVolume": 4099198,
+    "avgVolume": 4121593,
     "fiftyTwoWeekHigh": 157.28,
     "fiftyTwoWeekLow": 102.58,
     "rsi": 24.76,
@@ -10697,8 +10697,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -0.7,
-    "sectorRank": 61,
+    "sectorZScore": -0.71,
+    "sectorRank": 62,
     "sectorCount": 83,
     "supportResistance": [
       {
@@ -11023,7 +11023,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1461051,
-    "avgVolume": 1338383,
+    "avgVolume": 1331420,
     "fiftyTwoWeekHigh": 492.22,
     "fiftyTwoWeekLow": 359.36,
     "rsi": 84.24,
@@ -11201,7 +11201,7 @@
       "passed": 6
     },
     "sectorZScore": 0.37,
-    "sectorRank": 43,
+    "sectorRank": 44,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -11525,7 +11525,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 5357988,
-    "avgVolume": 4941011,
+    "avgVolume": 4954206,
     "fiftyTwoWeekHigh": 87.3,
     "fiftyTwoWeekLow": 26.8,
     "rsi": 30.4,
@@ -11688,7 +11688,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -2.14,
+    "sectorZScore": -2.08,
     "sectorRank": 17,
     "sectorCount": 17,
     "supportResistance": [
@@ -11985,7 +11985,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1326699,
-    "avgVolume": 1817381,
+    "avgVolume": 1828326,
     "fiftyTwoWeekHigh": 192.3,
     "fiftyTwoWeekLow": 118.44,
     "rsi": 39.21,
@@ -12474,7 +12474,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 5166741,
-    "avgVolume": 7739863,
+    "avgVolume": 7794620,
     "fiftyTwoWeekHigh": 48.657,
     "fiftyTwoWeekLow": 23.38,
     "rsi": 51.73,
@@ -12637,8 +12637,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.19,
-    "sectorRank": 118,
+    "sectorZScore": -1.18,
+    "sectorRank": 119,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -12938,7 +12938,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1230047,
-    "avgVolume": 1326175,
+    "avgVolume": 1326035,
     "fiftyTwoWeekHigh": 122.84,
     "fiftyTwoWeekLow": 73.21,
     "rsi": 49.4,
@@ -13153,8 +13153,8 @@
       "predicted": 27,
       "direction": "declining",
       "confidence": "low",
-      "slope": -2.75,
-      "r2": 0.774,
+      "slope": -2.857,
+      "r2": 0.779,
       "factors": {
         "trendMomentum": -1,
         "meanReversion": 0.15,
@@ -13386,7 +13386,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 12817221,
-    "avgVolume": 12097391,
+    "avgVolume": 12155756,
     "fiftyTwoWeekHigh": 28.52,
     "fiftyTwoWeekLow": 15.96,
     "rsi": 57.13,
@@ -13869,7 +13869,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 15607459,
-    "avgVolume": 5843190,
+    "avgVolume": 5869976,
     "fiftyTwoWeekHigh": 22.26,
     "fiftyTwoWeekLow": 14.215,
     "rsi": 42.96,
@@ -14005,7 +14005,7 @@
     "heldPercentInstitutions": 0.67050004,
     "institutionsCount": 655,
     "shortPercentOfFloat": null,
-    "targetMeanPrice": 20.222168,
+    "targetMeanPrice": 20.212755,
     "freeCashflow": 1006249984,
     "totalRevenue": 19804000256,
     "totalDebt": 24290000896,
@@ -14030,7 +14030,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.25,
+    "sectorZScore": -1.24,
     "sectorRank": 40,
     "sectorCount": 45,
     "supportResistance": [
@@ -14365,7 +14365,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 9925338,
-    "avgVolume": 4069609,
+    "avgVolume": 4071628,
     "fiftyTwoWeekHigh": 5.906000000000001,
     "fiftyTwoWeekLow": 4.0105,
     "rsi": 40.08,
@@ -14526,7 +14526,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -1.18,
+    "sectorZScore": -1.19,
     "sectorRank": 70,
     "sectorCount": 86,
     "supportResistance": [
@@ -14848,7 +14848,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1226504,
-    "avgVolume": 1009318,
+    "avgVolume": 1013864,
     "fiftyTwoWeekHigh": 5.01,
     "fiftyTwoWeekLow": 3,
     "rsi": 57.34,
@@ -15326,7 +15326,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 35137289,
-    "avgVolume": 3472086,
+    "avgVolume": 3496500,
     "fiftyTwoWeekHigh": 0.38559,
     "fiftyTwoWeekLow": 0.157,
     "rsi": 38.23,
@@ -15489,7 +15489,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -0.23,
+    "sectorZScore": -0.25,
     "sectorRank": 21,
     "sectorCount": 32,
     "supportResistance": [
@@ -15791,7 +15791,7 @@
     "revenueGrowth": 0.1491,
     "beta": 0.77,
     "volume": 9424104,
-    "avgVolume": 9525062,
+    "avgVolume": 9572280,
     "fiftyTwoWeekHigh": 223.61,
     "fiftyTwoWeekLow": 139.57,
     "rsi": 34.98,
@@ -15893,7 +15893,7 @@
     },
     "bearishScore": 7,
     "bullishScore": 0,
-    "sentimentAvg": -0.05209999999999998,
+    "sentimentAvg": -0.052099999999999994,
     "score": {
       "priceMomentum": 29,
       "technicalSignals": 6,
@@ -15947,8 +15947,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.19,
-    "sectorRank": 116,
+    "sectorZScore": -1.18,
+    "sectorRank": 114,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -16255,7 +16255,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4032162,
-    "avgVolume": 3303609,
+    "avgVolume": 3324360,
     "fiftyTwoWeekHigh": 566.9,
     "fiftyTwoWeekLow": 298,
     "rsi": 38.25,
@@ -16357,15 +16357,15 @@
     },
     "bearishScore": 7,
     "bullishScore": 0,
-    "sentimentAvg": 0.08,
+    "sentimentAvg": -0.0833,
     "score": {
       "priceMomentum": 29,
       "technicalSignals": 6,
-      "newsSentiment": 54,
+      "newsSentiment": 46,
       "fundamentals": 50,
       "volumeTrend": 20,
       "riskInverse": 45,
-      "composite": 31
+      "composite": 30
     },
     "priceToBook": 23.345049,
     "pegRatio": null,
@@ -16386,7 +16386,7 @@
     "heldPercentInstitutions": 0.75732005,
     "institutionsCount": 2792,
     "shortPercentOfFloat": 0.0304,
-    "targetMeanPrice": 525.5089,
+    "targetMeanPrice": 523.3813,
     "freeCashflow": 1416660352,
     "totalRevenue": 4565168128,
     "totalDebt": 818046016,
@@ -16411,8 +16411,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.09,
-    "sectorRank": 109,
+    "sectorZScore": -1.18,
+    "sectorRank": 116,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -16477,14 +16477,14 @@
       "Cybersecurity"
     ],
     "predictiveScore": {
-      "predicted": 23,
+      "predicted": 22,
       "direction": "declining",
       "confidence": "low",
-      "slope": -2.321,
-      "r2": 0.578,
+      "slope": -2.536,
+      "r2": 0.632,
       "factors": {
         "trendMomentum": -1,
-        "meanReversion": 0.19,
+        "meanReversion": 0.2,
         "technicalSupport": -0.167
       }
     },
@@ -16713,7 +16713,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4622974,
-    "avgVolume": 5491485,
+    "avgVolume": 5523390,
     "fiftyTwoWeekHigh": 201.69,
     "fiftyTwoWeekLow": 81.63,
     "rsi": 42.75,
@@ -16815,15 +16815,15 @@
     },
     "bearishScore": 7,
     "bullishScore": 0,
-    "sentimentAvg": 0.1036,
+    "sentimentAvg": -0.0827,
     "score": {
       "priceMomentum": 25,
       "technicalSignals": 6,
-      "newsSentiment": 55,
+      "newsSentiment": 46,
       "fundamentals": 0,
       "volumeTrend": 12,
       "riskInverse": 35,
-      "composite": 21
+      "composite": 19
     },
     "priceToBook": 10.575233,
     "pegRatio": null,
@@ -16869,7 +16869,7 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -2.01,
+    "sectorZScore": -2.19,
     "sectorRank": 128,
     "sectorCount": 128,
     "supportResistance": [
@@ -16930,14 +16930,14 @@
       "Cloud Computing"
     ],
     "predictiveScore": {
-      "predicted": 29,
+      "predicted": 27,
       "direction": "stable",
       "confidence": "low",
-      "slope": -1.286,
-      "r2": 0.726,
+      "slope": -1.179,
+      "r2": 0.674,
       "factors": {
         "trendMomentum": 1,
-        "meanReversion": 0.29,
+        "meanReversion": 0.31,
         "technicalSupport": -0.233
       }
     },
@@ -17166,7 +17166,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 16328515,
-    "avgVolume": 8999914,
+    "avgVolume": 9008685,
     "fiftyTwoWeekHigh": 248.94,
     "fiftyTwoWeekLow": 141.5,
     "rsi": 72.16,
@@ -17303,15 +17303,15 @@
     },
     "bearishScore": 7,
     "bullishScore": 7,
-    "sentimentAvg": -0.020800000000000006,
+    "sentimentAvg": 0.1093,
     "score": {
       "priceMomentum": 81,
       "technicalSignals": 50,
-      "newsSentiment": 49,
+      "newsSentiment": 55,
       "fundamentals": 68,
       "volumeTrend": 52,
       "riskInverse": 68,
-      "composite": 62
+      "composite": 63
     },
     "priceToBook": 7.3358917,
     "pegRatio": null,
@@ -17357,8 +17357,8 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 0.88,
-    "sectorRank": 14,
+    "sectorZScore": 0.97,
+    "sectorRank": 11,
     "sectorCount": 63,
     "supportResistance": [
       {
@@ -17442,14 +17442,14 @@
       "Dividend Aristocrats"
     ],
     "predictiveScore": {
-      "predicted": 69,
+      "predicted": 70,
       "direction": "stable",
       "confidence": "low",
-      "slope": -0.179,
-      "r2": 0.007,
+      "slope": -0.393,
+      "r2": 0.035,
       "factors": {
         "trendMomentum": 1,
-        "meanReversion": -0.12,
+        "meanReversion": -0.13,
         "technicalSupport": -0.025
       }
     },
@@ -17678,7 +17678,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2768069,
-    "avgVolume": 3382170,
+    "avgVolume": 3382638,
     "fiftyTwoWeekHigh": 341.35,
     "fiftyTwoWeekLow": 283.47,
     "rsi": 74.45,
@@ -17808,15 +17808,15 @@
     },
     "bearishScore": 7,
     "bullishScore": 7,
-    "sentimentAvg": 0.2658,
+    "sentimentAvg": 0.13199999999999998,
     "score": {
       "priceMomentum": 59,
       "technicalSignals": 50,
-      "newsSentiment": 63,
+      "newsSentiment": 57,
       "fundamentals": 57,
       "volumeTrend": 17,
       "riskInverse": 68,
-      "composite": 54
+      "composite": 53
     },
     "priceToBook": -135.39499,
     "pegRatio": null,
@@ -17862,7 +17862,7 @@
       "rsAbove70": false,
       "passed": 6
     },
-    "sectorZScore": 0.46,
+    "sectorZScore": 0.36,
     "sectorRank": 36,
     "sectorCount": 94,
     "supportResistance": [
@@ -17947,14 +17947,14 @@
       "Consumer"
     ],
     "predictiveScore": {
-      "predicted": 46,
+      "predicted": 45,
       "direction": "declining",
       "confidence": "low",
       "slope": -1.214,
       "r2": 0.316,
       "factors": {
         "trendMomentum": -1,
-        "meanReversion": -0.04,
+        "meanReversion": -0.03,
         "technicalSupport": 0.067
       }
     },
@@ -18183,7 +18183,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 23335168,
-    "avgVolume": 30983465,
+    "avgVolume": 31172258,
     "fiftyTwoWeekHigh": 50.48,
     "fiftyTwoWeekLow": 38.39,
     "rsi": 72.14,
@@ -18306,11 +18306,11 @@
     },
     "bearishScore": 7,
     "bullishScore": 5,
-    "sentimentAvg": 0.016000000000000004,
+    "sentimentAvg": 0.0627,
     "score": {
       "priceMomentum": 68,
       "technicalSignals": 38,
-      "newsSentiment": 51,
+      "newsSentiment": 53,
       "fundamentals": 87,
       "volumeTrend": 10,
       "riskInverse": 56,
@@ -18360,7 +18360,7 @@
       "rsAbove70": true,
       "passed": 7
     },
-    "sectorZScore": 0.72,
+    "sectorZScore": 0.71,
     "sectorRank": 7,
     "sectorCount": 32,
     "supportResistance": [
@@ -18461,8 +18461,8 @@
       "predicted": 45,
       "direction": "declining",
       "confidence": "low",
-      "slope": -0.321,
-      "r2": 0.035,
+      "slope": -0.429,
+      "r2": 0.057,
       "factors": {
         "trendMomentum": -1,
         "meanReversion": -0.04,
@@ -18694,7 +18694,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 9192562,
-    "avgVolume": 10724578,
+    "avgVolume": 10701333,
     "fiftyTwoWeekHigh": 444.65,
     "fiftyTwoWeekLow": 139.36,
     "rsi": 46.31,
@@ -18803,11 +18803,11 @@
     },
     "bearishScore": 7,
     "bullishScore": 2,
-    "sentimentAvg": 0.064,
+    "sentimentAvg": 0.11599999999999999,
     "score": {
       "priceMomentum": 12,
       "technicalSignals": 19,
-      "newsSentiment": 53,
+      "newsSentiment": 56,
       "fundamentals": 37,
       "volumeTrend": 11,
       "riskInverse": 26,
@@ -18857,7 +18857,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.3,
+    "sectorZScore": -1.26,
     "sectorRank": 16,
     "sectorCount": 17,
     "supportResistance": [
@@ -19154,7 +19154,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 7176954,
-    "avgVolume": 6232722,
+    "avgVolume": 6263220,
     "fiftyTwoWeekHigh": 100,
     "fiftyTwoWeekLow": 30.901,
     "rsi": 29.78,
@@ -19270,15 +19270,15 @@
     },
     "bearishScore": 7,
     "bullishScore": 5,
-    "sentimentAvg": 0.06399999999999999,
+    "sentimentAvg": 0.005499999999999994,
     "score": {
       "priceMomentum": 14,
       "technicalSignals": 38,
-      "newsSentiment": 53,
+      "newsSentiment": 50,
       "fundamentals": 4,
       "volumeTrend": 20,
       "riskInverse": 45,
-      "composite": 28
+      "composite": 27
     },
     "priceToBook": 4.400112,
     "pegRatio": null,
@@ -19324,7 +19324,7 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -1.09,
+    "sectorZScore": -1.12,
     "sectorRank": 15,
     "sectorCount": 17,
     "supportResistance": [
@@ -19385,14 +19385,14 @@
       "Fintech"
     ],
     "predictiveScore": {
-      "predicted": 21,
+      "predicted": 20,
       "direction": "declining",
       "confidence": "low",
       "slope": -0.607,
       "r2": 0.097,
       "factors": {
         "trendMomentum": -1,
-        "meanReversion": 0.22,
+        "meanReversion": 0.23,
         "technicalSupport": -0.067
       }
     },
@@ -19621,7 +19621,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2345049,
-    "avgVolume": 1485831,
+    "avgVolume": 1498893,
     "fiftyTwoWeekHigh": 732,
     "fiftyTwoWeekLow": 207.2,
     "rsi": 49.43,
@@ -19737,15 +19737,15 @@
     },
     "bearishScore": 7,
     "bullishScore": 5,
-    "sentimentAvg": 0.2042,
+    "sentimentAvg": 0.26799999999999996,
     "score": {
       "priceMomentum": 14,
       "technicalSignals": 38,
-      "newsSentiment": 60,
+      "newsSentiment": 63,
       "fundamentals": 0,
       "volumeTrend": 22,
       "riskInverse": 32,
-      "composite": 27
+      "composite": 28
     },
     "priceToBook": 6.727795,
     "pegRatio": null,
@@ -19791,8 +19791,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.46,
-    "sectorRank": 122,
+    "sectorZScore": -1.36,
+    "sectorRank": 120,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -19852,14 +19852,14 @@
       "Tech"
     ],
     "predictiveScore": {
-      "predicted": 36,
+      "predicted": 37,
       "direction": "improving",
       "confidence": "low",
-      "slope": 0.786,
-      "r2": 0.231,
+      "slope": 0.679,
+      "r2": 0.171,
       "factors": {
         "trendMomentum": 1,
-        "meanReversion": 0.23,
+        "meanReversion": 0.22,
         "technicalSupport": -0.033
       }
     },
@@ -20088,7 +20088,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 7941826,
-    "avgVolume": 11727606,
+    "avgVolume": 11762916,
     "fiftyTwoWeekHigh": 55.2,
     "fiftyTwoWeekLow": 22.28,
     "rsi": 74.64,
@@ -20272,7 +20272,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 0.53,
+    "sectorZScore": 0.52,
     "sectorRank": 22,
     "sectorCount": 63,
     "supportResistance": [
@@ -20576,7 +20576,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2452055,
-    "avgVolume": 3159781,
+    "avgVolume": 3174070,
     "fiftyTwoWeekHigh": 894.93,
     "fiftyTwoWeekLow": 252.25,
     "rsi": 72.64,
@@ -21070,7 +21070,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 23546849,
-    "avgVolume": 23085845,
+    "avgVolume": 23288555,
     "fiftyTwoWeekHigh": 79.5,
     "fiftyTwoWeekLow": 38.46,
     "rsi": 48.42,
@@ -21233,7 +21233,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -0.53,
+    "sectorZScore": -0.51,
     "sectorRank": 13,
     "sectorCount": 17,
     "supportResistance": [
@@ -21547,7 +21547,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 5300923,
-    "avgVolume": 4008078,
+    "avgVolume": 3952655,
     "fiftyTwoWeekHigh": 363.2,
     "fiftyTwoWeekLow": 158.65,
     "rsi": 71.79,
@@ -21739,7 +21739,7 @@
       "passed": 8
     },
     "sectorZScore": 0.92,
-    "sectorRank": 25,
+    "sectorRank": 26,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -22058,7 +22058,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 7927446,
-    "avgVolume": 5316501,
+    "avgVolume": 5321358,
     "fiftyTwoWeekHigh": 351.99,
     "fiftyTwoWeekLow": 188.73,
     "rsi": 36.02,
@@ -22534,7 +22534,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1729412,
-    "avgVolume": 1857390,
+    "avgVolume": 1867895,
     "fiftyTwoWeekHigh": 392.86,
     "fiftyTwoWeekLow": 194.3,
     "rsi": 76.26,
@@ -22718,8 +22718,8 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 0.72,
-    "sectorRank": 23,
+    "sectorZScore": 0.73,
+    "sectorRank": 22,
     "sectorCount": 86,
     "supportResistance": [
       {
@@ -23033,7 +23033,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 930387,
-    "avgVolume": 1028768,
+    "avgVolume": 1031870,
     "fiftyTwoWeekHigh": 573.94,
     "fiftyTwoWeekLow": 227.08,
     "rsi": 70.66,
@@ -23224,7 +23224,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": -0.7,
+    "sectorZScore": -0.71,
     "sectorRank": 68,
     "sectorCount": 86,
     "supportResistance": [
@@ -23543,7 +23543,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2045357,
-    "avgVolume": 3700172,
+    "avgVolume": 3699363,
     "fiftyTwoWeekHigh": 91.85,
     "fiftyTwoWeekLow": 67.12,
     "rsi": 72.8,
@@ -23727,7 +23727,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": -0.24,
+    "sectorZScore": -0.23,
     "sectorRank": 25,
     "sectorCount": 45,
     "supportResistance": [
@@ -24046,7 +24046,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 7333678,
-    "avgVolume": 8635863,
+    "avgVolume": 8672845,
     "fiftyTwoWeekHigh": 65.78,
     "fiftyTwoWeekLow": 33.6,
     "rsi": 76.53,
@@ -24553,7 +24553,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 9571437,
-    "avgVolume": 13400347,
+    "avgVolume": 13406408,
     "fiftyTwoWeekHigh": 33.35,
     "fiftyTwoWeekLow": 23.94,
     "rsi": 80.54,
@@ -24719,7 +24719,7 @@
     "heldPercentInstitutions": 0.69748,
     "institutionsCount": 2151,
     "shortPercentOfFloat": 0.0276,
-    "targetMeanPrice": 32.14286,
+    "targetMeanPrice": 32.38095,
     "freeCashflow": 455875008,
     "totalRevenue": 16936999936,
     "totalDebt": 32355000320,
@@ -24744,7 +24744,7 @@
       "rsAbove70": true,
       "passed": 7
     },
-    "sectorZScore": -0.25,
+    "sectorZScore": -0.24,
     "sectorRank": 19,
     "sectorCount": 30,
     "supportResistance": [
@@ -25058,7 +25058,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4364660,
-    "avgVolume": 7305021,
+    "avgVolume": 7338245,
     "fiftyTwoWeekHigh": 75.59,
     "fiftyTwoWeekLow": 51.58,
     "rsi": 79.41,
@@ -25559,7 +25559,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 14186735,
-    "avgVolume": 6659634,
+    "avgVolume": 6651886,
     "fiftyTwoWeekHigh": 67.57,
     "fiftyTwoWeekLow": 48.07,
     "rsi": 51.01,
@@ -26057,7 +26057,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3088441,
-    "avgVolume": 3908855,
+    "avgVolume": 3915700,
     "fiftyTwoWeekHigh": 80.225,
     "fiftyTwoWeekLow": 53.4,
     "rsi": 74.18,
@@ -26089,7 +26089,7 @@
     "factorGrades": {
       "value": "B-",
       "growth": "C",
-      "profitability": "C",
+      "profitability": "C+",
       "momentum": "B",
       "safety": "B+",
       "overall": "B-"
@@ -26556,7 +26556,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 46506316,
-    "avgVolume": 25283290,
+    "avgVolume": 25325388,
     "fiftyTwoWeekHigh": 22.17,
     "fiftyTwoWeekLow": 6.52,
     "rsi": 48.49,
@@ -26588,7 +26588,7 @@
     "factorGrades": {
       "value": "C+",
       "growth": "C",
-      "profitability": "D",
+      "profitability": "C-",
       "momentum": "D",
       "safety": "A+",
       "overall": "C+"
@@ -26674,32 +26674,32 @@
       "riskInverse": 35,
       "composite": 33
     },
-    "priceToBook": 9.024135,
+    "priceToBook": 7.839563,
     "pegRatio": null,
-    "enterpriseValue": 3508345856,
-    "profitMargins": -2.10683,
-    "grossMargins": 0.39745998,
-    "operatingMargins": -1.08792,
-    "returnOnEquity": -0.89946,
-    "returnOnAssets": -0.18135001,
-    "debtToEquity": 1.208,
-    "currentRatio": 5.149,
+    "enterpriseValue": 3390135552,
+    "profitMargins": -0.08291,
+    "grossMargins": 0.42358002,
+    "operatingMargins": -0.76387,
+    "returnOnEquity": -0.043330003,
+    "returnOnAssets": -0.18757999,
+    "debtToEquity": 0.908,
+    "currentRatio": 4.588,
     "dividendYield": null,
     "trailingEps": -0.9,
     "forwardEps": 0,
-    "bookValue": 0.953,
+    "bookValue": 1.097,
     "sharesOutstanding": 387560453,
     "heldPercentInsiders": 0.01197,
-    "heldPercentInstitutions": 0.47006,
+    "heldPercentInstitutions": 0.47004002,
     "institutionsCount": 580,
     "shortPercentOfFloat": 0.3502,
-    "targetMeanPrice": 16.07143,
-    "freeCashflow": -32499624,
-    "totalRevenue": 148404000,
-    "totalDebt": 4821000,
-    "ebitda": -151220992,
-    "totalCash": 268936000,
-    "operatingCashflow": -109459000,
+    "targetMeanPrice": 15.28571,
+    "freeCashflow": -102716128,
+    "totalRevenue": 168920000,
+    "totalDebt": 4213000,
+    "ebitda": -152268992,
+    "totalCash": 248490000,
+    "operatingCashflow": -98222000,
     "averageAnalystRating": "1.5 - Strong Buy",
     "rsPercentile": 12,
     "fiftyTwoWeekRangePercent": 13,
@@ -27024,7 +27024,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 919908,
-    "avgVolume": 804147,
+    "avgVolume": 806670,
     "fiftyTwoWeekHigh": 303.12,
     "fiftyTwoWeekLow": 200.88,
     "rsi": 74.38,
@@ -27215,7 +27215,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 0.05,
+    "sectorZScore": 0.04,
     "sectorRank": 47,
     "sectorCount": 83,
     "supportResistance": [
@@ -27533,7 +27533,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 5124908,
-    "avgVolume": 4264604,
+    "avgVolume": 4292395,
     "fiftyTwoWeekHigh": 39.49,
     "fiftyTwoWeekLow": 28.84,
     "rsi": 41.22,
@@ -27664,7 +27664,7 @@
     "heldPercentInstitutions": 0.92756,
     "institutionsCount": 711,
     "shortPercentOfFloat": 0.0297,
-    "targetMeanPrice": 35.64286,
+    "targetMeanPrice": 35.625,
     "freeCashflow": 719992512,
     "totalRevenue": 1850233984,
     "totalDebt": 5112930816,
@@ -27689,7 +27689,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -1.5,
+    "sectorZScore": -1.49,
     "sectorRank": 37,
     "sectorCount": 39,
     "supportResistance": [
@@ -28009,7 +28009,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 5151988,
-    "avgVolume": 6591729,
+    "avgVolume": 6607163,
     "fiftyTwoWeekHigh": 35.799,
     "fiftyTwoWeekLow": 25.21,
     "rsi": 48.6,
@@ -28140,14 +28140,14 @@
     "heldPercentInstitutions": 1.02949,
     "institutionsCount": 898,
     "shortPercentOfFloat": 0.034,
-    "targetMeanPrice": 31.95455,
+    "targetMeanPrice": 31.90476,
     "freeCashflow": 1086718208,
     "totalRevenue": 2717689088,
     "totalDebt": 8431642112,
     "ebitda": 1490493952,
     "totalCash": 144324992,
     "operatingCashflow": 1206230016,
-    "averageAnalystRating": "2.2 - Buy",
+    "averageAnalystRating": "2.3 - Buy",
     "rsPercentile": 18,
     "fiftyTwoWeekRangePercent": 11,
     "weeklyHighLowRange": 0.0928853933729509,
@@ -28165,7 +28165,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.6,
+    "sectorZScore": -1.59,
     "sectorRank": 38,
     "sectorCount": 39,
     "supportResistance": [
@@ -28496,7 +28496,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3534376,
-    "avgVolume": 2222555,
+    "avgVolume": 2235170,
     "fiftyTwoWeekHigh": 79.33,
     "fiftyTwoWeekLow": 54.22,
     "rsi": 34.74,
@@ -28627,7 +28627,7 @@
     "heldPercentInstitutions": 1.16972,
     "institutionsCount": 905,
     "shortPercentOfFloat": 0.098500006,
-    "targetMeanPrice": 74.65,
+    "targetMeanPrice": 74.35,
     "freeCashflow": null,
     "totalRevenue": 3362336000,
     "totalDebt": 17358735360,
@@ -28977,7 +28977,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2613898,
-    "avgVolume": 2846139,
+    "avgVolume": 2845950,
     "fiftyTwoWeekHigh": 107.77,
     "fiftyTwoWeekLow": 10.42,
     "rsi": 36.22,
@@ -29133,7 +29133,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -1.78,
+    "sectorZScore": -1.79,
     "sectorRank": 61,
     "sectorCount": 63,
     "supportResistance": [
@@ -29434,7 +29434,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 13594611,
-    "avgVolume": 2420231,
+    "avgVolume": 2434470,
     "fiftyTwoWeekHigh": 544.93,
     "fiftyTwoWeekLow": 91.99,
     "rsi": 30.18,
@@ -29572,14 +29572,14 @@
     "heldPercentInstitutions": 0.95956004,
     "institutionsCount": 668,
     "shortPercentOfFloat": 0.2442,
-    "targetMeanPrice": 144.55353,
+    "targetMeanPrice": 110.73,
     "freeCashflow": 156937248,
     "totalRevenue": 1037588992,
     "totalDebt": 93779000,
     "ebitda": 149960992,
     "totalCash": 1140466944,
     "operatingCashflow": 387823008,
-    "averageAnalystRating": "2.6 - Hold",
+    "averageAnalystRating": "2.7 - Hold",
     "rsPercentile": 1,
     "fiftyTwoWeekRangePercent": 2,
     "weeklyHighLowRange": 0.5443069911239171,
@@ -29900,7 +29900,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3704918,
-    "avgVolume": 5357337,
+    "avgVolume": 5370756,
     "fiftyTwoWeekHigh": 64.42,
     "fiftyTwoWeekLow": 23.45,
     "rsi": 36.3,
@@ -30031,7 +30031,7 @@
     "heldPercentInstitutions": 0.92226,
     "institutionsCount": 575,
     "shortPercentOfFloat": 0.0785,
-    "targetMeanPrice": 48.5,
+    "targetMeanPrice": 47.57692,
     "freeCashflow": 291952864,
     "totalRevenue": 906252992,
     "totalDebt": 0,
@@ -30056,7 +30056,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.74,
+    "sectorZScore": -1.73,
     "sectorRank": 127,
     "sectorCount": 128,
     "supportResistance": [
@@ -30351,7 +30351,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2999040,
-    "avgVolume": 3253355,
+    "avgVolume": 3269181,
     "fiftyTwoWeekHigh": 365.9,
     "fiftyTwoWeekLow": 49.21,
     "rsi": 72.52,
@@ -30543,7 +30543,7 @@
       "passed": 8
     },
     "sectorZScore": 0.92,
-    "sectorRank": 27,
+    "sectorRank": 28,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -30830,7 +30830,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2636894,
-    "avgVolume": 1914711,
+    "avgVolume": 1930080,
     "fiftyTwoWeekHigh": 68.1,
     "fiftyTwoWeekLow": 29.835,
     "rsi": 45.73,
@@ -30994,7 +30994,7 @@
       "passed": 2
     },
     "sectorZScore": -0.64,
-    "sectorRank": 93,
+    "sectorRank": 92,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -31321,7 +31321,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2286147,
-    "avgVolume": 2299521,
+    "avgVolume": 2323743,
     "fiftyTwoWeekHigh": 38.83,
     "fiftyTwoWeekLow": 17.28,
     "rsi": 38.89,
@@ -31485,7 +31485,7 @@
       "passed": 0
     },
     "sectorZScore": -1.09,
-    "sectorRank": 114,
+    "sectorRank": 112,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -31780,7 +31780,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1545161,
-    "avgVolume": 1404840,
+    "avgVolume": 1409163,
     "fiftyTwoWeekHigh": 30.95,
     "fiftyTwoWeekLow": 5.92,
     "rsi": 17.97,
@@ -32001,13 +32001,13 @@
       "Cybersecurity"
     ],
     "predictiveScore": {
-      "predicted": 26,
+      "predicted": 25,
       "direction": "stable",
       "confidence": "low",
-      "slope": 0.286,
-      "r2": 0.211,
+      "slope": 0.179,
+      "r2": 0.074,
       "factors": {
-        "trendMomentum": -0.971,
+        "trendMomentum": -1,
         "meanReversion": 0.17,
         "technicalSupport": -0.067
       }
@@ -32237,7 +32237,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 31638211,
-    "avgVolume": 5310960,
+    "avgVolume": 5346365,
     "fiftyTwoWeekHigh": 57.72,
     "fiftyTwoWeekLow": 32.83,
     "rsi": 44.44,
@@ -32704,7 +32704,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1567964,
-    "avgVolume": 2076762,
+    "avgVolume": 2085676,
     "fiftyTwoWeekHigh": 82.315,
     "fiftyTwoWeekLow": 46.08,
     "rsi": 47.87,
@@ -32868,7 +32868,7 @@
       "passed": 0
     },
     "sectorZScore": -1.09,
-    "sectorRank": 115,
+    "sectorRank": 113,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -33167,7 +33167,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 735301,
-    "avgVolume": 584672,
+    "avgVolume": 588676,
     "fiftyTwoWeekHigh": 155.47,
     "fiftyTwoWeekLow": 85.14,
     "rsi": 27.8,
@@ -33397,8 +33397,8 @@
       "predicted": 29,
       "direction": "stable",
       "confidence": "low",
-      "slope": -1.357,
-      "r2": 0.762,
+      "slope": -1.464,
+      "r2": 0.814,
       "factors": {
         "trendMomentum": -1,
         "meanReversion": 0.13,
@@ -33630,7 +33630,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 969219,
-    "avgVolume": 1187916,
+    "avgVolume": 1182231,
     "fiftyTwoWeekHigh": 229.33,
     "fiftyTwoWeekLow": 52.38,
     "rsi": 70.9,
@@ -33814,7 +33814,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 0.78,
+    "sectorZScore": 0.79,
     "sectorRank": 27,
     "sectorCount": 94,
     "supportResistance": [
@@ -34107,7 +34107,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2271192,
-    "avgVolume": 2480003,
+    "avgVolume": 2475560,
     "fiftyTwoWeekHigh": 116.46,
     "fiftyTwoWeekLow": 81.33,
     "rsi": 70.73,
@@ -34284,7 +34284,7 @@
       "rsAbove70": false,
       "passed": 5
     },
-    "sectorZScore": -0.34,
+    "sectorZScore": -0.33,
     "sectorRank": 28,
     "sectorCount": 45,
     "supportResistance": [
@@ -34618,7 +34618,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2596922,
-    "avgVolume": 2899606,
+    "avgVolume": 2918360,
     "fiftyTwoWeekHigh": 22.57,
     "fiftyTwoWeekLow": 15.075,
     "rsi": 83.81,
@@ -34784,7 +34784,7 @@
     "heldPercentInstitutions": 0.59781,
     "institutionsCount": 630,
     "shortPercentOfFloat": 0.0352,
-    "targetMeanPrice": 20.57143,
+    "targetMeanPrice": 20.85714,
     "freeCashflow": 362116864,
     "totalRevenue": 1259097984,
     "totalDebt": 3222530048,
@@ -34809,7 +34809,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": -0.25,
+    "sectorZScore": -0.24,
     "sectorRank": 20,
     "sectorCount": 30,
     "supportResistance": [
@@ -35129,12 +35129,12 @@
     "marketCap": 2304208640,
     "capCategory": "Mid",
     "pe": 60.323948,
-    "forwardPe": 21.350628,
+    "forwardPe": 21.426893,
     "earningsGrowth": null,
     "revenueGrowth": null,
     "beta": null,
     "volume": 1109274,
-    "avgVolume": 1353296,
+    "avgVolume": 1333950,
     "fiftyTwoWeekHigh": 43.16,
     "fiftyTwoWeekLow": 20.48,
     "rsi": 74.79,
@@ -35293,14 +35293,14 @@
     "currentRatio": 4.168,
     "dividendYield": null,
     "trailingEps": 0.71,
-    "forwardEps": 2.00603,
+    "forwardEps": 1.99889,
     "bookValue": 6.266,
     "sharesOutstanding": 53798934,
     "heldPercentInsiders": 0.19653,
     "heldPercentInstitutions": 0.89562,
     "institutionsCount": 321,
     "shortPercentOfFloat": 0.1468,
-    "targetMeanPrice": 44.90909,
+    "targetMeanPrice": 45,
     "freeCashflow": 44832752,
     "totalRevenue": 410212000,
     "totalDebt": 278611008,
@@ -35325,8 +35325,8 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 0.34,
-    "sectorRank": 11,
+    "sectorZScore": 0.33,
+    "sectorRank": 12,
     "sectorCount": 32,
     "supportResistance": [
       {
@@ -35611,7 +35611,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 23815061,
-    "avgVolume": 11143601,
+    "avgVolume": 11066157,
     "fiftyTwoWeekHigh": 30.79,
     "fiftyTwoWeekLow": 22.699229999999996,
     "rsi": 76.27,
@@ -35777,7 +35777,7 @@
     "heldPercentInstitutions": 0.35138,
     "institutionsCount": 810,
     "shortPercentOfFloat": null,
-    "targetMeanPrice": 31.285579,
+    "targetMeanPrice": 31.275303,
     "freeCashflow": 21636249600,
     "totalRevenue": 266886004736,
     "totalDebt": 75643002880,
@@ -36120,7 +36120,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3027657,
-    "avgVolume": 1196041,
+    "avgVolume": 1203643,
     "fiftyTwoWeekHigh": 27.46275,
     "fiftyTwoWeekLow": 16.71,
     "rsi": 72.27,
@@ -36311,7 +36311,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 0.6,
+    "sectorZScore": 0.61,
     "sectorRank": 32,
     "sectorCount": 86,
     "supportResistance": [
@@ -36626,7 +36626,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3899602,
-    "avgVolume": 1410198,
+    "avgVolume": 1418120,
     "fiftyTwoWeekHigh": 14.040000000000001,
     "fiftyTwoWeekLow": 9.322000000000001,
     "rsi": 74,
@@ -36810,7 +36810,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 0.47,
+    "sectorZScore": 0.48,
     "sectorRank": 9,
     "sectorCount": 24,
     "supportResistance": [
@@ -37124,7 +37124,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 7587435,
-    "avgVolume": 5887147,
+    "avgVolume": 5898428,
     "fiftyTwoWeekHigh": 3.7230000000000003,
     "fiftyTwoWeekLow": 2.381,
     "rsi": 72.19,
@@ -37634,7 +37634,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2859991,
-    "avgVolume": 2418564,
+    "avgVolume": 2407110,
     "fiftyTwoWeekHigh": 14.415000000000001,
     "fiftyTwoWeekLow": 9.378,
     "rsi": 70.31,
@@ -37786,7 +37786,7 @@
     "heldPercentInstitutions": 0.69987,
     "institutionsCount": 416,
     "shortPercentOfFloat": null,
-    "targetMeanPrice": 14.162880000000001,
+    "targetMeanPrice": 14.163071,
     "freeCashflow": 700875008,
     "totalRevenue": 5944000000,
     "totalDebt": 3454000128,
@@ -37811,7 +37811,7 @@
       "rsAbove70": false,
       "passed": 6
     },
-    "sectorZScore": -0.27,
+    "sectorZScore": -0.28,
     "sectorRank": 42,
     "sectorCount": 63,
     "supportResistance": [
@@ -38142,7 +38142,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 6909032,
-    "avgVolume": 5886239,
+    "avgVolume": 5955000,
     "fiftyTwoWeekHigh": 12.77,
     "fiftyTwoWeekLow": 7.5,
     "rsi": 77.36,
@@ -38308,7 +38308,7 @@
     "heldPercentInstitutions": 0.82407,
     "institutionsCount": 268,
     "shortPercentOfFloat": null,
-    "targetMeanPrice": 12.544341,
+    "targetMeanPrice": 12.54451,
     "freeCashflow": -497300000,
     "totalRevenue": 5909400064,
     "totalDebt": 633500032,
@@ -38653,7 +38653,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1357262,
-    "avgVolume": 801394,
+    "avgVolume": 793504,
     "fiftyTwoWeekHigh": 53.6,
     "fiftyTwoWeekLow": 15.33,
     "rsi": 72.66,
@@ -38819,7 +38819,7 @@
     "heldPercentInstitutions": 0.62431,
     "institutionsCount": 308,
     "shortPercentOfFloat": null,
-    "targetMeanPrice": 52.052924999999995,
+    "targetMeanPrice": 51.822250000000004,
     "freeCashflow": 1090349952,
     "totalRevenue": 3900499968,
     "totalDebt": 803400000,
@@ -38884,7 +38884,7 @@
         },
         {
           "year": 2023,
-          "totalDPS": 0.6007
+          "totalDPS": 0.6008
         },
         {
           "year": 2024,
@@ -39160,7 +39160,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 5555001,
-    "avgVolume": 4164585,
+    "avgVolume": 4210891,
     "fiftyTwoWeekHigh": 1.6280000000000001,
     "fiftyTwoWeekLow": 0.8395,
     "rsi": 77.58,
@@ -39356,7 +39356,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 1.63,
+    "sectorZScore": 1.64,
     "sectorRank": 5,
     "sectorCount": 94,
     "supportResistance": [
@@ -39663,7 +39663,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 684710,
-    "avgVolume": 410390,
+    "avgVolume": 412145,
     "fiftyTwoWeekHigh": 11.66,
     "fiftyTwoWeekLow": 5.855,
     "rsi": 56.23,
@@ -39819,7 +39819,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -0.39,
+    "sectorZScore": -0.38,
     "sectorRank": 60,
     "sectorCount": 94,
     "supportResistance": [
@@ -40151,7 +40151,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2650468,
-    "avgVolume": 1573690,
+    "avgVolume": 1587311,
     "fiftyTwoWeekHigh": 9.81,
     "fiftyTwoWeekLow": 6.47102,
     "rsi": 75.92,
@@ -40683,7 +40683,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 13309898,
-    "avgVolume": 1692546,
+    "avgVolume": 1713083,
     "fiftyTwoWeekHigh": 3.17004,
     "fiftyTwoWeekLow": 1.1300000000000001,
     "rsi": 84.74,
@@ -40863,7 +40863,7 @@
     "ebitda": 80400000,
     "totalCash": 26700000,
     "operatingCashflow": 54600000,
-    "averageAnalystRating": "1.3 - Strong Buy",
+    "averageAnalystRating": "1.4 - Strong Buy",
     "rsPercentile": 96,
     "fiftyTwoWeekRangePercent": 96,
     "weeklyHighLowRange": 0.3905191873589166,
@@ -40881,8 +40881,8 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 1.31,
-    "sectorRank": 8,
+    "sectorZScore": 1.32,
+    "sectorRank": 7,
     "sectorCount": 86,
     "supportResistance": [
       {
@@ -41203,7 +41203,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4719724,
-    "avgVolume": 2960174,
+    "avgVolume": 2965249,
     "fiftyTwoWeekHigh": 0.892,
     "fiftyTwoWeekLow": 0.6829999999999999,
     "rsi": 73.64,
@@ -41367,7 +41367,7 @@
     "ebitda": null,
     "totalCash": 103372000,
     "operatingCashflow": 66134000,
-    "averageAnalystRating": "2.2 - Buy",
+    "averageAnalystRating": null,
     "rsPercentile": 66,
     "fiftyTwoWeekRangePercent": 97,
     "weeklyHighLowRange": 0.0636253928954862,
@@ -41385,7 +41385,7 @@
       "rsAbove70": false,
       "passed": 5
     },
-    "sectorZScore": 0.48,
+    "sectorZScore": 0.49,
     "sectorRank": 15,
     "sectorCount": 39,
     "supportResistance": [
@@ -41729,7 +41729,7 @@
     "revenueGrowth": 0.2378,
     "beta": 1.3,
     "volume": 12309407,
-    "avgVolume": 15656614,
+    "avgVolume": 15700393,
     "fiftyTwoWeekHigh": 796.25,
     "fiftyTwoWeekLow": 479.8,
     "rsi": 47.22,
@@ -41824,11 +41824,11 @@
     },
     "bearishScore": 6,
     "bullishScore": 0,
-    "sentimentAvg": 0.1632,
+    "sentimentAvg": 0.2133,
     "score": {
       "priceMomentum": 44,
       "technicalSignals": 13,
-      "newsSentiment": 58,
+      "newsSentiment": 61,
       "fundamentals": 60,
       "volumeTrend": 22,
       "riskInverse": 46,
@@ -42191,7 +42191,7 @@
     "revenueGrowth": 0.1209,
     "beta": 1.28,
     "volume": 13157947,
-    "avgVolume": 11032198,
+    "avgVolume": 11122156,
     "fiftyTwoWeekHigh": 303.07,
     "fiftyTwoWeekLow": 174.57,
     "rsi": 44.28,
@@ -42293,15 +42293,15 @@
     },
     "bearishScore": 6,
     "bullishScore": 2,
-    "sentimentAvg": -0.118,
+    "sentimentAvg": -0.019999999999999997,
     "score": {
       "priceMomentum": 31,
       "technicalSignals": 25,
-      "newsSentiment": 44,
+      "newsSentiment": 49,
       "fundamentals": 65,
       "volumeTrend": 20,
       "riskInverse": 46,
-      "composite": 37
+      "composite": 38
     },
     "priceToBook": 3.0795376,
     "pegRatio": null,
@@ -42322,7 +42322,7 @@
     "heldPercentInstitutions": 0.84253,
     "institutionsCount": 3950,
     "shortPercentOfFloat": 0.021,
-    "targetMeanPrice": 285.27725,
+    "targetMeanPrice": 283.5604,
     "freeCashflow": 16860125184,
     "totalRevenue": 41524998144,
     "totalDebt": 17176000512,
@@ -42347,8 +42347,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -0.54,
-    "sectorRank": 80,
+    "sectorZScore": -0.45,
+    "sectorRank": 75,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -42425,14 +42425,14 @@
       "Cloud Computing"
     ],
     "predictiveScore": {
-      "predicted": 29,
+      "predicted": 30,
       "direction": "declining",
       "confidence": "low",
       "slope": -1.143,
       "r2": 0.327,
       "factors": {
         "trendMomentum": -1,
-        "meanReversion": 0.13,
+        "meanReversion": 0.12,
         "technicalSupport": -0.033
       }
     },
@@ -42661,7 +42661,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2907498,
-    "avgVolume": 4043224,
+    "avgVolume": 4075366,
     "fiftyTwoWeekHigh": 260,
     "fiftyTwoWeekLow": 89.42,
     "rsi": 45.13,
@@ -42756,15 +42756,15 @@
     },
     "bearishScore": 6,
     "bullishScore": 0,
-    "sentimentAvg": 0.1464,
+    "sentimentAvg": -0.0607,
     "score": {
       "priceMomentum": 34,
       "technicalSignals": 13,
-      "newsSentiment": 57,
+      "newsSentiment": 47,
       "fundamentals": 50,
       "volumeTrend": 6,
       "riskInverse": 37,
-      "composite": 32
+      "composite": 30
     },
     "priceToBook": 41.521584,
     "pegRatio": null,
@@ -42810,8 +42810,8 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -1,
-    "sectorRank": 106,
+    "sectorZScore": -1.18,
+    "sectorRank": 115,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -42881,14 +42881,14 @@
       "Cybersecurity"
     ],
     "predictiveScore": {
-      "predicted": 40,
+      "predicted": 38,
       "direction": "stable",
       "confidence": "low",
       "slope": -1.536,
       "r2": 0.419,
       "factors": {
         "trendMomentum": 1,
-        "meanReversion": 0.18,
+        "meanReversion": 0.2,
         "technicalSupport": -0.233
       }
     },
@@ -43117,7 +43117,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3036624,
-    "avgVolume": 3648819,
+    "avgVolume": 3672516,
     "fiftyTwoWeekHigh": 601.77,
     "fiftyTwoWeekLow": 465.59,
     "rsi": 44.04,
@@ -43212,15 +43212,15 @@
     },
     "bearishScore": 6,
     "bullishScore": 0,
-    "sentimentAvg": -0.24580000000000002,
+    "sentimentAvg": -0.30979999999999996,
     "score": {
       "priceMomentum": 41,
       "technicalSignals": 13,
-      "newsSentiment": 38,
+      "newsSentiment": 35,
       "fundamentals": 52,
       "volumeTrend": 16,
       "riskInverse": 61,
-      "composite": 35
+      "composite": 34
     },
     "priceToBook": 59.765427,
     "pegRatio": null,
@@ -43241,7 +43241,7 @@
     "heldPercentInstitutions": 0.90982,
     "institutionsCount": 4844,
     "shortPercentOfFloat": 0.0081,
-    "targetMeanPrice": 659.37146,
+    "targetMeanPrice": 660.2286,
     "freeCashflow": 16269375488,
     "totalRevenue": 32790999040,
     "totalDebt": 19832999936,
@@ -43266,7 +43266,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -2.69,
+    "sectorZScore": -2.83,
     "sectorRank": 83,
     "sectorCount": 83,
     "supportResistance": [
@@ -43359,14 +43359,14 @@
       "Fintech"
     ],
     "predictiveScore": {
-      "predicted": 26,
+      "predicted": 34,
       "direction": "stable",
       "confidence": "low",
-      "slope": -0.75,
-      "r2": 0.471,
+      "slope": -0.643,
+      "r2": 0.389,
       "factors": {
-        "trendMomentum": -1,
-        "meanReversion": 0.15,
+        "trendMomentum": 0.086,
+        "meanReversion": 0.16,
         "technicalSupport": -0.233
       }
     },
@@ -43595,7 +43595,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 14699366,
-    "avgVolume": 18269844,
+    "avgVolume": 18373553,
     "fiftyTwoWeekHigh": 80.96,
     "fiftyTwoWeekLow": 52.28,
     "rsi": 44.89,
@@ -43690,7 +43690,7 @@
     },
     "bearishScore": 6,
     "bullishScore": 0,
-    "sentimentAvg": 0.015999999999999997,
+    "sentimentAvg": 0.0223,
     "score": {
       "priceMomentum": 38,
       "technicalSignals": 13,
@@ -44079,7 +44079,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4528713,
-    "avgVolume": 4601644,
+    "avgVolume": 4609680,
     "fiftyTwoWeekHigh": 130.52,
     "fiftyTwoWeekLow": 101.59,
     "rsi": 65.87,
@@ -44195,7 +44195,7 @@
     },
     "bearishScore": 6,
     "bullishScore": 5,
-    "sentimentAvg": 0.2244,
+    "sentimentAvg": 0.22480000000000003,
     "score": {
       "priceMomentum": 58,
       "technicalSignals": 44,
@@ -44344,8 +44344,8 @@
       "predicted": 47,
       "direction": "stable",
       "confidence": "low",
-      "slope": 0.179,
-      "r2": 0.02,
+      "slope": -0.036,
+      "r2": 0.001,
       "factors": {
         "trendMomentum": -1,
         "meanReversion": -0.05,
@@ -44577,7 +44577,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 6336696,
-    "avgVolume": 6635303,
+    "avgVolume": 6677678,
     "fiftyTwoWeekHigh": 110.67,
     "fiftyTwoWeekLow": 70.12,
     "rsi": 46.96,
@@ -44727,7 +44727,7 @@
       "passed": 0
     },
     "sectorZScore": -0.45,
-    "sectorRank": 78,
+    "sectorRank": 77,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -45024,7 +45024,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3619086,
-    "avgVolume": 3043440,
+    "avgVolume": 3024490,
     "fiftyTwoWeekHigh": 127.567,
     "fiftyTwoWeekLow": 68.77,
     "rsi": 35.51,
@@ -45148,7 +45148,7 @@
     "heldPercentInstitutions": 0.91874003,
     "institutionsCount": 1062,
     "shortPercentOfFloat": 0.048800003,
-    "targetMeanPrice": 110.64625,
+    "targetMeanPrice": 110.27125,
     "freeCashflow": 962750016,
     "totalRevenue": 2840000000,
     "totalDebt": 423000000,
@@ -45243,8 +45243,8 @@
       "predicted": 19,
       "direction": "declining",
       "confidence": "low",
-      "slope": -0.857,
-      "r2": 0.264,
+      "slope": -0.964,
+      "r2": 0.314,
       "factors": {
         "trendMomentum": -1,
         "meanReversion": 0.23,
@@ -45476,7 +45476,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 579900,
-    "avgVolume": 571798,
+    "avgVolume": 572351,
     "fiftyTwoWeekHigh": 2645.22,
     "fiftyTwoWeekLow": 1654.24,
     "rsi": 30.41,
@@ -45614,7 +45614,7 @@
     "ebitda": 4019000064,
     "totalCash": 6312999936,
     "operatingCashflow": 12115999744,
-    "averageAnalystRating": "1.4 - Strong Buy",
+    "averageAnalystRating": "1.3 - Strong Buy",
     "rsPercentile": 13,
     "fiftyTwoWeekRangePercent": 10,
     "weeklyHighLowRange": 0.3182987877182771,
@@ -45632,7 +45632,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.77,
+    "sectorZScore": -1.76,
     "sectorRank": 91,
     "sectorCount": 94,
     "supportResistance": [
@@ -45704,8 +45704,8 @@
       "predicted": 25,
       "direction": "stable",
       "confidence": "low",
-      "slope": 0.321,
-      "r2": 0.01,
+      "slope": 0.214,
+      "r2": 0.004,
       "factors": {
         "trendMomentum": -1,
         "meanReversion": 0.17,
@@ -45937,7 +45937,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 5557043,
-    "avgVolume": 3760296,
+    "avgVolume": 3782263,
     "fiftyTwoWeekHigh": 87.39,
     "fiftyTwoWeekLow": 65.21,
     "rsi": 35.1,
@@ -46086,8 +46086,8 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": -1.69,
-    "sectorRank": 76,
+    "sectorZScore": -1.7,
+    "sectorRank": 77,
     "sectorCount": 83,
     "supportResistance": [
       {
@@ -46424,7 +46424,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 8515470,
-    "avgVolume": 9152124,
+    "avgVolume": 9163691,
     "fiftyTwoWeekHigh": 63.85,
     "fiftyTwoWeekLow": 33.81,
     "rsi": 48.96,
@@ -46553,7 +46553,7 @@
     "heldPercentInstitutions": 0.85932,
     "institutionsCount": 1591,
     "shortPercentOfFloat": 0.0432,
-    "targetMeanPrice": 43.11111,
+    "targetMeanPrice": 42.66667,
     "freeCashflow": 1035371520,
     "totalRevenue": 4613516800,
     "totalDebt": 96136000,
@@ -46578,7 +46578,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -2.12,
+    "sectorZScore": -2.14,
     "sectorRank": 85,
     "sectorCount": 86,
     "supportResistance": [
@@ -46876,7 +46876,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 20752997,
-    "avgVolume": 18028173,
+    "avgVolume": 17993188,
     "fiftyTwoWeekHigh": 58.42,
     "fiftyTwoWeekLow": 29.75,
     "rsi": 46.05,
@@ -47334,7 +47334,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 9989765,
-    "avgVolume": 6072713,
+    "avgVolume": 6097418,
     "fiftyTwoWeekHigh": 108.72,
     "fiftyTwoWeekLow": 85.552,
     "rsi": 48.3,
@@ -47490,7 +47490,7 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -0.92,
+    "sectorZScore": -0.91,
     "sectorRank": 72,
     "sectorCount": 94,
     "supportResistance": [
@@ -47799,7 +47799,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 7835631,
-    "avgVolume": 7876614,
+    "avgVolume": 7915158,
     "fiftyTwoWeekHigh": 67.35,
     "fiftyTwoWeekLow": 42.79,
     "rsi": 45.83,
@@ -47955,7 +47955,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -0.65,
+    "sectorZScore": -0.64,
     "sectorRank": 32,
     "sectorCount": 45,
     "supportResistance": [
@@ -48283,7 +48283,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 32500830,
-    "avgVolume": 34457236,
+    "avgVolume": 34843285,
     "fiftyTwoWeekHigh": 4.08,
     "fiftyTwoWeekLow": 1.12,
     "rsi": 32.43,
@@ -48428,7 +48428,7 @@
     "heldPercentInstitutions": 0.39003,
     "institutionsCount": 321,
     "shortPercentOfFloat": 0.2457,
-    "targetMeanPrice": 1.82,
+    "targetMeanPrice": 1.72,
     "freeCashflow": -114825000,
     "totalRevenue": 4848900096,
     "totalDebt": 8136000000,
@@ -48453,7 +48453,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.47,
+    "sectorZScore": -1.5,
     "sectorRank": 30,
     "sectorCount": 32,
     "supportResistance": [
@@ -48731,7 +48731,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3772926,
-    "avgVolume": 3475209,
+    "avgVolume": 3492745,
     "fiftyTwoWeekHigh": 106.07,
     "fiftyTwoWeekLow": 65.93,
     "rsi": 51.76,
@@ -48880,7 +48880,7 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": -0.05,
+    "sectorZScore": -0.03,
     "sectorRank": 8,
     "sectorCount": 17,
     "supportResistance": [
@@ -49209,7 +49209,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1501898,
-    "avgVolume": 1243262,
+    "avgVolume": 1247636,
     "fiftyTwoWeekHigh": 53.66,
     "fiftyTwoWeekLow": 35.71,
     "rsi": 38.7,
@@ -49354,7 +49354,7 @@
     "ebitda": null,
     "totalCash": 2833820928,
     "operatingCashflow": null,
-    "averageAnalystRating": "2.5 - Buy",
+    "averageAnalystRating": null,
     "rsPercentile": 32,
     "fiftyTwoWeekRangePercent": 60,
     "weeklyHighLowRange": 0.11885074145377834,
@@ -49372,7 +49372,7 @@
       "rsAbove70": false,
       "passed": 4
     },
-    "sectorZScore": -0.95,
+    "sectorZScore": -0.96,
     "sectorRank": 72,
     "sectorCount": 83,
     "supportResistance": [
@@ -49705,7 +49705,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2303667,
-    "avgVolume": 1548500,
+    "avgVolume": 1554474,
     "fiftyTwoWeekHigh": 64.339,
     "fiftyTwoWeekLow": 48.804,
     "rsi": 43.6,
@@ -49861,7 +49861,7 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": -1.82,
+    "sectorZScore": -1.83,
     "sectorRank": 79,
     "sectorCount": 83,
     "supportResistance": [
@@ -50190,7 +50190,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2652535,
-    "avgVolume": 5344359,
+    "avgVolume": 5368361,
     "fiftyTwoWeekHigh": 16.08,
     "fiftyTwoWeekLow": 6.18,
     "rsi": 41.11,
@@ -50314,7 +50314,7 @@
     "heldPercentInstitutions": 0.77895,
     "institutionsCount": 795,
     "shortPercentOfFloat": 0.089899994,
-    "targetMeanPrice": 9.28571,
+    "targetMeanPrice": 9,
     "freeCashflow": 190124992,
     "totalRevenue": 6216000000,
     "totalDebt": 8800000000,
@@ -50673,7 +50673,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2733576,
-    "avgVolume": 3507309,
+    "avgVolume": 3525320,
     "fiftyTwoWeekHigh": 90.9,
     "fiftyTwoWeekLow": 47.93,
     "rsi": 46.55,
@@ -51150,7 +51150,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 811973,
-    "avgVolume": 802488,
+    "avgVolume": 805951,
     "fiftyTwoWeekHigh": 374.74,
     "fiftyTwoWeekLow": 210.67,
     "rsi": 38.39,
@@ -51262,30 +51262,30 @@
       "riskInverse": 50,
       "composite": 40
     },
-    "priceToBook": 7.0504622,
+    "priceToBook": 7.011079,
     "pegRatio": null,
-    "enterpriseValue": 9786429440,
+    "enterpriseValue": 9787525120,
     "profitMargins": 0.07683,
     "grossMargins": 0.29728,
-    "operatingMargins": 0.052950002,
+    "operatingMargins": 0.053239997,
     "returnOnEquity": 0.33058998,
-    "returnOnAssets": 0.103690006,
+    "returnOnAssets": 0.10374,
     "debtToEquity": 129.513,
     "currentRatio": 2.238,
     "dividendYield": 0.022000000000000002,
     "trailingEps": 10.97,
     "forwardEps": 11.8961,
-    "bookValue": 32.222,
+    "bookValue": 32.403,
     "sharesOutstanding": 37249484,
     "heldPercentInsiders": 0.12429,
     "heldPercentInstitutions": 0.9235,
     "institutionsCount": 919,
     "shortPercentOfFloat": 0.1205,
     "targetMeanPrice": 266.0909,
-    "freeCashflow": 202934752,
+    "freeCashflow": 203107872,
     "totalRevenue": 5289396224,
     "totalDebt": 1535031040,
-    "ebitda": 630833984,
+    "ebitda": 631166976,
     "totalCash": 104963000,
     "operatingCashflow": 365849984,
     "averageAnalystRating": "2.4 - Buy",
@@ -51335,7 +51335,7 @@
     "piotroskiDetails": [
       "Positive net income"
     ],
-    "grahamNumber": 89.18,
+    "grahamNumber": 89.43,
     "buffettScore": 1,
     "buffettDetails": [
       "Consistently profitable"
@@ -51631,7 +51631,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3657084,
-    "avgVolume": 1869104,
+    "avgVolume": 1869488,
     "fiftyTwoWeekHigh": 121.48,
     "fiftyTwoWeekLow": 93.3,
     "rsi": 66.1,
@@ -51781,7 +51781,7 @@
     "heldPercentInstitutions": 0.95324,
     "institutionsCount": 1125,
     "shortPercentOfFloat": 0.0645,
-    "targetMeanPrice": 123.4375,
+    "targetMeanPrice": 125,
     "freeCashflow": 919324992,
     "totalRevenue": 8926600192,
     "totalDebt": 7328200192,
@@ -51806,7 +51806,7 @@
       "rsAbove70": false,
       "passed": 4
     },
-    "sectorZScore": -0.24,
+    "sectorZScore": -0.23,
     "sectorRank": 27,
     "sectorCount": 45,
     "supportResistance": [
@@ -52143,7 +52143,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2595831,
-    "avgVolume": 2022381,
+    "avgVolume": 2025120,
     "fiftyTwoWeekHigh": 151.03,
     "fiftyTwoWeekLow": 94.35,
     "rsi": 36.58,
@@ -52299,7 +52299,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -2,
+    "sectorZScore": -2.02,
     "sectorRank": 84,
     "sectorCount": 86,
     "supportResistance": [
@@ -52602,7 +52602,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1896577,
-    "avgVolume": 4428636,
+    "avgVolume": 4439006,
     "fiftyTwoWeekHigh": 44.78,
     "fiftyTwoWeekLow": 12.17,
     "rsi": 48.73,
@@ -52726,7 +52726,7 @@
     "heldPercentInstitutions": 0.90825,
     "institutionsCount": 590,
     "shortPercentOfFloat": 0.1499,
-    "targetMeanPrice": 18.25,
+    "targetMeanPrice": 18.3125,
     "freeCashflow": -35175000,
     "totalRevenue": 3467399936,
     "totalDebt": 4074899968,
@@ -53080,7 +53080,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3808598,
-    "avgVolume": 2200420,
+    "avgVolume": 2219259,
     "fiftyTwoWeekHigh": 12.25,
     "fiftyTwoWeekLow": 7.930000000000001,
     "rsi": 45.93,
@@ -53241,7 +53241,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -0.11,
+    "sectorZScore": -0.1,
     "sectorRank": 11,
     "sectorCount": 17,
     "supportResistance": [
@@ -53542,7 +53542,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 978694,
-    "avgVolume": 847801,
+    "avgVolume": 841173,
     "fiftyTwoWeekHigh": 33.02,
     "fiftyTwoWeekLow": 22.53,
     "rsi": 38.92,
@@ -54022,7 +54022,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 6451944,
-    "avgVolume": 6097765,
+    "avgVolume": 6151591,
     "fiftyTwoWeekHigh": 3.5,
     "fiftyTwoWeekLow": 1.54,
     "rsi": 61.4,
@@ -54177,7 +54177,7 @@
       "passed": 1
     },
     "sectorZScore": -0.17,
-    "sectorRank": 53,
+    "sectorRank": 52,
     "sectorCount": 94,
     "supportResistance": [
       {
@@ -54506,7 +54506,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2089992,
-    "avgVolume": 1512116,
+    "avgVolume": 1487741,
     "fiftyTwoWeekHigh": 12.965,
     "fiftyTwoWeekLow": 8.016,
     "rsi": 45.51,
@@ -54989,7 +54989,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3801916,
-    "avgVolume": 3132658,
+    "avgVolume": 3161938,
     "fiftyTwoWeekHigh": 3.9789999999999996,
     "fiftyTwoWeekLow": 1.6585,
     "rsi": 35.96,
@@ -55451,7 +55451,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 5842015,
-    "avgVolume": 2272492,
+    "avgVolume": 2262366,
     "fiftyTwoWeekHigh": 13.96,
     "fiftyTwoWeekLow": 8.748,
     "rsi": 56.76,
@@ -55483,7 +55483,7 @@
     "factorGrades": {
       "value": "B-",
       "growth": "C",
-      "profitability": "B-",
+      "profitability": "C+",
       "momentum": "C-",
       "safety": "B+",
       "overall": "B-"
@@ -55570,32 +55570,32 @@
       "riskInverse": 60,
       "composite": 51
     },
-    "priceToBook": 176.88905,
+    "priceToBook": 168.91939,
     "pegRatio": null,
-    "enterpriseValue": 7520076800,
-    "profitMargins": 0.12528,
-    "grossMargins": 0.51449,
-    "operatingMargins": 0.14286,
-    "returnOnEquity": 0.11946999,
-    "returnOnAssets": 0.055570003,
-    "debtToEquity": 41.664,
-    "currentRatio": 2.312,
-    "dividendYield": 0.0254,
+    "enterpriseValue": 7327934464,
+    "profitMargins": 0.09365,
+    "grossMargins": 0.51999,
+    "operatingMargins": 0.14016,
+    "returnOnEquity": 0.08708999,
+    "returnOnAssets": 0.04738,
+    "debtToEquity": 40.513,
+    "currentRatio": 1.998,
+    "dividendYield": 0.0263,
     "trailingEps": 0.006500000000000001,
     "forwardEps": 0.0076124,
-    "bookValue": 0.05426,
+    "bookValue": 0.05682,
     "sharesOutstanding": 630434409,
     "heldPercentInsiders": 0.0055,
-    "heldPercentInstitutions": 0.88994,
-    "institutionsCount": 381,
+    "heldPercentInstitutions": 0.88992995,
+    "institutionsCount": 380,
     "shortPercentOfFloat": null,
     "targetMeanPrice": 11.975449000000001,
-    "freeCashflow": 805500032,
-    "totalRevenue": 3520000000,
-    "totalDebt": 1502000000,
-    "ebitda": 645000000,
-    "totalCash": 347000000,
-    "operatingCashflow": 744000000,
+    "freeCashflow": 879000000,
+    "totalRevenue": 3576999936,
+    "totalDebt": 1484000000,
+    "ebitda": 601000000,
+    "totalCash": 333000000,
+    "operatingCashflow": 656000000,
     "averageAnalystRating": "2.3 - Buy",
     "rsPercentile": 18,
     "fiftyTwoWeekRangePercent": 16,
@@ -55614,8 +55614,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": 0.43,
-    "sectorRank": 10,
+    "sectorZScore": 0.42,
+    "sectorRank": 11,
     "sectorCount": 32,
     "supportResistance": [
       {
@@ -55919,7 +55919,7 @@
       "valueAreaHigh": 11.46,
       "valueAreaLow": 9.16
     },
-    "dcfValue": 19.17
+    "dcfValue": 16.9
   },
   {
     "ticker": "ADM.L",
@@ -55937,7 +55937,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1092875,
-    "avgVolume": 822795,
+    "avgVolume": 826929,
     "fiftyTwoWeekHigh": 36.86,
     "fiftyTwoWeekLow": 26.240000000000002,
     "rsi": 60.71,
@@ -56086,7 +56086,7 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": -1.32,
+    "sectorZScore": -1.33,
     "sectorRank": 74,
     "sectorCount": 83,
     "supportResistance": [
@@ -56415,7 +56415,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3179995,
-    "avgVolume": 1678494,
+    "avgVolume": 1660843,
     "fiftyTwoWeekHigh": 2.248,
     "fiftyTwoWeekLow": 0.886,
     "rsi": 41.69,
@@ -56865,7 +56865,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2647006,
-    "avgVolume": 754434,
+    "avgVolume": 761475,
     "fiftyTwoWeekHigh": 6.085,
     "fiftyTwoWeekLow": 2.5380000000000003,
     "rsi": 57.57,
@@ -56998,7 +56998,7 @@
     "heldPercentInstitutions": 0.2141,
     "institutionsCount": 68,
     "shortPercentOfFloat": null,
-    "targetMeanPrice": 3.9437772,
+    "targetMeanPrice": 3.9438303,
     "freeCashflow": -8050000,
     "totalRevenue": 251000000,
     "totalDebt": 6000000,
@@ -57024,7 +57024,7 @@
       "passed": 2
     },
     "sectorZScore": -0.64,
-    "sectorRank": 94,
+    "sectorRank": 93,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -57320,7 +57320,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1758230,
-    "avgVolume": 1507339,
+    "avgVolume": 1517172,
     "fiftyTwoWeekHigh": 6.1000000000000005,
     "fiftyTwoWeekLow": 3.5500000000000003,
     "rsi": 39.56,
@@ -57805,7 +57805,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 118980,
-    "avgVolume": 301022,
+    "avgVolume": 303267,
     "fiftyTwoWeekHigh": 2.7,
     "fiftyTwoWeekLow": 1.156,
     "rsi": 39.85,
@@ -57954,8 +57954,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": 0.1,
-    "sectorRank": 56,
+    "sectorZScore": 0.09,
+    "sectorRank": 58,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -58278,7 +58278,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 189685,
-    "avgVolume": 434313,
+    "avgVolume": 439104,
     "fiftyTwoWeekHigh": 1.48,
     "fiftyTwoWeekLow": 1.004,
     "rsi": 38.27,
@@ -58402,7 +58402,7 @@
     "heldPercentInstitutions": 0.71667,
     "institutionsCount": 56,
     "shortPercentOfFloat": null,
-    "targetMeanPrice": 5.0463214,
+    "targetMeanPrice": 5.0463895,
     "freeCashflow": -160187872,
     "totalRevenue": 6391000,
     "totalDebt": 163574000,
@@ -58730,7 +58730,7 @@
     "revenueGrowth": 0.1672,
     "beta": 1.09,
     "volume": 41581101,
-    "avgVolume": 32471926,
+    "avgVolume": 32613725,
     "fiftyTwoWeekHigh": 555.45,
     "fiftyTwoWeekLow": 344.79,
     "rsi": 36.41,
@@ -58832,15 +58832,15 @@
     },
     "bearishScore": 5,
     "bullishScore": 2,
-    "sentimentAvg": -0.035500000000000004,
+    "sentimentAvg": 0.1325,
     "score": {
       "priceMomentum": 29,
       "technicalSignals": 31,
-      "newsSentiment": 48,
+      "newsSentiment": 57,
       "fundamentals": 82,
       "volumeTrend": 25,
       "riskInverse": 52,
-      "composite": 42
+      "composite": 44
     },
     "priceToBook": 7.464411,
     "pegRatio": null,
@@ -58886,8 +58886,8 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": -0.08,
-    "sectorRank": 61,
+    "sectorZScore": 0.09,
+    "sectorRank": 53,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -58983,11 +58983,11 @@
       "predicted": 36,
       "direction": "stable",
       "confidence": "low",
-      "slope": 0.679,
-      "r2": 0.275,
+      "slope": 0.464,
+      "r2": 0.141,
       "factors": {
-        "trendMomentum": -0.807,
-        "meanReversion": 0.08,
+        "trendMomentum": -1,
+        "meanReversion": 0.06,
         "technicalSupport": 0.033
       }
     },
@@ -59216,7 +59216,7 @@
     "revenueGrowth": 0.1422,
     "beta": 1.64,
     "volume": 36369421,
-    "avgVolume": 28518109,
+    "avgVolume": 28769058,
     "fiftyTwoWeekHigh": 345.72,
     "fiftyTwoWeekLow": 118.86,
     "rsi": 38.26,
@@ -59318,11 +59318,11 @@
     },
     "bearishScore": 5,
     "bullishScore": 2,
-    "sentimentAvg": 0.2226,
+    "sentimentAvg": 0.20929999999999999,
     "score": {
       "priceMomentum": 16,
       "technicalSignals": 31,
-      "newsSentiment": 61,
+      "newsSentiment": 60,
       "fundamentals": 80,
       "volumeTrend": 33,
       "riskInverse": 31,
@@ -59466,10 +59466,10 @@
     ],
     "predictiveScore": {
       "predicted": 48,
-      "direction": "stable",
+      "direction": "improving",
       "confidence": "low",
-      "slope": 0.5,
-      "r2": 0.79,
+      "slope": 0.607,
+      "r2": 0.86,
       "factors": {
         "trendMomentum": 1,
         "meanReversion": 0.11,
@@ -59701,7 +59701,7 @@
     "revenueGrowth": 0.10490000000000001,
     "beta": 1.53,
     "volume": 4108737,
-    "avgVolume": 5155586,
+    "avgVolume": 5180658,
     "fiftyTwoWeekHigh": 453.26,
     "fiftyTwoWeekLow": 244.28,
     "rsi": 39.93,
@@ -59803,11 +59803,11 @@
     },
     "bearishScore": 5,
     "bullishScore": 2,
-    "sentimentAvg": 0.20210000000000003,
+    "sentimentAvg": 0.17870000000000003,
     "score": {
       "priceMomentum": 28,
       "technicalSignals": 31,
-      "newsSentiment": 60,
+      "newsSentiment": 59,
       "fundamentals": 74,
       "volumeTrend": 13,
       "riskInverse": 44,
@@ -59858,7 +59858,7 @@
       "passed": 0
     },
     "sectorZScore": -0.18,
-    "sectorRank": 65,
+    "sectorRank": 66,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -60155,7 +60155,7 @@
     "revenueGrowth": 0.1736,
     "beta": 1.26,
     "volume": 6444272,
-    "avgVolume": 3263744,
+    "avgVolume": 3287058,
     "fiftyTwoWeekHigh": 813.7,
     "fiftyTwoWeekLow": 349,
     "rsi": 39.6,
@@ -60257,17 +60257,17 @@
     },
     "bearishScore": 5,
     "bullishScore": 2,
-    "sentimentAvg": -0.0235,
+    "sentimentAvg": -0.048,
     "score": {
       "priceMomentum": 13,
       "technicalSignals": 31,
-      "newsSentiment": 49,
+      "newsSentiment": 48,
       "fundamentals": 78,
       "volumeTrend": 34,
       "riskInverse": 40,
-      "composite": 38
+      "composite": 37
     },
-    "priceToBook": 5.9363165,
+    "priceToBook": 5.9565454,
     "pegRatio": null,
     "enterpriseValue": null,
     "profitMargins": 0.2157,
@@ -60280,17 +60280,17 @@
     "dividendYield": 0.011000000000000001,
     "trailingEps": 14.56,
     "forwardEps": 26.38613,
-    "bookValue": 68.903,
+    "bookValue": 68.669,
     "sharesOutstanding": 278274077,
     "heldPercentInsiders": 0.0251,
     "heldPercentInstitutions": 0.89966005,
     "institutionsCount": 3066,
     "shortPercentOfFloat": 0.0341,
-    "targetMeanPrice": 623.639,
-    "freeCashflow": 5328374784,
+    "targetMeanPrice": 619.139,
+    "freeCashflow": 5301374976,
     "totalRevenue": 20120999936,
     "totalDebt": null,
-    "ebitda": 6120999936,
+    "ebitda": 6106999808,
     "totalCash": null,
     "operatingCashflow": 6983000064,
     "averageAnalystRating": "1.7 - Buy",
@@ -60311,8 +60311,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -0.45,
-    "sectorRank": 75,
+    "sectorZScore": -0.54,
+    "sectorRank": 79,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -60350,7 +60350,7 @@
     "piotroskiDetails": [
       "Positive net income"
     ],
-    "grahamNumber": 150.24,
+    "grahamNumber": 149.99,
     "buffettScore": 2,
     "buffettDetails": [
       "Consistently profitable",
@@ -60404,14 +60404,14 @@
       "Tech"
     ],
     "predictiveScore": {
-      "predicted": 47,
+      "predicted": 30,
       "direction": "stable",
       "confidence": "low",
-      "slope": 0.821,
-      "r2": 0.636,
+      "slope": 0.607,
+      "r2": 0.328,
       "factors": {
-        "trendMomentum": 1,
-        "meanReversion": 0.12,
+        "trendMomentum": -1,
+        "meanReversion": 0.13,
         "technicalSupport": 0.033
       }
     },
@@ -60640,7 +60640,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 14873954,
-    "avgVolume": 16288885,
+    "avgVolume": 16444800,
     "fiftyTwoWeekHigh": 211.478,
     "fiftyTwoWeekLow": 98,
     "rsi": 42.71,
@@ -60742,15 +60742,15 @@
     },
     "bearishScore": 5,
     "bullishScore": 2,
-    "sentimentAvg": 0.21600000000000003,
+    "sentimentAvg": -0.05739999999999999,
     "score": {
       "priceMomentum": 13,
       "technicalSignals": 31,
-      "newsSentiment": 61,
+      "newsSentiment": 47,
       "fundamentals": 0,
       "volumeTrend": 11,
       "riskInverse": 47,
-      "composite": 26
+      "composite": 24
     },
     "priceToBook": 8.725261,
     "pegRatio": null,
@@ -60796,8 +60796,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.55,
-    "sectorRank": 125,
+    "sectorZScore": -1.73,
+    "sectorRank": 126,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -60869,14 +60869,14 @@
       "Cloud Computing"
     ],
     "predictiveScore": {
-      "predicted": 19,
+      "predicted": 17,
       "direction": "stable",
       "confidence": "low",
-      "slope": 0.286,
-      "r2": 0.051,
+      "slope": 0.393,
+      "r2": 0.1,
       "factors": {
         "trendMomentum": -1,
-        "meanReversion": 0.24,
+        "meanReversion": 0.26,
         "technicalSupport": -0.033
       }
     },
@@ -61105,7 +61105,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 10240347,
-    "avgVolume": 6434485,
+    "avgVolume": 6468976,
     "fiftyTwoWeekHigh": 280.67,
     "fiftyTwoWeekLow": 120.1,
     "rsi": 41.19,
@@ -61212,15 +61212,15 @@
     },
     "bearishScore": 5,
     "bullishScore": 2,
-    "sentimentAvg": 0.3466,
+    "sentimentAvg": -0.1646,
     "score": {
       "priceMomentum": 19,
       "technicalSignals": 31,
-      "newsSentiment": 67,
+      "newsSentiment": 42,
       "fundamentals": 50,
       "volumeTrend": 32,
       "riskInverse": 43,
-      "composite": 38
+      "composite": 34
     },
     "priceToBook": 29.960863,
     "pegRatio": null,
@@ -61241,7 +61241,7 @@
     "heldPercentInstitutions": 0.78035,
     "institutionsCount": 1875,
     "shortPercentOfFloat": 0.039100002,
-    "targetMeanPrice": 243.61105,
+    "targetMeanPrice": 242.05788,
     "freeCashflow": 1763663744,
     "totalRevenue": 4683945984,
     "totalDebt": 2741114112,
@@ -61266,8 +61266,8 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -0.45,
-    "sectorRank": 77,
+    "sectorZScore": -0.82,
+    "sectorRank": 96,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -61342,14 +61342,14 @@
       "Cloud Computing"
     ],
     "predictiveScore": {
-      "predicted": 46,
+      "predicted": 42,
       "direction": "stable",
       "confidence": "low",
-      "slope": -0.036,
-      "r2": 0.001,
+      "slope": 0.286,
+      "r2": 0.032,
       "factors": {
         "trendMomentum": 1,
-        "meanReversion": 0.12,
+        "meanReversion": 0.16,
         "technicalSupport": -0.033
       }
     },
@@ -61578,7 +61578,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 46980561,
-    "avgVolume": 45186659,
+    "avgVolume": 45476776,
     "fiftyTwoWeekHigh": 207.52,
     "fiftyTwoWeekLow": 66.12,
     "rsi": 43.03,
@@ -61680,15 +61680,15 @@
     },
     "bearishScore": 5,
     "bullishScore": 2,
-    "sentimentAvg": 0.0492,
+    "sentimentAvg": 0.1781,
     "score": {
       "priceMomentum": 35,
       "technicalSignals": 31,
-      "newsSentiment": 52,
+      "newsSentiment": 59,
       "fundamentals": 0,
       "volumeTrend": 17,
       "riskInverse": 46,
-      "composite": 31
+      "composite": 32
     },
     "priceToBook": 44.412434,
     "pegRatio": null,
@@ -61734,8 +61734,8 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -1.09,
-    "sectorRank": 108,
+    "sectorZScore": -1,
+    "sectorRank": 106,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -61806,14 +61806,14 @@
       "AI & Machine Learning"
     ],
     "predictiveScore": {
-      "predicted": 24,
+      "predicted": 25,
       "direction": "declining",
       "confidence": "low",
-      "slope": -2.214,
-      "r2": 0.823,
+      "slope": -2.107,
+      "r2": 0.818,
       "factors": {
         "trendMomentum": -1,
-        "meanReversion": 0.19,
+        "meanReversion": 0.18,
         "technicalSupport": -0.033
       }
     },
@@ -62042,7 +62042,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 13010972,
-    "avgVolume": 18138265,
+    "avgVolume": 18200768,
     "fiftyTwoWeekHigh": 82,
     "fiftyTwoWeekLow": 65.35,
     "rsi": 74.31,
@@ -62165,15 +62165,15 @@
     },
     "bearishScore": 5,
     "bullishScore": 7,
-    "sentimentAvg": 0.154,
+    "sentimentAvg": 0.0115,
     "score": {
       "priceMomentum": 66,
       "technicalSignals": 63,
-      "newsSentiment": 58,
+      "newsSentiment": 51,
       "fundamentals": 60,
       "volumeTrend": 12,
       "riskInverse": 67,
-      "composite": 58
+      "composite": 57
     },
     "priceToBook": 10.906659,
     "pegRatio": null,
@@ -62219,8 +62219,8 @@
       "rsAbove70": false,
       "passed": 6
     },
-    "sectorZScore": 0.46,
-    "sectorRank": 19,
+    "sectorZScore": 0.37,
+    "sectorRank": 18,
     "sectorCount": 45,
     "supportResistance": [
       {
@@ -62299,14 +62299,14 @@
       "Dividend Aristocrats"
     ],
     "predictiveScore": {
-      "predicted": 66,
+      "predicted": 65,
       "direction": "stable",
       "confidence": "low",
-      "slope": -0.25,
-      "r2": 0.018,
+      "slope": -0.357,
+      "r2": 0.04,
       "factors": {
         "trendMomentum": 1,
-        "meanReversion": -0.08,
+        "meanReversion": -0.07,
         "technicalSupport": 0.067
       }
     },
@@ -62535,7 +62535,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3338629,
-    "avgVolume": 2640913,
+    "avgVolume": 2649105,
     "fiftyTwoWeekHigh": 1067.08,
     "fiftyTwoWeekLow": 844.06,
     "rsi": 61.46,
@@ -62637,15 +62637,15 @@
     },
     "bearishScore": 5,
     "bullishScore": 2,
-    "sentimentAvg": 0.272,
+    "sentimentAvg": 0.1708,
     "score": {
       "priceMomentum": 59,
       "technicalSignals": 31,
-      "newsSentiment": 64,
+      "newsSentiment": 59,
       "fundamentals": 11,
       "volumeTrend": 45,
       "riskInverse": 65,
-      "composite": 45
+      "composite": 44
     },
     "priceToBook": 14.807506,
     "pegRatio": null,
@@ -62691,8 +62691,8 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -0.85,
-    "sectorRank": 35,
+    "sectorZScore": -0.94,
+    "sectorRank": 36,
     "sectorCount": 45,
     "supportResistance": [
       {
@@ -62790,14 +62790,14 @@
       "Consumer Staples"
     ],
     "predictiveScore": {
-      "predicted": 53,
+      "predicted": 52,
       "direction": "improving",
       "confidence": "low",
       "slope": 0.964,
       "r2": 0.876,
       "factors": {
         "trendMomentum": 1,
-        "meanReversion": 0.05,
+        "meanReversion": 0.06,
         "technicalSupport": -0.05
       }
     },
@@ -63026,7 +63026,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2649750,
-    "avgVolume": 4412649,
+    "avgVolume": 4401075,
     "fiftyTwoWeekHigh": 426.75,
     "fiftyTwoWeekLow": 326.31,
     "rsi": 51.46,
@@ -63128,11 +63128,11 @@
     },
     "bearishScore": 5,
     "bullishScore": 3,
-    "sentimentAvg": -0.087,
+    "sentimentAvg": 0.020299999999999995,
     "score": {
       "priceMomentum": 50,
       "technicalSignals": 38,
-      "newsSentiment": 46,
+      "newsSentiment": 51,
       "fundamentals": 60,
       "volumeTrend": 13,
       "riskInverse": 65,
@@ -63182,7 +63182,7 @@
       "rsAbove70": false,
       "passed": 5
     },
-    "sectorZScore": -0.39,
+    "sectorZScore": -0.38,
     "sectorRank": 58,
     "sectorCount": 94,
     "supportResistance": [
@@ -63294,8 +63294,8 @@
       "predicted": 38,
       "direction": "stable",
       "confidence": "low",
-      "slope": 0.143,
-      "r2": 0.05,
+      "slope": 0.036,
+      "r2": 0.004,
       "factors": {
         "trendMomentum": -1,
         "meanReversion": 0.04,
@@ -63527,7 +63527,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 10268366,
-    "avgVolume": 18155642,
+    "avgVolume": 18247000,
     "fiftyTwoWeekHigh": 52.4,
     "fiftyTwoWeekLow": 31.11,
     "rsi": 60.46,
@@ -63650,15 +63650,15 @@
     },
     "bearishScore": 5,
     "bullishScore": 7,
-    "sentimentAvg": 0.19019999999999998,
+    "sentimentAvg": 0.10800000000000001,
     "score": {
       "priceMomentum": 92,
       "technicalSignals": 63,
-      "newsSentiment": 60,
+      "newsSentiment": 55,
       "fundamentals": 69,
       "volumeTrend": 11,
       "riskInverse": 60,
-      "composite": 65
+      "composite": 64
     },
     "priceToBook": 2.9404354,
     "pegRatio": null,
@@ -63704,7 +63704,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 0.93,
+    "sectorZScore": 0.77,
     "sectorRank": 6,
     "sectorCount": 30,
     "supportResistance": [
@@ -63802,14 +63802,14 @@
       "Energy"
     ],
     "predictiveScore": {
-      "predicted": 56,
+      "predicted": 55,
       "direction": "stable",
       "confidence": "low",
-      "slope": 0.75,
-      "r2": 0.317,
+      "slope": 0.857,
+      "r2": 0.383,
       "factors": {
         "trendMomentum": -1,
-        "meanReversion": -0.15,
+        "meanReversion": -0.14,
         "technicalSupport": -0.033
       }
     },
@@ -64038,7 +64038,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 26747201,
-    "avgVolume": 36640827,
+    "avgVolume": 36747976,
     "fiftyTwoWeekHigh": 35.595,
     "fiftyTwoWeekLow": 24.133,
     "rsi": 55.02,
@@ -64140,15 +64140,15 @@
     },
     "bearishScore": 5,
     "bullishScore": 3,
-    "sentimentAvg": -0.1522,
+    "sentimentAvg": -0.0441,
     "score": {
       "priceMomentum": 61,
       "technicalSignals": 38,
-      "newsSentiment": 42,
+      "newsSentiment": 48,
       "fundamentals": 99,
       "volumeTrend": 22,
       "riskInverse": 64,
-      "composite": 54
+      "composite": 55
     },
     "priceToBook": 1.1515286,
     "pegRatio": null,
@@ -64194,8 +64194,8 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": 0.72,
-    "sectorRank": 6,
+    "sectorZScore": 0.81,
+    "sectorRank": 5,
     "sectorCount": 32,
     "supportResistance": [
       {
@@ -64289,14 +64289,14 @@
     "chartPatterns": [],
     "themes": [],
     "predictiveScore": {
-      "predicted": 61,
+      "predicted": 62,
       "direction": "improving",
       "confidence": "low",
-      "slope": 0.5,
-      "r2": 0.306,
+      "slope": 0.393,
+      "r2": 0.222,
       "factors": {
         "trendMomentum": 1,
-        "meanReversion": -0.04,
+        "meanReversion": -0.05,
         "technicalSupport": -0.1
       }
     },
@@ -64525,7 +64525,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 29241352,
-    "avgVolume": 42143255,
+    "avgVolume": 42267611,
     "fiftyTwoWeekHigh": 29.79,
     "fiftyTwoWeekLow": 22.95,
     "rsi": 61,
@@ -64620,11 +64620,11 @@
     },
     "bearishScore": 5,
     "bullishScore": 1,
-    "sentimentAvg": 0.184,
+    "sentimentAvg": 0.1002,
     "score": {
       "priceMomentum": 53,
       "technicalSignals": 25,
-      "newsSentiment": 59,
+      "newsSentiment": 55,
       "fundamentals": 92,
       "volumeTrend": 13,
       "riskInverse": 60,
@@ -64674,7 +64674,7 @@
       "rsAbove70": false,
       "passed": 4
     },
-    "sectorZScore": 0.24,
+    "sectorZScore": 0.23,
     "sectorRank": 13,
     "sectorCount": 32,
     "supportResistance": [
@@ -64772,10 +64772,10 @@
     ],
     "predictiveScore": {
       "predicted": 40,
-      "direction": "declining",
+      "direction": "stable",
       "confidence": "low",
-      "slope": -1.357,
-      "r2": 0.539,
+      "slope": -1.25,
+      "r2": 0.477,
       "factors": {
         "trendMomentum": -1,
         "meanReversion": 0.01,
@@ -65007,7 +65007,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 5933310,
-    "avgVolume": 7755693,
+    "avgVolume": 7727028,
     "fiftyTwoWeekHigh": 33.7,
     "fiftyTwoWeekLow": 9.12,
     "rsi": 45.9,
@@ -65109,11 +65109,11 @@
     },
     "bearishScore": 5,
     "bullishScore": 2,
-    "sentimentAvg": -0.10400000000000001,
+    "sentimentAvg": -0.073,
     "score": {
       "priceMomentum": 12,
       "technicalSignals": 31,
-      "newsSentiment": 45,
+      "newsSentiment": 46,
       "fundamentals": 50,
       "volumeTrend": 19,
       "riskInverse": 30,
@@ -65163,7 +65163,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -2.09,
+    "sectorZScore": -2.08,
     "sectorRank": 92,
     "sectorCount": 94,
     "supportResistance": [
@@ -65469,7 +65469,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 8067664,
-    "avgVolume": 11248286,
+    "avgVolume": 11331050,
     "fiftyTwoWeekHigh": 150.59,
     "fiftyTwoWeekLow": 50.1,
     "rsi": 48.9,
@@ -65571,15 +65571,15 @@
     },
     "bearishScore": 5,
     "bullishScore": 2,
-    "sentimentAvg": 0.031999999999999994,
+    "sentimentAvg": 0.164,
     "score": {
       "priceMomentum": 14,
       "technicalSignals": 31,
-      "newsSentiment": 52,
+      "newsSentiment": 58,
       "fundamentals": 50,
       "volumeTrend": 9,
       "riskInverse": 35,
-      "composite": 31
+      "composite": 32
     },
     "priceToBook": 123.26752,
     "pegRatio": null,
@@ -65625,8 +65625,8 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": -1.09,
-    "sectorRank": 110,
+    "sectorZScore": -1,
+    "sectorRank": 107,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -65695,14 +65695,14 @@
       "Streaming & Digital Media"
     ],
     "predictiveScore": {
-      "predicted": 38,
+      "predicted": 39,
       "direction": "stable",
       "confidence": "low",
       "slope": -0.071,
       "r2": 0.1,
       "factors": {
         "trendMomentum": 0.843,
-        "meanReversion": 0.19,
+        "meanReversion": 0.18,
         "technicalSupport": -0.033
       }
     },
@@ -65931,7 +65931,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 18200229,
-    "avgVolume": 27790508,
+    "avgVolume": 27729228,
     "fiftyTwoWeekHigh": 153.86,
     "fiftyTwoWeekLow": 29.66,
     "rsi": 38.11,
@@ -66033,15 +66033,15 @@
     },
     "bearishScore": 5,
     "bullishScore": 2,
-    "sentimentAvg": 0.3654,
+    "sentimentAvg": -0.1567,
     "score": {
       "priceMomentum": 16,
       "technicalSignals": 31,
-      "newsSentiment": 68,
+      "newsSentiment": 42,
       "fundamentals": 42,
       "volumeTrend": 6,
       "riskInverse": 34,
-      "composite": 32
+      "composite": 28
     },
     "priceToBook": 7.4795384,
     "pegRatio": null,
@@ -66087,7 +66087,7 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -0.81,
+    "sectorZScore": -1.05,
     "sectorRank": 14,
     "sectorCount": 17,
     "supportResistance": [
@@ -66154,14 +66154,14 @@
       "Fintech"
     ],
     "predictiveScore": {
-      "predicted": 25,
+      "predicted": 21,
       "direction": "stable",
       "confidence": "low",
       "slope": 0.857,
       "r2": 0.404,
       "factors": {
         "trendMomentum": -1,
-        "meanReversion": 0.18,
+        "meanReversion": 0.22,
         "technicalSupport": 0.033
       }
     },
@@ -66390,7 +66390,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 13975542,
-    "avgVolume": 18095298,
+    "avgVolume": 18174945,
     "fiftyTwoWeekHigh": 39.93,
     "fiftyTwoWeekLow": 13.84,
     "rsi": 35.42,
@@ -66492,15 +66492,15 @@
     },
     "bearishScore": 5,
     "bullishScore": 2,
-    "sentimentAvg": -0.39720000000000005,
+    "sentimentAvg": -0.15460000000000002,
     "score": {
       "priceMomentum": 7,
       "technicalSignals": 31,
-      "newsSentiment": 30,
+      "newsSentiment": 42,
       "fundamentals": 58,
       "volumeTrend": 12,
       "riskInverse": 39,
-      "composite": 28
+      "composite": 30
     },
     "priceToBook": 2.3988237,
     "pegRatio": null,
@@ -66546,7 +66546,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.75,
+    "sectorZScore": -1.6,
     "sectorRank": 31,
     "sectorCount": 32,
     "supportResistance": [
@@ -66614,14 +66614,14 @@
     "chartPatterns": [],
     "themes": [],
     "predictiveScore": {
-      "predicted": 37,
+      "predicted": 39,
       "direction": "improving",
       "confidence": "low",
-      "slope": 0.75,
-      "r2": 0.332,
+      "slope": 0.857,
+      "r2": 0.414,
       "factors": {
         "trendMomentum": 1,
-        "meanReversion": 0.22,
+        "meanReversion": 0.2,
         "technicalSupport": 0.033
       }
     },
@@ -66850,7 +66850,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 37397565,
-    "avgVolume": 46839640,
+    "avgVolume": 46847685,
     "fiftyTwoWeekHigh": 10.41,
     "fiftyTwoWeekLow": 4.65,
     "rsi": 36.56,
@@ -66952,15 +66952,15 @@
     },
     "bearishScore": 5,
     "bullishScore": 2,
-    "sentimentAvg": -0.033,
+    "sentimentAvg": 0.055999999999999994,
     "score": {
       "priceMomentum": 21,
       "technicalSignals": 31,
-      "newsSentiment": 48,
+      "newsSentiment": 53,
       "fundamentals": 50,
       "volumeTrend": 10,
       "riskInverse": 45,
-      "composite": 33
+      "composite": 34
     },
     "priceToBook": 3.9084773,
     "pegRatio": null,
@@ -67006,7 +67006,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.28,
+    "sectorZScore": -1.21,
     "sectorRank": 28,
     "sectorCount": 32,
     "supportResistance": [
@@ -67058,14 +67058,14 @@
     "chartPatterns": [],
     "themes": [],
     "predictiveScore": {
-      "predicted": 26,
+      "predicted": 27,
       "direction": "stable",
       "confidence": "low",
       "slope": -0.179,
       "r2": 0.019,
       "factors": {
         "trendMomentum": -1,
-        "meanReversion": 0.17,
+        "meanReversion": 0.16,
         "technicalSupport": 0.033
       }
     },
@@ -67294,7 +67294,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 23749859,
-    "avgVolume": 14771544,
+    "avgVolume": 14832416,
     "fiftyTwoWeekHigh": 91.45,
     "fiftyTwoWeekLow": 21.08,
     "rsi": 25.93,
@@ -67410,15 +67410,15 @@
     },
     "bearishScore": 5,
     "bullishScore": 7,
-    "sentimentAvg": -0.0756,
+    "sentimentAvg": -0.1627,
     "score": {
       "priceMomentum": 2,
       "technicalSignals": 63,
-      "newsSentiment": 46,
+      "newsSentiment": 42,
       "fundamentals": 60,
       "volumeTrend": 36,
       "riskInverse": 50,
-      "composite": 41
+      "composite": 40
     },
     "priceToBook": 4.6020093,
     "pegRatio": null,
@@ -67464,8 +67464,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -0.18,
-    "sectorRank": 67,
+    "sectorZScore": -0.27,
+    "sectorRank": 68,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -67516,14 +67516,14 @@
       "Tech"
     ],
     "predictiveScore": {
-      "predicted": 50,
+      "predicted": 49,
       "direction": "stable",
       "confidence": "low",
-      "slope": 1.357,
-      "r2": 0.418,
+      "slope": 1.571,
+      "r2": 0.517,
       "factors": {
         "trendMomentum": 1,
-        "meanReversion": 0.09,
+        "meanReversion": 0.1,
         "technicalSupport": 0.133
       }
     },
@@ -67752,7 +67752,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 6555912,
-    "avgVolume": 4857026,
+    "avgVolume": 4805198,
     "fiftyTwoWeekHigh": 66.74,
     "fiftyTwoWeekLow": 24.04,
     "rsi": 62.71,
@@ -67883,7 +67883,7 @@
     "heldPercentInstitutions": 0.64481,
     "institutionsCount": 800,
     "shortPercentOfFloat": 0.0926,
-    "targetMeanPrice": 66.3,
+    "targetMeanPrice": 67.1,
     "freeCashflow": null,
     "totalRevenue": 2515269120,
     "totalDebt": 698297984,
@@ -67908,7 +67908,7 @@
       "rsAbove70": true,
       "passed": 7
     },
-    "sectorZScore": -1.35,
+    "sectorZScore": -1.34,
     "sectorRank": 41,
     "sectorCount": 45,
     "supportResistance": [
@@ -67972,8 +67972,8 @@
       "predicted": 33,
       "direction": "stable",
       "confidence": "low",
-      "slope": 1.571,
-      "r2": 0.391,
+      "slope": 1.25,
+      "r2": 0.244,
       "factors": {
         "trendMomentum": -1,
         "meanReversion": 0.1,
@@ -68205,7 +68205,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 74147058,
-    "avgVolume": 43651536,
+    "avgVolume": 43593201,
     "fiftyTwoWeekHigh": 23.45,
     "fiftyTwoWeekLow": 6.66,
     "rsi": 52.7,
@@ -68361,7 +68361,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -0.11,
+    "sectorZScore": -0.1,
     "sectorRank": 10,
     "sectorCount": 17,
     "supportResistance": [
@@ -68421,8 +68421,8 @@
       "predicted": 50,
       "direction": "improving",
       "confidence": "low",
-      "slope": 1,
-      "r2": 0.402,
+      "slope": 0.786,
+      "r2": 0.312,
       "factors": {
         "trendMomentum": 1,
         "meanReversion": 0.08,
@@ -68654,7 +68654,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 23338307,
-    "avgVolume": 22645595,
+    "avgVolume": 22796953,
     "fiftyTwoWeekHigh": 70.43,
     "fiftyTwoWeekLow": 13.74,
     "rsi": 16.82,
@@ -69121,7 +69121,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1457256,
-    "avgVolume": 1684796,
+    "avgVolume": 1691463,
     "fiftyTwoWeekHigh": 321.47,
     "fiftyTwoWeekLow": 229.11,
     "rsi": 49.65,
@@ -69599,7 +69599,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4613091,
-    "avgVolume": 5255829,
+    "avgVolume": 5256606,
     "fiftyTwoWeekHigh": 89.98,
     "fiftyTwoWeekLow": 54.11,
     "rsi": 58,
@@ -69730,7 +69730,7 @@
     "heldPercentInstitutions": 1.00288,
     "institutionsCount": 1383,
     "shortPercentOfFloat": 0.048899997,
-    "targetMeanPrice": 85.46154,
+    "targetMeanPrice": 85.84615,
     "freeCashflow": 719537472,
     "totalRevenue": 4662000128,
     "totalDebt": 1396400000,
@@ -69756,7 +69756,7 @@
       "passed": 3
     },
     "sectorZScore": -0.54,
-    "sectorRank": 44,
+    "sectorRank": 43,
     "sectorCount": 63,
     "supportResistance": [
       {
@@ -70053,7 +70053,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 9217197,
-    "avgVolume": 4311336,
+    "avgVolume": 4320026,
     "fiftyTwoWeekHigh": 276,
     "fiftyTwoWeekLow": 117.76,
     "rsi": 28.69,
@@ -70224,7 +70224,7 @@
       "passed": 0
     },
     "sectorZScore": -0.73,
-    "sectorRank": 95,
+    "sectorRank": 94,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -70515,7 +70515,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 7372822,
-    "avgVolume": 4899686,
+    "avgVolume": 4934730,
     "fiftyTwoWeekHigh": 287.26,
     "fiftyTwoWeekLow": 67.85,
     "rsi": 29.09,
@@ -70679,7 +70679,7 @@
       "passed": 0
     },
     "sectorZScore": -1,
-    "sectorRank": 107,
+    "sectorRank": 108,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -70968,7 +70968,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1800482,
-    "avgVolume": 1961480,
+    "avgVolume": 1966426,
     "fiftyTwoWeekHigh": 310.5,
     "fiftyTwoWeekLow": 168.14,
     "rsi": 40.57,
@@ -71124,7 +71124,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.6,
+    "sectorZScore": -1.61,
     "sectorRank": 58,
     "sectorCount": 63,
     "supportResistance": [
@@ -71433,7 +71433,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 5498143,
-    "avgVolume": 5127085,
+    "avgVolume": 5143610,
     "fiftyTwoWeekHigh": 199.3,
     "fiftyTwoWeekLow": 99.5,
     "rsi": 42.39,
@@ -71571,7 +71571,7 @@
     "heldPercentInstitutions": 0.72515,
     "institutionsCount": 1348,
     "shortPercentOfFloat": 0.0636,
-    "targetMeanPrice": 181.48969,
+    "targetMeanPrice": 180.53934,
     "freeCashflow": 763986496,
     "totalRevenue": 21037037568,
     "totalDebt": 4243763968,
@@ -71909,7 +71909,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 34677653,
-    "avgVolume": 46219496,
+    "avgVolume": 46478270,
     "fiftyTwoWeekHigh": 6.62,
     "fiftyTwoWeekLow": 3.36,
     "rsi": 43.33,
@@ -72375,7 +72375,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 46638679,
-    "avgVolume": 23102101,
+    "avgVolume": 23100488,
     "fiftyTwoWeekHigh": 34.075,
     "fiftyTwoWeekLow": 16.74,
     "rsi": 49,
@@ -72513,7 +72513,7 @@
     "heldPercentInstitutions": 0.85921997,
     "institutionsCount": 890,
     "shortPercentOfFloat": 0.028499998,
-    "targetMeanPrice": 27.56471,
+    "targetMeanPrice": 27.44706,
     "freeCashflow": 352875008,
     "totalRevenue": 34533998592,
     "totalDebt": 4634999808,
@@ -72835,7 +72835,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2217985,
-    "avgVolume": 1796690,
+    "avgVolume": 1801890,
     "fiftyTwoWeekHigh": 342.69,
     "fiftyTwoWeekLow": 264.1,
     "rsi": 70.37,
@@ -73012,7 +73012,7 @@
       "rsAbove70": true,
       "passed": 7
     },
-    "sectorZScore": 0.8,
+    "sectorZScore": 0.79,
     "sectorRank": 20,
     "sectorCount": 83,
     "supportResistance": [
@@ -73326,7 +73326,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1119421,
-    "avgVolume": 1612227,
+    "avgVolume": 1622110,
     "fiftyTwoWeekHigh": 309.81,
     "fiftyTwoWeekLow": 230.43,
     "rsi": 70.06,
@@ -73503,7 +73503,7 @@
       "rsAbove70": false,
       "passed": 7
     },
-    "sectorZScore": 0.3,
+    "sectorZScore": 0.29,
     "sectorRank": 36,
     "sectorCount": 83,
     "supportResistance": [
@@ -73816,7 +73816,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 304636,
-    "avgVolume": 273585,
+    "avgVolume": 275568,
     "fiftyTwoWeekHigh": 2217.6,
     "fiftyTwoWeekLow": 1193.1,
     "rsi": 49.96,
@@ -74270,7 +74270,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 23529314,
-    "avgVolume": 17465021,
+    "avgVolume": 17519725,
     "fiftyTwoWeekHigh": 31.43,
     "fiftyTwoWeekLow": 17.56,
     "rsi": 45.65,
@@ -74431,8 +74431,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": 0.1,
-    "sectorRank": 54,
+    "sectorZScore": 0.09,
+    "sectorRank": 56,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -74757,7 +74757,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4200022,
-    "avgVolume": 2016865,
+    "avgVolume": 2026070,
     "fiftyTwoWeekHigh": 329.09,
     "fiftyTwoWeekLow": 215.01,
     "rsi": 52.28,
@@ -74888,11 +74888,11 @@
     "heldPercentInstitutions": 0.95341,
     "institutionsCount": 2077,
     "shortPercentOfFloat": 0.030199999,
-    "targetMeanPrice": 335.2358,
-    "freeCashflow": 1990249984,
+    "targetMeanPrice": 335.88098,
+    "freeCashflow": 2778249984,
     "totalRevenue": 7206000128,
     "totalDebt": 2734000128,
-    "ebitda": 1988999936,
+    "ebitda": 1892000000,
     "totalCash": 2596999936,
     "operatingCashflow": 2452000000,
     "averageAnalystRating": "1.4 - Strong Buy",
@@ -74978,8 +74978,8 @@
       "predicted": 45,
       "direction": "improving",
       "confidence": "low",
-      "slope": 1.643,
-      "r2": 0.717,
+      "slope": 1.536,
+      "r2": 0.676,
       "factors": {
         "trendMomentum": 1,
         "meanReversion": 0.13,
@@ -75211,7 +75211,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4150561,
-    "avgVolume": 2971834,
+    "avgVolume": 2973685,
     "fiftyTwoWeekHigh": 329.93,
     "fiftyTwoWeekLow": 203.26,
     "rsi": 36.46,
@@ -75367,8 +75367,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -0.08,
-    "sectorRank": 63,
+    "sectorZScore": -0.09,
+    "sectorRank": 64,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -75697,7 +75697,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1498987,
-    "avgVolume": 984736,
+    "avgVolume": 988315,
     "fiftyTwoWeekHigh": 885.92,
     "fiftyTwoWeekLow": 396.41,
     "rsi": 61.04,
@@ -75847,7 +75847,7 @@
       "passed": 2
     },
     "sectorZScore": -1.09,
-    "sectorRank": 112,
+    "sectorRank": 110,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -76150,7 +76150,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 13955181,
-    "avgVolume": 22385940,
+    "avgVolume": 22043370,
     "fiftyTwoWeekHigh": 457.22,
     "fiftyTwoWeekLow": 104.17,
     "rsi": 44.74,
@@ -76306,8 +76306,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.37,
-    "sectorRank": 119,
+    "sectorZScore": -1.36,
+    "sectorRank": 121,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -76612,7 +76612,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 21466610,
-    "avgVolume": 13973219,
+    "avgVolume": 14112536,
     "fiftyTwoWeekHigh": 109.5,
     "fiftyTwoWeekLow": 72.69,
     "rsi": 40.1,
@@ -76768,7 +76768,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.6,
+    "sectorZScore": -1.61,
     "sectorRank": 59,
     "sectorCount": 63,
     "supportResistance": [
@@ -77077,7 +77077,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1400640,
-    "avgVolume": 1671809,
+    "avgVolume": 1666695,
     "fiftyTwoWeekHigh": 350,
     "fiftyTwoWeekLow": 239.51,
     "rsi": 56.47,
@@ -77175,30 +77175,30 @@
       "riskInverse": 61,
       "composite": 45
     },
-    "priceToBook": 1.8853025,
+    "priceToBook": 1.8305385,
     "pegRatio": null,
-    "enterpriseValue": 101533786112,
+    "enterpriseValue": 99267764224,
     "profitMargins": 0.02167,
     "grossMargins": 0.092980005,
-    "operatingMargins": 0.03346,
+    "operatingMargins": 0.0353,
     "returnOnEquity": 0.1513,
-    "returnOnAssets": 0.04034,
+    "returnOnAssets": 0.04087,
     "debtToEquity": 75.137,
     "currentRatio": 0.849,
     "dividendYield": 0.0215,
     "trailingEps": 22.17,
     "forwardEps": 33.47447,
-    "bookValue": 153.726,
+    "bookValue": 158.325,
     "sharesOutstanding": 263464000,
     "heldPercentInsiders": 0.02053,
     "heldPercentInstitutions": 0.91366994,
     "institutionsCount": 2179,
     "shortPercentOfFloat": 0.0227,
     "targetMeanPrice": 332.61523,
-    "freeCashflow": 10602749952,
+    "freeCashflow": 9769875456,
     "totalRevenue": 274899992576,
     "totalDebt": 31463000064,
-    "ebitda": 12901000192,
+    "ebitda": 12046999552,
     "totalCash": 8732000256,
     "operatingCashflow": 9601000448,
     "averageAnalystRating": "1.6 - Buy",
@@ -77220,7 +77220,7 @@
       "passed": 2
     },
     "sectorZScore": -0.63,
-    "sectorRank": 47,
+    "sectorRank": 46,
     "sectorCount": 63,
     "supportResistance": [
       {
@@ -77258,7 +77258,7 @@
     "piotroskiDetails": [
       "Positive net income"
     ],
-    "grahamNumber": 276.92,
+    "grahamNumber": 281.03,
     "buffettScore": 2,
     "buffettDetails": [
       "Consistently profitable",
@@ -77544,7 +77544,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 400125,
-    "avgVolume": 742078,
+    "avgVolume": 740580,
     "fiftyTwoWeekHigh": 987.37,
     "fiftyTwoWeekLow": 621.88,
     "rsi": 70.01,
@@ -77696,7 +77696,7 @@
     "ebitda": 5928000000,
     "totalCash": 2959000064,
     "operatingCashflow": 10481999872,
-    "averageAnalystRating": "1.6 - Buy",
+    "averageAnalystRating": "1.7 - Buy",
     "rsPercentile": 88,
     "fiftyTwoWeekRangePercent": 100,
     "weeklyHighLowRange": 0.20845726683662336,
@@ -77715,7 +77715,7 @@
       "passed": 8
     },
     "sectorZScore": 0.26,
-    "sectorRank": 26,
+    "sectorRank": 27,
     "sectorCount": 63,
     "supportResistance": [
       {
@@ -78024,7 +78024,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1221849,
-    "avgVolume": 1779793,
+    "avgVolume": 1777008,
     "fiftyTwoWeekHigh": 202.41,
     "fiftyTwoWeekLow": 110.04,
     "rsi": 55.12,
@@ -78181,7 +78181,7 @@
       "passed": 8
     },
     "sectorZScore": 0.17,
-    "sectorRank": 29,
+    "sectorRank": 30,
     "sectorCount": 63,
     "supportResistance": [
       {
@@ -78483,7 +78483,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2414197,
-    "avgVolume": 2772072,
+    "avgVolume": 2777326,
     "fiftyTwoWeekHigh": 187.35,
     "fiftyTwoWeekLow": 127.586,
     "rsi": 57,
@@ -78646,7 +78646,7 @@
       "rsAbove70": false,
       "passed": 7
     },
-    "sectorZScore": -0.09,
+    "sectorZScore": -0.1,
     "sectorRank": 36,
     "sectorCount": 63,
     "supportResistance": [
@@ -78971,7 +78971,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1379768,
-    "avgVolume": 1556337,
+    "avgVolume": 1564433,
     "fiftyTwoWeekHigh": 495.55,
     "fiftyTwoWeekLow": 205.87,
     "rsi": 44.44,
@@ -79424,7 +79424,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2168768,
-    "avgVolume": 2987319,
+    "avgVolume": 2999628,
     "fiftyTwoWeekHigh": 408.45,
     "fiftyTwoWeekLow": 231.85,
     "rsi": 56.74,
@@ -79529,39 +79529,39 @@
       "riskInverse": 59,
       "composite": 42
     },
-    "priceToBook": 7.5125403,
+    "priceToBook": 7.5068398,
     "pegRatio": null,
-    "enterpriseValue": 155704147968,
+    "enterpriseValue": 155744370688,
     "profitMargins": 0.1489,
-    "grossMargins": 0.37772998,
-    "operatingMargins": 0.19872,
+    "grossMargins": 0.37646,
+    "operatingMargins": 0.19461,
     "returnOnEquity": 0.21525998,
-    "returnOnAssets": 0.08282,
-    "debtToEquity": 54.091,
+    "returnOnAssets": 0.08269,
+    "debtToEquity": 54.877,
     "currentRatio": 1.319,
     "dividendYield": 0.011699999999999999,
     "trailingEps": 10.45,
     "forwardEps": 15.36201,
-    "bookValue": 50.039,
+    "bookValue": 50.077,
     "sharesOutstanding": 388400000,
     "heldPercentInsiders": 0.01674,
     "heldPercentInstitutions": 0.85384005,
     "institutionsCount": 3145,
     "shortPercentOfFloat": 0.0201,
     "targetMeanPrice": 408.4481,
-    "freeCashflow": null,
+    "freeCashflow": 2575500032,
     "totalRevenue": 27448000512,
-    "totalDebt": 10531000320,
-    "ebitda": 6277332992,
+    "totalDebt": 10684000256,
+    "ebitda": 6273999872,
     "totalCash": 803000000,
-    "operatingCashflow": null,
+    "operatingCashflow": 4472000000,
     "averageAnalystRating": "1.8 - Buy",
     "rsPercentile": 63,
     "fiftyTwoWeekRangePercent": 82,
     "weeklyHighLowRange": 0.19585168431287583,
     "accDistRating": "B",
     "styleClassification": "Growth",
-    "dataCompleteness": 73,
+    "dataCompleteness": 80,
     "minerviniChecks": {
       "priceAbove150and200": true,
       "sma150Above200": true,
@@ -79573,7 +79573,7 @@
       "rsAbove70": false,
       "passed": 6
     },
-    "sectorZScore": -1.65,
+    "sectorZScore": -1.66,
     "sectorRank": 78,
     "sectorCount": 86,
     "supportResistance": [
@@ -79612,7 +79612,7 @@
     "piotroskiDetails": [
       "Positive net income"
     ],
-    "grahamNumber": 108.47,
+    "grahamNumber": 108.51,
     "buffettScore": 2,
     "buffettDetails": [
       "Consistently profitable",
@@ -79886,7 +79886,7 @@
       "valueAreaHigh": 394.32,
       "valueAreaLow": 316.62
     },
-    "dcfValue": null
+    "dcfValue": 187.05
   },
   {
     "ticker": "FAST",
@@ -79904,7 +79904,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 8362867,
-    "avgVolume": 8360354,
+    "avgVolume": 8401201,
     "fiftyTwoWeekHigh": 50.63,
     "fiftyTwoWeekLow": 35.305,
     "rsi": 54.82,
@@ -80053,7 +80053,7 @@
       "rsAbove70": false,
       "passed": 6
     },
-    "sectorZScore": -1.89,
+    "sectorZScore": -1.9,
     "sectorRank": 83,
     "sectorCount": 86,
     "supportResistance": [
@@ -80382,7 +80382,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 805965,
-    "avgVolume": 1594686,
+    "avgVolume": 1594823,
     "fiftyTwoWeekHigh": 479.37,
     "fiftyTwoWeekLow": 298.15,
     "rsi": 61.76,
@@ -80538,7 +80538,7 @@
       "rsAbove70": false,
       "passed": 5
     },
-    "sectorZScore": -1.41,
+    "sectorZScore": -1.43,
     "sectorRank": 74,
     "sectorCount": 86,
     "supportResistance": [
@@ -80864,7 +80864,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4560299,
-    "avgVolume": 7813788,
+    "avgVolume": 7832531,
     "fiftyTwoWeekHigh": 81.09,
     "fiftyTwoWeekLow": 50.24,
     "rsi": 58.5,
@@ -81020,7 +81020,7 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -1.53,
+    "sectorZScore": -1.54,
     "sectorRank": 75,
     "sectorCount": 86,
     "supportResistance": [
@@ -81354,7 +81354,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 14497099,
-    "avgVolume": 13313698,
+    "avgVolume": 13269603,
     "fiftyTwoWeekHigh": 42.82,
     "fiftyTwoWeekLow": 26.22,
     "rsi": 75.07,
@@ -81538,8 +81538,8 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 0.72,
-    "sectorRank": 25,
+    "sectorZScore": 0.73,
+    "sectorRank": 24,
     "sectorCount": 86,
     "supportResistance": [
       {
@@ -81851,7 +81851,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1473068,
-    "avgVolume": 3903209,
+    "avgVolume": 3633445,
     "fiftyTwoWeekHigh": 144.24,
     "fiftyTwoWeekLow": 98.42,
     "rsi": 47.71,
@@ -82335,7 +82335,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1323193,
-    "avgVolume": 1651278,
+    "avgVolume": 1655113,
     "fiftyTwoWeekHigh": 370,
     "fiftyTwoWeekLow": 205.4,
     "rsi": 52.95,
@@ -82492,7 +82492,7 @@
       "passed": 8
     },
     "sectorZScore": -0.17,
-    "sectorRank": 50,
+    "sectorRank": 49,
     "sectorCount": 94,
     "supportResistance": [
       {
@@ -82584,8 +82584,8 @@
       "predicted": 40,
       "direction": "stable",
       "confidence": "low",
-      "slope": -1.786,
-      "r2": 0.59,
+      "slope": -1.893,
+      "r2": 0.62,
       "factors": {
         "trendMomentum": -1,
         "meanReversion": 0.02,
@@ -82817,7 +82817,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3919987,
-    "avgVolume": 2471973,
+    "avgVolume": 2472513,
     "fiftyTwoWeekHigh": 206.4,
     "fiftyTwoWeekLow": 122.36,
     "rsi": 76.16,
@@ -82983,7 +82983,7 @@
     "heldPercentInstitutions": 0.9347,
     "institutionsCount": 1627,
     "shortPercentOfFloat": 0.0251,
-    "targetMeanPrice": 209.9375,
+    "targetMeanPrice": 211.8125,
     "freeCashflow": 1508112000,
     "totalRevenue": 22027347968,
     "totalDebt": 5188589056,
@@ -83008,7 +83008,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 1.63,
+    "sectorZScore": 1.64,
     "sectorRank": 2,
     "sectorCount": 94,
     "supportResistance": [
@@ -83318,7 +83318,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 14410161,
-    "avgVolume": 20184659,
+    "avgVolume": 20232148,
     "fiftyTwoWeekHigh": 34.03,
     "fiftyTwoWeekLow": 15.07,
     "rsi": 50.37,
@@ -83495,7 +83495,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 0.78,
+    "sectorZScore": 0.79,
     "sectorRank": 26,
     "sectorCount": 94,
     "supportResistance": [
@@ -83803,7 +83803,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 10528982,
-    "avgVolume": 11572996,
+    "avgVolume": 11551716,
     "fiftyTwoWeekHigh": 71.15,
     "fiftyTwoWeekLow": 51.2,
     "rsi": 60.2,
@@ -83952,7 +83952,7 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -1.05,
+    "sectorZScore": -1.04,
     "sectorRank": 38,
     "sectorCount": 45,
     "supportResistance": [
@@ -84282,7 +84282,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 6771398,
-    "avgVolume": 6812050,
+    "avgVolume": 6807078,
     "fiftyTwoWeekHigh": 74.9,
     "fiftyTwoWeekLow": 58.6,
     "rsi": 54.81,
@@ -84406,14 +84406,14 @@
     "heldPercentInstitutions": 0.79182,
     "institutionsCount": 1809,
     "shortPercentOfFloat": 0.0517,
-    "targetMeanPrice": 73.5,
+    "targetMeanPrice": 73.40909,
     "freeCashflow": 2561125120,
     "totalRevenue": 147225001984,
     "totalDebt": 25198999552,
     "ebitda": 8128999936,
     "totalCash": 3956000000,
     "operatingCashflow": 6062000128,
-    "averageAnalystRating": "2.1 - Buy",
+    "averageAnalystRating": "2.2 - Buy",
     "rsPercentile": 42,
     "fiftyTwoWeekRangePercent": 59,
     "weeklyHighLowRange": 0.15384615384615385,
@@ -84770,7 +84770,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2286935,
-    "avgVolume": 1913113,
+    "avgVolume": 1923511,
     "fiftyTwoWeekHigh": 236.78,
     "fiftyTwoWeekLow": 150.04,
     "rsi": 73.49,
@@ -84802,7 +84802,7 @@
     "factorGrades": {
       "value": "C",
       "growth": "C",
-      "profitability": "B-",
+      "profitability": "C+",
       "momentum": "A-",
       "safety": "C",
       "overall": "B-"
@@ -84954,7 +84954,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 0.06,
+    "sectorZScore": 0.07,
     "sectorRank": 23,
     "sectorCount": 45,
     "supportResistance": [
@@ -85283,7 +85283,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2879907,
-    "avgVolume": 2642477,
+    "avgVolume": 2640941,
     "fiftyTwoWeekHigh": 196.91,
     "fiftyTwoWeekLow": 126.45,
     "rsi": 51.45,
@@ -85432,7 +85432,7 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -0.65,
+    "sectorZScore": -0.64,
     "sectorRank": 33,
     "sectorCount": 45,
     "supportResistance": [
@@ -85764,7 +85764,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 13085313,
-    "avgVolume": 11188483,
+    "avgVolume": 11249853,
     "fiftyTwoWeekHigh": 53.33,
     "fiftyTwoWeekLow": 34.78,
     "rsi": 70.98,
@@ -85948,7 +85948,7 @@
       "rsAbove70": false,
       "passed": 7
     },
-    "sectorZScore": -0.59,
+    "sectorZScore": -0.58,
     "sectorRank": 21,
     "sectorCount": 30,
     "supportResistance": [
@@ -86272,7 +86272,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 11594274,
-    "avgVolume": 8084759,
+    "avgVolume": 8020000,
     "fiftyTwoWeekHigh": 49.88,
     "fiftyTwoWeekLow": 41.71,
     "rsi": 73,
@@ -86449,7 +86449,7 @@
       "rsAbove70": false,
       "passed": 5
     },
-    "sectorZScore": 0.15,
+    "sectorZScore": 0.16,
     "sectorRank": 10,
     "sectorCount": 24,
     "supportResistance": [
@@ -86764,7 +86764,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4816116,
-    "avgVolume": 3887926,
+    "avgVolume": 3876406,
     "fiftyTwoWeekHigh": 97.45,
     "fiftyTwoWeekLow": 61.9,
     "rsi": 70.96,
@@ -86941,7 +86941,7 @@
       "rsAbove70": false,
       "passed": 7
     },
-    "sectorZScore": -0.16,
+    "sectorZScore": -0.15,
     "sectorRank": 14,
     "sectorCount": 24,
     "supportResistance": [
@@ -87256,7 +87256,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2935048,
-    "avgVolume": 3389016,
+    "avgVolume": 3390130,
     "fiftyTwoWeekHigh": 134.6,
     "fiftyTwoWeekLow": 97.46,
     "rsi": 76.77,
@@ -87433,7 +87433,7 @@
       "rsAbove70": false,
       "passed": 7
     },
-    "sectorZScore": 0.15,
+    "sectorZScore": 0.16,
     "sectorRank": 11,
     "sectorCount": 24,
     "supportResistance": [
@@ -87747,7 +87747,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 15656018,
-    "avgVolume": 21149293,
+    "avgVolume": 21188251,
     "fiftyTwoWeekHigh": 19.09,
     "fiftyTwoWeekLow": 12.97,
     "rsi": 80.81,
@@ -87931,7 +87931,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 0.58,
+    "sectorZScore": 0.59,
     "sectorRank": 8,
     "sectorCount": 24,
     "supportResistance": [
@@ -88248,7 +88248,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3343241,
-    "avgVolume": 5391250,
+    "avgVolume": 5426921,
     "fiftyTwoWeekHigh": 219.82,
     "fiftyTwoWeekLow": 90.51,
     "rsi": 57.99,
@@ -88397,7 +88397,7 @@
       "rsAbove70": false,
       "passed": 5
     },
-    "sectorZScore": -2.71,
+    "sectorZScore": -2.7,
     "sectorRank": 24,
     "sectorCount": 24,
     "supportResistance": [
@@ -88721,7 +88721,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 863792,
-    "avgVolume": 1314232,
+    "avgVolume": 1312833,
     "fiftyTwoWeekHigh": 309.27,
     "fiftyTwoWeekLow": 221.62,
     "rsi": 71.89,
@@ -89219,7 +89219,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 936161,
-    "avgVolume": 632609,
+    "avgVolume": 633350,
     "fiftyTwoWeekHigh": 992.9,
     "fiftyTwoWeekLow": 701.41,
     "rsi": 74.06,
@@ -89403,7 +89403,7 @@
       "rsAbove70": true,
       "passed": 7
     },
-    "sectorZScore": 0.08,
+    "sectorZScore": 0.09,
     "sectorRank": 17,
     "sectorCount": 39,
     "supportResistance": [
@@ -89722,7 +89722,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1200189,
-    "avgVolume": 2076803,
+    "avgVolume": 2088786,
     "fiftyTwoWeekHigh": 184.79,
     "fiftyTwoWeekLow": 129.95,
     "rsi": 61.19,
@@ -90203,7 +90203,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 7047876,
-    "avgVolume": 6616178,
+    "avgVolume": 6649746,
     "fiftyTwoWeekHigh": 67.94,
     "fiftyTwoWeekLow": 50.71,
     "rsi": 70.79,
@@ -90362,7 +90362,7 @@
     "heldPercentInstitutions": 0.79874,
     "institutionsCount": 1771,
     "shortPercentOfFloat": 0.0395,
-    "targetMeanPrice": 65.55,
+    "targetMeanPrice": 65.95,
     "freeCashflow": 2675889408,
     "totalRevenue": 5762706944,
     "totalDebt": 29492946944,
@@ -90721,7 +90721,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1794704,
-    "avgVolume": 1975516,
+    "avgVolume": 1978156,
     "fiftyTwoWeekHigh": 437.06,
     "fiftyTwoWeekLow": 180.38,
     "rsi": 59.09,
@@ -90870,8 +90870,8 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": 0.24,
-    "sectorRank": 16,
+    "sectorZScore": 0.23,
+    "sectorRank": 14,
     "sectorCount": 32,
     "supportResistance": [
       {
@@ -91165,7 +91165,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4321745,
-    "avgVolume": 7624465,
+    "avgVolume": 7619941,
     "fiftyTwoWeekHigh": 35.81,
     "fiftyTwoWeekLow": 19.93,
     "rsi": 54.11,
@@ -91615,7 +91615,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2906785,
-    "avgVolume": 7080173,
+    "avgVolume": 7068248,
     "fiftyTwoWeekHigh": 28.235,
     "fiftyTwoWeekLow": 16.13,
     "rsi": 43.42,
@@ -92073,7 +92073,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1829764,
-    "avgVolume": 3981378,
+    "avgVolume": 3966243,
     "fiftyTwoWeekHigh": 32.025,
     "fiftyTwoWeekLow": 15.71,
     "rsi": 45.8,
@@ -92518,7 +92518,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 25509347,
-    "avgVolume": 20360095,
+    "avgVolume": 20471860,
     "fiftyTwoWeekHigh": 84.64,
     "fiftyTwoWeekLow": 17.88,
     "rsi": 51.28,
@@ -92980,7 +92980,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 26007134,
-    "avgVolume": 33332391,
+    "avgVolume": 33390965,
     "fiftyTwoWeekHigh": 58.15,
     "fiftyTwoWeekLow": 6.86,
     "rsi": 45.63,
@@ -93137,7 +93137,7 @@
       "passed": 4
     },
     "sectorZScore": -0.64,
-    "sectorRank": 91,
+    "sectorRank": 90,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -93429,7 +93429,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 11932707,
-    "avgVolume": 14807350,
+    "avgVolume": 14811956,
     "fiftyTwoWeekHigh": 25.54,
     "fiftyTwoWeekLow": 9.66,
     "rsi": 36.79,
@@ -93593,7 +93593,7 @@
       "passed": 3
     },
     "sectorZScore": 0.28,
-    "sectorRank": 47,
+    "sectorRank": 46,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -93900,7 +93900,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 27525430,
-    "avgVolume": 24864126,
+    "avgVolume": 24971840,
     "fiftyTwoWeekHigh": 20.95,
     "fiftyTwoWeekLow": 4.96,
     "rsi": 39.08,
@@ -94070,7 +94070,7 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -1.65,
+    "sectorZScore": -1.66,
     "sectorRank": 79,
     "sectorCount": 86,
     "supportResistance": [
@@ -94371,7 +94371,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 11524774,
-    "avgVolume": 15381059,
+    "avgVolume": 15438225,
     "fiftyTwoWeekHigh": 19.07,
     "fiftyTwoWeekLow": 3.4,
     "rsi": 31.92,
@@ -94820,7 +94820,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 9801358,
-    "avgVolume": 3091363,
+    "avgVolume": 3126401,
     "fiftyTwoWeekHigh": 74,
     "fiftyTwoWeekLow": 39.43,
     "rsi": 58.58,
@@ -94979,14 +94979,14 @@
     "heldPercentInstitutions": 0.92440003,
     "institutionsCount": 680,
     "shortPercentOfFloat": 0.0347,
-    "targetMeanPrice": 74.76923,
+    "targetMeanPrice": 74.92308,
     "freeCashflow": null,
     "totalRevenue": 2689413120,
     "totalDebt": 4316910080,
     "ebitda": null,
     "totalCash": 2449524992,
     "operatingCashflow": null,
-    "averageAnalystRating": null,
+    "averageAnalystRating": "2.7 - Hold",
     "rsPercentile": 76,
     "fiftyTwoWeekRangePercent": 95,
     "weeklyHighLowRange": 0.16469478690531583,
@@ -95327,7 +95327,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2324606,
-    "avgVolume": 2901486,
+    "avgVolume": 2902803,
     "fiftyTwoWeekHigh": 105.14,
     "fiftyTwoWeekLow": 44.1,
     "rsi": 49.34,
@@ -95802,7 +95802,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 560819,
-    "avgVolume": 555380,
+    "avgVolume": 556990,
     "fiftyTwoWeekHigh": 316.29,
     "fiftyTwoWeekLow": 243.25,
     "rsi": 49.24,
@@ -95933,14 +95933,14 @@
     "heldPercentInstitutions": 1.02567,
     "institutionsCount": 942,
     "shortPercentOfFloat": 0.034,
-    "targetMeanPrice": 281.375,
+    "targetMeanPrice": 280.65216,
     "freeCashflow": 984058752,
     "totalRevenue": 1935442944,
     "totalDebt": 6851756032,
     "ebitda": 1255431936,
     "totalCash": 78241000,
     "operatingCashflow": 1074423040,
-    "averageAnalystRating": "2.7 - Hold",
+    "averageAnalystRating": "2.8 - Hold",
     "rsPercentile": 27,
     "fiftyTwoWeekRangePercent": 16,
     "weeklyHighLowRange": 0.07031120583036425,
@@ -95958,7 +95958,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -0.71,
+    "sectorZScore": -0.7,
     "sectorRank": 30,
     "sectorCount": 39,
     "supportResistance": [
@@ -96298,7 +96298,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1967994,
-    "avgVolume": 1311267,
+    "avgVolume": 1318411,
     "fiftyTwoWeekHigh": 79.08,
     "fiftyTwoWeekLow": 63.44,
     "rsi": 70.45,
@@ -96482,7 +96482,7 @@
       "rsAbove70": false,
       "passed": 6
     },
-    "sectorZScore": 0.68,
+    "sectorZScore": 0.69,
     "sectorRank": 11,
     "sectorCount": 39,
     "supportResistance": [
@@ -96798,7 +96798,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1971807,
-    "avgVolume": 3999806,
+    "avgVolume": 4022460,
     "fiftyTwoWeekHigh": 46.47,
     "fiftyTwoWeekLow": 32.94,
     "rsi": 49.51,
@@ -97275,7 +97275,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1826214,
-    "avgVolume": 2608900,
+    "avgVolume": 2619650,
     "fiftyTwoWeekHigh": 75.86,
     "fiftyTwoWeekLow": 58.38,
     "rsi": 51.16,
@@ -97392,7 +97392,7 @@
     "heldPercentInstitutions": 0.96091,
     "institutionsCount": 1044,
     "shortPercentOfFloat": 0.030199999,
-    "targetMeanPrice": 70,
+    "targetMeanPrice": 70.33333,
     "freeCashflow": 1416431232,
     "totalRevenue": 3093958912,
     "totalDebt": 8479584768,
@@ -97417,7 +97417,7 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": -0.91,
+    "sectorZScore": -0.9,
     "sectorRank": 32,
     "sectorCount": 39,
     "supportResistance": [
@@ -97746,7 +97746,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2047425,
-    "avgVolume": 1530473,
+    "avgVolume": 1539148,
     "fiftyTwoWeekHigh": 45.83,
     "fiftyTwoWeekLow": 35.8,
     "rsi": 70.36,
@@ -97923,7 +97923,7 @@
       "rsAbove70": false,
       "passed": 5
     },
-    "sectorZScore": 0.68,
+    "sectorZScore": 0.69,
     "sectorRank": 13,
     "sectorCount": 39,
     "supportResistance": [
@@ -98258,7 +98258,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 920068,
-    "avgVolume": 904493,
+    "avgVolume": 904923,
     "fiftyTwoWeekHigh": 354.88,
     "fiftyTwoWeekLow": 230.05,
     "rsi": 42.78,
@@ -98421,7 +98421,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.6,
+    "sectorZScore": -1.61,
     "sectorRank": 60,
     "sectorCount": 63,
     "supportResistance": [
@@ -98725,7 +98725,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1265082,
-    "avgVolume": 1603742,
+    "avgVolume": 1614738,
     "fiftyTwoWeekHigh": 189.485,
     "fiftyTwoWeekLow": 53.11,
     "rsi": 41.93,
@@ -98888,8 +98888,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -0.98,
-    "sectorRank": 50,
+    "sectorZScore": -0.99,
+    "sectorRank": 51,
     "sectorCount": 63,
     "supportResistance": [
       {
@@ -99190,7 +99190,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 12673449,
-    "avgVolume": 4383881,
+    "avgVolume": 4394988,
     "fiftyTwoWeekHigh": 17.18,
     "fiftyTwoWeekLow": 9.85,
     "rsi": 68.64,
@@ -99321,7 +99321,7 @@
     "heldPercentInstitutions": 1.04297,
     "institutionsCount": 492,
     "shortPercentOfFloat": 0.082200006,
-    "targetMeanPrice": 13.8,
+    "targetMeanPrice": 13.93333,
     "freeCashflow": 106500000,
     "totalRevenue": 3680000000,
     "totalDebt": 2420999936,
@@ -99661,12 +99661,12 @@
     "marketCap": 3509101824,
     "capCategory": "Mid",
     "pe": null,
-    "forwardPe": 56.945904,
+    "forwardPe": 48.52757,
     "earningsGrowth": null,
     "revenueGrowth": null,
     "beta": null,
     "volume": 1274140,
-    "avgVolume": 2605154,
+    "avgVolume": 2623631,
     "fiftyTwoWeekHigh": 45.297,
     "fiftyTwoWeekLow": 16.24,
     "rsi": 49.12,
@@ -99790,7 +99790,7 @@
     "currentRatio": 2.865,
     "dividendYield": null,
     "trailingEps": -1.28,
-    "forwardEps": 0.33365,
+    "forwardEps": 0.39153,
     "bookValue": 5.475,
     "sharesOutstanding": 184689565,
     "heldPercentInsiders": 0.01302,
@@ -99804,7 +99804,7 @@
     "ebitda": -181240000,
     "totalCash": 992590976,
     "operatingCashflow": -170072992,
-    "averageAnalystRating": "1.6 - Buy",
+    "averageAnalystRating": "1.5 - Strong Buy",
     "rsPercentile": 3,
     "fiftyTwoWeekRangePercent": 9,
     "weeklyHighLowRange": 0.40660664341572356,
@@ -99822,7 +99822,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.87,
+    "sectorZScore": -1.88,
     "sectorRank": 62,
     "sectorCount": 63,
     "supportResistance": [
@@ -99879,8 +99879,8 @@
       "predicted": 24,
       "direction": "stable",
       "confidence": "low",
-      "slope": -0.143,
-      "r2": 0.025,
+      "slope": -0.25,
+      "r2": 0.075,
       "factors": {
         "trendMomentum": -1,
         "meanReversion": 0.19,
@@ -100107,12 +100107,12 @@
     "marketCap": 2260170752,
     "capCategory": "Mid",
     "pe": null,
-    "forwardPe": -935.6,
+    "forwardPe": 598.36273,
     "earningsGrowth": null,
     "revenueGrowth": null,
     "beta": null,
     "volume": 1383897,
-    "avgVolume": 2713621,
+    "avgVolume": 2741470,
     "fiftyTwoWeekHigh": 43.22,
     "fiftyTwoWeekLow": 18.41,
     "rsi": 49.21,
@@ -100236,7 +100236,7 @@
     "currentRatio": 2.477,
     "dividendYield": null,
     "trailingEps": -5.83,
-    "forwardEps": -0.025,
+    "forwardEps": 0.03909,
     "bookValue": -0.83,
     "sharesOutstanding": 96629788,
     "heldPercentInsiders": 0.031519998,
@@ -100569,7 +100569,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2110741,
-    "avgVolume": 1894963,
+    "avgVolume": 1901463,
     "fiftyTwoWeekHigh": 193.55,
     "fiftyTwoWeekLow": 73.06,
     "rsi": 39.91,
@@ -101034,7 +101034,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1660260,
-    "avgVolume": 2254465,
+    "avgVolume": 2265981,
     "fiftyTwoWeekHigh": 316.98,
     "fiftyTwoWeekLow": 68.68,
     "rsi": 27.47,
@@ -101197,8 +101197,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.19,
-    "sectorRank": 117,
+    "sectorZScore": -1.18,
+    "sectorRank": 118,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -101484,7 +101484,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 7212751,
-    "avgVolume": 9148568,
+    "avgVolume": 9212620,
     "fiftyTwoWeekHigh": 21.4,
     "fiftyTwoWeekLow": 12.235,
     "rsi": 45.33,
@@ -101930,7 +101930,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 851904,
-    "avgVolume": 765031,
+    "avgVolume": 768680,
     "fiftyTwoWeekHigh": 247.22,
     "fiftyTwoWeekLow": 127.86,
     "rsi": 38.44,
@@ -102094,7 +102094,7 @@
       "passed": 0
     },
     "sectorZScore": -0.45,
-    "sectorRank": 79,
+    "sectorRank": 78,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -102396,7 +102396,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1662581,
-    "avgVolume": 3175055,
+    "avgVolume": 3199843,
     "fiftyTwoWeekHigh": 63.9,
     "fiftyTwoWeekLow": 20.06,
     "rsi": 36.13,
@@ -102552,8 +102552,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.37,
-    "sectorRank": 120,
+    "sectorZScore": -1.36,
+    "sectorRank": 122,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -102852,7 +102852,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1566648,
-    "avgVolume": 1536568,
+    "avgVolume": 1546528,
     "fiftyTwoWeekHigh": 272.6,
     "fiftyTwoWeekLow": 120.37,
     "rsi": 53.12,
@@ -103009,7 +103009,7 @@
       "passed": 0
     },
     "sectorZScore": -1.55,
-    "sectorRank": 126,
+    "sectorRank": 125,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -103311,7 +103311,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2925480,
-    "avgVolume": 2908849,
+    "avgVolume": 2935816,
     "fiftyTwoWeekHigh": 43.89,
     "fiftyTwoWeekLow": 15.26,
     "rsi": 44.05,
@@ -103767,7 +103767,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 11270729,
-    "avgVolume": 10267883,
+    "avgVolume": 10332028,
     "fiftyTwoWeekHigh": 49.66,
     "fiftyTwoWeekLow": 24.35,
     "rsi": 42.41,
@@ -103931,7 +103931,7 @@
       "passed": 0
     },
     "sectorZScore": -0.73,
-    "sectorRank": 96,
+    "sectorRank": 95,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -104227,7 +104227,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 124006,
-    "avgVolume": 168911,
+    "avgVolume": 170201,
     "fiftyTwoWeekHigh": 4388.11,
     "fiftyTwoWeekLow": 3210.72,
     "rsi": 54.18,
@@ -104358,7 +104358,7 @@
     "heldPercentInstitutions": 0.94158995,
     "institutionsCount": 1849,
     "shortPercentOfFloat": 0.0217,
-    "targetMeanPrice": 4204.7085,
+    "targetMeanPrice": 4205.75,
     "freeCashflow": 1150775424,
     "totalRevenue": 19287705600,
     "totalDebt": 12423128064,
@@ -104681,7 +104681,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1765803,
-    "avgVolume": 2011573,
+    "avgVolume": 2023045,
     "fiftyTwoWeekHigh": 70,
     "fiftyTwoWeekLow": 28.89,
     "rsi": 52.38,
@@ -105154,7 +105154,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 6840864,
-    "avgVolume": 8041737,
+    "avgVolume": 8107596,
     "fiftyTwoWeekHigh": 48.62,
     "fiftyTwoWeekLow": 23.06,
     "rsi": 49.34,
@@ -105607,7 +105607,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3312976,
-    "avgVolume": 3860221,
+    "avgVolume": 3797556,
     "fiftyTwoWeekHigh": 101.5,
     "fiftyTwoWeekLow": 43.41,
     "rsi": 68.1,
@@ -106063,7 +106063,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4632728,
-    "avgVolume": 5963411,
+    "avgVolume": 5888070,
     "fiftyTwoWeekHigh": 7.02,
     "fiftyTwoWeekLow": 3.07,
     "rsi": 52.9,
@@ -106536,7 +106536,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 119521868,
-    "avgVolume": 55759598,
+    "avgVolume": 52184253,
     "fiftyTwoWeekHigh": 7.69,
     "fiftyTwoWeekLow": 0.5,
     "rsi": 62.1,
@@ -106984,7 +106984,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 389028,
-    "avgVolume": 762495,
+    "avgVolume": 762496,
     "fiftyTwoWeekHigh": 217.16,
     "fiftyTwoWeekLow": 153.36,
     "rsi": 59.97,
@@ -107490,7 +107490,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 197741,
-    "avgVolume": 204080,
+    "avgVolume": 205233,
     "fiftyTwoWeekHigh": 581.87,
     "fiftyTwoWeekLow": 297.28,
     "rsi": 80.41,
@@ -107972,7 +107972,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1800918,
-    "avgVolume": 2159001,
+    "avgVolume": 2114100,
     "fiftyTwoWeekHigh": 33.32,
     "fiftyTwoWeekLow": 14.91,
     "rsi": 49.77,
@@ -108114,7 +108114,7 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": -1.53,
+    "sectorZScore": -1.54,
     "sectorRank": 76,
     "sectorCount": 86,
     "supportResistance": [
@@ -108423,7 +108423,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1382363,
-    "avgVolume": 818136,
+    "avgVolume": 815401,
     "fiftyTwoWeekHigh": 266.27,
     "fiftyTwoWeekLow": 151.81,
     "rsi": 75.75,
@@ -108614,8 +108614,8 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 0.83,
-    "sectorRank": 18,
+    "sectorZScore": 0.84,
+    "sectorRank": 16,
     "sectorCount": 86,
     "supportResistance": [
       {
@@ -108938,7 +108938,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1314309,
-    "avgVolume": 1436295,
+    "avgVolume": 1436480,
     "fiftyTwoWeekHigh": 237.5,
     "fiftyTwoWeekLow": 144.14,
     "rsi": 78.46,
@@ -109436,7 +109436,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 18067475,
-    "avgVolume": 13998927,
+    "avgVolume": 13995445,
     "fiftyTwoWeekHigh": 48.78,
     "fiftyTwoWeekLow": 21.01,
     "rsi": 39.01,
@@ -109592,7 +109592,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.37,
+    "sectorZScore": -1.41,
     "sectorRank": 29,
     "sectorCount": 32,
     "supportResistance": [
@@ -109888,12 +109888,12 @@
     "marketCap": 2283513856,
     "capCategory": "Mid",
     "pe": null,
-    "forwardPe": 9.905819,
+    "forwardPe": 9.627519,
     "earningsGrowth": null,
     "revenueGrowth": null,
     "beta": null,
     "volume": 12699600,
-    "avgVolume": 4224431,
+    "avgVolume": 4248885,
     "fiftyTwoWeekHigh": 22.13,
     "fiftyTwoWeekLow": 11.65,
     "rsi": 64.15,
@@ -110010,21 +110010,21 @@
     "currentRatio": 0.754,
     "dividendYield": null,
     "trailingEps": -6.08,
-    "forwardEps": 1.57887,
+    "forwardEps": 1.62451,
     "bookValue": 14.184,
     "sharesOutstanding": 132870031,
     "heldPercentInsiders": 0.024719998,
     "heldPercentInstitutions": 0.99084,
     "institutionsCount": 454,
     "shortPercentOfFloat": 0.1602,
-    "targetMeanPrice": 18.47059,
+    "targetMeanPrice": 18.88235,
     "freeCashflow": -293062496,
     "totalRevenue": 6823799808,
     "totalDebt": null,
     "ebitda": 666000000,
     "totalCash": null,
     "operatingCashflow": 503900000,
-    "averageAnalystRating": "2.3 - Buy",
+    "averageAnalystRating": "2.2 - Buy",
     "rsPercentile": 21,
     "fiftyTwoWeekRangePercent": 38,
     "weeklyHighLowRange": 0.3299319760991056,
@@ -110042,7 +110042,7 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": -0.23,
+    "sectorZScore": -0.25,
     "sectorRank": 20,
     "sectorCount": 32,
     "supportResistance": [
@@ -110341,7 +110341,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1765879,
-    "avgVolume": 1042900,
+    "avgVolume": 1054065,
     "fiftyTwoWeekHigh": 90.22,
     "fiftyTwoWeekLow": 41.9,
     "rsi": 31.42,
@@ -110497,7 +110497,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -2.13,
+    "sectorZScore": -2.18,
     "sectorRank": 32,
     "sectorCount": 32,
     "supportResistance": [
@@ -110803,7 +110803,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2172406,
-    "avgVolume": 1279350,
+    "avgVolume": 1279901,
     "fiftyTwoWeekHigh": 41.22,
     "fiftyTwoWeekLow": 19.6,
     "rsi": 40.51,
@@ -110959,7 +110959,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -0.33,
+    "sectorZScore": -0.35,
     "sectorRank": 22,
     "sectorCount": 32,
     "supportResistance": [
@@ -111250,7 +111250,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2392519,
-    "avgVolume": 2272654,
+    "avgVolume": 2273336,
     "fiftyTwoWeekHigh": 118.19,
     "fiftyTwoWeekLow": 100.61,
     "rsi": 70.41,
@@ -111427,7 +111427,7 @@
       "rsAbove70": false,
       "passed": 5
     },
-    "sectorZScore": -0.16,
+    "sectorZScore": -0.15,
     "sectorRank": 15,
     "sectorCount": 24,
     "supportResistance": [
@@ -111746,7 +111746,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1482573,
-    "avgVolume": 2578168,
+    "avgVolume": 2578673,
     "fiftyTwoWeekHigh": 76.41,
     "fiftyTwoWeekLow": 52.28,
     "rsi": 71.76,
@@ -111916,7 +111916,7 @@
       "rsAbove70": false,
       "passed": 7
     },
-    "sectorZScore": -0.06,
+    "sectorZScore": -0.05,
     "sectorRank": 12,
     "sectorCount": 24,
     "supportResistance": [
@@ -112240,7 +112240,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 966129,
-    "avgVolume": 1282519,
+    "avgVolume": 1287916,
     "fiftyTwoWeekHigh": 187.82,
     "fiftyTwoWeekLow": 141.59,
     "rsi": 80.39,
@@ -112417,7 +112417,7 @@
       "rsAbove70": false,
       "passed": 7
     },
-    "sectorZScore": -0.16,
+    "sectorZScore": -0.15,
     "sectorRank": 16,
     "sectorCount": 24,
     "supportResistance": [
@@ -112731,7 +112731,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2278028,
-    "avgVolume": 3906286,
+    "avgVolume": 3913583,
     "fiftyTwoWeekHigh": 47.35,
     "fiftyTwoWeekLow": 35.64,
     "rsi": 71.38,
@@ -112901,7 +112901,7 @@
       "rsAbove70": false,
       "passed": 7
     },
-    "sectorZScore": -0.38,
+    "sectorZScore": -0.37,
     "sectorRank": 17,
     "sectorCount": 24,
     "supportResistance": [
@@ -113215,7 +113215,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2641535,
-    "avgVolume": 2148398,
+    "avgVolume": 2154216,
     "fiftyTwoWeekHigh": 84.08,
     "fiftyTwoWeekLow": 61.94,
     "rsi": 70.57,
@@ -113385,7 +113385,7 @@
       "rsAbove70": false,
       "passed": 7
     },
-    "sectorZScore": -0.06,
+    "sectorZScore": -0.05,
     "sectorRank": 13,
     "sectorCount": 24,
     "supportResistance": [
@@ -113695,7 +113695,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4375485,
-    "avgVolume": 7094581,
+    "avgVolume": 7090051,
     "fiftyTwoWeekHigh": 38.23,
     "fiftyTwoWeekLow": 22.36,
     "rsi": 47.55,
@@ -114167,7 +114167,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 535277,
-    "avgVolume": 1094716,
+    "avgVolume": 1098088,
     "fiftyTwoWeekHigh": 129.12,
     "fiftyTwoWeekLow": 95.28,
     "rsi": 50.58,
@@ -114655,7 +114655,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 13875779,
-    "avgVolume": 9107786,
+    "avgVolume": 9073852,
     "fiftyTwoWeekHigh": 14.08,
     "fiftyTwoWeekLow": 9.106,
     "rsi": 79.15,
@@ -114846,7 +114846,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 1,
+    "sectorZScore": 1.01,
     "sectorRank": 4,
     "sectorCount": 24,
     "supportResistance": [
@@ -115160,7 +115160,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 7285822,
-    "avgVolume": 3851921,
+    "avgVolume": 3848691,
     "fiftyTwoWeekHigh": 41.01,
     "fiftyTwoWeekLow": 23.53,
     "rsi": 55.07,
@@ -115303,7 +115303,7 @@
     "heldPercentInstitutions": 0.50964,
     "institutionsCount": 546,
     "shortPercentOfFloat": null,
-    "targetMeanPrice": 42.115947,
+    "targetMeanPrice": 42.11652,
     "freeCashflow": 1316749952,
     "totalRevenue": 7965000192,
     "totalDebt": 5721999872,
@@ -115328,7 +115328,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.53,
+    "sectorZScore": -1.54,
     "sectorRank": 77,
     "sectorCount": 86,
     "supportResistance": [
@@ -115657,7 +115657,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3411061,
-    "avgVolume": 2328869,
+    "avgVolume": 2322436,
     "fiftyTwoWeekHigh": 44.97,
     "fiftyTwoWeekLow": 29.57,
     "rsi": 50.14,
@@ -115689,10 +115689,10 @@
     "factorGrades": {
       "value": "B",
       "growth": "C",
-      "profitability": "C",
+      "profitability": "A",
       "momentum": "C-",
-      "safety": "C",
-      "overall": "C+"
+      "safety": "A",
+      "overall": "B+"
     },
     "smrRating": null,
     "earningsDrift": null,
@@ -115764,37 +115764,37 @@
     },
     "priceToBook": 116.10919,
     "pegRatio": null,
-    "enterpriseValue": null,
-    "profitMargins": null,
-    "grossMargins": null,
-    "operatingMargins": null,
-    "returnOnEquity": null,
-    "returnOnAssets": null,
-    "debtToEquity": null,
-    "currentRatio": null,
-    "dividendYield": null,
+    "enterpriseValue": 33619134464,
+    "profitMargins": 0.94819,
+    "grossMargins": 1,
+    "operatingMargins": 0.9784,
+    "returnOnEquity": 0.25048,
+    "returnOnAssets": 0.15269,
+    "debtToEquity": 4.446,
+    "currentRatio": 6.148,
+    "dividendYield": 0.023799999999999998,
     "trailingEps": 0.0649,
     "forwardEps": 0.0585386,
     "bookValue": 0.28611000000000003,
     "sharesOutstanding": 1017886307,
-    "heldPercentInsiders": null,
-    "heldPercentInstitutions": null,
-    "institutionsCount": null,
+    "heldPercentInsiders": 0.01966,
+    "heldPercentInstitutions": 0.71246004,
+    "institutionsCount": 547,
     "shortPercentOfFloat": null,
     "targetMeanPrice": 42.005,
-    "freeCashflow": null,
-    "totalRevenue": null,
-    "totalDebt": null,
-    "ebitda": null,
-    "totalCash": null,
-    "operatingCashflow": null,
+    "freeCashflow": 4082874880,
+    "totalRevenue": 6620000256,
+    "totalDebt": 1255000064,
+    "ebitda": 6470000128,
+    "totalCash": 408000000,
+    "operatingCashflow": 830000000,
     "averageAnalystRating": null,
     "rsPercentile": 26,
     "fiftyTwoWeekRangePercent": 24,
     "weeklyHighLowRange": 0.11760945989133909,
     "accDistRating": "B",
     "styleClassification": "Value",
-    "dataCompleteness": 27,
+    "dataCompleteness": 80,
     "minerviniChecks": {
       "priceAbove150and200": false,
       "sma150Above200": false,
@@ -115806,8 +115806,8 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -0.7,
-    "sectorRank": 64,
+    "sectorZScore": -0.71,
+    "sectorRank": 65,
     "sectorCount": 83,
     "supportResistance": [
       {
@@ -116120,7 +116120,7 @@
       "valueAreaHigh": 40.97,
       "valueAreaLow": 30.19
     },
-    "dcfValue": null
+    "dcfValue": 13.25
   },
   {
     "ticker": "ABF.L",
@@ -116138,7 +116138,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2455279,
-    "avgVolume": 928981,
+    "avgVolume": 937169,
     "fiftyTwoWeekHigh": 23.59,
     "fiftyTwoWeekLow": 18.1,
     "rsi": 55.49,
@@ -116287,7 +116287,7 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": 0.06,
+    "sectorZScore": 0.07,
     "sectorRank": 24,
     "sectorCount": 45,
     "supportResistance": [
@@ -116622,7 +116622,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 8111910,
-    "avgVolume": 4000559,
+    "avgVolume": 3985468,
     "fiftyTwoWeekHigh": 13.35,
     "fiftyTwoWeekLow": 7.7166,
     "rsi": 40.02,
@@ -116790,8 +116790,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": 0.1,
-    "sectorRank": 55,
+    "sectorZScore": 0.09,
+    "sectorRank": 57,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -117125,7 +117125,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 7565563,
-    "avgVolume": 4649041,
+    "avgVolume": 4678757,
     "fiftyTwoWeekHigh": 9.200000000000001,
     "fiftyTwoWeekLow": 4.54539,
     "rsi": 46.47,
@@ -117286,8 +117286,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": 0.01,
-    "sectorRank": 58,
+    "sectorZScore": 0,
+    "sectorRank": 60,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -117615,7 +117615,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 261648,
-    "avgVolume": 212365,
+    "avgVolume": 214972,
     "fiftyTwoWeekHigh": 7.75,
     "fiftyTwoWeekLow": 5.34,
     "rsi": 50.24,
@@ -118084,7 +118084,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1074787,
-    "avgVolume": 629390,
+    "avgVolume": 633126,
     "fiftyTwoWeekHigh": 32.92,
     "fiftyTwoWeekLow": 23.48,
     "rsi": 75.41,
@@ -118594,7 +118594,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2220454,
-    "avgVolume": 970686,
+    "avgVolume": 971118,
     "fiftyTwoWeekHigh": 42.04,
     "fiftyTwoWeekLow": 23.16,
     "rsi": 81.79,
@@ -118790,7 +118790,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 1.48,
+    "sectorZScore": 1.46,
     "sectorRank": 14,
     "sectorCount": 128,
     "supportResistance": [
@@ -119106,7 +119106,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 8462241,
-    "avgVolume": 4570104,
+    "avgVolume": 4592861,
     "fiftyTwoWeekHigh": 8.27,
     "fiftyTwoWeekLow": 4.107,
     "rsi": 47.61,
@@ -119237,7 +119237,7 @@
     "heldPercentInstitutions": 0.92664003,
     "institutionsCount": 289,
     "shortPercentOfFloat": null,
-    "targetMeanPrice": 6.12,
+    "targetMeanPrice": 5.9064700000000006,
     "freeCashflow": 182053120,
     "totalRevenue": 425128992,
     "totalDebt": 7184000,
@@ -119262,8 +119262,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": 0.01,
-    "sectorRank": 59,
+    "sectorZScore": 0,
+    "sectorRank": 61,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -119587,7 +119587,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 7115082,
-    "avgVolume": 4327522,
+    "avgVolume": 4343149,
     "fiftyTwoWeekHigh": 5.995,
     "fiftyTwoWeekLow": 2.8339999999999996,
     "rsi": 84.56,
@@ -120097,7 +120097,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 5406673,
-    "avgVolume": 2393298,
+    "avgVolume": 2397190,
     "fiftyTwoWeekHigh": 10.315,
     "fiftyTwoWeekLow": 4.525,
     "rsi": 39.52,
@@ -120571,7 +120571,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 852851,
-    "avgVolume": 1295642,
+    "avgVolume": 1310314,
     "fiftyTwoWeekHigh": 5.785,
     "fiftyTwoWeekLow": 3.552,
     "rsi": 47.25,
@@ -120732,7 +120732,7 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": -0.05,
+    "sectorZScore": -0.03,
     "sectorRank": 9,
     "sectorCount": 17,
     "supportResistance": [
@@ -121065,7 +121065,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1137392,
-    "avgVolume": 1178624,
+    "avgVolume": 1178955,
     "fiftyTwoWeekHigh": 3.0060000000000002,
     "fiftyTwoWeekLow": 1.6403100000000002,
     "rsi": 59.21,
@@ -121208,7 +121208,7 @@
       "passed": 1
     },
     "sectorZScore": -0.17,
-    "sectorRank": 55,
+    "sectorRank": 54,
     "sectorCount": 94,
     "supportResistance": [
       {
@@ -121546,7 +121546,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 669888,
-    "avgVolume": 687265,
+    "avgVolume": 691008,
     "fiftyTwoWeekHigh": 19.6,
     "fiftyTwoWeekLow": 10.83,
     "rsi": 35.55,
@@ -121703,7 +121703,7 @@
       "passed": 0
     },
     "sectorZScore": -0.18,
-    "sectorRank": 68,
+    "sectorRank": 67,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -122032,7 +122032,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4506362,
-    "avgVolume": 2187300,
+    "avgVolume": 2206007,
     "fiftyTwoWeekHigh": 3.2119999999999997,
     "fiftyTwoWeekLow": 1.84612,
     "rsi": 42.99,
@@ -122189,7 +122189,7 @@
       "passed": 0
     },
     "sectorZScore": 0.28,
-    "sectorRank": 51,
+    "sectorRank": 50,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -122491,7 +122491,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1527793,
-    "avgVolume": 1280879,
+    "avgVolume": 1276991,
     "fiftyTwoWeekHigh": 6.05,
     "fiftyTwoWeekLow": 3.83,
     "rsi": 70.72,
@@ -122666,7 +122666,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": -0.91,
+    "sectorZScore": -0.9,
     "sectorRank": 21,
     "sectorCount": 24,
     "supportResistance": [
@@ -122992,7 +122992,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 567557,
-    "avgVolume": 596867,
+    "avgVolume": 601750,
     "fiftyTwoWeekHigh": 2.52,
     "fiftyTwoWeekLow": 1.818,
     "rsi": 46.95,
@@ -123148,8 +123148,8 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": 0.01,
-    "sectorRank": 60,
+    "sectorZScore": 0,
+    "sectorRank": 62,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -123479,7 +123479,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 919258,
-    "avgVolume": 741786,
+    "avgVolume": 743649,
     "fiftyTwoWeekHigh": 2.7660000000000005,
     "fiftyTwoWeekLow": 1.7550000000000001,
     "rsi": 42.77,
@@ -123626,7 +123626,7 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": -0.39,
+    "sectorZScore": -0.38,
     "sectorRank": 61,
     "sectorCount": 94,
     "supportResistance": [
@@ -123957,7 +123957,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 22325,
-    "avgVolume": 173124,
+    "avgVolume": 174470,
     "fiftyTwoWeekHigh": 0.9500000000000001,
     "fiftyTwoWeekLow": 0.42,
     "rsi": 49.48,
@@ -124415,7 +124415,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 71589,
-    "avgVolume": 63736,
+    "avgVolume": 63970,
     "fiftyTwoWeekHigh": 22.3,
     "fiftyTwoWeekLow": 12.76,
     "rsi": 58.74,
@@ -124551,7 +124551,7 @@
     "ebitda": 31100000,
     "totalCash": 13400000,
     "operatingCashflow": 27400000,
-    "averageAnalystRating": "2.2 - Buy",
+    "averageAnalystRating": null,
     "rsPercentile": 48,
     "fiftyTwoWeekRangePercent": 59,
     "weeklyHighLowRange": 0.20169082125603888,
@@ -124569,7 +124569,7 @@
       "rsAbove70": false,
       "passed": 5
     },
-    "sectorZScore": -2.24,
+    "sectorZScore": -2.26,
     "sectorRank": 86,
     "sectorCount": 86,
     "supportResistance": [
@@ -124908,7 +124908,7 @@
     "revenueGrowth": 0.05,
     "beta": 1.24,
     "volume": 10414421,
-    "avgVolume": 9488055,
+    "avgVolume": 9532551,
     "fiftyTwoWeekHigh": 205.95,
     "fiftyTwoWeekLow": 120.8,
     "rsi": 40.86,
@@ -125010,15 +125010,15 @@
     },
     "bearishScore": 4,
     "bullishScore": 5,
-    "sentimentAvg": -0.0503,
+    "sentimentAvg": -0.1467,
     "score": {
       "priceMomentum": 37,
       "technicalSignals": 56,
-      "newsSentiment": 47,
+      "newsSentiment": 43,
       "fundamentals": 53,
       "volumeTrend": 21,
       "riskInverse": 52,
-      "composite": 46
+      "composite": 45
     },
     "priceToBook": 6.626635,
     "pegRatio": null,
@@ -125064,8 +125064,8 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": 0.28,
-    "sectorRank": 45,
+    "sectorZScore": 0.19,
+    "sectorRank": 52,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -125153,14 +125153,14 @@
       "Semiconductors"
     ],
     "predictiveScore": {
-      "predicted": 54,
+      "predicted": 53,
       "direction": "stable",
       "confidence": "low",
       "slope": -1.393,
       "r2": 0.726,
       "factors": {
         "trendMomentum": 1,
-        "meanReversion": 0.04,
+        "meanReversion": 0.05,
         "technicalSupport": -0.033
       }
     },
@@ -125389,7 +125389,7 @@
     "revenueGrowth": 0.6531999999999999,
     "beta": 1.14,
     "volume": 4042393,
-    "avgVolume": 2273778,
+    "avgVolume": 2223225,
     "fiftyTwoWeekHigh": 651.73,
     "fiftyTwoWeekLow": 365.74,
     "rsi": 39.45,
@@ -125496,7 +125496,7 @@
     },
     "bearishScore": 4,
     "bullishScore": 3,
-    "sentimentAvg": 0.1368,
+    "sentimentAvg": 0.1453,
     "score": {
       "priceMomentum": 34,
       "technicalSignals": 44,
@@ -125508,7 +125508,7 @@
     },
     "priceToBook": 2.5945377,
     "pegRatio": null,
-    "enterpriseValue": 87924129792,
+    "enterpriseValue": 87970922496,
     "profitMargins": 0.13756,
     "grossMargins": 0.82024,
     "operatingMargins": 0.13340001,
@@ -125529,7 +125529,7 @@
     "freeCashflow": 3096222464,
     "totalRevenue": 8007661056,
     "totalDebt": 10868556800,
-    "ebitda": 1800390016,
+    "ebitda": 1615056000,
     "totalCash": 2203482112,
     "operatingCashflow": 2442895104,
     "averageAnalystRating": "1.6 - Buy",
@@ -125621,8 +125621,8 @@
       "predicted": 47,
       "direction": "improving",
       "confidence": "low",
-      "slope": 1.214,
-      "r2": 0.469,
+      "slope": 1.107,
+      "r2": 0.414,
       "factors": {
         "trendMomentum": 1,
         "meanReversion": 0.12,
@@ -125854,7 +125854,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 20410598,
-    "avgVolume": 20843857,
+    "avgVolume": 20899301,
     "fiftyTwoWeekHigh": 101.99,
     "fiftyTwoWeekLow": 60.63,
     "rsi": 49.25,
@@ -125949,15 +125949,15 @@
     },
     "bearishScore": 4,
     "bullishScore": 2,
-    "sentimentAvg": 0.088,
+    "sentimentAvg": 0.20400000000000001,
     "score": {
       "priceMomentum": 33,
       "technicalSignals": 38,
-      "newsSentiment": 54,
+      "newsSentiment": 60,
       "fundamentals": 80,
       "volumeTrend": 19,
       "riskInverse": 59,
-      "composite": 46
+      "composite": 47
     },
     "priceToBook": 5.767378,
     "pegRatio": null,
@@ -126003,8 +126003,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": 0.28,
-    "sectorRank": 46,
+    "sectorZScore": 0.37,
+    "sectorRank": 41,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -126070,14 +126070,14 @@
       "Tech"
     ],
     "predictiveScore": {
-      "predicted": 54,
+      "predicted": 55,
       "direction": "stable",
       "confidence": "low",
       "slope": 1.536,
       "r2": 0.753,
       "factors": {
         "trendMomentum": 1,
-        "meanReversion": 0.04,
+        "meanReversion": 0.03,
         "technicalSupport": -0.033
       }
     },
@@ -126306,7 +126306,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 6135915,
-    "avgVolume": 7792524,
+    "avgVolume": 7804361,
     "fiftyTwoWeekHigh": 375.51,
     "fiftyTwoWeekLow": 299,
     "rsi": 47.13,
@@ -126401,15 +126401,15 @@
     },
     "bearishScore": 4,
     "bullishScore": 2,
-    "sentimentAvg": -0.2218,
+    "sentimentAvg": 0.015999999999999993,
     "score": {
       "priceMomentum": 44,
       "technicalSignals": 38,
-      "newsSentiment": 39,
+      "newsSentiment": 51,
       "fundamentals": 54,
       "volumeTrend": 15,
       "riskInverse": 62,
-      "composite": 42
+      "composite": 44
     },
     "priceToBook": 15.979835,
     "pegRatio": null,
@@ -126455,8 +126455,8 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -1.82,
-    "sectorRank": 77,
+    "sectorZScore": -1.58,
+    "sectorRank": 75,
     "sectorCount": 83,
     "supportResistance": [
       {
@@ -126548,14 +126548,14 @@
       "Fintech"
     ],
     "predictiveScore": {
-      "predicted": 50,
-      "direction": "improving",
+      "predicted": 49,
+      "direction": "stable",
       "confidence": "low",
-      "slope": 0.643,
-      "r2": 0.482,
+      "slope": 0.429,
+      "r2": 0.333,
       "factors": {
-        "trendMomentum": 1,
-        "meanReversion": 0.08,
+        "trendMomentum": 0.643,
+        "meanReversion": 0.06,
         "technicalSupport": -0.033
       }
     },
@@ -126784,7 +126784,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 6793581,
-    "avgVolume": 8897680,
+    "avgVolume": 8943398,
     "fiftyTwoWeekHigh": 606.36,
     "fiftyTwoWeekLow": 234.6,
     "rsi": 49.16,
@@ -126879,15 +126879,15 @@
     },
     "bearishScore": 4,
     "bullishScore": 2,
-    "sentimentAvg": 0.24180000000000001,
+    "sentimentAvg": -0.02410000000000001,
     "score": {
       "priceMomentum": 43,
       "technicalSignals": 38,
-      "newsSentiment": 62,
+      "newsSentiment": 49,
       "fundamentals": 69,
       "volumeTrend": 16,
       "riskInverse": 42,
-      "composite": 46
+      "composite": 44
     },
     "priceToBook": 2.6663575,
     "pegRatio": null,
@@ -126933,8 +126933,8 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -0.54,
-    "sectorRank": 43,
+    "sectorZScore": -0.72,
+    "sectorRank": 47,
     "sectorCount": 63,
     "supportResistance": [
       {
@@ -127027,14 +127027,14 @@
       "Healthcare"
     ],
     "predictiveScore": {
-      "predicted": 54,
+      "predicted": 52,
       "direction": "improving",
       "confidence": "low",
       "slope": 0.643,
       "r2": 0.579,
       "factors": {
         "trendMomentum": 1,
-        "meanReversion": 0.04,
+        "meanReversion": 0.06,
         "technicalSupport": -0.033
       }
     },
@@ -127263,7 +127263,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 7914592,
-    "avgVolume": 9051836,
+    "avgVolume": 9106585,
     "fiftyTwoWeekHigh": 141.23,
     "fiftyTwoWeekLow": 105.27,
     "rsi": 56.84,
@@ -127358,15 +127358,15 @@
     },
     "bearishScore": 4,
     "bullishScore": 2,
-    "sentimentAvg": -0.2304,
+    "sentimentAvg": -0.1372,
     "score": {
       "priceMomentum": 40,
       "technicalSignals": 38,
-      "newsSentiment": 38,
+      "newsSentiment": 43,
       "fundamentals": 52,
       "volumeTrend": 17,
       "riskInverse": 58,
-      "composite": 40
+      "composite": 41
     },
     "priceToBook": 3.8760078,
     "pegRatio": null,
@@ -127412,8 +127412,8 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -1.07,
-    "sectorRank": 51,
+    "sectorZScore": -0.99,
+    "sectorRank": 50,
     "sectorCount": 63,
     "supportResistance": [
       {
@@ -127516,14 +127516,14 @@
       "Dividend Aristocrats"
     ],
     "predictiveScore": {
-      "predicted": 32,
+      "predicted": 33,
       "direction": "stable",
       "confidence": "low",
       "slope": 0.071,
       "r2": 0.015,
       "factors": {
         "trendMomentum": -1,
-        "meanReversion": 0.1,
+        "meanReversion": 0.09,
         "technicalSupport": -0.033
       }
     },
@@ -127752,7 +127752,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 9128221,
-    "avgVolume": 11573565,
+    "avgVolume": 11555976,
     "fiftyTwoWeekHigh": 124.69,
     "fiftyTwoWeekLow": 80.1,
     "rsi": 46.84,
@@ -127847,15 +127847,15 @@
     },
     "bearishScore": 4,
     "bullishScore": 2,
-    "sentimentAvg": 0.2028,
+    "sentimentAvg": 0.11520000000000001,
     "score": {
       "priceMomentum": 46,
       "technicalSignals": 38,
-      "newsSentiment": 60,
+      "newsSentiment": 56,
       "fundamentals": 81,
       "volumeTrend": 13,
       "riskInverse": 57,
-      "composite": 49
+      "composite": 48
     },
     "priceToBook": 1.7361124,
     "pegRatio": null,
@@ -127901,8 +127901,8 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": 0.24,
-    "sectorRank": 12,
+    "sectorZScore": 0.14,
+    "sectorRank": 16,
     "sectorCount": 32,
     "supportResistance": [
       {
@@ -127993,14 +127993,14 @@
       "Streaming & Digital Media"
     ],
     "predictiveScore": {
-      "predicted": 57,
+      "predicted": 56,
       "direction": "improving",
       "confidence": "low",
-      "slope": 1.607,
-      "r2": 0.67,
+      "slope": 1.393,
+      "r2": 0.621,
       "factors": {
         "trendMomentum": 1,
-        "meanReversion": 0.01,
+        "meanReversion": 0.02,
         "technicalSupport": -0.033
       }
     },
@@ -128229,7 +128229,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2303684,
-    "avgVolume": 2364895,
+    "avgVolume": 2379170,
     "fiftyTwoWeekHigh": 579.05,
     "fiftyTwoWeekLow": 381.61,
     "rsi": 46.11,
@@ -128378,7 +128378,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -2.07,
+    "sectorZScore": -2.08,
     "sectorRank": 80,
     "sectorCount": 83,
     "supportResistance": [
@@ -128705,7 +128705,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 760347,
-    "avgVolume": 359216,
+    "avgVolume": 361093,
     "fiftyTwoWeekHigh": 5839.41,
     "fiftyTwoWeekLow": 3765.45,
     "rsi": 41.6,
@@ -128937,10 +128937,10 @@
     ],
     "predictiveScore": {
       "predicted": 50,
-      "direction": "improving",
+      "direction": "stable",
       "confidence": "low",
-      "slope": 0.321,
-      "r2": 0.036,
+      "slope": 0,
+      "r2": 0,
       "factors": {
         "trendMomentum": 1,
         "meanReversion": 0.08,
@@ -129172,7 +129172,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4531208,
-    "avgVolume": 5296529,
+    "avgVolume": 5278398,
     "fiftyTwoWeekHigh": 285.5,
     "fiftyTwoWeekLow": 155.4,
     "rsi": 43.29,
@@ -129322,7 +129322,7 @@
       "passed": 1
     },
     "sectorZScore": -1.09,
-    "sectorRank": 111,
+    "sectorRank": 109,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -129623,7 +129623,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3309715,
-    "avgVolume": 2837591,
+    "avgVolume": 2846910,
     "fiftyTwoWeekHigh": 785,
     "fiftyTwoWeekLow": 405,
     "rsi": 57.12,
@@ -129772,7 +129772,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.09,
+    "sectorZScore": -1.12,
     "sectorRank": 27,
     "sectorCount": 32,
     "supportResistance": [
@@ -130069,7 +130069,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2437281,
-    "avgVolume": 3791811,
+    "avgVolume": 3807775,
     "fiftyTwoWeekHigh": 189.35,
     "fiftyTwoWeekLow": 143.17,
     "rsi": 54.55,
@@ -130232,7 +130232,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -0.82,
+    "sectorZScore": -0.83,
     "sectorRank": 66,
     "sectorCount": 83,
     "supportResistance": [
@@ -130555,7 +130555,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 8670865,
-    "avgVolume": 10163324,
+    "avgVolume": 10149348,
     "fiftyTwoWeekHigh": 238.59,
     "fiftyTwoWeekLow": 57.79,
     "rsi": 49.65,
@@ -130704,7 +130704,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": 0.02,
+    "sectorZScore": 0.04,
     "sectorRank": 7,
     "sectorCount": 17,
     "supportResistance": [
@@ -131020,7 +131020,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1281772,
-    "avgVolume": 1296255,
+    "avgVolume": 1299766,
     "fiftyTwoWeekHigh": 412.97,
     "fiftyTwoWeekLow": 304.59,
     "rsi": 53.61,
@@ -131151,14 +131151,14 @@
     "heldPercentInstitutions": 0.88815004,
     "institutionsCount": 1731,
     "shortPercentOfFloat": 0.0104,
-    "targetMeanPrice": 397.4737,
+    "targetMeanPrice": 397.42105,
     "freeCashflow": 3059875072,
     "totalRevenue": 17180999680,
     "totalDebt": 16071000064,
     "ebitda": 5664000000,
     "totalCash": 2617999872,
     "operatingCashflow": 3480999936,
-    "averageAnalystRating": "2.1 - Buy",
+    "averageAnalystRating": "2.0 - Buy",
     "rsPercentile": 23,
     "fiftyTwoWeekRangePercent": 28,
     "weeklyHighLowRange": 0.1298189827270528,
@@ -131176,7 +131176,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -0.82,
+    "sectorZScore": -0.83,
     "sectorRank": 67,
     "sectorCount": 83,
     "supportResistance": [
@@ -131505,7 +131505,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2742916,
-    "avgVolume": 2232785,
+    "avgVolume": 2240983,
     "fiftyTwoWeekHigh": 376.45,
     "fiftyTwoWeekLow": 221.56,
     "rsi": 51.48,
@@ -131963,7 +131963,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 273673,
-    "avgVolume": 361449,
+    "avgVolume": 364100,
     "fiftyTwoWeekHigh": 1623.83,
     "fiftyTwoWeekLow": 1183.6,
     "rsi": 44.03,
@@ -132112,7 +132112,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -1.89,
+    "sectorZScore": -1.9,
     "sectorRank": 82,
     "sectorCount": 86,
     "supportResistance": [
@@ -132433,7 +132433,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2080750,
-    "avgVolume": 3408750,
+    "avgVolume": 3407846,
     "fiftyTwoWeekHigh": 267.88,
     "fiftyTwoWeekLow": 204.66,
     "rsi": 67.84,
@@ -132927,7 +132927,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1806080,
-    "avgVolume": 3638090,
+    "avgVolume": 3629473,
     "fiftyTwoWeekHigh": 367.01,
     "fiftyTwoWeekLow": 159.25,
     "rsi": 51.65,
@@ -133381,7 +133381,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1385311,
-    "avgVolume": 2399340,
+    "avgVolume": 2401826,
     "fiftyTwoWeekHigh": 68.29,
     "fiftyTwoWeekLow": 43.51,
     "rsi": 71.03,
@@ -133874,7 +133874,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1903057,
-    "avgVolume": 2052280,
+    "avgVolume": 2058040,
     "fiftyTwoWeekHigh": 264.79,
     "fiftyTwoWeekLow": 188.56,
     "rsi": 48.63,
@@ -134023,7 +134023,7 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": -0.61,
+    "sectorZScore": -0.64,
     "sectorRank": 25,
     "sectorCount": 32,
     "supportResistance": [
@@ -134322,12 +134322,12 @@
     "marketCap": 147259932672,
     "capCategory": "Large",
     "pe": 10.341974,
-    "forwardPe": 8.165073,
+    "forwardPe": 8.269085,
     "earningsGrowth": null,
     "revenueGrowth": null,
     "beta": null,
     "volume": 5911460,
-    "avgVolume": 8261983,
+    "avgVolume": 8277090,
     "fiftyTwoWeekHigh": 139.41,
     "fiftyTwoWeekLow": 87.11,
     "rsi": 45.05,
@@ -134451,7 +134451,7 @@
     "currentRatio": 2.355,
     "dividendYield": null,
     "trailingEps": 10.03,
-    "forwardEps": 12.704112,
+    "forwardEps": 12.544314,
     "bookValue": 40.882145,
     "sharesOutstanding": 1419646462,
     "heldPercentInsiders": 0.0027700001,
@@ -134781,7 +134781,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 28725479,
-    "avgVolume": 43071342,
+    "avgVolume": 42809101,
     "fiftyTwoWeekHigh": 8.02,
     "fiftyTwoWeekLow": 3.02,
     "rsi": 47.22,
@@ -135225,7 +135225,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2252139,
-    "avgVolume": 8459632,
+    "avgVolume": 8538690,
     "fiftyTwoWeekHigh": 27.78,
     "fiftyTwoWeekLow": 9.89,
     "rsi": 41.58,
@@ -135374,7 +135374,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -0.9,
+    "sectorZScore": -0.92,
     "sectorRank": 26,
     "sectorCount": 32,
     "supportResistance": [
@@ -135671,7 +135671,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3103300,
-    "avgVolume": 2019957,
+    "avgVolume": 2021203,
     "fiftyTwoWeekHigh": 118.22,
     "fiftyTwoWeekLow": 77.85,
     "rsi": 42.01,
@@ -135820,7 +135820,7 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -0.82,
+    "sectorZScore": -0.83,
     "sectorRank": 68,
     "sectorCount": 83,
     "supportResistance": [
@@ -136149,7 +136149,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3226281,
-    "avgVolume": 1047400,
+    "avgVolume": 1051143,
     "fiftyTwoWeekHigh": 97.23,
     "fiftyTwoWeekLow": 57.05,
     "rsi": 32.82,
@@ -136298,8 +136298,8 @@
       "rsAbove70": false,
       "passed": 5
     },
-    "sectorZScore": -0.2,
-    "sectorRank": 52,
+    "sectorZScore": -0.21,
+    "sectorRank": 53,
     "sectorCount": 83,
     "supportResistance": [
       {
@@ -136631,7 +136631,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1003596,
-    "avgVolume": 675544,
+    "avgVolume": 680198,
     "fiftyTwoWeekHigh": 93.96,
     "fiftyTwoWeekLow": 64.66,
     "rsi": 46.94,
@@ -136794,7 +136794,7 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": -0.07,
+    "sectorZScore": -0.08,
     "sectorRank": 49,
     "sectorCount": 83,
     "supportResistance": [
@@ -137117,7 +137117,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 529149,
-    "avgVolume": 1020572,
+    "avgVolume": 1022911,
     "fiftyTwoWeekHigh": 173.38,
     "fiftyTwoWeekLow": 125.75,
     "rsi": 48.31,
@@ -137273,7 +137273,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -0.71,
+    "sectorZScore": -0.7,
     "sectorRank": 29,
     "sectorCount": 39,
     "supportResistance": [
@@ -137608,7 +137608,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 527069,
-    "avgVolume": 1295693,
+    "avgVolume": 1306853,
     "fiftyTwoWeekHigh": 126.55,
     "fiftyTwoWeekLow": 97.17,
     "rsi": 49.89,
@@ -137764,7 +137764,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -0.61,
+    "sectorZScore": -0.6,
     "sectorRank": 27,
     "sectorCount": 39,
     "supportResistance": [
@@ -138105,7 +138105,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2055931,
-    "avgVolume": 1142501,
+    "avgVolume": 1143968,
     "fiftyTwoWeekHigh": 230.21,
     "fiftyTwoWeekLow": 166.73,
     "rsi": 49.65,
@@ -138592,7 +138592,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 5462377,
-    "avgVolume": 5739291,
+    "avgVolume": 5771505,
     "fiftyTwoWeekHigh": 32.22,
     "fiftyTwoWeekLow": 21.33,
     "rsi": 41.29,
@@ -138749,7 +138749,7 @@
       "passed": 0
     },
     "sectorZScore": 0.28,
-    "sectorRank": 48,
+    "sectorRank": 47,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -138850,8 +138850,8 @@
       "predicted": 54,
       "direction": "improving",
       "confidence": "low",
-      "slope": 2.75,
-      "r2": 0.891,
+      "slope": 2.643,
+      "r2": 0.882,
       "factors": {
         "trendMomentum": 1,
         "meanReversion": 0.04,
@@ -139083,7 +139083,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 760263,
-    "avgVolume": 1276550,
+    "avgVolume": 1256820,
     "fiftyTwoWeekHigh": 237.31,
     "fiftyTwoWeekLow": 166.37,
     "rsi": 46.23,
@@ -139233,7 +139233,7 @@
       "passed": 3
     },
     "sectorZScore": -0.17,
-    "sectorRank": 51,
+    "sectorRank": 50,
     "sectorCount": 94,
     "supportResistance": [
       {
@@ -139557,7 +139557,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3665926,
-    "avgVolume": 4578277,
+    "avgVolume": 4604393,
     "fiftyTwoWeekHigh": 80.62,
     "fiftyTwoWeekLow": 46.52,
     "rsi": 48.63,
@@ -139681,7 +139681,7 @@
     "heldPercentInstitutions": 0.93141997,
     "institutionsCount": 639,
     "shortPercentOfFloat": 0.111899994,
-    "targetMeanPrice": 77.1,
+    "targetMeanPrice": 77.3,
     "freeCashflow": -2030375,
     "totalRevenue": 1638158976,
     "totalDebt": 1089021952,
@@ -139706,7 +139706,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -2.09,
+    "sectorZScore": -2.08,
     "sectorRank": 93,
     "sectorCount": 94,
     "supportResistance": [
@@ -140003,7 +140003,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 665645,
-    "avgVolume": 819836,
+    "avgVolume": 815708,
     "fiftyTwoWeekHigh": 388.14,
     "fiftyTwoWeekLow": 204,
     "rsi": 49.99,
@@ -140483,7 +140483,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 3732910,
-    "avgVolume": 4765031,
+    "avgVolume": 4692623,
     "fiftyTwoWeekHigh": 61.288,
     "fiftyTwoWeekLow": 34.38,
     "rsi": 50.71,
@@ -140929,7 +140929,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1836392,
-    "avgVolume": 3739919,
+    "avgVolume": 3741120,
     "fiftyTwoWeekHigh": 76.515,
     "fiftyTwoWeekLow": 40.05,
     "rsi": 53.75,
@@ -141375,7 +141375,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1418645,
-    "avgVolume": 1575118,
+    "avgVolume": 1578108,
     "fiftyTwoWeekHigh": 154.27,
     "fiftyTwoWeekLow": 100.47,
     "rsi": 42.7,
@@ -141524,7 +141524,7 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -1.77,
+    "sectorZScore": -1.78,
     "sectorRank": 81,
     "sectorCount": 86,
     "supportResistance": [
@@ -141853,7 +141853,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 536255,
-    "avgVolume": 941457,
+    "avgVolume": 947123,
     "fiftyTwoWeekHigh": 229.3,
     "fiftyTwoWeekLow": 90.56,
     "rsi": 71.03,
@@ -142005,14 +142005,14 @@
     "heldPercentInstitutions": 1.11894,
     "institutionsCount": 634,
     "shortPercentOfFloat": 0.040799998,
-    "targetMeanPrice": 232.36365,
+    "targetMeanPrice": 235.90909,
     "freeCashflow": 851875008,
     "totalRevenue": 5934499840,
     "totalDebt": 4941199872,
     "ebitda": 1198400000,
     "totalCash": 521700000,
     "operatingCashflow": 990800000,
-    "averageAnalystRating": null,
+    "averageAnalystRating": "1.5 - Strong Buy",
     "rsPercentile": 94,
     "fiftyTwoWeekRangePercent": 94,
     "weeklyHighLowRange": 0.4716932215638185,
@@ -142353,7 +142353,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 213168,
-    "avgVolume": 328377,
+    "avgVolume": 329008,
     "fiftyTwoWeekHigh": 390.13,
     "fiftyTwoWeekLow": 289.81,
     "rsi": 61.19,
@@ -142498,14 +142498,14 @@
     "heldPercentInstitutions": 0.96251,
     "institutionsCount": 1354,
     "shortPercentOfFloat": 0.0624,
-    "targetMeanPrice": 371.4375,
+    "targetMeanPrice": 376.4375,
     "freeCashflow": 640300032,
     "totalRevenue": 5156100096,
     "totalDebt": 1293299968,
     "ebitda": 1395800064,
     "totalCash": 1624099968,
     "operatingCashflow": 1081699968,
-    "averageAnalystRating": null,
+    "averageAnalystRating": "2.6 - Hold",
     "rsPercentile": 64,
     "fiftyTwoWeekRangePercent": 95,
     "weeklyHighLowRange": 0.07106493312582911,
@@ -142853,7 +142853,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 5385897,
-    "avgVolume": 3927591,
+    "avgVolume": 3937568,
     "fiftyTwoWeekHigh": 39.2,
     "fiftyTwoWeekLow": 26.39,
     "rsi": 51.56,
@@ -143002,8 +143002,8 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": 0.15,
-    "sectorRank": 18,
+    "sectorZScore": 0.14,
+    "sectorRank": 17,
     "sectorCount": 32,
     "supportResistance": [
       {
@@ -143080,8 +143080,8 @@
       "predicted": 56,
       "direction": "stable",
       "confidence": "low",
-      "slope": 0.143,
-      "r2": 0.029,
+      "slope": 0.036,
+      "r2": 0.002,
       "factors": {
         "trendMomentum": 1,
         "meanReversion": 0.02,
@@ -143313,7 +143313,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 15896765,
-    "avgVolume": 8171979,
+    "avgVolume": 8175035,
     "fiftyTwoWeekHigh": 41.83,
     "fiftyTwoWeekLow": 19.91,
     "rsi": 57.9,
@@ -143467,7 +143467,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.65,
+    "sectorZScore": -1.66,
     "sectorRank": 80,
     "sectorCount": 86,
     "supportResistance": [
@@ -143792,7 +143792,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1029979,
-    "avgVolume": 675688,
+    "avgVolume": 674834,
     "fiftyTwoWeekHigh": 19.63,
     "fiftyTwoWeekLow": 10.88,
     "rsi": 44.85,
@@ -144292,7 +144292,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 4264027,
-    "avgVolume": 738273,
+    "avgVolume": 742982,
     "fiftyTwoWeekHigh": 18.18,
     "fiftyTwoWeekLow": 9.685,
     "rsi": 37.41,
@@ -144446,7 +144446,7 @@
       "rsAbove70": false,
       "passed": 2
     },
-    "sectorZScore": 0.24,
+    "sectorZScore": 0.25,
     "sectorRank": 44,
     "sectorCount": 86,
     "supportResistance": [
@@ -144749,7 +144749,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 10977653,
-    "avgVolume": 3207983,
+    "avgVolume": 3178671,
     "fiftyTwoWeekHigh": 6.785,
     "fiftyTwoWeekLow": 4.902,
     "rsi": 46.83,
@@ -144919,8 +144919,8 @@
       "rsAbove70": false,
       "passed": 6
     },
-    "sectorZScore": 1.37,
-    "sectorRank": 4,
+    "sectorZScore": 1.38,
+    "sectorRank": 3,
     "sectorCount": 39,
     "supportResistance": [
       {
@@ -145247,7 +145247,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 13009147,
-    "avgVolume": 5406628,
+    "avgVolume": 5392841,
     "fiftyTwoWeekHigh": 6.5064,
     "fiftyTwoWeekLow": 2.454,
     "rsi": 45.76,
@@ -145383,14 +145383,14 @@
     "heldPercentInstitutions": 0.78249,
     "institutionsCount": 254,
     "shortPercentOfFloat": null,
-    "targetMeanPrice": 3.3469202,
+    "targetMeanPrice": 3.24846,
     "freeCashflow": -2250000,
     "totalRevenue": 13550000128,
     "totalDebt": 6832000000,
     "ebitda": 628000000,
     "totalCash": 2694000128,
     "operatingCashflow": 724000000,
-    "averageAnalystRating": "3.1 - Hold",
+    "averageAnalystRating": "3.2 - Hold",
     "rsPercentile": 7,
     "fiftyTwoWeekRangePercent": 7,
     "weeklyHighLowRange": 0.2593311762200208,
@@ -145408,7 +145408,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": 0.72,
+    "sectorZScore": 0.71,
     "sectorRank": 8,
     "sectorCount": 32,
     "supportResistance": [
@@ -145732,7 +145732,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 16076098,
-    "avgVolume": 4024962,
+    "avgVolume": 4032782,
     "fiftyTwoWeekHigh": 10,
     "fiftyTwoWeekLow": 6.3420000000000005,
     "rsi": 46.36,
@@ -145888,7 +145888,7 @@
       "rsAbove70": false,
       "passed": 4
     },
-    "sectorZScore": -0.14,
+    "sectorZScore": -0.15,
     "sectorRank": 19,
     "sectorCount": 32,
     "supportResistance": [
@@ -146218,7 +146218,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 21112176,
-    "avgVolume": 16407957,
+    "avgVolume": 16532888,
     "fiftyTwoWeekHigh": 1.06181,
     "fiftyTwoWeekLow": 0.6104,
     "rsi": 52.88,
@@ -146698,7 +146698,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 758458,
-    "avgVolume": 509813,
+    "avgVolume": 503700,
     "fiftyTwoWeekHigh": 22.37877,
     "fiftyTwoWeekLow": 14.07202,
     "rsi": 43.56,
@@ -147172,7 +147172,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 2032244,
-    "avgVolume": 1281909,
+    "avgVolume": 1290853,
     "fiftyTwoWeekHigh": 1.0087000000000002,
     "fiftyTwoWeekLow": 0.4302,
     "rsi": 48.57,
@@ -147326,7 +147326,7 @@
       "rsAbove70": false,
       "passed": 3
     },
-    "sectorZScore": -0.92,
+    "sectorZScore": -0.91,
     "sectorRank": 75,
     "sectorCount": 94,
     "supportResistance": [
@@ -147652,7 +147652,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 632668,
-    "avgVolume": 821220,
+    "avgVolume": 824940,
     "fiftyTwoWeekHigh": 5.63,
     "fiftyTwoWeekLow": 2.832,
     "rsi": 46.21,
@@ -147808,8 +147808,8 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": 0.47,
-    "sectorRank": 39,
+    "sectorZScore": 0.46,
+    "sectorRank": 40,
     "sectorCount": 128,
     "supportResistance": [
       {
@@ -148134,7 +148134,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 648704,
-    "avgVolume": 506272,
+    "avgVolume": 511851,
     "fiftyTwoWeekHigh": 12.49,
     "fiftyTwoWeekLow": 8.36614,
     "rsi": 59.56,
@@ -148289,7 +148289,7 @@
       "passed": 1
     },
     "sectorZScore": -0.17,
-    "sectorRank": 56,
+    "sectorRank": 55,
     "sectorCount": 94,
     "supportResistance": [
       {
@@ -148613,7 +148613,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 5719332,
-    "avgVolume": 1879405,
+    "avgVolume": 1889615,
     "fiftyTwoWeekHigh": 2.248,
     "fiftyTwoWeekLow": 1.397,
     "rsi": 58.05,
@@ -148767,7 +148767,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": 0.65,
+    "sectorZScore": 0.64,
     "sectorRank": 36,
     "sectorCount": 128,
     "supportResistance": [
@@ -149103,7 +149103,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 805321,
-    "avgVolume": 2046893,
+    "avgVolume": 2070467,
     "fiftyTwoWeekHigh": 1.157,
     "fiftyTwoWeekLow": 0.6438200000000001,
     "rsi": 57.08,
@@ -149259,7 +149259,7 @@
       "rsAbove70": false,
       "passed": 1
     },
-    "sectorZScore": -0.39,
+    "sectorZScore": -0.38,
     "sectorRank": 59,
     "sectorCount": 94,
     "supportResistance": [
@@ -149578,7 +149578,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 1524319,
-    "avgVolume": 2205551,
+    "avgVolume": 2219388,
     "fiftyTwoWeekHigh": 1.382,
     "fiftyTwoWeekLow": 0.608,
     "rsi": 42.34,
@@ -149739,7 +149739,7 @@
       "rsAbove70": false,
       "passed": 0
     },
-    "sectorZScore": -1.18,
+    "sectorZScore": -1.19,
     "sectorRank": 71,
     "sectorCount": 86,
     "supportResistance": [
@@ -150068,7 +150068,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 74914945,
-    "avgVolume": 7414815,
+    "avgVolume": 7477728,
     "fiftyTwoWeekHigh": 1.74,
     "fiftyTwoWeekLow": 1.219,
     "rsi": 62.53,
@@ -150238,7 +150238,7 @@
       "rsAbove70": true,
       "passed": 8
     },
-    "sectorZScore": 1.77,
+    "sectorZScore": 1.78,
     "sectorRank": 2,
     "sectorCount": 39,
     "supportResistance": [
@@ -150568,7 +150568,7 @@
     "revenueGrowth": null,
     "beta": null,
     "volume": 22363146,
-    "avgVolume": 10057123,
+    "avgVolume": 10118473,
     "fiftyTwoWeekHigh": 1.0959999999999999,
     "fiftyTwoWeekLow": 0.8740000000000001,
     "rsi": 64.66,
@@ -150731,7 +150731,7 @@
       "rsAbove70": false,
       "passed": 5
     },
-    "sectorZScore": 0.97,
+    "sectorZScore": 0.98,
     "sectorRank": 8,
     "sectorCount": 39,
     "supportResistance": [
@@ -151242,7 +151242,7 @@
       "rsAbove70": false,
       "passed": 4
     },
-    "sectorZScore": -0.61,
+    "sectorZScore": -0.6,
     "sectorRank": 28,
     "sectorCount": 39,
     "supportResistance": [
