@@ -50,9 +50,9 @@ export const CONFIG = {
       envKey: 'OPENROUTER_API_KEY',
     },
   } as Record<string, { url: string; model: string; envKey: string }>,
-  aiResearchConcurrency: 3,
-  aiResearchDelayMs: 500,
-  aiResearchMaxStocks: 100,
+  aiResearchConcurrency: 1,    // Sequential to respect free tier rate limits
+  aiResearchDelayMs: 3000,     // 3s between requests (Groq free: 12K TPM ≈ ~4 req/min)
+  aiResearchMaxStocks: 50,     // Reduced from 100 to fit within timeout
 
   // FRED API (macro data)
   fredRateDelayMs: 100,

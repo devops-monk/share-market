@@ -55,6 +55,17 @@ export type ProviderName = keyof typeof PROVIDERS;
 
 const API_KEY_STORAGE = 'sm-llm-api-key';
 const PROVIDER_STORAGE = 'sm-llm-provider';
+const MODE_STORAGE = 'sm-copilot-mode';
+
+export type CopilotMode = 'hybrid' | 'ai-only';
+
+export function getMode(): CopilotMode {
+  return (localStorage.getItem(MODE_STORAGE) as CopilotMode) || 'hybrid';
+}
+
+export function setMode(mode: CopilotMode): void {
+  localStorage.setItem(MODE_STORAGE, mode);
+}
 
 export function getProviders() {
   return Object.entries(PROVIDERS).map(([key, val]) => ({

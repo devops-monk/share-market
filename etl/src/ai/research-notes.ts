@@ -65,29 +65,61 @@ function parseParagraphs(text: string): string[] {
 async function callLLM(
   messages: ChatMessage[],
   provider: LLMProvider,
+  retries = 2,
 ): Promise<string | null> {
-  const res = await fetch(provider.url, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${provider.apiKey}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      model: provider.model,
-      messages,
-      max_tokens: 400,
-      temperature: 0.5,
-    }),
-  });
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15000);
 
-  if (!res.ok) {
-    const body = await res.text().catch(() => '');
-    console.warn(`${provider.name} API error ${res.status}: ${body.slice(0, 200)}`);
-    return null;
+    try {
+      const res = await fetch(provider.url, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${provider.apiKey}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          model: provider.model,
+          messages,
+          max_tokens: 400,
+          temperature: 0.5,
+        }),
+        signal: controller.signal,
+      });
+
+      clearTimeout(timeout);
+
+      if (res.status === 429) {
+        // Rate limited — parse retry-after or use exponential backoff
+        const retryAfter = res.headers.get('retry-after');
+        const waitMs = retryAfter
+          ? Math.min(parseInt(retryAfter, 10) * 1000, 60000)
+          : Math.min(5000 * Math.pow(2, attempt), 60000);
+        console.log(`  ${provider.name} rate limited (429), waiting ${(waitMs / 1000).toFixed(0)}s...`);
+        await delay(waitMs);
+        continue;
+      }
+
+      if (!res.ok) {
+        const body = await res.text().catch(() => '');
+        console.warn(`${provider.name} API error ${res.status}: ${body.slice(0, 200)}`);
+        return null;
+      }
+
+      const data = (await res.json()) as ChatResponse;
+      return data.choices?.[0]?.message?.content ?? null;
+    } catch (err) {
+      clearTimeout(timeout);
+      const msg = err instanceof Error ? err.message : String(err);
+      if (attempt < retries) {
+        await delay(2000 * (attempt + 1));
+        continue;
+      }
+      console.warn(`  ${provider.name} call failed: ${msg.includes('abort') ? 'timeout (15s)' : msg}`);
+      return null;
+    }
   }
-
-  const data = (await res.json()) as ChatResponse;
-  return data.choices?.[0]?.message?.content ?? null;
+  return null;
 }
 
 function delay(ms: number): Promise<void> {
@@ -116,9 +148,8 @@ export async function generateAIResearchNotes(
   provider: LLMProvider,
 ): Promise<Map<string, string[]>> {
   const results = new Map<string, string[]>();
-  const limit = pLimit(CONFIG.aiResearchConcurrency);
 
-  // Take top N stocks by market cap
+  // Sequential processing (concurrency=1) to respect rate limits
   const topStocks = [...stocks]
     .sort((a, b) => b.marketCap - a.marketCap)
     .slice(0, CONFIG.aiResearchMaxStocks);
@@ -126,39 +157,46 @@ export async function generateAIResearchNotes(
   console.log(`Generating AI research notes for ${topStocks.length} stocks via ${provider.name} (${provider.model})...`);
   let completed = 0;
   let failed = 0;
+  let consecutiveFailures = 0;
 
-  await Promise.all(
-    topStocks.map(stock =>
-      limit(async () => {
-        try {
-          const prompt = buildPrompt(stock);
-          const messages: ChatMessage[] = [
-            { role: 'system', content: 'You are a concise financial analyst. No markdown formatting.' },
-            { role: 'user', content: prompt },
-          ];
+  for (const stock of topStocks) {
+    // Circuit breaker: if 3 consecutive failures, stop
+    if (consecutiveFailures >= 3) {
+      console.warn(`  AI notes: ${consecutiveFailures} consecutive failures — stopping early`);
+      break;
+    }
 
-          const content = await callLLM(messages, provider);
-          if (content) {
-            const paragraphs = parseParagraphs(content);
-            if (paragraphs.length >= 3) {
-              results.set(stock.ticker, paragraphs);
-            }
-          }
-        } catch (err) {
-          failed++;
-          console.warn(`AI note failed for ${stock.ticker}:`, (err as Error).message);
-        } finally {
-          completed++;
-          if (completed % 10 === 0) {
-            console.log(`  AI notes: ${completed}/${topStocks.length} (${failed} failed)`);
-          }
+    try {
+      const prompt = buildPrompt(stock);
+      const messages: ChatMessage[] = [
+        { role: 'system', content: 'You are a concise financial analyst. No markdown formatting.' },
+        { role: 'user', content: prompt },
+      ];
+
+      const content = await callLLM(messages, provider);
+      if (content) {
+        const paragraphs = parseParagraphs(content);
+        if (paragraphs.length >= 3) {
+          results.set(stock.ticker, paragraphs);
+          consecutiveFailures = 0;
         }
+      } else {
+        consecutiveFailures++;
+      }
+    } catch (err) {
+      failed++;
+      consecutiveFailures++;
+      console.warn(`AI note failed for ${stock.ticker}:`, (err as Error).message);
+    } finally {
+      completed++;
+      if (completed % 10 === 0) {
+        console.log(`  AI notes: ${completed}/${topStocks.length} (${failed} failed)`);
+      }
+    }
 
-        // Rate limiting delay
-        await delay(CONFIG.aiResearchDelayMs);
-      })
-    ),
-  );
+    // Rate limiting delay between requests
+    await delay(CONFIG.aiResearchDelayMs);
+  }
 
   console.log(`AI research notes: ${results.size} generated, ${failed} failed`);
   return results;

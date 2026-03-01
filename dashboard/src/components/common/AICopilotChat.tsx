@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import type { StockRecord, Metadata } from '../../types';
 import { processQuery } from '../../lib/copilot-engine';
-import { queryLLM, getApiKey, setApiKey, clearApiKey, getProviders, getProvider, setProvider, type ProviderName, type ChatMessage } from '../../lib/copilot-llm';
+import { queryLLM, getApiKey, setApiKey, clearApiKey, getProviders, getProvider, setProvider, getMode, setMode, type ProviderName, type ChatMessage, type CopilotMode } from '../../lib/copilot-llm';
 
 interface Message {
   id: string;
@@ -43,6 +43,7 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
   const [apiKeyInput, setApiKeyInput] = useState('');
   const [hasApiKey, setHasApiKey] = useState(!!getApiKey());
   const [selectedProvider, setSelectedProvider] = useState<ProviderName>(getProvider());
+  const [copilotMode, setCopilotMode] = useState<CopilotMode>(getMode());
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -60,17 +61,18 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
     setMessages(prev => [...prev, userMsg]);
     setInput('');
 
-    // Try client-side engine first
-    const engineResponse = processQuery(query, stocks, contextStock, metadata);
-
-    if (engineResponse) {
-      setMessages(prev => [...prev, {
-        id: generateId(),
-        role: 'assistant',
-        text: engineResponse.text,
-        source: 'engine',
-      }]);
-      return;
+    // In hybrid mode, try client-side engine first
+    if (copilotMode === 'hybrid') {
+      const engineResponse = processQuery(query, stocks, contextStock, metadata);
+      if (engineResponse) {
+        setMessages(prev => [...prev, {
+          id: generateId(),
+          role: 'assistant',
+          text: engineResponse.text,
+          source: 'engine',
+        }]);
+        return;
+      }
     }
 
     // Build conversation history for LLM context
@@ -78,7 +80,7 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
       .filter(m => m.source !== 'engine') // only include LLM conversations
       .map(m => ({ role: m.role, text: m.text }));
 
-    // Fall back to LLM
+    // Use LLM
     setIsTyping(true);
     try {
       const llmResponse = await queryLLM(query, contextStock, null, history);
@@ -98,7 +100,7 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
     } finally {
       setIsTyping(false);
     }
-  }, [input, stocks, contextStock, metadata, messages]);
+  }, [input, stocks, contextStock, metadata, messages, copilotMode]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
@@ -111,7 +113,6 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
     if (apiKeyInput.trim()) {
       setApiKey(apiKeyInput.trim());
       setHasApiKey(true);
-      setShowApiKeyInput(false);
       setApiKeyInput('');
     }
   };
@@ -119,6 +120,11 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
   const handleClearApiKey = () => {
     clearApiKey();
     setHasApiKey(false);
+  };
+
+  const handleModeChange = (mode: CopilotMode) => {
+    setCopilotMode(mode);
+    setMode(mode);
   };
 
   const suggestions = contextStock ? SUGGESTIONS : GENERAL_SUGGESTIONS;
@@ -158,6 +164,27 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
           {contextStock && <span className="text-xs text-accent-light font-mono">{contextStock.ticker}</span>}
         </div>
         <div className="flex items-center gap-1">
+          {/* Mode toggle */}
+          <div className="flex items-center bg-surface-hover rounded overflow-hidden mr-1">
+            <button
+              onClick={() => handleModeChange('hybrid')}
+              className={`text-[10px] px-1.5 py-1 transition-colors ${
+                copilotMode === 'hybrid'
+                  ? 'bg-accent/20 text-accent-light'
+                  : 't-muted hover:t-secondary'
+              }`}
+              title="Try instant answers first, fall back to AI"
+            >Hybrid</button>
+            <button
+              onClick={() => handleModeChange('ai-only')}
+              className={`text-[10px] px-1.5 py-1 transition-colors ${
+                copilotMode === 'ai-only'
+                  ? 'bg-accent/20 text-accent-light'
+                  : 't-muted hover:t-secondary'
+              }`}
+              title="Always use AI (requires API key)"
+            >AI Only</button>
+          </div>
           {/* API Key toggle */}
           <button
             onClick={() => setShowApiKeyInput(v => !v)}
@@ -213,6 +240,7 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
                   type="password"
                   value={apiKeyInput}
                   onChange={e => setApiKeyInput(e.target.value)}
+                  onKeyDown={e => { if (e.key === 'Enter') handleSaveApiKey(); }}
                   placeholder={selected?.hint ?? 'Enter API key...'}
                   className="input-field flex-1 text-xs"
                 />
@@ -222,6 +250,9 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
                 )}
               </div>
             </div>
+            <p className="text-[10px] t-faint leading-relaxed">
+              Your API key is stored locally in your browser (localStorage) and is never sent to our servers. It is only used for direct API calls from your browser to the LLM provider. You can clear it anytime.
+            </p>
           </div>
         );
       })()}
@@ -230,7 +261,12 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
       <div className="h-72 overflow-y-auto px-4 py-3 space-y-3">
         {messages.length === 0 && (
           <div className="text-center py-6">
-            <p className="text-xs t-muted mb-3">Ask me anything about {contextStock ? contextStock.ticker : 'stocks'}</p>
+            <p className="text-xs t-muted mb-1">Ask me anything about {contextStock ? contextStock.ticker : 'stocks'}</p>
+            <p className="text-[10px] t-faint mb-3">
+              {copilotMode === 'hybrid'
+                ? 'Instant answers for data queries, AI for open-ended questions'
+                : 'All queries sent to AI (requires API key)'}
+            </p>
             <div className="flex flex-wrap gap-1.5 justify-center">
               {suggestions.map(s => (
                 <button
