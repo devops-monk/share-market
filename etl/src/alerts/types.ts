@@ -9,6 +9,7 @@ export type AlertType =
   | 'minervini_pass'
   | 'uptrend_below_resistance'
   | 'top_owned_drop'
+  | 'dividend_at_support'
   | 'daily_summary';
 
 export interface AlertRule {

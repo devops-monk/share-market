@@ -1,6 +1,14 @@
 import type { StockRecord } from '../output/writer.js';
 import type { AlertRule, AlertState, TriggeredAlert } from './types.js';
 
+const CURRENCY_MAP: Record<string, string> = {
+  US: '$', UK: '£', IN: '₹', DE: '€', FR: '€', JP: '¥', HK: 'HK$',
+};
+
+function cur(stock: StockRecord): string {
+  return CURRENCY_MAP[stock.market] || '$';
+}
+
 /**
  * Check alert rules against current stock data.
  * Uses edge-triggered logic: only fires when condition newly becomes true.
@@ -96,6 +104,18 @@ function evaluateCondition(rule: AlertRule, stock: StockRecord, top200ByMarketCa
         : 0;
       return dropPct >= rule.threshold;
     }
+    case 'dividend_at_support': {
+      // Dividend-paying stock near support level with decent yield
+      if (stock.dividendYield == null || stock.dividendYield <= 0.01) return false; // must pay dividend (>1%)
+      if (!stock.supportResistance || stock.supportResistance.length === 0) return false;
+      const nearestSupport = stock.supportResistance
+        .filter(l => l.type === 'support')
+        .sort((a, b) => b.price - a.price)[0]; // highest support below price
+      if (!nearestSupport) return false;
+      const pctAboveSupport = ((stock.price - nearestSupport.price) / nearestSupport.price) * 100;
+      // Stock must be within threshold% of support (e.g., 3% = price is within 3% above support)
+      return pctAboveSupport >= 0 && pctAboveSupport <= rule.threshold;
+    }
     default:
       return false;
   }
@@ -122,6 +142,8 @@ function getRelevantValue(rule: AlertRule, stock: StockRecord): number {
       return stock.fiftyTwoWeekHigh > 0
         ? ((stock.fiftyTwoWeekHigh - stock.price) / stock.fiftyTwoWeekHigh) * 100
         : 0;
+    case 'dividend_at_support':
+      return (stock.dividendYield ?? 0) * 100; // yield %
     default:
       return 0;
   }
@@ -139,8 +161,8 @@ function scoreBar(score: number): string {
 }
 
 function formatAlertMessage(rule: AlertRule, stock: StockRecord): string {
-  const cur = stock.market === 'UK' ? '£' : '$';
-  const price = `${cur}${stock.price.toFixed(2)}`;
+  const c = cur(stock);
+  const price = `${c}${stock.price.toFixed(2)}`;
   const change = fmtChange(stock.changePercent);
   const score = stock.score.composite;
   const link = `<a href="${DASHBOARD_URL}/stock/${stock.ticker}">${stock.ticker}</a>`;
@@ -153,7 +175,7 @@ function formatAlertMessage(rule: AlertRule, stock: StockRecord): string {
     case 'price_above':
       return [
         header,
-        `Crossed above <b>${cur}${rule.threshold}</b>`,
+        `Crossed above <b>${c}${rule.threshold}</b>`,
         ``,
         priceLine,
         scoreLine,
@@ -162,7 +184,7 @@ function formatAlertMessage(rule: AlertRule, stock: StockRecord): string {
     case 'price_below':
       return [
         header,
-        `Dropped below <b>${cur}${rule.threshold}</b>`,
+        `Dropped below <b>${c}${rule.threshold}</b>`,
         ``,
         priceLine,
         scoreLine,
@@ -232,7 +254,7 @@ function formatAlertMessage(rule: AlertRule, stock: StockRecord): string {
         `<b>${stock.yearlyUptrendYears}yr</b> uptrend  ·  <b>${stock.pctBelowResistance?.toFixed(1)}%</b> below resistance`,
         ``,
         priceLine,
-        `52W High  <code>${cur}${stock.fiftyTwoWeekHigh.toFixed(2)}</code>  ·  52W Low  <code>${cur}${stock.fiftyTwoWeekLow.toFixed(2)}</code>`,
+        `52W High  <code>${c}${stock.fiftyTwoWeekHigh.toFixed(2)}</code>  ·  52W Low  <code>${c}${stock.fiftyTwoWeekLow.toFixed(2)}</code>`,
         scoreLine,
         `<i>${sectorCap}</i>`,
       ].join('\n');
@@ -246,7 +268,23 @@ function formatAlertMessage(rule: AlertRule, stock: StockRecord): string {
         `<b>${dropPct.toFixed(1)}%</b> off 52W high  ·  <b>${instPct}%</b> institutional`,
         ``,
         priceLine,
-        `52W High  <code>${cur}${stock.fiftyTwoWeekHigh.toFixed(2)}</code>  ·  Mkt Cap  <code>${(stock.marketCap / 1e9).toFixed(1)}B</code>`,
+        `52W High  <code>${c}${stock.fiftyTwoWeekHigh.toFixed(2)}</code>  ·  Mkt Cap  <code>${(stock.marketCap / 1e9).toFixed(1)}B</code>`,
+        scoreLine,
+        `<i>${sectorCap}</i>`,
+      ].join('\n');
+    }
+    case 'dividend_at_support': {
+      const yld = ((stock.dividendYield ?? 0) * 100).toFixed(2);
+      const nearestSupport = (stock.supportResistance ?? [])
+        .filter(l => l.type === 'support')
+        .sort((a, b) => b.price - a.price)[0];
+      const supportPrice = nearestSupport ? `${c}${nearestSupport.price.toFixed(2)}` : 'N/A';
+      return [
+        header,
+        `Dividend <b>${yld}%</b> yield  ·  Near support <code>${supportPrice}</code>`,
+        ``,
+        priceLine,
+        `52W High  <code>${c}${stock.fiftyTwoWeekHigh.toFixed(2)}</code>  ·  52W Low  <code>${c}${stock.fiftyTwoWeekLow.toFixed(2)}</code>`,
         scoreLine,
         `<i>${sectorCap}</i>`,
       ].join('\n');
@@ -268,18 +306,23 @@ export function generateDailySummary(stocks: StockRecord[]): string {
   const bullish = stocks.filter(s => s.score.composite >= 60).length;
   const bearish = stocks.filter(s => s.bearishScore >= 4).length;
   const minervini8 = stocks.filter(s => s.minerviniChecks.passed === 8).length;
-  const usStocks = stocks.filter(s => s.market === 'US');
-  const ukStocks = stocks.filter(s => s.market === 'UK');
-  const usAvgChange = usStocks.length > 0 ? usStocks.reduce((a, s) => a + s.changePercent, 0) / usStocks.length : 0;
-  const ukAvgChange = ukStocks.length > 0 ? ukStocks.reduce((a, s) => a + s.changePercent, 0) / ukStocks.length : 0;
+
+  // Per-market average change
+  const marketFlags: Record<string, string> = { US: '🇺🇸', UK: '🇬🇧', IN: '🇮🇳', DE: '🇩🇪', FR: '🇫🇷', JP: '🇯🇵', HK: '🇭🇰' };
+  const marketChanges = Object.entries(marketFlags).map(([market, flag]) => {
+    const ms = stocks.filter(s => s.market === market);
+    if (ms.length === 0) return null;
+    const avg = ms.reduce((a, s) => a + s.changePercent, 0) / ms.length;
+    return `${flag} ${market} ${fmtChange(avg)}`;
+  }).filter(Boolean);
 
   const date = new Date().toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
 
   const fmtRow = (s: StockRecord, i: number) => {
-    const cur = s.market === 'UK' ? '£' : '$';
+    const c = cur(s);
     const chg = fmtChange(s.changePercent);
     const link = `<a href="${DASHBOARD_URL}/stock/${s.ticker}">${s.ticker}</a>`;
-    return `  ${i + 1}.  ${link}  <i>${s.name}</i>\n      ${cur}${s.price.toFixed(2)}  ${s.changePercent >= 0 ? '🟢' : '🔴'} ${chg}   Score <b>${s.score.composite}</b>`;
+    return `  ${i + 1}.  ${link}  <i>${s.name}</i>\n      ${c}${s.price.toFixed(2)}  ${s.changePercent >= 0 ? '🟢' : '🔴'} ${chg}   Score <b>${s.score.composite}</b>`;
   };
 
   const lines = [
@@ -290,7 +333,7 @@ export function generateDailySummary(stocks: StockRecord[]): string {
     `│  Stocks  <b>${stocks.length}</b>  ·  Avg Score  <b>${avgScore}</b>/100`,
     `│  Avg Change  ${avgChange >= 0 ? '🟢' : '🔴'} <b>${fmtChange(avgChange)}</b>`,
     `│`,
-    `│  🇺🇸 US ${fmtChange(usAvgChange)}   🇬🇧 UK ${fmtChange(ukAvgChange)}`,
+    `│  ${marketChanges.join('   ')}`,
     `│`,
     `│  Bullish (60+)  <code>${bullish}</code>`,
     `│  Bearish Alerts  <code>${bearish}</code>`,

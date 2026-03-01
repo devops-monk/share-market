@@ -6,103 +6,55 @@
       "ticker": "*",
       "threshold": 0,
       "enabled": true,
-      "note": "Morning summary with top/bottom 5, market stats, Minervini count"
+      "note": "Morning summary with top/bottom 5, market stats across all 7 markets"
     },
     {
-      "id": "score-drop-critical",
-      "type": "score_below",
-      "ticker": "*",
-      "threshold": 20,
-      "enabled": true,
-      "note": "Composite score collapsed below 20 — potential capitulation or serious fundamental issue"
-    },
-    {
-      "id": "score-surge-strong",
-      "type": "score_above",
-      "ticker": "*",
-      "threshold": 75,
-      "enabled": true,
-      "note": "Composite score above 75 — strong momentum + fundamentals alignment, research further"
-    },
-    {
-      "id": "rsi-oversold",
-      "type": "rsi_below",
-      "ticker": "*",
-      "threshold": 30,
-      "enabled": true,
-      "note": "RSI below 30 — oversold, potential bounce candidate (buy the dip signal)"
-    },
-    {
-      "id": "rsi-overbought",
-      "type": "rsi_above",
-      "ticker": "*",
-      "threshold": 70,
-      "enabled": true,
-      "note": "RSI above 70 — overbought, consider taking profits or tightening stops"
-    },
-    {
-      "id": "bearish-warning",
-      "type": "bearish_score_above",
-      "ticker": "*",
-      "threshold": 5,
-      "enabled": true,
-      "note": "5+ bearish signals firing — multiple red flags, review immediately"
-    },
-    {
-      "id": "minervini-perfect",
-      "type": "minervini_pass",
-      "ticker": "*",
-      "threshold": 8,
-      "enabled": true,
-      "note": "Perfect 8/8 Minervini SEPA template — stock in ideal uptrend stage 2 setup"
-    },
-    {
-      "id": "minervini-strong",
-      "type": "minervini_pass",
-      "ticker": "*",
-      "threshold": 7,
-      "enabled": true,
-      "note": "7/8 Minervini checks — near-perfect trend template, watch for full confirmation"
-    },
-    {
-      "id": "uptrend-discount-5pct",
+      "id": "uptrend-at-support-5pct",
       "type": "uptrend_below_resistance",
       "ticker": "*",
       "threshold": 5,
       "enabled": true,
-      "note": "Multi-year uptrend stock 5%+ below resistance — potential buy opportunity on pullback"
+      "note": "Uptrend stock pulled back 5%+ below resistance — buy-the-dip on proven performer"
     },
     {
-      "id": "uptrend-discount-10pct",
+      "id": "uptrend-at-support-10pct",
       "type": "uptrend_below_resistance",
       "ticker": "*",
       "threshold": 10,
       "enabled": true,
-      "note": "Multi-year uptrend stock 10%+ below resistance — potential buy opportunity on pullback"
+      "note": "Uptrend stock pulled back 10%+ below resistance — significant discount"
     },
     {
-      "id": "uptrend-discount-15pct",
+      "id": "uptrend-at-support-15pct",
       "type": "uptrend_below_resistance",
       "ticker": "*",
       "threshold": 15,
       "enabled": true,
-      "note": "Multi-year uptrend stock 15%+ below resistance — significant discount on proven performer"
+      "note": "Uptrend stock pulled back 15%+ below resistance — deep pullback, high conviction zone"
     },
     {
-      "id": "uptrend-discount-20pct",
+      "id": "uptrend-at-support-20pct",
       "type": "uptrend_below_resistance",
       "ticker": "*",
       "threshold": 20,
       "enabled": true,
-      "note": "Multi-year uptrend stock 20%+ below resistance — deep pullback, high conviction buy zone"
+      "note": "Uptrend stock pulled back 20%+ below resistance — extreme discount on proven performer"
     },
     {
-      "id": "top-owned-drop-5pct",
-      "type": "top_owned_drop",
+      "id": "dividend-at-support-3pct",
+      "type": "dividend_at_support",
+      "ticker": "*",
+      "threshold": 3,
+      "enabled": true,
+      "note": "Dividend stock (>1% yield) within 3% of support — income + value opportunity"
+    },
+    {
+      "id": "dividend-at-support-5pct",
+      "type": "dividend_at_support",
       "ticker": "*",
       "threshold": 5,
       "enabled": true,
-      "note": "Top institutional stock 5%+ off 52W high — early pullback in widely held name"
+      "note": "Dividend stock (>1% yield) within 5% of support — wider net for income plays"
     },
     {
       "id": "top-owned-drop-10pct",
@@ -110,7 +62,7 @@
       "ticker": "*",
       "threshold": 10,
       "enabled": true,
-      "note": "Top institutional stock 10%+ off 52W high — notable correction in institutional favorite"
+      "note": "Top institutional stock 10%+ off 52W high — notable correction in widely held name"
     },
     {
       "id": "top-owned-drop-15pct",
@@ -118,7 +70,7 @@
       "ticker": "*",
       "threshold": 15,
       "enabled": true,
-      "note": "Top institutional stock 15%+ off 52W high — significant discount on blue-chip holding"
+      "note": "Top institutional stock 15%+ off 52W high — significant discount on blue-chip"
     },
     {
       "id": "top-owned-drop-20pct",
@@ -126,7 +78,7 @@
       "ticker": "*",
       "threshold": 20,
       "enabled": true,
-      "note": "Top institutional stock 20%+ off 52W high — deep value territory for institutional favorite"
+      "note": "Top institutional stock 20%+ off 52W high — deep value territory"
     },
     {
       "id": "top-owned-drop-25pct",
@@ -134,15 +86,15 @@
       "ticker": "*",
       "threshold": 25,
       "enabled": true,
-      "note": "Top institutional stock 25%+ off 52W high — severe discount, potential capitulation buy"
+      "note": "Top institutional stock 25%+ off 52W high — potential capitulation buy"
     },
     {
-      "id": "top-owned-drop-30pct",
-      "type": "top_owned_drop",
+      "id": "minervini-perfect",
+      "type": "minervini_pass",
       "ticker": "*",
-      "threshold": 30,
+      "threshold": 8,
       "enabled": true,
-      "note": "Top institutional stock 30%+ off 52W high — extreme selloff in widely held stock, high conviction buy zone"
+      "note": "Perfect 8/8 Minervini template — ideal stage 2 breakout setup, strongest uptrend signal"
     }
   ]
 }
