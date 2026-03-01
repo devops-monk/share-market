@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import ConnectionStatusBadge from '../common/ConnectionStatus';
+import type { ConnectionStatus } from '../../hooks/useRealtimePrices';
 
 /* ─── NAV STRUCTURE ─── */
 interface NavItem {
@@ -75,9 +77,10 @@ interface HeaderProps {
   lastUpdated?: string;
   theme: 'light' | 'dark';
   onToggleTheme: () => void;
+  connectionStatus?: ConnectionStatus;
 }
 
-export default function Header({ lastUpdated, theme, onToggleTheme }: HeaderProps) {
+export default function Header({ lastUpdated, theme, onToggleTheme, connectionStatus }: HeaderProps) {
   const { pathname } = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -134,6 +137,11 @@ export default function Header({ lastUpdated, theme, onToggleTheme }: HeaderProp
 
           {/* Right side */}
           <div className="flex items-center gap-2 flex-shrink-0">
+            {connectionStatus && (
+              <div className="hidden md:block mr-1">
+                <ConnectionStatusBadge status={connectionStatus} />
+              </div>
+            )}
             {lastUpdated && (
               <div className="hidden md:flex items-center gap-2 text-xs t-muted mr-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-bullish animate-pulse" />

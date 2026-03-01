@@ -7,6 +7,21 @@ export interface PaperTrade {
   price: number;
   date: string;
   notes?: string;
+  // N26: Trade Journal fields (optional for backward compat)
+  entryReasoning?: string;
+  exitReasoning?: string;
+  strategy?: string;
+  emotionalState?: string;
+}
+
+// N26: Trade Review
+export interface TradeReview {
+  tradeId: string;
+  ticker: string;
+  lessonsLearned: string;
+  rating: 1 | 2 | 3 | 4 | 5;
+  wouldRepeat: boolean;
+  reviewDate: string;
 }
 
 export interface PaperPortfolio {

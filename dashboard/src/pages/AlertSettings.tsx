@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+import { encryptString, decryptString } from '../lib/crypto';
 
 interface AlertRule {
   id: string;
@@ -28,6 +29,7 @@ const ALERT_TYPES = [
 ];
 
 const STORAGE_KEY = 'sm-alert-rules';
+const FINNHUB_KEY_STORAGE = 'sm-finnhub-api-key';
 
 export default function AlertSettings() {
   const [rules, setRules] = useState<AlertRule[]>([]);
@@ -41,6 +43,30 @@ export default function AlertSettings() {
     note: '',
   });
   const [copied, setCopied] = useState(false);
+
+  // N27: Finnhub API key
+  const [finnhubKey, setFinnhubKey] = useState('');
+  const [finnhubHasKey, setFinnhubHasKey] = useState(false);
+  const [finnhubSaved, setFinnhubSaved] = useState(false);
+
+  useEffect(() => {
+    setFinnhubHasKey(!!localStorage.getItem(FINNHUB_KEY_STORAGE));
+  }, []);
+
+  const saveFinnhubKey = useCallback(async () => {
+    if (!finnhubKey.trim()) return;
+    const encrypted = await encryptString(finnhubKey.trim());
+    localStorage.setItem(FINNHUB_KEY_STORAGE, encrypted);
+    setFinnhubHasKey(true);
+    setFinnhubKey('');
+    setFinnhubSaved(true);
+    setTimeout(() => setFinnhubSaved(false), 2000);
+  }, [finnhubKey]);
+
+  const clearFinnhubKey = useCallback(() => {
+    localStorage.removeItem(FINNHUB_KEY_STORAGE);
+    setFinnhubHasKey(false);
+  }, []);
 
   // Load rules: try repo's data/alerts.json first, fallback to localStorage
   useEffect(() => {
@@ -294,6 +320,59 @@ export default function AlertSettings() {
           </div>
         </div>
       )}
+
+      {/* Finnhub API Key */}
+      <div className="card p-5">
+        <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-3">Real-Time Prices (Finnhub)</h2>
+        <p className="text-xs t-muted mb-4">
+          Connect to Finnhub's WebSocket for live US market prices during trading hours. Free tier includes 60 WebSocket connections/second.
+        </p>
+
+        <div className="space-y-3 text-xs t-tertiary mb-4">
+          <div className="flex gap-3">
+            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/15 flex items-center justify-center text-accent-light font-bold text-xs">1</span>
+            <p className="t-secondary">Go to <code className="text-accent-light bg-accent/10 px-1 rounded">finnhub.io</code> and sign up (free)</p>
+          </div>
+          <div className="flex gap-3">
+            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/15 flex items-center justify-center text-accent-light font-bold text-xs">2</span>
+            <p className="t-secondary">Copy your API key from the Dashboard</p>
+          </div>
+          <div className="flex gap-3">
+            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/15 flex items-center justify-center text-accent-light font-bold text-xs">3</span>
+            <p className="t-secondary">Paste it below — stored encrypted in your browser</p>
+          </div>
+        </div>
+
+        <div className="flex gap-3 items-end">
+          <div className="flex-1">
+            <label className="text-xs t-muted block mb-1">Finnhub API Key</label>
+            <input
+              type="password"
+              value={finnhubKey}
+              onChange={e => setFinnhubKey(e.target.value)}
+              placeholder={finnhubHasKey ? '••••••••••••••' : 'Paste your API key'}
+              className="input-field w-full"
+            />
+          </div>
+          <button
+            onClick={saveFinnhubKey}
+            className="badge bg-accent/15 text-accent-light ring-1 ring-accent/20 hover:bg-accent/25 transition-colors cursor-pointer text-xs px-4 py-2"
+          >
+            {finnhubSaved ? 'Saved!' : 'Save Key'}
+          </button>
+          {finnhubHasKey && (
+            <button
+              onClick={clearFinnhubKey}
+              className="badge bg-bearish/15 text-bearish ring-1 ring-bearish/20 hover:bg-bearish/25 transition-colors cursor-pointer text-xs px-4 py-2"
+            >
+              Remove
+            </button>
+          )}
+        </div>
+        {finnhubHasKey && (
+          <p className="text-xs text-bullish mt-2">API key configured. Real-time prices will connect during US market hours.</p>
+        )}
+      </div>
 
       {/* How it works */}
       <div className="card p-5">

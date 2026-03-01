@@ -406,7 +406,7 @@ Yahoo Finance v8 (5-year OHLCV daily + dividends), Yahoo Finance v7 (fundamental
 | ~~No stock comparison~~ | ~~Can't compare stocks~~ | ~~Medium~~ | **DONE** |
 | ~~No watchlist~~ | ~~No saved list~~ | ~~Medium~~ | **DONE** |
 | ~~No URL state~~ | ~~Filters lost on refresh~~ | ~~Medium~~ | **DONE** |
-| **Mobile responsiveness** | Tables and charts need better mobile layouts | Medium | Open |
+| ~~**Mobile responsiveness**~~ | ~~Tables and charts need better mobile layouts~~ | ~~Medium~~ | **DONE** — N28 PWA: pull-to-refresh, swipe nav, offline banner, safe-area padding |
 | **No loading skeletons** | Single spinner; no progressive content loading | Low | Open |
 | **No keyboard shortcuts** | No k/j navigation, quick search, or shortcut overlay | Low | Open |
 | **No stock search on all pages** | Global search bar missing on non-screener pages | Medium | Open |
@@ -519,20 +519,23 @@ Based on competitive analysis and expert technique research conducted February 2
 | **N23** | ~~Paper Trading Mode~~ | **DONE** — Tab on Portfolio page with $100K virtual cash. Buy/sell trades, open positions with close button, closed trades history, performance metrics (win rate, profit factor, avg win/loss, max drawdown). localStorage persistence, ticker search with auto-fill prices. | TradingView has this. Educational value. | ~~Medium~~ |
 | **N24** | **Weighted Screener** | User-defined weights for multi-factor screening (like Stock Rover) | Stock Rover's #1 feature for power users. | Medium |
 | **N25** | **ESG Scores** | Environmental, Social, Governance scores per stock | Growing demand. Yahoo Finance provides some ESG data. | Medium |
+| **N26** | ~~Trade Journal & Analytics~~ | **DONE** — Strategy tags, emotional state tracking, entry/exit reasoning on paper trades. Post-trade review with rating system. Journal Analytics dashboard with recharts: win rate by strategy, P&L by emotional state, trade frequency, win/loss streaks, strategy distribution. | Professional trading practice. | ~~Medium~~ |
+| **N27** | ~~Real-Time Price Streaming~~ | **DONE** — Finnhub WebSocket integration for live US market prices. Encrypted API key storage, connection status badge in header, price flash animations (green/red), batched state updates (500ms), exponential backoff reconnection, market hours detection. | Core trading feature. | ~~High~~ |
+| **N28** | ~~PWA Mobile Enhancement~~ | **DONE** — Stale-while-revalidate service worker (v2), offline banner with cached data age, pull-to-refresh gesture, swipe navigation between tabs, safe-area padding for notched devices, manifest shortcuts, maskable icons. | Mobile-first trading experience. | ~~Medium~~ |
 
 ---
 
 ### Updated Implementation Priority Map
 
 ```
-DONE (Shipped Feb 2026)             DONE (Batch 4, Feb 28)               LATER (Future)
+DONE (Shipped Feb 2026)             DONE (Batch 5, Mar 1)                LATER (Future)
 ───────────────────                 ─────────────────                    ──────────────
 ✅ N1  NL Stock Query             ✅ N11 AI Copilot Chat                N20 Options Sentiment
 ✅ N2  Factor Grades              ✅ N12 Predictive Scoring             N22 Global Expansion
 ✅ N3  Altman Z-Score             ✅ N23 Paper Trading                  N25 ESG Scores
-✅ N4  Risk-Adjusted Returns
-✅ N5  Position Sizing Calculator
-✅ N6  ADX/Williams/CMF
+✅ N4  Risk-Adjusted Returns      ✅ N26 Trade Journal & Analytics
+✅ N5  Position Sizing Calculator ✅ N27 Real-Time Price Streaming
+✅ N6  ADX/Williams/CMF           ✅ N28 PWA Mobile Enhancement
 ✅ N7  Earnings Post-Drift
 ✅ N8  SMR Rating
 ✅ N9  Chart Pattern Recognition
@@ -556,22 +559,19 @@ DONE (Shipped Feb 2026)             DONE (Batch 4, Feb 28)               LATER (
                         LOW EFFORT ◄──────────────────────► HIGH EFFORT
                         │                                          │
   HIGH IMPACT           │                                          │  N22 Global Expansion ★
-                        │                                          │  N27 Real-Time Streaming
                         │                                          │
-  MEDIUM IMPACT         │  N28 PWA Mobile Enhancement ★            │  N20 Options Sentiment
-                        │                                          │  N25 ESG Scores
-                        │                                          │  N26 Trade Journal
+  MEDIUM IMPACT         │  N25 ESG Scores ★                        │  N20 Options Sentiment
                         │                                          │
 
 ★ = Recommended next priorities (highest impact-to-effort ratio)
-All N-series through N24 are now DONE. Only N20, N22, N25 remain from original roadmap.
+All N-series through N28 are now DONE except N20, N22, N25.
 ```
 
 ---
 
 ### Recommended Next Actions
 
-> **Batches 1–4 shipped Feb 2026.** Batch 4 added N11 AI Copilot Chat, N12 Predictive Scoring, N23 Paper Trading. Below is the next prioritised batch.
+> **Batches 1–5 shipped Feb–Mar 2026.** Batch 5 added N26 Trade Journal, N27 Real-Time Prices, N28 PWA Mobile. Below is the next prioritised batch.
 
 1. **N20 — Options Sentiment** — Put/call ratio, unusual options activity, max pain price from options chain data. Scrape Yahoo Options chain or use CBOE data. **Medium effort, requires options data source.**
 
@@ -579,11 +579,11 @@ All N-series through N24 are now DONE. Only N20, N22, N25 remain from original r
 
 3. **N25 — ESG Scores** — Environmental, Social, Governance scoring from ESG data providers. Filter/sort by ESG ratings. Growing demand from retail investors. **Medium effort, requires data source.**
 
-4. **N26 — Trade Journal & Analytics** — Extend paper trading with detailed trade journaling: entry/exit reasoning, screenshots, strategy tags, emotional state tracking, and post-trade review analytics. **Medium effort, medium impact.**
+4. **N29 — Chart Replay / Historical Backtest** — Replay historical price action with overlaid indicators. Step through daily candles and practice trading decisions. **High effort, educational value.**
 
-5. **N27 — Real-Time Price Streaming** — WebSocket-based real-time price updates during market hours. Replace polling with push-based updates. **High effort, high impact.**
+5. **N30 — AI-Powered Indicator Builder** — Natural language to custom indicator formula (like Pine Script). Generate and backtest custom screening rules via AI. **High effort, differentiator.**
 
-6. **N28 — Mobile App (PWA Enhancement)** — Optimize responsive layout for mobile, add push notifications for alerts, offline caching of key data. **Medium effort, high impact.**
+6. **N31 — Portfolio Risk Analytics** — Value at Risk (VaR), Monte Carlo simulation, sector concentration risk, drawdown analysis across portfolio. **Medium effort, professional feature.**
 
 ---
 
@@ -595,8 +595,8 @@ All N-series through N24 are now DONE. Only N20, N22, N25 remain from original r
 | Medium Effort (M-series) | 17 | 17 | **100%** |
 | Large Effort (L-series) | 12 | 14 | **86%** |
 | Expert Methodologies | 5 of 9 | 9 | **56%** |
-| New Features (N-series) | 22 of 25 | 25 | **88%** |
-| **Total features shipped** | **69+** | — | — |
+| New Features (N-series) | 25 of 28 | 28 | **89%** |
+| **Total features shipped** | **72+** | — | — |
 
 ---
 

@@ -1,5 +1,5 @@
-const CACHE_NAME = 'sm-dashboard-v1';
-const DATA_CACHE = 'sm-data-v1';
+const CACHE_NAME = 'sm-dashboard-v2';
+const DATA_CACHE = 'sm-data-v2';
 
 // App shell — cached on install
 const APP_SHELL = [
@@ -32,25 +32,43 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-// Fetch: network-first for data, cache-first for app shell
+// Notify all clients of data update
+async function notifyClients() {
+  const clients = await self.clients.matchAll({ type: 'window' });
+  for (const client of clients) {
+    client.postMessage({ type: 'DATA_UPDATED', timestamp: new Date().toISOString() });
+  }
+}
+
+// Fetch: stale-while-revalidate for data, cache-first for app shell
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
 
-  // Data files (latest.json, news, charts) — network first, fallback to cache
+  // Data files — stale-while-revalidate: serve cached immediately, fetch in background
   if (url.pathname.startsWith('/data/')) {
     event.respondWith(
-      fetch(event.request)
-        .then((response) => {
-          const clone = response.clone();
-          caches.open(DATA_CACHE).then((cache) => cache.put(event.request, clone));
-          return response;
-        })
-        .catch(() => caches.match(event.request))
+      caches.open(DATA_CACHE).then(async (cache) => {
+        const cached = await cache.match(event.request);
+
+        // Revalidate in background
+        const fetchPromise = fetch(event.request)
+          .then((response) => {
+            cache.put(event.request, response.clone());
+            notifyClients();
+            return response;
+          })
+          .catch(() => null);
+
+        // Return cached immediately if available, otherwise wait for network
+        if (cached) return cached;
+        const networkResponse = await fetchPromise;
+        return networkResponse || new Response('Offline', { status: 503 });
+      })
     );
     return;
   }
 
-  // App shell & assets — cache first, fallback to network
+  // App shell & navigation — network first, fallback to cache
   if (event.request.mode === 'navigate') {
     event.respondWith(
       fetch(event.request).catch(() => caches.match('/index.html'))
@@ -58,7 +76,18 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // Static assets — cache first
   event.respondWith(
     caches.match(event.request).then((cached) => cached || fetch(event.request))
   );
+});
+
+// Stub sync handler for future background sync
+self.addEventListener('sync', (event) => {
+  if (event.tag === 'sm-background-sync') {
+    event.waitUntil(
+      // Future: sync offline changes
+      Promise.resolve()
+    );
+  }
 });

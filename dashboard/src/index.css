@@ -207,3 +207,37 @@
 .animate-slide-up {
   animation: slide-up 0.3s ease-out;
 }
+
+/* N27: Price flash animations */
+@keyframes flash-green { 0% { background-color: rgba(22,163,74,0.3); } 100% { background-color: transparent; } }
+@keyframes flash-red { 0% { background-color: rgba(220,38,38,0.3); } 100% { background-color: transparent; } }
+.price-flash-up { animation: flash-green 0.8s ease-out; }
+.price-flash-down { animation: flash-red 0.8s ease-out; }
+
+/* N28: Safe area padding for notched devices */
+@supports (padding: env(safe-area-inset-top)) {
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+/* N28: Pull-to-refresh spinner */
+.pull-to-refresh-spinner {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.pull-to-refresh-spinner svg {
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

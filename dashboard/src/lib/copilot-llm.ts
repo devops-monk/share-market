@@ -1,4 +1,5 @@
 import type { StockRecord } from '../types';
+import { encryptString, decryptString } from './crypto';
 
 const PROVIDERS = {
   groq: {
@@ -68,8 +69,6 @@ export type ProviderName = keyof typeof PROVIDERS;
 const API_KEY_STORAGE = 'sm-llm-api-key';
 const PROVIDER_STORAGE = 'sm-llm-provider';
 const MODE_STORAGE = 'sm-copilot-mode';
-const CRYPTO_KEY_STORAGE = 'sm-llm-ck';
-
 export type CopilotMode = 'hybrid' | 'ai-only';
 
 export function getMode(): CopilotMode {
@@ -78,47 +77,6 @@ export function getMode(): CopilotMode {
 
 export function setMode(mode: CopilotMode): void {
   localStorage.setItem(MODE_STORAGE, mode);
-}
-
-// ── AES-GCM encryption for API keys ──────────────────────────────────────
-
-/** Get or create a per-browser encryption key (stored in localStorage as JWK) */
-async function getCryptoKey(): Promise<CryptoKey> {
-  const stored = localStorage.getItem(CRYPTO_KEY_STORAGE);
-  if (stored) {
-    const jwk = JSON.parse(stored);
-    return crypto.subtle.importKey('jwk', jwk, { name: 'AES-GCM', length: 256 }, true, ['encrypt', 'decrypt']);
-  }
-  const key = await crypto.subtle.generateKey({ name: 'AES-GCM', length: 256 }, true, ['encrypt', 'decrypt']);
-  const jwk = await crypto.subtle.exportKey('jwk', key);
-  localStorage.setItem(CRYPTO_KEY_STORAGE, JSON.stringify(jwk));
-  return key;
-}
-
-async function encryptString(plaintext: string): Promise<string> {
-  const key = await getCryptoKey();
-  const iv = crypto.getRandomValues(new Uint8Array(12));
-  const encoded = new TextEncoder().encode(plaintext);
-  const ciphertext = await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, encoded);
-  // Store as base64: iv (12 bytes) + ciphertext
-  const combined = new Uint8Array(iv.length + ciphertext.byteLength);
-  combined.set(iv);
-  combined.set(new Uint8Array(ciphertext), iv.length);
-  return btoa(String.fromCharCode(...combined));
-}
-
-async function decryptString(encrypted: string): Promise<string | null> {
-  try {
-    const key = await getCryptoKey();
-    const combined = Uint8Array.from(atob(encrypted), c => c.charCodeAt(0));
-    const iv = combined.slice(0, 12);
-    const ciphertext = combined.slice(12);
-    const decrypted = await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ciphertext);
-    return new TextDecoder().decode(decrypted);
-  } catch {
-    // Decryption failed — key was likely stored in plaintext (legacy) or corrupted
-    return null;
-  }
 }
 
 // ── Public API ───────────────────────────────────────────────────────────

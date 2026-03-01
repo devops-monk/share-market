@@ -1,14 +1,16 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import type { StockRecord } from '../../types';
-import { usePaperTrading } from '../../hooks/usePaperTrading';
+import type { StockRecord, TradeReview } from '../../types';
+import { usePaperTrading, STRATEGY_TAGS, EMOTIONAL_STATES } from '../../hooks/usePaperTrading';
 import { ScoreBadge } from '../common/Tags';
+import TradeJournalAnalytics from './TradeJournalAnalytics';
 
 export default function PaperTradingTab({ stocks }: { stocks: StockRecord[] }) {
   const {
     cash, totalEquity, positionsValue,
     openPositions, closedTrades, metrics,
     executeTrade, closePosition, resetPortfolio,
+    reviews, addReview, journalAnalytics,
   } = usePaperTrading(stocks);
 
   const [showTradeForm, setShowTradeForm] = useState(false);
@@ -21,6 +23,19 @@ export default function PaperTradingTab({ stocks }: { stocks: StockRecord[] }) {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showReset, setShowReset] = useState(false);
   const [resetCapital, setResetCapital] = useState('100000');
+  const [subTab, setSubTab] = useState<'trades' | 'analytics'>('trades');
+
+  // N26: Journal fields
+  const [journalOpen, setJournalOpen] = useState(false);
+  const [tradeStrategy, setTradeStrategy] = useState('');
+  const [tradeEmotion, setTradeEmotion] = useState('');
+  const [tradeReasoning, setTradeReasoning] = useState('');
+
+  // N26: Review modal state
+  const [reviewingTradeId, setReviewingTradeId] = useState<string | null>(null);
+  const [reviewLessons, setReviewLessons] = useState('');
+  const [reviewRating, setReviewRating] = useState<number>(3);
+  const [reviewWouldRepeat, setReviewWouldRepeat] = useState(true);
 
   const searchResults = useMemo(() => {
     if (!searchQuery.trim()) return [];
@@ -42,12 +57,15 @@ export default function PaperTradingTab({ stocks }: { stocks: StockRecord[] }) {
     const shares = parseFloat(tradeShares);
     const price = parseFloat(tradePrice);
     if (!tradeTicker || isNaN(shares) || shares <= 0 || isNaN(price) || price <= 0) return;
-    executeTrade(tradeTicker, tradeType, shares, price, tradeNotes || undefined);
-    setTradeTicker('');
-    setTradeShares('');
-    setTradePrice('');
-    setTradeNotes('');
-    setShowTradeForm(false);
+    executeTrade(tradeTicker, tradeType, shares, price, tradeNotes || undefined, {
+      strategy: tradeStrategy || undefined,
+      emotionalState: tradeEmotion || undefined,
+      entryReasoning: tradeType === 'buy' ? (tradeReasoning || undefined) : undefined,
+      exitReasoning: tradeType === 'sell' ? (tradeReasoning || undefined) : undefined,
+    });
+    setTradeTicker(''); setTradeShares(''); setTradePrice(''); setTradeNotes('');
+    setTradeStrategy(''); setTradeEmotion(''); setTradeReasoning('');
+    setShowTradeForm(false); setJournalOpen(false);
   };
 
   const handleReset = () => {
@@ -55,6 +73,21 @@ export default function PaperTradingTab({ stocks }: { stocks: StockRecord[] }) {
     if (isNaN(cap) || cap <= 0) return;
     resetPortfolio(cap);
     setShowReset(false);
+  };
+
+  const handleSubmitReview = () => {
+    if (!reviewingTradeId) return;
+    const trade = closedTrades.find(t => t.sellTradeId === reviewingTradeId);
+    if (!trade) return;
+    addReview({
+      tradeId: reviewingTradeId,
+      ticker: trade.ticker,
+      lessonsLearned: reviewLessons,
+      rating: Math.min(5, Math.max(1, reviewRating)) as TradeReview['rating'],
+      wouldRepeat: reviewWouldRepeat,
+    });
+    setReviewingTradeId(null);
+    setReviewLessons(''); setReviewRating(3); setReviewWouldRepeat(true);
   };
 
   const pnlColor = (v: number) => v >= 0 ? 'text-bullish' : 'text-bearish';
@@ -102,7 +135,7 @@ export default function PaperTradingTab({ stocks }: { stocks: StockRecord[] }) {
       </div>
 
       {/* Actions */}
-      <div className="flex gap-2">
+      <div className="flex gap-2 flex-wrap">
         <button
           onClick={() => setShowTradeForm(v => !v)}
           className="badge bg-accent/15 text-accent-light ring-1 ring-accent/20 hover:bg-accent/25 transition-colors cursor-pointer text-xs px-3 py-1.5"
@@ -115,6 +148,16 @@ export default function PaperTradingTab({ stocks }: { stocks: StockRecord[] }) {
         >
           Reset Portfolio
         </button>
+        <div className="ml-auto flex gap-1">
+          <button
+            onClick={() => setSubTab('trades')}
+            className={`text-xs px-3 py-1.5 rounded transition-colors ${subTab === 'trades' ? 'bg-accent/20 text-accent-light ring-1 ring-accent/30' : 'bg-surface-hover t-muted hover:t-secondary'}`}
+          >Trades</button>
+          <button
+            onClick={() => setSubTab('analytics')}
+            className={`text-xs px-3 py-1.5 rounded transition-colors ${subTab === 'analytics' ? 'bg-accent/20 text-accent-light ring-1 ring-accent/30' : 'bg-surface-hover t-muted hover:t-secondary'}`}
+          >Journal Analytics</button>
+        </div>
       </div>
 
       {/* Reset form */}
@@ -199,142 +242,257 @@ export default function PaperTradingTab({ stocks }: { stocks: StockRecord[] }) {
               {tradeType === 'buy' ? 'Buy' : 'Sell'}
             </button>
           </div>
+
+          {/* Journal Details (collapsible) */}
+          <div className="mt-3 border-t border-surface-border pt-3">
+            <button onClick={() => setJournalOpen(v => !v)} className="text-xs t-muted hover:t-secondary transition-colors flex items-center gap-1">
+              <svg className={`w-3 h-3 transition-transform ${journalOpen ? 'rotate-90' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+              Journal Details
+            </button>
+            {journalOpen && (
+              <div className="mt-3 grid grid-cols-1 md:grid-cols-3 gap-3">
+                <div>
+                  <label className="text-xs t-muted block mb-1">Strategy</label>
+                  <select value={tradeStrategy} onChange={e => setTradeStrategy(e.target.value)} className="input-field w-full">
+                    <option value="">-- Select --</option>
+                    {STRATEGY_TAGS.map(s => <option key={s} value={s}>{s}</option>)}
+                  </select>
+                </div>
+                <div>
+                  <label className="text-xs t-muted block mb-1">Emotional State</label>
+                  <select value={tradeEmotion} onChange={e => setTradeEmotion(e.target.value)} className="input-field w-full">
+                    <option value="">-- Select --</option>
+                    {EMOTIONAL_STATES.map(e => <option key={e} value={e}>{e}</option>)}
+                  </select>
+                </div>
+                <div>
+                  <label className="text-xs t-muted block mb-1">{tradeType === 'buy' ? 'Entry' : 'Exit'} Reasoning</label>
+                  <textarea value={tradeReasoning} onChange={e => setTradeReasoning(e.target.value)} placeholder="Why this trade?" className="input-field w-full h-16 resize-none" />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       )}
 
-      {/* Open Positions */}
-      {openPositions.length > 0 && (
-        <div className="card-flat overflow-hidden">
-          <div className="px-4 py-3 border-b border-surface-border">
-            <h3 className="text-xs font-semibold t-tertiary uppercase tracking-wider">Open Positions</h3>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-surface-border">
-                  <th className="px-4 py-3 text-left table-header">Ticker</th>
-                  <th className="px-4 py-3 text-right table-header">Shares</th>
-                  <th className="px-4 py-3 text-right table-header">Avg Cost</th>
-                  <th className="px-4 py-3 text-right table-header">Price</th>
-                  <th className="px-4 py-3 text-right table-header">Value</th>
-                  <th className="px-4 py-3 text-right table-header">P&L</th>
-                  <th className="px-4 py-3 text-center table-header">Score</th>
-                  <th className="px-4 py-3 text-center table-header w-16">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                {openPositions.map(p => {
-                  const stock = stocks.find(s => s.ticker === p.ticker);
-                  return (
-                    <tr key={p.ticker} className="border-b border-surface-border/50 hover:bg-surface-hover/50 transition-colors">
-                      <td className="px-4 py-2.5">
-                        <Link to={`/stock/${p.ticker}`} className="font-semibold text-accent-light hover:t-primary transition-colors">
-                          {p.ticker}
-                        </Link>
-                      </td>
-                      <td className="px-4 py-2.5 text-right font-mono tabular-nums t-primary">{p.shares}</td>
-                      <td className="px-4 py-2.5 text-right font-mono tabular-nums t-secondary">${p.avgCost.toFixed(2)}</td>
-                      <td className="px-4 py-2.5 text-right font-mono tabular-nums t-primary">${p.currentPrice.toFixed(2)}</td>
-                      <td className="px-4 py-2.5 text-right font-mono tabular-nums t-primary">${p.currentValue.toLocaleString(undefined, { maximumFractionDigits: 0 })}</td>
-                      <td className="px-4 py-2.5 text-right">
-                        <span className={`font-mono tabular-nums ${pnlColor(p.pnl)}`}>
-                          {pnlSign(p.pnl)}{p.pnlPct.toFixed(1)}%
-                        </span>
-                        <span className={`block text-xs ${pnlColor(p.pnl)}`}>
-                          {pnlSign(p.pnl)}${Math.abs(p.pnl).toFixed(0)}
-                        </span>
-                      </td>
-                      <td className="px-4 py-2.5 text-center">
-                        {stock ? <ScoreBadge score={stock.score.composite} /> : <span className="t-faint">--</span>}
-                      </td>
-                      <td className="px-4 py-2.5 text-center">
-                        <button
-                          onClick={() => closePosition(p.ticker, p.currentPrice)}
-                          className="text-xs px-2 py-1 rounded bg-bearish/10 text-bearish hover:bg-bearish/20 transition-colors"
-                        >
-                          Close
-                        </button>
-                      </td>
+      {subTab === 'analytics' && <TradeJournalAnalytics analytics={journalAnalytics} />}
+
+      {subTab === 'trades' && (
+        <>
+          {/* Open Positions */}
+          {openPositions.length > 0 && (
+            <div className="card-flat overflow-hidden">
+              <div className="px-4 py-3 border-b border-surface-border">
+                <h3 className="text-xs font-semibold t-tertiary uppercase tracking-wider">Open Positions</h3>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-surface-border">
+                      <th className="px-4 py-3 text-left table-header">Ticker</th>
+                      <th className="px-4 py-3 text-right table-header">Shares</th>
+                      <th className="px-4 py-3 text-right table-header">Avg Cost</th>
+                      <th className="px-4 py-3 text-right table-header">Price</th>
+                      <th className="px-4 py-3 text-right table-header">Value</th>
+                      <th className="px-4 py-3 text-right table-header">P&L</th>
+                      <th className="px-4 py-3 text-center table-header">Score</th>
+                      <th className="px-4 py-3 text-center table-header w-16">Action</th>
                     </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      )}
+                  </thead>
+                  <tbody>
+                    {openPositions.map(p => {
+                      const stock = stocks.find(s => s.ticker === p.ticker);
+                      return (
+                        <tr key={p.ticker} className="border-b border-surface-border/50 hover:bg-surface-hover/50 transition-colors">
+                          <td className="px-4 py-2.5">
+                            <Link to={`/stock/${p.ticker}`} className="font-semibold text-accent-light hover:t-primary transition-colors">
+                              {p.ticker}
+                            </Link>
+                          </td>
+                          <td className="px-4 py-2.5 text-right font-mono tabular-nums t-primary">{p.shares}</td>
+                          <td className="px-4 py-2.5 text-right font-mono tabular-nums t-secondary">${p.avgCost.toFixed(2)}</td>
+                          <td className="px-4 py-2.5 text-right font-mono tabular-nums t-primary">${p.currentPrice.toFixed(2)}</td>
+                          <td className="px-4 py-2.5 text-right font-mono tabular-nums t-primary">${p.currentValue.toLocaleString(undefined, { maximumFractionDigits: 0 })}</td>
+                          <td className="px-4 py-2.5 text-right">
+                            <span className={`font-mono tabular-nums ${pnlColor(p.pnl)}`}>
+                              {pnlSign(p.pnl)}{p.pnlPct.toFixed(1)}%
+                            </span>
+                            <span className={`block text-xs ${pnlColor(p.pnl)}`}>
+                              {pnlSign(p.pnl)}${Math.abs(p.pnl).toFixed(0)}
+                            </span>
+                          </td>
+                          <td className="px-4 py-2.5 text-center">
+                            {stock ? <ScoreBadge score={stock.score.composite} /> : <span className="t-faint">--</span>}
+                          </td>
+                          <td className="px-4 py-2.5 text-center">
+                            <button
+                              onClick={() => closePosition(p.ticker, p.currentPrice)}
+                              className="text-xs px-2 py-1 rounded bg-bearish/10 text-bearish hover:bg-bearish/20 transition-colors"
+                            >
+                              Close
+                            </button>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
 
-      {/* Performance Metrics */}
-      {metrics.totalTrades > 0 && (
-        <div className="card p-5">
-          <h3 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Performance Metrics</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="text-center">
-              <p className="text-xs t-muted mb-1">Profit Factor</p>
-              <p className="font-semibold font-mono t-primary">{metrics.profitFactor === Infinity ? 'INF' : metrics.profitFactor.toFixed(2)}</p>
+          {/* Performance Metrics */}
+          {metrics.totalTrades > 0 && (
+            <div className="card p-5">
+              <h3 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">Performance Metrics</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="text-center">
+                  <p className="text-xs t-muted mb-1">Profit Factor</p>
+                  <p className="font-semibold font-mono t-primary">{metrics.profitFactor === Infinity ? 'INF' : metrics.profitFactor.toFixed(2)}</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-xs t-muted mb-1">Avg Win</p>
+                  <p className="font-semibold font-mono text-bullish">${metrics.avgWin.toFixed(2)}</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-xs t-muted mb-1">Avg Loss</p>
+                  <p className="font-semibold font-mono text-bearish">${metrics.avgLoss.toFixed(2)}</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-xs t-muted mb-1">Max Drawdown</p>
+                  <p className="font-semibold font-mono text-bearish">{metrics.maxDrawdown.toFixed(1)}%</p>
+                </div>
+              </div>
             </div>
-            <div className="text-center">
-              <p className="text-xs t-muted mb-1">Avg Win</p>
-              <p className="font-semibold font-mono text-bullish">${metrics.avgWin.toFixed(2)}</p>
-            </div>
-            <div className="text-center">
-              <p className="text-xs t-muted mb-1">Avg Loss</p>
-              <p className="font-semibold font-mono text-bearish">${metrics.avgLoss.toFixed(2)}</p>
-            </div>
-            <div className="text-center">
-              <p className="text-xs t-muted mb-1">Max Drawdown</p>
-              <p className="font-semibold font-mono text-bearish">{metrics.maxDrawdown.toFixed(1)}%</p>
-            </div>
-          </div>
-        </div>
-      )}
+          )}
 
-      {/* Closed Trades History */}
-      {closedTrades.length > 0 && (
-        <div className="card-flat overflow-hidden">
-          <div className="px-4 py-3 border-b border-surface-border">
-            <h3 className="text-xs font-semibold t-tertiary uppercase tracking-wider">Closed Trades</h3>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-surface-border">
-                  <th className="px-4 py-3 text-left table-header">Ticker</th>
-                  <th className="px-4 py-3 text-right table-header">Shares</th>
-                  <th className="px-4 py-3 text-right table-header">Buy</th>
-                  <th className="px-4 py-3 text-right table-header">Sell</th>
-                  <th className="px-4 py-3 text-right table-header">P&L</th>
-                  <th className="px-4 py-3 text-right table-header">Date</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[...closedTrades].reverse().map((t, i) => (
-                  <tr key={i} className="border-b border-surface-border/50 hover:bg-surface-hover/50 transition-colors">
-                    <td className="px-4 py-2.5 font-semibold text-accent-light">{t.ticker}</td>
-                    <td className="px-4 py-2.5 text-right font-mono tabular-nums t-primary">{t.shares}</td>
-                    <td className="px-4 py-2.5 text-right font-mono tabular-nums t-secondary">${t.buyPrice.toFixed(2)}</td>
-                    <td className="px-4 py-2.5 text-right font-mono tabular-nums t-primary">${t.sellPrice.toFixed(2)}</td>
-                    <td className="px-4 py-2.5 text-right">
-                      <span className={`font-mono tabular-nums ${pnlColor(t.pnl)}`}>
-                        {pnlSign(t.pnl)}${Math.abs(t.pnl).toFixed(2)} ({pnlSign(t.pnlPct)}{t.pnlPct.toFixed(1)}%)
-                      </span>
-                    </td>
-                    <td className="px-4 py-2.5 text-right text-xs t-muted">
-                      {new Date(t.sellDate).toLocaleDateString()}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      )}
+          {/* Closed Trades History */}
+          {closedTrades.length > 0 && (
+            <div className="card-flat overflow-hidden">
+              <div className="px-4 py-3 border-b border-surface-border">
+                <h3 className="text-xs font-semibold t-tertiary uppercase tracking-wider">Closed Trades</h3>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-surface-border">
+                      <th className="px-4 py-3 text-left table-header">Ticker</th>
+                      <th className="px-4 py-3 text-right table-header">Shares</th>
+                      <th className="px-4 py-3 text-right table-header">Buy</th>
+                      <th className="px-4 py-3 text-right table-header">Sell</th>
+                      <th className="px-4 py-3 text-right table-header">P&L</th>
+                      <th className="px-4 py-3 text-left table-header">Strategy</th>
+                      <th className="px-4 py-3 text-right table-header">Date</th>
+                      <th className="px-4 py-3 text-center table-header w-16">Review</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[...closedTrades].reverse().map((t, i) => {
+                      const hasReview = reviews.some(r => r.tradeId === t.sellTradeId);
+                      return (
+                        <tr key={i} className="border-b border-surface-border/50 hover:bg-surface-hover/50 transition-colors">
+                          <td className="px-4 py-2.5 font-semibold text-accent-light">{t.ticker}</td>
+                          <td className="px-4 py-2.5 text-right font-mono tabular-nums t-primary">{t.shares}</td>
+                          <td className="px-4 py-2.5 text-right font-mono tabular-nums t-secondary">${t.buyPrice.toFixed(2)}</td>
+                          <td className="px-4 py-2.5 text-right font-mono tabular-nums t-primary">${t.sellPrice.toFixed(2)}</td>
+                          <td className="px-4 py-2.5 text-right">
+                            <span className={`font-mono tabular-nums ${pnlColor(t.pnl)}`}>
+                              {pnlSign(t.pnl)}${Math.abs(t.pnl).toFixed(2)} ({pnlSign(t.pnlPct)}{t.pnlPct.toFixed(1)}%)
+                            </span>
+                          </td>
+                          <td className="px-4 py-2.5 text-left">
+                            {t.strategy && (
+                              <span className="badge bg-accent/10 text-accent-light text-[10px]">{t.strategy}</span>
+                            )}
+                            {t.emotionalState && (
+                              <span className="badge bg-surface-hover t-muted text-[10px] ml-1">{t.emotionalState}</span>
+                            )}
+                          </td>
+                          <td className="px-4 py-2.5 text-right text-xs t-muted">
+                            {new Date(t.sellDate).toLocaleDateString()}
+                          </td>
+                          <td className="px-4 py-2.5 text-center">
+                            {t.sellTradeId && (
+                              <button
+                                onClick={() => {
+                                  setReviewingTradeId(t.sellTradeId!);
+                                  const existing = reviews.find(r => r.tradeId === t.sellTradeId);
+                                  if (existing) {
+                                    setReviewLessons(existing.lessonsLearned);
+                                    setReviewRating(existing.rating);
+                                    setReviewWouldRepeat(existing.wouldRepeat);
+                                  }
+                                }}
+                                className={`text-xs px-2 py-1 rounded transition-colors ${
+                                  hasReview ? 'bg-bullish/10 text-bullish hover:bg-bullish/20' : 'bg-accent/10 text-accent-light hover:bg-accent/20'
+                                }`}
+                              >
+                                {hasReview ? 'Reviewed' : 'Review'}
+                              </button>
+                            )}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
 
-      {/* Empty state */}
-      {openPositions.length === 0 && closedTrades.length === 0 && (
-        <div className="card p-12 text-center">
-          <p className="t-muted text-sm">No trades yet. Click "New Trade" to start paper trading with ${cash.toLocaleString()} virtual cash.</p>
-        </div>
+          {/* Review Modal */}
+          {reviewingTradeId && (
+            <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={() => setReviewingTradeId(null)}>
+              <div className="card p-5 w-full max-w-md" onClick={e => e.stopPropagation()}>
+                <h3 className="text-sm font-semibold t-primary mb-4">Trade Review</h3>
+                <div className="space-y-3">
+                  <div>
+                    <label className="text-xs t-muted block mb-1">Rating</label>
+                    <div className="flex gap-1">
+                      {[1, 2, 3, 4, 5].map(n => (
+                        <button
+                          key={n}
+                          onClick={() => setReviewRating(n)}
+                          className={`w-8 h-8 rounded text-sm font-bold transition-colors ${
+                            n <= reviewRating ? 'bg-accent/20 text-accent-light' : 'bg-surface-hover t-muted'
+                          }`}
+                        >{n}</button>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <label className="text-xs t-muted block mb-1">Lessons Learned</label>
+                    <textarea value={reviewLessons} onChange={e => setReviewLessons(e.target.value)} className="input-field w-full h-20 resize-none" placeholder="What did you learn from this trade?" />
+                  </div>
+                  <div>
+                    <label className="text-xs t-muted block mb-1">Would you repeat this trade?</label>
+                    <div className="flex gap-2">
+                      <button onClick={() => setReviewWouldRepeat(true)} className={`text-xs px-3 py-1.5 rounded ${reviewWouldRepeat ? 'bg-bullish/20 text-bullish' : 'bg-surface-hover t-muted'}`}>Yes</button>
+                      <button onClick={() => setReviewWouldRepeat(false)} className={`text-xs px-3 py-1.5 rounded ${!reviewWouldRepeat ? 'bg-bearish/20 text-bearish' : 'bg-surface-hover t-muted'}`}>No</button>
+                    </div>
+                  </div>
+                  <div className="flex gap-2 pt-2">
+                    <button onClick={handleSubmitReview} className="badge bg-accent/15 text-accent-light ring-1 ring-accent/20 hover:bg-accent/25 transition-colors cursor-pointer text-xs px-4 py-2">
+                      Save Review
+                    </button>
+                    <button onClick={() => setReviewingTradeId(null)} className="badge bg-surface-hover t-muted ring-1 ring-surface-border hover:t-secondary transition-colors cursor-pointer text-xs px-4 py-2">
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Empty state */}
+          {openPositions.length === 0 && closedTrades.length === 0 && (
+            <div className="card p-12 text-center">
+              <p className="t-muted text-sm">No trades yet. Click "New Trade" to start paper trading with ${cash.toLocaleString()} virtual cash.</p>
+            </div>
+          )}
+        </>
       )}
     </div>
   );

@@ -1,8 +1,13 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useMemo } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import { useStockData } from './hooks/useStockData';
 import { useTheme } from './hooks/useTheme';
+import { useOfflineStatus } from './hooks/useOfflineStatus';
+import { usePullToRefresh } from './hooks/usePullToRefresh';
+import { useRealtimePrices } from './hooks/useRealtimePrices';
+import type { ConnectionStatus as ConnStatus } from './hooks/useRealtimePrices';
+import OfflineBanner from './components/common/OfflineBanner';
 import Overview from './pages/Overview';
 import InstallPrompt from './components/common/InstallPrompt';
 
@@ -45,8 +50,25 @@ const PageSpinner = () => (
 );
 
 export default function App() {
-  const { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, aiResearchNotes, macroData, socialSentiment, loading } = useStockData();
+  const { stocks: rawStocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, aiResearchNotes, macroData, socialSentiment, loading } = useStockData();
   const { theme, toggle } = useTheme();
+  const offlineStatus = useOfflineStatus();
+  const { pulling, pullDistance, threshold } = usePullToRefresh();
+
+  // N27: Real-time price streaming
+  const tickers = useMemo(() => rawStocks.map(s => s.ticker), [rawStocks]);
+  const { prices: realtimePrices, status: rtStatus } = useRealtimePrices(tickers);
+
+  // Merge real-time prices into stocks
+  const stocks = useMemo(() => {
+    if (realtimePrices.size === 0) return rawStocks;
+    return rawStocks.map(s => {
+      const rt = realtimePrices.get(s.ticker);
+      if (!rt) return s;
+      const newChangePercent = s.price > 0 ? ((rt.price - s.price) / s.price) * 100 + s.changePercent : s.changePercent;
+      return { ...s, price: rt.price, changePercent: newChangePercent };
+    });
+  }, [rawStocks, realtimePrices]);
 
   if (loading) {
     return (
@@ -64,7 +86,16 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-surface">
-      <Header lastUpdated={metadata?.lastUpdated} theme={theme} onToggleTheme={toggle} />
+      {/* Pull-to-refresh indicator */}
+      {pulling && (
+        <div className="pull-to-refresh-spinner" style={{ top: pullDistance - 30, opacity: pullDistance / threshold }}>
+          <svg className="w-6 h-6 t-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          </svg>
+        </div>
+      )}
+      <Header lastUpdated={metadata?.lastUpdated} theme={theme} onToggleTheme={toggle} connectionStatus={rtStatus} />
+      <OfflineBanner isOnline={offlineStatus.isOnline} cachedDataAge={offlineStatus.cachedDataAge} />
       <main className="max-w-[1400px] mx-auto px-4 lg:px-6 py-6">
         <Suspense fallback={<PageSpinner />}>
           <Routes>

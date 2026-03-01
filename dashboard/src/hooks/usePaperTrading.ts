@@ -1,8 +1,12 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
-import type { PaperTrade, PaperPortfolio, StockRecord } from '../types';
+import type { PaperTrade, PaperPortfolio, StockRecord, TradeReview } from '../types';
 
 const STORAGE_KEY = 'sm-paper-trading';
+const REVIEWS_KEY = 'sm-trade-reviews';
 const DEFAULT_CAPITAL = 100000;
+
+export const STRATEGY_TAGS = ['Momentum', 'Value', 'Breakout', 'Mean Reversion', 'Trend Following', 'Swing Trade', 'Earnings Play', 'Dividend Capture', 'Technical Pattern', 'Fundamental', 'Custom'] as const;
+export const EMOTIONAL_STATES = ['Confident', 'Anxious', 'FOMO', 'Disciplined', 'Greedy', 'Fearful', 'Neutral', 'Impatient', 'Euphoric', 'Frustrated'] as const;
 
 function generateId(): string {
   return Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
@@ -45,6 +49,11 @@ export interface ClosedTrade {
   pnlPct: number;
   buyDate: string;
   sellDate: string;
+  strategy?: string;
+  emotionalState?: string;
+  entryReasoning?: string;
+  exitReasoning?: string;
+  sellTradeId?: string;
 }
 
 export interface PerformanceMetrics {
@@ -65,7 +74,10 @@ export function usePaperTrading(stocks: StockRecord[]) {
 
   useEffect(() => { writePortfolio(portfolio); }, [portfolio]);
 
-  const executeTrade = useCallback((ticker: string, type: 'buy' | 'sell', shares: number, price: number, notes?: string) => {
+  const executeTrade = useCallback((
+    ticker: string, type: 'buy' | 'sell', shares: number, price: number,
+    notes?: string, journal?: { entryReasoning?: string; exitReasoning?: string; strategy?: string; emotionalState?: string }
+  ) => {
     setPortfolio(prev => {
       const cost = shares * price;
       if (type === 'buy' && cost > prev.cash) return prev; // insufficient funds
@@ -77,6 +89,7 @@ export function usePaperTrading(stocks: StockRecord[]) {
         price,
         date: new Date().toISOString(),
         notes,
+        ...journal,
       };
       return {
         ...prev,
@@ -179,6 +192,11 @@ export function usePaperTrading(stocks: StockRecord[]) {
             pnlPct,
             buyDate: firstBuy?.date ?? t.date,
             sellDate: t.date,
+            strategy: firstBuy?.strategy ?? t.strategy,
+            emotionalState: firstBuy?.emotionalState ?? t.emotionalState,
+            entryReasoning: firstBuy?.entryReasoning,
+            exitReasoning: t.exitReasoning,
+            sellTradeId: t.id,
           });
           openCost -= soldShares * avgBuy;
           openShares -= soldShares;
@@ -226,6 +244,93 @@ export function usePaperTrading(stocks: StockRecord[]) {
     };
   }, [closedTrades, openPositions, portfolio.startingCapital]);
 
+  // N26: Trade Reviews
+  const [reviews, setReviews] = useState<TradeReview[]>(() => {
+    try {
+      const raw = localStorage.getItem(REVIEWS_KEY);
+      return raw ? JSON.parse(raw) : [];
+    } catch { return []; }
+  });
+
+  useEffect(() => { localStorage.setItem(REVIEWS_KEY, JSON.stringify(reviews)); }, [reviews]);
+
+  const addReview = useCallback((review: Omit<TradeReview, 'reviewDate'>) => {
+    setReviews(prev => [...prev.filter(r => r.tradeId !== review.tradeId), { ...review, reviewDate: new Date().toISOString() }]);
+  }, []);
+
+  // N26: Journal Analytics
+  const journalAnalytics = useMemo(() => {
+    // Win rate by strategy
+    const strategyMap = new Map<string, { wins: number; total: number; totalPnlPct: number }>();
+    for (const t of closedTrades) {
+      const s = t.strategy || 'Untagged';
+      if (!strategyMap.has(s)) strategyMap.set(s, { wins: 0, total: 0, totalPnlPct: 0 });
+      const entry = strategyMap.get(s)!;
+      entry.total++;
+      entry.totalPnlPct += t.pnlPct;
+      if (t.pnl > 0) entry.wins++;
+    }
+    const winRateByStrategy = [...strategyMap.entries()].map(([strategy, { wins, total, totalPnlPct }]) => ({
+      strategy, winRate: total > 0 ? (wins / total) * 100 : 0, avgPnlPct: total > 0 ? totalPnlPct / total : 0, count: total,
+    }));
+
+    // Performance by emotional state
+    const emotionMap = new Map<string, { wins: number; total: number; totalPnlPct: number }>();
+    for (const t of closedTrades) {
+      const e = t.emotionalState || 'Untagged';
+      if (!emotionMap.has(e)) emotionMap.set(e, { wins: 0, total: 0, totalPnlPct: 0 });
+      const entry = emotionMap.get(e)!;
+      entry.total++;
+      entry.totalPnlPct += t.pnlPct;
+      if (t.pnl > 0) entry.wins++;
+    }
+    const perfByEmotion = [...emotionMap.entries()].map(([emotion, { wins, total, totalPnlPct }]) => ({
+      emotion, winRate: total > 0 ? (wins / total) * 100 : 0, avgPnlPct: total > 0 ? totalPnlPct / total : 0, count: total,
+    }));
+
+    // Trade frequency over time (by month)
+    const monthMap = new Map<string, number>();
+    for (const t of closedTrades) {
+      const month = t.sellDate.slice(0, 7); // YYYY-MM
+      monthMap.set(month, (monthMap.get(month) || 0) + 1);
+    }
+    const tradeFrequency = [...monthMap.entries()]
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([month, count]) => ({ month, count }));
+
+    // Win/loss streaks
+    let currentStreak = 0;
+    let currentStreakType: 'win' | 'loss' | null = null;
+    let longestWinStreak = 0;
+    let longestLossStreak = 0;
+    for (const t of closedTrades) {
+      const isWin = t.pnl > 0;
+      if (isWin) {
+        if (currentStreakType === 'win') currentStreak++;
+        else { currentStreak = 1; currentStreakType = 'win'; }
+        longestWinStreak = Math.max(longestWinStreak, currentStreak);
+      } else {
+        if (currentStreakType === 'loss') currentStreak++;
+        else { currentStreak = 1; currentStreakType = 'loss'; }
+        longestLossStreak = Math.max(longestLossStreak, currentStreak);
+      }
+    }
+
+    // Strategy distribution
+    const strategyDistribution = [...strategyMap.entries()].map(([strategy, { total }]) => ({
+      strategy, count: total,
+    }));
+
+    return {
+      winRateByStrategy,
+      perfByEmotion,
+      tradeFrequency,
+      currentStreak, currentStreakType,
+      longestWinStreak, longestLossStreak,
+      strategyDistribution,
+    };
+  }, [closedTrades]);
+
   const positionsValue = openPositions.reduce((a, p) => a + p.currentValue, 0);
   const totalEquity = portfolio.cash + positionsValue;
 
@@ -240,5 +345,8 @@ export function usePaperTrading(stocks: StockRecord[]) {
     executeTrade,
     closePosition,
     resetPortfolio,
+    reviews,
+    addReview,
+    journalAnalytics,
   };
 }

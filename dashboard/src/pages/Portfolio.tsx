@@ -7,6 +7,7 @@ import CorrelationHeatmap from '../components/charts/CorrelationHeatmap';
 import { useOhlcvData } from '../hooks/useOhlcvData';
 import { computeCorrelationMatrix } from '../lib/correlation';
 import PaperTradingTab from '../components/paper-trading/PaperTradingTab';
+import { useSwipeNavigation } from '../hooks/useSwipeNavigation';
 
 /* ─── TYPES ─── */
 interface Holding {
@@ -80,6 +81,10 @@ const COLORS = ['#3b82f6','#16a34a','#d97706','#dc2626','#0284c7','#0d9488','#c2
 /* ─── COMPONENT ─── */
 export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
   const [activeTab, setActiveTab] = useState<'holdings' | 'paper'>('holdings');
+  const swipeHandlers = useSwipeNavigation(
+    () => setActiveTab('paper'),   // swipe left → paper trading
+    () => setActiveTab('holdings'), // swipe right → holdings
+  );
   const [holdings, setHoldings] = useState<Holding[]>(readHoldings);
   const [showAdd, setShowAdd] = useState(false);
   const [addTicker, setAddTicker] = useState('');
@@ -211,7 +216,7 @@ export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
   }));
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-5" {...swipeHandlers}>
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-xl font-bold t-primary">Portfolio Tracker</h1>
