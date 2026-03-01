@@ -1,6 +1,27 @@
 {
   "topOverall": [
     {
+      "ticker": "8031.T",
+      "name": "Mitsui & Co",
+      "score": 79,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GLE.PA",
+      "name": "Societe Generale",
+      "score": 77,
+      "market": "FR",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 76,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "NEM",
       "name": "Newmont",
       "score": 75,
@@ -29,44 +50,23 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US",
+      "ticker": "TATASTEEL.NS",
+      "name": "Tata Steel",
+      "score": 74,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "6273.T",
+      "name": "SMC Corp",
+      "score": 74,
+      "market": "JP",
       "capCategory": "Large"
     },
     {
       "ticker": "RVMD",
       "name": "Revolution Medicines",
       "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BMY",
-      "name": "Bristol-Myers Squibb",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DG",
-      "name": "Dollar General",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 71,
       "market": "US",
       "capCategory": "Large"
     }
@@ -82,14 +82,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 24,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,9 +94,23 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
@@ -134,16 +141,27 @@
       "score": 27,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "8031.T",
+      "name": "Mitsui & Co",
+      "score": 79,
+      "market": "JP"
+    },
+    {
+      "ticker": "GLE.PA",
+      "name": "Societe Generale",
+      "score": 77,
+      "market": "FR"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 76,
+      "market": "DE"
+    },
     {
       "ticker": "NEM",
       "name": "Newmont",
@@ -157,10 +175,16 @@
       "market": "UK"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US"
+      "ticker": "TATASTEEL.NS",
+      "name": "Tata Steel",
+      "score": 74,
+      "market": "IN"
+    },
+    {
+      "ticker": "6273.T",
+      "name": "SMC Corp",
+      "score": 74,
+      "market": "JP"
     },
     {
       "ticker": "RVMD",
@@ -175,34 +199,10 @@
       "market": "UK"
     },
     {
-      "ticker": "BMY",
-      "name": "Bristol-Myers Squibb",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "DG",
-      "name": "Dollar General",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 71,
-      "market": "UK"
+      "ticker": "BPCL.NS",
+      "name": "Bharat Petroleum",
+      "score": 73,
+      "market": "IN"
     }
   ],
   "topMidCap": [
@@ -329,7 +329,7 @@
       "market": "UK"
     }
   ],
-  "totalStocks": 673,
-  "avgScore": 51,
-  "bearishAlertCount": 316
+  "totalStocks": 865,
+  "avgScore": 52,
+  "bearishAlertCount": 391
 }
