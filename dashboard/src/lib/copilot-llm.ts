@@ -163,6 +163,7 @@ RSI: ${fmt(stock.rsi)}, MACD Hist: ${fmt(stock.macdHistogram)}, Beta: ${fmt(stoc
 52W: $${stock.fiftyTwoWeekLow.toFixed(2)}-$${stock.fiftyTwoWeekHigh.toFixed(2)} (at ${stock.fiftyTwoWeekRangePercent}%)
 Revenue Growth: ${fmt(stock.revenueGrowth != null ? stock.revenueGrowth * 100 : null, '%')}, Earnings Growth: ${fmt(stock.earningsGrowth != null ? stock.earningsGrowth * 100 : null, '%')}
 ROE: ${fmt(stock.returnOnEquity != null ? stock.returnOnEquity * 100 : null, '%')}, D/E: ${fmt(stock.debtToEquity)}
+${stock.esgScore != null ? `ESG: ${fmt(stock.esgScore)} (E: ${fmt(stock.esgEnvironment)}, S: ${fmt(stock.esgSocial)}, G: ${fmt(stock.esgGovernance)}, Percentile: ${fmt(stock.esgPercentile)})` : ''}
 Signals: ${bullish.length} bullish, ${bearish.length} bearish. Key: ${topSignals || 'none'}.
 Sector Rank: #${stock.sectorRank}/${stock.sectorCount}`;
 }

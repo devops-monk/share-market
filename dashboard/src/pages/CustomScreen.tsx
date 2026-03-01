@@ -2,6 +2,7 @@ import { useState, useMemo, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import type { StockRecord } from '../types';
 import { ScoreBadge, MarketTag, ChangePercent } from '../components/common/Tags';
+import { currencySymbol } from '../lib/format';
 
 /* ─── METRIC DEFINITIONS ─── */
 interface MetricDef {
@@ -325,7 +326,7 @@ export default function CustomScreen({ stocks }: { stocks: StockRecord[] }) {
                         <td className="px-4 py-2.5 t-secondary text-xs truncate max-w-[120px]">{s.name}</td>
                         <td className="px-4 py-2.5"><MarketTag market={s.market} /></td>
                         <td className="px-4 py-2.5 text-right font-mono tabular-nums t-primary">
-                          {s.market === 'UK' ? '\u00a3' : '$'}{s.price.toFixed(2)}
+                          {currencySymbol(s.market)}{s.price.toFixed(2)}
                         </td>
                         <td className="px-4 py-2.5 text-right"><ChangePercent value={s.changePercent} /></td>
                         <td className="px-4 py-2.5 text-center"><ScoreBadge score={s.score.composite} /></td>

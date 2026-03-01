@@ -517,10 +517,10 @@ Based on competitive analysis and expert technique research conducted February 2
 | **N19** | **Macro Overlay** ✅ | VIX, 10Y/2Y Treasury, yield spread, DXY, Fed Funds Rate on Overview. FRED API. | Professional feature. FRED API (free) for macro data. | Medium |
 | **N20** | **Options Sentiment Proxy** | Put/Call ratio per stock from available sources. Max pain calculations. | No free real-time source. Could scrape Yahoo Options chain periodically. | High |
 | **N21** | ~~Economic Calendar~~ | **DONE** — Hardcoded FOMC, CPI, NFP, GDP, earnings season, quad-witching dates for 2025-2026. Color-coded by category with impact indicators. New `/economic-calendar` page. | Free standalone page. | ~~Medium~~ |
-| **N22** | **Global Coverage Expansion** | European markets (DAX, CAC 40), Asian markets (Nikkei, HSI) | Simply Wall St covers 100K+ securities globally. Expand stock universe. | High |
+| **N22** | ~~Global Coverage Expansion~~ | **DONE** — Added 5 new markets: India (NSE+BSE, ~58 stocks), Germany (DAX 40), France (CAC 40, ~30), Japan (Nikkei 225 top ~40), Hong Kong (Hang Seng top ~30). Multi-currency support (₹, €, ¥, HK$). Market regime for Nifty 50, DAX, Nikkei 225. Market filter expansion in Screener. Color-coded MarketTags per market. | 7 markets, ~870 stocks total. | ~~High~~ |
 | **N23** | ~~Paper Trading Mode~~ | **DONE** — Tab on Portfolio page with $100K virtual cash. Buy/sell trades, open positions with close button, closed trades history, performance metrics (win rate, profit factor, avg win/loss, max drawdown). localStorage persistence, ticker search with auto-fill prices. | TradingView has this. Educational value. | ~~Medium~~ |
 | **N24** | **Weighted Screener** | User-defined weights for multi-factor screening (like Stock Rover) | Stock Rover's #1 feature for power users. | Medium |
-| **N25** | **ESG Scores** | Environmental, Social, Governance scores per stock | Growing demand. Yahoo Finance provides some ESG data. | Medium |
+| **N25** | ~~ESG Scores~~ | **DONE** — ESG risk scores from Yahoo Finance `esgScores` quoteSummary module. Total ESG, Environmental, Social, Governance sub-scores with color-coded bars. ESG percentile. ESG card on StockDetail page. ESG column in Screener. ESG fields in AI Builder reference and Copilot context. | Lower = better risk. 0-10 Negligible, 10-20 Low, 20-30 Medium, 30-40 High, 40+ Severe. | ~~Medium~~ |
 | **N26** | ~~Trade Journal & Analytics~~ | **DONE** — Strategy tags, emotional state tracking, entry/exit reasoning on paper trades. Post-trade review with rating system. Journal Analytics dashboard with recharts: win rate by strategy, P&L by emotional state, trade frequency, win/loss streaks, strategy distribution. | Professional trading practice. | ~~Medium~~ |
 | **N27** | ~~Real-Time Price Streaming~~ | **DONE** — Finnhub WebSocket integration for live US market prices. Encrypted API key storage, connection status badge in header, price flash animations (green/red), batched state updates (500ms), exponential backoff reconnection, market hours detection. | Core trading feature. | ~~High~~ |
 | **N28** | ~~PWA Mobile Enhancement~~ | **DONE** — Stale-while-revalidate service worker (v2), offline banner with cached data age, pull-to-refresh gesture, swipe navigation between tabs, safe-area padding for notched devices, manifest shortcuts, maskable icons. | Mobile-first trading experience. | ~~Medium~~ |
@@ -533,11 +533,11 @@ Based on competitive analysis and expert technique research conducted February 2
 ### Updated Implementation Priority Map
 
 ```
-DONE (Shipped Feb 2026)             DONE (Batch 5–6, Mar 2026)           LATER (Future)
+DONE (Shipped Feb 2026)             DONE (Batch 5–6, Mar 2026)           DONE (Batch 7) / LATER
 ───────────────────                 ──────────────────────               ──────────────
-✅ N1  NL Stock Query             ✅ N11 AI Copilot Chat                N20 Options Sentiment
-✅ N2  Factor Grades              ✅ N12 Predictive Scoring             N22 Global Expansion
-✅ N3  Altman Z-Score             ✅ N23 Paper Trading                  N25 ESG Scores
+✅ N1  NL Stock Query             ✅ N11 AI Copilot Chat                ✅ N22 Global Expansion (7 markets)
+✅ N2  Factor Grades              ✅ N12 Predictive Scoring             ✅ N25 ESG Scores
+✅ N3  Altman Z-Score             ✅ N23 Paper Trading                  N20 Options Sentiment
 ✅ N4  Risk-Adjusted Returns      ✅ N26 Trade Journal & Analytics
 ✅ N5  Position Sizing Calculator ✅ N27 Real-Time Price Streaming
 ✅ N6  ADX/Williams/CMF           ✅ N28 PWA Mobile Enhancement
@@ -563,26 +563,21 @@ DONE (Shipped Feb 2026)             DONE (Batch 5–6, Mar 2026)           LATER
 ```
                         LOW EFFORT ◄──────────────────────► HIGH EFFORT
                         │                                          │
-  HIGH IMPACT           │                                          │  N22 Global Expansion ★
-                        │                                          │
-  MEDIUM IMPACT         │  N25 ESG Scores ★                        │  N20 Options Sentiment
+  HIGH IMPACT           │  ✅ N22 Global Expansion (DONE)          │
+                        │  ✅ N25 ESG Scores (DONE)                │
+  MEDIUM IMPACT         │                                          │  N20 Options Sentiment
                         │                                          │
 
-★ = Recommended next priorities (highest impact-to-effort ratio)
-All N-series through N31 are now DONE except N20, N22, N25.
+All N-series through N31 are now DONE except N20.
 ```
 
 ---
 
 ### Recommended Next Actions
 
-> **Batches 1–6 shipped Feb–Mar 2026.** Batch 6 added N29 Chart Replay, N30 AI Indicator Builder, N31 Portfolio Risk Analytics. Only 3 N-series features remain (N20, N22, N25).
+> **Batches 1–7 shipped Feb–Mar 2026.** Batch 7 added N22 Global Coverage (7 markets, ~870 stocks) and N25 ESG Scores. Only 1 N-series feature remains (N20).
 
 1. **N20 — Options Sentiment** — Put/call ratio, unusual options activity, max pain price from options chain data. Scrape Yahoo Options chain or use CBOE data. **Medium effort, requires options data source.**
-
-2. **N22 — Global Coverage Expansion** — Add European markets (DAX, CAC40), Asian markets (Nikkei, Hang Seng), emerging markets. Multi-currency support and extended trading hours. **High effort, high impact.**
-
-3. **N25 — ESG Scores** — Environmental, Social, Governance scoring from ESG data providers. Filter/sort by ESG ratings. Growing demand from retail investors. **Medium effort, requires data source.**
 
 ---
 
@@ -594,8 +589,8 @@ All N-series through N31 are now DONE except N20, N22, N25.
 | Medium Effort (M-series) | 17 | 17 | **100%** |
 | Large Effort (L-series) | 12 | 14 | **86%** |
 | Expert Methodologies | 5 of 9 | 9 | **56%** |
-| New Features (N-series) | 28 of 31 | 31 | **90%** |
-| **Total features shipped** | **75+** | — | — |
+| New Features (N-series) | 30 of 31 | 31 | **97%** |
+| **Total features shipped** | **77+** | — | — |
 
 ---
 

@@ -1,4 +1,5 @@
 import type { StockRecord } from '../types';
+import { currencySymbol } from './format';
 
 /**
  * Generates a natural-language analyst-style summary for a stock.
@@ -37,7 +38,7 @@ function pct(v: number): string {
 }
 
 function cur(stock: StockRecord): string {
-  return stock.market === 'UK' ? '£' : '$';
+  return currencySymbol(stock.market);
 }
 
 function scoreLabel(score: number): string {

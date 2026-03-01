@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import type { StockRecord } from '../types';
 import { ScoreBadge, ChangePercent, MarketTag, CapTag } from '../components/common/Tags';
+import { currencySymbol } from '../lib/format';
 import InfoTooltip from '../components/common/InfoTooltip';
 import { TIPS } from '../lib/tooltips';
 
@@ -149,7 +150,7 @@ export default function Watchlist({ stocks }: { stocks: StockRecord[] }) {
               </thead>
               <tbody>
                 {watchedStocks.map(stock => {
-                  const cur = stock.market === 'UK' ? '\u00a3' : '$';
+                  const cur = currencySymbol(stock.market);
                   const dcColor = stock.dataCompleteness >= 80
                     ? 'text-bullish'
                     : stock.dataCompleteness >= 50

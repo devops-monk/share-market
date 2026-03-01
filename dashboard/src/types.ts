@@ -48,9 +48,10 @@ export interface PredictiveScore {
 export interface StockRecord {
   ticker: string;
   name: string;
-  market: 'US' | 'UK';
+  market: 'US' | 'UK' | 'IN' | 'DE' | 'FR' | 'JP' | 'HK';
   sector: string;
   trading212: boolean;
+  currency: string;
   price: number;
   changePercent: number;
   marketCap: number;
@@ -217,6 +218,12 @@ export interface StockRecord {
     valueAreaHigh: number;
     valueAreaLow: number;
   } | null;
+  // N25: ESG Scores
+  esgScore: number | null;
+  esgEnvironment: number | null;
+  esgSocial: number | null;
+  esgGovernance: number | null;
+  esgPercentile: number | null;
 }
 
 // N19: Macro Overlay
@@ -340,6 +347,9 @@ export interface RegimeData {
 export interface MarketRegime {
   us: RegimeData;
   uk: RegimeData;
+  in: RegimeData;
+  eu: RegimeData;
+  asia: RegimeData;
   overall: 'bull' | 'correction' | 'bear';
   summary: string;
 }

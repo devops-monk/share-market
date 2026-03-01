@@ -253,9 +253,12 @@ function MarketRegimeCard({ regime }: { regime: MarketRegime }) {
         </div>
         <p className="text-sm t-secondary">{regime.summary}</p>
       </div>
-      <div className="grid md:grid-cols-2 divide-x divide-surface-border">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 divide-x divide-surface-border">
         <RegimeIndexRow data={regime.us} />
         <RegimeIndexRow data={regime.uk} />
+        {regime.in && <RegimeIndexRow data={regime.in} />}
+        {regime.eu && <RegimeIndexRow data={regime.eu} />}
+        {regime.asia && <RegimeIndexRow data={regime.asia} />}
       </div>
     </div>
   );

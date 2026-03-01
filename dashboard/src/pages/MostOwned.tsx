@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import type { StockRecord } from '../types';
 import { MarketTag, CapTag, ScoreBadge, ChangePercent, PriceDisplay } from '../components/common/Tags';
+import { currencySymbol } from '../lib/format';
 
 type SortKey = 'dropPct' | 'ownership' | 'marketCap' | 'institutionsCount' | 'score' | 'dividendYield' | 'rsi';
 type DropBucket = 'all' | '5' | '10' | '15' | '20' | '25' | '30';
@@ -436,13 +437,13 @@ export default function MostOwned({ stocks }: { stocks: StockRecord[] }) {
                 <div className="flex items-center gap-1.5">
                   <span className="t-muted">52W High:</span>
                   <span className="font-mono font-medium t-primary">
-                    {stock.market === 'UK' ? '\u00a3' : '$'}{stock.fiftyTwoWeekHigh.toFixed(2)}
+                    {currencySymbol(stock.market)}{stock.fiftyTwoWeekHigh.toFixed(2)}
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <span className="t-muted">52W Low:</span>
                   <span className="font-mono font-medium t-primary">
-                    {stock.market === 'UK' ? '\u00a3' : '$'}{stock.fiftyTwoWeekLow.toFixed(2)}
+                    {currencySymbol(stock.market)}{stock.fiftyTwoWeekLow.toFixed(2)}
                   </span>
                 </div>
                 {stock.dividendYield != null && stock.dividendYield > 0 && (

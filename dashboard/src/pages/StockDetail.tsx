@@ -11,6 +11,7 @@ import ScoreHistoryChart from '../components/charts/ScoreHistoryChart';
 import { MarketTag, CapTag, Trading212Badge, SignalBadge, ChangePercent } from '../components/common/Tags';
 import FinancialsBarChart from '../components/charts/FinancialsBarChart';
 import { generateStockSummary } from '../lib/stock-summary';
+import { currencySymbol } from '../lib/format';
 import VolumeProfileChart from '../components/charts/VolumeProfileChart';
 import PredictiveScoreCard from '../components/charts/PredictiveScoreCard';
 import AICopilotChat from '../components/common/AICopilotChat';
@@ -120,11 +121,11 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
     { label: 'Risk (inv.)', value: stock.score.riskInverse },
   ];
 
-  const cur = stock.market === 'UK' ? '£' : '$';
+  const cur = currencySymbol(stock.market);
 
   const formatMcap = (v: number) => {
     if (v === 0) return 'N/A';
-    const sym = stock.market === 'UK' ? '£' : '$';
+    const sym = currencySymbol(stock.market);
     if (v >= 1e12) return `${sym}${(v / 1e12).toFixed(1)}T`;
     if (v >= 1e9) return `${sym}${(v / 1e9).toFixed(1)}B`;
     if (v >= 1e6) return `${sym}${(v / 1e6).toFixed(0)}M`;
@@ -411,6 +412,65 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
         <PredictiveScoreCard currentScore={stock.score.composite} predictiveScore={stock.predictiveScore} />
       )}
 
+      {/* ESG Sustainability */}
+      {stock.esgScore != null && (
+        <div className="card p-5">
+          <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-4">ESG Sustainability</h2>
+          <p className="text-xs t-muted mb-4 leading-relaxed">
+            ESG risk score measures environmental, social, and governance risks. <strong className="t-secondary">Lower is better</strong> — 0-10 Negligible, 10-20 Low, 20-30 Medium, 30-40 High, 40+ Severe risk.
+          </p>
+          <div className="space-y-4">
+            {/* Overall ESG Score */}
+            <div>
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-sm font-medium t-secondary">Overall ESG Risk</span>
+                <span className={`font-mono font-bold text-lg ${stock.esgScore <= 15 ? 'text-bullish' : stock.esgScore <= 30 ? 'text-neutral' : 'text-bearish'}`}>
+                  {stock.esgScore.toFixed(1)}
+                </span>
+              </div>
+              <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+                <div
+                  className={`h-2.5 rounded-full ${stock.esgScore <= 15 ? 'bg-green-500' : stock.esgScore <= 30 ? 'bg-yellow-500' : 'bg-red-500'}`}
+                  style={{ width: `${Math.min(100, (stock.esgScore / 50) * 100)}%` }}
+                />
+              </div>
+              <div className="flex justify-between text-[10px] t-faint mt-0.5">
+                <span>Negligible</span><span>Low</span><span>Medium</span><span>High</span><span>Severe</span>
+              </div>
+            </div>
+            {/* Sub-scores */}
+            <div className="grid grid-cols-3 gap-4">
+              {[
+                { label: 'Environmental', value: stock.esgEnvironment },
+                { label: 'Social', value: stock.esgSocial },
+                { label: 'Governance', value: stock.esgGovernance },
+              ].map(({ label, value }) => (
+                <div key={label}>
+                  <span className="text-xs t-muted">{label}</span>
+                  <div className="flex items-center gap-2 mt-1">
+                    <span className={`font-mono font-semibold ${value != null && value <= 10 ? 'text-bullish' : value != null && value <= 20 ? 'text-neutral' : 'text-bearish'}`}>
+                      {value != null ? value.toFixed(1) : '--'}
+                    </span>
+                    <div className="flex-1 bg-gray-200 dark:bg-gray-700 rounded-full h-1.5">
+                      <div
+                        className={`h-1.5 rounded-full ${value != null && value <= 10 ? 'bg-green-500' : value != null && value <= 20 ? 'bg-yellow-500' : 'bg-red-500'}`}
+                        style={{ width: `${Math.min(100, ((value ?? 0) / 30) * 100)}%` }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            {/* Percentile */}
+            {stock.esgPercentile != null && (
+              <p className="text-xs t-secondary">
+                Better than <strong className="t-primary">{stock.esgPercentile.toFixed(0)}%</strong> of rated companies
+              </p>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* Key metrics */}
       <div className="card p-5">
         <div className="flex items-center justify-between mb-4">
@@ -547,7 +607,7 @@ export default function StockDetail({ stocks, news, financials, insiderTrades, a
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm font-semibold t-primary">DCF Value</span>
               <span className="text-lg font-bold font-mono t-primary">
-                {stock.dcfValue != null ? `${stock.market === 'UK' ? '\u00a3' : '$'}${stock.dcfValue.toFixed(2)}` : 'N/A'}
+                {stock.dcfValue != null ? `${currencySymbol(stock.market)}${stock.dcfValue.toFixed(2)}` : 'N/A'}
               </span>
             </div>
             {stock.dcfValue != null && (

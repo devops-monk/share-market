@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import type { StockRecord } from '../types';
 import { ScoreBadge, MarketTag, ChangePercent } from '../components/common/Tags';
+import { currencySymbol } from '../lib/format';
 import InfoTooltip from '../components/common/InfoTooltip';
 
 /* ─── TYPES ─── */
@@ -253,7 +254,7 @@ export default function Backtest({ stocks, scoreHistory }: { stocks: StockRecord
                     <td className="px-4 py-2.5 t-secondary text-xs truncate max-w-[120px]">{r.stock.name}</td>
                     <td className="px-4 py-2.5"><MarketTag market={r.stock.market} /></td>
                     <td className="px-4 py-2.5 text-right font-mono tabular-nums t-primary">
-                      {r.stock.market === 'UK' ? '\u00a3' : '$'}{r.stock.price.toFixed(2)}
+                      {currencySymbol(r.stock.market)}{r.stock.price.toFixed(2)}
                     </td>
                     <td className="px-4 py-2.5 text-center"><ScoreBadge score={r.currentScore} /></td>
                     <td className="px-4 py-2.5 text-right"><ChangePercent value={r.return3m} /></td>

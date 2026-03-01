@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { StockRecord } from '../types';
 import { ScoreBadge, MarketTag, CapTag } from '../components/common/Tags';
+import { currencySymbol } from '../lib/format';
 
 const CHECK_LABELS: { key: keyof StockRecord['minerviniChecks']; label: string }[] = [
   { key: 'priceAbove150and200', label: 'Price above 150 & 200 SMA' },
@@ -121,7 +122,7 @@ export default function MinerviniScreen({ stocks }: { stocks: StockRecord[] }) {
                     </div>
                     <div className="flex items-center gap-4 text-sm">
                       <span className="font-mono tabular-nums font-medium t-primary">
-                        {stock.market === 'UK' ? '\u00a3' : '$'}{stock.price.toFixed(2)}
+                        {currencySymbol(stock.market)}{stock.price.toFixed(2)}
                       </span>
                       <span className={`font-mono tabular-nums font-medium ${changeColor}`}>
                         {stock.changePercent >= 0 ? '+' : ''}{stock.changePercent.toFixed(2)}%

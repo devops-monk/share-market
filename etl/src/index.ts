@@ -356,6 +356,7 @@ async function main() {
       market: quote.market,
       sector: quote.sector,
       trading212: quote.trading212,
+      currency: quote.currency,
       price: quote.price,
       changePercent: quote.changePercent,
       marketCap: quote.marketCap,
@@ -493,6 +494,12 @@ async function main() {
       predictiveScore: null, // populated in post-processing after all scores are computed
       // N16: Volume Profile
       volumeProfile,
+      // N25: ESG Scores
+      esgScore: quote.esgScore,
+      esgEnvironment: quote.esgEnvironment,
+      esgSocial: quote.esgSocial,
+      esgGovernance: quote.esgGovernance,
+      esgPercentile: quote.esgPercentile,
       // DCF Lite: simple intrinsic value = OCF × (1 + growth) / discount_rate
       dcfValue: (() => {
         const ocf = quote.operatingCashflow;

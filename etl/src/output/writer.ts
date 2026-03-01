@@ -12,7 +12,8 @@ import path from 'path';
 export interface StockRecord {
   ticker: string;
   name: string;
-  market: 'US' | 'UK';
+  market: 'US' | 'UK' | 'IN' | 'DE' | 'FR' | 'JP' | 'HK';
+  currency: string;
   sector: string;
   trading212: boolean;
   price: number;
@@ -206,6 +207,12 @@ export interface StockRecord {
   } | null;
   // N16: Volume Profile
   volumeProfile: VolumeProfileData | null;
+  // N25: ESG Scores
+  esgScore: number | null;
+  esgEnvironment: number | null;
+  esgSocial: number | null;
+  esgGovernance: number | null;
+  esgPercentile: number | null;
 }
 
 export interface OhlcvData {
@@ -394,18 +401,20 @@ export function writeOutputs(
     compositeScore: s.score.composite,
   });
 
-  const usStocks = stocks.filter(s => s.market === 'US');
-  const ukStocks = stocks.filter(s => s.market === 'UK');
+  const marketCsvFiles: Record<string, string> = {
+    US: 'us-stocks.csv', UK: 'uk-stocks.csv', IN: 'in-stocks.csv',
+    DE: 'de-stocks.csv', FR: 'fr-stocks.csv', JP: 'jp-stocks.csv', HK: 'hk-stocks.csv',
+  };
 
-  writeFileSync(
-    path.join(dataDir, 'us-stocks.csv'),
-    stringify(usStocks.map(toCsvRow), { header: true, columns: csvColumns })
-  );
-
-  writeFileSync(
-    path.join(dataDir, 'uk-stocks.csv'),
-    stringify(ukStocks.map(toCsvRow), { header: true, columns: csvColumns })
-  );
+  for (const [market, filename] of Object.entries(marketCsvFiles)) {
+    const filtered = stocks.filter(s => s.market === market);
+    if (filtered.length > 0) {
+      writeFileSync(
+        path.join(dataDir, filename),
+        stringify(filtered.map(toCsvRow), { header: true, columns: csvColumns })
+      );
+    }
+  }
 
   // OHLCV chart data — per-stock files for lightweight-charts
   if (ohlcvData && ohlcvData.length > 0) {

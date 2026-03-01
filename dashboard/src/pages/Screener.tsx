@@ -88,6 +88,15 @@ const columns = [
       return <span className={`font-mono tabular-nums ${color}`}>{v.toFixed(2)}</span>;
     },
   }),
+  col.accessor('esgScore', {
+    header: () => <TH label="ESG" tipKey="ESG Score" />,
+    cell: info => {
+      const v = info.getValue();
+      if (v == null) return <span className="t-faint">--</span>;
+      const color = v <= 15 ? 'text-bullish' : v <= 30 ? 'text-neutral' : 'text-bearish';
+      return <span className={`font-mono tabular-nums ${color}`}>{v.toFixed(1)}</span>;
+    },
+  }),
   col.accessor('dataCompleteness', {
     header: () => <TH label="Data %" tipKey="Data %" />,
     cell: info => {
@@ -296,6 +305,11 @@ export default function Screener({ stocks }: { stocks: StockRecord[] }) {
             <option value="all">All Markets</option>
             <option value="US">US</option>
             <option value="UK">UK</option>
+            <option value="IN">India</option>
+            <option value="DE">Germany</option>
+            <option value="FR">France</option>
+            <option value="JP">Japan</option>
+            <option value="HK">Hong Kong</option>
           </select>
           <select
             value={capFilter}

@@ -16,6 +16,9 @@ interface RegimeData {
 export interface MarketRegime {
   us: RegimeData;
   uk: RegimeData;
+  in: RegimeData;
+  eu: RegimeData;
+  asia: RegimeData;
   overall: 'bull' | 'correction' | 'bear';
   summary: string;
 }
@@ -89,8 +92,13 @@ async function fetchIndexData(ticker: string): Promise<RegimeData | null> {
       signal = 'Price below SMA200 — trend weakening';
     }
 
+    const INDEX_NAMES: Record<string, string> = {
+      '^GSPC': 'S&P 500', '^FTSE': 'FTSE 100', '^NSEI': 'Nifty 50',
+      '^GDAXI': 'DAX 40', '^N225': 'Nikkei 225',
+    };
+
     return {
-      index: ticker === '^GSPC' ? 'S&P 500' : 'FTSE 100',
+      index: INDEX_NAMES[ticker] || ticker,
       price: +price.toFixed(2),
       sma50: +sma50.toFixed(2),
       sma200: +sma200.toFixed(2),
@@ -106,20 +114,29 @@ async function fetchIndexData(ticker: string): Promise<RegimeData | null> {
 }
 
 export async function computeMarketRegime(): Promise<MarketRegime | null> {
-  const [us, uk] = await Promise.all([
-    fetchIndexData('^GSPC'),  // S&P 500
-    fetchIndexData('^FTSE'),  // FTSE 100
+  const [us, uk, india, eu, asia] = await Promise.all([
+    fetchIndexData('^GSPC'),   // S&P 500
+    fetchIndexData('^FTSE'),   // FTSE 100
+    fetchIndexData('^NSEI'),   // Nifty 50
+    fetchIndexData('^GDAXI'),  // DAX 40
+    fetchIndexData('^N225'),   // Nikkei 225
   ]);
 
-  if (!us && !uk) return null;
+  if (!us && !uk && !india && !eu && !asia) return null;
 
-  // Use defaults if one fails
-  const usData = us ?? { index: 'S&P 500', price: 0, sma50: 0, sma200: 0, changeFromHigh: 0, distributionDays: 0, regime: 'bull' as const, signal: 'Data unavailable' };
-  const ukData = uk ?? { index: 'FTSE 100', price: 0, sma50: 0, sma200: 0, changeFromHigh: 0, distributionDays: 0, regime: 'bull' as const, signal: 'Data unavailable' };
+  const defaultRegime = (name: string): RegimeData => ({ index: name, price: 0, sma50: 0, sma200: 0, changeFromHigh: 0, distributionDays: 0, regime: 'bull' as const, signal: 'Data unavailable' });
 
-  // Overall regime = worst of the two
+  const usData = us ?? defaultRegime('S&P 500');
+  const ukData = uk ?? defaultRegime('FTSE 100');
+  const inData = india ?? defaultRegime('Nifty 50');
+  const euData = eu ?? defaultRegime('DAX 40');
+  const asiaData = asia ?? defaultRegime('Nikkei 225');
+
+  // Overall regime = worst of all
   const regimeOrder = { bull: 0, correction: 1, bear: 2 };
-  const overall = regimeOrder[usData.regime] >= regimeOrder[ukData.regime] ? usData.regime : ukData.regime;
+  const allRegimes = [usData, ukData, inData, euData, asiaData];
+  const worst = allRegimes.reduce((a, b) => regimeOrder[b.regime] > regimeOrder[a.regime] ? b : a);
+  const overall = worst.regime;
 
   const summaryParts: string[] = [];
   if (overall === 'bull') summaryParts.push('Markets are in an uptrend. Favor long positions and momentum strategies.');
@@ -129,6 +146,9 @@ export async function computeMarketRegime(): Promise<MarketRegime | null> {
   return {
     us: usData,
     uk: ukData,
+    in: inData,
+    eu: euData,
+    asia: asiaData,
     overall,
     summary: summaryParts.join(' '),
   };

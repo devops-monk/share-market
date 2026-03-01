@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import type { StockRecord } from '../types';
 import { MarketTag, CapTag, ScoreBadge, ChangePercent, PriceDisplay } from '../components/common/Tags';
+import { currencySymbol } from '../lib/format';
 
 type SortKey = 'pctBelow' | 'uptrendYears' | 'score' | 'return1y' | 'strength';
 type BucketFilter = 'all' | '5' | '10' | '15' | '20' | '25';
@@ -405,7 +406,7 @@ export default function YearlyUptrend({ stocks }: { stocks: StockRecord[] }) {
                   <span className="w-2 h-2 rounded-full bg-bearish" />
                   <span className="t-muted">Resistance:</span>
                   <span className="font-mono font-medium t-primary">
-                    {stock.market === 'UK' ? '\u00a3' : '$'}{nearestResistance.price.toFixed(2)}
+                    {currencySymbol(stock.market)}{nearestResistance.price.toFixed(2)}
                   </span>
                   <span className="t-muted">({nearestResistance.strength} touches)</span>
                 </div>
@@ -414,7 +415,7 @@ export default function YearlyUptrend({ stocks }: { stocks: StockRecord[] }) {
                     <span className="w-2 h-2 rounded-full bg-bullish" />
                     <span className="t-muted">Support:</span>
                     <span className="font-mono font-medium t-primary">
-                      {stock.market === 'UK' ? '\u00a3' : '$'}{nearestSupport.price.toFixed(2)}
+                      {currencySymbol(stock.market)}{nearestSupport.price.toFixed(2)}
                     </span>
                     <span className="t-muted">({nearestSupport.strength} touches)</span>
                   </div>

@@ -1,11 +1,19 @@
+import { currencySymbol } from '../../lib/format';
+
+const MARKET_TAG_STYLES: Record<string, string> = {
+  US: 'bg-sky-600/12 text-sky-500 dark:text-sky-400 ring-1 ring-sky-600/20',
+  UK: 'bg-slate-500/12 text-slate-500 dark:text-slate-400 ring-1 ring-slate-500/20',
+  IN: 'bg-orange-600/12 text-orange-600 dark:text-orange-400 ring-1 ring-orange-600/20',
+  DE: 'bg-amber-600/12 text-amber-600 dark:text-amber-400 ring-1 ring-amber-600/20',
+  FR: 'bg-blue-600/12 text-blue-600 dark:text-blue-400 ring-1 ring-blue-600/20',
+  JP: 'bg-red-600/12 text-red-600 dark:text-red-400 ring-1 ring-red-600/20',
+  HK: 'bg-pink-600/12 text-pink-600 dark:text-pink-400 ring-1 ring-pink-600/20',
+};
+
 export function MarketTag({ market }: { market: string }) {
   return (
     <span
-      className={`badge ${
-        market === 'US'
-          ? 'bg-sky-600/12 text-sky-500 dark:text-sky-400 ring-1 ring-sky-600/20'
-          : 'bg-slate-500/12 text-slate-500 dark:text-slate-400 ring-1 ring-slate-500/20'
-      }`}
+      className={`badge ${MARKET_TAG_STYLES[market] || 'bg-slate-500/12 text-slate-500 dark:text-slate-400 ring-1 ring-slate-500/20'}`}
     >
       {market}
     </span>
@@ -68,11 +76,11 @@ export function ChangePercent({ value }: { value: number }) {
   );
 }
 
-export function PriceDisplay({ value, market }: { value: number; market?: 'US' | 'UK' | string }) {
-  const currency = market === 'UK' ? '\u00a3' : '$';
+export function PriceDisplay({ value, market }: { value: number; market?: string }) {
+  const sym = currencySymbol(market || 'US');
   return (
     <span className="font-mono tabular-nums font-medium t-primary">
-      {currency}{value.toFixed(2)}
+      {sym}{value.toFixed(2)}
     </span>
   );
 }

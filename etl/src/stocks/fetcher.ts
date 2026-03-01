@@ -6,7 +6,7 @@ import type { StockMeta } from './universe.js';
 export interface QuoteData {
   ticker: string;
   name: string;
-  market: 'US' | 'UK';
+  market: 'US' | 'UK' | 'IN' | 'DE' | 'FR' | 'JP' | 'HK';
   sector: string;
   trading212: boolean;
   price: number;
@@ -14,6 +14,7 @@ export interface QuoteData {
   changePercent: number;
   marketCap: number;
   capCategory: 'Small' | 'Mid' | 'Large';
+  currency: string;
   pe: number | null;
   forwardPe: number | null;
   earningsGrowth: number | null;
@@ -60,7 +61,17 @@ export interface QuoteData {
   averageAnalystRating: string | null;
   earningsDate: string | null;
   dividendHistory: { date: number; amount: number }[];
+  // ESG Scores (from Yahoo quoteSummary esgScores module)
+  esgScore: number | null;
+  esgEnvironment: number | null;
+  esgSocial: number | null;
+  esgGovernance: number | null;
+  esgPercentile: number | null;
 }
+
+const MARKET_CURRENCIES: Record<string, string> = {
+  US: 'USD', UK: 'GBP', IN: 'INR', DE: 'EUR', FR: 'EUR', JP: 'JPY', HK: 'HKD',
+};
 
 function classifyCap(marketCap: number): 'Small' | 'Mid' | 'Large' {
   if (marketCap < CONFIG.marketCap.small) return 'Small';
@@ -202,6 +213,12 @@ interface QuoteSummaryData {
   shortPercentOfFloat: number | null;
   targetMeanPrice: number | null;
   pegRatio: number | null;
+  // ESG Scores
+  esgScore: number | null;
+  esgEnvironment: number | null;
+  esgSocial: number | null;
+  esgGovernance: number | null;
+  esgPercentile: number | null;
 }
 
 // Yahoo v7 quote API requires a crumb + cookie pair. Get it once per run.
@@ -322,7 +339,7 @@ async function fetchQuoteSummaryBatch(tickers: string[]): Promise<Map<string, Qu
     tickers.map(ticker =>
       limit(async () => {
         const encoded = encodeURIComponent(ticker);
-        const url = `https://query2.finance.yahoo.com/v10/finance/quoteSummary/${encoded}?modules=defaultKeyStatistics,financialData,majorHoldersBreakdown&crumb=${encodeURIComponent(auth.crumb)}`;
+        const url = `https://query2.finance.yahoo.com/v10/finance/quoteSummary/${encoded}?modules=defaultKeyStatistics,financialData,majorHoldersBreakdown,esgScores&crumb=${encodeURIComponent(auth.crumb)}`;
 
         for (let attempt = 0; attempt < 2; attempt++) {
           try {
@@ -342,6 +359,7 @@ async function fetchQuoteSummaryBatch(tickers: string[]): Promise<Map<string, Qu
             const ks = r.defaultKeyStatistics ?? {};
             const fd = r.financialData ?? {};
             const mh = r.majorHoldersBreakdown ?? {};
+            const esg = r.esgScores ?? {};
 
             // targetMeanPrice is in trading currency (GBp for .L stocks)
             const cur: string = fd.financialCurrency ?? fd.currency ?? '';
@@ -368,6 +386,12 @@ async function fetchQuoteSummaryBatch(tickers: string[]): Promise<Map<string, Qu
               shortPercentOfFloat: ks.shortPercentOfFloat?.raw ?? null,
               targetMeanPrice: fd.targetMeanPrice?.raw != null ? fd.targetMeanPrice.raw * targetPxFx : null,
               pegRatio: ks.pegRatio?.raw ?? null,
+              // ESG Scores
+              esgScore: esg.totalEsg?.raw ?? null,
+              esgEnvironment: esg.environmentScore?.raw ?? null,
+              esgSocial: esg.socialScore?.raw ?? null,
+              esgGovernance: esg.governanceScore?.raw ?? null,
+              esgPercentile: esg.percentile?.raw ?? null,
             });
             break;
           } catch {
@@ -580,6 +604,7 @@ export async function fetchAllStocks(stocks: StockMeta[]): Promise<QuoteData[]> 
       changePercent,
       marketCap,
       capCategory: classifyCap(marketCap),
+      currency: MARKET_CURRENCIES[meta.market] || 'USD',
       pe: fundamentals?.pe ?? null,
       forwardPe: fundamentals?.forwardPe ?? null,
       earningsGrowth: fundamentals?.earningsGrowth ?? null,
@@ -631,6 +656,12 @@ export async function fetchAllStocks(stocks: StockMeta[]): Promise<QuoteData[]> 
         return d.toISOString().slice(0, 10);
       })(),
       dividendHistory: chart.dividends,
+      // ESG Scores
+      esgScore: summary?.esgScore ?? null,
+      esgEnvironment: summary?.esgEnvironment ?? null,
+      esgSocial: summary?.esgSocial ?? null,
+      esgGovernance: summary?.esgGovernance ?? null,
+      esgPercentile: summary?.esgPercentile ?? null,
     });
   }
 

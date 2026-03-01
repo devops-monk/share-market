@@ -12,7 +12,7 @@ BASIC:
   s.ticker: string — Ticker symbol (e.g. "AAPL")
   s.name: string — Company name
   s.sector: string — Sector (e.g. "Technology", "Healthcare")
-  s.market: "US" | "UK"
+  s.market: "US" | "UK" | "IN" | "DE" | "FR" | "JP" | "HK"
   s.capCategory: "Small" | "Mid" | "Large"
 
 PRICE & VALUATION:
@@ -88,7 +88,14 @@ SCORES & SCREENS:
 VOLUME:
   s.volume: number — Current volume
   s.avgVolume: number — Average volume
-  s.volumeRatio: number — Volume / avg volume ratio`;
+  s.volumeRatio: number — Volume / avg volume ratio
+
+ESG:
+  s.esgScore: number | null — Total ESG risk score (lower = better, 0-100)
+  s.esgEnvironment: number | null — Environmental risk score
+  s.esgSocial: number | null — Social risk score
+  s.esgGovernance: number | null — Governance risk score
+  s.esgPercentile: number | null — ESG percentile (0-100)`;
 
 /** Build the system prompt for the LLM */
 export function buildIndicatorPrompt(userDescription: string): string {

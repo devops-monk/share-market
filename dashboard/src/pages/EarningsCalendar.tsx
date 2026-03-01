@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { StockRecord } from '../types';
 import { ScoreBadge, MarketTag, ChangePercent } from '../components/common/Tags';
+import { currencySymbol } from '../lib/format';
 
 /* ─── HELPERS ─── */
 function getNextWeekDates(): string[] {
@@ -172,7 +173,7 @@ export default function EarningsCalendar({ stocks }: { stocks: StockRecord[] }) 
                     </div>
                     <div className="text-right w-20 flex-shrink-0">
                       <span className="font-mono tabular-nums text-xs t-secondary">
-                        {s.market === 'UK' ? '\u00a3' : '$'}{s.price.toFixed(2)}
+                        {currencySymbol(s.market)}{s.price.toFixed(2)}
                       </span>
                     </div>
                   </div>
