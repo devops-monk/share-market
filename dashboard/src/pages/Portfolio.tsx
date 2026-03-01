@@ -7,6 +7,7 @@ import CorrelationHeatmap from '../components/charts/CorrelationHeatmap';
 import { useOhlcvData } from '../hooks/useOhlcvData';
 import { computeCorrelationMatrix } from '../lib/correlation';
 import PaperTradingTab from '../components/paper-trading/PaperTradingTab';
+import RiskAnalytics from '../components/portfolio/RiskAnalytics';
 import { useSwipeNavigation } from '../hooks/useSwipeNavigation';
 
 /* ─── TYPES ─── */
@@ -80,10 +81,11 @@ const COLORS = ['#3b82f6','#16a34a','#d97706','#dc2626','#0284c7','#0d9488','#c2
 
 /* ─── COMPONENT ─── */
 export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
-  const [activeTab, setActiveTab] = useState<'holdings' | 'paper'>('holdings');
+  const [activeTab, setActiveTab] = useState<'holdings' | 'paper' | 'risk'>('holdings');
+  const tabs: ('holdings' | 'paper' | 'risk')[] = ['holdings', 'paper', 'risk'];
   const swipeHandlers = useSwipeNavigation(
-    () => setActiveTab('paper'),   // swipe left → paper trading
-    () => setActiveTab('holdings'), // swipe right → holdings
+    () => setActiveTab(prev => { const i = tabs.indexOf(prev); return i < tabs.length - 1 ? tabs[i + 1] : prev; }),
+    () => setActiveTab(prev => { const i = tabs.indexOf(prev); return i > 0 ? tabs[i - 1] : prev; }),
   );
   const [holdings, setHoldings] = useState<Holding[]>(readHoldings);
   const [showAdd, setShowAdd] = useState(false);
@@ -323,9 +325,21 @@ export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
               : 'border-transparent t-muted hover:t-primary hover:border-surface-border'
           }`}
         >Paper Trading</button>
+        <button
+          onClick={() => setActiveTab('risk')}
+          className={`px-4 py-2.5 text-sm font-medium transition-all border-b-2 -mb-px ${
+            activeTab === 'risk'
+              ? 'border-accent text-accent-light'
+              : 'border-transparent t-muted hover:t-primary hover:border-surface-border'
+          }`}
+        >Risk Analytics</button>
       </div>
 
       {activeTab === 'paper' && <PaperTradingTab stocks={stocks} />}
+
+      {activeTab === 'risk' && (
+        <RiskAnalytics portfolio={portfolio} stocks={stocks} ohlcvData={ohlcvData} />
+      )}
 
       {activeTab === 'holdings' && (<>
 

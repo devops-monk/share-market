@@ -18,7 +18,7 @@
 
 ## 1. What We Have Today
 
-### Pages (26 total)
+### Pages (29 total)
 | Page | Purpose |
 |------|---------|
 | Overview | Market snapshot — top/bottom performers, avg score, bearish count, market regime |
@@ -48,6 +48,8 @@
 | Alert Settings | 11 rule types, edge-triggered, JSON export/import |
 | NL Query | Natural language stock search — parse plain English queries into filters |
 | Economic Calendar | FOMC, CPI, NFP, GDP, earnings seasons, quad-witching dates with impact ratings |
+| Chart Replay | Step through historical candles with SMA/RSI overlays, practice trading decisions |
+| AI Indicator Builder | Natural language to stock filter — AI generates JS functions, run against all stocks |
 
 ### Composite Score (0–100)
 | Factor | Weight | Inputs |
@@ -522,23 +524,26 @@ Based on competitive analysis and expert technique research conducted February 2
 | **N26** | ~~Trade Journal & Analytics~~ | **DONE** — Strategy tags, emotional state tracking, entry/exit reasoning on paper trades. Post-trade review with rating system. Journal Analytics dashboard with recharts: win rate by strategy, P&L by emotional state, trade frequency, win/loss streaks, strategy distribution. | Professional trading practice. | ~~Medium~~ |
 | **N27** | ~~Real-Time Price Streaming~~ | **DONE** — Finnhub WebSocket integration for live US market prices. Encrypted API key storage, connection status badge in header, price flash animations (green/red), batched state updates (500ms), exponential backoff reconnection, market hours detection. | Core trading feature. | ~~High~~ |
 | **N28** | ~~PWA Mobile Enhancement~~ | **DONE** — Stale-while-revalidate service worker (v2), offline banner with cached data age, pull-to-refresh gesture, swipe navigation between tabs, safe-area padding for notched devices, manifest shortcuts, maskable icons. | Mobile-first trading experience. | ~~Medium~~ |
+| **N29** | ~~Chart Replay / Historical Backtest~~ | **DONE** — New `/chart-replay` page. Step through daily candles one at a time with SMA 20/50/200 overlays and RSI sub-panel updating live. Buy/Sell/Skip decision buttons with notes, decision log, auto-play with 1x/2x/5x speed. Summary modal shows user return vs buy-and-hold, win rate, completed trades. | Educational practice tool. TradingView has similar. | ~~High~~ |
+| **N30** | ~~AI-Powered Indicator Builder~~ | **DONE** — New `/indicator-builder` page. Describe screening rules in plain English, AI generates a JavaScript filter function via configured LLM provider (Groq/OpenAI/Gemini/Anthropic/etc.). Runs filter against all stocks with results table. Edit mode for manual tweaks. Save/load custom indicators to localStorage. Field reference panel. Example quick-click suggestions. | Differentiator vs TradingView/Finviz. | ~~High~~ |
+| **N31** | ~~Portfolio Risk Analytics~~ | **DONE** — New "Risk Analytics" tab on Portfolio page. Summary cards: VaR (95%/99%), CVaR, Portfolio Beta, Sharpe Ratio, Max Drawdown. Monte Carlo fan chart (500 sims × 252 days with p5/p25/p50/p75/p95 bands). Sector concentration pie chart. Drawdown chart (recharts AreaChart). Risk contribution table per holding (weight, volatility, beta). Beginner explanations toggle. | Professional portfolio analytics. | ~~Medium~~ |
 
 ---
 
 ### Updated Implementation Priority Map
 
 ```
-DONE (Shipped Feb 2026)             DONE (Batch 5, Mar 1)                LATER (Future)
-───────────────────                 ─────────────────                    ──────────────
+DONE (Shipped Feb 2026)             DONE (Batch 5–6, Mar 2026)           LATER (Future)
+───────────────────                 ──────────────────────               ──────────────
 ✅ N1  NL Stock Query             ✅ N11 AI Copilot Chat                N20 Options Sentiment
 ✅ N2  Factor Grades              ✅ N12 Predictive Scoring             N22 Global Expansion
 ✅ N3  Altman Z-Score             ✅ N23 Paper Trading                  N25 ESG Scores
 ✅ N4  Risk-Adjusted Returns      ✅ N26 Trade Journal & Analytics
 ✅ N5  Position Sizing Calculator ✅ N27 Real-Time Price Streaming
 ✅ N6  ADX/Williams/CMF           ✅ N28 PWA Mobile Enhancement
-✅ N7  Earnings Post-Drift
-✅ N8  SMR Rating
-✅ N9  Chart Pattern Recognition
+✅ N7  Earnings Post-Drift        ✅ N29 Chart Replay
+✅ N8  SMR Rating                 ✅ N30 AI Indicator Builder
+✅ N9  Chart Pattern Recognition  ✅ N31 Portfolio Risk Analytics
 ✅ N10 Candlestick Patterns
 ✅ N13 Theme Tagging
 ✅ N14 Ichimoku Cloud
@@ -564,26 +569,20 @@ DONE (Shipped Feb 2026)             DONE (Batch 5, Mar 1)                LATER (
                         │                                          │
 
 ★ = Recommended next priorities (highest impact-to-effort ratio)
-All N-series through N28 are now DONE except N20, N22, N25.
+All N-series through N31 are now DONE except N20, N22, N25.
 ```
 
 ---
 
 ### Recommended Next Actions
 
-> **Batches 1–5 shipped Feb–Mar 2026.** Batch 5 added N26 Trade Journal, N27 Real-Time Prices, N28 PWA Mobile. Below is the next prioritised batch.
+> **Batches 1–6 shipped Feb–Mar 2026.** Batch 6 added N29 Chart Replay, N30 AI Indicator Builder, N31 Portfolio Risk Analytics. Only 3 N-series features remain (N20, N22, N25).
 
 1. **N20 — Options Sentiment** — Put/call ratio, unusual options activity, max pain price from options chain data. Scrape Yahoo Options chain or use CBOE data. **Medium effort, requires options data source.**
 
 2. **N22 — Global Coverage Expansion** — Add European markets (DAX, CAC40), Asian markets (Nikkei, Hang Seng), emerging markets. Multi-currency support and extended trading hours. **High effort, high impact.**
 
 3. **N25 — ESG Scores** — Environmental, Social, Governance scoring from ESG data providers. Filter/sort by ESG ratings. Growing demand from retail investors. **Medium effort, requires data source.**
-
-4. **N29 — Chart Replay / Historical Backtest** — Replay historical price action with overlaid indicators. Step through daily candles and practice trading decisions. **High effort, educational value.**
-
-5. **N30 — AI-Powered Indicator Builder** — Natural language to custom indicator formula (like Pine Script). Generate and backtest custom screening rules via AI. **High effort, differentiator.**
-
-6. **N31 — Portfolio Risk Analytics** — Value at Risk (VaR), Monte Carlo simulation, sector concentration risk, drawdown analysis across portfolio. **Medium effort, professional feature.**
 
 ---
 
@@ -595,8 +594,8 @@ All N-series through N28 are now DONE except N20, N22, N25.
 | Medium Effort (M-series) | 17 | 17 | **100%** |
 | Large Effort (L-series) | 12 | 14 | **86%** |
 | Expert Methodologies | 5 of 9 | 9 | **56%** |
-| New Features (N-series) | 25 of 28 | 28 | **89%** |
-| **Total features shipped** | **72+** | — | — |
+| New Features (N-series) | 28 of 31 | 31 | **90%** |
+| **Total features shipped** | **75+** | — | — |
 
 ---
 

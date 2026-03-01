@@ -33,6 +33,7 @@ const navGroups: NavGroup[] = [
       { path: '/compare', label: 'Compare', desc: 'Side-by-side stock comparison' },
       { path: '/backtest', label: 'Backtest', desc: 'Test stock-picking strategies' },
       { path: '/sector-rotation', label: 'Rotation', desc: 'Sector rotation momentum model' },
+      { path: '/chart-replay', label: 'Replay', desc: 'Practice trading on historical data' },
     ],
   },
   {
@@ -45,6 +46,7 @@ const navGroups: NavGroup[] = [
       { path: '/query', label: 'NL Query', desc: 'Search stocks in plain English' },
       { path: '/weighted-screener', label: 'Weighted', desc: 'Custom-weight stock ranking' },
       { path: '/economic-calendar', label: 'Econ Calendar', desc: 'FOMC, CPI, NFP, GDP dates' },
+      { path: '/indicator-builder', label: 'AI Builder', desc: 'Build screens with AI' },
     ],
   },
   {

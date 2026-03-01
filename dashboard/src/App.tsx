@@ -39,6 +39,8 @@ const EconomicCalendar = lazy(() => import('./pages/EconomicCalendar'));
 const WeightedScreener = lazy(() => import('./pages/WeightedScreener'));
 const WidgetDashboard = lazy(() => import('./pages/WidgetDashboard'));
 const AICopilot = lazy(() => import('./pages/AICopilot'));
+const ChartReplay = lazy(() => import('./pages/ChartReplay'));
+const IndicatorBuilder = lazy(() => import('./pages/IndicatorBuilder'));
 
 const PageSpinner = () => (
   <div className="flex items-center justify-center py-20">
@@ -137,6 +139,8 @@ export default function App() {
             <Route path="/dashboard" element={<WidgetDashboard stocks={stocks} news={news} macroData={macroData} metadata={metadata} />} />
             <Route path="/copilot" element={<AICopilot stocks={stocks} metadata={metadata} />} />
             <Route path="/guide" element={<Guide />} />
+            <Route path="/chart-replay" element={<ChartReplay stocks={stocks} />} />
+            <Route path="/indicator-builder" element={<IndicatorBuilder stocks={stocks} />} />
             <Route path="/alerts" element={<AlertSettings />} />
           </Routes>
         </Suspense>
