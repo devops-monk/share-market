@@ -19,6 +19,8 @@ export interface AlertRule {
   threshold: number;
   enabled: boolean;
   note?: string;
+  capFilter?: string[];    // e.g. ["Large"] or ["Mid", "Small"] — omit = all caps
+  marketFilter?: string[]; // e.g. ["US", "UK"] — omit = all markets
 }
 
 export interface AlertConfig {

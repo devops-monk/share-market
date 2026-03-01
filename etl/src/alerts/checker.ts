@@ -46,6 +46,10 @@ export function checkAlerts(
       const stock = stockMap.get(ticker);
       if (!stock) continue;
 
+      // Apply cap and market filters
+      if (rule.marketFilter && rule.marketFilter.length > 0 && !rule.marketFilter.includes(stock.market)) continue;
+      if (rule.capFilter && rule.capFilter.length > 0 && !rule.capFilter.includes(stock.capCategory)) continue;
+
       const stateKey = `${rule.id}:${ticker}`;
       const conditionMet = evaluateCondition(rule, stock, top200ByMarketCap);
 
@@ -106,7 +110,7 @@ function evaluateCondition(rule: AlertRule, stock: StockRecord, top200ByMarketCa
     }
     case 'dividend_at_support': {
       // Dividend-paying stock near support level with decent yield
-      if (stock.dividendYield == null || stock.dividendYield <= 0.01) return false; // must pay dividend (>1%)
+      if (stock.dividendYield == null || stock.dividendYield < 0.02) return false; // must pay dividend (>=2%)
       if (!stock.supportResistance || stock.supportResistance.length === 0) return false;
       const nearestSupport = stock.supportResistance
         .filter(l => l.type === 'support')

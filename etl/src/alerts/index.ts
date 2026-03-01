@@ -60,7 +60,12 @@ export async function runAlerts(): Promise<void> {
       const summaryKey = `daily_summary:${now.toISOString().slice(0, 10)}`;
       if (!(summaryKey in prevState)) {
         console.log('Sending daily summary...');
-        const summary = generateDailySummary(stocks);
+        const summaryRule = enabledRules.find(r => r.type === 'daily_summary');
+        const marketFilter = summaryRule?.marketFilter;
+        const filteredStocks = marketFilter && marketFilter.length > 0
+          ? stocks.filter(s => marketFilter.includes(s.market))
+          : stocks;
+        const summary = generateDailySummary(filteredStocks);
         await sendDailySummary(summary);
         newState[summaryKey] = now.toISOString();
       }

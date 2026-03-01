@@ -6,47 +6,110 @@
       "ticker": "*",
       "threshold": 0,
       "enabled": true,
-      "note": "Morning summary with top/bottom 5, market stats across all 7 markets"
+      "marketFilter": ["US", "UK"],
+      "note": "Daily summary — top/bottom 5, market stats for US & UK"
+    },
+
+    {
+      "id": "large-cap-owned-dip-5pct",
+      "type": "top_owned_drop",
+      "ticker": "*",
+      "threshold": 5,
+      "enabled": true,
+      "capFilter": ["Large"],
+      "marketFilter": ["US", "UK"],
+      "note": "Large cap blue-chip 5%+ off 52W high — early dip on well-known name"
     },
     {
-      "id": "uptrend-at-support-5pct",
+      "id": "large-cap-owned-dip-10pct",
+      "type": "top_owned_drop",
+      "ticker": "*",
+      "threshold": 10,
+      "enabled": true,
+      "capFilter": ["Large"],
+      "marketFilter": ["US", "UK"],
+      "note": "Large cap blue-chip 10%+ off 52W high — meaningful correction"
+    },
+    {
+      "id": "large-cap-owned-dip-15pct",
+      "type": "top_owned_drop",
+      "ticker": "*",
+      "threshold": 15,
+      "enabled": true,
+      "capFilter": ["Large"],
+      "marketFilter": ["US", "UK"],
+      "note": "Large cap blue-chip 15%+ off 52W high — significant discount"
+    },
+    {
+      "id": "midsmall-cap-owned-dip-20pct",
+      "type": "top_owned_drop",
+      "ticker": "*",
+      "threshold": 20,
+      "enabled": true,
+      "capFilter": ["Mid", "Small"],
+      "marketFilter": ["US", "UK"],
+      "note": "Mid/Small cap institutional stock 20%+ off 52W high — deep value territory"
+    },
+    {
+      "id": "midsmall-cap-owned-dip-25pct",
+      "type": "top_owned_drop",
+      "ticker": "*",
+      "threshold": 25,
+      "enabled": true,
+      "capFilter": ["Mid", "Small"],
+      "marketFilter": ["US", "UK"],
+      "note": "Mid/Small cap institutional stock 25%+ off 52W high — extreme discount"
+    },
+
+    {
+      "id": "large-cap-uptrend-pullback-5pct",
       "type": "uptrend_below_resistance",
       "ticker": "*",
       "threshold": 5,
       "enabled": true,
-      "note": "Uptrend stock pulled back 5%+ below resistance — buy-the-dip on proven performer"
+      "capFilter": ["Large"],
+      "marketFilter": ["US", "UK"],
+      "note": "Large cap uptrend stock 5%+ below resistance — dip-buy on proven performer"
     },
     {
-      "id": "uptrend-at-support-10pct",
+      "id": "large-cap-uptrend-pullback-10pct",
       "type": "uptrend_below_resistance",
       "ticker": "*",
       "threshold": 10,
       "enabled": true,
-      "note": "Uptrend stock pulled back 10%+ below resistance — significant discount"
+      "capFilter": ["Large"],
+      "marketFilter": ["US", "UK"],
+      "note": "Large cap uptrend stock 10%+ below resistance — significant pullback"
     },
     {
-      "id": "uptrend-at-support-15pct",
+      "id": "midsmall-cap-uptrend-pullback-10pct",
+      "type": "uptrend_below_resistance",
+      "ticker": "*",
+      "threshold": 10,
+      "enabled": true,
+      "capFilter": ["Mid", "Small"],
+      "marketFilter": ["US", "UK"],
+      "note": "Mid/Small cap uptrend stock 10%+ below resistance — pullback entry"
+    },
+    {
+      "id": "midsmall-cap-uptrend-pullback-15pct",
       "type": "uptrend_below_resistance",
       "ticker": "*",
       "threshold": 15,
       "enabled": true,
-      "note": "Uptrend stock pulled back 15%+ below resistance — deep pullback, high conviction zone"
+      "capFilter": ["Mid", "Small"],
+      "marketFilter": ["US", "UK"],
+      "note": "Mid/Small cap uptrend stock 15%+ below resistance — deep pullback"
     },
-    {
-      "id": "uptrend-at-support-20pct",
-      "type": "uptrend_below_resistance",
-      "ticker": "*",
-      "threshold": 20,
-      "enabled": true,
-      "note": "Uptrend stock pulled back 20%+ below resistance — extreme discount on proven performer"
-    },
+
     {
       "id": "dividend-at-support-3pct",
       "type": "dividend_at_support",
       "ticker": "*",
       "threshold": 3,
       "enabled": true,
-      "note": "Dividend stock (>1% yield) within 3% of support — income + value opportunity"
+      "marketFilter": ["US", "UK"],
+      "note": "Dividend stock (2%+ yield) within 3% of support — income + value buy"
     },
     {
       "id": "dividend-at-support-5pct",
@@ -54,47 +117,8 @@
       "ticker": "*",
       "threshold": 5,
       "enabled": true,
-      "note": "Dividend stock (>1% yield) within 5% of support — wider net for income plays"
-    },
-    {
-      "id": "top-owned-drop-10pct",
-      "type": "top_owned_drop",
-      "ticker": "*",
-      "threshold": 10,
-      "enabled": true,
-      "note": "Top institutional stock 10%+ off 52W high — notable correction in widely held name"
-    },
-    {
-      "id": "top-owned-drop-15pct",
-      "type": "top_owned_drop",
-      "ticker": "*",
-      "threshold": 15,
-      "enabled": true,
-      "note": "Top institutional stock 15%+ off 52W high — significant discount on blue-chip"
-    },
-    {
-      "id": "top-owned-drop-20pct",
-      "type": "top_owned_drop",
-      "ticker": "*",
-      "threshold": 20,
-      "enabled": true,
-      "note": "Top institutional stock 20%+ off 52W high — deep value territory"
-    },
-    {
-      "id": "top-owned-drop-25pct",
-      "type": "top_owned_drop",
-      "ticker": "*",
-      "threshold": 25,
-      "enabled": true,
-      "note": "Top institutional stock 25%+ off 52W high — potential capitulation buy"
-    },
-    {
-      "id": "minervini-perfect",
-      "type": "minervini_pass",
-      "ticker": "*",
-      "threshold": 8,
-      "enabled": true,
-      "note": "Perfect 8/8 Minervini template — ideal stage 2 breakout setup, strongest uptrend signal"
+      "marketFilter": ["US", "UK"],
+      "note": "Dividend stock (2%+ yield) within 5% of support — wider net for income plays"
     }
   ]
 }
