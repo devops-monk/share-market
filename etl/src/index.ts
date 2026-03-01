@@ -70,15 +70,18 @@ async function withTimeout<T>(
   timeoutMs: number,
   fallback: T,
 ): Promise<T> {
-  return Promise.race([
-    fn(),
+  let timer: ReturnType<typeof setTimeout>;
+  const result = await Promise.race([
+    fn().then(r => { clearTimeout(timer); return r; }),
     new Promise<T>(resolve => {
-      setTimeout(() => {
+      timer = setTimeout(() => {
         console.warn(`⏱ ${label} timed out after ${(timeoutMs / 1000).toFixed(0)}s — using fallback`);
         resolve(fallback);
       }, timeoutMs);
     }),
   ]);
+  clearTimeout(timer!);
+  return result;
 }
 
 async function main() {

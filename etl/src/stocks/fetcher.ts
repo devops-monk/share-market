@@ -511,54 +511,52 @@ export async function fetchAllStocks(stocks: StockMeta[]): Promise<QuoteData[]> 
   }
   console.log(`    Yahoo v7 batch: ${yahooFundamentals.size}/${allTickers.length} fundamentals`);
 
-  // Step 2b: Enrich US stocks with FinViz (earnings growth, revenue growth, etc.)
-  // Only fetch FinViz for stocks where Yahoo data is missing key fields
+  // Step 2b + 2c: Run FinViz enrichment and quoteSummary in parallel
   const usTickersNeedingFinviz = usStocks.filter(r => {
     const yf = fundamentalsMap.get(r.meta.ticker);
     return !yf || yf.earningsGrowth == null;
   });
-  console.log(`    FinViz enrichment: ${usTickersNeedingFinviz.length} US stocks need extra data...`);
+  console.log(`    FinViz enrichment: ${usTickersNeedingFinviz.length} US stocks | quoteSummary: ${allTickers.length} stocks (parallel)...`);
 
-  await Promise.all(
-    usTickersNeedingFinviz.map((r, idx) =>
-      finvizLimit(async () => {
-        await delay(300);
-        const f = await fetchFinvizFundamentals(r.meta.ticker);
-        if (f) {
-          const existing = fundamentalsMap.get(r.meta.ticker);
-          // Merge: prefer Yahoo for market cap/PE/beta (more reliable), FinViz for growth metrics
-          fundamentalsMap.set(r.meta.ticker, {
-            marketCap: existing?.marketCap || f.marketCap,
-            pe: existing?.pe ?? f.pe,
-            forwardPe: existing?.forwardPe ?? f.forwardPe,
-            beta: existing?.beta ?? f.beta,
-            earningsGrowth: f.earningsGrowth ?? existing?.earningsGrowth ?? null,
-            revenueGrowth: f.revenueGrowth ?? existing?.revenueGrowth ?? null,
-            avgVolume: existing?.avgVolume || f.avgVolume,
-            priceToBook: existing?.priceToBook ?? null,
-            trailingEps: existing?.trailingEps ?? null,
-            forwardEps: existing?.forwardEps ?? null,
-            bookValue: existing?.bookValue ?? null,
-            sharesOutstanding: existing?.sharesOutstanding ?? null,
-            dividendYield: existing?.dividendYield ?? null,
-            averageAnalystRating: existing?.averageAnalystRating ?? null,
-            earningsTimestamp: existing?.earningsTimestamp ?? null,
-          });
-        }
-        if ((idx + 1) % 50 === 0) {
-          console.log(`    FinViz: ${idx + 1}/${usTickersNeedingFinviz.length}`);
-        }
-      })
-    )
-  );
+  const [, quoteSummaryMap] = await Promise.all([
+    // FinViz enrichment
+    Promise.all(
+      usTickersNeedingFinviz.map((r, idx) =>
+        finvizLimit(async () => {
+          await delay(300);
+          const f = await fetchFinvizFundamentals(r.meta.ticker);
+          if (f) {
+            const existing = fundamentalsMap.get(r.meta.ticker);
+            fundamentalsMap.set(r.meta.ticker, {
+              marketCap: existing?.marketCap || f.marketCap,
+              pe: existing?.pe ?? f.pe,
+              forwardPe: existing?.forwardPe ?? f.forwardPe,
+              beta: existing?.beta ?? f.beta,
+              earningsGrowth: f.earningsGrowth ?? existing?.earningsGrowth ?? null,
+              revenueGrowth: f.revenueGrowth ?? existing?.revenueGrowth ?? null,
+              avgVolume: existing?.avgVolume || f.avgVolume,
+              priceToBook: existing?.priceToBook ?? null,
+              trailingEps: existing?.trailingEps ?? null,
+              forwardEps: existing?.forwardEps ?? null,
+              bookValue: existing?.bookValue ?? null,
+              sharesOutstanding: existing?.sharesOutstanding ?? null,
+              dividendYield: existing?.dividendYield ?? null,
+              averageAnalystRating: existing?.averageAnalystRating ?? null,
+              earningsTimestamp: existing?.earningsTimestamp ?? null,
+            });
+          }
+          if ((idx + 1) % 50 === 0) {
+            console.log(`    FinViz: ${idx + 1}/${usTickersNeedingFinviz.length}`);
+          }
+        })
+      )
+    ),
+    // quoteSummary (independent, runs in parallel with FinViz)
+    fetchQuoteSummaryBatch(allTickers),
+  ]);
 
   const finvizElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-  console.log(`  Phase 2 done: ${fundamentalsMap.size} fundamentals in ${finvizElapsed}s total`);
-
-  // Phase 2c: Fetch detailed fundamentals via quoteSummary (ROE, margins, etc.)
-  console.log(`  Phase 2c: Fetching quoteSummary for ${allTickers.length} stocks...`);
-  const quoteSummaryMap = await fetchQuoteSummaryBatch(allTickers);
-  console.log(`    quoteSummary: ${quoteSummaryMap.size}/${allTickers.length} stocks`);
+  console.log(`  Phase 2 done: ${fundamentalsMap.size} fundamentals, ${quoteSummaryMap.size} summaries in ${finvizElapsed}s`);
 
   // Phase 3: Assemble results
   const results: QuoteData[] = [];
