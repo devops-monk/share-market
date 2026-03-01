@@ -489,7 +489,30 @@ export default function PaperTradingTab({ stocks }: { stocks: StockRecord[] }) {
           {/* Empty state */}
           {openPositions.length === 0 && closedTrades.length === 0 && (
             <div className="card p-12 text-center">
-              <p className="t-muted text-sm">No trades yet. Click "New Trade" to start paper trading with ${cash.toLocaleString()} virtual cash.</p>
+              <p className="text-lg font-semibold t-primary mb-2">Ready to practice trading!</p>
+              <p className="t-muted text-sm mb-4">You have <strong className="text-bullish">${cash.toLocaleString()}</strong> in virtual cash. Click "New Trade" to get started.</p>
+              <div className="text-xs t-muted max-w-lg mx-auto text-left space-y-2">
+                <p className="font-semibold t-secondary text-center mb-2">How Paper Trading Works:</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="p-2 rounded bg-surface-hover">
+                    <p className="font-semibold t-secondary mb-1">1. Buy a stock</p>
+                    <p>Click "New Trade" &rarr; select Buy &rarr; search for a stock &rarr; enter how many shares.</p>
+                  </div>
+                  <div className="p-2 rounded bg-surface-hover">
+                    <p className="font-semibold t-secondary mb-1">2. Watch it move</p>
+                    <p>Your positions update with real market prices. See if your pick goes up or down.</p>
+                  </div>
+                  <div className="p-2 rounded bg-surface-hover">
+                    <p className="font-semibold t-secondary mb-1">3. Close when ready</p>
+                    <p>Click "Close" on any position to sell and lock in your profit (or loss).</p>
+                  </div>
+                  <div className="p-2 rounded bg-surface-hover">
+                    <p className="font-semibold t-secondary mb-1">4. Journal & learn</p>
+                    <p>Review each trade — what worked, what didn't. Track patterns in your decisions.</p>
+                  </div>
+                </div>
+                <p className="text-center italic mt-2">No real money is involved. It's all practice!</p>
+              </div>
             </div>
           )}
         </>

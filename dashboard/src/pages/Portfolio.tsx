@@ -215,6 +215,8 @@ export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
     color: COLORS[i % COLORS.length],
   }));
 
+  const [showGuide, setShowGuide] = useState(false);
+
   return (
     <div className="space-y-5" {...swipeHandlers}>
       <div className="flex items-center justify-between">
@@ -222,15 +224,86 @@ export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
           <h1 className="text-xl font-bold t-primary">Portfolio Tracker</h1>
           <p className="text-sm t-muted mt-1">Track your holdings, P&L, allocation, and position sizing</p>
         </div>
-        {activeTab === 'holdings' && (
+        <div className="flex items-center gap-2">
           <button
-            onClick={() => setShowAdd(v => !v)}
-            className="badge bg-accent/15 text-accent-light ring-1 ring-accent/20 hover:bg-accent/25 transition-colors cursor-pointer text-xs px-3 py-1.5"
+            onClick={() => setShowGuide(v => !v)}
+            className="badge bg-surface-hover t-muted ring-1 ring-surface-border hover:t-secondary transition-colors cursor-pointer text-xs px-3 py-1.5"
           >
-            + Add Holding
+            {showGuide ? 'Hide Guide' : 'How to Use'}
           </button>
-        )}
+          {activeTab === 'holdings' && (
+            <button
+              onClick={() => setShowAdd(v => !v)}
+              className="badge bg-accent/15 text-accent-light ring-1 ring-accent/20 hover:bg-accent/25 transition-colors cursor-pointer text-xs px-3 py-1.5"
+            >
+              + Add Holding
+            </button>
+          )}
+        </div>
       </div>
+
+      {/* Beginner Guide */}
+      {showGuide && (
+        <div className="card p-5 border-l-4 border-l-accent">
+          <h2 className="text-sm font-semibold t-primary mb-3">Getting Started with Portfolio Tracker</h2>
+          <p className="text-xs t-secondary leading-relaxed mb-4">
+            This page has two tabs: <strong className="t-primary">Holdings</strong> (your real investments) and <strong className="t-primary">Paper Trading</strong> (practice with virtual money). Here's how to use each:
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            {/* Holdings Guide */}
+            <div className="p-3 rounded-lg bg-surface-hover border border-surface-border">
+              <h3 className="text-xs font-semibold text-accent-light uppercase tracking-wider mb-2">Holdings Tab</h3>
+              <p className="text-xs t-muted mb-2">Track your real stock investments and see how they're performing.</p>
+              <ol className="text-xs t-secondary space-y-1.5 list-decimal list-inside">
+                <li><strong>Add a holding</strong> — Click "+ Add Holding", search for a stock, enter shares and your buy price</li>
+                <li><strong>Track P&L</strong> — See your profit/loss update automatically as prices change</li>
+                <li><strong>Check allocation</strong> — The pie chart shows how concentrated your portfolio is (diversify if one stock is &gt;20%)</li>
+                <li><strong>Correlation matrix</strong> — Shows if your stocks move together (green = similar, red = opposite). Aim for mix of low-correlated stocks</li>
+                <li><strong>Position sizing</strong> — Before buying, use the calculator to figure out how many shares to buy based on your risk tolerance</li>
+              </ol>
+              <p className="text-xs t-muted mt-2 italic">Tip: Start by adding your existing holdings to see your total portfolio health.</p>
+            </div>
+
+            {/* Paper Trading Guide */}
+            <div className="p-3 rounded-lg bg-surface-hover border border-surface-border">
+              <h3 className="text-xs font-semibold text-accent-light uppercase tracking-wider mb-2">Paper Trading Tab</h3>
+              <p className="text-xs t-muted mb-2">Practice trading with $100,000 virtual cash — no real money at risk.</p>
+              <ol className="text-xs t-secondary space-y-1.5 list-decimal list-inside">
+                <li><strong>Place a trade</strong> — Click "New Trade", pick Buy/Sell, search for a stock, enter shares</li>
+                <li><strong>Journal your trades</strong> — Expand "Journal Details" to log your strategy, emotional state, and reasoning</li>
+                <li><strong>Monitor positions</strong> — Watch your open positions update with real prices</li>
+                <li><strong>Close positions</strong> — Click "Close" when you want to sell and lock in P&L</li>
+                <li><strong>Review trades</strong> — After closing, click "Review" to rate the trade and write lessons learned</li>
+                <li><strong>Check analytics</strong> — Switch to "Journal Analytics" to see which strategies and emotions lead to wins vs losses</li>
+              </ol>
+              <p className="text-xs t-muted mt-2 italic">Tip: Paper trade for at least 2-3 months before using real money.</p>
+            </div>
+          </div>
+
+          {/* Forward vs Backward Testing */}
+          <div className="p-3 rounded-lg bg-accent/5 border border-accent/20">
+            <h3 className="text-xs font-semibold text-accent-light uppercase tracking-wider mb-2">Can I test my strategy on the last 2-4 years?</h3>
+            <p className="text-xs t-secondary leading-relaxed mb-2">
+              Paper Trading is <strong className="t-primary">forward-looking</strong> — it tracks from today onwards. For testing against the past, use the <strong className="t-primary">Backtest</strong> page instead.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="text-xs">
+                <p className="font-semibold t-primary mb-1">Backtest (Past)</p>
+                <p className="t-muted">"Would buying high-score stocks have worked over the last year?" — Tests your <em>strategy rules</em> against real historical returns.</p>
+                <Link to="/backtest" className="text-accent-light hover:underline mt-1 inline-block">Go to Backtest &rarr;</Link>
+              </div>
+              <div className="text-xs">
+                <p className="font-semibold t-primary mb-1">Paper Trading (Future)</p>
+                <p className="t-muted">"Can I follow my rules, manage emotions, and stay disciplined?" — Tests your <em>execution</em> going forward with virtual money.</p>
+              </div>
+            </div>
+            <p className="text-xs t-muted mt-3 italic">
+              Best approach: First backtest your strategy to see if the rules work, then paper trade to see if <em>you</em> can follow them consistently.
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* Tab Navigation */}
       <div className="flex gap-1 border-b border-surface-border">
@@ -306,7 +379,13 @@ export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
       {/* Empty state */}
       {holdings.length === 0 && (
         <div className="card p-12 text-center">
-          <p className="t-muted text-sm">No holdings yet. Click "Add Holding" to start tracking your portfolio.</p>
+          <p className="text-lg font-semibold t-primary mb-2">No holdings yet</p>
+          <p className="t-muted text-sm mb-3">Click "+ Add Holding" above to start tracking your investments.</p>
+          <div className="text-xs t-muted max-w-md mx-auto space-y-1">
+            <p><strong className="t-secondary">What to add:</strong> Stocks you've actually bought with real money.</p>
+            <p><strong className="t-secondary">What you'll see:</strong> Total portfolio value, profit/loss, allocation breakdown, and quality scores.</p>
+            <p><strong className="t-secondary">New to investing?</strong> Try Paper Trading first (next tab) to practice with virtual money.</p>
+          </div>
         </div>
       )}
 
@@ -422,9 +501,17 @@ export default function Portfolio({ stocks }: { stocks: StockRecord[] }) {
       {/* Position Sizing Calculator */}
       <div className="card p-5">
         <h2 className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Position Sizing Calculator</h2>
-        <p className="text-xs t-muted mb-4">
+        <p className="text-xs t-muted mb-2">
           Calculate optimal position size using fixed-% risk or Kelly Criterion. Never risk more than you can afford to lose.
         </p>
+        <details className="mb-4">
+          <summary className="text-xs text-accent-light cursor-pointer hover:underline">How does this work?</summary>
+          <div className="mt-2 p-3 rounded-lg bg-surface-hover border border-surface-border text-xs t-secondary space-y-1.5">
+            <p><strong className="t-primary">Fixed % Risk:</strong> You decide what % of your account you're willing to lose on one trade (typically 1-2%). Then based on where you'd place your stop-loss, it tells you how many shares to buy. Example: $10,000 account, 2% risk = you're OK losing $200 max on this trade.</p>
+            <p><strong className="t-primary">Kelly Criterion:</strong> A math formula that uses your win rate and average win/loss sizes to calculate the optimal bet size. We use "Half-Kelly" (half the formula's suggestion) because full Kelly is too aggressive for most traders.</p>
+            <p className="italic t-muted">Rule of thumb: Never put more than 5-10% of your total capital in a single stock, and never risk more than 1-2% on any single trade.</p>
+          </div>
+        </details>
 
         <div className="flex gap-2 mb-4">
           <button
