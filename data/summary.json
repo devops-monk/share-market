@@ -82,7 +82,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -122,13 +122,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "FMC",
       "name": "FMC Corp",
       "score": 27,
@@ -138,6 +131,13 @@
     {
       "ticker": "OKTA",
       "name": "Okta",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 27,
       "market": "US",
       "capCategory": "Large"
@@ -329,7 +329,7 @@
       "market": "UK"
     }
   ],
-  "totalStocks": 865,
+  "totalStocks": 864,
   "avgScore": 52,
-  "bearishAlertCount": 391
+  "bearishAlertCount": 390
 }
