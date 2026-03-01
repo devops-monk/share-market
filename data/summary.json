@@ -29,6 +29,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RVMD",
       "name": "Revolution Medicines",
       "score": 73,
@@ -40,13 +47,6 @@
       "name": "Glencore",
       "score": 73,
       "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -157,6 +157,12 @@
       "market": "UK"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "RVMD",
       "name": "Revolution Medicines",
       "score": 73,
@@ -167,12 +173,6 @@
       "name": "Glencore",
       "score": 73,
       "market": "UK"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US"
     },
     {
       "ticker": "BMY",
