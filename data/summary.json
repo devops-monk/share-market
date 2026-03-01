@@ -64,8 +64,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -82,7 +82,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 20,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
@@ -122,6 +122,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "FMC",
       "name": "FMC Corp",
       "score": 27,
@@ -131,13 +138,6 @@
     {
       "ticker": "OKTA",
       "name": "Okta",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
       "score": 27,
       "market": "US",
       "capCategory": "Large"
@@ -187,6 +187,12 @@
       "market": "JP"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "RVMD",
       "name": "Revolution Medicines",
       "score": 73,
@@ -197,12 +203,6 @@
       "name": "Glencore",
       "score": 73,
       "market": "UK"
-    },
-    {
-      "ticker": "BPCL.NS",
-      "name": "Bharat Petroleum",
-      "score": 73,
-      "market": "IN"
     }
   ],
   "topMidCap": [
