@@ -82,7 +82,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -99,13 +99,6 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "GWRE",
@@ -136,8 +129,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
       "score": 27,
       "market": "US",
       "capCategory": "Large"
