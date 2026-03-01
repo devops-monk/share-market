@@ -41,6 +41,10 @@ async function classifyBatch(
 ): Promise<(number | null)[]> {
   for (let attempt = 0; attempt < retries; attempt++) {
     try {
+      // Add a 15s timeout to prevent hanging on gateway errors
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 15000);
+
       const res = await fetch(FINBERT_URL, {
         method: 'POST',
         headers: {
@@ -48,7 +52,10 @@ async function classifyBatch(
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ inputs: texts }),
+        signal: controller.signal,
       });
+
+      clearTimeout(timeout);
 
       if (res.status === 503) {
         // Model loading — wait and retry
@@ -61,6 +68,14 @@ async function classifyBatch(
         // Rate limited — exponential backoff
         const waitMs = Math.min(2000 * Math.pow(2, attempt), 30000);
         console.log(`  FinBERT rate limited, waiting ${waitMs}ms...`);
+        await delay(waitMs);
+        continue;
+      }
+
+      if (res.status === 504 || res.status === 502) {
+        // Gateway timeout/error — retry with backoff
+        const waitMs = Math.min(3000 * Math.pow(2, attempt), 20000);
+        console.log(`  FinBERT gateway error (${res.status}), retrying in ${waitMs}ms... (attempt ${attempt + 1}/${retries})`);
         await delay(waitMs);
         continue;
       }

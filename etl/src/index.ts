@@ -13,7 +13,7 @@ import { computeMarketRegime } from './indicators/regime.js';
 import { fetchMacroData } from './indicators/macro.js';
 import { fetchSocialSentiment } from './news/social-sentiment.js';
 import { writeOutputs, type StockRecord, type OhlcvData } from './output/writer.js';
-import { generateAIResearchNotes } from './ai/research-notes.js';
+import { generateAIResearchNotes, resolveLLMProvider } from './ai/research-notes.js';
 import { fetchFinancials } from './fundamentals/financials.js';
 import { fetchInsiderTrades } from './insider/edgar.js';
 import { CONFIG } from './config.js';
@@ -636,16 +636,17 @@ async function main() {
 
   console.log(`Found ${bearishAlerts.length} bearish alerts`);
 
-  // Step 4b: Generate AI research notes (requires HuggingFace API key)
+  // Step 4b: Generate AI research notes (supports Groq, OpenRouter, or HuggingFace)
   let aiResearchNotes: Map<string, string[]> | undefined;
-  if (huggingFaceApiKey) {
+  const llmProvider = resolveLLMProvider();
+  if (llmProvider) {
     try {
-      aiResearchNotes = await generateAIResearchNotes(stockRecords, huggingFaceApiKey);
+      aiResearchNotes = await generateAIResearchNotes(stockRecords, llmProvider);
     } catch (err) {
       console.warn('AI research notes generation failed:', (err as Error).message);
     }
   } else {
-    console.log('Skipping AI research notes (no HUGGINGFACE_API_KEY)');
+    console.log('Skipping AI research notes (no GROQ_API_KEY, OPENROUTER_API_KEY, or HUGGINGFACE_API_KEY)');
   }
 
   // Step 5: Write outputs

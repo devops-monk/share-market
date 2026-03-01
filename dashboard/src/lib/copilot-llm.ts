@@ -1,8 +1,42 @@
 import type { StockRecord } from '../types';
 
-const API_URL = 'https://router.huggingface.co/v1/chat/completions';
-const MODEL = 'Qwen/Qwen2.5-7B-Instruct';
-const API_KEY_STORAGE = 'sm-hf-api-key';
+const PROVIDERS = {
+  groq: {
+    url: 'https://api.groq.com/openai/v1/chat/completions',
+    model: 'llama-3.3-70b-versatile',
+    label: 'Groq (Llama 3.3 70B)',
+  },
+  huggingface: {
+    url: 'https://router.huggingface.co/v1/chat/completions',
+    model: 'Qwen/Qwen2.5-7B-Instruct',
+    label: 'HuggingFace (Qwen 2.5 7B)',
+  },
+  openrouter: {
+    url: 'https://openrouter.ai/api/v1/chat/completions',
+    model: 'meta-llama/llama-3.3-70b-instruct:free',
+    label: 'OpenRouter (Llama 3.3 70B)',
+  },
+} as const;
+
+export type ProviderName = keyof typeof PROVIDERS;
+
+const API_KEY_STORAGE = 'sm-llm-api-key';
+const PROVIDER_STORAGE = 'sm-llm-provider';
+
+export function getProviders() {
+  return Object.entries(PROVIDERS).map(([key, val]) => ({
+    key: key as ProviderName,
+    label: val.label,
+  }));
+}
+
+export function getProvider(): ProviderName {
+  return (localStorage.getItem(PROVIDER_STORAGE) as ProviderName) || 'groq';
+}
+
+export function setProvider(provider: ProviderName): void {
+  localStorage.setItem(PROVIDER_STORAGE, provider);
+}
 
 export function getApiKey(): string | null {
   return localStorage.getItem(API_KEY_STORAGE);
@@ -55,21 +89,23 @@ export async function queryLLM(
   const key = apiKey ?? getApiKey();
   if (!key) {
     return {
-      text: 'Please set your HuggingFace API key to use AI-powered responses. Click the key icon above the chat.',
+      text: 'Please set your API key to use AI-powered responses. Click the key icon above the chat. Groq offers a free API key at console.groq.com.',
       source: 'llm',
     };
   }
 
+  const providerName = getProvider();
+  const provider = PROVIDERS[providerName];
   const context = buildContext(stock);
 
-  const res = await fetch(API_URL, {
+  const res = await fetch(provider.url, {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${key}`,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      model: MODEL,
+      model: provider.model,
       messages: [
         {
           role: 'system',
@@ -85,7 +121,10 @@ export async function queryLLM(
   if (!res.ok) {
     const body = await res.text().catch(() => '');
     if (res.status === 401 || res.status === 403) {
-      return { text: 'Invalid API key. Please check your HuggingFace API key.', source: 'llm' };
+      return { text: `Invalid API key for ${providerName}. Please check your key.`, source: 'llm' };
+    }
+    if (res.status === 402) {
+      return { text: `${providerName} credits depleted. Try switching to Groq (free) in the key settings.`, source: 'llm' };
     }
     return { text: `API error (${res.status}): ${body.slice(0, 200)}`, source: 'llm' };
   }

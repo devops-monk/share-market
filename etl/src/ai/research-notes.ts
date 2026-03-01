@@ -11,6 +11,13 @@ interface ChatResponse {
   choices?: { message?: { content?: string } }[];
 }
 
+export interface LLMProvider {
+  url: string;
+  model: string;
+  apiKey: string;
+  name: string;
+}
+
 function buildPrompt(stock: StockRecord): string {
   const bullish = stock.signals.filter(s => s.direction === 'bullish');
   const bearish = stock.signals.filter(s => s.direction === 'bearish');
@@ -55,18 +62,18 @@ function parseParagraphs(text: string): string[] {
   return paragraphs.slice(0, 5);
 }
 
-async function callHuggingFace(
+async function callLLM(
   messages: ChatMessage[],
-  apiKey: string,
+  provider: LLMProvider,
 ): Promise<string | null> {
-  const res = await fetch('https://router.huggingface.co/v1/chat/completions', {
+  const res = await fetch(provider.url, {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${apiKey}`,
+      'Authorization': `Bearer ${provider.apiKey}`,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      model: CONFIG.aiResearchModel,
+      model: provider.model,
       messages,
       max_tokens: 400,
       temperature: 0.5,
@@ -75,7 +82,7 @@ async function callHuggingFace(
 
   if (!res.ok) {
     const body = await res.text().catch(() => '');
-    console.warn(`HuggingFace API error ${res.status}: ${body.slice(0, 200)}`);
+    console.warn(`${provider.name} API error ${res.status}: ${body.slice(0, 200)}`);
     return null;
   }
 
@@ -87,9 +94,26 @@ function delay(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+/**
+ * Resolve which LLM provider to use based on available API keys.
+ * Priority: GROQ_API_KEY > OPENROUTER_API_KEY > HUGGINGFACE_API_KEY
+ */
+export function resolveLLMProvider(): LLMProvider | null {
+  const priority = ['groq', 'openrouter', 'huggingface'];
+  for (const name of priority) {
+    const cfg = CONFIG.aiProviders[name];
+    if (!cfg) continue;
+    const apiKey = process.env[cfg.envKey];
+    if (apiKey) {
+      return { url: cfg.url, model: cfg.model, apiKey, name };
+    }
+  }
+  return null;
+}
+
 export async function generateAIResearchNotes(
   stocks: StockRecord[],
-  apiKey: string,
+  provider: LLMProvider,
 ): Promise<Map<string, string[]>> {
   const results = new Map<string, string[]>();
   const limit = pLimit(CONFIG.aiResearchConcurrency);
@@ -99,7 +123,7 @@ export async function generateAIResearchNotes(
     .sort((a, b) => b.marketCap - a.marketCap)
     .slice(0, CONFIG.aiResearchMaxStocks);
 
-  console.log(`Generating AI research notes for ${topStocks.length} stocks...`);
+  console.log(`Generating AI research notes for ${topStocks.length} stocks via ${provider.name} (${provider.model})...`);
   let completed = 0;
   let failed = 0;
 
@@ -113,7 +137,7 @@ export async function generateAIResearchNotes(
             { role: 'user', content: prompt },
           ];
 
-          const content = await callHuggingFace(messages, apiKey);
+          const content = await callLLM(messages, provider);
           if (content) {
             const paragraphs = parseParagraphs(content);
             if (paragraphs.length >= 3) {

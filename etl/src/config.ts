@@ -27,12 +27,29 @@ export const CONFIG = {
     mid: 10_000_000_000,
   },
 
-  // FinBERT (HuggingFace)
+  // FinBERT (HuggingFace Inference API — separate from chat completions)
   finbertBatchSize: 20,
   finbertRateDelayMs: 100,
 
-  // AI Research Notes (HuggingFace chat completions)
-  aiResearchModel: 'Qwen/Qwen2.5-7B-Instruct',
+  // AI Research Notes — LLM chat completions
+  // Supports multiple providers: 'groq' (free 14K req/day), 'huggingface', 'openrouter'
+  aiProviders: {
+    groq: {
+      url: 'https://api.groq.com/openai/v1/chat/completions',
+      model: 'llama-3.3-70b-versatile',
+      envKey: 'GROQ_API_KEY',
+    },
+    huggingface: {
+      url: 'https://router.huggingface.co/v1/chat/completions',
+      model: 'Qwen/Qwen2.5-7B-Instruct',
+      envKey: 'HUGGINGFACE_API_KEY',
+    },
+    openrouter: {
+      url: 'https://openrouter.ai/api/v1/chat/completions',
+      model: 'meta-llama/llama-3.3-70b-instruct:free',
+      envKey: 'OPENROUTER_API_KEY',
+    },
+  } as Record<string, { url: string; model: string; envKey: string }>,
   aiResearchConcurrency: 3,
   aiResearchDelayMs: 500,
   aiResearchMaxStocks: 100,

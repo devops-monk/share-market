@@ -477,7 +477,11 @@ export async function scoreNewsItemsWithFinBERT(
         finbertCount++;
       }
     }
-    console.log(`  FinBERT scored ${finbertCount}/${scored.length} headlines`);
+    const pct = scored.length > 0 ? Math.round((finbertCount / scored.length) * 100) : 0;
+    console.log(`  FinBERT scored ${finbertCount}/${scored.length} headlines (${pct}%)`);
+    if (finbertCount === 0 && scored.length > 0) {
+      console.log('  FinBERT unavailable — using lexicon-only sentiment scores');
+    }
   } catch (err) {
     console.warn('  FinBERT failed, falling back to lexicon:', err);
   }
