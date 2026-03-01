@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-type Tab = 'basics' | 'dashboard' | 'indicators' | 'strategies';
+type Tab = 'basics' | 'dashboard' | 'indicators' | 'strategies' | 'practice';
 
 export default function Guide() {
   const [activeTab, setActiveTab] = useState<Tab>('basics');
@@ -24,6 +24,7 @@ export default function Guide() {
         <TabBtn active={activeTab === 'dashboard'} onClick={() => setActiveTab('dashboard')} label="Using This Dashboard" emoji="2" />
         <TabBtn active={activeTab === 'indicators'} onClick={() => setActiveTab('indicators')} label="Technical Indicators" emoji="3" />
         <TabBtn active={activeTab === 'strategies'} onClick={() => setActiveTab('strategies')} label="Strategies" emoji="4" />
+        <TabBtn active={activeTab === 'practice'} onClick={() => setActiveTab('practice')} label="Practice & Tools" emoji="5" />
       </div>
 
       {/* Tab Content */}
@@ -31,6 +32,7 @@ export default function Guide() {
       {activeTab === 'dashboard' && <DashboardTab />}
       {activeTab === 'indicators' && <IndicatorsTab />}
       {activeTab === 'strategies' && <StrategiesTab />}
+      {activeTab === 'practice' && <PracticeTab />}
 
       {/* Disclaimer */}
       <div className="card p-5 border-amber-600/20 bg-amber-600/5">
@@ -273,79 +275,196 @@ function DashboardTab() {
         </Tip>
       </Section>
 
-      <Section title="What Each Page Does" icon="P">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <Section title="What Each Page Does — Complete Guide" icon="P">
+        <p className="text-xs t-muted mb-4 leading-relaxed">
+          Your dashboard has 25+ pages. Here's every one explained so you know exactly when and why to use it.
+          Pages are grouped by purpose — start with "Core" pages, then explore the rest as you get comfortable.
+        </p>
+
+        {/* CORE PAGES */}
+        <p className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2 mt-4">Core Pages — Use These Daily</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5">
           <PageCard
             name="Overview"
             path="/"
-            desc="Market summary at a glance. See how many stocks are bullish vs bearish, top performers by cap size, and bearish alert count."
-            when="Check this first each day for a quick market pulse."
+            desc="Your market dashboard at a glance. Shows how many stocks are bullish vs bearish, market regime (bull/bear), top performers by cap size, and bearish alert count. Also shows the Market Regime indicator — whether we're in a bull market, correction, or bear market."
+            when="Check this FIRST each morning. If the market regime is 'Bear' or 'Correction', be extra cautious with new buys."
+          />
+          <PageCard
+            name="Dashboard"
+            path="/dashboard"
+            desc="Your customizable widget dashboard. Drag, resize, and arrange widgets (watchlist, top movers, sector performance, news, alerts) to build your perfect trading cockpit. Widgets remember your layout."
+            when="Use as your home base once you customize it. Pin the widgets you check most often."
           />
           <PageCard
             name="Screener"
             path="/screener"
-            desc="Full sortable table of all stocks with filters. Sort by any column, search by name, filter by market/cap/Trading212."
-            when="Use this to find and compare stocks."
-          />
-          <PageCard
-            name="Bearish Alerts"
-            path="/bearish"
-            desc="Stocks showing multiple danger signs. Bearish score counts how many warning signals are active and how severe they are."
-            when="Check this before buying anything, and monitor stocks you already own."
-          />
-          <PageCard
-            name="News Sentiment"
-            path="/news"
-            desc="Recent headlines with AI-scored sentiment. See what the news is saying about each stock."
-            when="Use this to validate your picks and spot breaking developments."
-          />
-          <PageCard
-            name="Heat Map"
-            path="/heatmap"
-            desc="Visual overview of all stocks grouped by sector. Rectangle size shows market cap, colour shows daily change. Spot sector trends at a glance."
-            when="Use for a quick visual pulse on which sectors are hot or cold."
-          />
-          <PageCard
-            name="Sectors"
-            path="/sectors"
-            desc="Sector-level analysis with average scores, change %, and top stocks per sector. Compare sector performance side by side."
-            when="Use to identify strong sectors before drilling into individual stocks."
-          />
-          <PageCard
-            name="Minervini Screen"
-            path="/minervini"
-            desc="Filters stocks using Mark Minervini's 8-criteria SEPA trend template. Only stocks in a confirmed Stage 2 uptrend pass all checks."
-            when="Use to find stocks with the strongest technical setups for momentum breakouts."
-          />
-          <PageCard
-            name="Buy the Dip"
-            path="/dip"
-            desc="Identifies oversold stocks with low RSI and price near Bollinger lower band. Ranks dip candidates by combined oversold signals."
-            when="Use during market pullbacks to find quality stocks at temporarily low prices."
-          />
-          <PageCard
-            name="Breakout Detection"
-            path="/breakout"
-            desc="Finds stocks with Bollinger Band squeezes and volume surges. Detects stocks about to make a big move after a quiet period."
-            when="Use to catch stocks at the start of a new price move."
-          />
-          <PageCard
-            name="Compare"
-            path="/compare"
-            desc="Side-by-side comparison of 2-4 stocks. Highlights the best value for each metric across price, fundamentals, technicals, and momentum."
-            when="Use to choose between similar stocks or compare peers in the same sector."
+            desc="Full sortable table of all stocks with filters. Sort by any column (composite score, RSI, P/E, change %), search by name, filter by market/cap/style/Trading212. Your filters save in the URL so you can bookmark them."
+            when="Use to find and compare stocks. Sort by Composite Score to find the highest-rated stocks quickly."
           />
           <PageCard
             name="Watchlist"
             path="/watchlist"
-            desc="Save stocks you're monitoring. Persisted in your browser so it survives page refreshes. Add/remove stocks with one click."
-            when="Use to track stocks you're interested in without cluttering your portfolio."
+            desc="Your personal list of stocks to monitor. Add any stock with one click. See scores, prices, change %, and signals at a glance. Persisted in your browser — survives page refreshes."
+            when="Add stocks you're researching or considering buying. Check daily to track price movement before committing."
+          />
+          <PageCard
+            name="Portfolio"
+            path="/portfolio"
+            desc="Two tabs: Holdings (track your real investments with P&L, allocation pie chart, correlation matrix) and Paper Trading (practice with $100K virtual money, journal trades, review performance). Includes a Position Sizing Calculator."
+            when="Use Holdings to monitor your real investments. Use Paper Trading to practice new strategies risk-free."
+          />
+          <PageCard
+            name="Stock Detail"
+            path="/stock/AAPL"
+            desc="Click any stock ticker to see its full analysis: composite score breakdown (radar chart), score history, price chart with support/resistance levels, volume profile, key metrics, fundamentals, risk-adjusted returns, advanced indicators, active signals, expert screens (Piotroski, Graham, Buffett), predictive score, and recent news."
+            when="Always check the detail page before buying. Look for balanced scores across all 6 components, not just one strong area."
+          />
+        </div>
+
+        {/* ANALYSIS PAGES */}
+        <p className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Analysis — Dig Deeper Into the Market</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5">
+          <PageCard
+            name="Heat Map"
+            path="/heatmap"
+            desc="Visual overview of all stocks grouped by sector. Rectangle size = market cap (bigger company = bigger box). Colour = daily change (green = up, red = down). Instantly spot which sectors are hot or cold today."
+            when="Use for a quick visual pulse. If most boxes are red, the market is selling off — be cautious."
+          />
+          <PageCard
+            name="Sectors"
+            path="/sectors"
+            desc="Sector-level analysis with average scores, change %, and top stocks per sector. Compare all 11 sectors side by side. See which sectors have the strongest stocks."
+            when="Use to identify strong sectors BEFORE picking individual stocks. Buying the best stock in the best sector gives you an edge."
+          />
+          <PageCard
+            name="Compare"
+            path="/compare"
+            desc="Side-by-side comparison of 2-4 stocks. Every metric shown — price, fundamentals, technicals, momentum, and scores. The best value for each metric is highlighted green so you can easily see which stock wins."
+            when="Use when deciding between 2-3 similar stocks. For example: AAPL vs MSFT vs GOOGL — which is the better buy right now?"
+          />
+          <PageCard
+            name="Sector Rotation"
+            path="/sector-rotation"
+            desc="Sector rotation momentum model. Shows which sectors are gaining strength and which are weakening. Based on relative performance trends over multiple timeframes."
+            when="Use to spot money flowing from one sector to another. Buy into sectors gaining momentum, avoid those losing it."
+          />
+          <PageCard
+            name="Backtest"
+            path="/backtest"
+            desc="Test stock-picking strategies against real historical returns. Pick from 8 strategies (High Score, Momentum, Minervini, Value+Growth, Piotroski, Buffett, Oversold, Breakout) and see their actual 3-month and 1-year performance, win rate, and average return."
+            when="Use BEFORE adopting a strategy. If it doesn't work in the backtest, don't use it with real money. Check which strategy has the highest win rate."
+          />
+          <PageCard
+            name="AI Copilot"
+            path="/copilot"
+            desc="Your AI-powered stock analysis assistant. Ask questions in plain English like 'What are the best momentum stocks today?' or 'Analyze AAPL for me'. Uses your dashboard data to give context-aware answers. Bring your own API key (OpenAI, Anthropic, or Gemini)."
+            when="Use when you want a quick summary, need help interpreting data, or want AI-generated analysis of a stock."
+          />
+        </div>
+
+        {/* SCREENING PAGES */}
+        <p className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Screens — Find Stocks That Match Your Criteria</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5">
+          <PageCard
+            name="Minervini Screen"
+            path="/minervini"
+            desc="Filters stocks using Mark Minervini's 8-criteria SEPA trend template. Only stocks in a confirmed Stage 2 uptrend pass all checks. Shows how many of the 8 checks each stock passes."
+            when="Use to find stocks with the strongest technical setups. Stocks passing 7-8 checks are prime breakout candidates."
+          />
+          <PageCard
+            name="CAN SLIM Screen"
+            path="/canslim"
+            desc="William O'Neil's 7-point growth stock screen. Checks Current earnings growth, Annual earnings growth, New highs, Supply/demand (volume), Leader vs laggard (RS), Institutional sponsorship, Market direction."
+            when="Use to find high-growth stocks with institutional backing. Best during bull markets when growth stocks lead."
+          />
+          <PageCard
+            name="Custom Screen"
+            path="/custom-screen"
+            desc="Build your own screening rules from scratch. Set conditions on any metric (price, RSI, P/E, score, volume, etc.) with operators (greater than, less than, between). Combine multiple rules."
+            when="Use when none of the pre-built screens match your criteria. For example: 'P/E under 15 AND RSI under 40 AND Score above 60'."
+          />
+          <PageCard
+            name="Weighted Screener"
+            path="/weighted-screener"
+            desc="Create a custom-weighted stock ranking. Assign your own weights to different factors (momentum, value, quality, technicals) and the screener re-ranks all stocks according to YOUR priorities."
+            when="Use when you want to blend multiple factors. For example: 50% momentum + 30% fundamentals + 20% value = your personal ranking."
+          />
+          <PageCard
+            name="NL Query"
+            path="/query"
+            desc="Search stocks in plain English. Type natural language queries like 'tech stocks with low P/E and high growth' or 'oversold large caps'. The system translates your words into filters."
+            when="Use when you know WHAT you want but don't know which filters to set. Just describe it in your own words."
+          />
+        </div>
+
+        {/* SIGNAL PAGES */}
+        <p className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Signals — Actionable Trading Opportunities</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5">
+          <PageCard
+            name="Bearish Alerts"
+            path="/bearish"
+            desc="Stocks showing multiple danger signs. Bearish score counts how many warning signals are active and how severe they are (Death Cross, negative MACD, OBV divergence, etc.). Higher score = more danger."
+            when="Check this BEFORE buying anything. If your stock appears here with score 4+, wait. Also check stocks you already own."
+          />
+          <PageCard
+            name="Buy the Dip"
+            path="/dip"
+            desc="Identifies oversold stocks with low RSI, price near Bollinger lower band, and oversold Stochastic. Ranks dip candidates by combined oversold strength. These are stocks that may have dropped too far and could bounce."
+            when="Use during market pullbacks to find quality stocks at temporarily low prices. Best when the overall market is still healthy (bull regime)."
+          />
+          <PageCard
+            name="Breakout Detection"
+            path="/breakout"
+            desc="Finds stocks with Bollinger Band squeezes (very tight price range) and volume surges. When a stock has been quiet for a while and volume suddenly spikes, a big move is likely coming."
+            when="Use to catch stocks at the START of a new price move. The squeeze tells you it's coiling; the volume spike tells you it's releasing."
+          />
+          <PageCard
+            name="Support Bounce"
+            path="/support-bounce"
+            desc="Finds stocks pulling back to known support levels (algorithmically detected price floors). These are stocks that have dipped to a price where buyers have historically stepped in."
+            when="Use to find buy-the-dip opportunities at specific price levels. More precise than the general 'Buy the Dip' screen."
+          />
+          <PageCard
+            name="Yearly Uptrend"
+            path="/yearly-uptrend"
+            desc="Finds stocks in a multi-year uptrend that are currently below resistance (not at highs). These are fundamentally strong stocks in long-term uptrends offering a pullback entry point."
+            when="Use for medium/long-term investing. These stocks have proven track records but aren't at their peak price right now."
+          />
+          <PageCard
+            name="Most Owned"
+            path="/most-owned"
+            desc="Shows the most popular stocks among institutional investors (mutual funds, hedge funds) that are currently trading at a discount. Identifies stocks the smart money loves but that are temporarily on sale."
+            when="Use to find stocks where you're buying alongside top institutions at a lower price than they paid."
+          />
+        </div>
+
+        {/* INFORMATION PAGES */}
+        <p className="text-xs font-semibold t-tertiary uppercase tracking-wider mb-2">Information — Stay Informed</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5">
+          <PageCard
+            name="News Sentiment"
+            path="/news"
+            desc="Recent headlines with AI-scored sentiment for every stock. Each headline gets a score from -1 (very negative) to +1 (very positive). See what the news is saying and whether it's bullish or bearish."
+            when="Check after finding a stock you like. Great numbers + terrible news = danger. Also use to spot breaking developments."
+          />
+          <PageCard
+            name="Earnings Calendar"
+            path="/earnings"
+            desc="Shows upcoming earnings report dates for tracked stocks. Earnings reports cause the biggest single-day price moves — knowing when they're coming is critical."
+            when="Check before buying. If earnings are coming in 1-2 weeks, consider waiting — the stock could gap up OR down 10%+ on the report."
+          />
+          <PageCard
+            name="Economic Calendar"
+            path="/economic-calendar"
+            desc="Tracks major economic events that move the entire market: FOMC interest rate decisions, CPI inflation data, jobs reports (NFP), GDP numbers. These events affect ALL stocks."
+            when="Check weekly. Don't make big trades right before FOMC meetings or CPI reports — the market can swing violently on these days."
           />
           <PageCard
             name="Alerts"
             path="/alerts"
-            desc="Configure price, score, RSI, and Minervini alerts. Get Telegram notifications when conditions are met. Edge-triggered so you won't get spammed."
-            when="Set up once, get notified automatically when stocks hit your targets."
+            desc="Set up automatic notifications via Telegram. Configure price alerts (notify when stock hits $X), score alerts (notify when score drops below Y), RSI alerts, and Minervini alerts. Edge-triggered so you won't get spammed."
+            when="Set up once for your watchlist stocks, then forget. You'll get a Telegram message the moment your conditions are met."
           />
         </div>
       </Section>
@@ -731,6 +850,136 @@ function StrategiesTab() {
         risk="Being too cautious can mean missing rebounds. Balance caution with conviction."
       />
 
+      <Section title="Your Daily Routine — What to Check and When" icon="D">
+        <p className="t-tertiary text-sm mb-4">
+          Successful trading is about <strong className="t-primary">consistent habits</strong>, not gut feelings.
+          Follow this routine every trading day (takes 10-15 minutes):
+        </p>
+        <div className="space-y-3">
+          <Step num={1} title="Morning: Check the Overview (2 min)" page="/">
+            Look at the <strong className="t-primary">Market Regime</strong> (bull/correction/bear) and the
+            bullish vs bearish count. If the market is in bear mode, don't buy aggressively.
+            Check if any of your watchlist stocks made big moves overnight.
+          </Step>
+          <Step num={2} title="Morning: Scan Bearish Alerts (2 min)" page="/bearish">
+            Check if any stocks you <em>own</em> appear here. If a stock you hold has bearish score 5+,
+            investigate immediately. Also check stocks you're thinking of buying — if they're here, wait.
+          </Step>
+          <Step num={3} title="Morning: Check Economic Calendar (1 min)" page="/economic-calendar">
+            See if any major events are today (FOMC, CPI, NFP). If yes, expect volatility — don't make
+            big trades until after the event. These events can swing the entire market 1-3% in an hour.
+          </Step>
+          <Step num={4} title="Review: Check Portfolio (2 min)" page="/portfolio">
+            Look at your open positions (Holdings + Paper Trading). Any stock down more than 7-8% from your buy price?
+            Consider your stop-loss rules. Any big winners up 20%+? Consider taking partial profits.
+          </Step>
+          <Step num={5} title="Opportunity: Scan Signals (5 min)">
+            If you're looking for new ideas, browse:
+            <ul className="mt-1 ml-4 space-y-0.5">
+              <li>- <Link to="/dip" className="text-accent-light hover:underline">Buy the Dip</Link> — quality stocks temporarily oversold</li>
+              <li>- <Link to="/breakout" className="text-accent-light hover:underline">Breakouts</Link> — stocks about to make big moves</li>
+              <li>- <Link to="/support-bounce" className="text-accent-light hover:underline">Support Bounce</Link> — stocks at proven support levels</li>
+              <li>- <Link to="/most-owned" className="text-accent-light hover:underline">Most Owned</Link> — institutional favorites on sale</li>
+            </ul>
+          </Step>
+          <Step num={6} title="Weekly: Sector & Strategy Review (10 min)">
+            Once a week, check the <Link to="/sectors" className="text-accent-light hover:underline">Sectors page</Link> and
+            <Link to="/sector-rotation" className="text-accent-light hover:underline ml-1">Sector Rotation</Link> to see which sectors
+            are gaining/losing momentum. Review your Paper Trading <Link to="/portfolio" className="text-accent-light hover:underline ml-1">Journal Analytics</Link> to
+            see if your strategy is working.
+          </Step>
+        </div>
+      </Section>
+
+      <Section title="How to Make a Buy Decision — Step-by-Step Checklist" icon="B">
+        <p className="t-tertiary text-sm mb-4">
+          Never buy a stock on impulse. Run through this checklist every time. If a stock fails 2+ checks, skip it.
+        </p>
+        <div className="space-y-2">
+          <ChecklistItem num={1} title="Is the market healthy?" check="Overview page: Market Regime should be 'Bull' or at worst 'Correction'. In a bear market, keep 50%+ in cash." />
+          <ChecklistItem num={2} title="Is the sector strong?" check="Sectors page: The stock's sector should have a positive average change and above-average composite score." />
+          <ChecklistItem num={3} title="Is the composite score good?" check="Stock detail: Score should be 60+ (ideally 70+). Check that it's balanced — not one extreme component carrying the total." />
+          <ChecklistItem num={4} title="Are technicals confirming?" check="Stock detail: RSI 40-65 (not overbought), MACD positive or crossing up, Price above SMA50 and SMA200." />
+          <ChecklistItem num={5} title="Is volume supporting?" check="Stock detail: OBV trend 'rising', Volume ratio above 1.0, Acc/Dist rating A or B." />
+          <ChecklistItem num={6} title="Are fundamentals sound?" check="Stock detail: Positive earnings growth, ROE > 15%, reasonable P/E for sector, positive free cash flow." />
+          <ChecklistItem num={7} title="No bearish warnings?" check="Bearish Alerts page: Stock should NOT appear here. If it does with score 3+, wait." />
+          <ChecklistItem num={8} title="News isn't terrible?" check="News page: Recent sentiment should be neutral to positive. One bad headline is OK; a string of negatives is not." />
+          <ChecklistItem num={9} title="Position sized correctly?" check="Position Sizing Calculator: Risk no more than 1-2% of account. Know your stop-loss BEFORE buying." />
+          <ChecklistItem num={10} title="No major events pending?" check="Earnings Calendar + Economic Calendar: No earnings report in next 2 weeks, no FOMC/CPI today." />
+        </div>
+        <Tip>
+          Print this checklist or bookmark this page. Run through it EVERY time before buying. The trades you
+          <strong className="t-primary"> don't</strong> make (by saying no to bad setups) matter more than the ones you do.
+        </Tip>
+      </Section>
+
+      <Section title="How to Make a Sell Decision" icon="X">
+        <p className="t-tertiary text-sm mb-4">
+          Knowing when to sell is harder than knowing when to buy. Here are the triggers:
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div className="p-3 rounded-lg bg-bearish/5 border border-bearish/20">
+            <p className="text-xs font-bold text-bearish mb-2">Sell to Cut Losses (Stop-Loss)</p>
+            <ul className="text-xs t-tertiary space-y-1">
+              <li>- Stock drops 7-8% below your buy price</li>
+              <li>- Death Cross appears (SMA50 crosses below SMA200)</li>
+              <li>- Bearish score jumps to 5+ with multiple signals</li>
+              <li>- OBV Bearish Divergence (smart money leaving)</li>
+              <li>- Major negative news (fraud, lawsuit, product failure)</li>
+            </ul>
+            <p className="text-xs t-muted mt-2 italic">Rule: Sell fast on losses. Small losses are OK. Large losses kill portfolios.</p>
+          </div>
+          <div className="p-3 rounded-lg bg-bullish/5 border border-bullish/20">
+            <p className="text-xs font-bold text-bullish mb-2">Sell to Take Profits</p>
+            <ul className="text-xs t-tertiary space-y-1">
+              <li>- Stock up 20-25% from buy price (take partial profits)</li>
+              <li>- RSI above 80 (extremely overbought)</li>
+              <li>- Composite score dropping while price rises (divergence)</li>
+              <li>- Stock hits strong resistance level on the chart</li>
+              <li>- Better opportunities exist for that capital</li>
+            </ul>
+            <p className="text-xs t-muted mt-2 italic">Rule: Let winners run, but don't be greedy. Taking 20% is better than watching it give back 15%.</p>
+          </div>
+        </div>
+      </Section>
+
+      <Section title="Common Beginner Mistakes" icon="!">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <MistakeCard
+            mistake="Buying based on tips or FOMO"
+            fix="Always run the 10-point buy checklist above. If someone says 'this stock will moon', it's probably too late."
+          />
+          <MistakeCard
+            mistake="Not using stop-losses"
+            fix="Decide your exit price BEFORE buying. Write it down. If the stock hits that price, sell. No exceptions. No 'maybe it'll come back'."
+          />
+          <MistakeCard
+            mistake="Putting too much in one stock"
+            fix="Never put more than 5-10% of your total money in a single stock. Use the Position Sizing Calculator every time."
+          />
+          <MistakeCard
+            mistake="Checking prices every 5 minutes"
+            fix="Check once in the morning and once in the evening. Intraday noise causes emotional trading. Set Telegram Alerts instead."
+          />
+          <MistakeCard
+            mistake="Averaging down on losers"
+            fix="Buying more of a falling stock feels logical but usually makes losses worse. If your thesis broke, cut the loss. Don't throw good money after bad."
+          />
+          <MistakeCard
+            mistake="Ignoring the market regime"
+            fix="In a bear market, even great stocks go down. Check the Overview page market regime. In 'Bear' or 'Correction', reduce exposure and hold more cash."
+          />
+          <MistakeCard
+            mistake="Trading on emotions (FOMO, revenge, greed)"
+            fix="Use Paper Trading's journal to track your emotional state. Your analytics will show if emotions are costing you money. Trade with a plan, not feelings."
+          />
+          <MistakeCard
+            mistake="Not journaling trades"
+            fix="Every trade teaches you something, but only if you record it. Use the Paper Trading journal to write WHY you entered and exited. Review monthly."
+          />
+        </div>
+      </Section>
+
       <Section title="Golden Rules for Beginners" icon="G">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <RuleCard num={1} title="Never use just one indicator" desc="Always confirm with at least 2-3 indicators pointing the same direction. One indicator alone can give false signals." />
@@ -739,6 +988,276 @@ function StrategiesTab() {
           <RuleCard num={4} title="Start with large caps" desc="Large cap stocks are more stable and predictable. Master the indicators with these before trying small caps." />
           <RuleCard num={5} title="Check the news" desc="Numbers don't capture everything. A stock can have great technicals but terrible news (lawsuit, scandal). Always check sentiment." />
           <RuleCard num={6} title="Set stop-losses" desc="Before buying, decide the price at which you'll sell to limit losses. Typically 5-10% below your buy price." />
+          <RuleCard num={7} title="Paper trade first" desc="Practice with virtual money for at least 2-3 months. If you can't make money on paper, you won't make it with real money either." />
+          <RuleCard num={8} title="Risk management > stock picking" desc="It matters less WHAT you buy and more HOW MUCH you risk. A great stock pick with bad sizing can still ruin you. A mediocre pick with proper sizing won't." />
+        </div>
+      </Section>
+    </div>
+  );
+}
+
+/* ─── TAB 5: PRACTICE & TOOLS ─── */
+function PracticeTab() {
+  return (
+    <div className="space-y-6">
+      <div className="card p-4 bg-accent/5 border-accent/20">
+        <p className="text-sm t-secondary leading-relaxed">
+          Before risking real money, use these tools to practice, test strategies, and build confidence.
+          The best traders <strong className="t-primary">paper trade for months</strong> before going live.
+          This section covers everything you need to practice like a pro.
+        </p>
+      </div>
+
+      <Section title="Paper Trading — Practice With Virtual Money" icon="P">
+        <p className="t-tertiary text-sm mb-4">
+          Paper trading gives you <strong className="t-primary">$100,000 in virtual cash</strong> to practice buying and selling stocks.
+          Prices are real — only the money is fake. It's the safest way to learn.
+        </p>
+        <div className="space-y-3">
+          <Step num={1} title="Go to Portfolio > Paper Trading" page="/portfolio">
+            Click the <strong className="t-primary">Paper Trading</strong> tab in your Portfolio page.
+            You'll see your virtual balance and a "New Trade" button.
+          </Step>
+          <Step num={2} title="Place your first trade">
+            Click <strong className="t-primary">"New Trade"</strong>, select <strong className="text-bullish">Buy</strong>,
+            search for a stock (e.g., "AAPL"), enter how many shares (start with 10-50), and click Buy.
+            The price auto-fills with the current market price.
+          </Step>
+          <Step num={3} title="Journal your reasoning">
+            Before clicking Buy, expand <strong className="t-primary">"Journal Details"</strong>. Pick your
+            strategy (Momentum, Value, Breakout, etc.), your emotional state (Confident, Anxious, FOMO, etc.),
+            and write WHY you're making this trade. This is the most important part for learning.
+          </Step>
+          <Step num={4} title="Watch your positions">
+            Your open positions show up in a table with real-time P&L. Watch how prices move over days and weeks.
+            Notice how it feels when a position goes green vs red — managing those emotions is key.
+          </Step>
+          <Step num={5} title="Close when ready">
+            Click <strong className="text-bearish">"Close"</strong> on any position to sell at the current price.
+            Your profit or loss is locked in and the trade moves to "Closed Trades".
+          </Step>
+          <Step num={6} title="Review and learn">
+            After closing, click <strong className="text-accent-light">"Review"</strong> on the closed trade.
+            Rate the trade 1-5, write what you learned, and mark whether you'd repeat it.
+            Over time, patterns emerge — you'll discover what works for YOU.
+          </Step>
+          <Step num={7} title="Check Journal Analytics">
+            Switch to the <strong className="t-primary">"Journal Analytics"</strong> sub-tab.
+            See charts showing your win rate by strategy, performance by emotional state, and streaks.
+            This tells you: "I win more when Disciplined, lose more when trading on FOMO."
+          </Step>
+        </div>
+        <Tip>
+          Paper trade for <strong className="t-primary">at least 2-3 months</strong> and make at least 20-30 trades
+          before using real money. If your paper trading win rate is below 50%, keep practicing — you're not ready yet.
+        </Tip>
+      </Section>
+
+      <Section title="Holdings — Track Your Real Investments" icon="H">
+        <p className="t-tertiary text-sm mb-4">
+          Once you start investing real money, the Holdings tab helps you monitor everything in one place.
+        </p>
+        <div className="space-y-3">
+          <Step num={1} title="Add your holdings" page="/portfolio">
+            Click <strong className="t-primary">"+ Add Holding"</strong>, search for the stock, enter how many
+            shares you own and the price you paid. Repeat for each stock in your portfolio.
+          </Step>
+          <Step num={2} title="Monitor your P&L">
+            The dashboard shows your <strong className="text-bullish">total profit/loss</strong> in both dollars
+            and percentage. Each stock shows individual P&L so you know which picks are working and which aren't.
+          </Step>
+          <Step num={3} title="Check your allocation">
+            The <strong className="t-primary">pie chart</strong> shows how concentrated your portfolio is.
+            If one stock is more than 20-25% of your portfolio, you're taking on concentration risk.
+            Diversify across 5-10 stocks minimum.
+          </Step>
+          <Step num={4} title="Read the correlation matrix">
+            If you hold 2+ stocks, a correlation heatmap appears. Values near <strong className="text-bullish">+1</strong> mean
+            stocks move together (less diversification). Near <strong className="t-muted">0</strong> = independent.
+            Near <strong className="text-bearish">-1</strong> = they move opposite (great hedge).
+            Aim for a mix of low-correlated stocks.
+          </Step>
+          <Step num={5} title="Check average score">
+            The <strong className="t-primary">Avg Score</strong> card shows the health of your overall portfolio.
+            Score 60+ = healthy picks. Below 40 = your portfolio may need attention.
+          </Step>
+        </div>
+      </Section>
+
+      <Section title="Position Sizing — How Much to Buy" icon="$">
+        <p className="t-tertiary text-sm mb-4">
+          The #1 mistake beginners make is betting too much on one trade. The Position Sizing Calculator
+          (at the bottom of the Portfolio page) tells you exactly how many shares to buy.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+          <div className="p-3 rounded-lg bg-surface-hover border border-surface-border">
+            <p className="text-xs font-semibold text-accent-light mb-2">Fixed % Risk Method (Recommended for Beginners)</p>
+            <ol className="text-xs t-tertiary space-y-1.5 list-decimal list-inside">
+              <li>Enter your total account size (e.g., $10,000)</li>
+              <li>Set risk per trade to <strong className="t-primary">1-2%</strong> (max you're willing to lose)</li>
+              <li>Enter the stock price you want to buy at</li>
+              <li>Enter your stop-loss price (where you'd sell if it drops)</li>
+              <li>The calculator tells you exactly how many shares to buy</li>
+            </ol>
+            <p className="text-xs t-muted mt-2 italic">Example: $10K account, 2% risk = you're OK losing $200 max. If the stock is $100 and your stop is $95 (risk $5/share), buy 40 shares ($200 / $5).</p>
+          </div>
+          <div className="p-3 rounded-lg bg-surface-hover border border-surface-border">
+            <p className="text-xs font-semibold text-accent-light mb-2">Kelly Criterion (Advanced)</p>
+            <ol className="text-xs t-tertiary space-y-1.5 list-decimal list-inside">
+              <li>Enter your account size</li>
+              <li>Enter your historical win rate (from paper trading analytics)</li>
+              <li>Enter your average winning trade size</li>
+              <li>Enter your average losing trade size</li>
+              <li>The calculator uses math to find the optimal bet size</li>
+            </ol>
+            <p className="text-xs t-muted mt-2 italic">We use "Half-Kelly" (50% of the formula) because full Kelly is too aggressive. This is what professional traders use.</p>
+          </div>
+        </div>
+        <Tip>
+          <strong className="t-primary">Golden Rule:</strong> Never put more than 5-10% of your total capital in a single stock,
+          and never risk more than 1-2% on any single trade. If you follow just this one rule, you can survive
+          a string of bad trades and live to trade another day.
+        </Tip>
+      </Section>
+
+      <Section title="Backtest — Test Strategies on Real Data" icon="B">
+        <p className="t-tertiary text-sm mb-4">
+          Before adopting a strategy, test it against reality. The <Link to="/backtest" className="text-accent-light hover:underline">Backtest page</Link> shows
+          how different approaches would have performed using actual historical returns.
+        </p>
+        <div className="space-y-3">
+          <Step num={1} title="Pick a strategy" page="/backtest">
+            Choose from 8 strategies: High Score, Momentum Leaders, Minervini SEPA, Value+Growth,
+            Piotroski Strong, Buffett Quality, Oversold Bounce, or Breakout.
+          </Step>
+          <Step num={2} title="Read the results">
+            The backtest shows: how many stocks the strategy selects, their average 3-month and 1-year return,
+            the win rate (% of stocks that went up), and the best/worst individual performers.
+          </Step>
+          <Step num={3} title="Compare strategies">
+            Switch between strategies to compare. Look for the one with the <strong className="text-bullish">highest win rate</strong> and
+            <strong className="text-bullish"> best average return</strong>. That's your starting point.
+          </Step>
+          <Step num={4} title="Then paper trade it">
+            Once you find a strategy that backtests well, use Paper Trading to practice executing it in real-time.
+            Backtest = "does the strategy work?" Paper Trading = "can I follow the rules?"
+          </Step>
+        </div>
+        <div className="mt-3 p-3 rounded-lg bg-amber-600/5 border border-amber-600/20">
+          <p className="text-xs text-amber-300 font-semibold mb-1">Important: Backtest Limitations</p>
+          <p className="text-xs t-tertiary">
+            This is a <em>snapshot backtest</em> — it shows how stocks currently meeting each criterion performed historically.
+            It's not a full time-machine simulation. Past returns don't guarantee future results. Use it as a guide, not a guarantee.
+          </p>
+        </div>
+      </Section>
+
+      <Section title="AI Copilot — Your Trading Assistant" icon="A">
+        <p className="t-tertiary text-sm mb-4">
+          The <Link to="/copilot" className="text-accent-light hover:underline">AI Copilot</Link> is like having a
+          knowledgeable friend who understands your dashboard data. Ask it anything in plain English.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+          <div className="p-3 rounded-lg bg-surface-hover border border-surface-border">
+            <p className="text-xs font-semibold text-accent-light mb-2">What to Ask</p>
+            <ul className="text-xs t-tertiary space-y-1">
+              <li>- "What are the top 5 momentum stocks right now?"</li>
+              <li>- "Analyze AAPL — should I buy it?"</li>
+              <li>- "Which sector is performing best this week?"</li>
+              <li>- "Find me oversold stocks with good fundamentals"</li>
+              <li>- "Explain what the RSI for TSLA means"</li>
+              <li>- "Compare MSFT vs GOOGL for a long-term hold"</li>
+            </ul>
+          </div>
+          <div className="p-3 rounded-lg bg-surface-hover border border-surface-border">
+            <p className="text-xs font-semibold text-accent-light mb-2">Setup (One Time)</p>
+            <ol className="text-xs t-tertiary space-y-1 list-decimal list-inside">
+              <li>Go to the <Link to="/copilot" className="text-accent-light hover:underline">Copilot page</Link></li>
+              <li>Click the settings icon to add your API key</li>
+              <li>Choose a provider: OpenAI, Anthropic, or Google Gemini</li>
+              <li>Paste your API key (stored encrypted in your browser)</li>
+              <li>Start chatting! The AI sees all your stock data</li>
+            </ol>
+          </div>
+        </div>
+        <Tip>
+          The AI copilot is a <strong className="t-primary">research assistant</strong>, not a financial advisor.
+          Use it to understand data faster and get ideas, but always make your own decisions.
+        </Tip>
+      </Section>
+
+      <Section title="Alerts — Set and Forget Notifications" icon="N">
+        <p className="t-tertiary text-sm mb-4">
+          Set up <Link to="/alerts" className="text-accent-light hover:underline">Telegram alerts</Link> so the
+          dashboard watches stocks FOR you and pings you when something important happens.
+        </p>
+        <div className="space-y-3">
+          <Step num={1} title="Set up Telegram">
+            Follow the instructions on the Alerts page to connect your Telegram bot.
+            You'll need to create a bot via BotFather and get your chat ID. It takes about 5 minutes.
+          </Step>
+          <Step num={2} title="Create price alerts">
+            Set a target price for stocks on your watchlist. For example: "Alert me if AAPL drops below $170"
+            (potential buy opportunity) or "Alert me if TSLA goes above $300" (breakout confirmation).
+          </Step>
+          <Step num={3} title="Create score alerts">
+            Get notified when a stock's composite score drops below a threshold. For example: "Alert me if
+            any stock I own drops below score 40" — this is an early warning system for your portfolio.
+          </Step>
+          <Step num={4} title="Edge-triggered means no spam">
+            Alerts only fire <strong className="t-primary">once</strong> when a condition is first met.
+            You won't get 50 messages if a stock stays below your threshold. It fires once, then resets
+            when the condition clears.
+          </Step>
+        </div>
+      </Section>
+
+      <Section title="Your Complete Learning Path" icon="L">
+        <p className="t-tertiary text-sm mb-4">
+          Follow this progression to go from complete beginner to confident investor:
+        </p>
+        <div className="space-y-2">
+          <LearningStep
+            phase="Week 1-2"
+            title="Learn & Observe"
+            tasks={[
+              'Read this Guide completely (all 5 tabs)',
+              'Check the Overview page daily to get a feel for market movement',
+              'Browse the Screener and click into 5-10 stock detail pages to understand the data',
+              'Add 5-10 interesting stocks to your Watchlist and watch them for a week',
+            ]}
+          />
+          <LearningStep
+            phase="Week 3-4"
+            title="Paper Trade"
+            tasks={[
+              'Start Paper Trading with the Momentum strategy (easiest for beginners)',
+              'Make 1-2 trades per week, always journaling your reasoning',
+              'Use the Position Sizing Calculator for every trade',
+              'Check Bearish Alerts before every buy',
+            ]}
+          />
+          <LearningStep
+            phase="Month 2-3"
+            title="Refine & Test"
+            tasks={[
+              'Review your Journal Analytics — which strategies and emotions lead to wins?',
+              'Try the Backtest page to compare different strategy approaches',
+              'Set up Telegram Alerts for your watchlist stocks',
+              'Explore advanced screens: Minervini, CAN SLIM, Custom Screen',
+            ]}
+          />
+          <LearningStep
+            phase="Month 3+"
+            title="Go Live (Small)"
+            tasks={[
+              'Only start with real money if your paper trading win rate is 50%+',
+              'Start with a small amount you can afford to lose completely',
+              'Use the same strategy that worked in paper trading',
+              'Add your real holdings to the Holdings tab and monitor daily',
+              'Keep paper trading new strategies while your real money follows proven ones',
+            ]}
+          />
         </div>
       </Section>
     </div>
@@ -930,5 +1449,47 @@ function NextTabBtn({ label, onClick }: { label: string; onClick: () => void }) 
     <button onClick={onClick} className="text-xs text-accent-light hover:t-primary transition-colors flex items-center gap-1">
       Next: {label} &rarr;
     </button>
+  );
+}
+
+function ChecklistItem({ num, title, check }: { num: number; title: string; check: string }) {
+  return (
+    <div className="flex gap-3 p-3 rounded-lg bg-surface-hover border border-surface-border">
+      <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/15 border border-accent/20 flex items-center justify-center text-accent-light text-xs font-bold">
+        {num}
+      </div>
+      <div>
+        <p className="text-xs font-semibold t-primary mb-0.5">{title}</p>
+        <p className="text-xs t-tertiary">{check}</p>
+      </div>
+    </div>
+  );
+}
+
+function MistakeCard({ mistake, fix }: { mistake: string; fix: string }) {
+  return (
+    <div className="p-3 rounded-lg bg-bearish/5 border border-bearish/20">
+      <p className="text-xs font-semibold text-bearish mb-1">{mistake}</p>
+      <p className="text-xs t-tertiary">{fix}</p>
+    </div>
+  );
+}
+
+function LearningStep({ phase, title, tasks }: { phase: string; title: string; tasks: string[] }) {
+  return (
+    <div className="p-4 rounded-lg bg-surface-hover border border-surface-border">
+      <div className="flex items-center gap-3 mb-2">
+        <span className="badge bg-accent/15 text-accent-light ring-1 ring-accent/20 text-xs px-2 py-0.5 font-mono">{phase}</span>
+        <span className="text-sm font-semibold t-primary">{title}</span>
+      </div>
+      <ul className="space-y-1">
+        {tasks.map((task, i) => (
+          <li key={i} className="text-xs t-tertiary flex gap-2">
+            <span className="t-muted flex-shrink-0">-</span>
+            {task}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
