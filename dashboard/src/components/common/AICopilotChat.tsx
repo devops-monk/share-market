@@ -213,7 +213,7 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
         const providers = getProviders();
         const selected = providers.find(p => p.key === selectedProvider);
         return (
-          <div className="px-4 py-3 border-b border-surface-border bg-surface-tertiary space-y-2">
+          <div className="px-4 py-3 border-b border-surface-border bg-surface-tertiary space-y-2.5">
             <div>
               <p className="text-xs t-muted mb-1.5">LLM Provider:</p>
               <div className="flex flex-wrap gap-1.5">
@@ -221,6 +221,7 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
                   <button
                     key={p.key}
                     onClick={() => { setSelectedProvider(p.key); setProvider(p.key); }}
+                    title={`${p.modelName} — ${p.site}`}
                     className={`text-xs px-2 py-1 rounded transition-colors ${
                       selectedProvider === p.key
                         ? 'bg-accent/20 text-accent-light ring-1 ring-accent/30'
@@ -233,8 +234,23 @@ export default function AICopilotChat({ stocks, contextStock, metadata, expanded
                 ))}
               </div>
             </div>
+
+            {/* Selected provider info */}
+            {selected && (
+              <div className="rounded bg-surface-hover/50 px-2.5 py-2 space-y-1">
+                <div className="flex items-center justify-between">
+                  <span className="text-[11px] font-medium t-secondary">{selected.label} — {selected.modelName}</span>
+                  {selected.free
+                    ? <span className="text-[9px] px-1.5 py-0.5 rounded bg-bullish/15 text-bullish">Free</span>
+                    : <span className="text-[9px] px-1.5 py-0.5 rounded bg-yellow-500/15 text-yellow-500">Paid</span>
+                  }
+                </div>
+                <p className="text-[10px] t-muted font-mono leading-relaxed whitespace-pre-line">{selected.steps}</p>
+              </div>
+            )}
+
             <div>
-              <p className="text-xs t-muted mb-1.5">API key ({selected?.site ?? ''}):</p>
+              <p className="text-xs t-muted mb-1.5">API key:</p>
               <div className="flex gap-2">
                 <input
                   type="password"

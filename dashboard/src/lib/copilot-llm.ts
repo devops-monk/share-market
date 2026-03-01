@@ -6,16 +6,20 @@ const PROVIDERS = {
     model: 'llama-3.3-70b-versatile',
     label: 'Groq',
     hint: 'gsk_...',
-    site: 'console.groq.com — free',
+    site: 'console.groq.com',
     free: true,
+    modelName: 'Llama 3.3 70B',
+    steps: '1. Go to console.groq.com\n2. Sign up with Google/GitHub (free)\n3. Go to API Keys in the left sidebar\n4. Click "Create API Key"\n5. Copy the key (starts with gsk_)',
   },
   openrouter: {
     url: 'https://openrouter.ai/api/v1/chat/completions',
     model: 'meta-llama/llama-3.3-70b-instruct:free',
     label: 'OpenRouter',
     hint: 'sk-or-...',
-    site: 'openrouter.ai — free tier',
+    site: 'openrouter.ai',
     free: true,
+    modelName: 'Llama 3.3 70B',
+    steps: '1. Go to openrouter.ai\n2. Sign up with Google/GitHub (free)\n3. Go to Keys page (openrouter.ai/keys)\n4. Click "Create Key"\n5. Copy the key (starts with sk-or-)',
   },
   openai: {
     url: 'https://api.openai.com/v1/chat/completions',
@@ -24,14 +28,18 @@ const PROVIDERS = {
     hint: 'sk-...',
     site: 'platform.openai.com',
     free: false,
+    modelName: 'GPT-4o Mini',
+    steps: '1. Go to platform.openai.com\n2. Sign up or log in\n3. Go to API Keys (platform.openai.com/api-keys)\n4. Click "Create new secret key"\n5. Copy the key (starts with sk-)\nNote: Requires adding credits ($5 min)',
   },
   gemini: {
     url: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions',
     model: 'gemini-2.0-flash',
     label: 'Gemini',
     hint: 'AI...',
-    site: 'aistudio.google.com — free tier',
+    site: 'aistudio.google.com',
     free: true,
+    modelName: 'Gemini 2.0 Flash',
+    steps: '1. Go to aistudio.google.com\n2. Sign in with Google account\n3. Click "Get API Key" in the top bar\n4. Click "Create API key"\n5. Select a Google Cloud project (or create one)\n6. Copy the key (starts with AI)',
   },
   anthropic: {
     url: 'https://api.anthropic.com/v1/messages',
@@ -40,6 +48,8 @@ const PROVIDERS = {
     hint: 'sk-ant-...',
     site: 'console.anthropic.com',
     free: false,
+    modelName: 'Claude Sonnet 4',
+    steps: '1. Go to console.anthropic.com\n2. Sign up or log in\n3. Go to API Keys in Settings\n4. Click "Create Key"\n5. Copy the key (starts with sk-ant-)\nNote: Requires adding credits ($5 min)',
   },
   huggingface: {
     url: 'https://router.huggingface.co/v1/chat/completions',
@@ -48,6 +58,8 @@ const PROVIDERS = {
     hint: 'hf_...',
     site: 'huggingface.co',
     free: true,
+    modelName: 'Qwen 2.5 7B',
+    steps: '1. Go to huggingface.co\n2. Sign up (free)\n3. Click your avatar → Settings\n4. Go to "Access Tokens" in the sidebar\n5. Click "New token" → select "Read" role\n6. Copy the token (starts with hf_)',
   },
 } as const;
 
@@ -118,6 +130,8 @@ export function getProviders() {
     hint: val.hint,
     site: val.site,
     free: val.free,
+    modelName: val.modelName,
+    steps: val.steps,
   }));
 }
 
