@@ -15,18 +15,32 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "DRX.L",
+      "name": "Drax Group",
+      "score": 76,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 76,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 76,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "7203.T",
       "name": "Toyota Motor",
       "score": 76,
       "market": "JP",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 75,
-      "market": "UK",
-      "capCategory": "Mid"
     },
     {
       "ticker": "0005.HK",
@@ -43,30 +57,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
+      "ticker": "RR.L",
+      "name": "Rolls-Royce",
       "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 74,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DRX.L",
-      "name": "Drax Group",
-      "score": 73,
       "market": "UK",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "OSB.L",
       "name": "OSB Group",
-      "score": 73,
+      "score": 74,
       "market": "UK",
       "capCategory": "Mid"
     }
@@ -82,14 +82,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 22,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,25 +94,32 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 23,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CHWY",
+      "name": "Chewy",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "U",
-      "name": "Unity Software",
+      "ticker": "AI",
+      "name": "C3.ai",
       "score": 24,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Small"
     },
     {
       "ticker": "GWRE",
@@ -136,8 +136,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
+      "ticker": "OKTA",
+      "name": "Okta",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -157,6 +157,12 @@
       "market": "IN"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 76,
+      "market": "DE"
+    },
+    {
       "ticker": "7203.T",
       "name": "Toyota Motor",
       "score": 76,
@@ -175,16 +181,16 @@
       "market": "HK"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
+      "ticker": "RR.L",
+      "name": "Rolls-Royce",
       "score": 74,
-      "market": "US"
+      "market": "UK"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 74,
-      "market": "DE"
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 73,
+      "market": "US"
     },
     {
       "ticker": "NEM",
@@ -193,46 +199,52 @@
       "market": "US"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "HSBA.L",
+      "name": "HSBC",
       "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "6273.T",
-      "name": "SMC Corp",
-      "score": 72,
-      "market": "JP"
+      "market": "UK"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 75,
+      "ticker": "DRX.L",
+      "name": "Drax Group",
+      "score": 76,
       "market": "UK"
     },
     {
-      "ticker": "DRX.L",
-      "name": "Drax Group",
-      "score": 73,
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 76,
       "market": "UK"
     },
     {
       "ticker": "OSB.L",
       "name": "OSB Group",
-      "score": 73,
-      "market": "UK"
-    },
-    {
-      "ticker": "WEIR.L",
-      "name": "Weir Group",
-      "score": 66,
+      "score": 74,
       "market": "UK"
     },
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
+      "score": 69,
+      "market": "UK"
+    },
+    {
+      "ticker": "SMIN.L",
+      "name": "Smiths Group",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "QQ.L",
+      "name": "QinetiQ",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "HWDN.L",
+      "name": "Howden Joinery",
       "score": 66,
       "market": "UK"
     },
@@ -243,27 +255,15 @@
       "market": "US"
     },
     {
-      "ticker": "QQ.L",
-      "name": "QinetiQ",
+      "ticker": "IMI.L",
+      "name": "IMI",
       "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 64,
-      "market": "US"
-    },
-    {
-      "ticker": "SMIN.L",
-      "name": "Smiths Group",
-      "score": 64,
       "market": "UK"
     },
     {
       "ticker": "BBOX.L",
       "name": "Tritax Big Box REIT",
-      "score": 64,
+      "score": 65,
       "market": "UK"
     }
   ],
@@ -271,13 +271,13 @@
     {
       "ticker": "HMSO.L",
       "name": "Hammerson",
-      "score": 71,
+      "score": 70,
       "market": "UK"
     },
     {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
-      "score": 68,
+      "score": 69,
       "market": "UK"
     },
     {
@@ -287,39 +287,39 @@
       "market": "UK"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 67,
+      "market": "UK"
+    },
+    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
+      "ticker": "FOUR.L",
+      "name": "4imprint",
       "score": 66,
       "market": "UK"
     },
     {
       "ticker": "CURY.L",
       "name": "Currys",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 65,
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 62,
+      "score": 66,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 865,
   "avgScore": 50,
-  "bearishAlertCount": 365
+  "bearishAlertCount": 368
 }
