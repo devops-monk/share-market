@@ -82,44 +82,44 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 19,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 20,
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "GTLB",
       "name": "GitLab",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Mid"
     },
     {
+      "ticker": "WDAY",
+      "name": "Workday",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ZS",
       "name": "Zscaler",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "AFRM",
       "name": "Affirm",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AI",
-      "name": "C3.ai",
       "score": 24,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Large"
     },
     {
       "ticker": "NOW",
@@ -129,16 +129,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "OKTA",
-      "name": "Okta",
+      "ticker": "AI",
+      "name": "C3.ai",
       "score": 25,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 26,
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     }
@@ -193,14 +193,14 @@
       "market": "US"
     },
     {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
-      "score": 72,
-      "market": "UK"
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 73,
+      "market": "US"
     },
     {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
+      "ticker": "HSBA.L",
+      "name": "HSBC",
       "score": 72,
       "market": "UK"
     }
@@ -237,6 +237,12 @@
       "market": "UK"
     },
     {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 66,
+      "market": "US"
+    },
+    {
       "ticker": "QQ.L",
       "name": "QinetiQ",
       "score": 66,
@@ -251,12 +257,6 @@
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 65,
-      "market": "US"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
       "score": 65,
       "market": "US"
     },
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 865,
   "avgScore": 51,
-  "bearishAlertCount": 366
+  "bearishAlertCount": 375
 }
