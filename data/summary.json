@@ -22,11 +22,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NEM",
-      "name": "Newmont",
+      "ticker": "INVP.L",
+      "name": "Investec",
       "score": 75,
-      "market": "US",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "0005.HK",
@@ -50,15 +50,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines",
+      "ticker": "HAL",
+      "name": "Halliburton",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -66,6 +59,13 @@
     {
       "ticker": "DRX.L",
       "name": "Drax Group",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "OSB.L",
+      "name": "OSB Group",
       "score": 73,
       "market": "UK",
       "capCategory": "Mid"
@@ -87,22 +87,50 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "GTLB",
       "name": "GitLab",
-      "score": 24,
+      "score": 23,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "CHWY",
+      "name": "Chewy",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "OKTA",
+      "name": "Okta",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ESTC",
+      "name": "Elastic NV",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -113,34 +141,6 @@
       "score": 26,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FMC",
-      "name": "FMC Corp",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "OKTA",
-      "name": "Okta",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -163,12 +163,6 @@
       "market": "JP"
     },
     {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 75,
-      "market": "US"
-    },
-    {
       "ticker": "0005.HK",
       "name": "HSBC Holdings",
       "score": 75,
@@ -181,21 +175,9 @@
       "market": "HK"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "HAL",
+      "name": "Halliburton",
       "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
       "market": "US"
     },
     {
@@ -203,9 +185,33 @@
       "name": "SMC Corp",
       "score": 72,
       "market": "JP"
+    },
+    {
+      "ticker": "GLEN.L",
+      "name": "Glencore",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 71,
+      "market": "DE"
+    },
+    {
+      "ticker": "EOAN.DE",
+      "name": "E.ON",
+      "score": 71,
+      "market": "DE"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 75,
+      "market": "UK"
+    },
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
@@ -221,26 +227,8 @@
     {
       "ticker": "OSB.L",
       "name": "OSB Group",
-      "score": 72,
+      "score": 73,
       "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 66,
-      "market": "US"
     },
     {
       "ticker": "WEIR.L",
@@ -249,14 +237,14 @@
       "market": "UK"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 65,
       "market": "US"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 64,
       "market": "US"
     },
@@ -265,6 +253,18 @@
       "name": "Smiths Group",
       "score": 64,
       "market": "UK"
+    },
+    {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 63,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -277,18 +277,18 @@
     {
       "ticker": "HMSO.L",
       "name": "Hammerson",
-      "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
       "score": 69,
       "market": "UK"
     },
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
+      "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
       "score": 67,
       "market": "UK"
     },
@@ -301,18 +301,18 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
       "score": 65,
       "market": "UK"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
       "score": 64,
       "market": "UK"
     },
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 865,
-  "avgScore": 51,
-  "bearishAlertCount": 377
+  "avgScore": 50,
+  "bearishAlertCount": 366
 }
