@@ -287,27 +287,21 @@
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 67,
-      "market": "UK"
-    },
-    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
       "market": "US"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 64,
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 63,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 64,
       "market": "UK"
     },
     {
@@ -327,9 +321,15 @@
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
+    },
+    {
+      "ticker": "SNV",
+      "name": "Synovus Financial",
+      "score": 60,
+      "market": "US"
     }
   ],
   "totalStocks": 865,
   "avgScore": 51,
-  "bearishAlertCount": 385
+  "bearishAlertCount": 375
 }
