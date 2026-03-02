@@ -57,17 +57,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DRX.L",
-      "name": "Drax Group",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 73,
       "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -82,7 +82,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
@@ -94,20 +94,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 25,
@@ -115,22 +101,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TATE.L",
-      "name": "Tate & Lyle",
-      "score": 26,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 26,
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -141,6 +127,20 @@
       "score": 27,
       "market": "US",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "OKTA",
+      "name": "Okta",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -215,7 +215,7 @@
     {
       "ticker": "DRX.L",
       "name": "Drax Group",
-      "score": 73,
+      "score": 72,
       "market": "UK"
     },
     {
@@ -271,19 +271,13 @@
     {
       "ticker": "CURY.L",
       "name": "Currys",
-      "score": 71,
+      "score": 72,
       "market": "UK"
     },
     {
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 67,
       "market": "UK"
     },
     {
@@ -299,9 +293,21 @@
       "market": "UK"
     },
     {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 63,
       "market": "UK"
     },
     {
@@ -313,7 +319,7 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 61,
+      "score": 62,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
-    },
-    {
-      "ticker": "SNV",
-      "name": "Synovus Financial",
-      "score": 60,
-      "market": "US"
     }
   ],
   "totalStocks": 865,
   "avgScore": 51,
-  "bearishAlertCount": 375
+  "bearishAlertCount": 383
 }
