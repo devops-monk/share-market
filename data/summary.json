@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RR.L",
       "name": "Rolls-Royce",
       "score": 76,
@@ -50,24 +57,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0005.HK",
       "name": "HSBC Holdings",
       "score": 75,
       "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "1113.HK",
-      "name": "CK Asset Holdings",
-      "score": 75,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 74,
-      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -75,21 +75,28 @@
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 13,
+      "score": 14,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 21,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 22,
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,22 +108,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "WDAY",
-      "name": "Workday",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ZS",
       "name": "Zscaler",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AFRM",
-      "name": "Affirm",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -129,18 +122,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "WDAY",
+      "name": "Workday",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ESTC",
+      "name": "Elastic NV",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -155,6 +155,12 @@
       "name": "ONGC",
       "score": 79,
       "market": "IN"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 76,
+      "market": "US"
     },
     {
       "ticker": "RR.L",
@@ -175,6 +181,12 @@
       "market": "JP"
     },
     {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 75,
+      "market": "US"
+    },
+    {
       "ticker": "0005.HK",
       "name": "HSBC Holdings",
       "score": 75,
@@ -187,22 +199,10 @@
       "market": "HK"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 74,
-      "market": "US"
-    },
-    {
       "ticker": "LMT",
       "name": "Lockheed Martin",
-      "score": 73,
+      "score": 74,
       "market": "US"
-    },
-    {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
-      "score": 72,
-      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -231,16 +231,16 @@
       "market": "UK"
     },
     {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "SMIN.L",
       "name": "Smiths Group",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 66,
-      "market": "US"
     },
     {
       "ticker": "QQ.L",
@@ -255,14 +255,14 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 65,
-      "market": "US"
-    },
-    {
       "ticker": "JTC.L",
       "name": "JTC",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "IMI.L",
+      "name": "IMI",
       "score": 65,
       "market": "UK"
     }
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 865,
   "avgScore": 51,
-  "bearishAlertCount": 375
+  "bearishAlertCount": 368
 }
