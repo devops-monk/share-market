@@ -10,7 +10,7 @@
     {
       "ticker": "ONGC.NS",
       "name": "ONGC",
-      "score": 77,
+      "score": 78,
       "market": "IN",
       "capCategory": "Large"
     },
@@ -36,18 +36,18 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "1113.HK",
+      "name": "CK Asset Holdings",
+      "score": 75,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 74,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "1113.HK",
-      "name": "CK Asset Holdings",
-      "score": 74,
-      "market": "HK",
-      "capCategory": "Large"
     },
     {
       "ticker": "RVMD",
@@ -82,7 +82,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -92,6 +92,13 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "NOW",
@@ -108,15 +115,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
+      "ticker": "TATE.L",
+      "name": "Tate & Lyle",
+      "score": 26,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "GWRE",
       "name": "Guidewire Software",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -127,20 +141,6 @@
       "score": 27,
       "market": "US",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "OKTA",
-      "name": "Okta",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -153,7 +153,7 @@
     {
       "ticker": "ONGC.NS",
       "name": "ONGC",
-      "score": 77,
+      "score": 78,
       "market": "IN"
     },
     {
@@ -177,7 +177,7 @@
     {
       "ticker": "1113.HK",
       "name": "CK Asset Holdings",
-      "score": 74,
+      "score": 75,
       "market": "HK"
     },
     {
@@ -249,16 +249,16 @@
       "market": "UK"
     },
     {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
       "score": 64,
       "market": "US"
+    },
+    {
+      "ticker": "OSB.L",
+      "name": "OSB Group",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "HSIC",
@@ -271,13 +271,19 @@
     {
       "ticker": "CURY.L",
       "name": "Currys",
-      "score": 72,
+      "score": 71,
       "market": "UK"
     },
     {
       "ticker": "HMSO.L",
       "name": "Hammerson",
-      "score": 68,
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 67,
       "market": "UK"
     },
     {
@@ -287,15 +293,15 @@
       "market": "US"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
+      "ticker": "FOUR.L",
+      "name": "4imprint",
       "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 63,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 64,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "Synovus Financial",
       "score": 60,
       "market": "US"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 60,
-      "market": "UK"
     }
   ],
   "totalStocks": 865,
   "avgScore": 51,
-  "bearishAlertCount": 373
+  "bearishAlertCount": 382
 }
