@@ -10,7 +10,7 @@
     {
       "ticker": "ONGC.NS",
       "name": "ONGC",
-      "score": 78,
+      "score": 79,
       "market": "IN",
       "capCategory": "Large"
     },
@@ -153,7 +153,7 @@
     {
       "ticker": "ONGC.NS",
       "name": "ONGC",
-      "score": 78,
+      "score": 79,
       "market": "IN"
     },
     {
@@ -249,16 +249,16 @@
       "market": "UK"
     },
     {
+      "ticker": "OSB.L",
+      "name": "OSB Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
       "score": 64,
       "market": "US"
-    },
-    {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
-      "score": 64,
-      "market": "UK"
     },
     {
       "ticker": "HSIC",
@@ -281,6 +281,12 @@
       "market": "UK"
     },
     {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 67,
+      "market": "UK"
+    },
+    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 67,
@@ -291,12 +297,6 @@
       "name": "Comerica",
       "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 64,
-      "market": "UK"
     },
     {
       "ticker": "ASHM.L",
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "0011.HK",
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
-    },
-    {
-      "ticker": "SNV",
-      "name": "Synovus Financial",
-      "score": 60,
-      "market": "US"
     }
   ],
   "totalStocks": 865,
   "avgScore": 51,
-  "bearishAlertCount": 382
+  "bearishAlertCount": 385
 }
