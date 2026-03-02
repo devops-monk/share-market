@@ -50,13 +50,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 74,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "XOM",
       "name": "ExxonMobil",
       "score": 73,
@@ -69,6 +62,13 @@
       "score": 73,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "DRX.L",
+      "name": "Drax Group",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
@@ -82,7 +82,14 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 20,
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
@@ -96,13 +103,6 @@
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -129,18 +129,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "FMC",
       "name": "FMC Corp",
       "score": 27,
       "market": "US",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "OKTA",
+      "name": "Okta",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -181,12 +181,6 @@
       "market": "HK"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 74,
-      "market": "DE"
-    },
-    {
       "ticker": "XOM",
       "name": "ExxonMobil",
       "score": 73,
@@ -203,6 +197,12 @@
       "name": "Applied Materials",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "6273.T",
+      "name": "SMC Corp",
+      "score": 72,
+      "market": "JP"
     }
   ],
   "topMidCap": [
@@ -215,6 +215,12 @@
     {
       "ticker": "DRX.L",
       "name": "Drax Group",
+      "score": 73,
+      "market": "UK"
+    },
+    {
+      "ticker": "OSB.L",
+      "name": "OSB Group",
       "score": 72,
       "market": "UK"
     },
@@ -225,9 +231,9 @@
       "market": "US"
     },
     {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
-      "score": 67,
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 69,
       "market": "UK"
     },
     {
@@ -239,12 +245,6 @@
     {
       "ticker": "WEIR.L",
       "name": "Weir Group",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
       "score": 66,
       "market": "UK"
     },
@@ -261,10 +261,10 @@
       "market": "US"
     },
     {
-      "ticker": "HSIC",
-      "name": "Henry Schein",
-      "score": 63,
-      "market": "US"
+      "ticker": "SMIN.L",
+      "name": "Smiths Group",
+      "score": 64,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -275,14 +275,14 @@
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 69,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 70,
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
       "score": 69,
       "market": "UK"
     },
@@ -319,7 +319,7 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 61,
+      "score": 62,
       "market": "UK"
     },
     {
