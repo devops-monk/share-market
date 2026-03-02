@@ -1,10 +1,10 @@
 {
   "topOverall": [
     {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
-      "score": 79,
-      "market": "JP",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 83,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -19,6 +19,13 @@
       "name": "RWE",
       "score": 76,
       "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "7203.T",
+      "name": "Toyota Motor",
+      "score": 76,
+      "market": "JP",
       "capCategory": "Large"
     },
     {
@@ -50,22 +57,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TATASTEEL.NS",
-      "name": "Tata Steel",
+      "ticker": "0005.HK",
+      "name": "HSBC Holdings",
       "score": 74,
-      "market": "IN",
+      "market": "HK",
       "capCategory": "Large"
     },
     {
-      "ticker": "6273.T",
-      "name": "SMC Corp",
-      "score": 74,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
+      "ticker": "RVMD",
+      "name": "Revolution Medicines",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -115,10 +115,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 26,
-      "market": "US",
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 27,
+      "market": "IN",
       "capCategory": "Large"
     },
     {
@@ -145,10 +145,10 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
-      "score": 79,
-      "market": "JP"
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 83,
+      "market": "HK"
     },
     {
       "ticker": "GLE.PA",
@@ -163,6 +163,12 @@
       "market": "DE"
     },
     {
+      "ticker": "7203.T",
+      "name": "Toyota Motor",
+      "score": 76,
+      "market": "JP"
+    },
+    {
       "ticker": "NEM",
       "name": "Newmont",
       "score": 75,
@@ -175,22 +181,10 @@
       "market": "UK"
     },
     {
-      "ticker": "TATASTEEL.NS",
-      "name": "Tata Steel",
+      "ticker": "0005.HK",
+      "name": "HSBC Holdings",
       "score": 74,
-      "market": "IN"
-    },
-    {
-      "ticker": "6273.T",
-      "name": "SMC Corp",
-      "score": 74,
-      "market": "JP"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US"
+      "market": "HK"
     },
     {
       "ticker": "RVMD",
@@ -203,6 +197,12 @@
       "name": "Glencore",
       "score": 73,
       "market": "UK"
+    },
+    {
+      "ticker": "1113.HK",
+      "name": "CK Asset Holdings",
+      "score": 73,
+      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 865,
   "avgScore": 52,
-  "bearishAlertCount": 391
+  "bearishAlertCount": 389
 }
