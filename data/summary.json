@@ -57,8 +57,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
+      "ticker": "NOC",
+      "name": "Northrop Grumman",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -75,7 +75,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 18,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
@@ -87,25 +87,18 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 23,
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 24,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Mid"
     },
     {
       "ticker": "CPNG",
@@ -115,32 +108,39 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "FMC",
+      "name": "FMC Corp",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "CHWY",
+      "name": "Chewy",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TENB",
       "name": "Tenable Holdings",
-      "score": 26,
+      "score": 27,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "MNDY",
-      "name": "monday.com",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "OKTA",
-      "name": "Okta",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -187,8 +187,8 @@
       "market": "FR"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
+      "ticker": "NOC",
+      "name": "Northrop Grumman",
       "score": 72,
       "market": "US"
     },
@@ -215,7 +215,13 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 70,
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 71,
       "market": "US"
     },
     {
@@ -223,12 +229,6 @@
       "name": "Plus500",
       "score": 70,
       "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 69,
-      "market": "US"
     },
     {
       "ticker": "INVP.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 865,
   "avgScore": 51,
-  "bearishAlertCount": 359
+  "bearishAlertCount": 362
 }
