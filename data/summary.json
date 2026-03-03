@@ -15,17 +15,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 75,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 74,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -57,17 +57,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 72,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "7203.T",
       "name": "Toyota Motor",
       "score": 72,
       "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "1113.HK",
-      "name": "CK Asset Holdings",
-      "score": 72,
-      "market": "HK",
       "capCategory": "Large"
     }
   ],
@@ -87,17 +87,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RPI.L",
+      "name": "Raspberry Pi",
+      "score": 21,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "ZS",
       "name": "Zscaler",
       "score": 24,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "INF.L",
-      "name": "Informa",
-      "score": 25,
-      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -157,16 +157,16 @@
       "market": "JP"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 75,
-      "market": "US"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 75,
       "market": "HK"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 74,
+      "market": "US"
     },
     {
       "ticker": "XOM",
@@ -193,16 +193,16 @@
       "market": "US"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 72,
+      "market": "DE"
+    },
+    {
       "ticker": "7203.T",
       "name": "Toyota Motor",
       "score": 72,
       "market": "JP"
-    },
-    {
-      "ticker": "1113.HK",
-      "name": "CK Asset Holdings",
-      "score": 72,
-      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -231,6 +231,12 @@
       "market": "UK"
     },
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "INVP.L",
       "name": "Investec",
       "score": 64,
@@ -239,12 +245,6 @@
     {
       "ticker": "SVT.L",
       "name": "Severn Trent",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
       "score": 63,
       "market": "UK"
     },
@@ -271,7 +271,7 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 69,
+      "score": 70,
       "market": "UK"
     },
     {
@@ -281,21 +281,21 @@
       "market": "US"
     },
     {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 62,
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
+      "score": 61,
       "market": "UK"
     },
     {
@@ -317,14 +317,14 @@
       "market": "US"
     },
     {
-      "ticker": "WIZZ.L",
-      "name": "Wizz Air",
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
       "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
+      "ticker": "CURY.L",
+      "name": "Currys",
       "score": 60,
       "market": "UK"
     }
