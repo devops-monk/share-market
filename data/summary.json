@@ -8,6 +8,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 77,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 76,
@@ -29,10 +36,24 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
+      "ticker": "EOAN.DE",
+      "name": "E.ON",
       "score": 74,
       "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 74,
+      "market": "FR",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 72,
+      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -48,34 +69,13 @@
       "score": 72,
       "market": "HK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 71,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOC",
-      "name": "Northrop Grumman",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 17,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
@@ -85,13 +85,6 @@
       "score": 21,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "AI",
@@ -141,6 +134,13 @@
       "score": 24,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CHWY",
+      "name": "Chewy",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -149,6 +149,12 @@
       "name": "ONGC",
       "score": 79,
       "market": "IN"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 77,
+      "market": "DE"
     },
     {
       "ticker": "8031.T",
@@ -163,10 +169,22 @@
       "market": "HK"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
+      "ticker": "EOAN.DE",
+      "name": "E.ON",
       "score": 74,
       "market": "DE"
+    },
+    {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 74,
+      "market": "FR"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 72,
+      "market": "UK"
     },
     {
       "ticker": "7203.T",
@@ -181,31 +199,31 @@
       "market": "HK"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 71,
-      "market": "UK"
-    },
-    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 71,
       "market": "HK"
-    },
-    {
-      "ticker": "NOC",
-      "name": "Northrop Grumman",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 70,
-      "market": "HK"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 69,
+      "market": "UK"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 69,
+      "market": "UK"
+    },
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
@@ -213,57 +231,39 @@
       "market": "US"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 68,
+      "ticker": "WEIR.L",
+      "name": "Weir Group",
+      "score": 67,
       "market": "UK"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 66,
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "HWDN.L",
+      "name": "Howden Joinery",
+      "score": 67,
       "market": "UK"
     },
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "MRO.L",
+      "name": "Melrose Industries",
       "score": 64,
       "market": "UK"
     },
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "WEIR.L",
-      "name": "Weir Group",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "HWDN.L",
-      "name": "Howden Joinery",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 62,
-      "market": "US"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 62,
+      "score": 64,
       "market": "UK"
     }
   ],
@@ -275,6 +275,12 @@
       "market": "UK"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 67,
+      "market": "UK"
+    },
+    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
@@ -283,19 +289,19 @@
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 65,
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "WIZZ.L",
       "name": "Wizz Air",
-      "score": 63,
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
-      "score": 63,
+      "score": 65,
       "market": "UK"
     },
     {
@@ -305,8 +311,14 @@
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
       "score": 61,
       "market": "UK"
     },
@@ -315,21 +327,9 @@
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
-    },
-    {
-      "ticker": "SNV",
-      "name": "Synovus Financial",
-      "score": 60,
-      "market": "US"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 60,
-      "market": "UK"
     }
   ],
   "totalStocks": 865,
-  "avgScore": 49,
-  "bearishAlertCount": 345
+  "avgScore": 50,
+  "bearishAlertCount": 350
 }
