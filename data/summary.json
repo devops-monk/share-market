@@ -24,9 +24,16 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 72,
+      "score": 74,
       "market": "UK",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 74,
+      "market": "DE",
+      "capCategory": "Large"
     },
     {
       "ticker": "7203.T",
@@ -43,6 +50,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 71,
@@ -50,53 +64,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "NOC",
+      "name": "Northrop Grumman",
       "score": 70,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 70,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 69,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 13,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 20,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
@@ -115,32 +94,53 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GTLB",
-      "name": "GitLab",
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "OKTA",
       "name": "Okta",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 23,
+      "ticker": "WDAY",
+      "name": "Workday",
+      "score": 24,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -163,6 +163,12 @@
       "market": "HK"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 74,
+      "market": "DE"
+    },
+    {
       "ticker": "7203.T",
       "name": "Toyota Motor",
       "score": 72,
@@ -175,34 +181,28 @@
       "market": "HK"
     },
     {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 71,
+      "market": "UK"
+    },
+    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 71,
       "market": "HK"
     },
     {
+      "ticker": "NOC",
+      "name": "Northrop Grumman",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "1398.HK",
       "name": "ICBC",
       "score": 70,
       "market": "HK"
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "SBIN.NS",
-      "name": "State Bank of India",
-      "score": 69,
-      "market": "IN"
-    },
-    {
-      "ticker": "EOAN.DE",
-      "name": "E.ON",
-      "score": 69,
-      "market": "DE"
     }
   ],
   "topMidCap": [
@@ -215,7 +215,7 @@
     {
       "ticker": "INVP.L",
       "name": "Investec",
-      "score": 67,
+      "score": 68,
       "market": "UK"
     },
     {
@@ -225,10 +225,16 @@
       "market": "UK"
     },
     {
-      "ticker": "NNN",
-      "name": "NNN REIT",
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
       "score": 63,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "WEIR.L",
@@ -243,41 +249,29 @@
       "market": "UK"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
       "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
       "score": 62,
       "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 60,
-      "market": "US"
-    },
-    {
-      "ticker": "HSIC",
-      "name": "Henry Schein",
-      "score": 60,
-      "market": "US"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 72,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 70,
+      "score": 74,
       "market": "UK"
     },
     {
@@ -285,6 +279,18 @@
       "name": "Comerica",
       "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
+      "score": 63,
+      "market": "UK"
     },
     {
       "ticker": "WOSG.L",
@@ -299,9 +305,9 @@
       "market": "UK"
     },
     {
-      "ticker": "WIZZ.L",
-      "name": "Wizz Air",
-      "score": 62,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 61,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "CMC Markets",
       "score": 60,
       "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 59,
-      "market": "UK"
     }
   ],
   "totalStocks": 865,
   "avgScore": 49,
-  "bearishAlertCount": 338
+  "bearishAlertCount": 345
 }
