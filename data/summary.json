@@ -57,8 +57,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "TGT",
+      "name": "Target",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -75,7 +75,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 19,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
@@ -115,29 +115,29 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 25,
+      "ticker": "TENB",
+      "name": "Tenable Holdings",
+      "score": 26,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 25,
+      "ticker": "MNDY",
+      "name": "monday.com",
+      "score": 26,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "CHWY",
-      "name": "Chewy",
+      "ticker": "OKTA",
+      "name": "Okta",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -187,8 +187,8 @@
       "market": "FR"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "TGT",
+      "name": "Target",
       "score": 72,
       "market": "US"
     },
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 865,
   "avgScore": 51,
-  "bearishAlertCount": 358
+  "bearishAlertCount": 359
 }
