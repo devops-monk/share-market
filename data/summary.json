@@ -29,15 +29,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 73,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -62,13 +69,6 @@
       "score": 72,
       "market": "JP",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "1113.HK",
-      "name": "CK Asset Holdings",
-      "score": 72,
-      "market": "HK",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -85,13 +85,6 @@
       "score": 20,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "RPI.L",
-      "name": "Raspberry Pi",
-      "score": 21,
-      "market": "UK",
-      "capCategory": "Small"
     },
     {
       "ticker": "ZS",
@@ -141,6 +134,13 @@
       "score": 26,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -169,14 +169,20 @@
       "market": "US"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 73,
       "market": "US"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 73,
+      "market": "DE"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US"
     },
@@ -197,12 +203,6 @@
       "name": "Toyota Motor",
       "score": 72,
       "market": "JP"
-    },
-    {
-      "ticker": "1113.HK",
-      "name": "CK Asset Holdings",
-      "score": 72,
-      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -219,20 +219,26 @@
       "market": "US"
     },
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 64,
       "market": "US"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
+      "ticker": "PLUS.L",
+      "name": "Plus500",
       "score": 64,
       "market": "UK"
     },
@@ -259,21 +265,9 @@
       "name": "Murphy Oil",
       "score": 62,
       "market": "US"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 62,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 70,
-      "market": "UK"
-    },
     {
       "ticker": "CMA",
       "name": "Comerica",
@@ -283,7 +277,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -295,6 +289,24 @@
     {
       "ticker": "WIZZ.L",
       "name": "Wizz Air",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
       "score": 61,
       "market": "UK"
     },
@@ -311,25 +323,13 @@
       "market": "US"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
-      "score": 60,
-      "market": "UK"
-    },
-    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
-      "score": 59,
+      "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 865,
   "avgScore": 50,
-  "bearishAlertCount": 363
+  "bearishAlertCount": 364
 }
