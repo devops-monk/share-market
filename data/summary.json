@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RR.L",
+      "name": "Rolls-Royce",
+      "score": 76,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 76,
@@ -57,18 +64,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "7203.T",
-      "name": "Toyota Motor",
+      "ticker": "BEZ.L",
+      "name": "Beazley",
       "score": 72,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "1113.HK",
-      "name": "CK Asset Holdings",
-      "score": 72,
-      "market": "HK",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
@@ -87,13 +87,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 22,
@@ -101,18 +94,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "AI",
+      "name": "C3.ai",
       "score": 22,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Small"
     },
     {
-      "ticker": "OKTA",
-      "name": "Okta",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 23,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "WDAY",
@@ -129,16 +122,23 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 24,
+      "ticker": "FMC",
+      "name": "FMC Corp",
+      "score": 26,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
       "ticker": "CHWY",
       "name": "Chewy",
-      "score": 25,
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     }
@@ -155,6 +155,12 @@
       "name": "RWE",
       "score": 77,
       "market": "DE"
+    },
+    {
+      "ticker": "RR.L",
+      "name": "Rolls-Royce",
+      "score": 76,
+      "market": "UK"
     },
     {
       "ticker": "8031.T",
@@ -197,15 +203,21 @@
       "name": "CK Asset Holdings",
       "score": 72,
       "market": "HK"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 71,
-      "market": "HK"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 72,
+      "market": "UK"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 70,
+      "market": "UK"
+    },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
@@ -213,10 +225,10 @@
       "market": "US"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 69,
-      "market": "UK"
+      "market": "US"
     },
     {
       "ticker": "INVP.L",
@@ -225,10 +237,16 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 68,
-      "market": "US"
+      "ticker": "MRO.L",
+      "name": "Melrose Industries",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 67,
+      "market": "UK"
     },
     {
       "ticker": "WEIR.L",
@@ -246,24 +264,6 @@
       "ticker": "HWDN.L",
       "name": "Howden Joinery",
       "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "MRO.L",
-      "name": "Melrose Industries",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 64,
       "market": "UK"
     }
   ],
@@ -311,6 +311,12 @@
       "market": "UK"
     },
     {
+      "ticker": "GYM.L",
+      "name": "Gym Group",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "SNR.L",
       "name": "Senior plc",
       "score": 61,
@@ -321,15 +327,9 @@
       "name": "Supermarket Income REIT",
       "score": 61,
       "market": "UK"
-    },
-    {
-      "ticker": "0011.HK",
-      "name": "Hang Seng Bank",
-      "score": 61,
-      "market": "HK"
     }
   ],
   "totalStocks": 865,
   "avgScore": 50,
-  "bearishAlertCount": 350
+  "bearishAlertCount": 351
 }
