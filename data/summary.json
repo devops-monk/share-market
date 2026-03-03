@@ -15,24 +15,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 75,
       "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 73,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -45,6 +38,13 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -64,11 +64,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "7203.T",
-      "name": "Toyota Motor",
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 72,
-      "market": "JP",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
@@ -82,14 +82,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 24,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,32 +94,18 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "TATE.L",
-      "name": "Tate & Lyle",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 26,
-      "market": "UK",
-      "capCategory": "Small"
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "AFRM",
@@ -136,11 +115,32 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TATE.L",
+      "name": "Tate & Lyle",
+      "score": 27,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "GWRE",
       "name": "Guidewire Software",
       "score": 27,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "VRNS",
+      "name": "Varonis Systems",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -157,22 +157,16 @@
       "market": "JP"
     },
     {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 75,
+      "market": "US"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 75,
       "market": "HK"
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 73,
-      "market": "US"
     },
     {
       "ticker": "RWE.DE",
@@ -183,6 +177,12 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 72,
       "market": "US"
     },
@@ -237,15 +237,15 @@
       "market": "US"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
+      "ticker": "WEIR.L",
+      "name": "Weir Group",
       "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "WEIR.L",
-      "name": "Weir Group",
-      "score": 63,
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 64,
       "market": "UK"
     },
     {
@@ -269,6 +269,12 @@
   ],
   "topSmallCap": [
     {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 72,
+      "market": "UK"
+    },
+    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
@@ -278,6 +284,12 @@
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 63,
       "market": "UK"
     },
     {
@@ -293,15 +305,15 @@
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "TSTL.L",
+      "name": "Tristel",
       "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 61,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -315,18 +327,6 @@
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
-    },
-    {
-      "ticker": "SNV",
-      "name": "Synovus Financial",
-      "score": 60,
-      "market": "US"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 60,
-      "market": "UK"
     }
   ],
   "totalStocks": 865,
