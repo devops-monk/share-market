@@ -15,17 +15,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 75,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 74,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -101,6 +101,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HUBS",
       "name": "HubSpot",
       "score": 26,
@@ -110,13 +117,6 @@
     {
       "ticker": "AFRM",
       "name": "Affirm",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -157,16 +157,16 @@
       "market": "JP"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 75,
-      "market": "US"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 75,
       "market": "HK"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 74,
+      "market": "US"
     },
     {
       "ticker": "RWE.DE",
@@ -213,22 +213,22 @@
       "market": "US"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 65,
-      "market": "US"
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 67,
+      "market": "UK"
     },
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 65,
+      "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 65,
-      "market": "UK"
+      "market": "US"
     },
     {
       "ticker": "LUNR",
@@ -275,16 +275,16 @@
       "market": "UK"
     },
     {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 70,
+      "market": "UK"
+    },
+    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 64,
-      "market": "UK"
     },
     {
       "ticker": "WOSG.L",
@@ -305,15 +305,9 @@
       "market": "UK"
     },
     {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 62,
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 61,
       "market": "UK"
     },
     {
@@ -327,9 +321,15 @@
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
+    },
+    {
+      "ticker": "SNV",
+      "name": "Synovus Financial",
+      "score": 60,
+      "market": "US"
     }
   ],
   "totalStocks": 865,
   "avgScore": 50,
-  "bearishAlertCount": 364
+  "bearishAlertCount": 362
 }
