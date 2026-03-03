@@ -36,13 +36,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 72,
@@ -69,6 +62,13 @@
       "score": 72,
       "market": "JP",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "1113.HK",
+      "name": "CK Asset Holdings",
+      "score": 72,
+      "market": "HK",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -94,6 +94,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "INF.L",
+      "name": "Informa",
+      "score": 25,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "GTLB",
       "name": "GitLab",
       "score": 25,
@@ -113,13 +120,6 @@
       "score": 26,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "INF.L",
-      "name": "Informa",
-      "score": 26,
-      "market": "UK",
-      "capCategory": "Large"
     },
     {
       "ticker": "AFRM",
@@ -175,12 +175,6 @@
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 72,
@@ -203,6 +197,12 @@
       "name": "Toyota Motor",
       "score": 72,
       "market": "JP"
+    },
+    {
+      "ticker": "1113.HK",
+      "name": "CK Asset Holdings",
+      "score": 72,
+      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -219,26 +219,20 @@
       "market": "US"
     },
     {
-      "ticker": "WEIR.L",
-      "name": "Weir Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 64,
       "market": "US"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
+      "ticker": "WEIR.L",
+      "name": "Weir Group",
       "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
+      "ticker": "INVP.L",
+      "name": "Investec",
       "score": 64,
       "market": "UK"
     },
@@ -249,29 +243,35 @@
       "market": "UK"
     },
     {
-      "ticker": "UU.L",
-      "name": "United Utilities",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "DRX.L",
-      "name": "Drax Group",
-      "score": 63,
-      "market": "UK"
+      "ticker": "HSIC",
+      "name": "Henry Schein",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "MUR",
+      "name": "Murphy Oil",
+      "score": 62,
+      "market": "US"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 67,
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 69,
       "market": "UK"
     },
     {
@@ -283,30 +283,24 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 65,
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 64,
+      "score": 62,
       "market": "UK"
     },
     {
       "ticker": "HMSO.L",
       "name": "Hammerson",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
       "score": 61,
       "market": "UK"
     },
@@ -323,13 +317,19 @@
       "market": "US"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
       "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 865,
   "avgScore": 50,
-  "bearishAlertCount": 359
+  "bearishAlertCount": 362
 }
