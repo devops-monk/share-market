@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 83,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 79,
@@ -20,13 +13,6 @@
       "score": 76,
       "market": "UK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "DRX.L",
-      "name": "Drax Group",
-      "score": 76,
-      "market": "UK",
-      "capCategory": "Mid"
     },
     {
       "ticker": "INVP.L",
@@ -43,8 +29,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "7203.T",
-      "name": "Toyota Motor",
+      "ticker": "8031.T",
+      "name": "Mitsui & Co",
       "score": 76,
       "market": "JP",
       "capCategory": "Large"
@@ -57,18 +43,32 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0005.HK",
-      "name": "HSBC Holdings",
-      "score": 75,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "OSB.L",
       "name": "OSB Group",
       "score": 74,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 74,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -87,8 +87,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -101,15 +101,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -141,15 +134,16 @@
       "score": 27,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 83,
-      "market": "HK"
-    },
     {
       "ticker": "ONGC.NS",
       "name": "ONGC",
@@ -169,8 +163,8 @@
       "market": "DE"
     },
     {
-      "ticker": "7203.T",
-      "name": "Toyota Motor",
+      "ticker": "8031.T",
+      "name": "Mitsui & Co",
       "score": 76,
       "market": "JP"
     },
@@ -181,20 +175,26 @@
       "market": "US"
     },
     {
-      "ticker": "0005.HK",
-      "name": "HSBC Holdings",
-      "score": 75,
-      "market": "HK"
-    },
-    {
-      "ticker": "1113.HK",
-      "name": "CK Asset Holdings",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
       "score": 74,
       "market": "HK"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "NEM",
       "name": "Newmont",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb",
       "score": 72,
       "market": "US"
     },
@@ -206,12 +206,6 @@
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "DRX.L",
-      "name": "Drax Group",
-      "score": 76,
-      "market": "UK"
-    },
     {
       "ticker": "INVP.L",
       "name": "Investec",
@@ -240,6 +234,12 @@
       "ticker": "SMIN.L",
       "name": "Smiths Group",
       "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "DRX.L",
+      "name": "Drax Group",
+      "score": 66,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 865,
   "avgScore": 51,
-  "bearishAlertCount": 369
+  "bearishAlertCount": 367
 }
