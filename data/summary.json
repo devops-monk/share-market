@@ -57,18 +57,18 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 72,
       "market": "UK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
@@ -87,29 +87,29 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "AI",
       "name": "C3.ai",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Small"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday",
+      "ticker": "CPNG",
+      "name": "Coupang",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -117,16 +117,16 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "FMC",
-      "name": "FMC Corp",
-      "score": 26,
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 25,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Large"
     },
     {
       "ticker": "CHWY",
@@ -187,6 +187,12 @@
       "market": "FR"
     },
     {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 72,
@@ -197,12 +203,6 @@
       "name": "Toyota Motor",
       "score": 72,
       "market": "JP"
-    },
-    {
-      "ticker": "1113.HK",
-      "name": "CK Asset Holdings",
-      "score": 72,
-      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -213,16 +213,16 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 70,
       "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 69,
-      "market": "US"
     },
     {
       "ticker": "PCVX",
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 865,
-  "avgScore": 50,
-  "bearishAlertCount": 351
+  "avgScore": 51,
+  "bearishAlertCount": 358
 }
