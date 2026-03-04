@@ -22,17 +22,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 74,
       "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 73,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -57,28 +57,21 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOC",
-      "name": "Northrop Grumman",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile",
+      "ticker": "NOC",
+      "name": "Northrop Grumman",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Mid"
-    },
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
@@ -87,11 +80,11 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "DDOG",
-      "name": "Datadog",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 21,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "AI",
@@ -108,17 +101,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TRENT.BO",
       "name": "Trent",
       "score": 25,
       "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 25,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -129,18 +122,25 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "KKR",
-      "name": "KKR & Co",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CPNG",
       "name": "Coupang",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FMC",
+      "name": "FMC Corp",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -163,16 +163,16 @@
       "market": "IN"
     },
     {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 74,
+      "market": "US"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 74,
       "market": "UK"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 73,
-      "market": "US"
     },
     {
       "ticker": "RR.L",
@@ -193,14 +193,14 @@
       "market": "US"
     },
     {
-      "ticker": "NOC",
-      "name": "Northrop Grumman",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile",
+      "ticker": "NOC",
+      "name": "Northrop Grumman",
       "score": 70,
       "market": "US"
     }
@@ -213,15 +213,21 @@
       "market": "UK"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 69,
+      "market": "US"
+    },
+    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 68,
       "market": "US"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 68,
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 66,
       "market": "US"
     },
     {
@@ -229,12 +235,6 @@
       "name": "Babcock International",
       "score": 66,
       "market": "UK"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 65,
-      "market": "US"
     },
     {
       "ticker": "HBR.L",
