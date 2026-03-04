@@ -43,6 +43,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "MRK",
       "name": "Merck",
       "score": 71,
@@ -50,23 +57,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 71,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 71,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 70,
       "market": "US",
       "capCategory": "Large"
     }
@@ -89,21 +89,21 @@
     {
       "ticker": "AI",
       "name": "C3.ai",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Small"
     },
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "ESTC",
       "name": "Elastic NV",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -115,18 +115,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FMC",
+      "name": "FMC Corp",
       "score": 26,
       "market": "US",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "MNDY",
@@ -136,8 +136,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "CPNG",
-      "name": "Coupang",
+      "ticker": "KKR",
+      "name": "KKR & Co",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -181,14 +181,20 @@
       "market": "UK"
     },
     {
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "MRK",
       "name": "Merck",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 71,
       "market": "US"
     },
@@ -197,15 +203,21 @@
       "name": "Sun Hung Kai Properties",
       "score": 71,
       "market": "HK"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 70,
-      "market": "US"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 70,
+      "market": "US"
+    },
     {
       "ticker": "WEIR.L",
       "name": "Weir Group",
@@ -213,21 +225,9 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 67,
+      "score": 69,
       "market": "US"
     },
     {
@@ -235,6 +235,18 @@
       "name": "Babcock International",
       "score": 66,
       "market": "UK"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "NNN",
+      "name": "NNN REIT",
+      "score": 64,
+      "market": "US"
     },
     {
       "ticker": "HBR.L",
@@ -253,18 +265,6 @@
       "name": "IMI",
       "score": 64,
       "market": "UK"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "NNN",
-      "name": "NNN REIT",
-      "score": 63,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 865,
-  "avgScore": 50,
-  "bearishAlertCount": 345
+  "avgScore": 51,
+  "bearishAlertCount": 342
 }
