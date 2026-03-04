@@ -108,13 +108,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "INF.L",
-      "name": "Informa",
-      "score": 25,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CPNG",
       "name": "Coupang",
       "score": 25,
@@ -127,6 +120,13 @@
       "score": 25,
       "market": "US",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "INF.L",
+      "name": "Informa",
+      "score": 26,
+      "market": "UK",
+      "capCategory": "Large"
     },
     {
       "ticker": "TENB",
@@ -219,6 +219,12 @@
       "market": "US"
     },
     {
+      "ticker": "WEIR.L",
+      "name": "Weir Group",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "TMDX",
       "name": "TransMedics Group",
       "score": 65,
@@ -233,12 +239,6 @@
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
       "score": 64,
       "market": "UK"
     },
@@ -305,8 +305,8 @@
       "market": "US"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
+      "ticker": "GYM.L",
+      "name": "Gym Group",
       "score": 60,
       "market": "UK"
     },
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 59,
-      "market": "UK"
-    },
-    {
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 59,
       "market": "UK"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 58,
+      "market": "US"
     }
   ],
   "totalStocks": 865,
   "avgScore": 50,
-  "bearishAlertCount": 355
+  "bearishAlertCount": 354
 }
