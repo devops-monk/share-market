@@ -1,10 +1,10 @@
 {
   "topOverall": [
     {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
+      "ticker": "8031.T",
+      "name": "Mitsui & Co",
       "score": 79,
-      "market": "IN",
+      "market": "JP",
       "capCategory": "Large"
     },
     {
@@ -15,24 +15,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 77,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RR.L",
       "name": "Rolls-Royce",
       "score": 76,
       "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
-      "score": 76,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 75,
-      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -57,17 +50,24 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOC",
-      "name": "Northrop Grumman",
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 73,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
+      "ticker": "NOC",
+      "name": "Northrop Grumman",
       "score": 72,
-      "market": "UK",
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -75,7 +75,7 @@
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -85,6 +85,13 @@
       "score": 21,
       "market": "UK",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 24,
+      "market": "IN",
+      "capCategory": "Large"
     },
     {
       "ticker": "ZG",
@@ -103,7 +110,7 @@
     {
       "ticker": "CPNG",
       "name": "Coupang",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
@@ -115,23 +122,9 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "FMC",
-      "name": "FMC Corp",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "CHWY",
-      "name": "Chewy",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 27,
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
@@ -141,14 +134,21 @@
       "score": 27,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "MNDY",
+      "name": "monday.com",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
+      "ticker": "8031.T",
+      "name": "Mitsui & Co",
       "score": 79,
-      "market": "IN"
+      "market": "JP"
     },
     {
       "ticker": "RWE.DE",
@@ -157,22 +157,16 @@
       "market": "DE"
     },
     {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 77,
+      "market": "HK"
+    },
+    {
       "ticker": "RR.L",
       "name": "Rolls-Royce",
       "score": 76,
       "market": "UK"
-    },
-    {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
-      "score": 76,
-      "market": "JP"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 75,
-      "market": "HK"
     },
     {
       "ticker": "EOAN.DE",
@@ -187,22 +181,28 @@
       "market": "FR"
     },
     {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 73,
+      "market": "IN"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "NOC",
       "name": "Northrop Grumman",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 72,
-      "market": "UK"
-    },
-    {
-      "ticker": "7203.T",
-      "name": "Toyota Motor",
-      "score": 72,
-      "market": "JP"
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 865,
   "avgScore": 51,
-  "bearishAlertCount": 362
+  "bearishAlertCount": 364
 }
