@@ -43,6 +43,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 71,
@@ -50,22 +64,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOC",
-      "name": "Northrop Grumman",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -101,11 +101,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DDOG",
-      "name": "Datadog",
-      "score": 24,
+      "ticker": "ESTC",
+      "name": "Elastic NV",
+      "score": 23,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "TRENT.BO",
@@ -115,32 +115,32 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ESTC",
-      "name": "Elastic NV",
-      "score": 25,
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MNDY",
+      "name": "monday.com",
+      "score": 26,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "CPNG",
       "name": "Coupang",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FMC",
-      "name": "FMC Corp",
       "score": 26,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -181,26 +181,26 @@
       "market": "UK"
     },
     {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 71,
       "market": "HK"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "NOC",
-      "name": "Northrop Grumman",
       "score": 70,
       "market": "US"
     }
@@ -227,7 +227,7 @@
     {
       "ticker": "TTC",
       "name": "Toro Company",
-      "score": 66,
+      "score": 67,
       "market": "US"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 865,
   "avgScore": 50,
-  "bearishAlertCount": 338
+  "bearishAlertCount": 345
 }
