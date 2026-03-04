@@ -43,6 +43,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "FCX",
       "name": "Freeport-McMoRan",
       "score": 71,
@@ -62,13 +69,6 @@
       "score": 71,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
@@ -181,6 +181,12 @@
       "market": "US"
     },
     {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "FCX",
       "name": "Freeport-McMoRan",
       "score": 71,
@@ -197,12 +203,6 @@
       "name": "Halliburton",
       "score": 71,
       "market": "US"
-    },
-    {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 71,
-      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -257,7 +257,7 @@
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 62,
+      "score": 63,
       "market": "UK"
     },
     {
@@ -279,6 +279,12 @@
       "name": "Comerica",
       "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "MARS.L",
@@ -319,17 +325,11 @@
     {
       "ticker": "HMSO.L",
       "name": "Hammerson",
-      "score": 59,
+      "score": 60,
       "market": "UK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 58,
-      "market": "US"
     }
   ],
   "totalStocks": 865,
   "avgScore": 50,
-  "bearishAlertCount": 354
+  "bearishAlertCount": 356
 }
