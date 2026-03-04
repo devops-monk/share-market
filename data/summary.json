@@ -24,8 +24,29 @@
     {
       "ticker": "TGT",
       "name": "Target",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RR.L",
+      "name": "Rolls-Royce",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 72,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 72,
+      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -36,13 +57,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 71,
@@ -50,41 +64,27 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "MRNA",
+      "name": "Moderna",
       "score": 70,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
-      "score": 70,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TATASTEEL.NS",
-      "name": "Tata Steel",
-      "score": 70,
-      "market": "IN",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "RPI.L",
-      "name": "Raspberry Pi",
-      "score": 20,
-      "market": "UK",
-      "capCategory": "Small"
-    },
     {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 20,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "RPI.L",
+      "name": "Raspberry Pi",
+      "score": 21,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "CPNG",
@@ -94,6 +94,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 23,
@@ -101,18 +108,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
+      "ticker": "ESTC",
+      "name": "Elastic NV",
       "score": 23,
       "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "TRENT.BO",
@@ -122,13 +122,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "GWRE",
       "name": "Guidewire Software",
       "score": 25,
@@ -136,11 +129,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ESTC",
-      "name": "Elastic NV",
+      "ticker": "KKR",
+      "name": "KKR & Co",
       "score": 25,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -165,8 +165,26 @@
     {
       "ticker": "TGT",
       "name": "Target",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "RR.L",
+      "name": "Rolls-Royce",
+      "score": 73,
+      "market": "UK"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 72,
+      "market": "UK"
     },
     {
       "ticker": "MRK",
@@ -175,37 +193,25 @@
       "market": "US"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 71,
-      "market": "UK"
-    },
-    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 71,
       "market": "HK"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "MRNA",
+      "name": "Moderna",
       "score": 70,
       "market": "US"
-    },
-    {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
-      "score": 70,
-      "market": "IN"
-    },
-    {
-      "ticker": "TATASTEEL.NS",
-      "name": "Tata Steel",
-      "score": 70,
-      "market": "IN"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "WEIR.L",
+      "name": "Weir Group",
+      "score": 70,
+      "market": "UK"
+    },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
@@ -219,16 +225,22 @@
       "market": "US"
     },
     {
-      "ticker": "WEIR.L",
-      "name": "Weir Group",
-      "score": 67,
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "TTC",
       "name": "Toro Company",
-      "score": 64,
+      "score": 65,
       "market": "US"
+    },
+    {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "SDR.L",
@@ -237,33 +249,21 @@
       "market": "UK"
     },
     {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
+      "ticker": "INVP.L",
+      "name": "Investec",
       "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "NNN",
-      "name": "NNN REIT",
+      "ticker": "BEZ.L",
+      "name": "Beazley",
       "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "HSIC",
-      "name": "Henry Schein",
-      "score": 62,
-      "market": "US"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 62,
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 63,
       "market": "UK"
     }
   ],
@@ -271,6 +271,12 @@
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
+      "score": 69,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 67,
       "market": "UK"
     },
@@ -281,20 +287,20 @@
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 65,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
       "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
       "score": 61,
       "market": "UK"
     },
@@ -311,25 +317,19 @@
       "market": "US"
     },
     {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
+      "ticker": "GYM.L",
+      "name": "Gym Group",
       "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 865,
-  "avgScore": 49,
-  "bearishAlertCount": 340
+  "avgScore": 50,
+  "bearishAlertCount": 339
 }
