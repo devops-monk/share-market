@@ -82,9 +82,16 @@
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
-      "score": 20,
+      "score": 21,
       "market": "UK",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "INF.L",
+      "name": "Informa",
+      "score": 24,
+      "market": "UK",
+      "capCategory": "Large"
     },
     {
       "ticker": "ZG",
@@ -101,17 +108,17 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "CPNG",
-      "name": "Coupang",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TRENT.BO",
       "name": "Trent",
       "score": 25,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CPNG",
+      "name": "Coupang",
+      "score": 25,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -122,25 +129,18 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 26,
+      "ticker": "TENB",
+      "name": "Tenable Holdings",
+      "score": 27,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "INF.L",
-      "name": "Informa",
-      "score": 27,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CHWY",
-      "name": "Chewy",
+      "ticker": "MNDY",
+      "name": "monday.com",
       "score": 27,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -199,10 +199,10 @@
       "market": "US"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
       "score": 71,
-      "market": "HK"
+      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -237,8 +237,8 @@
       "market": "UK"
     },
     {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
+      "ticker": "INVP.L",
+      "name": "Investec",
       "score": 64,
       "market": "UK"
     },
@@ -269,20 +269,26 @@
   ],
   "topSmallCap": [
     {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 67,
+      "market": "UK"
+    },
+    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
       "market": "US"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "WIZZ.L",
-      "name": "Wizz Air",
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 61,
       "market": "UK"
     },
@@ -299,8 +305,8 @@
       "market": "US"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 60,
       "market": "UK"
     },
@@ -311,8 +317,8 @@
       "market": "UK"
     },
     {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
+      "ticker": "GYM.L",
+      "name": "Gym Group",
       "score": 59,
       "market": "UK"
     },
@@ -321,15 +327,9 @@
       "name": "Watches of Switzerland",
       "score": 59,
       "market": "UK"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 59,
-      "market": "UK"
     }
   ],
   "totalStocks": 865,
   "avgScore": 50,
-  "bearishAlertCount": 358
+  "bearishAlertCount": 357
 }
