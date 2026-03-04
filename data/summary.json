@@ -87,13 +87,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "INF.L",
-      "name": "Informa",
-      "score": 24,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 24,
@@ -112,6 +105,13 @@
       "name": "Trent",
       "score": 25,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "INF.L",
+      "name": "Informa",
+      "score": 25,
+      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -261,10 +261,10 @@
       "market": "UK"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 61,
-      "market": "US"
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 62,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -281,14 +281,14 @@
       "market": "US"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 65,
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 61,
       "market": "UK"
     },
@@ -305,14 +305,14 @@
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
       "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 60,
       "market": "UK"
     },
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
       "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 865,
   "avgScore": 50,
-  "bearishAlertCount": 357
+  "bearishAlertCount": 355
 }
