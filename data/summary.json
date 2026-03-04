@@ -15,30 +15,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RR.L",
-      "name": "Rolls-Royce",
-      "score": 76,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 74,
-      "market": "FR",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
-      "score": 73,
+      "score": 74,
       "market": "IN",
       "capCategory": "Large"
     },
@@ -64,34 +43,48 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 72,
-      "market": "UK",
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "score": 20,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
-      "score": 21,
+      "score": 20,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 24,
-      "market": "IN",
-      "capCategory": "Large"
     },
     {
       "ticker": "ZG",
@@ -108,9 +101,16 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 25,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CPNG",
       "name": "Coupang",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
@@ -120,13 +120,6 @@
       "score": 25,
       "market": "US",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "CHWY",
-      "name": "Chewy",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "TENB",
@@ -141,6 +134,13 @@
       "score": 27,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -157,21 +157,9 @@
       "market": "HK"
     },
     {
-      "ticker": "RR.L",
-      "name": "Rolls-Royce",
-      "score": 76,
-      "market": "UK"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 74,
-      "market": "FR"
-    },
-    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
-      "score": 73,
+      "score": 74,
       "market": "IN"
     },
     {
@@ -193,25 +181,31 @@
       "market": "US"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 72,
-      "market": "UK"
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan",
+      "score": 71,
+      "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE"
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 71,
+      "market": "HK"
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 72,
-      "market": "UK"
-    },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
@@ -225,61 +219,55 @@
       "market": "US"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 70,
-      "market": "UK"
+      "ticker": "TMDX",
+      "name": "TransMedics Group",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 64,
+      "market": "US"
     },
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
-      "score": 70,
+      "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 69,
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 63,
+      "market": "US"
+    },
+    {
+      "ticker": "HSIC",
+      "name": "Henry Schein",
+      "score": 63,
+      "market": "US"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "MRO.L",
-      "name": "Melrose Industries",
-      "score": 67,
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "WEIR.L",
-      "name": "Weir Group",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "HWDN.L",
-      "name": "Howden Joinery",
-      "score": 67,
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 62,
       "market": "UK"
     }
   ],
   "topSmallCap": [
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 74,
-      "market": "UK"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 67,
-      "market": "UK"
-    },
     {
       "ticker": "CMA",
       "name": "Comerica",
@@ -287,49 +275,61 @@
       "market": "US"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "WIZZ.L",
-      "name": "Wizz Air",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 63,
+      "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 62,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "0011.HK",
+      "name": "Hang Seng Bank",
+      "score": 61,
+      "market": "HK"
+    },
+    {
+      "ticker": "SNV",
+      "name": "Synovus Financial",
+      "score": 60,
+      "market": "US"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 60,
       "market": "UK"
     },
     {
       "ticker": "SNR.L",
       "name": "Senior plc",
-      "score": 61,
+      "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 61,
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
+      "score": 59,
       "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 58,
+      "market": "US"
     }
   ],
   "totalStocks": 865,
-  "avgScore": 51,
-  "bearishAlertCount": 361
+  "avgScore": 50,
+  "bearishAlertCount": 358
 }
