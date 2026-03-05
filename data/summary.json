@@ -57,15 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "PSX",
+      "name": "Phillips 66",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "PSX",
-      "name": "Phillips 66",
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -108,13 +108,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "MNDY",
       "name": "monday.com",
       "score": 26,
@@ -138,6 +131,13 @@
     {
       "ticker": "WDAY",
       "name": "Workday",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -193,14 +193,14 @@
       "market": "JP"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "PSX",
+      "name": "Phillips 66",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "PSX",
-      "name": "Phillips 66",
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
       "score": 72,
       "market": "US"
     }
@@ -261,10 +261,10 @@
       "market": "UK"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 61,
-      "market": "US"
+      "ticker": "HWDN.L",
+      "name": "Howden Joinery",
+      "score": 62,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -293,15 +293,9 @@
       "market": "UK"
     },
     {
-      "ticker": "WIZZ.L",
-      "name": "Wizz Air",
-      "score": 62,
-      "market": "UK"
-    },
-    {
       "ticker": "CURY.L",
       "name": "Currys",
-      "score": 62,
+      "score": 61,
       "market": "UK"
     },
     {
@@ -323,6 +317,12 @@
       "market": "UK"
     },
     {
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
+      "score": 60,
+      "market": "UK"
+    },
+    {
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 60,
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 865,
   "avgScore": 50,
-  "bearishAlertCount": 335
+  "bearishAlertCount": 336
 }
