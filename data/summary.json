@@ -36,13 +36,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 71,
@@ -52,20 +45,27 @@
     {
       "ticker": "TGT",
       "name": "Target",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "0005.HK",
-      "name": "HSBC Holdings",
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 70,
-      "market": "HK",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
+      "ticker": "0005.HK",
+      "name": "HSBC Holdings",
       "score": 70,
       "market": "HK",
       "capCategory": "Large"
@@ -94,9 +94,23 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 24,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -108,22 +122,15 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CPNG",
       "name": "Coupang",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SE",
-      "name": "Sea Limited",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -134,13 +141,6 @@
       "score": 25,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -175,12 +175,6 @@
       "market": "JP"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 71,
@@ -189,6 +183,12 @@
     {
       "ticker": "TGT",
       "name": "Target",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 70,
       "market": "US"
     },
@@ -207,38 +207,50 @@
   ],
   "topMidCap": [
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 66,
-      "market": "US"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 66,
-      "market": "US"
-    },
-    {
       "ticker": "PSN.L",
       "name": "Persimmon",
-      "score": 65,
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "INVP.L",
       "name": "Investec",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "BLND.L",
+      "name": "British Land",
       "score": 64,
       "market": "UK"
     },
     {
       "ticker": "SDR.L",
       "name": "Schroders",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "BWY.L",
+      "name": "Bellway",
       "score": 63,
       "market": "UK"
     },
     {
       "ticker": "HWDN.L",
       "name": "Howden Joinery",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "OSB.L",
+      "name": "OSB Group",
       "score": 63,
       "market": "UK"
     },
@@ -253,25 +265,19 @@
       "name": "DigitalOcean",
       "score": 62,
       "market": "US"
-    },
-    {
-      "ticker": "BWY.L",
-      "name": "Bellway",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "BLND.L",
-      "name": "British Land",
-      "score": 61,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 70,
+      "market": "UK"
+    },
+    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 67,
+      "score": 68,
       "market": "UK"
     },
     {
@@ -283,19 +289,19 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 66,
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "WIZZ.L",
       "name": "Wizz Air",
-      "score": 64,
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "JDW.L",
+      "name": "J D Wetherspoon",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -305,31 +311,25 @@
       "market": "HK"
     },
     {
-      "ticker": "SNV",
-      "name": "Synovus Financial",
-      "score": 60,
-      "market": "US"
-    },
-    {
       "ticker": "FOUR.L",
       "name": "4imprint",
-      "score": 59,
+      "score": 60,
       "market": "UK"
     },
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 59,
+      "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 58,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 60,
       "market": "UK"
     }
   ],
-  "totalStocks": 865,
+  "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 325
+  "bearishAlertCount": 331
 }
