@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-03-04T21:15:45.632Z",
+  "lastUpdated": "2026-03-05T07:24:37.152Z",
   "stockCount": 865,
-  "bearishAlerts": 342,
-  "newsCount": 600,
+  "bearishAlerts": 344,
+  "newsCount": 500,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
@@ -26,13 +26,13 @@
     },
     "in": {
       "index": "Nifty 50",
-      "price": 24480.5,
-      "sma50": 25668.56,
-      "sma200": 25346.01,
-      "changeFromHigh": -7.02,
-      "distributionDays": 7,
+      "price": 24635.65,
+      "sma50": 25641.94,
+      "sma200": 25344.08,
+      "changeFromHigh": -6.43,
+      "distributionDays": 8,
       "regime": "correction",
-      "signal": "7 distribution days in 25 sessions — selling pressure"
+      "signal": "8 distribution days in 25 sessions — selling pressure"
     },
     "eu": {
       "index": "DAX 40",
@@ -46,13 +46,13 @@
     },
     "asia": {
       "index": "Nikkei 225",
-      "price": 54245.54,
-      "sma50": 53898.2,
-      "sma200": 46269.28,
-      "changeFromHigh": -7.82,
-      "distributionDays": 7,
+      "price": 55278.06,
+      "sma50": 54013.52,
+      "sma200": 46357.44,
+      "changeFromHigh": -6.07,
+      "distributionDays": 8,
       "regime": "correction",
-      "signal": "7 distribution days in 25 sessions — selling pressure"
+      "signal": "8 distribution days in 25 sessions — selling pressure"
     },
     "overall": "correction",
     "summary": "Markets showing weakness. Be selective, reduce position sizes, and tighten stops."

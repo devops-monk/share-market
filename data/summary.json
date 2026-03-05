@@ -3,22 +3,22 @@
     {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
-      "score": 79,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
       "score": 78,
-      "market": "HK",
+      "market": "JP",
       "capCategory": "Large"
     },
     {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
-      "score": 75,
+      "score": 77,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 76,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -36,6 +36,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RR.L",
       "name": "Rolls-Royce",
       "score": 73,
@@ -43,31 +57,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile",
-      "score": 72,
-      "market": "US",
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco",
+      "score": 73,
+      "market": "IN",
       "capCategory": "Large"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 71,
-      "market": "US",
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 73,
+      "market": "JP",
       "capCategory": "Large"
     }
   ],
@@ -94,6 +94,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 24,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 24,
@@ -103,30 +110,16 @@
     {
       "ticker": "ESTC",
       "name": "Elastic NV",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 25,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "FMC",
-      "name": "FMC Corp",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Small"
     },
     {
       "ticker": "MNDY",
@@ -141,26 +134,33 @@
       "score": 26,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CPNG",
+      "name": "Coupang",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
-      "score": 79,
-      "market": "JP"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
       "score": 78,
-      "market": "HK"
+      "market": "JP"
     },
     {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
-      "score": 75,
+      "score": 77,
       "market": "IN"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 76,
+      "market": "HK"
     },
     {
       "ticker": "TGT",
@@ -175,34 +175,34 @@
       "market": "UK"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "RR.L",
       "name": "Rolls-Royce",
       "score": 73,
       "market": "UK"
     },
     {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile",
-      "score": 72,
-      "market": "US"
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco",
+      "score": 73,
+      "market": "IN"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 71,
-      "market": "HK"
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 73,
+      "market": "JP"
     }
   ],
   "topMidCap": [
@@ -210,12 +210,6 @@
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 70,
       "market": "US"
     },
     {
@@ -231,6 +225,12 @@
       "market": "US"
     },
     {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 68,
+      "market": "US"
+    },
+    {
       "ticker": "BAB.L",
       "name": "Babcock International",
       "score": 66,
@@ -239,12 +239,6 @@
     {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
-      "score": 64,
-      "market": "US"
-    },
-    {
-      "ticker": "NNN",
-      "name": "NNN REIT",
       "score": 64,
       "market": "US"
     },
@@ -263,6 +257,12 @@
     {
       "ticker": "IMI.L",
       "name": "IMI",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
       "score": 64,
       "market": "UK"
     }
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 865,
   "avgScore": 51,
-  "bearishAlertCount": 342
+  "bearishAlertCount": 344
 }
