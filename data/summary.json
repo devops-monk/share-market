@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco",
+      "score": 77,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 76,
@@ -22,23 +29,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HINDALCO.NS",
-      "name": "Hindalco",
-      "score": 75,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TGT",
       "name": "Target",
       "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
@@ -54,6 +47,13 @@
       "name": "Shin-Etsu Chemical",
       "score": 73,
       "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 72,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -87,20 +87,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 24,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 24,
@@ -108,18 +94,32 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AML.L",
+      "name": "Aston Martin",
+      "score": 25,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "ESTC",
       "name": "Elastic NV",
       "score": 25,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "MNDY",
@@ -157,27 +157,21 @@
       "market": "JP"
     },
     {
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco",
+      "score": 77,
+      "market": "IN"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 76,
       "market": "HK"
     },
     {
-      "ticker": "HINDALCO.NS",
-      "name": "Hindalco",
-      "score": 75,
-      "market": "IN"
-    },
-    {
       "ticker": "TGT",
       "name": "Target",
       "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 73,
       "market": "US"
     },
     {
@@ -191,6 +185,12 @@
       "name": "Shin-Etsu Chemical",
       "score": 73,
       "market": "JP"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 72,
+      "market": "US"
     },
     {
       "ticker": "PSX",
@@ -255,16 +255,16 @@
       "market": "US"
     },
     {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 61,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -287,9 +287,15 @@
       "market": "US"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 63,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -305,31 +311,25 @@
       "market": "HK"
     },
     {
-      "ticker": "SNV",
-      "name": "Synovus Financial",
-      "score": 60,
-      "market": "US"
-    },
-    {
       "ticker": "FOUR.L",
       "name": "4imprint",
-      "score": 59,
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 60,
       "market": "UK"
     },
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
       "score": 58,
       "market": "UK"
     }
   ],
-  "totalStocks": 865,
+  "totalStocks": 864,
   "avgScore": 50,
-  "bearishAlertCount": 338
+  "bearishAlertCount": 337
 }
