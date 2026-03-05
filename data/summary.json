@@ -38,14 +38,7 @@
     {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 71,
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -69,6 +62,13 @@
       "score": 70,
       "market": "HK",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 70,
+      "market": "HK",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -80,13 +80,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "GRAB",
       "name": "Grab Holdings",
       "score": 22,
@@ -94,11 +87,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 22,
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 23,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Large"
     },
     {
       "ticker": "UPST",
@@ -122,13 +115,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CPNG",
       "name": "Coupang",
       "score": 25,
@@ -136,9 +122,23 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 25,
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SE",
+      "name": "Sea Limited",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     }
@@ -177,13 +177,7 @@
     {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
@@ -203,9 +197,21 @@
       "name": "Sun Hung Kai Properties",
       "score": 70,
       "market": "HK"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 67,
+      "market": "US"
+    },
     {
       "ticker": "PSN.L",
       "name": "Persimmon",
@@ -213,16 +219,16 @@
       "market": "UK"
     },
     {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "INVP.L",
       "name": "Investec",
       "score": 65,
       "market": "UK"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 64,
-      "market": "US"
     },
     {
       "ticker": "BLND.L",
@@ -235,6 +241,12 @@
       "name": "Schroders",
       "score": 64,
       "market": "UK"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 63,
+      "market": "US"
     },
     {
       "ticker": "BWY.L",
@@ -253,18 +265,6 @@
       "name": "OSB Group",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 62,
-      "market": "US"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 62,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 331
+  "bearishAlertCount": 337
 }
