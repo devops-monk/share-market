@@ -36,13 +36,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 73,
@@ -54,6 +47,13 @@
       "name": "Shin-Etsu Chemical",
       "score": 73,
       "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 72,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -87,15 +87,22 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "AI",
       "name": "C3.ai",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Small"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -134,13 +141,6 @@
       "score": 26,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -175,12 +175,6 @@
       "market": "US"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 73,
-      "market": "US"
-    },
-    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 73,
@@ -191,6 +185,12 @@
       "name": "Shin-Etsu Chemical",
       "score": 73,
       "market": "JP"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 72,
+      "market": "US"
     },
     {
       "ticker": "PSX",
@@ -237,8 +237,8 @@
       "market": "US"
     },
     {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
+      "ticker": "PSN.L",
+      "name": "Persimmon",
       "score": 64,
       "market": "UK"
     },
@@ -261,9 +261,9 @@
       "market": "UK"
     },
     {
-      "ticker": "HWDN.L",
-      "name": "Howden Joinery",
-      "score": 62,
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 63,
       "market": "UK"
     }
   ],
@@ -293,6 +293,12 @@
       "market": "UK"
     },
     {
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "CURY.L",
       "name": "Currys",
       "score": 61,
@@ -313,12 +319,6 @@
     {
       "ticker": "FOUR.L",
       "name": "4imprint",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "WIZZ.L",
-      "name": "Wizz Air",
       "score": 60,
       "market": "UK"
     },
