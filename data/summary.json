@@ -38,13 +38,13 @@
     {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 72,
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -80,11 +80,11 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 22,
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 20,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
@@ -94,11 +94,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
       "score": 23,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "U",
@@ -115,13 +115,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "CPNG",
-      "name": "Coupang",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "PODD",
       "name": "Insulet Corp",
       "score": 26,
@@ -129,18 +122,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SE",
-      "name": "Sea Limited",
+      "ticker": "CPNG",
+      "name": "Coupang",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 26,
-      "market": "US",
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 27,
+      "market": "IN",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "FMC",
+      "name": "FMC Corp",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -177,12 +177,12 @@
     {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 72,
+      "score": 71,
       "market": "US"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 70,
       "market": "US"
     },
@@ -199,8 +199,8 @@
       "market": "HK"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "MRK",
+      "name": "Merck",
       "score": 69,
       "market": "US"
     }
@@ -311,6 +311,12 @@
       "market": "HK"
     },
     {
+      "ticker": "SNV",
+      "name": "Synovus Financial",
+      "score": 60,
+      "market": "US"
+    },
+    {
       "ticker": "FOUR.L",
       "name": "4imprint",
       "score": 60,
@@ -321,15 +327,9 @@
       "name": "Marston's",
       "score": 60,
       "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 60,
-      "market": "UK"
     }
   ],
-  "totalStocks": 864,
-  "avgScore": 49,
-  "bearishAlertCount": 337
+  "totalStocks": 865,
+  "avgScore": 50,
+  "bearishAlertCount": 334
 }
