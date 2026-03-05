@@ -38,7 +38,21 @@
     {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 71,
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
@@ -50,24 +64,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 70,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "0005.HK",
-      "name": "HSBC Holdings",
-      "score": 70,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 70,
-      "market": "HK",
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -80,23 +80,30 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 23,
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "SE",
+      "name": "Sea Limited",
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
@@ -115,6 +122,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "BROS",
+      "name": "Dutch Bros",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "PODD",
       "name": "Insulet Corp",
       "score": 26,
@@ -127,20 +141,6 @@
       "score": 26,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 27,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FMC",
-      "name": "FMC Corp",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -177,7 +177,19 @@
     {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 71,
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 70,
       "market": "US"
     },
     {
@@ -187,21 +199,9 @@
       "market": "US"
     },
     {
-      "ticker": "0005.HK",
-      "name": "HSBC Holdings",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 70,
-      "market": "HK"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 70,
-      "market": "HK"
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 69,
       "market": "US"
     }
   ],
@@ -213,16 +213,16 @@
       "market": "US"
     },
     {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 66,
+      "market": "US"
+    },
+    {
       "ticker": "PSN.L",
       "name": "Persimmon",
       "score": 66,
       "market": "UK"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 65,
-      "market": "US"
     },
     {
       "ticker": "INVP.L",
@@ -243,6 +243,12 @@
       "market": "UK"
     },
     {
+      "ticker": "NNN",
+      "name": "NNN REIT",
+      "score": 63,
+      "market": "US"
+    },
+    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 63,
@@ -257,12 +263,6 @@
     {
       "ticker": "HWDN.L",
       "name": "Howden Joinery",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
       "score": 63,
       "market": "UK"
     }
@@ -311,12 +311,6 @@
       "market": "HK"
     },
     {
-      "ticker": "SNV",
-      "name": "Synovus Financial",
-      "score": 60,
-      "market": "US"
-    },
-    {
       "ticker": "FOUR.L",
       "name": "4imprint",
       "score": 60,
@@ -327,9 +321,15 @@
       "name": "Marston's",
       "score": 60,
       "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 60,
+      "market": "UK"
     }
   ],
-  "totalStocks": 865,
+  "totalStocks": 864,
   "avgScore": 50,
-  "bearishAlertCount": 334
+  "bearishAlertCount": 329
 }
