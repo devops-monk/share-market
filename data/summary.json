@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 73,
@@ -50,8 +57,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "MRK",
+      "name": "Merck",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -59,13 +66,6 @@
     {
       "ticker": "PSX",
       "name": "Phillips 66",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -87,6 +87,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 24,
@@ -94,32 +101,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AML.L",
-      "name": "Aston Martin",
-      "score": 25,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "ESTC",
       "name": "Elastic NV",
       "score": 25,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "MNDY",
@@ -138,6 +131,13 @@
     {
       "ticker": "CPNG",
       "name": "Coupang",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -175,6 +175,12 @@
       "market": "US"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 73,
@@ -187,20 +193,14 @@
       "market": "JP"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "MRK",
+      "name": "Merck",
       "score": 72,
       "market": "US"
     },
     {
       "ticker": "PSX",
       "name": "Phillips 66",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile",
       "score": 72,
       "market": "US"
     }
@@ -275,12 +275,6 @@
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 67,
-      "market": "UK"
-    },
-    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
@@ -293,15 +287,21 @@
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 62,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 64,
       "market": "UK"
     },
     {
       "ticker": "WIZZ.L",
       "name": "Wizz Air",
-      "score": 61,
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -309,6 +309,12 @@
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
+    },
+    {
+      "ticker": "SNV",
+      "name": "Synovus Financial",
+      "score": 60,
+      "market": "US"
     },
     {
       "ticker": "FOUR.L",
@@ -321,15 +327,9 @@
       "name": "Hammerson",
       "score": 60,
       "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 58,
-      "market": "UK"
     }
   ],
-  "totalStocks": 864,
+  "totalStocks": 865,
   "avgScore": 50,
-  "bearishAlertCount": 337
+  "bearishAlertCount": 335
 }
