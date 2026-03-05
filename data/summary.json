@@ -29,6 +29,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
       "score": 73,
@@ -36,8 +50,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "HAL",
+      "name": "Halliburton",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -45,28 +59,14 @@
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 70,
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "TGT",
       "name": "Target",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 70,
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     }
@@ -80,6 +80,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "GRAB",
       "name": "Grab Holdings",
       "score": 23,
@@ -89,34 +96,20 @@
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "SE",
       "name": "Sea Limited",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "U",
       "name": "Unity Software",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "MNDY",
-      "name": "monday.com",
       "score": 25,
       "market": "US",
       "capCategory": "Mid"
@@ -129,16 +122,23 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
+      "ticker": "MNDY",
+      "name": "monday.com",
       "score": 26,
       "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 27,
+      "market": "IN",
       "capCategory": "Large"
     },
     {
-      "ticker": "CPNG",
-      "name": "Coupang",
-      "score": 26,
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 27,
       "market": "US",
       "capCategory": "Large"
     }
@@ -169,39 +169,39 @@
       "market": "HK"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
       "score": 73,
       "market": "JP"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "HAL",
+      "name": "Halliburton",
       "score": 72,
       "market": "US"
     },
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 70,
+      "score": 71,
       "market": "US"
     },
     {
       "ticker": "TGT",
       "name": "Target",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 70,
+      "score": 71,
       "market": "US"
     }
   ],
@@ -209,13 +209,13 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 67,
+      "score": 68,
       "market": "US"
     },
     {
       "ticker": "TTC",
       "name": "Toro Company",
-      "score": 66,
+      "score": 67,
       "market": "US"
     },
     {
@@ -225,10 +225,22 @@
       "market": "UK"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "INVP.L",
       "name": "Investec",
       "score": 65,
       "market": "UK"
+    },
+    {
+      "ticker": "NNN",
+      "name": "NNN REIT",
+      "score": 64,
+      "market": "US"
     },
     {
       "ticker": "BLND.L",
@@ -243,26 +255,14 @@
       "market": "UK"
     },
     {
-      "ticker": "NNN",
-      "name": "NNN REIT",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 63,
       "market": "US"
     },
     {
       "ticker": "BWY.L",
       "name": "Bellway",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "HWDN.L",
-      "name": "Howden Joinery",
       "score": 63,
       "market": "UK"
     }
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 50,
-  "bearishAlertCount": 329
+  "bearishAlertCount": 332
 }
