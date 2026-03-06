@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-03-05T21:16:40.885Z",
+  "lastUpdated": "2026-03-06T07:23:21.884Z",
   "stockCount": 864,
-  "bearishAlerts": 332,
+  "bearishAlerts": 337,
   "newsCount": 500,
   "marketRegime": {
     "us": {
@@ -10,9 +10,9 @@
       "sma50": 6905.22,
       "sma200": 6578.65,
       "changeFromHigh": -2.12,
-      "distributionDays": 10,
+      "distributionDays": 11,
       "regime": "correction",
-      "signal": "10 distribution days in 25 sessions — selling pressure"
+      "signal": "11 distribution days in 25 sessions — selling pressure"
     },
     "uk": {
       "index": "FTSE 100",
@@ -20,16 +20,16 @@
       "sma50": 10307.89,
       "sma200": 9528.08,
       "changeFromHigh": -4.55,
-      "distributionDays": 7,
+      "distributionDays": 8,
       "regime": "correction",
-      "signal": "7 distribution days in 25 sessions — selling pressure"
+      "signal": "8 distribution days in 25 sessions — selling pressure"
     },
     "in": {
       "index": "Nifty 50",
-      "price": 24765.9,
-      "sma50": 25644.55,
-      "sma200": 25344.74,
-      "changeFromHigh": -5.94,
+      "price": 24597.15,
+      "sma50": 25613.04,
+      "sma200": 25342.99,
+      "changeFromHigh": -6.58,
       "distributionDays": 8,
       "regime": "correction",
       "signal": "8 distribution days in 25 sessions — selling pressure"
@@ -40,16 +40,16 @@
       "sma50": 24827.71,
       "sma200": 24174.58,
       "changeFromHigh": -6.31,
-      "distributionDays": 5,
+      "distributionDays": 6,
       "regime": "correction",
-      "signal": "Price below SMA200 — trend weakening"
+      "signal": "6 distribution days in 25 sessions — selling pressure"
     },
     "asia": {
       "index": "Nikkei 225",
-      "price": 55278.06,
-      "sma50": 54013.52,
-      "sma200": 46357.44,
-      "changeFromHigh": -6.07,
+      "price": 55620.84,
+      "sma50": 54145.91,
+      "sma200": 46444.63,
+      "changeFromHigh": -5.49,
       "distributionDays": 8,
       "regime": "correction",
       "signal": "8 distribution days in 25 sessions — selling pressure"
