@@ -57,8 +57,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -136,11 +136,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
+      "ticker": "U",
+      "name": "Unity Software",
       "score": 26,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -193,8 +193,8 @@
       "market": "IN"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 70,
       "market": "US"
     },
@@ -217,12 +217,6 @@
       "name": "Toro Company",
       "score": 67,
       "market": "US"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 67,
-      "market": "UK"
     },
     {
       "ticker": "PCVX",
@@ -261,17 +255,23 @@
       "market": "UK"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
+      "ticker": "WEIR.L",
+      "name": "Weir Group",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "TMDX",
+      "name": "TransMedics Group",
+      "score": 61,
+      "market": "US"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 67,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 70,
       "market": "UK"
     },
     {
@@ -281,15 +281,27 @@
       "market": "US"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 65,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 61,
       "market": "UK"
     },
     {
@@ -299,34 +311,22 @@
       "market": "HK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 58,
-      "market": "UK"
-    },
-    {
       "ticker": "BBW",
       "name": "Build-A-Bear Workshop",
       "score": 57,
       "market": "US"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 56,
-      "market": "US"
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
+      "score": 57,
+      "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 57,
+      "market": "UK"
     }
   ],
   "totalStocks": 864,
