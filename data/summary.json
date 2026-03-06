@@ -1,17 +1,24 @@
 {
   "topOverall": [
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 75,
       "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 73,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -22,8 +29,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -36,8 +50,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -50,24 +64,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 70,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 70,
-      "market": "UK",
       "capCategory": "Large"
     }
   ],
@@ -89,23 +89,16 @@
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "GRAB",
       "name": "Grab Holdings",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "TRENT.BO",
@@ -117,6 +110,13 @@
     {
       "ticker": "DASH",
       "name": "DoorDash",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -136,25 +136,31 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "SE",
-      "name": "Sea Limited",
+      "ticker": "U",
+      "name": "Unity Software",
       "score": 25,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 75,
-      "market": "US"
-    },
     {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 75,
       "market": "JP"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 73,
+      "market": "US"
     },
     {
       "ticker": "0883.HK",
@@ -163,8 +169,14 @@
       "market": "HK"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 72,
       "market": "US"
     },
@@ -175,8 +187,8 @@
       "market": "US"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
       "score": 71,
       "market": "US"
     },
@@ -187,29 +199,17 @@
       "market": "IN"
     },
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 70,
       "market": "US"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 70,
-      "market": "UK"
     }
   ],
   "topMidCap": [
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 68,
+      "score": 69,
       "market": "US"
     },
     {
@@ -249,22 +249,22 @@
       "market": "US"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "WEIR.L",
       "name": "Weir Group",
       "score": 65,
       "market": "UK"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 64,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -311,16 +311,16 @@
       "market": "HK"
     },
     {
+      "ticker": "BBW",
+      "name": "Build-A-Bear Workshop",
+      "score": 60,
+      "market": "US"
+    },
+    {
       "ticker": "FOUR.L",
       "name": "4imprint",
       "score": 60,
       "market": "UK"
-    },
-    {
-      "ticker": "BBW",
-      "name": "Build-A-Bear Workshop",
-      "score": 59,
-      "market": "US"
     },
     {
       "ticker": "RNWH.L",
@@ -329,7 +329,7 @@
       "market": "UK"
     }
   ],
-  "totalStocks": 864,
-  "avgScore": 49,
-  "bearishAlertCount": 340
+  "totalStocks": 863,
+  "avgScore": 50,
+  "bearishAlertCount": 339
 }
