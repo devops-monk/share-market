@@ -17,7 +17,7 @@
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 71,
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -27,20 +27,6 @@
       "score": 71,
       "market": "IN",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Small"
     },
     {
       "ticker": "COALINDIA.NS",
@@ -68,6 +54,20 @@
       "name": "CK Asset Holdings",
       "score": 70,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 69,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 69,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -101,25 +101,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "WDAY",
-      "name": "Workday",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "U",
       "name": "Unity Software",
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "TRENT.BO",
@@ -136,8 +122,22 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RARE",
+      "name": "Ultragenyx Pharmaceutical",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "SE",
       "name": "Sea Limited",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -159,7 +159,7 @@
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
@@ -167,12 +167,6 @@
       "name": "Hindalco",
       "score": 71,
       "market": "IN"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 70,
-      "market": "US"
     },
     {
       "ticker": "COALINDIA.NS",
@@ -199,6 +193,12 @@
       "market": "HK"
     },
     {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 69,
+      "market": "US"
+    },
+    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 69,
@@ -209,8 +209,14 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 68,
+      "score": 67,
       "market": "US"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 67,
+      "market": "UK"
     },
     {
       "ticker": "PSN.L",
@@ -222,6 +228,12 @@
       "ticker": "MGNS.L",
       "name": "Morgan Sindall",
       "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "SBRY.L",
+      "name": "Sainsbury",
+      "score": 63,
       "market": "UK"
     },
     {
@@ -237,33 +249,21 @@
       "market": "UK"
     },
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 62,
       "market": "US"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 61,
-      "market": "US"
-    },
-    {
-      "ticker": "BWY.L",
-      "name": "Bellway",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 61,
-      "market": "UK"
-    },
-    {
       "ticker": "TTC",
       "name": "Toro Company",
-      "score": 60,
+      "score": 62,
       "market": "US"
     }
   ],
@@ -271,7 +271,7 @@
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 70,
+      "score": 67,
       "market": "UK"
     },
     {
@@ -287,8 +287,8 @@
       "market": "UK"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
       "score": 62,
       "market": "UK"
     },
@@ -311,8 +311,8 @@
       "market": "HK"
     },
     {
-      "ticker": "WIZZ.L",
-      "name": "Wizz Air",
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
       "score": 58,
       "market": "UK"
     },
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 48,
-  "bearishAlertCount": 340
+  "bearishAlertCount": 337
 }
