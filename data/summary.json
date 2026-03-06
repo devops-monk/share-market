@@ -43,6 +43,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TGT",
       "name": "Target",
       "score": 71,
@@ -50,10 +57,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 70,
-      "market": "US",
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco",
+      "score": 71,
+      "market": "IN",
       "capCategory": "Large"
     },
     {
@@ -62,20 +69,13 @@
       "score": 70,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
-      "score": 20,
+      "score": 19,
       "market": "UK",
       "capCategory": "Small"
     },
@@ -98,6 +98,13 @@
       "name": "Trent",
       "score": 24,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "INF.L",
+      "name": "Informa",
+      "score": 24,
+      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -134,13 +141,6 @@
       "score": 26,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -181,28 +181,28 @@
       "market": "US"
     },
     {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 72,
+      "market": "UK"
+    },
+    {
       "ticker": "TGT",
       "name": "Target",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 70,
-      "market": "US"
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco",
+      "score": 71,
+      "market": "IN"
     },
     {
       "ticker": "TRGP",
       "name": "Targa Resources",
       "score": 70,
       "market": "US"
-    },
-    {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 70,
-      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -237,22 +237,10 @@
       "market": "UK"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "NNN",
       "name": "NNN REIT",
       "score": 64,
       "market": "US"
-    },
-    {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 64,
-      "market": "UK"
     },
     {
       "ticker": "DOCN",
@@ -261,8 +249,20 @@
       "market": "US"
     },
     {
+      "ticker": "PSN.L",
+      "name": "Persimmon",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
       "score": 63,
       "market": "UK"
     }
@@ -275,8 +275,8 @@
       "market": "US"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 66,
       "market": "UK"
     },
@@ -287,15 +287,9 @@
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 61,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 64,
       "market": "UK"
     },
     {
@@ -305,21 +299,21 @@
       "market": "HK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 60,
-      "market": "UK"
-    },
-    {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 60,
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 58,
       "market": "UK"
     },
     {
@@ -327,9 +321,15 @@
       "name": "Build-A-Bear Workshop",
       "score": 57,
       "market": "US"
+    },
+    {
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
+      "score": 57,
+      "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 50,
-  "bearishAlertCount": 330
+  "bearishAlertCount": 331
 }
