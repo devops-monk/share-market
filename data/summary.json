@@ -8,13 +8,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 74,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 73,
@@ -43,6 +36,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "WEIR.L",
+      "name": "Weir Group",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 72,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TGT",
       "name": "Target",
       "score": 71,
@@ -62,13 +69,6 @@
       "score": 70,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
@@ -151,12 +151,6 @@
       "market": "JP"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 74,
-      "market": "HK"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 73,
@@ -179,6 +173,12 @@
       "name": "CF Industries",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 72,
+      "market": "HK"
     },
     {
       "ticker": "TGT",
@@ -206,6 +206,12 @@
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "WEIR.L",
+      "name": "Weir Group",
+      "score": 72,
+      "market": "UK"
+    },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
@@ -259,12 +265,6 @@
       "name": "DigitalOcean",
       "score": 63,
       "market": "US"
-    },
-    {
-      "ticker": "BWY.L",
-      "name": "Bellway",
-      "score": 63,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 50,
-  "bearishAlertCount": 337
+  "bearishAlertCount": 336
 }
