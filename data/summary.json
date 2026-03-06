@@ -1,17 +1,17 @@
 {
   "topOverall": [
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 75,
       "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 73,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -22,8 +22,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -36,8 +50,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -50,24 +64,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 70,
       "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
-      "score": 70,
-      "market": "IN",
       "capCategory": "Large"
     }
   ],
@@ -82,16 +82,9 @@
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "ZG",
@@ -141,20 +134,27 @@
       "score": 25,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "SE",
+      "name": "Sea Limited",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 75,
+      "market": "US"
+    },
     {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 75,
       "market": "JP"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 73,
-      "market": "US"
     },
     {
       "ticker": "0883.HK",
@@ -163,8 +163,20 @@
       "market": "HK"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 71,
       "market": "US"
     },
@@ -175,8 +187,8 @@
       "market": "IN"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
       "score": 70,
       "market": "US"
     },
@@ -187,29 +199,17 @@
       "market": "US"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 70,
       "market": "UK"
-    },
-    {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
-      "score": 70,
-      "market": "IN"
     }
   ],
   "topMidCap": [
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 69,
+      "score": 68,
       "market": "US"
     },
     {
@@ -243,6 +243,12 @@
       "market": "UK"
     },
     {
+      "ticker": "WAL",
+      "name": "Western Alliance Bancorp",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "WEIR.L",
       "name": "Weir Group",
       "score": 65,
@@ -255,16 +261,10 @@
       "market": "UK"
     },
     {
-      "ticker": "WAL",
-      "name": "Western Alliance Bancorp",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 64,
       "market": "US"
-    },
-    {
-      "ticker": "ITV.L",
-      "name": "ITV",
-      "score": 64,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
+      "ticker": "BBW",
+      "name": "Build-A-Bear Workshop",
       "score": 59,
-      "market": "UK"
+      "market": "US"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
       "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 341
+  "bearishAlertCount": 340
 }
