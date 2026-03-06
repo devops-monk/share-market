@@ -43,6 +43,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TGT",
       "name": "Target",
       "score": 71,
@@ -59,13 +66,6 @@
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TRGP",
-      "name": "Targa Resources",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -136,11 +136,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
+      "ticker": "U",
+      "name": "Unity Software",
       "score": 26,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -181,6 +181,12 @@
       "market": "US"
     },
     {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 72,
+      "market": "UK"
+    },
+    {
       "ticker": "TGT",
       "name": "Target",
       "score": 71,
@@ -195,12 +201,6 @@
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "TRGP",
-      "name": "Targa Resources",
       "score": 70,
       "market": "US"
     }
@@ -219,28 +219,10 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 67,
-      "market": "UK"
-    },
-    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 65,
       "market": "US"
-    },
-    {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 65,
-      "market": "UK"
     },
     {
       "ticker": "NNN",
@@ -249,36 +231,54 @@
       "market": "US"
     },
     {
+      "ticker": "PSN.L",
+      "name": "Persimmon",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
       "score": 63,
       "market": "US"
     },
     {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "TMDX",
+      "name": "TransMedics Group",
+      "score": 61,
+      "market": "US"
     }
   ],
   "topSmallCap": [
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 67,
-      "market": "UK"
-    },
     {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 66,
+      "market": "UK"
     },
     {
       "ticker": "CKN.L",
@@ -305,12 +305,6 @@
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 59,
-      "market": "UK"
-    },
-    {
       "ticker": "CURY.L",
       "name": "Currys",
       "score": 58,
@@ -327,9 +321,15 @@
       "name": "Wizz Air",
       "score": 57,
       "market": "UK"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 56,
+      "market": "US"
     }
   ],
   "totalStocks": 864,
   "avgScore": 50,
-  "bearishAlertCount": 330
+  "bearishAlertCount": 332
 }
