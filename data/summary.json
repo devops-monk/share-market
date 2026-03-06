@@ -8,6 +8,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 73,
@@ -15,9 +22,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 72,
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
@@ -29,8 +36,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -47,27 +68,6 @@
       "name": "Coal India",
       "score": 70,
       "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 70,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 70,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "1113.HK",
-      "name": "CK Asset Holdings",
-      "score": 70,
-      "market": "HK",
       "capCategory": "Large"
     }
   ],
@@ -87,8 +87,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "SE",
-      "name": "Sea Limited",
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -99,13 +99,6 @@
       "score": 22,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "MNDY",
-      "name": "monday.com",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "GRAB",
@@ -122,13 +115,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TRENT.BO",
       "name": "Trent",
       "score": 24,
@@ -141,6 +127,20 @@
       "score": 24,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "INF.L",
+      "name": "Informa",
+      "score": 25,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MNDY",
+      "name": "monday.com",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -151,15 +151,21 @@
       "market": "JP"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 73,
       "market": "HK"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 72,
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 71,
       "market": "US"
     },
     {
@@ -169,8 +175,20 @@
       "market": "IN"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 70,
       "market": "US"
     },
@@ -185,24 +203,6 @@
       "name": "Coal India",
       "score": 70,
       "market": "IN"
-    },
-    {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 70,
-      "market": "JP"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 70,
-      "market": "HK"
-    },
-    {
-      "ticker": "1113.HK",
-      "name": "CK Asset Holdings",
-      "score": 70,
-      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -255,14 +255,14 @@
       "market": "UK"
     },
     {
-      "ticker": "ITV.L",
-      "name": "ITV",
+      "ticker": "WAL",
+      "name": "Western Alliance Bancorp",
       "score": 64,
-      "market": "UK"
+      "market": "US"
     },
     {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
+      "ticker": "ITV.L",
+      "name": "ITV",
       "score": 64,
       "market": "UK"
     }
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 343
+  "bearishAlertCount": 341
 }
