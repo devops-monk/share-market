@@ -43,13 +43,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TGT",
       "name": "Target",
       "score": 71,
@@ -61,6 +54,13 @@
       "name": "Hindalco",
       "score": 71,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 70,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -181,12 +181,6 @@
       "market": "US"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 72,
-      "market": "UK"
-    },
-    {
       "ticker": "TGT",
       "name": "Target",
       "score": 71,
@@ -197,6 +191,12 @@
       "name": "Hindalco",
       "score": 71,
       "market": "IN"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 70,
+      "market": "US"
     },
     {
       "ticker": "TRGP",
@@ -237,6 +237,12 @@
       "market": "UK"
     },
     {
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "NNN",
       "name": "NNN REIT",
       "score": 64,
@@ -259,15 +265,15 @@
       "name": "Schroders",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 63,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 67,
+      "market": "UK"
+    },
     {
       "ticker": "CMA",
       "name": "Comerica",
@@ -284,12 +290,6 @@
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 64,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 50,
-  "bearishAlertCount": 331
+  "bearishAlertCount": 330
 }
