@@ -8,20 +8,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 73,
@@ -29,22 +15,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -57,17 +29,45 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "TGT",
+      "name": "Target",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "TRGP",
-      "name": "Targa Resources",
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 70,
-      "market": "US",
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 70,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 70,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 70,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "1113.HK",
+      "name": "CK Asset Holdings",
+      "score": 70,
+      "market": "HK",
       "capCategory": "Large"
     }
   ],
@@ -82,13 +82,41 @@
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 21,
+      "score": 19,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "GRAB",
       "name": "Grab Holdings",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -108,39 +136,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "SE",
       "name": "Sea Limited",
-      "score": 25,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "MNDY",
-      "name": "monday.com",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CPNG",
-      "name": "Coupang",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -151,38 +151,14 @@
       "market": "JP"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 73,
-      "market": "US"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 73,
       "market": "HK"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 71,
       "market": "US"
     },
@@ -193,15 +169,39 @@
       "market": "IN"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "TGT",
+      "name": "Target",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "TRGP",
-      "name": "Targa Resources",
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
       "score": 70,
+      "market": "IN"
+    },
+    {
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 70,
+      "market": "JP"
+    },
+    {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 70,
+      "market": "HK"
+    },
+    {
+      "ticker": "1113.HK",
+      "name": "CK Asset Holdings",
+      "score": 70,
+      "market": "HK"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 69,
       "market": "US"
     }
   ],
@@ -213,40 +213,16 @@
       "market": "US"
     },
     {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 67,
-      "market": "US"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 65,
-      "market": "US"
-    },
-    {
-      "ticker": "NNN",
-      "name": "NNN REIT",
-      "score": 64,
-      "market": "US"
-    },
-    {
       "ticker": "PSN.L",
       "name": "Persimmon",
-      "score": 64,
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "MGNS.L",
       "name": "Morgan Sindall",
-      "score": 64,
+      "score": 65,
       "market": "UK"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 63,
-      "market": "US"
     },
     {
       "ticker": "SDR.L",
@@ -261,9 +237,33 @@
       "market": "UK"
     },
     {
-      "ticker": "TMDX",
-      "name": "TransMedics Group",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 61,
+      "market": "US"
+    },
+    {
+      "ticker": "BWY.L",
+      "name": "Bellway",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 60,
       "market": "US"
     }
   ],
@@ -287,9 +287,9 @@
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 66,
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -299,8 +299,8 @@
       "market": "UK"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
       "score": 61,
       "market": "UK"
     },
@@ -311,25 +311,25 @@
       "market": "HK"
     },
     {
-      "ticker": "BBW",
-      "name": "Build-A-Bear Workshop",
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
+      "score": 58,
+      "market": "UK"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
       "score": 57,
       "market": "US"
     },
     {
-      "ticker": "WIZZ.L",
-      "name": "Wizz Air",
+      "ticker": "BBW",
+      "name": "Build-A-Bear Workshop",
       "score": 57,
-      "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 57,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "totalStocks": 864,
-  "avgScore": 50,
-  "bearishAlertCount": 332
+  "avgScore": 48,
+  "bearishAlertCount": 340
 }
