@@ -10,8 +10,15 @@
     {
       "ticker": "BPCL.NS",
       "name": "Bharat Petroleum",
-      "score": 76,
+      "score": 75,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 74,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -22,11 +29,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "FDX",
@@ -62,13 +69,6 @@
       "score": 71,
       "market": "IN",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -87,20 +87,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 23,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "INF.L",
-      "name": "Informa",
-      "score": 23,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 23,
@@ -113,6 +99,20 @@
       "score": 23,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 24,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "INF.L",
+      "name": "Informa",
+      "score": 24,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "DASH",
@@ -153,19 +153,19 @@
     {
       "ticker": "BPCL.NS",
       "name": "Bharat Petroleum",
-      "score": 76,
+      "score": 75,
       "market": "IN"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 74,
+      "market": "US"
     },
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
       "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 72,
       "market": "US"
     },
     {
@@ -233,7 +233,7 @@
     {
       "ticker": "BKG.L",
       "name": "Berkeley Group",
-      "score": 65,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -261,8 +261,8 @@
       "market": "UK"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
       "score": 63,
       "market": "UK"
     }
@@ -271,7 +271,7 @@
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 68,
+      "score": 73,
       "market": "UK"
     },
     {
@@ -281,21 +281,15 @@
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "SNR.L",
       "name": "Senior plc",
       "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -327,9 +321,15 @@
       "name": "LTC Properties",
       "score": 59,
       "market": "US"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 58,
+      "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 334
+  "bearishAlertCount": 338
 }
