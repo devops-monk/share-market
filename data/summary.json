@@ -29,13 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 72,
@@ -67,6 +60,13 @@
       "ticker": "RKLB",
       "name": "Rocket Lab",
       "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     }
@@ -213,9 +213,21 @@
       "market": "US"
     },
     {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
+      "ticker": "PSN.L",
+      "name": "Persimmon",
       "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
+      "score": 66,
       "market": "UK"
     },
     {
@@ -237,26 +249,8 @@
       "market": "US"
     },
     {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "BLND.L",
       "name": "British Land",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
       "score": 64,
       "market": "UK"
     },
@@ -265,15 +259,15 @@
       "name": "TransMedics Group",
       "score": 63,
       "market": "US"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 63,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 73,
-      "market": "UK"
-    },
     {
       "ticker": "CMA",
       "name": "Comerica",
@@ -281,9 +275,15 @@
       "market": "US"
     },
     {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 63,
+      "score": 65,
       "market": "UK"
     },
     {
@@ -323,9 +323,9 @@
       "market": "US"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 58,
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 59,
       "market": "UK"
     }
   ],
