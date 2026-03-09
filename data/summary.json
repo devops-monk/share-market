@@ -24,14 +24,35 @@
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 73,
+      "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "DVN",
       "name": "Devon Energy",
-      "score": 73,
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -47,27 +68,6 @@
       "name": "Coal India",
       "score": 72,
       "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DOW",
-      "name": "Dow Inc",
-      "score": 71,
-      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -87,13 +87,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "SE",
-      "name": "Sea Limited",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 22,
@@ -101,25 +94,18 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SE",
+      "name": "Sea Limited",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BRZE",
       "name": "Braze",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "ESTC",
@@ -129,11 +115,25 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "U",
-      "name": "Unity Software",
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
       "score": 23,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "TRENT.BO",
@@ -159,13 +159,31 @@
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 73,
+      "score": 74,
       "market": "US"
     },
     {
       "ticker": "DVN",
       "name": "Devon Energy",
-      "score": 73,
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 72,
       "market": "US"
     },
     {
@@ -181,26 +199,8 @@
       "market": "IN"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "DOW",
-      "name": "Dow Inc",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "NEM",
+      "name": "Newmont",
       "score": 71,
       "market": "US"
     }
@@ -261,10 +261,10 @@
       "market": "UK"
     },
     {
-      "ticker": "BWY.L",
-      "name": "Bellway",
+      "ticker": "TTC",
+      "name": "Toro Company",
       "score": 64,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 864,
-  "avgScore": 49,
-  "bearishAlertCount": 339
+  "avgScore": 50,
+  "bearishAlertCount": 338
 }
