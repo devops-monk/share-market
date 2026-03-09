@@ -29,10 +29,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 72,
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 73,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 72,
+      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -43,6 +50,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TGT",
       "name": "Target",
       "score": 71,
@@ -50,23 +64,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "DOW",
+      "name": "Dow Inc",
       "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 70,
       "market": "US",
       "capCategory": "Large"
     }
@@ -115,18 +115,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 23,
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "ESTC",
+      "name": "Elastic NV",
       "score": 23,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "U",
@@ -136,10 +136,10 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "SHOP",
-      "name": "Shopify",
-      "score": 23,
-      "market": "US",
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 24,
+      "market": "IN",
       "capCategory": "Large"
     }
   ],
@@ -163,10 +163,16 @@
       "market": "US"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 72,
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 73,
       "market": "US"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 72,
+      "market": "UK"
     },
     {
       "ticker": "COALINDIA.NS",
@@ -175,33 +181,27 @@
       "market": "IN"
     },
     {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "TGT",
       "name": "Target",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "DOW",
+      "name": "Dow Inc",
       "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 70,
       "market": "US"
     },
     {
       "ticker": "CTRA",
       "name": "Coterra Energy",
-      "score": 70,
+      "score": 71,
       "market": "US"
     }
   ],
@@ -225,6 +225,18 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 67,
+      "market": "US"
+    },
+    {
+      "ticker": "WEIR.L",
+      "name": "Weir Group",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "ITV.L",
       "name": "ITV",
       "score": 66,
@@ -243,12 +255,6 @@
       "market": "UK"
     },
     {
-      "ticker": "WEIR.L",
-      "name": "Weir Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
       "score": 65,
@@ -257,12 +263,6 @@
     {
       "ticker": "BWY.L",
       "name": "Bellway",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "LAND.L",
-      "name": "Land Securities",
       "score": 64,
       "market": "UK"
     }
@@ -299,15 +299,21 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 62,
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "WIZZ.L",
       "name": "Wizz Air",
-      "score": 61,
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 60,
-      "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 336
+  "bearishAlertCount": 339
 }
