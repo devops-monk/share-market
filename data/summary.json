@@ -8,6 +8,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 79,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "BPCL.NS",
       "name": "Bharat Petroleum",
       "score": 75,
@@ -17,6 +24,13 @@
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -29,16 +43,23 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "TGT",
+      "name": "Target",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
@@ -47,27 +68,6 @@
       "name": "FedEx",
       "score": 70,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
-      "score": 70,
-      "market": "JP",
       "capCategory": "Large"
     }
   ],
@@ -87,23 +87,16 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "SE",
       "name": "Sea Limited",
       "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
@@ -115,11 +108,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "U",
-      "name": "Unity Software",
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
       "score": 22,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "GWRE",
@@ -129,15 +122,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TEAM",
-      "name": "Atlassian",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -159,6 +159,12 @@
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
       "score": 72,
       "market": "US"
     },
@@ -169,15 +175,21 @@
       "market": "IN"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "TGT",
+      "name": "Target",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 70,
       "market": "US"
     },
     {
@@ -187,21 +199,9 @@
       "market": "US"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
-      "score": 70,
-      "market": "JP"
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 69,
       "market": "US"
     }
   ],
@@ -209,18 +209,24 @@
     {
       "ticker": "PSN.L",
       "name": "Persimmon",
-      "score": 68,
+      "score": 69,
       "market": "UK"
     },
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 67,
+      "score": 69,
       "market": "UK"
     },
     {
       "ticker": "BLND.L",
       "name": "British Land",
+      "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "ITV.L",
+      "name": "ITV",
       "score": 66,
       "market": "UK"
     },
@@ -231,47 +237,47 @@
       "market": "UK"
     },
     {
+      "ticker": "KGF.L",
+      "name": "Kingfisher",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "WEIR.L",
       "name": "Weir Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "BWY.L",
+      "name": "Bellway",
       "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "ITV.L",
-      "name": "ITV",
+      "ticker": "LAND.L",
+      "name": "Land Securities",
       "score": 64,
       "market": "UK"
-    },
-    {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 62,
-      "market": "US"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 70,
+      "score": 79,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 67,
       "market": "UK"
     },
     {
@@ -281,9 +287,9 @@
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 66,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 64,
       "market": "UK"
     },
     {
@@ -295,12 +301,18 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
       "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
       "score": 61,
       "market": "UK"
     },
@@ -311,25 +323,13 @@
       "market": "HK"
     },
     {
-      "ticker": "WIZZ.L",
-      "name": "Wizz Air",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 59,
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 337
+  "bearishAlertCount": 336
 }
