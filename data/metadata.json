@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-03-06T21:14:17.778Z",
-  "stockCount": 863,
-  "bearishAlerts": 339,
+  "lastUpdated": "2026-03-09T07:29:33.090Z",
+  "stockCount": 864,
+  "bearishAlerts": 336,
   "newsCount": 500,
   "marketRegime": {
     "us": {
@@ -10,9 +10,9 @@
       "sma50": 6902.45,
       "sma200": 6582.53,
       "changeFromHigh": -3.42,
-      "distributionDays": 11,
+      "distributionDays": 12,
       "regime": "correction",
-      "signal": "11 distribution days in 25 sessions — selling pressure"
+      "signal": "12 distribution days in 25 sessions — selling pressure"
     },
     "uk": {
       "index": "FTSE 100",
@@ -20,16 +20,16 @@
       "sma50": 10315.8,
       "sma200": 9535.91,
       "changeFromHigh": -5.74,
-      "distributionDays": 8,
+      "distributionDays": 9,
       "regime": "correction",
-      "signal": "8 distribution days in 25 sessions — selling pressure"
+      "signal": "9 distribution days in 25 sessions — selling pressure"
     },
     "in": {
       "index": "Nifty 50",
-      "price": 24450.45,
-      "sma50": 25610.11,
-      "sma200": 25342.26,
-      "changeFromHigh": -7.13,
+      "price": 23893.45,
+      "sma50": 25564.43,
+      "sma200": 25338.31,
+      "changeFromHigh": -9.25,
       "distributionDays": 8,
       "regime": "correction",
       "signal": "8 distribution days in 25 sessions — selling pressure"
@@ -40,16 +40,16 @@
       "sma50": 24813.76,
       "sma200": 24174.39,
       "changeFromHigh": -7.2,
-      "distributionDays": 6,
+      "distributionDays": 7,
       "regime": "correction",
-      "signal": "6 distribution days in 25 sessions — selling pressure"
+      "signal": "7 distribution days in 25 sessions — selling pressure"
     },
     "asia": {
       "index": "Nikkei 225",
-      "price": 55620.84,
-      "sma50": 54145.91,
-      "sma200": 46444.63,
-      "changeFromHigh": -5.49,
+      "price": 52728.72,
+      "sma50": 54210.34,
+      "sma200": 46517.63,
+      "changeFromHigh": -10.4,
       "distributionDays": 8,
       "regime": "correction",
       "signal": "8 distribution days in 25 sessions — selling pressure"

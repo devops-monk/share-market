@@ -1,36 +1,29 @@
 {
   "topOverall": [
     {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
-      "score": 75,
-      "market": "JP",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 82,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 74,
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "TGT",
       "name": "Target",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 73,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -57,10 +50,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HINDALCO.NS",
-      "name": "Hindalco",
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
       "score": 71,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 71,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -101,13 +101,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 24,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "DASH",
       "name": "DoorDash",
       "score": 24,
@@ -136,41 +129,42 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "U",
-      "name": "Unity Software",
+      "ticker": "AI",
+      "name": "C3.ai",
       "score": 25,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
-      "score": 75,
-      "market": "JP"
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 82,
+      "market": "HK"
     },
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 74,
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "TGT",
       "name": "Target",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 73,
-      "market": "HK"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
       "score": 72,
       "market": "US"
     },
@@ -193,10 +187,16 @@
       "market": "US"
     },
     {
-      "ticker": "HINDALCO.NS",
-      "name": "Hindalco",
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
       "score": 71,
       "market": "IN"
+    },
+    {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 71,
+      "market": "HK"
     },
     {
       "ticker": "DVN",
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
+      "ticker": "LTC",
+      "name": "LTC Properties",
       "score": 59,
-      "market": "UK"
+      "market": "US"
     }
   ],
-  "totalStocks": 863,
+  "totalStocks": 864,
   "avgScore": 50,
-  "bearishAlertCount": 339
+  "bearishAlertCount": 336
 }
