@@ -75,7 +75,7 @@
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
-      "score": 17,
+      "score": 18,
       "market": "UK",
       "capCategory": "Small"
     },
@@ -122,6 +122,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "MNDY",
       "name": "monday.com",
       "score": 25,
@@ -129,18 +136,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
+      "ticker": "AI",
+      "name": "C3.ai",
       "score": 25,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -213,8 +213,8 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
+      "ticker": "PHP.L",
+      "name": "Primary Health Properties",
       "score": 67,
       "market": "UK"
     },
@@ -239,7 +239,13 @@
     {
       "ticker": "BKG.L",
       "name": "Berkeley Group",
-      "score": 64,
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 65,
       "market": "UK"
     },
     {
@@ -259,12 +265,6 @@
       "name": "TransMedics Group",
       "score": 63,
       "market": "US"
-    },
-    {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 63,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -283,7 +283,13 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 64,
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 63,
       "market": "UK"
     },
     {
@@ -311,25 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 60,
-      "market": "UK"
-    },
-    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 59,
       "market": "US"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 59,
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 58,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 336
+  "bearishAlertCount": 335
 }
