@@ -8,9 +8,23 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "BPCL.NS",
+      "name": "Bharat Petroleum",
+      "score": 76,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "COP",
       "name": "ConocoPhillips",
       "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -36,13 +50,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RKLB",
       "name": "Rocket Lab",
       "score": 71,
@@ -54,13 +61,6 @@
       "name": "Coal India",
       "score": 71,
       "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 71,
-      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -87,6 +87,20 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 23,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "INF.L",
+      "name": "Informa",
+      "score": 23,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 23,
@@ -108,20 +122,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "INF.L",
-      "name": "Informa",
-      "score": 25,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "MNDY",
       "name": "monday.com",
       "score": 25,
@@ -136,8 +136,8 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "SHOP",
-      "name": "Shopify",
+      "ticker": "AFRM",
+      "name": "Affirm",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -151,9 +151,21 @@
       "market": "HK"
     },
     {
+      "ticker": "BPCL.NS",
+      "name": "Bharat Petroleum",
+      "score": 76,
+      "market": "IN"
+    },
+    {
       "ticker": "COP",
       "name": "ConocoPhillips",
       "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 72,
       "market": "US"
     },
     {
@@ -175,12 +187,6 @@
       "market": "US"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "RKLB",
       "name": "Rocket Lab",
       "score": 71,
@@ -191,12 +197,6 @@
       "name": "Coal India",
       "score": 71,
       "market": "IN"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 71,
-      "market": "HK"
     },
     {
       "ticker": "DVN",
@@ -211,36 +211,6 @@
       "name": "Intuitive Machines",
       "score": 69,
       "market": "US"
-    },
-    {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "SBRY.L",
-      "name": "Sainsbury",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 66,
-      "market": "UK"
     },
     {
       "ticker": "WAL",
@@ -261,19 +231,43 @@
       "market": "US"
     },
     {
-      "ticker": "WEIR.L",
-      "name": "Weir Group",
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
       "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "BLND.L",
+      "name": "British Land",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "TMDX",
+      "name": "TransMedics Group",
+      "score": 63,
+      "market": "US"
+    },
+    {
+      "ticker": "PSN.L",
+      "name": "Persimmon",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 63,
       "market": "UK"
     }
   ],
   "topSmallCap": [
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 68,
-      "market": "UK"
-    },
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
@@ -287,6 +281,18 @@
       "market": "US"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "SNR.L",
       "name": "Senior plc",
       "score": 63,
@@ -295,12 +301,6 @@
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
       "score": 61,
       "market": "UK"
     },
@@ -317,8 +317,8 @@
       "market": "US"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
+      "ticker": "CURY.L",
+      "name": "Currys",
       "score": 60,
       "market": "UK"
     },
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 864,
-  "avgScore": 50,
-  "bearishAlertCount": 336
+  "avgScore": 49,
+  "bearishAlertCount": 334
 }
