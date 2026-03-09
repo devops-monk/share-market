@@ -8,13 +8,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 81,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 79,
@@ -22,8 +15,29 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 78,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "DVN",
       "name": "Devon Energy",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 75,
       "market": "US",
       "capCategory": "Large"
@@ -36,15 +50,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -60,13 +67,6 @@
       "ticker": "VLO",
       "name": "Valero Energy",
       "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 72,
       "market": "US",
       "capCategory": "Large"
     }
@@ -89,7 +89,7 @@
     {
       "ticker": "TTD",
       "name": "Trade Desk",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
@@ -153,12 +153,24 @@
     {
       "ticker": "CF",
       "name": "CF Industries",
-      "score": 81,
+      "score": 78,
       "market": "US"
     },
     {
       "ticker": "DVN",
       "name": "Devon Energy",
+      "score": 76,
+      "market": "US"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 75,
+      "market": "US"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 75,
       "market": "US"
     },
@@ -169,14 +181,8 @@
       "market": "IN"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 73,
       "market": "US"
     },
@@ -193,14 +199,8 @@
       "market": "US"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "BKR",
-      "name": "Baker Hughes",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US"
     }
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 864,
-  "avgScore": 50,
-  "bearishAlertCount": 337
+  "avgScore": 51,
+  "bearishAlertCount": 339
 }
