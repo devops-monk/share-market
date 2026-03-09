@@ -8,6 +8,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 81,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 79,
@@ -15,24 +22,17 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BPCL.NS",
       "name": "Bharat Petroleum",
       "score": 75,
       "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 74,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -45,29 +45,29 @@
     {
       "ticker": "LMT",
       "name": "Lockheed Martin",
-      "score": 72,
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 72,
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 72,
-      "market": "UK",
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 73,
+      "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 72,
-      "market": "IN",
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -82,55 +82,20 @@
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 22,
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "SE",
       "name": "Sea Limited",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BRZE",
-      "name": "Braze",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ESTC",
-      "name": "Elastic NV",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TTD",
-      "name": "Trade Desk",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -140,6 +105,41 @@
       "name": "Trent",
       "score": 24,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BRZE",
+      "name": "Braze",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "MNDY",
+      "name": "monday.com",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 24,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -151,22 +151,22 @@
       "market": "HK"
     },
     {
-      "ticker": "BPCL.NS",
-      "name": "Bharat Petroleum",
-      "score": 75,
-      "market": "IN"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 74,
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 81,
       "market": "US"
     },
     {
       "ticker": "DVN",
       "name": "Devon Energy",
-      "score": 74,
+      "score": 75,
       "market": "US"
+    },
+    {
+      "ticker": "BPCL.NS",
+      "name": "Bharat Petroleum",
+      "score": 75,
+      "market": "IN"
     },
     {
       "ticker": "CTRA",
@@ -177,31 +177,31 @@
     {
       "ticker": "LMT",
       "name": "Lockheed Martin",
-      "score": 72,
+      "score": 73,
       "market": "US"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 72,
-      "market": "UK"
-    },
-    {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
-      "score": 72,
-      "market": "IN"
     },
     {
       "ticker": "NEM",
       "name": "Newmont",
-      "score": 71,
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes",
+      "score": 72,
       "market": "US"
     }
   ],
@@ -219,15 +219,21 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 68,
+      "market": "US"
+    },
+    {
       "ticker": "BLND.L",
       "name": "British Land",
       "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 67,
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 66,
       "market": "US"
     },
     {
@@ -259,12 +265,6 @@
       "name": "Balfour Beatty",
       "score": 65,
       "market": "UK"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 64,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -299,6 +299,12 @@
       "market": "UK"
     },
     {
+      "ticker": "BBW",
+      "name": "Build-A-Bear Workshop",
+      "score": 63,
+      "market": "US"
+    },
+    {
       "ticker": "CURY.L",
       "name": "Currys",
       "score": 63,
@@ -321,15 +327,9 @@
       "name": "Renew Holdings",
       "score": 61,
       "market": "UK"
-    },
-    {
-      "ticker": "0011.HK",
-      "name": "Hang Seng Bank",
-      "score": 61,
-      "market": "HK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 50,
-  "bearishAlertCount": 338
+  "bearishAlertCount": 337
 }
