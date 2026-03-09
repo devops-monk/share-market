@@ -8,24 +8,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 76,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "BPCL.NS",
       "name": "Bharat Petroleum",
       "score": 75,
       "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 72,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -43,6 +29,27 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 70,
@@ -50,24 +57,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "NEM",
+      "name": "Newmont",
       "score": 69,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "DOW",
+      "name": "Dow Inc",
       "score": 69,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 69,
-      "market": "JP",
       "capCategory": "Large"
     }
   ],
@@ -75,7 +75,7 @@
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
-      "score": 18,
+      "score": 19,
       "market": "UK",
       "capCategory": "Small"
     },
@@ -89,7 +89,7 @@
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,9 +108,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 21,
+      "ticker": "BRZE",
+      "name": "Braze",
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -157,12 +157,6 @@
       "market": "IN"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 72,
@@ -175,43 +169,43 @@
       "market": "US"
     },
     {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 70,
       "market": "JP"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "NEM",
+      "name": "Newmont",
       "score": 69,
       "market": "US"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "DOW",
+      "name": "Dow Inc",
       "score": 69,
       "market": "US"
-    },
-    {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 69,
-      "market": "JP"
-    },
-    {
-      "ticker": "0005.HK",
-      "name": "HSBC Holdings",
-      "score": 69,
-      "market": "HK"
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 67,
-      "market": "UK"
-    },
     {
       "ticker": "IGG.L",
       "name": "IG Group",
@@ -219,14 +213,26 @@
       "market": "UK"
     },
     {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
+      "ticker": "PSN.L",
+      "name": "Persimmon",
       "score": 66,
       "market": "UK"
     },
     {
       "ticker": "BLND.L",
       "name": "British Land",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "WEIR.L",
+      "name": "Weir Group",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "ITV.L",
+      "name": "ITV",
       "score": 64,
       "market": "UK"
     },
@@ -237,10 +243,10 @@
       "market": "UK"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 63,
-      "market": "US"
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "LEA",
@@ -259,19 +265,13 @@
       "name": "Beazley",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "ITV.L",
-      "name": "ITV",
-      "score": 63,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 76,
+      "score": 68,
       "market": "UK"
     },
     {
@@ -287,9 +287,9 @@
       "market": "UK"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 63,
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 61,
       "market": "UK"
     },
     {
@@ -299,21 +299,21 @@
       "market": "HK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 60,
-      "market": "UK"
-    },
-    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "FEVR.L",
+      "name": "Fevertree",
+      "score": 59,
       "market": "UK"
     },
     {
@@ -323,10 +323,10 @@
       "market": "UK"
     },
     {
-      "ticker": "WIZZ.L",
-      "name": "Wizz Air",
+      "ticker": "LTC",
+      "name": "LTC Properties",
       "score": 58,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "totalStocks": 864,
