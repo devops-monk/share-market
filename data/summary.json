@@ -15,15 +15,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 74,
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -57,17 +57,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 72,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RKLB",
       "name": "Rocket Lab",
       "score": 71,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
-      "score": 71,
-      "market": "IN",
       "capCategory": "Large"
     }
   ],
@@ -75,7 +75,7 @@
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
-      "score": 18,
+      "score": 17,
       "market": "UK",
       "capCategory": "Small"
     },
@@ -129,15 +129,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "AFRM",
       "name": "Affirm",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -157,14 +157,14 @@
       "market": "IN"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 74,
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 73,
       "market": "US"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
       "score": 73,
       "market": "US"
     },
@@ -187,16 +187,16 @@
       "market": "US"
     },
     {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 72,
+      "market": "IN"
+    },
+    {
       "ticker": "RKLB",
       "name": "Rocket Lab",
       "score": 71,
       "market": "US"
-    },
-    {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
-      "score": 71,
-      "market": "IN"
     },
     {
       "ticker": "DVN",
@@ -211,6 +211,12 @@
       "name": "Intuitive Machines",
       "score": 69,
       "market": "US"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 67,
+      "market": "UK"
     },
     {
       "ticker": "WAL",
@@ -243,6 +249,12 @@
       "market": "UK"
     },
     {
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "TMDX",
       "name": "TransMedics Group",
       "score": 63,
@@ -251,18 +263,6 @@
     {
       "ticker": "PSN.L",
       "name": "Persimmon",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
       "score": 63,
       "market": "UK"
     }
@@ -281,15 +281,9 @@
       "market": "US"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 62,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -317,19 +311,25 @@
       "market": "UK"
     },
     {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 60,
+      "market": "UK"
+    },
+    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 59,
       "market": "US"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 58,
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 338
+  "bearishAlertCount": 336
 }
