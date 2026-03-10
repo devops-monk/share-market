@@ -225,16 +225,22 @@
       "market": "UK"
     },
     {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
-      "score": 66,
-      "market": "UK"
-    },
-    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 64,
       "market": "US"
+    },
+    {
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "SDR.L",
@@ -258,12 +264,6 @@
       "ticker": "ITV.L",
       "name": "ITV",
       "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 61,
       "market": "UK"
     }
   ],
@@ -295,7 +295,13 @@
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 62,
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 61,
       "market": "UK"
     },
     {
@@ -311,20 +317,14 @@
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 60,
-      "market": "UK"
-    },
-    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 59,
       "market": "US"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
       "score": 59,
       "market": "UK"
     }
