@@ -8,13 +8,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BPCL.NS",
       "name": "Bharat Petroleum",
       "score": 71,
@@ -43,10 +36,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 69,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 69,
+      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -64,8 +64,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
       "score": 68,
       "market": "US",
       "capCategory": "Large"
@@ -87,27 +87,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GTLB",
-      "name": "GitLab",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "MNDY",
       "name": "monday.com",
       "score": 21,
@@ -115,23 +94,44 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 21,
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "SE",
-      "name": "Sea Limited",
+      "ticker": "RBLX",
+      "name": "Roblox",
       "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 22,
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
@@ -147,12 +147,6 @@
     {
       "ticker": "TGT",
       "name": "Target",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
       "score": 71,
       "market": "US"
     },
@@ -181,10 +175,16 @@
       "market": "IN"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 69,
       "market": "US"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 69,
+      "market": "UK"
     },
     {
       "ticker": "8031.T",
@@ -199,8 +199,8 @@
       "market": "US"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
       "score": 68,
       "market": "US"
     }
@@ -225,15 +225,9 @@
       "market": "UK"
     },
     {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "TTC",
       "name": "Toro Company",
-      "score": 63,
+      "score": 64,
       "market": "US"
     },
     {
@@ -255,14 +249,20 @@
       "market": "US"
     },
     {
+      "ticker": "QQ.L",
+      "name": "QinetiQ",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
       "score": 61,
       "market": "US"
     },
     {
-      "ticker": "QQ.L",
-      "name": "QinetiQ",
+      "ticker": "HWDN.L",
+      "name": "Howden Joinery",
       "score": 61,
       "market": "UK"
     }
@@ -277,25 +277,31 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 62,
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
-      "score": 62,
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 61,
+      "score": 62,
       "market": "UK"
     },
     {
@@ -319,17 +325,11 @@
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 59,
+      "score": 60,
       "market": "UK"
     }
   ],
-  "totalStocks": 853,
-  "avgScore": 48,
-  "bearishAlertCount": 318
+  "totalStocks": 858,
+  "avgScore": 49,
+  "bearishAlertCount": 320
 }
