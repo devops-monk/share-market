@@ -10,7 +10,7 @@
     {
       "ticker": "LMT",
       "name": "Lockheed Martin",
-      "score": 77,
+      "score": 76,
       "market": "US",
       "capCategory": "Large"
     },
@@ -29,6 +29,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "NEM",
       "name": "Newmont",
       "score": 74,
@@ -38,13 +45,6 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -73,13 +73,6 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
       "score": 20,
@@ -94,9 +87,9 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 22,
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -141,6 +134,13 @@
       "score": 24,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -153,7 +153,7 @@
     {
       "ticker": "LMT",
       "name": "Lockheed Martin",
-      "score": 77,
+      "score": 76,
       "market": "US"
     },
     {
@@ -169,6 +169,12 @@
       "market": "US"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 74,
+      "market": "US"
+    },
+    {
       "ticker": "NEM",
       "name": "Newmont",
       "score": 74,
@@ -177,12 +183,6 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
       "score": 73,
       "market": "US"
     },
@@ -261,9 +261,9 @@
       "market": "US"
     },
     {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 61,
+      "ticker": "ITV.L",
+      "name": "ITV",
+      "score": 62,
       "market": "UK"
     }
   ],
@@ -299,12 +299,6 @@
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 61,
-      "market": "UK"
-    },
-    {
       "ticker": "0011.HK",
       "name": "Hang Seng Bank",
       "score": 61,
@@ -317,10 +311,16 @@
       "market": "UK"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 59,
-      "market": "US"
+      "market": "UK"
+    },
+    {
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 59,
+      "market": "UK"
     },
     {
       "ticker": "HMSO.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 50,
-  "bearishAlertCount": 333
+  "bearishAlertCount": 332
 }
