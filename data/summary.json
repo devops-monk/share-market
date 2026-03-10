@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 71,
@@ -57,17 +64,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 70,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BP.L",
-      "name": "BP",
-      "score": 70,
-      "market": "UK",
       "capCategory": "Large"
     }
   ],
@@ -124,14 +124,14 @@
     {
       "ticker": "U",
       "name": "Unity Software",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "RBLX",
       "name": "Roblox",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
@@ -169,6 +169,12 @@
       "market": "US"
     },
     {
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "BPCL.NS",
       "name": "Bharat Petroleum",
       "score": 71,
@@ -181,8 +187,8 @@
       "market": "HK"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 70,
       "market": "US"
     },
@@ -197,12 +203,6 @@
       "name": "Coal India",
       "score": 70,
       "market": "IN"
-    },
-    {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -329,7 +329,7 @@
       "market": "US"
     }
   ],
-  "totalStocks": 856,
+  "totalStocks": 864,
   "avgScore": 50,
-  "bearishAlertCount": 321
+  "bearishAlertCount": 323
 }
