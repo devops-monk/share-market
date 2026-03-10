@@ -8,6 +8,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BPCL.NS",
       "name": "Bharat Petroleum",
       "score": 71,
@@ -24,13 +31,6 @@
     {
       "ticker": "NEM",
       "name": "Newmont",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -57,15 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
       "score": 68,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 68,
       "market": "US",
       "capCategory": "Large"
@@ -75,42 +75,49 @@
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
-      "score": 20,
+      "score": 18,
       "market": "UK",
       "capCategory": "Small"
     },
     {
-      "ticker": "MNDY",
-      "name": "monday.com",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 20,
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 19,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 22,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "BRZE",
-      "name": "Braze",
-      "score": 22,
+      "ticker": "GTLB",
+      "name": "GitLab",
+      "score": 20,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 22,
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MNDY",
+      "name": "monday.com",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -129,15 +136,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MSTR",
-      "name": "MicroStrategy",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -147,6 +147,12 @@
     {
       "ticker": "TGT",
       "name": "Target",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 71,
       "market": "US"
     },
@@ -169,12 +175,6 @@
       "market": "US"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 70,
@@ -193,14 +193,14 @@
       "market": "JP"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
       "score": 68,
       "market": "US"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 68,
       "market": "US"
     }
@@ -209,7 +209,7 @@
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 67,
+      "score": 68,
       "market": "UK"
     },
     {
@@ -231,6 +231,12 @@
       "market": "UK"
     },
     {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 63,
+      "market": "US"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 63,
@@ -249,22 +255,16 @@
       "market": "US"
     },
     {
-      "ticker": "QQ.L",
-      "name": "QinetiQ",
-      "score": 62,
-      "market": "UK"
-    },
-    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
       "score": 61,
       "market": "US"
     },
     {
-      "ticker": "TTC",
-      "name": "Toro Company",
+      "ticker": "QQ.L",
+      "name": "QinetiQ",
       "score": 61,
-      "market": "US"
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -281,27 +281,21 @@
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 62,
       "market": "UK"
     },
     {
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 62,
+      "score": 61,
       "market": "UK"
     },
     {
@@ -309,6 +303,12 @@
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
+    },
+    {
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
+      "score": 60,
+      "market": "UK"
     },
     {
       "ticker": "CURY.L",
@@ -329,7 +329,7 @@
       "market": "UK"
     }
   ],
-  "totalStocks": 864,
+  "totalStocks": 853,
   "avgScore": 48,
-  "bearishAlertCount": 321
+  "bearishAlertCount": 318
 }
