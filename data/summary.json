@@ -1,6 +1,20 @@
 {
   "topOverall": [
     {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TGT",
       "name": "Target",
       "score": 71,
@@ -22,24 +36,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 70,
       "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 69,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -50,6 +50,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 69,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 69,
@@ -57,15 +64,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 68,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "INTC",
+      "name": "Intel",
       "score": 68,
       "market": "US",
       "capCategory": "Large"
@@ -101,11 +101,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "U",
-      "name": "Unity Software",
+      "ticker": "SE",
+      "name": "Sea Limited",
       "score": 22,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "RBLX",
@@ -129,21 +129,33 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PLTR",
-      "name": "Palantir",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "GRAB",
       "name": "Grab Holdings",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 71,
+      "market": "US"
+    },
     {
       "ticker": "TGT",
       "name": "Target",
@@ -163,22 +175,10 @@
       "market": "HK"
     },
     {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 70,
       "market": "IN"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 69,
-      "market": "US"
     },
     {
       "ticker": "RIO.L",
@@ -193,14 +193,14 @@
       "market": "JP"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
+      "ticker": "INTC",
+      "name": "Intel",
       "score": 68,
       "market": "US"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "BKR",
+      "name": "Baker Hughes",
       "score": 68,
       "market": "US"
     }
@@ -209,13 +209,13 @@
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 68,
+      "score": 69,
       "market": "UK"
     },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 66,
+      "score": 67,
       "market": "US"
     },
     {
@@ -229,6 +229,12 @@
       "name": "Toro Company",
       "score": 64,
       "market": "US"
+    },
+    {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "SDR.L",
@@ -249,21 +255,15 @@
       "market": "US"
     },
     {
-      "ticker": "QQ.L",
-      "name": "QinetiQ",
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
       "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 61,
-      "market": "US"
-    },
-    {
-      "ticker": "HWDN.L",
-      "name": "Howden Joinery",
-      "score": 61,
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 62,
       "market": "UK"
     }
   ],
@@ -283,25 +283,31 @@
     {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
-      "score": 66,
+      "score": 64,
       "market": "UK"
     },
     {
       "ticker": "SNR.L",
       "name": "Senior plc",
-      "score": 64,
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 63,
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
+      "score": 61,
       "market": "UK"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 62,
+      "score": 61,
       "market": "UK"
     },
     {
@@ -309,12 +315,6 @@
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
-    },
-    {
-      "ticker": "WIZZ.L",
-      "name": "Wizz Air",
-      "score": 60,
-      "market": "UK"
     },
     {
       "ticker": "CURY.L",
@@ -329,7 +329,7 @@
       "market": "UK"
     }
   ],
-  "totalStocks": 858,
+  "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 320
+  "bearishAlertCount": 324
 }
