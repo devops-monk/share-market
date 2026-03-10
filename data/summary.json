@@ -1,72 +1,72 @@
 {
   "topOverall": [
     {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BPCL.NS",
+      "name": "Bharat Petroleum",
+      "score": 71,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 71,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
-      "score": 79,
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 70,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 69,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "8031.T",
+      "name": "Mitsui & Co",
+      "score": 69,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 68,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "LMT",
       "name": "Lockheed Martin",
-      "score": 76,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 76,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BKR",
-      "name": "Baker Hughes",
-      "score": 72,
+      "score": 68,
       "market": "US",
       "capCategory": "Large"
     }
@@ -80,64 +80,64 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "MNDY",
+      "name": "monday.com",
       "score": 20,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
       "score": 20,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "INF.L",
-      "name": "Informa",
-      "score": 24,
-      "market": "UK",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 24,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "BRZE",
       "name": "Braze",
-      "score": 24,
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "MNDY",
-      "name": "monday.com",
-      "score": 24,
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "SE",
       "name": "Sea Limited",
-      "score": 24,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HUBS",
       "name": "HubSpot",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MSTR",
+      "name": "MicroStrategy",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -145,79 +145,67 @@
   ],
   "topLargeCap": [
     {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "BPCL.NS",
+      "name": "Bharat Petroleum",
+      "score": 71,
+      "market": "IN"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 71,
+      "market": "HK"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
-      "score": 79,
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 70,
+      "market": "IN"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "8031.T",
+      "name": "Mitsui & Co",
+      "score": 69,
+      "market": "JP"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 68,
       "market": "US"
     },
     {
       "ticker": "LMT",
       "name": "Lockheed Martin",
-      "score": 76,
-      "market": "US"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 76,
-      "market": "US"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 75,
-      "market": "US"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "BKR",
-      "name": "Baker Hughes",
-      "score": 72,
+      "score": 68,
       "market": "US"
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 68,
-      "market": "US"
-    },
     {
       "ticker": "IGG.L",
       "name": "IG Group",
@@ -225,15 +213,15 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 64,
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 66,
       "market": "US"
     },
     {
       "ticker": "BAB.L",
       "name": "Babcock International",
-      "score": 64,
+      "score": 66,
       "market": "UK"
     },
     {
@@ -249,22 +237,34 @@
       "market": "UK"
     },
     {
-      "ticker": "WAL",
-      "name": "Western Alliance Bancorp",
+      "ticker": "ITV.L",
+      "name": "ITV",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 62,
       "market": "US"
+    },
+    {
+      "ticker": "QQ.L",
+      "name": "QinetiQ",
+      "score": 62,
+      "market": "UK"
     },
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 62,
+      "score": 61,
       "market": "US"
     },
     {
-      "ticker": "ITV.L",
-      "name": "ITV",
-      "score": 62,
-      "market": "UK"
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 61,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -281,10 +281,10 @@
       "market": "UK"
     },
     {
-      "ticker": "BBW",
-      "name": "Build-A-Bear Workshop",
-      "score": 64,
-      "market": "US"
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 63,
+      "market": "UK"
     },
     {
       "ticker": "SNR.L",
@@ -293,15 +293,15 @@
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 61,
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 61,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 59,
-      "market": "US"
+      "market": "UK"
     },
     {
-      "ticker": "WIZZ.L",
-      "name": "Wizz Air",
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
       "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
-  "avgScore": 50,
-  "bearishAlertCount": 332
+  "avgScore": 48,
+  "bearishAlertCount": 321
 }
