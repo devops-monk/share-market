@@ -43,13 +43,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "VLO",
       "name": "Valero Energy",
       "score": 73,
@@ -66,6 +59,13 @@
     {
       "ticker": "HAL",
       "name": "Halliburton",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -181,12 +181,6 @@
       "market": "US"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US"
-    },
-    {
       "ticker": "VLO",
       "name": "Valero Energy",
       "score": 73,
@@ -201,6 +195,12 @@
     {
       "ticker": "HAL",
       "name": "Halliburton",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes",
       "score": 72,
       "market": "US"
     }
@@ -225,22 +225,16 @@
       "market": "UK"
     },
     {
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 64,
       "market": "US"
-    },
-    {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 64,
-      "market": "UK"
     },
     {
       "ticker": "SDR.L",
@@ -264,6 +258,12 @@
       "ticker": "ITV.L",
       "name": "ITV",
       "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 61,
       "market": "UK"
     }
   ],
@@ -295,7 +295,7 @@
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 61,
+      "score": 62,
       "market": "UK"
     },
     {
@@ -311,20 +311,20 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 59,
-      "market": "UK"
-    },
-    {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
-      "score": 59,
+      "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 59,
+      "market": "US"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 59,
       "market": "UK"
     }
