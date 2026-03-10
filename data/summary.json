@@ -3,7 +3,14 @@
     {
       "ticker": "CF",
       "name": "CF Industries",
-      "score": 76,
+      "score": 77,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -22,8 +29,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NEM",
-      "name": "Newmont",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -50,24 +57,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "BP.L",
+      "name": "BP",
       "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 70,
-      "market": "US",
+      "market": "UK",
       "capCategory": "Large"
     }
   ],
@@ -82,35 +82,42 @@
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "GTLB",
       "name": "GitLab",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "GRAB",
       "name": "Grab Holdings",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "SE",
       "name": "Sea Limited",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
@@ -131,23 +138,22 @@
     {
       "ticker": "GWRE",
       "name": "Guidewire Software",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "MNDY",
-      "name": "monday.com",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "CF",
       "name": "CF Industries",
-      "score": 76,
+      "score": 77,
+      "market": "US"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 72,
       "market": "US"
     },
     {
@@ -157,8 +163,8 @@
       "market": "US"
     },
     {
-      "ticker": "NEM",
-      "name": "Newmont",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 71,
       "market": "US"
     },
@@ -175,26 +181,8 @@
       "market": "HK"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 70,
       "market": "US"
     },
@@ -203,6 +191,18 @@
       "name": "BP",
       "score": 70,
       "market": "UK"
+    },
+    {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 70,
+      "market": "IN"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -231,6 +231,12 @@
       "market": "UK"
     },
     {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
       "score": 65,
@@ -249,22 +255,16 @@
       "market": "UK"
     },
     {
-      "ticker": "TTC",
-      "name": "Toro Company",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 64,
       "market": "US"
     },
     {
-      "ticker": "CNA.L",
-      "name": "Centrica",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "QQ.L",
-      "name": "QinetiQ",
-      "score": 64,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -323,13 +323,13 @@
       "market": "HK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "LTC",
+      "name": "LTC Properties",
       "score": 60,
-      "market": "UK"
+      "market": "US"
     }
   ],
-  "totalStocks": 855,
+  "totalStocks": 856,
   "avgScore": 50,
-  "bearishAlertCount": 319
+  "bearishAlertCount": 321
 }
