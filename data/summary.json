@@ -36,13 +36,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 74,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 73,
@@ -69,9 +62,23 @@
       "score": 72,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
+    {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
@@ -85,13 +92,6 @@
       "score": 20,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "NOW",
@@ -175,12 +175,6 @@
       "market": "US"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 74,
-      "market": "HK"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 73,
@@ -203,15 +197,15 @@
       "name": "FedEx",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 72,
+      "market": "US"
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 69,
-      "market": "UK"
-    },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
@@ -265,6 +259,12 @@
       "name": "DigitalOcean",
       "score": 62,
       "market": "US"
+    },
+    {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 61,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -287,21 +287,21 @@
       "market": "US"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "WIZZ.L",
-      "name": "Wizz Air",
-      "score": 62,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 61,
       "market": "UK"
     },
     {
@@ -311,14 +311,8 @@
       "market": "HK"
     },
     {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
+      "ticker": "CURY.L",
+      "name": "Currys",
       "score": 60,
       "market": "UK"
     },
@@ -327,6 +321,12 @@
       "name": "LTC Properties",
       "score": 59,
       "market": "US"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 59,
+      "market": "UK"
     }
   ],
   "totalStocks": 864,
