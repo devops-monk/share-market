@@ -50,13 +50,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "EOG",
       "name": "EOG Resources",
       "score": 70,
@@ -69,16 +62,16 @@
       "score": 70,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
     {
       "ticker": "GTLB",
       "name": "GitLab",
@@ -99,6 +92,13 @@
       "score": 23,
       "market": "UK",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "SE",
@@ -129,18 +129,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "GWRE",
       "name": "Guidewire Software",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -163,12 +163,6 @@
       "market": "US"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "EOG",
       "name": "EOG Resources",
       "score": 70,
@@ -187,6 +181,18 @@
       "market": "US"
     },
     {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 70,
@@ -197,12 +203,6 @@
       "name": "SSE",
       "score": 70,
       "market": "UK"
-    },
-    {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
-      "score": 70,
-      "market": "IN"
     }
   ],
   "topMidCap": [
@@ -325,7 +325,7 @@
     {
       "ticker": "LTC",
       "name": "LTC Properties",
-      "score": 58,
+      "score": 59,
       "market": "US"
     }
   ],
