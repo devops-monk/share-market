@@ -8,13 +8,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 71,
@@ -43,10 +36,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
+      "ticker": "INTC",
+      "name": "Intel",
       "score": 69,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 69,
+      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -57,15 +57,15 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "INTC",
-      "name": "Intel",
+      "ticker": "NEM",
+      "name": "Newmont",
       "score": 68,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "NEM",
-      "name": "Newmont",
+      "ticker": "VLO",
+      "name": "Valero Energy",
       "score": 68,
       "market": "US",
       "capCategory": "Large"
@@ -73,18 +73,18 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 19,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "RPI.L",
-      "name": "Raspberry Pi",
+      "ticker": "ZG",
+      "name": "Zillow Group",
       "score": 20,
-      "market": "UK",
-      "capCategory": "Small"
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "GTLB",
@@ -94,23 +94,23 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 21,
+      "ticker": "RPI.L",
+      "name": "Raspberry Pi",
+      "score": 22,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "FICO",
+      "name": "Fair Isaac (FICO)",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
@@ -122,23 +122,23 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 22,
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 24,
+      "market": "IN",
+      "capCategory": "Large"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 23,
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     }
@@ -151,12 +151,6 @@
       "market": "HK"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 71,
@@ -181,16 +175,16 @@
       "market": "IN"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
+      "ticker": "INTC",
+      "name": "Intel",
       "score": 69,
       "market": "US"
     },
     {
-      "ticker": "INTC",
-      "name": "Intel",
-      "score": 68,
-      "market": "US"
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 69,
+      "market": "UK"
     },
     {
       "ticker": "NEM",
@@ -203,19 +197,25 @@
       "name": "Valero Energy",
       "score": 68,
       "market": "US"
+    },
+    {
+      "ticker": "7203.T",
+      "name": "Toyota Motor",
+      "score": 68,
+      "market": "JP"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 67,
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 68,
       "market": "US"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 66,
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 67,
       "market": "US"
     },
     {
@@ -225,20 +225,20 @@
       "market": "UK"
     },
     {
-      "ticker": "AOS",
-      "name": "A.O. Smith",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 63,
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 64,
       "market": "UK"
     },
     {
       "ticker": "CNA.L",
       "name": "Centrica",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
       "score": 63,
       "market": "UK"
     },
@@ -249,21 +249,21 @@
       "market": "US"
     },
     {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
+      "ticker": "AOS",
+      "name": "A.O. Smith",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
       "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 61,
-      "market": "US"
-    },
-    {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
-      "score": 61,
+      "score": 62,
       "market": "UK"
     }
   ],
@@ -325,11 +325,11 @@
     {
       "ticker": "WIZZ.L",
       "name": "Wizz Air",
-      "score": 57,
+      "score": 58,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 48,
-  "bearishAlertCount": 317
+  "bearishAlertCount": 324
 }
