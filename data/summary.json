@@ -1,23 +1,16 @@
 {
   "topOverall": [
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 77,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
-      "score": 77,
+      "score": 78,
       "market": "HK",
       "capCategory": "Large"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 72,
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 77,
       "market": "US",
       "capCategory": "Large"
     },
@@ -36,11 +29,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Mid"
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "OVV",
@@ -50,23 +43,30 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco",
       "score": 70,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 69,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ROST",
+      "name": "Ross Stores",
+      "score": 69,
       "market": "US",
       "capCategory": "Large"
     }
@@ -75,7 +75,7 @@
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
-      "score": 20,
+      "score": 18,
       "market": "UK",
       "capCategory": "Small"
     },
@@ -145,21 +145,15 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 77,
-      "market": "US"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
-      "score": 77,
+      "score": 78,
       "market": "HK"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 72,
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 77,
       "market": "US"
     },
     {
@@ -175,15 +169,15 @@
       "market": "US"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 70,
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 71,
       "market": "US"
     },
     {
@@ -193,31 +187,25 @@
       "market": "US"
     },
     {
-      "ticker": "BP.L",
-      "name": "BP",
-      "score": 70,
-      "market": "UK"
-    },
-    {
       "ticker": "HINDALCO.NS",
       "name": "Hindalco",
       "score": 70,
       "market": "IN"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "ROST",
+      "name": "Ross Stores",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 72,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 71,
-      "market": "UK"
-    },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
@@ -225,9 +213,15 @@
       "market": "US"
     },
     {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
-      "score": 68,
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 66,
       "market": "UK"
     },
     {
@@ -237,49 +231,43 @@
       "market": "US"
     },
     {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "IMI.L",
-      "name": "IMI",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
       "score": 64,
       "market": "US"
     },
     {
-      "ticker": "CNA.L",
-      "name": "Centrica",
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
       "score": 64,
       "market": "UK"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 63,
+      "market": "US"
+    },
+    {
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "WAL",
+      "name": "Western Alliance Bancorp",
+      "score": 61,
+      "market": "US"
     }
   ],
   "topSmallCap": [
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 68,
-      "market": "UK"
-    },
     {
       "ticker": "CMA",
       "name": "Comerica",
@@ -289,31 +277,25 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
       "score": 65,
       "market": "UK"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 64,
+      "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "WIZZ.L",
-      "name": "Wizz Air",
-      "score": 61,
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -327,9 +309,27 @@
       "name": "LTC Properties",
       "score": 60,
       "market": "US"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
+      "score": 58,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 58,
+      "market": "UK"
     }
   ],
   "totalStocks": 864,
-  "avgScore": 50,
+  "avgScore": 49,
   "bearishAlertCount": 322
 }
