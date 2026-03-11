@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-03-10T21:15:32.572Z",
+  "lastUpdated": "2026-03-11T07:25:38.911Z",
   "stockCount": 864,
-  "bearishAlerts": 323,
-  "newsCount": 500,
+  "bearishAlerts": 322,
+  "newsCount": 495,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
@@ -10,9 +10,9 @@
       "sma50": 6897.16,
       "sma200": 6591.49,
       "changeFromHigh": -2.82,
-      "distributionDays": 11,
+      "distributionDays": 12,
       "regime": "correction",
-      "signal": "11 distribution days in 25 sessions — selling pressure"
+      "signal": "12 distribution days in 25 sessions — selling pressure"
     },
     "uk": {
       "index": "FTSE 100",
@@ -26,10 +26,10 @@
     },
     "in": {
       "index": "Nifty 50",
-      "price": 24261.6,
-      "sma50": 25529.52,
-      "sma200": 25336.22,
-      "changeFromHigh": -7.85,
+      "price": 23997.35,
+      "sma50": 25488.62,
+      "sma200": 25333.16,
+      "changeFromHigh": -8.85,
       "distributionDays": 8,
       "regime": "correction",
       "signal": "8 distribution days in 25 sessions — selling pressure"
@@ -46,13 +46,13 @@
     },
     "asia": {
       "index": "Nikkei 225",
-      "price": 54248.39,
-      "sma50": 54287.26,
-      "sma200": 46600.1,
-      "changeFromHigh": -7.82,
-      "distributionDays": 9,
+      "price": 55025.37,
+      "sma50": 54379.51,
+      "sma200": 46686.46,
+      "changeFromHigh": -6.5,
+      "distributionDays": 8,
       "regime": "correction",
-      "signal": "9 distribution days in 25 sessions — selling pressure"
+      "signal": "8 distribution days in 25 sessions — selling pressure"
     },
     "overall": "correction",
     "summary": "Markets showing weakness. Be selective, reduce position sizes, and tighten stops."

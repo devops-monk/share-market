@@ -8,6 +8,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 77,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "NEM",
       "name": "Newmont",
       "score": 72,
@@ -29,13 +43,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 71,
@@ -50,17 +57,10 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "BPCL.NS",
-      "name": "Bharat Petroleum",
-      "score": 71,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 71,
-      "market": "HK",
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 70,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -122,6 +122,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 24,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "U",
       "name": "Unity Software",
       "score": 24,
@@ -134,13 +141,6 @@
       "score": 24,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -148,6 +148,18 @@
       "ticker": "CF",
       "name": "CF Industries",
       "score": 77,
+      "market": "US"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 77,
+      "market": "HK"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 72,
       "market": "US"
     },
     {
@@ -163,28 +175,16 @@
       "market": "US"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "BPCL.NS",
-      "name": "Bharat Petroleum",
-      "score": 71,
-      "market": "IN"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 71,
-      "market": "HK"
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "score": 70,
+      "market": "US"
     },
     {
       "ticker": "BG",
@@ -199,8 +199,8 @@
       "market": "UK"
     },
     {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco",
       "score": 70,
       "market": "IN"
     }
@@ -255,16 +255,16 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 64,
-      "market": "US"
-    },
-    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
       "score": 64,
       "market": "US"
+    },
+    {
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 64,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 50,
-  "bearishAlertCount": 323
+  "bearishAlertCount": 322
 }
