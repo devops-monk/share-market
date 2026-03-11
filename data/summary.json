@@ -29,13 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 71,
@@ -52,6 +45,13 @@
     {
       "ticker": "JNJ",
       "name": "Johnson & Johnson",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -75,7 +75,7 @@
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
-      "score": 18,
+      "score": 20,
       "market": "UK",
       "capCategory": "Small"
     },
@@ -169,12 +169,6 @@
       "market": "US"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 71,
@@ -189,6 +183,12 @@
     {
       "ticker": "JNJ",
       "name": "Johnson & Johnson",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
       "score": 70,
       "market": "US"
     },
@@ -215,7 +215,7 @@
     {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
-      "score": 66,
+      "score": 67,
       "market": "UK"
     },
     {
@@ -237,6 +237,12 @@
       "market": "US"
     },
     {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 63,
@@ -249,22 +255,16 @@
       "market": "UK"
     },
     {
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "WAL",
       "name": "Western Alliance Bancorp",
       "score": 61,
       "market": "US"
-    },
-    {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 60,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -283,7 +283,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 63,
+      "score": 65,
       "market": "UK"
     },
     {
@@ -295,7 +295,7 @@
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 61,
+      "score": 62,
       "market": "UK"
     },
     {
@@ -311,25 +311,25 @@
       "market": "US"
     },
     {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 60,
+      "market": "UK"
+    },
+    {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 58,
-      "market": "UK"
-    },
-    {
-      "ticker": "WIZZ.L",
-      "name": "Wizz Air",
-      "score": 57,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 323
+  "bearishAlertCount": 325
 }
