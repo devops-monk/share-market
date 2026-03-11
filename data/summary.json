@@ -10,6 +10,13 @@
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
       "score": 72,
       "market": "US",
       "capCategory": "Mid"
@@ -50,35 +57,21 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "NEM",
+      "name": "Newmont",
       "score": 70,
       "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 70,
-      "market": "UK",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
     {
       "ticker": "ZG",
       "name": "Zillow Group",
@@ -87,11 +80,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SE",
-      "name": "Sea Limited",
+      "ticker": "GTLB",
+      "name": "GitLab",
       "score": 22,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "RPI.L",
@@ -101,15 +101,8 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
+      "ticker": "SE",
+      "name": "Sea Limited",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -129,18 +122,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BRZE",
-      "name": "Braze",
-      "score": 25,
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 24,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
       "score": 25,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -169,8 +169,20 @@
       "market": "US"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 70,
       "market": "US"
     },
@@ -191,24 +203,18 @@
       "name": "Coal India",
       "score": 70,
       "market": "IN"
-    },
-    {
-      "ticker": "BPCL.NS",
-      "name": "Bharat Petroleum",
-      "score": 70,
-      "market": "IN"
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
       "score": 72,
       "market": "US"
     },
@@ -225,15 +231,9 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 68,
+      "ticker": "RRC",
+      "name": "Range Resources",
+      "score": 67,
       "market": "US"
     },
     {
@@ -243,8 +243,8 @@
       "market": "UK"
     },
     {
-      "ticker": "RRC",
-      "name": "Range Resources",
+      "ticker": "AOS",
+      "name": "A.O. Smith",
       "score": 66,
       "market": "US"
     },
@@ -261,8 +261,8 @@
       "market": "UK"
     },
     {
-      "ticker": "AOS",
-      "name": "A.O. Smith",
+      "ticker": "TTC",
+      "name": "Toro Company",
       "score": 64,
       "market": "US"
     }
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 864,
-  "avgScore": 49,
+  "avgScore": 50,
   "bearishAlertCount": 330
 }
