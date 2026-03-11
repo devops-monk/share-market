@@ -29,16 +29,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 71,
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
@@ -57,15 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "ROST",
+      "name": "Ross Stores",
       "score": 69,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ROST",
-      "name": "Ross Stores",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 69,
       "market": "US",
       "capCategory": "Large"
@@ -75,7 +75,7 @@
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
-      "score": 18,
+      "score": 20,
       "market": "UK",
       "capCategory": "Small"
     },
@@ -115,17 +115,24 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TRENT.BO",
       "name": "Trent",
       "score": 24,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "INF.L",
+      "name": "Informa",
+      "score": 24,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 24,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -134,13 +141,6 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -169,15 +169,15 @@
       "market": "US"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 71,
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 70,
       "market": "US"
     },
     {
@@ -193,14 +193,14 @@
       "market": "IN"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "ROST",
+      "name": "Ross Stores",
       "score": 69,
       "market": "US"
     },
     {
-      "ticker": "ROST",
-      "name": "Ross Stores",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 69,
       "market": "US"
     }
@@ -213,8 +213,8 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
       "score": 67,
       "market": "UK"
     },
@@ -237,12 +237,6 @@
       "market": "US"
     },
     {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 63,
@@ -257,7 +251,7 @@
     {
       "ticker": "BAB.L",
       "name": "Babcock International",
-      "score": 63,
+      "score": 62,
       "market": "UK"
     },
     {
@@ -265,9 +259,21 @@
       "name": "Western Alliance Bancorp",
       "score": 61,
       "market": "US"
+    },
+    {
+      "ticker": "BWY.L",
+      "name": "Bellway",
+      "score": 60,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 69,
+      "market": "UK"
+    },
     {
       "ticker": "CMA",
       "name": "Comerica",
@@ -283,19 +289,13 @@
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 65,
+      "score": 64,
       "market": "UK"
     },
     {
       "ticker": "SNR.L",
       "name": "Senior plc",
       "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 62,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 322
+  "bearishAlertCount": 321
 }
