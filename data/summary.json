@@ -8,6 +8,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "BAB.L",
       "name": "Babcock International",
       "score": 72,
@@ -22,20 +29,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "HINDALCO.NS",
       "name": "Hindalco",
       "score": 71,
@@ -43,31 +36,38 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "INTC",
+      "name": "Intel",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 70,
       "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SSE.L",
-      "name": "SSE",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
-      "score": 70,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BPCL.NS",
-      "name": "Bharat Petroleum",
-      "score": 70,
-      "market": "IN",
       "capCategory": "Large"
     }
   ],
@@ -75,20 +75,13 @@
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 19,
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -108,6 +101,20 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TRENT.BO",
       "name": "Trent",
       "score": 24,
@@ -122,25 +129,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 24,
+      "ticker": "BRZE",
+      "name": "Braze",
+      "score": 25,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 24,
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 25,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -155,6 +155,24 @@
       "name": "Hindalco",
       "score": 71,
       "market": "IN"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 70,
+      "market": "US"
     },
     {
       "ticker": "RIO.L",
@@ -181,31 +199,19 @@
       "market": "IN"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "NEM",
       "name": "Newmont",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
       "score": 69,
       "market": "US"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 72,
+      "market": "US"
+    },
     {
       "ticker": "BAB.L",
       "name": "Babcock International",
@@ -221,13 +227,13 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 71,
+      "score": 70,
       "market": "US"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 71,
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 68,
       "market": "US"
     },
     {
@@ -259,12 +265,6 @@
       "name": "A.O. Smith",
       "score": 64,
       "market": "US"
-    },
-    {
-      "ticker": "CNA.L",
-      "name": "Centrica",
-      "score": 64,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -325,7 +325,7 @@
     {
       "ticker": "LTC",
       "name": "LTC Properties",
-      "score": 59,
+      "score": 58,
       "market": "US"
     }
   ],
