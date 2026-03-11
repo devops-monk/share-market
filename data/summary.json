@@ -43,15 +43,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -66,6 +59,13 @@
     {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
+      "score": 70,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BPCL.NS",
+      "name": "Bharat Petroleum",
       "score": 70,
       "market": "IN",
       "capCategory": "Large"
@@ -115,6 +115,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TRENT.BO",
       "name": "Trent",
       "score": 24,
@@ -127,13 +134,6 @@
       "score": 24,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "U",
@@ -181,14 +181,8 @@
       "market": "IN"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 70,
       "market": "US"
     },
@@ -201,6 +195,12 @@
     {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
+      "score": 70,
+      "market": "IN"
+    },
+    {
+      "ticker": "BPCL.NS",
+      "name": "Bharat Petroleum",
       "score": 70,
       "market": "IN"
     }
@@ -216,12 +216,6 @@
       "ticker": "HBR.L",
       "name": "Harbour Energy",
       "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 66,
       "market": "UK"
     },
     {
@@ -255,9 +249,15 @@
       "market": "UK"
     },
     {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "BAB.L",
       "name": "Babcock International",
-      "score": 63,
+      "score": 62,
       "market": "UK"
     },
     {
@@ -293,6 +293,12 @@
       "market": "UK"
     },
     {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 62,
@@ -317,19 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 59,
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
+      "score": 57,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 325
+  "bearishAlertCount": 321
 }
