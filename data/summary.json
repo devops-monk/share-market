@@ -8,23 +8,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 77,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TGT",
       "name": "Target",
-      "score": 72,
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
@@ -43,20 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 70,
@@ -69,15 +41,64 @@
       "score": 70,
       "market": "IN",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "score": 69,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 69,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "score": 68,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 68,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Mid"
+    },
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
       "score": 20,
       "market": "UK",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "GTLB",
+      "name": "GitLab",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
@@ -87,60 +108,39 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "GTLB",
-      "name": "GitLab",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "GRAB",
       "name": "Grab Holdings",
-      "score": 23,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "SE",
       "name": "Sea Limited",
-      "score": 23,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 23,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 24,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "INF.L",
-      "name": "Informa",
-      "score": 24,
-      "market": "UK",
-      "capCategory": "Mid"
     },
     {
       "ticker": "U",
       "name": "Unity Software",
-      "score": 24,
+      "score": 23,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -151,21 +151,9 @@
       "market": "HK"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 77,
-      "market": "US"
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "TGT",
       "name": "Target",
-      "score": 72,
+      "score": 71,
       "market": "US"
     },
     {
@@ -181,18 +169,6 @@
       "market": "IN"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 70,
@@ -203,44 +179,62 @@
       "name": "Bharat Petroleum",
       "score": 70,
       "market": "IN"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 68,
+      "market": "US"
     }
   ],
   "topMidCap": [
     {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 68,
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "AOS",
+      "name": "A.O. Smith",
+      "score": 63,
       "market": "US"
     },
     {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 65,
-      "market": "US"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 64,
-      "market": "US"
-    },
-    {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
       "score": 63,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "CNA.L",
@@ -249,10 +243,10 @@
       "market": "UK"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 63,
-      "market": "UK"
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 62,
+      "market": "US"
     },
     {
       "ticker": "BAB.L",
@@ -261,10 +255,16 @@
       "market": "UK"
     },
     {
-      "ticker": "WAL",
-      "name": "Western Alliance Bancorp",
+      "ticker": "TTC",
+      "name": "Toro Company",
       "score": 61,
       "market": "US"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 61,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -311,16 +311,16 @@
       "market": "HK"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 60,
-      "market": "US"
-    },
-    {
       "ticker": "CURY.L",
       "name": "Currys",
       "score": 60,
       "market": "UK"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 58,
+      "market": "US"
     },
     {
       "ticker": "WIZZ.L",
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 864,
-  "avgScore": 49,
-  "bearishAlertCount": 321
+  "avgScore": 48,
+  "bearishAlertCount": 317
 }
