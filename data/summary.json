@@ -29,6 +29,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 71,
@@ -36,8 +43,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco",
+      "score": 71,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -50,24 +64,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HINDALCO.NS",
-      "name": "Hindalco",
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
       "score": 70,
       "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ROST",
-      "name": "Ross Stores",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 69,
-      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -75,7 +75,7 @@
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
-      "score": 20,
+      "score": 18,
       "market": "UK",
       "capCategory": "Small"
     },
@@ -169,14 +169,26 @@
       "market": "US"
     },
     {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco",
+      "score": 71,
+      "market": "IN"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
       "score": 70,
       "market": "US"
     },
@@ -187,22 +199,10 @@
       "market": "US"
     },
     {
-      "ticker": "HINDALCO.NS",
-      "name": "Hindalco",
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
       "score": 70,
       "market": "IN"
-    },
-    {
-      "ticker": "ROST",
-      "name": "Ross Stores",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -215,7 +215,7 @@
     {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
-      "score": 67,
+      "score": 66,
       "market": "UK"
     },
     {
@@ -249,20 +249,20 @@
       "market": "UK"
     },
     {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
-      "score": 62,
-      "market": "UK"
-    },
-    {
       "ticker": "WAL",
       "name": "Western Alliance Bancorp",
       "score": 61,
       "market": "US"
     },
     {
-      "ticker": "BWY.L",
-      "name": "Bellway",
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
       "score": 60,
       "market": "UK"
     }
@@ -283,19 +283,19 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 64,
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "SNR.L",
       "name": "Senior plc",
       "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 61,
       "market": "UK"
     },
     {
@@ -311,25 +311,25 @@
       "market": "US"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 60,
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 58,
       "market": "UK"
     },
     {
       "ticker": "WIZZ.L",
       "name": "Wizz Air",
-      "score": 58,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 58,
+      "score": 57,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 321
+  "bearishAlertCount": 323
 }
