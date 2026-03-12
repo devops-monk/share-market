@@ -31,7 +31,7 @@
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 69,
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
@@ -50,18 +50,18 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "DTG.DE",
+      "name": "Daimler Truck",
+      "score": 69,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 69,
       "market": "HK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 68,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "DOCN",
@@ -87,11 +87,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
+      "ticker": "RBLX",
+      "name": "Roblox",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "FICO",
@@ -108,6 +115,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "HUBS",
       "name": "HubSpot",
       "score": 22,
@@ -115,22 +129,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GTLB",
-      "name": "GitLab",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
+      "ticker": "MNDY",
+      "name": "monday.com",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
@@ -171,7 +171,7 @@
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 69,
+      "score": 70,
       "market": "US"
     },
     {
@@ -187,6 +187,12 @@
       "market": "UK"
     },
     {
+      "ticker": "DTG.DE",
+      "name": "Daimler Truck",
+      "score": 69,
+      "market": "DE"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 69,
@@ -197,21 +203,9 @@
       "name": "Bharat Petroleum",
       "score": 68,
       "market": "IN"
-    },
-    {
-      "ticker": "DTG.DE",
-      "name": "Daimler Truck",
-      "score": 68,
-      "market": "DE"
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 68,
-      "market": "US"
-    },
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
@@ -225,9 +219,9 @@
       "market": "UK"
     },
     {
-      "ticker": "RRC",
-      "name": "Range Resources",
-      "score": 65,
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 66,
       "market": "US"
     },
     {
@@ -237,20 +231,14 @@
       "market": "UK"
     },
     {
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "EMN",
-      "name": "Eastman Chemical",
       "score": 63,
       "market": "US"
     },
@@ -261,10 +249,22 @@
       "market": "UK"
     },
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "QQ.L",
       "name": "QinetiQ",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 62,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 59,
-      "market": "UK"
-    },
-    {
       "ticker": "LTC",
       "name": "LTC Properties",
-      "score": 58,
+      "score": 59,
       "market": "US"
+    },
+    {
+      "ticker": "GYM.L",
+      "name": "Gym Group",
+      "score": 58,
+      "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 48,
-  "bearishAlertCount": 336
+  "bearishAlertCount": 329
 }
