@@ -22,6 +22,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
       "score": 72,
@@ -29,24 +43,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "SDR.L",
+      "name": "Schroders",
       "score": 71,
-      "market": "US",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "HINDALCO.NS",
       "name": "Hindalco",
       "score": 71,
       "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 70,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -57,17 +64,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 70,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SSE.L",
-      "name": "SSE",
-      "score": 70,
-      "market": "UK",
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -94,9 +94,9 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "SE",
-      "name": "Sea Limited",
-      "score": 22,
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
@@ -106,6 +106,20 @@
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "MSTR",
+      "name": "MicroStrategy",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Small"
     },
     {
       "ticker": "U",
@@ -127,20 +141,6 @@
       "score": 24,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -163,16 +163,22 @@
       "market": "DE"
     },
     {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 72,
-      "market": "JP"
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 73,
+      "market": "US"
     },
     {
       "ticker": "CF",
       "name": "CF Industries",
-      "score": 71,
+      "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 72,
+      "market": "JP"
     },
     {
       "ticker": "HINDALCO.NS",
@@ -181,14 +187,14 @@
       "market": "IN"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 70,
       "market": "US"
     },
@@ -197,19 +203,13 @@
       "name": "Rio Tinto",
       "score": 70,
       "market": "UK"
-    },
-    {
-      "ticker": "SSE.L",
-      "name": "SSE",
-      "score": 70,
-      "market": "UK"
     }
   ],
   "topMidCap": [
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 70,
+      "score": 71,
       "market": "UK"
     },
     {
@@ -217,6 +217,12 @@
       "name": "DigitalOcean",
       "score": 69,
       "market": "US"
+    },
+    {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 69,
+      "market": "UK"
     },
     {
       "ticker": "LUNR",
@@ -259,12 +265,6 @@
       "name": "Babcock International",
       "score": 64,
       "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 63,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -289,19 +289,19 @@
     {
       "ticker": "SNR.L",
       "name": "Senior plc",
-      "score": 65,
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "GYM.L",
+      "name": "Gym Group",
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 61,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 341
+  "bearishAlertCount": 345
 }
