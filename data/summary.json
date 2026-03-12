@@ -15,6 +15,27 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "DTG.DE",
       "name": "Daimler Truck",
       "score": 74,
@@ -22,22 +43,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -50,8 +57,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -59,33 +66,12 @@
     {
       "ticker": "BG",
       "name": "Bunge Global",
-      "score": 71,
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
@@ -94,37 +80,9 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "SE",
-      "name": "Sea Limited",
+      "ticker": "RBLX",
+      "name": "Roblox",
       "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
@@ -136,9 +94,51 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
+      "ticker": "DASH",
+      "name": "DoorDash",
       "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     }
@@ -157,26 +157,32 @@
       "market": "DE"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 74,
+      "market": "US"
+    },
+    {
       "ticker": "DTG.DE",
       "name": "Daimler Truck",
       "score": 74,
       "market": "DE"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 73,
       "market": "US"
     },
@@ -187,22 +193,16 @@
       "market": "JP"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 72,
       "market": "US"
     },
     {
       "ticker": "BG",
       "name": "Bunge Global",
-      "score": 71,
+      "score": 72,
       "market": "US"
-    },
-    {
-      "ticker": "HINDALCO.NS",
-      "name": "Hindalco",
-      "score": 71,
-      "market": "IN"
     }
   ],
   "topMidCap": [
@@ -219,15 +219,15 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
       "score": 68,
       "market": "US"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 67,
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 68,
       "market": "US"
     },
     {
@@ -235,12 +235,6 @@
       "name": "Kingfisher",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 66,
-      "market": "US"
     },
     {
       "ticker": "BKG.L",
@@ -255,14 +249,20 @@
       "market": "UK"
     },
     {
-      "ticker": "LEA",
-      "name": "Lear Corp",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 64,
       "market": "US"
     },
     {
       "ticker": "CNA.L",
       "name": "Centrica",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
       "score": 64,
       "market": "UK"
     }
@@ -323,13 +323,13 @@
       "market": "US"
     },
     {
-      "ticker": "ALFA.L",
-      "name": "Alfa Financial Software",
+      "ticker": "BBW",
+      "name": "Build-A-Bear Workshop",
       "score": 60,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "totalStocks": 864,
-  "avgScore": 49,
-  "bearishAlertCount": 343
+  "avgScore": 50,
+  "bearishAlertCount": 342
 }
