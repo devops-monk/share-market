@@ -29,6 +29,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 74,
@@ -59,13 +66,6 @@
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -101,11 +101,25 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "U",
       "name": "Unity Software",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "DT",
@@ -122,22 +136,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -169,6 +169,12 @@
       "market": "US"
     },
     {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 74,
+      "market": "US"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 74,
@@ -195,12 +201,6 @@
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
       "score": 72,
       "market": "US"
     }
@@ -305,6 +305,12 @@
       "market": "UK"
     },
     {
+      "ticker": "BBW",
+      "name": "Build-A-Bear Workshop",
+      "score": 61,
+      "market": "US"
+    },
+    {
       "ticker": "SUPR.L",
       "name": "Supermarket Income REIT",
       "score": 61,
@@ -319,12 +325,6 @@
     {
       "ticker": "LTC",
       "name": "LTC Properties",
-      "score": 60,
-      "market": "US"
-    },
-    {
-      "ticker": "BBW",
-      "name": "Build-A-Bear Workshop",
       "score": 60,
       "market": "US"
     }
