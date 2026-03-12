@@ -10,7 +10,7 @@
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 75,
+      "score": 76,
       "market": "DE",
       "capCategory": "Large"
     },
@@ -19,6 +19,13 @@
       "name": "Shin-Etsu Chemical",
       "score": 72,
       "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -31,7 +38,7 @@
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 69,
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
@@ -43,32 +50,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 69,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
-      "score": 68,
+      "score": 69,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 68,
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 69,
       "market": "UK",
-      "capCategory": "Mid"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 69,
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
@@ -89,7 +89,7 @@
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
-      "score": 21,
+      "score": 22,
       "market": "UK",
       "capCategory": "Small"
     },
@@ -101,8 +101,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
+      "ticker": "DT",
+      "name": "Dynatrace",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -113,6 +113,13 @@
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "HIMS",
@@ -129,18 +136,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems",
-      "score": 24,
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 23,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -153,7 +153,7 @@
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 75,
+      "score": 76,
       "market": "DE"
     },
     {
@@ -161,6 +161,12 @@
       "name": "Shin-Etsu Chemical",
       "score": 72,
       "market": "JP"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "HINDALCO.NS",
@@ -171,7 +177,7 @@
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 69,
+      "score": 70,
       "market": "US"
     },
     {
@@ -181,42 +187,36 @@
       "market": "US"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 69,
       "market": "US"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 69,
+      "market": "UK"
     },
     {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 69,
       "market": "HK"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "BPCL.NS",
-      "name": "Bharat Petroleum",
-      "score": 68,
-      "market": "IN"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 68,
+      "market": "US"
+    },
     {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 68,
       "market": "UK"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 67,
-      "market": "US"
     },
     {
       "ticker": "LUNR",
@@ -228,6 +228,12 @@
       "ticker": "KGF.L",
       "name": "Kingfisher",
       "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
+      "score": 64,
       "market": "UK"
     },
     {
@@ -249,29 +255,23 @@
       "market": "US"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 63,
+      "market": "US"
+    },
+    {
       "ticker": "LEA",
       "name": "Lear Corp",
       "score": 63,
       "market": "US"
-    },
-    {
-      "ticker": "EMN",
-      "name": "Eastman Chemical",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "CNA.L",
-      "name": "Centrica",
-      "score": 63,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 68,
+      "score": 69,
       "market": "UK"
     },
     {
@@ -287,14 +287,20 @@
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 65,
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 64,
       "market": "UK"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
       "score": 61,
       "market": "UK"
     },
@@ -313,23 +319,17 @@
     {
       "ticker": "GYM.L",
       "name": "Gym Group",
-      "score": 59,
+      "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 58,
-      "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
       "score": 58,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 48,
-  "bearishAlertCount": 337
+  "bearishAlertCount": 340
 }
