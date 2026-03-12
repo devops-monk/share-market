@@ -29,17 +29,38 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
-      "score": 72,
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
-      "score": 72,
+      "score": 73,
       "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -48,27 +69,6 @@
       "score": 71,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "HINDALCO.NS",
-      "name": "Hindalco",
-      "score": 71,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -77,7 +77,7 @@
       "name": "Zillow Group",
       "score": 19,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "RBLX",
@@ -94,6 +94,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "SE",
+      "name": "Sea Limited",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "GWRE",
       "name": "Guidewire Software",
       "score": 23,
@@ -101,29 +108,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "MSTR",
-      "name": "MicroStrategy",
+      "ticker": "DASH",
+      "name": "DoorDash",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "U",
-      "name": "Unity Software",
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
@@ -136,8 +129,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems",
+      "ticker": "MSTR",
+      "name": "MicroStrategy",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -169,40 +169,40 @@
       "market": "US"
     },
     {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
-      "score": 72,
+      "score": 73,
       "market": "US"
     },
     {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
-      "score": 72,
+      "score": 73,
       "market": "JP"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "HINDALCO.NS",
       "name": "Hindalco",
       "score": 71,
       "market": "IN"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 70,
-      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -213,16 +213,16 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
       "score": 69,
       "market": "UK"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 68,
+      "market": "US"
     },
     {
       "ticker": "LUNR",
@@ -237,6 +237,12 @@
       "market": "UK"
     },
     {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 66,
+      "market": "US"
+    },
+    {
       "ticker": "BKG.L",
       "name": "Berkeley Group",
       "score": 66,
@@ -249,20 +255,14 @@
       "market": "UK"
     },
     {
+      "ticker": "LEA",
+      "name": "Lear Corp",
+      "score": 64,
+      "market": "US"
+    },
+    {
       "ticker": "CNA.L",
       "name": "Centrica",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
       "score": 64,
       "market": "UK"
     }
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 345
+  "bearishAlertCount": 343
 }
