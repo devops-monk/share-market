@@ -15,18 +15,25 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 73,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 72,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE",
-      "capCategory": "Large"
     },
     {
       "ticker": "4063.T",
@@ -43,8 +50,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "INTC",
+      "name": "Intel",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -59,13 +66,6 @@
     {
       "ticker": "DVN",
       "name": "Devon Energy",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -115,6 +115,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "GWRE",
       "name": "Guidewire Software",
       "score": 25,
@@ -122,22 +129,15 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PINS",
-      "name": "Pinterest",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -153,8 +153,14 @@
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 72,
+      "score": 73,
       "market": "DE"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 72,
+      "market": "US"
     },
     {
       "ticker": "4063.T",
@@ -169,8 +175,8 @@
       "market": "IN"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "INTC",
+      "name": "Intel",
       "score": 70,
       "market": "US"
     },
@@ -196,12 +202,6 @@
       "ticker": "CF",
       "name": "CF Industries",
       "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel",
-      "score": 69,
       "market": "US"
     }
   ],
@@ -255,25 +255,19 @@
       "market": "US"
     },
     {
-      "ticker": "KGF.L",
-      "name": "Kingfisher",
+      "ticker": "CNA.L",
+      "name": "Centrica",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
+      "ticker": "KGF.L",
+      "name": "Kingfisher",
       "score": 63,
       "market": "UK"
     }
   ],
   "topSmallCap": [
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 68,
-      "market": "UK"
-    },
     {
       "ticker": "CMA",
       "name": "Comerica",
@@ -287,9 +281,9 @@
       "market": "UK"
     },
     {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 63,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 65,
       "market": "UK"
     },
     {
@@ -326,6 +320,12 @@
       "ticker": "GYM.L",
       "name": "Gym Group",
       "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 58,
       "market": "UK"
     }
   ],
