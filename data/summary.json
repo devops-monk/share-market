@@ -15,17 +15,17 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 73,
       "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 72,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -115,13 +115,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PLTR",
-      "name": "Palantir",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "GWRE",
       "name": "Guidewire Software",
       "score": 25,
@@ -141,6 +134,13 @@
       "score": 25,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "PINS",
+      "name": "Pinterest",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -151,16 +151,16 @@
       "market": "IN"
     },
     {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 73,
       "market": "DE"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 72,
-      "market": "US"
     },
     {
       "ticker": "4063.T",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 328
+  "bearishAlertCount": 327
 }
