@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-03-11T21:15:50.940Z",
+  "lastUpdated": "2026-03-12T07:26:21.697Z",
   "stockCount": 864,
-  "bearishAlerts": 330,
-  "newsCount": 500,
+  "bearishAlerts": 331,
+  "newsCount": 605,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
@@ -10,9 +10,9 @@
       "sma50": 6894.08,
       "sma200": 6596.16,
       "changeFromHigh": -2.91,
-      "distributionDays": 11,
+      "distributionDays": 10,
       "regime": "correction",
-      "signal": "11 distribution days in 25 sessions — selling pressure"
+      "signal": "10 distribution days in 25 sessions — selling pressure"
     },
     "uk": {
       "index": "FTSE 100",
@@ -20,19 +20,19 @@
       "sma50": 10342.55,
       "sma200": 9559.89,
       "changeFromHigh": -5.1,
-      "distributionDays": 9,
+      "distributionDays": 10,
       "regime": "correction",
-      "signal": "9 distribution days in 25 sessions — selling pressure"
+      "signal": "10 distribution days in 25 sessions — selling pressure"
     },
     "in": {
       "index": "Nifty 50",
-      "price": 23866.85,
-      "sma50": 25486.01,
-      "sma200": 25332.51,
-      "changeFromHigh": -9.35,
-      "distributionDays": 8,
+      "price": 23707.55,
+      "sma50": 25441.32,
+      "sma200": 25326.78,
+      "changeFromHigh": -9.95,
+      "distributionDays": 9,
       "regime": "correction",
-      "signal": "8 distribution days in 25 sessions — selling pressure"
+      "signal": "9 distribution days in 25 sessions — selling pressure"
     },
     "eu": {
       "index": "DAX 40",
@@ -46,10 +46,10 @@
     },
     "asia": {
       "index": "Nikkei 225",
-      "price": 55025.37,
-      "sma50": 54379.51,
-      "sma200": 46686.46,
-      "changeFromHigh": -6.5,
+      "price": 54452.96,
+      "sma50": 54461.68,
+      "sma200": 46771.23,
+      "changeFromHigh": -7.47,
       "distributionDays": 8,
       "regime": "correction",
       "signal": "8 distribution days in 25 sessions — selling pressure"

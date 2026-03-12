@@ -1,18 +1,18 @@
 {
   "topOverall": [
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 78,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
       "score": 74,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 73,
+      "market": "IN",
+      "capCategory": "Large"
     },
     {
       "ticker": "LUNR",
@@ -36,22 +36,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HINDALCO.NS",
-      "name": "Hindalco",
-      "score": 71,
-      "market": "IN",
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 72,
+      "market": "JP",
       "capCategory": "Large"
     },
     {
       "ticker": "INTC",
       "name": "Intel",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -66,6 +59,13 @@
     {
       "ticker": "DVN",
       "name": "Devon Energy",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -108,22 +108,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 24,
-      "market": "IN",
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 23,
+      "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "MSTR",
       "name": "MicroStrategy",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -136,35 +129,36 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
+      "ticker": "PINS",
+      "name": "Pinterest",
       "score": 25,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 78,
-      "market": "HK"
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 73,
+      "market": "IN"
     },
     {
-      "ticker": "HINDALCO.NS",
-      "name": "Hindalco",
-      "score": 71,
-      "market": "IN"
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 72,
+      "market": "JP"
     },
     {
       "ticker": "INTC",
       "name": "Intel",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
       "score": 70,
       "market": "US"
     },
@@ -193,16 +187,22 @@
       "market": "US"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 70,
-      "market": "UK"
-    },
-    {
       "ticker": "SSE.L",
       "name": "SSE",
       "score": 70,
       "market": "UK"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 50,
-  "bearishAlertCount": 330
+  "bearishAlertCount": 331
 }
