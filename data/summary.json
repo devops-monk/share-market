@@ -15,13 +15,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 72,
@@ -36,10 +29,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EOAN.DE",
-      "name": "E.ON",
-      "score": 72,
-      "market": "DE",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -50,11 +43,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 71,
-      "market": "US",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "HINDALCO.NS",
@@ -69,12 +62,26 @@
       "score": 70,
       "market": "JP",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "7267.T",
+      "name": "Honda Motor",
+      "score": 69,
+      "market": "JP",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 17,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BROS",
+      "name": "Dutch Bros",
       "score": 18,
       "market": "US",
       "capCategory": "Mid"
@@ -87,13 +94,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "RBLX",
       "name": "Roblox",
       "score": 19,
@@ -104,6 +104,13 @@
       "ticker": "HIMS",
       "name": "Hims & Hers Health",
       "score": 20,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -129,18 +136,11 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
       "score": 22,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -169,20 +169,14 @@
       "market": "IN"
     },
     {
-      "ticker": "EOAN.DE",
-      "name": "E.ON",
-      "score": 72,
-      "market": "DE"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 71,
       "market": "US"
     },
@@ -203,15 +197,15 @@
       "name": "Honda Motor",
       "score": 69,
       "market": "JP"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 68,
+      "market": "US"
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 68,
-      "market": "US"
-    },
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
@@ -231,28 +225,34 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 66,
+      "market": "US"
+    },
+    {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
       "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 63,
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
       "score": 62,
-      "market": "US"
+      "market": "UK"
     },
     {
-      "ticker": "AOS",
-      "name": "A.O. Smith",
+      "ticker": "PSN.L",
+      "name": "Persimmon",
       "score": 62,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "KGF.L",
@@ -261,17 +261,23 @@
       "market": "UK"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
+      "ticker": "ITV.L",
+      "name": "ITV",
       "score": 62,
       "market": "UK"
     }
   ],
   "topSmallCap": [
     {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 71,
+      "market": "UK"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 73,
+      "score": 67,
       "market": "UK"
     },
     {
@@ -289,12 +295,6 @@
     {
       "ticker": "CURY.L",
       "name": "Currys",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
       "score": 62,
       "market": "UK"
     },
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 58,
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 59,
       "market": "UK"
     },
     {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
-      "score": 57,
+      "score": 58,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 48,
-  "bearishAlertCount": 341
+  "bearishAlertCount": 338
 }
