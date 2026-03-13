@@ -8,17 +8,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "EOAN.DE",
       "name": "E.ON",
       "score": 74,
       "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 73,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -89,13 +89,6 @@
     {
       "ticker": "RBLX",
       "name": "Roblox",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -106,6 +99,13 @@
       "score": 22,
       "market": "UK",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "HIMS",
@@ -151,16 +151,16 @@
       "market": "DE"
     },
     {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 74,
+      "market": "US"
+    },
+    {
       "ticker": "EOAN.DE",
       "name": "E.ON",
       "score": 74,
       "market": "DE"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 73,
-      "market": "US"
     },
     {
       "ticker": "4063.T",
@@ -187,6 +187,12 @@
       "market": "US"
     },
     {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "HINDALCO.NS",
       "name": "Hindalco",
       "score": 70,
@@ -197,12 +203,6 @@
       "name": "Marubeni",
       "score": 70,
       "market": "JP"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -255,15 +255,15 @@
       "market": "UK"
     },
     {
-      "ticker": "MUR",
-      "name": "Murphy Oil",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 65,
       "market": "US"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 64,
+      "ticker": "MUR",
+      "name": "Murphy Oil",
+      "score": 65,
       "market": "US"
     }
   ],
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 341
+  "bearishAlertCount": 343
 }
