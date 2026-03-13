@@ -22,6 +22,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 72,
@@ -38,7 +45,14 @@
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 70,
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
@@ -55,23 +69,16 @@
       "score": 70,
       "market": "JP",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "7267.T",
-      "name": "Honda Motor",
-      "score": 69,
-      "market": "JP",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 18,
+      "market": "US",
+      "capCategory": "Mid"
+    },
     {
       "ticker": "ZG",
       "name": "Zillow Group",
@@ -87,16 +94,16 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
+      "ticker": "RBLX",
+      "name": "Roblox",
       "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 21,
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 20,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -108,11 +115,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 21,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "RPI.L",
@@ -129,15 +136,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "DASH",
+      "name": "DoorDash",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -157,6 +157,12 @@
       "market": "JP"
     },
     {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 72,
@@ -171,7 +177,13 @@
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 70,
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 71,
       "market": "US"
     },
     {
@@ -187,25 +199,19 @@
       "market": "JP"
     },
     {
-      "ticker": "INTC",
-      "name": "Intel",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "7267.T",
       "name": "Honda Motor",
       "score": 69,
       "market": "JP"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 68,
-      "market": "US"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 68,
+      "market": "US"
+    },
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
@@ -225,12 +231,6 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 66,
-      "market": "US"
-    },
-    {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
       "score": 65,
@@ -243,27 +243,27 @@
       "market": "UK"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 62,
       "market": "US"
     },
     {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 61,
+      "ticker": "AOS",
+      "name": "A.O. Smith",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "KGF.L",
+      "name": "Kingfisher",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 62,
       "market": "UK"
     }
   ],
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 57,
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 58,
       "market": "UK"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
       "score": 57,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 48,
-  "bearishAlertCount": 336
+  "bearishAlertCount": 341
 }
