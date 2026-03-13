@@ -29,6 +29,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "COP",
       "name": "ConocoPhillips",
       "score": 72,
@@ -55,27 +69,13 @@
       "score": 70,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "DASH",
       "name": "DoorDash",
-      "score": 17,
+      "score": 16,
       "market": "US",
       "capCategory": "Large"
     },
@@ -85,13 +85,6 @@
       "score": 19,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "HIMS",
@@ -115,13 +108,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 22,
@@ -129,18 +115,32 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SOUN",
       "name": "SoundHound AI",
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -166,6 +166,12 @@
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
       "market": "US"
     },
     {
@@ -197,15 +203,15 @@
       "name": "Devon Energy",
       "score": 69,
       "market": "US"
-    },
-    {
-      "ticker": "SSE.L",
-      "name": "SSE",
-      "score": 69,
-      "market": "UK"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 73,
+      "market": "UK"
+    },
     {
       "ticker": "SDR.L",
       "name": "Schroders",
@@ -251,12 +257,6 @@
     {
       "ticker": "KGF.L",
       "name": "Kingfisher",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
       "score": 64,
       "market": "UK"
     },
@@ -317,14 +317,14 @@
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 58,
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
+      "ticker": "FOUR.L",
+      "name": "4imprint",
       "score": 58,
       "market": "UK"
     }
