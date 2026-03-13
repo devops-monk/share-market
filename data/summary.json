@@ -1,17 +1,10 @@
 {
   "topOverall": [
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 78,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 76,
-      "market": "US",
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 74,
+      "market": "DE",
       "capCategory": "Large"
     },
     {
@@ -22,44 +15,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 72,
+      "score": 73,
       "market": "UK",
       "capCategory": "Small"
     },
@@ -69,92 +27,128 @@
       "score": 72,
       "market": "IN",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "EOAN.DE",
+      "name": "E.ON",
+      "score": 72,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco",
+      "score": 70,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 70,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "score": 69,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "7267.T",
+      "name": "Honda Motor",
+      "score": 69,
+      "market": "JP",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 18,
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "BROS",
       "name": "Dutch Bros",
-      "score": 20,
+      "score": 19,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
-      "score": 21,
+      "score": 22,
       "market": "UK",
       "capCategory": "Small"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "WPP.L",
-      "name": "WPP",
-      "score": 24,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 24,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 24,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 78,
-      "market": "US"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 76,
-      "market": "US"
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 74,
+      "market": "DE"
     },
     {
       "ticker": "4063.T",
@@ -163,52 +157,58 @@
       "market": "JP"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 72,
       "market": "IN"
     },
     {
+      "ticker": "EOAN.DE",
+      "name": "E.ON",
+      "score": 72,
+      "market": "DE"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco",
+      "score": 70,
+      "market": "IN"
+    },
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 70,
+      "market": "JP"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "7267.T",
+      "name": "Honda Motor",
+      "score": 69,
+      "market": "JP"
+    },
+    {
       "ticker": "EOG",
       "name": "EOG Resources",
-      "score": 70,
+      "score": 68,
       "market": "US"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 68,
       "market": "US"
     },
@@ -221,12 +221,12 @@
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 67,
+      "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
       "score": 66,
       "market": "US"
     },
@@ -237,33 +237,33 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 64,
-      "market": "US"
-    },
-    {
-      "ticker": "NNN",
-      "name": "NNN REIT",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "MUR",
-      "name": "Murphy Oil",
-      "score": 63,
-      "market": "US"
-    },
-    {
       "ticker": "BKG.L",
       "name": "Berkeley Group",
       "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "PSN.L",
+      "name": "Persimmon",
+      "score": 61,
       "market": "UK"
     }
   ],
@@ -271,7 +271,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 72,
+      "score": 73,
       "market": "UK"
     },
     {
@@ -281,15 +281,15 @@
       "market": "US"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -313,23 +313,23 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 58,
+      "score": 59,
       "market": "UK"
-    },
-    {
-      "ticker": "BBW",
-      "name": "Build-A-Bear Workshop",
-      "score": 57,
-      "market": "US"
     },
     {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
       "score": 57,
       "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 57,
+      "market": "UK"
     }
   ],
   "totalStocks": 864,
-  "avgScore": 49,
-  "bearishAlertCount": 341
+  "avgScore": 48,
+  "bearishAlertCount": 336
 }
