@@ -15,20 +15,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 74,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BAB.L",
       "name": "Babcock International",
       "score": 73,
@@ -36,15 +22,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US",
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 73,
+      "market": "JP",
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -64,6 +50,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 70,
@@ -75,7 +75,7 @@
     {
       "ticker": "DASH",
       "name": "DoorDash",
-      "score": 16,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
@@ -87,11 +87,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
+      "ticker": "RBLX",
+      "name": "Roblox",
       "score": 20,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "AXON",
@@ -115,18 +115,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
       "score": 22,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
@@ -141,6 +134,13 @@
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -159,24 +159,12 @@
     {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
-      "score": 74,
+      "score": 73,
       "market": "JP"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 72,
       "market": "US"
     },
@@ -185,6 +173,18 @@
       "name": "Coal India",
       "score": 72,
       "market": "IN"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 70,
+      "market": "US"
     },
     {
       "ticker": "HINDALCO.NS",
@@ -199,10 +199,10 @@
       "market": "JP"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "SSE.L",
+      "name": "SSE",
       "score": 69,
-      "market": "US"
+      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -255,16 +255,16 @@
       "market": "UK"
     },
     {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 64,
+      "market": "US"
+    },
+    {
       "ticker": "KGF.L",
       "name": "Kingfisher",
       "score": 64,
       "market": "UK"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 63,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -299,16 +299,16 @@
       "market": "UK"
     },
     {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 61,
+      "market": "US"
+    },
+    {
       "ticker": "0011.HK",
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 60,
-      "market": "US"
     },
     {
       "ticker": "MARS.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 341
+  "bearishAlertCount": 343
 }
