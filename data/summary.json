@@ -50,24 +50,24 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 72,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 72,
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "EOG",
       "name": "EOG Resources",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
       "score": 71,
-      "market": "IN",
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -136,9 +136,9 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 24,
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 25,
       "market": "US",
       "capCategory": "Mid"
     }
@@ -187,22 +187,22 @@
       "market": "DE"
     },
     {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 72,
+      "market": "IN"
+    },
+    {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 72,
+      "score": 71,
       "market": "US"
     },
     {
       "ticker": "EOG",
       "name": "EOG Resources",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
       "score": 71,
-      "market": "IN"
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -237,6 +237,12 @@
       "market": "US"
     },
     {
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "NNN",
       "name": "NNN REIT",
       "score": 63,
@@ -255,12 +261,6 @@
       "market": "US"
     },
     {
-      "ticker": "CNA.L",
-      "name": "Centrica",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "LEA",
       "name": "Lear Corp",
       "score": 62,
@@ -268,6 +268,12 @@
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 68,
+      "market": "UK"
+    },
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
@@ -279,18 +285,6 @@
       "name": "Comerica",
       "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 61,
-      "market": "UK"
     },
     {
       "ticker": "0011.HK",
@@ -307,6 +301,12 @@
     {
       "ticker": "CURY.L",
       "name": "Currys",
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
       "score": 60,
       "market": "UK"
     },
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 342
+  "bearishAlertCount": 343
 }
