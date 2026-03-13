@@ -57,18 +57,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 72,
       "market": "UK",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 72,
+      "market": "IN",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -103,7 +103,7 @@
     {
       "ticker": "RBLX",
       "name": "Roblox",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
@@ -129,18 +129,18 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "U",
-      "name": "Unity Software",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 24,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
-      "ticker": "INF.L",
-      "name": "Informa",
-      "score": 25,
-      "market": "UK",
-      "capCategory": "Mid"
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -193,16 +193,16 @@
       "market": "US"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 72,
       "market": "IN"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 70,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -275,12 +275,6 @@
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 69,
-      "market": "UK"
-    },
-    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
@@ -289,6 +283,18 @@
     {
       "ticker": "CURY.L",
       "name": "Currys",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 62,
       "market": "UK"
     },
@@ -305,12 +311,6 @@
       "market": "US"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 60,
-      "market": "UK"
-    },
-    {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 58,
@@ -323,13 +323,13 @@
       "market": "US"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
       "score": 57,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 344
+  "bearishAlertCount": 341
 }
