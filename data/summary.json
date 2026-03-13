@@ -1,10 +1,10 @@
 {
   "topOverall": [
     {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 78,
-      "market": "IN",
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -15,38 +15,38 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "DVN",
       "name": "Devon Energy",
-      "score": 74,
+      "score": 76,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 75,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
       "score": 74,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 74,
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 73,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DTG.DE",
-      "name": "Daimler Truck",
-      "score": 74,
-      "market": "DE",
       "capCategory": "Large"
     },
     {
@@ -57,21 +57,42 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 73,
-      "market": "JP",
+      "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 72,
-      "market": "US",
+      "ticker": "DTG.DE",
+      "name": "Daimler Truck",
+      "score": 73,
+      "market": "DE",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 18,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BROS",
+      "name": "Dutch Bros",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Small"
+    },
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
@@ -87,18 +108,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MSTR",
-      "name": "MicroStrategy",
-      "score": 24,
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "DASH",
-      "name": "DoorDash",
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
       "score": 24,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "AI",
@@ -115,40 +136,19 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HIMS",
       "name": "Hims & Hers Health",
       "score": 25,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 78,
-      "market": "IN"
+      "market": "US"
     },
     {
       "ticker": "RWE.DE",
@@ -157,34 +157,28 @@
       "market": "DE"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 74,
-      "market": "US"
-    },
-    {
       "ticker": "DVN",
       "name": "Devon Energy",
-      "score": 74,
+      "score": 76,
       "market": "US"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
       "score": 74,
+      "market": "JP"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 73,
       "market": "US"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 74,
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 73,
       "market": "US"
-    },
-    {
-      "ticker": "DTG.DE",
-      "name": "Daimler Truck",
-      "score": 74,
-      "market": "DE"
     },
     {
       "ticker": "CTRA",
@@ -193,14 +187,20 @@
       "market": "US"
     },
     {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 73,
-      "market": "JP"
+      "market": "US"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "DTG.DE",
+      "name": "Daimler Truck",
+      "score": 73,
+      "market": "DE"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US"
     }
@@ -213,9 +213,9 @@
       "market": "UK"
     },
     {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 69,
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 70,
       "market": "UK"
     },
     {
@@ -225,16 +225,16 @@
       "market": "US"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
       "score": 68,
-      "market": "US"
+      "market": "UK"
     },
     {
-      "ticker": "KGF.L",
-      "name": "Kingfisher",
-      "score": 67,
-      "market": "UK"
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 66,
+      "market": "US"
     },
     {
       "ticker": "BKG.L",
@@ -243,9 +243,21 @@
       "market": "UK"
     },
     {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 66,
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "KGF.L",
+      "name": "Kingfisher",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 65,
       "market": "UK"
     },
     {
@@ -253,31 +265,19 @@
       "name": "Vaxcyte",
       "score": 64,
       "market": "US"
-    },
-    {
-      "ticker": "CNA.L",
-      "name": "Centrica",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 64,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 70,
+      "score": 75,
       "market": "UK"
     },
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 68,
+      "score": 70,
       "market": "UK"
     },
     {
@@ -287,33 +287,27 @@
       "market": "US"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
+      "ticker": "CURY.L",
+      "name": "Currys",
       "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "GYM.L",
       "name": "Gym Group",
-      "score": 63,
+      "score": 62,
       "market": "UK"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBW",
-      "name": "Build-A-Bear Workshop",
-      "score": 61,
-      "market": "US"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 61,
       "market": "UK"
     },
     {
@@ -327,9 +321,15 @@
       "name": "LTC Properties",
       "score": 60,
       "market": "US"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 60,
+      "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 50,
-  "bearishAlertCount": 342
+  "bearishAlertCount": 345
 }
