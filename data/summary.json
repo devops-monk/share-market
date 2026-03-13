@@ -29,13 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
       "score": 73,
@@ -50,6 +43,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 73,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 72,
@@ -57,17 +57,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 72,
-      "market": "UK",
-      "capCategory": "Small"
+      "market": "US",
+      "capCategory": "Large"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE",
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 71,
+      "market": "IN",
       "capCategory": "Large"
     }
   ],
@@ -122,6 +122,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "INF.L",
+      "name": "Informa",
+      "score": 24,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "SOUN",
       "name": "SoundHound AI",
       "score": 24,
@@ -133,13 +140,6 @@
       "name": "Unity Software",
       "score": 24,
       "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "INF.L",
-      "name": "Informa",
-      "score": 25,
-      "market": "UK",
       "capCategory": "Mid"
     }
   ],
@@ -169,12 +169,6 @@
       "market": "US"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 73,
-      "market": "US"
-    },
-    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
       "score": 73,
@@ -187,22 +181,28 @@
       "market": "US"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 73,
+      "market": "DE"
+    },
+    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 72,
-      "market": "DE"
+      "market": "US"
     },
     {
-      "ticker": "RRC",
-      "name": "Range Resources",
-      "score": 70,
-      "market": "US"
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 71,
+      "market": "IN"
     }
   ],
   "topMidCap": [
@@ -225,16 +225,16 @@
       "market": "US"
     },
     {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 64,
       "market": "US"
-    },
-    {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 64,
-      "market": "UK"
     },
     {
       "ticker": "NNN",
@@ -255,29 +255,23 @@
       "market": "US"
     },
     {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
+      "ticker": "CNA.L",
+      "name": "Centrica",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 63,
-      "market": "UK"
+      "ticker": "LEA",
+      "name": "Lear Corp",
+      "score": 62,
+      "market": "US"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 72,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 68,
+      "score": 67,
       "market": "UK"
     },
     {
@@ -287,8 +281,14 @@
       "market": "US"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
       "score": 61,
       "market": "UK"
     },
@@ -305,15 +305,9 @@
       "market": "US"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
+      "ticker": "CURY.L",
+      "name": "Currys",
       "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 58,
       "market": "UK"
     },
     {
@@ -323,8 +317,14 @@
       "market": "US"
     },
     {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 57,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 57,
       "market": "UK"
     }
