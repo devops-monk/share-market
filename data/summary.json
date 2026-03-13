@@ -3,6 +3,13 @@
     {
       "ticker": "RWE.DE",
       "name": "RWE",
+      "score": 76,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "EOAN.DE",
+      "name": "E.ON",
       "score": 74,
       "market": "DE",
       "capCategory": "Large"
@@ -17,9 +24,23 @@
     {
       "ticker": "BG",
       "name": "Bunge Global",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "COALINDIA.NS",
@@ -29,46 +50,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 71,
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 70,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "HINDALCO.NS",
-      "name": "Hindalco",
-      "score": 70,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 70,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "7267.T",
-      "name": "Honda Motor",
-      "score": 69,
-      "market": "JP",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -82,16 +82,9 @@
     {
       "ticker": "BROS",
       "name": "Dutch Bros",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
       "score": 19,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "RBLX",
@@ -108,22 +101,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -136,17 +115,44 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "RWE.DE",
       "name": "RWE",
+      "score": 76,
+      "market": "DE"
+    },
+    {
+      "ticker": "EOAN.DE",
+      "name": "E.ON",
       "score": 74,
       "market": "DE"
     },
@@ -159,6 +165,12 @@
     {
       "ticker": "BG",
       "name": "Bunge Global",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 72,
       "market": "US"
     },
@@ -167,18 +179,6 @@
       "name": "Coal India",
       "score": 72,
       "market": "IN"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 71,
-      "market": "US"
     },
     {
       "ticker": "HINDALCO.NS",
@@ -193,91 +193,91 @@
       "market": "JP"
     },
     {
-      "ticker": "7267.T",
-      "name": "Honda Motor",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 69,
-      "market": "JP"
+      "market": "US"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 68,
-      "market": "US"
+      "ticker": "SSE.L",
+      "name": "SSE",
+      "score": 69,
+      "market": "UK"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 68,
-      "market": "US"
-    },
-    {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 68,
+      "score": 70,
       "market": "UK"
     },
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 68,
+      "score": 70,
       "market": "UK"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 69,
+      "market": "US"
     },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 66,
+      "score": 67,
       "market": "US"
+    },
+    {
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
+      "score": 66,
+      "market": "UK"
     },
     {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
-      "score": 65,
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "CNA.L",
       "name": "Centrica",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 62,
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "KGF.L",
       "name": "Kingfisher",
-      "score": 62,
+      "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "ITV.L",
-      "name": "ITV",
-      "score": 62,
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 64,
       "market": "UK"
+    },
+    {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 63,
+      "market": "US"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 71,
+      "score": 72,
       "market": "UK"
     },
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 67,
+      "score": 70,
       "market": "UK"
     },
     {
@@ -287,15 +287,15 @@
       "market": "US"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 63,
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 62,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 64,
       "market": "UK"
     },
     {
@@ -313,13 +313,13 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 59,
+      "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 59,
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 58,
       "market": "UK"
     },
     {
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 864,
-  "avgScore": 48,
-  "bearishAlertCount": 338
+  "avgScore": 49,
+  "bearishAlertCount": 341
 }
