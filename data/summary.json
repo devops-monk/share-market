@@ -1,30 +1,30 @@
 {
   "topOverall": [
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 74,
+      "score": 75,
       "market": "UK",
       "capCategory": "Small"
     },
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 74,
+      "score": 75,
       "market": "DE",
       "capCategory": "Large"
     },
     {
       "ticker": "DVN",
       "name": "Devon Energy",
-      "score": 73,
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
       "score": 71,
@@ -43,24 +50,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "EDV.L",
+      "name": "Endeavour Mining",
       "score": 71,
       "market": "UK",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 71,
       "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "EOAN.DE",
-      "name": "E.ON",
-      "score": 71,
-      "market": "DE",
       "capCategory": "Large"
     },
     {
@@ -73,13 +73,6 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 16,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 20,
@@ -87,11 +80,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 20,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "BROS",
@@ -129,6 +122,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "GRAB",
       "name": "Grab Holdings",
       "score": 23,
@@ -145,21 +145,21 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 74,
-      "market": "US"
-    },
-    {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 74,
+      "score": 75,
       "market": "DE"
     },
     {
       "ticker": "DVN",
       "name": "Devon Energy",
-      "score": 73,
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 74,
       "market": "US"
     },
     {
@@ -175,16 +175,16 @@
       "market": "US"
     },
     {
+      "ticker": "EDV.L",
+      "name": "Endeavour Mining",
+      "score": 71,
+      "market": "UK"
+    },
+    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 71,
       "market": "IN"
-    },
-    {
-      "ticker": "EOAN.DE",
-      "name": "E.ON",
-      "score": 71,
-      "market": "DE"
     },
     {
       "ticker": "4063.T",
@@ -193,23 +193,23 @@
       "market": "JP"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 68,
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 69,
       "market": "US"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 68,
-      "market": "US"
+      "ticker": "EOAN.DE",
+      "name": "E.ON",
+      "score": 69,
+      "market": "DE"
     }
   ],
   "topMidCap": [
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 71,
+      "score": 72,
       "market": "UK"
     },
     {
@@ -221,7 +221,7 @@
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 67,
+      "score": 68,
       "market": "UK"
     },
     {
@@ -233,45 +233,45 @@
     {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
-      "score": 65,
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "BBOX.L",
       "name": "Tritax Big Box REIT",
-      "score": 64,
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "BKG.L",
       "name": "Berkeley Group",
-      "score": 63,
+      "score": 64,
       "market": "UK"
+    },
+    {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 63,
+      "market": "US"
     },
     {
       "ticker": "PSN.L",
       "name": "Persimmon",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "GAW.L",
+      "name": "Games Workshop",
       "score": 62,
       "market": "UK"
-    },
-    {
-      "ticker": "ITV.L",
-      "name": "ITV",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 60,
-      "market": "US"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 74,
+      "score": 75,
       "market": "UK"
     },
     {
@@ -283,12 +283,18 @@
     {
       "ticker": "CURY.L",
       "name": "Currys",
-      "score": 66,
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "FDEV.L",
       "name": "Frontier Developments",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 62,
       "market": "UK"
     },
@@ -305,12 +311,6 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 61,
-      "market": "UK"
-    },
-    {
       "ticker": "0011.HK",
       "name": "Hang Seng Bank",
       "score": 61,
@@ -323,13 +323,13 @@
       "market": "US"
     },
     {
-      "ticker": "FDM.L",
-      "name": "FDM Group",
-      "score": 60,
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
-  "avgScore": 48,
-  "bearishAlertCount": 338
+  "avgScore": 49,
+  "bearishAlertCount": 340
 }
