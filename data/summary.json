@@ -108,24 +108,24 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
-      "score": 24,
+      "score": 25,
       "market": "UK",
       "capCategory": "Small"
     },
     {
       "ticker": "INF.L",
       "name": "Informa",
-      "score": 24,
+      "score": 25,
       "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 24,
-      "market": "US",
       "capCategory": "Mid"
     },
     {
@@ -225,12 +225,6 @@
       "market": "UK"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 66,
-      "market": "UK"
-    },
-    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 65,
@@ -249,9 +243,9 @@
       "market": "US"
     },
     {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 63,
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 64,
       "market": "UK"
     },
     {
@@ -264,6 +258,12 @@
       "ticker": "LEA",
       "name": "Lear Corp",
       "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 61,
       "market": "US"
     }
   ],
@@ -281,6 +281,12 @@
       "market": "UK"
     },
     {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 67,
+      "market": "UK"
+    },
+    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
@@ -291,12 +297,6 @@
       "name": "LTC Properties",
       "score": 62,
       "market": "US"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 62,
-      "market": "UK"
     },
     {
       "ticker": "0011.HK",
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
+      "ticker": "FDM.L",
+      "name": "FDM Group",
       "score": 57,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 350
+  "bearishAlertCount": 347
 }
