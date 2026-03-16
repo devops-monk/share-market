@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "EDV.L",
       "name": "Endeavour Mining",
       "score": 76,
@@ -8,8 +15,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 75,
       "market": "US",
       "capCategory": "Large"
@@ -29,9 +36,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 74,
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -50,13 +57,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 71,
@@ -64,18 +64,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "INTC",
-      "name": "Intel",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 70,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 17,
+      "score": 16,
       "market": "US",
       "capCategory": "Large"
     },
@@ -87,20 +87,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BROS",
       "name": "Dutch Bros",
       "score": 22,
@@ -108,8 +94,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -118,6 +104,13 @@
       "ticker": "CDNS",
       "name": "Cadence Design Systems",
       "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
@@ -136,6 +129,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "TRENT.BO",
       "name": "Trent",
       "score": 25,
@@ -145,14 +145,20 @@
   ],
   "topLargeCap": [
     {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 76,
+      "market": "US"
+    },
+    {
       "ticker": "EDV.L",
       "name": "Endeavour Mining",
       "score": 76,
       "market": "UK"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 75,
       "market": "US"
     },
@@ -163,9 +169,9 @@
       "market": "DE"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 74,
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
       "market": "US"
     },
     {
@@ -175,34 +181,28 @@
       "market": "US"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 71,
       "market": "IN"
     },
     {
-      "ticker": "INTC",
-      "name": "Intel",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
       "score": 70,
       "market": "JP"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -215,7 +215,7 @@
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 69,
+      "score": 70,
       "market": "US"
     },
     {

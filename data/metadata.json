@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-03-16T18:28:34.135Z",
+  "lastUpdated": "2026-03-16T19:30:07.106Z",
   "stockCount": 864,
   "bearishAlerts": 343,
-  "newsCount": 590,
+  "newsCount": 500,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
-      "price": 6707.82,
-      "sma50": 6881.38,
-      "sma200": 6608.16,
-      "changeFromHigh": -3.88,
+      "price": 6698.1,
+      "sma50": 6881.19,
+      "sma200": 6608.11,
+      "changeFromHigh": -4.02,
       "distributionDays": 6,
       "regime": "correction",
       "signal": "6 distribution days in 25 sessions — selling pressure"
