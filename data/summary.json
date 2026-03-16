@@ -1,15 +1,15 @@
 {
   "topOverall": [
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 76,
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 78,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 76,
       "market": "US",
       "capCategory": "Large"
@@ -38,16 +38,23 @@
     {
       "ticker": "CTRA",
       "name": "Coterra Energy",
-      "score": 73,
+      "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 72,
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "SDR.L",
@@ -57,16 +64,9 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 71,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 70,
       "market": "US",
       "capCategory": "Large"
     }
@@ -87,13 +87,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HUBS",
       "name": "HubSpot",
       "score": 22,
@@ -106,6 +99,13 @@
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "WPP.L",
@@ -145,14 +145,14 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 76,
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 78,
       "market": "US"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 76,
       "market": "US"
     },
@@ -171,13 +171,19 @@
     {
       "ticker": "CTRA",
       "name": "Coterra Energy",
-      "score": 73,
+      "score": 74,
       "market": "US"
     },
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 72,
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 71,
       "market": "US"
     },
     {
@@ -187,36 +193,30 @@
       "market": "IN"
     },
     {
+      "ticker": "INTC",
+      "name": "Intel",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "MU",
       "name": "Micron",
       "score": 70,
       "market": "US"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 70,
-      "market": "JP"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 72,
+      "market": "US"
+    },
     {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 72,
       "market": "UK"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 70,
-      "market": "US"
     },
     {
       "ticker": "PCVX",
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 864,
-  "avgScore": 49,
+  "avgScore": 50,
   "bearishAlertCount": 345
 }
