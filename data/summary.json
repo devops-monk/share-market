@@ -1,11 +1,25 @@
 {
   "topOverall": [
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 76,
       "market": "DE",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 75,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "DVN",
@@ -22,39 +36,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 73,
-      "market": "JP",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 74,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "BAB.L",
+      "name": "Babcock International",
       "score": 72,
       "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
-      "score": 72,
-      "market": "IN",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "BG",
@@ -64,17 +64,24 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Mid"
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "DASH",
       "name": "DoorDash",
+      "score": 17,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 17,
       "market": "US",
       "capCategory": "Large"
@@ -87,44 +94,9 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RPI.L",
-      "name": "Raspberry Pi",
-      "score": 22,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "AXON",
       "name": "Axon Enterprise",
       "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
@@ -136,14 +108,48 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "RBLX",
+      "name": "Roblox",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "RPI.L",
+      "name": "Raspberry Pi",
+      "score": 25,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "SE",
+      "name": "Sea Limited",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 76,
+      "market": "US"
+    },
     {
       "ticker": "RWE.DE",
       "name": "RWE",
@@ -163,22 +169,16 @@
       "market": "DE"
     },
     {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 74,
+      "market": "HK"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 73,
-      "market": "JP"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
       "market": "US"
-    },
-    {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
-      "score": 72,
-      "market": "IN"
     },
     {
       "ticker": "BG",
@@ -187,29 +187,29 @@
       "market": "US"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "MU",
+      "name": "Micron",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "HINDALCO.NS",
-      "name": "Hindalco",
-      "score": 70,
-      "market": "IN"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
       "score": 70,
       "market": "JP"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
     {
       "ticker": "BAB.L",
       "name": "Babcock International",
-      "score": 73,
+      "score": 72,
       "market": "UK"
     },
     {
@@ -227,18 +227,12 @@
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 70,
+      "score": 69,
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
+      "ticker": "PSN.L",
+      "name": "Persimmon",
       "score": 66,
       "market": "UK"
     },
@@ -249,8 +243,8 @@
       "market": "UK"
     },
     {
-      "ticker": "CNA.L",
-      "name": "Centrica",
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
       "score": 66,
       "market": "UK"
     },
@@ -261,23 +255,29 @@
       "market": "US"
     },
     {
-      "ticker": "MUR",
-      "name": "Murphy Oil",
+      "ticker": "ITV.L",
+      "name": "ITV",
       "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 64,
       "market": "US"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 72,
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 75,
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 70,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 71,
       "market": "UK"
     },
     {
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
       "score": 58,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 343
+  "bearishAlertCount": 342
 }
