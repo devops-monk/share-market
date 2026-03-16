@@ -31,7 +31,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 71,
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -59,7 +59,7 @@
     {
       "ticker": "EOAN.DE",
       "name": "E.ON",
-      "score": 70,
+      "score": 71,
       "market": "DE",
       "capCategory": "Large"
     },
@@ -73,32 +73,25 @@
   ],
   "bottomOverall": [
     {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 16,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "HIMS",
       "name": "Hims & Hers Health",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
       "score": 20,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "BROS",
@@ -115,15 +108,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems",
+      "ticker": "PODD",
+      "name": "Insulet Corp",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -136,11 +129,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 22,
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -165,7 +165,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
@@ -183,7 +183,7 @@
     {
       "ticker": "EOAN.DE",
       "name": "E.ON",
-      "score": 70,
+      "score": 71,
       "market": "DE"
     },
     {
@@ -193,15 +193,15 @@
       "market": "JP"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
-      "score": 69,
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 68,
       "market": "US"
     },
     {
       "ticker": "BG",
       "name": "Bunge Global",
-      "score": 69,
+      "score": 68,
       "market": "US"
     }
   ],
@@ -215,7 +215,7 @@
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 68,
+      "score": 69,
       "market": "US"
     },
     {
@@ -237,16 +237,16 @@
       "market": "UK"
     },
     {
-      "ticker": "LEA",
-      "name": "Lear Corp",
-      "score": 63,
-      "market": "US"
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 64,
+      "market": "UK"
     },
     {
-      "ticker": "TTC",
-      "name": "Toro Company",
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
       "score": 63,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "PSN.L",
@@ -255,8 +255,8 @@
       "market": "UK"
     },
     {
-      "ticker": "MRO.L",
-      "name": "Melrose Industries",
+      "ticker": "ITV.L",
+      "name": "ITV",
       "score": 61,
       "market": "UK"
     },
@@ -283,7 +283,19 @@
     {
       "ticker": "CURY.L",
       "name": "Currys",
-      "score": 65,
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -295,18 +307,6 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
       "score": 61,
       "market": "UK"
     },
@@ -325,11 +325,11 @@
     {
       "ticker": "FDM.L",
       "name": "FDM Group",
-      "score": 59,
+      "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 48,
-  "bearishAlertCount": 343
+  "bearishAlertCount": 338
 }
