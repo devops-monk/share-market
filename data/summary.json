@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 76,
@@ -12,13 +19,6 @@
       "name": "Endeavour Mining",
       "score": 76,
       "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 75,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -36,15 +36,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -64,32 +64,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "MU",
+      "name": "Micron",
       "score": 70,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 16,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
-      "score": 22,
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -108,18 +94,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
-      "score": 23,
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
+      "ticker": "BROS",
+      "name": "Dutch Bros",
       "score": 23,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "WPP.L",
@@ -127,6 +113,20 @@
       "score": 24,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "AI",
@@ -145,6 +145,12 @@
   ],
   "topLargeCap": [
     {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 76,
+      "market": "US"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 76,
@@ -157,26 +163,20 @@
       "market": "UK"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 75,
-      "market": "US"
-    },
-    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 75,
       "market": "DE"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 73,
       "market": "US"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US"
     },
@@ -187,22 +187,22 @@
       "market": "IN"
     },
     {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
       "score": 70,
       "market": "JP"
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -219,16 +219,16 @@
       "market": "US"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 68,
+      "market": "US"
+    },
+    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 68,
       "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 66,
-      "market": "US"
     },
     {
       "ticker": "GAW.L",
@@ -261,10 +261,10 @@
       "market": "UK"
     },
     {
-      "ticker": "MRO.L",
-      "name": "Melrose Industries",
+      "ticker": "TTC",
+      "name": "Toro Company",
       "score": 62,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -311,16 +311,16 @@
       "market": "UK"
     },
     {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 61,
+      "market": "US"
+    },
+    {
       "ticker": "0011.HK",
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 60,
-      "market": "US"
     },
     {
       "ticker": "SNR.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 343
+  "bearishAlertCount": 345
 }
