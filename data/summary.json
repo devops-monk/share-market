@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 74,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 73,
@@ -15,22 +22,15 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -50,6 +50,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "EOAN.DE",
       "name": "E.ON",
       "score": 70,
@@ -61,13 +68,6 @@
       "name": "Shin-Etsu Chemical",
       "score": 70,
       "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 69,
-      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -87,37 +87,30 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 21,
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 19,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "PODD",
       "name": "Insulet Corp",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 21,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "BROS",
       "name": "Dutch Bros",
-      "score": 22,
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems",
-      "score": 22,
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
@@ -136,6 +129,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "RBLX",
       "name": "Roblox",
       "score": 23,
@@ -145,26 +145,26 @@
   ],
   "topLargeCap": [
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 74,
+      "market": "DE"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 73,
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 71,
       "market": "US"
     },
@@ -173,6 +173,12 @@
       "name": "Coal India",
       "score": 71,
       "market": "IN"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 70,
+      "market": "UK"
     },
     {
       "ticker": "EOAN.DE",
@@ -187,20 +193,14 @@
       "market": "JP"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 69,
       "market": "US"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "PCG",
-      "name": "PG&E",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 68,
       "market": "US"
     }
@@ -225,12 +225,6 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 66,
-      "market": "US"
-    },
-    {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
       "score": 65,
@@ -249,12 +243,6 @@
       "market": "US"
     },
     {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 62,
@@ -263,6 +251,18 @@
     {
       "ticker": "PSN.L",
       "name": "Persimmon",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "MRO.L",
+      "name": "Melrose Industries",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "DRX.L",
+      "name": "Drax Group",
       "score": 61,
       "market": "UK"
     }
@@ -281,20 +281,26 @@
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 67,
-      "market": "UK"
-    },
-    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
       "market": "US"
     },
     {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "MARS.L",
       "name": "Marston's",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
       "score": 61,
       "market": "UK"
     },
@@ -319,17 +325,11 @@
     {
       "ticker": "FDM.L",
       "name": "FDM Group",
-      "score": 58,
-      "market": "UK"
-    },
-    {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 57,
+      "score": 59,
       "market": "UK"
     }
   ],
-  "totalStocks": 863,
+  "totalStocks": 864,
   "avgScore": 48,
-  "bearishAlertCount": 338
+  "bearishAlertCount": 339
 }
