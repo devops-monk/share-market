@@ -3,7 +3,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 75,
+      "score": 77,
       "market": "US",
       "capCategory": "Large"
     },
@@ -29,13 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 71,
@@ -48,6 +41,13 @@
       "score": 71,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "COALINDIA.NS",
@@ -101,13 +101,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "WPP.L",
-      "name": "WPP",
-      "score": 23,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 24,
@@ -115,18 +108,18 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
       "score": 25,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "INF.L",
-      "name": "Informa",
-      "score": 25,
-      "market": "UK",
-      "capCategory": "Mid"
     },
     {
       "ticker": "SOUN",
@@ -141,13 +134,20 @@
       "score": 25,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 75,
+      "score": 77,
       "market": "US"
     },
     {
@@ -271,7 +271,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 72,
+      "score": 71,
       "market": "UK"
     },
     {
@@ -299,6 +299,12 @@
       "market": "US"
     },
     {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "0011.HK",
       "name": "Hang Seng Bank",
       "score": 61,
@@ -311,21 +317,15 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 58,
-      "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 58,
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 59,
       "market": "UK"
     },
     {
       "ticker": "FDM.L",
       "name": "FDM Group",
-      "score": 57,
+      "score": 58,
       "market": "UK"
     }
   ],
