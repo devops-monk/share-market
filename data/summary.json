@@ -8,8 +8,22 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 75,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "DVN",
       "name": "Devon Energy",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
@@ -22,29 +36,8 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 74,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BG",
       "name": "Bunge Global",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -57,55 +50,41 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
       "score": 72,
-      "market": "UK",
-      "capCategory": "Mid"
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 18,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "PODD",
       "name": "Insulet Corp",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "SE",
-      "name": "Sea Limited",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "GRAB",
@@ -129,16 +108,37 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FICO",
-      "name": "Fair Isaac (FICO)",
-      "score": 24,
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems",
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "COF",
-      "name": "Capital One",
-      "score": 24,
+      "ticker": "FICO",
+      "name": "Fair Isaac (FICO)",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     }
@@ -151,32 +151,26 @@
       "market": "JP"
     },
     {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 75,
+      "market": "HK"
+    },
+    {
       "ticker": "DVN",
       "name": "Devon Energy",
       "score": 74,
       "market": "US"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 74,
-      "market": "HK"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 73,
       "market": "US"
     },
     {
       "ticker": "BG",
       "name": "Bunge Global",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
       "score": 73,
       "market": "US"
     },
@@ -187,6 +181,18 @@
       "market": "DE"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
       "score": 72,
@@ -195,12 +201,6 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab",
       "score": 70,
       "market": "US"
     }
@@ -299,16 +299,16 @@
       "market": "UK"
     },
     {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 61,
+      "market": "US"
+    },
+    {
       "ticker": "0011.HK",
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 60,
-      "market": "US"
     },
     {
       "ticker": "FOUR.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 339
+  "bearishAlertCount": 340
 }
