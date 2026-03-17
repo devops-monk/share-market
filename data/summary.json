@@ -22,17 +22,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 74,
       "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 73,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -115,13 +115,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "WPP.L",
-      "name": "WPP",
-      "score": 24,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "PODD",
       "name": "Insulet Corp",
       "score": 24,
@@ -141,6 +134,13 @@
       "score": 25,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -163,16 +163,16 @@
       "market": "JP"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 74,
+      "market": "US"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 74,
       "market": "HK"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 73,
-      "market": "US"
     },
     {
       "ticker": "CTRA",
@@ -225,6 +225,12 @@
       "market": "US"
     },
     {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "APLD",
       "name": "Applied Digital",
       "score": 63,
@@ -243,8 +249,8 @@
       "market": "UK"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
       "score": 62,
       "market": "UK"
     },
@@ -255,16 +261,10 @@
       "market": "UK"
     },
     {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
       "score": 62,
       "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 61,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -289,7 +289,7 @@
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 62,
+      "score": 63,
       "market": "UK"
     },
     {
@@ -311,25 +311,25 @@
       "market": "UK"
     },
     {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
-      "score": 57,
-      "market": "UK"
-    },
-    {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 57,
       "market": "UK"
     },
     {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 56,
+      "market": "UK"
+    },
+    {
+      "ticker": "CARD.L",
+      "name": "Card Factory",
       "score": 56,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 343
+  "bearishAlertCount": 346
 }
