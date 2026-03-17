@@ -8,17 +8,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "EDV.L",
+      "name": "Endeavour Mining",
+      "score": 77,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "DVN",
       "name": "Devon Energy",
       "score": 76,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "EDV.L",
-      "name": "Endeavour Mining",
-      "score": 76,
-      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -43,10 +43,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 74,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -64,8 +64,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -80,15 +80,22 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 22,
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 22,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -129,18 +136,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
+      "ticker": "RPI.L",
+      "name": "Raspberry Pi",
       "score": 25,
-      "market": "IN",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -151,16 +151,16 @@
       "market": "US"
     },
     {
+      "ticker": "EDV.L",
+      "name": "Endeavour Mining",
+      "score": 77,
+      "market": "UK"
+    },
+    {
       "ticker": "DVN",
       "name": "Devon Energy",
       "score": 76,
       "market": "US"
-    },
-    {
-      "ticker": "EDV.L",
-      "name": "Endeavour Mining",
-      "score": 76,
-      "market": "UK"
     },
     {
       "ticker": "RWE.DE",
@@ -175,9 +175,15 @@
       "market": "US"
     },
     {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 74,
+      "market": "HK"
+    },
+    {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 73,
+      "score": 71,
       "market": "US"
     },
     {
@@ -187,20 +193,14 @@
       "market": "US"
     },
     {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
-      "score": 71,
-      "market": "IN"
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel",
+      "ticker": "MU",
+      "name": "Micron",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "ED",
+      "name": "Consolidated Edison",
       "score": 70,
       "market": "US"
     }
@@ -257,13 +257,13 @@
     {
       "ticker": "PSN.L",
       "name": "Persimmon",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
       "ticker": "TTC",
       "name": "Toro Company",
-      "score": 62,
+      "score": 63,
       "market": "US"
     }
   ],
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 864,
-  "avgScore": 50,
-  "bearishAlertCount": 345
+  "avgScore": 49,
+  "bearishAlertCount": 343
 }
