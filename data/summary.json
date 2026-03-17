@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 75,
@@ -12,13 +19,6 @@
       "name": "CNOOC",
       "score": 75,
       "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 74,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -36,8 +36,22 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BG",
       "name": "Bunge Global",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -55,40 +69,33 @@
       "score": 72,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 17,
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "PODD",
       "name": "Insulet Corp",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -101,49 +108,48 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 25,
+      "score": 26,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "CDNS",
       "name": "Cadence Design Systems",
-      "score": 25,
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "FICO",
       "name": "Fair Isaac (FICO)",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 25,
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 76,
+      "market": "US"
+    },
     {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
@@ -157,20 +163,26 @@
       "market": "HK"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 74,
-      "market": "US"
-    },
-    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 74,
       "market": "US"
     },
     {
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "BG",
       "name": "Bunge Global",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 73,
       "market": "US"
     },
@@ -187,21 +199,9 @@
       "market": "US"
     },
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 70,
+      "score": 71,
       "market": "US"
     }
   ],
@@ -221,13 +221,13 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 69,
+      "score": 70,
       "market": "US"
     },
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 69,
+      "score": 70,
       "market": "US"
     },
     {
@@ -245,7 +245,7 @@
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 66,
+      "score": 67,
       "market": "US"
     },
     {
@@ -255,14 +255,14 @@
       "market": "UK"
     },
     {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
+      "ticker": "MUR",
+      "name": "Murphy Oil",
       "score": 63,
-      "market": "UK"
+      "market": "US"
     },
     {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
       "score": 63,
       "market": "UK"
     }
