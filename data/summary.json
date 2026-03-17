@@ -22,24 +22,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 74,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 74,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 73,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -48,6 +41,13 @@
       "score": 72,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "CTRA",
@@ -75,7 +75,7 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 18,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
@@ -163,22 +163,16 @@
       "market": "JP"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 74,
-      "market": "DE"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 74,
       "market": "HK"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 73,
+      "market": "US"
     },
     {
       "ticker": "CTRA",
@@ -201,6 +195,12 @@
     {
       "ticker": "ED",
       "name": "Consolidated Edison",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 70,
       "market": "US"
     }
@@ -231,6 +231,18 @@
       "market": "US"
     },
     {
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "PSN.L",
+      "name": "Persimmon",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 62,
@@ -243,35 +255,23 @@
       "market": "UK"
     },
     {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 61,
       "market": "US"
-    },
-    {
-      "ticker": "NNN",
-      "name": "NNN REIT",
-      "score": 61,
-      "market": "US"
-    },
-    {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 60,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 70,
+      "score": 72,
       "market": "UK"
     },
     {
@@ -299,12 +299,6 @@
       "market": "US"
     },
     {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 61,
-      "market": "UK"
-    },
-    {
       "ticker": "0011.HK",
       "name": "Hang Seng Bank",
       "score": 61,
@@ -317,19 +311,25 @@
       "market": "UK"
     },
     {
+      "ticker": "JDW.L",
+      "name": "J D Wetherspoon",
+      "score": 57,
+      "market": "UK"
+    },
+    {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 57,
       "market": "UK"
     },
     {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
+      "ticker": "GYM.L",
+      "name": "Gym Group",
       "score": 56,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 341
+  "bearishAlertCount": 343
 }
