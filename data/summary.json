@@ -15,17 +15,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 75,
       "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 74,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -57,18 +57,18 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SSE.L",
+      "name": "SSE",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 71,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -157,16 +157,16 @@
       "market": "US"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 75,
+      "market": "US"
+    },
+    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 75,
       "market": "JP"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 74,
-      "market": "US"
     },
     {
       "ticker": "0883.HK",
@@ -181,6 +181,18 @@
       "market": "US"
     },
     {
+      "ticker": "SSE.L",
+      "name": "SSE",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "EOAN.DE",
+      "name": "E.ON",
+      "score": 71,
+      "market": "DE"
+    },
+    {
       "ticker": "VLO",
       "name": "Valero Energy",
       "score": 70,
@@ -189,18 +201,6 @@
     {
       "ticker": "HAL",
       "name": "Halliburton",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "ED",
-      "name": "Consolidated Edison",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
       "score": 70,
       "market": "US"
     }
@@ -231,6 +231,12 @@
       "market": "UK"
     },
     {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "APLD",
       "name": "Applied Digital",
       "score": 63,
@@ -240,12 +246,6 @@
       "ticker": "BKG.L",
       "name": "Berkeley Group",
       "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 62,
       "market": "UK"
     },
     {
@@ -261,8 +261,8 @@
       "market": "UK"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
       "score": 62,
       "market": "UK"
     }
@@ -313,23 +313,23 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
+      "score": 58,
+      "market": "UK"
+    },
+    {
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
       "score": 57,
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 56,
-      "market": "UK"
-    },
-    {
-      "ticker": "CARD.L",
-      "name": "Card Factory",
-      "score": 56,
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 57,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 346
+  "bearishAlertCount": 345
 }
