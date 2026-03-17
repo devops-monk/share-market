@@ -8,6 +8,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 74,
@@ -22,8 +29,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -43,15 +57,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -62,20 +69,13 @@
       "score": 72,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 17,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,29 +108,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COF",
-      "name": "Capital One",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "GRAB",
       "name": "Grab Holdings",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -140,6 +119,27 @@
       "name": "Trent",
       "score": 24,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FICO",
+      "name": "Fair Isaac (FICO)",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One",
+      "score": 24,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -151,14 +151,26 @@
       "market": "JP"
     },
     {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 74,
+      "market": "US"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 74,
       "market": "HK"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 73,
       "market": "US"
     },
@@ -175,27 +187,15 @@
       "market": "DE"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 70,
+      "score": 71,
       "market": "US"
     },
     {
@@ -225,6 +225,12 @@
       "market": "US"
     },
     {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 69,
+      "market": "US"
+    },
+    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 69,
@@ -237,16 +243,16 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 68,
-      "market": "US"
-    },
-    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "BKG.L",
@@ -259,12 +265,6 @@
       "name": "Persimmon",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "APLD",
-      "name": "Applied Digital",
-      "score": 62,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -272,6 +272,12 @@
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 74,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 68,
       "market": "UK"
     },
     {
@@ -284,12 +290,6 @@
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 63,
       "market": "UK"
     },
     {
@@ -323,8 +323,8 @@
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "TSTL.L",
+      "name": "Tristel",
       "score": 59,
       "market": "UK"
     }
