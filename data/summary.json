@@ -15,15 +15,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
+      "ticker": "8031.T",
+      "name": "Mitsui & Co",
       "score": 75,
-      "market": "HK",
+      "market": "JP",
       "capCategory": "Large"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
@@ -36,10 +36,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 74,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -50,15 +50,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -69,29 +62,29 @@
       "score": 71,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 18,
+      "market": "US",
+      "capCategory": "Large"
+    },
     {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 21,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "TRENT.BO",
@@ -108,11 +101,25 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "RPI.L",
+      "name": "Raspberry Pi",
+      "score": 24,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "WPP.L",
+      "name": "WPP",
+      "score": 24,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "PODD",
@@ -129,18 +136,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RPI.L",
-      "name": "Raspberry Pi",
+      "ticker": "DASH",
+      "name": "DoorDash",
       "score": 25,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "INF.L",
-      "name": "Informa",
-      "score": 25,
-      "market": "UK",
-      "capCategory": "Mid"
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -157,14 +157,14 @@
       "market": "US"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
+      "ticker": "8031.T",
+      "name": "Mitsui & Co",
       "score": 75,
-      "market": "HK"
+      "market": "JP"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 74,
       "market": "US"
     },
@@ -175,20 +175,26 @@
       "market": "DE"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US"
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 74,
+      "market": "HK"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
       "score": 70,
       "market": "US"
     },
@@ -197,12 +203,6 @@
       "name": "Consolidated Edison",
       "score": 70,
       "market": "US"
-    },
-    {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 70,
-      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -225,27 +225,21 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "TTC",
-      "name": "Toro Company",
+      "ticker": "APLD",
+      "name": "Applied Digital",
       "score": 63,
       "market": "US"
     },
     {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 63,
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -265,13 +259,19 @@
       "name": "Persimmon",
       "score": 61,
       "market": "UK"
+    },
+    {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 60,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 72,
+      "score": 70,
       "market": "UK"
     },
     {
@@ -281,20 +281,26 @@
       "market": "US"
     },
     {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 61,
       "market": "US"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
       "score": 61,
       "market": "UK"
     },
@@ -305,21 +311,9 @@
       "market": "HK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 57,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 60,
       "market": "UK"
     },
     {
@@ -327,9 +321,15 @@
       "name": "Marston's",
       "score": 57,
       "market": "UK"
+    },
+    {
+      "ticker": "OSB.L",
+      "name": "OSB Group",
+      "score": 56,
+      "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 340
+  "bearishAlertCount": 341
 }
