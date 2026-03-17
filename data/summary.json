@@ -8,13 +8,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 74,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 74,
@@ -43,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
       "score": 71,
@@ -57,17 +57,17 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "EOAN.DE",
       "name": "E.ON",
       "score": 71,
       "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 70,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -75,23 +75,16 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 18,
+      "score": 16,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
       "score": 20,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "PODD",
@@ -110,29 +103,36 @@
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 23,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
       "score": 23,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "FICO",
       "name": "Fair Isaac (FICO)",
       "score": 23,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 24,
+      "market": "IN",
       "capCategory": "Large"
     },
     {
@@ -149,12 +149,6 @@
       "name": "Mitsui & Co",
       "score": 75,
       "market": "JP"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 74,
-      "market": "DE"
     },
     {
       "ticker": "0883.HK",
@@ -199,10 +193,16 @@
       "market": "US"
     },
     {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
       "score": 69,
-      "market": "JP"
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -219,16 +219,22 @@
       "market": "US"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 67,
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 66,
-      "market": "US"
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 67,
+      "market": "UK"
     },
     {
       "ticker": "PCVX",
@@ -237,21 +243,15 @@
       "market": "US"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "BKG.L",
       "name": "Berkeley Group",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 62,
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 63,
       "market": "UK"
     },
     {
@@ -271,7 +271,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 71,
+      "score": 72,
       "market": "UK"
     },
     {
@@ -283,7 +283,7 @@
     {
       "ticker": "CURY.L",
       "name": "Currys",
-      "score": 65,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
       "score": 57,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 48,
-  "bearishAlertCount": 336
+  "bearishAlertCount": 338
 }
