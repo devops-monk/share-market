@@ -1,27 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 78,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 76,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 75,
@@ -36,11 +15,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 72,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "CMCX.L",
@@ -50,8 +43,8 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -69,6 +62,13 @@
       "score": 71,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "EOAN.DE",
+      "name": "E.ON",
+      "score": 71,
+      "market": "DE",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -82,9 +82,44 @@
     {
       "ticker": "UPST",
       "name": "Upstart",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
       "score": 21,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "TRENT.BO",
@@ -94,74 +129,21 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
+      "ticker": "FICO",
+      "name": "Fair Isaac (FICO)",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "RPI.L",
-      "name": "Raspberry Pi",
-      "score": 24,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
-      "score": 24,
+      "ticker": "COF",
+      "name": "Capital One",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 78,
-      "market": "US"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 76,
-      "market": "US"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 75,
-      "market": "US"
-    },
     {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
@@ -175,8 +157,26 @@
       "market": "HK"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 71,
       "market": "US"
     },
@@ -193,25 +193,19 @@
       "market": "DE"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 70,
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 69,
       "market": "US"
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 72,
-      "market": "US"
-    },
     {
       "ticker": "SDR.L",
       "name": "Schroders",
@@ -219,16 +213,22 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 68,
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 67,
       "market": "US"
     },
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 65,
+      "score": 67,
       "market": "UK"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 66,
+      "market": "US"
     },
     {
       "ticker": "BBY.L",
@@ -237,21 +237,9 @@
       "market": "UK"
     },
     {
-      "ticker": "APLD",
-      "name": "Applied Digital",
-      "score": 63,
-      "market": "US"
-    },
-    {
       "ticker": "BKG.L",
       "name": "Berkeley Group",
       "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 62,
       "market": "UK"
     },
     {
@@ -265,6 +253,18 @@
       "name": "Tritax Big Box REIT",
       "score": 62,
       "market": "UK"
+    },
+    {
+      "ticker": "APLD",
+      "name": "Applied Digital",
+      "score": 61,
+      "market": "US"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 60,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -293,10 +293,10 @@
       "market": "UK"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 61,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "0011.HK",
@@ -305,10 +305,10 @@
       "market": "HK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "LTC",
+      "name": "LTC Properties",
       "score": 60,
-      "market": "UK"
+      "market": "US"
     },
     {
       "ticker": "MARS.L",
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 57,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 58,
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
       "score": 57,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
-  "avgScore": 49,
-  "bearishAlertCount": 345
+  "avgScore": 48,
+  "bearishAlertCount": 337
 }
