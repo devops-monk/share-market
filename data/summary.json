@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 75,
@@ -15,15 +22,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
@@ -34,13 +34,6 @@
       "score": 74,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "RWE.DE",
@@ -59,6 +52,13 @@
     {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
+      "score": 73,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
       "score": 73,
       "market": "JP",
       "capCategory": "Large"
@@ -94,6 +94,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SE",
       "name": "Sea Limited",
       "score": 22,
@@ -108,25 +115,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "FICO",
-      "name": "Fair Isaac (FICO)",
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
       "score": 23,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "BYND",
@@ -136,8 +129,15 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
+      "ticker": "FICO",
+      "name": "Fair Isaac (FICO)",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BILL",
+      "name": "Bill Holdings",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
@@ -145,27 +145,21 @@
   ],
   "topLargeCap": [
     {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 75,
+      "market": "US"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 75,
       "market": "HK"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 74,
-      "market": "US"
-    },
-    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
-      "score": 73,
+      "score": 74,
       "market": "US"
     },
     {
@@ -187,14 +181,20 @@
       "market": "JP"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 73,
+      "market": "JP"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "DOW",
-      "name": "Dow Inc",
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
       "score": 69,
       "market": "US"
     },
@@ -219,8 +219,8 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 68,
       "market": "US"
     },
@@ -231,16 +231,16 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 67,
-      "market": "US"
-    },
-    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 67,
       "market": "UK"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 66,
+      "market": "US"
     },
     {
       "ticker": "PLUS.L",
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 61,
+      "market": "US"
+    },
+    {
       "ticker": "CURY.L",
       "name": "Currys",
       "score": 61,
       "market": "UK"
-    },
-    {
-      "ticker": "0011.HK",
-      "name": "Hang Seng Bank",
-      "score": 61,
-      "market": "HK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 48,
-  "bearishAlertCount": 348
+  "bearishAlertCount": 350
 }
