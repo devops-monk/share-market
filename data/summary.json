@@ -22,6 +22,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
       "score": 73,
@@ -29,25 +36,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "SDR.L",
+      "name": "Schroders",
       "score": 71,
-      "market": "US",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "RWE.DE",
@@ -57,28 +50,28 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 69,
-      "market": "UK",
-      "capCategory": "Mid"
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
+      "ticker": "EOAN.DE",
+      "name": "E.ON",
+      "score": 70,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RRC",
+      "name": "Range Resources",
       "score": 69,
-      "market": "IN",
+      "market": "US",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
     {
       "ticker": "ZG",
       "name": "Zillow Group",
@@ -99,6 +92,13 @@
       "score": 21,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Small"
     },
     {
       "ticker": "SE",
@@ -122,6 +122,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RBLX",
       "name": "Roblox",
       "score": 23,
@@ -133,13 +140,6 @@
       "name": "WPP",
       "score": 24,
       "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
-      "score": 24,
-      "market": "US",
       "capCategory": "Mid"
     }
   ],
@@ -169,22 +169,28 @@
       "market": "JP"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 71,
       "market": "DE"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "EOAN.DE",
+      "name": "E.ON",
+      "score": 70,
+      "market": "DE"
+    },
+    {
+      "ticker": "RRC",
+      "name": "Range Resources",
+      "score": 69,
+      "market": "US"
     },
     {
       "ticker": "COALINDIA.NS",
@@ -193,14 +199,8 @@
       "market": "IN"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "HAL",
-      "name": "Halliburton",
+      "ticker": "DOW",
+      "name": "Dow Inc",
       "score": 68,
       "market": "US"
     }
@@ -209,14 +209,8 @@
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 69,
+      "score": 71,
       "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 68,
-      "market": "US"
     },
     {
       "ticker": "PCVX",
@@ -249,6 +243,12 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 63,
+      "market": "US"
+    },
+    {
       "ticker": "BKG.L",
       "name": "Berkeley Group",
       "score": 62,
@@ -271,7 +271,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 72,
+      "score": 73,
       "market": "UK"
     },
     {
@@ -305,12 +305,6 @@
       "market": "UK"
     },
     {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 61,
-      "market": "UK"
-    },
-    {
       "ticker": "0011.HK",
       "name": "Hang Seng Bank",
       "score": 61,
@@ -327,9 +321,15 @@
       "name": "LTC Properties",
       "score": 58,
       "market": "US"
+    },
+    {
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
+      "score": 57,
+      "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 48,
-  "bearishAlertCount": 348
+  "bearishAlertCount": 345
 }
