@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 72,
@@ -50,22 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab",
+      "ticker": "VLO",
+      "name": "Valero Energy",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -73,15 +73,15 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 20,
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
+      "ticker": "RBLX",
+      "name": "Roblox",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -108,13 +108,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 25,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 25,
@@ -136,11 +129,18 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
+      "ticker": "TRENT.BO",
+      "name": "Trent",
       "score": 26,
-      "market": "US",
+      "market": "IN",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "TATE.L",
+      "name": "Tate & Lyle",
+      "score": 26,
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -175,15 +175,15 @@
       "market": "JP"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 71,
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 72,
       "market": "US"
     },
     {
@@ -249,21 +249,21 @@
       "market": "UK"
     },
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "MUR",
       "name": "Murphy Oil",
       "score": 64,
       "market": "US"
     },
     {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     }
   ],
@@ -271,7 +271,13 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 72,
+      "score": 69,
+      "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 67,
       "market": "UK"
     },
     {
@@ -281,14 +287,14 @@
       "market": "US"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 64,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 63,
       "market": "UK"
     },
@@ -305,8 +311,8 @@
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
       "score": 61,
       "market": "UK"
     },
@@ -321,15 +327,9 @@
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
-    },
-    {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 60,
-      "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 336
+  "bearishAlertCount": 339
 }
