@@ -50,6 +50,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "XOM",
       "name": "ExxonMobil",
       "score": 71,
@@ -59,13 +66,6 @@
     {
       "ticker": "RKLB",
       "name": "Rocket Lab",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -101,6 +101,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "WPP.L",
+      "name": "WPP",
+      "score": 24,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "TRENT.BO",
       "name": "Trent",
       "score": 25,
@@ -126,13 +133,6 @@
       "name": "C3.ai",
       "score": 25,
       "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "TATE.L",
-      "name": "Tate & Lyle",
-      "score": 26,
-      "market": "UK",
       "capCategory": "Small"
     },
     {
@@ -261,8 +261,8 @@
       "market": "UK"
     },
     {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
       "score": 63,
       "market": "UK"
     }
@@ -271,13 +271,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 71,
-      "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 67,
+      "score": 72,
       "market": "UK"
     },
     {
@@ -285,6 +279,12 @@
       "name": "Comerica",
       "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "ASHM.L",
@@ -305,8 +305,14 @@
       "market": "UK"
     },
     {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
       "score": 61,
       "market": "UK"
     },
@@ -317,19 +323,13 @@
       "market": "HK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 58,
-      "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 57,
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 338
+  "bearishAlertCount": 336
 }
