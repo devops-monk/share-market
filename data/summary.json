@@ -57,10 +57,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 73,
-      "market": "JP",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 72,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -101,13 +101,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "SE",
       "name": "Sea Limited",
       "score": 23,
@@ -127,6 +120,13 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "FICO",
@@ -181,21 +181,21 @@
       "market": "JP"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 73,
-      "market": "JP"
-    },
-    {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 71,
+      "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 72,
+      "market": "JP"
     },
     {
       "ticker": "MU",
       "name": "Micron",
-      "score": 70,
+      "score": 71,
       "market": "US"
     },
     {
