@@ -1,10 +1,24 @@
 {
   "topOverall": [
     {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 75,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 75,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 74,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -15,25 +29,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 74,
       "market": "UK",
-      "capCategory": "Mid"
+      "capCategory": "Small"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "RWE.DE",
+      "name": "RWE",
       "score": 73,
-      "market": "US",
+      "market": "DE",
       "capCategory": "Large"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
+      "ticker": "EOAN.DE",
+      "name": "E.ON",
       "score": 73,
-      "market": "UK",
-      "capCategory": "Small"
+      "market": "DE",
+      "capCategory": "Large"
     },
     {
       "ticker": "4063.T",
@@ -50,28 +64,21 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 71,
+      "score": 72,
       "market": "UK",
       "capCategory": "Small"
     }
   ],
   "bottomOverall": [
+    {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
     {
       "ticker": "PODD",
       "name": "Insulet Corp",
@@ -83,13 +90,6 @@
       "ticker": "HUBS",
       "name": "HubSpot",
       "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,6 +108,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BYND",
       "name": "Beyond Meat",
       "score": 23,
@@ -122,13 +129,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RBLX",
       "name": "Roblox",
       "score": 23,
@@ -136,10 +136,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "WPP.L",
-      "name": "WPP",
+      "ticker": "BROS",
+      "name": "Dutch Bros",
       "score": 24,
-      "market": "UK",
+      "market": "US",
       "capCategory": "Mid"
     }
   ],
@@ -151,16 +151,28 @@
       "market": "HK"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 74,
+      "market": "US"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 74,
       "market": "US"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "RWE.DE",
+      "name": "RWE",
       "score": 73,
-      "market": "US"
+      "market": "DE"
+    },
+    {
+      "ticker": "EOAN.DE",
+      "name": "E.ON",
+      "score": 73,
+      "market": "DE"
     },
     {
       "ticker": "4063.T",
@@ -175,22 +187,10 @@
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE"
-    },
-    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 71,
       "market": "US"
-    },
-    {
-      "ticker": "EOAN.DE",
-      "name": "E.ON",
-      "score": 71,
-      "market": "DE"
     },
     {
       "ticker": "DOW",
@@ -209,18 +209,18 @@
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 74,
-      "market": "UK"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 68,
+      "score": 75,
       "market": "UK"
     },
     {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
       "score": 68,
       "market": "UK"
     },
@@ -231,39 +231,39 @@
       "market": "US"
     },
     {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 67,
-      "market": "UK"
-    },
-    {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 66,
+      "score": 67,
       "market": "UK"
     },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 63,
+      "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 66,
+      "market": "UK"
     },
     {
       "ticker": "BKG.L",
       "name": "Berkeley Group",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
       "ticker": "INVP.L",
       "name": "Investec",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
-      "score": 61,
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 63,
       "market": "UK"
     }
   ],
@@ -271,12 +271,18 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 73,
+      "score": 74,
       "market": "UK"
     },
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
+      "score": 72,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 71,
       "market": "UK"
     },
@@ -295,7 +301,7 @@
     {
       "ticker": "OSB.L",
       "name": "OSB Group",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -319,17 +325,11 @@
     {
       "ticker": "CURY.L",
       "name": "Currys",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
       "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 48,
-  "bearishAlertCount": 350
+  "bearishAlertCount": 349
 }
