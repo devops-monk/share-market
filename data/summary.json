@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 75,
@@ -15,22 +8,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -43,13 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
       "score": 72,
@@ -57,17 +36,38 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "RWE.DE",
+      "name": "RWE",
       "score": 71,
-      "market": "US",
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 69,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 69,
+      "market": "IN",
       "capCategory": "Large"
     }
   ],
@@ -75,13 +75,13 @@
     {
       "ticker": "GRAB",
       "name": "Grab Holdings",
-      "score": 21,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
+      "ticker": "ZG",
+      "name": "Zillow Group",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -89,13 +89,41 @@
     {
       "ticker": "PODD",
       "name": "Insulet Corp",
-      "score": 23,
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "SE",
+      "name": "Sea Limited",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HUBS",
       "name": "HubSpot",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FICO",
+      "name": "Fair Isaac (FICO)",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -108,48 +136,14 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BROS",
       "name": "Dutch Bros",
-      "score": 25,
+      "score": 24,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 26,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TATE.L",
-      "name": "Tate & Lyle",
-      "score": 26,
-      "market": "UK",
-      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 75,
-      "market": "US"
-    },
     {
       "ticker": "0883.HK",
       "name": "CNOOC",
@@ -157,20 +151,14 @@
       "market": "HK"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 73,
       "market": "US"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 73,
       "market": "US"
     },
@@ -187,60 +175,66 @@
       "market": "US"
     },
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab",
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "RWE.DE",
+      "name": "RWE",
       "score": 71,
+      "market": "DE"
+    },
+    {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 69,
+      "market": "IN"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 68,
       "market": "US"
     },
     {
       "ticker": "HAL",
       "name": "Halliburton",
-      "score": 71,
+      "score": 68,
       "market": "US"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 71,
+      "score": 69,
       "market": "UK"
     },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 70,
+      "score": 68,
       "market": "US"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 70,
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 67,
       "market": "US"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 69,
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 67,
-      "market": "US"
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 66,
+      "market": "UK"
     },
     {
       "ticker": "BEZ.L",
@@ -249,21 +243,27 @@
       "market": "UK"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
+      "ticker": "PLUS.L",
+      "name": "Plus500",
       "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "MUR",
-      "name": "Murphy Oil",
-      "score": 64,
-      "market": "US"
-    },
-    {
       "ticker": "BKG.L",
       "name": "Berkeley Group",
-      "score": 63,
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 62,
       "market": "UK"
     }
   ],
@@ -271,13 +271,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 67,
+      "score": 72,
       "market": "UK"
     },
     {
@@ -287,27 +281,33 @@
       "market": "US"
     },
     {
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 63,
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 62,
-      "market": "US"
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 61,
+      "market": "UK"
     },
     {
       "ticker": "SFOR.L",
       "name": "S4 Capital",
-      "score": 62,
+      "score": 61,
       "market": "UK"
     },
     {
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
+      "ticker": "LTC",
+      "name": "LTC Properties",
       "score": 58,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "totalStocks": 864,
-  "avgScore": 49,
-  "bearishAlertCount": 341
+  "avgScore": 48,
+  "bearishAlertCount": 348
 }
