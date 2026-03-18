@@ -15,6 +15,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 74,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 73,
@@ -29,46 +43,32 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "RWE.DE",
       "name": "RWE",
+      "score": 72,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 71,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "EOAN.DE",
-      "name": "E.ON",
-      "score": 70,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RRC",
-      "name": "Range Resources",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
@@ -78,13 +78,6 @@
       "score": 21,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "HUBS",
@@ -101,18 +94,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "SE",
       "name": "Sea Limited",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Small"
     },
     {
       "ticker": "FICO",
@@ -157,44 +157,44 @@
       "market": "US"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
       "score": 73,
       "market": "JP"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 71,
-      "market": "DE"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 70,
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 72,
       "market": "US"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 70,
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 72,
+      "market": "DE"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 71,
       "market": "US"
     },
     {
       "ticker": "EOAN.DE",
       "name": "E.ON",
-      "score": 70,
+      "score": 71,
       "market": "DE"
     },
     {
-      "ticker": "RRC",
-      "name": "Range Resources",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "DOW",
+      "name": "Dow Inc",
       "score": 69,
       "market": "US"
     },
@@ -209,8 +209,26 @@
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 71,
+      "score": 74,
       "market": "UK"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 67,
+      "market": "US"
     },
     {
       "ticker": "HBR.L",
@@ -219,33 +237,21 @@
       "market": "UK"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 67,
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 66,
+      "score": 63,
       "market": "US"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 66,
-      "market": "US"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 65,
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
+      "score": 63,
       "market": "UK"
     },
     {
@@ -255,15 +261,9 @@
       "market": "UK"
     },
     {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 62,
+      "ticker": "BAB.L",
+      "name": "Babcock International",
+      "score": 61,
       "market": "UK"
     }
   ],
@@ -272,6 +272,12 @@
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 73,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 71,
       "market": "UK"
     },
     {
@@ -287,9 +293,9 @@
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 65,
+      "ticker": "OSB.L",
+      "name": "OSB Group",
+      "score": 63,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "Marston's",
       "score": 59,
       "market": "UK"
-    },
-    {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
-      "score": 59,
-      "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 48,
-  "bearishAlertCount": 346
+  "bearishAlertCount": 350
 }
