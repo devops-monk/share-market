@@ -3,6 +3,13 @@
     {
       "ticker": "CF",
       "name": "CF Industries",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 75,
       "market": "US",
       "capCategory": "Large"
@@ -19,13 +26,6 @@
       "name": "CNOOC",
       "score": 75,
       "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 74,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -75,27 +75,34 @@
     {
       "ticker": "GRAB",
       "name": "Grab Holdings",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "PODD",
       "name": "Insulet Corp",
-      "score": 21,
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IonQ",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -103,23 +110,9 @@
     {
       "ticker": "SE",
       "name": "Sea Limited",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
       "score": 23,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "BYND",
@@ -129,24 +122,37 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "FICO",
       "name": "Fair Isaac (FICO)",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "BILL",
-      "name": "Bill Holdings",
-      "score": 24,
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 25,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "CF",
       "name": "CF Industries",
+      "score": 76,
+      "market": "US"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 75,
       "market": "US"
     },
@@ -155,12 +161,6 @@
       "name": "CNOOC",
       "score": 75,
       "market": "HK"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 74,
-      "market": "US"
     },
     {
       "ticker": "RWE.DE",
@@ -193,15 +193,15 @@
       "market": "US"
     },
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab",
-      "score": 69,
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 70,
       "market": "US"
     },
     {
-      "ticker": "EQT",
-      "name": "EQT Corp",
-      "score": 69,
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
+      "score": 70,
       "market": "US"
     }
   ],
@@ -231,16 +231,16 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 66,
-      "market": "US"
     },
     {
       "ticker": "PLUS.L",
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 61,
-      "market": "US"
-    },
-    {
       "ticker": "CURY.L",
       "name": "Currys",
       "score": 61,
       "market": "UK"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 60,
+      "market": "US"
     }
   ],
-  "totalStocks": 864,
-  "avgScore": 48,
-  "bearishAlertCount": 350
+  "totalStocks": 863,
+  "avgScore": 49,
+  "bearishAlertCount": 347
 }
