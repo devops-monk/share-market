@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 75,
@@ -36,13 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EOAN.DE",
-      "name": "E.ON",
-      "score": 73,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
       "score": 73,
@@ -64,10 +50,24 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SSE.L",
-      "name": "SSE",
-      "score": 72,
-      "market": "UK",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -129,27 +129,21 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
+      "ticker": "TATE.L",
+      "name": "Tate & Lyle",
       "score": 26,
-      "market": "US",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 75,
-      "market": "US"
-    },
     {
       "ticker": "0883.HK",
       "name": "CNOOC",
@@ -175,12 +169,6 @@
       "market": "US"
     },
     {
-      "ticker": "EOAN.DE",
-      "name": "E.ON",
-      "score": 73,
-      "market": "DE"
-    },
-    {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
       "score": 73,
@@ -193,14 +181,26 @@
       "market": "US"
     },
     {
-      "ticker": "SSE.L",
-      "name": "SSE",
-      "score": 72,
-      "market": "UK"
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "RKLB",
       "name": "Rocket Lab",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
       "score": 71,
       "market": "US"
     }
@@ -213,8 +213,8 @@
       "market": "US"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
+      "ticker": "SDR.L",
+      "name": "Schroders",
       "score": 71,
       "market": "UK"
     },
@@ -231,21 +231,9 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 68,
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 70,
       "market": "UK"
     },
     {
@@ -255,15 +243,27 @@
       "market": "US"
     },
     {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "MUR",
+      "name": "Murphy Oil",
+      "score": 64,
+      "market": "US"
+    },
+    {
       "ticker": "BKG.L",
       "name": "Berkeley Group",
-      "score": 66,
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
-      "score": 66,
+      "score": 63,
       "market": "UK"
     }
   ],
@@ -271,7 +271,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 72,
+      "score": 71,
       "market": "UK"
     },
     {
@@ -289,18 +289,6 @@
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
       "score": 63,
       "market": "UK"
     },
@@ -311,25 +299,37 @@
       "market": "US"
     },
     {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "TSTL.L",
+      "name": "Tristel",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "0011.HK",
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 60,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 58,
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 59,
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 57,
       "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 341
+  "bearishAlertCount": 338
 }
