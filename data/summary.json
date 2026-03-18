@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 75,
@@ -11,13 +18,6 @@
       "ticker": "CF",
       "name": "CF Industries",
       "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
@@ -136,14 +136,20 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
+      "ticker": "TATE.L",
+      "name": "Tate & Lyle",
       "score": 26,
-      "market": "US",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 75,
+      "market": "US"
+    },
     {
       "ticker": "0883.HK",
       "name": "CNOOC",
@@ -154,12 +160,6 @@
       "ticker": "CF",
       "name": "CF Industries",
       "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 73,
       "market": "US"
     },
     {
@@ -213,6 +213,12 @@
       "market": "US"
     },
     {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 71,
+      "market": "UK"
+    },
+    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 70,
@@ -227,13 +233,7 @@
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
-      "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 68,
+      "score": 69,
       "market": "UK"
     },
     {
@@ -241,12 +241,6 @@
       "name": "F.N.B. Corp",
       "score": 67,
       "market": "US"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 66,
-      "market": "UK"
     },
     {
       "ticker": "BEZ.L",
@@ -261,13 +255,25 @@
       "market": "UK"
     },
     {
-      "ticker": "BAB.L",
-      "name": "Babcock International",
-      "score": 65,
+      "ticker": "MUR",
+      "name": "Murphy Oil",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
+      "score": 63,
       "market": "UK"
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 69,
+      "market": "UK"
+    },
     {
       "ticker": "CURY.L",
       "name": "Currys",
@@ -279,12 +285,6 @@
       "name": "Comerica",
       "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 66,
-      "market": "UK"
     },
     {
       "ticker": "ASHM.L",
@@ -305,21 +305,9 @@
       "market": "US"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 61,
-      "market": "UK"
-    },
-    {
       "ticker": "SFOR.L",
       "name": "S4 Capital",
-      "score": 61,
+      "score": 62,
       "market": "UK"
     },
     {
@@ -327,9 +315,21 @@
       "name": "Hang Seng Bank",
       "score": 61,
       "market": "HK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 58,
+      "market": "UK"
     }
   ],
   "totalStocks": 864,
   "avgScore": 49,
-  "bearishAlertCount": 336
+  "bearishAlertCount": 341
 }
