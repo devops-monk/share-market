@@ -15,13 +15,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 76,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "8058.T",
       "name": "Mitsubishi Corp",
       "score": 76,
@@ -29,16 +22,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 73,
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
@@ -50,47 +36,89 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "SDR.L",
+      "name": "Schroders",
       "score": 71,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 71,
-      "market": "US",
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 70,
+      "market": "JP",
       "capCategory": "Large"
     },
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab",
-      "score": 71,
+      "ticker": "EQT",
+      "name": "EQT Corp",
+      "score": 69,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "P911.DE",
-      "name": "Porsche AG",
-      "score": 21,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BYND",
       "name": "Beyond Meat",
-      "score": 21,
+      "score": 19,
       "market": "US",
       "capCategory": "Small"
     },
     {
       "ticker": "GRAB",
       "name": "Grab Holdings",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corp",
       "score": 21,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IonQ",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "P911.DE",
+      "name": "Porsche AG",
+      "score": 22,
+      "market": "DE",
       "capCategory": "Large"
     },
     {
@@ -101,46 +129,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
+      "ticker": "ZG",
+      "name": "Zillow Group",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "WPP.L",
-      "name": "WPP",
-      "score": 23,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SE",
-      "name": "Sea Limited",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -157,27 +157,15 @@
       "market": "JP"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 76,
-      "market": "US"
-    },
-    {
       "ticker": "8058.T",
       "name": "Mitsubishi Corp",
       "score": 76,
       "market": "JP"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 75,
-      "market": "US"
-    },
-    {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 73,
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 74,
       "market": "US"
     },
     {
@@ -187,25 +175,43 @@
       "market": "DE"
     },
     {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 70,
+      "market": "JP"
+    },
+    {
+      "ticker": "EQT",
+      "name": "EQT Corp",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 69,
+      "market": "IN"
+    },
+    {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab",
-      "score": 71,
+      "score": 68,
       "market": "US"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 71,
+      "market": "UK"
+    },
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
@@ -213,61 +219,61 @@
       "market": "UK"
     },
     {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
+      "ticker": "PLUS.L",
+      "name": "Plus500",
       "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 67,
+      "ticker": "NNN",
+      "name": "NNN REIT",
+      "score": 63,
       "market": "US"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 67,
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 61,
       "market": "UK"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "APLD",
-      "name": "Applied Digital",
-      "score": 62,
-      "market": "US"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 62,
-      "market": "US"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 62,
-      "market": "US"
-    },
-    {
-      "ticker": "MUR",
-      "name": "Murphy Oil",
-      "score": 62,
-      "market": "US"
     },
     {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
       "score": 61,
       "market": "UK"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 60,
+      "market": "US"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 60,
+      "market": "US"
+    },
+    {
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "APLD",
+      "name": "Applied Digital",
+      "score": 59,
+      "market": "US"
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 68,
+      "market": "UK"
+    },
     {
       "ticker": "CMA",
       "name": "Comerica",
@@ -281,22 +287,10 @@
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 62,
+      "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 60,
-      "market": "US"
     },
     {
       "ticker": "ASHM.L",
@@ -311,6 +305,18 @@
       "market": "UK"
     },
     {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 58,
+      "market": "US"
+    },
+    {
+      "ticker": "FDM.L",
+      "name": "FDM Group",
+      "score": 57,
+      "market": "UK"
+    },
+    {
       "ticker": "SUPR.L",
       "name": "Supermarket Income REIT",
       "score": 57,
@@ -321,15 +327,9 @@
       "name": "Phoenix Group",
       "score": 56,
       "market": "UK"
-    },
-    {
-      "ticker": "FDM.L",
-      "name": "FDM Group",
-      "score": 56,
-      "market": "UK"
     }
   ],
   "totalStocks": 863,
-  "avgScore": 48,
-  "bearishAlertCount": 348
+  "avgScore": 47,
+  "bearishAlertCount": 350
 }
