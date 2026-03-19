@@ -1,5 +1,5 @@
 ticker,name,market,sector,price,changePercent,marketCap,capCategory,pe,rsi,sma50,sma200,bearishScore,bullishScore,sentimentAvg,compositeScore
-0700.HK,Tencent,HK,Technology,513,-11.39,4627870777344,Large,20.479042,38.7,566.89,583.24,4,2,0.000,47
+0700.HK,Tencent,HK,Technology,513,-11.39,4627870777344,Large,,38.7,566.89,583.24,4,2,0.000,44
 9988.HK,Alibaba Group,HK,Technology,132,-43.73,2521107791872,Large,17.910448,38.5,151.01,141.58,0,4,0.000,56
 0939.HK,China Construction Bank,HK,Financials,8.09,25.23,2168506679296,Large,5.5410957,56.0,7.90,7.84,2,6,0.000,64
 1398.HK,ICBC,HK,Financials,6.58,21.85,2940129509376,Large,5.927928,60.2,6.38,6.15,0,6,0.000,68
@@ -19,8 +19,8 @@ ticker,name,market,sector,price,changePercent,marketCap,capCategory,pe,rsi,sma50
 0003.HK,Hong Kong & China Gas,HK,Utilities,7.42,-35.08,138456236032,Large,24.733332,48.1,7.42,7.11,2,4,0.000,57
 0066.HK,MTR Corporation,HK,Industrials,32.84,-26.86,204105351168,Large,13.915255,37.5,34.26,29.73,2,4,0.000,60
 0883.HK,CNOOC,HK,Energy,29.58,253.83,1460106821632,Large,10.164948,67.0,24.69,20.84,0,8,0.000,79
-1038.HK,CK Infrastructure,HK,Utilities,65.85,44.41,165916377088,Large,19.31085,56.5,63.56,55.73,2,5,0.000,63
-0006.HK,Power Assets Holdings,HK,Utilities,62.2,37.76,132554743808,Large,21.522491,53.4,60.48,53.58,2,7,0.000,64
+1038.HK,CK Infrastructure,HK,Utilities,65.85,44.41,165916377088,Large,,56.5,63.56,55.73,2,5,0.000,59
+0006.HK,Power Assets Holdings,HK,Utilities,62.2,37.76,132554743808,Large,,53.4,60.48,53.58,2,7,0.000,61
 0012.HK,Henderson Land,HK,Real Estate,31.86,-5.32,154246594560,Large,25.693548,46.1,32.03,28.82,2,2,0.000,52
 0017.HK,New World Development,HK,Real Estate,9,-77.33,22649401344,Large,,39.5,9.75,7.53,2,3,0.000,53
 1113.HK,CK Asset Holdings,HK,Real Estate,46.24,-8.34,161829748736,Large,14.227693,47.6,45.71,39.37,2,4,0.000,62
