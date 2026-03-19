@@ -36,13 +36,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 73,
@@ -54,6 +47,13 @@
       "name": "RWE",
       "score": 73,
       "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -175,12 +175,6 @@
       "market": "US"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 73,
-      "market": "US"
-    },
-    {
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 73,
@@ -191,6 +185,12 @@
       "name": "RWE",
       "score": 73,
       "market": "DE"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "MU",
@@ -213,6 +213,12 @@
       "market": "UK"
     },
     {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 70,
+      "market": "UK"
+    },
+    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 67,
@@ -228,12 +234,6 @@
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 65,
       "market": "UK"
     },
     {
@@ -261,30 +261,36 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 62,
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 61,
       "market": "UK"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 70,
+      "ticker": "CMA",
+      "name": "Comerica",
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 68,
+      "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "CMA",
-      "name": "Comerica",
-      "score": 66,
-      "market": "US"
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 62,
+      "market": "UK"
     },
     {
       "ticker": "LTC",
@@ -302,12 +308,6 @@
       "ticker": "MGNS.L",
       "name": "Morgan Sindall",
       "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 58,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 351
+  "bearishAlertCount": 349
 }
