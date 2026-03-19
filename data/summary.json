@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 75,
@@ -22,15 +29,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "FIVE",
+      "name": "Five Below",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
@@ -50,6 +50,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "EQT",
+      "name": "EQT Corp",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SSE.L",
       "name": "SSE",
       "score": 72,
@@ -62,41 +69,20 @@
       "score": 72,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 72,
-      "market": "FR",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "DASH",
       "name": "DoorDash",
-      "score": 17,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "PODD",
       "name": "Insulet Corp",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,17 +94,31 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TRENT.BO",
       "name": "Trent",
       "score": 22,
       "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 22,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -157,20 +157,20 @@
       "market": "HK"
     },
     {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 75,
+      "market": "US"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 75,
       "market": "DE"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "FIVE",
+      "name": "Five Below",
       "score": 74,
       "market": "US"
     },
@@ -178,6 +178,12 @@
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "EQT",
+      "name": "EQT Corp",
+      "score": 72,
       "market": "US"
     },
     {
@@ -193,15 +199,9 @@
       "market": "FR"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 69,
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 71,
       "market": "US"
     }
   ],
@@ -221,7 +221,7 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 68,
+      "score": 70,
       "market": "US"
     },
     {
@@ -311,6 +311,12 @@
       "market": "UK"
     },
     {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 59,
+      "market": "US"
+    },
+    {
       "ticker": "JDW.L",
       "name": "J D Wetherspoon",
       "score": 58,
@@ -321,15 +327,9 @@
       "name": "Fevertree",
       "score": 57,
       "market": "UK"
-    },
-    {
-      "ticker": "AJB.L",
-      "name": "AJ Bell",
-      "score": 57,
-      "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 354
+  "bearishAlertCount": 348
 }
