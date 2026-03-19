@@ -207,21 +207,9 @@
   ],
   "topMidCap": [
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 71,
-      "market": "UK"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 71,
-      "market": "UK"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 70,
       "market": "UK"
     },
     {
@@ -235,6 +223,18 @@
       "name": "Intuitive Machines",
       "score": 67,
       "market": "US"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 65,
+      "market": "UK"
     },
     {
       "ticker": "APLD",
@@ -277,7 +277,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 65,
+      "score": 66,
       "market": "UK"
     },
     {
@@ -311,21 +311,21 @@
       "market": "UK"
     },
     {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 57,
+      "market": "UK"
+    },
+    {
       "ticker": "PHNX.L",
       "name": "Phoenix Group",
       "score": 56,
       "market": "UK"
     },
     {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
-      "score": 55,
-      "market": "UK"
-    },
-    {
       "ticker": "FDM.L",
       "name": "FDM Group",
-      "score": 54,
+      "score": 56,
       "market": "UK"
     }
   ],
