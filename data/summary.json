@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 75,
@@ -26,6 +33,13 @@
       "name": "RWE",
       "score": 75,
       "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 74,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -43,13 +57,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "EQT",
       "name": "EQT Corp",
       "score": 72,
@@ -62,47 +69,19 @@
       "score": 72,
       "market": "UK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "DASH",
       "name": "DoorDash",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 21,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AFRM",
-      "name": "Affirm",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -122,8 +101,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "IONQ",
-      "name": "IonQ",
+      "ticker": "PODD",
+      "name": "Insulet Corp",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -136,11 +115,32 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HIMS",
       "name": "Hims & Hers Health",
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -157,6 +157,12 @@
       "market": "HK"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 75,
+      "market": "US"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 75,
@@ -169,15 +175,15 @@
       "market": "DE"
     },
     {
-      "ticker": "FIVE",
-      "name": "Five Below",
+      "ticker": "HAL",
+      "name": "Halliburton",
       "score": 74,
       "market": "US"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 73,
+      "ticker": "FIVE",
+      "name": "Five Below",
+      "score": 74,
       "market": "US"
     },
     {
@@ -197,12 +203,6 @@
       "name": "TotalEnergies",
       "score": 72,
       "market": "FR"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 71,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -213,16 +213,16 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 71,
       "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 70,
-      "market": "US"
     },
     {
       "ticker": "PHP.L",
@@ -249,22 +249,22 @@
       "market": "UK"
     },
     {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
       "score": 63,
-      "market": "UK"
+      "market": "US"
     },
     {
-      "ticker": "EDV.L",
-      "name": "Endeavour Mining",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 63,
-      "market": "UK"
+      "market": "US"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
+      "ticker": "AOS",
+      "name": "A.O. Smith",
       "score": 63,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -311,12 +311,6 @@
       "market": "UK"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 59,
-      "market": "US"
-    },
-    {
       "ticker": "JDW.L",
       "name": "J D Wetherspoon",
       "score": 58,
@@ -327,9 +321,15 @@
       "name": "Fevertree",
       "score": 57,
       "market": "UK"
+    },
+    {
+      "ticker": "AJB.L",
+      "name": "AJ Bell",
+      "score": 57,
+      "market": "UK"
     }
   ],
   "totalStocks": 863,
-  "avgScore": 48,
-  "bearishAlertCount": 348
+  "avgScore": 49,
+  "bearishAlertCount": 349
 }
