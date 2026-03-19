@@ -36,27 +36,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 75,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 74,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 73,
@@ -64,14 +43,42 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 73,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 73,
+      "score": 72,
       "market": "UK",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
+    {
+      "ticker": "P911.DE",
+      "name": "Porsche AG",
+      "score": 21,
+      "market": "DE",
+      "capCategory": "Large"
+    },
     {
       "ticker": "BYND",
       "name": "Beyond Meat",
@@ -89,13 +96,6 @@
     {
       "ticker": "TRENT.BO",
       "name": "Trent",
-      "score": 22,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HDFCLIFE.NS",
-      "name": "HDFC Life Insurance",
       "score": 22,
       "market": "IN",
       "capCategory": "Large"
@@ -175,58 +175,46 @@
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 74,
-      "market": "DE"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 73,
-      "market": "US"
-    },
-    {
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 73,
       "market": "US"
     },
     {
-      "ticker": "EOAN.DE",
-      "name": "E.ON",
+      "ticker": "RWE.DE",
+      "name": "RWE",
       "score": 73,
       "market": "DE"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 72,
+      "market": "US"
     },
     {
       "ticker": "MU",
       "name": "Micron",
       "score": 71,
       "market": "US"
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
+      "score": 71,
+      "market": "US"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 75,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 68,
-      "market": "UK"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
       "score": 68,
       "market": "UK"
     },
@@ -237,53 +225,59 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
       "score": 67,
       "market": "UK"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 66,
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 67,
       "market": "UK"
     },
     {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 64,
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "ITV.L",
-      "name": "ITV",
-      "score": 64,
-      "market": "UK"
+      "ticker": "APLD",
+      "name": "Applied Digital",
+      "score": 62,
+      "market": "US"
     },
     {
-      "ticker": "GAW.L",
-      "name": "Games Workshop",
-      "score": 63,
-      "market": "UK"
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "MUR",
+      "name": "Murphy Oil",
+      "score": 62,
+      "market": "US"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 73,
+      "score": 72,
       "market": "UK"
     },
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 72,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 72,
+      "score": 67,
       "market": "UK"
     },
     {
@@ -293,43 +287,49 @@
       "market": "US"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 66,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
-      "score": 63,
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
+      "score": 61,
       "market": "UK"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 60,
+      "market": "US"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 63,
+      "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "FDM.L",
-      "name": "FDM Group",
-      "score": 62,
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 57,
       "market": "UK"
     },
     {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
-      "score": 62,
+      "ticker": "PHNX.L",
+      "name": "Phoenix Group",
+      "score": 56,
       "market": "UK"
     },
     {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
-      "score": 61,
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 55,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
-  "avgScore": 49,
-  "bearishAlertCount": 349
+  "avgScore": 48,
+  "bearishAlertCount": 348
 }
