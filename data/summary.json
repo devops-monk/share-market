@@ -29,17 +29,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 73,
       "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 71,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -48,6 +48,13 @@
       "score": 71,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "BEZ.L",
@@ -62,13 +69,6 @@
       "score": 70,
       "market": "JP",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
-      "score": 69,
-      "market": "IN",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -80,23 +80,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "GRAB",
       "name": "Grab Holdings",
       "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin",
-      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -136,9 +122,23 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 21,
+      "ticker": "P911.DE",
+      "name": "Porsche AG",
+      "score": 22,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 22,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     }
@@ -175,12 +175,6 @@
       "market": "DE"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 71,
@@ -191,6 +185,12 @@
       "name": "Shin-Etsu Chemical",
       "score": 70,
       "market": "JP"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 69,
+      "market": "US"
     },
     {
       "ticker": "COALINDIA.NS",
@@ -207,6 +207,12 @@
   ],
   "topMidCap": [
     {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 71,
+      "market": "UK"
+    },
+    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 71,
@@ -219,21 +225,9 @@
       "market": "UK"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
-      "score": 62,
+      "score": 63,
       "market": "UK"
     },
     {
@@ -265,19 +259,25 @@
       "name": "Applied Digital",
       "score": 59,
       "market": "US"
+    },
+    {
+      "ticker": "NNN",
+      "name": "NNN REIT",
+      "score": 59,
+      "market": "US"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 68,
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 73,
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 67,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 68,
       "market": "UK"
     },
     {
@@ -289,7 +289,7 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 354
+  "bearishAlertCount": 355
 }
