@@ -207,6 +207,12 @@
   ],
   "topMidCap": [
     {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 71,
+      "market": "UK"
+    },
+    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 71,
@@ -219,22 +225,16 @@
       "market": "UK"
     },
     {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 68,
+      "market": "UK"
+    },
+    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 67,
       "market": "US"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 67,
-      "market": "UK"
     },
     {
       "ticker": "APLD",
@@ -275,15 +275,15 @@
       "market": "US"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 64,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 65,
       "market": "UK"
     },
     {
@@ -311,12 +311,6 @@
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 57,
-      "market": "UK"
-    },
-    {
       "ticker": "PHNX.L",
       "name": "Phoenix Group",
       "score": 56,
@@ -327,9 +321,15 @@
       "name": "J D Wetherspoon",
       "score": 55,
       "market": "UK"
+    },
+    {
+      "ticker": "FDM.L",
+      "name": "FDM Group",
+      "score": 54,
+      "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 349
+  "bearishAlertCount": 348
 }
