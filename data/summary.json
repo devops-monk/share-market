@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 73,
@@ -50,22 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 72,
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -115,6 +115,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "WPP.L",
+      "name": "WPP",
+      "score": 23,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "IONQ",
       "name": "IonQ",
       "score": 23,
@@ -131,13 +138,6 @@
     {
       "ticker": "SOUN",
       "name": "SoundHound AI",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
@@ -175,6 +175,12 @@
       "market": "US"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 73,
@@ -185,12 +191,6 @@
       "name": "RWE",
       "score": 73,
       "market": "DE"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 72,
-      "market": "US"
     },
     {
       "ticker": "MU",
@@ -213,12 +213,6 @@
       "market": "UK"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 68,
-      "market": "UK"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 67,
@@ -237,8 +231,8 @@
       "market": "UK"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
+      "ticker": "PLUS.L",
+      "name": "Plus500",
       "score": 65,
       "market": "UK"
     },
@@ -265,19 +259,25 @@
       "name": "Murphy Oil",
       "score": 62,
       "market": "US"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 62,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 72,
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 70,
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 67,
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 68,
       "market": "UK"
     },
     {
@@ -285,18 +285,6 @@
       "name": "Comerica",
       "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 61,
-      "market": "UK"
     },
     {
       "ticker": "LTC",
@@ -308,6 +296,18 @@
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 58,
       "market": "UK"
     },
     {
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
+      "ticker": "JDW.L",
+      "name": "J D Wetherspoon",
       "score": 55,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 348
+  "bearishAlertCount": 351
 }
