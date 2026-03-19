@@ -24,8 +24,15 @@
     {
       "ticker": "CF",
       "name": "CF Industries",
-      "score": 73,
+      "score": 74,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 74,
+      "market": "DE",
       "capCategory": "Large"
     },
     {
@@ -36,25 +43,18 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 72,
+      "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HAL",
       "name": "Halliburton",
-      "score": 71,
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
     },
     {
       "ticker": "BEZ.L",
@@ -64,10 +64,10 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 70,
-      "market": "JP",
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -75,35 +75,28 @@
     {
       "ticker": "DASH",
       "name": "DoorDash",
-      "score": 16,
+      "score": 17,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "GRAB",
       "name": "Grab Holdings",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
       "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ",
-      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
@@ -120,6 +113,13 @@
       "score": 21,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "P911.DE",
@@ -165,19 +165,31 @@
     {
       "ticker": "CF",
       "name": "CF Industries",
-      "score": 73,
+      "score": 74,
       "market": "US"
     },
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 73,
+      "score": 74,
       "market": "DE"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 72,
+      "market": "US"
     },
     {
       "ticker": "HAL",
       "name": "Halliburton",
-      "score": 71,
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 70,
       "market": "US"
     },
     {
@@ -187,35 +199,23 @@
       "market": "JP"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "MU",
+      "name": "Micron",
       "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
-      "score": 69,
-      "market": "IN"
-    },
-    {
-      "ticker": "PFE",
-      "name": "Pfizer",
-      "score": 68,
       "market": "US"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "BEZ.L",
+      "name": "Beazley",
       "score": 71,
       "market": "UK"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 71,
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 68,
       "market": "UK"
     },
     {
@@ -225,10 +225,10 @@
       "market": "UK"
     },
     {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 63,
-      "market": "UK"
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 67,
+      "market": "US"
     },
     {
       "ticker": "BBY.L",
@@ -237,8 +237,8 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "APLD",
+      "name": "Applied Digital",
       "score": 60,
       "market": "US"
     },
@@ -249,22 +249,22 @@
       "market": "US"
     },
     {
-      "ticker": "CNA.L",
-      "name": "Centrica",
+      "ticker": "MUR",
+      "name": "Murphy Oil",
+      "score": 60,
+      "market": "US"
+    },
+    {
+      "ticker": "GAW.L",
+      "name": "Games Workshop",
       "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "APLD",
-      "name": "Applied Digital",
-      "score": 59,
-      "market": "US"
-    },
-    {
-      "ticker": "NNN",
-      "name": "NNN REIT",
-      "score": 59,
-      "market": "US"
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 60,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -293,15 +293,15 @@
       "market": "UK"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 60,
-      "market": "US"
-    },
-    {
       "ticker": "MGNS.L",
       "name": "Morgan Sindall",
       "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "FEVR.L",
+      "name": "Fevertree",
+      "score": 59,
       "market": "UK"
     },
     {
@@ -313,19 +313,19 @@
     {
       "ticker": "SUPR.L",
       "name": "Supermarket Income REIT",
-      "score": 58,
+      "score": 59,
       "market": "UK"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 58,
+      "market": "US"
     },
     {
       "ticker": "FDM.L",
       "name": "FDM Group",
       "score": 57,
-      "market": "UK"
-    },
-    {
-      "ticker": "PHNX.L",
-      "name": "Phoenix Group",
-      "score": 56,
       "market": "UK"
     }
   ],
