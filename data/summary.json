@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 75,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 75,
@@ -55,13 +62,6 @@
       "score": 74,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Mid"
     },
     {
       "ticker": "EQT",
@@ -122,6 +122,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "WPP.L",
+      "name": "WPP",
+      "score": 23,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "BYND",
       "name": "Beyond Meat",
       "score": 23,
@@ -132,13 +139,6 @@
       "ticker": "IONQ",
       "name": "IonQ",
       "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 24,
       "market": "US",
       "capCategory": "Large"
     }
@@ -209,7 +209,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 74,
+      "score": 75,
       "market": "UK"
     },
     {
@@ -237,16 +237,16 @@
       "market": "UK"
     },
     {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "AOS",
       "name": "A.O. Smith",
       "score": 64,
       "market": "US"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "FNB",
@@ -261,13 +261,19 @@
       "market": "US"
     },
     {
-      "ticker": "CNA.L",
-      "name": "Centrica",
+      "ticker": "PHP.L",
+      "name": "Primary Health Properties",
       "score": 63,
       "market": "UK"
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 68,
+      "market": "UK"
+    },
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
@@ -281,12 +287,6 @@
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 61,
@@ -295,12 +295,18 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 59,
+      "score": 58,
       "market": "UK"
     },
     {
       "ticker": "IDOX.L",
       "name": "IDOX",
+      "score": 57,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
       "score": 57,
       "market": "UK"
     },
@@ -311,25 +317,19 @@
       "market": "US"
     },
     {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 56,
-      "market": "UK"
-    },
-    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
       "score": 56,
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "OSB.L",
+      "name": "OSB Group",
       "score": 55,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 355
+  "bearishAlertCount": 354
 }
