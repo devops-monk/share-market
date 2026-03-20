@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 81,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 80,
@@ -15,16 +22,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 77,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 76,
+      "score": 77,
       "market": "US",
       "capCategory": "Large"
     },
@@ -36,6 +36,20 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 76,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 75,
@@ -45,46 +59,25 @@
     {
       "ticker": "CF",
       "name": "CF Industries",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 72,
       "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 71,
-      "market": "HK",
-      "capCategory": "Large"
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "DASH",
       "name": "DoorDash",
-      "score": 16,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "RBLX",
@@ -101,15 +94,29 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
       "score": 20,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "PODD",
       "name": "Insulet Corp",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -122,13 +129,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BYND",
       "name": "Beyond Meat",
       "score": 22,
@@ -136,14 +136,20 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "FICO",
+      "name": "Fair Isaac (FICO)",
       "score": 22,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 81,
+      "market": "DE"
+    },
     {
       "ticker": "0883.HK",
       "name": "CNOOC",
@@ -157,15 +163,15 @@
       "market": "JP"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 77,
-      "market": "DE"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 76,
+      "score": 77,
+      "market": "US"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 75,
       "market": "US"
     },
     {
@@ -177,32 +183,26 @@
     {
       "ticker": "CF",
       "name": "CF Industries",
-      "score": 73,
+      "score": 74,
       "market": "US"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
+      "ticker": "GLEN.L",
+      "name": "Glencore",
       "score": 72,
-      "market": "US"
+      "market": "UK"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
+      "ticker": "SSE.L",
+      "name": "SSE",
+      "score": 72,
+      "market": "UK"
+    },
+    {
+      "ticker": "NWG.L",
+      "name": "NatWest",
       "score": 71,
-      "market": "HK"
-    },
-    {
-      "ticker": "OKE",
-      "name": "ONEOK",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "8058.T",
-      "name": "Mitsubishi Corp",
-      "score": 69,
-      "market": "JP"
+      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -213,9 +213,21 @@
       "market": "UK"
     },
     {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 76,
+      "market": "UK"
+    },
+    {
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 71,
+      "market": "UK"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 72,
+      "score": 71,
       "market": "UK"
     },
     {
@@ -225,9 +237,27 @@
       "market": "US"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 69,
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "SMIN.L",
+      "name": "Smiths Group",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 67,
       "market": "UK"
     },
     {
@@ -235,43 +265,25 @@
       "name": "Primary Health Properties",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 64,
-      "market": "US"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "CNA.L",
-      "name": "Centrica",
-      "score": 63,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 69,
+      "score": 73,
+      "market": "UK"
+    },
+    {
+      "ticker": "OSB.L",
+      "name": "OSB Group",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 71,
       "market": "UK"
     },
     {
@@ -283,53 +295,41 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 62,
+      "score": 64,
       "market": "UK"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 61,
       "market": "UK"
     },
     {
       "ticker": "FDEV.L",
       "name": "Frontier Developments",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 58,
-      "market": "UK"
-    },
-    {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 58,
-      "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 57,
+      "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
-  "avgScore": 48,
-  "bearishAlertCount": 365
+  "avgScore": 49,
+  "bearishAlertCount": 384
 }
