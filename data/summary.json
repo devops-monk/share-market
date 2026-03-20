@@ -8,6 +8,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 80,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 80,
@@ -22,8 +29,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "OKE",
+      "name": "ONEOK",
       "score": 78,
       "market": "US",
       "capCategory": "Large"
@@ -50,95 +57,88 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 75,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
-      "score": 75,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 17,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BYND",
       "name": "Beyond Meat",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Small"
     },
     {
       "ticker": "PODD",
       "name": "Insulet Corp",
-      "score": 19,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CHWY",
-      "name": "Chewy",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "SOUN",
       "name": "SoundHound AI",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin",
-      "score": 21,
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "AFRM",
       "name": "Affirm",
-      "score": 21,
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 23,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CHWY",
+      "name": "Chewy",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     }
@@ -149,6 +149,12 @@
       "name": "RWE",
       "score": 81,
       "market": "DE"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 80,
+      "market": "US"
     },
     {
       "ticker": "0883.HK",
@@ -163,8 +169,8 @@
       "market": "JP"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "OKE",
+      "name": "ONEOK",
       "score": 78,
       "market": "US"
     },
@@ -175,34 +181,28 @@
       "market": "US"
     },
     {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 75,
+      "market": "US"
+    },
+    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 75,
       "market": "IN"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "OKE",
-      "name": "ONEOK",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "GLEN.L",
-      "name": "Glencore",
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
       "score": 72,
-      "market": "UK"
-    },
-    {
-      "ticker": "SSE.L",
-      "name": "SSE",
-      "score": 72,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -219,6 +219,18 @@
       "market": "UK"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 72,
@@ -229,12 +241,6 @@
       "name": "Centrica",
       "score": 71,
       "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 69,
-      "market": "US"
     },
     {
       "ticker": "HBR.L",
@@ -257,12 +263,6 @@
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
       "score": 67,
       "market": "UK"
     }
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 863,
-  "avgScore": 50,
-  "bearishAlertCount": 384
+  "avgScore": 51,
+  "bearishAlertCount": 383
 }
