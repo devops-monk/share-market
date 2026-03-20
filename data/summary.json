@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 75,
@@ -26,6 +33,13 @@
       "name": "Coal India",
       "score": 75,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 75,
+      "market": "DE",
       "capCategory": "Large"
     },
     {
@@ -43,10 +57,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE",
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -55,20 +69,6 @@
       "score": 71,
       "market": "HK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
@@ -94,11 +94,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "APP",
-      "name": "AppLovin",
+      "ticker": "CHWY",
+      "name": "Chewy",
       "score": 20,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "PODD",
@@ -129,18 +129,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "P911.DE",
-      "name": "Porsche AG",
-      "score": 22,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -157,10 +157,22 @@
       "market": "JP"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 76,
+      "market": "US"
+    },
+    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 75,
       "market": "IN"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 75,
+      "market": "DE"
     },
     {
       "ticker": "XOM",
@@ -175,28 +187,16 @@
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE"
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "1398.HK",
       "name": "ICBC",
       "score": 71,
       "market": "HK"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "EQT",
-      "name": "EQT Corp",
-      "score": 69,
-      "market": "US"
     },
     {
       "ticker": "8058.T",
@@ -225,21 +225,21 @@
       "market": "UK"
     },
     {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 68,
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
-      "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 66,
+      "score": 65,
       "market": "UK"
     },
     {
@@ -255,31 +255,19 @@
       "market": "US"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 62,
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "CNA.L",
-      "name": "Centrica",
-      "score": 60,
-      "market": "UK"
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 62,
+      "market": "US"
     }
   ],
   "topSmallCap": [
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 68,
-      "market": "UK"
-    },
     {
       "ticker": "CMA",
       "name": "Comerica",
@@ -287,39 +275,51 @@
       "market": "US"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "MARS.L",
       "name": "Marston's",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
       "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "FDM.L",
-      "name": "FDM Group",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 58,
       "market": "UK"
     },
     {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
-      "score": 58,
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "OSB.L",
+      "name": "OSB Group",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
+      "score": 59,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 360
+  "bearishAlertCount": 364
 }
