@@ -36,6 +36,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 76,
@@ -54,13 +61,6 @@
       "name": "Coal India",
       "score": 75,
       "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 74,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -108,18 +108,18 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "APP",
-      "name": "AppLovin",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "IONQ",
+      "name": "IonQ",
       "score": 21,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "AXON",
@@ -129,16 +129,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
+      "ticker": "APP",
+      "name": "AppLovin",
       "score": 21,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
-      "ticker": "FICO",
-      "name": "Fair Isaac (FICO)",
-      "score": 22,
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     }
@@ -169,21 +169,27 @@
       "market": "US"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 76,
+      "market": "US"
+    },
+    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 75,
       "market": "IN"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 74,
       "market": "US"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 74,
+      "ticker": "OKE",
+      "name": "ONEOK",
+      "score": 72,
       "market": "US"
     },
     {
@@ -196,12 +202,6 @@
       "ticker": "SSE.L",
       "name": "SSE",
       "score": 72,
-      "market": "UK"
-    },
-    {
-      "ticker": "NWG.L",
-      "name": "NatWest",
-      "score": 71,
       "market": "UK"
     }
   ],
@@ -225,16 +225,16 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "CNA.L",
       "name": "Centrica",
       "score": 71,
       "market": "UK"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 69,
+      "market": "US"
     },
     {
       "ticker": "HBR.L",
@@ -249,12 +249,6 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 67,
-      "market": "US"
-    },
-    {
       "ticker": "SMIN.L",
       "name": "Smiths Group",
       "score": 67,
@@ -263,6 +257,12 @@
     {
       "ticker": "IGG.L",
       "name": "IG Group",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "PHP.L",
+      "name": "Primary Health Properties",
       "score": 67,
       "market": "UK"
     }
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 863,
-  "avgScore": 49,
-  "bearishAlertCount": 386
+  "avgScore": 50,
+  "bearishAlertCount": 384
 }
