@@ -15,23 +15,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 78,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 76,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 76,
+      "score": 77,
       "market": "DE",
       "capCategory": "Large"
     },
@@ -57,21 +43,42 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FIVE",
-      "name": "Five Below",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "EQT",
       "name": "EQT Corp",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
+    {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
     {
       "ticker": "DASH",
       "name": "DoorDash",
@@ -80,15 +87,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IonQ",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
+      "ticker": "AFRM",
+      "name": "Affirm",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -103,13 +117,6 @@
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -134,13 +141,6 @@
       "score": 23,
       "market": "US",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -157,21 +157,9 @@
       "market": "JP"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 78,
-      "market": "US"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 76,
-      "market": "US"
-    },
-    {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 76,
+      "score": 77,
       "market": "DE"
     },
     {
@@ -187,14 +175,14 @@
       "market": "US"
     },
     {
-      "ticker": "FIVE",
-      "name": "Five Below",
-      "score": 74,
+      "ticker": "EQT",
+      "name": "EQT Corp",
+      "score": 73,
       "market": "US"
     },
     {
-      "ticker": "EQT",
-      "name": "EQT Corp",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 73,
       "market": "US"
     },
@@ -202,6 +190,18 @@
       "ticker": "NEM",
       "name": "Newmont",
       "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 71,
       "market": "US"
     }
   ],
@@ -215,7 +215,7 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 71,
+      "score": 68,
       "market": "US"
     },
     {
@@ -231,21 +231,15 @@
       "market": "UK"
     },
     {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
       "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "AOS",
-      "name": "A.O. Smith",
-      "score": 64,
-      "market": "US"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 64,
+      "ticker": "PHP.L",
+      "name": "Primary Health Properties",
+      "score": 65,
       "market": "UK"
     },
     {
@@ -255,15 +249,21 @@
       "market": "US"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 63,
-      "market": "US"
-    },
-    {
       "ticker": "CNA.L",
       "name": "Centrica",
       "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "APLD",
+      "name": "Applied Digital",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 62,
       "market": "UK"
     }
   ],
@@ -271,12 +271,6 @@
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
       "score": 68,
       "market": "UK"
     },
@@ -287,15 +281,39 @@
       "market": "US"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 63,
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "FDM.L",
+      "name": "FDM Group",
+      "score": 59,
       "market": "UK"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 61,
+      "score": 58,
       "market": "UK"
     },
     {
@@ -305,31 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
+      "ticker": "FOUR.L",
+      "name": "4imprint",
       "score": 57,
-      "market": "UK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 56,
-      "market": "US"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 56,
-      "market": "UK"
-    },
-    {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
-      "score": 55,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
-  "avgScore": 49,
-  "bearishAlertCount": 354
+  "avgScore": 48,
+  "bearishAlertCount": 355
 }
