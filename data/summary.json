@@ -80,27 +80,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "P911.DE",
-      "name": "Porsche AG",
-      "score": 22,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 22,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "PODD",
       "name": "Insulet Corp",
       "score": 22,
@@ -129,8 +108,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -141,6 +127,20 @@
       "score": 23,
       "market": "US",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IonQ",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -219,15 +219,21 @@
       "market": "US"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 71,
-      "market": "UK"
-    },
-    {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 67,
       "market": "UK"
     },
     {
@@ -235,12 +241,6 @@
       "name": "A.O. Smith",
       "score": 64,
       "market": "US"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 64,
-      "market": "UK"
     },
     {
       "ticker": "FNB",
@@ -255,16 +255,16 @@
       "market": "US"
     },
     {
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "APLD",
       "name": "Applied Digital",
       "score": 62,
       "market": "US"
-    },
-    {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 61,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -275,16 +275,16 @@
       "market": "UK"
     },
     {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 68,
+      "market": "UK"
+    },
+    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 65,
-      "market": "UK"
     },
     {
       "ticker": "ASHM.L",
@@ -295,7 +295,19 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 60,
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
+      "score": 57,
+      "market": "UK"
+    },
+    {
+      "ticker": "IDOX.L",
+      "name": "IDOX",
+      "score": 57,
       "market": "UK"
     },
     {
@@ -315,21 +327,9 @@
       "name": "Currys",
       "score": 56,
       "market": "UK"
-    },
-    {
-      "ticker": "IDOX.L",
-      "name": "IDOX",
-      "score": 56,
-      "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 54,
-      "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 353
+  "bearishAlertCount": 355
 }
