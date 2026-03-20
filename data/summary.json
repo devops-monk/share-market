@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 75,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 74,
@@ -62,13 +69,6 @@
       "score": 73,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -76,6 +76,13 @@
       "ticker": "DASH",
       "name": "DoorDash",
       "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,17 +115,10 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 22,
-      "market": "US",
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 23,
+      "market": "IN",
       "capCategory": "Large"
     },
     {
@@ -136,9 +136,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 23,
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     }
@@ -175,6 +175,12 @@
       "market": "DE"
     },
     {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 75,
+      "market": "IN"
+    },
+    {
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 74,
@@ -195,12 +201,6 @@
     {
       "ticker": "NEM",
       "name": "Newmont",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
       "score": 72,
       "market": "US"
     }
@@ -225,15 +225,21 @@
       "market": "UK"
     },
     {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
+      "ticker": "SDR.L",
+      "name": "Schroders",
       "score": 67,
       "market": "UK"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 67,
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "PHP.L",
+      "name": "Primary Health Properties",
+      "score": 65,
       "market": "UK"
     },
     {
@@ -259,21 +265,9 @@
       "name": "Centrica",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "APLD",
-      "name": "Applied Digital",
-      "score": 62,
-      "market": "US"
     }
   ],
   "topSmallCap": [
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 68,
-      "market": "UK"
-    },
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
@@ -287,6 +281,12 @@
       "market": "US"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 61,
@@ -296,12 +296,6 @@
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 57,
       "market": "UK"
     },
     {
@@ -317,15 +311,21 @@
       "market": "US"
     },
     {
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
+      "score": 56,
+      "market": "UK"
+    },
+    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
       "score": 56,
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 56,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 55,
       "market": "UK"
     }
   ],
