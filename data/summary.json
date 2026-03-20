@@ -1,17 +1,24 @@
 {
   "topOverall": [
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 81,
-      "market": "DE",
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 83,
+      "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 80,
+      "score": 81,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 81,
+      "market": "DE",
       "capCategory": "Large"
     },
     {
@@ -45,7 +52,7 @@
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 76,
+      "score": 77,
       "market": "US",
       "capCategory": "Large"
     },
@@ -57,18 +64,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 75,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 75,
-      "market": "UK",
-      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
@@ -94,13 +94,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "DASH",
       "name": "DoorDash",
       "score": 22,
@@ -110,13 +103,6 @@
     {
       "ticker": "AFRM",
       "name": "Affirm",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -141,20 +127,40 @@
       "score": 23,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 83,
+      "market": "US"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 81,
+      "market": "US"
+    },
     {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 81,
       "market": "DE"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 80,
-      "market": "US"
     },
     {
       "ticker": "0883.HK",
@@ -177,12 +183,18 @@
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 76,
+      "score": 77,
       "market": "US"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 75,
+      "market": "US"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
       "score": 75,
       "market": "US"
     },
@@ -191,18 +203,6 @@
       "name": "Coal India",
       "score": 75,
       "market": "IN"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 72,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -255,14 +255,14 @@
       "market": "UK"
     },
     {
-      "ticker": "SMIN.L",
-      "name": "Smiths Group",
+      "ticker": "MUR",
+      "name": "Murphy Oil",
       "score": 67,
-      "market": "UK"
+      "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
+      "ticker": "SMIN.L",
+      "name": "Smiths Group",
       "score": 67,
       "market": "UK"
     }
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 51,
-  "bearishAlertCount": 383
+  "bearishAlertCount": 391
 }
