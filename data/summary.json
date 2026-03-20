@@ -29,6 +29,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 76,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 75,
@@ -50,13 +57,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "EQT",
       "name": "EQT Corp",
       "score": 73,
@@ -64,11 +64,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NEM",
-      "name": "Newmont",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
@@ -80,10 +80,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 22,
-      "market": "IN",
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 21,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -122,13 +122,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BYND",
       "name": "Beyond Meat",
       "score": 23,
@@ -140,6 +133,13 @@
       "name": "IonQ",
       "score": 23,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "P911.DE",
+      "name": "Porsche AG",
+      "score": 24,
+      "market": "DE",
       "capCategory": "Large"
     }
   ],
@@ -209,7 +209,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 72,
+      "score": 76,
       "market": "UK"
     },
     {
@@ -219,14 +219,14 @@
       "market": "US"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 71,
+      "ticker": "PHP.L",
+      "name": "Primary Health Properties",
+      "score": 69,
       "market": "UK"
     },
     {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
+      "ticker": "SDR.L",
+      "name": "Schroders",
       "score": 68,
       "market": "UK"
     },
@@ -243,16 +243,16 @@
       "market": "UK"
     },
     {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "AOS",
       "name": "A.O. Smith",
       "score": 64,
       "market": "US"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 64,
-      "market": "UK"
     },
     {
       "ticker": "FNB",
@@ -271,7 +271,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 74,
+      "score": 73,
       "market": "UK"
     },
     {
@@ -293,15 +293,9 @@
       "market": "UK"
     },
     {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 61,
+      "ticker": "FDM.L",
+      "name": "FDM Group",
+      "score": 60,
       "market": "UK"
     },
     {
@@ -311,25 +305,31 @@
       "market": "UK"
     },
     {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
-      "score": 58,
-      "market": "UK"
-    },
-    {
       "ticker": "FEVR.L",
       "name": "Fevertree",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "IDOX.L",
+      "name": "IDOX",
       "score": 57,
       "market": "UK"
     },
     {
-      "ticker": "AJB.L",
-      "name": "AJ Bell",
-      "score": 57,
-      "market": "UK"
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 56,
+      "market": "US"
     }
   ],
   "totalStocks": 863,
   "avgScore": 49,
-  "bearishAlertCount": 349
+  "bearishAlertCount": 356
 }
