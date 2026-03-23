@@ -3,7 +3,7 @@
     {
       "ticker": "CF",
       "name": "CF Industries",
-      "score": 83,
+      "score": 82,
       "market": "US",
       "capCategory": "Large"
     },
@@ -22,27 +22,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 80,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
-      "score": 79,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "OKE",
-      "name": "ONEOK",
-      "score": 78,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 78,
@@ -50,9 +29,37 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "OKE",
+      "name": "ONEOK",
+      "score": 77,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 77,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 77,
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 76,
       "market": "US",
       "capCategory": "Large"
     },
@@ -62,13 +69,6 @@
       "score": 76,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -80,18 +80,32 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
+      "ticker": "AFRM",
+      "name": "Affirm",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
-      "score": 21,
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 22,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 22,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "DASH",
@@ -101,25 +115,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 23,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CHWY",
-      "name": "Chewy",
-      "score": 23,
+      "ticker": "SHOP",
+      "name": "Shopify",
+      "score": 22,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "AXON",
@@ -134,20 +141,13 @@
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "CF",
       "name": "CF Industries",
-      "score": 83,
+      "score": 82,
       "market": "US"
     },
     {
@@ -163,46 +163,46 @@
       "market": "DE"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 80,
-      "market": "HK"
-    },
-    {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
-      "score": 79,
-      "market": "JP"
-    },
-    {
       "ticker": "OKE",
       "name": "ONEOK",
-      "score": 78,
+      "score": 77,
       "market": "US"
     },
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 77,
+      "score": 76,
       "market": "US"
     },
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
-      "score": 75,
+      "score": 76,
       "market": "US"
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "score": 75,
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 76,
       "market": "US"
     },
     {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
-      "score": 75,
-      "market": "IN"
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "8031.T",
+      "name": "Mitsui & Co",
+      "score": 73,
+      "market": "JP"
     }
   ],
   "topMidCap": [
@@ -213,16 +213,16 @@
       "market": "UK"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 77,
+      "market": "US"
+    },
+    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 76,
       "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 73,
-      "market": "US"
     },
     {
       "ticker": "LUNR",
@@ -239,7 +239,7 @@
     {
       "ticker": "CNA.L",
       "name": "Centrica",
-      "score": 71,
+      "score": 70,
       "market": "UK"
     },
     {
@@ -255,10 +255,10 @@
       "market": "UK"
     },
     {
-      "ticker": "MUR",
-      "name": "Murphy Oil",
-      "score": 67,
-      "market": "US"
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 68,
+      "market": "UK"
     },
     {
       "ticker": "SMIN.L",
@@ -269,21 +269,21 @@
   ],
   "topSmallCap": [
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 75,
-      "market": "UK"
-    },
-    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 73,
       "market": "UK"
     },
     {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 71,
+      "market": "UK"
+    },
+    {
       "ticker": "OSB.L",
       "name": "OSB Group",
-      "score": 71,
+      "score": 70,
       "market": "UK"
     },
     {
@@ -293,10 +293,22 @@
       "market": "UK"
     },
     {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 67,
+      "market": "UK"
+    },
+    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 65,
+      "market": "UK"
     },
     {
       "ticker": "MARS.L",
@@ -305,21 +317,9 @@
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 63,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 61,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 51,
-  "bearishAlertCount": 391
+  "bearishAlertCount": 404
 }
