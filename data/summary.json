@@ -1,18 +1,18 @@
 {
   "topOverall": [
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 78,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 76,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "CF",
@@ -29,6 +29,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 73,
@@ -40,13 +47,6 @@
       "name": "TotalEnergies",
       "score": 73,
       "market": "FR",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 72,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -147,7 +147,7 @@
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 75,
+      "score": 78,
       "market": "US"
     },
     {
@@ -163,16 +163,16 @@
       "market": "DE"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
       "score": 73,
       "market": "FR"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 72,
-      "market": "US"
     },
     {
       "ticker": "FDX",
