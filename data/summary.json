@@ -36,6 +36,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "COP",
       "name": "ConocoPhillips",
       "score": 76,
@@ -46,13 +53,6 @@
       "ticker": "MU",
       "name": "Micron",
       "score": 76,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 75,
       "market": "US",
       "capCategory": "Large"
     },
@@ -163,6 +163,12 @@
       "market": "US"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 76,
+      "market": "US"
+    },
+    {
       "ticker": "COP",
       "name": "ConocoPhillips",
       "score": 76,
@@ -172,12 +178,6 @@
       "ticker": "MU",
       "name": "Micron",
       "score": 76,
-      "market": "US"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 75,
       "market": "US"
     },
     {
@@ -193,16 +193,16 @@
       "market": "US"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 73,
+      "market": "DE"
+    },
+    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 73,
       "market": "JP"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE"
     }
   ],
   "topMidCap": [
@@ -245,7 +245,7 @@
     {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
-      "score": 65,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -255,16 +255,16 @@
       "market": "UK"
     },
     {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "BLND.L",
       "name": "British Land",
       "score": 62,
       "market": "UK"
-    },
-    {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 61,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -275,32 +275,26 @@
       "market": "UK"
     },
     {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 68,
+      "market": "UK"
+    },
+    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
       "market": "US"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
       "ticker": "CURY.L",
       "name": "Currys",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
       "score": 62,
       "market": "UK"
     },
@@ -311,14 +305,20 @@
       "market": "UK"
     },
     {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 60,
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
       "score": 60,
       "market": "UK"
     },
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 49,
-  "bearishAlertCount": 384
+  "bearishAlertCount": 383
 }
