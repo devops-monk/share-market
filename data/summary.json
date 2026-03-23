@@ -10,15 +10,22 @@
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 74,
+      "score": 76,
       "market": "DE",
       "capCategory": "Large"
     },
     {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 74,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 73,
-      "market": "FR",
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -29,18 +36,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 72,
       "market": "UK",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 72,
+      "market": "FR",
+      "capCategory": "Large"
     },
     {
       "ticker": "0883.HK",
@@ -50,40 +57,33 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 71,
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 71,
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "DASH",
-      "name": "DoorDash",
+      "ticker": "BYND",
+      "name": "Beyond Meat",
       "score": 19,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
-      "ticker": "P911.DE",
-      "name": "Porsche AG",
-      "score": 22,
-      "market": "DE",
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 21,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -92,20 +92,6 @@
       "score": 22,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "GLBE",
-      "name": "Global-e Online",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "GRAB",
@@ -120,6 +106,13 @@
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "TRENT.BO",
@@ -141,20 +134,27 @@
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 74,
+      "score": 76,
       "market": "DE"
     },
     {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 73,
-      "market": "FR"
+      "market": "US"
     },
     {
       "ticker": "8031.T",
@@ -163,10 +163,10 @@
       "market": "JP"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
       "score": 72,
-      "market": "US"
+      "market": "FR"
     },
     {
       "ticker": "0883.HK",
@@ -175,15 +175,9 @@
       "market": "HK"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 71,
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 70,
       "market": "US"
     },
     {
@@ -199,9 +193,15 @@
       "market": "US"
     },
     {
-      "ticker": "PSX",
-      "name": "Phillips 66",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 69,
       "market": "US"
     }
   ],
@@ -215,7 +215,7 @@
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 71,
+      "score": 74,
       "market": "UK"
     },
     {
@@ -231,15 +231,27 @@
       "market": "US"
     },
     {
+      "ticker": "PHP.L",
+      "name": "Primary Health Properties",
+      "score": 67,
+      "market": "UK"
+    },
+    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 66,
       "market": "US"
     },
     {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
-      "score": 66,
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 64,
       "market": "UK"
     },
     {
@@ -249,21 +261,9 @@
       "market": "UK"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     }
   ],
@@ -281,15 +281,15 @@
       "market": "US"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -299,37 +299,37 @@
       "market": "UK"
     },
     {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
       "score": 59,
       "market": "UK"
     },
     {
       "ticker": "FEVR.L",
       "name": "Fevertree",
-      "score": 57,
+      "score": 58,
       "market": "UK"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 56,
+      "market": "US"
     },
     {
       "ticker": "CURY.L",
       "name": "Currys",
       "score": 56,
       "market": "UK"
-    },
-    {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
-      "score": 56,
-      "market": "UK"
-    },
-    {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 56,
-      "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 356
+  "bearishAlertCount": 361
 }
