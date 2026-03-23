@@ -8,8 +8,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 75,
       "market": "US",
       "capCategory": "Large"
@@ -22,9 +22,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
@@ -40,13 +47,6 @@
       "name": "TotalEnergies",
       "score": 73,
       "market": "FR",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
-      "score": 73,
-      "market": "JP",
       "capCategory": "Large"
     },
     {
@@ -80,13 +80,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "IONQ",
       "name": "IonQ",
       "score": 21,
@@ -101,13 +94,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SHOP",
-      "name": "Shopify",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TRENT.BO",
       "name": "Trent",
       "score": 22,
@@ -115,11 +101,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GPC",
-      "name": "Genuine Parts",
+      "ticker": "BYND",
+      "name": "Beyond Meat",
       "score": 22,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
       "ticker": "DASH",
@@ -129,11 +115,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
+      "ticker": "SHOP",
+      "name": "Shopify",
       "score": 22,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "ZG",
@@ -141,12 +127,26 @@
       "score": 23,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 75,
       "market": "US"
     },
@@ -157,9 +157,15 @@
       "market": "DE"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 73,
       "market": "US"
     },
     {
@@ -167,12 +173,6 @@
       "name": "TotalEnergies",
       "score": 73,
       "market": "FR"
-    },
-    {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
-      "score": 73,
-      "market": "JP"
     },
     {
       "ticker": "SHEL.L",
@@ -199,9 +199,9 @@
       "market": "US"
     },
     {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
-      "score": 69,
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 71,
       "market": "US"
     }
   ],
@@ -239,7 +239,7 @@
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 66,
+      "score": 67,
       "market": "US"
     },
     {
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
+      "ticker": "FEVR.L",
+      "name": "Fevertree",
       "score": 57,
-      "market": "US"
+      "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 374
+  "bearishAlertCount": 373
 }
