@@ -8,6 +8,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 75,
@@ -19,20 +26,6 @@
       "name": "RWE",
       "score": 75,
       "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 73,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -50,24 +43,31 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "SHEL.L",
       "name": "Shell",
       "score": 72,
       "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 72,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
-      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -75,20 +75,13 @@
     {
       "ticker": "PODD",
       "name": "Insulet Corp",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "IONQ",
-      "name": "IonQ",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AFRM",
-      "name": "Affirm",
+      "ticker": "DASH",
+      "name": "DoorDash",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -101,36 +94,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
+      "ticker": "AFRM",
+      "name": "Affirm",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "SHOP",
-      "name": "Shopify",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
+      "ticker": "IONQ",
+      "name": "IonQ",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -141,9 +113,43 @@
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GLBE",
+      "name": "Global-e Online",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 75,
+      "market": "US"
+    },
     {
       "ticker": "CF",
       "name": "CF Industries",
@@ -157,22 +163,22 @@
       "market": "DE"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 73,
-      "market": "US"
-    },
-    {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
       "score": 73,
       "market": "FR"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 72,
+      "market": "US"
     },
     {
       "ticker": "SHEL.L",
@@ -187,21 +193,15 @@
       "market": "HK"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
+      "ticker": "KMI",
+      "name": "Kinder Morgan",
+      "score": 70,
       "market": "US"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 71,
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 69,
       "market": "US"
     }
   ],
@@ -221,7 +221,7 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
@@ -231,16 +231,16 @@
       "market": "UK"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 68,
+      "market": "US"
+    },
+    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 68,
       "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 67,
-      "market": "US"
     },
     {
       "ticker": "BKG.L",
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 863,
-  "avgScore": 48,
-  "bearishAlertCount": 373
+  "avgScore": 49,
+  "bearishAlertCount": 375
 }
