@@ -29,6 +29,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
       "score": 73,
@@ -48,13 +55,6 @@
       "score": 72,
       "market": "UK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Mid"
     },
     {
       "ticker": "0883.HK",
@@ -80,22 +80,29 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 20,
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IonQ",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 20,
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
+      "ticker": "SHOP",
+      "name": "Shopify",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -108,18 +115,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "GPC",
+      "name": "Genuine Parts",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GLBE",
-      "name": "Global-e Online",
+      "ticker": "DASH",
+      "name": "DoorDash",
       "score": 22,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "HIMS",
@@ -129,18 +136,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "ZG",
+      "name": "Zillow Group",
       "score": 23,
       "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -199,10 +199,10 @@
       "market": "US"
     },
     {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
       "score": 69,
-      "market": "IN"
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -215,13 +215,13 @@
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 72,
+      "score": 73,
       "market": "UK"
     },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 70,
+      "score": 71,
       "market": "US"
     },
     {
@@ -231,16 +231,16 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 68,
       "market": "UK"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 66,
+      "market": "US"
     },
     {
       "ticker": "BKG.L",
@@ -281,15 +281,15 @@
       "market": "US"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 65,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 64,
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 65,
       "market": "UK"
     },
     {
