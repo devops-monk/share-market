@@ -3,30 +3,37 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 75,
+      "score": 76,
       "market": "UK",
       "capCategory": "Mid"
     },
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 74,
+      "score": 75,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 74,
+      "score": 75,
       "market": "DE",
       "capCategory": "Large"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
       "score": 73,
-      "market": "UK",
-      "capCategory": "Small"
+      "market": "FR",
+      "capCategory": "Large"
     },
     {
       "ticker": "8031.T",
@@ -36,17 +43,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "SHEL.L",
+      "name": "Shell",
       "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 72,
-      "market": "US",
+      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -80,8 +80,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "IONQ",
-      "name": "IonQ",
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -89,13 +96,6 @@
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -129,11 +129,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 23,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Mid"
     },
     {
       "ticker": "SOUN",
@@ -147,14 +147,26 @@
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 74,
+      "score": 75,
       "market": "US"
     },
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 74,
+      "score": 75,
       "market": "DE"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 73,
+      "market": "FR"
     },
     {
       "ticker": "8031.T",
@@ -163,16 +175,10 @@
       "market": "JP"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "SHEL.L",
+      "name": "Shell",
       "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 72,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "0883.HK",
@@ -193,23 +199,17 @@
       "market": "US"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 70,
-      "market": "FR"
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 69,
+      "market": "IN"
     }
   ],
   "topMidCap": [
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 75,
+      "score": 76,
       "market": "UK"
     },
     {
@@ -221,24 +221,36 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 69,
+      "score": 70,
       "market": "US"
     },
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
-      "score": 68,
+      "score": 70,
       "market": "UK"
     },
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 66,
+      "score": 69,
       "market": "US"
     },
     {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "PSN.L",
+      "name": "Persimmon",
       "score": 66,
       "market": "UK"
     },
@@ -249,21 +261,9 @@
       "market": "UK"
     },
     {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 64,
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 65,
       "market": "UK"
     }
   ],
@@ -271,7 +271,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 73,
+      "score": 70,
       "market": "UK"
     },
     {
@@ -281,14 +281,26 @@
       "market": "US"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 66,
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 63,
       "market": "UK"
     },
@@ -299,37 +311,25 @@
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "FEVR.L",
-      "name": "Fevertree",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 59,
-      "market": "UK"
-    },
-    {
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 57,
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 58,
       "market": "UK"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 57,
+      "market": "US"
     }
   ],
   "totalStocks": 863,
-  "avgScore": 47,
-  "bearishAlertCount": 365
+  "avgScore": 48,
+  "bearishAlertCount": 374
 }
