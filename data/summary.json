@@ -87,20 +87,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 22,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
       "score": 22,
@@ -136,10 +122,24 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SHOP",
       "name": "Shopify",
       "score": 22,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 23,
+      "market": "IN",
       "capCategory": "Large"
     }
   ],
@@ -193,16 +193,16 @@
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE"
-    },
-    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 73,
       "market": "JP"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 72,
+      "market": "DE"
     }
   ],
   "topMidCap": [
@@ -245,7 +245,13 @@
     {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
-      "score": 64,
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 63,
       "market": "UK"
     },
     {
@@ -259,25 +265,19 @@
       "name": "Tritax Big Box REIT",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "BLND.L",
-      "name": "British Land",
-      "score": 62,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 68,
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 67,
       "market": "UK"
     },
     {
@@ -287,15 +287,15 @@
       "market": "US"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 64,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 62,
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 64,
       "market": "UK"
     },
     {
@@ -305,9 +305,9 @@
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 62,
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 61,
       "market": "UK"
     },
     {
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 60,
+      "ticker": "OSB.L",
+      "name": "OSB Group",
+      "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
-  "avgScore": 49,
+  "avgScore": 50,
   "bearishAlertCount": 383
 }
