@@ -199,10 +199,10 @@
       "market": "US"
     },
     {
-      "ticker": "SHEL.L",
-      "name": "Shell",
-      "score": 70,
-      "market": "UK"
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -225,12 +225,6 @@
       "market": "UK"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 68,
-      "market": "UK"
-    },
-    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
       "score": 67,
@@ -240,6 +234,12 @@
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 65,
       "market": "UK"
     },
     {
@@ -261,17 +261,17 @@
       "market": "UK"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 62,
-      "market": "US"
+      "ticker": "PHP.L",
+      "name": "Primary Health Properties",
+      "score": 63,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 71,
+      "score": 69,
       "market": "UK"
     },
     {
@@ -290,12 +290,6 @@
       "ticker": "CURY.L",
       "name": "Currys",
       "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 62,
       "market": "UK"
     },
     {
@@ -319,6 +313,12 @@
     {
       "ticker": "PHNX.L",
       "name": "Phoenix Group",
+      "score": 58,
+      "market": "UK"
+    },
+    {
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
       "score": 58,
       "market": "UK"
     },
