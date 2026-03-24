@@ -15,11 +15,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 75,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "CMCX.L",
@@ -29,6 +29,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SLB",
       "name": "Schlumberger",
       "score": 71,
@@ -36,30 +43,23 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 70,
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 71,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 70,
-      "market": "UK",
       "capCategory": "Mid"
     },
     {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 69,
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
@@ -73,6 +73,13 @@
   ],
   "bottomOverall": [
     {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 15,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "DASH",
       "name": "DoorDash",
       "score": 16,
@@ -80,18 +87,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 19,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Small"
     },
     {
       "ticker": "SOUN",
@@ -103,27 +110,6 @@
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -141,6 +127,20 @@
       "score": 21,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DJT",
+      "name": "Trump Media",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -153,7 +153,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 73,
+      "score": 71,
       "market": "US"
     },
     {
@@ -163,21 +163,15 @@
       "market": "US"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 69,
       "market": "US"
     },
     {
@@ -203,6 +197,12 @@
       "name": "ICBC",
       "score": 68,
       "market": "HK"
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes",
+      "score": 67,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -215,19 +215,19 @@
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
-      "score": 70,
+      "score": 75,
       "market": "UK"
     },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 68,
+      "score": 71,
       "market": "US"
     },
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 68,
+      "score": 69,
       "market": "UK"
     },
     {
@@ -237,26 +237,26 @@
       "market": "UK"
     },
     {
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 66,
+      "market": "US"
+    },
+    {
       "ticker": "PHP.L",
       "name": "Primary Health Properties",
       "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 65,
-      "market": "US"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 65,
-      "market": "US"
-    },
-    {
       "ticker": "SDR.L",
       "name": "Schroders",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
       "score": 65,
       "market": "UK"
     },
@@ -289,7 +289,7 @@
     {
       "ticker": "CURY.L",
       "name": "Currys",
-      "score": 64,
+      "score": 66,
       "market": "UK"
     },
     {
@@ -301,13 +301,13 @@
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 62,
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 61,
+      "score": 62,
       "market": "UK"
     },
     {
@@ -323,8 +323,8 @@
       "market": "UK"
     },
     {
-      "ticker": "PRTC.L",
-      "name": "PureTech Health",
+      "ticker": "AJB.L",
+      "name": "AJ Bell",
       "score": 57,
       "market": "UK"
     }
