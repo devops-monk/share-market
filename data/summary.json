@@ -8,18 +8,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 77,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 77,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "AMAT",
@@ -94,13 +94,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "GWRE",
       "name": "Guidewire Software",
       "score": 23,
@@ -141,6 +134,13 @@
       "score": 24,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "FICO",
+      "name": "Fair Isaac (FICO)",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -153,7 +153,7 @@
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 77,
+      "score": 76,
       "market": "US"
     },
     {
@@ -221,6 +221,12 @@
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
+      "score": 69,
+      "market": "UK"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
       "score": 68,
       "market": "UK"
     },
@@ -231,20 +237,14 @@
       "market": "US"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 65,
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 67,
       "market": "UK"
     },
     {
       "ticker": "BBOX.L",
       "name": "Tritax Big Box REIT",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
       "score": 64,
       "market": "UK"
     },
@@ -255,8 +255,8 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
       "score": 63,
       "market": "UK"
     },
@@ -269,9 +269,15 @@
   ],
   "topSmallCap": [
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 71,
+      "market": "UK"
+    },
+    {
       "ticker": "SFOR.L",
       "name": "S4 Capital",
-      "score": 67,
+      "score": 69,
       "market": "UK"
     },
     {
@@ -279,12 +285,6 @@
       "name": "Comerica",
       "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 66,
-      "market": "UK"
     },
     {
       "ticker": "CURY.L",
@@ -299,9 +299,9 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 60,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 61,
       "market": "UK"
     },
     {
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 58,
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 57,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 368
+  "bearishAlertCount": 367
 }
