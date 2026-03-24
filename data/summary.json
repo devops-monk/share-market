@@ -17,16 +17,9 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 74,
+      "score": 75,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Small"
     },
     {
       "ticker": "SLB",
@@ -36,9 +29,16 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "HAL",
       "name": "Halliburton",
-      "score": 71,
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
@@ -57,18 +57,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 69,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes",
+      "score": 68,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -85,13 +85,6 @@
       "score": 16,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Small"
     },
     {
       "ticker": "PODD",
@@ -122,15 +115,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TTD",
-      "name": "Trade Desk",
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -139,6 +125,20 @@
       "ticker": "NOW",
       "name": "ServiceNow",
       "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GPC",
+      "name": "Genuine Parts",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     }
@@ -153,7 +153,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 74,
+      "score": 75,
       "market": "US"
     },
     {
@@ -165,7 +165,7 @@
     {
       "ticker": "HAL",
       "name": "Halliburton",
-      "score": 71,
+      "score": 70,
       "market": "US"
     },
     {
@@ -177,12 +177,6 @@
     {
       "ticker": "DOW",
       "name": "Dow Inc",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
       "score": 69,
       "market": "US"
     },
@@ -203,6 +197,12 @@
       "name": "ICBC",
       "score": 68,
       "market": "HK"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 67,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -219,22 +219,34 @@
       "market": "UK"
     },
     {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 67,
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 65,
-      "market": "US"
+      "ticker": "PHP.L",
+      "name": "Primary Health Properties",
+      "score": 66,
+      "market": "UK"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
       "score": 65,
-      "market": "UK"
+      "market": "US"
     },
     {
       "ticker": "BBY.L",
@@ -243,27 +255,15 @@
       "market": "UK"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 64,
-      "market": "US"
-    },
-    {
       "ticker": "BBOX.L",
       "name": "Tritax Big Box REIT",
       "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "PSN.L",
-      "name": "Persimmon",
-      "score": 63,
+      "ticker": "MNG.L",
+      "name": "M&G",
+      "score": 62,
       "market": "UK"
     }
   ],
@@ -271,13 +271,13 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 72,
+      "score": 71,
       "market": "UK"
     },
     {
       "ticker": "SFOR.L",
       "name": "S4 Capital",
-      "score": 69,
+      "score": 68,
       "market": "UK"
     },
     {
@@ -293,14 +293,20 @@
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
       "score": 61,
       "market": "UK"
     },
@@ -311,20 +317,14 @@
       "market": "UK"
     },
     {
-      "ticker": "PHNX.L",
-      "name": "Phoenix Group",
-      "score": 58,
-      "market": "UK"
-    },
-    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
-      "score": 58,
+      "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
+      "ticker": "PHNX.L",
+      "name": "Phoenix Group",
       "score": 58,
       "market": "UK"
     }
