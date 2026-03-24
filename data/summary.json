@@ -8,18 +8,18 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 77,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 77,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 76,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "AMAT",
@@ -153,7 +153,7 @@
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 76,
+      "score": 77,
       "market": "US"
     },
     {
@@ -237,6 +237,12 @@
       "market": "UK"
     },
     {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "PHP.L",
       "name": "Primary Health Properties",
       "score": 64,
@@ -251,12 +257,6 @@
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
       "score": 63,
       "market": "UK"
     },
@@ -283,7 +283,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 65,
+      "score": 66,
       "market": "UK"
     },
     {
@@ -296,6 +296,12 @@
       "ticker": "MGNS.L",
       "name": "Morgan Sindall",
       "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 60,
       "market": "UK"
     },
     {
@@ -320,12 +326,6 @@
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 58,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 57,
       "market": "UK"
     }
   ],
