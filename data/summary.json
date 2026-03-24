@@ -17,20 +17,27 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 72,
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 71,
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HAL",
       "name": "Halliburton",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -50,41 +57,48 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 69,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "SFOR.L",
       "name": "S4 Capital",
       "score": 69,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 68,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 68,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 15,
+      "score": 13,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "DASH",
       "name": "DoorDash",
-      "score": 16,
+      "score": 15,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "GRAB",
@@ -115,32 +129,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SHOP",
-      "name": "Shopify",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 21,
+      "ticker": "APP",
+      "name": "AppLovin",
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "RPI.L",
-      "name": "Raspberry Pi",
-      "score": 22,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -153,18 +153,24 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 72,
+      "score": 73,
       "market": "US"
     },
     {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "HAL",
       "name": "Halliburton",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
       "score": 70,
       "market": "US"
     },
@@ -181,8 +187,8 @@
       "market": "US"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
+      "ticker": "BKR",
+      "name": "Baker Hughes",
       "score": 68,
       "market": "US"
     },
@@ -197,12 +203,6 @@
       "name": "ICBC",
       "score": 68,
       "market": "HK"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 67,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -213,28 +213,40 @@
       "market": "UK"
     },
     {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 69,
+      "market": "UK"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 68,
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 67,
       "market": "UK"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 65,
+      "market": "US"
     },
     {
       "ticker": "PHP.L",
       "name": "Primary Health Properties",
       "score": 65,
       "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 64,
-      "market": "US"
     },
     {
       "ticker": "FNB",
@@ -249,21 +261,9 @@
       "market": "UK"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
       "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "GAW.L",
-      "name": "Games Workshop",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "MNG.L",
-      "name": "M&G",
-      "score": 62,
       "market": "UK"
     }
   ],
@@ -287,20 +287,26 @@
       "market": "US"
     },
     {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 66,
-      "market": "UK"
-    },
-    {
       "ticker": "CURY.L",
       "name": "Currys",
       "score": 63,
       "market": "UK"
     },
     {
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 60,
       "market": "UK"
     },
@@ -317,12 +323,6 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 57,
-      "market": "UK"
-    },
-    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 56,
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 863,
-  "avgScore": 47,
-  "bearishAlertCount": 375
+  "avgScore": 46,
+  "bearishAlertCount": 380
 }
