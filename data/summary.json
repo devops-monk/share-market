@@ -15,6 +15,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 75,
@@ -29,16 +36,9 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 71,
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -57,16 +57,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
+      "ticker": "VLO",
+      "name": "Valero Energy",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "DOW",
-      "name": "Dow Inc",
-      "score": 69,
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     }
@@ -82,14 +82,7 @@
     {
       "ticker": "DASH",
       "name": "DoorDash",
-      "score": 16,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 19,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
@@ -103,42 +96,49 @@
     {
       "ticker": "SOUN",
       "name": "SoundHound AI",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 20,
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "GPC",
       "name": "Genuine Parts",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "CHWY",
       "name": "Chewy",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DJT",
-      "name": "Trump Media",
-      "score": 21,
+      "ticker": "GLBE",
+      "name": "Global-e Online",
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     }
@@ -153,18 +153,24 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 71,
+      "score": 75,
       "market": "US"
     },
     {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "FDX",
       "name": "FedEx",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
       "score": 70,
       "market": "US"
     },
@@ -177,7 +183,7 @@
     {
       "ticker": "DOW",
       "name": "Dow Inc",
-      "score": 69,
+      "score": 70,
       "market": "US"
     },
     {
@@ -197,12 +203,6 @@
       "name": "ICBC",
       "score": 68,
       "market": "HK"
-    },
-    {
-      "ticker": "BKR",
-      "name": "Baker Hughes",
-      "score": 67,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -231,16 +231,16 @@
       "market": "UK"
     },
     {
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 66,
-      "market": "US"
     },
     {
       "ticker": "PHP.L",
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 863,
-  "avgScore": 47,
-  "bearishAlertCount": 385
+  "avgScore": 48,
+  "bearishAlertCount": 383
 }
