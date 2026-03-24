@@ -29,6 +29,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 73,
@@ -36,16 +43,9 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 71,
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -94,8 +94,8 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -106,13 +106,6 @@
       "score": 21,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "GWRE",
@@ -141,6 +134,13 @@
       "score": 22,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -159,13 +159,13 @@
     {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 72,
+      "score": 73,
       "market": "US"
     },
     {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
@@ -187,20 +187,20 @@
       "market": "US"
     },
     {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 69,
+      "market": "US"
+    },
+    {
       "ticker": "BKR",
       "name": "Baker Hughes",
       "score": 68,
       "market": "US"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "SPG",
-      "name": "Simon Property Group",
+      "ticker": "OKE",
+      "name": "ONEOK",
       "score": 68,
       "market": "US"
     }
