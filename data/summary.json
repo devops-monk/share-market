@@ -17,16 +17,44 @@
     {
       "ticker": "SLB",
       "name": "Schlumberger",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 72,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "8058.T",
+      "name": "Mitsubishi Corp",
+      "score": 72,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 72,
+      "market": "HK",
+      "capCategory": "Large"
     },
     {
       "ticker": "HAL",
@@ -40,34 +68,6 @@
       "name": "Albemarle",
       "score": 71,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "SHEL.L",
-      "name": "Shell",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 71,
-      "market": "HK",
       "capCategory": "Large"
     }
   ],
@@ -103,7 +103,7 @@
     {
       "ticker": "BYND",
       "name": "Beyond Meat",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Small"
     },
@@ -115,13 +115,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TTD",
       "name": "Trade Desk",
       "score": 21,
@@ -129,9 +122,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 21,
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
@@ -141,14 +134,45 @@
       "score": 22,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "SLB",
       "name": "Schlumberger",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "8058.T",
+      "name": "Mitsubishi Corp",
+      "score": 72,
+      "market": "JP"
+    },
+    {
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 72,
+      "market": "HK"
     },
     {
       "ticker": "HAL",
@@ -169,40 +193,16 @@
       "market": "UK"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 71,
-      "market": "HK"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "T",
-      "name": "AT&T",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 69,
+      "score": 70,
       "market": "US"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 69,
-      "market": "DE"
     }
   ],
   "topMidCap": [
@@ -213,14 +213,14 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
       "score": 71,
       "market": "US"
     },
@@ -234,6 +234,12 @@
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 67,
       "market": "US"
     },
     {
@@ -258,12 +264,6 @@
       "ticker": "PHP.L",
       "name": "Primary Health Properties",
       "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 65,
       "market": "UK"
     }
   ],
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 378
+  "bearishAlertCount": 376
 }
