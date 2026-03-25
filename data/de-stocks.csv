@@ -1,28 +1,28 @@
 ticker,name,market,sector,price,changePercent,marketCap,capCategory,pe,rsi,sma50,sma200,bearishScore,bullishScore,sentimentAvg,compositeScore
-SAP.DE,SAP,DE,Technology,146.9,43.37,0,Small,,25.0,173.16,216.58,8,7,0.000,39
-SIE.DE,Siemens,DE,Industrials,211.8,56.36,0,Small,,38.0,240.06,233.72,2,2,0.000,45
-ALV.DE,Allianz,DE,Financials,353.8,66.61,0,Small,,44.2,367.80,361.56,0,4,0.000,53
-DTE.DE,Deutsche Telekom,DE,Communication,32.32,93.13,0,Small,,51.0,31.00,29.75,2,5,0.000,56
-AIR.DE,Airbus,DE,Industrials,168.48,74.66,0,Small,,40.1,186.91,190.51,4,2,0.000,41
-MBG.DE,Mercedes-Benz,DE,Consumer Cyclical,52.28,-13.30,0,Small,,35.5,56.82,55.13,2,2,0.000,46
-BMW.DE,BMW,DE,Consumer Cyclical,78.88,-5.53,0,Small,,39.8,85.39,85.44,7,0,0.000,33
-VOW3.DE,Volkswagen,DE,Consumer Cyclical,87.68,-61.49,0,Small,,37.2,97.78,96.57,3,2,0.000,43
-BAS.DE,BASF,DE,Materials,50.02,-29.01,0,Small,,60.3,47.66,44.70,0,5,0.000,59
-MUV2.DE,Munich Re,DE,Financials,524.2,100.84,0,Small,,45.3,528.91,544.40,6,2,0.000,40
-IFX.DE,Infineon Technologies,DE,Technology,39.66,16.02,0,Small,,45.7,42.08,36.98,2,2,0.000,50
-DB1.DE,Deutsche Boerse,DE,Financials,238.9,73.18,0,Small,,54.1,224.05,234.81,5,1,0.000,43
-ADS.DE,Adidas,DE,Consumer Cyclical,132.65,-49.33,0,Small,,30.9,148.56,170.70,8,2,0.000,32
-DHL.DE,DHL Group,DE,Industrials,44.98,0.00,0,Small,,41.8,47.51,42.82,2,5,0.000,54
-RWE.DE,RWE,DE,Utilities,56.94,75.25,0,Small,,59.2,53.51,42.94,2,6,0.000,64
-HEN3.DE,Henkel,DE,Consumer Defensive,67.5,-29.33,0,Small,,27.9,75.50,71.41,3,9,0.000,56
-DTG.DE,Daimler Truck,DE,Industrials,41.4,47.86,0,Small,,49.2,41.90,39.05,2,2,0.000,50
-FRE.DE,Fresenius,DE,Healthcare,44.51,22.94,0,Small,,33.6,48.53,46.73,2,4,0.000,49
-SHL.DE,Siemens Healthineers,DE,Healthcare,36.78,-20.39,0,Small,,26.5,41.13,44.91,8,7,0.000,42
-HNR1.DE,Hannover Re,DE,Financials,257.6,68.15,0,Small,,52.5,248.96,255.31,5,1,0.000,42
-VNA.DE,Vonovia,DE,Real Estate,21.59,-50.85,0,Small,,30.8,25.15,26.50,6,2,0.000,38
-MTX.DE,MTU Aero Engines,DE,Industrials,320.2,62.54,0,Small,,36.1,365.61,369.28,6,0,0.000,36
-SY1.DE,Symrise,DE,Materials,70.94,-30.45,0,Small,,45.2,73.20,77.55,6,0,0.000,38
-BEI.DE,Beiersdorf,DE,Consumer Defensive,74.96,-16.90,0,Small,,26.9,94.10,96.88,7,4,0.000,38
+SAP.DE,SAP,DE,Technology,146.9,43.37,171514413056,Large,24.081966,25.0,173.16,216.58,8,7,0.000,42
+SIE.DE,Siemens,DE,Industrials,211.8,56.36,161549041664,Large,21.095617,38.0,240.06,233.72,2,2,0.000,48
+ALV.DE,Allianz,DE,Financials,353.8,66.61,134529687552,Large,12.781792,44.2,367.80,361.56,0,4,0.000,59
+DTE.DE,Deutsche Telekom,DE,Communication,32.32,93.13,156364898304,Large,16.406092,51.0,31.00,29.75,2,5,0.000,60
+AIR.DE,Airbus,DE,Industrials,168.48,74.66,132632133632,Large,25.527273,40.1,186.91,190.51,4,2,0.000,43
+MBG.DE,Mercedes-Benz,DE,Consumer Cyclical,52.28,-13.30,46259478528,Large,9.790261,35.5,56.82,55.13,2,2,0.000,52
+BMW.DE,BMW,DE,Consumer Cyclical,78.88,-5.53,47890276352,Large,6.6341457,39.8,85.39,85.44,7,0,0.000,40
+VOW3.DE,Volkswagen,DE,Consumer Cyclical,87.68,-61.49,43953569792,Large,6.5974417,37.2,97.78,96.57,3,2,0.000,50
+BAS.DE,BASF,DE,Materials,50.02,-29.01,44233949184,Large,31.2625,60.3,47.66,44.70,0,5,0.000,60
+MUV2.DE,Munich Re,DE,Financials,524.2,100.84,67077623808,Large,11.115353,45.3,528.91,544.40,6,2,0.000,46
+IFX.DE,Infineon Technologies,DE,Technology,39.66,16.02,51642863616,Large,51.506496,45.7,42.08,36.98,2,2,0.000,45
+DB1.DE,Deutsche Boerse,DE,Financials,238.9,73.18,43784007680,Large,21.97792,54.1,224.05,234.81,5,1,0.000,46
+ADS.DE,Adidas,DE,Consumer Cyclical,132.65,-49.33,23525335040,Large,17.757698,30.9,148.56,170.70,8,2,0.000,36
+DHL.DE,DHL Group,DE,Industrials,44.98,0.00,50343563264,Large,14.796053,41.8,47.44,42.83,2,5,0.000,59
+RWE.DE,RWE,DE,Utilities,56.94,75.25,40630374400,Large,13.241859,59.2,53.51,42.94,2,6,0.000,69
+HEN3.DE,Henkel,DE,Consumer Defensive,67.5,-29.33,27477506048,Large,13.719512,27.9,75.50,71.41,3,9,0.000,61
+DTG.DE,Daimler Truck,DE,Industrials,41.4,47.86,31695857664,Large,17.768242,49.2,41.90,39.05,2,2,0.000,54
+FRE.DE,Fresenius,DE,Healthcare,44.51,22.94,25069688832,Large,21.712194,33.6,48.53,46.73,2,4,0.000,52
+SHL.DE,Siemens Healthineers,DE,Healthcare,36.78,-20.39,41076047872,Large,19.460318,26.5,41.13,44.91,8,7,0.000,45
+HNR1.DE,Hannover Re,DE,Financials,257.6,68.15,31065823232,Large,11.767931,52.5,248.96,255.31,5,1,0.000,48
+VNA.DE,Vonovia,DE,Real Estate,21.59,-50.85,18313961472,Large,6.6842103,30.8,25.15,26.50,7,2,0.000,43
+MTX.DE,MTU Aero Engines,DE,Industrials,320.2,62.54,17222037504,Large,16.93284,36.1,365.61,369.28,6,0,0.000,40
+SY1.DE,Symrise,DE,Materials,70.94,-30.45,9915429888,Mid,39.853935,45.2,73.20,77.55,6,0,0.000,36
+BEI.DE,Beiersdorf,DE,Consumer Defensive,74.96,-16.90,16380540928,Large,17.637648,26.9,94.10,96.88,8,4,0.000,41
 ENR.DE,Siemens Energy,DE,Industrials,158.4,441.17,135486513152,Large,73.674416,55.3,151.76,114.70,2,4,0.000,54
 CBK.DE,Commerzbank,DE,Financials,32.39,519.55,36519600128,Large,13.901288,50.4,33.48,32.51,0,4,0.000,56
 CON.DE,Continental,DE,Consumer Cyclical,60.5,-39.13,12100362240,Large,,38.6,67.43,67.75,6,0,0.000,38

@@ -8,18 +8,18 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 74,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "LUNR",
@@ -31,13 +31,6 @@
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "T",
-      "name": "AT&T",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -68,6 +61,13 @@
       "name": "WH Group",
       "score": 72,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -101,13 +101,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 22,
@@ -122,9 +115,16 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 22,
+      "ticker": "HDFCLIFE.NS",
+      "name": "HDFC Life Insurance",
+      "score": 23,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
@@ -147,18 +147,12 @@
     {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 74,
+      "score": 73,
       "market": "US"
     },
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "T",
-      "name": "AT&T",
       "score": 72,
       "market": "US"
     },
@@ -181,8 +175,8 @@
       "market": "HK"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
+      "ticker": "T",
+      "name": "AT&T",
       "score": 71,
       "market": "US"
     },
@@ -203,6 +197,12 @@
       "name": "Shell",
       "score": 71,
       "market": "UK"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 70,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -305,27 +305,27 @@
       "market": "UK"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 64,
-      "market": "DE"
-    },
-    {
-      "ticker": "MKS.L",
-      "name": "Marks & Spencer",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "GAW.L",
-      "name": "Games Workshop",
-      "score": 61,
-      "market": "UK"
-    },
-    {
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "IDOX.L",
+      "name": "IDOX",
+      "score": 58,
+      "market": "UK"
+    },
+    {
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 57,
       "market": "UK"
     }
   ],
