@@ -8,6 +8,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 74,
@@ -15,11 +22,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
       "score": 73,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "XOM",
@@ -31,6 +38,13 @@
     {
       "ticker": "T",
       "name": "AT&T",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -55,48 +69,27 @@
       "score": 72,
       "market": "HK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 14,
+      "score": 15,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "DASH",
       "name": "DoorDash",
-      "score": 16,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
-      "score": 19,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "COIN",
       "name": "Coinbase",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,13 +101,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "TTD",
       "name": "Trade Desk",
       "score": 21,
@@ -122,23 +108,37 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 22,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "SE",
-      "name": "Sea Limited",
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
       "score": 22,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "NOW",
       "name": "ServiceNow",
       "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CPNG",
+      "name": "Coupang",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     }
@@ -147,7 +147,7 @@
     {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 73,
+      "score": 74,
       "market": "US"
     },
     {
@@ -159,6 +159,12 @@
     {
       "ticker": "T",
       "name": "AT&T",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 72,
       "market": "US"
     },
@@ -175,14 +181,20 @@
       "market": "HK"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
       "score": 71,
       "market": "US"
     },
@@ -191,18 +203,6 @@
       "name": "Shell",
       "score": 71,
       "market": "UK"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 70,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -213,15 +213,15 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 72,
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 73,
       "market": "US"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 71,
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 72,
       "market": "US"
     },
     {
@@ -233,13 +233,13 @@
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 68,
+      "score": 69,
       "market": "US"
     },
     {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 67,
+      "score": 68,
       "market": "US"
     },
     {
@@ -305,31 +305,31 @@
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 64,
+      "market": "DE"
+    },
+    {
+      "ticker": "MKS.L",
+      "name": "Marks & Spencer",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "GAW.L",
+      "name": "Games Workshop",
       "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "IDOX.L",
-      "name": "IDOX",
-      "score": 58,
-      "market": "UK"
-    },
-    {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 57,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 61,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 376
+  "bearishAlertCount": 379
 }

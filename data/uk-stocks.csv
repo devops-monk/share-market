@@ -38,56 +38,56 @@ PRU.L,Prudential,UK,Financials,10.93,-28.00,27454885888,Large,9.58772,49.4,11.30
 LGEN.L,Legal & General,UK,Financials,2.43,-11.80,13675061248,Large,30.375002,41.4,2.60,2.51,2,2,0.000,47
 IHG.L,InterContinental Hotels,UK,Consumer Cyclical,133.25,99.63,19915552768,Large,27.361397,48.9,136.92,127.32,0,4,0.000,55
 WTB.L,Whitbread,UK,Consumer Cyclical,23.39,-30.98,3904762624,Mid,16.356644,33.2,26.08,28.41,7,2,0.000,41
-JET2.L,Jet2,UK,Consumer Cyclical,11.22,-9.44,2056806784,Mid,4.7948723,43.2,12.18,14.27,5,2,0.000,45
-FOUR.L,4imprint,UK,Industrials,34.2,41.91,961796864,Small,11.400001,35.8,38.90,36.35,2,4,0.000,56
-GAW.L,Games Workshop,UK,Consumer Cyclical,184.6,91.99,6099904000,Mid,29.583336,66.8,173.86,166.62,0,6,0.000,62
-WIZZ.L,Wizz Air,UK,Industrials,9.1,-80.95,941496832,Small,5.7961783,34.3,12.04,11.88,1,4,0.000,51
-FRAS.L,Frasers Group,UK,Consumer Cyclical,6.42,38.01,2770118656,Mid,6.42,40.1,6.86,6.93,6,0,0.000,44
-BME.L,B&M European,UK,Consumer Cyclical,1.58,-70.42,1587960576,Small,6.32,29.6,1.77,2.05,6,9,0.000,54
-PSN.L,Persimmon,UK,Consumer Cyclical,11.235,-62.81,3601774592,Mid,12.767045,28.9,13.79,12.59,3,9,0.000,60
-TW.L,Taylor Wimpey,UK,Consumer Cyclical,0.8916,-50.62,3155787520,Mid,29.720001,30.7,1.05,1.05,2,2,0.000,45
-BWY.L,Bellway,UK,Consumer Cyclical,18.7,-45.77,2176182528,Mid,14.166667,24.2,25.76,25.90,9,7,0.000,47
-FDEV.L,Frontier Developments,UK,Technology,3.5,-86.41,124799080,Small,7,35.6,4.20,4.25,7,0,0.000,39
-FEVR.L,Fevertree,UK,Consumer Defensive,7.890000000000001,-65.64,910454528,Small,41.526314,36.1,8.88,8.68,2,2,0.000,46
-JTC.L,JTC,UK,Financials,13.040000000000001,104.39,2190439936,Mid,,58.6,12.97,11.76,2,3,0.000,50
-GYM.L,Gym Group,UK,Consumer Cyclical,1.7080000000000002,-35.06,298644960,Small,42.7,48.5,1.73,1.53,4,3,0.000,56
-CBG.L,Close Brothers,UK,Financials,3.8460000000000005,-74.88,579002304,Small,,39.4,4.68,4.57,3,2,0.000,38
-ENOG.L,Energean,UK,Energy,8.335,-3.22,1535981824,Small,,40.5,8.81,9.02,6,2,0.000,41
-HBR.L,Harbour Energy,UK,Energy,2.938,-22.68,4609196544,Mid,,58.6,2.46,2.20,2,4,0.000,59
-ITM.L,ITM Power,UK,Industrials,0.633,-84.10,390357024,Small,,49.6,0.64,0.70,6,0,0.000,35
-MNDI.L,Mondi,UK,Materials,8.564,-58.33,3775424768,Mid,26.7625,51.8,8.73,9.60,4,2,0.000,43
-ANTO.L,Antofagasta,UK,Materials,34.71,114.13,34219085824,Large,34.71,44.9,37.37,27.84,2,2,0.000,50
+JET2.L,Jet2,UK,Consumer Cyclical,11.22,-9.44,0,Small,,43.2,12.18,14.27,5,2,0.000,37
+FOUR.L,4imprint,UK,Industrials,34.2,41.91,0,Small,,35.8,38.90,36.35,2,4,0.000,51
+GAW.L,Games Workshop,UK,Consumer Cyclical,184.6,91.99,0,Small,,66.8,173.86,166.62,0,6,0.000,61
+WIZZ.L,Wizz Air,UK,Industrials,9.1,-80.95,0,Small,,34.3,12.04,11.88,1,4,0.000,44
+FRAS.L,Frasers Group,UK,Consumer Cyclical,6.42,38.01,0,Small,,40.1,6.86,6.93,6,0,0.000,36
+BME.L,B&M European,UK,Consumer Cyclical,1.58,-70.42,0,Small,,29.6,1.77,2.05,6,9,0.000,47
+PSN.L,Persimmon,UK,Consumer Cyclical,11.235,-62.81,0,Small,,28.9,13.79,12.59,3,9,0.000,55
+TW.L,Taylor Wimpey,UK,Consumer Cyclical,0.8916,-50.62,0,Small,,30.7,1.05,1.05,2,2,0.000,45
+BWY.L,Bellway,UK,Consumer Cyclical,18.7,-45.77,0,Small,,24.2,25.76,25.90,9,7,0.000,42
+FDEV.L,Frontier Developments,UK,Technology,3.5,-86.41,0,Small,,35.6,4.20,4.25,7,0,0.000,32
+FEVR.L,Fevertree,UK,Consumer Defensive,7.890000000000001,-65.64,0,Small,,36.1,8.88,8.68,2,2,0.000,48
+JTC.L,JTC,UK,Financials,13.040000000000001,104.39,0,Small,,58.6,12.97,11.76,2,3,0.000,50
+GYM.L,Gym Group,UK,Consumer Cyclical,1.7080000000000002,-35.06,0,Small,,48.5,1.73,1.53,4,3,0.000,59
+CBG.L,Close Brothers,UK,Financials,3.8460000000000005,-74.88,0,Small,,39.4,4.68,4.57,3,2,0.000,38
+ENOG.L,Energean,UK,Energy,8.335,-3.22,0,Small,,40.5,8.81,9.02,6,2,0.000,41
+HBR.L,Harbour Energy,UK,Energy,2.938,-22.68,0,Small,,58.6,2.46,2.20,2,4,0.000,59
+ITM.L,ITM Power,UK,Industrials,0.633,-84.10,0,Small,,49.6,0.64,0.70,6,0,0.000,35
+MNDI.L,Mondi,UK,Materials,8.564,-58.33,0,Small,,51.8,8.73,9.60,4,2,0.000,42
+ANTO.L,Antofagasta,UK,Materials,34.71,114.13,0,Small,,44.9,37.37,27.84,2,2,0.000,51
 PHNX.L,Phoenix Group,UK,Financials,7.67,5.47,0,Small,,31.1,7.28,6.87,2,6,0.000,54
-SPX.L,Spirax-Sarco,UK,Industrials,67.25,-41.01,4959943168,Mid,30.429863,40.0,73.32,68.68,2,2,0.000,48
-SMIN.L,Smiths Group,UK,Industrials,23.34,59.97,7222045696,Mid,31.54054,41.3,25.55,24.16,2,2,0.000,48
-IAG.L,IAG,UK,Industrials,3.66,89.10,16602097664,Large,6.1,43.9,4.05,3.91,0,4,0.000,58
-EZJ.L,easyJet,UK,Industrials,3.588,-61.87,2693831168,Mid,5.52,28.5,4.47,4.81,7,7,0.000,48
-SSE.L,SSE,UK,Utilities,25.8,77.99,31098494976,Large,29.65517,47.6,25.48,20.76,2,4,0.000,60
-CNA.L,Centrica,UK,Utilities,2.0140000000000002,292.13,9092489216,Mid,,53.4,1.94,1.73,2,4,0.000,55
-SVT.L,Severn Trent,UK,Utilities,29.87,29.14,8993504256,Mid,28.44762,41.9,30.48,27.80,2,2,0.000,52
-UU.L,United Utilities,UK,Utilities,12.925,41.32,8813408256,Mid,21.90678,45.1,13.02,11.98,2,2,0.000,53
-OCDO.L,Ocado,UK,Technology,1.874,-90.99,1557714048,Small,,34.8,2.23,2.48,7,2,0.000,34
-LAND.L,Land Securities,UK,Real Estate,5.515,-20.54,4108907008,Mid,16.71212,29.8,6.30,6.05,2,9,0.000,61
-BLND.L,British Land,UK,Real Estate,3.5560000000000005,-29.64,3555627776,Mid,7.9022226,35.3,3.97,3.76,2,2,0.000,54
-SGRO.L,Segro,UK,Real Estate,6.812,-25.96,9214561280,Mid,16.614635,33.1,7.62,6.97,2,4,0.000,55
-BRBY.L,Burberry,UK,Consumer Cyclical,10.53,-44.64,3771822848,Mid,,43.0,11.40,11.95,5,2,0.000,39
-JMAT.L,Johnson Matthey,UK,Materials,19.05,-37.07,3191715584,Mid,,42.5,21.48,20.18,0,4,0.000,49
-HLN.L,Haleon,UK,Consumer Defensive,3.6189999999999998,9.67,32309987328,Large,20.105555,38.2,3.86,3.67,2,4,0.000,55
-NXT.L,Next,UK,Consumer Cyclical,120.35000000000001,57.57,13814389760,Large,18.234848,27.8,130.28,129.18,2,9,0.000,62
-MKS.L,Marks & Spencer,UK,Consumer Cyclical,3.338,125.01,6756321280,Mid,333.8,29.2,3.73,3.58,2,10,0.000,55
-WPP.L,WPP,UK,Communication,2.321,-74.89,2503255552,Mid,,38.7,2.71,3.50,7,2,0.000,31
-IMB.L,Imperial Brands,UK,Consumer Defensive,30.45,103.88,23759314944,Large,12.228916,40.0,31.64,30.89,2,4,0.000,54
-AV.L,Aviva,UK,Financials,6.246,58.02,19034693632,Large,24.023077,45.4,6.42,6.52,6,4,0.000,45
-HLMA.L,Halma,UK,Technology,38.44,61.51,14518851584,Large,42.241756,50.9,37.85,34.86,2,4,0.000,50
-HIK.L,Hikma Pharmaceuticals,UK,Healthcare,12.73,-42.68,2772346368,Mid,9.429629,42.1,14.42,16.78,5,2,0.000,42
-INF.L,Informa,UK,Communication,7.6739999999999995,35.06,9741848576,Mid,767.4,42.1,8.27,8.75,4,2,0.000,32
-JD.L,JD Sports Fashion,UK,Consumer Cyclical,0.6908,-57.75,3368373504,Mid,6.908,36.7,0.78,0.85,7,2,0.000,41
-KGF.L,Kingfisher,UK,Consumer Cyclical,2.879,-10.76,4832260608,Mid,20.564285,27.9,3.34,3.00,2,7,0.000,59
-MRO.L,Melrose Industries,UK,Industrials,5.0360000000000005,31.62,6293565440,Mid,17.365519,35.8,5.94,5.85,2,2,0.000,46
-MNG.L,M&G,UK,Financials,2.8089999999999997,35.50,6690769408,Mid,23.408335,37.8,3.05,2.75,2,2,0.000,51
-PSON.L,Pearson,UK,Communication,9.548,23.49,5923361280,Mid,18.72157,46.0,9.47,10.27,5,5,0.000,49
-RTO.L,Rentokil Initial,UK,Industrials,4.684,-4.41,11786067968,Large,52.04444,51.7,4.62,4.08,5,3,0.000,42
-RMV.L,Rightmove,UK,Technology,4.22,-28.64,3204463872,Mid,15.071427,37.7,4.56,6.23,8,2,0.000,34
+SPX.L,Spirax-Sarco,UK,Industrials,67.25,-41.01,0,Small,,40.0,73.32,68.68,2,2,0.000,48
+SMIN.L,Smiths Group,UK,Industrials,23.34,59.97,0,Small,,41.3,25.55,24.16,2,2,0.000,48
+IAG.L,IAG,UK,Industrials,3.66,89.10,0,Small,,43.9,4.05,3.91,0,4,0.000,51
+EZJ.L,easyJet,UK,Industrials,3.588,-61.87,0,Small,,28.5,4.47,4.81,7,7,0.000,41
+SSE.L,SSE,UK,Utilities,25.8,77.99,0,Small,,47.6,25.48,20.76,2,4,0.000,60
+CNA.L,Centrica,UK,Utilities,2.0140000000000002,292.13,0,Small,,53.4,1.94,1.73,2,4,0.000,55
+SVT.L,Severn Trent,UK,Utilities,29.87,29.14,0,Small,,41.9,30.48,27.80,2,2,0.000,51
+UU.L,United Utilities,UK,Utilities,12.925,41.32,0,Small,,45.1,13.02,11.98,2,2,0.000,50
+OCDO.L,Ocado,UK,Technology,1.874,-90.99,0,Small,,34.8,2.23,2.48,7,2,0.000,34
+LAND.L,Land Securities,UK,Real Estate,5.515,-20.54,0,Small,,29.8,6.30,6.05,2,9,0.000,57
+BLND.L,British Land,UK,Real Estate,3.5560000000000005,-29.64,0,Small,,35.3,3.97,3.76,2,2,0.000,48
+SGRO.L,Segro,UK,Real Estate,6.812,-25.96,0,Small,,33.1,7.62,6.97,2,4,0.000,51
+BRBY.L,Burberry,UK,Consumer Cyclical,10.53,-44.64,0,Small,,43.0,11.40,11.95,5,2,0.000,39
+JMAT.L,Johnson Matthey,UK,Materials,19.05,-37.07,0,Small,,42.5,21.48,20.18,0,4,0.000,49
+HLN.L,Haleon,UK,Consumer Defensive,3.6189999999999998,9.67,0,Small,,38.2,3.86,3.67,2,4,0.000,52
+NXT.L,Next,UK,Consumer Cyclical,120.35000000000001,57.57,0,Small,,27.8,130.28,129.18,2,9,0.000,58
+MKS.L,Marks & Spencer,UK,Consumer Cyclical,3.338,125.01,0,Small,,29.2,3.73,3.58,2,10,0.000,63
+WPP.L,WPP,UK,Communication,2.321,-74.89,0,Small,,38.7,2.71,3.50,7,2,0.000,31
+IMB.L,Imperial Brands,UK,Consumer Defensive,30.45,103.88,0,Small,,40.0,31.64,30.89,2,4,0.000,49
+AV.L,Aviva,UK,Financials,6.246,58.02,0,Small,,45.4,6.42,6.52,6,4,0.000,43
+HLMA.L,Halma,UK,Technology,38.44,61.51,0,Small,,50.9,37.85,34.86,2,4,0.000,53
+HIK.L,Hikma Pharmaceuticals,UK,Healthcare,12.73,-42.68,0,Small,,42.1,14.42,16.78,5,2,0.000,36
+INF.L,Informa,UK,Communication,7.6739999999999995,35.06,0,Small,,42.1,8.27,8.75,4,2,0.000,40
+JD.L,JD Sports Fashion,UK,Consumer Cyclical,0.6908,-57.75,0,Small,,36.7,0.78,0.85,7,2,0.000,34
+KGF.L,Kingfisher,UK,Consumer Cyclical,2.879,-10.76,0,Small,,27.9,3.34,3.00,2,7,0.000,56
+MRO.L,Melrose Industries,UK,Industrials,5.0360000000000005,31.62,0,Small,,35.8,5.94,5.85,2,2,0.000,42
+MNG.L,M&G,UK,Financials,2.8089999999999997,35.50,0,Small,,37.8,3.05,2.75,2,2,0.000,48
+PSON.L,Pearson,UK,Communication,9.548,23.49,0,Small,,46.0,9.47,10.27,5,5,0.000,45
+RTO.L,Rentokil Initial,UK,Industrials,4.684,-4.41,0,Small,,51.7,4.62,4.08,5,3,0.000,48
+RMV.L,Rightmove,UK,Technology,4.22,-28.64,0,Small,,37.7,4.56,6.23,8,2,0.000,30
 SDR.L,Schroders,UK,Financials,5.74,-2.07,8950502400,Mid,16.882353,64.8,5.32,4.22,2,7,0.000,67
 SN.L,Smith & Nephew,UK,Healthcare,12.095,-10.54,10268525568,Large,22.820757,38.8,12.69,12.67,2,2,0.000,48
 WEIR.L,Weir Group,UK,Industrials,28.28,60.86,7341829120,Mid,29.768423,38.5,32.06,28.28,2,2,0.000,48
@@ -157,6 +157,6 @@ BBOX.L,Tritax Big Box REIT,UK,Real Estate,1.44,-18.96,3891056128,Mid,8.470589,26
 PHP.L,Primary Health Properties,UK,Real Estate,0.9215000000000001,-36.62,2391375104,Mid,13.164286,27.2,1.03,0.97,2,9,0.000,66
 SUPR.L,Supermarket Income REIT,UK,Real Estate,0.797,-25.86,993252608,Small,15.94,31.8,0.85,0.81,2,4,0.000,57
 HMSO.L,Hammerson,UK,Real Estate,3.142,-4.73,1665838464,Small,6.8304353,37.0,3.44,3.12,4,4,0.000,61
-SHED.L,Urban Logistics REIT,UK,Real Estate,1.56,6.12,0,Small,,39.5,0.98,1.11,4,8,0.000,46
+SHED.L,Urban Logistics REIT,UK,Real Estate,1.56,6.12,727438976,Small,39,39.5,0.98,1.11,4,8,0.000,44
 SFOR.L,S4 Capital,UK,Communication,0.255,-94.92,169066960,Small,,67.8,0.22,0.22,0,6,0.000,67
 GENL.L,Genel Energy,UK,Energy,0.557,-68.03,153492800,Small,,40.1,0.60,0.62,6,0,0.000,33
