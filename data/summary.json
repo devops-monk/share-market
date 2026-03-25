@@ -10,13 +10,20 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 74,
+      "score": 75,
       "market": "UK",
       "capCategory": "Small"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -43,17 +50,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
+      "ticker": "SHEL.L",
+      "name": "Shell",
       "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "T",
-      "name": "AT&T",
-      "score": 69,
-      "market": "US",
+      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -64,8 +64,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 69,
       "market": "US",
       "capCategory": "Large"
@@ -75,7 +75,14 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 15,
+      "score": 11,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 16,
       "market": "US",
       "capCategory": "Large"
     },
@@ -87,8 +94,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DASH",
-      "name": "DoorDash",
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corp",
       "score": 19,
       "market": "US",
       "capCategory": "Large"
@@ -108,45 +122,37 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "SE",
-      "name": "Sea Limited",
-      "score": 22,
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 22,
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
+      "ticker": "DT",
+      "name": "Dynatrace",
       "score": 22,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HDFCLIFE.NS",
-      "name": "HDFC Life Insurance",
-      "score": 23,
-      "market": "IN",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
       "score": 71,
       "market": "US"
     },
@@ -169,16 +175,10 @@
       "market": "US"
     },
     {
-      "ticker": "HAL",
-      "name": "Halliburton",
+      "ticker": "SHEL.L",
+      "name": "Shell",
       "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "T",
-      "name": "AT&T",
-      "score": 69,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "FDX",
@@ -187,22 +187,22 @@
       "market": "US"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "DOW",
-      "name": "Dow Inc",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "ALB",
       "name": "Albemarle",
       "score": 69,
       "market": "US"
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes",
+      "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 68,
+      "market": "DE"
     }
   ],
   "topMidCap": [
@@ -219,26 +219,32 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 68,
-      "market": "US"
-    },
-    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 67,
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 65,
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 66,
       "market": "US"
     },
     {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 64,
       "market": "US"
     },
@@ -249,29 +255,23 @@
       "market": "UK"
     },
     {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 61,
-      "market": "US"
-    },
-    {
       "ticker": "LEA",
       "name": "Lear Corp",
       "score": 60,
       "market": "US"
+    },
+    {
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
+      "score": 60,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 74,
+      "score": 75,
       "market": "UK"
     },
     {
@@ -289,7 +289,7 @@
     {
       "ticker": "SFOR.L",
       "name": "S4 Capital",
-      "score": 66,
+      "score": 65,
       "market": "UK"
     },
     {
@@ -311,6 +311,12 @@
       "market": "UK"
     },
     {
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 56,
+      "market": "UK"
+    },
+    {
       "ticker": "FOUR.L",
       "name": "4imprint",
       "score": 55,
@@ -321,15 +327,9 @@
       "name": "Currys",
       "score": 55,
       "market": "UK"
-    },
-    {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 55,
-      "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 374
+  "bearishAlertCount": 378
 }
