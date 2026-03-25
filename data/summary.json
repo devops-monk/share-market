@@ -10,14 +10,14 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 74,
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 72,
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,13 +101,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "COIN",
       "name": "Coinbase",
       "score": 22,
@@ -122,8 +115,22 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RPI.L",
+      "name": "Raspberry Pi",
+      "score": 23,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "AXON",
       "name": "Axon Enterprise",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -134,26 +141,19 @@
       "score": 23,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 74,
+      "score": 73,
       "market": "US"
     },
     {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 72,
+      "score": 73,
       "market": "US"
     },
     {
@@ -221,7 +221,7 @@
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
-      "score": 68,
+      "score": 69,
       "market": "UK"
     },
     {
@@ -249,12 +249,6 @@
       "market": "UK"
     },
     {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "MUR",
       "name": "Murphy Oil",
       "score": 62,
@@ -264,6 +258,12 @@
       "ticker": "LEA",
       "name": "Lear Corp",
       "score": 61,
+      "market": "US"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 60,
       "market": "US"
     }
   ],
@@ -289,7 +289,7 @@
     {
       "ticker": "SFOR.L",
       "name": "S4 Capital",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -299,15 +299,15 @@
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 58,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 57,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 58,
       "market": "UK"
     },
     {
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
       "score": 55,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 379
+  "bearishAlertCount": 378
 }
