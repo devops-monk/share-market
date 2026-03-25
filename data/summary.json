@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 79,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 77,
@@ -29,13 +22,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 73,
@@ -43,9 +29,30 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 72,
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
@@ -62,20 +69,13 @@
       "score": 71,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "DOW",
-      "name": "Dow Inc",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 16,
+      "score": 14,
       "market": "US",
       "capCategory": "Large"
     },
@@ -94,13 +94,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "SOUN",
       "name": "SoundHound AI",
       "score": 21,
@@ -108,15 +101,36 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 22,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HDFCLIFE.NS",
+      "name": "HDFC Life Insurance",
+      "score": 22,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "DT",
-      "name": "Dynatrace",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -124,32 +138,12 @@
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 79,
-      "market": "HK"
-    },
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
@@ -159,13 +153,25 @@
     {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 73,
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 72,
+      "score": 71,
       "market": "US"
     },
     {
@@ -187,21 +193,15 @@
       "market": "US"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 70,
+      "market": "HK"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "BKR",
-      "name": "Baker Hughes",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "OKE",
-      "name": "ONEOK",
-      "score": 68,
       "market": "US"
     }
   ],
@@ -221,13 +221,19 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 70,
+      "score": 71,
       "market": "US"
     },
     {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 69,
+      "market": "UK"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 68,
       "market": "UK"
     },
     {
@@ -239,30 +245,24 @@
     {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
       "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 65,
+      "ticker": "LAND.L",
+      "name": "Land Securities",
+      "score": 64,
       "market": "UK"
     },
     {
       "ticker": "BLND.L",
       "name": "British Land",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
       "score": 64,
       "market": "UK"
     }
@@ -307,19 +307,19 @@
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 62,
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 60,
       "market": "UK"
     },
     {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "PHNX.L",
-      "name": "Phoenix Group",
-      "score": 58,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 385
+  "bearishAlertCount": 382
 }
