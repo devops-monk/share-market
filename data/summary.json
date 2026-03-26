@@ -3,7 +3,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 76,
+      "score": 75,
       "market": "UK",
       "capCategory": "Small"
     },
@@ -15,23 +15,23 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "8031.T",
+      "name": "Mitsui & Co",
+      "score": 74,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 73,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -57,15 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 72,
-      "market": "HK",
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "T",
-      "name": "AT&T",
+      "ticker": "HAL",
+      "name": "Halliburton",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -73,46 +73,18 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 15,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "DASH",
       "name": "DoorDash",
-      "score": 17,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 21,
       "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "HDFCLIFE.NS",
@@ -129,31 +101,65 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 23,
+      "ticker": "RPI.L",
+      "name": "Raspberry Pi",
+      "score": 24,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 24,
       "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 25,
+      "market": "IN",
       "capCategory": "Large"
     },
     {
-      "ticker": "CPNG",
-      "name": "Coupang",
-      "score": 23,
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "8031.T",
+      "name": "Mitsui & Co",
+      "score": 74,
+      "market": "JP"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
       "score": 73,
       "market": "US"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 72,
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 73,
       "market": "US"
     },
     {
@@ -169,20 +175,8 @@
       "market": "JP"
     },
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 72,
-      "market": "HK"
-    },
-    {
       "ticker": "T",
       "name": "AT&T",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
       "score": 71,
       "market": "US"
     },
@@ -193,14 +187,20 @@
       "market": "US"
     },
     {
-      "ticker": "SHEL.L",
-      "name": "Shell",
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
       "score": 71,
-      "market": "UK"
+      "market": "US"
     },
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 70,
       "market": "US"
     }
@@ -213,16 +213,22 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 73,
-      "market": "US"
-    },
-    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 71,
+      "market": "UK"
     },
     {
       "ticker": "PLUS.L",
@@ -233,37 +239,31 @@
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 69,
+      "score": 70,
       "market": "US"
-    },
-    {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 67,
-      "market": "UK"
     },
     {
       "ticker": "BBOX.L",
       "name": "Tritax Big Box REIT",
-      "score": 67,
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "PHP.L",
       "name": "Primary Health Properties",
-      "score": 66,
+      "score": 65,
       "market": "UK"
     }
   ],
@@ -271,19 +271,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 76,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 67,
+      "score": 75,
       "market": "UK"
     },
     {
@@ -291,6 +279,12 @@
       "name": "Comerica",
       "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 66,
+      "market": "UK"
     },
     {
       "ticker": "CKN.L",
@@ -305,21 +299,27 @@
       "market": "UK"
     },
     {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
+      "ticker": "IDOX.L",
+      "name": "IDOX",
       "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "IDOX.L",
-      "name": "IDOX",
-      "score": 58,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 59,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 379
+  "bearishAlertCount": 386
 }
