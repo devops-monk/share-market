@@ -24,6 +24,13 @@
     {
       "ticker": "MRK",
       "name": "Merck",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -40,13 +47,6 @@
       "name": "Mitsubishi Corp",
       "score": 72,
       "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -73,6 +73,13 @@
   ],
   "bottomOverall": [
     {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 17,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "BYND",
       "name": "Beyond Meat",
       "score": 19,
@@ -80,16 +87,16 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
+      "ticker": "DASH",
+      "name": "DoorDash",
       "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 19,
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,22 +108,22 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "IONQ",
+      "name": "IonQ",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "COIN",
       "name": "Coinbase",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -131,13 +138,6 @@
     {
       "ticker": "GLBE",
       "name": "Global-e Online",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "RGTI",
-      "name": "Rigetti Computing",
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
@@ -159,6 +159,12 @@
     {
       "ticker": "MRK",
       "name": "Merck",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 72,
       "market": "US"
     },
@@ -167,12 +173,6 @@
       "name": "Mitsubishi Corp",
       "score": 72,
       "market": "JP"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
-      "market": "US"
     },
     {
       "ticker": "0883.HK",
@@ -187,6 +187,12 @@
       "market": "US"
     },
     {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "T",
       "name": "AT&T",
       "score": 69,
@@ -197,12 +203,6 @@
       "name": "BP",
       "score": 69,
       "market": "UK"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 69,
-      "market": "FR"
     }
   ],
   "topMidCap": [
@@ -233,19 +233,25 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 65,
-      "market": "US"
-    },
-    {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 65,
+      "score": 64,
       "market": "US"
     },
     {
       "ticker": "BBOX.L",
       "name": "Tritax Big Box REIT",
       "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "GAW.L",
+      "name": "Games Workshop",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -258,12 +264,6 @@
       "ticker": "PHP.L",
       "name": "Primary Health Properties",
       "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 61,
       "market": "UK"
     }
   ],
@@ -295,13 +295,19 @@
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 58,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "AJ Bell",
       "score": 56,
       "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 56,
-      "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 388
+  "bearishAlertCount": 387
 }
