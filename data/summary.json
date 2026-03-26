@@ -24,7 +24,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 73,
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -64,11 +64,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
@@ -101,13 +101,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "APP",
-      "name": "AppLovin",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "NOW",
       "name": "ServiceNow",
       "score": 20,
@@ -115,8 +108,22 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "IONQ",
       "name": "IonQ",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -129,16 +136,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "VRNS",
-      "name": "Varonis Systems",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
-      "score": 22,
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     }
@@ -159,7 +159,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 73,
+      "score": 72,
       "market": "US"
     },
     {
@@ -187,22 +187,22 @@
       "market": "US"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 71,
+      "market": "HK"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
       "score": 70,
       "market": "US"
     },
     {
       "ticker": "T",
       "name": "AT&T",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
       "score": 69,
-      "market": "HK"
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -225,33 +225,39 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 67,
-      "market": "US"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 64,
+      "score": 65,
       "market": "US"
     },
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 64,
+      "score": 65,
       "market": "UK"
+    },
+    {
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 64,
+      "market": "US"
     },
     {
       "ticker": "BBOX.L",
       "name": "Tritax Big Box REIT",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "EMN",
-      "name": "Eastman Chemical",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 61,
       "market": "US"
     },
     {
@@ -259,25 +265,13 @@
       "name": "Lear Corp",
       "score": 61,
       "market": "US"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 60,
-      "market": "US"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 68,
+      "score": 71,
       "market": "UK"
     },
     {
@@ -293,15 +287,15 @@
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 62,
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 60,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -311,14 +305,20 @@
       "market": "UK"
     },
     {
-      "ticker": "CFLT",
-      "name": "Confluent",
-      "score": 56,
-      "market": "US"
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 57,
+      "market": "UK"
     },
     {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
+      "score": 56,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 56,
       "market": "UK"
     },
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 384
+  "bearishAlertCount": 385
 }
