@@ -3,7 +3,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 77,
+      "score": 74,
       "market": "UK",
       "capCategory": "Mid"
     },
@@ -12,20 +12,6 @@
       "name": "Mitsui & Co",
       "score": 74,
       "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 73,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -38,13 +24,6 @@
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "T",
-      "name": "AT&T",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -69,6 +48,27 @@
       "score": 72,
       "market": "JP",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -85,6 +85,13 @@
       "score": 21,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "RPI.L",
+      "name": "Raspberry Pi",
+      "score": 22,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "HDFCLIFE.NS",
@@ -122,25 +129,18 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 25,
+      "market": "FR",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "TRENT.BO",
       "name": "Trent",
       "score": 25,
       "market": "IN",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "RPI.L",
-      "name": "Raspberry Pi",
-      "score": 25,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -151,18 +151,6 @@
       "market": "JP"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 73,
-      "market": "US"
-    },
-    {
       "ticker": "SLB",
       "name": "Schlumberger",
       "score": 73,
@@ -171,12 +159,6 @@
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "T",
-      "name": "AT&T",
       "score": 72,
       "market": "US"
     },
@@ -193,6 +175,18 @@
       "market": "JP"
     },
     {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 71,
@@ -203,13 +197,19 @@
       "name": "AST SpaceMobile",
       "score": 71,
       "market": "US"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 71,
+      "market": "HK"
     }
   ],
   "topMidCap": [
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 77,
+      "score": 74,
       "market": "UK"
     },
     {
@@ -257,7 +257,7 @@
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 64,
+      "score": 63,
       "market": "UK"
     },
     {
@@ -268,12 +268,6 @@
     }
   ],
   "topSmallCap": [
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 68,
-      "market": "UK"
-    },
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
@@ -287,21 +281,21 @@
       "market": "US"
     },
     {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 59,
       "market": "UK"
     },
     {
@@ -311,14 +305,20 @@
       "market": "UK"
     },
     {
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
+      "score": 56,
+      "market": "UK"
+    },
+    {
       "ticker": "SNR.L",
       "name": "Senior plc",
       "score": 56,
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
       "score": 55,
       "market": "UK"
     },
