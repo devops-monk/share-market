@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 72,
@@ -43,10 +50,10 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "8058.T",
-      "name": "Mitsubishi Corp",
-      "score": 72,
-      "market": "JP",
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -57,15 +64,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 71,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -73,25 +73,11 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 17,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "BYND",
       "name": "Beyond Meat",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "PODD",
@@ -106,6 +92,13 @@
       "score": 20,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "IONQ",
@@ -136,8 +129,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GLBE",
-      "name": "Global-e Online",
+      "ticker": "DJT",
+      "name": "Trump Media",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
@@ -169,21 +169,15 @@
       "market": "US"
     },
     {
-      "ticker": "8058.T",
-      "name": "Mitsubishi Corp",
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 72,
-      "market": "JP"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 71,
-      "market": "HK"
+      "market": "US"
     },
     {
       "ticker": "VLO",
       "name": "Valero Energy",
-      "score": 70,
+      "score": 71,
       "market": "US"
     },
     {
@@ -191,6 +185,12 @@
       "name": "Albemarle",
       "score": 70,
       "market": "US"
+    },
+    {
+      "ticker": "8058.T",
+      "name": "Mitsubishi Corp",
+      "score": 70,
+      "market": "JP"
     },
     {
       "ticker": "T",
@@ -233,7 +233,7 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 64,
+      "score": 65,
       "market": "US"
     },
     {
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
+      "ticker": "CFLT",
+      "name": "Confluent",
       "score": 56,
-      "market": "UK"
+      "market": "US"
     },
     {
-      "ticker": "AJB.L",
-      "name": "AJ Bell",
+      "ticker": "FOUR.L",
+      "name": "4imprint",
       "score": 56,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 387
+  "bearishAlertCount": 390
 }
