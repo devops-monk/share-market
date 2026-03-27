@@ -36,13 +36,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "8058.T",
       "name": "Mitsubishi Corp",
       "score": 73,
@@ -69,16 +62,16 @@
       "score": 72,
       "market": "UK",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
     {
       "ticker": "HUBS",
       "name": "HubSpot",
@@ -141,6 +134,13 @@
       "score": 22,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -163,12 +163,6 @@
       "market": "US"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 73,
-      "market": "US"
-    },
-    {
       "ticker": "8058.T",
       "name": "Mitsubishi Corp",
       "score": 73,
@@ -187,6 +181,18 @@
       "market": "US"
     },
     {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "ALB",
       "name": "Albemarle",
       "score": 71,
@@ -197,12 +203,6 @@
       "name": "BP",
       "score": 71,
       "market": "UK"
-    },
-    {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
-      "score": 70,
-      "market": "IN"
     }
   ],
   "topMidCap": [
@@ -227,7 +227,7 @@
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 66,
+      "score": 67,
       "market": "US"
     },
     {
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 863,
-  "avgScore": 47,
+  "avgScore": 48,
   "bearishAlertCount": 397
 }
