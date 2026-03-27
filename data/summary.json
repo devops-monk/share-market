@@ -8,13 +8,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 76,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 76,
@@ -27,6 +20,13 @@
       "score": 74,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "8058.T",
@@ -43,13 +43,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 71,
@@ -62,6 +55,13 @@
       "score": 71,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "VLO",
@@ -80,8 +80,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DASH",
-      "name": "DoorDash",
+      "ticker": "CPNG",
+      "name": "Coupang",
       "score": 18,
       "market": "US",
       "capCategory": "Large"
@@ -94,11 +94,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
+      "ticker": "BROS",
+      "name": "Dutch Bros",
       "score": 19,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "UPST",
@@ -115,6 +115,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HIMS",
       "name": "Hims & Hers Health",
       "score": 19,
@@ -122,22 +129,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 20,
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "SHOP",
-      "name": "Shopify",
+      "ticker": "IONQ",
+      "name": "IonQ",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -175,15 +175,15 @@
       "market": "JP"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 71,
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 70,
       "market": "US"
     },
     {
@@ -193,10 +193,10 @@
       "market": "US"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 70,
-      "market": "HK"
+      "market": "US"
     },
     {
       "ticker": "T",
@@ -209,7 +209,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 76,
+      "score": 73,
       "market": "UK"
     },
     {
@@ -219,26 +219,26 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 68,
-      "market": "US"
-    },
-    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 65,
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 66,
       "market": "US"
     },
     {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 64,
       "market": "US"
     },
@@ -255,14 +255,14 @@
       "market": "UK"
     },
     {
-      "ticker": "SGRO.L",
-      "name": "Segro",
+      "ticker": "GAW.L",
+      "name": "Games Workshop",
       "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
+      "ticker": "SGRO.L",
+      "name": "Segro",
       "score": 59,
       "market": "UK"
     }
@@ -283,7 +283,7 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 46,
-  "bearishAlertCount": 399
+  "bearishAlertCount": 392
 }
