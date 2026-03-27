@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 76,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 76,
@@ -24,7 +17,7 @@
     {
       "ticker": "ONGC.NS",
       "name": "ONGC",
-      "score": 74,
+      "score": 75,
       "market": "IN",
       "capCategory": "Large"
     },
@@ -41,6 +34,13 @@
       "score": 73,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "8058.T",
@@ -94,17 +94,24 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TRENT.BO",
-      "name": "Trent",
-      "score": 21,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "PODD",
       "name": "Insulet Corp",
       "score": 21,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TRENT.BO",
+      "name": "Trent",
+      "score": 22,
+      "market": "IN",
       "capCategory": "Large"
     },
     {
@@ -134,13 +141,6 @@
       "score": 22,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -159,7 +159,7 @@
     {
       "ticker": "ONGC.NS",
       "name": "ONGC",
-      "score": 74,
+      "score": 75,
       "market": "IN"
     },
     {
@@ -193,15 +193,15 @@
       "market": "US"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "VLO",
+      "name": "Valero Energy",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
-      "score": 71,
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 70,
       "market": "US"
     }
   ],
@@ -209,7 +209,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 76,
+      "score": 73,
       "market": "UK"
     },
     {
@@ -225,8 +225,8 @@
       "market": "UK"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
+      "ticker": "IGG.L",
+      "name": "IG Group",
       "score": 68,
       "market": "UK"
     },
@@ -237,9 +237,9 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 65,
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 66,
       "market": "UK"
     },
     {
@@ -247,12 +247,6 @@
       "name": "Eastman Chemical",
       "score": 63,
       "market": "US"
-    },
-    {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 63,
-      "market": "UK"
     },
     {
       "ticker": "FNB",
@@ -265,13 +259,19 @@
       "name": "Lear Corp",
       "score": 62,
       "market": "US"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 61,
+      "market": "US"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 70,
+      "score": 68,
       "market": "UK"
     },
     {
@@ -287,49 +287,49 @@
       "market": "UK"
     },
     {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 62,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
       "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 60,
       "market": "UK"
     },
     {
       "ticker": "CURY.L",
       "name": "Currys",
-      "score": 60,
+      "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
+      "ticker": "OSB.L",
+      "name": "OSB Group",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 58,
+      "market": "UK"
+    },
+    {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
       "score": 57,
       "market": "UK"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
       "score": 56,
       "market": "UK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 55,
-      "market": "US"
     }
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 389
+  "bearishAlertCount": 391
 }
