@@ -8,13 +8,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 76,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 76,
@@ -27,6 +20,20 @@
       "score": 74,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "8058.T",
@@ -43,29 +50,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "BG",
       "name": "Bunge Global",
-      "score": 71,
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -80,13 +80,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 19,
@@ -94,15 +87,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
+      "ticker": "CPNG",
+      "name": "Coupang",
       "score": 19,
       "market": "US",
       "capCategory": "Large"
@@ -115,8 +101,29 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "APP",
-      "name": "AppLovin",
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -134,13 +141,6 @@
       "score": 21,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -177,7 +177,7 @@
     {
       "ticker": "BG",
       "name": "Bunge Global",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
@@ -207,33 +207,33 @@
   ],
   "topMidCap": [
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 76,
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 73,
       "market": "UK"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 72,
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 73,
       "market": "UK"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 68,
+      "market": "US"
     },
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 69,
+      "score": 68,
       "market": "UK"
     },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 66,
-      "market": "US"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 65,
       "market": "US"
     },
     {
@@ -249,21 +249,21 @@
       "market": "US"
     },
     {
+      "ticker": "SGRO.L",
+      "name": "Segro",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
-      "score": 61,
+      "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
+      "ticker": "PLUS.L",
+      "name": "Plus500",
       "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "GAW.L",
-      "name": "Games Workshop",
-      "score": 59,
       "market": "UK"
     }
   ],
@@ -271,7 +271,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 70,
+      "score": 72,
       "market": "UK"
     },
     {
@@ -281,55 +281,55 @@
       "market": "US"
     },
     {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 63,
       "market": "UK"
     },
     {
       "ticker": "SUPR.L",
       "name": "Supermarket Income REIT",
-      "score": 62,
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "OSB.L",
       "name": "OSB Group",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 59,
+      "score": 60,
       "market": "UK"
     },
     {
       "ticker": "SFOR.L",
       "name": "S4 Capital",
-      "score": 59,
+      "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
-  "avgScore": 46,
-  "bearishAlertCount": 395
+  "avgScore": 47,
+  "bearishAlertCount": 392
 }
