@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 79,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 77,
@@ -24,14 +31,7 @@
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 73,
+      "score": 74,
       "market": "UK",
       "capCategory": "Mid"
     },
@@ -43,10 +43,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 72,
-      "market": "US",
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 73,
+      "market": "JP",
       "capCategory": "Large"
     },
     {
@@ -66,7 +66,7 @@
     {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 70,
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     }
@@ -80,16 +80,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CPNG",
-      "name": "Coupang",
-      "score": 19,
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,15 +94,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 20,
       "market": "US",
       "capCategory": "Mid"
@@ -122,8 +108,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
+      "ticker": "CPNG",
+      "name": "Coupang",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -136,11 +122,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DJT",
-      "name": "Trump Media",
+      "ticker": "IONQ",
+      "name": "IonQ",
       "score": 21,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FICO",
+      "name": "Fair Isaac (FICO)",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -169,10 +169,10 @@
       "market": "JP"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 72,
-      "market": "US"
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 73,
+      "market": "JP"
     },
     {
       "ticker": "BG",
@@ -183,6 +183,18 @@
     {
       "ticker": "SLB",
       "name": "Schlumberger",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "BP.L",
+      "name": "BP",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
       "score": 70,
       "market": "US"
     },
@@ -191,31 +203,19 @@
       "name": "Albemarle",
       "score": 70,
       "market": "US"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 70,
-      "market": "HK"
-    },
-    {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 70,
-      "market": "HK"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 73,
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 79,
       "market": "UK"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 73,
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 74,
       "market": "UK"
     },
     {
@@ -233,8 +233,20 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 66,
+      "score": 67,
       "market": "US"
+    },
+    {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "SGRO.L",
+      "name": "Segro",
+      "score": 65,
+      "market": "UK"
     },
     {
       "ticker": "FNB",
@@ -249,21 +261,9 @@
       "market": "US"
     },
     {
-      "ticker": "SGRO.L",
-      "name": "Segro",
-      "score": 62,
-      "market": "UK"
-    },
-    {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
       "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 60,
       "market": "UK"
     }
   ],
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 392
+  "bearishAlertCount": 396
 }
