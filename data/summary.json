@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 72,
@@ -48,13 +55,6 @@
       "score": 71,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Small"
     },
     {
       "ticker": "SLB",
@@ -75,14 +75,7 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 14,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CPNG",
-      "name": "Coupang",
-      "score": 18,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
@@ -92,6 +85,13 @@
       "score": 18,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "SOUN",
@@ -115,30 +115,30 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
+      "ticker": "APP",
+      "name": "AppLovin",
       "score": 20,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 20,
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DJT",
+      "name": "Trump Media",
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "IONQ",
       "name": "IonQ",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     }
@@ -169,6 +169,12 @@
       "market": "JP"
     },
     {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 71,
@@ -187,22 +193,16 @@
       "market": "US"
     },
     {
-      "ticker": "T",
-      "name": "AT&T",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 69,
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 70,
       "market": "HK"
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
-      "score": 68,
-      "market": "US"
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 70,
+      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -225,22 +225,16 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 67,
-      "market": "US"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 66,
       "market": "US"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 65,
-      "market": "UK"
+      "market": "US"
     },
     {
       "ticker": "FNB",
@@ -261,9 +255,15 @@
       "market": "UK"
     },
     {
-      "ticker": "SGRO.L",
-      "name": "Segro",
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
       "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "GAW.L",
+      "name": "Games Workshop",
+      "score": 59,
       "market": "UK"
     }
   ],
@@ -271,7 +271,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 71,
+      "score": 70,
       "market": "UK"
     },
     {
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 56,
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
+      "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 46,
-  "bearishAlertCount": 393
+  "bearishAlertCount": 395
 }
