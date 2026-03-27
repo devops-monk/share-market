@@ -8,6 +8,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 76,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 76,
@@ -22,13 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "8058.T",
       "name": "Mitsubishi Corp",
       "score": 73,
@@ -36,11 +36,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 73,
-      "market": "JP",
-      "capCategory": "Large"
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "BG",
@@ -50,11 +50,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 71,
       "market": "UK",
-      "capCategory": "Mid"
+      "capCategory": "Small"
     },
     {
       "ticker": "SLB",
@@ -64,8 +64,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -75,7 +75,7 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 15,
+      "score": 14,
       "market": "US",
       "capCategory": "Large"
     },
@@ -92,20 +92,6 @@
       "score": 18,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "SOUN",
@@ -129,15 +115,29 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 19,
+      "ticker": "BROS",
+      "name": "Dutch Bros",
+      "score": 20,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "IONQ",
       "name": "IonQ",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -169,12 +169,6 @@
       "market": "JP"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 73,
-      "market": "JP"
-    },
-    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 71,
@@ -183,12 +177,6 @@
     {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy",
       "score": 70,
       "market": "US"
     },
@@ -203,26 +191,44 @@
       "name": "AT&T",
       "score": 69,
       "market": "US"
+    },
+    {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 69,
+      "market": "HK"
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 68,
+      "market": "US"
     }
   ],
   "topMidCap": [
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 73,
+      "score": 76,
       "market": "UK"
     },
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 71,
+      "score": 72,
       "market": "UK"
     },
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 68,
+      "score": 69,
       "market": "UK"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 67,
+      "market": "US"
     },
     {
       "ticker": "LUNR",
@@ -231,14 +237,14 @@
       "market": "US"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 64,
-      "market": "US"
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 65,
+      "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
       "score": 64,
       "market": "US"
     },
@@ -255,15 +261,9 @@
       "market": "UK"
     },
     {
-      "ticker": "GAW.L",
-      "name": "Games Workshop",
-      "score": 59,
-      "market": "UK"
-    },
-    {
       "ticker": "SGRO.L",
       "name": "Segro",
-      "score": 59,
+      "score": 60,
       "market": "UK"
     }
   ],
@@ -271,7 +271,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 69,
+      "score": 71,
       "market": "UK"
     },
     {
@@ -287,6 +287,12 @@
       "market": "UK"
     },
     {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 63,
@@ -296,12 +302,6 @@
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 62,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 46,
-  "bearishAlertCount": 392
+  "bearishAlertCount": 393
 }
