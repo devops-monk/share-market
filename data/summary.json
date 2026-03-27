@@ -8,6 +8,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 76,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 76,
@@ -34,13 +41,6 @@
       "score": 73,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Mid"
     },
     {
       "ticker": "8058.T",
@@ -209,7 +209,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 73,
+      "score": 76,
       "market": "UK"
     },
     {
@@ -237,12 +237,6 @@
       "market": "UK"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 66,
-      "market": "UK"
-    },
-    {
       "ticker": "EMN",
       "name": "Eastman Chemical",
       "score": 63,
@@ -265,20 +259,26 @@
       "name": "Zions Bancorporation",
       "score": 61,
       "market": "US"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 61,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 67,
+      "market": "UK"
+    },
     {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 66,
-      "market": "UK"
     },
     {
       "ticker": "MARS.L",
@@ -290,6 +290,18 @@
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -311,25 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 58,
-      "market": "UK"
-    },
-    {
       "ticker": "SFOR.L",
       "name": "S4 Capital",
-      "score": 57,
-      "market": "UK"
-    },
-    {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 56,
+      "score": 58,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 391
+  "bearishAlertCount": 390
 }
