@@ -8,13 +8,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
-      "score": 77,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 76,
@@ -36,6 +29,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "8058.T",
       "name": "Mitsubishi Corp",
       "score": 73,
@@ -50,18 +50,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 72,
       "market": "UK",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "SLB",
@@ -73,15 +73,15 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 17,
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 18,
       "market": "US",
       "capCategory": "Large"
@@ -145,12 +145,6 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
-      "score": 77,
-      "market": "IN"
-    },
-    {
       "ticker": "8031.T",
       "name": "Mitsui & Co",
       "score": 76,
@@ -160,6 +154,12 @@
       "ticker": "CF",
       "name": "CF Industries",
       "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 73,
       "market": "US"
     },
     {
@@ -175,14 +175,20 @@
       "market": "JP"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 72,
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 71,
       "market": "US"
     },
     {
       "ticker": "SLB",
       "name": "Schlumberger",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 71,
       "market": "US"
     },
@@ -193,14 +199,8 @@
       "market": "UK"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
+      "ticker": "T",
+      "name": "AT&T",
       "score": 70,
       "market": "US"
     }
@@ -221,7 +221,7 @@
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 68,
+      "score": 69,
       "market": "US"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 396
+  "bearishAlertCount": 397
 }
