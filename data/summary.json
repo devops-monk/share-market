@@ -22,6 +22,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 74,
@@ -43,24 +50,17 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "ONGC.NS",
+      "name": "ONGC",
+      "score": 74,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "MRK",
       "name": "Merck",
       "score": 72,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
-      "score": 72,
-      "market": "IN",
       "capCategory": "Large"
     },
     {
@@ -163,28 +163,28 @@
       "market": "US"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 74,
+      "market": "US"
+    },
+    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 74,
       "market": "US"
     },
     {
+      "ticker": "ONGC.NS",
+      "name": "ONGC",
+      "score": 74,
+      "market": "IN"
+    },
+    {
       "ticker": "MRK",
       "name": "Merck",
       "score": 72,
       "market": "US"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
-      "score": 72,
-      "market": "IN"
     },
     {
       "ticker": "0939.HK",
@@ -261,8 +261,8 @@
       "market": "UK"
     },
     {
-      "ticker": "LAND.L",
-      "name": "Land Securities",
+      "ticker": "PLUS.L",
+      "name": "Plus500",
       "score": 59,
       "market": "UK"
     }
@@ -281,20 +281,14 @@
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 62,
-      "market": "UK"
-    },
-    {
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 61,
       "market": "UK"
     },
@@ -305,8 +299,8 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
+      "ticker": "CURY.L",
+      "name": "Currys",
       "score": 60,
       "market": "UK"
     },
@@ -317,19 +311,25 @@
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 60,
-      "market": "UK"
-    },
-    {
       "ticker": "OSB.L",
       "name": "OSB Group",
       "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 58,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 398
+  "bearishAlertCount": 399
 }
