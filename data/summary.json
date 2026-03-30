@@ -8,6 +8,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 74,
@@ -62,22 +69,22 @@
       "score": 71,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 71,
-      "market": "FR",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 14,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 18,
+      "market": "US",
+      "capCategory": "Small"
     },
     {
       "ticker": "DASH",
@@ -94,13 +101,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 20,
@@ -108,8 +108,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "SHOP",
+      "name": "Shopify",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -122,22 +122,22 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "FICO",
-      "name": "Fair Isaac (FICO)",
+      "ticker": "CPNG",
+      "name": "Coupang",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CPNG",
-      "name": "Coupang",
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -149,6 +149,12 @@
       "name": "Mitsui & Co",
       "score": 78,
       "market": "JP"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 75,
+      "market": "US"
     },
     {
       "ticker": "ONGC.NS",
@@ -197,12 +203,6 @@
       "name": "CNOOC",
       "score": 71,
       "market": "HK"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 70,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -249,12 +249,6 @@
       "market": "US"
     },
     {
-      "ticker": "EMN",
-      "name": "Eastman Chemical",
-      "score": 62,
-      "market": "US"
-    },
-    {
       "ticker": "SGRO.L",
       "name": "Segro",
       "score": 62,
@@ -264,6 +258,12 @@
       "ticker": "QQ.L",
       "name": "QinetiQ",
       "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "PHP.L",
+      "name": "Primary Health Properties",
+      "score": 61,
       "market": "UK"
     }
   ],
@@ -299,14 +299,14 @@
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 63,
+      "ticker": "MGNS.L",
+      "name": "Morgan Sindall",
+      "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
+      "ticker": "CURY.L",
+      "name": "Currys",
       "score": 63,
       "market": "UK"
     },
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 397
+  "bearishAlertCount": 396
 }
