@@ -15,20 +15,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 74,
@@ -43,9 +29,16 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 73,
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -64,8 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -73,18 +73,18 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 20,
+      "score": 14,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "NOW",
@@ -94,13 +94,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "CPNG",
       "name": "Coupang",
       "score": 21,
@@ -108,25 +101,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 22,
+      "ticker": "ZS",
+      "name": "Zscaler",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "DJT",
-      "name": "Trump Media",
+      "ticker": "BROS",
+      "name": "Dutch Bros",
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "AXON",
@@ -136,11 +122,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "APP",
-      "name": "AppLovin",
+      "ticker": "TTD",
+      "name": "Trade Desk",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -157,27 +157,21 @@
       "market": "JP"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 75,
-      "market": "US"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 74,
-      "market": "US"
-    },
-    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 74,
       "market": "IN"
     },
     {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 73,
+      "score": 72,
       "market": "US"
     },
     {
@@ -193,8 +187,14 @@
       "market": "HK"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 71,
       "market": "US"
     },
@@ -219,50 +219,50 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 67,
-      "market": "US"
-    },
-    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 67,
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 65,
       "market": "US"
     },
     {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 65,
+      "score": 64,
       "market": "US"
     },
     {
       "ticker": "LEA",
       "name": "Lear Corp",
-      "score": 64,
+      "score": 63,
       "market": "US"
     },
     {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 62,
-      "market": "UK"
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 61,
+      "market": "US"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
+      "ticker": "EMN",
+      "name": "Eastman Chemical",
       "score": 60,
       "market": "US"
     },
     {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
+      "ticker": "SGRO.L",
+      "name": "Segro",
       "score": 60,
       "market": "UK"
     }
@@ -281,8 +281,26 @@
       "market": "UK"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "OSB.L",
+      "name": "OSB Group",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "HMSO.L",
       "name": "Hammerson",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
       "score": 62,
       "market": "UK"
     },
@@ -299,37 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 59,
-      "market": "UK"
-    },
-    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 58,
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
       "score": 57,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
-  "avgScore": 47,
-  "bearishAlertCount": 399
+  "avgScore": 46,
+  "bearishAlertCount": 402
 }
