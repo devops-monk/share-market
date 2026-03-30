@@ -22,13 +22,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 74,
@@ -36,18 +29,39 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "MRK",
       "name": "Merck",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "0939.HK",
@@ -55,43 +69,15 @@
       "score": 72,
       "market": "HK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 72,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Small"
     },
     {
       "ticker": "HIMS",
@@ -101,22 +87,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify",
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -129,18 +101,46 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CPNG",
       "name": "Coupang",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 24,
+      "market": "FR",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "VRNS",
+      "name": "Varonis Systems",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -163,14 +163,20 @@
       "market": "IN"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 74,
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 73,
       "market": "US"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 72,
       "market": "US"
     },
@@ -187,22 +193,16 @@
       "market": "HK"
     },
     {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
       "score": 71,
-      "market": "FR"
+      "market": "US"
     },
     {
-      "ticker": "8058.T",
-      "name": "Mitsubishi Corp",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 71,
-      "market": "JP"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 71,
-      "market": "HK"
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -213,16 +213,16 @@
       "market": "UK"
     },
     {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 71,
       "market": "UK"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 69,
-      "market": "US"
     },
     {
       "ticker": "IGG.L",
@@ -239,12 +239,18 @@
     {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 64,
+      "score": 65,
       "market": "US"
     },
     {
       "ticker": "LEA",
       "name": "Lear Corp",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "EMN",
+      "name": "Eastman Chemical",
       "score": 63,
       "market": "US"
     },
@@ -259,19 +265,13 @@
       "name": "QinetiQ",
       "score": 62,
       "market": "UK"
-    },
-    {
-      "ticker": "EMN",
-      "name": "Eastman Chemical",
-      "score": 61,
-      "market": "US"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 73,
+      "score": 72,
       "market": "UK"
     },
     {
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 863,
-  "avgScore": 47,
-  "bearishAlertCount": 392
+  "avgScore": 48,
+  "bearishAlertCount": 396
 }
