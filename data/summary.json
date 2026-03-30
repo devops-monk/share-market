@@ -36,13 +36,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 74,
@@ -57,17 +50,24 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0939.HK",
       "name": "China Construction Bank",
       "score": 72,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 72,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -87,13 +87,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 21,
@@ -103,6 +96,13 @@
     {
       "ticker": "CPNG",
       "name": "Coupang",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -181,12 +181,6 @@
       "market": "IN"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "0939.HK",
       "name": "China Construction Bank",
       "score": 72,
@@ -203,19 +197,25 @@
       "name": "Albemarle",
       "score": 71,
       "market": "US"
+    },
+    {
+      "ticker": "8058.T",
+      "name": "Mitsubishi Corp",
+      "score": 71,
+      "market": "JP"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "BEZ.L",
+      "name": "Beazley",
       "score": 74,
       "market": "UK"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 74,
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 71,
       "market": "UK"
     },
     {
@@ -249,6 +249,12 @@
       "market": "US"
     },
     {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
       "score": 60,
@@ -258,12 +264,6 @@
       "ticker": "PHP.L",
       "name": "Primary Health Properties",
       "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 59,
       "market": "UK"
     }
   ],
@@ -307,7 +307,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 60,
+      "score": 59,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 399
+  "bearishAlertCount": 398
 }
