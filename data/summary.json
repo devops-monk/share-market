@@ -8,13 +8,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 76,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 74,
@@ -26,6 +19,20 @@
       "name": "ONGC",
       "score": 74,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "8058.T",
+      "name": "Mitsubishi Corp",
+      "score": 74,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 73,
+      "market": "JP",
       "capCategory": "Large"
     },
     {
@@ -62,33 +69,19 @@
       "score": 71,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "8058.T",
-      "name": "Mitsubishi Corp",
-      "score": 71,
-      "market": "JP",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 16,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 17,
+      "score": 14,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CPNG",
-      "name": "Coupang",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 18,
       "market": "US",
       "capCategory": "Large"
@@ -96,20 +89,13 @@
     {
       "ticker": "DASH",
       "name": "DoorDash",
-      "score": 18,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify",
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 19,
       "market": "US",
       "capCategory": "Large"
@@ -129,16 +115,30 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 20,
+      "ticker": "BROS",
+      "name": "Dutch Bros",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "FICO",
+      "name": "Fair Isaac (FICO)",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
+      "ticker": "CPNG",
+      "name": "Coupang",
       "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     }
@@ -151,16 +151,22 @@
       "market": "JP"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 76,
-      "market": "JP"
-    },
-    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 74,
       "market": "IN"
+    },
+    {
+      "ticker": "8058.T",
+      "name": "Mitsubishi Corp",
+      "score": 74,
+      "market": "JP"
+    },
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 73,
+      "market": "JP"
     },
     {
       "ticker": "0939.HK",
@@ -187,20 +193,14 @@
       "market": "US"
     },
     {
-      "ticker": "8058.T",
-      "name": "Mitsubishi Corp",
-      "score": 71,
-      "market": "JP"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 71,
       "market": "HK"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
+      "ticker": "MRK",
+      "name": "Merck",
       "score": 70,
       "market": "US"
     }
@@ -219,14 +219,20 @@
       "market": "UK"
     },
     {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 68,
+      "market": "UK"
+    },
+    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
       "score": 67,
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
       "score": 67,
       "market": "UK"
     },
@@ -243,15 +249,9 @@
       "market": "US"
     },
     {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "EMN",
       "name": "Eastman Chemical",
-      "score": 60,
+      "score": 63,
       "market": "US"
     },
     {
@@ -261,8 +261,8 @@
       "market": "UK"
     },
     {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
+      "ticker": "BAB.L",
+      "name": "Babcock International",
       "score": 60,
       "market": "UK"
     }
@@ -275,8 +275,32 @@
       "market": "US"
     },
     {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "OSB.L",
+      "name": "OSB Group",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "HMSO.L",
       "name": "Hammerson",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
       "score": 63,
       "market": "UK"
     },
@@ -287,33 +311,15 @@
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 61,
-      "market": "UK"
-    },
-    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
+      "ticker": "TSTL.L",
+      "name": "Tristel",
       "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 59,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "Ashmore Group",
       "score": 58,
       "market": "UK"
-    },
-    {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 57,
-      "market": "UK"
     }
   ],
   "totalStocks": 863,
-  "avgScore": 46,
-  "bearishAlertCount": 403
+  "avgScore": 47,
+  "bearishAlertCount": 397
 }
