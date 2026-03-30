@@ -29,20 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0939.HK",
       "name": "China Construction Bank",
       "score": 72,
@@ -69,13 +55,48 @@
       "score": 71,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "8058.T",
+      "name": "Mitsubishi Corp",
+      "score": 71,
+      "market": "JP",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
+      "ticker": "ZS",
+      "name": "Zscaler",
+      "score": 16,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 14,
+      "score": 17,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CPNG",
+      "name": "Coupang",
+      "score": 18,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
@@ -87,58 +108,37 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "SHOP",
+      "name": "Shopify",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
       "score": 20,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
-      "ticker": "CPNG",
-      "name": "Coupang",
-      "score": 21,
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 20,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 21,
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "BROS",
       "name": "Dutch Bros",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
-      "score": 23,
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     }
@@ -161,18 +161,6 @@
       "name": "ONGC",
       "score": 74,
       "market": "IN"
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 72,
-      "market": "US"
     },
     {
       "ticker": "0939.HK",
@@ -203,6 +191,18 @@
       "name": "Mitsubishi Corp",
       "score": 71,
       "market": "JP"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 71,
+      "market": "HK"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 70,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -219,22 +219,16 @@
       "market": "UK"
     },
     {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 65,
-      "market": "US"
     },
     {
       "ticker": "FNB",
@@ -249,10 +243,10 @@
       "market": "US"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 61,
-      "market": "US"
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 63,
+      "market": "UK"
     },
     {
       "ticker": "EMN",
@@ -265,6 +259,12 @@
       "name": "Segro",
       "score": 60,
       "market": "UK"
+    },
+    {
+      "ticker": "PHP.L",
+      "name": "Primary Health Properties",
+      "score": 60,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -275,27 +275,15 @@
       "market": "US"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -305,8 +293,8 @@
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 61,
       "market": "UK"
     },
@@ -314,6 +302,18 @@
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "OSB.L",
+      "name": "OSB Group",
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 59,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 46,
-  "bearishAlertCount": 402
+  "bearishAlertCount": 403
 }
