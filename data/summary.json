@@ -8,13 +8,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 74,
@@ -50,6 +43,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0939.HK",
       "name": "China Construction Bank",
       "score": 72,
@@ -57,8 +57,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -73,22 +73,8 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 17,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
       "score": 19,
       "market": "US",
       "capCategory": "Large"
@@ -101,15 +87,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 20,
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 19,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Small"
     },
     {
-      "ticker": "SHOP",
-      "name": "Shopify",
+      "ticker": "RBLX",
+      "name": "Roblox",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -122,23 +108,37 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "CPNG",
-      "name": "Coupang",
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
+      "ticker": "SHOP",
+      "name": "Shopify",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 21,
+      "ticker": "VRNS",
+      "name": "Varonis Systems",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     }
@@ -149,12 +149,6 @@
       "name": "Mitsui & Co",
       "score": 78,
       "market": "JP"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 75,
-      "market": "US"
     },
     {
       "ticker": "ONGC.NS",
@@ -175,14 +169,20 @@
       "market": "JP"
     },
     {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "0939.HK",
       "name": "China Construction Bank",
       "score": 72,
       "market": "HK"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 71,
       "market": "US"
     },
@@ -221,7 +221,7 @@
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 68,
+      "score": 69,
       "market": "US"
     },
     {
@@ -261,10 +261,10 @@
       "market": "UK"
     },
     {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
+      "ticker": "EMN",
+      "name": "Eastman Chemical",
       "score": 61,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 396
+  "bearishAlertCount": 394
 }
