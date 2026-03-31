@@ -43,10 +43,24 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 73,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 72,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 72,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -55,23 +69,16 @@
       "score": 71,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RRC",
-      "name": "Range Resources",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
+    {
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 19,
+      "market": "FR",
+      "capCategory": "Small"
+    },
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
@@ -101,25 +108,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
-      "score": 22,
-      "market": "FR",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "BYND",
@@ -129,8 +122,8 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -138,6 +131,13 @@
     {
       "ticker": "VRNS",
       "name": "Varonis Systems",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
@@ -169,10 +169,22 @@
       "market": "US"
     },
     {
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 73,
+      "market": "HK"
+    },
+    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 72,
+      "market": "HK"
     },
     {
       "ticker": "MPC",
@@ -191,18 +203,6 @@
       "name": "Range Resources",
       "score": 71,
       "market": "US"
-    },
-    {
-      "ticker": "9433.T",
-      "name": "KDDI",
-      "score": 70,
-      "market": "JP"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 70,
-      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -261,10 +261,10 @@
       "market": "UK"
     },
     {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 63,
-      "market": "UK"
+      "ticker": "NNN",
+      "name": "NNN REIT",
+      "score": 60,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -287,20 +287,14 @@
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 61,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 62,
       "market": "UK"
     },
     {
       "ticker": "MGNS.L",
       "name": "Morgan Sindall",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
       "score": 61,
       "market": "UK"
     },
@@ -317,19 +311,25 @@
       "market": "UK"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 60,
+      "market": "UK"
+    },
+    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 59,
+      "ticker": "GYM.L",
+      "name": "Gym Group",
+      "score": 57,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 396
+  "bearishAlertCount": 394
 }
