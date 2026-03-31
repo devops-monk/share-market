@@ -1,11 +1,25 @@
 {
   "topOverall": [
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 76,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 76,
       "market": "JP",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 75,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "8031.T",
@@ -15,20 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 74,
@@ -36,17 +36,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 73,
-      "market": "HK",
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 72,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -94,16 +94,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "SOUN",
       "name": "SoundHound AI",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -122,8 +115,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -136,14 +129,27 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
+      "ticker": "BROS",
+      "name": "Dutch Bros",
       "score": 23,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "MSTR",
+      "name": "MicroStrategy",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 76,
+      "market": "DE"
+    },
     {
       "ticker": "8002.T",
       "name": "Marubeni",
@@ -157,28 +163,22 @@
       "market": "JP"
     },
     {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 74,
-      "market": "US"
-    },
-    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 74,
       "market": "IN"
     },
     {
-      "ticker": "MRK",
-      "name": "Merck",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 73,
       "market": "US"
     },
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 73,
-      "market": "HK"
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 72,
+      "market": "US"
     },
     {
       "ticker": "TGT",
@@ -209,7 +209,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 74,
+      "score": 75,
       "market": "UK"
     },
     {
@@ -221,7 +221,7 @@
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 68,
+      "score": 69,
       "market": "UK"
     },
     {
@@ -231,15 +231,21 @@
       "market": "US"
     },
     {
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 64,
+      "score": 65,
       "market": "US"
     },
     {
-      "ticker": "CNA.L",
-      "name": "Centrica",
-      "score": 64,
+      "ticker": "SGRO.L",
+      "name": "Segro",
+      "score": 65,
       "market": "UK"
     },
     {
@@ -255,15 +261,9 @@
       "market": "US"
     },
     {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 61,
+      "score": 62,
       "market": "US"
     }
   ],
@@ -271,12 +271,12 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 70,
+      "score": 71,
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 67,
       "market": "UK"
     },
@@ -287,27 +287,21 @@
       "market": "US"
     },
     {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
     },
     {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 63,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -323,13 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "OSB.L",
+      "name": "OSB Group",
+      "score": 58,
       "market": "UK"
     }
   ],
-  "totalStocks": 862,
+  "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 389
+  "bearishAlertCount": 392
 }
