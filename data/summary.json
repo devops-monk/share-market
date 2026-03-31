@@ -1,8 +1,15 @@
 {
   "topOverall": [
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 76,
       "market": "US",
       "capCategory": "Large"
@@ -12,13 +19,6 @@
       "name": "RWE",
       "score": 76,
       "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 75,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -36,13 +36,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 74,
@@ -57,6 +50,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CVX",
+      "name": "Chevron",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "EOG",
       "name": "EOG Resources",
       "score": 73,
@@ -64,8 +64,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -75,23 +75,16 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 16,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HIMS",
       "name": "Hims & Hers Health",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CPNG",
-      "name": "Coupang",
       "score": 20,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "AXON",
@@ -108,9 +101,16 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CPNG",
+      "name": "Coupang",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "DASH",
       "name": "DoorDash",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
@@ -122,31 +122,37 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "GLBE",
-      "name": "Global-e Online",
+      "ticker": "IONQ",
+      "name": "IonQ",
       "score": 23,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "FICO",
+      "name": "Fair Isaac (FICO)",
       "score": 23,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
-      "ticker": "SOUN",
-      "name": "SoundHound AI",
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 23,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 76,
+      "market": "US"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 76,
       "market": "US"
     },
@@ -157,22 +163,10 @@
       "market": "DE"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 75,
-      "market": "US"
-    },
-    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 75,
       "market": "JP"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 74,
-      "market": "US"
     },
     {
       "ticker": "CF",
@@ -187,14 +181,20 @@
       "market": "IN"
     },
     {
+      "ticker": "CVX",
+      "name": "Chevron",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "EOG",
       "name": "EOG Resources",
       "score": 73,
       "market": "US"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 73,
       "market": "US"
     },
@@ -227,7 +227,7 @@
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 67,
+      "score": 68,
       "market": "US"
     },
     {
@@ -245,6 +245,12 @@
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
       "score": 63,
       "market": "US"
     },
@@ -252,12 +258,6 @@
       "ticker": "LEA",
       "name": "Lear Corp",
       "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 62,
       "market": "US"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 384
+  "bearishAlertCount": 382
 }
