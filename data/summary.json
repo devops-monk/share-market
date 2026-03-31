@@ -73,13 +73,6 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
-      "score": 19,
-      "market": "FR",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "AXON",
       "name": "Axon Enterprise",
       "score": 20,
@@ -124,6 +117,13 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -283,7 +283,7 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 62,
+      "score": 65,
       "market": "UK"
     },
     {
@@ -299,20 +299,8 @@
       "market": "UK"
     },
     {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 61,
-      "market": "UK"
-    },
-    {
       "ticker": "FOUR.L",
       "name": "4imprint",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
       "score": 60,
       "market": "UK"
     },
@@ -327,9 +315,21 @@
       "name": "Ashmore Group",
       "score": 60,
       "market": "UK"
+    },
+    {
+      "ticker": "GYM.L",
+      "name": "Gym Group",
+      "score": 57,
+      "market": "UK"
+    },
+    {
+      "ticker": "CFLT",
+      "name": "Confluent",
+      "score": 56,
+      "market": "US"
     }
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 393
+  "bearishAlertCount": 394
 }
