@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 76,
@@ -8,10 +15,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 76,
-      "market": "JP",
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 75,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -22,15 +29,22 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
+      "ticker": "8002.T",
+      "name": "Marubeni",
       "score": 75,
       "market": "JP",
       "capCategory": "Large"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
@@ -43,32 +57,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
@@ -76,13 +76,6 @@
       "ticker": "HUBS",
       "name": "HubSpot",
       "score": 16,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,13 +94,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "AXON",
       "name": "Axon Enterprise",
       "score": 21,
@@ -122,16 +108,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GLBE",
-      "name": "Global-e Online",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ",
-      "score": 22,
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
@@ -141,9 +120,36 @@
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "GLBE",
+      "name": "Global-e Online",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 76,
+      "market": "US"
+    },
     {
       "ticker": "RWE.DE",
       "name": "RWE",
@@ -151,20 +157,26 @@
       "market": "DE"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 76,
-      "market": "JP"
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 75,
+      "market": "US"
     },
     {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
+      "ticker": "8002.T",
+      "name": "Marubeni",
       "score": 75,
       "market": "JP"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 74,
       "market": "US"
     },
@@ -175,34 +187,22 @@
       "market": "IN"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "EOG",
       "name": "EOG Resources",
-      "score": 71,
+      "score": 73,
       "market": "US"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 73,
+      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -219,16 +219,16 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 69,
       "market": "UK"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 67,
+      "market": "US"
     },
     {
       "ticker": "CNA.L",
@@ -243,9 +243,9 @@
       "market": "UK"
     },
     {
-      "ticker": "EMN",
-      "name": "Eastman Chemical",
-      "score": 64,
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 63,
       "market": "US"
     },
     {
@@ -261,10 +261,10 @@
       "market": "US"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
+      "ticker": "PLUS.L",
+      "name": "Plus500",
       "score": 62,
-      "market": "US"
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 382
+  "bearishAlertCount": 384
 }
