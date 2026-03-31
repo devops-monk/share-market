@@ -115,32 +115,32 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RHM.DE",
-      "name": "Rheinmetall",
-      "score": 24,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "VRNS",
       "name": "Varonis Systems",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "MSTR",
+      "name": "MicroStrategy",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FICO",
+      "name": "Fair Isaac (FICO)",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -255,16 +255,16 @@
       "market": "UK"
     },
     {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
+      "ticker": "PLUS.L",
+      "name": "Plus500",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "NNN",
-      "name": "NNN REIT",
-      "score": 60,
-      "market": "US"
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 63,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -283,7 +283,7 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 65,
+      "score": 63,
       "market": "UK"
     },
     {
@@ -296,12 +296,6 @@
       "ticker": "MGNS.L",
       "name": "Morgan Sindall",
       "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 60,
       "market": "UK"
     },
     {
@@ -327,9 +321,15 @@
       "name": "Confluent",
       "score": 56,
       "market": "US"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 56,
+      "market": "UK"
     }
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 394
+  "bearishAlertCount": 395
 }
