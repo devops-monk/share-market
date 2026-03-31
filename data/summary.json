@@ -1,24 +1,10 @@
 {
   "topOverall": [
     {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
-      "score": 78,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "8002.T",
       "name": "Marubeni",
-      "score": 76,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
       "score": 75,
-      "market": "IN",
+      "market": "JP",
       "capCategory": "Large"
     },
     {
@@ -27,6 +13,13 @@
       "score": 74,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "ONGC.NS",
+      "name": "ONGC",
+      "score": 74,
+      "market": "IN",
+      "capCategory": "Large"
     },
     {
       "ticker": "MRK",
@@ -50,13 +43,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 72,
@@ -64,10 +50,24 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 72,
-      "market": "HK",
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RRC",
+      "name": "Range Resources",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -94,10 +94,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 22,
+      "ticker": "RBLX",
+      "name": "Roblox",
+      "score": 21,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 22,
+      "market": "FR",
       "capCategory": "Small"
     },
     {
@@ -108,29 +115,22 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "FICO",
-      "name": "Fair Isaac (FICO)",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
+      "ticker": "BYND",
+      "name": "Beyond Meat",
       "score": 23,
-      "market": "FR",
+      "market": "US",
       "capCategory": "Small"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -145,21 +145,15 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "8031.T",
-      "name": "Mitsui & Co",
-      "score": 78,
-      "market": "JP"
-    },
-    {
       "ticker": "8002.T",
       "name": "Marubeni",
-      "score": 76,
+      "score": 75,
       "market": "JP"
     },
     {
       "ticker": "ONGC.NS",
       "name": "ONGC",
-      "score": 75,
+      "score": 74,
       "market": "IN"
     },
     {
@@ -181,18 +175,6 @@
       "market": "US"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 72,
-      "market": "HK"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 72,
-      "market": "HK"
-    },
-    {
       "ticker": "MPC",
       "name": "Marathon Petroleum",
       "score": 71,
@@ -203,6 +185,24 @@
       "name": "Albemarle",
       "score": 71,
       "market": "US"
+    },
+    {
+      "ticker": "RRC",
+      "name": "Range Resources",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "9433.T",
+      "name": "KDDI",
+      "score": 70,
+      "market": "JP"
+    },
+    {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 70,
+      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -231,12 +231,6 @@
       "market": "UK"
     },
     {
-      "ticker": "BBOX.L",
-      "name": "Tritax Big Box REIT",
-      "score": 68,
-      "market": "UK"
-    },
-    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
       "score": 65,
@@ -255,37 +249,25 @@
       "market": "US"
     },
     {
-      "ticker": "SGRO.L",
-      "name": "Segro",
-      "score": 62,
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "QQ.L",
-      "name": "QinetiQ",
-      "score": 62,
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "BBOX.L",
+      "name": "Tritax Big Box REIT",
+      "score": 63,
       "market": "UK"
     }
   ],
   "topSmallCap": [
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 73,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "OSB.L",
-      "name": "OSB Group",
-      "score": 67,
-      "market": "UK"
-    },
     {
       "ticker": "CMA",
       "name": "Comerica",
@@ -293,43 +275,61 @@
       "market": "US"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 66,
+      "ticker": "EXAS",
+      "name": "Exact Sciences",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 61,
       "market": "UK"
     },
     {
       "ticker": "MGNS.L",
       "name": "Morgan Sindall",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 63,
+      "score": 61,
       "market": "UK"
     },
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 62,
+      "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
-      "score": 59,
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 60,
       "market": "UK"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 58,
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 863,
-  "avgScore": 48,
+  "avgScore": 47,
   "bearishAlertCount": 396
 }
