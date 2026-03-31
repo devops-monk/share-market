@@ -36,27 +36,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 72,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 71,
@@ -69,13 +48,34 @@
       "score": 71,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 15,
+      "score": 14,
       "market": "US",
       "capCategory": "Large"
     },
@@ -87,16 +87,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 20,
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
-      "score": 21,
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,8 +108,29 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "CPNG",
       "name": "Coupang",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -118,27 +139,6 @@
       "ticker": "SNAP",
       "name": "Snap",
       "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
-      "score": 23,
       "market": "US",
       "capCategory": "Mid"
     }
@@ -169,24 +169,6 @@
       "market": "US"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 72,
-      "market": "HK"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 71,
@@ -202,6 +184,24 @@
       "ticker": "CF",
       "name": "CF Industries",
       "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 70,
       "market": "US"
     }
   ],
@@ -261,17 +261,17 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
+      "ticker": "SGRO.L",
+      "name": "Segro",
       "score": 61,
-      "market": "US"
+      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 68,
+      "score": 70,
       "market": "UK"
     },
     {
@@ -299,6 +299,12 @@
       "market": "UK"
     },
     {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 62,
@@ -311,20 +317,14 @@
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 60,
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 58,
       "market": "UK"
     },
     {
       "ticker": "GYM.L",
       "name": "Gym Group",
-      "score": 57,
-      "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
       "score": 57,
       "market": "UK"
     }
