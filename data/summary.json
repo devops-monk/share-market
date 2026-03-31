@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 76,
@@ -29,8 +36,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "CVX",
+      "name": "Chevron",
       "score": 75,
       "market": "US",
       "capCategory": "Large"
@@ -57,17 +64,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CVX",
-      "name": "Chevron",
+      "ticker": "MRK",
+      "name": "Merck",
       "score": 74,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
-      "score": 74,
-      "market": "IN",
       "capCategory": "Large"
     }
   ],
@@ -80,15 +80,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "CPNG",
-      "name": "Coupang",
-      "score": 21,
+      "ticker": "APP",
+      "name": "AppLovin",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "APP",
-      "name": "AppLovin",
+      "ticker": "CPNG",
+      "name": "Coupang",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -115,13 +115,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FICO",
-      "name": "Fair Isaac (FICO)",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CELH",
       "name": "Celsius Holdings",
       "score": 23,
@@ -141,6 +134,13 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IonQ",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -157,6 +157,12 @@
       "market": "US"
     },
     {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 76,
+      "market": "US"
+    },
+    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 76,
@@ -169,8 +175,8 @@
       "market": "DE"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "CVX",
+      "name": "Chevron",
       "score": 75,
       "market": "US"
     },
@@ -187,8 +193,8 @@
       "market": "JP"
     },
     {
-      "ticker": "CVX",
-      "name": "Chevron",
+      "ticker": "MRK",
+      "name": "Merck",
       "score": 74,
       "market": "US"
     },
@@ -197,12 +203,6 @@
       "name": "ONGC",
       "score": 74,
       "market": "IN"
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 73,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -261,10 +261,10 @@
       "market": "US"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
+      "ticker": "EMN",
+      "name": "Eastman Chemical",
       "score": 62,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "topSmallCap": [
