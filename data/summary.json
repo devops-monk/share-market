@@ -115,6 +115,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "RHM.DE",
+      "name": "Rheinmetall",
+      "score": 24,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "VRNS",
       "name": "Varonis Systems",
       "score": 24,
@@ -131,13 +138,6 @@
     {
       "ticker": "MSTR",
       "name": "MicroStrategy",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FICO",
-      "name": "Fair Isaac (FICO)",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -255,19 +255,25 @@
       "market": "UK"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "BBOX.L",
       "name": "Tritax Big Box REIT",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "NNN",
+      "name": "NNN REIT",
+      "score": 60,
+      "market": "US"
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 67,
+      "market": "UK"
+    },
     {
       "ticker": "CMA",
       "name": "Comerica",
@@ -293,20 +299,20 @@
       "market": "UK"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "MGNS.L",
       "name": "Morgan Sindall",
       "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
+      "ticker": "FOUR.L",
+      "name": "4imprint",
       "score": 60,
       "market": "UK"
     },
@@ -321,15 +327,9 @@
       "name": "Confluent",
       "score": 56,
       "market": "US"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 56,
-      "market": "UK"
     }
   ],
   "totalStocks": 863,
-  "avgScore": 47,
+  "avgScore": 48,
   "bearishAlertCount": 395
 }
