@@ -1,7 +1,7 @@
 ticker,name,market,sector,price,changePercent,marketCap,capCategory,pe,rsi,sma50,sma200,bearishScore,bullishScore,sentimentAvg,compositeScore
 0700.HK,Tencent,HK,Technology,484,-13.93,4374086287360,Large,17.696526,32.8,549.47,582.92,7,0,0.000,35
 9988.HK,Alibaba Group,HK,Technology,119,-45.91,2272817053696,Large,21.715328,35.1,146.86,141.84,3,2,0.000,43
-0939.HK,China Construction Bank,HK,Financials,8.39,28.29,2256251387904,Large,,59.4,7.95,7.87,0,6,0.000,62
+0939.HK,China Construction Bank,HK,Financials,8.39,28.29,2256251387904,Large,5.7074833,59.4,7.95,7.87,0,6,0.000,69
 1398.HK,ICBC,HK,Financials,6.86,22.94,3209491382272,Large,6.0707965,63.6,6.43,6.18,0,6,0.000,70
 0941.HK,China Mobile,HK,Communication,79.15,55.35,1732684808192,Large,11.100982,45.7,79.01,84.33,6,0,0.000,44
 2318.HK,Ping An Insurance,HK,Financials,59.45,-35.76,1181039853568,Large,7.0605702,36.6,66.92,59.10,2,2,0.000,55
@@ -11,7 +11,7 @@ ticker,name,market,sector,price,changePercent,marketCap,capCategory,pe,rsi,sma50
 9618.HK,JD.com,HK,Technology,113.2,-64.84,349370712064,Large,15.506848,57.8,109.17,120.27,5,2,0.000,45
 9999.HK,NetEase,HK,Technology,170.5,7.77,549430886400,Large,14.376055,35.9,190.20,210.61,7,0,0.000,36
 0388.HK,Hong Kong Exchanges,HK,Financials,388.6,-15.04,491202510848,Large,27.757143,35.9,413.41,423.25,6,0,0.000,38
-2020.HK,ANTA Sports,HK,Consumer Cyclical,75.7,-40.30,209726816256,Large,13.916207,35.5,80.07,86.63,7,0,0.000,41
+2020.HK,ANTA Sports,HK,Consumer Cyclical,75.7,-40.30,209726816256,Large,13.941068,35.5,80.07,86.63,7,0,0.000,41
 0027.HK,Galaxy Entertainment,HK,Consumer Cyclical,35,-50.00,153273434112,Large,14.344262,34.4,39.76,39.13,2,2,0.000,49
 1810.HK,Xiaomi,HK,Technology,31.76,23.34,822415785984,Large,17.943502,41.5,34.75,45.81,8,0,0.000,31
 0016.HK,Sun Hung Kai Properties,HK,Real Estate,129.2,9.68,374393208832,Large,17,44.3,129.60,103.27,2,3,0.000,62
