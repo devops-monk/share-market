@@ -15,13 +15,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 76,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
       "score": 76,
@@ -40,6 +33,13 @@
       "name": "Marubeni",
       "score": 76,
       "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 75,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -87,13 +87,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RHM.DE",
-      "name": "Rheinmetall",
-      "score": 22,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "APP",
       "name": "AppLovin",
       "score": 22,
@@ -136,6 +129,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RHM.DE",
+      "name": "Rheinmetall",
+      "score": 24,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SOUN",
       "name": "SoundHound AI",
       "score": 24,
@@ -148,12 +148,6 @@
       "ticker": "DVN",
       "name": "Devon Energy",
       "score": 77,
-      "market": "US"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 76,
       "market": "US"
     },
     {
@@ -173,6 +167,12 @@
       "name": "Marubeni",
       "score": 76,
       "market": "JP"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 75,
+      "market": "US"
     },
     {
       "ticker": "CF",
@@ -295,7 +295,7 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 62,
+      "score": 61,
       "market": "UK"
     },
     {
@@ -311,15 +311,15 @@
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 59,
-      "market": "UK"
-    },
-    {
       "ticker": "GYM.L",
       "name": "Gym Group",
       "score": 58,
+      "market": "UK"
+    },
+    {
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 57,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 388
+  "bearishAlertCount": 391
 }
