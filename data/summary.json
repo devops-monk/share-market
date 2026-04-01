@@ -29,13 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 75,
@@ -50,8 +43,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "T",
-      "name": "AT&T",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
@@ -68,6 +61,13 @@
       "name": "Phillips 66",
       "score": 73,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 73,
+      "market": "DE",
       "capCategory": "Large"
     }
   ],
@@ -169,12 +169,6 @@
       "market": "JP"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 75,
-      "market": "US"
-    },
-    {
       "ticker": "CF",
       "name": "CF Industries",
       "score": 75,
@@ -187,8 +181,8 @@
       "market": "US"
     },
     {
-      "ticker": "T",
-      "name": "AT&T",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 74,
       "market": "US"
     },
@@ -203,6 +197,12 @@
       "name": "RWE",
       "score": 73,
       "market": "DE"
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 72,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -275,16 +275,16 @@
       "market": "UK"
     },
     {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 67,
+      "market": "UK"
+    },
+    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 66,
-      "market": "UK"
     },
     {
       "ticker": "EXAS",
