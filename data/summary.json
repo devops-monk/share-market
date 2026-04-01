@@ -3,21 +3,21 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 77,
+      "score": 80,
       "market": "UK",
       "capCategory": "Mid"
     },
     {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
-      "score": 76,
+      "score": 77,
       "market": "FR",
       "capCategory": "Large"
     },
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 74,
+      "score": 75,
       "market": "DE",
       "capCategory": "Large"
     },
@@ -36,10 +36,24 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 72,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 72,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -50,23 +64,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 71,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 70,
       "market": "US",
       "capCategory": "Large"
     }
@@ -80,43 +80,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CPNG",
-      "name": "Coupang",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "APP",
       "name": "AppLovin",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ",
+      "ticker": "CPNG",
+      "name": "Coupang",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -136,9 +115,30 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IonQ",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "ZS",
       "name": "Zscaler",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     }
@@ -147,13 +147,13 @@
     {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
-      "score": 76,
+      "score": 77,
       "market": "FR"
     },
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 74,
+      "score": 75,
       "market": "DE"
     },
     {
@@ -169,10 +169,22 @@
       "market": "US"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 72,
       "market": "IN"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 72,
+      "market": "HK"
     },
     {
       "ticker": "TGT",
@@ -181,41 +193,29 @@
       "market": "US"
     },
     {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "1398.HK",
       "name": "ICBC",
       "score": 71,
       "market": "HK"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines",
-      "score": 70,
-      "market": "US"
     }
   ],
   "topMidCap": [
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 77,
+      "score": 80,
       "market": "UK"
     },
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 70,
+      "score": 71,
       "market": "UK"
     },
     {
@@ -233,14 +233,26 @@
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 66,
+      "score": 67,
       "market": "US"
     },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 65,
+      "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "CWK.L",
+      "name": "Cranswick",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 65,
+      "market": "UK"
     },
     {
       "ticker": "LEA",
@@ -249,21 +261,9 @@
       "market": "US"
     },
     {
-      "ticker": "BLND.L",
-      "name": "British Land",
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
       "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 63,
       "market": "UK"
     }
   ],
@@ -277,7 +277,7 @@
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 67,
+      "score": 69,
       "market": "UK"
     },
     {
@@ -295,13 +295,13 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 64,
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -313,6 +313,12 @@
     {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 59,
       "market": "UK"
     },
@@ -321,15 +327,9 @@
       "name": "4imprint",
       "score": 57,
       "market": "UK"
-    },
-    {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 57,
-      "market": "UK"
     }
   ],
   "totalStocks": 863,
-  "avgScore": 47,
-  "bearishAlertCount": 376
+  "avgScore": 48,
+  "bearishAlertCount": 380
 }
