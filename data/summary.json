@@ -22,6 +22,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 75,
@@ -29,15 +36,29 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "COP",
       "name": "ConocoPhillips",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -48,64 +69,29 @@
       "score": 72,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 15,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 21,
+      "score": 16,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "CPNG",
       "name": "Coupang",
-      "score": 21,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 21,
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 20,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "TTD",
@@ -115,32 +101,46 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 22,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "DT",
       "name": "Dynatrace",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "SHOP",
       "name": "Shopify",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
       "score": 23,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -157,20 +157,32 @@
       "market": "JP"
     },
     {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 75,
+      "market": "US"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 75,
       "market": "DE"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 74,
       "market": "US"
     },
     {
       "ticker": "COP",
       "name": "ConocoPhillips",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US"
     },
@@ -181,26 +193,14 @@
       "market": "US"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
       "market": "US"
     },
     {
       "ticker": "JNJ",
       "name": "Johnson & Johnson",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
       "score": 71,
       "market": "US"
     }
@@ -215,7 +215,7 @@
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 72,
+      "score": 74,
       "market": "US"
     },
     {
@@ -225,9 +225,15 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 69,
+      "score": 70,
       "market": "US"
     },
     {
@@ -235,12 +241,6 @@
       "name": "IG Group",
       "score": 68,
       "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 67,
-      "market": "US"
     },
     {
       "ticker": "CNA.L",
@@ -257,7 +257,7 @@
     {
       "ticker": "LEA",
       "name": "Lear Corp",
-      "score": 64,
+      "score": 65,
       "market": "US"
     },
     {
