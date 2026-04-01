@@ -8,13 +8,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 77,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
       "score": 76,
@@ -62,6 +55,13 @@
       "score": 74,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 74,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "PSX",
@@ -122,25 +122,25 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RHM.DE",
-      "name": "Rheinmetall",
-      "score": 24,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "SOUN",
       "name": "SoundHound AI",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IonQ",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -209,7 +209,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 77,
+      "score": 74,
       "market": "UK"
     },
     {
@@ -311,15 +311,15 @@
       "market": "UK"
     },
     {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 58,
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 57,
+      "ticker": "GYM.L",
+      "name": "Gym Group",
+      "score": 58,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 391
+  "bearishAlertCount": 390
 }
