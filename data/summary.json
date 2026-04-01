@@ -15,17 +15,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 76,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 75,
       "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 74,
-      "market": "JP",
       "capCategory": "Large"
     },
     {
@@ -43,15 +43,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 72,
-      "market": "HK",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -64,11 +64,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -80,6 +80,34 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CPNG",
+      "name": "Coupang",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "AXON",
       "name": "Axon Enterprise",
       "score": 21,
@@ -87,43 +115,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "APP",
-      "name": "AppLovin",
+      "ticker": "TTD",
+      "name": "Trade Desk",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CPNG",
-      "name": "Coupang",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "ZG",
+      "name": "Zillow Group",
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "IONQ",
-      "name": "IonQ",
+      "ticker": "DT",
+      "name": "Dynatrace",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -134,13 +141,6 @@
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -151,16 +151,16 @@
       "market": "FR"
     },
     {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 76,
+      "market": "JP"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 75,
       "market": "DE"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 74,
-      "market": "JP"
     },
     {
       "ticker": "BG",
@@ -175,14 +175,14 @@
       "market": "IN"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 72,
-      "market": "HK"
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 71,
+      "market": "US"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 71,
       "market": "US"
     },
@@ -193,16 +193,16 @@
       "market": "US"
     },
     {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "1398.HK",
       "name": "ICBC",
       "score": 71,
       "market": "HK"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 70,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -227,7 +227,7 @@
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 68,
+      "score": 69,
       "market": "US"
     },
     {
@@ -239,7 +239,7 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 66,
+      "score": 67,
       "market": "US"
     },
     {
