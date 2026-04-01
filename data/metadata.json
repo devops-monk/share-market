@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-03-31T21:20:07.338Z",
+  "lastUpdated": "2026-04-01T07:40:01.652Z",
   "stockCount": 863,
-  "bearishAlerts": 390,
+  "bearishAlerts": 384,
   "newsCount": 500,
   "marketRegime": {
     "us": {
@@ -16,43 +16,43 @@
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10176.45,
-      "sma50": 10348.53,
-      "sma200": 9650.7,
-      "changeFromHigh": -6.73,
+      "price": 10344.89,
+      "sma50": 10352.67,
+      "sma200": 9658.47,
+      "changeFromHigh": -5.18,
       "distributionDays": 9,
       "regime": "correction",
       "signal": "9 distribution days in 25 sessions — selling pressure"
     },
     "in": {
       "index": "Nifty 50",
-      "price": 22331.4,
-      "sma50": 24794.39,
-      "sma200": 25231.53,
-      "changeFromHigh": -15.18,
+      "price": 22871.25,
+      "sma50": 24738.5,
+      "sma200": 25220.36,
+      "changeFromHigh": -13.13,
       "distributionDays": 9,
       "regime": "correction",
       "signal": "9 distribution days in 25 sessions — selling pressure"
     },
     "eu": {
       "index": "DAX 40",
-      "price": 22680.04,
-      "sma50": 24189.27,
-      "sma200": 24098.36,
-      "changeFromHigh": -10.78,
+      "price": 23234.42,
+      "sma50": 24162.74,
+      "sma200": 24097.94,
+      "changeFromHigh": -8.6,
       "distributionDays": 9,
       "regime": "correction",
       "signal": "9 distribution days in 25 sessions — selling pressure"
     },
     "asia": {
       "index": "Nikkei 225",
-      "price": 51063.72,
-      "sma50": 54801.25,
-      "sma200": 47636.2,
-      "changeFromHigh": -13.23,
-      "distributionDays": 9,
+      "price": 53739.68,
+      "sma50": 54736.38,
+      "sma200": 47783.71,
+      "changeFromHigh": -8.68,
+      "distributionDays": 10,
       "regime": "correction",
-      "signal": "9 distribution days in 25 sessions — selling pressure"
+      "signal": "10 distribution days in 25 sessions — selling pressure"
     },
     "overall": "correction",
     "summary": "Markets showing weakness. Be selective, reduce position sizes, and tighten stops."
