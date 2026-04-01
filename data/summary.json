@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 75,
+      "market": "FR",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "MRK",
       "name": "Merck",
       "score": 74,
@@ -61,13 +68,6 @@
       "name": "Phillips 66",
       "score": 73,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE",
       "capCategory": "Large"
     }
   ],
@@ -122,6 +122,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SOUN",
       "name": "SoundHound AI",
       "score": 24,
@@ -134,13 +141,6 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -175,6 +175,12 @@
       "market": "US"
     },
     {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 75,
+      "market": "FR"
+    },
+    {
       "ticker": "MRK",
       "name": "Merck",
       "score": 74,
@@ -197,12 +203,6 @@
       "name": "RWE",
       "score": 73,
       "market": "DE"
-    },
-    {
-      "ticker": "T",
-      "name": "AT&T",
-      "score": 72,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 390
+  "bearishAlertCount": 388
 }
