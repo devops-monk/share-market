@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 76,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 75,
@@ -29,8 +22,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
@@ -57,6 +50,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ALB",
       "name": "Albemarle",
       "score": 72,
@@ -75,7 +75,7 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 16,
+      "score": 15,
       "market": "US",
       "capCategory": "Large"
     },
@@ -94,9 +94,16 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
@@ -134,22 +141,9 @@
       "score": 23,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 76,
-      "market": "US"
-    },
     {
       "ticker": "BG",
       "name": "Bunge Global",
@@ -169,8 +163,8 @@
       "market": "JP"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "XOM",
+      "name": "ExxonMobil",
       "score": 74,
       "market": "US"
     },
@@ -178,6 +172,12 @@
       "ticker": "FDX",
       "name": "FedEx",
       "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 72,
       "market": "US"
     },
     {
@@ -193,15 +193,15 @@
       "market": "US"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 71,
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 70,
       "market": "US"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "score": 70,
       "market": "US"
     }
   ],
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 388
+  "bearishAlertCount": 390
 }
