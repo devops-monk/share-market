@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 75,
@@ -29,11 +36,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 73,
+      "ticker": "RVMD",
+      "name": "Revolution Medicines",
+      "score": 72,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "BG",
@@ -62,13 +69,6 @@
       "score": 71,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -82,34 +82,34 @@
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 17,
+      "score": 18,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "CPNG",
       "name": "Coupang",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HIMS",
       "name": "Hims & Hers Health",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -129,18 +129,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -163,6 +163,12 @@
       "market": "DE"
     },
     {
+      "ticker": "RVMD",
+      "name": "Revolution Medicines",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 72,
@@ -173,12 +179,6 @@
       "name": "Scottish Mortgage",
       "score": 71,
       "market": "UK"
-    },
-    {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines",
-      "score": 70,
-      "market": "US"
     },
     {
       "ticker": "TSCO.L",
@@ -193,14 +193,14 @@
       "market": "UK"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
+      "ticker": "ONGC.NS",
+      "name": "ONGC",
       "score": 70,
-      "market": "HK"
+      "market": "IN"
     },
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
       "score": 70,
       "market": "HK"
     }
@@ -215,7 +215,7 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 73,
+      "score": 75,
       "market": "US"
     },
     {
@@ -223,6 +223,12 @@
       "name": "Schroders",
       "score": 71,
       "market": "UK"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 68,
+      "market": "US"
     },
     {
       "ticker": "IGG.L",
@@ -255,16 +261,10 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "LEA",
+      "name": "Lear Corp",
       "score": 63,
       "market": "US"
-    },
-    {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
-      "score": 63,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 387
+  "bearishAlertCount": 391
 }
