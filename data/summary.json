@@ -57,18 +57,18 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SMT.L",
       "name": "Scottish Mortgage",
       "score": 71,
       "market": "UK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
@@ -101,15 +101,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 20,
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -175,16 +175,16 @@
       "market": "US"
     },
     {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "SMT.L",
       "name": "Scottish Mortgage",
       "score": 71,
       "market": "UK"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 70,
-      "market": "US"
     },
     {
       "ticker": "TSCO.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 49,
-  "bearishAlertCount": 390
+  "bearishAlertCount": 389
 }
