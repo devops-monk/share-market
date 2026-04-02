@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
       "score": 75,
@@ -22,27 +15,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 74,
@@ -50,106 +22,128 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 72,
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 72,
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 70,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 70,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 70,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "score": 69,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 15,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CPNG",
-      "name": "Coupang",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "POLICYBZR.BO",
-      "name": "PB Fintech (PolicyBazaar)",
-      "score": 23,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 23,
+      "score": 15,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "DASH",
       "name": "DoorDash",
-      "score": 23,
+      "score": 16,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 16,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 16,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "CPNG",
+      "name": "Coupang",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IonQ",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify",
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 75,
-      "market": "US"
-    },
     {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
@@ -163,72 +157,60 @@
       "market": "JP"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 70,
       "market": "US"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 70,
+      "market": "DE"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 70,
+      "market": "HK"
+    },
+    {
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 70,
+      "market": "HK"
     },
     {
       "ticker": "JNJ",
       "name": "Johnson & Johnson",
-      "score": 70,
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 69,
       "market": "US"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 74,
-      "market": "US"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 74,
       "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 70,
-      "market": "US"
     },
     {
       "ticker": "SDR.L",
@@ -243,8 +225,8 @@
       "market": "UK"
     },
     {
-      "ticker": "LEA",
-      "name": "Lear Corp",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 65,
       "market": "US"
     },
@@ -255,15 +237,33 @@
       "market": "UK"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 63,
-      "market": "US"
-    },
-    {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
       "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "LEA",
+      "name": "Lear Corp",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "SBRY.L",
+      "name": "Sainsbury",
+      "score": 62,
       "market": "UK"
     }
   ],
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 863,
-  "avgScore": 48,
-  "bearishAlertCount": 390
+  "avgScore": 47,
+  "bearishAlertCount": 399
 }
