@@ -8,18 +8,18 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 77,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
       "score": 77,
       "market": "FR",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "8002.T",
@@ -36,15 +36,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines",
-      "score": 72,
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "RVMD",
+      "name": "Revolution Medicines",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -75,30 +75,16 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 15,
+      "score": 16,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TTD",
-      "name": "Trade Desk",
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
       "score": 19,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CPNG",
-      "name": "Coupang",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "HIMS",
@@ -108,6 +94,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "NOW",
       "name": "ServiceNow",
       "score": 20,
@@ -115,29 +108,36 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "IONQ",
       "name": "IonQ",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "CPNG",
+      "name": "Coupang",
       "score": 22,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
-      "ticker": "APP",
-      "name": "AppLovin",
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -163,14 +163,14 @@
       "market": "DE"
     },
     {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines",
-      "score": 72,
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 73,
       "market": "US"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "RVMD",
+      "name": "Revolution Medicines",
       "score": 72,
       "market": "US"
     },
@@ -179,6 +179,12 @@
       "name": "Scottish Mortgage",
       "score": 71,
       "market": "UK"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 70,
+      "market": "US"
     },
     {
       "ticker": "TSCO.L",
@@ -197,12 +203,6 @@
       "name": "ONGC",
       "score": 70,
       "market": "IN"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 70,
-      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -215,7 +215,7 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 75,
+      "score": 77,
       "market": "US"
     },
     {
@@ -227,7 +227,7 @@
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 68,
+      "score": 69,
       "market": "US"
     },
     {
@@ -243,6 +243,18 @@
       "market": "UK"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "LEA",
+      "name": "Lear Corp",
+      "score": 64,
+      "market": "US"
+    },
+    {
       "ticker": "SVT.L",
       "name": "Severn Trent",
       "score": 64,
@@ -253,18 +265,6 @@
       "name": "United Utilities",
       "score": 64,
       "market": "UK"
-    },
-    {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "LEA",
-      "name": "Lear Corp",
-      "score": 63,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 863,
-  "avgScore": 48,
-  "bearishAlertCount": 391
+  "avgScore": 49,
+  "bearishAlertCount": 390
 }
