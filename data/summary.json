@@ -75,14 +75,7 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 16,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 19,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
@@ -99,6 +92,13 @@
       "score": 20,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "AXON",
@@ -237,16 +237,16 @@
       "market": "UK"
     },
     {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 67,
+      "market": "UK"
+    },
+    {
       "ticker": "LEA",
       "name": "Lear Corp",
       "score": 65,
       "market": "US"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 64,
-      "market": "UK"
     },
     {
       "ticker": "FNB",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 48,
-  "bearishAlertCount": 386
+  "bearishAlertCount": 388
 }
