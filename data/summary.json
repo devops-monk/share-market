@@ -3,14 +3,14 @@
     {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
-      "score": 75,
+      "score": 76,
       "market": "FR",
       "capCategory": "Large"
     },
     {
       "ticker": "8002.T",
       "name": "Marubeni",
-      "score": 75,
+      "score": 76,
       "market": "JP",
       "capCategory": "Large"
     },
@@ -29,24 +29,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
       "score": 72,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 70,
-      "market": "US",
+      "ticker": "SMT.L",
+      "name": "Scottish Mortgage",
+      "score": 71,
+      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -55,6 +48,13 @@
       "score": 70,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "0883.HK",
@@ -75,21 +75,21 @@
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 15,
+      "score": 16,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 15,
+      "score": 16,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 16,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,29 +108,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "IONQ",
       "name": "IonQ",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TTD",
-      "name": "Trade Desk",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -141,19 +120,40 @@
       "score": 20,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
-      "score": 75,
+      "score": 76,
       "market": "FR"
     },
     {
       "ticker": "8002.T",
       "name": "Marubeni",
-      "score": 75,
+      "score": 76,
       "market": "JP"
     },
     {
@@ -163,22 +163,10 @@
       "market": "DE"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 70,
-      "market": "US"
+      "ticker": "SMT.L",
+      "name": "Scottish Mortgage",
+      "score": 71,
+      "market": "UK"
     },
     {
       "ticker": "0883.HK",
@@ -193,14 +181,26 @@
       "market": "HK"
     },
     {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "score": 69,
+      "market": "US"
+    },
+    {
       "ticker": "SLB",
       "name": "Schlumberger",
       "score": 69,
       "market": "US"
     },
     {
-      "ticker": "DOW",
-      "name": "Dow Inc",
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
       "score": 69,
       "market": "US"
     }
@@ -213,16 +213,22 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 70,
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "IGG.L",
+      "name": "IG Group",
       "score": 68,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "DOCN",
@@ -231,21 +237,15 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 67,
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 66,
-      "market": "US"
-    },
-    {
-      "ticker": "CNA.L",
-      "name": "Centrica",
-      "score": 64,
+      "ticker": "BKG.L",
+      "name": "Berkeley Group",
+      "score": 63,
       "market": "UK"
     },
     {
@@ -261,17 +261,29 @@
       "market": "UK"
     },
     {
-      "ticker": "LEA",
-      "name": "Lear Corp",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 62,
       "market": "US"
     }
   ],
   "topSmallCap": [
     {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 69,
+      "market": "UK"
+    },
+    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 67,
+      "score": 68,
       "market": "UK"
     },
     {
@@ -281,27 +293,15 @@
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 66,
-      "market": "UK"
-    },
-    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
-      "score": 62,
+      "score": 63,
       "market": "UK"
     },
     {
@@ -311,9 +311,15 @@
       "market": "UK"
     },
     {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "MGNS.L",
       "name": "Morgan Sindall",
-      "score": 60,
+      "score": 61,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "4imprint",
       "score": 57,
       "market": "UK"
-    },
-    {
-      "ticker": "PHNX.L",
-      "name": "Phoenix Group",
-      "score": 57,
-      "market": "UK"
     }
   ],
   "totalStocks": 863,
-  "avgScore": 47,
-  "bearishAlertCount": 390
+  "avgScore": 48,
+  "bearishAlertCount": 385
 }
