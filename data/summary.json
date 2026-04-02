@@ -22,6 +22,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 73,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 72,
@@ -29,8 +36,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -41,13 +55,6 @@
       "score": 70,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 70,
-      "market": "DE",
-      "capCategory": "Large"
     },
     {
       "ticker": "0883.HK",
@@ -62,13 +69,6 @@
       "score": 70,
       "market": "HK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -80,16 +80,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 16,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 16,
+      "score": 15,
       "market": "US",
       "capCategory": "Large"
     },
@@ -99,13 +92,6 @@
       "score": 16,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Small"
     },
     {
       "ticker": "CPNG",
@@ -122,6 +108,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 20,
@@ -133,11 +126,18 @@
       "name": "IonQ",
       "score": 20,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
-      "ticker": "SHOP",
-      "name": "Shopify",
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -157,22 +157,28 @@
       "market": "JP"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 73,
+      "market": "DE"
+    },
+    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "TGT",
+      "name": "Target",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 70,
-      "market": "DE"
+      "market": "US"
     },
     {
       "ticker": "0883.HK",
@@ -187,20 +193,14 @@
       "market": "HK"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 69,
       "market": "US"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
+      "ticker": "DOW",
+      "name": "Dow Inc",
       "score": 69,
       "market": "US"
     }
@@ -219,15 +219,27 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 67,
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 65,
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 66,
       "market": "US"
     },
     {
@@ -237,43 +249,25 @@
       "market": "UK"
     },
     {
+      "ticker": "UU.L",
+      "name": "United Utilities",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 62,
-      "market": "US"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 62,
-      "market": "US"
-    },
-    {
       "ticker": "LEA",
       "name": "Lear Corp",
       "score": 62,
       "market": "US"
-    },
-    {
-      "ticker": "SBRY.L",
-      "name": "Sainsbury",
-      "score": 62,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 68,
-      "market": "UK"
-    },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
@@ -299,9 +293,21 @@
       "market": "US"
     },
     {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 61,
+      "score": 62,
       "market": "UK"
     },
     {
@@ -311,9 +317,9 @@
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 59,
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 57,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "Phoenix Group",
       "score": 57,
       "market": "UK"
-    },
-    {
-      "ticker": "CFLT",
-      "name": "Confluent",
-      "score": 56,
-      "market": "US"
     }
   ],
   "totalStocks": 863,
   "avgScore": 47,
-  "bearishAlertCount": 399
+  "bearishAlertCount": 390
 }
