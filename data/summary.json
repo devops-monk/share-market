@@ -1,17 +1,17 @@
 {
   "topOverall": [
     {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 76,
+      "market": "FR",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 75,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 75,
-      "market": "FR",
       "capCategory": "Large"
     },
     {
@@ -24,6 +24,13 @@
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
@@ -50,13 +57,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 73,
@@ -75,7 +75,7 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 17,
+      "score": 15,
       "market": "US",
       "capCategory": "Large"
     },
@@ -145,16 +145,16 @@
   ],
   "topLargeCap": [
     {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 76,
+      "market": "FR"
+    },
+    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 75,
       "market": "US"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 75,
-      "market": "FR"
     },
     {
       "ticker": "8002.T",
@@ -169,15 +169,15 @@
       "market": "US"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 74,
       "market": "US"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 73,
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 74,
       "market": "US"
     },
     {
@@ -199,8 +199,8 @@
       "market": "US"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 71,
       "market": "US"
     }
@@ -275,12 +275,6 @@
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 67,
-      "market": "UK"
-    },
-    {
       "ticker": "CMA",
       "name": "Comerica",
       "score": 66,
@@ -297,6 +291,12 @@
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "CKN.L",
