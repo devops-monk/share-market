@@ -75,7 +75,7 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 18,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
@@ -85,6 +85,13 @@
       "score": 19,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "HIMS",
@@ -133,13 +140,6 @@
       "name": "Coupang",
       "score": 22,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "POLICYBZR.BO",
-      "name": "PB Fintech (PolicyBazaar)",
-      "score": 23,
-      "market": "IN",
       "capCategory": "Large"
     }
   ],
