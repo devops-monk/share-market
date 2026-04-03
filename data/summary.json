@@ -22,13 +22,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 75,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 74,
@@ -69,13 +62,20 @@
       "score": 71,
       "market": "UK",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 16,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
@@ -87,18 +87,25 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HIMS",
       "name": "Hims & Hers Health",
       "score": 20,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "AXON",
@@ -108,8 +115,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -134,13 +141,6 @@
       "score": 22,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -149,12 +149,6 @@
       "name": "TotalEnergies",
       "score": 77,
       "market": "FR"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 75,
-      "market": "JP"
     },
     {
       "ticker": "RWE.DE",
@@ -187,6 +181,12 @@
       "market": "UK"
     },
     {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 71,
+      "market": "JP"
+    },
+    {
       "ticker": "TSCO.L",
       "name": "Tesco",
       "score": 70,
@@ -199,10 +199,10 @@
       "market": "UK"
     },
     {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
       "score": 70,
-      "market": "IN"
+      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 863,
   "avgScore": 49,
-  "bearishAlertCount": 389
+  "bearishAlertCount": 388
 }
