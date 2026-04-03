@@ -75,7 +75,7 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 18,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
@@ -87,25 +87,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HIMS",
       "name": "Hims & Hers Health",
       "score": 20,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "AXON",
@@ -115,8 +101,22 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "COIN",
       "name": "Coinbase",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
