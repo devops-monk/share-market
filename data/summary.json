@@ -29,6 +29,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 74,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 73,
@@ -62,13 +69,6 @@
       "score": 71,
       "market": "UK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
@@ -94,6 +94,20 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "AXON",
       "name": "Axon Enterprise",
       "score": 21,
@@ -101,22 +115,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "COIN",
       "name": "Coinbase",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -157,6 +157,12 @@
       "market": "DE"
     },
     {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 74,
+      "market": "JP"
+    },
+    {
       "ticker": "BG",
       "name": "Bunge Global",
       "score": 73,
@@ -179,12 +185,6 @@
       "name": "Scottish Mortgage",
       "score": 71,
       "market": "UK"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 71,
-      "market": "JP"
     },
     {
       "ticker": "TSCO.L",

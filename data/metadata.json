@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-03T14:23:37.551Z",
+  "lastUpdated": "2026-04-03T15:23:35.012Z",
   "stockCount": 863,
   "bearishAlerts": 388,
   "newsCount": 600,
@@ -47,12 +47,12 @@
     "asia": {
       "index": "Nikkei 225",
       "price": 53123.49,
-      "sma50": 54716.62,
-      "sma200": 47932.49,
+      "sma50": 54713.97,
+      "sma200": 47857.32,
       "changeFromHigh": -9.73,
-      "distributionDays": 11,
+      "distributionDays": 10,
       "regime": "correction",
-      "signal": "11 distribution days in 25 sessions — selling pressure"
+      "signal": "10 distribution days in 25 sessions — selling pressure"
     },
     "overall": "correction",
     "summary": "Markets showing weakness. Be selective, reduce position sizes, and tighten stops."
