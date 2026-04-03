@@ -87,13 +87,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "NOW",
       "name": "ServiceNow",
       "score": 19,
@@ -106,6 +99,13 @@
       "score": 20,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "AXON",
@@ -122,13 +122,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SHOP",
-      "name": "Shopify",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 22,
@@ -138,6 +131,13 @@
     {
       "ticker": "IONQ",
       "name": "IonQ",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CPNG",
+      "name": "Coupang",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
