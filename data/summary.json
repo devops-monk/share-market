@@ -50,15 +50,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 70,
-      "market": "US",
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 71,
+      "market": "JP",
       "capCategory": "Large"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
+      "ticker": "TGT",
+      "name": "Target",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -75,23 +75,23 @@
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 17,
+      "score": 15,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 18,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 19,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Large"
     },
     {
       "ticker": "UPST",
@@ -129,18 +129,18 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TTD",
       "name": "Trade Desk",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -169,14 +169,14 @@
       "market": "UK"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 70,
-      "market": "US"
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 71,
+      "market": "JP"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
+      "ticker": "TGT",
+      "name": "Target",
       "score": 70,
       "market": "US"
     },
@@ -199,10 +199,10 @@
       "market": "IN"
     },
     {
-      "ticker": "4911.T",
-      "name": "Shiseido",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
       "score": 70,
-      "market": "JP"
+      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -217,6 +217,12 @@
       "name": "Schroders",
       "score": 71,
       "market": "UK"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 66,
+      "market": "US"
     },
     {
       "ticker": "IGG.L",
@@ -249,20 +255,14 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 63,
-      "market": "US"
-    },
-    {
       "ticker": "BKG.L",
       "name": "Berkeley Group",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "JTC.L",
+      "name": "JTC",
       "score": 63,
       "market": "UK"
     }
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 48,
-  "bearishAlertCount": 382
+  "bearishAlertCount": 383
 }
