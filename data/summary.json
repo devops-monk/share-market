@@ -80,15 +80,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 19,
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 19,
       "market": "US",
       "capCategory": "Large"
@@ -115,13 +115,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "APP",
-      "name": "AppLovin",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CELH",
       "name": "Celsius Holdings",
       "score": 21,
@@ -129,15 +122,22 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
+      "ticker": "TTD",
+      "name": "Trade Desk",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
+      "ticker": "APP",
+      "name": "AppLovin",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -237,6 +237,12 @@
       "market": "UK"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "SVT.L",
       "name": "Severn Trent",
       "score": 64,
@@ -255,16 +261,10 @@
       "market": "UK"
     },
     {
-      "ticker": "BKG.L",
-      "name": "Berkeley Group",
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
       "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "JTC.L",
-      "name": "JTC",
-      "score": 63,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "topSmallCap": [
