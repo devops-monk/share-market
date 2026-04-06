@@ -82,23 +82,9 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
       "score": 19,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "IONQ",
@@ -108,15 +94,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RGTI",
-      "name": "Rigetti Computing",
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
       "score": 21,
       "market": "US",
       "capCategory": "Mid"
@@ -129,6 +122,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "APP",
       "name": "AppLovin",
       "score": 22,
@@ -136,11 +136,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
       "score": 22,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -311,16 +311,16 @@
       "market": "UK"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 61,
-      "market": "US"
-    },
-    {
       "ticker": "MGNS.L",
       "name": "Morgan Sindall",
       "score": 61,
       "market": "UK"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 59,
+      "market": "US"
     },
     {
       "ticker": "OSB.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 48,
-  "bearishAlertCount": 383
+  "bearishAlertCount": 381
 }
