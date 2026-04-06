@@ -64,10 +64,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TSCO.L",
-      "name": "Tesco",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 70,
-      "market": "UK",
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -115,20 +115,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "APP",
       "name": "AppLovin",
       "score": 22,
@@ -141,6 +127,20 @@
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "GLBE",
+      "name": "Global-e Online",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -181,6 +181,18 @@
       "market": "US"
     },
     {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "RVMD",
+      "name": "Revolution Medicines",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "TSCO.L",
       "name": "Tesco",
       "score": 70,
@@ -191,18 +203,6 @@
       "name": "SSE",
       "score": 70,
       "market": "UK"
-    },
-    {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
-      "score": 70,
-      "market": "IN"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 70,
-      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -219,12 +219,6 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 66,
-      "market": "US"
-    },
-    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 66,
@@ -237,8 +231,20 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 65,
       "market": "US"
     },
@@ -259,12 +265,6 @@
       "name": "Cranswick",
       "score": 64,
       "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 63,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -311,16 +311,16 @@
       "market": "UK"
     },
     {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 61,
+      "market": "US"
+    },
+    {
       "ticker": "MGNS.L",
       "name": "Morgan Sindall",
       "score": 61,
       "market": "UK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 59,
-      "market": "US"
     },
     {
       "ticker": "OSB.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 48,
-  "bearishAlertCount": 381
+  "bearishAlertCount": 380
 }
