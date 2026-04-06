@@ -22,8 +22,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "HOLX",
+      "name": "Hologic",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -57,15 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TSCO.L",
-      "name": "Tesco",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 70,
-      "market": "UK",
+      "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "SSE.L",
-      "name": "SSE",
+      "ticker": "TSCO.L",
+      "name": "Tesco",
       "score": 70,
       "market": "UK",
       "capCategory": "Large"
@@ -75,7 +75,7 @@
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 15,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
@@ -92,13 +92,6 @@
       "score": 19,
       "market": "US",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "UPST",
@@ -136,11 +129,18 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
+      "ticker": "TTD",
+      "name": "Trade Desk",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -157,8 +157,8 @@
       "market": "DE"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "HOLX",
+      "name": "Hologic",
       "score": 72,
       "market": "US"
     },
@@ -171,6 +171,12 @@
     {
       "ticker": "TGT",
       "name": "Target",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 70,
       "market": "US"
     },
@@ -197,12 +203,6 @@
       "name": "Shiseido",
       "score": 70,
       "market": "JP"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 70,
-      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -219,12 +219,6 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 66,
-      "market": "US"
-    },
-    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 66,
@@ -235,12 +229,6 @@
       "name": "Balfour Beatty",
       "score": 66,
       "market": "UK"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 64,
-      "market": "US"
     },
     {
       "ticker": "SVT.L",
@@ -259,6 +247,18 @@
       "name": "Cranswick",
       "score": 64,
       "market": "UK"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 63,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 63,
+      "market": "US"
     },
     {
       "ticker": "BKG.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 48,
-  "bearishAlertCount": 387
+  "bearishAlertCount": 382
 }
