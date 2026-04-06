@@ -22,8 +22,22 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HOLX",
       "name": "Hologic",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RVMD",
+      "name": "Revolution Medicines",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -36,8 +50,8 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -55,50 +69,29 @@
       "score": 71,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 16,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 18,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "TTD",
+      "name": "Trade Desk",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "IONQ",
@@ -108,11 +101,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "RGTI",
@@ -124,23 +131,16 @@
     {
       "ticker": "APP",
       "name": "AppLovin",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
       "score": 24,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -157,14 +157,26 @@
       "market": "DE"
     },
     {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
+      "ticker": "RVMD",
+      "name": "Revolution Medicines",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 71,
       "market": "US"
     },
@@ -173,18 +185,6 @@
       "name": "Scottish Mortgage",
       "score": 71,
       "market": "UK"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines",
-      "score": 70,
-      "market": "US"
     },
     {
       "ticker": "TSCO.L",
@@ -219,15 +219,15 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 66,
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 67,
       "market": "US"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 66,
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 67,
       "market": "US"
     },
     {
@@ -243,9 +243,9 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 64,
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 65,
       "market": "US"
     },
     {
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 862,
-  "avgScore": 48,
-  "bearishAlertCount": 381
+  "avgScore": 49,
+  "bearishAlertCount": 383
 }
