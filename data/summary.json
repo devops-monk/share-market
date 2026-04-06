@@ -75,7 +75,7 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 17,
+      "score": 15,
       "market": "US",
       "capCategory": "Large"
     },
@@ -87,13 +87,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HIMS",
       "name": "Hims & Hers Health",
       "score": 20,
@@ -101,8 +94,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -115,8 +108,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
+      "ticker": "TTD",
+      "name": "Trade Desk",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -141,6 +134,13 @@
       "score": 22,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -181,12 +181,6 @@
       "market": "UK"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 71,
-      "market": "JP"
-    },
-    {
       "ticker": "TSCO.L",
       "name": "Tesco",
       "score": 70,
@@ -197,6 +191,12 @@
       "name": "SSE",
       "score": 70,
       "market": "UK"
+    },
+    {
+      "ticker": "4911.T",
+      "name": "Shiseido",
+      "score": 70,
+      "market": "JP"
     },
     {
       "ticker": "0883.HK",
@@ -287,12 +287,6 @@
       "market": "UK"
     },
     {
-      "ticker": "CMA",
-      "name": "Comerica",
-      "score": 66,
-      "market": "US"
-    },
-    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
@@ -327,9 +321,15 @@
       "name": "OSB Group",
       "score": 59,
       "market": "UK"
+    },
+    {
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 57,
+      "market": "UK"
     }
   ],
-  "totalStocks": 863,
+  "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 388
+  "bearishAlertCount": 389
 }
