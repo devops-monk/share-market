@@ -94,15 +94,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 20,
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -193,16 +193,16 @@
       "market": "UK"
     },
     {
+      "ticker": "ONGC.NS",
+      "name": "ONGC",
+      "score": 70,
+      "market": "IN"
+    },
+    {
       "ticker": "4911.T",
       "name": "Shiseido",
       "score": 70,
       "market": "JP"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 70,
-      "market": "HK"
     }
   ],
   "topMidCap": [
