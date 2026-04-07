@@ -75,7 +75,7 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 18,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
@@ -136,8 +136,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
+      "ticker": "TTD",
+      "name": "Trade Desk",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
@@ -193,14 +193,14 @@
       "market": "JP"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "MRK",
+      "name": "Merck",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 70,
       "market": "US"
     }
@@ -293,6 +293,12 @@
       "market": "UK"
     },
     {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
@@ -303,12 +309,6 @@
       "name": "Chemring Group",
       "score": 65,
       "market": "UK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 64,
-      "market": "US"
     },
     {
       "ticker": "WOSG.L",
