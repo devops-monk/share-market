@@ -3,7 +3,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 75,
+      "score": 76,
       "market": "UK",
       "capCategory": "Mid"
     },
@@ -75,28 +75,14 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 16,
+      "score": 15,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "CELH",
       "name": "Celsius Holdings",
-      "score": 17,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 20,
+      "score": 18,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -108,11 +94,25 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 22,
+      "ticker": "IONQ",
+      "name": "IonQ",
+      "score": 21,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "OPEN",
@@ -122,25 +122,25 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ONON",
-      "name": "On Holding",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "GLBE",
       "name": "Global-e Online",
-      "score": 23,
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -199,8 +199,8 @@
       "market": "HK"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "DOW",
+      "name": "Dow Inc",
       "score": 69,
       "market": "US"
     }
@@ -209,7 +209,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 75,
+      "score": 76,
       "market": "UK"
     },
     {
@@ -249,16 +249,16 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 63,
-      "market": "US"
-    },
-    {
       "ticker": "INVP.L",
       "name": "Investec",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 62,
+      "market": "US"
     },
     {
       "ticker": "LEA",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 48,
-  "bearishAlertCount": 394
+  "bearishAlertCount": 393
 }
