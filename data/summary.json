@@ -57,15 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 70,
-      "market": "US",
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 71,
+      "market": "JP",
       "capCategory": "Large"
     },
     {
-      "ticker": "DOW",
-      "name": "Dow Inc",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -75,7 +75,7 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 16,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
@@ -94,13 +94,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RGTI",
-      "name": "Rigetti Computing",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "IONQ",
       "name": "IonQ",
       "score": 21,
@@ -108,22 +101,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "SNPS",
-      "name": "Synopsys",
+      "ticker": "AFRM",
+      "name": "Affirm",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -138,6 +117,27 @@
     {
       "ticker": "OPEN",
       "name": "Opendoor Technologies",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "GLBE",
+      "name": "Global-e Online",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
@@ -175,6 +175,12 @@
       "market": "FR"
     },
     {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 71,
+      "market": "JP"
+    },
+    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 70,
@@ -187,22 +193,16 @@
       "market": "US"
     },
     {
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 70,
       "market": "IN"
-    },
-    {
-      "ticker": "4911.T",
-      "name": "Shiseido",
-      "score": 70,
-      "market": "JP"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 70,
-      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -249,21 +249,21 @@
       "market": "UK"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 62,
+      "score": 63,
       "market": "US"
     },
     {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 62,
+      "score": 63,
+      "market": "US"
+    },
+    {
+      "ticker": "LEA",
+      "name": "Lear Corp",
+      "score": 63,
       "market": "US"
     }
   ],
@@ -305,16 +305,16 @@
       "market": "UK"
     },
     {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 63,
+      "market": "US"
+    },
+    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 61,
-      "market": "US"
     },
     {
       "ticker": "FOUR.L",
@@ -329,7 +329,7 @@
       "market": "UK"
     }
   ],
-  "totalStocks": 855,
-  "avgScore": 48,
-  "bearishAlertCount": 385
+  "totalStocks": 862,
+  "avgScore": 49,
+  "bearishAlertCount": 387
 }
