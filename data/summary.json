@@ -57,17 +57,17 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "ONGC.NS",
+      "name": "ONGC",
+      "score": 70,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 70,
       "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 70,
-      "market": "HK",
       "capCategory": "Large"
     }
   ],
@@ -80,20 +80,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "IONQ",
       "name": "IonQ",
       "score": 21,
@@ -101,8 +87,22 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TTD",
       "name": "Trade Desk",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -129,18 +129,18 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "APP",
       "name": "AppLovin",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -181,6 +181,12 @@
       "market": "US"
     },
     {
+      "ticker": "ONGC.NS",
+      "name": "ONGC",
+      "score": 70,
+      "market": "IN"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 70,
@@ -197,12 +203,6 @@
       "name": "WH Group",
       "score": 70,
       "market": "HK"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -216,12 +216,6 @@
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 68,
       "market": "UK"
     },
     {
@@ -241,6 +235,12 @@
       "name": "Intuitive Machines",
       "score": 65,
       "market": "US"
+    },
+    {
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "LEA",
@@ -275,6 +275,12 @@
       "market": "UK"
     },
     {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 66,
@@ -285,12 +291,6 @@
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 64,
-      "market": "UK"
     },
     {
       "ticker": "WOSG.L",
@@ -313,7 +313,13 @@
     {
       "ticker": "FOUR.L",
       "name": "4imprint",
-      "score": 57,
+      "score": 58,
+      "market": "UK"
+    },
+    {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
+      "score": 58,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "Phoenix Group",
       "score": 57,
       "market": "UK"
-    },
-    {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 57,
-      "market": "UK"
     }
   ],
-  "totalStocks": 857,
+  "totalStocks": 844,
   "avgScore": 49,
-  "bearishAlertCount": 377
+  "bearishAlertCount": 370
 }
