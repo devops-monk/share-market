@@ -57,17 +57,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 70,
-      "market": "IN",
+      "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "4911.T",
-      "name": "Shiseido",
+      "ticker": "DOW",
+      "name": "Dow Inc",
       "score": 70,
-      "market": "JP",
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -75,7 +75,7 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 15,
+      "score": 16,
       "market": "US",
       "capCategory": "Large"
     },
@@ -85,6 +85,13 @@
       "score": 18,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "RGTI",
@@ -101,39 +108,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
+      "ticker": "TTD",
+      "name": "Trade Desk",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "OPEN",
-      "name": "Opendoor Technologies",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "GLBE",
-      "name": "Global-e Online",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "LCID",
       "name": "Lucid Group",
-      "score": 22,
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "BYND",
@@ -141,6 +134,13 @@
       "score": 23,
       "market": "US",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "OPEN",
+      "name": "Opendoor Technologies",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -175,6 +175,18 @@
       "market": "FR"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "DOW",
+      "name": "Dow Inc",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 70,
@@ -191,18 +203,6 @@
       "name": "CNOOC",
       "score": 70,
       "market": "HK"
-    },
-    {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 70,
-      "market": "HK"
-    },
-    {
-      "ticker": "DOW",
-      "name": "Dow Inc",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -261,8 +261,8 @@
       "market": "US"
     },
     {
-      "ticker": "LEA",
-      "name": "Lear Corp",
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
       "score": 62,
       "market": "US"
     }
@@ -329,7 +329,7 @@
       "market": "UK"
     }
   ],
-  "totalStocks": 862,
+  "totalStocks": 855,
   "avgScore": 48,
-  "bearishAlertCount": 393
+  "bearishAlertCount": 385
 }
