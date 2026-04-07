@@ -50,6 +50,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 70,
@@ -61,13 +68,6 @@
       "name": "RWE",
       "score": 70,
       "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 70,
-      "market": "HK",
       "capCategory": "Large"
     }
   ],
@@ -82,7 +82,7 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 20,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
@@ -94,8 +94,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -124,6 +124,13 @@
     {
       "ticker": "COIN",
       "name": "Coinbase",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TTD",
+      "name": "Trade Desk",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -134,13 +141,6 @@
       "score": 24,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -199,8 +199,8 @@
       "market": "HK"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
       "score": 69,
       "market": "US"
     }
@@ -271,7 +271,13 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 69,
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 67,
       "market": "UK"
     },
     {
@@ -313,13 +319,7 @@
     {
       "ticker": "SFOR.L",
       "name": "S4 Capital",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 58,
+      "score": 60,
       "market": "UK"
     },
     {
@@ -329,7 +329,7 @@
       "market": "UK"
     }
   ],
-  "totalStocks": 858,
+  "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 381
+  "bearishAlertCount": 384
 }
