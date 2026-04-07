@@ -80,9 +80,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 20,
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,8 +101,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "TTD",
+      "name": "Trade Desk",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -129,18 +129,18 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "APP",
       "name": "AppLovin",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -249,6 +249,12 @@
       "market": "US"
     },
     {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
       "score": 62,
@@ -259,12 +265,6 @@
       "name": "United Utilities",
       "score": 62,
       "market": "UK"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 61,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -272,12 +272,6 @@
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 66,
       "market": "UK"
     },
     {
@@ -293,9 +287,15 @@
       "market": "US"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 65,
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 63,
       "market": "UK"
     },
     {
@@ -305,8 +305,8 @@
       "market": "US"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 62,
       "market": "UK"
     },
@@ -329,7 +329,7 @@
       "market": "UK"
     }
   ],
-  "totalStocks": 859,
+  "totalStocks": 857,
   "avgScore": 49,
-  "bearishAlertCount": 379
+  "bearishAlertCount": 377
 }
