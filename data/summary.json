@@ -43,13 +43,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 70,
@@ -69,6 +62,13 @@
       "score": 70,
       "market": "DE",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 70,
+      "market": "HK",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -80,15 +80,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "IONQ",
-      "name": "IonQ",
-      "score": 21,
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "IONQ",
+      "name": "IonQ",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -129,18 +129,18 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "SNPS",
+      "name": "Synopsys",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "APP",
       "name": "AppLovin",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -175,12 +175,6 @@
       "market": "JP"
     },
     {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 70,
@@ -203,6 +197,12 @@
       "name": "WH Group",
       "score": 70,
       "market": "HK"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -237,6 +237,12 @@
       "market": "US"
     },
     {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "CNA.L",
       "name": "Centrica",
       "score": 64,
@@ -259,12 +265,6 @@
       "name": "F.N.B. Corp",
       "score": 62,
       "market": "US"
-    },
-    {
-      "ticker": "UU.L",
-      "name": "United Utilities",
-      "score": 62,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -272,12 +272,6 @@
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 66,
       "market": "UK"
     },
     {
@@ -291,6 +285,12 @@
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "WOSG.L",
@@ -311,8 +311,8 @@
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 58,
       "market": "UK"
     },
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "PHNX.L",
-      "name": "Phoenix Group",
+      "ticker": "FOUR.L",
+      "name": "4imprint",
       "score": 57,
       "market": "UK"
     }
   ],
-  "totalStocks": 844,
+  "totalStocks": 859,
   "avgScore": 49,
-  "bearishAlertCount": 370
+  "bearishAlertCount": 374
 }
