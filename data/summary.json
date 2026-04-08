@@ -1,11 +1,11 @@
 {
   "topOverall": [
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 77,
-      "market": "JP",
-      "capCategory": "Large"
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 75,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "ONGC.NS",
@@ -15,11 +15,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
+      "ticker": "8002.T",
+      "name": "Marubeni",
       "score": 74,
-      "market": "UK",
-      "capCategory": "Mid"
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 73,
+      "market": "JP",
+      "capCategory": "Large"
     },
     {
       "ticker": "AMAT",
@@ -62,27 +69,20 @@
       "score": 72,
       "market": "HK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 18,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 20,
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
@@ -98,11 +98,11 @@
       "name": "Trade Desk",
       "score": 21,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -145,16 +145,22 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 77,
-      "market": "JP"
-    },
-    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 75,
       "market": "IN"
+    },
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 74,
+      "market": "JP"
+    },
+    {
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 73,
+      "market": "JP"
     },
     {
       "ticker": "AMAT",
@@ -193,15 +199,9 @@
       "market": "HK"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "DE",
+      "name": "Deere & Co",
       "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 70,
       "market": "US"
     }
   ],
@@ -209,7 +209,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 74,
+      "score": 75,
       "market": "UK"
     },
     {
@@ -231,12 +231,6 @@
       "market": "UK"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 68,
-      "market": "UK"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 66,
@@ -247,6 +241,12 @@
       "name": "Vaxcyte",
       "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 66,
+      "market": "UK"
     },
     {
       "ticker": "TTC",
@@ -261,29 +261,23 @@
       "market": "UK"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 62,
-      "market": "US"
+      "ticker": "CWK.L",
+      "name": "Cranswick",
+      "score": 63,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
       "score": 69,
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 68,
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 67,
       "market": "UK"
     },
     {
@@ -305,6 +299,12 @@
       "market": "UK"
     },
     {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
       "score": 64,
@@ -317,19 +317,19 @@
       "market": "US"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
       "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
       "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 364
+  "bearishAlertCount": 360
 }
