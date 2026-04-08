@@ -29,16 +29,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 73,
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
@@ -47,6 +47,13 @@
       "name": "TotalEnergies",
       "score": 73,
       "market": "FR",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DE",
+      "name": "Deere & Co",
+      "score": 72,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -62,20 +69,20 @@
       "score": 72,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 17,
+      "score": 18,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
@@ -87,8 +94,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -101,11 +108,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
+      "ticker": "LCID",
+      "name": "Lucid Group",
       "score": 23,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "BYND",
@@ -120,13 +127,6 @@
       "score": 24,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "OPEN",
@@ -163,15 +163,15 @@
       "market": "IN"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 74,
       "market": "US"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 73,
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "score": 74,
       "market": "US"
     },
     {
@@ -179,6 +179,12 @@
       "name": "TotalEnergies",
       "score": 73,
       "market": "FR"
+    },
+    {
+      "ticker": "DE",
+      "name": "Deere & Co",
+      "score": 72,
+      "market": "US"
     },
     {
       "ticker": "MU",
@@ -197,12 +203,6 @@
       "name": "Rio Tinto",
       "score": 72,
       "market": "UK"
-    },
-    {
-      "ticker": "EN.PA",
-      "name": "Bouygues",
-      "score": 72,
-      "market": "FR"
     }
   ],
   "topMidCap": [
