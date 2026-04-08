@@ -29,13 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "4911.T",
       "name": "Shiseido",
       "score": 72,
@@ -64,81 +57,88 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DOW",
-      "name": "Dow Inc",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 71,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 70,
+      "market": "UK",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 16,
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 19,
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 20,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ",
-      "score": 22,
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "BYND",
       "name": "Beyond Meat",
-      "score": 23,
+      "score": 22,
       "market": "US",
       "capCategory": "Small"
     },
     {
-      "ticker": "OPEN",
-      "name": "Opendoor Technologies",
-      "score": 23,
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 22,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "AFRM",
-      "name": "Affirm",
+      "ticker": "MSTR",
+      "name": "MicroStrategy",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 23,
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "OPEN",
+      "name": "Opendoor Technologies",
+      "score": 24,
       "market": "US",
       "capCategory": "Mid"
     }
@@ -159,12 +159,6 @@
     {
       "ticker": "HOLX",
       "name": "Hologic",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
       "score": 72,
       "market": "US"
     },
@@ -193,16 +187,22 @@
       "market": "HK"
     },
     {
-      "ticker": "DOW",
-      "name": "Dow Inc",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 71,
-      "market": "US"
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 70,
+      "market": "DE"
     }
   ],
   "topMidCap": [
@@ -219,9 +219,9 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 69,
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 68,
       "market": "US"
     },
     {
@@ -237,9 +237,21 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 67,
+      "market": "US"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 65,
       "market": "US"
     },
     {
@@ -249,20 +261,8 @@
       "market": "UK"
     },
     {
-      "ticker": "LEA",
-      "name": "Lear Corp",
-      "score": 64,
-      "market": "US"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
       "score": 62,
       "market": "US"
     }
@@ -287,15 +287,15 @@
       "market": "UK"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
+      "ticker": "EXAS",
+      "name": "Exact Sciences",
       "score": 65,
       "market": "US"
     },
     {
-      "ticker": "EXAS",
-      "name": "Exact Sciences",
-      "score": 65,
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 63,
       "market": "US"
     },
     {
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 59,
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 59,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 50,
-  "bearishAlertCount": 375
+  "avgScore": 49,
+  "bearishAlertCount": 352
 }
