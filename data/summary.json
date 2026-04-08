@@ -8,18 +8,18 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "ONGC.NS",
+      "name": "ONGC",
+      "score": 75,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 74,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
-      "score": 74,
-      "market": "IN",
-      "capCategory": "Large"
     },
     {
       "ticker": "HOLX",
@@ -33,20 +33,6 @@
       "name": "Bunge Global",
       "score": 72,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE",
       "capCategory": "Large"
     },
     {
@@ -69,13 +55,27 @@
       "score": 72,
       "market": "HK",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 72,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DOW",
+      "name": "Dow Inc",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 18,
+      "score": 16,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,15 +101,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
+      "ticker": "AFRM",
+      "name": "Affirm",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -129,8 +122,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -141,6 +134,13 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -153,7 +153,7 @@
     {
       "ticker": "ONGC.NS",
       "name": "ONGC",
-      "score": 74,
+      "score": 75,
       "market": "IN"
     },
     {
@@ -167,12 +167,6 @@
       "name": "Bunge Global",
       "score": 72,
       "market": "US"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE"
     },
     {
       "ticker": "4911.T",
@@ -201,6 +195,12 @@
     {
       "ticker": "DOW",
       "name": "Dow Inc",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 71,
       "market": "US"
     }
@@ -239,7 +239,7 @@
     {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
-      "score": 65,
+      "score": 66,
       "market": "UK"
     },
     {
@@ -261,23 +261,23 @@
       "market": "US"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 62,
-      "market": "US"
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 63,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 72,
-      "market": "UK"
-    },
-    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 66,
       "market": "UK"
     },
     {
@@ -293,18 +293,6 @@
       "market": "US"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "SNR.L",
       "name": "Senior plc",
       "score": 63,
@@ -313,6 +301,18 @@
     {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 62,
       "market": "UK"
     },
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 371
+  "bearishAlertCount": 374
 }
