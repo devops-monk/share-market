@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 77,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 76,
@@ -22,24 +29,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 74,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
       "score": 73,
       "market": "FR",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 73,
-      "market": "JP",
       "capCategory": "Large"
     },
     {
@@ -69,20 +62,20 @@
       "score": 72,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 16,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 19,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
@@ -94,8 +87,29 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TTD",
       "name": "Trade Desk",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
@@ -108,18 +122,11 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "APTV",
@@ -134,16 +141,15 @@
       "score": 24,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 77,
+      "market": "JP"
+    },
     {
       "ticker": "ONGC.NS",
       "name": "ONGC",
@@ -157,22 +163,10 @@
       "market": "US"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 74,
-      "market": "JP"
-    },
-    {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
       "score": 73,
       "market": "FR"
-    },
-    {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 73,
-      "market": "JP"
     },
     {
       "ticker": "FDX",
@@ -203,6 +197,12 @@
       "name": "Shiseido",
       "score": 72,
       "market": "JP"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 72,
+      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -261,10 +261,10 @@
       "market": "US"
     },
     {
-      "ticker": "CNA.L",
-      "name": "Centrica",
+      "ticker": "TTC",
+      "name": "Toro Company",
       "score": 66,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 51,
-  "bearishAlertCount": 364
+  "bearishAlertCount": 365
 }
