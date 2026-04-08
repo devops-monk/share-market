@@ -75,7 +75,7 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 15,
+      "score": 16,
       "market": "US",
       "capCategory": "Large"
     },
@@ -94,15 +94,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "IONQ",
-      "name": "IonQ",
-      "score": 22,
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
+      "ticker": "IONQ",
+      "name": "IonQ",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -122,6 +122,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "AFRM",
       "name": "Affirm",
       "score": 23,
@@ -129,18 +136,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GLBE",
-      "name": "Global-e Online",
-      "score": 24,
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 23,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -231,15 +231,21 @@
       "market": "UK"
     },
     {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 68,
+      "market": "UK"
+    },
+    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
       "score": 67,
       "market": "US"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 67,
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 65,
       "market": "UK"
     },
     {
@@ -247,12 +253,6 @@
       "name": "Lear Corp",
       "score": 64,
       "market": "US"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 64,
-      "market": "UK"
     },
     {
       "ticker": "LUNR",
@@ -271,13 +271,19 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 67,
+      "score": 68,
       "market": "UK"
     },
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 67,
+      "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 66,
       "market": "UK"
     },
     {
@@ -293,21 +299,15 @@
       "market": "US"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
-      "score": 62,
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 62,
+      "score": 63,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 379
+  "bearishAlertCount": 375
 }
