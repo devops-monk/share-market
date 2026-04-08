@@ -75,7 +75,7 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 16,
+      "score": 15,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,8 +101,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -122,8 +122,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
+      "ticker": "AFRM",
+      "name": "Affirm",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -239,7 +239,7 @@
     {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
-      "score": 66,
+      "score": 67,
       "market": "UK"
     },
     {
@@ -261,23 +261,23 @@
       "market": "US"
     },
     {
-      "ticker": "CNA.L",
-      "name": "Centrica",
-      "score": 63,
-      "market": "UK"
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 62,
+      "market": "US"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 67,
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 66,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 67,
       "market": "UK"
     },
     {
@@ -295,7 +295,7 @@
     {
       "ticker": "SNR.L",
       "name": "Senior plc",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
       "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 374
+  "bearishAlertCount": 379
 }
