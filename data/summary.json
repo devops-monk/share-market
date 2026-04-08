@@ -8,18 +8,18 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 74,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 74,
       "market": "IN",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Mid"
     },
     {
       "ticker": "HOLX",
@@ -34,6 +34,13 @@
       "score": 72,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "RWE.DE",
@@ -59,13 +66,6 @@
     {
       "ticker": "0006.HK",
       "name": "Power Assets Holdings",
-      "score": 72,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0288.HK",
-      "name": "WH Group",
       "score": 72,
       "market": "HK",
       "capCategory": "Large"
@@ -108,6 +108,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BYND",
       "name": "Beyond Meat",
       "score": 23,
@@ -124,13 +131,6 @@
     {
       "ticker": "AFRM",
       "name": "Affirm",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -209,7 +209,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 73,
+      "score": 74,
       "market": "UK"
     },
     {
@@ -237,16 +237,16 @@
       "market": "US"
     },
     {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "LEA",
       "name": "Lear Corp",
       "score": 64,
       "market": "US"
-    },
-    {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 64,
-      "market": "UK"
     },
     {
       "ticker": "INVP.L",
@@ -271,7 +271,13 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 71,
+      "score": 72,
+      "market": "UK"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 67,
       "market": "UK"
     },
     {
@@ -296,12 +302,6 @@
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 64,
       "market": "UK"
     },
     {
