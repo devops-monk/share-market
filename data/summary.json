@@ -43,13 +43,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "DE",
-      "name": "Deere & Co",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "MU",
       "name": "Micron",
       "score": 72,
@@ -64,6 +57,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 72,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "6273.T",
       "name": "SMC Corp",
       "score": 72,
@@ -72,13 +72,6 @@
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
     {
       "ticker": "NOW",
       "name": "ServiceNow",
@@ -94,32 +87,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 23,
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
-      "score": 24,
-      "market": "FR",
-      "capCategory": "Mid"
     },
     {
       "ticker": "BYND",
@@ -129,10 +101,31 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "SNAP",
-      "name": "Snap",
+      "ticker": "TTD",
+      "name": "Trade Desk",
       "score": 24,
       "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 25,
+      "market": "FR",
       "capCategory": "Mid"
     },
     {
@@ -141,6 +134,13 @@
       "score": 25,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -175,12 +175,6 @@
       "market": "JP"
     },
     {
-      "ticker": "DE",
-      "name": "Deere & Co",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "MU",
       "name": "Micron",
       "score": 72,
@@ -193,15 +187,21 @@
       "market": "US"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 72,
+      "market": "DE"
+    },
+    {
       "ticker": "6273.T",
       "name": "SMC Corp",
       "score": 72,
       "market": "JP"
     },
     {
-      "ticker": "CAT",
-      "name": "Caterpillar",
-      "score": 70,
+      "ticker": "DE",
+      "name": "Deere & Co",
+      "score": 71,
       "market": "US"
     }
   ],
@@ -311,12 +311,6 @@
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 60,
-      "market": "UK"
-    },
-    {
       "ticker": "SNR.L",
       "name": "Senior plc",
       "score": 60,
@@ -326,6 +320,12 @@
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
+      "score": 58,
       "market": "UK"
     }
   ],
