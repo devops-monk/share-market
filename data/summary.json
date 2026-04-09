@@ -3,7 +3,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 75,
+      "score": 77,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,6 +108,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "VIV.PA",
       "name": "Vivendi",
       "score": 24,
@@ -122,11 +129,11 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 24,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "OPEN",
@@ -134,20 +141,13 @@
       "score": 25,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "APTV",
-      "name": "Aptiv",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 75,
+      "score": 77,
       "market": "US"
     },
     {
@@ -199,9 +199,9 @@
       "market": "JP"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 70,
+      "ticker": "DE",
+      "name": "Deere & Co",
+      "score": 71,
       "market": "US"
     }
   ],
@@ -269,12 +269,6 @@
   ],
   "topSmallCap": [
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 68,
-      "market": "UK"
-    },
-    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 66,
@@ -299,6 +293,12 @@
       "market": "UK"
     },
     {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 61,
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
       "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 59,
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 57,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 372
+  "bearishAlertCount": 373
 }
