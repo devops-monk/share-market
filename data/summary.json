@@ -3,7 +3,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 77,
+      "score": 75,
       "market": "US",
       "capCategory": "Large"
     },
@@ -147,7 +147,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 77,
+      "score": 75,
       "market": "US"
     },
     {
@@ -199,9 +199,9 @@
       "market": "JP"
     },
     {
-      "ticker": "DE",
-      "name": "Deere & Co",
-      "score": 71,
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 70,
       "market": "US"
     }
   ],
@@ -269,6 +269,12 @@
   ],
   "topSmallCap": [
     {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 68,
+      "market": "UK"
+    },
+    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 66,
@@ -281,12 +287,6 @@
       "market": "US"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 64,
@@ -295,7 +295,7 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 62,
+      "score": 63,
       "market": "UK"
     },
     {
@@ -305,8 +305,20 @@
       "market": "UK"
     },
     {
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 60,
+      "market": "UK"
+    },
+    {
       "ticker": "SNR.L",
       "name": "Senior plc",
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
       "score": 59,
       "market": "UK"
     },
@@ -314,18 +326,6 @@
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 58,
-      "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 57,
       "market": "UK"
     }
   ],
