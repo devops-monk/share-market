@@ -24,7 +24,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 72,
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
@@ -73,20 +73,6 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 21,
@@ -94,11 +80,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "ESTC",
-      "name": "Elastic NV",
+      "ticker": "DT",
+      "name": "Dynatrace",
       "score": 21,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "COIN",
@@ -106,13 +92,6 @@
       "score": 21,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Small"
     },
     {
       "ticker": "GLBE",
@@ -129,18 +108,39 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
+      "ticker": "PLTR",
+      "name": "Palantir",
       "score": 22,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
-      "ticker": "SNAP",
-      "name": "Snap",
+      "ticker": "TSLA",
+      "name": "Tesla",
       "score": 22,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "TENB",
+      "name": "Tenable Holdings",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -159,7 +159,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 72,
+      "score": 73,
       "market": "US"
     },
     {
@@ -231,12 +231,6 @@
       "market": "US"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 65,
-      "market": "US"
-    },
-    {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
       "score": 65,
@@ -245,7 +239,7 @@
     {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 63,
+      "score": 64,
       "market": "US"
     },
     {
@@ -263,6 +257,12 @@
     {
       "ticker": "UU.L",
       "name": "United Utilities",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "BLND.L",
+      "name": "British Land",
       "score": 63,
       "market": "UK"
     }
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 862,
-  "avgScore": 49,
-  "bearishAlertCount": 381
+  "avgScore": 50,
+  "bearishAlertCount": 380
 }
