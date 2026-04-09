@@ -1,31 +1,10 @@
 {
   "topOverall": [
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 75,
       "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 74,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -43,8 +22,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -69,26 +48,68 @@
       "score": 72,
       "market": "JP",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 70,
+      "market": "HK",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 18,
+      "score": 14,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 17,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
       "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -96,77 +117,38 @@
     {
       "ticker": "BYND",
       "name": "Beyond Meat",
-      "score": 24,
+      "score": 22,
       "market": "US",
       "capCategory": "Small"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 24,
+      "ticker": "GLBE",
+      "name": "Global-e Online",
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 24,
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 24,
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
-      "score": 25,
-      "market": "FR",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "OPEN",
-      "name": "Opendoor Technologies",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "APTV",
-      "name": "Aptiv",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 75,
-      "market": "US"
-    },
     {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 75,
       "market": "HK"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "BG",
-      "name": "Bunge Global",
-      "score": 74,
-      "market": "US"
     },
     {
       "ticker": "8002.T",
@@ -175,8 +157,8 @@
       "market": "JP"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 72,
       "market": "US"
     },
@@ -199,9 +181,27 @@
       "market": "JP"
     },
     {
-      "ticker": "DE",
-      "name": "Deere & Co",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 70,
+      "market": "HK"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 69,
       "market": "US"
     }
   ],
@@ -219,8 +219,8 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 68,
       "market": "US"
     },
@@ -237,33 +237,33 @@
       "market": "UK"
     },
     {
-      "ticker": "TTC",
-      "name": "Toro Company",
-      "score": 67,
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 66,
       "market": "US"
     },
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 65,
+      "score": 63,
       "market": "US"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 64,
+      "ticker": "TTC",
+      "name": "Toro Company",
+      "score": 63,
       "market": "US"
     },
     {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 64,
+      "score": 62,
       "market": "US"
     },
     {
-      "ticker": "HSIC",
-      "name": "Henry Schein",
-      "score": 64,
+      "ticker": "NNN",
+      "name": "NNN REIT",
+      "score": 62,
       "market": "US"
     }
   ],
@@ -283,7 +283,7 @@
     {
       "ticker": "LTC",
       "name": "LTC Properties",
-      "score": 64,
+      "score": 63,
       "market": "US"
     },
     {
@@ -313,7 +313,7 @@
     {
       "ticker": "SNR.L",
       "name": "Senior plc",
-      "score": 60,
+      "score": 61,
       "market": "UK"
     },
     {
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
       "score": 58,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 50,
-  "bearishAlertCount": 373
+  "avgScore": 49,
+  "bearishAlertCount": 390
 }
