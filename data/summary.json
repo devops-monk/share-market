@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 74,
@@ -36,13 +43,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
@@ -57,17 +57,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 71,
-      "market": "FR",
+      "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "EN.PA",
-      "name": "Bouygues",
+      "ticker": "DE",
+      "name": "Deere & Co",
       "score": 71,
-      "market": "FR",
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -75,23 +75,16 @@
     {
       "ticker": "DT",
       "name": "Dynatrace",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 22,
       "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "LCID",
@@ -108,39 +101,46 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "ESTC",
       "name": "Elastic NV",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "APTV",
       "name": "Aptiv",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "OKTA",
       "name": "Okta",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 23,
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 24,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -149,6 +149,12 @@
       "name": "Sun Hung Kai Properties",
       "score": 75,
       "market": "HK"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 74,
+      "market": "US"
     },
     {
       "ticker": "RWE.DE",
@@ -169,12 +175,6 @@
       "market": "US"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
@@ -187,21 +187,21 @@
       "market": "JP"
     },
     {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 71,
-      "market": "FR"
-    },
-    {
-      "ticker": "EN.PA",
-      "name": "Bouygues",
-      "score": 71,
-      "market": "FR"
-    },
-    {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 70,
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "DE",
+      "name": "Deere & Co",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 71,
       "market": "US"
     }
   ],
@@ -213,16 +213,16 @@
       "market": "UK"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 69,
+      "market": "US"
+    },
+    {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 69,
       "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 68,
-      "market": "US"
     },
     {
       "ticker": "IGG.L",
@@ -243,26 +243,26 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 63,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 63,
+      "market": "US"
+    },
+    {
       "ticker": "SBRY.L",
       "name": "Sainsbury",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "CNA.L",
-      "name": "Centrica",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "UU.L",
-      "name": "United Utilities",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "BLND.L",
-      "name": "British Land",
       "score": 63,
       "market": "UK"
     }
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 383
+  "bearishAlertCount": 385
 }
