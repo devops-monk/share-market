@@ -22,6 +22,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 74,
@@ -36,8 +43,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -50,22 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "6273.T",
-      "name": "SMC Corp",
-      "score": 72,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "DE",
+      "name": "Deere & Co",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "DE",
-      "name": "Deere & Co",
+      "ticker": "MU",
+      "name": "Micron",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -157,6 +157,12 @@
       "market": "US"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 74,
+      "market": "US"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 74,
@@ -169,8 +175,8 @@
       "market": "JP"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 73,
       "market": "US"
     },
@@ -178,18 +184,6 @@
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "6273.T",
-      "name": "SMC Corp",
-      "score": 72,
-      "market": "JP"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
       "market": "US"
     },
     {
@@ -203,6 +197,12 @@
       "name": "Micron",
       "score": 71,
       "market": "US"
+    },
+    {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 71,
+      "market": "FR"
     }
   ],
   "topMidCap": [
