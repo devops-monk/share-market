@@ -1,18 +1,18 @@
 {
   "topOverall": [
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 76,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 75,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 75,
+      "market": "HK",
+      "capCategory": "Large"
     },
     {
       "ticker": "RWE.DE",
@@ -22,15 +22,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US",
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 74,
+      "market": "JP",
       "capCategory": "Large"
     },
     {
       "ticker": "FDX",
       "name": "FedEx",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -62,23 +69,9 @@
       "score": 71,
       "market": "FR",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
-    },
     {
       "ticker": "DT",
       "name": "Dynatrace",
@@ -94,25 +87,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "GLBE",
-      "name": "Global-e Online",
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "ESTC",
-      "name": "Elastic NV",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "OKTA",
-      "name": "Okta",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "LCID",
@@ -122,13 +101,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TSLA",
-      "name": "Tesla",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BYND",
       "name": "Beyond Meat",
       "score": 23,
@@ -136,8 +108,36 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "ESTC",
+      "name": "Elastic NV",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "APTV",
       "name": "Aptiv",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "OKTA",
+      "name": "Okta",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -145,10 +145,10 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 76,
-      "market": "JP"
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 75,
+      "market": "HK"
     },
     {
       "ticker": "RWE.DE",
@@ -157,14 +157,20 @@
       "market": "DE"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US"
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 74,
+      "market": "JP"
     },
     {
       "ticker": "FDX",
       "name": "FedEx",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US"
     },
@@ -193,16 +199,10 @@
       "market": "FR"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 70,
       "market": "US"
-    },
-    {
-      "ticker": "TSCO.L",
-      "name": "Tesco",
-      "score": 70,
-      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -231,16 +231,16 @@
       "market": "UK"
     },
     {
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
       "score": 65,
       "market": "UK"
-    },
-    {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 64,
-      "market": "US"
     },
     {
       "ticker": "SBRY.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 384
+  "bearishAlertCount": 383
 }
