@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 73,
@@ -29,13 +36,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
@@ -43,10 +43,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
+      "ticker": "SSE.L",
+      "name": "SSE",
       "score": 72,
       "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -57,28 +64,14 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GSK.L",
-      "name": "GSK",
+      "ticker": "MU",
+      "name": "Micron",
       "score": 70,
-      "market": "UK",
+      "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "TSLA",
-      "name": "Tesla",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
     {
       "ticker": "BYND",
       "name": "Beyond Meat",
@@ -101,6 +94,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "DT",
       "name": "Dynatrace",
       "score": 20,
@@ -108,32 +108,25 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "OKTA",
       "name": "Okta",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "AFRM",
       "name": "Affirm",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
       "score": 22,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "LCID",
@@ -141,6 +134,13 @@
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -149,6 +149,12 @@
       "name": "Sun Hung Kai Properties",
       "score": 75,
       "market": "HK"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 73,
+      "market": "UK"
     },
     {
       "ticker": "RWE.DE",
@@ -163,22 +169,22 @@
       "market": "JP"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
+      "ticker": "SSE.L",
+      "name": "SSE",
       "score": 72,
       "market": "UK"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "TTE.PA",
@@ -187,22 +193,16 @@
       "market": "FR"
     },
     {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "GSK.L",
       "name": "GSK",
       "score": 70,
       "market": "UK"
-    },
-    {
-      "ticker": "6273.T",
-      "name": "SMC Corp",
-      "score": 70,
-      "market": "JP"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 70,
-      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -215,6 +215,12 @@
     {
       "ticker": "SDR.L",
       "name": "Schroders",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "IMI.L",
+      "name": "IMI",
       "score": 70,
       "market": "UK"
     },
@@ -255,15 +261,9 @@
       "market": "UK"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 63,
       "market": "US"
     }
   ],
@@ -319,7 +319,7 @@
     {
       "ticker": "SNR.L",
       "name": "Senior plc",
-      "score": 61,
+      "score": 63,
       "market": "UK"
     },
     {
