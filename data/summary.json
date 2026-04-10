@@ -3,14 +3,14 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 76,
+      "score": 77,
       "market": "UK",
       "capCategory": "Mid"
     },
     {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
-      "score": 74,
+      "score": 75,
       "market": "HK",
       "capCategory": "Large"
     },
@@ -29,8 +29,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -43,24 +43,24 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
-      "score": 71,
+      "score": 72,
       "market": "UK",
       "capCategory": "Large"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 71,
+      "market": "FR",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GSK.L",
+      "name": "GSK",
       "score": 70,
-      "market": "US",
+      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -73,8 +73,8 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
+      "ticker": "TSLA",
+      "name": "Tesla",
       "score": 18,
       "market": "US",
       "capCategory": "Large"
@@ -101,18 +101,25 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "OKTA",
       "name": "Okta",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "AFRM",
+      "name": "Affirm",
       "score": 21,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "COIN",
@@ -122,32 +129,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DDOG",
-      "name": "Datadog",
-      "score": 21,
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 22,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "TSLA",
-      "name": "Tesla",
-      "score": 21,
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 22,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TENB",
-      "name": "Tenable Holdings",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
-      "score": 74,
+      "score": 75,
       "market": "HK"
     },
     {
@@ -163,8 +163,8 @@
       "market": "JP"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US"
     },
@@ -175,22 +175,22 @@
       "market": "US"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
-      "score": 71,
+      "score": 72,
       "market": "UK"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 71,
+      "market": "FR"
+    },
+    {
+      "ticker": "GSK.L",
+      "name": "GSK",
       "score": 70,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "6273.T",
@@ -209,7 +209,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 76,
+      "score": 77,
       "market": "UK"
     },
     {
@@ -221,13 +221,19 @@
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 68,
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "SVT.L",
+      "name": "Severn Trent",
+      "score": 69,
       "market": "UK"
     },
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
-      "score": 66,
+      "score": 67,
       "market": "UK"
     },
     {
@@ -237,14 +243,20 @@
       "market": "US"
     },
     {
-      "ticker": "SVT.L",
-      "name": "Severn Trent",
+      "ticker": "CWK.L",
+      "name": "Cranswick",
       "score": 65,
       "market": "UK"
     },
     {
       "ticker": "INVP.L",
       "name": "Investec",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
       "score": 64,
       "market": "UK"
     },
@@ -253,31 +265,19 @@
       "name": "Vaxcyte",
       "score": 63,
       "market": "US"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 63,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
       "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 67,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 66,
       "market": "UK"
     },
     {
@@ -287,8 +287,20 @@
       "market": "US"
     },
     {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "MARS.L",
       "name": "Marston's",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 65,
       "market": "UK"
     },
@@ -299,37 +311,25 @@
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
-      "score": 62,
+      "score": 64,
       "market": "UK"
     },
     {
       "ticker": "SNR.L",
       "name": "Senior plc",
-      "score": 60,
+      "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 59,
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 400
+  "bearishAlertCount": 409
 }
