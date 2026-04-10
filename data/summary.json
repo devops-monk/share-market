@@ -43,6 +43,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 72,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 72,
@@ -61,13 +68,6 @@
       "name": "Rio Tinto",
       "score": 71,
       "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 70,
-      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -175,6 +175,12 @@
       "market": "US"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 72,
+      "market": "DE"
+    },
+    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 72,
@@ -193,16 +199,10 @@
       "market": "UK"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
+      "ticker": "CAT",
+      "name": "Caterpillar",
       "score": 70,
       "market": "US"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 70,
-      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -225,6 +225,12 @@
       "market": "US"
     },
     {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 68,
+      "market": "UK"
+    },
+    {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 66,
@@ -237,22 +243,16 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 64,
       "market": "US"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "INVP.L",
@@ -269,12 +269,6 @@
   ],
   "topSmallCap": [
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 68,
-      "market": "UK"
-    },
-    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 67,
@@ -289,6 +283,12 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 65,
       "market": "UK"
     },
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 59,
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 59,
+      "ticker": "GYM.L",
+      "name": "Gym Group",
+      "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 373
+  "bearishAlertCount": 377
 }
