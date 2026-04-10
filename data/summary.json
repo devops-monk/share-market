@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
@@ -47,13 +54,6 @@
       "name": "SSE",
       "score": 72,
       "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -82,44 +82,30 @@
     {
       "ticker": "APTV",
       "name": "Aptiv",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "COIN",
       "name": "Coinbase",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "TTD",
-      "name": "Trade Desk",
+      "ticker": "VRNS",
+      "name": "Varonis Systems",
       "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "OKTA",
-      "name": "Okta",
-      "score": 22,
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 21,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "AFRM",
@@ -136,11 +122,25 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TSLA",
-      "name": "Tesla",
-      "score": 22,
+      "ticker": "OPEN",
+      "name": "Opendoor Technologies",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "OKTA",
+      "name": "Okta",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -169,6 +169,12 @@
       "market": "JP"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
@@ -179,12 +185,6 @@
       "name": "SSE",
       "score": 72,
       "market": "UK"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US"
     },
     {
       "ticker": "TTE.PA",
@@ -245,7 +245,7 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 65,
+      "score": 66,
       "market": "US"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 409
+  "bearishAlertCount": 403
 }
