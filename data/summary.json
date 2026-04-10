@@ -8,13 +8,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 74,
@@ -26,6 +19,13 @@
       "name": "Sun Hung Kai Properties",
       "score": 74,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -64,8 +64,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CAT",
-      "name": "Caterpillar",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -101,6 +101,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 24,
@@ -134,22 +141,9 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 74,
-      "market": "US"
-    },
     {
       "ticker": "FDX",
       "name": "FedEx",
@@ -161,6 +155,12 @@
       "name": "Sun Hung Kai Properties",
       "score": 74,
       "market": "HK"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
+      "market": "US"
     },
     {
       "ticker": "SLB",
@@ -193,16 +193,16 @@
       "market": "UK"
     },
     {
-      "ticker": "CAT",
-      "name": "Caterpillar",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "ALB",
       "name": "Albemarle",
       "score": 70,
       "market": "US"
+    },
+    {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 70,
+      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -225,12 +225,6 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 68,
-      "market": "UK"
-    },
-    {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 66,
@@ -241,6 +235,12 @@
       "name": "F.N.B. Corp",
       "score": 65,
       "market": "US"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 65,
+      "market": "UK"
     },
     {
       "ticker": "BBY.L",
@@ -269,9 +269,15 @@
   ],
   "topSmallCap": [
     {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 68,
+      "market": "UK"
+    },
+    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 66,
+      "score": 67,
       "market": "UK"
     },
     {
@@ -283,12 +289,6 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
       "score": 65,
       "market": "UK"
     },
@@ -313,13 +313,7 @@
     {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 59,
+      "score": 61,
       "market": "UK"
     },
     {
@@ -327,9 +321,15 @@
       "name": "Senior plc",
       "score": 59,
       "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 59,
+      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 376
+  "bearishAlertCount": 373
 }
