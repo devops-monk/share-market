@@ -22,6 +22,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
@@ -62,43 +69,22 @@
       "score": 70,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 70,
-      "market": "HK",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "APTV",
-      "name": "Aptiv",
+      "ticker": "BYND",
+      "name": "Beyond Meat",
       "score": 19,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
-      "ticker": "PLTR",
-      "name": "Palantir",
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
       "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 20,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "OKTA",
@@ -110,16 +96,16 @@
     {
       "ticker": "COIN",
       "name": "Coinbase",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "PLTR",
+      "name": "Palantir",
       "score": 21,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "TSLA",
@@ -129,18 +115,32 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "APP",
       "name": "AppLovin",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TENB",
+      "name": "Tenable Holdings",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -153,6 +153,12 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 72,
       "market": "US"
     },
@@ -193,12 +199,6 @@
       "market": "HK"
     },
     {
-      "ticker": "VZ",
-      "name": "Verizon",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "MU",
       "name": "Micron",
       "score": 69,
@@ -225,21 +225,15 @@
       "market": "UK"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 66,
-      "market": "UK"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 64,
+      "score": 66,
       "market": "US"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 64,
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 66,
       "market": "UK"
     },
     {
@@ -261,6 +255,12 @@
       "market": "UK"
     },
     {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 62,
+      "market": "US"
+    },
+    {
       "ticker": "CNA.L",
       "name": "Centrica",
       "score": 62,
@@ -275,16 +275,16 @@
       "market": "UK"
     },
     {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 65,
-      "market": "UK"
     },
     {
       "ticker": "CKN.L",
@@ -299,37 +299,37 @@
       "market": "US"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
-      "score": 61,
+      "score": 62,
       "market": "UK"
     },
     {
       "ticker": "SNR.L",
       "name": "Senior plc",
-      "score": 59,
+      "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
       "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 48,
-  "bearishAlertCount": 401
+  "avgScore": 49,
+  "bearishAlertCount": 392
 }
