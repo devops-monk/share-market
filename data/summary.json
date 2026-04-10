@@ -3,7 +3,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 75,
+      "score": 76,
       "market": "UK",
       "capCategory": "Mid"
     },
@@ -29,17 +29,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HOLX",
-      "name": "Hologic",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
+      "ticker": "HOLX",
+      "name": "Hologic",
       "score": 72,
-      "market": "DE",
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -50,13 +50,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "MU",
       "name": "Micron",
       "score": 71,
@@ -64,8 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "KO",
-      "name": "Coca-Cola",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -78,13 +78,6 @@
       "score": 22,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "BYND",
@@ -101,11 +94,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ONT.L",
-      "name": "Oxford Nanopore",
-      "score": 24,
-      "market": "UK",
-      "capCategory": "Small"
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
@@ -141,6 +134,13 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -163,16 +163,16 @@
       "market": "HK"
     },
     {
-      "ticker": "HOLX",
-      "name": "Hologic",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
+      "ticker": "HOLX",
+      "name": "Hologic",
       "score": 72,
-      "market": "DE"
+      "market": "US"
     },
     {
       "ticker": "8002.T",
@@ -181,20 +181,20 @@
       "market": "JP"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "MU",
       "name": "Micron",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "KO",
-      "name": "Coca-Cola",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar",
       "score": 70,
       "market": "US"
     },
@@ -209,7 +209,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 75,
+      "score": 76,
       "market": "UK"
     },
     {
@@ -243,16 +243,16 @@
       "market": "US"
     },
     {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 64,
       "market": "US"
-    },
-    {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 64,
-      "market": "UK"
     },
     {
       "ticker": "INVP.L",
@@ -281,6 +281,12 @@
       "market": "US"
     },
     {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 65,
@@ -305,9 +311,9 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 62,
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 60,
       "market": "UK"
     },
     {
@@ -317,19 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 375
+  "bearishAlertCount": 376
 }
