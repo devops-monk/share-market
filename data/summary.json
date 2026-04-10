@@ -8,13 +8,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 74,
@@ -33,6 +26,13 @@
       "name": "RWE",
       "score": 73,
       "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -101,16 +101,16 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
+      "ticker": "AFRM",
+      "name": "Affirm",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 23,
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
@@ -120,6 +120,13 @@
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "OPEN",
@@ -134,22 +141,9 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 74,
-      "market": "US"
-    },
     {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
@@ -167,6 +161,12 @@
       "name": "RWE",
       "score": 73,
       "market": "DE"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US"
     },
     {
       "ticker": "HOLX",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 404
+  "bearishAlertCount": 403
 }
