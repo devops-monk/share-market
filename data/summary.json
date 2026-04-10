@@ -8,13 +8,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 74,
@@ -24,13 +17,6 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -57,99 +43,107 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 71,
       "market": "UK",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 70,
+      "market": "HK",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "TSLA",
-      "name": "Tesla",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ESTC",
-      "name": "Elastic NV",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "APTV",
       "name": "Aptiv",
-      "score": 24,
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "OKTA",
       "name": "Okta",
-      "score": 24,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 24,
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 74,
-      "market": "US"
-    },
     {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
@@ -159,12 +153,6 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
       "score": 72,
       "market": "US"
     },
@@ -187,21 +175,33 @@
       "market": "JP"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 71,
       "market": "UK"
     },
     {
-      "ticker": "CAT",
-      "name": "Caterpillar",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 70,
+      "market": "HK"
+    },
+    {
+      "ticker": "VZ",
+      "name": "Verizon",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 69,
       "market": "US"
     }
   ],
@@ -219,12 +219,6 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 68,
@@ -235,12 +229,6 @@
       "name": "Plus500",
       "score": 66,
       "market": "UK"
-    },
-    {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 65,
-      "market": "US"
     },
     {
       "ticker": "LUNR",
@@ -261,10 +249,22 @@
       "market": "UK"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 63,
       "market": "US"
+    },
+    {
+      "ticker": "CWK.L",
+      "name": "Cranswick",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "CNA.L",
+      "name": "Centrica",
+      "score": 62,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 60,
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 60,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 50,
-  "bearishAlertCount": 377
+  "avgScore": 48,
+  "bearishAlertCount": 401
 }
