@@ -15,10 +15,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US",
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 73,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 73,
+      "market": "JP",
       "capCategory": "Large"
     },
     {
@@ -36,17 +43,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 72,
-      "market": "JP",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -73,11 +73,25 @@
   ],
   "bottomOverall": [
     {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 18,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BYND",
       "name": "Beyond Meat",
       "score": 19,
       "market": "US",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "HIMS",
@@ -94,6 +108,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "COIN",
       "name": "Coinbase",
       "score": 21,
@@ -101,8 +122,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PLTR",
-      "name": "Palantir",
+      "ticker": "DDOG",
+      "name": "Datadog",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -111,27 +132,6 @@
       "ticker": "TSLA",
       "name": "Tesla",
       "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify",
-      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
@@ -151,10 +151,16 @@
       "market": "HK"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US"
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 73,
+      "market": "DE"
+    },
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 73,
+      "market": "JP"
     },
     {
       "ticker": "FDX",
@@ -169,16 +175,10 @@
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 72,
-      "market": "JP"
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "RIO.L",
@@ -193,16 +193,16 @@
       "market": "US"
     },
     {
+      "ticker": "6273.T",
+      "name": "SMC Corp",
+      "score": 70,
+      "market": "JP"
+    },
+    {
       "ticker": "1398.HK",
       "name": "ICBC",
       "score": 70,
       "market": "HK"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -225,15 +225,21 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 66,
-      "market": "US"
-    },
-    {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "SVT.L",
+      "name": "Severn Trent",
+      "score": 65,
       "market": "UK"
     },
     {
@@ -249,35 +255,29 @@
       "market": "US"
     },
     {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 62,
+      "score": 63,
       "market": "US"
     },
     {
-      "ticker": "CNA.L",
-      "name": "Centrica",
-      "score": 62,
+      "ticker": "CWK.L",
+      "name": "Cranswick",
+      "score": 63,
       "market": "UK"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 67,
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 66,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 67,
       "market": "UK"
     },
     {
@@ -287,8 +287,8 @@
       "market": "US"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 65,
       "market": "UK"
     },
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 392
+  "bearishAlertCount": 400
 }
