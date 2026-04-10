@@ -1,6 +1,20 @@
 {
   "topOverall": [
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 75,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 74,
@@ -8,24 +22,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 74,
       "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -64,8 +64,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CAT",
-      "name": "Caterpillar",
+      "ticker": "KO",
+      "name": "Coca-Cola",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -80,6 +80,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "BYND",
       "name": "Beyond Meat",
       "score": 23,
@@ -92,13 +99,6 @@
       "score": 23,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "ONT.L",
@@ -145,6 +145,12 @@
   ],
   "topLargeCap": [
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 74,
+      "market": "US"
+    },
+    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 74,
@@ -155,12 +161,6 @@
       "name": "Sun Hung Kai Properties",
       "score": 74,
       "market": "HK"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US"
     },
     {
       "ticker": "HOLX",
@@ -193,8 +193,8 @@
       "market": "US"
     },
     {
-      "ticker": "CAT",
-      "name": "Caterpillar",
+      "ticker": "KO",
+      "name": "Coca-Cola",
       "score": 70,
       "market": "US"
     },
@@ -209,7 +209,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 74,
+      "score": 75,
       "market": "UK"
     },
     {
@@ -255,14 +255,14 @@
       "market": "UK"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 63,
-      "market": "US"
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 64,
+      "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
       "score": 63,
       "market": "US"
     }
@@ -299,15 +299,21 @@
       "market": "UK"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 62,
+      "ticker": "GYM.L",
+      "name": "Gym Group",
+      "score": 59,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "Hammerson",
       "score": 59,
       "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 58,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 376
+  "bearishAlertCount": 375
 }
