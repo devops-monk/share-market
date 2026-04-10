@@ -10,7 +10,7 @@
     {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
-      "score": 75,
+      "score": 74,
       "market": "HK",
       "capCategory": "Large"
     },
@@ -29,13 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 73,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 72,
@@ -57,6 +50,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 72,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
       "score": 71,
@@ -64,8 +64,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -75,7 +75,7 @@
     {
       "ticker": "BYND",
       "name": "Beyond Meat",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Small"
     },
@@ -87,16 +87,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
       "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "VRNS",
-      "name": "Varonis Systems",
-      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -108,8 +101,22 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "AFRM",
       "name": "Affirm",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -122,13 +129,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "OPEN",
-      "name": "Opendoor Technologies",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "OKTA",
       "name": "Okta",
       "score": 23,
@@ -136,8 +136,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
@@ -147,7 +147,7 @@
     {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
-      "score": 75,
+      "score": 74,
       "market": "HK"
     },
     {
@@ -161,12 +161,6 @@
       "name": "RWE",
       "score": 73,
       "market": "DE"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 73,
-      "market": "JP"
     },
     {
       "ticker": "AMAT",
@@ -187,22 +181,28 @@
       "market": "UK"
     },
     {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 72,
+      "market": "JP"
+    },
+    {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
       "score": 71,
       "market": "FR"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "GSK.L",
-      "name": "GSK",
+      "ticker": "MU",
+      "name": "Micron",
       "score": 70,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -237,16 +237,22 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 66,
-      "market": "US"
     },
     {
       "ticker": "CWK.L",
@@ -259,12 +265,6 @@
       "name": "Investec",
       "score": 65,
       "market": "UK"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 64,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 403
+  "bearishAlertCount": 406
 }
