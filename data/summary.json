@@ -15,16 +15,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 74,
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
@@ -57,17 +57,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "VZ",
-      "name": "Verizon",
+      "ticker": "BKR",
+      "name": "Baker Hughes",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "BKR",
-      "name": "Baker Hughes",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
       "score": 71,
-      "market": "US",
+      "market": "UK",
       "capCategory": "Large"
     }
   ],
@@ -129,16 +129,16 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CELH",
       "name": "Celsius Holdings",
       "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ESTC",
-      "name": "Elastic NV",
-      "score": 25,
       "market": "US",
       "capCategory": "Mid"
     }
@@ -151,15 +151,15 @@
       "market": "US"
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 74,
       "market": "US"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 74,
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 73,
       "market": "US"
     },
     {
@@ -181,12 +181,6 @@
       "market": "US"
     },
     {
-      "ticker": "VZ",
-      "name": "Verizon",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "BKR",
       "name": "Baker Hughes",
       "score": 71,
@@ -203,6 +197,12 @@
       "name": "TotalEnergies",
       "score": 71,
       "market": "FR"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 70,
+      "market": "US"
     }
   ],
   "topMidCap": [
