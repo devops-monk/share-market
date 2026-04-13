@@ -8,13 +8,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 73,
@@ -29,13 +22,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HOLX",
-      "name": "Hologic",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 72,
@@ -43,15 +29,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "VZ",
-      "name": "Verizon",
-      "score": 70,
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HOLX",
+      "name": "Hologic",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -69,9 +62,37 @@
       "score": 70,
       "market": "HK",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
+      "score": 69,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
+    {
+      "ticker": "SHOP",
+      "name": "Shopify",
+      "score": 18,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Mid"
+    },
     {
       "ticker": "BYND",
       "name": "Beyond Meat",
@@ -80,76 +101,49 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
+      "ticker": "LCID",
+      "name": "Lucid Group",
       "score": 20,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "APTV",
-      "name": "Aptiv",
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 22,
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
+      "ticker": "CHWY",
+      "name": "Chewy",
       "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TSLA",
-      "name": "Tesla",
-      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "OPEN",
       "name": "Opendoor Technologies",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 24,
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US"
-    },
     {
       "ticker": "8002.T",
       "name": "Marubeni",
@@ -163,26 +157,26 @@
       "market": "HK"
     },
     {
-      "ticker": "HOLX",
-      "name": "Hologic",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 72,
       "market": "DE"
     },
     {
-      "ticker": "VZ",
-      "name": "Verizon",
-      "score": 70,
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 71,
       "market": "US"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "HOLX",
+      "name": "Hologic",
       "score": 70,
       "market": "US"
     },
@@ -193,14 +187,20 @@
       "market": "HK"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "MRK",
+      "name": "Merck",
       "score": 69,
       "market": "US"
     },
     {
-      "ticker": "ROST",
-      "name": "Ross Stores",
+      "ticker": "BKR",
+      "name": "Baker Hughes",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 69,
       "market": "US"
     }
@@ -225,15 +225,9 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 67,
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 66,
       "market": "US"
     },
     {
@@ -243,8 +237,8 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
       "score": 64,
       "market": "US"
     },
@@ -261,8 +255,14 @@
       "market": "US"
     },
     {
-      "ticker": "AOS",
-      "name": "A.O. Smith",
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 61,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 61,
       "market": "US"
     }
@@ -273,12 +273,6 @@
       "name": "Ashmore Group",
       "score": 66,
       "market": "UK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 65,
-      "market": "US"
     },
     {
       "ticker": "EXAS",
@@ -299,14 +293,20 @@
       "market": "UK"
     },
     {
-      "ticker": "IDOX.L",
-      "name": "IDOX",
-      "score": 60,
-      "market": "UK"
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 61,
+      "market": "US"
     },
     {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "IDOX.L",
+      "name": "IDOX",
       "score": 60,
       "market": "UK"
     },
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 862,
-  "avgScore": 49,
-  "bearishAlertCount": 417
+  "avgScore": 48,
+  "bearishAlertCount": 426
 }
