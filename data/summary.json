@@ -8,6 +8,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 73,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 73,
@@ -29,6 +36,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 71,
@@ -43,13 +57,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 71,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "COP",
       "name": "ConocoPhillips",
       "score": 70,
@@ -57,15 +64,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HOLX",
-      "name": "Hologic",
+      "ticker": "VZ",
+      "name": "Verizon",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -75,14 +75,7 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 16,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 18,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,22 +94,15 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "WDAY",
       "name": "Workday",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TSLA",
-      "name": "Tesla",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -129,6 +115,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "CELH",
       "name": "Celsius Holdings",
       "score": 22,
@@ -136,14 +129,27 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 73,
+      "market": "JP"
+    },
     {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
@@ -154,6 +160,12 @@
       "ticker": "DELL",
       "name": "Dell Technologies",
       "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 71,
       "market": "US"
     },
     {
@@ -169,20 +181,20 @@
       "market": "FR"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 71,
-      "market": "JP"
-    },
-    {
       "ticker": "COP",
       "name": "ConocoPhillips",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
+      "ticker": "VZ",
+      "name": "Verizon",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes",
       "score": 70,
       "market": "US"
     },
@@ -190,18 +202,6 @@
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck",
-      "score": 69,
       "market": "US"
     }
   ],
@@ -227,7 +227,7 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 68,
+      "score": 69,
       "market": "US"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 395
+  "bearishAlertCount": 398
 }
