@@ -3,9 +3,16 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 74,
+      "score": 75,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "8002.T",
@@ -19,13 +26,6 @@
       "name": "Sun Hung Kai Properties",
       "score": 73,
       "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -94,20 +94,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 22,
@@ -115,11 +101,18 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "LCID",
@@ -141,9 +134,22 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
+      "market": "US"
+    },
     {
       "ticker": "8002.T",
       "name": "Marubeni",
@@ -155,12 +161,6 @@
       "name": "Sun Hung Kai Properties",
       "score": 73,
       "market": "HK"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US"
     },
     {
       "ticker": "HOLX",
@@ -209,7 +209,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 74,
+      "score": 75,
       "market": "UK"
     },
     {
@@ -255,15 +255,15 @@
       "market": "UK"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "NNN",
       "name": "NNN REIT",
       "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "AOS",
+      "name": "A.O. Smith",
+      "score": 61,
       "market": "US"
     }
   ],
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "IDOX.L",
-      "name": "IDOX",
+      "ticker": "FOUR.L",
+      "name": "4imprint",
       "score": 58,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 422
+  "bearishAlertCount": 420
 }
