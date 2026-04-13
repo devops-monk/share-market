@@ -3,9 +3,16 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 77,
+      "score": 79,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "0016.HK",
@@ -17,8 +24,29 @@
     {
       "ticker": "DELL",
       "name": "Dell Technologies",
-      "score": 71,
+      "score": 72,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 71,
+      "market": "FR",
       "capCategory": "Large"
     },
     {
@@ -41,40 +69,12 @@
       "score": 70,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HOLX",
-      "name": "Hologic",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 70,
-      "market": "FR",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 70,
-      "market": "HK",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 16,
       "market": "US",
       "capCategory": "Large"
@@ -82,21 +82,21 @@
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 18,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 18,
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "APTV",
       "name": "Aptiv",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,22 +108,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 20,
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
       "score": 21,
       "market": "US",
       "capCategory": "Mid"
@@ -136,14 +129,27 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 21,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 73,
+      "market": "US"
+    },
     {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
@@ -153,8 +159,20 @@
     {
       "ticker": "DELL",
       "name": "Dell Technologies",
-      "score": 71,
+      "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 71,
+      "market": "FR"
     },
     {
       "ticker": "8002.T",
@@ -181,26 +199,8 @@
       "market": "US"
     },
     {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 70,
-      "market": "FR"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 70,
-      "market": "HK"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "VZ",
+      "name": "Verizon",
       "score": 69,
       "market": "US"
     }
@@ -209,19 +209,19 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 77,
+      "score": 79,
+      "market": "UK"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 72,
       "market": "UK"
     },
     {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 69,
       "market": "UK"
     },
     {
@@ -245,7 +245,19 @@
     {
       "ticker": "UU.L",
       "name": "United Utilities",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
       "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "GAW.L",
+      "name": "Games Workshop",
+      "score": 63,
       "market": "UK"
     },
     {
@@ -253,31 +265,25 @@
       "name": "NNN REIT",
       "score": 62,
       "market": "US"
-    },
-    {
-      "ticker": "GAW.L",
-      "name": "Games Workshop",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "SVT.L",
-      "name": "Severn Trent",
-      "score": 62,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 68,
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 69,
       "market": "UK"
     },
     {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
-      "score": 66,
+      "score": 67,
       "market": "UK"
     },
     {
@@ -287,15 +293,9 @@
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -311,14 +311,14 @@
       "market": "US"
     },
     {
-      "ticker": "IDOX.L",
-      "name": "IDOX",
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
       "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
+      "ticker": "IDOX.L",
+      "name": "IDOX",
       "score": 59,
       "market": "UK"
     },
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 862,
-  "avgScore": 48,
-  "bearishAlertCount": 403
+  "avgScore": 49,
+  "bearishAlertCount": 402
 }
