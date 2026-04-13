@@ -8,13 +8,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 73,
@@ -69,6 +62,13 @@
       "score": 70,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "HOLX",
+      "name": "Hologic",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -80,22 +80,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 19,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "APTV",
       "name": "Aptiv",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -108,29 +108,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 21,
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
+      "ticker": "TSLA",
+      "name": "Tesla",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -141,15 +127,23 @@
       "score": 22,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 73,
-      "market": "US"
-    },
     {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
@@ -199,8 +193,14 @@
       "market": "US"
     },
     {
-      "ticker": "VZ",
-      "name": "Verizon",
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
       "score": 69,
       "market": "US"
     }
@@ -227,13 +227,13 @@
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 66,
+      "score": 68,
       "market": "US"
     },
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 66,
+      "score": 68,
       "market": "US"
     },
     {
@@ -293,6 +293,12 @@
       "market": "US"
     },
     {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 64,
+      "market": "US"
+    },
+    {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
       "score": 64,
@@ -303,12 +309,6 @@
       "name": "Marston's",
       "score": 62,
       "market": "UK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 61,
-      "market": "US"
     },
     {
       "ticker": "WOSG.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 402
+  "bearishAlertCount": 395
 }
