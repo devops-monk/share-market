@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 73,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 72,
@@ -33,13 +40,6 @@
       "name": "RWE",
       "score": 72,
       "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 72,
-      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -64,10 +64,10 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "VZ",
-      "name": "Verizon",
-      "score": 69,
-      "market": "US",
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 70,
+      "market": "HK",
       "capCategory": "Large"
     }
   ],
@@ -94,23 +94,23 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 21,
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "COIN",
       "name": "Coinbase",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 22,
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 23,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -120,6 +120,13 @@
       "score": 23,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "ONT.L",
+      "name": "Oxford Nanopore",
+      "score": 24,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "OPEN",
@@ -134,13 +141,6 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -149,6 +149,12 @@
       "name": "Marubeni",
       "score": 73,
       "market": "JP"
+    },
+    {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 73,
+      "market": "HK"
     },
     {
       "ticker": "AMAT",
@@ -169,12 +175,6 @@
       "market": "DE"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 72,
-      "market": "HK"
-    },
-    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 71,
@@ -187,6 +187,12 @@
       "market": "US"
     },
     {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 70,
+      "market": "HK"
+    },
+    {
       "ticker": "VZ",
       "name": "Verizon",
       "score": 69,
@@ -195,12 +201,6 @@
     {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "ROST",
-      "name": "Ross Stores",
       "score": 69,
       "market": "US"
     }
@@ -269,12 +269,6 @@
   ],
   "topSmallCap": [
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 66,
-      "market": "UK"
-    },
-    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 65,
@@ -285,6 +279,12 @@
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "MARS.L",
@@ -299,15 +299,9 @@
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 60,
-      "market": "UK"
-    },
-    {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
-      "score": 60,
+      "score": 61,
       "market": "UK"
     },
     {
@@ -317,19 +311,25 @@
       "market": "UK"
     },
     {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 59,
+      "market": "UK"
+    },
+    {
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 58,
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 57,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 420
+  "bearishAlertCount": 421
 }
