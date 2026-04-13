@@ -8,9 +8,23 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "DELL",
       "name": "Dell Technologies",
-      "score": 73,
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
@@ -29,13 +43,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 72,
@@ -43,30 +50,23 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 71,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 71,
-      "market": "FR",
+      "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "VZ",
       "name": "Verizon",
-      "score": 70,
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 70,
+      "ticker": "BKR",
+      "name": "Baker Hughes",
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     }
@@ -75,27 +75,13 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 17,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "APTV",
       "name": "Aptiv",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -108,18 +94,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
+      "ticker": "WDAY",
+      "name": "Workday",
       "score": 22,
       "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "COIN",
@@ -136,18 +115,51 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "ESTC",
+      "name": "Elastic NV",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
     {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 75,
+      "market": "US"
+    },
+    {
       "ticker": "DELL",
       "name": "Dell Technologies",
-      "score": 73,
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 74,
       "market": "US"
     },
     {
@@ -163,9 +175,21 @@
       "market": "HK"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 72,
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "VZ",
+      "name": "Verizon",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes",
+      "score": 71,
       "market": "US"
     },
     {
@@ -179,30 +203,6 @@
       "name": "TotalEnergies",
       "score": 71,
       "market": "FR"
-    },
-    {
-      "ticker": "VZ",
-      "name": "Verizon",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "BKR",
-      "name": "Baker Hughes",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "HOLX",
-      "name": "Hologic",
-      "score": 70,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -233,7 +233,7 @@
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 68,
+      "score": 69,
       "market": "US"
     },
     {
@@ -241,6 +241,12 @@
       "name": "Plus500",
       "score": 66,
       "market": "UK"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 65,
+      "market": "US"
     },
     {
       "ticker": "UU.L",
@@ -255,15 +261,9 @@
       "market": "UK"
     },
     {
-      "ticker": "GAW.L",
-      "name": "Games Workshop",
+      "ticker": "NNN",
+      "name": "NNN REIT",
       "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 62,
       "market": "US"
     }
   ],
@@ -287,15 +287,15 @@
       "market": "UK"
     },
     {
-      "ticker": "EXAS",
-      "name": "Exact Sciences",
+      "ticker": "LTC",
+      "name": "LTC Properties",
       "score": 65,
       "market": "US"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 64,
+      "ticker": "EXAS",
+      "name": "Exact Sciences",
+      "score": 65,
       "market": "US"
     },
     {
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 862,
-  "avgScore": 49,
-  "bearishAlertCount": 401
+  "avgScore": 50,
+  "bearishAlertCount": 398
 }
