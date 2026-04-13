@@ -50,6 +50,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "ONGC.NS",
+      "name": "ONGC",
+      "score": 71,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "MU",
       "name": "Micron",
       "score": 70,
@@ -62,13 +69,6 @@
       "score": 70,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 70,
-      "market": "HK",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -94,6 +94,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 22,
@@ -108,27 +115,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "TSLA",
-      "name": "Tesla",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ONT.L",
-      "name": "Oxford Nanopore",
-      "score": 24,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "OPEN",
       "name": "Opendoor Technologies",
       "score": 24,
@@ -138,6 +124,20 @@
     {
       "ticker": "CELH",
       "name": "Celsius Holdings",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
@@ -181,6 +181,12 @@
       "market": "UK"
     },
     {
+      "ticker": "ONGC.NS",
+      "name": "ONGC",
+      "score": 71,
+      "market": "IN"
+    },
+    {
       "ticker": "MU",
       "name": "Micron",
       "score": 70,
@@ -195,12 +201,6 @@
     {
       "ticker": "VZ",
       "name": "Verizon",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
       "score": 69,
       "market": "US"
     }
@@ -255,15 +255,15 @@
       "market": "UK"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "NNN",
       "name": "NNN REIT",
       "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "AOS",
+      "name": "A.O. Smith",
+      "score": 61,
       "market": "US"
     }
   ],
@@ -323,9 +323,9 @@
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 57,
+      "ticker": "IDOX.L",
+      "name": "IDOX",
+      "score": 58,
       "market": "UK"
     }
   ],
