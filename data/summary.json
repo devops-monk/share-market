@@ -43,10 +43,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 71,
-      "market": "UK",
+      "ticker": "VZ",
+      "name": "Verizon",
+      "score": 70,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -115,11 +115,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
+      "ticker": "SHOP",
+      "name": "Shopify",
       "score": 23,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "TSLA",
@@ -175,10 +175,10 @@
       "market": "DE"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 71,
-      "market": "UK"
+      "ticker": "VZ",
+      "name": "Verizon",
+      "score": 70,
+      "market": "US"
     },
     {
       "ticker": "MU",
@@ -193,14 +193,14 @@
       "market": "HK"
     },
     {
-      "ticker": "VZ",
-      "name": "Verizon",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 69,
       "market": "US"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "ROST",
+      "name": "Ross Stores",
       "score": 69,
       "market": "US"
     }
@@ -251,7 +251,7 @@
     {
       "ticker": "CNA.L",
       "name": "Centrica",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -299,9 +299,15 @@
       "market": "UK"
     },
     {
+      "ticker": "IDOX.L",
+      "name": "IDOX",
+      "score": 60,
+      "market": "UK"
+    },
+    {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
-      "score": 61,
+      "score": 60,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "Hammerson",
       "score": 59,
       "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 58,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 420
+  "bearishAlertCount": 417
 }
