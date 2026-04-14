@@ -3,7 +3,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 76,
+      "score": 77,
       "market": "UK",
       "capCategory": "Mid"
     },
@@ -31,6 +31,20 @@
     {
       "ticker": "FDX",
       "name": "FedEx",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -55,47 +69,33 @@
       "score": 70,
       "market": "HK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 15,
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 14,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 15,
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 16,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 16,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "GWRE",
       "name": "Guidewire Software",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
       "score": 19,
       "market": "US",
       "capCategory": "Large"
@@ -108,23 +108,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "PLTR",
       "name": "Palantir",
-      "score": 21,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -136,11 +122,25 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "ZS",
+      "name": "Zscaler",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SNOW",
       "name": "Snowflake",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -165,6 +165,18 @@
     {
       "ticker": "FDX",
       "name": "FedEx",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
       "score": 70,
       "market": "US"
     },
@@ -191,25 +203,13 @@
       "name": "Micron",
       "score": 69,
       "market": "US"
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 69,
-      "market": "DE"
     }
   ],
   "topMidCap": [
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 76,
+      "score": 77,
       "market": "UK"
     },
     {
@@ -225,20 +225,20 @@
       "market": "US"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
+      "ticker": "PLUS.L",
+      "name": "Plus500",
       "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 65,
-      "market": "UK"
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 64,
+      "market": "US"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
       "score": 64,
       "market": "US"
     },
@@ -249,22 +249,22 @@
       "market": "US"
     },
     {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "CWK.L",
       "name": "Cranswick",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "CNA.L",
-      "name": "Centrica",
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
       "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "IMI.L",
-      "name": "IMI",
-      "score": 62,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -272,12 +272,6 @@
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 67,
       "market": "UK"
     },
     {
@@ -289,19 +283,25 @@
     {
       "ticker": "LTC",
       "name": "LTC Properties",
-      "score": 63,
+      "score": 64,
       "market": "US"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 63,
-      "market": "UK"
     },
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 368
+  "bearishAlertCount": 373
 }
