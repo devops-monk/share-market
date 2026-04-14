@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
@@ -50,23 +57,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "VZ",
+      "name": "Verizon",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "IHG.L",
-      "name": "InterContinental Hotels",
+      "ticker": "DELL",
+      "name": "Dell Technologies",
       "score": 71,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 70,
       "market": "US",
       "capCategory": "Large"
     }
@@ -75,28 +75,7 @@
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 17,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
       "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "APTV",
-      "name": "Aptiv",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "OKTA",
-      "name": "Okta",
-      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,18 +87,25 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "OKTA",
+      "name": "Okta",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "GWRE",
@@ -136,11 +122,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ESTC",
-      "name": "Elastic NV",
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "SNOW",
+      "name": "Snowflake",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -163,6 +163,12 @@
       "market": "US"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
@@ -175,8 +181,14 @@
       "market": "JP"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "VZ",
+      "name": "Verizon",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
       "score": 71,
       "market": "US"
     },
@@ -191,18 +203,6 @@
       "name": "Applied Materials",
       "score": 70,
       "market": "US"
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 70,
-      "market": "FR"
     }
   ],
   "topMidCap": [
@@ -233,7 +233,7 @@
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 68,
+      "score": 69,
       "market": "US"
     },
     {
@@ -257,7 +257,7 @@
     {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
-      "score": 65,
+      "score": 66,
       "market": "US"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 375
+  "bearishAlertCount": 372
 }
