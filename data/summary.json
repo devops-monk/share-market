@@ -29,17 +29,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 73,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "COP",
       "name": "ConocoPhillips",
       "score": 72,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE",
       "capCategory": "Large"
     },
     {
@@ -50,13 +50,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 72,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BKR",
       "name": "Baker Hughes",
       "score": 71,
@@ -64,25 +57,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 20,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
@@ -96,6 +89,13 @@
     {
       "ticker": "WDAY",
       "name": "Workday",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -122,13 +122,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CELH",
       "name": "Celsius Holdings",
       "score": 24,
@@ -136,11 +129,18 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "ONT.L",
-      "name": "Oxford Nanopore",
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ENT.L",
+      "name": "Entain",
       "score": 25,
       "market": "UK",
-      "capCategory": "Small"
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -163,28 +163,22 @@
       "market": "US"
     },
     {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 73,
+      "market": "HK"
+    },
+    {
       "ticker": "COP",
       "name": "ConocoPhillips",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE"
-    },
-    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 72,
       "market": "JP"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 72,
-      "market": "HK"
     },
     {
       "ticker": "BKR",
@@ -203,6 +197,12 @@
       "name": "Micron",
       "score": 70,
       "market": "US"
+    },
+    {
+      "ticker": "CB",
+      "name": "Chubb",
+      "score": 70,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -210,12 +210,6 @@
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 74,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 71,
       "market": "UK"
     },
     {
@@ -243,6 +237,12 @@
       "market": "US"
     },
     {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "INVP.L",
       "name": "Investec",
       "score": 64,
@@ -261,13 +261,19 @@
       "market": "US"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 63,
-      "market": "UK"
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 62,
+      "market": "US"
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 67,
+      "market": "UK"
+    },
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
@@ -299,15 +305,15 @@
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 61,
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 59,
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 61,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "4imprint",
       "score": 58,
       "market": "UK"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 58,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 385
+  "bearishAlertCount": 387
 }
