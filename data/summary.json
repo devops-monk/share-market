@@ -43,6 +43,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "IHG.L",
       "name": "InterContinental Hotels",
       "score": 71,
@@ -57,18 +64,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
+      "ticker": "T",
+      "name": "AT&T",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
@@ -80,15 +80,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 16,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 17,
       "market": "US",
       "capCategory": "Large"
@@ -122,6 +122,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SNOW",
       "name": "Snowflake",
       "score": 22,
@@ -131,13 +138,6 @@
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "APTV",
-      "name": "Aptiv",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -169,6 +169,12 @@
       "market": "US"
     },
     {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "IHG.L",
       "name": "InterContinental Hotels",
       "score": 71,
@@ -181,8 +187,8 @@
       "market": "HK"
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
+      "ticker": "T",
+      "name": "AT&T",
       "score": 70,
       "market": "US"
     },
@@ -197,12 +203,6 @@
       "name": "Bouygues",
       "score": 70,
       "market": "FR"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -217,6 +217,12 @@
       "name": "Balfour Beatty",
       "score": 73,
       "market": "UK"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 70,
+      "market": "US"
     },
     {
       "ticker": "SDR.L",
@@ -259,12 +265,6 @@
       "name": "IMI",
       "score": 65,
       "market": "UK"
-    },
-    {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 64,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -278,6 +278,12 @@
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 64,
       "market": "US"
     },
     {
@@ -297,12 +303,6 @@
       "name": "Ashmore Group",
       "score": 64,
       "market": "UK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 63,
-      "market": "US"
     },
     {
       "ticker": "MARS.L",
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 862,
-  "avgScore": 49,
-  "bearishAlertCount": 376
+  "avgScore": 50,
+  "bearishAlertCount": 377
 }
