@@ -64,8 +64,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "T",
+      "name": "AT&T",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -122,6 +122,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CELH",
       "name": "Celsius Holdings",
       "score": 24,
@@ -129,17 +136,10 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ENT.L",
-      "name": "Entain",
+      "ticker": "ESTC",
+      "name": "Elastic NV",
       "score": 25,
-      "market": "UK",
+      "market": "US",
       "capCategory": "Mid"
     }
   ],
@@ -193,14 +193,14 @@
       "market": "US"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "T",
+      "name": "AT&T",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "CB",
-      "name": "Chubb",
+      "ticker": "MU",
+      "name": "Micron",
       "score": 70,
       "market": "US"
     }
@@ -261,23 +261,17 @@
       "market": "US"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 62,
-      "market": "US"
+      "ticker": "CWK.L",
+      "name": "Cranswick",
+      "score": 63,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 67,
-      "market": "UK"
-    },
-    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 67,
+      "score": 68,
       "market": "UK"
     },
     {
@@ -293,12 +287,6 @@
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
       "score": 62,
@@ -311,9 +299,21 @@
       "market": "UK"
     },
     {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
       "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 59,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 387
+  "bearishAlertCount": 383
 }
