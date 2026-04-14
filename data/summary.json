@@ -8,18 +8,18 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 75,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Mid"
     },
     {
       "ticker": "DELL",
@@ -36,17 +36,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 72,
       "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 71,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -57,15 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "T",
-      "name": "AT&T",
+      "ticker": "MU",
+      "name": "Micron",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "VZ",
-      "name": "Verizon",
+      "ticker": "CB",
+      "name": "Chubb",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -82,7 +82,7 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -94,15 +94,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 21,
+      "ticker": "WDAY",
+      "name": "Workday",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "WDAY",
-      "name": "Workday",
+      "ticker": "TTD",
+      "name": "Trade Desk",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -127,13 +134,6 @@
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "CELH",
@@ -169,16 +169,16 @@
       "market": "HK"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 72,
       "market": "JP"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 71,
-      "market": "US"
     },
     {
       "ticker": "BKR",
@@ -187,20 +187,20 @@
       "market": "US"
     },
     {
-      "ticker": "T",
-      "name": "AT&T",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "VZ",
-      "name": "Verizon",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "MU",
       "name": "Micron",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "CB",
+      "name": "Chubb",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "HOLX",
+      "name": "Hologic",
       "score": 70,
       "market": "US"
     }
@@ -209,7 +209,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 74,
+      "score": 75,
       "market": "UK"
     },
     {
@@ -231,6 +231,12 @@
       "market": "US"
     },
     {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
       "score": 65,
@@ -240,12 +246,6 @@
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 64,
       "market": "UK"
     },
     {
@@ -261,10 +261,10 @@
       "market": "US"
     },
     {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 63,
-      "market": "UK"
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 62,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -272,12 +272,6 @@
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 67,
       "market": "UK"
     },
     {
@@ -311,6 +305,12 @@
       "market": "UK"
     },
     {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
       "score": 61,
@@ -319,7 +319,7 @@
     {
       "ticker": "HMSO.L",
       "name": "Hammerson",
-      "score": 59,
+      "score": 60,
       "market": "UK"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 384
+  "bearishAlertCount": 385
 }
