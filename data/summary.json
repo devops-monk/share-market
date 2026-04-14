@@ -3,9 +3,16 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 77,
+      "score": 79,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 74,
+      "market": "JP",
+      "capCategory": "Large"
     },
     {
       "ticker": "1398.HK",
@@ -22,23 +29,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 72,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "VZ",
+      "name": "Verizon",
       "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
@@ -47,6 +40,13 @@
       "name": "Dell Technologies",
       "score": 70,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "IHG.L",
+      "name": "InterContinental Hotels",
+      "score": 70,
+      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -89,14 +89,7 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 16,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
-      "score": 19,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,29 +101,15 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "PLTR",
       "name": "Palantir",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SNOW",
-      "name": "Snowflake",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -141,9 +120,36 @@
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "OKTA",
+      "name": "Okta",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 74,
+      "market": "JP"
+    },
     {
       "ticker": "1398.HK",
       "name": "ICBC",
@@ -157,21 +163,9 @@
       "market": "US"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 72,
-      "market": "JP"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "VZ",
+      "name": "Verizon",
       "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 70,
       "market": "US"
     },
     {
@@ -179,6 +173,12 @@
       "name": "Dell Technologies",
       "score": 70,
       "market": "US"
+    },
+    {
+      "ticker": "IHG.L",
+      "name": "InterContinental Hotels",
+      "score": 70,
+      "market": "UK"
     },
     {
       "ticker": "0939.HK",
@@ -193,23 +193,23 @@
       "market": "HK"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "MU",
       "name": "Micron",
       "score": 69,
       "market": "US"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 69,
+      "market": "DE"
     }
   ],
   "topMidCap": [
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 77,
+      "score": 79,
       "market": "UK"
     },
     {
@@ -227,6 +227,12 @@
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
       "score": 66,
       "market": "UK"
     },
@@ -255,15 +261,9 @@
       "market": "UK"
     },
     {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 62,
+      "score": 63,
       "market": "US"
     }
   ],
@@ -287,6 +287,12 @@
       "market": "US"
     },
     {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 63,
@@ -299,26 +305,14 @@
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 62,
-      "market": "UK"
-    },
-    {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
       "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 60,
       "market": "UK"
     },
@@ -327,9 +321,15 @@
       "name": "Hammerson",
       "score": 60,
       "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 59,
+      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 373
+  "bearishAlertCount": 368
 }
