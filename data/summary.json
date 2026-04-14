@@ -1,32 +1,11 @@
 {
   "topOverall": [
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 75,
+      "score": 76,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "1398.HK",
@@ -36,8 +15,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "HOLX",
+      "name": "Hologic",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -50,32 +29,88 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BKR",
-      "name": "Baker Hughes",
-      "score": 71,
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 70,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 70,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 69,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "MU",
       "name": "Micron",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 70,
+      "score": 69,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 15,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 18,
+      "score": 15,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZS",
+      "name": "Zscaler",
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -87,81 +122,28 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "APTV",
-      "name": "Aptiv",
+      "ticker": "PLTR",
+      "name": "Palantir",
       "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TTD",
-      "name": "Trade Desk",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase",
-      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "DT",
       "name": "Dynatrace",
-      "score": 23,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 23,
+      "ticker": "SNOW",
+      "name": "Snowflake",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 75,
-      "market": "US"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
-      "score": 73,
-      "market": "US"
-    },
     {
       "ticker": "1398.HK",
       "name": "ICBC",
@@ -169,8 +151,8 @@
       "market": "HK"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
+      "ticker": "HOLX",
+      "name": "Hologic",
       "score": 72,
       "market": "US"
     },
@@ -181,35 +163,53 @@
       "market": "JP"
     },
     {
-      "ticker": "BKR",
-      "name": "Baker Hughes",
-      "score": 71,
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 70,
+      "market": "HK"
+    },
+    {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 70,
+      "market": "HK"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 69,
       "market": "US"
     },
     {
       "ticker": "MU",
       "name": "Micron",
-      "score": 70,
+      "score": 69,
       "market": "US"
     },
     {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 70,
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 69,
       "market": "US"
     },
     {
-      "ticker": "HOLX",
-      "name": "Hologic",
-      "score": 70,
-      "market": "US"
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 69,
+      "market": "DE"
     }
   ],
   "topMidCap": [
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 75,
+      "score": 76,
       "market": "UK"
     },
     {
@@ -219,15 +219,9 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 69,
+      "score": 68,
       "market": "US"
     },
     {
@@ -237,34 +231,40 @@
       "market": "UK"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 65,
-      "market": "US"
-    },
-    {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "NNN",
-      "name": "NNN REIT",
-      "score": 63,
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 64,
       "market": "US"
     },
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 63,
+      "score": 64,
       "market": "US"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
+      "ticker": "CWK.L",
+      "name": "Cranswick",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "CNA.L",
+      "name": "Centrica",
       "score": 62,
-      "market": "US"
+      "market": "UK"
+    },
+    {
+      "ticker": "IMI.L",
+      "name": "IMI",
+      "score": 62,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -275,10 +275,10 @@
       "market": "UK"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 65,
-      "market": "US"
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 67,
+      "market": "UK"
     },
     {
       "ticker": "EXAS",
@@ -287,26 +287,26 @@
       "market": "US"
     },
     {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 63,
+      "market": "US"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 62,
-      "market": "UK"
-    },
-    {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
       "score": 62,
       "market": "UK"
     },
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "GYM.L",
+      "name": "Gym Group",
       "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 58,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 50,
-  "bearishAlertCount": 385
+  "avgScore": 49,
+  "bearishAlertCount": 368
 }
