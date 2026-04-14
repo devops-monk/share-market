@@ -36,17 +36,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 72,
       "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -57,15 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "T",
-      "name": "AT&T",
+      "ticker": "VZ",
+      "name": "Verizon",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -75,7 +75,7 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 19,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
@@ -87,15 +87,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "WDAY",
-      "name": "Workday",
-      "score": 22,
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase",
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -120,13 +127,6 @@
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "CELH",
@@ -169,16 +169,16 @@
       "market": "HK"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 72,
       "market": "JP"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "BKR",
@@ -187,14 +187,14 @@
       "market": "US"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "T",
-      "name": "AT&T",
+      "ticker": "VZ",
+      "name": "Verizon",
       "score": 70,
       "market": "US"
     },
@@ -287,6 +287,12 @@
       "market": "US"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
       "score": 62,
@@ -311,9 +317,9 @@
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 59,
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 60,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "Hammerson",
       "score": 59,
       "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 58,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 383
+  "bearishAlertCount": 386
 }
