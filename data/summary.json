@@ -8,13 +8,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "VZ",
-      "name": "Verizon",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
       "score": 73,
@@ -33,6 +26,13 @@
       "name": "ICBC",
       "score": 73,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "VZ",
+      "name": "Verizon",
+      "score": 72,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -57,28 +57,21 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ALB",
       "name": "Albemarle",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
@@ -94,8 +87,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PLTR",
-      "name": "Palantir",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -115,6 +108,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 23,
@@ -129,27 +129,21 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
+      "ticker": "ESTC",
+      "name": "Elastic NV",
       "score": 24,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "SNOW",
-      "name": "Snowflake",
+      "ticker": "PODD",
+      "name": "Insulet Corp",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "VZ",
-      "name": "Verizon",
-      "score": 73,
-      "market": "US"
-    },
     {
       "ticker": "RWE.DE",
       "name": "RWE",
@@ -161,6 +155,12 @@
       "name": "ICBC",
       "score": 73,
       "market": "HK"
+    },
+    {
+      "ticker": "VZ",
+      "name": "Verizon",
+      "score": 72,
+      "market": "US"
     },
     {
       "ticker": "MU",
@@ -181,8 +181,20 @@
       "market": "JP"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "ALB",
       "name": "Albemarle",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "FHN",
+      "name": "First Horizon",
       "score": 71,
       "market": "US"
     },
@@ -191,18 +203,6 @@
       "name": "InterContinental Hotels",
       "score": 71,
       "market": "UK"
-    },
-    {
-      "ticker": "GILD",
-      "name": "Gilead Sciences",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "T",
-      "name": "AT&T",
-      "score": 70,
-      "market": "US"
     }
   ],
   "topMidCap": [
