@@ -3,7 +3,7 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 76,
+      "score": 77,
       "market": "UK",
       "capCategory": "Mid"
     },
@@ -29,13 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 70,
@@ -50,13 +43,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 70,
-      "market": "FR",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
       "score": 70,
@@ -68,6 +54,20 @@
       "name": "Marubeni",
       "score": 70,
       "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 70,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0066.HK",
+      "name": "MTR Corporation",
+      "score": 70,
+      "market": "HK",
       "capCategory": "Large"
     }
   ],
@@ -101,13 +101,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "APTV",
-      "name": "Aptiv",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "WDAY",
       "name": "Workday",
       "score": 20,
@@ -129,16 +122,23 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
+      "ticker": "SNOW",
+      "name": "Snowflake",
       "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 23,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "SNOW",
-      "name": "Snowflake",
-      "score": 22,
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     }
@@ -163,22 +163,10 @@
       "market": "DE"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 70,
       "market": "IN"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 70,
-      "market": "FR"
     },
     {
       "ticker": "4063.T",
@@ -203,13 +191,25 @@
       "name": "MTR Corporation",
       "score": 70,
       "market": "HK"
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 76,
+      "score": 77,
       "market": "UK"
     },
     {
@@ -225,9 +225,9 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 65,
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 64,
       "market": "US"
     },
     {
@@ -249,21 +249,21 @@
       "market": "US"
     },
     {
-      "ticker": "IMI.L",
-      "name": "IMI",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 62,
-      "market": "UK"
+      "market": "US"
+    },
+    {
+      "ticker": "RRC",
+      "name": "Range Resources",
+      "score": 62,
+      "market": "US"
     },
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "UU.L",
-      "name": "United Utilities",
-      "score": 61,
       "market": "UK"
     }
   ],
@@ -277,7 +277,7 @@
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 68,
+      "score": 67,
       "market": "UK"
     },
     {
@@ -289,13 +289,13 @@
     {
       "ticker": "LTC",
       "name": "LTC Properties",
-      "score": 63,
+      "score": 64,
       "market": "US"
     },
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 60,
+      "score": 63,
       "market": "UK"
     },
     {
@@ -305,14 +305,20 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
       "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
       "score": 59,
       "market": "UK"
     },
@@ -321,15 +327,9 @@
       "name": "Hammerson",
       "score": 59,
       "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 58,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 48,
-  "bearishAlertCount": 364
+  "bearishAlertCount": 384
 }
