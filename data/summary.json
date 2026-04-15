@@ -3,13 +3,13 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 77,
+      "score": 78,
       "market": "UK",
       "capCategory": "Mid"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
+      "ticker": "1398.HK",
+      "name": "ICBC",
       "score": 73,
       "market": "HK",
       "capCategory": "Large"
@@ -19,6 +19,13 @@
       "name": "Ovintiv",
       "score": 72,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 72,
+      "market": "DE",
       "capCategory": "Large"
     },
     {
@@ -33,6 +40,13 @@
       "name": "Marubeni",
       "score": 71,
       "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "score": 70,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -55,20 +69,6 @@
       "score": 70,
       "market": "IN",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 70,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0066.HK",
-      "name": "MTR Corporation",
-      "score": 70,
-      "market": "HK",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -82,14 +82,14 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 16,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 17,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,30 +101,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "WDAY",
-      "name": "Workday",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "OKTA",
-      "name": "Okta",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "PLTR",
       "name": "Palantir",
-      "score": 22,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -136,8 +115,29 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "ZS",
+      "name": "Zscaler",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ZG",
       "name": "Zillow Group",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -145,8 +145,8 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
+      "ticker": "1398.HK",
+      "name": "ICBC",
       "score": 73,
       "market": "HK"
     },
@@ -155,6 +155,12 @@
       "name": "Ovintiv",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 72,
+      "market": "DE"
     },
     {
       "ticker": "HINDALCO.NS",
@@ -167,6 +173,12 @@
       "name": "Marubeni",
       "score": 71,
       "market": "JP"
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "score": 70,
+      "market": "US"
     },
     {
       "ticker": "CTRA",
@@ -187,36 +199,18 @@
       "market": "HK"
     },
     {
-      "ticker": "0066.HK",
-      "name": "MTR Corporation",
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
       "score": 70,
       "market": "HK"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 77,
+      "score": 78,
       "market": "UK"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 69,
-      "market": "US"
     },
     {
       "ticker": "SDR.L",
@@ -225,20 +219,38 @@
       "market": "UK"
     },
     {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
       "score": 64,
       "market": "US"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
       "score": 64,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "INVP.L",
       "name": "Investec",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
       "score": 63,
       "market": "UK"
     },
@@ -253,18 +265,6 @@
       "name": "Range Resources",
       "score": 62,
       "market": "US"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "UU.L",
-      "name": "United Utilities",
-      "score": 61,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -293,26 +293,32 @@
       "market": "US"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 61,
+      "score": 62,
       "market": "UK"
     },
     {
       "ticker": "HMSO.L",
       "name": "Hammerson",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 60,
+      "score": 62,
       "market": "UK"
     },
     {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
       "score": 60,
       "market": "UK"
     },
@@ -321,15 +327,9 @@
       "name": "S4 Capital",
       "score": 60,
       "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 59,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 370
+  "bearishAlertCount": 368
 }
