@@ -29,8 +29,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "VZ",
-      "name": "Verizon",
+      "ticker": "GILD",
+      "name": "Gilead Sciences",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -62,20 +69,13 @@
       "score": 71,
       "market": "IN",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 71,
-      "market": "DE",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 16,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
@@ -136,11 +136,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 25,
+      "ticker": "ZS",
+      "name": "Zscaler",
+      "score": 24,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -163,8 +163,14 @@
       "market": "US"
     },
     {
-      "ticker": "VZ",
-      "name": "Verizon",
+      "ticker": "GILD",
+      "name": "Gilead Sciences",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T",
       "score": 71,
       "market": "US"
     },
@@ -193,14 +199,8 @@
       "market": "DE"
     },
     {
-      "ticker": "T",
-      "name": "AT&T",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "BKR",
-      "name": "Baker Hughes",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 70,
       "market": "US"
     }
@@ -249,12 +249,6 @@
       "market": "UK"
     },
     {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
       "score": 62,
@@ -263,6 +257,12 @@
     {
       "ticker": "NNN",
       "name": "NNN REIT",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "TTC",
+      "name": "Toro Company",
       "score": 62,
       "market": "US"
     }
@@ -281,18 +281,6 @@
       "market": "UK"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 62,
-      "market": "UK"
-    },
-    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 61,
@@ -305,9 +293,15 @@
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 60,
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 59,
       "market": "UK"
     },
     {
@@ -317,19 +311,25 @@
       "market": "UK"
     },
     {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 58,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
+      "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 375
+  "bearishAlertCount": 374
 }
