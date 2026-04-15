@@ -29,6 +29,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SLB",
       "name": "Schlumberger",
       "score": 70,
@@ -38,6 +45,13 @@
     {
       "ticker": "VZ",
       "name": "Verizon",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -55,33 +69,12 @@
       "score": 70,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 70,
-      "market": "JP",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
       "score": 19,
       "market": "US",
       "capCategory": "Large"
@@ -89,7 +82,7 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 20,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,37 +94,37 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZS",
+      "name": "Zscaler",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "PLTR",
       "name": "Palantir",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "OKTA",
       "name": "Okta",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
@@ -141,6 +134,13 @@
       "score": 25,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -163,6 +163,12 @@
       "market": "DE"
     },
     {
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "SLB",
       "name": "Schlumberger",
       "score": 70,
@@ -175,8 +181,8 @@
       "market": "US"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 70,
       "market": "US"
     },
@@ -195,12 +201,6 @@
     {
       "ticker": "0939.HK",
       "name": "China Construction Bank",
-      "score": 70,
-      "market": "HK"
-    },
-    {
-      "ticker": "0066.HK",
-      "name": "MTR Corporation",
       "score": 70,
       "market": "HK"
     }
@@ -227,19 +227,19 @@
     {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 66,
-      "market": "US"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 65,
+      "score": 67,
       "market": "US"
     },
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 65,
+      "score": 67,
+      "market": "US"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 66,
       "market": "US"
     },
     {
@@ -255,16 +255,16 @@
       "market": "UK"
     },
     {
+      "ticker": "RRC",
+      "name": "Range Resources",
+      "score": 63,
+      "market": "US"
+    },
+    {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "RRC",
-      "name": "Range Resources",
-      "score": 62,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 369
+  "bearishAlertCount": 372
 }
