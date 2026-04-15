@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HINDALCO.NS",
       "name": "Hindalco",
       "score": 71,
@@ -22,10 +29,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
+      "ticker": "8002.T",
+      "name": "Marubeni",
       "score": 71,
-      "market": "DE",
+      "market": "JP",
       "capCategory": "Large"
     },
     {
@@ -36,24 +43,17 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 70,
       "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 70,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 70,
-      "market": "JP",
       "capCategory": "Large"
     },
     {
@@ -115,15 +115,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PLTR",
-      "name": "Palantir",
-      "score": 21,
+      "ticker": "OKTA",
+      "name": "Okta",
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "SNOW",
-      "name": "Snowflake",
+      "ticker": "PLTR",
+      "name": "Palantir",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -151,34 +151,34 @@
       "market": "HK"
     },
     {
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "HINDALCO.NS",
       "name": "Hindalco",
       "score": 71,
       "market": "IN"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
+      "ticker": "8002.T",
+      "name": "Marubeni",
       "score": 71,
-      "market": "DE"
+      "market": "JP"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 70,
+      "market": "US"
     },
     {
       "ticker": "ONGC.NS",
       "name": "ONGC",
       "score": 70,
       "market": "IN"
-    },
-    {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 70,
-      "market": "JP"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 70,
-      "market": "JP"
     },
     {
       "ticker": "0939.HK",
@@ -193,8 +193,8 @@
       "market": "HK"
     },
     {
-      "ticker": "T",
-      "name": "AT&T",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 69,
       "market": "US"
     },
@@ -225,28 +225,22 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 64,
-      "market": "US"
-    },
-    {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
       "score": 64,
       "market": "US"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 63,
+      "score": 64,
       "market": "US"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 63,
+      "market": "UK"
     },
     {
       "ticker": "PCVX",
@@ -264,6 +258,12 @@
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "UU.L",
+      "name": "United Utilities",
+      "score": 61,
       "market": "UK"
     }
   ],
@@ -293,9 +293,27 @@
       "market": "US"
     },
     {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 63,
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 60,
       "market": "UK"
     },
     {
@@ -305,31 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 59,
-      "market": "UK"
-    },
-    {
       "ticker": "SNR.L",
       "name": "Senior plc",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
       "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 48,
-  "bearishAlertCount": 384
+  "avgScore": 49,
+  "bearishAlertCount": 370
 }
