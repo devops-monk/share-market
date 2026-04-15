@@ -29,15 +29,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "T",
-      "name": "AT&T",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 71,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "SLB",
       "name": "Schlumberger",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -62,13 +69,6 @@
       "score": 70,
       "market": "US",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
@@ -89,27 +89,13 @@
     {
       "ticker": "GWRE",
       "name": "Guidewire Software",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -117,6 +103,13 @@
     {
       "ticker": "OKTA",
       "name": "Okta",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -141,6 +134,13 @@
       "score": 25,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -163,14 +163,14 @@
       "market": "DE"
     },
     {
-      "ticker": "T",
-      "name": "AT&T",
-      "score": 71,
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 70,
       "market": "US"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "T",
+      "name": "AT&T",
       "score": 70,
       "market": "US"
     },
@@ -215,7 +215,7 @@
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 70,
+      "score": 71,
       "market": "US"
     },
     {
