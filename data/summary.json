@@ -8,13 +8,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "VZ",
-      "name": "Verizon",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "MU",
       "name": "Micron",
       "score": 73,
@@ -29,11 +22,18 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "VZ",
+      "name": "Verizon",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
       "ticker": "ALB",
@@ -108,11 +108,25 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "GWRE",
@@ -127,29 +141,9 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "VZ",
-      "name": "Verizon",
-      "score": 73,
-      "market": "US"
-    },
     {
       "ticker": "MU",
       "name": "Micron",
@@ -163,8 +157,8 @@
       "market": "HK"
     },
     {
-      "ticker": "HOLX",
-      "name": "Hologic",
+      "ticker": "VZ",
+      "name": "Verizon",
       "score": 72,
       "market": "US"
     },
@@ -193,14 +187,20 @@
       "market": "DE"
     },
     {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 71,
+      "market": "FR"
+    },
+    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "GILD",
-      "name": "Gilead Sciences",
+      "ticker": "T",
+      "name": "AT&T",
       "score": 70,
       "market": "US"
     }
@@ -269,6 +269,12 @@
   ],
   "topSmallCap": [
     {
+      "ticker": "HOLX",
+      "name": "Hologic",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
@@ -299,8 +305,20 @@
       "market": "UK"
     },
     {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
+      "score": 60,
+      "market": "UK"
+    },
+    {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
       "score": 59,
       "market": "UK"
     },
@@ -309,27 +327,9 @@
       "name": "Hammerson",
       "score": 59,
       "market": "UK"
-    },
-    {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 58,
-      "market": "UK"
-    },
-    {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 57,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 373
+  "bearishAlertCount": 370
 }
