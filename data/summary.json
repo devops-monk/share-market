@@ -43,13 +43,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 70,
@@ -69,27 +62,20 @@
       "score": 70,
       "market": "IN",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 70,
+      "market": "HK",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 16,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 19,
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,8 +87,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PLTR",
-      "name": "Palantir",
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -141,6 +134,13 @@
       "score": 24,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -175,12 +175,6 @@
       "market": "JP"
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
       "score": 70,
@@ -203,6 +197,12 @@
       "name": "Sun Hung Kai Properties",
       "score": 70,
       "market": "HK"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 368
+  "bearishAlertCount": 366
 }
