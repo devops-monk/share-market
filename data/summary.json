@@ -29,11 +29,32 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "VZ",
+      "name": "Verizon",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 70,
       "market": "US",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "CTRA",
@@ -48,41 +69,20 @@
       "score": 70,
       "market": "JP",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 70,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 70,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0066.HK",
-      "name": "MTR Corporation",
-      "score": 70,
-      "market": "HK",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 17,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 18,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
@@ -96,13 +96,6 @@
     {
       "ticker": "GWRE",
       "name": "Guidewire Software",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -122,13 +115,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 24,
@@ -136,9 +122,23 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "ZS",
+      "name": "Zscaler",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "DT",
       "name": "Dynatrace",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     }
@@ -163,6 +163,18 @@
       "market": "DE"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "VZ",
+      "name": "Verizon",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
       "score": 70,
@@ -191,18 +203,6 @@
       "name": "MTR Corporation",
       "score": 70,
       "market": "HK"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -215,7 +215,7 @@
     {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 69,
+      "score": 70,
       "market": "US"
     },
     {
@@ -237,6 +237,12 @@
       "market": "US"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
       "score": 64,
@@ -253,12 +259,6 @@
       "name": "Plus500",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 62,
-      "market": "US"
     },
     {
       "ticker": "RRC",
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 862,
-  "avgScore": 49,
-  "bearishAlertCount": 368
+  "avgScore": 50,
+  "bearishAlertCount": 369
 }
