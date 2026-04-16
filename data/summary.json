@@ -29,9 +29,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 72,
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
@@ -50,13 +50,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
       "score": 70,
@@ -69,13 +62,20 @@
       "score": 70,
       "market": "FR",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 70,
+      "market": "HK",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 18,
+      "score": 16,
       "market": "US",
       "capCategory": "Large"
     },
@@ -96,7 +96,7 @@
     {
       "ticker": "PLTR",
       "name": "Palantir",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,18 +108,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "OKTA",
-      "name": "Okta",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CELH",
       "name": "Celsius Holdings",
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "ZG",
@@ -136,8 +136,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
+      "ticker": "OKTA",
+      "name": "Okta",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -163,9 +163,9 @@
       "market": "US"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 72,
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 71,
       "market": "US"
     },
     {
@@ -179,12 +179,6 @@
       "name": "Marubeni",
       "score": 71,
       "market": "JP"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 70,
-      "market": "US"
     },
     {
       "ticker": "CTRA",
@@ -203,6 +197,12 @@
       "name": "China Construction Bank",
       "score": 70,
       "market": "HK"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -261,10 +261,10 @@
       "market": "US"
     },
     {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
+      "ticker": "RRC",
+      "name": "Range Resources",
       "score": 64,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 381
+  "bearishAlertCount": 389
 }
