@@ -15,11 +15,25 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 72,
+      "market": "FR",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 72,
       "market": "JP",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "COP",
@@ -43,10 +57,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna",
-      "score": 69,
-      "market": "US",
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 70,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -55,50 +69,36 @@
       "score": 69,
       "market": "US",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 69,
-      "market": "JP",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 16,
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 17,
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 19,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
+      "ticker": "PLTR",
+      "name": "Palantir",
       "score": 21,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "OKTA",
@@ -108,18 +108,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PLTR",
-      "name": "Palantir",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 23,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "AXON",
@@ -127,6 +120,13 @@
       "score": 23,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
@@ -151,6 +151,12 @@
       "market": "HK"
     },
     {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 72,
+      "market": "FR"
+    },
+    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 72,
@@ -175,10 +181,10 @@
       "market": "UK"
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna",
-      "score": 69,
-      "market": "US"
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 70,
+      "market": "HK"
     },
     {
       "ticker": "OVV",
@@ -187,22 +193,16 @@
       "market": "US"
     },
     {
+      "ticker": "ONGC.NS",
+      "name": "ONGC",
+      "score": 69,
+      "market": "IN"
+    },
+    {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
       "score": 69,
       "market": "JP"
-    },
-    {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 69,
-      "market": "HK"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 68,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -213,21 +213,33 @@
       "market": "UK"
     },
     {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 68,
+      "market": "US"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
       "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 65,
       "market": "US"
     },
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
-      "score": 66,
+      "score": 65,
       "market": "UK"
     },
     {
@@ -237,22 +249,10 @@
       "market": "UK"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
       "score": 64,
-      "market": "US"
-    },
-    {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 64,
-      "market": "US"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 64,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "BBY.L",
@@ -261,13 +261,19 @@
       "market": "UK"
     },
     {
-      "ticker": "RRC",
-      "name": "Range Resources",
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
       "score": 63,
       "market": "US"
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 71,
+      "market": "UK"
+    },
     {
       "ticker": "HOLX",
       "name": "Hologic",
@@ -275,16 +281,16 @@
       "market": "US"
     },
     {
-      "ticker": "ROST",
-      "name": "Ross Stores",
-      "score": 66,
-      "market": "US"
-    },
-    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
+    },
+    {
+      "ticker": "IDOX.L",
+      "name": "IDOX",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "LTC",
@@ -305,31 +311,25 @@
       "market": "UK"
     },
     {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "TSTL.L",
       "name": "Tristel",
       "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 60,
-      "market": "US"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 59,
       "market": "UK"
     }
   ],
-  "totalStocks": 734,
+  "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 302
+  "bearishAlertCount": 380
 }
