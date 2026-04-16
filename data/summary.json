@@ -8,6 +8,20 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 73,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SLB",
       "name": "Schlumberger",
       "score": 72,
@@ -29,10 +43,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 72,
-      "market": "HK",
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -43,30 +57,16 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "VZ",
+      "name": "Verizon",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HOLX",
-      "name": "Hologic",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 69,
       "market": "US",
       "capCategory": "Large"
     }
@@ -94,15 +94,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler",
-      "score": 22,
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -145,6 +145,18 @@
   ],
   "topLargeCap": [
     {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 73,
+      "market": "HK"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "SLB",
       "name": "Schlumberger",
       "score": 72,
@@ -163,10 +175,16 @@
       "market": "JP"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 72,
-      "market": "HK"
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "VZ",
+      "name": "Verizon",
+      "score": 70,
+      "market": "US"
     },
     {
       "ticker": "FDX",
@@ -181,28 +199,10 @@
       "market": "UK"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "VZ",
-      "name": "Verizon",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "TRV",
-      "name": "Travelers",
-      "score": 69,
-      "market": "US"
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 70,
+      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
       "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
+      "ticker": "SNR.L",
+      "name": "Senior plc",
       "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 375
+  "bearishAlertCount": 370
 }
