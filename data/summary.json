@@ -29,8 +29,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "T",
-      "name": "AT&T",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -41,13 +41,6 @@
       "score": 71,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "SLB",
@@ -69,6 +62,13 @@
       "score": 70,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "HOLX",
+      "name": "Hologic",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
@@ -82,13 +82,20 @@
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 19,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "GWRE",
       "name": "Guidewire Software",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -103,6 +110,13 @@
     {
       "ticker": "ZS",
       "name": "Zscaler",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SNOW",
+      "name": "Snowflake",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -124,20 +138,6 @@
     {
       "ticker": "DT",
       "name": "Dynatrace",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "AFRM",
-      "name": "Affirm",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -163,15 +163,9 @@
       "market": "JP"
     },
     {
-      "ticker": "T",
-      "name": "AT&T",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 70,
+      "score": 71,
       "market": "US"
     },
     {
@@ -203,6 +197,12 @@
       "name": "China Construction Bank",
       "score": 70,
       "market": "HK"
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -293,6 +293,18 @@
       "market": "UK"
     },
     {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 61,
@@ -311,18 +323,6 @@
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 59,
-      "market": "UK"
-    },
-    {
       "ticker": "TSTL.L",
       "name": "Tristel",
       "score": 59,
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 369
+  "bearishAlertCount": 367
 }
