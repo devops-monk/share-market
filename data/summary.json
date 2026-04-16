@@ -10,13 +10,20 @@
     {
       "ticker": "DELL",
       "name": "Dell Technologies",
-      "score": 73,
+      "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "FDX",
       "name": "FedEx",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -36,17 +43,24 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 72,
       "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -55,34 +69,20 @@
       "score": 71,
       "market": "UK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HINDALCO.NS",
-      "name": "Hindalco",
-      "score": 71,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 16,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "GWRE",
       "name": "Guidewire Software",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -96,34 +96,6 @@
     {
       "ticker": "AFRM",
       "name": "Affirm",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "OKTA",
-      "name": "Okta",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -141,18 +113,52 @@
       "score": 25,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "OKTA",
+      "name": "Okta",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "NAUKRI.BO",
+      "name": "Info Edge (Naukri)",
+      "score": 26,
+      "market": "IN",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "DELL",
       "name": "Dell Technologies",
-      "score": 73,
+      "score": 74,
       "market": "US"
     },
     {
       "ticker": "FDX",
       "name": "FedEx",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 73,
       "market": "US"
     },
@@ -169,16 +175,22 @@
       "market": "HK"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 72,
       "market": "JP"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "RIO.L",
@@ -191,18 +203,6 @@
       "name": "Hindalco",
       "score": 71,
       "market": "IN"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 70,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -213,15 +213,15 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 68,
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 70,
       "market": "US"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 68,
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 69,
       "market": "US"
     },
     {
@@ -229,6 +229,12 @@
       "name": "Schroders",
       "score": 68,
       "market": "UK"
+    },
+    {
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 66,
+      "market": "US"
     },
     {
       "ticker": "IGG.L",
@@ -249,21 +255,15 @@
       "market": "UK"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 64,
+      "score": 65,
       "market": "US"
     },
     {
       "ticker": "RRC",
       "name": "Range Resources",
-      "score": 64,
+      "score": 65,
       "market": "US"
     }
   ],
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 379
+  "bearishAlertCount": 385
 }
