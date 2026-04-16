@@ -8,13 +8,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 74,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
       "score": 73,
@@ -22,10 +15,24 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 73,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 72,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 72,
+      "market": "JP",
       "capCategory": "Large"
     },
     {
@@ -43,10 +50,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco",
       "score": 71,
-      "market": "JP",
+      "market": "IN",
       "capCategory": "Large"
     },
     {
@@ -57,17 +64,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EN.PA",
-      "name": "Bouygues",
+      "ticker": "ONGC.NS",
+      "name": "ONGC",
       "score": 70,
-      "market": "FR",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 70,
-      "market": "HK",
+      "market": "IN",
       "capCategory": "Large"
     }
   ],
@@ -89,7 +89,7 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
@@ -106,13 +106,6 @@
       "score": 23,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "AFRM",
@@ -141,15 +134,16 @@
       "score": 24,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 74,
-      "market": "HK"
-    },
     {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
@@ -157,10 +151,22 @@
       "market": "FR"
     },
     {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 73,
+      "market": "HK"
+    },
+    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 72,
+      "market": "JP"
     },
     {
       "ticker": "COP",
@@ -175,10 +181,10 @@
       "market": "UK"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco",
       "score": 71,
-      "market": "JP"
+      "market": "IN"
     },
     {
       "ticker": "CTRA",
@@ -187,22 +193,16 @@
       "market": "US"
     },
     {
+      "ticker": "ONGC.NS",
+      "name": "ONGC",
+      "score": 70,
+      "market": "IN"
+    },
+    {
       "ticker": "EN.PA",
       "name": "Bouygues",
       "score": 70,
       "market": "FR"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 70,
-      "market": "HK"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -213,22 +213,22 @@
       "market": "UK"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 68,
-      "market": "UK"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 67,
+      "score": 68,
       "market": "US"
     },
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 67,
+      "score": 68,
       "market": "US"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 68,
+      "market": "UK"
     },
     {
       "ticker": "IGG.L",
@@ -261,8 +261,8 @@
       "market": "US"
     },
     {
-      "ticker": "RRC",
-      "name": "Range Resources",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 64,
       "market": "US"
     }
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 389
+  "bearishAlertCount": 375
 }
