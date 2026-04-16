@@ -8,6 +8,20 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
       "score": 73,
@@ -22,8 +36,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -33,13 +47,6 @@
       "name": "Marubeni",
       "score": 72,
       "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 71,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -57,17 +64,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 70,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
-      "score": 70,
-      "market": "IN",
       "capCategory": "Large"
     }
   ],
@@ -89,21 +89,7 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir",
       "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
@@ -115,15 +101,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DT",
-      "name": "Dynatrace",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -141,9 +120,42 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 73,
+      "market": "US"
+    },
     {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
@@ -157,8 +169,8 @@
       "market": "HK"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 72,
       "market": "US"
     },
@@ -167,12 +179,6 @@
       "name": "Marubeni",
       "score": 72,
       "market": "JP"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 71,
-      "market": "US"
     },
     {
       "ticker": "RIO.L",
@@ -187,22 +193,16 @@
       "market": "IN"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 70,
-      "market": "IN"
-    },
-    {
-      "ticker": "EN.PA",
-      "name": "Bouygues",
-      "score": 70,
-      "market": "FR"
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -255,14 +255,14 @@
       "market": "UK"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 64,
       "market": "US"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "RRC",
+      "name": "Range Resources",
       "score": 64,
       "market": "US"
     }
@@ -281,6 +281,12 @@
       "market": "US"
     },
     {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 64,
+      "market": "US"
+    },
+    {
       "ticker": "IDOX.L",
       "name": "IDOX",
       "score": 64,
@@ -291,12 +297,6 @@
       "name": "CMC Markets",
       "score": 64,
       "market": "UK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 63,
-      "market": "US"
     },
     {
       "ticker": "WOSG.L",
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 862,
-  "avgScore": 49,
-  "bearishAlertCount": 375
+  "avgScore": 50,
+  "bearishAlertCount": 379
 }
