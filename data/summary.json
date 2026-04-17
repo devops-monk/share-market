@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 72,
@@ -62,13 +69,6 @@
       "score": 72,
       "market": "HK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -94,6 +94,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
       "score": 24,
@@ -108,11 +115,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
+      "ticker": "CPNG",
+      "name": "Coupang",
       "score": 24,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "PODD",
@@ -129,18 +136,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
       "score": 25,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -169,6 +169,12 @@
       "market": "US"
     },
     {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 72,
@@ -193,16 +199,10 @@
       "market": "HK"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "CB",
+      "name": "Chubb",
       "score": 71,
       "market": "US"
-    },
-    {
-      "ticker": "ML.PA",
-      "name": "Michelin",
-      "score": 71,
-      "market": "FR"
     }
   ],
   "topMidCap": [
@@ -219,8 +219,8 @@
       "market": "UK"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
       "score": 68,
       "market": "US"
     },
@@ -237,8 +237,8 @@
       "market": "US"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 67,
       "market": "US"
     },
@@ -299,6 +299,18 @@
       "market": "UK"
     },
     {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
@@ -311,18 +323,6 @@
       "market": "UK"
     },
     {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 64,
-      "market": "US"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 64,
-      "market": "US"
-    },
-    {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 63,
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 51,
-  "bearishAlertCount": 336
+  "bearishAlertCount": 335
 }
