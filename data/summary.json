@@ -8,13 +8,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 74,
-      "market": "FR",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 73,
@@ -29,10 +22,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 72,
-      "market": "US",
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 73,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -43,10 +36,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 72,
-      "market": "HK",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -54,6 +47,13 @@
       "name": "EOG Resources",
       "score": 71,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 71,
+      "market": "FR",
       "capCategory": "Large"
     },
     {
@@ -151,12 +151,6 @@
       "market": "US"
     },
     {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 74,
-      "market": "FR"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 73,
@@ -169,10 +163,10 @@
       "market": "US"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 72,
-      "market": "US"
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 73,
+      "market": "HK"
     },
     {
       "ticker": "1398.HK",
@@ -181,16 +175,22 @@
       "market": "HK"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 72,
-      "market": "HK"
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "EOG",
       "name": "EOG Resources",
       "score": 71,
       "market": "US"
+    },
+    {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 71,
+      "market": "FR"
     },
     {
       "ticker": "KEY",
@@ -261,9 +261,9 @@
       "market": "UK"
     },
     {
-      "ticker": "IMI.L",
-      "name": "IMI",
-      "score": 63,
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 64,
       "market": "UK"
     }
   ],
@@ -305,12 +305,6 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 60,
-      "market": "UK"
-    },
-    {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
       "score": 60,
@@ -323,13 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
       "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 391
+  "bearishAlertCount": 394
 }
