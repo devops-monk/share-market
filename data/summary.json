@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 73,
@@ -22,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "MU",
       "name": "Micron",
       "score": 70,
@@ -33,6 +33,20 @@
       "name": "Rio Tinto",
       "score": 70,
       "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "EN.PA",
+      "name": "Bouygues",
+      "score": 70,
+      "market": "FR",
       "capCategory": "Large"
     },
     {
@@ -55,34 +69,20 @@
       "score": 69,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "ONGC.NS",
-      "name": "ONGC",
-      "score": 69,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "EN.PA",
-      "name": "Bouygues",
-      "score": 69,
-      "market": "FR",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 17,
+      "score": 18,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 19,
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 20,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -91,6 +91,20 @@
       "name": "Vivendi",
       "score": 21,
       "market": "FR",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
+      "score": 22,
+      "market": "US",
       "capCategory": "Mid"
     },
     {
@@ -108,13 +122,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "DT",
       "name": "Dynatrace",
       "score": 24,
@@ -122,34 +129,21 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DDOG",
-      "name": "Datadog",
+      "ticker": "SOFI",
+      "name": "SoFi Technologies",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "IONQ",
-      "name": "IonQ",
+      "ticker": "HOOD",
+      "name": "Robinhood",
       "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 26,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE"
-    },
     {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
@@ -161,6 +155,12 @@
       "name": "ICBC",
       "score": 72,
       "market": "HK"
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "MU",
@@ -175,6 +175,12 @@
       "market": "UK"
     },
     {
+      "ticker": "EN.PA",
+      "name": "Bouygues",
+      "score": 70,
+      "market": "FR"
+    },
+    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 69,
@@ -187,25 +193,31 @@
       "market": "IN"
     },
     {
-      "ticker": "EN.PA",
-      "name": "Bouygues",
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
       "score": 69,
       "market": "FR"
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "WBS",
-      "name": "Webster Financial",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 68,
       "market": "US"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 68,
+      "market": "US"
+    },
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
@@ -213,14 +225,14 @@
       "market": "US"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 67,
-      "market": "US"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
+      "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
       "score": 67,
       "market": "UK"
     },
@@ -237,34 +249,22 @@
       "market": "UK"
     },
     {
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "AM",
       "name": "Antero Midstream",
       "score": 64,
       "market": "US"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "MGNS.L",
-      "name": "Morgan Sindall",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "BLND.L",
-      "name": "British Land",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 61,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -281,10 +281,16 @@
       "market": "UK"
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
-      "score": 68,
-      "market": "US"
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 66,
+      "market": "UK"
     },
     {
       "ticker": "EXAS",
@@ -293,20 +299,14 @@
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 63,
       "market": "US"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
       "score": 63,
       "market": "UK"
     },
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 62,
-      "market": "UK"
-    },
-    {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
       "score": 61,
       "market": "UK"
+    },
+    {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
+      "score": 61,
+      "market": "UK"
     }
   ],
-  "totalStocks": 792,
+  "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 313
+  "bearishAlertCount": 332
 }
