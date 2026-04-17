@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "CINF",
+      "name": "Cincinnati Financial",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
       "score": 75,
@@ -22,6 +29,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 73,
@@ -29,45 +50,24 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
+      "ticker": "CB",
+      "name": "Chubb",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
+      "ticker": "TRV",
+      "name": "Travelers",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 72,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 72,
-      "market": "FR",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DG.PA",
-      "name": "Vinci",
-      "score": 72,
-      "market": "FR",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 72,
-      "market": "HK",
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -75,35 +75,14 @@
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "GWRE",
       "name": "Guidewire Software",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RGTI",
-      "name": "Rigetti Computing",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
-      "score": 24,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
@@ -115,25 +94,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CPNG",
-      "name": "Coupang",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
+      "ticker": "DT",
+      "name": "Dynatrace",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "APTV",
-      "name": "Aptiv",
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
       "score": 25,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "HIMS",
@@ -141,9 +113,43 @@
       "score": 25,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 26,
+      "market": "FR",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "CINF",
+      "name": "Cincinnati Financial",
+      "score": 75,
+      "market": "US"
+    },
     {
       "ticker": "SMT.L",
       "name": "Scottish Mortgage",
@@ -157,20 +163,38 @@
       "market": "FR"
     },
     {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 73,
       "market": "HK"
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
+      "ticker": "CB",
+      "name": "Chubb",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
+      "ticker": "TRV",
+      "name": "Travelers",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 72,
       "market": "US"
     },
@@ -179,30 +203,6 @@
       "name": "Rio Tinto",
       "score": 72,
       "market": "UK"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 72,
-      "market": "FR"
-    },
-    {
-      "ticker": "DG.PA",
-      "name": "Vinci",
-      "score": 72,
-      "market": "FR"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 72,
-      "market": "HK"
-    },
-    {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 71,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -219,8 +219,20 @@
       "market": "UK"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
       "score": 68,
       "market": "US"
     },
@@ -231,14 +243,8 @@
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 67,
-      "market": "US"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
       "score": 67,
       "market": "US"
     },
@@ -259,12 +265,6 @@
       "name": "Investec",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 66,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -287,27 +287,15 @@
       "market": "UK"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 69,
-      "market": "DE"
-    },
-    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 67,
       "market": "UK"
     },
     {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 65,
-      "market": "US"
-    },
-    {
       "ticker": "LTC",
       "name": "LTC Properties",
-      "score": 65,
+      "score": 66,
       "market": "US"
     },
     {
@@ -327,9 +315,21 @@
       "name": "Marston's",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 63,
+      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 51,
-  "bearishAlertCount": 335
+  "bearishAlertCount": 334
 }
