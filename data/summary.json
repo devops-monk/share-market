@@ -50,13 +50,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "KEY",
       "name": "KeyCorp",
       "score": 70,
@@ -69,12 +62,26 @@
       "score": 70,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "GWRE",
       "name": "Guidewire Software",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -87,25 +94,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "VIV.PA",
       "name": "Vivendi",
       "score": 24,
       "market": "FR",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "ZG",
@@ -141,6 +134,13 @@
       "score": 25,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -187,12 +187,6 @@
       "market": "US"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "KEY",
       "name": "KeyCorp",
       "score": 70,
@@ -202,6 +196,12 @@
       "ticker": "CTRA",
       "name": "Coterra Energy",
       "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "CB",
+      "name": "Chubb",
+      "score": 69,
       "market": "US"
     }
   ],
@@ -261,10 +261,10 @@
       "market": "UK"
     },
     {
-      "ticker": "IMI.L",
-      "name": "IMI",
-      "score": 63,
-      "market": "UK"
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 62,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 392
+  "bearishAlertCount": 395
 }
