@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "EN.PA",
+      "name": "Bouygues",
+      "score": 74,
+      "market": "FR",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 73,
@@ -8,22 +15,50 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 72,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "DELL",
       "name": "Dell Technologies",
-      "score": 71,
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 72,
+      "market": "FR",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DG.PA",
+      "name": "Vinci",
+      "score": 72,
+      "market": "FR",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 72,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SMT.L",
+      "name": "Scottish Mortgage",
       "score": 71,
       "market": "UK",
       "capCategory": "Large"
@@ -34,41 +69,6 @@
       "score": 71,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SMT.L",
-      "name": "Scottish Mortgage",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "EN.PA",
-      "name": "Bouygues",
-      "score": 70,
-      "market": "FR",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -80,13 +80,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
-      "score": 21,
-      "market": "FR",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "GWRE",
       "name": "Guidewire Software",
       "score": 21,
@@ -94,18 +87,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 21,
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 21,
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
+      "score": 23,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "AXON",
@@ -122,6 +115,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "DT",
       "name": "Dynatrace",
       "score": 24,
@@ -129,21 +129,27 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 26,
+      "market": "FR",
+      "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 25,
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "EN.PA",
+      "name": "Bouygues",
+      "score": 74,
+      "market": "FR"
+    },
     {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
@@ -151,58 +157,52 @@
       "market": "HK"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 72,
-      "market": "HK"
-    },
-    {
       "ticker": "DELL",
       "name": "Dell Technologies",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
-      "score": 71,
+      "score": 72,
       "market": "UK"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 70,
-      "market": "US"
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 72,
+      "market": "FR"
+    },
+    {
+      "ticker": "DG.PA",
+      "name": "Vinci",
+      "score": 72,
+      "market": "FR"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 72,
+      "market": "HK"
     },
     {
       "ticker": "MU",
       "name": "Micron",
-      "score": 70,
+      "score": 71,
       "market": "US"
     },
     {
       "ticker": "SMT.L",
       "name": "Scottish Mortgage",
-      "score": 70,
+      "score": 71,
       "market": "UK"
     },
     {
-      "ticker": "EN.PA",
-      "name": "Bouygues",
-      "score": 70,
+      "ticker": "ML.PA",
+      "name": "Michelin",
+      "score": 71,
       "market": "FR"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 70,
-      "market": "JP"
-    },
-    {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -211,6 +211,18 @@
       "name": "Schroders",
       "score": 71,
       "market": "UK"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 69,
+      "market": "UK"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 68,
+      "market": "US"
     },
     {
       "ticker": "PCVX",
@@ -225,8 +237,14 @@
       "market": "UK"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
+      "ticker": "SVT.L",
+      "name": "Severn Trent",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
       "score": 67,
       "market": "UK"
     },
@@ -243,35 +261,17 @@
       "market": "US"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 66,
-      "market": "US"
-    },
-    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 65,
+      "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "IMI.L",
-      "name": "IMI",
-      "score": 64,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
-      "score": 70,
+      "score": 71,
       "market": "UK"
     },
     {
@@ -283,20 +283,20 @@
     {
       "ticker": "FOUR.L",
       "name": "4imprint",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 66,
+      "score": 69,
       "market": "UK"
     },
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 66,
+      "score": 69,
       "market": "DE"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 67,
+      "market": "UK"
     },
     {
       "ticker": "EXAS",
@@ -305,9 +305,15 @@
       "market": "US"
     },
     {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "FHN",
       "name": "First Horizon",
-      "score": 63,
+      "score": 64,
       "market": "US"
     },
     {
@@ -317,19 +323,13 @@
       "market": "US"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 62,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 49,
-  "bearishAlertCount": 326
+  "avgScore": 50,
+  "bearishAlertCount": 321
 }
