@@ -50,28 +50,42 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
       "score": 71,
       "market": "HK",
       "capCategory": "Large"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 70,
-      "market": "US",
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 71,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "CB",
+      "name": "Chubb",
       "score": 70,
-      "market": "UK",
-      "capCategory": "Mid"
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
@@ -87,27 +101,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "PODD",
       "name": "Insulet Corp",
       "score": 25,
@@ -115,9 +108,30 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 26,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -127,20 +141,6 @@
       "score": 26,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "VRNS",
-      "name": "Varonis Systems",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -163,10 +163,22 @@
       "market": "US"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
       "score": 71,
       "market": "HK"
+    },
+    {
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 71,
+      "market": "HK"
+    },
+    {
+      "ticker": "CB",
+      "name": "Chubb",
+      "score": 70,
+      "market": "US"
     },
     {
       "ticker": "TGT",
@@ -175,34 +187,22 @@
       "market": "US"
     },
     {
+      "ticker": "FIVE",
+      "name": "Five Below",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
       "score": 70,
       "market": "FR"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 70,
-      "market": "HK"
-    },
-    {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "FIVE",
-      "name": "Five Below",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 69,
-      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -231,21 +231,9 @@
       "market": "UK"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 65,
-      "market": "US"
-    },
-    {
-      "ticker": "EMN",
-      "name": "Eastman Chemical",
-      "score": 65,
+      "score": 66,
       "market": "US"
     },
     {
@@ -265,6 +253,18 @@
       "name": "Intuitive Machines",
       "score": 63,
       "market": "US"
+    },
+    {
+      "ticker": "EMN",
+      "name": "Eastman Chemical",
+      "score": 63,
+      "market": "US"
+    },
+    {
+      "ticker": "UU.L",
+      "name": "United Utilities",
+      "score": 63,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -299,15 +299,15 @@
       "market": "DE"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
+      "ticker": "FHN",
+      "name": "First Horizon",
       "score": 64,
       "market": "US"
     },
     {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 63,
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 64,
       "market": "US"
     },
     {
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 862,
-  "avgScore": 49,
-  "bearishAlertCount": 385
+  "avgScore": 50,
+  "bearishAlertCount": 390
 }
