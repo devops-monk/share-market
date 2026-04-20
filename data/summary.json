@@ -8,6 +8,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 74,
@@ -15,9 +22,23 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
       "score": 73,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -29,44 +50,23 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
+      "ticker": "FIVE",
+      "name": "Five Below",
+      "score": 72,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GAW.L",
-      "name": "Games Workshop",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 71,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 71,
-      "market": "HK",
       "capCategory": "Large"
     },
     {
       "ticker": "CB",
       "name": "Chubb",
-      "score": 70,
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TRV",
+      "name": "Travelers",
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     }
@@ -75,23 +75,9 @@
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "AXON",
@@ -101,39 +87,39 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
-      "score": 25,
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "HUBS",
       "name": "HubSpot",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
       "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "U",
       "name": "Unity Software",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DT",
-      "name": "Dynatrace",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "NOW",
@@ -141,24 +127,68 @@
       "score": 26,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "NAUKRI.BO",
+      "name": "Info Edge (Naukri)",
+      "score": 28,
+      "market": "IN",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "DELL",
       "name": "Dell Technologies",
-      "score": 73,
+      "score": 74,
       "market": "US"
     },
     {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "FDX",
       "name": "FedEx",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "FIVE",
+      "name": "Five Below",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "CB",
+      "name": "Chubb",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "TRV",
+      "name": "Travelers",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 71,
       "market": "US"
     },
@@ -173,36 +203,6 @@
       "name": "WH Group",
       "score": 71,
       "market": "HK"
-    },
-    {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "FIVE",
-      "name": "Five Below",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 70,
-      "market": "FR"
     }
   ],
   "topMidCap": [
@@ -211,6 +211,12 @@
       "name": "Beazley",
       "score": 75,
       "market": "UK"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 73,
+      "market": "US"
     },
     {
       "ticker": "GAW.L",
@@ -239,6 +245,18 @@
     {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "HSIC",
+      "name": "Henry Schein",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "EMN",
+      "name": "Eastman Chemical",
       "score": 64,
       "market": "US"
     },
@@ -246,24 +264,6 @@
       "ticker": "CWK.L",
       "name": "Cranswick",
       "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "EMN",
-      "name": "Eastman Chemical",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "UU.L",
-      "name": "United Utilities",
-      "score": 63,
       "market": "UK"
     }
   ],
@@ -287,6 +287,18 @@
       "market": "UK"
     },
     {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
@@ -297,18 +309,6 @@
       "name": "RWE",
       "score": 65,
       "market": "DE"
-    },
-    {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 64,
-      "market": "US"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 64,
-      "market": "US"
     },
     {
       "ticker": "WOSG.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 390
+  "bearishAlertCount": 389
 }
