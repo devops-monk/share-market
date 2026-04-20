@@ -29,13 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 72,
@@ -45,6 +38,13 @@
     {
       "ticker": "SLB",
       "name": "Schlumberger",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -87,13 +87,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
-      "score": 21,
-      "market": "FR",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "RGTI",
       "name": "Rigetti Computing",
       "score": 21,
@@ -122,15 +115,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 23,
+      "ticker": "TEAM",
+      "name": "Atlassian",
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "TEAM",
-      "name": "Atlassian",
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -139,6 +132,13 @@
       "ticker": "AFRM",
       "name": "Affirm",
       "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     }
@@ -169,12 +169,6 @@
       "market": "US"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 72,
@@ -183,6 +177,12 @@
     {
       "ticker": "SLB",
       "name": "Schlumberger",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 71,
       "market": "US"
     },
@@ -275,22 +275,10 @@
       "market": "US"
     },
     {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 66,
-      "market": "US"
-    },
-    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 66,
-      "market": "UK"
     },
     {
       "ticker": "CMCX.L",
@@ -311,10 +299,10 @@
       "market": "UK"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 62,
-      "market": "DE"
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 61,
+      "market": "UK"
     },
     {
       "ticker": "MARS.L",
@@ -323,13 +311,25 @@
       "market": "UK"
     },
     {
+      "ticker": "TSTL.L",
+      "name": "Tristel",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "SNR.L",
       "name": "Senior plc",
       "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "PHNX.L",
+      "name": "Phoenix Group",
+      "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 353
+  "bearishAlertCount": 368
 }
