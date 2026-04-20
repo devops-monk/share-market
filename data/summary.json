@@ -1,18 +1,18 @@
 {
   "topOverall": [
     {
-      "ticker": "CINF",
-      "name": "Cincinnati Financial",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TRV",
       "name": "Travelers",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 74,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "DELL",
@@ -145,12 +145,6 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "CINF",
-      "name": "Cincinnati Financial",
-      "score": 75,
-      "market": "US"
-    },
-    {
       "ticker": "TRV",
       "name": "Travelers",
       "score": 74,
@@ -203,6 +197,12 @@
       "name": "WH Group",
       "score": 71,
       "market": "HK"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 70,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -210,18 +210,6 @@
       "ticker": "FNB",
       "name": "F.N.B. Corp",
       "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 69,
       "market": "US"
     },
     {
@@ -233,8 +221,20 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 68,
+      "score": 69,
       "market": "UK"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 67,
+      "market": "US"
     },
     {
       "ticker": "LUNR",
@@ -269,15 +269,15 @@
   ],
   "topSmallCap": [
     {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 74,
+      "market": "UK"
+    },
+    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 66,
       "market": "US"
     },
     {
@@ -299,37 +299,37 @@
       "market": "US"
     },
     {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 62,
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 62,
-      "market": "DE"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 61,
+      "ticker": "PHNX.L",
+      "name": "Phoenix Group",
+      "score": 59,
       "market": "UK"
     },
     {
       "ticker": "TSTL.L",
       "name": "Tristel",
-      "score": 61,
+      "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 365
+  "bearishAlertCount": 364
 }
