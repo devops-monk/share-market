@@ -122,13 +122,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "AFRM",
       "name": "Affirm",
       "score": 24,
@@ -138,6 +131,13 @@
     {
       "ticker": "DT",
       "name": "Dynatrace",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corp",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -275,6 +275,12 @@
       "market": "US"
     },
     {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 66,
+      "market": "US"
+    },
+    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 66,
@@ -293,10 +299,22 @@
       "market": "US"
     },
     {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 62,
       "market": "UK"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 62,
+      "market": "DE"
     },
     {
       "ticker": "WOSG.L",
@@ -305,31 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 61,
-      "market": "UK"
-    },
-    {
       "ticker": "TSTL.L",
       "name": "Tristel",
       "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "PHNX.L",
-      "name": "Phoenix Group",
-      "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 368
+  "bearishAlertCount": 365
 }
