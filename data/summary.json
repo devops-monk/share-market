@@ -29,13 +29,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 71,
@@ -54,6 +47,13 @@
       "name": "ICBC",
       "score": 71,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 70,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -94,20 +94,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "PODD",
       "name": "Insulet Corp",
       "score": 25,
@@ -124,14 +110,14 @@
     {
       "ticker": "HIMS",
       "name": "Hims & Hers Health",
-      "score": 25,
+      "score": 26,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 25,
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 27,
       "market": "US",
       "capCategory": "Large"
     },
@@ -141,6 +127,20 @@
       "score": 27,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -148,12 +148,6 @@
       "ticker": "DELL",
       "name": "Dell Technologies",
       "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
       "market": "US"
     },
     {
@@ -167,6 +161,12 @@
       "name": "ICBC",
       "score": 71,
       "market": "HK"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 70,
+      "market": "US"
     },
     {
       "ticker": "TTE.PA",
@@ -193,14 +193,14 @@
       "market": "US"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 69,
-      "market": "UK"
+      "market": "US"
     },
     {
-      "ticker": "IMB.L",
-      "name": "Imperial Brands",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
       "score": 69,
       "market": "UK"
     }
@@ -231,14 +231,14 @@
       "market": "UK"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 68,
       "market": "US"
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
+      "ticker": "EMN",
+      "name": "Eastman Chemical",
       "score": 65,
       "market": "US"
     },
@@ -255,16 +255,16 @@
       "market": "UK"
     },
     {
-      "ticker": "EMN",
-      "name": "Eastman Chemical",
-      "score": 63,
-      "market": "US"
-    },
-    {
       "ticker": "UU.L",
       "name": "United Utilities",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 62,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -305,6 +305,12 @@
       "market": "US"
     },
     {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 63,
+      "market": "US"
+    },
+    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
       "score": 63,
@@ -315,12 +321,6 @@
       "name": "Marston's",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 60,
-      "market": "US"
     },
     {
       "ticker": "SNR.L",
