@@ -50,24 +50,24 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 73,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 72,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 72,
+      "market": "FR",
       "capCategory": "Large"
     }
   ],
@@ -80,9 +80,23 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "GWRE",
       "name": "Guidewire Software",
       "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
@@ -127,20 +141,6 @@
       "score": 26,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -181,18 +181,6 @@
       "market": "US"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 73,
-      "market": "HK"
-    },
-    {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 72,
@@ -203,6 +191,18 @@
       "name": "Rio Tinto",
       "score": 72,
       "market": "UK"
+    },
+    {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 72,
+      "market": "FR"
+    },
+    {
+      "ticker": "DG.PA",
+      "name": "Vinci",
+      "score": 72,
+      "market": "FR"
     }
   ],
   "topMidCap": [
@@ -213,15 +213,9 @@
       "market": "UK"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 71,
-      "market": "UK"
-    },
-    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 70,
+      "score": 71,
       "market": "US"
     },
     {
@@ -229,6 +223,12 @@
       "name": "Vaxcyte",
       "score": 70,
       "market": "US"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 70,
+      "market": "UK"
     },
     {
       "ticker": "ZION",
@@ -287,10 +287,22 @@
       "market": "UK"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 69,
+      "market": "DE"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 67,
       "market": "UK"
+    },
+    {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 66,
+      "market": "US"
     },
     {
       "ticker": "LTC",
@@ -313,18 +325,6 @@
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
       "score": 63,
       "market": "UK"
     }
