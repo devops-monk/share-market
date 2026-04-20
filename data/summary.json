@@ -22,8 +22,15 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -43,16 +50,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 69,
       "market": "US",
       "capCategory": "Large"
     },
@@ -82,14 +82,14 @@
     {
       "ticker": "HIMS",
       "name": "Hims & Hers Health",
-      "score": 19,
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
@@ -101,15 +101,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "ZG",
       "name": "Zillow Group",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DT",
+      "name": "Dynatrace",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -151,8 +151,14 @@
       "market": "US"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 71,
       "market": "US"
     },
@@ -169,15 +175,9 @@
       "market": "HK"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 69,
       "market": "US"
     },
     {
@@ -219,27 +219,21 @@
       "market": "UK"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 68,
       "market": "US"
     },
     {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
-      "score": 68,
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 65,
-      "market": "US"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 65,
+      "score": 64,
       "market": "US"
     },
     {
@@ -249,8 +243,8 @@
       "market": "US"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "EMN",
+      "name": "Eastman Chemical",
       "score": 63,
       "market": "US"
     },
@@ -263,6 +257,12 @@
     {
       "ticker": "SBRY.L",
       "name": "Sainsbury",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "UU.L",
+      "name": "United Utilities",
       "score": 62,
       "market": "UK"
     }
@@ -293,10 +293,22 @@
       "market": "US"
     },
     {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 63,
+      "market": "US"
+    },
+    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 63,
+      "market": "DE"
     },
     {
       "ticker": "MARS.L",
@@ -315,21 +327,9 @@
       "name": "Senior plc",
       "score": 60,
       "market": "UK"
-    },
-    {
-      "ticker": "PHNX.L",
-      "name": "Phoenix Group",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 59,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 377
+  "bearishAlertCount": 385
 }
