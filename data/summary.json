@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 75,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 74,
@@ -10,7 +17,7 @@
     {
       "ticker": "DELL",
       "name": "Dell Technologies",
-      "score": 72,
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
@@ -22,6 +29,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 71,
@@ -29,49 +43,42 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
+      "ticker": "GAW.L",
+      "name": "Games Workshop",
       "score": 71,
       "market": "UK",
       "capCategory": "Mid"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
+      "ticker": "1398.HK",
+      "name": "ICBC",
       "score": 71,
       "market": "HK",
       "capCategory": "Large"
     },
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 71,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "SDR.L",
+      "name": "Schroders",
       "score": 70,
-      "market": "US",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
@@ -82,20 +89,6 @@
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -129,25 +122,38 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 26,
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 25,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 26,
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "VRNS",
+      "name": "Varonis Systems",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "DELL",
       "name": "Dell Technologies",
-      "score": 72,
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 71,
       "market": "US"
     },
     {
@@ -157,22 +163,22 @@
       "market": "US"
     },
     {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 71,
+      "market": "HK"
+    },
+    {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 70,
+      "market": "FR"
+    },
+    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
-      "score": 71,
-      "market": "HK"
-    },
-    {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 71,
-      "market": "HK"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
       "score": 70,
-      "market": "US"
+      "market": "HK"
     },
     {
       "ticker": "CB",
@@ -187,54 +193,54 @@
       "market": "US"
     },
     {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
       "score": 69,
-      "market": "FR"
+      "market": "UK"
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "ALL",
-      "name": "Allstate",
-      "score": 68,
-      "market": "US"
+      "ticker": "IMB.L",
+      "name": "Imperial Brands",
+      "score": 69,
+      "market": "UK"
     }
   ],
   "topMidCap": [
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
+      "score": 75,
+      "market": "UK"
+    },
+    {
+      "ticker": "GAW.L",
+      "name": "Games Workshop",
       "score": 71,
       "market": "UK"
     },
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 69,
+      "score": 70,
       "market": "UK"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "EMN",
-      "name": "Eastman Chemical",
-      "score": 65,
-      "market": "US"
     },
     {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
-      "score": 65,
+      "score": 70,
       "market": "UK"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 65,
+      "market": "US"
     },
     {
       "ticker": "FNB",
@@ -243,27 +249,21 @@
       "market": "US"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "CWK.L",
+      "name": "Cranswick",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "EMN",
+      "name": "Eastman Chemical",
       "score": 63,
       "market": "US"
     },
     {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
+      "ticker": "UU.L",
+      "name": "United Utilities",
       "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "SBRY.L",
-      "name": "Sainsbury",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 62,
       "market": "UK"
     }
   ],
@@ -283,7 +283,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 66,
+      "score": 67,
       "market": "UK"
     },
     {
@@ -293,33 +293,27 @@
       "market": "US"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 65,
+      "market": "DE"
+    },
+    {
       "ticker": "FHN",
       "name": "First Horizon",
       "score": 63,
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 63,
-      "market": "DE"
-    },
-    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
-      "score": 62,
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
-      "score": 61,
+      "score": 63,
       "market": "UK"
     },
     {
@@ -327,9 +321,15 @@
       "name": "LTC Properties",
       "score": 60,
       "market": "US"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 60,
+      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 394
+  "bearishAlertCount": 383
 }
