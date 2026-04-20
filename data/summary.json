@@ -29,6 +29,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 71,
@@ -50,8 +57,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "TGT",
+      "name": "Target",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -62,23 +69,9 @@
       "score": 70,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
@@ -90,6 +83,27 @@
       "ticker": "AXON",
       "name": "Axon Enterprise",
       "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,11 +122,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 26,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "ZG",
@@ -127,20 +141,6 @@
       "score": 27,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "APTV",
-      "name": "Aptiv",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -148,6 +148,12 @@
       "ticker": "DELL",
       "name": "Dell Technologies",
       "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 71,
       "market": "US"
     },
     {
@@ -163,8 +169,8 @@
       "market": "HK"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "TGT",
+      "name": "Target",
       "score": 70,
       "market": "US"
     },
@@ -187,14 +193,8 @@
       "market": "US"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
+      "ticker": "FIVE",
+      "name": "Five Below",
       "score": 69,
       "market": "US"
     },
@@ -231,9 +231,15 @@
       "market": "UK"
     },
     {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 69,
+      "market": "US"
+    },
+    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 68,
+      "score": 65,
       "market": "US"
     },
     {
@@ -255,15 +261,9 @@
       "market": "UK"
     },
     {
-      "ticker": "UU.L",
-      "name": "United Utilities",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 62,
+      "score": 63,
       "market": "US"
     }
   ],
@@ -299,14 +299,14 @@
       "market": "DE"
     },
     {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 63,
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 64,
       "market": "US"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
+      "ticker": "FHN",
+      "name": "First Horizon",
       "score": 63,
       "market": "US"
     },
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 383
+  "bearishAlertCount": 385
 }
