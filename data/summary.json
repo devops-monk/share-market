@@ -22,18 +22,18 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "0016.HK",
@@ -57,35 +57,21 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TGT",
-      "name": "Target",
+      "ticker": "CB",
+      "name": "Chubb",
       "score": 69,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "TGT",
+      "name": "Target",
       "score": 69,
-      "market": "UK",
-      "capCategory": "Mid"
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
@@ -96,6 +82,20 @@
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -115,30 +115,30 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 24,
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "AFRM",
       "name": "Affirm",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
-      "score": 25,
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     }
@@ -148,12 +148,6 @@
       "ticker": "DELL",
       "name": "Dell Technologies",
       "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
       "market": "US"
     },
     {
@@ -181,6 +175,12 @@
       "market": "US"
     },
     {
+      "ticker": "CB",
+      "name": "Chubb",
+      "score": 69,
+      "market": "US"
+    },
+    {
       "ticker": "TGT",
       "name": "Target",
       "score": 69,
@@ -193,19 +193,25 @@
       "market": "FR"
     },
     {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 69,
-      "market": "JP"
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "score": 68,
+      "market": "US"
     },
     {
-      "ticker": "6981.T",
-      "name": "Murata Manufacturing",
-      "score": 69,
-      "market": "JP"
+      "ticker": "ALL",
+      "name": "Allstate",
+      "score": 68,
+      "market": "US"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 71,
+      "market": "UK"
+    },
     {
       "ticker": "SDR.L",
       "name": "Schroders",
@@ -213,15 +219,15 @@
       "market": "UK"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 69,
-      "market": "UK"
-    },
-    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
       "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "EMN",
+      "name": "Eastman Chemical",
+      "score": 65,
       "market": "US"
     },
     {
@@ -243,12 +249,6 @@
       "market": "US"
     },
     {
-      "ticker": "EMN",
-      "name": "Eastman Chemical",
-      "score": 63,
-      "market": "US"
-    },
-    {
       "ticker": "CWK.L",
       "name": "Cranswick",
       "score": 63,
@@ -261,8 +261,8 @@
       "market": "UK"
     },
     {
-      "ticker": "UU.L",
-      "name": "United Utilities",
+      "ticker": "IGG.L",
+      "name": "IG Group",
       "score": 62,
       "market": "UK"
     }
@@ -299,16 +299,16 @@
       "market": "US"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 63,
       "market": "DE"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 62,
+      "market": "UK"
     },
     {
       "ticker": "MARS.L",
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
+      "ticker": "TSTL.L",
+      "name": "Tristel",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 60,
       "market": "US"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 60,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 385
+  "bearishAlertCount": 394
 }
