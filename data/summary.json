@@ -22,9 +22,23 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 69,
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
@@ -50,24 +64,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ALL",
-      "name": "Allstate",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
       "score": 68,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 68,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0005.HK",
-      "name": "HSBC Holdings",
-      "score": 68,
-      "market": "HK",
+      "market": "UK",
       "capCategory": "Large"
     }
   ],
@@ -75,30 +75,23 @@
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 17,
+      "score": 18,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
       "score": 21,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "TEAM",
-      "name": "Atlassian",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "CELH",
@@ -115,29 +108,36 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "TECH",
+      "name": "Bio-Techne",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "TEAM",
+      "name": "Atlassian",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -157,9 +157,21 @@
       "market": "HK"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 69,
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 70,
       "market": "US"
     },
     {
@@ -169,16 +181,10 @@
       "market": "JP"
     },
     {
-      "ticker": "ALL",
-      "name": "Allstate",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
       "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries",
-      "score": 68,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "0005.HK",
@@ -197,12 +203,6 @@
       "name": "CK Asset Holdings",
       "score": 68,
       "market": "HK"
-    },
-    {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 67,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -219,6 +219,12 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 66,
+      "market": "US"
+    },
+    {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
       "score": 66,
@@ -227,12 +233,12 @@
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 64,
+      "score": 65,
       "market": "US"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "AM",
+      "name": "Antero Midstream",
       "score": 63,
       "market": "US"
     },
@@ -259,12 +265,6 @@
       "name": "Investec",
       "score": 62,
       "market": "UK"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 61,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -281,26 +281,26 @@
       "market": "UK"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "GYM.L",
+      "name": "Gym Group",
       "score": 63,
       "market": "UK"
     },
@@ -317,19 +317,19 @@
       "market": "US"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
+      "ticker": "MARS.L",
+      "name": "Marston's",
       "score": 62,
-      "market": "US"
+      "market": "UK"
     },
     {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 62,
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 61,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 48,
-  "bearishAlertCount": 398
+  "bearishAlertCount": 388
 }
