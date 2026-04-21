@@ -1,16 +1,16 @@
 {
   "topOverall": [
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 73,
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
@@ -115,13 +115,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CELH",
       "name": "Celsius Holdings",
       "score": 27,
@@ -141,19 +134,26 @@
       "score": 28,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 28,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 74,
       "market": "US"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 73,
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 74,
       "market": "US"
     },
     {
@@ -281,6 +281,12 @@
       "market": "UK"
     },
     {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 65,
@@ -299,9 +305,21 @@
       "market": "UK"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 63,
+      "market": "DE"
+    },
+    {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 64,
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -309,27 +327,9 @@
       "name": "4imprint",
       "score": 61,
       "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 59,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 376
+  "bearishAlertCount": 371
 }
