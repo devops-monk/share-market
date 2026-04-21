@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
@@ -15,8 +22,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "CB",
+      "name": "Chubb",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -26,20 +40,6 @@
       "name": "WH Group",
       "score": 71,
       "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 70,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -57,17 +57,17 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 69,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
+      "ticker": "ALL",
+      "name": "Allstate",
       "score": 69,
-      "market": "UK",
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -80,24 +80,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
       "score": 24,
       "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 24,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -113,6 +106,13 @@
       "score": 24,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "NOW",
@@ -145,14 +145,26 @@
   ],
   "topLargeCap": [
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 72,
       "market": "HK"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "CB",
+      "name": "Chubb",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 71,
       "market": "US"
     },
@@ -163,20 +175,14 @@
       "market": "HK"
     },
     {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 70,
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 69,
       "market": "US"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "ALL",
+      "name": "Allstate",
       "score": 69,
       "market": "US"
     },
@@ -191,12 +197,6 @@
       "name": "Shin-Etsu Chemical",
       "score": 69,
       "market": "JP"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 68,
-      "market": "US"
     },
     {
       "ticker": "MU",
@@ -231,21 +231,21 @@
       "market": "UK"
     },
     {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
       "score": 67,
       "market": "US"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 66,
-      "market": "US"
-    },
-    {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 64,
+      "score": 65,
       "market": "US"
     },
     {
@@ -293,18 +293,6 @@
       "market": "UK"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 64,
-      "market": "DE"
-    },
-    {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 63,
-      "market": "US"
-    },
-    {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 63,
@@ -317,6 +305,12 @@
       "market": "UK"
     },
     {
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
+      "score": 62,
+      "market": "US"
+    },
+    {
       "ticker": "FOUR.L",
       "name": "4imprint",
       "score": 62,
@@ -327,9 +321,15 @@
       "name": "Gym Group",
       "score": 62,
       "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 61,
+      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 384
+  "bearishAlertCount": 386
 }
