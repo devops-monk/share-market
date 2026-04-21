@@ -1,9 +1,9 @@
 {
   "topOverall": [
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 72,
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
@@ -19,6 +19,13 @@
       "name": "Sun Hung Kai Properties",
       "score": 72,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -57,15 +64,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ALL",
-      "name": "Allstate",
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
       "score": 69,
       "market": "US",
       "capCategory": "Large"
@@ -75,9 +75,16 @@
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "RHM.DE",
@@ -94,13 +101,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "TEAM",
       "name": "Atlassian",
       "score": 24,
@@ -115,39 +115,39 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 25,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "WDAY",
-      "name": "Workday",
-      "score": 26,
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 27,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 26,
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 27,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 72,
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
       "market": "US"
     },
     {
@@ -155,6 +155,12 @@
       "name": "Sun Hung Kai Properties",
       "score": 72,
       "market": "HK"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "CB",
@@ -175,8 +181,8 @@
       "market": "HK"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
       "score": 69,
       "market": "US"
     },
@@ -197,12 +203,6 @@
       "name": "Shin-Etsu Chemical",
       "score": 69,
       "market": "JP"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 68,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -231,12 +231,6 @@
       "market": "UK"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 67,
-      "market": "US"
-    },
-    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
       "score": 67,
@@ -249,22 +243,28 @@
       "market": "US"
     },
     {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "AM",
+      "name": "Antero Midstream",
+      "score": 64,
+      "market": "US"
+    },
+    {
       "ticker": "SBRY.L",
       "name": "Sainsbury",
       "score": 64,
       "market": "UK"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "BNR.DE",
-      "name": "Brenntag",
-      "score": 64,
-      "market": "DE"
     }
   ],
   "topSmallCap": [
@@ -293,6 +293,18 @@
       "market": "UK"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 64,
+      "market": "DE"
+    },
+    {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 63,
+      "market": "US"
+    },
+    {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 63,
@@ -305,12 +317,6 @@
       "market": "UK"
     },
     {
-      "ticker": "WOLF",
-      "name": "Wolfspeed",
-      "score": 62,
-      "market": "US"
-    },
-    {
       "ticker": "FOUR.L",
       "name": "4imprint",
       "score": 62,
@@ -321,15 +327,9 @@
       "name": "Gym Group",
       "score": 62,
       "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 61,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 386
+  "bearishAlertCount": 392
 }
