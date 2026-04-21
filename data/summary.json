@@ -22,13 +22,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "SLB",
       "name": "Schlumberger",
       "score": 70,
@@ -43,15 +36,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 69,
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 70,
       "market": "UK",
       "capCategory": "Mid"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
+      "ticker": "SDR.L",
+      "name": "Schroders",
       "score": 69,
       "market": "UK",
       "capCategory": "Mid"
@@ -64,21 +57,21 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 68,
-      "market": "UK",
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ALL",
+      "name": "Allstate",
+      "score": 68,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Mid"
-    },
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
@@ -94,6 +87,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "RHM.DE",
+      "name": "Rheinmetall",
+      "score": 23,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CELH",
       "name": "Celsius Holdings",
       "score": 23,
@@ -101,15 +101,22 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "TECH",
-      "name": "Bio-Techne",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
@@ -127,13 +134,6 @@
       "score": 25,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "AXON",
@@ -157,12 +157,6 @@
       "market": "HK"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "SLB",
       "name": "Schlumberger",
       "score": 70,
@@ -181,6 +175,18 @@
       "market": "JP"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "ALL",
+      "name": "Allstate",
+      "score": 68,
+      "market": "US"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 68,
@@ -197,24 +203,18 @@
       "name": "Power Assets Holdings",
       "score": 68,
       "market": "HK"
-    },
-    {
-      "ticker": "1113.HK",
-      "name": "CK Asset Holdings",
-      "score": 68,
-      "market": "HK"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 69,
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 70,
       "market": "UK"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
+      "ticker": "SDR.L",
+      "name": "Schroders",
       "score": 69,
       "market": "UK"
     },
@@ -225,10 +225,22 @@
       "market": "US"
     },
     {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 66,
+      "market": "US"
+    },
+    {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
       "score": 66,
       "market": "UK"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 65,
+      "market": "US"
     },
     {
       "ticker": "PCVX",
@@ -237,33 +249,21 @@
       "market": "US"
     },
     {
-      "ticker": "AM",
-      "name": "Antero Midstream",
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
       "score": 63,
       "market": "US"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 63,
+      "market": "UK"
     },
     {
       "ticker": "CWK.L",
       "name": "Cranswick",
       "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "BNR.DE",
-      "name": "Brenntag",
-      "score": 63,
-      "market": "DE"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 62,
       "market": "UK"
     }
   ],
@@ -281,12 +281,6 @@
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 66,
-      "market": "UK"
-    },
-    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
@@ -299,22 +293,10 @@
       "market": "UK"
     },
     {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 63,
-      "market": "DE"
-    },
-    {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 62,
-      "market": "US"
     },
     {
       "ticker": "MARS.L",
@@ -327,9 +309,27 @@
       "name": "4imprint",
       "score": 61,
       "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "GYM.L",
+      "name": "Gym Group",
+      "score": 60,
+      "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 48,
-  "bearishAlertCount": 388
+  "avgScore": 49,
+  "bearishAlertCount": 383
 }
