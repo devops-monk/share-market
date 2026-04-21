@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 73,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
@@ -22,10 +15,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 70,
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 71,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 70,
@@ -43,11 +50,18 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 69,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
       "score": 69,
       "market": "UK",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "4063.T",
@@ -55,42 +69,21 @@
       "score": 69,
       "market": "JP",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 68,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ALL",
-      "name": "Allstate",
-      "score": 68,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "RHM.DE",
-      "name": "Rheinmetall",
+      "ticker": "ZG",
+      "name": "Zillow Group",
       "score": 23,
-      "market": "DE",
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -101,17 +94,10 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "RHM.DE",
+      "name": "Rheinmetall",
       "score": 24,
-      "market": "US",
+      "market": "DE",
       "capCategory": "Large"
     },
     {
@@ -124,7 +110,7 @@
     {
       "ticker": "TEAM",
       "name": "Atlassian",
-      "score": 25,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
@@ -136,8 +122,22 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "AXON",
       "name": "Axon Enterprise",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -145,22 +145,22 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 73,
-      "market": "HK"
-    },
-    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 72,
       "market": "HK"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 70,
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
       "market": "US"
+    },
+    {
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 71,
+      "market": "HK"
     },
     {
       "ticker": "FDX",
@@ -169,14 +169,26 @@
       "market": "US"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 69,
+      "market": "UK"
+    },
+    {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
       "score": 69,
       "market": "JP"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
+      "ticker": "CB",
+      "name": "Chubb",
       "score": 68,
       "market": "US"
     },
@@ -187,25 +199,19 @@
       "market": "US"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
+      "ticker": "WBS",
+      "name": "Webster Financial",
       "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "0005.HK",
-      "name": "HSBC Holdings",
-      "score": 68,
-      "market": "HK"
-    },
-    {
-      "ticker": "0006.HK",
-      "name": "Power Assets Holdings",
-      "score": 68,
-      "market": "HK"
+      "market": "US"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 70,
+      "market": "UK"
+    },
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
@@ -213,14 +219,20 @@
       "market": "UK"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 69,
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
       "score": 66,
       "market": "US"
     },
@@ -231,40 +243,28 @@
       "market": "US"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 66,
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
+      "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 65,
-      "market": "US"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
-      "score": 65,
-      "market": "US"
+      "ticker": "BNR.DE",
+      "name": "Brenntag",
+      "score": 64,
+      "market": "DE"
     },
     {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
       "score": 63,
       "market": "US"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 63,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -277,7 +277,7 @@
     {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
-      "score": 66,
+      "score": 67,
       "market": "UK"
     },
     {
@@ -289,7 +289,19 @@
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
       "score": 64,
+      "market": "DE"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 63,
       "market": "UK"
     },
     {
@@ -299,37 +311,25 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
+      "ticker": "FHN",
+      "name": "First Horizon",
       "score": 62,
-      "market": "UK"
+      "market": "US"
     },
     {
       "ticker": "FOUR.L",
       "name": "4imprint",
-      "score": 61,
+      "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
       "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 60,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 383
+  "bearishAlertCount": 385
 }
