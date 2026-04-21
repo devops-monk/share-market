@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 73,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 72,
@@ -50,23 +57,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EWBC",
-      "name": "East West Bancorp",
+      "ticker": "ALL",
+      "name": "Allstate",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
+      "ticker": "EWBC",
+      "name": "East West Bancorp",
       "score": 71,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ALL",
-      "name": "Allstate",
-      "score": 70,
       "market": "US",
       "capCategory": "Large"
     }
@@ -101,13 +101,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "TEAM",
       "name": "Atlassian",
       "score": 25,
@@ -122,11 +115,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 26,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "AXON",
@@ -138,6 +131,13 @@
     {
       "ticker": "AFRM",
       "name": "Affirm",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MDB",
+      "name": "MongoDB",
       "score": 27,
       "market": "US",
       "capCategory": "Large"
@@ -155,6 +155,12 @@
       "name": "Chubb",
       "score": 73,
       "market": "US"
+    },
+    {
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 73,
+      "market": "HK"
     },
     {
       "ticker": "FDX",
@@ -181,27 +187,21 @@
       "market": "US"
     },
     {
+      "ticker": "ALL",
+      "name": "Allstate",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "EWBC",
       "name": "East West Bancorp",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 71,
-      "market": "HK"
-    },
-    {
-      "ticker": "ALL",
-      "name": "Allstate",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 69,
       "market": "US"
     }
   ],
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 382
+  "bearishAlertCount": 385
 }
