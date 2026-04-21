@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "DELL",
       "name": "Dell Technologies",
       "score": 74,
@@ -26,6 +19,13 @@
       "name": "WH Group",
       "score": 73,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 72,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -108,6 +108,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "U",
       "name": "Unity Software",
       "score": 26,
@@ -120,13 +127,6 @@
       "score": 27,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "GWRE",
@@ -145,12 +145,6 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 74,
-      "market": "US"
-    },
-    {
       "ticker": "DELL",
       "name": "Dell Technologies",
       "score": 74,
@@ -161,6 +155,12 @@
       "name": "WH Group",
       "score": 73,
       "market": "HK"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 72,
+      "market": "US"
     },
     {
       "ticker": "FDX",
@@ -261,10 +261,10 @@
       "market": "US"
     },
     {
-      "ticker": "BNR.DE",
-      "name": "Brenntag",
-      "score": 64,
-      "market": "DE"
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 63,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -279,12 +279,6 @@
       "name": "CMC Markets",
       "score": 66,
       "market": "UK"
-    },
-    {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 65,
-      "market": "US"
     },
     {
       "ticker": "LTC",
@@ -305,15 +299,9 @@
       "market": "UK"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 63,
-      "market": "DE"
-    },
-    {
       "ticker": "MARS.L",
       "name": "Marston's",
-      "score": 62,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -327,9 +315,21 @@
       "name": "4imprint",
       "score": 61,
       "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "TSTL.L",
+      "name": "Tristel",
+      "score": 59,
+      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 371
+  "bearishAlertCount": 368
 }
