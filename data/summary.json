@@ -1,9 +1,23 @@
 {
   "topOverall": [
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CB",
+      "name": "Chubb",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -22,22 +36,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CB",
-      "name": "Chubb",
+      "ticker": "TRV",
+      "name": "Travelers",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "EWBC",
+      "name": "East West Bancorp",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -50,42 +64,14 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "ALL",
+      "name": "Allstate",
       "score": 70,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "score": 69,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
     {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
@@ -94,29 +80,43 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "TEAM",
       "name": "Atlassian",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "CELH",
       "name": "Celsius Holdings",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
       "score": 25,
       "market": "US",
       "capCategory": "Mid"
@@ -129,15 +129,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 27,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "APTV",
-      "name": "Aptiv",
+      "ticker": "AFRM",
+      "name": "Affirm",
       "score": 27,
       "market": "US",
       "capCategory": "Large"
@@ -145,9 +145,21 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "CB",
+      "name": "Chubb",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 72,
       "market": "US"
     },
     {
@@ -157,20 +169,20 @@
       "market": "HK"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "CB",
-      "name": "Chubb",
+      "ticker": "TRV",
+      "name": "Travelers",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "EWBC",
+      "name": "East West Bancorp",
       "score": 71,
       "market": "US"
     },
@@ -181,28 +193,16 @@
       "market": "HK"
     },
     {
+      "ticker": "ALL",
+      "name": "Allstate",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "JNJ",
       "name": "Johnson & Johnson",
       "score": 69,
       "market": "US"
-    },
-    {
-      "ticker": "ALL",
-      "name": "Allstate",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 69,
-      "market": "JP"
     }
   ],
   "topMidCap": [
@@ -219,6 +219,12 @@
       "market": "UK"
     },
     {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 68,
+      "market": "US"
+    },
+    {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 68,
@@ -231,32 +237,26 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
       "score": 67,
       "market": "US"
     },
     {
       "ticker": "PCVX",
       "name": "Vaxcyte",
-      "score": 65,
-      "market": "US"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 64,
-      "market": "US"
-    },
-    {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 64,
+      "score": 66,
       "market": "US"
     },
     {
       "ticker": "AM",
       "name": "Antero Midstream",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
       "score": 64,
       "market": "US"
     },
@@ -299,12 +299,6 @@
       "market": "DE"
     },
     {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 63,
-      "market": "US"
-    },
-    {
       "ticker": "MARS.L",
       "name": "Marston's",
       "score": 63,
@@ -327,9 +321,15 @@
       "name": "Gym Group",
       "score": 62,
       "market": "UK"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 61,
+      "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 49,
-  "bearishAlertCount": 392
+  "avgScore": 50,
+  "bearishAlertCount": 382
 }
