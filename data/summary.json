@@ -36,6 +36,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "1398.HK",
       "name": "ICBC",
       "score": 71,
@@ -43,15 +57,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -59,13 +66,6 @@
     {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TSCO.L",
-      "name": "Tesco",
       "score": 70,
       "market": "UK",
       "capCategory": "Large"
@@ -80,6 +80,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
       "score": 23,
@@ -87,39 +94,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TEAM",
-      "name": "Atlassian",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "LCID",
       "name": "Lucid Group",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "AXON",
@@ -129,15 +115,29 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DUOL",
-      "name": "Duolingo",
+      "ticker": "TEAM",
+      "name": "Atlassian",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 27,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "APTV",
-      "name": "Aptiv",
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems",
       "score": 27,
       "market": "US",
       "capCategory": "Large"
@@ -163,20 +163,26 @@
       "market": "HK"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "1398.HK",
       "name": "ICBC",
       "score": 71,
       "market": "HK"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "FDX",
+      "name": "FedEx",
       "score": 70,
       "market": "US"
     },
@@ -197,12 +203,6 @@
       "name": "China Construction Bank",
       "score": 70,
       "market": "HK"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -231,16 +231,16 @@
       "market": "UK"
     },
     {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 66,
-      "market": "US"
     },
     {
       "ticker": "ZION",
@@ -275,6 +275,12 @@
       "market": "US"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 68,
+      "market": "DE"
+    },
+    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
@@ -305,6 +311,12 @@
       "market": "UK"
     },
     {
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
+      "score": 61,
+      "market": "US"
+    },
+    {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
       "score": 61,
@@ -315,21 +327,9 @@
       "name": "Supermarket Income REIT",
       "score": 61,
       "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 60,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 49,
-  "bearishAlertCount": 392
+  "avgScore": 50,
+  "bearishAlertCount": 387
 }
