@@ -8,6 +8,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 72,
@@ -31,13 +38,6 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -136,11 +136,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
-      "score": 28,
-      "market": "FR",
-      "capCategory": "Mid"
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -148,6 +148,12 @@
       "ticker": "CB",
       "name": "Chubb",
       "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 72,
       "market": "US"
     },
     {
@@ -165,12 +171,6 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
       "score": 71,
       "market": "US"
     },
@@ -243,16 +243,16 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 66,
-      "market": "UK"
-    },
-    {
       "ticker": "AM",
       "name": "Antero Midstream",
       "score": 65,
       "market": "US"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 65,
+      "market": "UK"
     },
     {
       "ticker": "FNB",
@@ -261,10 +261,10 @@
       "market": "US"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 64,
-      "market": "UK"
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 63,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -285,6 +285,12 @@
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 65,
+      "market": "DE"
     },
     {
       "ticker": "HMSO.L",
@@ -317,19 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
+      "ticker": "FHN",
+      "name": "First Horizon",
       "score": 60,
       "market": "US"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 59,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 386
+  "bearishAlertCount": 388
 }
