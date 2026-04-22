@@ -122,15 +122,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 27,
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 27,
       "market": "US",
       "capCategory": "Large"
@@ -207,6 +207,12 @@
   ],
   "topMidCap": [
     {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 70,
+      "market": "UK"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 69,
@@ -221,12 +227,6 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
       "score": 68,
       "market": "UK"
     },
@@ -287,10 +287,10 @@
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 65,
-      "market": "DE"
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 63,
+      "market": "UK"
     },
     {
       "ticker": "CKN.L",
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 60,
-      "market": "US"
-    },
-    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 60,
       "market": "US"
+    },
+    {
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 59,
+      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 384
+  "bearishAlertCount": 386
 }
