@@ -1,10 +1,17 @@
 {
   "topOverall": [
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 73,
-      "market": "HK",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 72,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -22,22 +29,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US",
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 72,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
+      "ticker": "1398.HK",
+      "name": "ICBC",
       "score": 71,
       "market": "HK",
       "capCategory": "Large"
@@ -73,9 +73,9 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 22,
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
@@ -89,13 +89,6 @@
     {
       "ticker": "TEAM",
       "name": "Atlassian",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
@@ -103,9 +96,23 @@
     {
       "ticker": "LCID",
       "name": "Lucid Group",
-      "score": 25,
+      "score": 24,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "UPST",
@@ -122,49 +129,42 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "WDAY",
-      "name": "Workday",
-      "score": 26,
+      "ticker": "DUOL",
+      "name": "Duolingo",
+      "score": 27,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SNPS",
-      "name": "Synopsys",
-      "score": 26,
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 27,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 73,
-      "market": "HK"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "MU",
       "name": "Micron",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 72,
+      "market": "HK"
+    },
+    {
+      "ticker": "1398.HK",
+      "name": "ICBC",
       "score": 71,
       "market": "HK"
     },
@@ -193,16 +193,16 @@
       "market": "UK"
     },
     {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 70,
+      "market": "HK"
+    },
+    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 69,
       "market": "US"
-    },
-    {
-      "ticker": "DTE.DE",
-      "name": "Deutsche Telekom",
-      "score": 69,
-      "market": "DE"
     }
   ],
   "topMidCap": [
@@ -243,6 +243,12 @@
       "market": "US"
     },
     {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 65,
+      "market": "US"
+    },
+    {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 65,
@@ -259,12 +265,6 @@
       "name": "Brenntag",
       "score": 64,
       "market": "DE"
-    },
-    {
-      "ticker": "SBRY.L",
-      "name": "Sainsbury",
-      "score": 63,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 393
+  "bearishAlertCount": 392
 }
