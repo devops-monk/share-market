@@ -3,7 +3,14 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 72,
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
@@ -57,13 +64,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 70,
@@ -73,18 +73,11 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "LCID",
+      "name": "Lucid Group",
       "score": 22,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "RHM.DE",
@@ -94,36 +87,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 25,
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TEAM",
-      "name": "Atlassian",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify",
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -136,9 +108,37 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TEAM",
+      "name": "Atlassian",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NAUKRI.BO",
+      "name": "Info Edge (Naukri)",
+      "score": 28,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 28,
       "market": "US",
       "capCategory": "Large"
     }
@@ -147,7 +147,13 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 72,
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 73,
       "market": "US"
     },
     {
@@ -179,12 +185,6 @@
       "name": "ICBC",
       "score": 71,
       "market": "HK"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 70,
-      "market": "US"
     },
     {
       "ticker": "RIO.L",
@@ -245,7 +245,7 @@
     {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
-      "score": 65,
+      "score": 66,
       "market": "US"
     },
     {
@@ -255,16 +255,16 @@
       "market": "UK"
     },
     {
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 64,
+      "market": "US"
+    },
+    {
       "ticker": "CWK.L",
       "name": "Cranswick",
       "score": 64,
       "market": "UK"
-    },
-    {
-      "ticker": "BNR.DE",
-      "name": "Brenntag",
-      "score": 64,
-      "market": "DE"
     }
   ],
   "topSmallCap": [
@@ -279,6 +279,12 @@
       "name": "RWE",
       "score": 68,
       "market": "DE"
+    },
+    {
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
+      "score": 65,
+      "market": "US"
     },
     {
       "ticker": "EXAS",
@@ -311,12 +317,6 @@
       "market": "UK"
     },
     {
-      "ticker": "WOLF",
-      "name": "Wolfspeed",
-      "score": 61,
-      "market": "US"
-    },
-    {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
       "score": 61,
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 387
+  "bearishAlertCount": 385
 }
