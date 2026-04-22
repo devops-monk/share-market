@@ -43,6 +43,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 70,
@@ -55,33 +69,12 @@
       "score": 70,
       "market": "UK",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TEAM",
-      "name": "Atlassian",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -94,6 +87,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "TEAM",
+      "name": "Atlassian",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
       "score": 24,
@@ -103,23 +103,9 @@
     {
       "ticker": "LCID",
       "name": "Lucid Group",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "UPST",
@@ -129,6 +115,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "WDAY",
       "name": "Workday",
       "score": 26,
@@ -136,11 +129,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 26,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -169,6 +169,18 @@
       "market": "HK"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "RIO.L",
       "name": "Rio Tinto",
       "score": 70,
@@ -191,18 +203,6 @@
       "name": "Deutsche Telekom",
       "score": 69,
       "market": "DE"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "ALL",
-      "name": "Allstate",
-      "score": 68,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -231,9 +231,15 @@
       "market": "UK"
     },
     {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 67,
+      "market": "UK"
+    },
+    {
       "ticker": "DOCN",
       "name": "DigitalOcean",
-      "score": 67,
+      "score": 66,
       "market": "US"
     },
     {
@@ -255,12 +261,6 @@
       "market": "DE"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 63,
-      "market": "US"
-    },
-    {
       "ticker": "SBRY.L",
       "name": "Sainsbury",
       "score": 63,
@@ -273,12 +273,6 @@
       "name": "Hologic",
       "score": 72,
       "market": "US"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 68,
-      "market": "DE"
     },
     {
       "ticker": "EXAS",
@@ -327,9 +321,15 @@
       "name": "Hammerson",
       "score": 61,
       "market": "UK"
+    },
+    {
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 60,
+      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 390
+  "bearishAlertCount": 393
 }
