@@ -1,16 +1,16 @@
 {
   "topOverall": [
     {
-      "ticker": "CB",
-      "name": "Chubb",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
+      "ticker": "CB",
+      "name": "Chubb",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
@@ -36,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TRV",
       "name": "Travelers",
       "score": 71,
@@ -57,13 +64,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "1398.HK",
       "name": "ICBC",
       "score": 71,
@@ -80,18 +80,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
@@ -129,15 +129,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
-      "score": 28,
-      "market": "FR",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "NAUKRI.BO",
       "name": "Info Edge (Naukri)",
+      "score": 28,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ASIANPAINT.NS",
+      "name": "Asian Paints",
       "score": 28,
       "market": "IN",
       "capCategory": "Large"
@@ -145,15 +145,15 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "CB",
-      "name": "Chubb",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 73,
       "market": "US"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
+      "ticker": "CB",
+      "name": "Chubb",
+      "score": 73,
       "market": "US"
     },
     {
@@ -167,6 +167,12 @@
       "name": "WH Group",
       "score": 72,
       "market": "HK"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "TRV",
@@ -193,16 +199,10 @@
       "market": "HK"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
       "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 70,
-      "market": "US"
+      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -249,16 +249,16 @@
       "market": "US"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
       "score": 64,
       "market": "US"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "LUNR",
@@ -275,22 +275,16 @@
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 71,
-      "market": "UK"
-    },
-    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 63,
-      "market": "DE"
+      "market": "UK"
     },
     {
       "ticker": "CKN.L",
@@ -305,10 +299,16 @@
       "market": "UK"
     },
     {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 60,
-      "market": "US"
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 61,
+      "market": "UK"
     },
     {
       "ticker": "LTC",
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "RPI.L",
-      "name": "Raspberry Pi",
-      "score": 58,
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
+      "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 388
+  "bearishAlertCount": 385
 }
