@@ -1,11 +1,11 @@
 {
   "topOverall": [
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "HOLX",
@@ -19,6 +19,13 @@
       "name": "WH Group",
       "score": 72,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -36,13 +43,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "MU",
       "name": "Micron",
       "score": 70,
@@ -57,11 +57,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
       "score": 70,
       "market": "UK",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "0939.HK",
@@ -73,6 +73,13 @@
   ],
   "bottomOverall": [
     {
+      "ticker": "TEAM",
+      "name": "Atlassian",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
       "score": 22,
@@ -80,25 +87,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TEAM",
-      "name": "Atlassian",
+      "ticker": "ZG",
+      "name": "Zillow Group",
       "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday",
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "LCID",
       "name": "Lucid Group",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
       "score": 23,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "ALNY",
@@ -108,15 +115,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "SNPS",
-      "name": "Synopsys",
+      "ticker": "SHOP",
+      "name": "Shopify",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -145,28 +145,22 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "0288.HK",
       "name": "WH Group",
       "score": 72,
       "market": "HK"
     },
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "1398.HK",
       "name": "ICBC",
       "score": 71,
       "market": "HK"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 70,
-      "market": "US"
     },
     {
       "ticker": "MU",
@@ -179,6 +173,12 @@
       "name": "FedEx",
       "score": 70,
       "market": "US"
+    },
+    {
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 70,
+      "market": "UK"
     },
     {
       "ticker": "0939.HK",
@@ -209,7 +209,7 @@
     {
       "ticker": "BBY.L",
       "name": "Balfour Beatty",
-      "score": 70,
+      "score": 73,
       "market": "UK"
     },
     {
@@ -221,20 +221,32 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 68,
+      "score": 69,
       "market": "UK"
     },
     {
       "ticker": "INVP.L",
       "name": "Investec",
-      "score": 66,
+      "score": 67,
       "market": "UK"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 65,
+      "market": "US"
     },
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 65,
       "market": "UK"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 64,
+      "market": "US"
     },
     {
       "ticker": "FNB",
@@ -249,21 +261,9 @@
       "market": "DE"
     },
     {
-      "ticker": "GAW.L",
-      "name": "Games Workshop",
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
       "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 61,
       "market": "US"
     }
   ],
@@ -281,26 +281,26 @@
       "market": "UK"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 66,
+      "market": "DE"
+    },
+    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 65,
-      "market": "DE"
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 63,
+      "market": "UK"
     },
     {
       "ticker": "HMSO.L",
       "name": "Hammerson",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
       "score": 63,
       "market": "UK"
     },
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 59,
-      "market": "US"
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 60,
+      "market": "UK"
     }
   ],
-  "totalStocks": 861,
+  "totalStocks": 862,
   "avgScore": 48,
-  "bearishAlertCount": 392
+  "bearishAlertCount": 379
 }
