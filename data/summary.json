@@ -1,24 +1,10 @@
 {
   "topOverall": [
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CB",
       "name": "Chubb",
       "score": 73,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 73,
-      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -36,15 +22,15 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 72,
-      "market": "HK",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -69,15 +55,36 @@
       "score": 71,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 71,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 71,
+      "market": "HK",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
-      "score": 24,
+      "score": 21,
       "market": "DE",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "ALNY",
@@ -85,13 +92,6 @@
       "score": 24,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
@@ -122,22 +122,22 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ASIANPAINT.NS",
+      "name": "Asian Paints",
+      "score": 27,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "MDB",
-      "name": "MongoDB",
       "score": 27,
       "market": "US",
       "capCategory": "Large"
@@ -145,22 +145,10 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 73,
-      "market": "US"
-    },
-    {
       "ticker": "CB",
       "name": "Chubb",
       "score": 73,
       "market": "US"
-    },
-    {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 73,
-      "market": "HK"
     },
     {
       "ticker": "FDX",
@@ -169,14 +157,14 @@
       "market": "US"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 72,
-      "market": "HK"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 71,
       "market": "US"
     },
@@ -199,9 +187,21 @@
       "market": "US"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 70,
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 71,
+      "market": "HK"
+    },
+    {
+      "ticker": "0288.HK",
+      "name": "WH Group",
+      "score": 71,
+      "market": "HK"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "score": 69,
       "market": "US"
     }
   ],
@@ -209,13 +209,7 @@
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 70,
+      "score": 69,
       "market": "UK"
     },
     {
@@ -225,8 +219,8 @@
       "market": "US"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
+      "ticker": "BEZ.L",
+      "name": "Beazley",
       "score": 68,
       "market": "UK"
     },
@@ -261,9 +255,15 @@
       "market": "US"
     },
     {
-      "ticker": "SBRY.L",
-      "name": "Sainsbury",
-      "score": 64,
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 63,
+      "market": "US"
+    },
+    {
+      "ticker": "IMI.L",
+      "name": "IMI",
+      "score": 63,
       "market": "UK"
     }
   ],
@@ -275,34 +275,10 @@
       "market": "US"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 67,
-      "market": "UK"
-    },
-    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 64,
-      "market": "DE"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 63,
-      "market": "UK"
     },
     {
       "ticker": "CMCX.L",
@@ -311,25 +287,49 @@
       "market": "UK"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 63,
+      "market": "DE"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "MARS.L",
+      "name": "Marston's",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 60,
+      "market": "US"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 60,
+      "market": "US"
+    },
+    {
       "ticker": "FOUR.L",
       "name": "4imprint",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "GYM.L",
-      "name": "Gym Group",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 61,
+      "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 50,
-  "bearishAlertCount": 385
+  "avgScore": 49,
+  "bearishAlertCount": 388
 }
