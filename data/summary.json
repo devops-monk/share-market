@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CB",
       "name": "Chubb",
       "score": 73,
@@ -43,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TRV",
       "name": "Travelers",
       "score": 71,
@@ -64,11 +64,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 71,
-      "market": "HK",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
@@ -129,27 +129,21 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NAUKRI.BO",
-      "name": "Info Edge (Naukri)",
-      "score": 28,
-      "market": "IN",
+      "ticker": "AFRM",
+      "name": "Affirm",
+      "score": 27,
+      "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ASIANPAINT.NS",
-      "name": "Asian Paints",
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
       "score": 28,
-      "market": "IN",
-      "capCategory": "Large"
+      "market": "FR",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 73,
-      "market": "US"
-    },
     {
       "ticker": "CB",
       "name": "Chubb",
@@ -171,6 +165,12 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 71,
       "market": "US"
     },
@@ -199,10 +199,10 @@
       "market": "HK"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 70,
-      "market": "HK"
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -243,6 +243,12 @@
       "market": "US"
     },
     {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "AM",
       "name": "Antero Midstream",
       "score": 65,
@@ -259,12 +265,6 @@
       "name": "Plus500",
       "score": 64,
       "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 63,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -275,21 +275,33 @@
       "market": "US"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 71,
+      "market": "UK"
+    },
+    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 63,
-      "market": "UK"
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 65,
+      "market": "DE"
     },
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 61,
       "market": "UK"
     },
     {
@@ -305,31 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 61,
-      "market": "UK"
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 60,
+      "market": "US"
     },
     {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 60,
       "market": "US"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 59,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 385
+  "bearishAlertCount": 384
 }
