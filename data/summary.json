@@ -1,22 +1,8 @@
 {
   "topOverall": [
     {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -36,39 +22,53 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TRV",
-      "name": "Travelers",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ALL",
-      "name": "Allstate",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "EWBC",
-      "name": "East West Bancorp",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 71,
       "market": "UK",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 71,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 70,
+      "market": "HK",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -80,6 +80,27 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "TEAM",
+      "name": "Atlassian",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
       "score": 24,
@@ -87,32 +108,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health",
-      "score": 24,
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 25,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Small"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "SNPS",
+      "name": "Synopsys",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "TEAM",
-      "name": "Atlassian",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "UPST",
@@ -122,43 +129,24 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AFRM",
-      "name": "Affirm",
-      "score": 27,
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems",
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "CB",
-      "name": "Chubb",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 72,
       "market": "US"
     },
@@ -169,40 +157,52 @@
       "market": "HK"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "TRV",
-      "name": "Travelers",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "ALL",
-      "name": "Allstate",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "EWBC",
-      "name": "East West Bancorp",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "1398.HK",
       "name": "ICBC",
       "score": 71,
       "market": "HK"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 70,
       "market": "US"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 70,
+      "market": "HK"
+    },
+    {
+      "ticker": "NTPC.NS",
+      "name": "NTPC",
+      "score": 68,
+      "market": "IN"
+    },
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 68,
+      "market": "JP"
+    },
+    {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 68,
+      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -219,34 +219,16 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 68,
-      "market": "US"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 67,
-      "market": "US"
-    },
-    {
-      "ticker": "PCVX",
-      "name": "Vaxcyte",
+      "ticker": "INVP.L",
+      "name": "Investec",
       "score": 66,
-      "market": "US"
-    },
-    {
-      "ticker": "AM",
-      "name": "Antero Midstream",
-      "score": 65,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "PLUS.L",
@@ -257,13 +239,31 @@
     {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 64,
+      "score": 63,
       "market": "US"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "BNR.DE",
+      "name": "Brenntag",
       "score": 63,
+      "market": "DE"
+    },
+    {
+      "ticker": "GAW.L",
+      "name": "Games Workshop",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "CWK.L",
+      "name": "Cranswick",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 61,
       "market": "US"
     }
   ],
@@ -295,6 +295,12 @@
     {
       "ticker": "HMSO.L",
       "name": "Hammerson",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "FOUR.L",
+      "name": "4imprint",
       "score": 63,
       "market": "UK"
     },
@@ -302,12 +308,6 @@
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 61,
       "market": "UK"
     },
     {
@@ -325,11 +325,11 @@
     {
       "ticker": "FHN",
       "name": "First Horizon",
-      "score": 60,
+      "score": 59,
       "market": "US"
     }
   ],
-  "totalStocks": 862,
-  "avgScore": 50,
-  "bearishAlertCount": 388
+  "totalStocks": 861,
+  "avgScore": 48,
+  "bearishAlertCount": 392
 }
