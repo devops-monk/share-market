@@ -36,17 +36,10 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
+      "ticker": "DRREDDY.NS",
+      "name": "Dr. Reddy's Labs",
       "score": 72,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 72,
-      "market": "HK",
+      "market": "IN",
       "capCategory": "Large"
     },
     {
@@ -57,8 +50,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
       "score": 71,
       "market": "HK",
       "capCategory": "Large"
@@ -69,13 +62,20 @@
       "score": 70,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "RPI.L",
+      "name": "Raspberry Pi",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
-      "score": 23,
+      "score": 21,
       "market": "DE",
       "capCategory": "Large"
     },
@@ -94,6 +94,27 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "POLICYBZR.BO",
+      "name": "PB Fintech (PolicyBazaar)",
+      "score": 26,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NAUKRI.BO",
+      "name": "Info Edge (Naukri)",
+      "score": 26,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AVON.L",
+      "name": "Avon Protection",
+      "score": 26,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
       "score": 26,
@@ -101,45 +122,24 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 27,
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "TEAM",
-      "name": "Atlassian",
+      "ticker": "TATACONSUM.NS",
+      "name": "Tata Consumer Products",
       "score": 27,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NAUKRI.BO",
-      "name": "Info Edge (Naukri)",
-      "score": 28,
       "market": "IN",
       "capCategory": "Large"
     },
     {
-      "ticker": "APTV",
-      "name": "Aptiv",
-      "score": 28,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday",
-      "score": 28,
-      "market": "US",
+      "ticker": "HINDUNILVR.NS",
+      "name": "Hindustan Unilever",
+      "score": 27,
+      "market": "IN",
       "capCategory": "Large"
     }
   ],
@@ -169,10 +169,10 @@
       "market": "US"
     },
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
+      "ticker": "DRREDDY.NS",
+      "name": "Dr. Reddy's Labs",
       "score": 72,
-      "market": "HK"
+      "market": "IN"
     },
     {
       "ticker": "SLB",
@@ -181,8 +181,8 @@
       "market": "US"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
       "score": 71,
       "market": "HK"
     },
@@ -193,40 +193,22 @@
       "market": "US"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
-      "score": 70,
-      "market": "UK"
+      "ticker": "CSX",
+      "name": "CSX",
+      "score": 69,
+      "market": "US"
     },
     {
-      "ticker": "TSCO.L",
-      "name": "Tesco",
-      "score": 70,
-      "market": "UK"
+      "ticker": "FIVE",
+      "name": "Five Below",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 72,
-      "market": "UK"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 70,
-      "market": "UK"
-    },
-    {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
       "score": 69,
       "market": "UK"
     },
@@ -237,8 +219,8 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
+      "ticker": "BEZ.L",
+      "name": "Beazley",
       "score": 67,
       "market": "UK"
     },
@@ -249,8 +231,8 @@
       "market": "US"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
       "score": 65,
       "market": "UK"
     },
@@ -261,9 +243,27 @@
       "market": "US"
     },
     {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 63,
+      "market": "US"
+    },
+    {
+      "ticker": "GAW.L",
+      "name": "Games Workshop",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "CWK.L",
       "name": "Cranswick",
-      "score": 64,
+      "score": 62,
       "market": "UK"
     }
   ],
@@ -275,10 +275,16 @@
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 68,
-      "market": "DE"
+      "ticker": "RPI.L",
+      "name": "Raspberry Pi",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 70,
+      "market": "UK"
     },
     {
       "ticker": "WOLF",
@@ -293,27 +299,9 @@
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 62,
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 61,
       "market": "UK"
     },
     {
@@ -323,13 +311,25 @@
       "market": "UK"
     },
     {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 59,
+      "market": "UK"
+    },
+    {
       "ticker": "SUPR.L",
       "name": "Supermarket Income REIT",
-      "score": 61,
+      "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 50,
-  "bearishAlertCount": 385
+  "avgScore": 49,
+  "bearishAlertCount": 389
 }
