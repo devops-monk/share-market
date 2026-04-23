@@ -3,7 +3,7 @@
     {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 74,
+      "score": 75,
       "market": "US",
       "capCategory": "Large"
     },
@@ -26,7 +26,7 @@
       "name": "RWE",
       "score": 73,
       "market": "DE",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
       "ticker": "AMAT",
@@ -50,15 +50,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 72,
-      "market": "HK",
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "CMCSA",
+      "name": "Comcast",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -80,32 +80,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "HUBS",
       "name": "HubSpot",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "CELH",
       "name": "Celsius Holdings",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
       "score": 25,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "POLICYBZR.BO",
@@ -122,15 +108,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GWRE",
-      "name": "Guidewire Software",
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -141,20 +127,28 @@
       "score": 27,
       "market": "IN",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 74,
+      "score": 75,
       "market": "US"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE"
     },
     {
       "ticker": "AMAT",
@@ -169,14 +163,14 @@
       "market": "UK"
     },
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 72,
-      "market": "HK"
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 71,
+      "market": "US"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "CMCSA",
+      "name": "Comcast",
       "score": 71,
       "market": "US"
     },
@@ -193,14 +187,20 @@
       "market": "US"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "NEE",
+      "name": "NextEra Energy",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "NEE",
-      "name": "NextEra Energy",
+      "ticker": "CB",
+      "name": "Chubb",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes",
       "score": 70,
       "market": "US"
     }
@@ -237,16 +237,22 @@
       "market": "US"
     },
     {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 67,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 66,
-      "market": "US"
     },
     {
       "ticker": "PLUS.L",
@@ -259,15 +265,15 @@
       "name": "Games Workshop",
       "score": 65,
       "market": "UK"
-    },
-    {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 64,
-      "market": "US"
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 73,
+      "market": "DE"
+    },
     {
       "ticker": "HOLX",
       "name": "Hologic",
@@ -293,6 +299,12 @@
       "market": "US"
     },
     {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 63,
+      "market": "US"
+    },
+    {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
       "score": 62,
@@ -305,12 +317,6 @@
       "market": "UK"
     },
     {
-      "ticker": "WOLF",
-      "name": "Wolfspeed",
-      "score": 61,
-      "market": "US"
-    },
-    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
       "score": 61,
@@ -321,15 +327,9 @@
       "name": "Ashmore Group",
       "score": 61,
       "market": "UK"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 61,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 369
+  "bearishAlertCount": 365
 }

@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-04-23T18:34:34.597Z",
+  "lastUpdated": "2026-04-23T19:37:54.699Z",
   "stockCount": 862,
-  "bearishAlerts": 369,
+  "bearishAlerts": 365,
   "newsCount": 500,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
-      "price": 7114.53,
-      "sma50": 6784.92,
-      "sma200": 6701.11,
-      "changeFromHigh": -0.33,
+      "price": 7103.06,
+      "sma50": 6784.69,
+      "sma200": 6701.05,
+      "changeFromHigh": -0.49,
       "distributionDays": 2,
       "regime": "bull",
       "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
