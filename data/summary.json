@@ -22,18 +22,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "DRREDDY.NS",
-      "name": "Dr. Reddy's Labs",
-      "score": 73,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 73,
       "market": "DE",
-      "capCategory": "Small"
+      "capCategory": "Large"
     },
     {
       "ticker": "AMAT",
@@ -69,23 +62,16 @@
       "score": 71,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
     {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
@@ -94,8 +80,29 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -108,6 +115,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "GWRE",
       "name": "Guidewire Software",
       "score": 26,
@@ -115,22 +129,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -151,10 +151,10 @@
       "market": "US"
     },
     {
-      "ticker": "DRREDDY.NS",
-      "name": "Dr. Reddy's Labs",
+      "ticker": "RWE.DE",
+      "name": "RWE",
       "score": 73,
-      "market": "IN"
+      "market": "DE"
     },
     {
       "ticker": "AMAT",
@@ -181,6 +181,12 @@
       "market": "US"
     },
     {
+      "ticker": "DRREDDY.NS",
+      "name": "Dr. Reddy's Labs",
+      "score": 71,
+      "market": "IN"
+    },
+    {
       "ticker": "SLB",
       "name": "Schlumberger",
       "score": 70,
@@ -193,16 +199,10 @@
       "market": "US"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
+      "ticker": "NEE",
+      "name": "NextEra Energy",
       "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 70,
-      "market": "HK"
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -269,12 +269,6 @@
   ],
   "topSmallCap": [
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE"
-    },
-    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
@@ -311,6 +305,12 @@
       "market": "UK"
     },
     {
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
+      "score": 61,
+      "market": "US"
+    },
+    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
       "score": 61,
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 862,
-  "avgScore": 49,
-  "bearishAlertCount": 370
+  "avgScore": 50,
+  "bearishAlertCount": 369
 }
