@@ -26,7 +26,7 @@
       "name": "RWE",
       "score": 72,
       "market": "DE",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
       "ticker": "SMT.L",
@@ -43,6 +43,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
       "score": 70,
@@ -55,34 +69,27 @@
       "score": 70,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 70,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 69,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
-      "score": 22,
+      "score": 20,
       "market": "DE",
       "capCategory": "Large"
     },
     {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
@@ -108,15 +115,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AFRM",
-      "name": "Affirm",
+      "ticker": "WDAY",
+      "name": "Workday",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -136,11 +136,11 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
       "score": 26,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -157,12 +157,6 @@
       "market": "IN"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE"
-    },
-    {
       "ticker": "SMT.L",
       "name": "Scottish Mortgage",
       "score": 71,
@@ -171,6 +165,12 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
       "score": 70,
       "market": "US"
     },
@@ -187,25 +187,31 @@
       "market": "US"
     },
     {
+      "ticker": "ALL",
+      "name": "Allstate",
+      "score": 68,
+      "market": "US"
+    },
+    {
       "ticker": "HAL",
       "name": "Halliburton",
       "score": 68,
       "market": "US"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
+      "ticker": "BKR",
+      "name": "Baker Hughes",
       "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 68,
-      "market": "JP"
+      "market": "US"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 70,
+      "market": "UK"
+    },
     {
       "ticker": "SDR.L",
       "name": "Schroders",
@@ -213,15 +219,9 @@
       "market": "UK"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 69,
-      "market": "UK"
-    },
-    {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 68,
+      "score": 69,
       "market": "UK"
     },
     {
@@ -229,6 +229,12 @@
       "name": "Zions Bancorporation",
       "score": 65,
       "market": "US"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 65,
+      "market": "UK"
     },
     {
       "ticker": "BBY.L",
@@ -243,18 +249,6 @@
       "market": "US"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 64,
-      "market": "US"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "score": 63,
@@ -265,6 +259,12 @@
       "name": "Cranswick",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "CROX",
+      "name": "Crocs",
+      "score": 62,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -273,6 +273,12 @@
       "name": "Hologic",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 72,
+      "market": "DE"
     },
     {
       "ticker": "RPI.L",
@@ -293,6 +299,18 @@
       "market": "US"
     },
     {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 63,
+      "market": "US"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "RNWH.L",
       "name": "Renew Holdings",
       "score": 61,
@@ -305,31 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
+      "ticker": "ITM.L",
+      "name": "ITM Power",
       "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 48,
-  "bearishAlertCount": 388
+  "avgScore": 49,
+  "bearishAlertCount": 375
 }
