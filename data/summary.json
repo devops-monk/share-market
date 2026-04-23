@@ -8,10 +8,24 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "DRREDDY.NS",
       "name": "Dr. Reddy's Labs",
       "score": 73,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -22,25 +36,25 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "SMT.L",
+      "name": "Scottish Mortgage",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "RWE.DE",
       "name": "RWE",
       "score": 72,
       "market": "DE",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "SMT.L",
-      "name": "Scottish Mortgage",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "MU",
@@ -50,32 +64,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
+      "ticker": "SDR.L",
+      "name": "Schroders",
       "score": 70,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "RPI.L",
-      "name": "Raspberry Pi",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
-      "score": 20,
+      "score": 22,
       "market": "DE",
       "capCategory": "Large"
     },
@@ -85,13 +85,6 @@
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "ZG",
@@ -129,15 +122,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AVON.L",
-      "name": "Avon Protection",
-      "score": 26,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -157,16 +157,16 @@
       "market": "IN"
     },
     {
-      "ticker": "SMT.L",
-      "name": "Scottish Mortgage",
-      "score": 71,
-      "market": "UK"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 70,
+      "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "SMT.L",
+      "name": "Scottish Mortgage",
+      "score": 72,
+      "market": "UK"
     },
     {
       "ticker": "MU",
@@ -181,10 +181,10 @@
       "market": "HK"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 68,
-      "market": "US"
+      "ticker": "RIO.L",
+      "name": "Rio Tinto",
+      "score": 69,
+      "market": "UK"
     },
     {
       "ticker": "ALL",
@@ -209,19 +209,25 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 70,
+      "score": 72,
       "market": "UK"
     },
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 69,
+      "score": 70,
       "market": "UK"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 66,
+      "market": "US"
     },
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 69,
+      "score": 66,
       "market": "UK"
     },
     {
@@ -243,22 +249,16 @@
       "market": "UK"
     },
     {
+      "ticker": "CWK.L",
+      "name": "Cranswick",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
       "score": 64,
       "market": "US"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 63,
-      "market": "UK"
     },
     {
       "ticker": "CROX",
@@ -268,6 +268,12 @@
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 73,
+      "market": "UK"
+    },
     {
       "ticker": "HOLX",
       "name": "Hologic",
@@ -283,12 +289,6 @@
     {
       "ticker": "RPI.L",
       "name": "Raspberry Pi",
-      "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
       "score": 70,
       "market": "UK"
     },
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "ITM.L",
-      "name": "ITM Power",
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
       "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 375
+  "bearishAlertCount": 378
 }
