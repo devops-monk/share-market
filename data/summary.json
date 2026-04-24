@@ -8,13 +8,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 72,
@@ -57,25 +50,32 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "7751.T",
       "name": "Canon",
       "score": 70,
       "market": "JP",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "TEAM",
-      "name": "Atlassian",
-      "score": 19,
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 16,
       "market": "US",
       "capCategory": "Large"
     },
@@ -87,8 +87,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
@@ -101,16 +115,9 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "TEAM",
+      "name": "Atlassian",
       "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
-      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
@@ -122,17 +129,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "APTV",
-      "name": "Aptiv",
+      "ticker": "WDAY",
+      "name": "Workday",
       "score": 24,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "EL.PA",
-      "name": "EssilorLuxottica",
-      "score": 25,
-      "market": "FR",
       "capCategory": "Large"
     },
     {
@@ -149,12 +149,6 @@
       "name": "CNOOC",
       "score": 76,
       "market": "HK"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 73,
-      "market": "US"
     },
     {
       "ticker": "AMAT",
@@ -187,20 +181,26 @@
       "market": "US"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "7751.T",
       "name": "Canon",
       "score": 70,
       "market": "JP"
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "BKR",
-      "name": "Baker Hughes",
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 68,
       "market": "US"
     }
@@ -225,20 +225,26 @@
       "market": "US"
     },
     {
+      "ticker": "CWK.L",
+      "name": "Cranswick",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
       "score": 65,
       "market": "US"
     },
     {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 64,
       "market": "US"
     },
@@ -259,12 +265,6 @@
       "name": "Crocs",
       "score": 62,
       "market": "US"
-    },
-    {
-      "ticker": "IMI.L",
-      "name": "IMI",
-      "score": 62,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -281,16 +281,22 @@
       "market": "DE"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 67,
+      "market": "UK"
+    },
+    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 63,
-      "market": "UK"
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 62,
+      "market": "US"
     },
     {
       "ticker": "WOSG.L",
@@ -307,7 +313,13 @@
     {
       "ticker": "FOUR.L",
       "name": "4imprint",
-      "score": 60,
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 61,
       "market": "UK"
     },
     {
@@ -315,21 +327,9 @@
       "name": "Phoenix Group",
       "score": 60,
       "market": "UK"
-    },
-    {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 60,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 48,
-  "bearishAlertCount": 387
+  "bearishAlertCount": 380
 }
