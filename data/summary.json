@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 76,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 76,
@@ -15,43 +8,15 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NEE",
-      "name": "NextEra Energy",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BKR",
-      "name": "Baker Hughes",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -69,87 +34,116 @@
       "score": 72,
       "market": "IN",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 72,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SMT.L",
+      "name": "Scottish Mortgage",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "7751.T",
+      "name": "Canon",
+      "score": 70,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 69,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
+      "ticker": "TEAM",
+      "name": "Atlassian",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
-      "score": 20,
+      "score": 21,
       "market": "DE",
       "capCategory": "Large"
     },
     {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 24,
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 21,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AVON.L",
-      "name": "Avon Protection",
-      "score": 26,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 27,
+      "ticker": "TECH",
+      "name": "Bio-Techne",
+      "score": 22,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 27,
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
-      "score": 27,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 27,
+      "ticker": "GWRE",
+      "name": "Guidewire Software",
+      "score": 24,
       "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "POLICYBZR.BO",
-      "name": "PB Fintech (PolicyBazaar)",
-      "score": 28,
-      "market": "IN",
       "capCategory": "Large"
     },
     {
       "ticker": "APTV",
       "name": "Aptiv",
-      "score": 28,
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "EL.PA",
+      "name": "EssilorLuxottica",
+      "score": 25,
+      "market": "FR",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 76,
-      "market": "US"
-    },
     {
       "ticker": "0883.HK",
       "name": "CNOOC",
@@ -157,38 +151,14 @@
       "market": "HK"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "NEE",
-      "name": "NextEra Energy",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "BKR",
-      "name": "Baker Hughes",
       "score": 72,
       "market": "US"
     },
@@ -203,27 +173,39 @@
       "name": "Sun Hung Kai Properties",
       "score": 72,
       "market": "HK"
+    },
+    {
+      "ticker": "SMT.L",
+      "name": "Scottish Mortgage",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "7751.T",
+      "name": "Canon",
+      "score": 70,
+      "market": "JP"
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes",
+      "score": 68,
+      "market": "US"
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 68,
-      "market": "US"
-    },
     {
       "ticker": "SDR.L",
       "name": "Schroders",
@@ -237,20 +219,26 @@
       "market": "UK"
     },
     {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
       "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "CWK.L",
+      "name": "Cranswick",
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 64,
-      "market": "US"
-    },
-    {
-      "ticker": "CROX",
-      "name": "Crocs",
       "score": 64,
       "market": "US"
     },
@@ -261,10 +249,22 @@
       "market": "UK"
     },
     {
-      "ticker": "NNN",
-      "name": "NNN REIT",
+      "ticker": "INVP.L",
+      "name": "Investec",
       "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "CROX",
+      "name": "Crocs",
+      "score": 62,
       "market": "US"
+    },
+    {
+      "ticker": "IMI.L",
+      "name": "IMI",
+      "score": 62,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -277,19 +277,13 @@
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 67,
+      "score": 68,
       "market": "DE"
     },
     {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
-      "market": "US"
-    },
-    {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 63,
       "market": "US"
     },
     {
@@ -311,25 +305,31 @@
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 62,
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "WOLF",
-      "name": "Wolfspeed",
-      "score": 61,
-      "market": "US"
+      "ticker": "PHNX.L",
+      "name": "Phoenix Group",
+      "score": 60,
+      "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
+      "ticker": "TSTL.L",
+      "name": "Tristel",
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
       "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 50,
-  "bearishAlertCount": 380
+  "avgScore": 48,
+  "bearishAlertCount": 387
 }
