@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 76,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "score": 72,
@@ -22,17 +29,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
       "score": 72,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
-      "market": "US",
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -43,23 +43,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "7751.T",
-      "name": "Canon",
-      "score": 71,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 71,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HCA",
       "name": "HCA Healthcare",
-      "score": 70,
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
@@ -67,6 +53,20 @@
       "ticker": "FDX",
       "name": "FedEx",
       "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "7751.T",
+      "name": "Canon",
+      "score": 70,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
+      "score": 69,
       "market": "US",
       "capCategory": "Large"
     }
@@ -108,22 +108,29 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
+      "ticker": "OKTA",
+      "name": "Okta",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HubSpot",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -134,16 +141,15 @@
       "score": 27,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "ONON",
-      "name": "On Holding",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 76,
+      "market": "HK"
+    },
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
@@ -157,16 +163,10 @@
       "market": "UK"
     },
     {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
       "score": 72,
-      "market": "IN"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
-      "market": "US"
+      "market": "HK"
     },
     {
       "ticker": "MU",
@@ -175,27 +175,27 @@
       "market": "US"
     },
     {
-      "ticker": "7751.T",
-      "name": "Canon",
-      "score": 71,
-      "market": "JP"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 71,
-      "market": "HK"
-    },
-    {
       "ticker": "HCA",
       "name": "HCA Healthcare",
-      "score": 70,
+      "score": 71,
       "market": "US"
     },
     {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "7751.T",
+      "name": "Canon",
+      "score": 70,
+      "market": "JP"
+    },
+    {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
+      "score": 69,
       "market": "US"
     },
     {
@@ -225,16 +225,16 @@
       "market": "US"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 67,
-      "market": "US"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 67,
       "market": "UK"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 66,
+      "market": "US"
     },
     {
       "ticker": "PLUS.L",
@@ -243,21 +243,21 @@
       "market": "UK"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 65,
-      "market": "US"
-    },
-    {
       "ticker": "INVP.L",
       "name": "Investec",
       "score": 65,
       "market": "UK"
     },
     {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 64,
+      "market": "US"
+    },
+    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
-      "score": 64,
+      "score": 63,
       "market": "US"
     },
     {
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 392
+  "bearishAlertCount": 389
 }
