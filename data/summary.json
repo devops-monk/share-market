@@ -29,6 +29,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "EOG",
       "name": "EOG Resources",
       "score": 72,
@@ -62,13 +69,6 @@
       "score": 72,
       "market": "IN",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 72,
-      "market": "HK",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -92,6 +92,13 @@
       "score": 26,
       "market": "UK",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "INF.L",
+      "name": "Informa",
+      "score": 27,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
@@ -120,13 +127,6 @@
       "score": 27,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "POLICYBZR.BO",
@@ -169,6 +169,12 @@
       "market": "US"
     },
     {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "EOG",
       "name": "EOG Resources",
       "score": 72,
@@ -197,12 +203,6 @@
       "name": "Sun Hung Kai Properties",
       "score": 72,
       "market": "HK"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -299,14 +299,14 @@
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
       "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
       "score": 62,
       "market": "UK"
     },
@@ -317,15 +317,15 @@
       "market": "US"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
       "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 61,
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 60,
       "market": "UK"
     }
   ],
