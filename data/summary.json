@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
@@ -22,6 +29,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "7751.T",
       "name": "Canon",
       "score": 71,
@@ -36,8 +50,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "HCA",
+      "name": "HCA Healthcare",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -50,35 +64,14 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BKR",
-      "name": "Baker Hughes",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HCA",
-      "name": "HCA Healthcare",
+      "ticker": "TGT",
+      "name": "Target",
       "score": 69,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 69,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
@@ -108,17 +101,24 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
       "score": 25,
       "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 25,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -136,14 +136,20 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ONON",
-      "name": "On Holding",
+      "ticker": "ZG",
+      "name": "Zillow Group",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 72,
+      "market": "US"
+    },
     {
       "ticker": "SMT.L",
       "name": "Scottish Mortgage",
@@ -155,6 +161,12 @@
       "name": "Coal India",
       "score": 72,
       "market": "IN"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "7751.T",
@@ -169,8 +181,8 @@
       "market": "HK"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "HCA",
+      "name": "HCA Healthcare",
       "score": 70,
       "market": "US"
     },
@@ -181,14 +193,8 @@
       "market": "US"
     },
     {
-      "ticker": "BKR",
-      "name": "Baker Hughes",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "HCA",
-      "name": "HCA Healthcare",
+      "ticker": "TGT",
+      "name": "Target",
       "score": 69,
       "market": "US"
     },
@@ -197,12 +203,6 @@
       "name": "ICBC",
       "score": 69,
       "market": "HK"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 68,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -219,16 +219,16 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 66,
-      "market": "US"
     },
     {
       "ticker": "PLUS.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 389
+  "bearishAlertCount": 395
 }
