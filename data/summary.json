@@ -10,6 +10,27 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -36,62 +57,34 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HCA",
-      "name": "HCA Healthcare",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 70,
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "7751.T",
-      "name": "Canon",
+      "ticker": "HAL",
+      "name": "Halliburton",
       "score": 70,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor",
-      "score": 69,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TECH",
-      "name": "Bio-Techne",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "UPST",
       "name": "Upstart",
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "TEAM",
@@ -108,32 +101,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 26,
+      "ticker": "TECH",
+      "name": "Bio-Techne",
+      "score": 25,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "OKTA",
-      "name": "Okta",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "AVON.L",
@@ -141,6 +113,34 @@
       "score": 27,
       "market": "UK",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "OKTA",
+      "name": "Okta",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -153,6 +153,24 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare",
       "score": 72,
       "market": "US"
     },
@@ -169,20 +187,14 @@
       "market": "HK"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "HCA",
-      "name": "HCA Healthcare",
-      "score": 71,
-      "market": "US"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
       "score": 70,
       "market": "US"
     },
@@ -191,18 +203,6 @@
       "name": "Canon",
       "score": 70,
       "market": "JP"
-    },
-    {
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -213,14 +213,20 @@
       "market": "UK"
     },
     {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 68,
+      "market": "US"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
       "score": 67,
       "market": "US"
     },
@@ -229,12 +235,6 @@
       "name": "Beazley",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 66,
-      "market": "US"
     },
     {
       "ticker": "PLUS.L",
@@ -249,15 +249,15 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
       "score": 64,
       "market": "US"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 63,
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 64,
       "market": "US"
     },
     {
@@ -273,6 +273,12 @@
       "name": "Hologic",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 68,
+      "market": "DE"
     },
     {
       "ticker": "EXAS",
@@ -299,6 +305,12 @@
       "market": "UK"
     },
     {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 63,
+      "market": "US"
+    },
+    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
       "score": 62,
@@ -315,21 +327,9 @@
       "name": "Renew Holdings",
       "score": 61,
       "market": "UK"
-    },
-    {
-      "ticker": "PHNX.L",
-      "name": "Phoenix Group",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "RPI.L",
-      "name": "Raspberry Pi",
-      "score": 60,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 49,
-  "bearishAlertCount": 389
+  "avgScore": 50,
+  "bearishAlertCount": 386
 }
