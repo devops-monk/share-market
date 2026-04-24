@@ -10,8 +10,15 @@
     {
       "ticker": "0883.HK",
       "name": "CNOOC",
-      "score": 75,
+      "score": 76,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 74,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -22,22 +29,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "EOG",
       "name": "EOG Resources",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -64,18 +57,25 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
       "score": 72,
-      "market": "DE",
-      "capCategory": "Small"
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
-      "score": 19,
+      "score": 20,
       "market": "DE",
       "capCategory": "Large"
     },
@@ -94,11 +94,11 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
+      "ticker": "INF.L",
+      "name": "Informa",
+      "score": 27,
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
@@ -153,8 +153,14 @@
     {
       "ticker": "0883.HK",
       "name": "CNOOC",
-      "score": 75,
+      "score": 76,
       "market": "HK"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 74,
+      "market": "US"
     },
     {
       "ticker": "NEE",
@@ -163,20 +169,8 @@
       "market": "US"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "EOG",
       "name": "EOG Resources",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast",
       "score": 72,
       "market": "US"
     },
@@ -193,14 +187,20 @@
       "market": "US"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
       "score": 72,
       "market": "HK"
     },
     {
       "ticker": "SLB",
       "name": "Schlumberger",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast",
       "score": 71,
       "market": "US"
     }
@@ -277,14 +277,8 @@
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 72,
+      "score": 68,
       "market": "DE"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 66,
-      "market": "UK"
     },
     {
       "ticker": "EXAS",
@@ -299,8 +293,20 @@
       "market": "US"
     },
     {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
       "score": 62,
       "market": "UK"
     },
@@ -311,25 +317,19 @@
       "market": "US"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
       "score": 61,
       "market": "UK"
     },
     {
-      "ticker": "PHNX.L",
-      "name": "Phoenix Group",
+      "ticker": "FOUR.L",
+      "name": "4imprint",
       "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 376
+  "bearishAlertCount": 378
 }
