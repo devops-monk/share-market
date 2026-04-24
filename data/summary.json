@@ -29,15 +29,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "CMCSA",
+      "name": "Comcast",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -94,13 +94,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "INF.L",
-      "name": "Informa",
-      "score": 27,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "ZG",
       "name": "Zillow Group",
       "score": 27,
@@ -127,6 +120,13 @@
       "score": 27,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "POLICYBZR.BO",
@@ -169,14 +169,14 @@
       "market": "US"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "CMCSA",
+      "name": "Comcast",
       "score": 72,
       "market": "US"
     },
@@ -237,6 +237,12 @@
       "market": "UK"
     },
     {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 66,
+      "market": "UK"
+    },
+    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
       "score": 64,
@@ -259,12 +265,6 @@
       "name": "NNN REIT",
       "score": 63,
       "market": "US"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 63,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -311,16 +311,16 @@
       "market": "UK"
     },
     {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "WOLF",
       "name": "Wolfspeed",
       "score": 61,
       "market": "US"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 61,
-      "market": "UK"
     },
     {
       "ticker": "FOUR.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 381
+  "bearishAlertCount": 380
 }
