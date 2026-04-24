@@ -73,13 +73,6 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
       "score": 23,
@@ -92,6 +85,13 @@
       "score": 23,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "RHM.DE",
