@@ -24,7 +24,7 @@
     {
       "ticker": "NEE",
       "name": "NextEra Energy",
-      "score": 73,
+      "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
@@ -57,17 +57,17 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 72,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 72,
       "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 71,
-      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -77,13 +77,6 @@
       "name": "Rheinmetall",
       "score": 20,
       "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "EL.PA",
-      "name": "EssilorLuxottica",
-      "score": 23,
-      "market": "FR",
       "capCategory": "Large"
     },
     {
@@ -99,13 +92,6 @@
       "score": 26,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "INF.L",
-      "name": "Informa",
-      "score": 27,
-      "market": "UK",
-      "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
@@ -136,10 +122,24 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "POLICYBZR.BO",
       "name": "PB Fintech (PolicyBazaar)",
       "score": 28,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 28,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -165,7 +165,7 @@
     {
       "ticker": "NEE",
       "name": "NextEra Energy",
-      "score": 73,
+      "score": 74,
       "market": "US"
     },
     {
@@ -187,6 +187,12 @@
       "market": "US"
     },
     {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 72,
+      "market": "IN"
+    },
+    {
       "ticker": "0016.HK",
       "name": "Sun Hung Kai Properties",
       "score": 72,
@@ -195,12 +201,6 @@
     {
       "ticker": "SLB",
       "name": "Schlumberger",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast",
       "score": 71,
       "market": "US"
     }
@@ -277,7 +277,7 @@
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 68,
+      "score": 67,
       "market": "DE"
     },
     {
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "PHNX.L",
-      "name": "Phoenix Group",
-      "score": 60,
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 61,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 382
+  "bearishAlertCount": 381
 }
