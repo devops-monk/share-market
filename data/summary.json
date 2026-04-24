@@ -8,18 +8,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
       "market": "US",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "SMT.L",
+      "name": "Scottish Mortgage",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Large"
     },
     {
       "ticker": "COALINDIA.NS",
@@ -36,10 +36,17 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SMT.L",
-      "name": "Scottish Mortgage",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 71,
-      "market": "UK",
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "7751.T",
+      "name": "Canon",
+      "score": 71,
+      "market": "JP",
       "capCategory": "Large"
     },
     {
@@ -62,13 +69,6 @@
       "score": 70,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "7751.T",
-      "name": "Canon",
-      "score": 70,
-      "market": "JP",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -80,20 +80,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RHM.DE",
-      "name": "Rheinmetall",
-      "score": 21,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DT",
-      "name": "Dynatrace",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
       "score": 21,
@@ -101,10 +87,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
-      "score": 21,
-      "market": "US",
+      "ticker": "RHM.DE",
+      "name": "Rheinmetall",
+      "score": 22,
+      "market": "DE",
       "capCategory": "Large"
     },
     {
@@ -117,6 +103,13 @@
     {
       "ticker": "TEAM",
       "name": "Atlassian",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
@@ -141,6 +134,13 @@
       "score": 25,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -151,10 +151,10 @@
       "market": "HK"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
+      "ticker": "SMT.L",
+      "name": "Scottish Mortgage",
       "score": 72,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "COALINDIA.NS",
@@ -169,10 +169,16 @@
       "market": "HK"
     },
     {
-      "ticker": "SMT.L",
-      "name": "Scottish Mortgage",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 71,
-      "market": "UK"
+      "market": "US"
+    },
+    {
+      "ticker": "7751.T",
+      "name": "Canon",
+      "score": 71,
+      "market": "JP"
     },
     {
       "ticker": "MU",
@@ -193,15 +199,9 @@
       "market": "US"
     },
     {
-      "ticker": "7751.T",
-      "name": "Canon",
-      "score": 70,
-      "market": "JP"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 68,
+      "ticker": "TGT",
+      "name": "Target",
+      "score": 69,
       "market": "US"
     }
   ],
@@ -257,14 +257,14 @@
     {
       "ticker": "INVP.L",
       "name": "Investec",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "CROX",
-      "name": "Crocs",
-      "score": 62,
-      "market": "US"
+      "ticker": "IMI.L",
+      "name": "IMI",
+      "score": 63,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -273,12 +273,6 @@
       "name": "Hologic",
       "score": 72,
       "market": "US"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 68,
-      "market": "DE"
     },
     {
       "ticker": "CMCX.L",
@@ -293,10 +287,10 @@
       "market": "US"
     },
     {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 62,
-      "market": "US"
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "WOSG.L",
@@ -323,13 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "PHNX.L",
-      "name": "Phoenix Group",
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "ITM.L",
+      "name": "ITM Power",
       "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 48,
-  "bearishAlertCount": 380
+  "bearishAlertCount": 393
 }
