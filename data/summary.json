@@ -24,7 +24,7 @@
     {
       "ticker": "NEE",
       "name": "NextEra Energy",
-      "score": 74,
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
@@ -77,6 +77,13 @@
       "name": "Rheinmetall",
       "score": 20,
       "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "EL.PA",
+      "name": "EssilorLuxottica",
+      "score": 23,
+      "market": "FR",
       "capCategory": "Large"
     },
     {
@@ -134,13 +141,6 @@
       "score": 28,
       "market": "IN",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "APTV",
-      "name": "Aptiv",
-      "score": 28,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -165,7 +165,7 @@
     {
       "ticker": "NEE",
       "name": "NextEra Energy",
-      "score": 74,
+      "score": 73,
       "market": "US"
     },
     {
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
+      "ticker": "PHNX.L",
+      "name": "Phoenix Group",
       "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 378
+  "bearishAlertCount": 382
 }
