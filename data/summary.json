@@ -1,23 +1,30 @@
 {
   "topOverall": [
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 76,
-      "market": "HK",
+      "ticker": "6273.T",
+      "name": "SMC Corp",
+      "score": 75,
+      "market": "JP",
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 74,
-      "market": "US",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 75,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
       "ticker": "SLB",
       "name": "Schlumberger",
       "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
@@ -43,24 +50,17 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "SMT.L",
-      "name": "Scottish Mortgage",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 72,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 71,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 71,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -72,6 +72,13 @@
     }
   ],
   "bottomOverall": [
+    {
+      "ticker": "RHM.DE",
+      "name": "Rheinmetall",
+      "score": 22,
+      "market": "DE",
+      "capCategory": "Large"
+    },
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
@@ -94,13 +101,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "RHM.DE",
-      "name": "Rheinmetall",
-      "score": 25,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TECH",
       "name": "Bio-Techne",
       "score": 25,
@@ -108,11 +108,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AVON.L",
-      "name": "Avon Protection",
+      "ticker": "EL.PA",
+      "name": "EssilorLuxottica",
       "score": 27,
-      "market": "UK",
-      "capCategory": "Small"
+      "market": "FR",
+      "capCategory": "Large"
     },
     {
       "ticker": "APTV",
@@ -136,30 +136,36 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 27,
-      "market": "US",
+      "ticker": "9626.HK",
+      "name": "Bilibili",
+      "score": 28,
+      "market": "HK",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 76,
-      "market": "HK"
+      "ticker": "6273.T",
+      "name": "SMC Corp",
+      "score": 75,
+      "market": "JP"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 74,
-      "market": "US"
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 75,
+      "market": "HK"
     },
     {
       "ticker": "SLB",
       "name": "Schlumberger",
       "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
       "market": "US"
     },
     {
@@ -175,22 +181,16 @@
       "market": "US"
     },
     {
-      "ticker": "SMT.L",
-      "name": "Scottish Mortgage",
-      "score": 72,
-      "market": "UK"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 72,
-      "market": "HK"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 71,
       "market": "US"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 71,
+      "market": "HK"
     },
     {
       "ticker": "HAL",
@@ -199,19 +199,13 @@
       "market": "US"
     },
     {
-      "ticker": "7751.T",
-      "name": "Canon",
-      "score": 70,
-      "market": "JP"
+      "ticker": "LRCX",
+      "name": "Lam Research",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 69,
-      "market": "UK"
-    },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
@@ -237,18 +231,6 @@
       "market": "UK"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
       "score": 64,
@@ -261,10 +243,28 @@
       "market": "US"
     },
     {
-      "ticker": "GAW.L",
-      "name": "Games Workshop",
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "INVP.L",
+      "name": "Investec",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "HSIC",
+      "name": "Henry Schein",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "CROX",
+      "name": "Crocs",
+      "score": 62,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -277,7 +277,7 @@
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 68,
+      "score": 67,
       "market": "DE"
     },
     {
@@ -287,49 +287,49 @@
       "market": "US"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "FHN",
       "name": "First Horizon",
       "score": 63,
       "market": "US"
     },
     {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 62,
+      "score": 60,
       "market": "UK"
     },
     {
       "ticker": "FOUR.L",
       "name": "4imprint",
-      "score": 61,
+      "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "RNWH.L",
-      "name": "Renew Holdings",
-      "score": 61,
-      "market": "UK"
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
+      "score": 58,
+      "market": "US"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 50,
-  "bearishAlertCount": 386
+  "avgScore": 49,
+  "bearishAlertCount": 390
 }
