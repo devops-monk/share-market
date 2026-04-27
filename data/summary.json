@@ -22,24 +22,31 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
       "score": 72,
       "market": "HK",
       "capCategory": "Large"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 71,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "VZ",
+      "name": "Verizon",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 71,
+      "market": "DE",
       "capCategory": "Large"
     },
     {
@@ -50,22 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "VZ",
-      "name": "Verizon",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TGT",
       "name": "Target",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -80,18 +80,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TEAM",
-      "name": "Atlassian",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 22,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RHM.DE",
-      "name": "Rheinmetall",
-      "score": 23,
-      "market": "DE",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "ALNY",
@@ -101,17 +94,31 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
+      "ticker": "TEAM",
+      "name": "Atlassian",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "EL.PA",
-      "name": "EssilorLuxottica",
+      "ticker": "RHM.DE",
+      "name": "Rheinmetall",
       "score": 24,
-      "market": "FR",
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "score": 24,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -122,22 +129,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "WDAY",
-      "name": "Workday",
-      "score": 25,
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AVON.L",
-      "name": "Avon Protection",
-      "score": 26,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
+      "ticker": "APTV",
+      "name": "Aptiv",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -157,34 +157,34 @@
       "market": "US"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
       "score": 72,
       "market": "HK"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
       "score": 71,
       "market": "US"
+    },
+    {
+      "ticker": "VZ",
+      "name": "Verizon",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 71,
+      "market": "DE"
     },
     {
       "ticker": "6273.T",
       "name": "SMC Corp",
       "score": 71,
       "market": "JP"
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "VZ",
-      "name": "Verizon",
-      "score": 70,
-      "market": "US"
     },
     {
       "ticker": "TGT",
@@ -199,23 +199,35 @@
       "market": "US"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 70,
-      "market": "HK"
+      "ticker": "TRV",
+      "name": "Travelers",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 68,
+      "score": 70,
       "market": "UK"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 67,
+      "market": "US"
     },
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 66,
       "market": "UK"
     },
     {
@@ -225,45 +237,33 @@
       "market": "US"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
+      "ticker": "IMI.L",
+      "name": "IMI",
       "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "INVP.L",
-      "name": "Investec",
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
       "score": 63,
-      "market": "UK"
+      "market": "US"
     },
     {
       "ticker": "CROX",
       "name": "Crocs",
-      "score": 62,
+      "score": 63,
       "market": "US"
     },
     {
-      "ticker": "GAW.L",
-      "name": "Games Workshop",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
-      "score": 62,
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "CWK.L",
       "name": "Cranswick",
-      "score": 62,
+      "score": 63,
       "market": "UK"
     }
   ],
@@ -275,10 +275,10 @@
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE"
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 66,
+      "market": "UK"
     },
     {
       "ticker": "EXAS",
@@ -287,49 +287,49 @@
       "market": "US"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "HMSO.L",
       "name": "Hammerson",
-      "score": 63,
+      "score": 65,
       "market": "UK"
-    },
-    {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 62,
-      "market": "US"
     },
     {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
-      "score": 62,
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 62,
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "SUPR.L",
       "name": "Supermarket Income REIT",
-      "score": 61,
+      "score": 62,
       "market": "UK"
     },
     {
       "ticker": "FOUR.L",
       "name": "4imprint",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
       "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "GYM.L",
+      "name": "Gym Group",
+      "score": 57,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 48,
-  "bearishAlertCount": 369
+  "avgScore": 49,
+  "bearishAlertCount": 375
 }
