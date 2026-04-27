@@ -15,16 +15,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 74,
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
@@ -50,6 +50,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 72,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "0939.HK",
       "name": "China Construction Bank",
       "score": 72,
@@ -62,13 +69,6 @@
       "score": 71,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -77,13 +77,6 @@
       "name": "Rheinmetall",
       "score": 22,
       "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "EL.PA",
-      "name": "EssilorLuxottica",
-      "score": 23,
-      "market": "FR",
       "capCategory": "Large"
     },
     {
@@ -115,6 +108,20 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "AVON.L",
+      "name": "Avon Protection",
+      "score": 26,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "EL.PA",
+      "name": "EssilorLuxottica",
+      "score": 27,
+      "market": "FR",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "APTV",
       "name": "Aptiv",
       "score": 27,
@@ -134,13 +141,6 @@
       "score": 27,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 28,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -157,15 +157,15 @@
       "market": "HK"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 74,
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "score": 73,
       "market": "US"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 72,
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 73,
       "market": "US"
     },
     {
@@ -179,6 +179,12 @@
       "name": "HCA Healthcare",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 72,
+      "market": "DE"
     },
     {
       "ticker": "0939.HK",
@@ -197,12 +203,6 @@
       "name": "Halliburton",
       "score": 70,
       "market": "US"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 70,
-      "market": "DE"
     }
   ],
   "topMidCap": [
@@ -249,6 +249,12 @@
       "market": "UK"
     },
     {
+      "ticker": "GAW.L",
+      "name": "Games Workshop",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "IMI.L",
       "name": "IMI",
       "score": 63,
@@ -259,12 +265,6 @@
       "name": "Investec",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "HSIC",
-      "name": "Henry Schein",
-      "score": 62,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -293,6 +293,12 @@
       "market": "UK"
     },
     {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
+      "score": 62,
+      "market": "UK"
+    },
+    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
       "score": 61,
@@ -307,7 +313,7 @@
     {
       "ticker": "FOUR.L",
       "name": "4imprint",
-      "score": 59,
+      "score": 60,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "Raspberry Pi",
       "score": 58,
       "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 57,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 393
+  "bearishAlertCount": 390
 }
