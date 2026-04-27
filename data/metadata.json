@@ -1,25 +1,25 @@
 {
-  "lastUpdated": "2026-04-27T12:25:22.407Z",
+  "lastUpdated": "2026-04-27T15:12:26.925Z",
   "stockCount": 862,
-  "bearishAlerts": 390,
-  "newsCount": 600,
+  "bearishAlerts": 369,
+  "newsCount": 500,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
-      "price": 7165.08,
-      "sma50": 6789.27,
-      "sma200": 6705.59,
-      "changeFromHigh": 0,
+      "price": 7155.13,
+      "sma50": 6795.71,
+      "sma200": 6709.96,
+      "changeFromHigh": -0.14,
       "distributionDays": 1,
       "regime": "bull",
       "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10387.04,
-      "sma50": 10430.31,
-      "sma200": 9795.86,
-      "changeFromHigh": -4.8,
+      "price": 10336.61,
+      "sma50": 10429.3,
+      "sma200": 9795.61,
+      "changeFromHigh": -5.26,
       "distributionDays": 2,
       "regime": "bull",
       "signal": "Price above SMA200 — uptrend intact"
@@ -36,23 +36,23 @@
     },
     "eu": {
       "index": "DAX 40",
-      "price": 24317.96,
-      "sma50": 23916.35,
-      "sma200": 24113.75,
-      "changeFromHigh": -4.34,
+      "price": 24106.28,
+      "sma50": 23912.12,
+      "sma200": 24112.69,
+      "changeFromHigh": -5.17,
       "distributionDays": 1,
-      "regime": "bull",
-      "signal": "Price above SMA200 — uptrend intact"
+      "regime": "correction",
+      "signal": "Price below SMA200 — trend weakening"
     },
     "asia": {
       "index": "Nikkei 225",
       "price": 60537.36,
-      "sma50": 55829.66,
-      "sma200": 49442.86,
-      "changeFromHigh": 0,
-      "distributionDays": 6,
-      "regime": "correction",
-      "signal": "6 distribution days in 25 sessions — selling pressure"
+      "sma50": 55771.71,
+      "sma200": 49340.1,
+      "changeFromHigh": 1.38,
+      "distributionDays": 5,
+      "regime": "bull",
+      "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
     },
     "overall": "correction",
     "summary": "Markets showing weakness. Be selective, reduce position sizes, and tighten stops."
