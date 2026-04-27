@@ -24,7 +24,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 73,
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -50,17 +50,17 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 72,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 71,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 71,
-      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -77,6 +77,13 @@
       "name": "Rheinmetall",
       "score": 22,
       "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "EL.PA",
+      "name": "EssilorLuxottica",
+      "score": 23,
+      "market": "FR",
       "capCategory": "Large"
     },
     {
@@ -108,13 +115,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "EL.PA",
-      "name": "EssilorLuxottica",
-      "score": 27,
-      "market": "FR",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "APTV",
       "name": "Aptiv",
       "score": 27,
@@ -136,10 +136,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "9626.HK",
-      "name": "Bilibili",
+      "ticker": "ZG",
+      "name": "Zillow Group",
       "score": 28,
-      "market": "HK",
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -165,7 +165,7 @@
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "score": 73,
+      "score": 72,
       "market": "US"
     },
     {
@@ -181,16 +181,16 @@
       "market": "US"
     },
     {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 72,
+      "market": "HK"
+    },
+    {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 71,
       "market": "US"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 71,
-      "market": "HK"
     },
     {
       "ticker": "HAL",
@@ -199,10 +199,10 @@
       "market": "US"
     },
     {
-      "ticker": "LRCX",
-      "name": "Lam Research",
-      "score": 69,
-      "market": "US"
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 70,
+      "market": "DE"
     }
   ],
   "topMidCap": [
@@ -249,6 +249,12 @@
       "market": "UK"
     },
     {
+      "ticker": "IMI.L",
+      "name": "IMI",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "INVP.L",
       "name": "Investec",
       "score": 63,
@@ -257,12 +263,6 @@
     {
       "ticker": "HSIC",
       "name": "Henry Schein",
-      "score": 62,
-      "market": "US"
-    },
-    {
-      "ticker": "CROX",
-      "name": "Crocs",
       "score": 62,
       "market": "US"
     }
@@ -275,27 +275,21 @@
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 67,
-      "market": "DE"
-    },
-    {
       "ticker": "EXAS",
       "name": "Exact Sciences",
       "score": 65,
       "market": "US"
     },
     {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 63,
-      "market": "US"
-    },
-    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 62,
       "market": "UK"
     },
     {
@@ -311,12 +305,6 @@
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 60,
-      "market": "UK"
-    },
-    {
       "ticker": "FOUR.L",
       "name": "4imprint",
       "score": 59,
@@ -327,9 +315,21 @@
       "name": "Wolfspeed",
       "score": 58,
       "market": "US"
+    },
+    {
+      "ticker": "RPI.L",
+      "name": "Raspberry Pi",
+      "score": 58,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 57,
+      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 390
+  "bearishAlertCount": 393
 }
