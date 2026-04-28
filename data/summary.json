@@ -15,13 +15,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "VZ",
       "name": "Verizon",
       "score": 73,
@@ -50,6 +43,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 73,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "6273.T",
       "name": "SMC Corp",
       "score": 73,
@@ -64,10 +64,10 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
+      "ticker": "RWE.DE",
+      "name": "RWE",
       "score": 72,
-      "market": "IN",
+      "market": "DE",
       "capCategory": "Large"
     }
   ],
@@ -157,12 +157,6 @@
       "market": "HK"
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "score": 73,
-      "market": "US"
-    },
-    {
       "ticker": "VZ",
       "name": "Verizon",
       "score": 73,
@@ -187,16 +181,22 @@
       "market": "US"
     },
     {
+      "ticker": "COALINDIA.NS",
+      "name": "Coal India",
+      "score": 73,
+      "market": "IN"
+    },
+    {
       "ticker": "6273.T",
       "name": "SMC Corp",
       "score": 73,
       "market": "JP"
     },
     {
-      "ticker": "COALINDIA.NS",
-      "name": "Coal India",
+      "ticker": "RWE.DE",
+      "name": "RWE",
       "score": 72,
-      "market": "IN"
+      "market": "DE"
     },
     {
       "ticker": "4063.T",
@@ -237,12 +237,6 @@
       "market": "US"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "FNB",
       "name": "F.N.B. Corp",
       "score": 64,
@@ -253,6 +247,12 @@
       "name": "Henry Schein",
       "score": 64,
       "market": "US"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "RRC",
@@ -275,12 +275,6 @@
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 72,
-      "market": "DE"
-    },
-    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 67,
@@ -293,14 +287,14 @@
       "market": "US"
     },
     {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 63,
-      "market": "US"
-    },
-    {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "ITM.L",
+      "name": "ITM Power",
       "score": 63,
       "market": "UK"
     },
@@ -327,9 +321,15 @@
       "name": "Wolfspeed",
       "score": 59,
       "market": "US"
+    },
+    {
+      "ticker": "LC",
+      "name": "LendingClub",
+      "score": 57,
+      "market": "US"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 381
+  "bearishAlertCount": 379
 }
