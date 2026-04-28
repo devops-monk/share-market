@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 73,
@@ -26,7 +33,7 @@
       "name": "RWE",
       "score": 73,
       "market": "DE",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
       "ticker": "6273.T",
@@ -36,8 +43,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "GEV",
+      "name": "GE Vernova",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -50,41 +64,27 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "RIO.L",
-      "name": "Rio Tinto",
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 72,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 72,
-      "market": "HK",
+      "market": "US",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "TECH",
-      "name": "Bio-Techne",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
     {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
       "score": 23,
       "market": "DE",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "TECH",
+      "name": "Bio-Techne",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "ALNY",
@@ -108,15 +108,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TEAM",
-      "name": "Atlassian",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CELH",
       "name": "Celsius Holdings",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
@@ -136,11 +136,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 26,
+      "ticker": "MNDY",
+      "name": "monday.com",
+      "score": 25,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -157,16 +157,16 @@
       "market": "HK"
     },
     {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "COALINDIA.NS",
       "name": "Coal India",
       "score": 73,
       "market": "IN"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 73,
-      "market": "DE"
     },
     {
       "ticker": "6273.T",
@@ -175,8 +175,26 @@
       "market": "JP"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "GEV",
+      "name": "GE Vernova",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 72,
       "market": "US"
     },
@@ -185,24 +203,6 @@
       "name": "Rio Tinto",
       "score": 72,
       "market": "UK"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 72,
-      "market": "HK"
-    },
-    {
-      "ticker": "GEV",
-      "name": "GE Vernova",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
-      "score": 71,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -237,12 +237,6 @@
       "market": "UK"
     },
     {
-      "ticker": "FNB",
-      "name": "F.N.B. Corp",
-      "score": 67,
-      "market": "US"
-    },
-    {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
       "score": 65,
@@ -265,9 +259,21 @@
       "name": "IMI",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 63,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 73,
+      "market": "DE"
+    },
     {
       "ticker": "HOLX",
       "name": "Hologic",
@@ -311,25 +317,19 @@
       "market": "UK"
     },
     {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 62,
+      "market": "US"
+    },
+    {
       "ticker": "FOUR.L",
       "name": "4imprint",
       "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 61,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 368
+  "bearishAlertCount": 376
 }
