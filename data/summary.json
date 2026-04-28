@@ -64,10 +64,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
+      "ticker": "6273.T",
+      "name": "SMC Corp",
       "score": 73,
-      "market": "DE",
+      "market": "JP",
       "capCategory": "Large"
     }
   ],
@@ -101,20 +101,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "EL.PA",
-      "name": "EssilorLuxottica",
-      "score": 25,
-      "market": "FR",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
       "score": 25,
@@ -129,6 +115,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "EL.PA",
+      "name": "EssilorLuxottica",
+      "score": 26,
+      "market": "FR",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "GPC",
       "name": "Genuine Parts",
       "score": 26,
@@ -136,9 +129,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
+      "ticker": "NOW",
+      "name": "ServiceNow",
       "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 27,
       "market": "US",
       "capCategory": "Large"
     }
@@ -199,10 +199,10 @@
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
+      "ticker": "6273.T",
+      "name": "SMC Corp",
       "score": 73,
-      "market": "DE"
+      "market": "JP"
     }
   ],
   "topMidCap": [
@@ -237,16 +237,16 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 65,
-      "market": "US"
-    },
-    {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
       "score": 65,
       "market": "UK"
+    },
+    {
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
+      "score": 64,
+      "market": "US"
     },
     {
       "ticker": "LEA",
@@ -273,6 +273,12 @@
       "name": "Hologic",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 72,
+      "market": "DE"
     },
     {
       "ticker": "ITM.L",
@@ -311,21 +317,15 @@
       "market": "UK"
     },
     {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 62,
+      "market": "US"
+    },
+    {
       "ticker": "FOUR.L",
       "name": "4imprint",
       "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 61,
       "market": "UK"
     }
   ],

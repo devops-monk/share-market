@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-28T20:21:39.710Z",
+  "lastUpdated": "2026-04-28T22:04:07.318Z",
   "stockCount": 862,
   "bearishAlerts": 372,
   "newsCount": 500,
@@ -37,10 +37,10 @@
     "eu": {
       "index": "DAX 40",
       "price": 24018.26,
-      "sma50": 23893.73,
-      "sma200": 24111.39,
+      "sma50": 23911.66,
+      "sma200": 24112.58,
       "changeFromHigh": -5.52,
-      "distributionDays": 0,
+      "distributionDays": 2,
       "regime": "correction",
       "signal": "Price below SMA200 — trend weakening"
     },
