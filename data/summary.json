@@ -1,8 +1,22 @@
 {
   "topOverall": [
     {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 79,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "OVV",
       "name": "Ovintiv",
+      "score": 79,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 77,
       "market": "US",
       "capCategory": "Large"
@@ -12,13 +26,6 @@
       "name": "CNOOC",
       "score": 77,
       "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 76,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -36,8 +43,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "GEV",
+      "name": "GE Vernova",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
@@ -57,16 +64,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "6273.T",
-      "name": "SMC Corp",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 73,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GEV",
-      "name": "GE Vernova",
-      "score": 72,
       "market": "US",
       "capCategory": "Large"
     }
@@ -75,7 +75,7 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 19,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
@@ -89,16 +89,16 @@
     {
       "ticker": "SHOP",
       "name": "Shopify",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "PLTR",
-      "name": "Palantir",
-      "score": 23,
+      "ticker": "TECH",
+      "name": "Bio-Techne",
+      "score": 24,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "RGTI",
@@ -106,27 +106,6 @@
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "COF",
-      "name": "Capital One",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "VIV.PA",
@@ -141,12 +120,45 @@
       "score": 25,
       "market": "IN",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "GPC",
+      "name": "Genuine Parts",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 79,
+      "market": "US"
+    },
+    {
       "ticker": "OVV",
       "name": "Ovintiv",
+      "score": 79,
+      "market": "US"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 77,
       "market": "US"
     },
@@ -155,12 +167,6 @@
       "name": "CNOOC",
       "score": 77,
       "market": "HK"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 76,
-      "market": "US"
     },
     {
       "ticker": "1398.HK",
@@ -175,8 +181,8 @@
       "market": "HK"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
+      "ticker": "GEV",
+      "name": "GE Vernova",
       "score": 74,
       "market": "US"
     },
@@ -187,22 +193,16 @@
       "market": "HK"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "6273.T",
       "name": "SMC Corp",
       "score": 73,
       "market": "JP"
-    },
-    {
-      "ticker": "GEV",
-      "name": "GE Vernova",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 72,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -215,7 +215,7 @@
     {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
-      "score": 69,
+      "score": 70,
       "market": "US"
     },
     {
@@ -243,14 +243,20 @@
       "market": "UK"
     },
     {
+      "ticker": "LEA",
+      "name": "Lear Corp",
+      "score": 63,
+      "market": "US"
+    },
+    {
       "ticker": "IGG.L",
       "name": "IG Group",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "LEA",
-      "name": "Lear Corp",
+      "ticker": "STAG",
+      "name": "STAG Industrial",
       "score": 62,
       "market": "US"
     },
@@ -259,12 +265,6 @@
       "name": "Murphy Oil",
       "score": 62,
       "market": "US"
-    },
-    {
-      "ticker": "UU.L",
-      "name": "United Utilities",
-      "score": 62,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -275,22 +275,10 @@
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 71,
-      "market": "DE"
-    },
-    {
       "ticker": "FOUR.L",
       "name": "4imprint",
       "score": 66,
       "market": "UK"
-    },
-    {
-      "ticker": "FHN",
-      "name": "First Horizon",
-      "score": 65,
-      "market": "US"
     },
     {
       "ticker": "EXAS",
@@ -327,9 +315,21 @@
       "name": "Hammerson",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "ITM.L",
+      "name": "ITM Power",
+      "score": 60,
+      "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 49,
+  "avgScore": 50,
   "bearishAlertCount": 389
 }
