@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "1398.HK",
       "name": "ICBC",
       "score": 76,
@@ -22,16 +29,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 76,
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 75,
       "market": "HK",
       "capCategory": "Large"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 75,
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
@@ -43,10 +50,10 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "CTRA",
-      "name": "Coterra Energy",
-      "score": 73,
-      "market": "US",
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 74,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -57,15 +64,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 73,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "GEV",
+      "name": "GE Vernova",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -87,39 +87,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "SHOP",
       "name": "Shopify",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "9626.HK",
-      "name": "Bilibili",
       "score": 22,
-      "market": "HK",
+      "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "RGTI",
-      "name": "Rigetti Computing",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "PLTR",
@@ -129,17 +101,45 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One",
       "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
       "score": 24,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 25,
+      "market": "FR",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "NAUKRI.BO",
+      "name": "Info Edge (Naukri)",
+      "score": 25,
+      "market": "IN",
       "capCategory": "Large"
     }
   ],
@@ -157,28 +157,34 @@
       "market": "HK"
     },
     {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 76,
+      "market": "US"
+    },
+    {
       "ticker": "1398.HK",
       "name": "ICBC",
       "score": 76,
       "market": "HK"
     },
     {
-      "ticker": "0288.HK",
-      "name": "WH Group",
-      "score": 76,
-      "market": "HK"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
       "score": 75,
-      "market": "US"
+      "market": "HK"
     },
     {
       "ticker": "CTRA",
       "name": "Coterra Energy",
-      "score": 73,
+      "score": 74,
       "market": "US"
+    },
+    {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 74,
+      "market": "HK"
     },
     {
       "ticker": "6273.T",
@@ -187,22 +193,16 @@
       "market": "JP"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 73,
-      "market": "HK"
+      "ticker": "GEV",
+      "name": "GE Vernova",
+      "score": 72,
+      "market": "US"
     },
     {
       "ticker": "FDX",
       "name": "FedEx",
       "score": 72,
       "market": "US"
-    },
-    {
-      "ticker": "NG.L",
-      "name": "National Grid",
-      "score": 72,
-      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -215,13 +215,13 @@
     {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
-      "score": 68,
+      "score": 69,
       "market": "US"
     },
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 68,
+      "score": 69,
       "market": "UK"
     },
     {
@@ -249,22 +249,22 @@
       "market": "UK"
     },
     {
-      "ticker": "UU.L",
-      "name": "United Utilities",
-      "score": 62,
-      "market": "UK"
-    },
-    {
       "ticker": "LEA",
       "name": "Lear Corp",
-      "score": 61,
+      "score": 62,
       "market": "US"
     },
     {
       "ticker": "MUR",
       "name": "Murphy Oil",
-      "score": 61,
+      "score": 62,
       "market": "US"
+    },
+    {
+      "ticker": "UU.L",
+      "name": "United Utilities",
+      "score": 62,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -275,10 +275,22 @@
       "market": "US"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 71,
+      "market": "DE"
+    },
+    {
       "ticker": "FOUR.L",
       "name": "4imprint",
       "score": 66,
       "market": "UK"
+    },
+    {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 65,
+      "market": "US"
     },
     {
       "ticker": "EXAS",
@@ -315,21 +327,9 @@
       "name": "Hammerson",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "ITM.L",
-      "name": "ITM Power",
-      "score": 60,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 48,
-  "bearishAlertCount": 386
+  "avgScore": 49,
+  "bearishAlertCount": 389
 }
