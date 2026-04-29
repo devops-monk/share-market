@@ -75,7 +75,7 @@
     {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
-      "score": 22,
+      "score": 20,
       "market": "DE",
       "capCategory": "Large"
     },
@@ -94,13 +94,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "NAUKRI.BO",
-      "name": "Info Edge (Naukri)",
-      "score": 24,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TECH",
       "name": "Bio-Techne",
       "score": 24,
@@ -115,11 +108,18 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AML.L",
-      "name": "Aston Martin",
+      "ticker": "RMS.PA",
+      "name": "Hermes",
       "score": 25,
-      "market": "UK",
-      "capCategory": "Small"
+      "market": "FR",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NAUKRI.BO",
+      "name": "Info Edge (Naukri)",
+      "score": 25,
+      "market": "IN",
+      "capCategory": "Large"
     },
     {
       "ticker": "ALNY",
@@ -219,6 +219,12 @@
       "market": "UK"
     },
     {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 68,
+      "market": "UK"
+    },
+    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 67,
@@ -227,12 +233,6 @@
     {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
       "score": 65,
       "market": "UK"
     },
@@ -289,7 +289,7 @@
     {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 65,
+      "score": 63,
       "market": "UK"
     },
     {
@@ -311,6 +311,12 @@
       "market": "UK"
     },
     {
+      "ticker": "TSTL.L",
+      "name": "Tristel",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 61,
@@ -321,15 +327,9 @@
       "name": "4imprint",
       "score": 60,
       "market": "UK"
-    },
-    {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
-      "score": 60,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 366
+  "bearishAlertCount": 370
 }
