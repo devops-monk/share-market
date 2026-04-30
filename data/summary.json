@@ -1,24 +1,10 @@
 {
   "topOverall": [
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 77,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 76,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 76,
-      "market": "HK",
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -36,22 +22,36 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
       "score": 75,
       "market": "HK",
       "capCategory": "Large"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 75,
-      "market": "HK",
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 74,
+      "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "DVN",
       "name": "Devon Energy",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 74,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -87,9 +87,23 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "WING",
+      "name": "Wingstop",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -98,6 +112,13 @@
       "name": "Robinhood",
       "score": 22,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "9626.HK",
+      "name": "Bilibili",
+      "score": 23,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -115,27 +136,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "WING",
-      "name": "Wingstop",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "LCID",
       "name": "Lucid Group",
       "score": 24,
@@ -145,38 +145,38 @@
   ],
   "topLargeCap": [
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 77,
-      "market": "HK"
-    },
-    {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
+      "ticker": "OVV",
+      "name": "Ovintiv",
       "score": 76,
-      "market": "JP"
+      "market": "US"
     },
     {
       "ticker": "0883.HK",
       "name": "CNOOC",
-      "score": 76,
-      "market": "HK"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
       "score": 75,
       "market": "HK"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
-      "score": 75,
-      "market": "HK"
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 74,
+      "market": "US"
     },
     {
       "ticker": "DVN",
       "name": "Devon Energy",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 74,
+      "market": "HK"
+    },
+    {
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb",
       "score": 73,
       "market": "US"
     },
@@ -187,21 +187,21 @@
       "market": "US"
     },
     {
-      "ticker": "6981.T",
-      "name": "Murata Manufacturing",
-      "score": 73,
-      "market": "JP"
-    },
-    {
-      "ticker": "6273.T",
-      "name": "SMC Corp",
-      "score": 73,
-      "market": "JP"
-    },
-    {
       "ticker": "EOG",
       "name": "EOG Resources",
       "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
+      "score": 72,
+      "market": "FR"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "score": 71,
       "market": "US"
     }
   ],
@@ -227,7 +227,7 @@
     {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
-      "score": 69,
+      "score": 70,
       "market": "US"
     },
     {
@@ -323,13 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
       "score": 61,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 49,
-  "bearishAlertCount": 399
+  "avgScore": 50,
+  "bearishAlertCount": 402
 }
