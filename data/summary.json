@@ -24,22 +24,15 @@
     {
       "ticker": "0883.HK",
       "name": "CNOOC",
-      "score": 77,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 76,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
       "score": 75,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 74,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -50,40 +43,68 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
       "score": 74,
       "market": "HK",
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 73,
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HOLX",
+      "name": "Hologic",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
     {
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 20,
+      "market": "FR",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 18,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
-      "score": 21,
+      "score": 22,
       "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "9626.HK",
+      "name": "Bilibili",
+      "score": 23,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "EL.PA",
+      "name": "EssilorLuxottica",
+      "score": 23,
+      "market": "FR",
       "capCategory": "Large"
     },
     {
@@ -91,6 +112,13 @@
       "name": "Shopify",
       "score": 23,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "NAUKRI.BO",
+      "name": "Info Edge (Naukri)",
+      "score": 24,
+      "market": "IN",
       "capCategory": "Large"
     },
     {
@@ -108,38 +136,10 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
+      "ticker": "RMS.PA",
+      "name": "Hermes",
       "score": 25,
       "market": "FR",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "NAUKRI.BO",
-      "name": "Info Edge (Naukri)",
-      "score": 25,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GPC",
-      "name": "Genuine Parts",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COF",
-      "name": "Capital One",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 25,
-      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -165,20 +165,14 @@
     {
       "ticker": "0883.HK",
       "name": "CNOOC",
-      "score": 77,
-      "market": "HK"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 76,
-      "market": "HK"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
       "score": 75,
       "market": "HK"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 74,
+      "market": "US"
     },
     {
       "ticker": "GEV",
@@ -187,31 +181,31 @@
       "market": "US"
     },
     {
-      "ticker": "0016.HK",
-      "name": "Sun Hung Kai Properties",
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
       "score": 74,
       "market": "HK"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 73,
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 72,
       "market": "US"
     },
     {
-      "ticker": "6273.T",
-      "name": "SMC Corp",
-      "score": 73,
-      "market": "JP"
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "TRGP",
+      "name": "Targa Resources",
+      "score": 72,
+      "market": "US"
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
-      "score": 74,
-      "market": "UK"
-    },
     {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
@@ -231,14 +225,20 @@
       "market": "UK"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 66,
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
+      "ticker": "UU.L",
+      "name": "United Utilities",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "PLUS.L",
+      "name": "Plus500",
       "score": 65,
       "market": "UK"
     },
@@ -249,16 +249,16 @@
       "market": "US"
     },
     {
-      "ticker": "IGG.L",
-      "name": "IG Group",
+      "ticker": "BNZL.L",
+      "name": "Bunzl",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "STAG",
-      "name": "STAG Industrial",
-      "score": 62,
-      "market": "US"
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 63,
+      "market": "UK"
     },
     {
       "ticker": "MUR",
@@ -275,10 +275,16 @@
       "market": "US"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 66,
-      "market": "UK"
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 70,
+      "market": "DE"
+    },
+    {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 65,
+      "market": "US"
     },
     {
       "ticker": "EXAS",
@@ -287,21 +293,9 @@
       "market": "US"
     },
     {
-      "ticker": "ML.PA",
-      "name": "Michelin",
-      "score": 65,
-      "market": "FR"
-    },
-    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
-      "score": 64,
+      "score": 63,
       "market": "UK"
     },
     {
@@ -311,25 +305,31 @@
       "market": "UK"
     },
     {
+      "ticker": "TSTL.L",
+      "name": "Tristel",
+      "score": 60,
+      "market": "UK"
+    },
+    {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 59,
+      "market": "UK"
+    },
+    {
       "ticker": "HMSO.L",
       "name": "Hammerson",
-      "score": 63,
+      "score": 59,
       "market": "UK"
     },
     {
       "ticker": "SFOR.L",
       "name": "S4 Capital",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "ITM.L",
-      "name": "ITM Power",
-      "score": 60,
+      "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 50,
-  "bearishAlertCount": 389
+  "avgScore": 49,
+  "bearishAlertCount": 387
 }

@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-04-29T21:11:37.345Z",
+  "lastUpdated": "2026-04-30T09:16:38.165Z",
   "stockCount": 862,
-  "bearishAlerts": 389,
+  "bearishAlerts": 387,
   "newsCount": 500,
   "marketRegime": {
     "us": {
@@ -10,46 +10,46 @@
       "sma50": 6808,
       "sma200": 6718.79,
       "changeFromHigh": -0.53,
-      "distributionDays": 1,
+      "distributionDays": 0,
       "regime": "bull",
       "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10213.11,
-      "sma50": 10421.51,
-      "sma200": 9808.58,
-      "changeFromHigh": -6.39,
+      "price": 10266.61,
+      "sma50": 10415.72,
+      "sma200": 9815.28,
+      "changeFromHigh": -5.9,
       "distributionDays": 0,
       "regime": "bull",
       "signal": "Price above SMA200 — uptrend intact"
     },
     "in": {
       "index": "Nifty 50",
-      "price": 24177.65,
-      "sma50": 24209.35,
-      "sma200": 25114.9,
-      "changeFromHigh": -8.17,
+      "price": 24083.1,
+      "sma50": 24139.34,
+      "sma200": 25101.59,
+      "changeFromHigh": -8.53,
       "distributionDays": 7,
       "regime": "correction",
       "signal": "7 distribution days in 25 sessions — selling pressure"
     },
     "eu": {
       "index": "DAX 40",
-      "price": 23954.56,
-      "sma50": 23876.8,
-      "sma200": 24110.36,
-      "changeFromHigh": -5.77,
+      "price": 23878.72,
+      "sma50": 23854.41,
+      "sma200": 24109.45,
+      "changeFromHigh": -6.07,
       "distributionDays": 0,
       "regime": "correction",
       "signal": "Price below SMA200 — trend weakening"
     },
     "asia": {
       "index": "Nikkei 225",
-      "price": 59917.46,
-      "sma50": 55889.17,
-      "sma200": 49543.63,
-      "changeFromHigh": -1.02,
+      "price": 59284.92,
+      "sma50": 55938.74,
+      "sma200": 49641.13,
+      "changeFromHigh": -2.07,
       "distributionDays": 7,
       "regime": "correction",
       "signal": "7 distribution days in 25 sessions — selling pressure"
