@@ -29,13 +29,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "GEV",
       "name": "GE Vernova",
       "score": 74,
@@ -47,6 +40,13 @@
       "name": "China Construction Bank",
       "score": 74,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 73,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -73,18 +73,18 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
-      "score": 20,
-      "market": "FR",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "NOW",
       "name": "ServiceNow",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 21,
+      "market": "FR",
+      "capCategory": "Small"
     },
     {
       "ticker": "RHM.DE",
@@ -136,10 +136,10 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "RMS.PA",
-      "name": "Hermes",
+      "ticker": "GPC",
+      "name": "Genuine Parts",
       "score": 25,
-      "market": "FR",
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -169,12 +169,6 @@
       "market": "HK"
     },
     {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 74,
-      "market": "US"
-    },
-    {
       "ticker": "GEV",
       "name": "GE Vernova",
       "score": 74,
@@ -185,6 +179,12 @@
       "name": "China Construction Bank",
       "score": 74,
       "market": "HK"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 73,
+      "market": "US"
     },
     {
       "ticker": "MU",
@@ -225,21 +225,21 @@
       "market": "UK"
     },
     {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "UU.L",
-      "name": "United Utilities",
-      "score": 65,
+      "ticker": "SVT.L",
+      "name": "Severn Trent",
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 64,
       "market": "UK"
     },
     {
@@ -293,27 +293,33 @@
       "market": "US"
     },
     {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 63,
+      "ticker": "TSTL.L",
+      "name": "Tristel",
+      "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
-      "score": 60,
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
+      "score": 61,
       "market": "UK"
     },
     {
       "ticker": "SNR.L",
       "name": "Senior plc",
-      "score": 59,
+      "score": 60,
       "market": "UK"
     },
     {
@@ -321,15 +327,9 @@
       "name": "Hammerson",
       "score": 59,
       "market": "UK"
-    },
-    {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 59,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 387
+  "bearishAlertCount": 392
 }
