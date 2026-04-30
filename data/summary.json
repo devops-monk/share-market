@@ -1,10 +1,38 @@
 {
   "topOverall": [
     {
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 76,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "UU.L",
+      "name": "United Utilities",
+      "score": 75,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 75,
+      "market": "DE",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 75,
       "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 74,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -15,59 +43,31 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HOLX",
-      "name": "Hologic",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 71,
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 71,
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 71,
+      "ticker": "6981.T",
+      "name": "Murata Manufacturing",
+      "score": 73,
       "market": "JP",
       "capCategory": "Large"
     },
     {
-      "ticker": "1038.HK",
-      "name": "CK Infrastructure",
-      "score": 71,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0006.HK",
-      "name": "Power Assets Holdings",
-      "score": 71,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 70,
-      "market": "US",
+      "ticker": "6273.T",
+      "name": "SMC Corp",
+      "score": 73,
+      "market": "JP",
       "capCategory": "Large"
     }
   ],
@@ -75,14 +75,14 @@
     {
       "ticker": "DASH",
       "name": "DoorDash",
-      "score": 18,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 18,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
@@ -94,27 +94,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
-      "score": 21,
-      "market": "FR",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "9626.HK",
       "name": "Bilibili",
       "score": 23,
@@ -122,22 +101,43 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EL.PA",
-      "name": "EssilorLuxottica",
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
       "score": 23,
       "market": "FR",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
-      "ticker": "RHM.DE",
-      "name": "Rheinmetall",
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
       "score": 23,
-      "market": "DE",
+      "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
+      "ticker": "HOOD",
+      "name": "Robinhood",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SOFI",
+      "name": "SoFi Technologies",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify",
       "score": 23,
       "market": "US",
       "capCategory": "Large"
@@ -145,10 +145,22 @@
   ],
   "topLargeCap": [
     {
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 76,
+      "market": "JP"
+    },
+    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 75,
       "market": "HK"
+    },
+    {
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 74,
+      "market": "US"
     },
     {
       "ticker": "0939.HK",
@@ -157,55 +169,55 @@
       "market": "HK"
     },
     {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "6981.T",
+      "name": "Murata Manufacturing",
+      "score": 73,
+      "market": "JP"
+    },
+    {
+      "ticker": "6273.T",
+      "name": "SMC Corp",
+      "score": 73,
+      "market": "JP"
+    },
+    {
       "ticker": "EOG",
       "name": "EOG Resources",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "FDX",
       "name": "FedEx",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 71,
-      "market": "JP"
-    },
-    {
-      "ticker": "1038.HK",
-      "name": "CK Infrastructure",
-      "score": 71,
-      "market": "HK"
-    },
-    {
-      "ticker": "0006.HK",
-      "name": "Power Assets Holdings",
-      "score": 71,
-      "market": "HK"
-    },
-    {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 70,
+      "score": 72,
       "market": "US"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "UU.L",
+      "name": "United Utilities",
+      "score": 75,
+      "market": "UK"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 71,
+      "market": "UK"
+    },
     {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
@@ -213,16 +225,16 @@
       "market": "US"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 68,
+      "ticker": "SVT.L",
+      "name": "Severn Trent",
+      "score": 69,
       "market": "UK"
     },
     {
-      "ticker": "SVT.L",
-      "name": "Severn Trent",
+      "ticker": "DOCN",
+      "name": "DigitalOcean",
       "score": 67,
-      "market": "UK"
+      "market": "US"
     },
     {
       "ticker": "BEZ.L",
@@ -233,52 +245,40 @@
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
       "score": 65,
       "market": "UK"
     },
     {
       "ticker": "BNZL.L",
       "name": "Bunzl",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
       "ticker": "IGG.L",
       "name": "IG Group",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "INVP.L",
-      "name": "Investec",
-      "score": 62,
-      "market": "UK"
-    },
-    {
-      "ticker": "PHP.L",
-      "name": "Primary Health Properties",
-      "score": 62,
+      "score": 64,
       "market": "UK"
     }
   ],
   "topSmallCap": [
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 75,
+      "market": "DE"
+    },
+    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
       "market": "US"
-    },
-    {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 70,
-      "market": "DE"
     },
     {
       "ticker": "FHN",
@@ -299,37 +299,37 @@
       "market": "UK"
     },
     {
+      "ticker": "TSTL.L",
+      "name": "Tristel",
+      "score": 64,
+      "market": "UK"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
       "score": 62,
       "market": "UK"
     },
     {
       "ticker": "SNR.L",
       "name": "Senior plc",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
       "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "ITM.L",
-      "name": "ITM Power",
-      "score": 58,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 48,
-  "bearishAlertCount": 399
+  "avgScore": 49,
+  "bearishAlertCount": 392
 }
