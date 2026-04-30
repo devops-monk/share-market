@@ -1,10 +1,24 @@
 {
   "topOverall": [
     {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 77,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
       "score": 76,
       "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 76,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -22,23 +36,16 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
       "score": 75,
       "market": "HK",
       "capCategory": "Large"
     },
     {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 74,
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 75,
       "market": "HK",
       "capCategory": "Large"
     },
@@ -57,18 +64,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "6981.T",
-      "name": "Murata Manufacturing",
+      "ticker": "BEZ.L",
+      "name": "Beazley",
       "score": 73,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "6273.T",
-      "name": "SMC Corp",
-      "score": 73,
-      "market": "JP",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
@@ -89,15 +89,15 @@
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 20,
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "9626.HK",
-      "name": "Bilibili",
-      "score": 23,
-      "market": "HK",
+      "ticker": "HOOD",
+      "name": "Robinhood",
+      "score": 22,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -108,42 +108,48 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "NAUKRI.BO",
+      "name": "Info Edge (Naukri)",
+      "score": 24,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "WING",
+      "name": "Wingstop",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "GRAB",
       "name": "Grab Holdings",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "HOOD",
-      "name": "Robinhood",
-      "score": 23,
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 24,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SOFI",
-      "name": "SoFi Technologies",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 77,
+      "market": "HK"
+    },
     {
       "ticker": "4063.T",
       "name": "Shin-Etsu Chemical",
@@ -153,19 +159,19 @@
     {
       "ticker": "0883.HK",
       "name": "CNOOC",
-      "score": 75,
+      "score": 76,
       "market": "HK"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 74,
-      "market": "US"
     },
     {
       "ticker": "0939.HK",
       "name": "China Construction Bank",
-      "score": 74,
+      "score": 75,
+      "market": "HK"
+    },
+    {
+      "ticker": "0016.HK",
+      "name": "Sun Hung Kai Properties",
+      "score": 75,
       "market": "HK"
     },
     {
@@ -197,12 +203,6 @@
       "name": "EOG Resources",
       "score": 72,
       "market": "US"
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx",
-      "score": 72,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -213,9 +213,15 @@
       "market": "UK"
     },
     {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 73,
+      "market": "UK"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 71,
+      "score": 72,
       "market": "UK"
     },
     {
@@ -231,20 +237,20 @@
       "market": "UK"
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean",
-      "score": 67,
-      "market": "US"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 67,
+      "ticker": "PLUS.L",
+      "name": "Plus500",
+      "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "PLUS.L",
-      "name": "Plus500",
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "CWK.L",
+      "name": "Cranswick",
       "score": 66,
       "market": "UK"
     },
@@ -257,12 +263,6 @@
     {
       "ticker": "BNZL.L",
       "name": "Bunzl",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "IGG.L",
-      "name": "IG Group",
       "score": 64,
       "market": "UK"
     }
@@ -281,9 +281,15 @@
       "market": "US"
     },
     {
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 69,
+      "market": "UK"
+    },
+    {
       "ticker": "FHN",
       "name": "First Horizon",
-      "score": 65,
+      "score": 66,
       "market": "US"
     },
     {
@@ -317,19 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
       "score": 61,
       "market": "UK"
-    },
-    {
-      "ticker": "WOLF",
-      "name": "Wolfspeed",
-      "score": 60,
-      "market": "US"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 392
+  "bearishAlertCount": 399
 }
