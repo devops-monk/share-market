@@ -1,8 +1,8 @@
 {
   "topOverall": [
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
+      "ticker": "8058.T",
+      "name": "Mitsubishi Corp",
       "score": 76,
       "market": "JP",
       "capCategory": "Large"
@@ -29,9 +29,23 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 73,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "EOG",
       "name": "EOG Resources",
-      "score": 73,
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
@@ -55,20 +69,6 @@
       "score": 72,
       "market": "FR",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "1038.HK",
-      "name": "CK Infrastructure",
-      "score": 71,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0006.HK",
-      "name": "Power Assets Holdings",
-      "score": 71,
-      "market": "HK",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -87,18 +87,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 22,
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "9626.HK",
@@ -115,18 +108,18 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "NAUKRI.BO",
@@ -136,17 +129,24 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HOOD",
-      "name": "Robinhood",
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
       "score": 24,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "RHM.DE",
+      "name": "Rheinmetall",
+      "score": 25,
+      "market": "DE",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
+      "ticker": "8058.T",
+      "name": "Mitsubishi Corp",
       "score": 76,
       "market": "JP"
     },
@@ -163,9 +163,21 @@
       "market": "HK"
     },
     {
+      "ticker": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "score": 73,
+      "market": "JP"
+    },
+    {
       "ticker": "EOG",
       "name": "EOG Resources",
-      "score": 73,
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 72,
       "market": "US"
     },
     {
@@ -181,27 +193,15 @@
       "market": "FR"
     },
     {
-      "ticker": "1038.HK",
-      "name": "CK Infrastructure",
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 72,
+      "market": "JP"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
       "score": 71,
-      "market": "HK"
-    },
-    {
-      "ticker": "0006.HK",
-      "name": "Power Assets Holdings",
-      "score": 71,
-      "market": "HK"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "DOW",
-      "name": "Dow Inc",
-      "score": 70,
       "market": "US"
     }
   ],
@@ -215,7 +215,13 @@
     {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
-      "score": 68,
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "EMN",
+      "name": "Eastman Chemical",
+      "score": 69,
       "market": "US"
     },
     {
@@ -223,12 +229,6 @@
       "name": "Beazley",
       "score": 68,
       "market": "UK"
-    },
-    {
-      "ticker": "EMN",
-      "name": "Eastman Chemical",
-      "score": 67,
-      "market": "US"
     },
     {
       "ticker": "HBR.L",
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 390
+  "bearishAlertCount": 382
 }
