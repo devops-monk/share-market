@@ -43,17 +43,17 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
       "score": 72,
       "market": "FR",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 71,
-      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -73,13 +73,6 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "DASH",
       "name": "DoorDash",
       "score": 20,
@@ -87,23 +80,23 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 20,
+      "ticker": "PODD",
+      "name": "Insulet Corp",
+      "score": 21,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "GRAB",
       "name": "Grab Holdings",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
@@ -129,6 +122,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "NAUKRI.BO",
       "name": "Info Edge (Naukri)",
       "score": 24,
@@ -136,10 +136,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RHM.DE",
-      "name": "Rheinmetall",
-      "score": 25,
-      "market": "DE",
+      "ticker": "HOOD",
+      "name": "Robinhood",
+      "score": 24,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -169,16 +169,16 @@
       "market": "US"
     },
     {
+      "ticker": "OVV",
+      "name": "Ovintiv",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "TTE.PA",
       "name": "TotalEnergies",
       "score": 72,
       "market": "FR"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 71,
-      "market": "US"
     },
     {
       "ticker": "1038.HK",
@@ -193,14 +193,14 @@
       "market": "HK"
     },
     {
-      "ticker": "ALL",
-      "name": "Allstate",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "DOW",
+      "name": "Dow Inc",
       "score": 70,
       "market": "US"
     }
@@ -219,12 +219,6 @@
       "market": "US"
     },
     {
-      "ticker": "RRC",
-      "name": "Range Resources",
-      "score": 68,
-      "market": "US"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
       "score": 68,
@@ -233,12 +227,18 @@
     {
       "ticker": "EMN",
       "name": "Eastman Chemical",
-      "score": 66,
+      "score": 67,
       "market": "US"
     },
     {
       "ticker": "HBR.L",
       "name": "Harbour Energy",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "SVT.L",
+      "name": "Severn Trent",
       "score": 65,
       "market": "UK"
     },
@@ -255,15 +255,15 @@
       "market": "UK"
     },
     {
-      "ticker": "SVT.L",
-      "name": "Severn Trent",
+      "ticker": "BNZL.L",
+      "name": "Bunzl",
       "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "BNZL.L",
-      "name": "Bunzl",
-      "score": 64,
+      "ticker": "IGG.L",
+      "name": "IG Group",
+      "score": 63,
       "market": "UK"
     }
   ],
@@ -299,15 +299,15 @@
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 63,
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 61,
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 63,
       "market": "UK"
     },
     {
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "ITM.L",
-      "name": "ITM Power",
-      "score": 59,
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 60,
       "market": "UK"
     },
     {
-      "ticker": "PHNX.L",
-      "name": "Phoenix Group",
+      "ticker": "ITM.L",
+      "name": "ITM Power",
       "score": 59,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 383
+  "bearishAlertCount": 390
 }
