@@ -15,6 +15,20 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "8058.T",
+      "name": "Mitsubishi Corp",
+      "score": 76,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "DVN",
       "name": "Devon Energy",
       "score": 75,
@@ -27,13 +41,6 @@
       "score": 75,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "UU.L",
-      "name": "United Utilities",
-      "score": 75,
-      "market": "UK",
-      "capCategory": "Mid"
     },
     {
       "ticker": "RWE.DE",
@@ -62,13 +69,6 @@
       "score": 74,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 74,
-      "market": "HK",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -82,7 +82,7 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow",
-      "score": 21,
+      "score": 20,
       "market": "US",
       "capCategory": "Large"
     },
@@ -157,6 +157,18 @@
       "market": "US"
     },
     {
+      "ticker": "8058.T",
+      "name": "Mitsubishi Corp",
+      "score": 76,
+      "market": "JP"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 75,
+      "market": "US"
+    },
+    {
       "ticker": "DVN",
       "name": "Devon Energy",
       "score": 75,
@@ -191,39 +203,9 @@
       "name": "Bristol-Myers Squibb",
       "score": 74,
       "market": "US"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 74,
-      "market": "HK"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 73,
-      "market": "US"
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "UU.L",
-      "name": "United Utilities",
-      "score": 75,
-      "market": "UK"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 73,
-      "market": "UK"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 72,
-      "market": "UK"
-    },
     {
       "ticker": "ZION",
       "name": "Zions Bancorporation",
@@ -231,40 +213,58 @@
       "market": "US"
     },
     {
-      "ticker": "SVT.L",
-      "name": "Severn Trent",
+      "ticker": "SDR.L",
+      "name": "Schroders",
       "score": 69,
+      "market": "UK"
+    },
+    {
+      "ticker": "BEZ.L",
+      "name": "Beazley",
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "PLUS.L",
       "name": "Plus500",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
       "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "UU.L",
+      "name": "United Utilities",
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "BNZL.L",
       "name": "Bunzl",
-      "score": 64,
+      "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "BBY.L",
+      "name": "Balfour Beatty",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "PHP.L",
+      "name": "Primary Health Properties",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "NNN",
+      "name": "NNN REIT",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte",
+      "score": 62,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -272,18 +272,6 @@
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "WOLF",
-      "name": "Wolfspeed",
-      "score": 65,
       "market": "US"
     },
     {
@@ -299,10 +287,10 @@
       "market": "UK"
     },
     {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
       "score": 64,
-      "market": "UK"
+      "market": "US"
     },
     {
       "ticker": "CMCX.L",
@@ -311,25 +299,37 @@
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 62,
+      "ticker": "PHNX.L",
+      "name": "Phoenix Group",
+      "score": 59,
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 61,
+      "ticker": "SNR.L",
+      "name": "Senior plc",
+      "score": 59,
       "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 59,
+      "market": "UK"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 58,
+      "market": "US"
     },
     {
       "ticker": "ITM.L",
       "name": "ITM Power",
-      "score": 60,
+      "score": 58,
       "market": "UK"
     }
   ],
   "totalStocks": 862,
-  "avgScore": 51,
-  "bearishAlertCount": 404
+  "avgScore": 50,
+  "bearishAlertCount": 403
 }
