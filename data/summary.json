@@ -1,8 +1,8 @@
 {
   "topOverall": [
     {
-      "ticker": "8058.T",
-      "name": "Mitsubishi Corp",
+      "ticker": "8002.T",
+      "name": "Marubeni",
       "score": 76,
       "market": "JP",
       "capCategory": "Large"
@@ -29,16 +29,9 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 73,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "EOG",
       "name": "EOG Resources",
-      "score": 72,
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
@@ -57,28 +50,28 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 72,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "1038.HK",
+      "name": "CK Infrastructure",
+      "score": 71,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0006.HK",
+      "name": "Power Assets Holdings",
+      "score": 71,
+      "market": "HK",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
     {
       "ticker": "PODD",
       "name": "Insulet Corp",
@@ -87,8 +80,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
+      "ticker": "DASH",
+      "name": "DoorDash",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -108,6 +101,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "9626.HK",
       "name": "Bilibili",
       "score": 23,
@@ -122,13 +122,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "MNDY",
-      "name": "monday.com",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals",
       "score": 23,
@@ -141,12 +134,19 @@
       "score": 24,
       "market": "IN",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "RHM.DE",
+      "name": "Rheinmetall",
+      "score": 25,
+      "market": "DE",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "8058.T",
-      "name": "Mitsubishi Corp",
+      "ticker": "8002.T",
+      "name": "Marubeni",
       "score": 76,
       "market": "JP"
     },
@@ -163,15 +163,9 @@
       "market": "HK"
     },
     {
-      "ticker": "4063.T",
-      "name": "Shin-Etsu Chemical",
-      "score": 73,
-      "market": "JP"
-    },
-    {
       "ticker": "EOG",
       "name": "EOG Resources",
-      "score": 72,
+      "score": 73,
       "market": "US"
     },
     {
@@ -181,35 +175,41 @@
       "market": "FR"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 72,
-      "market": "JP"
-    },
-    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "6367.T",
-      "name": "Daikin Industries",
-      "score": 71,
-      "market": "JP"
-    },
-    {
       "ticker": "1038.HK",
       "name": "CK Infrastructure",
       "score": 71,
       "market": "HK"
+    },
+    {
+      "ticker": "0006.HK",
+      "name": "Power Assets Holdings",
+      "score": 71,
+      "market": "HK"
+    },
+    {
+      "ticker": "ALL",
+      "name": "Allstate",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 70,
+      "market": "US"
     }
   ],
   "topMidCap": [
     {
       "ticker": "SDR.L",
       "name": "Schroders",
-      "score": 69,
+      "score": 70,
       "market": "UK"
     },
     {
@@ -227,14 +227,20 @@
     {
       "ticker": "BEZ.L",
       "name": "Beazley",
-      "score": 67,
+      "score": 68,
       "market": "UK"
     },
     {
       "ticker": "EMN",
       "name": "Eastman Chemical",
-      "score": 65,
+      "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "HBR.L",
+      "name": "Harbour Energy",
+      "score": 65,
+      "market": "UK"
     },
     {
       "ticker": "UU.L",
@@ -249,21 +255,15 @@
       "market": "UK"
     },
     {
-      "ticker": "CWK.L",
-      "name": "Cranswick",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "SVT.L",
       "name": "Severn Trent",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
       "ticker": "BNZL.L",
       "name": "Bunzl",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     }
   ],
@@ -299,15 +299,27 @@
       "market": "UK"
     },
     {
-      "ticker": "WOLF",
-      "name": "Wolfspeed",
-      "score": 62,
-      "market": "US"
-    },
-    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 62,
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "SUPR.L",
+      "name": "Supermarket Income REIT",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
+      "score": 61,
+      "market": "UK"
+    },
+    {
+      "ticker": "ITM.L",
+      "name": "ITM Power",
+      "score": 59,
       "market": "UK"
     },
     {
@@ -315,21 +327,9 @@
       "name": "Phoenix Group",
       "score": 59,
       "market": "UK"
-    },
-    {
-      "ticker": "SNR.L",
-      "name": "Senior plc",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 59,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 49,
-  "bearishAlertCount": 385
+  "bearishAlertCount": 383
 }
