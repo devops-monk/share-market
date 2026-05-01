@@ -47,7 +47,7 @@
       "name": "RWE",
       "score": 75,
       "market": "DE",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
       "ticker": "0883.HK",
@@ -122,6 +122,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "AML.L",
+      "name": "Aston Martin",
+      "score": 24,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "WING",
       "name": "Wingstop",
       "score": 24,
@@ -129,18 +136,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "PLTR",
-      "name": "Palantir",
+      "ticker": "LCID",
+      "name": "Lucid Group",
       "score": 24,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "RHM.DE",
-      "name": "Rheinmetall",
-      "score": 25,
-      "market": "DE",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -181,12 +181,6 @@
       "market": "US"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 75,
-      "market": "DE"
-    },
-    {
       "ticker": "0883.HK",
       "name": "CNOOC",
       "score": 75,
@@ -201,6 +195,12 @@
     {
       "ticker": "BMY",
       "name": "Bristol-Myers Squibb",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
       "score": 74,
       "market": "US"
     }
@@ -233,7 +233,7 @@
     {
       "ticker": "UU.L",
       "name": "United Utilities",
-      "score": 63,
+      "score": 64,
       "market": "UK"
     },
     {
@@ -269,9 +269,21 @@
   ],
   "topSmallCap": [
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 75,
+      "market": "DE"
+    },
+    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 67,
       "market": "US"
     },
     {
@@ -281,21 +293,27 @@
       "market": "US"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "WOLF",
       "name": "Wolfspeed",
       "score": 64,
       "market": "US"
     },
     {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 63,
+      "market": "UK"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
-      "score": 63,
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "TSTL.L",
+      "name": "Tristel",
+      "score": 60,
       "market": "UK"
     },
     {
@@ -309,27 +327,9 @@
       "name": "Senior plc",
       "score": 59,
       "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 58,
-      "market": "US"
-    },
-    {
-      "ticker": "ITM.L",
-      "name": "ITM Power",
-      "score": 58,
-      "market": "UK"
     }
   ],
   "totalStocks": 862,
   "avgScore": 50,
-  "bearishAlertCount": 403
+  "bearishAlertCount": 399
 }
