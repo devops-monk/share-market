@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-05-04T20:20:58.087Z",
+  "lastUpdated": "2026-05-04T22:07:14.154Z",
   "stockCount": 860,
-  "bearishAlerts": 394,
-  "newsCount": 580,
+  "bearishAlerts": 396,
+  "newsCount": 500,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
@@ -37,10 +37,10 @@
     "eu": {
       "index": "DAX 40",
       "price": 23991.27,
-      "sma50": 23836.94,
-      "sma200": 24111.43,
+      "sma50": 23862.68,
+      "sma200": 24111.52,
       "changeFromHigh": -5.62,
-      "distributionDays": 0,
+      "distributionDays": 2,
       "regime": "correction",
       "signal": "Price below SMA200 — trend weakening"
     },

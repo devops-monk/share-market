@@ -129,18 +129,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SOFI",
-      "name": "SoFi Technologies",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "GPC",
       "name": "Genuine Parts",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "WING",
+      "name": "Wingstop",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -275,8 +275,20 @@
       "market": "US"
     },
     {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 71,
+      "market": "DE"
+    },
+    {
       "ticker": "WOLF",
       "name": "Wolfspeed",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "FHN",
+      "name": "First Horizon",
       "score": 65,
       "market": "US"
     },
@@ -315,21 +327,9 @@
       "name": "Senior plc",
       "score": 60,
       "market": "UK"
-    },
-    {
-      "ticker": "ITM.L",
-      "name": "ITM Power",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "TSTL.L",
-      "name": "Tristel",
-      "score": 59,
-      "market": "UK"
     }
   ],
   "totalStocks": 860,
   "avgScore": 49,
-  "bearishAlertCount": 394
+  "bearishAlertCount": 396
 }
