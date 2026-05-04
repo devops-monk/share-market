@@ -10,13 +10,20 @@
     {
       "ticker": "EBAY",
       "name": "eBay",
-      "score": 74,
+      "score": 75,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "OVV",
       "name": "Ovintiv",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
@@ -36,13 +43,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
       "score": 73,
@@ -57,42 +57,21 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "EOG",
       "name": "EOG Resources",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "HOLX",
-      "name": "Hologic",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corp",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Large"
-    },
     {
       "ticker": "9626.HK",
       "name": "Bilibili",
@@ -101,11 +80,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart",
+      "ticker": "PODD",
+      "name": "Insulet Corp",
       "score": 21,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "VIV.PA",
@@ -115,8 +108,8 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "WING",
-      "name": "Wingstop",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
@@ -136,11 +129,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "TECH",
-      "name": "Bio-Techne",
+      "ticker": "WING",
+      "name": "Wingstop",
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -153,12 +153,18 @@
     {
       "ticker": "EBAY",
       "name": "eBay",
-      "score": 74,
+      "score": 75,
       "market": "US"
     },
     {
       "ticker": "OVV",
       "name": "Ovintiv",
+      "score": 75,
+      "market": "US"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 74,
       "market": "US"
     },
@@ -175,12 +181,6 @@
       "market": "HK"
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy",
-      "score": 73,
-      "market": "US"
-    },
-    {
       "ticker": "CTRA",
       "name": "Coterra Energy",
       "score": 73,
@@ -193,16 +193,16 @@
       "market": "JP"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "8002.T",
-      "name": "Marubeni",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 72,
-      "market": "JP"
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -237,22 +237,10 @@
       "market": "UK"
     },
     {
-      "ticker": "EMN",
-      "name": "Eastman Chemical",
-      "score": 64,
-      "market": "US"
-    },
-    {
       "ticker": "BNZL.L",
       "name": "Bunzl",
       "score": 64,
       "market": "UK"
-    },
-    {
-      "ticker": "LEA",
-      "name": "Lear Corp",
-      "score": 63,
-      "market": "US"
     },
     {
       "ticker": "IGG.L",
@@ -265,6 +253,18 @@
       "name": "Balfour Beatty",
       "score": 63,
       "market": "UK"
+    },
+    {
+      "ticker": "EMN",
+      "name": "Eastman Chemical",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 61,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 860,
   "avgScore": 48,
-  "bearishAlertCount": 379
+  "bearishAlertCount": 383
 }
