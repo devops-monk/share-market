@@ -8,6 +8,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "EBAY",
+      "name": "eBay",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "OVV",
       "name": "Ovintiv",
       "score": 74,
@@ -22,8 +29,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 74,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -36,63 +57,21 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HOLX",
       "name": "Hologic",
       "score": 72,
       "market": "US",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "8002.T",
-      "name": "Marubeni",
-      "score": 72,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "6367.T",
-      "name": "Daikin Industries",
-      "score": 71,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "EBAY",
-      "name": "eBay",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
-      "score": 20,
-      "market": "FR",
-      "capCategory": "Small"
-    },
     {
       "ticker": "PODD",
       "name": "Insulet Corp",
@@ -101,10 +80,24 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
       "score": 20,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "9626.HK",
+      "name": "Bilibili",
+      "score": 21,
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -115,24 +108,24 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "APTV",
-      "name": "Aptiv",
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
       "score": 22,
-      "market": "US",
-      "capCategory": "Large"
+      "market": "FR",
+      "capCategory": "Small"
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox",
+      "ticker": "WING",
+      "name": "Wingstop",
       "score": 22,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "RHM.DE",
-      "name": "Rheinmetall",
-      "score": 23,
-      "market": "DE",
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
+      "score": 22,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -141,6 +134,13 @@
       "score": 23,
       "market": "IN",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "TECH",
+      "name": "Bio-Techne",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -149,6 +149,12 @@
       "name": "Mitsubishi Corp",
       "score": 76,
       "market": "JP"
+    },
+    {
+      "ticker": "EBAY",
+      "name": "eBay",
+      "score": 74,
+      "market": "US"
     },
     {
       "ticker": "OVV",
@@ -163,8 +169,20 @@
       "market": "JP"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "0883.HK",
+      "name": "CNOOC",
+      "score": 74,
+      "market": "HK"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 73,
       "market": "US"
     },
@@ -175,34 +193,16 @@
       "market": "JP"
     },
     {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "8002.T",
       "name": "Marubeni",
       "score": 72,
       "market": "JP"
-    },
-    {
-      "ticker": "6367.T",
-      "name": "Daikin Industries",
-      "score": 71,
-      "market": "JP"
-    },
-    {
-      "ticker": "EBAY",
-      "name": "eBay",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "6273.T",
-      "name": "SMC Corp",
-      "score": 70,
-      "market": "JP"
-    },
-    {
-      "ticker": "ALL",
-      "name": "Allstate",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topMidCap": [
@@ -277,7 +277,7 @@
     {
       "ticker": "RWE.DE",
       "name": "RWE",
-      "score": 69,
+      "score": 71,
       "market": "DE"
     },
     {
@@ -291,6 +291,12 @@
       "name": "Chemring Group",
       "score": 65,
       "market": "UK"
+    },
+    {
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
+      "score": 64,
+      "market": "US"
     },
     {
       "ticker": "FHN",
@@ -321,15 +327,9 @@
       "name": "Senior plc",
       "score": 60,
       "market": "UK"
-    },
-    {
-      "ticker": "ITM.L",
-      "name": "ITM Power",
-      "score": 59,
-      "market": "UK"
     }
   ],
-  "totalStocks": 859,
+  "totalStocks": 860,
   "avgScore": 48,
-  "bearishAlertCount": 386
+  "bearishAlertCount": 379
 }
