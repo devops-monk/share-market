@@ -8,20 +8,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 75,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 75,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "6971.T",
       "name": "Kyocera",
       "score": 74,
@@ -29,15 +15,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 74,
-      "market": "HK",
+      "ticker": "FDX",
+      "name": "FedEx",
+      "score": 73,
+      "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx",
+      "ticker": "CBOE",
+      "name": "Cboe Global Markets",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -57,15 +43,29 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HOLX",
+      "name": "Hologic",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -80,25 +80,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
+      "ticker": "RHM.DE",
+      "name": "Rheinmetall",
       "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "9626.HK",
-      "name": "Bilibili",
-      "score": 23,
-      "market": "HK",
+      "market": "DE",
       "capCategory": "Large"
     },
     {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
+      "ticker": "EL.PA",
+      "name": "EssilorLuxottica",
       "score": 23,
       "market": "FR",
-      "capCategory": "Small"
+      "capCategory": "Large"
     },
     {
       "ticker": "PODD",
@@ -108,10 +101,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "NAUKRI.BO",
-      "name": "Info Edge (Naukri)",
+      "ticker": "9626.HK",
+      "name": "Bilibili",
       "score": 24,
-      "market": "IN",
+      "market": "HK",
       "capCategory": "Large"
     },
     {
@@ -129,11 +122,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RHM.DE",
-      "name": "Rheinmetall",
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
       "score": 25,
-      "market": "DE",
-      "capCategory": "Large"
+      "market": "FR",
+      "capCategory": "Small"
     },
     {
       "ticker": "ALNY",
@@ -151,32 +151,20 @@
       "market": "JP"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
-      "score": 75,
-      "market": "DE"
-    },
-    {
-      "ticker": "0883.HK",
-      "name": "CNOOC",
-      "score": 75,
-      "market": "HK"
-    },
-    {
       "ticker": "6971.T",
       "name": "Kyocera",
       "score": 74,
       "market": "JP"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 74,
-      "market": "HK"
-    },
-    {
       "ticker": "FDX",
       "name": "FedEx",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "CBOE",
+      "name": "Cboe Global Markets",
       "score": 73,
       "market": "US"
     },
@@ -193,16 +181,28 @@
       "market": "JP"
     },
     {
-      "ticker": "SLB",
-      "name": "Schlumberger",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "EOG",
       "name": "EOG Resources",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "8002.T",
+      "name": "Marubeni",
+      "score": 72,
+      "market": "JP"
     }
   ],
   "topMidCap": [
@@ -243,12 +243,6 @@
       "market": "UK"
     },
     {
-      "ticker": "UU.L",
-      "name": "United Utilities",
-      "score": 65,
-      "market": "UK"
-    },
-    {
       "ticker": "PLUS.L",
       "name": "Plus500",
       "score": 65,
@@ -265,6 +259,12 @@
       "name": "Bunzl",
       "score": 64,
       "market": "UK"
+    },
+    {
+      "ticker": "IMAX",
+      "name": "IMAX Corp",
+      "score": 63,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -273,6 +273,12 @@
       "name": "Hologic",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "RWE.DE",
+      "name": "RWE",
+      "score": 69,
+      "market": "DE"
     },
     {
       "ticker": "EXAS",
@@ -299,6 +305,12 @@
       "market": "UK"
     },
     {
+      "ticker": "FHN",
+      "name": "First Horizon",
+      "score": 61,
+      "market": "US"
+    },
+    {
       "ticker": "HMSO.L",
       "name": "Hammerson",
       "score": 61,
@@ -315,21 +327,9 @@
       "name": "Wolfspeed",
       "score": 59,
       "market": "US"
-    },
-    {
-      "ticker": "ITM.L",
-      "name": "ITM Power",
-      "score": 59,
-      "market": "UK"
-    },
-    {
-      "ticker": "PHNX.L",
-      "name": "Phoenix Group",
-      "score": 59,
-      "market": "UK"
     }
   ],
-  "totalStocks": 862,
-  "avgScore": 50,
-  "bearishAlertCount": 391
+  "totalStocks": 860,
+  "avgScore": 49,
+  "bearishAlertCount": 388
 }
