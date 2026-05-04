@@ -73,6 +73,13 @@
   ],
   "bottomOverall": [
     {
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 20,
+      "market": "FR",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "DASH",
       "name": "DoorDash",
       "score": 21,
@@ -82,15 +89,15 @@
     {
       "ticker": "RHM.DE",
       "name": "Rheinmetall",
-      "score": 22,
+      "score": 23,
       "market": "DE",
       "capCategory": "Large"
     },
     {
-      "ticker": "EL.PA",
-      "name": "EssilorLuxottica",
+      "ticker": "NAUKRI.BO",
+      "name": "Info Edge (Naukri)",
       "score": 23,
-      "market": "FR",
+      "market": "IN",
       "capCategory": "Large"
     },
     {
@@ -99,6 +106,13 @@
       "score": 23,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "9626.HK",
@@ -122,24 +136,10 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
+      "ticker": "RMS.PA",
+      "name": "Hermes",
       "score": 25,
       "market": "FR",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
-      "score": 25,
-      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 860,
   "avgScore": 49,
-  "bearishAlertCount": 388
+  "bearishAlertCount": 386
 }
