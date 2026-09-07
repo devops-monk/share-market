@@ -129,18 +129,18 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "RHM.DE",
-      "name": "Rheinmetall",
-      "score": 29,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TATACONSUM.NS",
       "name": "Tata Consumer Products",
       "score": 29,
       "market": "IN",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "ONON",
+      "name": "On Holding",
+      "score": 29,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -187,12 +187,6 @@
       "market": "UK"
     },
     {
-      "ticker": "SNOW",
-      "name": "Snowflake",
-      "score": 72,
-      "market": "US"
-    },
-    {
       "ticker": "SNDK",
       "name": "SanDisk",
       "score": 72,
@@ -203,6 +197,12 @@
       "name": "MetLife",
       "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "SMT.L",
+      "name": "Scottish Mortgage",
+      "score": 72,
+      "market": "UK"
     }
   ],
   "topMidCap": [
@@ -281,9 +281,21 @@
       "market": "UK"
     },
     {
+      "ticker": "ML.PA",
+      "name": "Michelin",
+      "score": 66,
+      "market": "FR"
+    },
+    {
+      "ticker": "PUB.PA",
+      "name": "Publicis",
+      "score": 65,
+      "market": "FR"
+    },
+    {
       "ticker": "RPD",
       "name": "Rapid7",
-      "score": 66,
+      "score": 64,
       "market": "US"
     },
     {
@@ -305,12 +317,6 @@
       "market": "UK"
     },
     {
-      "ticker": "PUB.PA",
-      "name": "Publicis",
-      "score": 64,
-      "market": "FR"
-    },
-    {
       "ticker": "PETS.L",
       "name": "Pets at Home",
       "score": 63,
@@ -321,15 +327,9 @@
       "name": "Allianz",
       "score": 63,
       "market": "DE"
-    },
-    {
-      "ticker": "ITRK.L",
-      "name": "Intertek Group",
-      "score": 62,
-      "market": "UK"
     }
   ],
   "totalStocks": 859,
   "avgScore": 52,
-  "bearishAlertCount": 292
+  "bearishAlertCount": 291
 }
