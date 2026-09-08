@@ -3,7 +3,7 @@
     {
       "ticker": "HPQ",
       "name": "HP Inc",
-      "score": 76,
+      "score": 77,
       "market": "US",
       "capCategory": "Large"
     },
@@ -22,8 +22,29 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "VLO",
       "name": "Valero Energy",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMD",
+      "name": "AMD",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -43,31 +64,10 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "AMD",
-      "name": "AMD",
+      "ticker": "MU",
+      "name": "Micron",
       "score": 72,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "STAN.L",
-      "name": "Standard Chartered",
-      "score": 72,
-      "market": "UK",
       "capCategory": "Large"
     }
   ],
@@ -75,37 +75,30 @@
     {
       "ticker": "BYND",
       "name": "Beyond Meat",
-      "score": 18,
+      "score": 19,
       "market": "US",
       "capCategory": "Small"
     },
     {
       "ticker": "BLDR",
       "name": "Builders FirstSource",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CAVA",
-      "name": "Cava Group",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 24,
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "LCID",
       "name": "Lucid Group",
-      "score": 24,
+      "score": 22,
       "market": "US",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "CAVA",
+      "name": "Cava Group",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "OPEN",
@@ -115,15 +108,22 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "XPEV",
-      "name": "XPeng",
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
       "score": 25,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "SUI",
       "name": "Sun Communities",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "XPEV",
+      "name": "XPeng",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
@@ -136,18 +136,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 29,
-      "market": "US",
-      "capCategory": "Mid"
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 30,
+      "market": "FR",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "HPQ",
       "name": "HP Inc",
-      "score": 76,
+      "score": 77,
       "market": "US"
     },
     {
@@ -157,8 +157,26 @@
       "market": "JP"
     },
     {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "score": 75,
+      "market": "US"
+    },
+    {
       "ticker": "VLO",
       "name": "Valero Energy",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "AMD",
+      "name": "AMD",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
       "score": 73,
       "market": "US"
     },
@@ -169,20 +187,8 @@
       "market": "UK"
     },
     {
-      "ticker": "AMD",
-      "name": "AMD",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
+      "ticker": "MU",
+      "name": "Micron",
       "score": 72,
       "market": "US"
     },
@@ -193,16 +199,10 @@
       "market": "UK"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "STT",
+      "name": "State Street",
       "score": 71,
       "market": "US"
-    },
-    {
-      "ticker": "DBK.DE",
-      "name": "Deutsche Bank",
-      "score": 71,
-      "market": "DE"
     }
   ],
   "topMidCap": [
@@ -225,15 +225,33 @@
       "market": "UK"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
+      "ticker": "DUOL",
+      "name": "Duolingo",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "NWL",
+      "name": "Newell Brands",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "DUOL",
-      "name": "Duolingo",
-      "score": 70,
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "MTCH",
+      "name": "Match Group",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "RELY",
+      "name": "Remitly Global",
+      "score": 69,
       "market": "US"
     },
     {
@@ -243,28 +261,10 @@
       "market": "UK"
     },
     {
-      "ticker": "BRZE",
-      "name": "Braze",
+      "ticker": "OGN",
+      "name": "Organon & Co",
       "score": 68,
       "market": "US"
-    },
-    {
-      "ticker": "MTCH",
-      "name": "Match Group",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "RELY",
-      "name": "Remitly Global",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 68,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -319,17 +319,17 @@
     {
       "ticker": "PUB.PA",
       "name": "Publicis",
-      "score": 63,
+      "score": 64,
       "market": "FR"
     },
     {
-      "ticker": "ITRK.L",
-      "name": "Intertek Group",
+      "ticker": "RPD",
+      "name": "Rapid7",
       "score": 62,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "totalStocks": 859,
-  "avgScore": 51,
-  "bearishAlertCount": 293
+  "avgScore": 52,
+  "bearishAlertCount": 296
 }
