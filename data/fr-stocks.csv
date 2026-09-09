@@ -1,30 +1,30 @@
 ticker,name,market,sector,price,changePercent,marketCap,capCategory,pe,rsi,sma50,sma200,bearishScore,bullishScore,sentimentAvg,compositeScore
-MC.PA,LVMH,FR,Consumer Cyclical,411.25,-3.59,202731945984,Large,18.761406,27.8,468.28,514.42,10,7,0.000,47
-OR.PA,L'Oreal,FR,Consumer Defensive,381.7,-1.67,203312447488,Large,32.457485,48.2,382.96,375.12,2,2,0.000,51
-SAN.PA,Sanofi,FR,Healthcare,74.24,-0.62,88944623616,Large,22.91358,37.4,76.32,78.46,7,0,0.000,40
-AI.PA,Air Liquide,FR,Materials,168.32,-2.80,107415764992,Large,30.273382,44.8,172.66,160.54,0,6,0.000,62
-TTE.PA,TotalEnergies,FR,Energy,78.21,0.59,173052739584,Large,11.384279,59.0,73.91,69.59,0,6,0.000,67
-SU.PA,Schneider Electric,FR,Industrials,289.7,-3.30,162835759104,Large,34.16274,47.9,285.08,262.11,2,3,0.000,53
-BNP.PA,BNP Paribas,FR,Financials,102.76,-1.08,112624959488,Large,8.889274,41.0,105.88,92.74,2,2,0.000,60
-RMS.PA,Hermes,FR,Consumer Cyclical,1409,-2.32,147581042688,Large,32.775063,29.0,1593.64,1805.00,8,7,0.000,41
-DG.PA,Vinci,FR,Industrials,111.8,-2.36,61865279488,Large,12.408435,33.2,119.92,125.02,7,0,0.000,40
-KER.PA,Kering,FR,Consumer Cyclical,232.25,-4.97,28478111744,Large,,32.4,257.96,265.74,7,0,0.000,35
-ACA.PA,Credit Agricole,FR,Financials,18.49,-0.99,55777456128,Large,9.153465,41.5,18.66,17.59,2,2,0.000,58
-CS.PA,AXA,FR,Financials,42.94,-1.65,89783320576,Large,11.574123,41.6,44.32,41.03,2,2,0.000,58
-CAP.PA,Capgemini,FR,Technology,101.15,-4.17,16791123968,Large,12.852605,42.1,101.07,111.11,5,0,0.000,48
-RI.PA,Pernod Ricard,FR,Consumer Defensive,60.04,-1.12,15119216640,Large,10.721429,30.5,65.71,69.22,7,0,0.000,42
-DSY.PA,Dassault Systemes,FR,Technology,20.17,-1.42,26503659520,Large,20.793814,37.4,20.49,20.29,2,3,0.000,56
-SGO.PA,Saint-Gobain,FR,Industrials,71.5,-3.90,35004899328,Large,13.265306,28.6,78.69,79.85,6,7,0.000,56
-ORA.PA,Orange,FR,Communication,15.215,-1.01,40438038528,Large,10.280405,35.7,16.07,16.43,6,0,0.000,43
-BN.PA,Danone,FR,Consumer Defensive,62.96,-3.02,40552185856,Large,20.847681,33.3,68.59,69.55,7,0,0.000,40
-EN.PA,Bouygues,FR,Industrials,44.15,-2.11,17040832512,Large,13.50153,36.3,46.93,48.06,6,0,0.000,43
-GLE.PA,Societe Generale,FR,Financials,73.49,-1.14,53687857152,Large,9.65703,39.5,77.35,71.30,2,2,0.000,58
-VIE.PA,Veolia,FR,Utilities,31.56,-1.22,23109707776,Large,18.348837,24.4,35.00,33.42,2,7,0.000,61
-VIV.PA,Vivendi,FR,Communication,1.481,-0.47,1476972416,Small,74.049995,24.4,1.79,2.10,8,7,0.000,32
-LR.PA,Legrand,FR,Industrials,140.35,-3.97,36789305344,Large,28.239439,53.7,137.80,139.46,3,4,0.000,52
-ML.PA,Michelin,FR,Consumer Cyclical,33.76,-2.60,0,Small,3.296875,41.6,34.63,31.84,2,2,0.000,60
-PUB.PA,Publicis,FR,Communication,96.04,-2.93,0,Small,14.959501,42.7,94.69,84.63,2,3,0.000,60
-TEP.PA,Teleperformance,FR,Industrials,68.24,-1.10,4074900224,Mid,8.627054,50.0,62.91,58.42,2,6,0.000,67
-SAF.PA,Safran,FR,Industrials,322.8,-3.24,133760745472,Large,34.672394,34.6,342.34,313.72,2,2,0.000,52
-EL.PA,EssilorLuxottica,FR,Healthcare,149,-0.40,68413837312,Large,27.798508,28.6,165.01,208.71,8,7,0.000,45
-ERF.PA,Eurofins Scientific,FR,Healthcare,70.94,-0.37,12231002112,Large,24.631945,48.3,70.09,65.58,2,3,0.000,59
+MC.PA,LVMH,FR,Consumer Cyclical,411.25,-4.16,0,Small,,33.1,469.73,515.47,9,0,0.000,38
+OR.PA,L'Oreal,FR,Consumer Defensive,381.7,-0.57,0,Small,,53.8,383.00,375.03,2,2,0.000,52
+SAN.PA,Sanofi,FR,Healthcare,74.24,-2.65,0,Small,,39.3,76.33,78.52,7,2,0.000,41
+AI.PA,Air Liquide,FR,Materials,168.32,-1.24,0,Small,,57.2,172.76,160.44,0,4,0.000,60
+TTE.PA,TotalEnergies,FR,Energy,78.21,2.77,0,Small,,57.5,73.70,69.48,0,8,0.000,64
+SU.PA,Schneider Electric,FR,Industrials,289.7,0.59,0,Small,,56.7,284.99,261.78,2,4,0.000,56
+BNP.PA,BNP Paribas,FR,Financials,102.76,-1.70,0,Small,,44.1,105.86,92.58,2,2,0.000,54
+RMS.PA,Hermes,FR,Consumer Cyclical,1409,-3.29,0,Small,,32.0,1597.42,1808.50,7,0,0.000,32
+DG.PA,Vinci,FR,Industrials,111.8,-1.89,0,Small,,39.0,120.24,125.05,7,0,0.000,36
+KER.PA,Kering,FR,Consumer Cyclical,232.25,-5.28,0,Small,,39.5,258.26,266.06,7,0,0.000,36
+ACA.PA,Credit Agricole,FR,Financials,18.49,-1.68,0,Small,,45.2,18.64,17.58,2,2,0.000,52
+CS.PA,AXA,FR,Financials,42.94,-3.81,0,Small,,46.9,44.34,41.01,0,4,0.000,60
+CAP.PA,Capgemini,FR,Technology,101.15,-4.93,0,Small,,49.1,100.81,111.27,5,2,0.000,47
+RI.PA,Pernod Ricard,FR,Consumer Defensive,60.04,-2.78,0,Small,,32.1,65.78,69.31,7,0,0.000,36
+DSY.PA,Dassault Systemes,FR,Technology,20.17,-4.04,0,Small,,39.4,20.45,20.31,2,2,0.000,52
+SGO.PA,Saint-Gobain,FR,Industrials,71.5,-5.65,0,Small,,34.4,78.84,79.90,6,0,0.000,41
+ORA.PA,Orange,FR,Communication,15.215,-0.81,0,Small,,38.3,16.10,16.43,6,0,0.000,37
+BN.PA,Danone,FR,Consumer Defensive,62.96,-1.19,0,Small,,42.1,68.76,69.62,5,4,0.000,47
+EN.PA,Bouygues,FR,Industrials,44.15,-0.81,0,Small,,42.3,47.02,48.05,6,0,0.000,38
+GLE.PA,Societe Generale,FR,Financials,73.49,-0.93,0,Small,,42.3,77.43,71.22,2,2,0.000,52
+VIE.PA,Veolia,FR,Utilities,31.56,-1.07,0,Small,,27.0,35.09,33.40,2,11,0.000,63
+VIV.PA,Vivendi,FR,Communication,1.481,-0.60,0,Small,,24.9,1.81,2.10,8,7,0.000,40
+LR.PA,Legrand,FR,Industrials,140.35,-0.39,0,Small,,65.0,137.95,139.39,3,4,0.000,53
+ML.PA,Michelin,FR,Consumer Cyclical,33.76,-3.98,0,Small,,50.2,34.63,31.80,0,4,0.000,59
+PUB.PA,Publicis,FR,Communication,96.04,-5.00,0,Small,,49.5,94.50,84.57,2,5,0.000,60
+TEP.PA,Teleperformance,FR,Industrials,68.24,-3.12,0,Small,,52.1,62.47,58.38,2,6,0.000,60
+SAF.PA,Safran,FR,Industrials,322.8,-3.21,0,Small,,42.1,342.79,313.52,2,2,0.000,53
+EL.PA,EssilorLuxottica,FR,Healthcare,149,-0.53,0,Small,,29.2,165.31,209.48,8,7,0.000,44
+ERF.PA,Eurofins Scientific,FR,Healthcare,70.94,-2.45,0,Small,,49.6,70.04,65.52,2,3,0.000,57
