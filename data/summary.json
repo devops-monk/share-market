@@ -1,6 +1,20 @@
 {
   "topOverall": [
     {
+      "ticker": "9984.T",
+      "name": "SoftBank Group",
+      "score": 79,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HPQ",
+      "name": "HP Inc",
+      "score": 78,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "VCT.L",
       "name": "Victrex",
       "score": 77,
@@ -15,24 +29,17 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "9984.T",
-      "name": "SoftBank Group",
-      "score": 76,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HPQ",
-      "name": "HP Inc",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "SMT.L",
       "name": "Scottish Mortgage",
       "score": 75,
       "market": "UK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 73,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -43,32 +50,25 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
+      "ticker": "LTC",
+      "name": "LTC Properties",
       "score": 72,
-      "market": "UK",
-      "capCategory": "Small"
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 71,
+      "ticker": "OGN",
+      "name": "Organon & Co",
+      "score": 72,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
@@ -82,20 +82,6 @@
     {
       "ticker": "BLDR",
       "name": "Builders FirstSource",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CAVA",
-      "name": "Cava Group",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
       "score": 22,
       "market": "US",
       "capCategory": "Mid"
@@ -103,21 +89,14 @@
     {
       "ticker": "OPEN",
       "name": "Opendoor Technologies",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
       "score": 24,
       "market": "US",
       "capCategory": "Small"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 25,
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 24,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -129,16 +108,37 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "BBW",
+      "name": "Build-A-Bear Workshop",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 25,
+      "score": 26,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 27,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "JOBY",
       "name": "Joby Aviation",
-      "score": 26,
+      "score": 28,
       "market": "US",
       "capCategory": "Mid"
     }
@@ -147,13 +147,13 @@
     {
       "ticker": "9984.T",
       "name": "SoftBank Group",
-      "score": 76,
+      "score": 79,
       "market": "JP"
     },
     {
       "ticker": "HPQ",
       "name": "HP Inc",
-      "score": 75,
+      "score": 78,
       "market": "US"
     },
     {
@@ -163,26 +163,20 @@
       "market": "UK"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
+      "ticker": "CF",
+      "name": "CF Industries",
       "score": 71,
       "market": "US"
     },
@@ -193,16 +187,22 @@
       "market": "DE"
     },
     {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 71,
+      "market": "HK"
+    },
+    {
       "ticker": "0005.HK",
       "name": "HSBC Holdings",
       "score": 71,
       "market": "HK"
     },
     {
-      "ticker": "RWE.DE",
-      "name": "RWE",
+      "ticker": "SNDK",
+      "name": "SanDisk",
       "score": 70,
-      "market": "DE"
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -219,27 +219,27 @@
       "market": "UK"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 69,
-      "market": "UK"
-    },
-    {
       "ticker": "LTC",
       "name": "LTC Properties",
-      "score": 67,
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "OGN",
       "name": "Organon & Co",
-      "score": 67,
+      "score": 72,
       "market": "US"
+    },
+    {
+      "ticker": "SDR.L",
+      "name": "Schroders",
+      "score": 71,
+      "market": "UK"
     },
     {
       "ticker": "GTLB",
       "name": "GitLab",
-      "score": 67,
+      "score": 68,
       "market": "US"
     },
     {
@@ -263,7 +263,7 @@
     {
       "ticker": "AMC",
       "name": "AMC Entertainment",
-      "score": 65,
+      "score": 66,
       "market": "US"
     }
   ],
@@ -281,6 +281,12 @@
       "market": "UK"
     },
     {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 70,
+      "market": "US"
+    },
+    {
       "ticker": "FDEV.L",
       "name": "Frontier Developments",
       "score": 70,
@@ -291,6 +297,18 @@
       "name": "CMC Markets",
       "score": 70,
       "market": "UK"
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "score": 68,
+      "market": "US"
     },
     {
       "ticker": "CARD.L",
@@ -305,31 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "ITRK.L",
-      "name": "Intertek Group",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "RWS.L",
-      "name": "RWS Holdings",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "ALV.DE",
-      "name": "Allianz",
-      "score": 64,
-      "market": "DE"
-    },
-    {
-      "ticker": "ITM.L",
-      "name": "ITM Power",
-      "score": 63,
-      "market": "UK"
+      "ticker": "ADM",
+      "name": "Archer-Daniels-Midland",
+      "score": 65,
+      "market": "US"
     }
   ],
   "totalStocks": 859,
-  "avgScore": 51,
-  "bearishAlertCount": 305
+  "avgScore": 52,
+  "bearishAlertCount": 299
 }
