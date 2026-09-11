@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-09-10T22:26:15.794Z",
+  "lastUpdated": "2026-09-11T12:10:56.338Z",
   "stockCount": 859,
-  "bearishAlerts": 306,
-  "newsCount": 685,
+  "bearishAlerts": 301,
+  "newsCount": 755,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
@@ -16,43 +16,43 @@
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10608.92,
-      "sma50": 10738.49,
-      "sma200": 10377.77,
-      "changeFromHigh": -2.77,
-      "distributionDays": 4,
+      "price": 10674.51,
+      "sma50": 10738.92,
+      "sma200": 10383.09,
+      "changeFromHigh": -2.16,
+      "distributionDays": 5,
       "regime": "bull",
       "signal": "Price above SMA200 — uptrend intact"
     },
     "in": {
       "index": "Nifty 50",
-      "price": 23477.8,
-      "sma50": 24184.83,
-      "sma200": 24576.93,
-      "changeFromHigh": -10.83,
+      "price": 23398.1,
+      "sma50": 24153.42,
+      "sma200": 24550.08,
+      "changeFromHigh": -11.13,
       "distributionDays": 4,
       "regime": "correction",
-      "signal": "Down -10.8% from high — correction territory"
+      "signal": "Down -11.1% from high — correction territory"
     },
     "eu": {
       "index": "DAX 40",
-      "price": 25361.15,
-      "sma50": 25753.87,
-      "sma200": 24706.51,
-      "changeFromHigh": -4.55,
-      "distributionDays": 1,
+      "price": 25506.84,
+      "sma50": 25744.02,
+      "sma200": 24727.33,
+      "changeFromHigh": -4,
+      "distributionDays": 3,
       "regime": "bull",
       "signal": "Price above SMA200 — uptrend intact"
     },
     "asia": {
       "index": "Nikkei 225",
-      "price": 65270.95,
-      "sma50": 66346.6,
-      "sma200": 59199.19,
-      "changeFromHigh": -9.8,
-      "distributionDays": 3,
-      "regime": "bull",
-      "signal": "Price above SMA200 — uptrend intact"
+      "price": 64011.34,
+      "sma50": 66121.5,
+      "sma200": 59342.1,
+      "changeFromHigh": -11.55,
+      "distributionDays": 2,
+      "regime": "correction",
+      "signal": "Down -11.5% from high — correction territory"
     },
     "overall": "correction",
     "summary": "Markets showing weakness. Be selective, reduce position sizes, and tighten stops."
