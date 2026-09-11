@@ -3,13 +3,13 @@
     {
       "ticker": "HPQ",
       "name": "HP Inc",
-      "score": 76,
+      "score": 77,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise",
       "score": 74,
       "market": "US",
       "capCategory": "Large"
@@ -17,6 +17,20 @@
     {
       "ticker": "VLO",
       "name": "Valero Energy",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -29,22 +43,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "9984.T",
-      "name": "SoftBank Group",
-      "score": 73,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
+      "ticker": "ELV",
+      "name": "Elevance Health",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -57,46 +64,32 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
+      "ticker": "DBK.DE",
+      "name": "Deutsche Bank",
       "score": 72,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise",
-      "score": 71,
-      "market": "US",
+      "market": "DE",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
-      "score": 21,
-      "market": "FR",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CAVA",
       "name": "Cava Group",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Mid"
     },
     {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BLDR",
       "name": "Builders FirstSource",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -122,23 +115,30 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "XPEV",
-      "name": "XPeng",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Mid"
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 28,
+      "market": "FR",
+      "capCategory": "Small"
     },
     {
       "ticker": "TATACONSUM.NS",
       "name": "Tata Consumer Products",
       "score": 28,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 28,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "SBILIFE.NS",
+      "name": "SBI Life Insurance",
+      "score": 30,
       "market": "IN",
       "capCategory": "Large"
     }
@@ -147,36 +147,42 @@
     {
       "ticker": "HPQ",
       "name": "HP Inc",
-      "score": 76,
+      "score": 77,
       "market": "US"
     },
     {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise",
       "score": 74,
       "market": "US"
     },
     {
       "ticker": "VLO",
       "name": "Valero Energy",
-      "score": 73,
+      "score": 74,
       "market": "US"
-    },
-    {
-      "ticker": "9984.T",
-      "name": "SoftBank Group",
-      "score": 73,
-      "market": "JP"
     },
     {
       "ticker": "MU",
       "name": "Micron",
-      "score": 72,
+      "score": 73,
       "market": "US"
     },
     {
       "ticker": "DELL",
       "name": "Dell Technologies",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "ELV",
+      "name": "Elevance Health",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
       "score": 72,
       "market": "US"
     },
@@ -187,22 +193,16 @@
       "market": "UK"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
+      "ticker": "DBK.DE",
+      "name": "Deutsche Bank",
       "score": 72,
-      "market": "HK"
+      "market": "DE"
     },
     {
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise",
+      "ticker": "STT",
+      "name": "State Street",
       "score": 71,
       "market": "US"
-    },
-    {
-      "ticker": "0005.HK",
-      "name": "HSBC Holdings",
-      "score": 71,
-      "market": "HK"
     }
   ],
   "topMidCap": [
@@ -213,9 +213,15 @@
       "market": "UK"
     },
     {
-      "ticker": "MTCH",
-      "name": "Match Group",
-      "score": 71,
+      "ticker": "VRNS",
+      "name": "Varonis Systems",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "INSP",
+      "name": "Inspire Medical Systems",
+      "score": 69,
       "market": "US"
     },
     {
@@ -225,16 +231,16 @@
       "market": "US"
     },
     {
-      "ticker": "VRNS",
-      "name": "Varonis Systems",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "BNZL.L",
       "name": "Bunzl",
       "score": 69,
       "market": "UK"
+    },
+    {
+      "ticker": "ELF",
+      "name": "Elf Beauty",
+      "score": 68,
+      "market": "US"
     },
     {
       "ticker": "TEP.PA",
@@ -255,16 +261,10 @@
       "market": "UK"
     },
     {
-      "ticker": "INSP",
-      "name": "Inspire Medical Systems",
+      "ticker": "LTC",
+      "name": "LTC Properties",
       "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "FRAS.L",
-      "name": "Frasers Group",
-      "score": 66,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -317,19 +317,19 @@
       "market": "UK"
     },
     {
+      "ticker": "PUB.PA",
+      "name": "Publicis",
+      "score": 64,
+      "market": "FR"
+    },
+    {
       "ticker": "KNOS.L",
       "name": "Kainos Group",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "ITM.L",
-      "name": "ITM Power",
-      "score": 62,
-      "market": "UK"
     }
   ],
   "totalStocks": 859,
-  "avgScore": 51,
-  "bearishAlertCount": 302
+  "avgScore": 52,
+  "bearishAlertCount": 304
 }
