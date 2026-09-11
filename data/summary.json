@@ -3,20 +3,20 @@
     {
       "ticker": "HPQ",
       "name": "HP Inc",
-      "score": 78,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "score": 73,
+      "score": 76,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "MPC",
       "name": "Marathon Petroleum",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -43,8 +43,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "DELL",
+      "name": "Dell Technologies",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
@@ -64,8 +64,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -80,13 +80,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "CAVA",
-      "name": "Cava Group",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "ALB",
       "name": "Albemarle",
       "score": 21,
@@ -94,43 +87,36 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "CAVA",
+      "name": "Cava Group",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "BLDR",
       "name": "Builders FirstSource",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "LCID",
       "name": "Lucid Group",
-      "score": 24,
+      "score": 25,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 26,
       "market": "US",
       "capCategory": "Small"
     },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "SBILIFE.NS",
-      "name": "SBI Life Insurance",
-      "score": 26,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "OPEN",
-      "name": "Opendoor Technologies",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
       "score": 26,
       "market": "US",
       "capCategory": "Mid"
@@ -141,24 +127,38 @@
       "score": 27,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "TATACONSUM.NS",
+      "name": "Tata Consumer Products",
+      "score": 28,
+      "market": "IN",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "HPQ",
       "name": "HP Inc",
-      "score": 78,
-      "market": "US"
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "score": 73,
+      "score": 76,
       "market": "US"
     },
     {
       "ticker": "MPC",
       "name": "Marathon Petroleum",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
       "score": 73,
       "market": "US"
     },
@@ -175,8 +175,8 @@
       "market": "US"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "DELL",
+      "name": "Dell Technologies",
       "score": 72,
       "market": "US"
     },
@@ -193,8 +193,8 @@
       "market": "HK"
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies",
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise",
       "score": 71,
       "market": "US"
     },
@@ -225,16 +225,16 @@
       "market": "US"
     },
     {
+      "ticker": "VRNS",
+      "name": "Varonis Systems",
+      "score": 69,
+      "market": "US"
+    },
+    {
       "ticker": "BNZL.L",
       "name": "Bunzl",
       "score": 69,
       "market": "UK"
-    },
-    {
-      "ticker": "VRNS",
-      "name": "Varonis Systems",
-      "score": 68,
-      "market": "US"
     },
     {
       "ticker": "TEP.PA",
@@ -255,14 +255,14 @@
       "market": "UK"
     },
     {
-      "ticker": "FRAS.L",
-      "name": "Frasers Group",
+      "ticker": "INSP",
+      "name": "Inspire Medical Systems",
       "score": 66,
-      "market": "UK"
+      "market": "US"
     },
     {
-      "ticker": "BLND.L",
-      "name": "British Land",
+      "ticker": "FRAS.L",
+      "name": "Frasers Group",
       "score": 66,
       "market": "UK"
     }
@@ -331,5 +331,5 @@
   ],
   "totalStocks": 859,
   "avgScore": 51,
-  "bearishAlertCount": 303
+  "bearishAlertCount": 302
 }
