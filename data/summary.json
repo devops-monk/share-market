@@ -3,6 +3,13 @@
     {
       "ticker": "VLO",
       "name": "Valero Energy",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MTCH",
+      "name": "Match Group",
       "score": 75,
       "market": "US",
       "capCategory": "Large"
@@ -13,6 +20,20 @@
       "score": 75,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TMO",
+      "name": "Thermo Fisher",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "HPQ",
@@ -38,116 +59,113 @@
     {
       "ticker": "EOG",
       "name": "EOG Resources",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CVX",
-      "name": "Chevron",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 71,
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "TRV",
       "name": "Travelers",
-      "score": 71,
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "BLDR",
-      "name": "Builders FirstSource",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile",
-      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "APLD",
-      "name": "Applied Digital",
-      "score": 23,
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BLDR",
+      "name": "Builders FirstSource",
+      "score": 25,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 24,
+      "score": 26,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "BWXT",
-      "name": "BWX Technologies",
-      "score": 25,
+      "ticker": "SUI",
+      "name": "Sun Communities",
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "JOBY",
       "name": "Joby Aviation",
-      "score": 25,
+      "score": 26,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "BWXT",
+      "name": "BWX Technologies",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GNRC",
+      "name": "Generac Holdings",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Small"
     },
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 26,
+      "score": 27,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "XPEV",
-      "name": "XPeng",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "VLO",
       "name": "Valero Energy",
+      "score": 76,
+      "market": "US"
+    },
+    {
+      "ticker": "MTCH",
+      "name": "Match Group",
       "score": 75,
+      "market": "US"
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "TMO",
+      "name": "Thermo Fisher",
+      "score": 74,
       "market": "US"
     },
     {
@@ -165,44 +183,26 @@
     {
       "ticker": "EOG",
       "name": "EOG Resources",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "CVX",
-      "name": "Chevron",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 71,
+      "score": 73,
       "market": "US"
     },
     {
       "ticker": "TRV",
       "name": "Travelers",
-      "score": 71,
+      "score": 73,
       "market": "US"
     },
     {
-      "ticker": "MTCH",
-      "name": "Match Group",
-      "score": 71,
+      "ticker": "JPM",
+      "name": "JPMorgan Chase",
+      "score": 72,
       "market": "US"
     },
     {
-      "ticker": "NWG.L",
-      "name": "NatWest",
-      "score": 71,
-      "market": "UK"
-    },
-    {
-      "ticker": "TMO",
-      "name": "Thermo Fisher",
-      "score": 70,
-      "market": "US"
+      "ticker": "9984.T",
+      "name": "SoftBank Group",
+      "score": 72,
+      "market": "JP"
     }
   ],
   "topMidCap": [
@@ -213,14 +213,26 @@
       "market": "UK"
     },
     {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "LTC",
       "name": "LTC Properties",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "S",
       "name": "SentinelOne",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "OGN",
+      "name": "Organon & Co",
       "score": 70,
       "market": "US"
     },
@@ -231,9 +243,15 @@
       "market": "US"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 69,
+      "ticker": "DUOL",
+      "name": "Duolingo",
+      "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "QLYS",
+      "name": "Qualys",
+      "score": 68,
       "market": "US"
     },
     {
@@ -246,24 +264,6 @@
       "ticker": "TATE.L",
       "name": "Tate & Lyle",
       "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "TEP.PA",
-      "name": "Teleperformance",
-      "score": 68,
-      "market": "FR"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "FRAS.L",
-      "name": "Frasers Group",
-      "score": 66,
       "market": "UK"
     }
   ],
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 859,
-  "avgScore": 51,
-  "bearishAlertCount": 309
+  "avgScore": 52,
+  "bearishAlertCount": 315
 }
