@@ -3,21 +3,14 @@
     {
       "ticker": "EZJ.L",
       "name": "easyJet",
-      "score": 79,
+      "score": 77,
       "market": "UK",
       "capCategory": "Mid"
     },
     {
-      "ticker": "STAN.L",
-      "name": "Standard Chartered",
-      "score": 77,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HPQ",
-      "name": "HP Inc",
-      "score": 75,
+      "ticker": "TRV",
+      "name": "Travelers",
+      "score": 76,
       "market": "US",
       "capCategory": "Large"
     },
@@ -36,15 +29,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TRV",
-      "name": "Travelers",
+      "ticker": "OKTA",
+      "name": "Okta",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -54,37 +40,51 @@
       "name": "Match Group",
       "score": 73,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
-      "ticker": "TEP.PA",
-      "name": "Teleperformance",
+      "ticker": "FTNT",
+      "name": "Fortinet",
       "score": 72,
-      "market": "FR",
-      "capCategory": "Mid"
+      "market": "US",
+      "capCategory": "Large"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
+      "ticker": "VCT.L",
+      "name": "Victrex",
       "score": 72,
-      "market": "HK",
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "9984.T",
+      "name": "SoftBank Group",
+      "score": 72,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CVX",
+      "name": "Chevron",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
-      "score": 21,
-      "market": "FR",
-      "capCategory": "Small"
-    },
     {
       "ticker": "ALB",
       "name": "Albemarle",
       "score": 21,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "BLDR",
+      "name": "Builders FirstSource",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "BROS",
@@ -101,16 +101,9 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "CAVA",
-      "name": "Cava Group",
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
       "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "BLDR",
-      "name": "Builders FirstSource",
-      "score": 25,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -122,11 +115,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SBILIFE.NS",
-      "name": "SBI Life Insurance",
+      "ticker": "BRBY.L",
+      "name": "Burberry",
       "score": 26,
-      "market": "IN",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "OPEN",
+      "name": "Opendoor Technologies",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "JOBY",
@@ -136,24 +136,18 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 27,
-      "market": "US",
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 28,
+      "market": "FR",
       "capCategory": "Small"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "STAN.L",
-      "name": "Standard Chartered",
-      "score": 77,
-      "market": "UK"
-    },
-    {
-      "ticker": "HPQ",
-      "name": "HP Inc",
-      "score": 75,
+      "ticker": "TRV",
+      "name": "Travelers",
+      "score": 76,
       "market": "US"
     },
     {
@@ -169,48 +163,10 @@
       "market": "US"
     },
     {
-      "ticker": "HSBA.L",
-      "name": "HSBC",
-      "score": 74,
-      "market": "UK"
-    },
-    {
-      "ticker": "TRV",
-      "name": "Travelers",
+      "ticker": "OKTA",
+      "name": "Okta",
       "score": 73,
       "market": "US"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 72,
-      "market": "HK"
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "OVV",
-      "name": "Ovintiv",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "CBK.DE",
-      "name": "Commerzbank",
-      "score": 71,
-      "market": "DE"
-    }
-  ],
-  "topMidCap": [
-    {
-      "ticker": "EZJ.L",
-      "name": "easyJet",
-      "score": 79,
-      "market": "UK"
     },
     {
       "ticker": "MTCH",
@@ -219,10 +175,42 @@
       "market": "US"
     },
     {
-      "ticker": "TEP.PA",
-      "name": "Teleperformance",
+      "ticker": "FTNT",
+      "name": "Fortinet",
       "score": 72,
-      "market": "FR"
+      "market": "US"
+    },
+    {
+      "ticker": "9984.T",
+      "name": "SoftBank Group",
+      "score": 72,
+      "market": "JP"
+    },
+    {
+      "ticker": "CVX",
+      "name": "Chevron",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "HPQ",
+      "name": "HP Inc",
+      "score": 71,
+      "market": "US"
+    }
+  ],
+  "topMidCap": [
+    {
+      "ticker": "EZJ.L",
+      "name": "easyJet",
+      "score": 77,
+      "market": "UK"
     },
     {
       "ticker": "PATH",
@@ -237,27 +225,9 @@
       "market": "US"
     },
     {
-      "ticker": "OGN",
-      "name": "Organon & Co",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "LAND.L",
-      "name": "Land Securities",
-      "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "ITRK.L",
-      "name": "Intertek Group",
-      "score": 69,
-      "market": "UK"
-    },
-    {
       "ticker": "INSP",
       "name": "Inspire Medical Systems",
-      "score": 68,
+      "score": 70,
       "market": "US"
     },
     {
@@ -265,9 +235,45 @@
       "name": "SentinelOne",
       "score": 68,
       "market": "US"
+    },
+    {
+      "ticker": "VRNS",
+      "name": "Varonis Systems",
+      "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "QLYS",
+      "name": "Qualys",
+      "score": 67,
+      "market": "US"
+    },
+    {
+      "ticker": "BILL",
+      "name": "Bill Holdings",
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "IMAX",
+      "name": "IMAX Corp",
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "TATE.L",
+      "name": "Tate & Lyle",
+      "score": 66,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "VCT.L",
+      "name": "Victrex",
+      "score": 72,
+      "market": "UK"
+    },
     {
       "ticker": "FDEV.L",
       "name": "Frontier Developments",
@@ -275,61 +281,55 @@
       "market": "UK"
     },
     {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
-      "score": 68,
-      "market": "UK"
-    },
-    {
       "ticker": "RWS.L",
       "name": "RWS Holdings",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
       "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "BYIT.L",
-      "name": "Bytes Technology",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "ITM.L",
-      "name": "ITM Power",
+      "ticker": "HMSO.L",
+      "name": "Hammerson",
       "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "ITRK.L",
+      "name": "Intertek Group",
+      "score": 62,
       "market": "UK"
     },
     {
       "ticker": "KNOS.L",
       "name": "Kainos Group",
-      "score": 65,
+      "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "SUPR.L",
-      "name": "Supermarket Income REIT",
-      "score": 65,
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "RPD",
+      "name": "Rapid7",
+      "score": 61,
+      "market": "US"
+    },
+    {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
+      "score": 61,
       "market": "UK"
     }
   ],
   "totalStocks": 859,
   "avgScore": 52,
-  "bearishAlertCount": 307
+  "bearishAlertCount": 306
 }
