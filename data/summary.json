@@ -1,67 +1,18 @@
 {
   "topOverall": [
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
-      "score": 76,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "MTCH",
-      "name": "Match Group",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TMO",
-      "name": "Thermo Fisher",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HPQ",
-      "name": "HP Inc",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Mid"
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
+      "score": 77,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "EZJ.L",
       "name": "easyJet",
-      "score": 74,
+      "score": 73,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "TRV",
-      "name": "Travelers",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "PAYTM.BO",
@@ -69,40 +20,96 @@
       "score": 73,
       "market": "IN",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "TMO",
+      "name": "Thermo Fisher",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TRV",
+      "name": "Travelers",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HPQ",
+      "name": "HP Inc",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "VCT.L",
+      "name": "Victrex",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "ALB",
       "name": "Albemarle",
-      "score": 21,
+      "score": 19,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "APLD",
-      "name": "Applied Digital",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "BLDR",
       "name": "Builders FirstSource",
-      "score": 25,
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 23,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "ZG",
       "name": "Zillow Group",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BROS",
+      "name": "Dutch Bros",
       "score": 26,
       "market": "US",
       "capCategory": "Mid"
@@ -115,77 +122,28 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "JOBY",
-      "name": "Joby Aviation",
+      "ticker": "QS",
+      "name": "QuantumScape",
       "score": 26,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "BWXT",
-      "name": "BWX Technologies",
+      "ticker": "UPST",
+      "name": "Upstart",
       "score": 27,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "GNRC",
-      "name": "Generac Holdings",
-      "score": 27,
-      "market": "US",
+      "ticker": "DMART.BO",
+      "name": "Avenue Supermarts (DMart)",
+      "score": 28,
+      "market": "IN",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy",
-      "score": 76,
-      "market": "US"
-    },
-    {
-      "ticker": "MTCH",
-      "name": "Match Group",
-      "score": 75,
-      "market": "US"
-    },
-    {
-      "ticker": "TMO",
-      "name": "Thermo Fisher",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "HPQ",
-      "name": "HP Inc",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "TRV",
-      "name": "Travelers",
-      "score": 73,
-      "market": "US"
-    },
     {
       "ticker": "PAYTM.BO",
       "name": "Paytm (One97)",
@@ -193,59 +151,77 @@
       "market": "IN"
     },
     {
-      "ticker": "EOG",
-      "name": "EOG Resources",
+      "ticker": "TMO",
+      "name": "Thermo Fisher",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "JPM",
-      "name": "JPMorgan Chase",
-      "score": 71,
+      "ticker": "TRV",
+      "name": "Travelers",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "HPQ",
+      "name": "HP Inc",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "NWG.L",
+      "name": "NatWest",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "9984.T",
+      "name": "SoftBank Group",
+      "score": 70,
+      "market": "JP"
+    },
+    {
+      "ticker": "NUE",
+      "name": "Nucor",
+      "score": 69,
       "market": "US"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 74,
-      "market": "US"
-    },
-    {
       "ticker": "EZJ.L",
       "name": "easyJet",
-      "score": 74,
+      "score": 73,
       "market": "UK"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "S",
-      "name": "SentinelOne",
-      "score": 72,
-      "market": "US"
+      "ticker": "TEP.PA",
+      "name": "Teleperformance",
+      "score": 70,
+      "market": "FR"
     },
     {
       "ticker": "OGN",
       "name": "Organon & Co",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "PATH",
-      "name": "UiPath",
       "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "DUOL",
-      "name": "Duolingo",
-      "score": 68,
       "market": "US"
     },
     {
@@ -255,81 +231,105 @@
       "market": "UK"
     },
     {
-      "ticker": "OZK",
-      "name": "Bank OZK",
-      "score": 66,
+      "ticker": "AMC",
+      "name": "AMC Entertainment",
+      "score": 65,
       "market": "US"
     },
     {
-      "ticker": "INSP",
-      "name": "Inspire Medical Systems",
-      "score": 66,
+      "ticker": "FNB",
+      "name": "F.N.B. Corp",
+      "score": 65,
+      "market": "US"
+    },
+    {
+      "ticker": "FRAS.L",
+      "name": "Frasers Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "BNR.DE",
+      "name": "Brenntag",
+      "score": 65,
+      "market": "DE"
+    },
+    {
+      "ticker": "OZK",
+      "name": "Bank OZK",
+      "score": 64,
+      "market": "US"
+    },
+    {
+      "ticker": "DUOL",
+      "name": "Duolingo",
+      "score": 64,
       "market": "US"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "VCT.L",
-      "name": "Victrex",
-      "score": 70,
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
+      "score": 77,
       "market": "UK"
     },
     {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 68,
+      "ticker": "VCT.L",
+      "name": "Victrex",
+      "score": 72,
       "market": "UK"
     },
     {
       "ticker": "RWS.L",
       "name": "RWS Holdings",
-      "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "CARD.L",
-      "name": "Card Factory",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 66,
+      "score": 70,
       "market": "UK"
     },
     {
       "ticker": "FRE.DE",
       "name": "Fresenius",
-      "score": 66,
+      "score": 69,
       "market": "DE"
     },
     {
-      "ticker": "BYIT.L",
-      "name": "Bytes Technology",
-      "score": 62,
+      "ticker": "CURY.L",
+      "name": "Currys",
+      "score": 67,
       "market": "UK"
+    },
+    {
+      "ticker": "ITRK.L",
+      "name": "Intertek Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "RPD",
+      "name": "Rapid7",
+      "score": 64,
+      "market": "US"
     },
     {
       "ticker": "KNOS.L",
       "name": "Kainos Group",
-      "score": 62,
+      "score": 64,
       "market": "UK"
     },
     {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
-      "score": 62,
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
+      "score": 64,
       "market": "UK"
     }
   ],
   "totalStocks": 859,
   "avgScore": 51,
-  "bearishAlertCount": 314
+  "bearishAlertCount": 317
 }
