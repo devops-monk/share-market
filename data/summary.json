@@ -15,6 +15,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "TMO",
+      "name": "Thermo Fisher",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "HPQ",
       "name": "HP Inc",
       "score": 74,
@@ -29,6 +36,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "EZJ.L",
       "name": "easyJet",
       "score": 74,
@@ -36,8 +50,8 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "TMO",
-      "name": "Thermo Fisher",
+      "ticker": "CRWD",
+      "name": "CrowdStrike",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -50,25 +64,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
+      "ticker": "PAYTM.BO",
+      "name": "Paytm (One97)",
       "score": 73,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "VCT.L",
-      "name": "Victrex",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Mid"
+      "market": "IN",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -83,6 +83,13 @@
       "ticker": "CELH",
       "name": "Celsius Holdings",
       "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "APLD",
+      "name": "Applied Digital",
+      "score": 24,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -134,13 +141,6 @@
       "score": 27,
       "market": "US",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -157,6 +157,12 @@
       "market": "US"
     },
     {
+      "ticker": "TMO",
+      "name": "Thermo Fisher",
+      "score": 74,
+      "market": "US"
+    },
+    {
       "ticker": "HPQ",
       "name": "HP Inc",
       "score": 74,
@@ -169,8 +175,8 @@
       "market": "US"
     },
     {
-      "ticker": "TMO",
-      "name": "Thermo Fisher",
+      "ticker": "CRWD",
+      "name": "CrowdStrike",
       "score": 73,
       "market": "US"
     },
@@ -181,15 +187,15 @@
       "market": "US"
     },
     {
-      "ticker": "9984.T",
-      "name": "SoftBank Group",
-      "score": 72,
-      "market": "JP"
+      "ticker": "PAYTM.BO",
+      "name": "Paytm (One97)",
+      "score": 73,
+      "market": "IN"
     },
     {
-      "ticker": "CRWD",
-      "name": "CrowdStrike",
-      "score": 71,
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 72,
       "market": "US"
     },
     {
@@ -197,26 +203,20 @@
       "name": "JPMorgan Chase",
       "score": 71,
       "market": "US"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources",
-      "score": 71,
-      "market": "US"
     }
   ],
   "topMidCap": [
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 74,
+      "market": "US"
+    },
     {
       "ticker": "EZJ.L",
       "name": "easyJet",
       "score": 74,
       "market": "UK"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 73,
-      "market": "US"
     },
     {
       "ticker": "LTC",
@@ -237,18 +237,6 @@
       "market": "US"
     },
     {
-      "ticker": "BNZL.L",
-      "name": "Bunzl",
-      "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "TEP.PA",
-      "name": "Teleperformance",
-      "score": 70,
-      "market": "FR"
-    },
-    {
       "ticker": "PATH",
       "name": "UiPath",
       "score": 69,
@@ -261,34 +249,46 @@
       "market": "US"
     },
     {
-      "ticker": "BLND.L",
-      "name": "British Land",
-      "score": 68,
+      "ticker": "TATE.L",
+      "name": "Tate & Lyle",
+      "score": 67,
       "market": "UK"
+    },
+    {
+      "ticker": "OZK",
+      "name": "Bank OZK",
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "INSP",
+      "name": "Inspire Medical Systems",
+      "score": 66,
+      "market": "US"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "VCT.L",
       "name": "Victrex",
-      "score": 73,
+      "score": 70,
       "market": "UK"
     },
     {
       "ticker": "FDEV.L",
       "name": "Frontier Developments",
-      "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "HMSO.L",
-      "name": "Hammerson",
       "score": 68,
       "market": "UK"
     },
     {
       "ticker": "RWS.L",
       "name": "RWS Holdings",
+      "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 67,
       "market": "UK"
     },
@@ -299,37 +299,37 @@
       "market": "UK"
     },
     {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "ITRK.L",
-      "name": "Intertek Group",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 63,
-      "market": "UK"
-    },
-    {
       "ticker": "SFOR.L",
       "name": "S4 Capital",
-      "score": 63,
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "FRE.DE",
+      "name": "Fresenius",
+      "score": 66,
+      "market": "DE"
+    },
+    {
+      "ticker": "BYIT.L",
+      "name": "Bytes Technology",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "KNOS.L",
+      "name": "Kainos Group",
+      "score": 62,
+      "market": "UK"
+    },
+    {
+      "ticker": "JDW.L",
+      "name": "J D Wetherspoon",
+      "score": 62,
       "market": "UK"
     }
   ],
   "totalStocks": 859,
-  "avgScore": 52,
-  "bearishAlertCount": 319
+  "avgScore": 51,
+  "bearishAlertCount": 314
 }
