@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "SEIC",
+      "name": "SEI Investments",
+      "score": 80,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "EZJ.L",
       "name": "easyJet",
       "score": 80,
@@ -15,6 +22,41 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 79,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TRV",
+      "name": "Travelers",
+      "score": 78,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "score": 78,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AMC",
+      "name": "AMC Entertainment",
+      "score": 77,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "MTCH",
+      "name": "Match Group",
+      "score": 77,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "NWG.L",
       "name": "NatWest",
       "score": 77,
@@ -22,104 +64,41 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FRE.DE",
-      "name": "Fresenius",
+      "ticker": "DXCM",
+      "name": "DexCom",
       "score": 76,
-      "market": "DE",
+      "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "CS.PA",
-      "name": "AXA",
-      "score": 76,
-      "market": "FR",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 75,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "SMT.L",
-      "name": "Scottish Mortgage",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BME.L",
-      "name": "B&M European",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "HBR.L",
-      "name": "Harbour Energy",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "VCT.L",
-      "name": "Victrex",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CAVA",
       "name": "Cava Group",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "BLDR",
-      "name": "Builders FirstSource",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "JOBY",
       "name": "Joby Aviation",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings",
       "score": 26,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "SUI",
-      "name": "Sun Communities",
-      "score": 27,
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "DMART.BO",
@@ -129,21 +108,72 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "QS",
-      "name": "QuantumScape",
-      "score": 28,
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 29,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals",
-      "score": 28,
+      "ticker": "BYND",
+      "name": "Beyond Meat",
+      "score": 29,
       "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "0017.HK",
+      "name": "New World Development",
+      "score": 30,
+      "market": "HK",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "QS",
+      "name": "QuantumScape",
+      "score": 30,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "NIO",
+      "name": "NIO",
+      "score": 30,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "SEIC",
+      "name": "SEI Investments",
+      "score": 80,
+      "market": "US"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 79,
+      "market": "US"
+    },
+    {
+      "ticker": "TRV",
+      "name": "Travelers",
+      "score": 78,
+      "market": "US"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "score": 78,
+      "market": "US"
+    },
+    {
+      "ticker": "MTCH",
+      "name": "Match Group",
+      "score": 77,
+      "market": "US"
+    },
     {
       "ticker": "NWG.L",
       "name": "NatWest",
@@ -151,58 +181,28 @@
       "market": "UK"
     },
     {
-      "ticker": "FRE.DE",
-      "name": "Fresenius",
+      "ticker": "DXCM",
+      "name": "DexCom",
       "score": 76,
-      "market": "DE"
-    },
-    {
-      "ticker": "CS.PA",
-      "name": "AXA",
-      "score": 76,
-      "market": "FR"
-    },
-    {
-      "ticker": "SMT.L",
-      "name": "Scottish Mortgage",
-      "score": 74,
-      "market": "UK"
-    },
-    {
-      "ticker": "TTE.PA",
-      "name": "TotalEnergies",
-      "score": 74,
-      "market": "FR"
-    },
-    {
-      "ticker": "TRV",
-      "name": "Travelers",
-      "score": 73,
       "market": "US"
     },
     {
-      "ticker": "HPQ",
-      "name": "HP Inc",
-      "score": 73,
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb",
+      "score": 76,
       "market": "US"
     },
     {
-      "ticker": "STAN.L",
-      "name": "Standard Chartered",
-      "score": 73,
-      "market": "UK"
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "score": 76,
+      "market": "US"
     },
     {
-      "ticker": "DHL.DE",
-      "name": "DHL Group",
-      "score": 73,
-      "market": "DE"
-    },
-    {
-      "ticker": "9984.T",
-      "name": "SoftBank Group",
-      "score": 73,
-      "market": "JP"
+      "ticker": "IQV",
+      "name": "IQVIA Holdings",
+      "score": 76,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -211,6 +211,18 @@
       "name": "easyJet",
       "score": 80,
       "market": "UK"
+    },
+    {
+      "ticker": "AMC",
+      "name": "AMC Entertainment",
+      "score": 77,
+      "market": "US"
+    },
+    {
+      "ticker": "INSP",
+      "name": "Inspire Medical Systems",
+      "score": 75,
+      "market": "US"
     },
     {
       "ticker": "BME.L",
@@ -237,34 +249,22 @@
       "market": "FR"
     },
     {
+      "ticker": "OGN",
+      "name": "Organon & Co",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "CROX",
+      "name": "Crocs",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "FRAS.L",
       "name": "Frasers Group",
       "score": 72,
       "market": "UK"
-    },
-    {
-      "ticker": "QQ.L",
-      "name": "QinetiQ",
-      "score": 72,
-      "market": "UK"
-    },
-    {
-      "ticker": "MTCH",
-      "name": "Match Group",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "SBRY.L",
-      "name": "Sainsbury",
-      "score": 71,
-      "market": "UK"
-    },
-    {
-      "ticker": "QIA.DE",
-      "name": "Qiagen",
-      "score": 71,
-      "market": "DE"
     }
   ],
   "topSmallCap": [
@@ -273,6 +273,12 @@
       "name": "Bytes Technology",
       "score": 80,
       "market": "UK"
+    },
+    {
+      "ticker": "FRE.DE",
+      "name": "Fresenius",
+      "score": 76,
+      "market": "DE"
     },
     {
       "ticker": "CMCX.L",
@@ -285,6 +291,12 @@
       "name": "Victrex",
       "score": 74,
       "market": "UK"
+    },
+    {
+      "ticker": "ALV.DE",
+      "name": "Allianz",
+      "score": 73,
+      "market": "DE"
     },
     {
       "ticker": "FDEV.L",
@@ -315,21 +327,9 @@
       "name": "Supermarket Income REIT",
       "score": 69,
       "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "OCDO.L",
-      "name": "Ocado",
-      "score": 68,
-      "market": "UK"
     }
   ],
   "totalStocks": 859,
-  "avgScore": 53,
-  "bearishAlertCount": 330
+  "avgScore": 56,
+  "bearishAlertCount": 352
 }
