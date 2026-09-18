@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 77,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "HPQ",
       "name": "HP Inc",
       "score": 76,
@@ -18,6 +11,13 @@
       "ticker": "PSX",
       "name": "Phillips 66",
       "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "SMCI",
+      "name": "Super Micro",
+      "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
@@ -43,22 +43,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EZJ.L",
-      "name": "easyJet",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "BYIT.L",
-      "name": "Bytes Technology",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "TMO",
       "name": "Thermo Fisher",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -69,6 +62,13 @@
       "score": 73,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "SMT.L",
+      "name": "Scottish Mortgage",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -115,6 +115,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 27,
+      "market": "FR",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "XPEV",
       "name": "XPeng",
       "score": 27,
@@ -129,18 +136,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDM.L",
-      "name": "FDM Group",
+      "ticker": "WIZZ.L",
+      "name": "Wizz Air",
       "score": 29,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "BRBY.L",
-      "name": "Burberry",
-      "score": 29,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
@@ -154,6 +154,12 @@
       "ticker": "PSX",
       "name": "Phillips 66",
       "score": 75,
+      "market": "US"
+    },
+    {
+      "ticker": "SMCI",
+      "name": "Super Micro",
+      "score": 74,
       "market": "US"
     },
     {
@@ -181,37 +187,25 @@
       "market": "US"
     },
     {
-      "ticker": "CRWD",
-      "name": "CrowdStrike",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "SMCI",
-      "name": "Super Micro",
-      "score": 72,
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "score": 73,
       "market": "US"
     },
     {
       "ticker": "SMT.L",
       "name": "Scottish Mortgage",
-      "score": 72,
+      "score": 73,
       "market": "UK"
     },
     {
-      "ticker": "NUE",
-      "name": "Nucor",
-      "score": 71,
-      "market": "US"
+      "ticker": "NWG.L",
+      "name": "NatWest",
+      "score": 72,
+      "market": "UK"
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "EZJ.L",
-      "name": "easyJet",
-      "score": 74,
-      "market": "UK"
-    },
     {
       "ticker": "AMC",
       "name": "AMC Entertainment",
@@ -223,12 +217,6 @@
       "name": "Crocs",
       "score": 72,
       "market": "US"
-    },
-    {
-      "ticker": "ITRK.L",
-      "name": "Intertek Group",
-      "score": 72,
-      "market": "UK"
     },
     {
       "ticker": "LTC",
@@ -243,10 +231,10 @@
       "market": "US"
     },
     {
-      "ticker": "TEP.PA",
-      "name": "Teleperformance",
-      "score": 71,
-      "market": "FR"
+      "ticker": "EZJ.L",
+      "name": "easyJet",
+      "score": 70,
+      "market": "UK"
     },
     {
       "ticker": "OGN",
@@ -255,53 +243,77 @@
       "market": "US"
     },
     {
-      "ticker": "FRAS.L",
-      "name": "Frasers Group",
+      "ticker": "BME.L",
+      "name": "B&M European",
+      "score": 69,
+      "market": "UK"
+    },
+    {
+      "ticker": "TATE.L",
+      "name": "Tate & Lyle",
       "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "WPP.L",
-      "name": "WPP",
+      "ticker": "TEP.PA",
+      "name": "Teleperformance",
       "score": 67,
-      "market": "UK"
+      "market": "FR"
+    },
+    {
+      "ticker": "ARE",
+      "name": "Alexandria Real Estate",
+      "score": 66,
+      "market": "US"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 77,
-      "market": "UK"
-    },
-    {
       "ticker": "BYIT.L",
       "name": "Bytes Technology",
-      "score": 74,
+      "score": 72,
       "market": "UK"
     },
     {
       "ticker": "VCT.L",
       "name": "Victrex",
-      "score": 69,
+      "score": 70,
       "market": "UK"
     },
     {
-      "ticker": "RWS.L",
-      "name": "RWS Holdings",
+      "ticker": "FRE.DE",
+      "name": "Fresenius",
+      "score": 69,
+      "market": "DE"
+    },
+    {
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
       "score": 68,
       "market": "UK"
     },
     {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 65,
+      "ticker": "ALV.DE",
+      "name": "Allianz",
+      "score": 68,
+      "market": "DE"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "SFOR.L",
+      "name": "S4 Capital",
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "KNOS.L",
       "name": "Kainos Group",
-      "score": 64,
+      "score": 65,
       "market": "UK"
     },
     {
@@ -311,25 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
+      "ticker": "ITRK.L",
+      "name": "Intertek Group",
       "score": 63,
       "market": "UK"
-    },
-    {
-      "ticker": "SFOR.L",
-      "name": "S4 Capital",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "ML.PA",
-      "name": "Michelin",
-      "score": 63,
-      "market": "FR"
     }
   ],
   "totalStocks": 859,
   "avgScore": 52,
-  "bearishAlertCount": 304
+  "bearishAlertCount": 303
 }
