@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "SMCI",
-      "name": "Super Micro",
-      "score": 76,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "TEP.PA",
       "name": "Teleperformance",
       "score": 76,
@@ -29,8 +22,15 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "CRWD",
-      "name": "CrowdStrike",
+      "ticker": "SMCI",
+      "name": "Super Micro",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
@@ -57,15 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SNDK",
-      "name": "SanDisk",
+      "ticker": "PLTR",
+      "name": "Palantir",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "ALL",
+      "name": "Allstate",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -75,65 +75,44 @@
     {
       "ticker": "CAVA",
       "name": "Cava Group",
-      "score": 17,
+      "score": 19,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "ALB",
       "name": "Albemarle",
-      "score": 23,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ZG",
-      "name": "Zillow Group",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "BWXT",
       "name": "BWX Technologies",
-      "score": 24,
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "BLDR",
       "name": "Builders FirstSource",
-      "score": 24,
+      "score": 26,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 27,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "SUI",
       "name": "Sun Communities",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BBW",
-      "name": "Build-A-Bear Workshop",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "CIEN",
-      "name": "Ciena Corp",
       "score": 27,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "QS",
-      "name": "QuantumScape",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Mid"
     },
     {
       "ticker": "CELH",
@@ -141,18 +120,39 @@
       "score": 27,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "VIV.PA",
+      "name": "Vivendi",
+      "score": 28,
+      "market": "FR",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "PAH3.DE",
+      "name": "Porsche Auto Holding",
+      "score": 28,
+      "market": "DE",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corp",
+      "score": 28,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "SMCI",
       "name": "Super Micro",
-      "score": 76,
+      "score": 72,
       "market": "US"
     },
     {
-      "ticker": "CRWD",
-      "name": "CrowdStrike",
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
       "score": 71,
       "market": "US"
     },
@@ -169,40 +169,40 @@
       "market": "JP"
     },
     {
-      "ticker": "SNDK",
-      "name": "SanDisk",
+      "ticker": "PLTR",
+      "name": "Palantir",
       "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 69,
       "market": "US"
     },
     {
       "ticker": "ALL",
       "name": "Allstate",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike",
       "score": 69,
       "market": "US"
     },
     {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
+      "ticker": "U",
+      "name": "Unity Software",
       "score": 69,
       "market": "US"
     },
     {
-      "ticker": "SMT.L",
-      "name": "Scottish Mortgage",
+      "ticker": "DELL",
+      "name": "Dell Technologies",
       "score": 69,
-      "market": "UK"
+      "market": "US"
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "score": 69,
+      "market": "US"
     }
   ],
   "topMidCap": [
@@ -217,12 +217,6 @@
       "name": "easyJet",
       "score": 75,
       "market": "UK"
-    },
-    {
-      "ticker": "AMC",
-      "name": "AMC Entertainment",
-      "score": 69,
-      "market": "US"
     },
     {
       "ticker": "OGN",
@@ -243,6 +237,12 @@
       "market": "UK"
     },
     {
+      "ticker": "CROX",
+      "name": "Crocs",
+      "score": 68,
+      "market": "US"
+    },
+    {
       "ticker": "SDR.L",
       "name": "Schroders",
       "score": 68,
@@ -261,10 +261,10 @@
       "market": "UK"
     },
     {
-      "ticker": "BME.L",
-      "name": "B&M European",
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
       "score": 67,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -311,6 +311,12 @@
       "market": "DE"
     },
     {
+      "ticker": "INSP",
+      "name": "Inspire Medical Systems",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "ONT.L",
       "name": "Oxford Nanopore",
       "score": 67,
@@ -321,15 +327,9 @@
       "name": "Victrex",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "CKN.L",
-      "name": "Chemring Group",
-      "score": 67,
-      "market": "UK"
     }
   ],
   "totalStocks": 859,
-  "avgScore": 51,
-  "bearishAlertCount": 315
+  "avgScore": 52,
+  "bearishAlertCount": 325
 }
