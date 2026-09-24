@@ -8,6 +8,7 @@ import type { VolumeProfileData } from '../indicators/technical.js';
 import type { MacroData } from '../indicators/macro.js';
 import type { SocialSentiment } from '../news/social-sentiment.js';
 import type { OnlinePick, OnlinePicksOutput } from '../research/online-picks.js';
+import type { BigInvestorsData } from '../research/big-investors.js';
 import path from 'path';
 
 export interface StockRecord {
@@ -238,6 +239,7 @@ export function writeOutputs(
   macroData?: MacroData | null,
   redditSentimentMap?: Map<string, SocialSentiment>,
   onlinePicks?: OnlinePick[],
+  bigInvestors?: BigInvestorsData | null,
 ) {
   const dataDir = CONFIG.dataDir;
   mkdirSync(dataDir, { recursive: true });
@@ -452,6 +454,17 @@ export function writeOutputs(
       JSON.stringify(output, null, 2)
     );
     console.log(`Wrote online-picks.json with ${onlinePicks.length} picks`);
+  }
+
+  // big-investors.json — 13F superinvestor holdings + congressional trades
+  if (bigInvestors && (bigInvestors.superinvestors.length > 0 || bigInvestors.politicians.length > 0)) {
+    writeFileSync(
+      path.join(dataDir, 'big-investors.json'),
+      JSON.stringify(bigInvestors)
+    );
+    console.log(
+      `Wrote big-investors.json — ${bigInvestors.superinvestors.length} funds, ${bigInvestors.politicians.length} politicians`
+    );
   }
 
   // Score history — daily composite scores per ticker (last 90 days)

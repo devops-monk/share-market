@@ -473,6 +473,12 @@ function DashboardTab() {
             when="Use for medium/long-term investing. These stocks have proven track records but aren't at their peak price right now."
           />
           <PageCard
+            name="Big Investors"
+            path="/big-investors"
+            desc="What famous fund managers and members of Congress are buying. Quarterly SEC 13F filings show each manager's US stock positions — new buys, added to, trimmed and sold out versus the previous quarter — alongside stock trades disclosed by politicians under the STOCK Act."
+            when="Use for idea generation, not entries. Both sources are delayed (13F by up to 45 days after quarter end), so treat a name several investors bought as a research starting point, then check its own score and trend."
+          />
+          <PageCard
             name="Most Owned"
             path="/most-owned"
             desc="Shows the most popular stocks among institutional investors (mutual funds, hedge funds) that are currently trading at a discount. Identifies stocks the smart money loves but that are temporarily on sale."
