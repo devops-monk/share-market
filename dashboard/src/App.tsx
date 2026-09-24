@@ -44,7 +44,6 @@ const IndicatorBuilder = lazy(() => import('./pages/IndicatorBuilder'));
 const OnlinePicks = lazy(() => import('./pages/OnlinePicks'));
 const FallenStocks = lazy(() => import('./pages/FallenStocks'));
 const RisingStocks = lazy(() => import('./pages/RisingStocks'));
-const BigInvestors = lazy(() => import('./pages/BigInvestors'));
 
 const PageSpinner = () => (
   <div className="flex items-center justify-center py-20">
@@ -56,7 +55,7 @@ const PageSpinner = () => (
 );
 
 export default function App() {
-  const { stocks: rawStocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, aiResearchNotes, macroData, socialSentiment, onlinePicks, bigInvestors, loading } = useStockData();
+  const { stocks: rawStocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, aiResearchNotes, macroData, socialSentiment, onlinePicks, loading } = useStockData();
   const { theme, toggle } = useTheme();
   const offlineStatus = useOfflineStatus();
   const { pulling, pullDistance, threshold } = usePullToRefresh();
@@ -153,7 +152,6 @@ export default function App() {
             <Route path="/online-picks" element={<OnlinePicks stocks={stocks} onlinePicks={onlinePicks} />} />
             <Route path="/fallen" element={<FallenStocks stocks={stocks} />} />
             <Route path="/rising" element={<RisingStocks stocks={stocks} />} />
-            <Route path="/big-investors" element={<BigInvestors stocks={stocks} bigInvestors={bigInvestors} />} />
             <Route path="/alerts" element={<AlertSettings />} />
           </Routes>
         </Suspense>

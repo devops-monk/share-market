@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import type { StockRecord, SummaryData, NewsItem, Metadata, InsiderTradesMap, MacroData, SocialSentimentMap, OnlinePicksData, BigInvestorsData } from '../types';
+import type { StockRecord, SummaryData, NewsItem, Metadata, InsiderTradesMap, MacroData, SocialSentimentMap, OnlinePicksData } from '../types';
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -38,7 +38,6 @@ export function useStockData() {
   const [macroData, setMacroData] = useState<MacroData | null>(null);
   const [socialSentiment, setSocialSentiment] = useState<SocialSentimentMap | null>(null);
   const [onlinePicks, setOnlinePicks] = useState<OnlinePicksData | null>(null);
-  const [bigInvestors, setBigInvestors] = useState<BigInvestorsData | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -55,8 +54,7 @@ export function useStockData() {
       fetchJson<MacroData>('macro.json'),
       fetchJson<SocialSentimentMap>('social-sentiment.json'),
       fetchJson<OnlinePicksData>('online-picks.json'),
-      fetchJson<BigInvestorsData>('big-investors.json'),
-    ]).then(([s, sum, ba, n, m, sh, fin, insider, aiNotes, macro, social, picks, investors]) => {
+    ]).then(([s, sum, ba, n, m, sh, fin, insider, aiNotes, macro, social, picks]) => {
       setStocks(s || []);
       setSummary(sum || null);
       setBearishAlerts(ba || []);
@@ -69,7 +67,6 @@ export function useStockData() {
       setMacroData(macro || null);
       setSocialSentiment(social || null);
       setOnlinePicks(picks || null);
-      setBigInvestors(investors || null);
     }).catch(err => {
       console.error('Failed to load stock data:', err);
     }).finally(() => {
@@ -77,5 +74,5 @@ export function useStockData() {
     });
   }, []);
 
-  return { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, aiResearchNotes, macroData, socialSentiment, onlinePicks, bigInvestors, loading };
+  return { stocks, summary, bearishAlerts, news, metadata, scoreHistory, financials, insiderTrades, aiResearchNotes, macroData, socialSentiment, onlinePicks, loading };
 }

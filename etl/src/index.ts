@@ -18,7 +18,6 @@ import { generateAIResearchNotes, resolveLLMProvider } from './ai/research-notes
 import { fetchFinancials } from './fundamentals/financials.js';
 import { fetchInsiderTrades } from './insider/edgar.js';
 import { fetchOnlinePicks } from './research/online-picks.js';
-import { fetchBigInvestors } from './research/big-investors.js';
 import { CONFIG } from './config.js';
 import { readFileSync } from 'fs';
 import path from 'path';
@@ -110,7 +109,7 @@ async function main() {
     await probeFinBERT(huggingFaceApiKey);
   }
 
-  const [, marketRegime, macroData, redditSentimentMap, insiderTradesMap, financialsMap, onlinePicksList, bigInvestors] = await Promise.all([
+  const [, marketRegime, macroData, redditSentimentMap, insiderTradesMap, financialsMap, onlinePicksList] = await Promise.all([
     // 1. News + FinBERT sentiment (120s timeout)
     withTimeout('News + sentiment', () =>
       Promise.all(
@@ -158,12 +157,6 @@ async function main() {
       fetchOnlinePicks(allTickers),
       60_000,
       [],
-    ),
-    // 8. Big investors — 13F holdings + congressional trades (300s timeout)
-    withTimeout('Big investors', () =>
-      fetchBigInvestors(allTickers),
-      300_000,
-      null,
     ),
   ]);
 
@@ -743,7 +736,7 @@ async function main() {
   }
 
   // Step 5: Write outputs
-  writeOutputs(stockRecords, allNews, bearishAlerts, ohlcvRecords, marketRegime, financialsMap, insiderTradesMap, aiResearchNotes, macroData, redditSentimentMap, onlinePicksList ?? [], bigInvestors ?? null);
+  writeOutputs(stockRecords, allNews, bearishAlerts, ohlcvRecords, marketRegime, financialsMap, insiderTradesMap, aiResearchNotes, macroData, redditSentimentMap, onlinePicksList ?? []);
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`ETL completed in ${elapsed}s`);

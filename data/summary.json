@@ -1,16 +1,9 @@
 {
   "topOverall": [
     {
-      "ticker": "EZJ.L",
-      "name": "easyJet",
-      "score": 76,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "SMCI",
       "name": "Super Micro",
-      "score": 75,
+      "score": 77,
       "market": "US",
       "capCategory": "Large"
     },
@@ -22,18 +15,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "TATE.L",
-      "name": "Tate & Lyle",
+      "ticker": "EZJ.L",
+      "name": "easyJet",
       "score": 73,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "ALL",
@@ -43,11 +36,11 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
+      "ticker": "NTRA",
+      "name": "Natera",
       "score": 72,
-      "market": "UK",
-      "capCategory": "Mid"
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "9984.T",
@@ -57,18 +50,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 71,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "IQV",
+      "name": "IQVIA Holdings",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
@@ -115,6 +115,13 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "FMC",
+      "name": "FMC Corp",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "CELH",
       "name": "Celsius Holdings",
       "score": 27,
@@ -134,20 +141,13 @@
       "score": 28,
       "market": "US",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "QS",
-      "name": "QuantumScape",
-      "score": 28,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "SMCI",
       "name": "Super Micro",
-      "score": 75,
+      "score": 77,
       "market": "US"
     },
     {
@@ -157,8 +157,20 @@
       "market": "US"
     },
     {
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "ALL",
       "name": "Allstate",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "NTRA",
+      "name": "Natera",
       "score": 72,
       "market": "US"
     },
@@ -167,12 +179,6 @@
       "name": "SoftBank Group",
       "score": 72,
       "market": "JP"
-    },
-    {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 71,
-      "market": "US"
     },
     {
       "ticker": "IQV",
@@ -193,12 +199,6 @@
       "market": "US"
     },
     {
-      "ticker": "NTRA",
-      "name": "Natera",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "FROG",
       "name": "JFrog",
       "score": 70,
@@ -209,19 +209,7 @@
     {
       "ticker": "EZJ.L",
       "name": "easyJet",
-      "score": 76,
-      "market": "UK"
-    },
-    {
-      "ticker": "TATE.L",
-      "name": "Tate & Lyle",
       "score": 73,
-      "market": "UK"
-    },
-    {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 72,
       "market": "UK"
     },
     {
@@ -231,16 +219,16 @@
       "market": "US"
     },
     {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 70,
-      "market": "UK"
-    },
-    {
       "ticker": "TEP.PA",
       "name": "Teleperformance",
       "score": 70,
       "market": "FR"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 69,
+      "market": "US"
     },
     {
       "ticker": "OGN",
@@ -249,71 +237,65 @@
       "market": "US"
     },
     {
-      "ticker": "BME.L",
-      "name": "B&M European",
-      "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 68,
-      "market": "US"
-    },
-    {
       "ticker": "DUOL",
       "name": "Duolingo",
       "score": 68,
       "market": "US"
+    },
+    {
+      "ticker": "AMC",
+      "name": "AMC Entertainment",
+      "score": 67,
+      "market": "US"
+    },
+    {
+      "ticker": "TATE.L",
+      "name": "Tate & Lyle",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "GTLB",
+      "name": "GitLab",
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "BME.L",
+      "name": "B&M European",
+      "score": 66,
+      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "FDEV.L",
       "name": "Frontier Developments",
-      "score": 74,
-      "market": "UK"
-    },
-    {
-      "ticker": "RWS.L",
-      "name": "RWS Holdings",
-      "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "ITRK.L",
-      "name": "Intertek Group",
-      "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "BYIT.L",
-      "name": "Bytes Technology",
       "score": 69,
       "market": "UK"
     },
     {
       "ticker": "FOUR.L",
       "name": "4imprint",
-      "score": 68,
+      "score": 67,
       "market": "UK"
     },
     {
       "ticker": "GRG.L",
       "name": "Greggs",
-      "score": 67,
+      "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "VCT.L",
-      "name": "Victrex",
+      "ticker": "BYIT.L",
+      "name": "Bytes Technology",
       "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "KNOS.L",
-      "name": "Kainos Group",
-      "score": 64,
+      "ticker": "RWS.L",
+      "name": "RWS Holdings",
+      "score": 65,
       "market": "UK"
     },
     {
@@ -323,13 +305,31 @@
       "market": "UK"
     },
     {
-      "ticker": "CARD.L",
-      "name": "Card Factory",
+      "ticker": "VCT.L",
+      "name": "Victrex",
       "score": 64,
+      "market": "UK"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "CKN.L",
+      "name": "Chemring Group",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "ITM.L",
+      "name": "ITM Power",
+      "score": 62,
       "market": "UK"
     }
   ],
   "totalStocks": 859,
   "avgScore": 52,
-  "bearishAlertCount": 327
+  "bearishAlertCount": 328
 }
