@@ -53,6 +53,7 @@ const navGroups: NavGroup[] = [
     label: 'Signals',
     items: [
       { path: '/online-picks', label: 'Online Picks', desc: 'Analyst, broker & community stock picks' },
+      { path: '/big-investors', label: 'Big Investors', desc: 'What superinvestors & Congress are buying' },
       { path: '/fallen', label: 'Fallen Stocks', desc: 'Stocks down today — dips, oversold & dividend bargains' },
       { path: '/rising', label: 'Rising Stocks', desc: 'Stocks up today — momentum, breakouts & dividend gainers' },
       { path: '/bearish', label: 'Bearish', desc: 'Stocks with warning signals' },
