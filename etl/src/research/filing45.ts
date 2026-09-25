@@ -106,11 +106,21 @@ export async function fetchFiling45Funds(known: Set<string>): Promise<Superinves
   const funds = await get<ApiFund[]>('/funds?limit=300');
   if (!funds?.length) return [];
 
-  console.log(`  Filing45: ${funds.length} funds listed, detailing the largest ${Math.min(FUNDS_TO_DETAIL, funds.length)}`);
+  // The API ranks by portfolio value, which buries the people this page is
+  // about: Burry sits at #122 and Ackman at #101, behind anonymous index
+  // managers running hundreds of billions. A named manager is the marker of a
+  // fund anyone follows by name, so those come first, each half by size.
+  const ranked = [...funds].sort((a, b) => {
+    const named = Number(Boolean(b.manager)) - Number(Boolean(a.manager));
+    return named || num(b.portfolio_value) - num(a.portfolio_value);
+  });
+
+  const named = ranked.filter(f => f.manager).length;
+  console.log(`  Filing45: ${funds.length} funds listed (${named} with a named manager), detailing the first ${Math.min(FUNDS_TO_DETAIL, ranked.length)}`);
   const staleBefore = Date.now() - 200 * 24 * 60 * 60 * 1000;   // two quarters without a filing
   const out: Superinvestor[] = [];
 
-  for (const fund of funds.slice(0, FUNDS_TO_DETAIL)) {
+  for (const fund of ranked.slice(0, FUNDS_TO_DETAIL)) {
     const detail = await get<ApiFund & { holdings: ApiHolding[]; filing_url: string }>(`/funds/${fund.slug}`);
     if (!detail) continue;
 
@@ -245,7 +255,7 @@ export interface ExecutiveOfficial {
   transactions: ExecutiveTransaction[];
 }
 
-interface ApiOfficial { slug: string; full_name: string; role: string; transaction_count: number; last_filed: string | null }
+interface ApiOfficial { slug: string; full_name: string; role: string | null; transaction_count: number; last_filed: string | null }
 interface ApiOfficialTrade {
   asset_name: string; transaction_type: string; transaction_date: string | null; filed_date: string;
   amount_min: string | number | null; amount_max: string | number | null; amount_range: string | null;
@@ -264,7 +274,7 @@ export async function fetchFiling45Executive(): Promise<ExecutiveOfficial[]> {
     out.push({
       id: person.slug,
       name: person.full_name,
-      role: person.role,
+      role: person.role ?? 'Executive branch',
       profileUrl: `https://filing45.devops-monk.com/executive/${person.slug}`,
       transactionCount: person.transaction_count,
       lastFiled: person.last_filed,
