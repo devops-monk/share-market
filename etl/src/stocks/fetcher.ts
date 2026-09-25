@@ -61,6 +61,12 @@ export interface QuoteData {
   averageAnalystRating: string | null;
   earningsDate: string | null;
   dividendHistory: { date: number; amount: number }[];
+  // Dividend schedule & sustainability (quoteSummary summaryDetail/calendarEvents)
+  payoutRatio: number | null;
+  exDividendDate: string | null;
+  dividendPayDate: string | null;
+  fiveYearAvgDividendYield: number | null;
+  trailingAnnualDividendRate: number | null;
   // ESG Scores (from Yahoo quoteSummary esgScores module)
   esgScore: number | null;
   esgEnvironment: number | null;
@@ -226,6 +232,12 @@ interface QuoteSummaryData {
   esgSocial: number | null;
   esgGovernance: number | null;
   esgPercentile: number | null;
+  // Dividend schedule & sustainability
+  payoutRatio: number | null;              // 0-1
+  exDividendDate: string | null;           // YYYY-MM-DD — own it before this to be paid
+  dividendPayDate: string | null;          // YYYY-MM-DD
+  fiveYearAvgDividendYield: number | null; // %, for comparing today's yield to its own history
+  trailingAnnualDividendRate: number | null;
 }
 
 // Yahoo v7 quote API requires a crumb + cookie pair. Get it once per run.
@@ -335,27 +347,40 @@ async function fetchYahooFundamentalsBatch(tickers: string[]): Promise<Map<strin
 
 // ---------- Yahoo quoteSummary (detailed fundamentals per stock) ----------
 
+// The dividend schedule lives in summaryDetail/calendarEvents. If Yahoo ever
+// rejects the longer module list we drop back to the original one for the rest
+// of the run rather than losing every fundamental to a 400.
+const QUOTE_SUMMARY_MODULES_BASE = 'defaultKeyStatistics,financialData,majorHoldersBreakdown,esgScores';
+const QUOTE_SUMMARY_MODULES_FULL = `${QUOTE_SUMMARY_MODULES_BASE},summaryDetail,calendarEvents`;
+
 async function fetchQuoteSummaryBatch(tickers: string[]): Promise<Map<string, QuoteSummaryData>> {
   const result = new Map<string, QuoteSummaryData>();
   const auth = await getYahooCrumb();
   if (!auth) return result;
 
+  let modules = QUOTE_SUMMARY_MODULES_FULL;
   const limit = pLimit(8);
 
   await Promise.all(
     tickers.map(ticker =>
       limit(async () => {
         const encoded = encodeURIComponent(ticker);
-        const url = `https://query2.finance.yahoo.com/v10/finance/quoteSummary/${encoded}?modules=defaultKeyStatistics,financialData,majorHoldersBreakdown,esgScores&crumb=${encodeURIComponent(auth.crumb)}`;
+        const buildUrl = () =>
+          `https://query2.finance.yahoo.com/v10/finance/quoteSummary/${encoded}?modules=${modules}&crumb=${encodeURIComponent(auth.crumb)}`;
 
         for (let attempt = 0; attempt < 2; attempt++) {
           try {
-            const res = await fetch(url, {
+            const res = await fetch(buildUrl(), {
               headers: { 'User-Agent': UA, 'Cookie': auth.cookie },
             });
             if (res.status === 429) {
               await delay((attempt + 1) * 2000);
               continue;
+            }
+            if (res.status === 400 && modules === QUOTE_SUMMARY_MODULES_FULL) {
+              console.warn('  Yahoo rejected the dividend modules — falling back to the base set');
+              modules = QUOTE_SUMMARY_MODULES_BASE;
+              continue;   // retry this ticker with the safe list
             }
             if (!res.ok) break;
 
@@ -367,6 +392,16 @@ async function fetchQuoteSummaryBatch(tickers: string[]): Promise<Map<string, Qu
             const fd = r.financialData ?? {};
             const mh = r.majorHoldersBreakdown ?? {};
             const esg = r.esgScores ?? {};
+            const sd = r.summaryDetail ?? {};
+            const ce = r.calendarEvents ?? {};
+
+            // Yahoo gives these as epoch seconds; prefer summaryDetail and fall
+            // back to the calendar module, which is sometimes the only one set.
+            const epochToDate = (v: any): string | null => {
+              const raw = v?.raw;
+              if (typeof raw !== 'number' || raw <= 0) return null;
+              return new Date(raw * 1000).toISOString().slice(0, 10);
+            };
 
             // targetMeanPrice is in trading currency (GBp for .L stocks)
             const cur: string = fd.financialCurrency ?? fd.currency ?? '';
@@ -399,6 +434,11 @@ async function fetchQuoteSummaryBatch(tickers: string[]): Promise<Map<string, Qu
               esgSocial: esg.socialScore?.raw ?? null,
               esgGovernance: esg.governanceScore?.raw ?? null,
               esgPercentile: esg.percentile?.raw ?? null,
+              payoutRatio: sd.payoutRatio?.raw ?? null,
+              exDividendDate: epochToDate(sd.exDividendDate) ?? epochToDate(ce.exDividendDate),
+              dividendPayDate: epochToDate(ce.dividendDate) ?? epochToDate(sd.dividendDate),
+              fiveYearAvgDividendYield: sd.fiveYearAvgDividendYield?.raw ?? null,
+              trailingAnnualDividendRate: sd.trailingAnnualDividendRate?.raw ?? null,
             });
             break;
           } catch {
@@ -663,6 +703,11 @@ export async function fetchAllStocks(stocks: StockMeta[]): Promise<QuoteData[]> 
         return d.toISOString().slice(0, 10);
       })(),
       dividendHistory: chart.dividends,
+      payoutRatio: summary?.payoutRatio ?? null,
+      exDividendDate: summary?.exDividendDate ?? null,
+      dividendPayDate: summary?.dividendPayDate ?? null,
+      fiveYearAvgDividendYield: summary?.fiveYearAvgDividendYield ?? null,
+      trailingAnnualDividendRate: summary?.trailingAnnualDividendRate ?? null,
       // ESG Scores
       esgScore: summary?.esgScore ?? null,
       esgEnvironment: summary?.esgEnvironment ?? null,

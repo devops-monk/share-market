@@ -286,6 +286,12 @@ export interface StockRecord {
   earningsDate: string | null;
   dcfValue: number | null;
   dividendMetrics?: DividendMetrics | null;
+  // Dividend schedule & sustainability (optional until the ETL has run again)
+  payoutRatio?: number | null;
+  exDividendDate?: string | null;
+  dividendPayDate?: string | null;
+  fiveYearAvgDividendYield?: number | null;
+  trailingAnnualDividendRate?: number | null;
   // N17: Beneish M-Score
   beneishMScore: number | null;
   beneishZone: 'unlikely' | 'possible' | 'likely' | null;
@@ -365,12 +371,24 @@ export interface InsiderSummary {
 
 export type InsiderTradesMap = Record<string, InsiderSummary>;
 
+export interface DividendPayment {
+  date: string;   // ex-dividend date, YYYY-MM-DD
+  amount: number;
+}
+
 export interface DividendMetrics {
-  annualDividends: { year: number; totalDPS: number }[];
+  annualDividends: { year: number; totalDPS: number; payments?: number }[];
   currentAnnualDPS: number | null;
   fiveYearCAGR: number | null;
   growthStreak: number;
   payoutConsistency: number;
+  // Payment schedule — added by a later ETL version, so optional
+  ttmDPS?: number | null;
+  paymentsPerYear?: number;
+  frequency?: 'monthly' | 'quarterly' | 'semi-annual' | 'annual' | 'irregular' | 'unknown';
+  recentPayments?: DividendPayment[];
+  lastExDate?: string | null;
+  nextExDateEstimate?: string | null;
 }
 
 export interface Signal {

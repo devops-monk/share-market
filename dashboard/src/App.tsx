@@ -45,6 +45,7 @@ const OnlinePicks = lazy(() => import('./pages/OnlinePicks'));
 const FallenStocks = lazy(() => import('./pages/FallenStocks'));
 const RisingStocks = lazy(() => import('./pages/RisingStocks'));
 const BigInvestors = lazy(() => import('./pages/BigInvestors'));
+const Dividends = lazy(() => import('./pages/Dividends'));
 
 const PageSpinner = () => (
   <div className="flex items-center justify-center py-20">
@@ -154,6 +155,7 @@ export default function App() {
             <Route path="/fallen" element={<FallenStocks stocks={stocks} />} />
             <Route path="/rising" element={<RisingStocks stocks={stocks} />} />
             <Route path="/big-investors" element={<BigInvestors stocks={stocks} bigInvestors={bigInvestors} />} />
+            <Route path="/dividends" element={<Dividends stocks={stocks} />} />
             <Route path="/alerts" element={<AlertSettings />} />
           </Routes>
         </Suspense>

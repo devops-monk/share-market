@@ -46,6 +46,7 @@ const navGroups: NavGroup[] = [
       { path: '/query', label: 'NL Query', desc: 'Search stocks in plain English' },
       { path: '/weighted-screener', label: 'Weighted', desc: 'Custom-weight stock ranking' },
       { path: '/economic-calendar', label: 'Econ Calendar', desc: 'FOMC, CPI, NFP, GDP dates' },
+      { path: '/dividends', label: 'Dividends', desc: 'Ranked dividend payers & ex-date calendar' },
       { path: '/indicator-builder', label: 'AI Builder', desc: 'Build screens with AI' },
     ],
   },

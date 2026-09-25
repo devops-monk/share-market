@@ -473,6 +473,12 @@ function DashboardTab() {
             when="Use for medium/long-term investing. These stocks have proven track records but aren't at their peak price right now."
           />
           <PageCard
+            name="Dividends"
+            path="/dividends"
+            desc="Every dividend payer we track, ranked by a score that blends yield, safety (payout ratio, cash cover, debt), growth (years of rises and their rate) and consistency. Three presets reweight it for Income, Dividend Growth or Balanced. Shows how much each pays, how often, and the upcoming ex-dividend dates."
+            when="Use when you want income rather than price gains. Remember you must own the stock before its ex-dividend date to be paid, and that a yield above ~8% is usually the market predicting a cut, not free money."
+          />
+          <PageCard
             name="Big Investors"
             path="/big-investors"
             desc="What famous fund managers and members of Congress are buying. Quarterly SEC 13F filings show each manager's US stock positions — new buys, added to, trimmed and sold out versus the previous quarter — alongside stock trades disclosed by politicians under the STOCK Act."

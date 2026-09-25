@@ -526,6 +526,11 @@ async function main() {
       // Earnings date
       earningsDate: quote.earningsDate,
       dividendMetrics,
+      payoutRatio: quote.payoutRatio,
+      exDividendDate: quote.exDividendDate,
+      dividendPayDate: quote.dividendPayDate,
+      fiveYearAvgDividendYield: quote.fiveYearAvgDividendYield,
+      trailingAnnualDividendRate: quote.trailingAnnualDividendRate,
       // N17: Beneish M-Score
       beneishMScore,
       beneishZone,

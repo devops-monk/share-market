@@ -176,7 +176,19 @@ export interface StockRecord {
     fiveYearCAGR: number | null;
     growthStreak: number;
     payoutConsistency: number;
+    ttmDPS: number | null;
+    paymentsPerYear: number;
+    frequency: string;
+    recentPayments: { date: string; amount: number }[];
+    lastExDate: string | null;
+    nextExDateEstimate: string | null;
   } | null;
+  // Dividend schedule & sustainability
+  payoutRatio: number | null;
+  exDividendDate: string | null;
+  dividendPayDate: string | null;
+  fiveYearAvgDividendYield: number | null;
+  trailingAnnualDividendRate: number | null;
   // N17: Beneish M-Score
   beneishMScore: number | null;
   beneishZone: 'unlikely' | 'possible' | 'likely' | null;
