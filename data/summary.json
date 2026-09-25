@@ -1,16 +1,16 @@
 {
   "topOverall": [
     {
-      "ticker": "SMCI",
-      "name": "Super Micro",
-      "score": 77,
+      "ticker": "GDDY",
+      "name": "GoDaddy",
+      "score": 74,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GDDY",
-      "name": "GoDaddy",
-      "score": 75,
+      "ticker": "SMCI",
+      "name": "Super Micro",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     },
@@ -22,31 +22,24 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
+      "ticker": "BYIT.L",
+      "name": "Bytes Technology",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "TEP.PA",
+      "name": "Teleperformance",
+      "score": 73,
+      "market": "FR",
+      "capCategory": "Mid"
     },
     {
       "ticker": "ALL",
       "name": "Allstate",
-      "score": 72,
+      "score": 71,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "NTRA",
-      "name": "Natera",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "9984.T",
-      "name": "SoftBank Group",
-      "score": 72,
-      "market": "JP",
       "capCategory": "Large"
     },
     {
@@ -64,8 +57,15 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "U",
+      "name": "Unity Software",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
@@ -73,16 +73,9 @@
   ],
   "bottomOverall": [
     {
-      "ticker": "CAVA",
-      "name": "Cava Group",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "ALB",
       "name": "Albemarle",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
@@ -94,9 +87,16 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "CAVA",
+      "name": "Cava Group",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "CIEN",
       "name": "Ciena Corp",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
@@ -115,13 +115,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FMC",
-      "name": "FMC Corp",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "CELH",
       "name": "Celsius Holdings",
       "score": 27,
@@ -129,11 +122,11 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "VIV.PA",
-      "name": "Vivendi",
+      "ticker": "PAH3.DE",
+      "name": "Porsche Auto Holding",
       "score": 28,
-      "market": "FR",
-      "capCategory": "Small"
+      "market": "DE",
+      "capCategory": "Mid"
     },
     {
       "ticker": "BYND",
@@ -141,49 +134,50 @@
       "score": 28,
       "market": "US",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "QS",
+      "name": "QuantumScape",
+      "score": 28,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "SMCI",
-      "name": "Super Micro",
-      "score": 77,
-      "market": "US"
-    },
-    {
       "ticker": "GDDY",
       "name": "GoDaddy",
-      "score": 75,
+      "score": 74,
       "market": "US"
     },
     {
-      "ticker": "U",
-      "name": "Unity Software",
-      "score": 72,
+      "ticker": "SMCI",
+      "name": "Super Micro",
+      "score": 73,
       "market": "US"
     },
     {
       "ticker": "ALL",
       "name": "Allstate",
-      "score": 72,
+      "score": 71,
       "market": "US"
-    },
-    {
-      "ticker": "NTRA",
-      "name": "Natera",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "9984.T",
-      "name": "SoftBank Group",
-      "score": 72,
-      "market": "JP"
     },
     {
       "ticker": "IQV",
       "name": "IQVIA Holdings",
       "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "score": 70,
       "market": "US"
     },
     {
@@ -199,9 +193,15 @@
       "market": "US"
     },
     {
-      "ticker": "FROG",
-      "name": "JFrog",
+      "ticker": "NTRA",
+      "name": "Natera",
       "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "score": 69,
       "market": "US"
     }
   ],
@@ -213,27 +213,33 @@
       "market": "UK"
     },
     {
+      "ticker": "TEP.PA",
+      "name": "Teleperformance",
+      "score": 73,
+      "market": "FR"
+    },
+    {
       "ticker": "LTC",
       "name": "LTC Properties",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "TEP.PA",
-      "name": "Teleperformance",
+      "ticker": "FRAS.L",
+      "name": "Frasers Group",
       "score": 70,
-      "market": "FR"
-    },
-    {
-      "ticker": "ZION",
-      "name": "Zions Bancorporation",
-      "score": 69,
-      "market": "US"
+      "market": "UK"
     },
     {
       "ticker": "OGN",
       "name": "Organon & Co",
       "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation",
+      "score": 68,
       "market": "US"
     },
     {
@@ -249,28 +255,34 @@
       "market": "US"
     },
     {
-      "ticker": "TATE.L",
-      "name": "Tate & Lyle",
-      "score": 67,
-      "market": "UK"
-    },
-    {
       "ticker": "GTLB",
       "name": "GitLab",
       "score": 66,
       "market": "US"
     },
     {
-      "ticker": "BME.L",
-      "name": "B&M European",
+      "ticker": "VRNS",
+      "name": "Varonis Systems",
       "score": 66,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "topSmallCap": [
     {
+      "ticker": "BYIT.L",
+      "name": "Bytes Technology",
+      "score": 73,
+      "market": "UK"
+    },
+    {
       "ticker": "FDEV.L",
       "name": "Frontier Developments",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "JDW.L",
+      "name": "J D Wetherspoon",
       "score": 69,
       "market": "UK"
     },
@@ -281,14 +293,20 @@
       "market": "UK"
     },
     {
-      "ticker": "GRG.L",
-      "name": "Greggs",
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "BYIT.L",
-      "name": "Bytes Technology",
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "ONT.L",
+      "name": "Oxford Nanopore",
       "score": 65,
       "market": "UK"
     },
@@ -299,37 +317,19 @@
       "market": "UK"
     },
     {
-      "ticker": "MONY.L",
-      "name": "Moneysupermarket.com",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "VCT.L",
       "name": "Victrex",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 63,
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "ITM.L",
-      "name": "ITM Power",
-      "score": 62,
+      "score": 65,
       "market": "UK"
     }
   ],
   "totalStocks": 859,
   "avgScore": 52,
-  "bearishAlertCount": 328
+  "bearishAlertCount": 324
 }
