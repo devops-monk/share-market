@@ -36,6 +36,8 @@ jobs:
           HUGGINGFACE_API_KEY: ${{ secrets.HUGGINGFACE_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          # Filing45 supplies the Big Investors page; without it the scrapers run instead
+          FILING45_TOKEN: ${{ secrets.FILING45_TOKEN }}
         run: npm run etl
 
       - name: Check and send alerts

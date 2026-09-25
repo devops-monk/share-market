@@ -1,14 +1,17 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import type {
-  BigInvestorsData, InvestorHolding, Politician, PoliticianTrade, StockRecord, Superinvestor,
+  BigInvestorsData, ExecutiveOfficial, InvestorHolding, Politician, PoliticianTrade, StockRecord, Superinvestor,
 } from '../types';
 import { ScoreBadge, ChangePercent } from '../components/common/Tags';
 import InfoTooltip from '../components/common/InfoTooltip';
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
-type Tab = 'funds' | 'congress';
+type Tab = 'funds' | 'congress' | 'executive';
+
+/** Cards render in batches: sixty managers at once is a lot of DOM for nothing. */
+const PAGE_SIZE = 24;
 type FundView = 'topHoldings' | 'newBuys' | 'addedTo' | 'trimmed' | 'soldOut';
 type TradeSide = 'all' | 'buy' | 'sell';
 
@@ -35,6 +38,8 @@ const PARTY_STYLE: Record<string, string> = {
 };
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
+
+const plural = (count: number, noun: string) => `${count} ${noun}${count === 1 ? '' : 's'}`;
 
 function formatUsd(value: number): string {
   if (value >= 1e12) return `$${(value / 1e12).toFixed(2)}T`;
@@ -399,6 +404,94 @@ function PoliticianCard({ politician, side, stockMap, onlyTracked }: {
   );
 }
 
+/** Reveals the next batch of cards, and says how many are left. */
+function ShowMore({ total, shown, noun, onMore }: {
+  total: number;
+  shown: number;
+  noun: string;
+  onMore: () => void;
+}) {
+  if (total <= shown) return null;
+  return (
+    <div className="flex items-center justify-center gap-3 pt-1">
+      <button onClick={onMore} className="btn-active text-sm">
+        Show {Math.min(PAGE_SIZE, total - shown)} more
+      </button>
+      <span className="text-xs t-muted">Showing {shown} of {total} {noun}</span>
+    </div>
+  );
+}
+
+/**
+ * A cabinet member or White House official. These come from OGE Form 278-T
+ * filings, which are scanned paper, so a figure the source could not read
+ * cleanly is marked rather than quietly presented as fact.
+ */
+function ExecutiveCard({ official }: { official: ExecutiveOfficial }) {
+  const [expanded, setExpanded] = useState(false);
+  const visible = expanded ? official.transactions : official.transactions.slice(0, 6);
+  const total = official.transactions.reduce((sum, t) => sum + (t.amountEstimate ?? 0), 0);
+
+  return (
+    <div className="card p-4 flex flex-col">
+      <div className="flex items-start gap-3">
+        <div className="min-w-0 flex-1">
+          <h3 className="text-sm font-bold t-primary truncate">{official.name}</h3>
+          <p className="text-xs t-muted mt-0.5 truncate">{official.role}</p>
+        </div>
+        <div className="text-right flex-shrink-0">
+          <div className="text-sm font-mono font-semibold t-primary">{formatUsd(total)}</div>
+          <div className="text-[10px] t-muted">{official.transactionCount} transactions</div>
+        </div>
+      </div>
+
+      <div className="mt-3 space-y-1.5 flex-1">
+        {visible.length === 0 ? (
+          <p className="text-xs t-muted py-3">No transactions on record.</p>
+        ) : visible.map((t, i) => (
+          <div key={`${t.assetName}-${t.tradedDate}-${i}`} className="flex items-center gap-2 text-xs">
+            <span className={`badge text-[9px] px-1.5 flex-shrink-0 ${
+              /purchase/i.test(t.transaction)
+                ? 'bg-bullish/15 text-bullish ring-1 ring-bullish/30'
+                : /sale/i.test(t.transaction)
+                  ? 'bg-bearish/10 text-bearish ring-1 ring-bearish/20'
+                  : 'bg-surface-tertiary t-muted ring-1 ring-surface-border'
+            }`}>
+              {/purchase/i.test(t.transaction) ? 'BUY' : /sale/i.test(t.transaction) ? 'SELL' : 'EXCH'}
+            </span>
+            <span className="flex-1 t-secondary truncate" title={t.assetName}>{t.assetName}</span>
+            <span className="t-muted whitespace-nowrap flex-shrink-0">
+              {t.amountRange}
+              {!t.confident && (
+                <span className="ml-1 t-faint" title="Read from a scanned filing — the figure may be misread">~</span>
+              )}
+            </span>
+            <span className="w-14 text-right flex-shrink-0 t-faint whitespace-nowrap">
+              {formatShortDate(t.tradedDate || t.filedDate)}
+            </span>
+          </div>
+        ))}
+      </div>
+
+      <div className="flex items-center justify-between gap-2 mt-3 pt-2.5 border-t border-surface-border">
+        {official.transactions.length > 6 ? (
+          <button onClick={() => setExpanded(v => !v)} className="text-xs text-accent-light hover:underline">
+            {expanded ? 'Show less' : `Show all ${official.transactions.length}`}
+          </button>
+        ) : <span />}
+        <a
+          href={official.profileUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[11px] text-accent-light hover:underline"
+        >
+          Filings &rarr;
+        </a>
+      </div>
+    </div>
+  );
+}
+
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 interface Props {
@@ -412,6 +505,7 @@ export default function BigInvestors({ stocks, bigInvestors }: Props) {
   const [side, setSide] = useState<TradeSide>('all');
   const [search, setSearch] = useState('');
   const [onlyTracked, setOnlyTracked] = useState(false);
+  const [shown, setShown] = useState(PAGE_SIZE);
 
   const stockMap = useMemo(
     () => new Map(stocks.map(s => [s.ticker.toUpperCase(), s])),
@@ -420,6 +514,8 @@ export default function BigInvestors({ stocks, bigInvestors }: Props) {
 
   const funds = bigInvestors?.superinvestors ?? [];
   const politicians = bigInvestors?.politicians ?? [];
+  const executive = bigInvestors?.executive ?? [];
+  const coverage = bigInvestors?.coverage ?? null;
 
   const query = search.trim().toLowerCase();
 
@@ -477,6 +573,15 @@ export default function BigInvestors({ stocks, bigInvestors }: Props) {
     );
   }, [politicians, query]);
 
+  const filteredExecutive = useMemo(() => {
+    if (!query) return executive;
+    return executive.filter(o =>
+      o.name.toLowerCase().includes(query) ||
+      o.role.toLowerCase().includes(query) ||
+      o.transactions.some(t => t.assetName.toLowerCase().includes(query))
+    );
+  }, [executive, query]);
+
   // ── Congress consensus: most-bought tickers in the last 90 days ──
   const congressBuys = useMemo<ConsensusRow[]>(() => {
     const map = new Map<string, ConsensusRow>();
@@ -527,7 +632,8 @@ export default function BigInvestors({ stocks, bigInvestors }: Props) {
           </p>
         </div>
         <span className="badge bg-accent/15 text-accent-light ring-1 ring-accent/30 text-sm">
-          {funds.length} funds &middot; {politicians.length} politicians
+          {plural(funds.length, 'fund')} &middot; {plural(politicians.length, 'politician')}
+          {executive.length > 0 && <> &middot; {plural(executive.length, 'official')}</>}
         </span>
         {bigInvestors?.updatedAt && (
           <span className="text-xs t-muted">
@@ -535,6 +641,27 @@ export default function BigInvestors({ stocks, bigInvestors }: Props) {
           </span>
         )}
       </div>
+
+      {coverage && (
+        <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs t-muted">
+          <span>
+            Drawn from <strong className="t-secondary">{coverage.trades.toLocaleString()}</strong> disclosed
+            congressional trades across <strong className="t-secondary">{coverage.members.toLocaleString()}</strong> members
+          </span>
+          <span>
+            <strong className="t-secondary">{coverage.fundHoldings.toLocaleString()}</strong> positions
+            in <strong className="t-secondary">{coverage.funds.toLocaleString()}</strong> 13F portfolios
+          </span>
+          {coverage.medianDisclosureDays != null && (
+            <InfoTooltip text="Half of all congressional trades are disclosed faster than this, half slower. The STOCK Act allows 45 days.">
+              <span className="underline decoration-dotted decoration-surface-border">
+                Median disclosure lag <strong className="t-secondary">{coverage.medianDisclosureDays} days</strong>
+              </span>
+            </InfoTooltip>
+          )}
+          {coverage.latestFiling && <span>Latest filing {formatDate(coverage.latestFiling)}</span>}
+        </div>
+      )}
 
       {/* How it works */}
       <div className="card p-4 bg-accent/5 border-accent/15">
@@ -583,7 +710,7 @@ export default function BigInvestors({ stocks, bigInvestors }: Props) {
           <div className="flex items-center gap-2 flex-wrap">
             <div className="flex gap-1 p-1 rounded-lg bg-surface-tertiary border border-surface-border">
               <button
-                onClick={() => setTab('funds')}
+                onClick={() => { setTab('funds'); setShown(PAGE_SIZE); }}
                 className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${
                   tab === 'funds' ? 'bg-accent/15 text-accent-light' : 't-tertiary hover:t-primary'
                 }`}
@@ -591,20 +718,34 @@ export default function BigInvestors({ stocks, bigInvestors }: Props) {
                 Fund Managers
               </button>
               <button
-                onClick={() => setTab('congress')}
+                onClick={() => { setTab('congress'); setShown(PAGE_SIZE); }}
                 className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${
                   tab === 'congress' ? 'bg-accent/15 text-accent-light' : 't-tertiary hover:t-primary'
                 }`}
               >
                 Congress
               </button>
+              {executive.length > 0 && (
+                <button
+                  onClick={() => { setTab('executive'); setShown(PAGE_SIZE); }}
+                  className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${
+                    tab === 'executive' ? 'bg-accent/15 text-accent-light' : 't-tertiary hover:t-primary'
+                  }`}
+                >
+                  Executive Branch
+                </button>
+              )}
             </div>
 
             <input
               type="text"
-              placeholder={tab === 'funds' ? 'Search manager or ticker...' : 'Search politician or ticker...'}
+              placeholder={
+                tab === 'funds' ? 'Search manager or ticker...'
+                  : tab === 'congress' ? 'Search politician or ticker...'
+                    : 'Search official or holding...'
+              }
               value={search}
-              onChange={e => setSearch(e.target.value)}
+              onChange={e => { setSearch(e.target.value); setShown(PAGE_SIZE); }}
               className="input-field w-56"
             />
 
@@ -669,20 +810,23 @@ export default function BigInvestors({ stocks, bigInvestors }: Props) {
               {filteredFunds.length === 0 ? (
                 <div className="card p-8 text-center text-sm t-muted">No managers match your search.</div>
               ) : (
-                <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-                  {filteredFunds.map(f => (
-                    <FundCard
-                      key={f.id}
-                      investor={f}
-                      view={fundView}
-                      stockMap={stockMap}
-                      onlyTracked={onlyTracked}
-                    />
-                  ))}
-                </div>
+                <>
+                  <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                    {filteredFunds.slice(0, shown).map(f => (
+                      <FundCard
+                        key={f.id}
+                        investor={f}
+                        view={fundView}
+                        stockMap={stockMap}
+                        onlyTracked={onlyTracked}
+                      />
+                    ))}
+                  </div>
+                  <ShowMore total={filteredFunds.length} shown={shown} noun="managers" onMore={() => setShown(n => n + PAGE_SIZE)} />
+                </>
               )}
             </>
-          ) : (
+          ) : tab === 'congress' ? (
             <>
               <ConsensusPanel
                 title={congressShared ? 'Bought by multiple members' : 'Largest recent purchases'}
@@ -695,24 +839,66 @@ export default function BigInvestors({ stocks, bigInvestors }: Props) {
               {filteredPoliticians.length === 0 ? (
                 <div className="card p-8 text-center text-sm t-muted">No politicians match your search.</div>
               ) : (
-                <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-                  {filteredPoliticians.map(p => (
-                    <PoliticianCard
-                      key={p.id}
-                      politician={p}
-                      side={side}
-                      stockMap={stockMap}
-                      onlyTracked={onlyTracked}
-                    />
-                  ))}
-                </div>
+                <>
+                  <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                    {filteredPoliticians.slice(0, shown).map(p => (
+                      <PoliticianCard
+                        key={p.id}
+                        politician={p}
+                        side={side}
+                        stockMap={stockMap}
+                        onlyTracked={onlyTracked}
+                      />
+                    ))}
+                  </div>
+                  <ShowMore total={filteredPoliticians.length} shown={shown} noun="members" onMore={() => setShown(n => n + PAGE_SIZE)} />
+                </>
+              )}
+            </>
+          ) : (
+            <>
+              <div className="card p-4 bg-accent/5 border-accent/15 text-sm t-muted">
+                Cabinet members and senior White House staff file periodic transaction reports with the Office of
+                Government Ethics. Those filings are scanned paper rather than data, so figures the source could not
+                read cleanly are marked with a <span className="t-secondary">~</span>.
+              </div>
+
+              {filteredExecutive.length === 0 ? (
+                <div className="card p-8 text-center text-sm t-muted">No officials match your search.</div>
+              ) : (
+                <>
+                  <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                    {filteredExecutive.slice(0, shown).map(o => (
+                      <ExecutiveCard key={o.id} official={o} />
+                    ))}
+                  </div>
+                  <ShowMore total={filteredExecutive.length} shown={shown} noun="officials" onMore={() => setShown(n => n + PAGE_SIZE)} />
+                </>
               )}
             </>
           )}
 
           <p className="text-xs t-muted">
-            Sources: SEC EDGAR Form 13F filings (fund managers) and STOCK Act disclosures aggregated by QuiverQuant
-            (Congress). Educational purposes only — not investment advice.
+            {bigInvestors?.source === 'filing45' ? (
+              <>
+                Sources: SEC EDGAR Form 13F filings (fund managers), House Clerk and Senate eFD STOCK Act disclosures
+                (Congress) and OGE Form 278-T filings (executive branch), by way of{' '}
+                <a
+                  href="https://filing45.devops-monk.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent-light hover:underline"
+                >
+                  Filing45
+                </a>.
+              </>
+            ) : (
+              <>
+                Sources: SEC EDGAR Form 13F filings (fund managers) and STOCK Act disclosures aggregated by QuiverQuant
+                (Congress).
+              </>
+            )}
+            {' '}Educational purposes only — not investment advice.
           </p>
         </>
       )}

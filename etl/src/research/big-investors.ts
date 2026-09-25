@@ -3,6 +3,15 @@ import pLimit from 'p-limit';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import path from 'path';
 import { CONFIG } from '../config.js';
+import {
+  fetchFiling45Congress,
+  fetchFiling45Coverage,
+  fetchFiling45Executive,
+  fetchFiling45Funds,
+  filing45Configured,
+  type ExecutiveOfficial,
+  type Filing45Coverage,
+} from './filing45.js';
 
 /**
  * Big Investors — what famous investors and politicians are actually buying.
@@ -16,6 +25,12 @@ import { CONFIG } from '../config.js';
  *
  * CUSIPs in 13F filings are mapped to tickers via OpenFIGI (free, no key) with
  * an on-disk cache so repeat runs cost almost nothing.
+ *
+ * When FILING45_TOKEN is set, both halves come instead from the Filing45 API,
+ * which ingests the same filings plus the Senate and the executive branch and
+ * covers far more filers than the hand-kept list below. The scrapers stay as
+ * the fallback for a missing token or an unreachable API, so this page keeps
+ * working either way.
  */
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -88,7 +103,14 @@ export interface BigInvestorsData {
   updatedAt: string;
   superinvestors: Superinvestor[];
   politicians: Politician[];
+  /** Cabinet and White House filings. Only present when Filing45 supplied them. */
+  executive?: ExecutiveOfficial[];
+  /** How much ground the source covers, for the page to state plainly. */
+  coverage?: Filing45Coverage | null;
+  source?: 'filing45' | 'scraped';
 }
+
+export type { ExecutiveOfficial, ExecutiveTransaction, Filing45Coverage } from './filing45.js';
 
 // ─── Config ──────────────────────────────────────────────────────────────────
 
@@ -833,16 +855,40 @@ function mergeCarryingOver<T extends { id: string }>(
 export async function fetchBigInvestors(allTickers: string[]): Promise<BigInvestorsData> {
   const knownTickers = new Set(allTickers.map(t => t.toUpperCase()));
 
-  const [superinvestors, politicians] = await Promise.all([
-    fetchSuperinvestors(knownTickers).catch(err => {
+  // Filing45 first when it is configured; its ingest covers every 13F filer it
+  // tracks, both chambers and the executive branch. The scrapers below remain
+  // the fallback, so a missing token or a bad day for the API costs coverage
+  // rather than the whole page.
+  let superinvestors: Superinvestor[] = [];
+  let politicians: Politician[] = [];
+  let executive: ExecutiveOfficial[] = [];
+  let coverage: Filing45Coverage | null = null;
+  let source: 'filing45' | 'scraped' = 'scraped';
+
+  if (filing45Configured()) {
+    console.log('  Using Filing45 as the source for big investors');
+    [superinvestors, politicians, executive, coverage] = await Promise.all([
+      fetchFiling45Funds(knownTickers).catch(() => [] as Superinvestor[]),
+      fetchFiling45Congress(knownTickers).catch(() => [] as Politician[]),
+      fetchFiling45Executive().catch(() => [] as ExecutiveOfficial[]),
+      fetchFiling45Coverage().catch(() => null),
+    ]);
+    if (superinvestors.length || politicians.length) source = 'filing45';
+  }
+
+  if (!superinvestors.length) {
+    superinvestors = await fetchSuperinvestors(knownTickers).catch(err => {
       console.warn('Superinvestor fetch failed:', (err as Error).message);
       return [] as Superinvestor[];
-    }),
-    fetchCongressTrades(knownTickers).catch(err => {
+    });
+  }
+
+  if (!politicians.length) {
+    politicians = await fetchCongressTrades(knownTickers).catch(err => {
       console.warn('Congress fetch failed:', (err as Error).message);
       return [] as Politician[];
-    }),
-  ]);
+    });
+  }
 
   const previous = loadExisting();
 
@@ -873,5 +919,10 @@ export async function fetchBigInvestors(allTickers: string[]): Promise<BigInvest
     updatedAt: new Date().toISOString(),
     superinvestors: funds.merged,
     politicians: members.merged,
+    // Executive filings are rare, so an empty pull means an unreachable API far
+    // more often than it means there is nothing to show.
+    executive: executive.length ? executive : previous?.executive ?? [],
+    coverage: coverage ?? previous?.coverage ?? null,
+    source,
   };
 }

@@ -86,10 +86,47 @@ export interface Politician {
   trades: PoliticianTrade[];
 }
 
+// Executive branch — cabinet and White House periodic transaction reports
+export interface ExecutiveTransaction {
+  assetName: string;
+  transaction: string;
+  tradedDate: string;
+  filedDate: string;
+  amountRange: string;
+  amountEstimate: number | null;
+  /** False when the figure was read from a scanned filing and may be misread. */
+  confident: boolean;
+  sourceUrl: string;
+}
+
+export interface ExecutiveOfficial {
+  id: string;
+  name: string;
+  role: string;
+  profileUrl: string;
+  transactionCount: number;
+  lastFiled: string | null;
+  transactions: ExecutiveTransaction[];
+}
+
+/** How much ground the upstream source covers, so the page can say it plainly. */
+export interface Filing45Coverage {
+  trades: number;
+  members: number;
+  funds: number;
+  fundHoldings: number;
+  executiveTransactions: number;
+  medianDisclosureDays: number | null;
+  latestFiling: string | null;
+}
+
 export interface BigInvestorsData {
   updatedAt: string;
   superinvestors: Superinvestor[];
   politicians: Politician[];
+  executive?: ExecutiveOfficial[];
+  coverage?: Filing45Coverage | null;
+  source?: 'filing45' | 'scraped';
 }
 
 // N23: Paper Trading
