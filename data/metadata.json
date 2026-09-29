@@ -1,25 +1,25 @@
 {
-  "lastUpdated": "2026-09-29T13:57:58.587Z",
+  "lastUpdated": "2026-09-29T19:19:07.443Z",
   "stockCount": 859,
   "bearishAlerts": 346,
-  "newsCount": 670,
+  "newsCount": 710,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
-      "price": 7685.63,
-      "sma50": 7645.45,
-      "sma200": 7213.41,
-      "changeFromHigh": -1.45,
+      "price": 7672.75,
+      "sma50": 7645.2,
+      "sma200": 7213.35,
+      "changeFromHigh": -1.62,
       "distributionDays": 7,
       "regime": "correction",
       "signal": "7 distribution days in 25 sessions — selling pressure"
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10681.53,
-      "sma50": 10772.78,
-      "sma200": 10443.91,
-      "changeFromHigh": -2.1,
+      "price": 10636.71,
+      "sma50": 10771.89,
+      "sma200": 10443.68,
+      "changeFromHigh": -2.51,
       "distributionDays": 6,
       "regime": "correction",
       "signal": "6 distribution days in 25 sessions — selling pressure"
@@ -27,8 +27,8 @@
     "in": {
       "index": "Nifty 50",
       "price": 22716.2,
-      "sma50": 23932.93,
-      "sma200": 24389.55,
+      "sma50": 23963.37,
+      "sma200": 24406.9,
       "changeFromHigh": -13.72,
       "distributionDays": 5,
       "regime": "correction",
@@ -36,10 +36,10 @@
     },
     "eu": {
       "index": "DAX 40",
-      "price": 25490.85,
-      "sma50": 25830.76,
-      "sma200": 24820.83,
-      "changeFromHigh": -4.06,
+      "price": 25399.21,
+      "sma50": 25828.93,
+      "sma200": 24820.38,
+      "changeFromHigh": -4.41,
       "distributionDays": 5,
       "regime": "bull",
       "signal": "Price above SMA200 — uptrend intact"
@@ -47,10 +47,10 @@
     "asia": {
       "index": "Nikkei 225",
       "price": 65481.27,
-      "sma50": 65495.77,
-      "sma200": 60040.39,
+      "sma50": 65541.02,
+      "sma200": 59959.5,
       "changeFromHigh": -9.51,
-      "distributionDays": 3,
+      "distributionDays": 1,
       "regime": "bull",
       "signal": "Price above SMA200 — uptrend intact"
     },
