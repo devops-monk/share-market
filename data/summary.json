@@ -15,6 +15,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "GRG.L",
       "name": "Greggs",
       "score": 76,
@@ -29,11 +36,11 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "OGN",
-      "name": "Organon & Co",
+      "ticker": "SMCI",
+      "name": "Super Micro",
       "score": 75,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
       "ticker": "WPP.L",
@@ -57,69 +64,41 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MSFT",
-      "name": "Microsoft",
+      "ticker": "PSX",
+      "name": "Phillips 66",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 20,
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "ALB",
       "name": "Albemarle",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 25,
+      "score": 26,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "CELH",
       "name": "Celsius Holdings",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "BWXT",
-      "name": "BWX Technologies",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CAVA",
-      "name": "Cava Group",
       "score": 26,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "SUI",
-      "name": "Sun Communities",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "BYND",
@@ -129,21 +108,54 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "CAVA",
+      "name": "Cava Group",
+      "score": 28,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "RARE",
       "name": "Ultragenyx Pharmaceutical",
-      "score": 27,
+      "score": 28,
       "market": "US",
       "capCategory": "Small"
     },
     {
-      "ticker": "FMC",
-      "name": "FMC Corp",
+      "ticker": "SUI",
+      "name": "Sun Communities",
       "score": 28,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PAH3.DE",
+      "name": "Porsche Auto Holding",
+      "score": 29,
+      "market": "DE",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "HDFCLIFE.NS",
+      "name": "HDFC Life Insurance",
+      "score": 29,
+      "market": "IN",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "score": 76,
+      "market": "US"
+    },
+    {
+      "ticker": "SMCI",
+      "name": "Super Micro",
+      "score": 75,
+      "market": "US"
+    },
     {
       "ticker": "1398.HK",
       "name": "ICBC",
@@ -151,9 +163,15 @@
       "market": "HK"
     },
     {
-      "ticker": "MSFT",
-      "name": "Microsoft",
+      "ticker": "PSX",
+      "name": "Phillips 66",
       "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise",
+      "score": 72,
       "market": "US"
     },
     {
@@ -169,39 +187,21 @@
       "market": "HK"
     },
     {
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy",
-      "score": 71,
-      "market": "US"
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
+      "ticker": "MU",
+      "name": "Micron",
       "score": 71,
       "market": "US"
     },
     {
       "ticker": "HPQ",
       "name": "HP Inc",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "AMD",
+      "name": "AMD",
       "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "SNOW",
-      "name": "Snowflake",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron",
-      "score": 69,
       "market": "US"
     }
   ],
@@ -219,12 +219,6 @@
       "market": "UK"
     },
     {
-      "ticker": "OGN",
-      "name": "Organon & Co",
-      "score": 75,
-      "market": "US"
-    },
-    {
       "ticker": "WPP.L",
       "name": "WPP",
       "score": 75,
@@ -235,6 +229,18 @@
       "name": "easyJet",
       "score": 74,
       "market": "UK"
+    },
+    {
+      "ticker": "S",
+      "name": "SentinelOne",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "TEP.PA",
+      "name": "Teleperformance",
+      "score": 72,
+      "market": "FR"
     },
     {
       "ticker": "SDR.L",
@@ -249,20 +255,14 @@
       "market": "UK"
     },
     {
-      "ticker": "TEP.PA",
-      "name": "Teleperformance",
-      "score": 71,
-      "market": "FR"
-    },
-    {
-      "ticker": "S",
-      "name": "SentinelOne",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "BEZ.L",
       "name": "Beazley",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "QQ.L",
+      "name": "QinetiQ",
       "score": 70,
       "market": "UK"
     }
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 859,
-  "avgScore": 51,
-  "bearishAlertCount": 340
+  "avgScore": 52,
+  "bearishAlertCount": 343
 }
