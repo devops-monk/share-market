@@ -1,62 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "BME.L",
-      "name": "B&M European",
-      "score": 79,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "DOM.L",
-      "name": "Domino's Pizza Group",
-      "score": 77,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
-      "score": 76,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "GRG.L",
-      "name": "Greggs",
-      "score": 76,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CARD.L",
-      "name": "Card Factory",
-      "score": 76,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "SMCI",
-      "name": "Super Micro",
-      "score": 75,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "WPP.L",
-      "name": "WPP",
-      "score": 75,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "EZJ.L",
-      "name": "easyJet",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "1398.HK",
       "name": "ICBC",
       "score": 74,
@@ -64,98 +8,142 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "PSX",
-      "name": "Phillips 66",
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "KNOS.L",
+      "name": "Kainos Group",
+      "score": 73,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "9984.T",
+      "name": "SoftBank Group",
+      "score": 72,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 72,
+      "market": "HK",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "JDW.L",
+      "name": "J D Wetherspoon",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GRG.L",
+      "name": "Greggs",
+      "score": 70,
+      "market": "UK",
+      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "ZG",
       "name": "Zillow Group",
-      "score": 22,
+      "score": 19,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "ALB",
       "name": "Albemarle",
+      "score": 19,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "OPEN",
+      "name": "Opendoor Technologies",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "PAH3.DE",
+      "name": "Porsche Auto Holding",
       "score": 23,
+      "market": "DE",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BWXT",
+      "name": "BWX Technologies",
+      "score": 24,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "UPST",
       "name": "Upstart",
-      "score": 26,
+      "score": 24,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BA",
+      "name": "Boeing",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "QS",
+      "name": "QuantumScape",
+      "score": 25,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "CELH",
       "name": "Celsius Holdings",
-      "score": 26,
+      "score": 25,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Small"
     },
     {
       "ticker": "CAVA",
       "name": "Cava Group",
-      "score": 28,
+      "score": 26,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "RARE",
-      "name": "Ultragenyx Pharmaceutical",
-      "score": 28,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "SUI",
-      "name": "Sun Communities",
-      "score": 28,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PAH3.DE",
-      "name": "Porsche Auto Holding",
-      "score": 29,
-      "market": "DE",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "HDFCLIFE.NS",
-      "name": "HDFC Life Insurance",
-      "score": 29,
-      "market": "IN",
-      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
-      "score": 76,
-      "market": "US"
-    },
-    {
-      "ticker": "SMCI",
-      "name": "Super Micro",
-      "score": 75,
-      "market": "US"
-    },
     {
       "ticker": "1398.HK",
       "name": "ICBC",
@@ -163,22 +151,22 @@
       "market": "HK"
     },
     {
-      "ticker": "PSX",
-      "name": "Phillips 66",
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
       "score": 73,
       "market": "US"
     },
     {
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise",
+      "ticker": "VLO",
+      "name": "Valero Energy",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "STAN.L",
-      "name": "Standard Chartered",
+      "ticker": "9984.T",
+      "name": "SoftBank Group",
       "score": 72,
-      "market": "UK"
+      "market": "JP"
     },
     {
       "ticker": "0939.HK",
@@ -193,143 +181,155 @@
       "market": "US"
     },
     {
-      "ticker": "HPQ",
-      "name": "HP Inc",
-      "score": 71,
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "score": 70,
       "market": "US"
     },
     {
-      "ticker": "AMD",
-      "name": "AMD",
-      "score": 70,
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "NTRA",
+      "name": "Natera",
+      "score": 68,
       "market": "US"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "BME.L",
-      "name": "B&M European",
-      "score": 79,
-      "market": "UK"
-    },
-    {
       "ticker": "GRG.L",
       "name": "Greggs",
-      "score": 76,
+      "score": 70,
       "market": "UK"
     },
     {
-      "ticker": "WPP.L",
-      "name": "WPP",
-      "score": 75,
+      "ticker": "OGN",
+      "name": "Organon & Co",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "S",
+      "name": "SentinelOne",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "FRAS.L",
+      "name": "Frasers Group",
+      "score": 69,
       "market": "UK"
     },
     {
       "ticker": "EZJ.L",
       "name": "easyJet",
-      "score": 74,
+      "score": 69,
       "market": "UK"
     },
     {
-      "ticker": "S",
-      "name": "SentinelOne",
-      "score": 72,
+      "ticker": "JET2.L",
+      "name": "Jet2",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "AMC",
+      "name": "AMC Entertainment",
+      "score": 66,
       "market": "US"
     },
     {
       "ticker": "TEP.PA",
       "name": "Teleperformance",
-      "score": 72,
+      "score": 66,
       "market": "FR"
     },
     {
-      "ticker": "SDR.L",
-      "name": "Schroders",
-      "score": 71,
-      "market": "UK"
+      "ticker": "GTLB",
+      "name": "GitLab",
+      "score": 65,
+      "market": "US"
     },
     {
-      "ticker": "BBY.L",
-      "name": "Balfour Beatty",
-      "score": 71,
-      "market": "UK"
-    },
-    {
-      "ticker": "BEZ.L",
-      "name": "Beazley",
-      "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "QQ.L",
-      "name": "QinetiQ",
-      "score": 70,
+      "ticker": "BME.L",
+      "name": "B&M European",
+      "score": 65,
       "market": "UK"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "DOM.L",
-      "name": "Domino's Pizza Group",
-      "score": 77,
-      "market": "UK"
-    },
-    {
-      "ticker": "CARD.L",
-      "name": "Card Factory",
-      "score": 76,
-      "market": "UK"
-    },
-    {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
+      "ticker": "KNOS.L",
+      "name": "Kainos Group",
       "score": 73,
       "market": "UK"
     },
     {
-      "ticker": "ITRK.L",
-      "name": "Intertek Group",
-      "score": 73,
-      "market": "UK"
-    },
-    {
-      "ticker": "RWS.L",
-      "name": "RWS Holdings",
-      "score": 73,
-      "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 72,
-      "market": "UK"
-    },
-    {
-      "ticker": "PETS.L",
-      "name": "Pets at Home",
+      "ticker": "JDW.L",
+      "name": "J D Wetherspoon",
       "score": 71,
       "market": "UK"
     },
     {
       "ticker": "BYIT.L",
       "name": "Bytes Technology",
-      "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
-      "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "KNOS.L",
-      "name": "Kainos Group",
       "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "RWS.L",
+      "name": "RWS Holdings",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "FOUR.L",
+      "name": "4imprint",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "ITRK.L",
+      "name": "Intertek Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "DOM.L",
+      "name": "Domino's Pizza Group",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "CARD.L",
+      "name": "Card Factory",
+      "score": 64,
       "market": "UK"
     }
   ],
   "totalStocks": 859,
-  "avgScore": 52,
-  "bearishAlertCount": 343
+  "avgScore": 50,
+  "bearishAlertCount": 346
 }
