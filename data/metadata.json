@@ -1,25 +1,25 @@
 {
-  "lastUpdated": "2026-10-05T15:45:27.814Z",
+  "lastUpdated": "2026-10-05T22:31:14.853Z",
   "stockCount": 859,
-  "bearishAlerts": 335,
+  "bearishAlerts": 338,
   "newsCount": 500,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
-      "price": 7762.26,
-      "sma50": 7664.65,
-      "sma200": 7230.63,
-      "changeFromHigh": -0.47,
-      "distributionDays": 7,
-      "regime": "correction",
-      "signal": "7 distribution days in 25 sessions — selling pressure"
+      "price": 7773.95,
+      "sma50": 7664.88,
+      "sma200": 7230.69,
+      "changeFromHigh": -0.32,
+      "distributionDays": 5,
+      "regime": "bull",
+      "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10486.49,
-      "sma50": 10757.98,
-      "sma200": 10459.3,
-      "changeFromHigh": -3.89,
+      "price": 10497.94,
+      "sma50": 10758.21,
+      "sma200": 10459.36,
+      "changeFromHigh": -3.78,
       "distributionDays": 8,
       "regime": "correction",
       "signal": "8 distribution days in 25 sessions — selling pressure"
@@ -27,22 +27,22 @@
     "in": {
       "index": "Nifty 50",
       "price": 22555.75,
-      "sma50": 23843.82,
-      "sma200": 24339.75,
+      "sma50": 23870.1,
+      "sma200": 24355.76,
       "changeFromHigh": -14.33,
-      "distributionDays": 7,
-      "regime": "correction",
-      "signal": "7 distribution days in 25 sessions — selling pressure"
-    },
-    "eu": {
-      "index": "DAX 40",
-      "price": 25232.36,
-      "sma50": 25833.4,
-      "sma200": 24841.12,
-      "changeFromHigh": -5.03,
       "distributionDays": 6,
       "regime": "correction",
       "signal": "6 distribution days in 25 sessions — selling pressure"
+    },
+    "eu": {
+      "index": "DAX 40",
+      "price": 25254.21,
+      "sma50": 25835.98,
+      "sma200": 24834.76,
+      "changeFromHigh": -4.95,
+      "distributionDays": 4,
+      "regime": "bull",
+      "signal": "Price above SMA200 — uptrend intact"
     },
     "asia": {
       "index": "Nikkei 225",
