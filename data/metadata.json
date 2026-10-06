@@ -1,25 +1,25 @@
 {
-  "lastUpdated": "2026-10-06T14:07:56.310Z",
+  "lastUpdated": "2026-10-06T19:33:13.753Z",
   "stockCount": 859,
-  "bearishAlerts": 328,
+  "bearishAlerts": 336,
   "newsCount": 500,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
-      "price": 7826.17,
-      "sma50": 7673.14,
+      "price": 7825.12,
+      "sma50": 7673.12,
       "sma200": 7236.21,
       "changeFromHigh": 0,
-      "distributionDays": 6,
-      "regime": "correction",
-      "signal": "6 distribution days in 25 sessions — selling pressure"
+      "distributionDays": 4,
+      "regime": "bull",
+      "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10520.98,
-      "sma50": 10752.99,
-      "sma200": 10462.77,
-      "changeFromHigh": -3.57,
+      "price": 10541.69,
+      "sma50": 10753.4,
+      "sma200": 10462.88,
+      "changeFromHigh": -3.38,
       "distributionDays": 7,
       "regime": "correction",
       "signal": "7 distribution days in 25 sessions — selling pressure"
@@ -27,8 +27,8 @@
     "in": {
       "index": "Nifty 50",
       "price": 22776.1,
-      "sma50": 23823.99,
-      "sma200": 24324.14,
+      "sma50": 23843.82,
+      "sma200": 24339.75,
       "changeFromHigh": -13.49,
       "distributionDays": 7,
       "regime": "correction",
@@ -36,10 +36,10 @@
     },
     "eu": {
       "index": "DAX 40",
-      "price": 25411.9,
-      "sma50": 25832.8,
-      "sma200": 24847.29,
-      "changeFromHigh": -4.36,
+      "price": 25449.19,
+      "sma50": 25833.54,
+      "sma200": 24847.47,
+      "changeFromHigh": -4.22,
       "distributionDays": 6,
       "regime": "correction",
       "signal": "6 distribution days in 25 sessions — selling pressure"
@@ -47,10 +47,10 @@
     "asia": {
       "index": "Nikkei 225",
       "price": 70683.98,
-      "sma50": 65747.27,
-      "sma200": 60507.29,
+      "sma50": 65655.9,
+      "sma200": 60406.78,
       "changeFromHigh": -2.32,
-      "distributionDays": 4,
+      "distributionDays": 3,
       "regime": "bull",
       "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
     },
