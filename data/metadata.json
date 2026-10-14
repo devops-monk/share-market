@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-14T00:18:58.088Z",
+  "lastUpdated": "2026-10-14T12:50:14.117Z",
   "stockCount": 859,
-  "bearishAlerts": 315,
+  "bearishAlerts": 326,
   "newsCount": 500,
   "marketRegime": {
     "us": {
@@ -10,49 +10,49 @@
       "sma50": 7707.37,
       "sma200": 7259.48,
       "changeFromHigh": -0.17,
+      "distributionDays": 6,
+      "regime": "correction",
+      "signal": "6 distribution days in 25 sessions — selling pressure"
+    },
+    "uk": {
+      "index": "FTSE 100",
+      "price": 10665.93,
+      "sma50": 10716.26,
+      "sma200": 10483.35,
+      "changeFromHigh": -2.24,
       "distributionDays": 7,
       "regime": "correction",
       "signal": "7 distribution days in 25 sessions — selling pressure"
     },
-    "uk": {
-      "index": "FTSE 100",
-      "price": 10650.33,
-      "sma50": 10724.68,
-      "sma200": 10475.8,
-      "changeFromHigh": -2.39,
-      "distributionDays": 4,
-      "regime": "bull",
-      "signal": "Price above SMA200 — uptrend intact"
-    },
     "in": {
       "index": "Nifty 50",
-      "price": 22721.95,
-      "sma50": 23687.39,
-      "sma200": 24253.97,
-      "changeFromHigh": -13.7,
+      "price": 22622.7,
+      "sma50": 23611.13,
+      "sma200": 24221.78,
+      "changeFromHigh": -14.08,
       "distributionDays": 7,
       "regime": "correction",
       "signal": "7 distribution days in 25 sessions — selling pressure"
     },
     "eu": {
       "index": "DAX 40",
-      "price": 25259.9,
-      "sma50": 25785.01,
-      "sma200": 24862.54,
-      "changeFromHigh": -4.93,
-      "distributionDays": 6,
+      "price": 25362.51,
+      "sma50": 25750.88,
+      "sma200": 24870.5,
+      "changeFromHigh": -4.54,
+      "distributionDays": 7,
       "regime": "correction",
-      "signal": "6 distribution days in 25 sessions — selling pressure"
+      "signal": "7 distribution days in 25 sessions — selling pressure"
     },
     "asia": {
       "index": "Nikkei 225",
-      "price": 68030.66,
-      "sma50": 66103.46,
-      "sma200": 60876.77,
-      "changeFromHigh": -5.99,
-      "distributionDays": 3,
-      "regime": "bull",
-      "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
+      "price": 67744.29,
+      "sma50": 66224.6,
+      "sma200": 60963.39,
+      "changeFromHigh": -6.39,
+      "distributionDays": 7,
+      "regime": "correction",
+      "signal": "7 distribution days in 25 sessions — selling pressure"
     },
     "overall": "correction",
     "summary": "Markets showing weakness. Be selective, reduce position sizes, and tighten stops."
