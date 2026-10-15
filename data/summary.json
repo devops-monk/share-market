@@ -8,13 +8,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "CRM",
-      "name": "Salesforce",
-      "score": 76,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "CURY.L",
       "name": "Currys",
       "score": 76,
@@ -27,6 +20,13 @@
       "score": 76,
       "market": "FR",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "ESTC",
+      "name": "Elastic NV",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "GRG.L",
@@ -47,7 +47,7 @@
       "name": "Publicis",
       "score": 74,
       "market": "FR",
-      "capCategory": "Small"
+      "capCategory": "Large"
     },
     {
       "ticker": "0939.HK",
@@ -57,98 +57,104 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "EZJ.L",
-      "name": "easyJet",
+      "ticker": "CRM",
+      "name": "Salesforce",
       "score": 73,
-      "market": "UK",
-      "capCategory": "Mid"
+      "market": "US",
+      "capCategory": "Large"
     },
     {
-      "ticker": "MSFT",
-      "name": "Microsoft",
-      "score": 72,
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 73,
       "market": "US",
       "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
+      "ticker": "POLICYBZR.BO",
+      "name": "PB Fintech (PolicyBazaar)",
+      "score": 21,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "BLDR",
       "name": "Builders FirstSource",
-      "score": 21,
+      "score": 24,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "CIEN",
       "name": "Ciena Corp",
-      "score": 23,
+      "score": 25,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "POLICYBZR.BO",
-      "name": "PB Fintech (PolicyBazaar)",
-      "score": 24,
-      "market": "IN",
       "capCategory": "Large"
     },
     {
       "ticker": "LCID",
       "name": "Lucid Group",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "RARE",
-      "name": "Ultragenyx Pharmaceutical",
       "score": 26,
       "market": "US",
       "capCategory": "Small"
     },
     {
-      "ticker": "QS",
-      "name": "QuantumScape",
+      "ticker": "DMART.BO",
+      "name": "Avenue Supermarts (DMart)",
       "score": 27,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle",
-      "score": 27,
-      "market": "US",
+      "market": "IN",
       "capCategory": "Large"
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 28,
+      "ticker": "RARE",
+      "name": "Ultragenyx Pharmaceutical",
+      "score": 27,
       "market": "US",
       "capCategory": "Small"
     },
     {
-      "ticker": "XPEV",
-      "name": "XPeng",
+      "ticker": "SBILIFE.NS",
+      "name": "SBI Life Insurance",
       "score": 28,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "QS",
+      "name": "QuantumScape",
+      "score": 29,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "APP",
       "name": "AppLovin",
-      "score": 28,
+      "score": 29,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PIIND.BO",
+      "name": "PI Industries",
+      "score": 30,
+      "market": "IN",
       "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "CRM",
-      "name": "Salesforce",
-      "score": 76,
+      "ticker": "ESTC",
+      "name": "Elastic NV",
+      "score": 74,
       "market": "US"
+    },
+    {
+      "ticker": "PUB.PA",
+      "name": "Publicis",
+      "score": 74,
+      "market": "FR"
     },
     {
       "ticker": "0939.HK",
@@ -157,51 +163,45 @@
       "market": "HK"
     },
     {
-      "ticker": "MSFT",
-      "name": "Microsoft",
-      "score": 72,
+      "ticker": "CRM",
+      "name": "Salesforce",
+      "score": 73,
       "market": "US"
     },
     {
-      "ticker": "SAP.DE",
-      "name": "SAP",
-      "score": 72,
-      "market": "DE"
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "TRV",
+      "name": "Travelers",
+      "score": 73,
+      "market": "US"
     },
     {
       "ticker": "HPQ",
       "name": "HP Inc",
-      "score": 71,
+      "score": 73,
       "market": "US"
     },
     {
       "ticker": "PSX",
       "name": "Phillips 66",
-      "score": 71,
+      "score": 73,
       "market": "US"
     },
     {
-      "ticker": "ULVR.L",
-      "name": "Unilever",
-      "score": 71,
-      "market": "UK"
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "score": 73,
+      "market": "HK"
     },
     {
-      "ticker": "6098.T",
-      "name": "Recruit Holdings",
-      "score": 71,
-      "market": "JP"
-    },
-    {
-      "ticker": "TEAM",
-      "name": "Atlassian",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy",
-      "score": 70,
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "score": 72,
       "market": "US"
     }
   ],
@@ -225,6 +225,12 @@
       "market": "UK"
     },
     {
+      "ticker": "GTLB",
+      "name": "GitLab",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "EZJ.L",
       "name": "easyJet",
       "score": 73,
@@ -237,8 +243,8 @@
       "market": "UK"
     },
     {
-      "ticker": "GTLB",
-      "name": "GitLab",
+      "ticker": "OGN",
+      "name": "Organon & Co",
       "score": 70,
       "market": "US"
     },
@@ -249,22 +255,16 @@
       "market": "UK"
     },
     {
+      "ticker": "CROX",
+      "name": "Crocs",
+      "score": 69,
+      "market": "US"
+    },
+    {
       "ticker": "FRAS.L",
       "name": "Frasers Group",
       "score": 69,
       "market": "UK"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "OGN",
-      "name": "Organon & Co",
-      "score": 68,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -279,12 +279,6 @@
       "name": "RWS Holdings",
       "score": 74,
       "market": "UK"
-    },
-    {
-      "ticker": "PUB.PA",
-      "name": "Publicis",
-      "score": 74,
-      "market": "FR"
     },
     {
       "ticker": "KNOS.L",
@@ -323,6 +317,12 @@
       "market": "UK"
     },
     {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 69,
+      "market": "US"
+    },
+    {
       "ticker": "CARD.L",
       "name": "Card Factory",
       "score": 69,
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 859,
-  "avgScore": 52,
-  "bearishAlertCount": 304
+  "avgScore": 53,
+  "bearishAlertCount": 305
 }
