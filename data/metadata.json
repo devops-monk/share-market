@@ -1,25 +1,25 @@
 {
-  "lastUpdated": "2026-10-15T12:37:30.678Z",
+  "lastUpdated": "2026-10-15T17:46:55.784Z",
   "stockCount": 859,
-  "bearishAlerts": 319,
+  "bearishAlerts": 304,
   "newsCount": 500,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
-      "price": 7718.94,
-      "sma50": 7707.02,
-      "sma200": 7263.43,
-      "changeFromHigh": -1.28,
-      "distributionDays": 7,
+      "price": 7741.22,
+      "sma50": 7707.37,
+      "sma200": 7267.61,
+      "changeFromHigh": -0.99,
+      "distributionDays": 8,
       "regime": "correction",
-      "signal": "7 distribution days in 25 sessions — selling pressure"
+      "signal": "8 distribution days in 25 sessions — selling pressure"
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10807.58,
-      "sma50": 10715.83,
-      "sma200": 10488.02,
-      "changeFromHigh": -0.94,
+      "price": 10840.35,
+      "sma50": 10716.48,
+      "sma200": 10488.19,
+      "changeFromHigh": -0.64,
       "distributionDays": 8,
       "regime": "correction",
       "signal": "8 distribution days in 25 sessions — selling pressure"
@@ -36,10 +36,10 @@
     },
     "eu": {
       "index": "DAX 40",
-      "price": 25199.11,
-      "sma50": 25730.78,
-      "sma200": 24871.83,
-      "changeFromHigh": -5.16,
+      "price": 25382.62,
+      "sma50": 25734.45,
+      "sma200": 24872.75,
+      "changeFromHigh": -4.47,
       "distributionDays": 7,
       "regime": "correction",
       "signal": "7 distribution days in 25 sessions — selling pressure"
@@ -47,12 +47,12 @@
     "asia": {
       "index": "Nikkei 225",
       "price": 64425.95,
-      "sma50": 66275.77,
-      "sma200": 61038.6,
+      "sma50": 66224.6,
+      "sma200": 60963.39,
       "changeFromHigh": -10.97,
-      "distributionDays": 7,
+      "distributionDays": 5,
       "regime": "correction",
-      "signal": "7 distribution days in 25 sessions — selling pressure"
+      "signal": "Down -11.0% from high — correction territory"
     },
     "overall": "correction",
     "summary": "Markets showing weakness. Be selective, reduce position sizes, and tighten stops."
