@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "CRM",
+      "name": "Salesforce",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 76,
@@ -8,9 +15,9 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "CRM",
-      "name": "Salesforce",
-      "score": 74,
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 75,
       "market": "US",
       "capCategory": "Large"
     },
@@ -27,6 +34,13 @@
       "score": 74,
       "market": "UK",
       "capCategory": "Small"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "VRNS",
@@ -55,153 +69,139 @@
       "score": 73,
       "market": "UK",
       "capCategory": "Small"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 73,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CVX",
-      "name": "Chevron",
-      "score": 72,
-      "market": "US",
-      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "POLICYBZR.BO",
-      "name": "PB Fintech (PolicyBazaar)",
-      "score": 22,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
-      "score": 22,
+      "score": 19,
       "market": "US",
       "capCategory": "Small"
     },
     {
-      "ticker": "IONQ",
-      "name": "IonQ",
+      "ticker": "POLICYBZR.BO",
+      "name": "PB Fintech (PolicyBazaar)",
       "score": 23,
-      "market": "US",
+      "market": "IN",
       "capCategory": "Large"
     },
     {
       "ticker": "OPEN",
       "name": "Opendoor Technologies",
-      "score": 24,
+      "score": 26,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "QS",
       "name": "QuantumScape",
-      "score": 24,
+      "score": 27,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "APP",
       "name": "AppLovin",
-      "score": 25,
+      "score": 27,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "ON",
       "name": "ON Semiconductor",
-      "score": 25,
+      "score": 27,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "CIEN",
       "name": "Ciena Corp",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BIDU",
-      "name": "Baidu",
-      "score": 26,
+      "score": 28,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "ALB",
       "name": "Albemarle",
-      "score": 26,
+      "score": 28,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "BLDR",
+      "name": "Builders FirstSource",
+      "score": 29,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 30,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "CRM",
       "name": "Salesforce",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 73,
-      "market": "HK"
-    },
-    {
-      "ticker": "CVX",
-      "name": "Chevron",
-      "score": 72,
-      "market": "US"
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
-      "score": 72,
+      "score": 76,
       "market": "US"
     },
     {
       "ticker": "VLO",
       "name": "Valero Energy",
-      "score": 71,
+      "score": 75,
+      "market": "US"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "TRV",
+      "name": "Travelers",
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "HPQ",
       "name": "HP Inc",
-      "score": 70,
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "PSX",
       "name": "Phillips 66",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 71,
+      "market": "HK"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "6758.T",
-      "name": "Sony Group",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 70,
-      "market": "JP"
-    },
-    {
-      "ticker": "7267.T",
-      "name": "Honda Motor",
-      "score": 70,
-      "market": "JP"
-    },
-    {
-      "ticker": "TRV",
-      "name": "Travelers",
-      "score": 69,
       "market": "US"
     }
   ],
@@ -225,6 +225,12 @@
       "market": "UK"
     },
     {
+      "ticker": "ESTC",
+      "name": "Elastic NV",
+      "score": 72,
+      "market": "US"
+    },
+    {
       "ticker": "BME.L",
       "name": "B&M European",
       "score": 72,
@@ -243,28 +249,22 @@
       "market": "UK"
     },
     {
-      "ticker": "OGN",
-      "name": "Organon & Co",
+      "ticker": "LTC",
+      "name": "LTC Properties",
       "score": 69,
       "market": "US"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
+      "ticker": "QLYS",
+      "name": "Qualys",
       "score": 68,
       "market": "US"
     },
     {
-      "ticker": "ESTC",
-      "name": "Elastic NV",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "JET2.L",
-      "name": "Jet2",
+      "ticker": "MUR",
+      "name": "Murphy Oil",
       "score": 67,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 859,
-  "avgScore": 51,
-  "bearishAlertCount": 309
+  "avgScore": 53,
+  "bearishAlertCount": 307
 }
