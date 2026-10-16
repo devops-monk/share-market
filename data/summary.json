@@ -1,11 +1,11 @@
 {
   "topOverall": [
     {
-      "ticker": "TEP.PA",
-      "name": "Teleperformance",
-      "score": 75,
-      "market": "FR",
-      "capCategory": "Mid"
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "ESTC",
@@ -15,15 +15,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 74,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft",
+      "ticker": "CRM",
+      "name": "Salesforce",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
@@ -43,13 +36,6 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HPQ",
-      "name": "HP Inc",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "PSX",
       "name": "Phillips 66",
       "score": 73,
@@ -64,10 +50,24 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 73,
-      "market": "HK",
+      "ticker": "TMO",
+      "name": "Thermo Fisher",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TEAM",
+      "name": "Atlassian",
+      "score": 72,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -75,14 +75,14 @@
     {
       "ticker": "POLICYBZR.BO",
       "name": "PB Fintech (PolicyBazaar)",
-      "score": 21,
+      "score": 22,
       "market": "IN",
       "capCategory": "Large"
     },
     {
       "ticker": "BLDR",
       "name": "Builders FirstSource",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -101,13 +101,6 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "DMART.BO",
-      "name": "Avenue Supermarts (DMart)",
-      "score": 27,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "RARE",
       "name": "Ultragenyx Pharmaceutical",
       "score": 27,
@@ -115,18 +108,25 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "SBILIFE.NS",
-      "name": "SBI Life Insurance",
-      "score": 28,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "DRX.L",
       "name": "Drax Group",
-      "score": 29,
+      "score": 28,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "VTY.L",
+      "name": "Vistry Group",
+      "score": 29,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "ITM.L",
+      "name": "ITM Power",
+      "score": 29,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "QS",
@@ -136,14 +136,20 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "APP",
-      "name": "AppLovin",
-      "score": 29,
-      "market": "US",
-      "capCategory": "Large"
+      "ticker": "PAH3.DE",
+      "name": "Porsche Auto Holding",
+      "score": 30,
+      "market": "DE",
+      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "score": 74,
+      "market": "US"
+    },
     {
       "ticker": "ESTC",
       "name": "Elastic NV",
@@ -151,14 +157,8 @@
       "market": "US"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 74,
-      "market": "HK"
-    },
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft",
+      "ticker": "CRM",
+      "name": "Salesforce",
       "score": 73,
       "market": "US"
     },
@@ -175,43 +175,37 @@
       "market": "US"
     },
     {
-      "ticker": "HPQ",
-      "name": "HP Inc",
-      "score": 73,
-      "market": "US"
-    },
-    {
       "ticker": "PSX",
       "name": "Phillips 66",
       "score": 73,
       "market": "US"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 73,
-      "market": "HK"
-    },
-    {
-      "ticker": "CRM",
-      "name": "Salesforce",
+      "ticker": "TMO",
+      "name": "Thermo Fisher",
       "score": 72,
       "market": "US"
     },
     {
-      "ticker": "AMGN",
-      "name": "Amgen",
+      "ticker": "WDAY",
+      "name": "Workday",
       "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "TEAM",
+      "name": "Atlassian",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "BLK",
+      "name": "BlackRock",
+      "score": 71,
       "market": "US"
     }
   ],
   "topMidCap": [
-    {
-      "ticker": "TEP.PA",
-      "name": "Teleperformance",
-      "score": 75,
-      "market": "FR"
-    },
     {
       "ticker": "GTLB",
       "name": "GitLab",
@@ -225,26 +219,26 @@
       "market": "US"
     },
     {
+      "ticker": "BME.L",
+      "name": "B&M European",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "TEP.PA",
+      "name": "Teleperformance",
+      "score": 70,
+      "market": "FR"
+    },
+    {
       "ticker": "CROX",
       "name": "Crocs",
       "score": 69,
       "market": "US"
     },
     {
-      "ticker": "BME.L",
-      "name": "B&M European",
-      "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "MNDY",
-      "name": "monday.com",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "WPP.L",
-      "name": "WPP",
+      "ticker": "FRAS.L",
+      "name": "Frasers Group",
       "score": 68,
       "market": "UK"
     },
@@ -265,26 +259,44 @@
       "name": "Duolingo",
       "score": 67,
       "market": "US"
+    },
+    {
+      "ticker": "MNDY",
+      "name": "monday.com",
+      "score": 67,
+      "market": "US"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 69,
-      "market": "US"
-    },
-    {
       "ticker": "JDW.L",
       "name": "J D Wetherspoon",
-      "score": 69,
+      "score": 71,
       "market": "UK"
     },
     {
       "ticker": "RWS.L",
       "name": "RWS Holdings",
-      "score": 69,
+      "score": 71,
       "market": "UK"
+    },
+    {
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "KNOS.L",
+      "name": "Kainos Group",
+      "score": 70,
+      "market": "UK"
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 69,
+      "market": "US"
     },
     {
       "ticker": "RPD",
@@ -293,14 +305,20 @@
       "market": "US"
     },
     {
-      "ticker": "ML.PA",
-      "name": "Michelin",
+      "ticker": "PETS.L",
+      "name": "Pets at Home",
       "score": 67,
-      "market": "FR"
+      "market": "UK"
     },
     {
-      "ticker": "CARD.L",
-      "name": "Card Factory",
+      "ticker": "DOM.L",
+      "name": "Domino's Pizza Group",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
       "score": 66,
       "market": "UK"
     },
@@ -309,27 +327,9 @@
       "name": "S4 Capital",
       "score": 66,
       "market": "UK"
-    },
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "KNOS.L",
-      "name": "Kainos Group",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "CURY.L",
-      "name": "Currys",
-      "score": 64,
-      "market": "UK"
     }
   ],
   "totalStocks": 859,
   "avgScore": 53,
-  "bearishAlertCount": 310
+  "bearishAlertCount": 298
 }
