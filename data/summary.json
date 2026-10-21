@@ -3,7 +3,14 @@
     {
       "ticker": "CRM",
       "name": "Salesforce",
-      "score": 79,
+      "score": 80,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "score": 78,
       "market": "US",
       "capCategory": "Large"
     },
@@ -13,6 +20,20 @@
       "score": 76,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "TMO",
+      "name": "Thermo Fisher",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "IQV",
+      "name": "IQVIA Holdings",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "JET2.L",
@@ -29,13 +50,6 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "FDEV.L",
       "name": "Frontier Developments",
       "score": 74,
@@ -50,96 +64,82 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
+      "ticker": "PSX",
+      "name": "Phillips 66",
       "score": 73,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "RWS.L",
-      "name": "RWS Holdings",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
       "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PARA",
+      "name": "Paramount Global",
+      "score": 24,
       "market": "US",
       "capCategory": "Small"
     },
     {
       "ticker": "POLICYBZR.BO",
       "name": "PB Fintech (PolicyBazaar)",
-      "score": 24,
+      "score": 25,
       "market": "IN",
       "capCategory": "Large"
     },
     {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile",
-      "score": 24,
+      "ticker": "SBILIFE.NS",
+      "name": "SBI Life Insurance",
+      "score": 25,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ZG",
+      "name": "Zillow Group",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corp",
+      "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "BLDR",
       "name": "Builders FirstSource",
-      "score": 26,
+      "score": 27,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "OPEN",
       "name": "Opendoor Technologies",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "APLD",
-      "name": "Applied Digital",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "MPWR",
-      "name": "Monolithic Power Systems",
-      "score": 27,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
       "score": 27,
       "market": "US",
       "capCategory": "Small"
     },
     {
-      "ticker": "CIEN",
-      "name": "Ciena Corp",
-      "score": 28,
+      "ticker": "RARE",
+      "name": "Ultragenyx Pharmaceutical",
+      "score": 27,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Small"
     },
     {
-      "ticker": "9626.HK",
-      "name": "Bilibili",
-      "score": 29,
-      "market": "HK",
+      "ticker": "CPNG",
+      "name": "Coupang",
+      "score": 27,
+      "market": "US",
       "capCategory": "Large"
     }
   ],
@@ -147,24 +147,36 @@
     {
       "ticker": "CRM",
       "name": "Salesforce",
-      "score": 79,
-      "market": "US"
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "score": 74,
+      "score": 80,
       "market": "US"
     },
     {
       "ticker": "MPC",
       "name": "Marathon Petroleum",
-      "score": 73,
+      "score": 78,
       "market": "US"
     },
     {
       "ticker": "TMO",
       "name": "Thermo Fisher",
+      "score": 75,
+      "market": "US"
+    },
+    {
+      "ticker": "IQV",
+      "name": "IQVIA Holdings",
+      "score": 75,
+      "market": "US"
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "score": 73,
+      "market": "US"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
       "score": 72,
       "market": "US"
     },
@@ -181,27 +193,15 @@
       "market": "US"
     },
     {
-      "ticker": "DHR",
-      "name": "Danaher",
+      "ticker": "MRNA",
+      "name": "Moderna",
       "score": 71,
       "market": "US"
-    },
-    {
-      "ticker": "9432.T",
-      "name": "NTT",
-      "score": 71,
-      "market": "JP"
     },
     {
       "ticker": "TEAM",
       "name": "Atlassian",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "IQV",
-      "name": "IQVIA Holdings",
-      "score": 70,
+      "score": 71,
       "market": "US"
     }
   ],
@@ -233,7 +233,7 @@
     {
       "ticker": "BRZE",
       "name": "Braze",
-      "score": 72,
+      "score": 73,
       "market": "US"
     },
     {
@@ -245,6 +245,18 @@
     {
       "ticker": "GTLB",
       "name": "GitLab",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "PATH",
+      "name": "UiPath",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "QLYS",
+      "name": "Qualys",
       "score": 70,
       "market": "US"
     },
@@ -253,18 +265,6 @@
       "name": "easyJet",
       "score": 70,
       "market": "UK"
-    },
-    {
-      "ticker": "RMV.L",
-      "name": "Rightmove",
-      "score": 70,
-      "market": "UK"
-    },
-    {
-      "ticker": "PATH",
-      "name": "UiPath",
-      "score": 69,
-      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -323,13 +323,13 @@
       "market": "FR"
     },
     {
-      "ticker": "ITRK.L",
-      "name": "Intertek Group",
+      "ticker": "AI",
+      "name": "C3.ai",
       "score": 68,
-      "market": "UK"
+      "market": "US"
     }
   ],
   "totalStocks": 859,
-  "avgScore": 51,
-  "bearishAlertCount": 318
+  "avgScore": 53,
+  "bearishAlertCount": 323
 }
