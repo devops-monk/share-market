@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "CRM",
+      "name": "Salesforce",
+      "score": 77,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "JDW.L",
       "name": "J D Wetherspoon",
       "score": 76,
@@ -8,25 +15,39 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "CRM",
-      "name": "Salesforce",
+      "ticker": "HPQ",
+      "name": "HP Inc",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "QLYS",
+      "name": "Qualys",
       "score": 73,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "OXY",
-      "name": "Occidental Petroleum",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 72,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ESTC",
-      "name": "Elastic NV",
+      "ticker": "INSP",
+      "name": "Inspire Medical Systems",
       "score": 72,
       "market": "US",
-      "capCategory": "Large"
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "GTLB",
+      "name": "GitLab",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
       "ticker": "9432.T",
@@ -36,73 +57,45 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "HPQ",
-      "name": "HP Inc",
+      "ticker": "FCNCA",
+      "name": "First Citizens BancShares",
       "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "INSP",
-      "name": "Inspire Medical Systems",
+      "ticker": "ESTC",
+      "name": "Elastic NV",
       "score": 71,
       "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "GTLB",
-      "name": "GitLab",
-      "score": 71,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "EZJ.L",
-      "name": "easyJet",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "GRG.L",
-      "name": "Greggs",
-      "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "POLICYBZR.BO",
       "name": "PB Fintech (PolicyBazaar)",
-      "score": 21,
+      "score": 22,
       "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corp",
+      "score": 22,
+      "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "APLD",
       "name": "Applied Digital",
-      "score": 22,
+      "score": 23,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "CIEN",
-      "name": "Ciena Corp",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
       "ticker": "MPWR",
       "name": "Monolithic Power Systems",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BWXT",
-      "name": "BWX Technologies",
       "score": 25,
       "market": "US",
       "capCategory": "Large"
@@ -115,15 +108,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BLDR",
-      "name": "Builders FirstSource",
-      "score": 26,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "RARE",
+      "name": "Ultragenyx Pharmaceutical",
       "score": 26,
       "market": "US",
       "capCategory": "Small"
@@ -136,8 +122,22 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
+      "ticker": "BWXT",
+      "name": "BWX Technologies",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
       "score": 27,
       "market": "US",
       "capCategory": "Mid"
@@ -147,18 +147,18 @@
     {
       "ticker": "CRM",
       "name": "Salesforce",
-      "score": 73,
+      "score": 77,
       "market": "US"
     },
     {
-      "ticker": "OXY",
-      "name": "Occidental Petroleum",
-      "score": 72,
+      "ticker": "HPQ",
+      "name": "HP Inc",
+      "score": 74,
       "market": "US"
     },
     {
-      "ticker": "ESTC",
-      "name": "Elastic NV",
+      "ticker": "DVN",
+      "name": "Devon Energy",
       "score": 72,
       "market": "US"
     },
@@ -169,53 +169,59 @@
       "market": "JP"
     },
     {
-      "ticker": "HPQ",
-      "name": "HP Inc",
+      "ticker": "FCNCA",
+      "name": "First Citizens BancShares",
       "score": 71,
       "market": "US"
     },
     {
-      "ticker": "VLO",
-      "name": "Valero Energy",
+      "ticker": "ESTC",
+      "name": "Elastic NV",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "FROG",
+      "name": "JFrog",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
       "score": 70,
       "market": "US"
     },
     {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
+      "ticker": "ZS",
+      "name": "Zscaler",
       "score": 70,
       "market": "US"
     },
     {
       "ticker": "TEAM",
       "name": "Atlassian",
-      "score": 69,
+      "score": 70,
       "market": "US"
-    },
-    {
-      "ticker": "FCNCA",
-      "name": "First Citizens BancShares",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "SHEL.L",
-      "name": "Shell",
-      "score": 69,
-      "market": "UK"
     }
   ],
   "topMidCap": [
     {
+      "ticker": "QLYS",
+      "name": "Qualys",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "INSP",
       "name": "Inspire Medical Systems",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "GTLB",
       "name": "GitLab",
-      "score": 71,
+      "score": 72,
       "market": "US"
     },
     {
@@ -229,12 +235,6 @@
       "name": "Greggs",
       "score": 71,
       "market": "UK"
-    },
-    {
-      "ticker": "QLYS",
-      "name": "Qualys",
-      "score": 70,
-      "market": "US"
     },
     {
       "ticker": "JET2.L",
@@ -249,22 +249,22 @@
       "market": "DE"
     },
     {
+      "ticker": "PATH",
+      "name": "UiPath",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 69,
+      "market": "US"
+    },
+    {
       "ticker": "TEP.PA",
       "name": "Teleperformance",
       "score": 69,
       "market": "FR"
-    },
-    {
-      "ticker": "PATH",
-      "name": "UiPath",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "OCDO.L",
-      "name": "Ocado",
-      "score": 68,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
@@ -273,6 +273,12 @@
       "name": "J D Wetherspoon",
       "score": 76,
       "market": "UK"
+    },
+    {
+      "ticker": "RPD",
+      "name": "Rapid7",
+      "score": 69,
+      "market": "US"
     },
     {
       "ticker": "WOSG.L",
@@ -293,16 +299,16 @@
       "market": "UK"
     },
     {
+      "ticker": "PUB.PA",
+      "name": "Publicis",
+      "score": 68,
+      "market": "FR"
+    },
+    {
       "ticker": "FDEV.L",
       "name": "Frontier Developments",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 65,
-      "market": "US"
     },
     {
       "ticker": "CURY.L",
@@ -321,15 +327,9 @@
       "name": "CMC Markets",
       "score": 64,
       "market": "UK"
-    },
-    {
-      "ticker": "BVXP.L",
-      "name": "Bioventix",
-      "score": 64,
-      "market": "UK"
     }
   ],
   "totalStocks": 859,
-  "avgScore": 51,
-  "bearishAlertCount": 349
+  "avgScore": 52,
+  "bearishAlertCount": 346
 }
