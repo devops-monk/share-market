@@ -1,18 +1,18 @@
 {
   "topOverall": [
     {
+      "ticker": "RRC",
+      "name": "Range Resources",
+      "score": 75,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "EZJ.L",
       "name": "easyJet",
       "score": 74,
       "market": "UK",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "CRM",
-      "name": "Salesforce",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
     },
     {
       "ticker": "BYIT.L",
@@ -22,6 +22,13 @@
       "capCategory": "Small"
     },
     {
+      "ticker": "ELF",
+      "name": "Elf Beauty",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "JDW.L",
       "name": "J D Wetherspoon",
       "score": 72,
@@ -29,56 +36,42 @@
       "capCategory": "Small"
     },
     {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
+      "ticker": "HPQ",
+      "name": "HP Inc",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "IQV",
+      "name": "IQVIA Holdings",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "FROG",
+      "name": "JFrog",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "TEAM",
+      "name": "Atlassian",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "GTLB",
-      "name": "GitLab",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "S",
-      "name": "SentinelOne",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "ELF",
-      "name": "Elf Beauty",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "RRC",
-      "name": "Range Resources",
+      "ticker": "CTSH",
+      "name": "Cognizant",
       "score": 70,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "OCDO.L",
-      "name": "Ocado",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
-    {
-      "ticker": "OPEN",
-      "name": "Opendoor Technologies",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Small"
-    },
     {
       "ticker": "POLICYBZR.BO",
       "name": "PB Fintech (PolicyBazaar)",
@@ -87,23 +80,16 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "FMC",
-      "name": "FMC Corp",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 24,
+      "ticker": "OPEN",
+      "name": "Opendoor Technologies",
+      "score": 21,
       "market": "US",
       "capCategory": "Small"
     },
     {
       "ticker": "APLD",
       "name": "Applied Digital",
-      "score": 24,
+      "score": 25,
       "market": "US",
       "capCategory": "Mid"
     },
@@ -115,18 +101,18 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
+      "ticker": "ALB",
+      "name": "Albemarle",
       "score": 27,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
     },
     {
-      "ticker": "CAVA",
-      "name": "Cava Group",
+      "ticker": "LCID",
+      "name": "Lucid Group",
       "score": 28,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Small"
     },
     {
       "ticker": "9626.HK",
@@ -141,67 +127,81 @@
       "score": 29,
       "market": "IN",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "FMC",
+      "name": "FMC Corp",
+      "score": 29,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
+      "score": 29,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "CRM",
-      "name": "Salesforce",
-      "score": 73,
-      "market": "US"
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "RRC",
       "name": "Range Resources",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "AMGN",
-      "name": "Amgen",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "TEAM",
-      "name": "Atlassian",
-      "score": 69,
+      "score": 75,
       "market": "US"
     },
     {
       "ticker": "HPQ",
       "name": "HP Inc",
-      "score": 69,
+      "score": 71,
       "market": "US"
     },
     {
       "ticker": "IQV",
       "name": "IQVIA Holdings",
-      "score": 69,
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "FROG",
+      "name": "JFrog",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "TEAM",
+      "name": "Atlassian",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "CTSH",
+      "name": "Cognizant",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "score": 70,
       "market": "US"
     },
     {
       "ticker": "ESTC",
       "name": "Elastic NV",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "CVX",
+      "name": "Chevron",
       "score": 69,
       "market": "US"
     },
     {
-      "ticker": "SHEL.L",
-      "name": "Shell",
+      "ticker": "PYPL",
+      "name": "PayPal",
       "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture",
-      "score": 68,
       "market": "US"
     }
   ],
@@ -213,20 +213,14 @@
       "market": "UK"
     },
     {
-      "ticker": "GTLB",
-      "name": "GitLab",
-      "score": 70,
+      "ticker": "ELF",
+      "name": "Elf Beauty",
+      "score": 72,
       "market": "US"
     },
     {
       "ticker": "S",
       "name": "SentinelOne",
-      "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "ELF",
-      "name": "Elf Beauty",
       "score": 70,
       "market": "US"
     },
@@ -237,22 +231,22 @@
       "market": "UK"
     },
     {
-      "ticker": "QIA.DE",
-      "name": "Qiagen",
-      "score": 69,
-      "market": "DE"
-    },
-    {
       "ticker": "INSP",
       "name": "Inspire Medical Systems",
-      "score": 68,
+      "score": 69,
       "market": "US"
     },
     {
       "ticker": "QLYS",
       "name": "Qualys",
-      "score": 68,
+      "score": 69,
       "market": "US"
+    },
+    {
+      "ticker": "QIA.DE",
+      "name": "Qiagen",
+      "score": 69,
+      "market": "DE"
     },
     {
       "ticker": "JET2.L",
@@ -261,10 +255,16 @@
       "market": "UK"
     },
     {
-      "ticker": "BME.L",
-      "name": "B&M European",
+      "ticker": "GTLB",
+      "name": "GitLab",
       "score": 67,
-      "market": "UK"
+      "market": "US"
+    },
+    {
+      "ticker": "TENB",
+      "name": "Tenable Holdings",
+      "score": 67,
+      "market": "US"
     }
   ],
   "topSmallCap": [
@@ -293,16 +293,16 @@
       "market": "UK"
     },
     {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 67,
+      "market": "US"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 67,
       "market": "UK"
-    },
-    {
-      "ticker": "AI",
-      "name": "C3.ai",
-      "score": 66,
-      "market": "US"
     },
     {
       "ticker": "KNOS.L",
@@ -330,6 +330,6 @@
     }
   ],
   "totalStocks": 859,
-  "avgScore": 51,
-  "bearishAlertCount": 319
+  "avgScore": 52,
+  "bearishAlertCount": 310
 }
