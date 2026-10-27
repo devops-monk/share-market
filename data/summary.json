@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
-      "score": 76,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "ESTC",
       "name": "Elastic NV",
       "score": 75,
@@ -29,15 +22,8 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RRC",
-      "name": "Range Resources",
-      "score": 74,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "JET2.L",
-      "name": "Jet2",
+      "ticker": "EZJ.L",
+      "name": "easyJet",
       "score": 73,
       "market": "UK",
       "capCategory": "Mid"
@@ -57,10 +43,10 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "1038.HK",
-      "name": "CK Infrastructure",
+      "ticker": "RRC",
+      "name": "Range Resources",
       "score": 72,
-      "market": "HK",
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -69,16 +55,23 @@
       "score": 71,
       "market": "US",
       "capCategory": "Large"
-    }
-  ],
-  "bottomOverall": [
+    },
     {
-      "ticker": "APLD",
-      "name": "Applied Digital",
-      "score": 19,
+      "ticker": "AI",
+      "name": "C3.ai",
+      "score": 70,
       "market": "US",
       "capCategory": "Mid"
     },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    }
+  ],
+  "bottomOverall": [
     {
       "ticker": "POLICYBZR.BO",
       "name": "PB Fintech (PolicyBazaar)",
@@ -87,39 +80,25 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "BLDR",
-      "name": "Builders FirstSource",
+      "ticker": "IFX.DE",
+      "name": "Infineon Technologies",
+      "score": 24,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "APLD",
+      "name": "Applied Digital",
       "score": 25,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "SBILIFE.NS",
-      "name": "SBI Life Insurance",
-      "score": 26,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HDFCLIFE.NS",
-      "name": "HDFC Life Insurance",
-      "score": 26,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
+      "ticker": "BLDR",
+      "name": "Builders FirstSource",
       "score": 26,
       "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "IFX.DE",
-      "name": "Infineon Technologies",
-      "score": 28,
-      "market": "DE",
-      "capCategory": "Large"
+      "capCategory": "Mid"
     },
     {
       "ticker": "RTO.L",
@@ -141,6 +120,27 @@
       "score": 28,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "BROS",
+      "name": "Dutch Bros",
+      "score": 28,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "OPEN",
+      "name": "Opendoor Technologies",
+      "score": 28,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corp",
+      "score": 28,
+      "market": "US",
+      "capCategory": "Large"
     }
   ],
   "topLargeCap": [
@@ -165,26 +165,14 @@
     {
       "ticker": "RRC",
       "name": "Range Resources",
-      "score": 74,
-      "market": "US"
-    },
-    {
-      "ticker": "1038.HK",
-      "name": "CK Infrastructure",
       "score": 72,
-      "market": "HK"
+      "market": "US"
     },
     {
       "ticker": "MPC",
       "name": "Marathon Petroleum",
       "score": 71,
       "market": "US"
-    },
-    {
-      "ticker": "9432.T",
-      "name": "NTT",
-      "score": 71,
-      "market": "JP"
     },
     {
       "ticker": "MU",
@@ -199,16 +187,28 @@
       "market": "US"
     },
     {
+      "ticker": "CRM",
+      "name": "Salesforce",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "IQV",
+      "name": "IQVIA Holdings",
+      "score": 69,
+      "market": "US"
+    },
+    {
       "ticker": "ZS",
       "name": "Zscaler",
-      "score": 69,
+      "score": 68,
       "market": "US"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "JET2.L",
-      "name": "Jet2",
+      "ticker": "EZJ.L",
+      "name": "easyJet",
       "score": 73,
       "market": "UK"
     },
@@ -225,33 +225,9 @@
       "market": "US"
     },
     {
-      "ticker": "BME.L",
-      "name": "B&M European",
-      "score": 71,
-      "market": "UK"
-    },
-    {
       "ticker": "AI",
       "name": "C3.ai",
       "score": 70,
-      "market": "US"
-    },
-    {
-      "ticker": "EZJ.L",
-      "name": "easyJet",
-      "score": 69,
-      "market": "UK"
-    },
-    {
-      "ticker": "TEP.PA",
-      "name": "Teleperformance",
-      "score": 69,
-      "market": "FR"
-    },
-    {
-      "ticker": "PATH",
-      "name": "UiPath",
-      "score": 68,
       "market": "US"
     },
     {
@@ -261,34 +237,52 @@
       "market": "US"
     },
     {
-      "ticker": "FRAS.L",
-      "name": "Frasers Group",
+      "ticker": "ELF",
+      "name": "Elf Beauty",
+      "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "OCDO.L",
+      "name": "Ocado",
       "score": 68,
       "market": "UK"
+    },
+    {
+      "ticker": "PATH",
+      "name": "UiPath",
+      "score": 67,
+      "market": "US"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "INSP",
+      "name": "Inspire Medical Systems",
+      "score": 66,
+      "market": "US"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
-      "score": 76,
-      "market": "UK"
-    },
-    {
-      "ticker": "KNOS.L",
-      "name": "Kainos Group",
-      "score": 71,
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
+      "score": 70,
       "market": "UK"
     },
     {
       "ticker": "BVXP.L",
       "name": "Bioventix",
-      "score": 70,
+      "score": 69,
       "market": "UK"
     },
     {
-      "ticker": "VCT.L",
-      "name": "Victrex",
+      "ticker": "BYIT.L",
+      "name": "Bytes Technology",
       "score": 68,
       "market": "UK"
     },
@@ -299,37 +293,43 @@
       "market": "UK"
     },
     {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
+      "ticker": "RPD",
+      "name": "Rapid7",
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "JDW.L",
+      "name": "J D Wetherspoon",
       "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "RPD",
-      "name": "Rapid7",
-      "score": 65,
-      "market": "US"
-    },
-    {
-      "ticker": "PETS.L",
-      "name": "Pets at Home",
+      "ticker": "KNOS.L",
+      "name": "Kainos Group",
       "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "BYIT.L",
-      "name": "Bytes Technology",
-      "score": 63,
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "CARD.L",
-      "name": "Card Factory",
-      "score": 63,
+      "ticker": "RWS.L",
+      "name": "RWS Holdings",
+      "score": 65,
       "market": "UK"
+    },
+    {
+      "ticker": "PUB.PA",
+      "name": "Publicis",
+      "score": 63,
+      "market": "FR"
     }
   ],
   "totalStocks": 859,
   "avgScore": 51,
-  "bearishAlertCount": 350
+  "bearishAlertCount": 341
 }
