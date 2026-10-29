@@ -1,25 +1,25 @@
 {
-  "lastUpdated": "2026-10-29T14:09:15.571Z",
+  "lastUpdated": "2026-10-29T19:38:56.705Z",
   "stockCount": 859,
   "bearishAlerts": 287,
   "newsCount": 500,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
-      "price": 7718.6,
-      "sma50": 7698.27,
-      "sma200": 7306.48,
-      "changeFromHigh": -1.28,
+      "price": 7707.85,
+      "sma50": 7698.05,
+      "sma200": 7306.43,
+      "changeFromHigh": -1.42,
       "distributionDays": 7,
       "regime": "correction",
       "signal": "7 distribution days in 25 sessions — selling pressure"
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10770.54,
-      "sma50": 10705.35,
-      "sma200": 10520.54,
-      "changeFromHigh": -1.28,
+      "price": 10722.07,
+      "sma50": 10704.38,
+      "sma200": 10520.29,
+      "changeFromHigh": -1.73,
       "distributionDays": 6,
       "regime": "correction",
       "signal": "6 distribution days in 25 sessions — selling pressure"
@@ -27,19 +27,19 @@
     "in": {
       "index": "Nifty 50",
       "price": 22936.75,
-      "sma50": 23276.78,
-      "sma200": 24056.78,
+      "sma50": 23303.8,
+      "sma200": 24073.35,
       "changeFromHigh": -12.88,
-      "distributionDays": 9,
+      "distributionDays": 10,
       "regime": "correction",
-      "signal": "9 distribution days in 25 sessions — selling pressure"
+      "signal": "10 distribution days in 25 sessions — selling pressure"
     },
     "eu": {
       "index": "DAX 40",
-      "price": 26085.2,
-      "sma50": 25586.23,
-      "sma200": 24888.31,
-      "changeFromHigh": -1.82,
+      "price": 26039.68,
+      "sma50": 25585.32,
+      "sma200": 24888.08,
+      "changeFromHigh": -2,
       "distributionDays": 5,
       "regime": "bull",
       "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
@@ -47,8 +47,8 @@
     "asia": {
       "index": "Nikkei 225",
       "price": 64659.47,
-      "sma50": 65824.35,
-      "sma200": 61725.63,
+      "sma50": 65905.43,
+      "sma200": 61654.03,
       "changeFromHigh": -10.65,
       "distributionDays": 8,
       "regime": "correction",
