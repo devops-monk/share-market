@@ -3,9 +3,23 @@
     {
       "ticker": "FRAS.L",
       "name": "Frasers Group",
-      "score": 75,
+      "score": 77,
       "market": "UK",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 76,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 75,
+      "market": "UK",
+      "capCategory": "Small"
     },
     {
       "ticker": "EZJ.L",
@@ -15,18 +29,18 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 74,
-      "market": "UK",
-      "capCategory": "Small"
+      "ticker": "AMC",
+      "name": "AMC Entertainment",
+      "score": 73,
+      "market": "US",
+      "capCategory": "Mid"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
+      "ticker": "WPP.L",
+      "name": "WPP",
       "score": 73,
-      "market": "HK",
-      "capCategory": "Large"
+      "market": "UK",
+      "capCategory": "Mid"
     },
     {
       "ticker": "CVX",
@@ -36,119 +50,105 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
+      "ticker": "TEP.PA",
+      "name": "Teleperformance",
       "score": 72,
+      "market": "FR",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "WPP.L",
-      "name": "WPP",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "JD.L",
-      "name": "JD Sports Fashion",
+      "ticker": "PYPL",
+      "name": "PayPal",
       "score": 71,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "AMC",
-      "name": "AMC Entertainment",
-      "score": 70,
       "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "BVXP.L",
-      "name": "Bioventix",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Small"
+      "capCategory": "Large"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "CIEN",
       "name": "Ciena Corp",
-      "score": 16,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ",
-      "score": 19,
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "APLD",
       "name": "Applied Digital",
-      "score": 19,
+      "score": 20,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "FMC",
-      "name": "FMC Corp",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BLDR",
-      "name": "Builders FirstSource",
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
       "score": 24,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "DJT",
-      "name": "Trump Media",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "NESTLEIND.NS",
-      "name": "Nestle India",
-      "score": 26,
-      "market": "IN",
-      "capCategory": "Large"
     },
     {
       "ticker": "IFX.DE",
       "name": "Infineon Technologies",
-      "score": 27,
+      "score": 25,
       "market": "DE",
       "capCategory": "Large"
     },
     {
-      "ticker": "WHR",
-      "name": "Whirlpool",
-      "score": 27,
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
+      "score": 25,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IonQ",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "HDFCLIFE.NS",
+      "name": "HDFC Life Insurance",
+      "score": 27,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ENR.DE",
+      "name": "Siemens Energy",
+      "score": 28,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "POLICYBZR.BO",
+      "name": "PB Fintech (PolicyBazaar)",
+      "score": 28,
+      "market": "IN",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ITM.L",
+      "name": "ITM Power",
+      "score": 29,
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 73,
-      "market": "HK"
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "score": 76,
+      "market": "US"
     },
     {
       "ticker": "CVX",
@@ -157,59 +157,59 @@
       "market": "US"
     },
     {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum",
-      "score": 72,
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "score": 71,
       "market": "US"
     },
     {
       "ticker": "PYPL",
       "name": "PayPal",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 69,
-      "market": "HK"
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture",
-      "score": 68,
+      "score": 71,
       "market": "US"
     },
     {
       "ticker": "PSX",
       "name": "Phillips 66",
-      "score": 68,
+      "score": 71,
       "market": "US"
     },
     {
-      "ticker": "RRC",
-      "name": "Range Resources",
-      "score": 68,
+      "ticker": "HEN3.DE",
+      "name": "Henkel",
+      "score": 71,
+      "market": "DE"
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 71,
+      "market": "HK"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "score": 70,
       "market": "US"
     },
     {
-      "ticker": "JSWSTEEL.NS",
-      "name": "JSW Steel",
-      "score": 68,
-      "market": "IN"
+      "ticker": "REGN",
+      "name": "Regeneron",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "TRV",
+      "name": "Travelers",
+      "score": 70,
+      "market": "US"
     }
   ],
   "topMidCap": [
     {
       "ticker": "FRAS.L",
       "name": "Frasers Group",
-      "score": 75,
+      "score": 77,
       "market": "UK"
     },
     {
@@ -219,22 +219,34 @@
       "market": "UK"
     },
     {
+      "ticker": "AMC",
+      "name": "AMC Entertainment",
+      "score": 73,
+      "market": "US"
+    },
+    {
       "ticker": "WPP.L",
       "name": "WPP",
-      "score": 72,
+      "score": 73,
       "market": "UK"
+    },
+    {
+      "ticker": "TEP.PA",
+      "name": "Teleperformance",
+      "score": 72,
+      "market": "FR"
+    },
+    {
+      "ticker": "ETSY",
+      "name": "Etsy",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "JD.L",
       "name": "JD Sports Fashion",
       "score": 71,
       "market": "UK"
-    },
-    {
-      "ticker": "AMC",
-      "name": "AMC Entertainment",
-      "score": 70,
-      "market": "US"
     },
     {
       "ticker": "LTC",
@@ -243,26 +255,14 @@
       "market": "US"
     },
     {
-      "ticker": "BRZE",
-      "name": "Braze",
-      "score": 68,
-      "market": "US"
+      "ticker": "QIA.DE",
+      "name": "Qiagen",
+      "score": 69,
+      "market": "DE"
     },
     {
       "ticker": "BME.L",
       "name": "B&M European",
-      "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "HIK.L",
-      "name": "Hikma Pharmaceuticals",
-      "score": 68,
-      "market": "UK"
-    },
-    {
-      "ticker": "KGF.L",
-      "name": "Kingfisher",
       "score": 68,
       "market": "UK"
     }
@@ -271,7 +271,7 @@
     {
       "ticker": "ASHM.L",
       "name": "Ashmore Group",
-      "score": 74,
+      "score": 75,
       "market": "UK"
     },
     {
@@ -311,6 +311,12 @@
       "market": "UK"
     },
     {
+      "ticker": "FRE.DE",
+      "name": "Fresenius",
+      "score": 67,
+      "market": "DE"
+    },
+    {
       "ticker": "CMCX.L",
       "name": "CMC Markets",
       "score": 66,
@@ -321,15 +327,9 @@
       "name": "4imprint",
       "score": 65,
       "market": "UK"
-    },
-    {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 65,
-      "market": "UK"
     }
   ],
   "totalStocks": 859,
-  "avgScore": 50,
-  "bearishAlertCount": 289
+  "avgScore": 52,
+  "bearishAlertCount": 288
 }
