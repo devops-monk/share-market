@@ -3,8 +3,22 @@
     {
       "ticker": "EZJ.L",
       "name": "easyJet",
-      "score": 71,
+      "score": 73,
       "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "QLYS",
+      "name": "Qualys",
+      "score": 71,
+      "market": "US",
       "capCategory": "Mid"
     },
     {
@@ -15,132 +29,118 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "AMC",
-      "name": "AMC Entertainment",
-      "score": 69,
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 70,
       "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "KOTAKBANK.NS",
-      "name": "Kotak Mahindra Bank",
-      "score": 69,
-      "market": "IN",
       "capCategory": "Large"
     },
     {
       "ticker": "ACN",
       "name": "Accenture",
-      "score": 68,
+      "score": 69,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 68,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "RRC",
-      "name": "Range Resources",
-      "score": 68,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0002.HK",
-      "name": "CLP Holdings",
-      "score": 68,
-      "market": "HK",
       "capCategory": "Large"
     },
     {
       "ticker": "PSX",
       "name": "Phillips 66",
-      "score": 67,
+      "score": 69,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "AR",
-      "name": "Antero Resources",
-      "score": 67,
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "score": 69,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 69,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "BVXP.L",
+      "name": "Bioventix",
+      "score": 69,
+      "market": "UK",
+      "capCategory": "Small"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "CIEN",
-      "name": "Ciena Corp",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "UPST",
-      "name": "Upstart",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "APLD",
       "name": "Applied Digital",
-      "score": 23,
+      "score": 15,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "IONQ",
-      "name": "IonQ",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PINS",
-      "name": "Pinterest",
-      "score": 24,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "FMC",
-      "name": "FMC Corp",
-      "score": 25,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "BROS",
-      "name": "Dutch Bros",
-      "score": 26,
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "WOLF",
       "name": "Wolfspeed",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "score": 24,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "DJT",
+      "name": "Trump Media",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "FMC",
+      "name": "FMC Corp",
       "score": 26,
       "market": "US",
       "capCategory": "Small"
     },
     {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems",
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
       "score": 26,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "MARA",
-      "name": "Marathon Digital",
+      "ticker": "IONQ",
+      "name": "IonQ",
       "score": 26,
       "market": "US",
-      "capCategory": "Mid"
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "score": 26,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "WHR",
+      "name": "Whirlpool",
+      "score": 27,
+      "market": "US",
+      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -151,22 +151,40 @@
       "market": "HK"
     },
     {
-      "ticker": "KOTAKBANK.NS",
-      "name": "Kotak Mahindra Bank",
-      "score": 69,
-      "market": "IN"
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "score": 70,
+      "market": "US"
     },
     {
       "ticker": "ACN",
       "name": "Accenture",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "NTRA",
+      "name": "Natera",
       "score": 68,
       "market": "US"
     },
     {
-      "ticker": "RRC",
-      "name": "Range Resources",
+      "ticker": "TTE.PA",
+      "name": "TotalEnergies",
       "score": 68,
-      "market": "US"
+      "market": "FR"
     },
     {
       "ticker": "0002.HK",
@@ -175,53 +193,65 @@
       "market": "HK"
     },
     {
-      "ticker": "PSX",
-      "name": "Phillips 66",
+      "ticker": "CRWD",
+      "name": "CrowdStrike",
       "score": 67,
       "market": "US"
     },
     {
-      "ticker": "AR",
-      "name": "Antero Resources",
+      "ticker": "TEAM",
+      "name": "Atlassian",
       "score": 67,
       "market": "US"
-    },
-    {
-      "ticker": "ICICIBANK.NS",
-      "name": "ICICI Bank",
-      "score": 67,
-      "market": "IN"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 67,
-      "market": "HK"
-    },
-    {
-      "ticker": "1038.HK",
-      "name": "CK Infrastructure",
-      "score": 67,
-      "market": "HK"
     }
   ],
   "topMidCap": [
     {
       "ticker": "EZJ.L",
       "name": "easyJet",
+      "score": 73,
+      "market": "UK"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "QLYS",
+      "name": "Qualys",
       "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "GRG.L",
+      "name": "Greggs",
+      "score": 68,
       "market": "UK"
     },
     {
       "ticker": "AMC",
       "name": "AMC Entertainment",
-      "score": 69,
+      "score": 67,
       "market": "US"
     },
     {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 68,
+      "ticker": "EPAM",
+      "name": "EPAM Systems",
+      "score": 67,
+      "market": "US"
+    },
+    {
+      "ticker": "TENB",
+      "name": "Tenable Holdings",
+      "score": 67,
+      "market": "US"
+    },
+    {
+      "ticker": "RELY",
+      "name": "Remitly Global",
+      "score": 67,
       "market": "US"
     },
     {
@@ -231,46 +261,34 @@
       "market": "UK"
     },
     {
-      "ticker": "CROX",
-      "name": "Crocs",
-      "score": 65,
-      "market": "US"
-    },
-    {
-      "ticker": "JD.L",
-      "name": "JD Sports Fashion",
-      "score": 65,
-      "market": "UK"
-    },
-    {
-      "ticker": "JET2.L",
-      "name": "Jet2",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "BME.L",
-      "name": "B&M European",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "GRG.L",
-      "name": "Greggs",
-      "score": 64,
-      "market": "UK"
-    },
-    {
       "ticker": "TEP.PA",
       "name": "Teleperformance",
-      "score": 64,
+      "score": 67,
       "market": "FR"
     }
   ],
   "topSmallCap": [
     {
+      "ticker": "ASHM.L",
+      "name": "Ashmore Group",
+      "score": 69,
+      "market": "UK"
+    },
+    {
+      "ticker": "BVXP.L",
+      "name": "Bioventix",
+      "score": 69,
+      "market": "UK"
+    },
+    {
       "ticker": "CARD.L",
       "name": "Card Factory",
+      "score": 68,
+      "market": "UK"
+    },
+    {
+      "ticker": "FOUR.L",
+      "name": "4imprint",
       "score": 67,
       "market": "UK"
     },
@@ -281,55 +299,37 @@
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "ASHM.L",
-      "name": "Ashmore Group",
-      "score": 66,
-      "market": "UK"
-    },
-    {
       "ticker": "JDW.L",
       "name": "J D Wetherspoon",
-      "score": 65,
+      "score": 67,
       "market": "UK"
     },
     {
-      "ticker": "BVXP.L",
-      "name": "Bioventix",
-      "score": 65,
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 67,
       "market": "UK"
     },
     {
       "ticker": "FDEV.L",
       "name": "Frontier Developments",
-      "score": 64,
-      "market": "UK"
-    },
-    {
-      "ticker": "FOUR.L",
-      "name": "4imprint",
-      "score": 63,
+      "score": 65,
       "market": "UK"
     },
     {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
-      "score": 62,
+      "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "MONY.L",
-      "name": "Moneysupermarket.com",
-      "score": 62,
-      "market": "UK"
+      "ticker": "ALV.DE",
+      "name": "Allianz",
+      "score": 65,
+      "market": "DE"
     }
   ],
-  "totalStocks": 859,
-  "avgScore": 49,
-  "bearishAlertCount": 320
+  "totalStocks": 858,
+  "avgScore": 51,
+  "bearishAlertCount": 311
 }
