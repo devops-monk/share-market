@@ -1,54 +1,54 @@
 {
-  "lastUpdated": "2026-11-02T23:57:40.849Z",
+  "lastUpdated": "2026-11-03T15:04:57.486Z",
   "stockCount": 859,
-  "bearishAlerts": 288,
+  "bearishAlerts": 320,
   "newsCount": 500,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
-      "price": 7541.4,
-      "sma50": 7694.42,
-      "sma200": 7312.74,
-      "changeFromHigh": -3.55,
-      "distributionDays": 7,
+      "price": 7561.67,
+      "sma50": 7692.6,
+      "sma200": 7315.85,
+      "changeFromHigh": -3.29,
+      "distributionDays": 8,
       "regime": "correction",
-      "signal": "7 distribution days in 25 sessions — selling pressure"
+      "signal": "8 distribution days in 25 sessions — selling pressure"
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10761.33,
-      "sma50": 10702.91,
-      "sma200": 10525.6,
-      "changeFromHigh": -1.37,
+      "price": 10665.93,
+      "sma50": 10699.14,
+      "sma200": 10528.29,
+      "changeFromHigh": -2.24,
       "distributionDays": 5,
       "regime": "bull",
-      "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
+      "signal": "Price above SMA200 — uptrend intact"
     },
     "in": {
       "index": "Nifty 50",
-      "price": 23440.8,
-      "sma50": 23254.75,
-      "sma200": 24041.15,
-      "changeFromHigh": -10.97,
-      "distributionDays": 10,
+      "price": 23810.85,
+      "sma50": 23233.58,
+      "sma200": 24017.32,
+      "changeFromHigh": -9.56,
+      "distributionDays": 9,
       "regime": "correction",
-      "signal": "10 distribution days in 25 sessions — selling pressure"
+      "signal": "9 distribution days in 25 sessions — selling pressure"
     },
     "eu": {
       "index": "DAX 40",
-      "price": 25981.09,
-      "sma50": 25578.95,
-      "sma200": 24893.66,
-      "changeFromHigh": -2.22,
-      "distributionDays": 4,
-      "regime": "bull",
-      "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
+      "price": 25902.99,
+      "sma50": 25569.18,
+      "sma200": 24905.99,
+      "changeFromHigh": -2.51,
+      "distributionDays": 6,
+      "regime": "correction",
+      "signal": "6 distribution days in 25 sessions — selling pressure"
     },
     "asia": {
       "index": "Nikkei 225",
       "price": 63081.86,
-      "sma50": 65705.74,
-      "sma200": 61782.91,
+      "sma50": 65618.17,
+      "sma200": 61835.73,
       "changeFromHigh": -12.83,
       "distributionDays": 7,
       "regime": "correction",
