@@ -1,6 +1,13 @@
 {
   "topOverall": [
     {
+      "ticker": "6758.T",
+      "name": "Sony Group",
+      "score": 78,
+      "market": "JP",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "EZJ.L",
       "name": "easyJet",
       "score": 74,
@@ -8,87 +15,66 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "6758.T",
-      "name": "Sony Group",
-      "score": 73,
-      "market": "JP",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "1038.HK",
-      "name": "CK Infrastructure",
-      "score": 73,
-      "market": "HK",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "HNR1.DE",
-      "name": "Hannover Re",
-      "score": 70,
-      "market": "DE",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "BME.L",
-      "name": "B&M European",
-      "score": 69,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "MKS.L",
       "name": "Marks & Spencer",
-      "score": 69,
+      "score": 73,
       "market": "UK",
       "capCategory": "Mid"
     },
     {
       "ticker": "JD.L",
       "name": "JD Sports Fashion",
-      "score": 69,
+      "score": 72,
       "market": "UK",
       "capCategory": "Mid"
     },
     {
-      "ticker": "ICICIBANK.NS",
-      "name": "ICICI Bank",
-      "score": 69,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "0002.HK",
-      "name": "CLP Holdings",
-      "score": 69,
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 72,
       "market": "HK",
       "capCategory": "Large"
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna",
-      "score": 68,
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 71,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "FRAS.L",
+      "name": "Frasers Group",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BME.L",
+      "name": "B&M European",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 70,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
     {
       "ticker": "CIEN",
       "name": "Ciena Corp",
-      "score": 17,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "score": 20,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "MPWR",
-      "name": "Monolithic Power Systems",
       "score": 20,
       "market": "US",
       "capCategory": "Large"
@@ -101,60 +87,92 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "RGTI",
-      "name": "Rigetti Computing",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ",
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
+      "ticker": "BROS",
+      "name": "Dutch Bros",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "PINS",
+      "name": "Pinterest",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
+      "score": 25,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "APLD",
       "name": "Applied Digital",
-      "score": 22,
+      "score": 25,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "TSLA",
       "name": "Tesla",
-      "score": 23,
+      "score": 25,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "IFX.DE",
       "name": "Infineon Technologies",
-      "score": 24,
+      "score": 26,
       "market": "DE",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "ITM.L",
-      "name": "ITM Power",
-      "score": 24,
-      "market": "UK",
-      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
     {
       "ticker": "6758.T",
       "name": "Sony Group",
-      "score": 73,
+      "score": 78,
       "market": "JP"
     },
     {
-      "ticker": "1038.HK",
-      "name": "CK Infrastructure",
-      "score": 73,
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
+      "score": 72,
       "market": "HK"
+    },
+    {
+      "ticker": "U",
+      "name": "Unity Software",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "score": 70,
+      "market": "US"
+    },
+    {
+      "ticker": "KOTAKBANK.NS",
+      "name": "Kotak Mahindra Bank",
+      "score": 70,
+      "market": "IN"
     },
     {
       "ticker": "HNR1.DE",
@@ -163,46 +181,28 @@
       "market": "DE"
     },
     {
-      "ticker": "ICICIBANK.NS",
-      "name": "ICICI Bank",
+      "ticker": "1038.HK",
+      "name": "CK Infrastructure",
+      "score": 70,
+      "market": "HK"
+    },
+    {
+      "ticker": "MUV2.DE",
+      "name": "Munich Re",
       "score": 69,
-      "market": "IN"
+      "market": "DE"
+    },
+    {
+      "ticker": "7267.T",
+      "name": "Honda Motor",
+      "score": 69,
+      "market": "JP"
     },
     {
       "ticker": "0002.HK",
       "name": "CLP Holdings",
       "score": 69,
       "market": "HK"
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "TEAM",
-      "name": "Atlassian",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 68,
-      "market": "HK"
-    },
-    {
-      "ticker": "1398.HK",
-      "name": "ICBC",
-      "score": 68,
-      "market": "HK"
-    },
-    {
-      "ticker": "MUV2.DE",
-      "name": "Munich Re",
-      "score": 67,
-      "market": "DE"
     }
   ],
   "topMidCap": [
@@ -213,123 +213,123 @@
       "market": "UK"
     },
     {
-      "ticker": "BME.L",
-      "name": "B&M European",
-      "score": 69,
-      "market": "UK"
-    },
-    {
       "ticker": "MKS.L",
       "name": "Marks & Spencer",
-      "score": 69,
+      "score": 73,
       "market": "UK"
     },
     {
       "ticker": "JD.L",
       "name": "JD Sports Fashion",
-      "score": 69,
+      "score": 72,
       "market": "UK"
-    },
-    {
-      "ticker": "GTLB",
-      "name": "GitLab",
-      "score": 68,
-      "market": "US"
     },
     {
       "ticker": "FRAS.L",
       "name": "Frasers Group",
-      "score": 68,
+      "score": 71,
       "market": "UK"
+    },
+    {
+      "ticker": "BME.L",
+      "name": "B&M European",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 70,
+      "market": "US"
     },
     {
       "ticker": "AMC",
       "name": "AMC Entertainment",
-      "score": 67,
+      "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "LYFT",
+      "name": "Lyft",
+      "score": 68,
       "market": "US"
     },
     {
       "ticker": "VRNS",
       "name": "Varonis Systems",
-      "score": 67,
+      "score": 68,
       "market": "US"
     },
     {
-      "ticker": "ETSY",
-      "name": "Etsy",
+      "ticker": "JET2.L",
+      "name": "Jet2",
       "score": 67,
-      "market": "US"
-    },
-    {
-      "ticker": "LTC",
-      "name": "LTC Properties",
-      "score": 66,
-      "market": "US"
+      "market": "UK"
     }
   ],
   "topSmallCap": [
     {
       "ticker": "JDW.L",
       "name": "J D Wetherspoon",
-      "score": 68,
+      "score": 70,
       "market": "UK"
+    },
+    {
+      "ticker": "FRE.DE",
+      "name": "Fresenius",
+      "score": 69,
+      "market": "DE"
+    },
+    {
+      "ticker": "ALV.DE",
+      "name": "Allianz",
+      "score": 68,
+      "market": "DE"
+    },
+    {
+      "ticker": "PUB.PA",
+      "name": "Publicis",
+      "score": 68,
+      "market": "FR"
     },
     {
       "ticker": "WOSG.L",
       "name": "Watches of Switzerland",
-      "score": 63,
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "PETS.L",
       "name": "Pets at Home",
-      "score": 63,
-      "market": "UK"
-    },
-    {
-      "ticker": "MONY.L",
-      "name": "Moneysupermarket.com",
-      "score": 62,
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "CARD.L",
       "name": "Card Factory",
-      "score": 62,
+      "score": 65,
       "market": "UK"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 61,
+      "ticker": "RNWH.L",
+      "name": "Renew Holdings",
+      "score": 65,
+      "market": "UK"
+    },
+    {
+      "ticker": "MONY.L",
+      "name": "Moneysupermarket.com",
+      "score": 63,
       "market": "UK"
     },
     {
       "ticker": "CKN.L",
       "name": "Chemring Group",
-      "score": 61,
-      "market": "UK"
-    },
-    {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "DOM.L",
-      "name": "Domino's Pizza Group",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "BYIT.L",
-      "name": "Bytes Technology",
-      "score": 60,
+      "score": 63,
       "market": "UK"
     }
   ],
   "totalStocks": 859,
-  "avgScore": 49,
+  "avgScore": 51,
   "bearishAlertCount": 302
 }

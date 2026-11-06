@@ -1,25 +1,25 @@
 {
-  "lastUpdated": "2026-11-06T14:59:10.855Z",
+  "lastUpdated": "2026-11-06T20:53:22.781Z",
   "stockCount": 859,
   "bearishAlerts": 302,
-  "newsCount": 500,
+  "newsCount": 495,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
-      "price": 7424.66,
-      "sma50": 7680.4,
-      "sma200": 7325.29,
-      "changeFromHigh": -5.04,
+      "price": 7386.56,
+      "sma50": 7679.64,
+      "sma200": 7325.1,
+      "changeFromHigh": -5.53,
       "distributionDays": 8,
       "regime": "correction",
       "signal": "8 distribution days in 25 sessions — selling pressure"
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10589.75,
-      "sma50": 10691.48,
-      "sma200": 10537,
-      "changeFromHigh": -2.94,
+      "price": 10673.94,
+      "sma50": 10693.17,
+      "sma200": 10537.42,
+      "changeFromHigh": -2.17,
       "distributionDays": 4,
       "regime": "bull",
       "signal": "Price above SMA200 — uptrend intact"
@@ -27,19 +27,19 @@
     "in": {
       "index": "Nifty 50",
       "price": 25030.35,
-      "sma50": 23248.02,
-      "sma200": 23998.93,
+      "sma50": 23234.1,
+      "sma200": 24002.44,
       "changeFromHigh": -4.93,
-      "distributionDays": 6,
+      "distributionDays": 7,
       "regime": "correction",
-      "signal": "6 distribution days in 25 sessions — selling pressure"
+      "signal": "7 distribution days in 25 sessions — selling pressure"
     },
     "eu": {
       "index": "DAX 40",
-      "price": 25723.76,
-      "sma50": 25553.68,
-      "sma200": 24924.59,
-      "changeFromHigh": -3.18,
+      "price": 25820.36,
+      "sma50": 25555.61,
+      "sma200": 24925.07,
+      "changeFromHigh": -2.82,
       "distributionDays": 4,
       "regime": "bull",
       "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
@@ -47,10 +47,10 @@
     "asia": {
       "index": "Nikkei 225",
       "price": 57434.77,
-      "sma50": 65281,
-      "sma200": 61964.14,
+      "sma50": 65452.63,
+      "sma200": 61936.67,
       "changeFromHigh": -20.63,
-      "distributionDays": 7,
+      "distributionDays": 4,
       "regime": "bear",
       "signal": "Down -20.6% from high — bear market territory"
     },
