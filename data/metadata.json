@@ -1,60 +1,60 @@
 {
-  "lastUpdated": "2026-11-07T00:50:18.921Z",
+  "lastUpdated": "2026-11-09T17:26:32.433Z",
   "stockCount": 859,
-  "bearishAlerts": 297,
-  "newsCount": 495,
+  "bearishAlerts": 261,
+  "newsCount": 500,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
-      "price": 7376.86,
-      "sma50": 7679.45,
-      "sma200": 7325.05,
-      "changeFromHigh": -5.65,
+      "price": 7545.74,
+      "sma50": 7676.13,
+      "sma200": 7328.2,
+      "changeFromHigh": -3.49,
       "distributionDays": 8,
       "regime": "correction",
       "signal": "8 distribution days in 25 sessions — selling pressure"
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10673.94,
-      "sma50": 10695.54,
-      "sma200": 10534.77,
-      "changeFromHigh": -2.17,
-      "distributionDays": 3,
+      "price": 10782.87,
+      "sma50": 10692.34,
+      "sma200": 10540.59,
+      "changeFromHigh": -1.17,
+      "distributionDays": 5,
       "regime": "bull",
-      "signal": "Price above SMA200 — uptrend intact"
+      "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
     },
     "in": {
       "index": "Nifty 50",
-      "price": 25030.35,
-      "sma50": 23234.1,
-      "sma200": 24002.44,
-      "changeFromHigh": -4.93,
-      "distributionDays": 7,
-      "regime": "correction",
-      "signal": "7 distribution days in 25 sessions — selling pressure"
+      "price": 25044.65,
+      "sma50": 23264.76,
+      "sma200": 23995.83,
+      "changeFromHigh": -4.88,
+      "distributionDays": 5,
+      "regime": "bull",
+      "signal": "Price above SMA200 — uptrend intact"
     },
     "eu": {
       "index": "DAX 40",
-      "price": 25820.36,
-      "sma50": 25570.6,
-      "sma200": 24920.44,
-      "changeFromHigh": -2.82,
-      "distributionDays": 3,
+      "price": 26267.19,
+      "sma50": 25555.79,
+      "sma200": 24932.29,
+      "changeFromHigh": -1.14,
+      "distributionDays": 5,
       "regime": "bull",
       "signal": "Price > SMA50 > SMA200 — confirmed uptrend"
     },
     "asia": {
       "index": "Nikkei 225",
-      "price": 57434.77,
-      "sma50": 65452.63,
-      "sma200": 61936.67,
-      "changeFromHigh": -20.63,
-      "distributionDays": 4,
-      "regime": "bear",
-      "signal": "Down -20.6% from high — bear market territory"
+      "price": 58775.5,
+      "sma50": 65281,
+      "sma200": 61964.14,
+      "changeFromHigh": -18.78,
+      "distributionDays": 5,
+      "regime": "correction",
+      "signal": "Down -18.8% from high — correction territory"
     },
-    "overall": "bear",
-    "summary": "Bear market conditions. Prioritize capital preservation. Avoid new longs, consider defensive positions."
+    "overall": "correction",
+    "summary": "Markets showing weakness. Be selective, reduce position sizes, and tighten stops."
   }
 }
