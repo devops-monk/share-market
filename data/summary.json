@@ -8,10 +8,52 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
+      "ticker": "REGN",
+      "name": "Regeneron",
+      "score": 74,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "JDW.L",
+      "name": "J D Wetherspoon",
       "score": 73,
-      "market": "HK",
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "CROX",
+      "name": "Crocs",
+      "score": 72,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "DIS",
+      "name": "Disney",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "BILL",
+      "name": "Bill Holdings",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "ALL",
+      "name": "Allstate",
+      "score": 71,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "GME",
+      "name": "GameStop",
+      "score": 71,
+      "market": "US",
       "capCategory": "Large"
     },
     {
@@ -22,52 +64,10 @@
       "capCategory": "Mid"
     },
     {
-      "ticker": "MKS.L",
-      "name": "Marks & Spencer",
+      "ticker": "IAG.L",
+      "name": "IAG",
       "score": 71,
       "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "CROX",
-      "name": "Crocs",
-      "score": 70,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "GRG.L",
-      "name": "Greggs",
-      "score": 70,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "GME",
-      "name": "GameStop",
-      "score": 69,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "PETS.L",
-      "name": "Pets at Home",
-      "score": 69,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
-      "score": 69,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "HEN3.DE",
-      "name": "Henkel",
-      "score": 69,
-      "market": "DE",
       "capCategory": "Large"
     }
   ],
@@ -75,134 +75,134 @@
     {
       "ticker": "CIEN",
       "name": "Ciena Corp",
-      "score": 14,
+      "score": 15,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "ASTS",
       "name": "AST SpaceMobile",
-      "score": 16,
+      "score": 20,
       "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "POLICYBZR.BO",
+      "name": "PB Fintech (PolicyBazaar)",
+      "score": 21,
+      "market": "IN",
       "capCategory": "Large"
     },
     {
       "ticker": "CAVA",
       "name": "Cava Group",
-      "score": 18,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "QS",
-      "name": "QuantumScape",
-      "score": 19,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "RGTI",
-      "name": "Rigetti Computing",
-      "score": 19,
+      "score": 21,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "APLD",
       "name": "Applied Digital",
-      "score": 19,
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BLDR",
+      "name": "Builders FirstSource",
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "BROS",
       "name": "Dutch Bros",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 21,
+      "ticker": "QS",
+      "name": "QuantumScape",
+      "score": 22,
       "market": "US",
-      "capCategory": "Small"
+      "capCategory": "Mid"
     },
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise",
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
+      "score": 22,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "PINS",
+      "name": "Pinterest",
       "score": 22,
       "market": "US",
       "capCategory": "Large"
-    },
-    {
-      "ticker": "BLDR",
-      "name": "Builders FirstSource",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 73,
-      "market": "HK"
+      "ticker": "REGN",
+      "name": "Regeneron",
+      "score": 74,
+      "market": "US"
+    },
+    {
+      "ticker": "DIS",
+      "name": "Disney",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "ALL",
+      "name": "Allstate",
+      "score": 71,
+      "market": "US"
     },
     {
       "ticker": "GME",
       "name": "GameStop",
+      "score": 71,
+      "market": "US"
+    },
+    {
+      "ticker": "IAG.L",
+      "name": "IAG",
+      "score": 71,
+      "market": "UK"
+    },
+    {
+      "ticker": "MUV2.DE",
+      "name": "Munich Re",
+      "score": 70,
+      "market": "DE"
+    },
+    {
+      "ticker": "PGR",
+      "name": "Progressive",
       "score": 69,
+      "market": "US"
+    },
+    {
+      "ticker": "CB",
+      "name": "Chubb",
+      "score": 68,
       "market": "US"
     },
     {
       "ticker": "HEN3.DE",
       "name": "Henkel",
-      "score": 69,
-      "market": "DE"
-    },
-    {
-      "ticker": "1038.HK",
-      "name": "CK Infrastructure",
-      "score": 69,
-      "market": "HK"
-    },
-    {
-      "ticker": "ALL",
-      "name": "Allstate",
-      "score": 68,
-      "market": "US"
-    },
-    {
-      "ticker": "MUV2.DE",
-      "name": "Munich Re",
       "score": 68,
       "market": "DE"
     },
     {
-      "ticker": "1398.HK",
-      "name": "ICBC",
+      "ticker": "0939.HK",
+      "name": "China Construction Bank",
       "score": 68,
       "market": "HK"
-    },
-    {
-      "ticker": "ADM.L",
-      "name": "Admiral Group",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "KOTAKBANK.NS",
-      "name": "Kotak Mahindra Bank",
-      "score": 67,
-      "market": "IN"
-    },
-    {
-      "ticker": "7751.T",
-      "name": "Canon",
-      "score": 67,
-      "market": "JP"
     }
   ],
   "topMidCap": [
@@ -213,6 +213,18 @@
       "market": "UK"
     },
     {
+      "ticker": "CROX",
+      "name": "Crocs",
+      "score": 72,
+      "market": "US"
+    },
+    {
+      "ticker": "BILL",
+      "name": "Bill Holdings",
+      "score": 71,
+      "market": "US"
+    },
+    {
       "ticker": "BME.L",
       "name": "B&M European",
       "score": 71,
@@ -225,16 +237,16 @@
       "market": "UK"
     },
     {
-      "ticker": "CROX",
-      "name": "Crocs",
-      "score": 70,
-      "market": "US"
-    },
-    {
       "ticker": "GRG.L",
       "name": "Greggs",
       "score": 70,
       "market": "UK"
+    },
+    {
+      "ticker": "OGN",
+      "name": "Organon & Co",
+      "score": 67,
+      "market": "US"
     },
     {
       "ticker": "JET2.L",
@@ -249,25 +261,19 @@
       "market": "UK"
     },
     {
-      "ticker": "BILL",
-      "name": "Bill Holdings",
+      "ticker": "VRNS",
+      "name": "Varonis Systems",
       "score": 66,
       "market": "US"
-    },
-    {
-      "ticker": "FRAS.L",
-      "name": "Frasers Group",
-      "score": 66,
-      "market": "UK"
-    },
-    {
-      "ticker": "OCDO.L",
-      "name": "Ocado",
-      "score": 66,
-      "market": "UK"
     }
   ],
   "topSmallCap": [
+    {
+      "ticker": "JDW.L",
+      "name": "J D Wetherspoon",
+      "score": 73,
+      "market": "UK"
+    },
     {
       "ticker": "PETS.L",
       "name": "Pets at Home",
@@ -275,10 +281,10 @@
       "market": "UK"
     },
     {
-      "ticker": "JDW.L",
-      "name": "J D Wetherspoon",
-      "score": 69,
-      "market": "UK"
+      "ticker": "FRE.DE",
+      "name": "Fresenius",
+      "score": 68,
+      "market": "DE"
     },
     {
       "ticker": "FDEV.L",
@@ -293,10 +299,16 @@
       "market": "FR"
     },
     {
-      "ticker": "FRE.DE",
-      "name": "Fresenius",
+      "ticker": "PUB.PA",
+      "name": "Publicis",
       "score": 63,
-      "market": "DE"
+      "market": "FR"
+    },
+    {
+      "ticker": "VCT.L",
+      "name": "Victrex",
+      "score": 62,
+      "market": "UK"
     },
     {
       "ticker": "DOM.L",
@@ -311,25 +323,13 @@
       "market": "UK"
     },
     {
-      "ticker": "VCT.L",
-      "name": "Victrex",
-      "score": 61,
-      "market": "UK"
-    },
-    {
       "ticker": "CRDA.L",
       "name": "Croda International",
-      "score": 60,
-      "market": "UK"
-    },
-    {
-      "ticker": "BYIT.L",
-      "name": "Bytes Technology",
       "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 859,
-  "avgScore": 48,
-  "bearishAlertCount": 352
+  "avgScore": 49,
+  "bearishAlertCount": 355
 }
