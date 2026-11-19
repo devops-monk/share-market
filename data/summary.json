@@ -1,283 +1,283 @@
 {
   "topOverall": [
     {
-      "ticker": "GRG.L",
-      "name": "Greggs",
-      "score": 75,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "DIS",
-      "name": "Disney",
-      "score": 74,
+      "ticker": "GME",
+      "name": "GameStop",
+      "score": 80,
       "market": "US",
       "capCategory": "Large"
     },
     {
+      "ticker": "MKS.L",
+      "name": "Marks & Spencer",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "AVON.L",
+      "name": "Avon Protection",
+      "score": 71,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
       "ticker": "TGT",
       "name": "Target",
-      "score": 74,
+      "score": 69,
       "market": "US",
       "capCategory": "Large"
     },
     {
       "ticker": "BME.L",
       "name": "B&M European",
-      "score": 74,
+      "score": 69,
       "market": "UK",
       "capCategory": "Mid"
     },
     {
-      "ticker": "GME",
-      "name": "GameStop",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CROX",
-      "name": "Crocs",
-      "score": 73,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "EZJ.L",
-      "name": "easyJet",
-      "score": 73,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "MKS.L",
-      "name": "Marks & Spencer",
-      "score": 72,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "PETS.L",
-      "name": "Pets at Home",
-      "score": 71,
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
+      "score": 69,
       "market": "UK",
       "capCategory": "Small"
     },
     {
-      "ticker": "DLTR",
-      "name": "Dollar Tree",
-      "score": 70,
+      "ticker": "JDW.L",
+      "name": "J D Wetherspoon",
+      "score": 69,
+      "market": "UK",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "ALL",
+      "name": "Allstate",
+      "score": 68,
       "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "WRB",
+      "name": "W. R. Berkley",
+      "score": 68,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 68,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
     {
+      "ticker": "CAVA",
+      "name": "Cava Group",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "RGTI",
       "name": "Rigetti Computing",
-      "score": 19,
+      "score": 20,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "LCID",
+      "name": "Lucid Group",
+      "score": 20,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "BROS",
+      "name": "Dutch Bros",
+      "score": 21,
+      "market": "US",
+      "capCategory": "Mid"
+    },
+    {
+      "ticker": "BLDR",
+      "name": "Builders FirstSource",
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
     },
     {
       "ticker": "CIEN",
       "name": "Ciena Corp",
-      "score": 21,
+      "score": 22,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "QS",
-      "name": "QuantumScape",
-      "score": 21,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "JOBY",
-      "name": "Joby Aviation",
-      "score": 21,
+      "ticker": "APLD",
+      "name": "Applied Digital",
+      "score": 22,
       "market": "US",
       "capCategory": "Mid"
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "score": 23,
+      "market": "US",
+      "capCategory": "Large"
     },
     {
       "ticker": "PARA",
       "name": "Paramount Global",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "PINS",
-      "name": "Pinterest",
-      "score": 22,
-      "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "POLICYBZR.BO",
-      "name": "PB Fintech (PolicyBazaar)",
-      "score": 23,
-      "market": "IN",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "CAVA",
-      "name": "Cava Group",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Mid"
-    },
-    {
-      "ticker": "SRPT",
-      "name": "Sarepta Therapeutics",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Small"
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group",
-      "score": 23,
+      "score": 24,
       "market": "US",
       "capCategory": "Small"
     }
   ],
   "topLargeCap": [
     {
-      "ticker": "DIS",
-      "name": "Disney",
-      "score": 74,
+      "ticker": "GME",
+      "name": "GameStop",
+      "score": 80,
       "market": "US"
     },
     {
       "ticker": "TGT",
       "name": "Target",
-      "score": 74,
+      "score": 69,
       "market": "US"
     },
     {
-      "ticker": "GME",
-      "name": "GameStop",
-      "score": 73,
+      "ticker": "ALL",
+      "name": "Allstate",
+      "score": 68,
       "market": "US"
     },
     {
-      "ticker": "DLTR",
-      "name": "Dollar Tree",
-      "score": 70,
+      "ticker": "WRB",
+      "name": "W. R. Berkley",
+      "score": 68,
       "market": "US"
     },
     {
-      "ticker": "KOTAKBANK.NS",
-      "name": "Kotak Mahindra Bank",
-      "score": 69,
-      "market": "IN"
+      "ticker": "ERF.PA",
+      "name": "Eurofins Scientific",
+      "score": 68,
+      "market": "FR"
     },
     {
-      "ticker": "HEN3.DE",
-      "name": "Henkel",
-      "score": 69,
-      "market": "DE"
-    },
-    {
-      "ticker": "0939.HK",
-      "name": "China Construction Bank",
-      "score": 69,
+      "ticker": "1038.HK",
+      "name": "CK Infrastructure",
+      "score": 68,
       "market": "HK"
     },
     {
-      "ticker": "FROG",
-      "name": "JFrog",
-      "score": 68,
+      "ticker": "CRWD",
+      "name": "CrowdStrike",
+      "score": 67,
       "market": "US"
     },
     {
-      "ticker": "MUV2.DE",
-      "name": "Munich Re",
-      "score": 68,
-      "market": "DE"
+      "ticker": "DIS",
+      "name": "Disney",
+      "score": 67,
+      "market": "US"
     },
     {
-      "ticker": "PG",
-      "name": "Procter & Gamble",
+      "ticker": "7974.T",
+      "name": "Nintendo",
       "score": 67,
+      "market": "JP"
+    },
+    {
+      "ticker": "VEEV",
+      "name": "Veeva Systems",
+      "score": 66,
       "market": "US"
     }
   ],
   "topMidCap": [
     {
-      "ticker": "GRG.L",
-      "name": "Greggs",
-      "score": 75,
+      "ticker": "MKS.L",
+      "name": "Marks & Spencer",
+      "score": 71,
       "market": "UK"
     },
     {
       "ticker": "BME.L",
       "name": "B&M European",
-      "score": 74,
+      "score": 69,
       "market": "UK"
     },
     {
-      "ticker": "CROX",
-      "name": "Crocs",
-      "score": 73,
+      "ticker": "LTC",
+      "name": "LTC Properties",
+      "score": 68,
+      "market": "US"
+    },
+    {
+      "ticker": "VRNS",
+      "name": "Varonis Systems",
+      "score": 67,
+      "market": "US"
+    },
+    {
+      "ticker": "GRG.L",
+      "name": "Greggs",
+      "score": 67,
+      "market": "UK"
+    },
+    {
+      "ticker": "GTLB",
+      "name": "GitLab",
+      "score": 66,
       "market": "US"
     },
     {
       "ticker": "EZJ.L",
       "name": "easyJet",
-      "score": 73,
+      "score": 66,
       "market": "UK"
     },
     {
-      "ticker": "MKS.L",
-      "name": "Marks & Spencer",
-      "score": 72,
-      "market": "UK"
-    },
-    {
-      "ticker": "VRNS",
-      "name": "Varonis Systems",
-      "score": 69,
-      "market": "US"
-    },
-    {
-      "ticker": "JD.L",
-      "name": "JD Sports Fashion",
-      "score": 68,
+      "ticker": "OCDO.L",
+      "name": "Ocado",
+      "score": 66,
       "market": "UK"
     },
     {
       "ticker": "OGN",
       "name": "Organon & Co",
-      "score": 67,
-      "market": "US"
-    },
-    {
-      "ticker": "QLYS",
-      "name": "Qualys",
-      "score": 67,
+      "score": 65,
       "market": "US"
     },
     {
       "ticker": "LAND.L",
       "name": "Land Securities",
-      "score": 67,
+      "score": 65,
       "market": "UK"
     }
   ],
   "topSmallCap": [
     {
-      "ticker": "PETS.L",
-      "name": "Pets at Home",
+      "ticker": "AVON.L",
+      "name": "Avon Protection",
       "score": 71,
       "market": "UK"
     },
     {
-      "ticker": "CARD.L",
-      "name": "Card Factory",
-      "score": 70,
+      "ticker": "FDEV.L",
+      "name": "Frontier Developments",
+      "score": 69,
       "market": "UK"
     },
     {
@@ -287,10 +287,16 @@
       "market": "UK"
     },
     {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 66,
+      "ticker": "VCT.L",
+      "name": "Victrex",
+      "score": 64,
       "market": "UK"
+    },
+    {
+      "ticker": "FRE.DE",
+      "name": "Fresenius",
+      "score": 64,
+      "market": "DE"
     },
     {
       "ticker": "DOM.L",
@@ -299,37 +305,31 @@
       "market": "UK"
     },
     {
-      "ticker": "VCT.L",
-      "name": "Victrex",
+      "ticker": "BYIT.L",
+      "name": "Bytes Technology",
       "score": 63,
       "market": "UK"
     },
     {
-      "ticker": "FRE.DE",
-      "name": "Fresenius",
+      "ticker": "PETS.L",
+      "name": "Pets at Home",
       "score": 63,
-      "market": "DE"
-    },
-    {
-      "ticker": "WOSG.L",
-      "name": "Watches of Switzerland",
-      "score": 62,
       "market": "UK"
     },
     {
-      "ticker": "BVXP.L",
-      "name": "Bioventix",
+      "ticker": "INSP",
+      "name": "Inspire Medical Systems",
       "score": 62,
-      "market": "UK"
+      "market": "US"
     },
     {
-      "ticker": "ML.PA",
-      "name": "Michelin",
+      "ticker": "CARD.L",
+      "name": "Card Factory",
       "score": 62,
-      "market": "FR"
+      "market": "UK"
     }
   ],
   "totalStocks": 859,
-  "avgScore": 49,
-  "bearishAlertCount": 365
+  "avgScore": 48,
+  "bearishAlertCount": 378
 }
