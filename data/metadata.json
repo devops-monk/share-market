@@ -1,25 +1,25 @@
 {
-  "lastUpdated": "2026-11-24T04:26:05.181Z",
+  "lastUpdated": "2026-11-24T18:54:43.722Z",
   "stockCount": 859,
-  "bearishAlerts": 383,
+  "bearishAlerts": 369,
   "newsCount": 500,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
-      "price": 7237.17,
-      "sma50": 7617.6,
-      "sma200": 7350.1,
-      "changeFromHigh": -7.44,
-      "distributionDays": 7,
+      "price": 7194.3,
+      "sma50": 7609.77,
+      "sma200": 7351.25,
+      "changeFromHigh": -7.99,
+      "distributionDays": 8,
       "regime": "correction",
-      "signal": "7 distribution days in 25 sessions — selling pressure"
+      "signal": "8 distribution days in 25 sessions — selling pressure"
     },
     "uk": {
       "index": "FTSE 100",
-      "price": 10480.82,
-      "sma50": 10678.06,
-      "sma200": 10559.96,
-      "changeFromHigh": -3.94,
+      "price": 10467.07,
+      "sma50": 10674.24,
+      "sma200": 10560.53,
+      "changeFromHigh": -4.07,
       "distributionDays": 5,
       "regime": "correction",
       "signal": "Price below SMA200 — trend weakening"
@@ -36,23 +36,23 @@
     },
     "eu": {
       "index": "DAX 40",
-      "price": 25337.27,
-      "sma50": 25609.71,
-      "sma200": 24999.37,
-      "changeFromHigh": -5.36,
-      "distributionDays": 6,
+      "price": 25017.81,
+      "sma50": 25602.02,
+      "sma200": 25000.2,
+      "changeFromHigh": -6.55,
+      "distributionDays": 8,
       "regime": "correction",
-      "signal": "6 distribution days in 25 sessions — selling pressure"
+      "signal": "8 distribution days in 25 sessions — selling pressure"
     },
     "asia": {
       "index": "Nikkei 225",
-      "price": 58721.87,
-      "sma50": 63919.45,
-      "sma200": 62291.91,
-      "changeFromHigh": -18.85,
-      "distributionDays": 7,
+      "price": 58644.63,
+      "sma50": 64073.01,
+      "sma200": 62264.97,
+      "changeFromHigh": -18.96,
+      "distributionDays": 5,
       "regime": "correction",
-      "signal": "7 distribution days in 25 sessions — selling pressure"
+      "signal": "Down -19.0% from high — correction territory"
     },
     "overall": "correction",
     "summary": "Markets showing weakness. Be selective, reduce position sizes, and tighten stops."
