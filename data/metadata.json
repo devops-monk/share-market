@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-11-24T18:54:43.722Z",
+  "lastUpdated": "2026-11-25T03:06:42.818Z",
   "stockCount": 859,
-  "bearishAlerts": 369,
+  "bearishAlerts": 375,
   "newsCount": 500,
   "marketRegime": {
     "us": {
       "index": "S&P 500",
-      "price": 7194.3,
-      "sma50": 7609.77,
-      "sma200": 7351.25,
-      "changeFromHigh": -7.99,
-      "distributionDays": 8,
+      "price": 7201.09,
+      "sma50": 7609.91,
+      "sma200": 7351.29,
+      "changeFromHigh": -7.9,
+      "distributionDays": 7,
       "regime": "correction",
-      "signal": "8 distribution days in 25 sessions — selling pressure"
+      "signal": "7 distribution days in 25 sessions — selling pressure"
     },
     "uk": {
       "index": "FTSE 100",
@@ -20,7 +20,7 @@
       "sma50": 10674.24,
       "sma200": 10560.53,
       "changeFromHigh": -4.07,
-      "distributionDays": 5,
+      "distributionDays": 4,
       "regime": "correction",
       "signal": "Price below SMA200 — trend weakening"
     },
@@ -40,21 +40,21 @@
       "sma50": 25602.02,
       "sma200": 25000.2,
       "changeFromHigh": -6.55,
-      "distributionDays": 8,
+      "distributionDays": 6,
       "regime": "correction",
-      "signal": "8 distribution days in 25 sessions — selling pressure"
+      "signal": "6 distribution days in 25 sessions — selling pressure"
     },
     "asia": {
       "index": "Nikkei 225",
-      "price": 58644.63,
-      "sma50": 64073.01,
-      "sma200": 62264.97,
-      "changeFromHigh": -18.96,
-      "distributionDays": 5,
-      "regime": "correction",
-      "signal": "Down -19.0% from high — correction territory"
+      "price": 56710.43,
+      "sma50": 63746.73,
+      "sma200": 62308.29,
+      "changeFromHigh": -21.63,
+      "distributionDays": 7,
+      "regime": "bear",
+      "signal": "Down -21.6% from high — bear market territory"
     },
-    "overall": "correction",
-    "summary": "Markets showing weakness. Be selective, reduce position sizes, and tighten stops."
+    "overall": "bear",
+    "summary": "Bear market conditions. Prioritize capital preservation. Avoid new longs, consider defensive positions."
   }
 }
