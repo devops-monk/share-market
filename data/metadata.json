@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-11-26T17:43:45.127Z",
+  "lastUpdated": "2026-11-27T01:43:28.153Z",
   "stockCount": 859,
-  "bearishAlerts": 347,
+  "bearishAlerts": 348,
   "newsCount": 500,
   "marketRegime": {
     "us": {
@@ -20,7 +20,7 @@
       "sma50": 10664.87,
       "sma200": 10561.34,
       "changeFromHigh": -2.76,
-      "distributionDays": 4,
+      "distributionDays": 3,
       "regime": "bull",
       "signal": "Price above SMA200 — uptrend intact"
     },
@@ -40,19 +40,19 @@
       "sma50": 25575.28,
       "sma200": 25001.21,
       "changeFromHigh": -5.81,
-      "distributionDays": 7,
+      "distributionDays": 6,
       "regime": "correction",
-      "signal": "7 distribution days in 25 sessions — selling pressure"
+      "signal": "6 distribution days in 25 sessions — selling pressure"
     },
     "asia": {
       "index": "Nikkei 225",
-      "price": 57499.16,
-      "sma50": 63752.75,
-      "sma200": 62309.79,
-      "changeFromHigh": -20.54,
-      "distributionDays": 6,
+      "price": 57877.01,
+      "sma50": 63452,
+      "sma200": 62353.18,
+      "changeFromHigh": -20.02,
+      "distributionDays": 8,
       "regime": "bear",
-      "signal": "Down -20.5% from high — bear market territory"
+      "signal": "Down -20.0% from high — bear market territory"
     },
     "overall": "bear",
     "summary": "Bear market conditions. Prioritize capital preservation. Avoid new longs, consider defensive positions."

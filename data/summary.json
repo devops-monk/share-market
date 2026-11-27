@@ -1,13 +1,6 @@
 {
   "topOverall": [
     {
-      "ticker": "BME.L",
-      "name": "B&M European",
-      "score": 75,
-      "market": "UK",
-      "capCategory": "Mid"
-    },
-    {
       "ticker": "HPQ",
       "name": "HP Inc",
       "score": 73,
@@ -22,17 +15,17 @@
       "capCategory": "Large"
     },
     {
+      "ticker": "BME.L",
+      "name": "B&M European",
+      "score": 72,
+      "market": "UK",
+      "capCategory": "Mid"
+    },
+    {
       "ticker": "WRB",
       "name": "W. R. Berkley",
       "score": 71,
       "market": "US",
-      "capCategory": "Large"
-    },
-    {
-      "ticker": "IMB.L",
-      "name": "Imperial Brands",
-      "score": 71,
-      "market": "UK",
       "capCategory": "Large"
     },
     {
@@ -50,39 +43,46 @@
       "capCategory": "Large"
     },
     {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 69,
-      "market": "UK",
-      "capCategory": "Small"
-    },
-    {
       "ticker": "GILD",
       "name": "Gilead Sciences",
-      "score": 68,
+      "score": 67,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "TSCO.L",
-      "name": "Tesco",
-      "score": 68,
-      "market": "UK",
+      "ticker": "ZS",
+      "name": "Zscaler",
+      "score": 67,
+      "market": "US",
       "capCategory": "Large"
+    },
+    {
+      "ticker": "INSP",
+      "name": "Inspire Medical Systems",
+      "score": 67,
+      "market": "US",
+      "capCategory": "Small"
+    },
+    {
+      "ticker": "CROX",
+      "name": "Crocs",
+      "score": 67,
+      "market": "US",
+      "capCategory": "Mid"
     }
   ],
   "bottomOverall": [
     {
-      "ticker": "CIEN",
-      "name": "Ciena Corp",
-      "score": 18,
+      "ticker": "ARM",
+      "name": "Arm Holdings",
+      "score": 17,
       "market": "US",
       "capCategory": "Large"
     },
     {
-      "ticker": "ARM",
-      "name": "Arm Holdings",
-      "score": 19,
+      "ticker": "CIEN",
+      "name": "Ciena Corp",
+      "score": 18,
       "market": "US",
       "capCategory": "Large"
     },
@@ -122,6 +122,13 @@
       "capCategory": "Mid"
     },
     {
+      "ticker": "IFX.DE",
+      "name": "Infineon Technologies",
+      "score": 23,
+      "market": "DE",
+      "capCategory": "Large"
+    },
+    {
       "ticker": "FMC",
       "name": "FMC Corp",
       "score": 23,
@@ -134,13 +141,6 @@
       "score": 23,
       "market": "US",
       "capCategory": "Mid"
-    },
-    {
-      "ticker": "WOLF",
-      "name": "Wolfspeed",
-      "score": 23,
-      "market": "US",
-      "capCategory": "Small"
     }
   ],
   "topLargeCap": [
@@ -163,12 +163,6 @@
       "market": "US"
     },
     {
-      "ticker": "IMB.L",
-      "name": "Imperial Brands",
-      "score": 71,
-      "market": "UK"
-    },
-    {
       "ticker": "GME",
       "name": "GameStop",
       "score": 70,
@@ -183,39 +177,39 @@
     {
       "ticker": "GILD",
       "name": "Gilead Sciences",
-      "score": 68,
+      "score": 67,
       "market": "US"
     },
     {
-      "ticker": "TSCO.L",
-      "name": "Tesco",
-      "score": 68,
-      "market": "UK"
+      "ticker": "ZS",
+      "name": "Zscaler",
+      "score": 67,
+      "market": "US"
     },
     {
-      "ticker": "REL.L",
-      "name": "RELX",
+      "ticker": "IMB.L",
+      "name": "Imperial Brands",
       "score": 67,
       "market": "UK"
     },
     {
-      "ticker": "4911.T",
-      "name": "Shiseido",
-      "score": 67,
-      "market": "JP"
+      "ticker": "PGR",
+      "name": "Progressive",
+      "score": 66,
+      "market": "US"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "score": 66,
+      "market": "US"
     }
   ],
   "topMidCap": [
     {
       "ticker": "BME.L",
       "name": "B&M European",
-      "score": 75,
-      "market": "UK"
-    },
-    {
-      "ticker": "KGF.L",
-      "name": "Kingfisher",
-      "score": 68,
+      "score": 72,
       "market": "UK"
     },
     {
@@ -231,8 +225,20 @@
       "market": "UK"
     },
     {
+      "ticker": "KGF.L",
+      "name": "Kingfisher",
+      "score": 67,
+      "market": "UK"
+    },
+    {
       "ticker": "GRG.L",
       "name": "Greggs",
+      "score": 66,
+      "market": "UK"
+    },
+    {
+      "ticker": "BWY.L",
+      "name": "Bellway",
       "score": 65,
       "market": "UK"
     },
@@ -241,6 +247,12 @@
       "name": "Qualys",
       "score": 64,
       "market": "US"
+    },
+    {
+      "ticker": "BNZL.L",
+      "name": "Bunzl",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "AMC",
@@ -253,44 +265,14 @@
       "name": "Henry Schein",
       "score": 63,
       "market": "US"
-    },
-    {
-      "ticker": "VRNS",
-      "name": "Varonis Systems",
-      "score": 63,
-      "market": "US"
-    },
-    {
-      "ticker": "BRZE",
-      "name": "Braze",
-      "score": 63,
-      "market": "US"
     }
   ],
   "topSmallCap": [
-    {
-      "ticker": "CMCX.L",
-      "name": "CMC Markets",
-      "score": 69,
-      "market": "UK"
-    },
     {
       "ticker": "INSP",
       "name": "Inspire Medical Systems",
       "score": 67,
       "market": "US"
-    },
-    {
-      "ticker": "FDEV.L",
-      "name": "Frontier Developments",
-      "score": 67,
-      "market": "UK"
-    },
-    {
-      "ticker": "CARD.L",
-      "name": "Card Factory",
-      "score": 67,
-      "market": "UK"
     },
     {
       "ticker": "PETS.L",
@@ -305,16 +287,16 @@
       "market": "UK"
     },
     {
-      "ticker": "MARS.L",
-      "name": "Marston's",
-      "score": 67,
-      "market": "UK"
-    },
-    {
       "ticker": "PARA",
       "name": "Paramount Global",
       "score": 66,
       "market": "US"
+    },
+    {
+      "ticker": "CMCX.L",
+      "name": "CMC Markets",
+      "score": 64,
+      "market": "UK"
     },
     {
       "ticker": "FRE.DE",
@@ -323,13 +305,31 @@
       "market": "DE"
     },
     {
+      "ticker": "CARD.L",
+      "name": "Card Factory",
+      "score": 63,
+      "market": "UK"
+    },
+    {
+      "ticker": "RPD",
+      "name": "Rapid7",
+      "score": 62,
+      "market": "US"
+    },
+    {
+      "ticker": "TSTL.L",
+      "name": "Tristel",
+      "score": 61,
+      "market": "UK"
+    },
+    {
       "ticker": "KNOS.L",
       "name": "Kainos Group",
-      "score": 63,
+      "score": 60,
       "market": "UK"
     }
   ],
   "totalStocks": 859,
   "avgScore": 48,
-  "bearishAlertCount": 347
+  "bearishAlertCount": 348
 }
